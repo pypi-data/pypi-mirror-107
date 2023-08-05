@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pushing-outshoot-unfold
+Version: 0.2.3.dev1
+Summary: A game about a teen getting through quarantine in Covid.
+Home-page: https://github.com/po-unfold
+Author: Cole, Harshini, Cassidy
+Author-email: po-unfold@colewilson.xyz
+License: none
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: blessed
+Requires-Dist: toml
+Requires-Dist: replit
+
+# Pushing Outshoot Unfold
+
+This is the source code for a game about a teen getting through Covid-19.
+
+It is a text based game, but we can add awesome ASCII graphics.
+
+If you edit anything, just add comments explaining it! But anything is fine to add.
+
+The app is auto-built on the cloud on GitHub. The releases can be found [here](https://github.com/po-unfold/game/releases).
+
+The main code is in the `pushing_outshoot_unfold/` folder.
+
+The `sailboat.toml` file is the configuration for all of the project, so that [`sailboat`](https://github.com/cole-wilson/sailboat) can build it.
+
+
+

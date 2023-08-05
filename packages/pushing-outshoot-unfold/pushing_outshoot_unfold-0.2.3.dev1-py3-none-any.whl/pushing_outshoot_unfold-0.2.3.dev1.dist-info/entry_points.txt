@@ -1,0 +1,3 @@
+[console_scripts]
+pou = pushing_outshoot_unfold.__main__:main
+
