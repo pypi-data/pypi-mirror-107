@@ -1,0 +1,29 @@
+labelizer:
+  model_path: generatedDirectory/labelizer/predictors/models/tfidf_cat.pic
+  threshold: 0.5
+  use_dummy_model: false
+pipeline:
+  scalers_path: generatedDirectory/preprocessor/vocabs
+  scalers_to_load:
+  - - tf_idf_vec
+    - tfidf_vec.pic
+  - - scaler
+    - scaler.pic
+  vocab_path: generatedDirectory/preprocessor/vocabs
+  vocabs_to_load:
+#  - - title_freq.json
+#    - titles
+#    - json
+#  - - fname_freq.json
+#    - first_names
+#    - json
+#  - - lname_freq.json
+#    - last_names
+#    - json
+#  - - c_level.json
+#    - c_level
+#    - json
+postprocessor:
+  version: 1
+preprocessor:
+  version: 1
