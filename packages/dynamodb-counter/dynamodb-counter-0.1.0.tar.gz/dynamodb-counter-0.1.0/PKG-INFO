@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dynamodb-counter
+Version: 0.1.0
+Summary: An atomic DynamoDB counter
+Home-page: https://github.com/a2d24/dynamodb-counter
+License: MIT
+Author: Imtiaz Mangerah
+Author-email: Imtiaz_Mangerah@a2d24.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: boto
+Requires-Dist: boto3 (>=1.17.23,<2.0.0); extra == "boto"
+Project-URL: Documentation, https://github.com/a2d24/dynamodb-counter
+Project-URL: Repository, https://github.com/a2d24/dynamodb-counter
