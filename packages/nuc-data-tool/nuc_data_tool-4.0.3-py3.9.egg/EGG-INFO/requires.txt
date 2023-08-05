@@ -1,0 +1,9 @@
+SQLAlchemy>=1.4.0
+pandas
+toml
+protobuf
+openpyxl
+click
+psycopg2
+mysql-connector-python
+pycaret>=2.3.0
