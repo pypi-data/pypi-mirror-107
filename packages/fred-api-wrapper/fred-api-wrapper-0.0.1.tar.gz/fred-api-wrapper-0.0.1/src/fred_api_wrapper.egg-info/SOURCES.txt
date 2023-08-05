@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fred/__init__.py
+src/fred/fred.py
+src/fred_api_wrapper.egg-info/PKG-INFO
+src/fred_api_wrapper.egg-info/SOURCES.txt
+src/fred_api_wrapper.egg-info/dependency_links.txt
+src/fred_api_wrapper.egg-info/top_level.txt
