@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pysvap
+Version: 1.0.0
+Summary: A python library for image Manipulation which implements different algorithm designs on rgb values of each individual pixel 
+Home-page: https://github.com/shubh-vashisht/PySvap
+Author: Shubh Vashisht and Aman Priyadarshi
+Author-email: shubhv2@gmail.com, aman19294@iiitd.ac.in
+License: UNKNOWN
+Project-URL: Source, https://github.com/shubh-vashisht/PySvap
+Description: # Details
+        
+        ## In processing...
+Keywords: imageManipulation,image,pixels
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
