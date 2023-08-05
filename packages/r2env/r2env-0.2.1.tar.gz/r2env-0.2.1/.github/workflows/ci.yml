@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+#  schedule:
+#    - cron: '0 0 * * 1'
+
+
+jobs:
+  build:
+    name: linux
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build
+      run: python setup.py build
+    - name: Install
+      run: sudo python setup.py install
+    - name: Execute
+      run: r2env help || exit 0
+    - name: add_r0
+      run: |
+        r2env init
+        r2env add r0@git
+        r2env shell r0 -h
+        r2env unuse r0@git
+        r2env shell r0 -h || true
+    - name: Uninstalling
+      run: yes | sudo pip uninstall r2env
