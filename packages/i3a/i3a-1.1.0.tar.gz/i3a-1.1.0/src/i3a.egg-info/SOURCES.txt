@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+Pipfile
+README.md
+setup.py
+contrib/i3a-move-to-empty
+contrib/i3a-swap
+src/i3a/__init__.py
+src/i3a/_version.py
+src/i3a/app.py
+src/i3a.egg-info/PKG-INFO
+src/i3a.egg-info/SOURCES.txt
+src/i3a.egg-info/dependency_links.txt
+src/i3a.egg-info/entry_points.txt
+src/i3a.egg-info/requires.txt
+src/i3a.egg-info/top_level.txt
