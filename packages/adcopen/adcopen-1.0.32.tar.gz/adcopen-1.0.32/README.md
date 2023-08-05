@@ -1,0 +1,96 @@
+## ADCOpen
+### Open-source python libraries for data integration with ADC equipment.
+
+Licensed for use with ADC equipment. 
+automateddesign.com
+
+
+### Testing
+
+Install this package in "editable" mode by running from the top directory of this project:
+
+$ pip install -e .
+
+This lets you change your source code (both tests and application) and rerun tests at will,
+as the source of the package will now be the local directory.
+
+### Version History
+
+#1.0.32
+- Remove pywin32 dependency and windows-specific service
+- Attempts to enable customers to work with library on a Mac.
+
+#1.0.31
+- Minor bug fix, message cleanup.
+
+#1.0.30
+- Quick bug fix in CoreLink.publish method.
+
+#1.0.29
+- Fixes publishing errors.
+- Removes tests/ directory from library distribution.
+
+#1.0.28
+- A SERIOUSLY STUPID MISTAKE OCCURRED. USE NEXT RELEASE.
+
+
+#1.0.27
+- DO NOT USE THIS RELEASE. SEE 1.0.28.
+- Separates "symbol" and "tag_name" in ADS client to match AutoCoreServer standard.
+- Logging and typing improvements.
+- Tries to improve __init__.py file and fix local.
+- Expansion and reorganization of test files.
+
+#1.0.26
+- Fix non-async publish with topic.
+
+#1.0.25
+- Add option to broadcast topic name when events are published.
+
+#1.0.24
+- Import fix
+
+#1.0.23
+- Adds CoreLink synchronous connect/disconnect methods to make life easier on
+end users integrating streamlit.
+
+
+#1.0.22
+- Updates CoreLink client for additional API features and cleans out depreacted
+features. Implements DataStore features.
+
+
+#1.0.21
+- events.py now attempts to create an event loop when subscribing if one does
+not already exist. This is contrary to original intention, but makes it easier
+for our end-user to integrate scripts.
+
+
+#1.0.20
+- Changes when CoreLink creates client instance. Originally, was creating upon
+import, but that caused problems with Streamlit.
+
+#1.0.19
+- Adds ONDATACHANGE support to events.py, which is now the default. Option to
+always receive the event can be passed as argument to subscribe method.
+
+#1.0.18
+- API change to Ton.start() to make it easier to use in state machines.
+
+
+#1.0.17
+- Add Ton and edge trigger classes.
+
+
+#1.0.16
+- Convert to socketio
+
+
+#1.0.15
+- Trying to fix bug where pressing ctrl-c causes hard crash instead of graceful shutdown.
+
+
+
+#1.0.13:
+- Fix issue with traceback library swallowing ctrl-c events when program interrupted by keyboard
+- Add minimal CoreLink client for integration with autocore-js webserver. 
