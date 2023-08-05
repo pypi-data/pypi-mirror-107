@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: airflow-dag-deployer
+Version: 0.1
+Summary: To deploy projects dags to airflow dag directory
+Home-page: https://github.com/SubigyaPanta/airflow-dag-deployer.git
+Author: Subigya Jyoti Panta
+Author-email: subigyapanta@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/SubigyaPanta/airflow-dag-deployer/issues
+Project-URL: Source, https://github.com/SubigyaPanta/airflow-dag-deployer.git
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Installation
+`pip install airflow-dag-deployer`
+
+## Deploy dags with commandline
+Dags can be deployed as zip archive or independent python file prefixed by project name.
+
+### Deploying dags as a zip archive
+```
+deploydag --project=<project_name> --source=<dags_dir> --destination=<airflow_home> --method=zip
+```
+
+### Deploying dags as a file
+```
+deploydag --project=<project_name> --source=<dags_dir> --destination=<airflow_home> --method=file
+```
+
+
