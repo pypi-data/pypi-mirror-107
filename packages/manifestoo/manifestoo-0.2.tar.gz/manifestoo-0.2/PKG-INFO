@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: manifestoo
+Version: 0.2
+Summary: A tool to reason about Odoo addons manifests.
+Home-page: https://github.com/sbidoul/manifestoo
+Author: Stéphane Bidoul
+Author-email: stephane.bidoul@acsone.eu
