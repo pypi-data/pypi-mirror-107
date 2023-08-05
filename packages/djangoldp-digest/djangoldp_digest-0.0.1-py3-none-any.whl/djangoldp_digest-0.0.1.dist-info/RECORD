@@ -1,0 +1,11 @@
+djangoldp_digest/__init__.py,sha256=CGb4wfax8e7noi1ZynW8uwh0lTTD1vBfW9HHzYSSSlk,48
+djangoldp_digest/apps.py,sha256=jIUhAHgcptxwwQ-jh3dS4pr1xqiJ7YZfZPVvzm6oICM,107
+djangoldp_digest/settings.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_digest/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_digest/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_digest/management/commands/digest.py,sha256=UFFTnc79uiFiRHPzzvMK7U-aMg3KwCBGv0uTSlCzUqI,368
+djangoldp_digest/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_digest-0.0.1.dist-info/METADATA,sha256=PLok5Vp2awXBCMiN61M_u2lRSNXlJIvsV3afMUZPtKg,411
+djangoldp_digest-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+djangoldp_digest-0.0.1.dist-info/top_level.txt,sha256=wUhBX_vIW5gsSssGLxmWTcSZJ5HYGMCF5sdzS9gsxi8,17
+djangoldp_digest-0.0.1.dist-info/RECORD,,
