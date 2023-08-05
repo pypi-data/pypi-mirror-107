@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+easySum/__init__.py
+easySum/corpus.py
+easySum/summarizer.py
+easySum.egg-info/PKG-INFO
+easySum.egg-info/SOURCES.txt
+easySum.egg-info/dependency_links.txt
+easySum.egg-info/requires.txt
+easySum.egg-info/top_level.txt
