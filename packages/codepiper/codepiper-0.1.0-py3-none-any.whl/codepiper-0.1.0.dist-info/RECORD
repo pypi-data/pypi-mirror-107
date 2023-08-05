@@ -1,0 +1,12 @@
+codepiper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codepiper/build.py,sha256=Py_0Ua_0Hm4Hzrp32Lr5mzaSx1uk_4z4diDEyGdvY8M,4343
+codepiper/cli.py,sha256=DUYfmnLMcJMEEW4_pO_6ZduYUsoUj_ANghnsCGK7V08,2024
+codepiper/context.py,sha256=ZLBnpamZWoLYNexffPMY0zAs7Z8Fkf2JQYCyF-Fk9Cc,1959
+codepiper/rollback.py,sha256=IkOqIAbSyIy1Xo7Zt8V8GyB7YLN4z6nAkF_djhtvAkQ,8415
+codepiper/watch.py,sha256=61U2LeeJpOA3PnCyDufeksaJz36a00GClXi5cW9EHAs,9752
+codepiper-0.1.0.dist-info/LICENSE,sha256=YVS-_Bs_E51fSFix6gj17F0EB5HHD8s62dny1ehb12c,1057
+codepiper-0.1.0.dist-info/METADATA,sha256=cvcNvVs-Wsjx6AHo2U16sCSSCqxpeAlhx_cZk4KCSpI,1906
+codepiper-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+codepiper-0.1.0.dist-info/entry_points.txt,sha256=mo9NxS5bPoXjPYgnpUoHZHlkgy-63gwh0wyBnA9oQLg,50
+codepiper-0.1.0.dist-info/top_level.txt,sha256=YK1U00LqX5pYV2gspUydf3JejF_oUCOYm0kCpQPLtGg,10
+codepiper-0.1.0.dist-info/RECORD,,
