@@ -1,0 +1,3 @@
+[console_scripts]
+sedi = sedi.cmdline:execute
+
