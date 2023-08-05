@@ -1,0 +1,15 @@
+Flask
+
+[dev]
+flake8
+mock
+pytest>=3
+pytest-cov
+pytest-helpers-namespace
+sphinx
+
+[dev:python_version >= "3.6"]
+black
+
+[fancy]
+sqlparse>=0.2.2
