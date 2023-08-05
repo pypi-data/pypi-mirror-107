@@ -1,0 +1,17 @@
+README.md
+setup.py
+django_cloud_deployer/__init__.py
+django_cloud_deployer/__main__.py
+django_cloud_deployer/azure.py
+django_cloud_deployer/command_runner.py
+django_cloud_deployer/configs.py
+django_cloud_deployer/heroku.py
+django_cloud_deployer/main.py
+django_cloud_deployer/provider.py
+django_cloud_deployer/providers.py
+django_cloud_deployer/urls_annotator.py
+django_cloud_deployer.egg-info/PKG-INFO
+django_cloud_deployer.egg-info/SOURCES.txt
+django_cloud_deployer.egg-info/dependency_links.txt
+django_cloud_deployer.egg-info/requires.txt
+django_cloud_deployer.egg-info/top_level.txt
