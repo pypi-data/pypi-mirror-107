@@ -1,0 +1,8 @@
+[console_scripts]
+mecab = mecab.bin.cli_main:mecab_main
+mecab-cost-train = mecab.bin.cli_main:mecab_cost_train_main
+mecab-dict-gen = mecab.bin.cli_main:mecab_dict_gen_main
+mecab-dict-index = mecab.bin.cli_main:mecab_dict_index_main
+mecab-system-eval = mecab.bin.cli_main:mecab_system_eval_main
+mecab-test-gen = mecab.bin.cli_main:mecab_test_gen_main
+
