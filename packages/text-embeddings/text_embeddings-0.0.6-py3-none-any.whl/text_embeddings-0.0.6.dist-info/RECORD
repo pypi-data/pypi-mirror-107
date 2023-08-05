@@ -1,0 +1,12 @@
+text_embeddings/__init__.py,sha256=w2QjjWLMk85NdkB29Id6C-yZEEReRFS5iyEmBKzC1xY,199
+text_embeddings/base/__init__.py,sha256=11vU0tCw_nEmOI7ooOC_eZ8Lxnx6J8k-4qqIJ-PT6MU,19929
+text_embeddings/hash/__init__.py,sha256=vCA9UKeNzjXaD4TFsACzknjdQf__dKGR8F0UCVo2OzM,281
+text_embeddings/hash/canine.py,sha256=dTeVxKgT4Sc_QAYwwgHgNMU9f4nd8jwAh-JezMOCgeY,3467
+text_embeddings/hash/pqrnn.py,sha256=5neqtHSE7thwUaEJojKbnxnyNRuf3MREbKycmIY4fxw,3430
+text_embeddings/hash/util.py,sha256=zBMGd-Cm1vE3WCSQ_VioNpCysFXeGhdyOBP5ACCx554,1679
+text_embeddings/visual/__init__.py,sha256=6fDr6XykCyD8To97XQbbUIgaiY4ZUnsxdn-GrvSM67s,257
+text_embeddings/visual/vtr.py,sha256=6_1qUI9vvqA1xM4MqlMOoF0s3mxSKBTeASGzMRMqpbk,4820
+text_embeddings-0.0.6.dist-info/LICENSE,sha256=BV1FYg6rCF6-ohT8ZAlOpPclf1a46C6nJvZPv4y_Knk,1069
+text_embeddings-0.0.6.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+text_embeddings-0.0.6.dist-info/METADATA,sha256=P2Dd9w4TM4zChFgI9UJu92biDz3qZjUDM6Am2njXZC0,4022
+text_embeddings-0.0.6.dist-info/RECORD,,
