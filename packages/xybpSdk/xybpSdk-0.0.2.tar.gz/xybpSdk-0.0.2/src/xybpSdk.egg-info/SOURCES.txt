@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xybpSdk/__init__.py
+src/xybpSdk/module1.py
+src/xybpSdk/module2.py
+src/xybpSdk.egg-info/PKG-INFO
+src/xybpSdk.egg-info/SOURCES.txt
+src/xybpSdk.egg-info/dependency_links.txt
+src/xybpSdk.egg-info/top_level.txt
