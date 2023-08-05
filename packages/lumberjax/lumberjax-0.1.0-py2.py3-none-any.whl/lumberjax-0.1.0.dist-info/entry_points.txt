@@ -1,0 +1,3 @@
+[console_scripts]
+lumberjax = lumberjax.cli:main
+
