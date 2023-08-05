@@ -1,0 +1,17 @@
+daml_dit_ddit/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+daml_dit_ddit/common.py,sha256=gnf9rU84Xl-4_cpWUrepd5hYzgZmH3ISgAFdUJq7V0I,3762
+daml_dit_ddit/log.py,sha256=TdNpgaYHkMDcpzyW1hPrlAD268sNDC_6eiIOfqEiMlM,458
+daml_dit_ddit/main.py,sha256=LRz2tIKxgPP59KKVasf0nlhivmlvhA1omeKnMziLhio,2556
+daml_dit_ddit/py.typed,sha256=naNEh8SAbMm_109u81gjfCHDf5k5GtDYA_MQvR5BgDs,58
+daml_dit_ddit/subcommand_build.py,sha256=xsxFh0jTWCJgDl-bJMyFiGmGZ1rHsXPrYvbYbdr5nJw,11035
+daml_dit_ddit/subcommand_ditversion.py,sha256=9PVpaUz58kNFBSpUxHnoVs9ZLLKdK1M_fT8adry482k,174
+daml_dit_ddit/subcommand_genargs.py,sha256=s2SghuTZ2w7M6bhLDuJ7Z5fg-Ykp2Yv8dj5begrF2mQ,810
+daml_dit_ddit/subcommand_inspect.py,sha256=CbD7KR_CzQOHhxaLR0pOdDNTmz3JC5RPU1JwX9vP2SE,1719
+daml_dit_ddit/subcommand_release.py,sha256=sEQYIYV4f6uGkhDZv-CFr1lroa0oX0f9mHoeiGODGD4,3906
+daml_dit_ddit/subcommand_show.py,sha256=VsOhiwRmhhwvLI8_KMaoCrIJOEwKx6nGvBdw-b87egg,208
+daml_dit_ddit/subcommand_targetname.py,sha256=lcwgKqLPfXEKwzQOk7BGPctMtIRIoYBjUHyA_KbfbgU,485
+daml_dit_ddit-0.5.1.dist-info/entry_points.txt,sha256=QWA-Pz_ZRi9Fbdyv-geSrCz3mqeTes47lAvfPjPLz6g,43
+daml_dit_ddit-0.5.1.dist-info/LICENSE,sha256=mR-Jb8GDUemKazwtvsyvTF-uV-HuOGcPoAScSj53yws,11393
+daml_dit_ddit-0.5.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+daml_dit_ddit-0.5.1.dist-info/METADATA,sha256=VAijP3pTX2OW5qzHWRJFCGDwhI5qBT1oolZYzzfnUps,5518
+daml_dit_ddit-0.5.1.dist-info/RECORD,,
