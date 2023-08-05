@@ -1,0 +1,15 @@
+splashgen/__init__.py,sha256=Yt4b5yZLTuRdhC9oFiXoPRCxb5BPCTnRzQ3BMy3zBWI,1244
+splashgen/cli.py,sha256=X223PvJ3dJ37jNFLIjcWG0hd8vP1p4HuCJVWhj60Cdo,1313
+splashgen/integrations.py,sha256=5Iv5JfUP4a9hKdgM1Vk-rtZHGRcwsnOS943fUgrcP7M,1075
+splashgen/assets/logo-default.png,sha256=Hy2ZTYjqX7qj6IeCXUPGouQQfsuZG0_ShEgFp2c8xzg,19455
+splashgen/components/CTAButton.py,sha256=XbXgSFPTiARRnqR7ay4WOvD3PlpFp0jb8g9ndUAPc5w,288
+splashgen/components/SplashSite.py,sha256=VciwKHHL7BhSY5fvCwDSsQtUvJ3lkLZ3mNeVGJ8cttk,2454
+splashgen/components/__init__.py,sha256=cAV_2IJa6azQm2vFK14bK6cgeKxFsxpJJsqKJK6N_Lo,67
+splashgen/templates/mailchimp_signup.html.jinja,sha256=8ZCtAFzTuvKVOXAS4Hd3JFlddV5rsGjCTnK0SVa1j-U,827
+splashgen/templates/splash_site.html.jinja,sha256=GuhadI1jkC9lwlWsUvA3R7wPc6B-KvtxQbS1eb14bX4,5784
+splashgen-0.0.26.dist-info/LICENSE,sha256=KbW2UJedwhpWHUQfEOuEJtoSxxR5TVApEZbOGBV8y_k,1082
+splashgen-0.0.26.dist-info/METADATA,sha256=vNb0N_VicyidG9r8BtwjLwr5627x_w086qpZOd03bO4,7107
+splashgen-0.0.26.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+splashgen-0.0.26.dist-info/entry_points.txt,sha256=PDA5riZ4gJaJp9Kg9gbSlBTHs-_ZSt3ez2iLD2MHCAw,50
+splashgen-0.0.26.dist-info/top_level.txt,sha256=IP7ZFHLo2Rt8T45lsIoeA6eMx6mKS9eF906lR8ws5w8,10
+splashgen-0.0.26.dist-info/RECORD,,
