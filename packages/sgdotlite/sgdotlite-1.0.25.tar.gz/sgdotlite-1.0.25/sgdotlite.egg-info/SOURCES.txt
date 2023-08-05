@@ -1,0 +1,13 @@
+README.md
+setup.py
+sgdotlite/__init__.py
+sgdotlite/grids.py
+sgdotlite.egg-info/PKG-INFO
+sgdotlite.egg-info/SOURCES.txt
+sgdotlite.egg-info/dependency_links.txt
+sgdotlite.egg-info/requires.txt
+sgdotlite.egg-info/top_level.txt
+sgdotlite/tools/__init__.py
+sgdotlite/tools/grid_optimizer.py
+sgdotlite/tools/io.py
+sgdotlite/tools/plot.py
