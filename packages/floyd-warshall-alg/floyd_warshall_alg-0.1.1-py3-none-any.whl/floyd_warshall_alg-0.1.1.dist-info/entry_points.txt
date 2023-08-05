@@ -1,0 +1,3 @@
+[console_scripts]
+floyd_alg=floyd_warshall_alg.simple_algorithm:main
+
