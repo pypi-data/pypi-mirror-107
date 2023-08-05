@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+setup.py
+pythonpixels.egg-info/PKG-INFO
+pythonpixels.egg-info/SOURCES.txt
+pythonpixels.egg-info/dependency_links.txt
+pythonpixels.egg-info/requires.txt
+pythonpixels.egg-info/top_level.txt
+src/pythonpixels/__init__.py
+src/pythonpixels/pythonpixel.py
