@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: http-spammer
+Version: 0.1.1rc5
+Summary: asyncronous http load testing tool
+Home-page: https://github.com/chrislarson1/http-spammer.git
+Author: Chris Larson
+Author-email: chris7larson@gmail.com
+License: Apache Version 2.0
+Description: UNKNOWN
+Keywords: http loadtest load test
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Requires-Python: >=3.6.6
+Description-Content-Type: text/markdown
