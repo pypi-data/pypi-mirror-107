@@ -1,0 +1,3 @@
+# Transcr
+
+The package helps to make the transcription process more automatic. For either an audiofile or a textfile it generates a translation in a language of choice, the transcription in IPA, the Lemma and POS-Tag of every word and exportes this informations in a csv-file. If the used file is an audio, it saves the recognized text in a textfile. In addition, it creates an audiofile with the translated speech.
