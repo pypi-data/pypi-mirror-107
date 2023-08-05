@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: NonMannerDB
+Version: 1.0.1
+Summary: 우마공DB 전용 라이브러리
+Home-page: https://github.com/CwhiteKJ/NonMannerDB
+Author: WhiteKJ
+Author-email: whitekj1221@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# 우마공 비매너 DB
+
+**`search_by_name()`** : 전체 제보 정보를 최신순으로 가져옵니다.
+|파라미터|타입|설명|기본값|필수|
+|-------|----|----|-----|----|
+|username|**str**|조회할 유저의 이름|없음|O|
+|skip|**int**|생략할 결과의 갯수|0|X|
+|limit|**int**|조회할 결과의 수(최대 1000)|100|X|
+
+**`get_all()`** : 입력한 닉네임이 포함되는 피제보자의 제보들을 최신순으로 가져옵니다.
+|파라미터|타입|설명|기본값|필수|
+|-------|----|----|-----|----|
+|skip|**int**|생략할 결과의 갯수|0|X|
+|limit|**int**|조회할 결과의 수(최대 1000)|100|X|
+
+**`get_count()`** : 해당 UUID를 가진 피제보자의 제보 갯수를 가져옵니다.
+|파라미터|타입|설명|기본값|필수|
+|-------|----|----|-----|----|
+|uuid|**str**|조회할 유저의 UUID|없음|O|
+
+**`get_user()`** : 해당 UUID를 가진 피제보자의 제보를 가져옵니다.
+|파라미터|타입|설명|기본값|필수|
+|-------|----|----|-----|----|
+|uuid|**str**|조회할 유저의 UUID|없음|O|
+
+**[Issue](https://github.com/CwhiteKJ/Miho/issues/new) 및 [Pull Request](https://github.com/CwhiteKJ/Miho/compare)는 환영합니다.**
+
+
