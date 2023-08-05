@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Augmentext
+Version: 0.1.4
+Summary: Text augmentation library for NLP applications.
+Home-page: https://github.com/mdbloice/Augmentext
+Author: Marcus D. Bloice
+Author-email: marcus.bloice@medunigraz.at
+License: MIT
+Description: Text augmentation library for NLP applications.
+Keywords: text,augmentation,generation,NLP,machine,learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
