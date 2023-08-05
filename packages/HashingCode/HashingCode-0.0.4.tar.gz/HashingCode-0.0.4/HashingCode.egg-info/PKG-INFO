@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: HashingCode
+Version: 0.0.4
+Summary: A hashing library
+Home-page: UNKNOWN
+Author: Abderrahman Hiroual
+Author-email: hiroual.abderrahman.student@gd-gsr.com
+License: MIT
+Description: a simple number hashing library that has two functions :
+            Can encrypt some String
+            Can decrypt string numbers and Integers
+        
+           .Can't encrypt numbers
+        
+        
+        Change log
+        
+        ==========================
+        
+        0.0.4  (24/05/2021)
+        __________________________
+        -First Release
+Keywords: Hashing
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
