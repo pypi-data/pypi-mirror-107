@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: youtube_metadata_scrapper
+Version: 0.1
+Summary: a simple celery worker that youtube_metadata_scrapper
+Home-page: https://github.com/stream-for-good/youtube-metadata-scrapper
+Author: Nicolas Herbaut
+Author-email: nicolas.herbaut@univ-paris1.fr
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: youtube,metadata,scrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
