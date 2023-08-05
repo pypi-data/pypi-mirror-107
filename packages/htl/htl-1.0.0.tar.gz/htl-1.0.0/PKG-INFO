@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: htl
+Version: 1.0.0
+Summary: Library for transform data structures
+Home-page: https://github.com/EkaterinaSidorenko17/htl
+Author: Sidorenko Ekaterina
+Author-email: sidorenkoekaterina01@icloud.com
+License: UNKNOWN
+Description: # HTL - Library for transform data structures
+        ## Example
+        ```python
+        from htl.htl import linear_to_hierarchical, hierarchical_to_linear
+        
+        
+        linear = [
+            {'name': 'Lorem',       'parent': None},
+            {'name': 'ipsum',       'parent': 'Lorem'},
+            {'name': 'dolor',       'parent': 'ipsum'},
+            {'name': 'sit',         'parent': 'dolor'},
+            {'name': 'amet',        'parent': 'ipsum'},
+            {'name': 'consectetur', 'parent': 'Lorem'},
+            {'name': 'adipisicing', 'parent': 'consectetur'}
+        ]
+        
+        hierarchical = linear_to_hierarchical(linear)
+        
+        """
+        hierarchical:
+        {
+            'name': 'Lorem',
+            'children': [
+                    {
+                        'name': 'ipsum',
+                        'children': [
+                            {
+                                'name': 'dolor',
+                                'children': [
+                                    {
+                                        'name': 'sit'
+                                    }
+                                ]
+                            },
+                            {
+                                'name': 'amet'
+                            }
+                        ]
+                    },
+                {
+                        'name': 'consectetur',
+                        'children': [
+                            {
+                                'name': 'adipisicing'
+                            }
+                        ]
+                }
+            ]
+        }
+        """
+        # To reverse conversion, use function hierarchical_to_linear
+        ```
+Platform: any
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
