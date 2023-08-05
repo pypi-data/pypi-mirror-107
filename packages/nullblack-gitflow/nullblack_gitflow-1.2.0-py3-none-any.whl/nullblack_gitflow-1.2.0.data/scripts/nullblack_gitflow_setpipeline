@@ -1,0 +1,367 @@
+#!python
+
+import shutil
+import yaml
+import os
+import sys
+import tempfile
+import argparse
+import subprocess
+import threading
+import time
+import shutil
+
+#Print within concourse resource because concourse expects us to use stdout (print()) for the structured result
+def cprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+
+
+def secure_to_string_helper(obj, result, indent):
+    str_indent = "  " * indent
+
+    if type(obj) is dict:
+        items = obj.items()
+    else:
+        items = obj.__dict__.items()
+    for key, value in items:
+        result += str_indent
+        result += key
+        result += ": "
+        #print("looping key: " + str(key) + ", value: " + str(value) + " - " + result)
+        if "key" in key or "password" in key or "secure" in key:
+            result += "<REDACTED>"
+            result += "\n"
+        elif type(value) is dict:
+            result += "\n"
+            result = secure_to_string_helper(value, result, indent + 1)
+        else:
+            result += str(value)
+            result += "\n"
+
+    return result
+
+def secure_to_string(value):
+    result = ""
+    return secure_to_string_helper(value, result, 0)
+
+def fly_path():
+    fly_bin_path = shutil.which("fly")
+    if fly_bin_path == None:
+        cprint("Error: Could not find fly binary! Ensure it is in your path?!")
+        os._exit(1)
+    return fly_bin_path
+
+
+default_env = os.environ.copy()
+
+def run_exitcode(command, env=default_env, cwd=None, input_str="", get_output=False, show_output=True):
+    with_out_msg = ""
+    if get_output:
+        with_out_msg = " Obtaining output"
+    cprint("Executing: (\"" + command + "\")" + ((" From " + cwd) if cwd else "") + with_out_msg, flush=True)
+    process = subprocess.Popen(command, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True, env=env, cwd=cwd)
+    if (len(input_str) > 0):
+        time.sleep(1)
+        process.stdin.write(input_str)
+
+    # Poll process for new output until finished
+
+    if get_output:
+        output = ""
+    while True:
+        if get_output or show_output:
+            nextline = process.stdout.readline()
+        else:
+            time.sleep(0.001)
+
+        if process.poll() is not None:
+            break
+
+        if get_output:
+            output += nextline
+        if show_output:
+            sys.stdout.write(nextline)
+            sys.stdout.flush()
+
+    if get_output:
+        return process.returncode, output
+    else:
+        return process.returncode
+
+
+def run(command, env = default_env, cwd = None, input_str="", get_output=False, show_output=True):
+    if get_output:
+        exitCode, output = run_exitcode(command, env=env, cwd=cwd, input_str=input_str, get_output=True, show_output=show_output)
+    else:
+        exitCode = run_exitcode(command, env=env, cwd=cwd, input_str=input_str)
+
+
+    if exitCode != 0:
+        cprint('Command \'' + command + '\' failed!', flush=True)
+        cprint('Expected error code 0, got ' + str(exitCode), flush=True)
+        if get_output:
+            cprint('output is:')
+            cprint(output)
+        os._exit(1)
+
+    if get_output:
+        return output
+
+
+
+def must_have(name, input):
+    if not hasattr(input, name) and not name in input:
+
+        cprint("Failed to find " + str(name) + " inside input:")
+        cprint(secure_to_string(input))
+        os._exit(1)
+
+    return input[name]
+
+
+def get(name, input):
+    if not hasattr(input, name) and not name in input:
+
+        return None
+    else:
+        return input[name]
+
+
+def template_yaml(path, defines={}):
+    yml_defines = ""
+    if len(defines) > 0:
+        for k, v in defines.items():
+            yml_defines += "--define \"" + k + "=" + v + "\" "
+    return run("emrichen --template-format yaml --output-format yaml " + yml_defines + " " + path, get_output=True, show_output=False)
+
+
+
+
+class LocalShell(object):
+    def __init__(self):
+        pass
+
+    def run(self, command, get_output=False):
+        env = os.environ.copy()
+        p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, env=env)
+        print("Running: " + command + ", as interactive")
+
+        master_output = {}
+
+        def writeall(p, master_output, get_output):
+            print("")
+            output = ""
+            while True:
+                # print("read data: ")
+                data = p.stdout.read(1).decode("utf-8")
+                if not data:
+                    print("")
+                    break
+                if get_output:
+                    output += data
+
+                sys.stdout.write(data)
+                sys.stdout.flush()
+
+
+            master_output["output"] = output
+
+        writer = threading.Thread(target=writeall, args=[p, master_output, get_output])
+        writer.start()
+
+        def readall(p, stdin):
+            try:
+                while True:
+                    d = os.read(stdin, 1)
+                    if not d:
+                        break
+                    if not self._write(p, d):
+                        break
+
+            except EOFError:
+                pass
+
+
+        new_stdin = os.dup(sys.stdin.fileno())
+        reader = threading.Thread(target=readall, args=[p, new_stdin])
+        reader.start()
+
+        writer.join()
+        print("<Process exited. Press enter to continue>")
+        reader.join()
+
+        if get_output:
+            return master_output["output"]
+
+
+    def _write(self, process, message):
+        try:
+            process.stdin.write(message)
+            process.stdin.flush()
+            return True
+        except BrokenPipeError:
+            return False
+
+
+
+def factorySetPipelineMain():
+
+
+    fly_bin_path = fly_path()
+
+    parser = argparse.ArgumentParser(description='A wrapper for fly set-pipeline that templates a pipeline file and calculates the pipeline name using the current branch')
+    parser.add_argument('--config', '-c', help='Sets the config to use')
+    parser.add_argument('--deploy-server', help='Overrides the deploy server variable passed to the templating engine')
+    parser.add_argument('--target', '-t', help='Concourse target. Passed directly to fly')
+    parser.add_argument('--dry-run', help='Show templated file without running fly', action='store_true')
+
+    results, unknown = parser.parse_known_args()
+
+    if results.config == None:
+        print("Error missing required argument --config (-c)")
+        os._exit(1)
+
+    if "--pipeline" in unknown or len(list(filter(lambda arg: "-p=" in arg, unknown))):
+        print("Error do not set --pipeline (-c). Inferred automatically")
+        os._exit(1)
+
+    branch = run("git branch --show-current", get_output=True, show_output=False).strip()
+    if (len(branch) == 0):
+        print("Error not on branch! HEAD is detached. You need to checkout a branch before running")
+        os._exit(1)
+    branch = branch.replace("/", "-")
+    print("Operating on branch: " + branch)
+
+    #Load requested config file then template and make a no-op
+    src_config_path = results.config
+    print("Using src config file: " + src_config_path)
+
+    defines = {}
+    version_str = "<UNKNOWN>"
+    version_major = 0
+    version_minor = 0
+
+    is_release_branch = branch[0] == "v" and "." in branch
+    if is_release_branch:
+        try:
+            parts = branch.split(".")
+            version_major = int(parts[0][1:])#Skip the v
+            version_minor = int(parts[1])
+            version_str = branch
+        except:
+            print("Invalid semver version branch: " + branch)
+            os._exit(1)
+
+    defines["VERSION"] = version_str
+    defines["VERSION_MAJOR"] = str(version_major)
+    defines["VERSION_MINOR"] = str(version_minor)
+    defines["VERSION_PATCH"] = str(version_major)
+
+    defines["BRANCH"] = branch
+
+    if results.deploy_server:
+        deploy_server = results.deploy_server
+    else:
+        if branch == "master":
+            deploy_server = "prod"
+        elif is_release_branch:
+            deploy_server = "alpha"
+        else:
+            deploy_server = "none"
+
+    print("Templating for deploy server: " + deploy_server)
+    defines["DEPLOY_SERVER"] = deploy_server
+
+
+    src_yml_str = template_yaml(src_config_path, defines=defines)
+    src_config = yaml.safe_load(src_yml_str)
+
+    git_resource_name = None
+    pipeline_name = None
+    for resource in src_config["resources"]:
+        if resource["type"] == "git":
+            if git_resource_name != None:
+                print("Error! Mutiple git resources in config!: " + str(src_config["resources"]) + " this is not supported for now")
+                os._exit(1)
+            git_resource_name = resource["name"]
+            pipeline_name = resource["name"].replace("-git", "")
+            source = resource["source"]
+            git_uri = source["uri"]
+            source["branch"] = branch
+
+            #Find the "name" of this uri ie the last part of the path
+            #Handle the case where the uri ends with a / properly
+            if git_uri[-1] == '/':
+                uri_name = git_uri[git_uri.rindex("/", 0, len(git_uri) - 1) + 1:-1]
+            else:
+                uri_name = git_uri[git_uri.rindex("/") + 1:]
+            print("Found resource: \"" + git_resource_name + "\", uri: " + git_uri)
+            if uri_name != pipeline_name:
+                print("WARNING: the name of the git resource and git uri differ! Name: " + pipeline_name + " uri end: " + uri_name)
+
+    if git_resource_name == None:
+        print("Error! No git resource in config!: " + str(src_config["resources"]))
+        os._exit(1)
+
+    final_pipeline_name = pipeline_name + "-" + branch
+    print("Final pipeline name is: " + final_pipeline_name)
+
+    dest_file = tempfile.NamedTemporaryFile(delete=False)
+    dest_file.write(yaml.dump(src_config).encode("utf-8"))
+    dest_config_path = dest_file.name
+    dest_file.close()
+    #Pass the args from this process to fly set-pipeline with some changes
+    set_pipeline_args = sys.argv.copy()
+    set_pipeline_args[0] = fly_bin_path
+    set_pipeline_args.insert(1, "set-pipeline")
+    set_pipeline_args.insert(2, "--pipeline")
+    set_pipeline_args.insert(3, final_pipeline_name)
+    replace_index = -1
+    for i in range(0, len(set_pipeline_args)):
+        arg = set_pipeline_args[i]
+        if arg.startswith("--config") or arg.startswith("-c"):
+            if "=" in arg:
+                replace_index = i
+            else:
+                #The path is in the next arg since there is no = sign
+                replace_index = i + 1
+
+    if replace_index != -1 and replace_index < len(set_pipeline_args):
+        #Replace the path to the src pipeline file that we templated earlier with the tempfile we generated
+        set_pipeline_args[replace_index] = set_pipeline_args[replace_index].replace(results.config, dest_config_path)
+
+    remove_next = False
+    for i in range(0, len(set_pipeline_args)):
+        arg = set_pipeline_args[i]
+        if remove_next:
+            set_pipeline_args.remove(arg)
+            arg = set_pipeline_args[i]
+            i -= 1
+            remove_next = False
+
+        if arg.startswith("--dry-run"):
+            set_pipeline_args.remove(arg)
+            i -= 1
+            if "=" not in arg:
+                remove_next = True
+
+
+    if not results.dry_run:
+        shell = LocalShell()
+        output = shell.run(" ".join(set_pipeline_args), get_output=True)
+
+        if "the pipeline is currently paused" in output:
+            print("Un-pausing pipeline automatically")
+            run("fly -t" + results.target + " unpause-pipeline --pipeline " + final_pipeline_name)
+
+    else:
+        print("Would have run fly with arguments: " + str(set_pipeline_args))
+        print("Templated pipeline yaml is:")
+        with open(dest_config_path, 'r') as f:
+            print(f.read())
+
+
+if __name__ == "__main__":
+    factorySetPipelineMain()
+
