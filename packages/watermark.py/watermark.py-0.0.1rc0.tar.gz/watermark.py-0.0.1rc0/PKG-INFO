@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: watermark.py
+Version: 0.0.1rc0
+Summary: A convinient python library to apply watermarks to images, gifs and videos.
+Home-page: https://github.com/aahnik/watermark.py
+License: MIT
+Keywords: python,cli,watermark
+Author: aahnik
+Author-email: daw@aahnik.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/aahnik/watermark.py
+Description-Content-Type: text/markdown
+
+# watermark.py
+
+A convinient python library to apply watermarks to images, gifs and videos.
+
+## Installation
+
+```shell
+pip install watermark.py
+```
+
+## Dependancies
+
+You need to install these seperately.
+
+- `ffmpeg` for watermarking videos.
+- `Pillow` for watermarking images.
+
+## Usage
+
+```python
+from watermark_py import File,Watermark
+
+file = File("path to file")
+watermark = Watermark("path to image",x_off,y_off)
+
+file.apply(watermark)
+```
+
+## Used by
+
+- tgcf
+- telewater
+
