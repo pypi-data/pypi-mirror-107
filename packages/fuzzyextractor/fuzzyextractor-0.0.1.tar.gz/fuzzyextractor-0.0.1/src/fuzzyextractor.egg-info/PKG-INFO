@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fuzzyextractor
+Version: 0.0.1
+Summary: Fuzzy Extractor supports fuzzy match
+Home-page: https://fuzzyextractor.com
+Author: FuzzyExtractorTeam
+Author-email: fuzzyextractor@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fuzzyextractor/fuzzyextractor-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fuzzyextractor-py
+
+

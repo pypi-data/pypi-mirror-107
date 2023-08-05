@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fuzzyextractor/__init__.py
+src/fuzzyextractor.egg-info/PKG-INFO
+src/fuzzyextractor.egg-info/SOURCES.txt
+src/fuzzyextractor.egg-info/dependency_links.txt
+src/fuzzyextractor.egg-info/top_level.txt
