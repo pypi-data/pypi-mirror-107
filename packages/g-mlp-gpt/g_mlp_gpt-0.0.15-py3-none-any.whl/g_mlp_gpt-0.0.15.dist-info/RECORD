@@ -1,0 +1,9 @@
+g_mlp_gpt/__init__.py,sha256=5uUaJlKM9v2itYFBPCT9GQalEHQ45V5TSkUS6VtFhfU,40
+g_mlp_gpt/autoregressive_wrapper.py,sha256=5mitDjc95HWbHJHHp6szyUk2jTENNlYL-vrr0CM1fUE,2013
+g_mlp_gpt/g_mlp_gpt.py,sha256=gOXGagUaCg9mRgQR15a9PPxV9rSka9HwnLg-y64y3pg,10791
+g_mlp_gpt/reversible.py,sha256=vi-lb9njIgxIQr77_WRVIoq_RRxx1_LzN-GghnsqTLg,6071
+g_mlp_gpt-0.0.15.dist-info/LICENSE,sha256=_nRlQFj-K6BpgI2_Nt79biB7r4hZ82NmpqPOrlqm7MU,1066
+g_mlp_gpt-0.0.15.dist-info/METADATA,sha256=yTovPp_1pyM82pJau6v6T_omKkRrtlJ6BavJMBRKEcs,612
+g_mlp_gpt-0.0.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+g_mlp_gpt-0.0.15.dist-info/top_level.txt,sha256=6aS4GeQyJQ3eMal0arMzpXqQdNYBCY9ONG7GRtygW9s,10
+g_mlp_gpt-0.0.15.dist-info/RECORD,,
