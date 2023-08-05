@@ -1,0 +1,50 @@
+netcdf geometry_1 {
+dimensions:
+	time = 4 ;
+	instance = 2 ;
+	node = 5 ;
+variables:
+	int time(time) ;
+		time:units = "seconds since 2016-11-07 20:00 UTC" ;
+	double lat(instance) ;
+		lat:standard_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:nodes = "y" ;
+	double lon(instance) ;
+		lon:standard_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:nodes = "x" ;
+	int datum ;
+		datum:grid_mapping_name = "latitude_longitude" ;
+		datum:longitude_of_prime_meridian = 0. ;
+		datum:semi_major_axis = 6378137. ;
+		datum:inverse_flattening = 298.257223563 ;
+	int geometry_container ;
+		geometry_container:geometry_type = "line" ;
+		geometry_container:node_count = "node_count" ;
+		geometry_container:node_coordinates = "x y" ;
+	int node_count(instance) ;
+	double x(node) ;
+		x:units = "degrees_east" ;
+		x:standard_name = "longitude" ;
+		x:axis = "X" ;
+	double y(node) ;
+		y:units = "degrees_north" ;
+		y:standard_name = "latitude" ;
+		y:axis = "Y" ;
+	double pr(instance, time) ;
+		pr:standard_name = "precipitation_amount" ;
+		pr:units = "kg m-2" ;
+		pr:coordinates = "time lat lon" ;
+		pr:grid_mapping = "datum" ;
+		pr:geometry = "geometry_container" ;
+	double someData_2(instance, time) ;
+		someData_2:coordinates = "time lat lon" ;
+		someData_2:grid_mapping = "datum" ;
+		someData_2:geometry = "geometry_container" ;
+
+// global attributes:
+		:Conventions = "CF-1.8" ;
+		:featureType = "timeSeries" ;
+		:comment = "Make a netCDF file with 2 node coordinates variables, each of which has a corresponding auxiliary coordinate variable." ;
+}
