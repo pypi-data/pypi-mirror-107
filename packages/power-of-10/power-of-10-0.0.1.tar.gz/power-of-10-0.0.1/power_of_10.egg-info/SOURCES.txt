@@ -1,0 +1,13 @@
+README.md
+setup.py
+power_of_10/__init__.py
+power_of_10/athletes.py
+power_of_10/coaches.py
+power_of_10/exceptions.py
+power_of_10/rankings.py
+power_of_10/results.py
+power_of_10.egg-info/PKG-INFO
+power_of_10.egg-info/SOURCES.txt
+power_of_10.egg-info/dependency_links.txt
+power_of_10.egg-info/requires.txt
+power_of_10.egg-info/top_level.txt
