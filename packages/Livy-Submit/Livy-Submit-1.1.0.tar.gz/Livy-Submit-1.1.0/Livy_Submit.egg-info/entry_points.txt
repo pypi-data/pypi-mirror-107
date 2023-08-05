@@ -1,0 +1,3 @@
+[console_scripts]
+livy_submit = livysubmit.__main__:main
+
