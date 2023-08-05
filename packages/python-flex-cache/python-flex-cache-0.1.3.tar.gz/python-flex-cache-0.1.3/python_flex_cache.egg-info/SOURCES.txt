@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flex_cache/__init__.py
+flex_cache/basecache.py
+flex_cache/diskcache.py
+flex_cache/memcache.py
+flex_cache/nocache.py
+flex_cache/rediscache.py
+python_flex_cache.egg-info/PKG-INFO
+python_flex_cache.egg-info/SOURCES.txt
+python_flex_cache.egg-info/dependency_links.txt
+python_flex_cache.egg-info/top_level.txt
