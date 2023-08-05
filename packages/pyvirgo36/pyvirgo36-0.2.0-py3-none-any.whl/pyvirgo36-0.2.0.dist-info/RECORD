@@ -1,0 +1,11 @@
+virgo/.gitignore,sha256=805mn3Mq_6V9rrOkzpbAXC_-s7E5nociNW9D3mm_WSQ,23
+virgo/__init__.py,sha256=MHVdk-lhME7MpuEZB8L7BT7vMDo0Wp8ZHfB5KNJxHrg,30
+virgo/graph.py,sha256=6QlkRaODTmhP9WJovDPMiaRl48gadsoW8BKQQosnSNQ,2650
+virgo/internal.py,sha256=9PQb9L0mfH4vp1yKLK4KH9E9olWcEy8NSLeK3T7hH5Q,146
+virgo/load.py,sha256=5aI4ZIthfSo5CKwNaJFKsiw1v_p7oonO3CLB6MLSsN0,155
+virgo/parse.py,sha256=T0apk9xhxM1NgtJX4jrYE8eMkUaEHc6qNjmasTIzfeI,2472
+virgo/preprocess.py,sha256=U6PhE1Pb6HHsjwlykjhe2EI-uNT0DuLB6b_8LGFksYA,455
+pyvirgo36-0.2.0.dist-info/LICENSE,sha256=9TofdYOxRCYYW9OWi9ennpJ2rTXgrZ6CfwakuGgfrIk,1061
+pyvirgo36-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyvirgo36-0.2.0.dist-info/METADATA,sha256=aQbAm0bfQl7lxDXHYCFnS7JiUSVjj3cr_XavYQP8eeY,1565
+pyvirgo36-0.2.0.dist-info/RECORD,,
