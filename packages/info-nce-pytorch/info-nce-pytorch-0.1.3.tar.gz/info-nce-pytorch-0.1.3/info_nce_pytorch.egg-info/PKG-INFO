@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: info-nce-pytorch
+Version: 0.1.3
+Summary: PyTorch implementation of the InfoNCE loss for self-supervised learning.
+Home-page: https://github.com/RElbers/info-nce-pytorch
+Author: Robin Elbers
+Author-email: UNKNOWN
+License: MIT
+Description: InfoNCE
+        ==============================
+        
+        PyTorch implementation of the InfoNCE loss from `"Representation Learning with Contrastive Predictive Coding" <https://arxiv.org/abs/1807.03748>`__.
+        
+Platform: UNKNOWN
