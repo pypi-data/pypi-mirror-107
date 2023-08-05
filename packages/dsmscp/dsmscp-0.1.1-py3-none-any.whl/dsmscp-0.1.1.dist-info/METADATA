@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dsmscp
+Version: 0.1.1
+Summary: The dsmscp application offer a simple way to debug dassym motor.
+Home-page: https://github.com/dassym/dsmscp
+Author: Tom Marti
+Author-email: dev@dassym.com
+License: UNKNOWN
+Keywords: Dassym,motor,api,dapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyDapi2
+Requires-Dist: PyQt5
+Requires-Dist: pyserial
+Requires-Dist: chardet
+
+# dsmscp
+## installation
+```
+pip install dsmscp
+```
+## run the application
+by passing a config file
+```
+python3 -m dsmscp -c [config file].ini
+```
+or by passing params in command line
+```
+python3 -m dsmscp -H host:port
+```
+replace host by the host url and port by the host port
+## config file structure
+```
+[GLOBAL]
+loglevel=info
+host=host:port
+```
+
