@@ -1,0 +1,73 @@
+2021/05/21 16:18:36 Found plot files 22
+2021/05/21 16:18:36 Complete and stop worker 20
+2021/05/21 16:18:36 Found plot files 22
+2021/05/21 16:18:36 Found plot files 22
+2021/05/21 16:18:36 Found plot files 22
+2021/05/21 16:18:36 Found plot files 22
+2021/05/21 16:18:36 ==============================================
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:36 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:36 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:36 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:36 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:36 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:36 File copying failed: %!q(<nil>)
+
+2021/05/21 16:18:36 File copying failed: %!q(<nil>)
+
+2021/05/21 16:18:36 File copying failed: %!q(<nil>)
+
+2021/05/21 16:18:36 Error from removing file: /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot "remove /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot: no such file or directory"
+
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:36 store 1 err timeout
+2021/05/21 16:18:37 Now:|50010001|    14 %|
+
+2021/05/21 16:18:37 Now:|50010001|    14 %|
+
+2021/05/21 16:18:37 File moving file done: /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:37 Error from removing file: /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot "remove /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot: no such file or directory"
+
+2021/05/21 16:18:37 store err skv: key not found
+2021/05/21 16:18:37 File moving file done: /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cd3826bd0155f258a89950316618d506.plot
+
+2021/05/21 16:18:37 Error from removing file: /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot "remove /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cd3826bd0155f258a89950316618d506.plot: no such file or directory"
+
+2021/05/21 16:18:37 store err skv: key not found
+2021/05/21 16:18:41 Complete and stop worker 20
+2021/05/21 16:18:41 Found plot files 23
+2021/05/21 16:18:41 Found plot files 23
+2021/05/21 16:18:41 ==============================================
+2021/05/21 16:18:42 store 1 err timeout
+2021/05/21 16:18:42 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cb05bf7a8a15f9575e30822c12cf1d25.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cb05bf7a8a15f9575e30822c12cf1d25.plot
+
+2021/05/21 16:18:42 Copying /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cb05bf7a8a15f9575e30822c12cf1d25.plot to /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cb05bf7a8a15f9575e30822c12cf1d25.plot
+
+2021/05/21 16:18:42 Now:|50010001|    14 %|
+
+2021/05/21 16:18:42 Now:|50010001|    14 %|
+
+2021/05/21 16:18:42 File moving file done: /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cb05bf7a8a15f9575e30822c12cf1d25.plot
+
+2021/05/21 16:18:42 File moving file done: /Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/cb05bf7a8a15f9575e30822c12cf1d25.plot
+
+2021/05/21 16:18:42 Error from removing file: /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cb05bf7a8a15f9575e30822c12cf1d25.plot "remove /Users/hesdx/Documents/ipfs/plotman/nvmecc/temp/cb05bf7a8a15f9575e30822c12cf1d25.plot: no such file or directory"
+
+2021/05/21 16:18:42 store err skv: key not found
+2021/05/21 16:18:42 Complete and stop worker 20
+2021/05/21 16:18:42 ==============================================
+2021/05/21 16:18:42 Complete and stop worker 20
+2021/05/21 16:18:42 ==============================================
+2021/05/21 16:18:47 Complete and stop worker 20
+2021/05/21 16:18:47 ==============================================
+2021/05/21 16:18:47 Complete and stop worker 20
+2021/05/21 16:18:47 ==============================================
