@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+UsergeAntiSpamApi/__init__.py
+UsergeAntiSpamApi/client.py
+UsergeAntiSpamApi/errors.py
+UsergeAntiSpamApi.egg-info/PKG-INFO
+UsergeAntiSpamApi.egg-info/SOURCES.txt
+UsergeAntiSpamApi.egg-info/dependency_links.txt
+UsergeAntiSpamApi.egg-info/requires.txt
+UsergeAntiSpamApi.egg-info/top_level.txt
