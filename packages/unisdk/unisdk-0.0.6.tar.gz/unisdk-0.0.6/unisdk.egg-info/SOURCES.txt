@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+unisdk/__init__.py
+unisdk/__version__.py
+unisdk/core.py
+unisdk/exception.py
+unisdk/response.py
+unisdk.egg-info/PKG-INFO
+unisdk.egg-info/SOURCES.txt
+unisdk.egg-info/dependency_links.txt
+unisdk.egg-info/top_level.txt
+unisdk/sms/__init__.py
