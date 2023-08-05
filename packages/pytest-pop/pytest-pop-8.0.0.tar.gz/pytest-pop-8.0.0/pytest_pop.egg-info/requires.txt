@@ -1,0 +1,6 @@
+asynctest
+mock
+nest_asyncio
+pytest
+pytest-asyncio
+pop>=19.0.0
