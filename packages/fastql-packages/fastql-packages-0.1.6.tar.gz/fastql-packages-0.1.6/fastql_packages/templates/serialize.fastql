@@ -1,0 +1,15 @@
+from graphene_pydantic import PydanticInputObjectType, PydanticObjectType
+from pydantic import BaseModel
+
+
+class {{modelName}}Model(BaseModel):
+    id: int
+
+
+class {{modelName}}GrapheneInputModel(PydanticInputObjectType):
+    class Meta:
+        model = {{modelName}}Model
+
+class {{modelName}}GrapheneModel(PydanticObjectType):
+    class Meta:
+        model = {{modelName}}Model
