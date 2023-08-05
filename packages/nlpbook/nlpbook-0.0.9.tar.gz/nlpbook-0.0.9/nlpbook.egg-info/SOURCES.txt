@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nlpbook/__init__.py
+nlpbook/_nbdev.py
+nlpbook.egg-info/PKG-INFO
+nlpbook.egg-info/SOURCES.txt
+nlpbook.egg-info/dependency_links.txt
+nlpbook.egg-info/entry_points.txt
+nlpbook.egg-info/not-zip-safe
+nlpbook.egg-info/requires.txt
+nlpbook.egg-info/top_level.txt
