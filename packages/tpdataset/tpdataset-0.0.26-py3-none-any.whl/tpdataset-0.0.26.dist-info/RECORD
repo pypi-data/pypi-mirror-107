@@ -1,0 +1,11 @@
+tpdataset/__init__.py,sha256=Py20v4XQLlS_IT4gxSoilOb4ZYbbkDyJIAwvhmrrTCY,202
+tpdataset/dataset.py,sha256=9czFm_qhR9pZE5GLwgIPtFlIYTzBvemDbSffmO3FgZw,87
+tpdataset/raw_dataset.py,sha256=vk_2fe7GqkKkJ703Ae1WdNgXawTvqaOFGyVv5pTDM5M,5746
+tpdataset/CV/__init__.py,sha256=31M22AEZZovMLCr405sIda5selOAYpg75PnFT57FGTU,25
+tpdataset/CV/mnist.py,sha256=VgOF7EwHFedgk3hGiH9eQuN14SpKCn45c0kY5rvIz2A,3903
+tpdataset/NLP/__init__.py,sha256=Q8vdfweHdyk1maEAF0rfCh64IBLJU0vulVNXDM5u9SY,23
+tpdataset/NLP/babi.py,sha256=FiUDyF7ToeMudx2bkxB0nFTYQuckhTtBGChYLjAC5js,1504
+tpdataset-0.0.26.dist-info/METADATA,sha256=QQ412xNtL6-jRyskkPQsCj4xRH3aNRPjkVLyIt-0VsA,3210
+tpdataset-0.0.26.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tpdataset-0.0.26.dist-info/top_level.txt,sha256=RD83dfzoE2sb5-rxyFUlLm2s5hk_fyViT1te6bYh6Hs,10
+tpdataset-0.0.26.dist-info/RECORD,,
