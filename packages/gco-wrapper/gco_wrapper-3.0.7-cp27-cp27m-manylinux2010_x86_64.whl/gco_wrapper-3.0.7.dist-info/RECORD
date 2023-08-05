@@ -1,0 +1,10 @@
+gco_wrapper-3.0.7.dist-info/RECORD,,
+gco_wrapper-3.0.7.dist-info/METADATA,sha256=UsTyETBDFZi4aNuJrO2FHyflQxxOQBC2UIRE67ZjpfI,4996
+gco_wrapper-3.0.7.dist-info/top_level.txt,sha256=ymid2Xi0Hk8Uvl7EdxL56Zvz92vfKkM-c7OZFN43Kw8,4
+gco_wrapper-3.0.7.dist-info/WHEEL,sha256=qNw3B0eKttb5G_TzXpR5KBvI5KyPUc20qBcT5NzaZAE,112
+gco/__init__.py,sha256=ioNdswmZ1pDAtwZ2GXXTgD3d7unhL7cdu5if43KNnJM,205
+gco/cgco.py,sha256=-kFEaJ9NmkAnsgCGrAbOAG734SEb_LNs7rYvD7OFsfg,4347
+gco/cgco.h,sha256=ASWKQFqAg_EuqWWpLczAZ5Y9nAHWdyi6sv9wcNn_N2A,4174
+gco/libcgco.so,sha256=8h3wj1vqa3wdlNZT2OWZs-J6syuSq8Aivalqj-bQig0,790648
+gco/cgco.cpp,sha256=5LzXfvoKktPHbv7ii8nz7PVhpXDBNTS-F-TDW4iZGuA,5300
+gco/pygco.py,sha256=7xWuBQYMoY_edSxd7EV3sscVakddFN7rp93WCIdUq4o,22826
