@@ -1,0 +1,15 @@
+iotccm_sdk/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+iotccm_sdk/version.py,sha256=F7mf_4vaMWYT7Nnt2lWwR6iIhvokzjwAs6sIgBudxi4,23
+iotccm_sdk/capability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotccm_sdk/capability/actuator_capability.py,sha256=heY-bGZWAjy4ZJVuEFQvZFU_zyaUiXNGeGbKYdzkZSc,782
+iotccm_sdk/capability/capability.py,sha256=owJpAEtPOqSWCDMOuSyqMZtpLy7gobMD9ujgJMog4Ls,354
+iotccm_sdk/capability/processor_capability.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotccm_sdk/capability/sensor_capability.py,sha256=j7FgCJi3CHV_RSJPviYJB_j7YdxaH-Q6lJo8F01cV1k,885
+iotccm_sdk/capability/store_capability.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotccm_sdk/component/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotccm_sdk/component/component.py,sha256=VkaD9Fm2IrNUeVKOKnZvFO9SX5yELqftZAl9Ss72mhc,3175
+iotccm_sdk-0.0.1a2.dist-info/LICENSE,sha256=d7G-aZnuipORQM4G9iWavBTrMjocd1KMgOcnu4zRjTA,1074
+iotccm_sdk-0.0.1a2.dist-info/METADATA,sha256=-4av-WyOMJmIeKiBzFk-BigMe3bnT8l1AuOigGes2jo,1666
+iotccm_sdk-0.0.1a2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+iotccm_sdk-0.0.1a2.dist-info/top_level.txt,sha256=DYdji1sd9zGSNmqRvaawO-i_9WI7i55AWykH4_8rM_w,11
+iotccm_sdk-0.0.1a2.dist-info/RECORD,,
