@@ -1,0 +1,8 @@
+<div class="container-fluid">
+
+    <dl class="row">
+
+    {record_content}
+
+    </dl>
+    </div>

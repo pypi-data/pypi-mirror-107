@@ -1,0 +1,17 @@
+<table class="table">
+  
+  <thead>
+    <tr>
+        {table_header}
+
+    </tr>
+  </thead>
+  
+  
+  <tbody>
+
+    {table_body}
+    
+    
+  </tbody>
+</table>
