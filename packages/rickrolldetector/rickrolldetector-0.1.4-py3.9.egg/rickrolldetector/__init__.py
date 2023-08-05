@@ -1,0 +1,1 @@
+from .Rickrolldetector import *
