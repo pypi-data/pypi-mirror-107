@@ -1,0 +1,10 @@
+stringcompare/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+stringcompare/create_chart.py,sha256=kCsHAhjcRiJDOwi-Azp07XptMWK5TBx_9--uM7bGAxE,1509
+stringcompare/generate_data.py,sha256=Mz2QEjrN-G_eag7qJxZIETJwaAWYuvZQFtVR9eYRUrk,990
+stringcompare/hashing_search.py,sha256=Wntfp5vSNY4R1xBcyTq8QIbLjfdezfcf_vxHG9zEDEw,885
+stringcompare/linear_search.py,sha256=K4SE0TE7XII8dPx0AvScSan03pzyj9ICsbiHZOoz-Dg,331
+stringcompare/measure_time.py,sha256=DvvUNHhmbzrfCWbn_Uiy7o-PAFr-WcdASryZiY2Bttw,2334
+stringcompare/stringcompare.py,sha256=Bozt5V6m2VmYOszwG2BtYTBOtftlXZj1_KSGkNOgbRA,1263
+stringcompare-0.1.7.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+stringcompare-0.1.7.dist-info/METADATA,sha256=-2bp-QbblMnGhjwVNLHovgkW5jbhRwOEY5A-aBxDvVM,285
+stringcompare-0.1.7.dist-info/RECORD,,
