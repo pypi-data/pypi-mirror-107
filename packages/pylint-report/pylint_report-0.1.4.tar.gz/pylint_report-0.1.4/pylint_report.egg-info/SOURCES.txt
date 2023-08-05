@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pylint_report/pylint_report.py
+pylint_report.egg-info/PKG-INFO
+pylint_report.egg-info/SOURCES.txt
+pylint_report.egg-info/dependency_links.txt
+pylint_report.egg-info/requires.txt
+pylint_report.egg-info/top_level.txt
