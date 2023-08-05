@@ -1,0 +1,19 @@
+{
+    "Custom": {
+        "long_description": "this session happened like this and that...",
+        "institution": "Institution XXX",
+        "session_start_time": "2009-01-01T12:00:00",
+        "lab": "My lab",
+        "my_tags": ["me", "myself", "I"],
+        "devices": [
+            {"name": "recording_device_1"},
+            {"name": "recording_device_2"}
+        ]
+    },
+    "Electrophysiology": {
+        "ElectricalSeries_raw": {
+            "name": "ElectricalSeries_raw",
+            "device": "recording_device_1"
+        }
+    }
+}
