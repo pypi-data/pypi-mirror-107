@@ -1,0 +1,15 @@
+oarepo-mapping-includes
+oarepo-records-draft
+oarepo-communities
+oarepo-invenio-model
+flask_sitemap
+
+[tests]
+oarepo[tests]~=3.3.0
+oarepo-records-draft
+oarepo-actions
+oarepo-validate
+coverage
+oarepo-mapping-includes
+werkzeug==1.0.1
+flask==1.1.4
