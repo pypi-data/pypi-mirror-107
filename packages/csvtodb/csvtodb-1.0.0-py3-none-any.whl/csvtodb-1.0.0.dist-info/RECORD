@@ -1,0 +1,17 @@
+csvtodb/Column.py,sha256=RFFBOpRM_zdnOnPp-mIGb9zPSQKcyDcsB5nElE6Xh2Y,2221
+csvtodb/Csv.py,sha256=xGT6wyDbRfU5Gn0ybQ6TS7x-H2qTvwmsQGRyL44wzbs,12748
+csvtodb/Database.py,sha256=YhhaBXoopJXnSjIR-u8OWtTYs0BPK2QiwyepS8E9WRA,298
+csvtodb/Laravel.py,sha256=RbCzcnIZcnU7PRx0EoJzNi1WABCFdRq1xBmWMocODVI,2420
+csvtodb/LaravelColumn.py,sha256=F3uwtvZFOSt4G1wa41CSR6-OsUxlManXUcc_5n5nKXU,6178
+csvtodb/LaravelTable.py,sha256=M2LD0d4OHwUF8txcqKCVTdQsK9lcrzSriFK2K25lAPc,4200
+csvtodb/Mysql.py,sha256=rkkFuYTAM_w_rGEJfVMXFHlQX0vN4cTP0OUKxG6knH8,4051
+csvtodb/MysqlColumn.py,sha256=h4SDwccIoFvYSO2oAjxkBPRdVu6COh8Rg4rnziH4hMI,6246
+csvtodb/MysqlDb.py,sha256=9ndnzh0cjhCK9Ztj9NYM7aSGmDCvVKfUjBjwimNr38w,2144
+csvtodb/MysqlTable.py,sha256=rtK5hw9Tlo9lyd-g14DW_hvBVD15PsMbz2ZiX_8pRfQ,3990
+csvtodb/Table.py,sha256=oXuvROmQ_fInwBKRE4lSoYzglC7vAGwWls8fepFiwe4,496
+csvtodb/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+csvtodb-1.0.0.dist-info/License.txt,sha256=P72D-CmzJq6CC7qEGRReQorTnrALnHrAJovt0ylz144,1082
+csvtodb-1.0.0.dist-info/METADATA,sha256=Ff-IivZYYl0dG8Nt-K7xiQ3Za3cneSyHnqHNSzPjv2g,4582
+csvtodb-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+csvtodb-1.0.0.dist-info/top_level.txt,sha256=1B1uR1S5fw-6Vbf83x80JoSnPusJqfSh_kUY-JFSN9c,8
+csvtodb-1.0.0.dist-info/RECORD,,
