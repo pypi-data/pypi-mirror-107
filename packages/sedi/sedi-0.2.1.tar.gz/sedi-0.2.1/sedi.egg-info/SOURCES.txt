@@ -1,0 +1,13 @@
+README.md
+setup.py
+sedi/__init__.py
+sedi/__main__.py
+sedi/cmdline.py
+sedi/config.py
+sedi/engine.py
+sedi.egg-info/PKG-INFO
+sedi.egg-info/SOURCES.txt
+sedi.egg-info/dependency_links.txt
+sedi.egg-info/entry_points.txt
+sedi.egg-info/requires.txt
+sedi.egg-info/top_level.txt
