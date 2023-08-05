@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mint-upload
+Version: 0.0.2
+Summary: Module to upload file into MIC
+Home-page: https://github.com/mintproject/mint_upload
+Author: Maximiliano Osorio
+Author-email: mosorio@isi.edu
+License: Apache-2
+Description: # MINT Upload
+        
+        [![Upload Python Package](https://github.com/mintproject/mint_upload/actions/workflows/python-publish.yml/badge.svg)](https://github.com/mintproject/mint_upload/actions/workflows/python-publish.yml) [![codecov](https://codecov.io/gh/mintproject/mint_upload/branch/master/graph/badge.svg)](https://codecov.io/gh/mintproject/mint_upload)
+        
+        A python module to upload file to MINT
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

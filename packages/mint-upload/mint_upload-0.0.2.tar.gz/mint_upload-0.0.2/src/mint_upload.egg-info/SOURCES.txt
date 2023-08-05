@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+test-requirements.txt
+src/mint_upload/__init__.py
+src/mint_upload/object_storage.py
+src/mint_upload/progress_percentage.py
+src/mint_upload.egg-info/PKG-INFO
+src/mint_upload.egg-info/SOURCES.txt
+src/mint_upload.egg-info/dependency_links.txt
+src/mint_upload.egg-info/not-zip-safe
+src/mint_upload.egg-info/requires.txt
+src/mint_upload.egg-info/top_level.txt
