@@ -1,0 +1,210 @@
+2021-05-22  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/version.py: Get ready for release 1.0.1
+
+2021-05-22  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/builtins.py, requirements-dev.txt, setup.py: Make
+	ujson optional
+
+2021-05-22  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/lexer.py, mathics_pygments/version.py,
+	tests/test_lexer.py: Fix some RE matching, reinstate some tests There are still a few more to go...
+
+2021-05-14  rocky <rb@dustyfeet.com>
+
+	* CHANGES.rst, MANIFEST.in, Makefile, mathics_pygments/version.py: 
+	Get ready for release 1.0.0
+
+2021-05-14  rocky <rb@dustyfeet.com>
+
+	* : commit 38298258341e6d933f6207cf387a04d8abb5e7de Author: rocky
+	<rb@dustyfeet.com> Date:   Fri May 14 20:12:03 2021 -0400
+
+2021-05-13  rocky <rb@dustyfeet.com>
+
+	* .gitignore, MANIFEST.in, mathics_pygments/builtins.py: 
+	Administriva
+
+2021-05-12  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/builtins.py,
+	mathics_pygments/data/mma-tables.json: Finish most of the Unicode
+	operator tables
+
+2021-05-11  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/builtins.py,
+	mathics_pygments/data/mma-tables.json, mathics_pygments/lexer.py,
+	mathics_pygments/style.py: More oeprators, what's up with Degree
+
+2021-05-09  rocky <rb@dustyfeet.com>
+
+	* Makefile, admin-tools/make-dist.sh, mathics_pygments/version.py,
+	setup.py: Get ready for release 1.0.0-rc1
+
+2021-05-09  rocky <rb@dustyfeet.com>
+
+	* Makefile, setup.py: Fix setup; Add "install" target
+
+2021-05-09  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/builtins.py, mathics_pygments/version.py,
+	requirements-dev.txt, setup.py, tests/test_lexer.py: Adminsitrivia
+
+2021-05-09  R. Bernstein <rocky@users.noreply.github.com>
+
+	* : Merge pull request #1 from Mathics3/mathics-scanner Mathics scanner
+
+2021-05-09  rocky <rb@dustyfeet.com>
+
+	* README.md, admin-tools/check-versions.sh, admin-tools/git2cl,
+	admin-tools/make-dist.sh, admin-tools/pyenv-versions,
+	mathics_pygments/builtins.py,
+	mathics_pygments/data/mma-tables.json, setup.py: Administrivia: Update README.md Add scripts for testing and making packages Hook in
+	UNICODE_OPERATORS from mathics-scanner
+
+2021-05-09  rocky <rb@dustyfeet.com>
+
+	* admin-tools/make-tables.sh, mathics_pygments/builtins.py,
+	mathics_pygments/data/mma-tables.json, mathics_pygments/lexer.py,
+	setup.py, tests/test_lexer.py: Adjust for Mathics..  Tests need to be gone over.
+
+2021-05-08  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/builtins.py,
+	mathics_pygments/data/mma-tables.json, mathics_pygments/lexer.py,
+	setup.py: Start to add mathics-scanner
+
+2021-03-27  rocky <rb@dustyfeet.com>
+
+	* .gitignore, setup.py: Administrivia
+
+2021-03-27  rocky <rb@dustyfeet.com>
+
+	* mma.scss: Updated color scheme ...  inspired by WolframCould notebooks. From DbxDev.
+
+2021-03-27  rocky <rb@dustyfeet.com>
+
+	* mathics_pygments/lexer.py: Remove deprecation warning
+
+2021-02-28  rocky <rb@dustyfeet.com>
+
+	* : commit 3a8aaeec3cd2bb809e2026bbe9910ee65db76bb8 Author: rocky
+	<rb@dustyfeet.com> Date:   Sun Feb 28 04:23:00 2021 -0500
+
+2021-02-27  R. Bernstein <rocky@users.noreply.github.com>
+
+	* README.md: Update README.md
+
+2021-02-27  R. Bernstein <rocky@users.noreply.github.com>
+
+	* README.md: Update README.md
+
+2021-02-27  R. Bernstein <rocky@users.noreply.github.com>
+
+	* README.md: Update README.md
+
+2021-02-27  rocky <rb@dustyfeet.com>
+
+	* .gitignore, README.md, mathics_pygments/builtins.py: CI
+	Administrivia
+
+2021-02-27  rocky <rb@dustyfeet.com>
+
+	* .github/FUNDING.yml, .github/workflows/osx.yaml,
+	.github/workflows/ubuntu.yaml, mathics_pygments/__init__.py,
+	mathics_pygments/lexer.py, mathics_pygments/version.py, setup.py,
+	tests/test_lexer.py: Try CI
+
+2021-02-27  rocky <rb@dustyfeet.com>
+
+	* .gitignore, LICENSE, Makefile, README.md, {mathematica =>
+	mathics_pygments}/__init__.py, {mathematica =>
+	mathics_pygments}/builtins.py, {mathematica =>
+	mathics_pygments}/lexer.py, {mathematica =>
+	mathics_pygments}/style.py, requirements.txt, setup.py,
+	tests/test_lexer.py: Conversion from mathematica-pygments Rename package.  Add GNU Makefile Remove use of "nose" Adjust for
+	3.6+ More to follow...
+
+2019-05-12  Ravi Menon <rsmenon@icloud.com>
+
+	* .travis.yml, README.md, setup.py: Bump version to 0.3.4 and update
+	Travis
+
+2019-03-01  Dorian Birraux <dorianb@wolfram.com>
+
+	* mathematica/builtins.py: Updated list of system symbols
+
+2016-11-13  Ravi Menon <rsmenon@icloud.com>
+
+	* .travis.yml: Add Travis CI integration to Slack
+
+2016-09-29  Ravi Menon <rsmenon@icloud.com>
+
+	* .gitignore, README.md, setup.py: Update version to 0.3.3
+
+2016-09-29  Ravi Menon <rsmenon@icloud.com>
+
+	* mathematica/builtins.py: Fix: Add missing > and < operators
+
+2016-04-30  Ravi Menon <rsmenon@icloud.com>
+
+	* mathematica/lexer.py, tests/test_lexer.py: Fix backslashes in
+	strings #3
+
+2016-04-29  Ravi Menon <rsmenon@icloud.com>
+
+	* README.md, setup.py: Update version to 0.3.2
+
+2016-04-29  Ravi Menon <rsmenon@icloud.com>
+
+	* mathematica/lexer.py, setup.py, tests/test_lexer.py: Fixed
+	incorrect lexing of backtick in Get. #2
+
+2016-03-17  Patrick Scheibe <patrick@halirutan.de>
+
+	* README.md: Added information about usage with Pelican
+
+2016-02-21  Ravi Menon <rsmenon@icloud.com>
+
+	* LICENSE, README.md, setup.cfg, setup.py: Update setup.py and add
+	project to PyPi
+
+2016-02-20  Ravi Menon <rsmenon@icloud.com>
+
+	* README.md, setup.py: Remove '-' from the style name to avoid LaTeX
+	errors
+
+2016-02-20  Ravi Menon <rsmenon@icloud.com>
+
+	* README.md, setup.py: Update README and update version to 0.3.0
+
+2016-02-20  Ravi Menon <rsmenon@icloud.com>
+
+	* mathematica/__init__.py, mathematica/lexer.py,
+	mathematica/style.py, mma.scss, setup.py: Update color palette and
+	add notebook style
+
+2016-02-18  Ravi Menon <rsmenon@icloud.com>
+
+	* README.md, mathematica/lexer.py, mathematica/style.py, mma.scss,
+	tests/test_lexer.py: Add parser for highlighting local variables in
+	lexical scopes
+
+2016-02-15  Ravi Menon <rsmenon@icloud.com>
+
+	* README.md, mathematica/builtins.py, mathematica/lexer.py,
+	mathematica/style.py, setup.py, tests/test_lexer.py: Added support
+	for unicode symbols and operators  - Unicode symbols, operators and groupings are highlighted  - Added unit tests for unicode symbols  - Updated description in README.md  - Added LaTeX example to README.md  - Increased version to 0.2.0
+
+2016-02-15  Ravi Menon <rsmenon@icloud.com>
+
+	* mathematica/lexer.py, mma.scss: Use a separate pygments token for
+	Slots and add CSS styles.
+
+2016-02-14  Ravi Menon <rsmenon@icloud.com>
+
+	* Initial commit for v0.1.0 of the Mathematica Lexer for Pygments
+
