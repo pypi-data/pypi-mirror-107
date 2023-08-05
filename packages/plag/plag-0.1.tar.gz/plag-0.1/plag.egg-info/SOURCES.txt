@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+plag/Fingerprinting.py
+plag/Tokenizator.py
+plag/__init__.py
+plag.egg-info/PKG-INFO
+plag.egg-info/SOURCES.txt
+plag.egg-info/dependency_links.txt
+plag.egg-info/not-zip-safe
+plag.egg-info/top_level.txt
