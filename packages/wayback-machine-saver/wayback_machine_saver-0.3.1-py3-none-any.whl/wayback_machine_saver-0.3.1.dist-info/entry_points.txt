@@ -1,0 +1,3 @@
+[console_scripts]
+wayback-machine-saver=wayback_machine_saver.__main__:main
+
