@@ -1,0 +1,36 @@
+[supervisord]
+environment=
+    PYTHONPATH="{{ MEDIA_ROOT }}{{ USER_SETTINGS_FOLDER }}",
+    DJANGO_SETTINGS_MODULE=mayan.settings.production,
+    MAYAN_ALLOWED_HOSTS='["*"]',
+    MAYAN_MEDIA_ROOT="{{ MEDIA_ROOT }}"
+
+[program:mayan-edms-gunicorn]
+autorestart = true
+autostart = true
+command = {{ INSTALLATION_PATH }}bin/gunicorn -w {{ GUNICORN_WORKERS }} mayan.wsgi --max-requests {{ GUNICORN_MAX_REQUESTS }} --max-requests-jitter {{ GUNICORN_JITTER }} --worker-class {{ GUNICORN_WORKER_CLASS }} --bind 0.0.0.0:8000 --timeout {{ GUNICORN_TIMEOUT }}
+user = mayan
+
+{% for worker in workers %}
+[program:mayan-edms-{{ worker.name }}]
+autorestart = true
+autostart = true
+command = nice -n {{ worker.nice_level }} {{ INSTALLATION_PATH }}bin/celery worker -A mayan -Ofair -l ERROR -Q {% for queue in worker.queues %}{{ queue.name }}{% if not forloop.last %},{% endif %}{% endfor %} -n mayan-edms-{{ worker.name }}.%%h {% if worker.concurrency %}--concurrency={{ worker.concurrency }}{% endif %}
+killasgroup = true
+numprocs = 1
+priority = 998
+startsecs = 10
+stopwaitsecs = 1
+user = mayan
+{% endfor %}
+
+[program:mayan-edms-celery-beat]
+autorestart = true
+autostart = true
+command = nice -n 1 {{ INSTALLATION_PATH }}bin/celery beat -A mayan --pidfile= -l ERROR
+killasgroup = true
+numprocs = 1
+priority = 998
+startsecs = 10
+stopwaitsecs = 1
+user = mayan
