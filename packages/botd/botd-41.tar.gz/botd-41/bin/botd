@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+__version__ = 41
+
+from botl.clt import Client
+from botl.krn import Kernel, kcmd
+from botl.obj import cfg
+import botl.all
+import botd.all
+
+import os
+
+all = "adm,cms,fnd,irc,krn,log,rss,slg,tdo"
+
+class CLI(Client):
+
+    def __init__(self):
+        super().__init__()
+        self.initialize(kcmd)
+
+    def raw(self, txt):
+        print(txt)
+
+def ver(event):
+    event.reply("BOTD %s" % __version__)
+
+def main():
+    if "INVOCATION_ID" not in os.environ:
+        print("run this program under systemd.")
+        return
+    cfg.wd = "/var/lib/botd/"
+    k = Kernel()
+    k.addcmd(ver)
+    k.boot("botd", all)
+    if k.cfg.txt:
+        c = CLI()
+        e = c.event(k.cfg.otxt)
+        kcmd(c, e)
+        e.wait()
+        return
+    k.init(k.cfg.mods or all)
+    k.wait()
+
+if __name__ == "__main__":
+    main()
