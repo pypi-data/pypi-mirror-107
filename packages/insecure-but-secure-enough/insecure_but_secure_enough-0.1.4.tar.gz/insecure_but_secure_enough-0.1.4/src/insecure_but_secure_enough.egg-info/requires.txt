@@ -1,0 +1,6 @@
+pycryptodomex
+simplejson
+six
+
+[testing]
+pytest
