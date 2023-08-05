@@ -1,0 +1,3 @@
+[console_scripts]
+corsair = corsair_scan.corsair_cli:run_cli_scan
+
