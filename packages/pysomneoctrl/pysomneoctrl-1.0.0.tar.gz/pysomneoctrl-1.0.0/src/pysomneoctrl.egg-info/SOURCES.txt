@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pysomneoctrl/ConstSomneo.py
+src/pysomneoctrl/SomneoAlarmManager.py
+src/pysomneoctrl/SomneoAudioManager.py
+src/pysomneoctrl/SomneoDevice.py
+src/pysomneoctrl/SomneoHttp.py
+src/pysomneoctrl/SomneoWindDown.py
+src/pysomneoctrl/__init__.py
+src/pysomneoctrl/paths.py
+src/pysomneoctrl.egg-info/PKG-INFO
+src/pysomneoctrl.egg-info/SOURCES.txt
+src/pysomneoctrl.egg-info/dependency_links.txt
+src/pysomneoctrl.egg-info/top_level.txt
