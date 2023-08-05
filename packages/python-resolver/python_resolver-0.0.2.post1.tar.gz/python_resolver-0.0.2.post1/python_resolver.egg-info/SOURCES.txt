@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+python_resolver.egg-info/PKG-INFO
+python_resolver.egg-info/SOURCES.txt
+python_resolver.egg-info/dependency_links.txt
+python_resolver.egg-info/entry_points.txt
+python_resolver.egg-info/requires.txt
+python_resolver.egg-info/top_level.txt
+resolver/__init__.py
+resolver/__main__.py
+resolver/archive.py
+resolver/mindeps/__init__.py
+resolver/mindeps/__main__.py
