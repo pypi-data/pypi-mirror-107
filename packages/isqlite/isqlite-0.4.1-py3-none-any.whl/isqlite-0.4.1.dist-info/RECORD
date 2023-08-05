@@ -1,0 +1,13 @@
+isqlite/__init__.py,sha256=CF7isawnBTl0gC0CIKBH9rkrfhJxFfqJNmSleph4zY4,801
+isqlite/_core.py,sha256=T7l944neEE6vnMk-6LTtfDxtrKzdqHh5VqGBMSXzJvk,12883
+isqlite/_exception.py,sha256=NVcscV0vWTkmQ2eZHoC6EzsCgByW5gVMuE0Mk6rBsLw,40
+isqlite/columns.py,sha256=nXPKQW3x8Qf50jPKoBUbf4qpKqm87CWo0IXWQzJzIWA,2937
+isqlite/macros.py,sha256=GerIfITUZT-bKPoEo5LZVVYgJuX5uf8xabKwWOUkQyA,313
+isqlite/main.py,sha256=uEjaNnBGURNThSNHlmRh4aezgJ0eetYg7AEBAqTWEZk,9013
+isqlite/query.py,sha256=NcIy4OVOpgBJ7s3fCqRILKJ4gCqCY8igkowmM3HydrY,2774
+isqlite-0.4.1.dist-info/LICENSE,sha256=UaEoesgTuzc6POGmrL43ye2JqwcsM5iS_mVex7-0mNU,1067
+isqlite-0.4.1.dist-info/METADATA,sha256=91tXG6uQZi29VOIzoz05cA3OIEDr926KR_ZJ-VR-VQo,4129
+isqlite-0.4.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+isqlite-0.4.1.dist-info/entry_points.txt,sha256=onElAidxap66iY0JQPYDTzbRJgNvwrwaP7rt5_OQ_JI,46
+isqlite-0.4.1.dist-info/top_level.txt,sha256=jANTZAWGi_bgDxi0jBhJX8HY8Ju78G7ulE0tZa40F2I,8
+isqlite-0.4.1.dist-info/RECORD,,
