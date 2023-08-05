@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pdf2pptx-cli
+Version: 0.1.2
+Summary: convert pdf to 1200 dpi image ppt
+Home-page: https://github.com/chunibyo-wly/pdf2pptx
+Author: chunibyo-wly
+Author-email: chunibyo.wly@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pillow (>=8.2.0)
+Requires-Dist: pdf2image (>=1.15.1)
+Requires-Dist: python-pptx (>=0.6.19)
+
+# pdf2pptx
+
+use `Poppler` to convert `Beamer` to `.pptx`.
+
+## Prerequisites
+
+- [Poppler](https://pdf2image.readthedocs.io/en/latest/installation.html#installing-poppler)
+- [pdf2image](https://github.com/Belval/pdf2image)
+- [python-pptx](https://github.com/scanny/python-pptx)
+
+## Example
+
+![4:3](https://raw.githubusercontent.com/chunibyo-wly/image-storage/master/20210520143501.png)
+
+![16:9](https://raw.githubusercontent.com/chunibyo-wly/image-storage/master/20210520144050.png)
+
+
