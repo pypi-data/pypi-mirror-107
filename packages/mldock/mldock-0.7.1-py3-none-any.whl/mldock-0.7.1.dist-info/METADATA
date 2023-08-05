@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mldock
+Version: 0.7.1
+Summary: A docker tool that helps put machine learning in places that empower ml developers
+Home-page: https://github.com/SheldonGrant/mldock
+Author: SheldonGrant
+Author-email: sheldz.shakes.williams@gmail.com
+License: UNKNOWN
+Keywords: docker,machine learning,ml,ml services,MLaaS
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: future
+Requires-Dist: environs
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: protobuf (>=3.1)
+Requires-Dist: boto3
+Provides-Extra: cli
+Requires-Dist: click ; extra == 'cli'
+Requires-Dist: docker ; extra == 'cli'
+Requires-Dist: future ; extra == 'cli'
+Requires-Dist: requests ; extra == 'cli'
+Requires-Dist: boto3 ; extra == 'cli'
+Requires-Dist: google-auth ; extra == 'cli'
+Requires-Dist: appdirs ; extra == 'cli'
+Provides-Extra: gcp
+Requires-Dist: google-cloud-storage ; extra == 'gcp'
+Requires-Dist: google-api-python-client ; extra == 'gcp'
+Provides-Extra: sagemaker
+Requires-Dist: sagemaker-training ; extra == 'sagemaker'
+
+# MLDock
+A docker tool that helps put machine learning in places that empower ml developers
+
+<p align="center">
+ <img src="images/mldock-hero-image.jpg" width="250" alt="mldock hero image">
+</p>
+
+## helpful tips
+
+- docker compose sees my files as directories in mounted volume - *USE "./path/to/file" format* | https://stackoverflow.com/questions/42248198/how-to-mount-a-single-file-in-a-volume
+- simlinks from my container have broken permissions in WSL2 | https://github.com/microsoft/WSL/issues/1475
+
+
