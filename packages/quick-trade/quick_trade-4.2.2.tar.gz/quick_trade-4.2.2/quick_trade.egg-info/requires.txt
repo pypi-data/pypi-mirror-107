@@ -1,0 +1,9 @@
+iexfinance
+plotly
+pykalman
+numpy
+pandas
+ta==0.7.0
+scipy
+scikit-learn
+ccxt
