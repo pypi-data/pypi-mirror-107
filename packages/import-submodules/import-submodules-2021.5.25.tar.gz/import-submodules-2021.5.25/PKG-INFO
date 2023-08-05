@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: import-submodules
+Version: 2021.5.25
+Summary: import submodules
+Home-page: https://github.com/git/import-submodules.py
+License: Unlicense
+Description: [![](https://img.shields.io/pypi/v/import-submodules.svg?maxAge=3600)](https://pypi.org/project/import-submodules/)
+        [![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+        
+        ### Installation
+        ```bash
+        $ pip install import-submodules
+        ```
+        
+        ### Pros
+        replaces multiple imports with one line
+        
+        ### Examples
+        ```
+        folder
+        ├── __init__.py
+        ├── module1.py
+        ├── module2.py
+        └── module3.py
+        ```
+        
+        `__init__.py`
+        ```python
+        import import_submodules
+        
+        import_submodules.import_submodules()           # import moduleX
+        ```
+        ```python
+        import import_submodules
+        
+        import_submodules.import_all_from_submodules()  # from moduleX import *
+        ```
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
