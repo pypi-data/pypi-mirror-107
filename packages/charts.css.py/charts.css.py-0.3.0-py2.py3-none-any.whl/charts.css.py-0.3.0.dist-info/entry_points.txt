@@ -1,0 +1,6 @@
+[console_scripts]
+csv2chart = scripts.csv2chart:main
+
+[gui_scripts]
+
+
