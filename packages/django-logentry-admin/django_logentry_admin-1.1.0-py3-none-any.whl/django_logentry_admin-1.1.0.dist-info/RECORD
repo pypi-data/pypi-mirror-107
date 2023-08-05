@@ -1,0 +1,9 @@
+logentry_admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logentry_admin/admin.py,sha256=oiTSRfey35BgbJaBhgMB1bQwDPRPr3wPf-zw4uqmeP8,5273
+logentry_admin/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logentry_admin/templates/admin/admin/logentry/change_form.html,sha256=XuGsIR6htQNMDyQIg-Ghwo5UN_bImQhJt3-XL367DHQ,84
+django_logentry_admin-1.1.0.dist-info/LICENSE.txt,sha256=zsfZ5o2antIf2Z4aoDkKwgvnshK-nqVEL_Ge_BxOSZg,733
+django_logentry_admin-1.1.0.dist-info/METADATA,sha256=AjgDW2f649y61KBvIb3HWL0Z6LxVS9ApCDYI9spiWCo,5119
+django_logentry_admin-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_logentry_admin-1.1.0.dist-info/top_level.txt,sha256=Axnmh3GUATtaMSouGRGN73poXZjk8LdKcZI0HOls-H8,15
+django_logentry_admin-1.1.0.dist-info/RECORD,,
