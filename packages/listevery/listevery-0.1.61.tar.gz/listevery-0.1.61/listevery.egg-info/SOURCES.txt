@@ -1,0 +1,8 @@
+README.md
+setup.py
+listevery/__init__.py
+listevery/__main__.py
+listevery.egg-info/PKG-INFO
+listevery.egg-info/SOURCES.txt
+listevery.egg-info/dependency_links.txt
+listevery.egg-info/top_level.txt
