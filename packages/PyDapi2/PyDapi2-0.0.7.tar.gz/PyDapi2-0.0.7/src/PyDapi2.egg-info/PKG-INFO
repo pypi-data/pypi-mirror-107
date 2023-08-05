@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PyDapi2
+Version: 0.0.7
+Summary: The PyDapi2 library offers a Python implementation of the Dassym API version 2.
+Home-page: https://github.com/dassym/PyDapi2
+Author: Fabrice Voillat
+Author-email: dev@dassym.com
+License: UNKNOWN
+Description: # PyDapi2
+        The *PyDapi2* library offers a Python implementation of the Dassym API version 2.
+        
+        Dassym API version 2 aka **DAPI2** is the application programming interface (API) used to
+        control Dassym electronic boards.
+        
+        This library was created to meet internal needs in Dassym. 
+        
+        Version: 0.0.7 (2021-05-25)
+Keywords: Dassym,motor,api,dapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
