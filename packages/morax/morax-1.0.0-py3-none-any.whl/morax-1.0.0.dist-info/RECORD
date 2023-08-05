@@ -1,0 +1,14 @@
+morax/__init__.py,sha256=cKLvS3m3o4nVepegygsbkAGL0xPK6RWcpuz1wn_bHVs,155
+morax/__main__.py,sha256=YLMqzt-U3wR4jlUEsuetLRPKXzFaZGqbsv87ZafO1u0,3766
+morax/auth/__init__.py,sha256=Lh7NOd9-n-o-7iRw3-RIoQCF_F57zhZQktJjCkSYOgA,76
+morax/auth/auth.py,sha256=y60TOa-biG_u6_ZetRpeWeu_SWC6ZY28sAlK4mcxMAg,2825
+morax/data/__init__.py,sha256=mLyzVHM-EwGB4NrbHjtkGKHiaNCGQLhoqZMj8lfsj0U,97
+morax/data/api.py,sha256=Y1Uxu5IZY7D3VlbmzVSblcVeevlTFeoA_fv-_KVqqbQ,2664
+morax/data/chart.py,sha256=__9uMrj37SudLGdWpWM_-wiESY31T8hj04FRCq7uSDo,1305
+morax/data/view.py,sha256=ycRQWjix71WiF_tJhpA-0zPiGzt0dkaAWLeQKAjPnQw,3070
+morax-1.0.0.dist-info/LICENSE,sha256=fjulDeQktzrBD_yup6xevOLY1bTwfGlXtt_eUtNoBJs,1069
+morax-1.0.0.dist-info/METADATA,sha256=yOr2O9ARcvj3WkkT49Gq-t6Sznz6s_7_mUGD1aqxGhw,5015
+morax-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+morax-1.0.0.dist-info/entry_points.txt,sha256=WZlc4w06p8dlWSCBsI7mFSRSi4FtVrO7Bd5tTamZRac,48
+morax-1.0.0.dist-info/top_level.txt,sha256=ac6CeutvuMXLzsno33WCH2f8yEhGdWFJvpMLjA_ZkUo,6
+morax-1.0.0.dist-info/RECORD,,
