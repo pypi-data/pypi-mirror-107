@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "airflow-snapshot-test"
+version = "0.1.6"
+description = ""
+authors = ["komalkot <komalkot@thoughtworks.com>",  "charanstw <charans@thoughtworks.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+presto-python-client = "^0.7.0"
+apache-airflow = "1.10.15"
+
+[tool.poetry.dev-dependencies]
+apache-airflow = "1.10.15"
+python-dotenv = "^0.17.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
