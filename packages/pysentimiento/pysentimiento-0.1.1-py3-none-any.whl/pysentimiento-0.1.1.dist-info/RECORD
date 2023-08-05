@@ -1,0 +1,12 @@
+pysentimiento/__init__.py,sha256=T-DlWgDWtoIJyJxGS4ccemz9yZ6YdKvZe5XB05nl_5I,514
+pysentimiento/analyzer.py,sha256=zMg0c0hDbNsZVIs0mwCLGsXm-67cLhjGC3miUgDFrvw,1376
+pysentimiento/preprocessing.py,sha256=A8Xt-UZFbOmcafvcF4YZX1gSchBTkWobmbBwZVXdCMs,3288
+pysentimiento/tass/__init__.py,sha256=gFC89H-cOerDwHQlUast9Z8NIaTlQRptsJgH30235fc,144
+pysentimiento/tass/datasets.py,sha256=KYe0Ov_a_OCG9PgaYXghU2UC7XzdUokibYr5EA2O-l8,2742
+pysentimiento/tass/training.py,sha256=2q5fahFxiOdfY6lxghJtI5sxztJP_vCrRWLj4vtBze0,1244
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/preprocessing_test.py,sha256=PhwUn8N4NcbW7A-x2dzKnfmFJ8JqjZ8wX9k2cKl99FQ,2008
+pysentimiento-0.1.1.dist-info/METADATA,sha256=TyULmt17D9uUJWJ61VeNn03Qw8Lc8_bg4zF9j4A0CC8,3437
+pysentimiento-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pysentimiento-0.1.1.dist-info/top_level.txt,sha256=s03cbrFUaCqPCa_Wl6s1kZsCzuf037TkSc0rybez4M4,20
+pysentimiento-0.1.1.dist-info/RECORD,,
