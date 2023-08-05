@@ -1,0 +1,10 @@
+mecab_tf/__init__.py,sha256=ooI7rh8U0CapL5eKLwnkveIklZtqhpqXtrnme5RWkNo,46
+mecab_tf/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecab_tf/python/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecab_tf/python/ops/_mecab_ops.so,sha256=fNQokwH-UUvGH26e1tNSkKZ5q1wlLGd43hs9qsrbfBQ,1306632
+mecab_tf/python/ops/mecab_ops.py,sha256=2sonOPRuwk0dJympUZ8eImxE2Vlb1MGVhLXwmBemOuI,3072
+mecab_tf-2.4.0a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mecab_tf-2.4.0a0.dist-info/METADATA,sha256=VOO6W_std0qHD42ycj9bUYsrdEBQyB_gTzRaGXkXno4,841
+mecab_tf-2.4.0a0.dist-info/WHEEL,sha256=mJUhM6xk5uGuGdsmQlSqd9235pVr529Y-P1VP4AaxzE,109
+mecab_tf-2.4.0a0.dist-info/top_level.txt,sha256=LcSK8ONUhuocUjkSw3zYInB0WsadAbCMIX5AGE-SuUw,9
+mecab_tf-2.4.0a0.dist-info/RECORD,,
