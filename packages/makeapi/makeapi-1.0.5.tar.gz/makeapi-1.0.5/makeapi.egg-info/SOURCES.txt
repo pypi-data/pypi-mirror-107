@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+makeapi/__init__.py
+makeapi.egg-info/PKG-INFO
+makeapi.egg-info/SOURCES.txt
+makeapi.egg-info/dependency_links.txt
+makeapi.egg-info/top_level.txt
