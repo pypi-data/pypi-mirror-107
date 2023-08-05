@@ -1,0 +1,5 @@
+[console_scripts]
+camfi = camfi:main
+camfiannotate = camfi:_cli_annotate
+traincamfiannotator = camfi:_cli_train
+

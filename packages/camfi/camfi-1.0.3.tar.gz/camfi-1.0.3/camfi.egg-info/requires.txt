@@ -1,0 +1,12 @@
+exif
+fire
+imageio
+matplotlib
+numpy
+Pillow
+scikit-image
+scipy
+Shapely
+torch
+torchvision
+tqdm

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+camfi.py
+camfiutils.py
+setup.cfg
+setup.py
+camfi.egg-info/PKG-INFO
+camfi.egg-info/SOURCES.txt
+camfi.egg-info/dependency_links.txt
+camfi.egg-info/entry_points.txt
+camfi.egg-info/requires.txt
+camfi.egg-info/top_level.txt
