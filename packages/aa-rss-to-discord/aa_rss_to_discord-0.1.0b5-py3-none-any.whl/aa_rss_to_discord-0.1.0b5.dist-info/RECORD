@@ -1,0 +1,16 @@
+aa_rss_to_discord/__init__.py,sha256=Nt272N4rtcxfmJuhzyQU6rSGvEYrdmm4Bz34g5-7DmE,187
+aa_rss_to_discord/admin.py,sha256=VKhSQs-_0pLcPDH0OxsnYgBV4_cEfmoE6lL36ZMSB_4,411
+aa_rss_to_discord/apps.py,sha256=ya0uWlpFN_iZsuhsdaGh3dUc_TBFtIG_cdqcV1YOWwQ,293
+aa_rss_to_discord/constants.py,sha256=rzWCNSPdzvozq6JA0_5bT-TA3NtWD-zcdbap-x4Vhkw,430
+aa_rss_to_discord/managers.py,sha256=PwiUAdV95jCp8gJuFchttuUHommk1FH7BBudpkm41iw,294
+aa_rss_to_discord/models.py,sha256=aMl5mgO2F87j7BD6OAVKVnq6EUAu0tUG8hApXn_Tygk,2497
+aa_rss_to_discord/tasks.py,sha256=WRFDdUS02Am0idUVGOgX3SAyPlBPWJzmD401mxqexbA,4024
+aa_rss_to_discord/utils.py,sha256=fTOO0tubMir4EQD0BnmDtzX5N7PrdGy-kJFvfDNxs38,500
+aa_rss_to_discord/migrations/0001_initial.py,sha256=E5UwLACdTPAUj6EIbdrQCA9D-6bP6UQ85ckrX4qLABw,2756
+aa_rss_to_discord/migrations/0002_enable_disable_rss_feeds.py,sha256=9RR6PDhn3dJwARcY2UJOBG4aXhkOf4zDJOdo3CAORKc,388
+aa_rss_to_discord/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aa_rss_to_discord-0.1.0b5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aa_rss_to_discord-0.1.0b5.dist-info/METADATA,sha256=qLAgucmpO9vNIT5245WJ3pwfTkrR-Am6CINRwbtFe88,4878
+aa_rss_to_discord-0.1.0b5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aa_rss_to_discord-0.1.0b5.dist-info/top_level.txt,sha256=813k21Klh5qYihpaUMb3QvgwiI8DuVsCAO0Qyo4Q29A,18
+aa_rss_to_discord-0.1.0b5.dist-info/RECORD,,
