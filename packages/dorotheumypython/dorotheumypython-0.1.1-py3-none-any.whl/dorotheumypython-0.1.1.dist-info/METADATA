@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dorotheumypython
+Version: 0.1.1
+Summary: My first Python library
+Home-page: UNKNOWN
+Author: Dorotheu
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+# DorotheuMyPython
+
+Exemplo de construcao de lib seguindo o manual https://medium.com/analytics-vidhya/how-to-create-a-python-library-7d5aea80cc3f
+
+
+Change Log
+==========
+
+0.1.1 (25/05/2021)
+------------------
+- Incluindo Changelog
+
+0.1.0 (25/05/2021)
+------------------
+- First Release
+
+
