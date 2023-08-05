@@ -1,0 +1,13 @@
+npaws/__init__.py,sha256=ZjecdQSXmLfdIXAP5hnhdxpFAR5g9tcjdbY09IQPDRI,66
+npaws/client.py,sha256=6nco1GvqPrwhvMiWxURksKGeL-GvhzyoBQYqkufg77I,934
+npaws/config.py,sha256=5nP3XHp7ttf0xKr2WkbgWjJPHdkEsjq9s2fwV6c5ZP0,599
+npaws/services/__init__.py,sha256=KuHmRTtR9QhEIUYP0wsGE8_klh-sCnK00sLYM4aiUqI,58
+npaws/services/batch.py,sha256=YPW68290oj8IjZfNbtmvdEcdeHb3FKesrIYcLc_65-c,191
+npaws/services/ecs.py,sha256=IsUUM7lIeOxQywV7lPZGJIEQS466XfhgpfmuS2vHafo,189
+npaws/services/rds.py,sha256=tA6XJl39jaOV5mfRL-hE4KNGdRz17XBubQszOajEHDk,4504
+npaws/services/s3.py,sha256=215Ut7bKZd370qoOTrrh0OrTQQ3r9NrEinRri_3ABa0,2131
+npaws-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npaws-0.1.0.dist-info/METADATA,sha256=hUBSmeDEuxfV-oRdVK7a3Jpk2Tj3SVWy39IHyDjwpxs,369
+npaws-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+npaws-0.1.0.dist-info/top_level.txt,sha256=jsTX2gcCR07_drtkkQnUPjf9E9UtS1ZpG6h8grQi4C4,6
+npaws-0.1.0.dist-info/RECORD,,
