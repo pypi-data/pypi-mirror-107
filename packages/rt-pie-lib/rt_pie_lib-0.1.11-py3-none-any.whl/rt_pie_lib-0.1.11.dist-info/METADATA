@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rt-pie-lib
+Version: 0.1.11
+Summary: Real Rime PItch Estimator Library
+Author: Kaspar Wolfisberg
+Requires-Python: >=3.7,<3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mir_eval (>=0.6,<0.7)
+Requires-Dist: numpy (>=1.19,<1.20)
+Requires-Dist: scipy (>=1.6.3,<2.0.0)
