@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pycid-dev/__init__.py
+src/pycid-dev/test.py
+src/pycid_dev.egg-info/PKG-INFO
+src/pycid_dev.egg-info/SOURCES.txt
+src/pycid_dev.egg-info/dependency_links.txt
+src/pycid_dev.egg-info/top_level.txt
