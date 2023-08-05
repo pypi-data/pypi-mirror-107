@@ -1,0 +1,5 @@
+Flask==1.1.2
+Werkzeug==2.0.0
+itsdangerous==2.0.0
+simplekv==0.14.1
+six==1.16.0
