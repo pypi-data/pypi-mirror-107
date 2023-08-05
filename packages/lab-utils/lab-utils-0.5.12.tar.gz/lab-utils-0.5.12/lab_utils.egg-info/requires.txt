@@ -1,0 +1,16 @@
+pandas
+psycopg2
+python-json-logger
+slacker-log-handler
+zc.lockfile
+
+[dev]
+flake8
+pytest
+
+[docs]
+recommonmark
+sphinx
+sphinx-paramlinks
+sphinx-rtd-theme
+wheel
