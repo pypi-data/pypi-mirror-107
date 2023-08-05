@@ -1,0 +1,15 @@
+setup.py
+spekter/__init__.py
+spekter/git.py
+spekter/main.py
+spekter/monitor.py
+spekter/sonic_rest.py
+spekter/sonic_utils.py
+spekter/ssh.py
+spekter/utils.py
+spekter.egg-info/PKG-INFO
+spekter.egg-info/SOURCES.txt
+spekter.egg-info/dependency_links.txt
+spekter.egg-info/entry_points.txt
+spekter.egg-info/requires.txt
+spekter.egg-info/top_level.txt
