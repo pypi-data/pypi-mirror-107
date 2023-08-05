@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dendrodict
+Version: 0.0.0
+Summary: Dict type that makes it easier to work with deeply nested dicts.
+Home-page: http://bitbucket.org/sixty-north/dendrodict
+Author: Sixty North AS
+Author-email: rob@sixty-north.com
+License: MIT
+Description: ========
+        deepdict
+        ========
+        
+        Dict type that makes it easier to work with deeply nested dicts.
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+Provides-Extra: test

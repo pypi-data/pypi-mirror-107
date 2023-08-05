@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+source/deepdict/__init__.py
+source/dendrodict.egg-info/PKG-INFO
+source/dendrodict.egg-info/SOURCES.txt
+source/dendrodict.egg-info/dependency_links.txt
+source/dendrodict.egg-info/requires.txt
+source/dendrodict.egg-info/top_level.txt
