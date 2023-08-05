@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/agility_cms/__init__.py
+src/agility_cms/client.py
+src/agility_cms.egg-info/PKG-INFO
+src/agility_cms.egg-info/SOURCES.txt
+src/agility_cms.egg-info/dependency_links.txt
+src/agility_cms.egg-info/requires.txt
+src/agility_cms.egg-info/top_level.txt
