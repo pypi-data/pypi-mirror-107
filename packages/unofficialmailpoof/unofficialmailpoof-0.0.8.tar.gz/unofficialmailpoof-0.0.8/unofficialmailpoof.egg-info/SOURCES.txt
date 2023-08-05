@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+unofficialmailpoof/__init__.py
+unofficialmailpoof.egg-info/PKG-INFO
+unofficialmailpoof.egg-info/SOURCES.txt
+unofficialmailpoof.egg-info/dependency_links.txt
+unofficialmailpoof.egg-info/requires.txt
+unofficialmailpoof.egg-info/top_level.txt
