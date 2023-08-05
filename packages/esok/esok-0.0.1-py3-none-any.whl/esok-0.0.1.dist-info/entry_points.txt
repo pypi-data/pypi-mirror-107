@@ -1,0 +1,3 @@
+[console_scripts]
+esok = esok.esok:entry_point
+
