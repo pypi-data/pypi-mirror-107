@@ -1,0 +1,9 @@
+README.rst
+setup.py
+kady_hello/__init__.py
+kady_hello/core.py
+kady_hello/hello.py
+kady_hello.egg-info/PKG-INFO
+kady_hello.egg-info/SOURCES.txt
+kady_hello.egg-info/dependency_links.txt
+kady_hello.egg-info/top_level.txt
