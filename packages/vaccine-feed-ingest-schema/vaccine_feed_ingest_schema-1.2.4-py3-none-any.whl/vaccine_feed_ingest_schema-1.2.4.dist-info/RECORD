@@ -1,0 +1,10 @@
+vaccine_feed_ingest_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vaccine_feed_ingest_schema/common.py,sha256=Te9sHCpbvG_7rtdiyCp-DKAbGKKQLz8IU3S-6d5rGEI,735
+vaccine_feed_ingest_schema/load.py,sha256=IRDzGt_s-w8YC3mSKWqTnfgOH0paXLVqzRzColmnUEQ,556
+vaccine_feed_ingest_schema/location.py,sha256=6ufJ1Qo5cHLleWhB64dM52oa7hva5409ock8YJTxFNs,13283
+vaccine_feed_ingest_schema/schema.py,sha256=3yGD88y9XRq2UNK1RmY-NdA5ygIEdIVcHINeY3A0v-Q,850
+vaccine_feed_ingest_schema-1.2.4.dist-info/LICENSE,sha256=dAtAwBYqz6QKTLySAsADPLqN3tQkEEo7YUP9-hi4WO4,1077
+vaccine_feed_ingest_schema-1.2.4.dist-info/METADATA,sha256=oGGBlXDS79Xb3Ty5D6GAW2D9ZZ47TouPdzVdN8Mmbr0,2709
+vaccine_feed_ingest_schema-1.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vaccine_feed_ingest_schema-1.2.4.dist-info/top_level.txt,sha256=DFeJG9VZky4ObIP-4L2N_Y0h0hcVjQRuHV3Zoi2kwJ4,27
+vaccine_feed_ingest_schema-1.2.4.dist-info/RECORD,,
