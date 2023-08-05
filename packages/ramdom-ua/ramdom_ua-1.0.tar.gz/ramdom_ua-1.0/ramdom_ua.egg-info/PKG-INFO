@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ramdom-ua
+Version: 1.0
+Summary: get ua
+Home-page: https://gitee.com/liyufeng0202/random_ua
+Author: liyf
+Author-email: liyufeng_0202@163.com
+License: UNKNOWN
+Description: ### 介绍
+        
+        `是一个获取随机ua的模块，里边有一万多个ua`
+        
+        
+        ### 安装
+        `pip3 install ramdom_ua`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

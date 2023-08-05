@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ramdom_ua.egg-info/PKG-INFO
+ramdom_ua.egg-info/SOURCES.txt
+ramdom_ua.egg-info/dependency_links.txt
+ramdom_ua.egg-info/top_level.txt
+random_ua/__init__.py
+random_ua/random_ua.py
