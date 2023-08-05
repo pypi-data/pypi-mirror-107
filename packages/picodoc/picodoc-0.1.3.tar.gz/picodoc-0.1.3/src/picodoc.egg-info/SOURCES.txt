@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/picodoc/__init__.py
+src/picodoc/config.py
+src/picodoc/functions.py
+src/picodoc/models.py
+src/picodoc/picodoc.py
+src/picodoc.egg-info/PKG-INFO
+src/picodoc.egg-info/SOURCES.txt
+src/picodoc.egg-info/dependency_links.txt
+src/picodoc.egg-info/requires.txt
+src/picodoc.egg-info/top_level.txt
