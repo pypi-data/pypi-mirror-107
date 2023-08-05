@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import argparse
+from pybins import main
+
+
+parser = argparse.ArgumentParser(description="PyBins Cmd Line wraper for GTFOBin and LOLBas")
+parser.add_argument('-p', '--platform',
+                    help='Select the platform to lookup, Win/Windows or Lin/Linux, case insensitive',
+                    type=str,
+                    default=None)
+parser.add_argument('-b', '--binary',
+                    type=str,
+                    help='The binary to lookup',
+                    default=None)
+parser.add_argument('-f', '--function',
+                    help='The function to lookup',
+                    type=str,
+                    default=None)
+
+main(parser)
