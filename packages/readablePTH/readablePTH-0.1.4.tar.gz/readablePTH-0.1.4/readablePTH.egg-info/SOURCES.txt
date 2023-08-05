@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+RPTH/__init__.py
+RPTH/decode.py
+RPTH/encode.py
+RPTH/main.py
+readablePTH.egg-info/PKG-INFO
+readablePTH.egg-info/SOURCES.txt
+readablePTH.egg-info/dependency_links.txt
+readablePTH.egg-info/entry_points.txt
+readablePTH.egg-info/requires.txt
+readablePTH.egg-info/top_level.txt
+test/test_small_net.py
