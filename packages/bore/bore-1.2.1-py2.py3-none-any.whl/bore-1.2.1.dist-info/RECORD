@@ -1,0 +1,17 @@
+bore/__init__.py,sha256=ALqP19NRmYGhcmr-Q8XT28tlh538r5i_2kYbsJHpJBg,124
+bore/base.py,sha256=D7n3cQPGmmYTmgp9j34ky2c0xIYqXHdggZkxGYZ8ZnA,2266
+bore/data.py,sha256=hfkM9UIdgnqnm8KSfmlFdX1KfBJpLhepUO8RjXOCp4w,1502
+bore/decorators.py,sha256=tJKr64vMiO5NjP3S1QDoDHKK0rpVsF5fY8WkK-fN4YA,1554
+bore/mixins.py,sha256=hVyhghOpwr618JmgjZv7JDQSEilFoJkixRIYtlVVBCQ,1841
+bore/models.py,sha256=LUmR7VQD8G9QiJ-tGYbq1NGMmuNcg7pzulR_4DdAe7c,786
+bore/optimizers.py,sha256=WeWMqIbNi1VpQdM6q1XP7H8quItwD7TLxO_E8cAIXAY,2711
+bore/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bore/plugins/hpbandster/__init__.py,sha256=SAMtaJvBL0He4-woBxzpbYNMjMhyWWClPbEe1a-gJCA,44
+bore/plugins/hpbandster/base.py,sha256=DGw4DZ7ssRdfxfrQJWaNxy8F5pLkzHrlq4fPy5Tl2mg,12493
+bore/plugins/hpbandster/types.py,sha256=wNwFp_Jzq-G_Y0nSiNjOe_3PKNQHAdoULBBqt3vm76s,4249
+bore-1.2.1.dist-info/AUTHORS.rst,sha256=heg2SPnvl4w5kiqPon2FGwlDJSuP9nD3BfryMxPQpVM,158
+bore-1.2.1.dist-info/LICENSE,sha256=xz16ZAWIVop-lmxKyvl5-5FDB5b2p0B41GrVH14b5Lo,1072
+bore-1.2.1.dist-info/METADATA,sha256=xQ4-M3oSCrAicU6Tu-zXL7WMbY1vELrkU34dM5b_Bx8,7211
+bore-1.2.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+bore-1.2.1.dist-info/top_level.txt,sha256=aYKtGBsLvU3mgiUDYpJ6JVT9u-4VLh5sLVHoDprx5Jg,5
+bore-1.2.1.dist-info/RECORD,,
