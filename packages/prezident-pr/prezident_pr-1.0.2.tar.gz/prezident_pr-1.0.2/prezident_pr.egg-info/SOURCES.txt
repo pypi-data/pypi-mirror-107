@@ -1,0 +1,9 @@
+README.txt
+setup.py
+prezident_pr/__init__.py
+prezident_pr/core.py
+prezident_pr.egg-info/PKG-INFO
+prezident_pr.egg-info/SOURCES.txt
+prezident_pr.egg-info/dependency_links.txt
+prezident_pr.egg-info/requires.txt
+prezident_pr.egg-info/top_level.txt
