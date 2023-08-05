@@ -1,0 +1,7 @@
+[pygments.lexers]
+MathematicaLexer = mathics_pygments:MathematicaLexer
+
+[pygments.styles]
+mathematica = mathics_pygments:MathematicaStyle
+mathematicanotebook = mathics_pygments:MathematicaNotebookStyle
+
