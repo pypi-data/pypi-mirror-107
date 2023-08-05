@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: nmea-parser
+Version: 0.1.2
+Summary: Python library to parse NMEA streams
+Home-page: https://gitlab.com/bek3/nmea-parser
+Author: Brendan Kristiansen
+Author-email: b@bek.sh
+License: Mozilla Public License 2.0
+Project-URL: Documentation, https://www.bek.sh/nmea-parser
+Project-URL: Source Code, https://gitlab.com/bek3/nmea_parser
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+# NMEA Parser
+
+A library used to decode NMEA data streams from GNSS receivers. Capable of parsing a text file
+containing NMEA data or reading from a serial port real time.
+
+This library is currently in Beta and is subject to change any time.
+
+## Dependencies
+
+PySerial is the only dependency. See `requirements.txt`.
+
+## Usage
+
+See www.bek.sh/nmea-parser for a manual.
+
+## Changelog
+
+* 0.1.2 (2021-05-25)
+	- Fix 'inaproprate ioctl for device' error from serial library
+
+* 0.1.1 (2021-05-24)
+	- Improve safety of file handling in input stream module
+	- Bug fixes in type checking
+	- Fix absolute imports in project
+	- Small fixes to documentation
+
+* 0.1.0 (2021-05-20):
+    - Inital release
+
+
