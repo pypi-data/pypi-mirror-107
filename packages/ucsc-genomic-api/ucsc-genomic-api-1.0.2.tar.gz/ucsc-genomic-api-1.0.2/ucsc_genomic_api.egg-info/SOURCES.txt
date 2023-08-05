@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ucsc/__init__.py
+ucsc/api.py
+ucsc/test.py
+ucsc_genomic_api.egg-info/PKG-INFO
+ucsc_genomic_api.egg-info/SOURCES.txt
+ucsc_genomic_api.egg-info/dependency_links.txt
+ucsc_genomic_api.egg-info/requires.txt
+ucsc_genomic_api.egg-info/top_level.txt
