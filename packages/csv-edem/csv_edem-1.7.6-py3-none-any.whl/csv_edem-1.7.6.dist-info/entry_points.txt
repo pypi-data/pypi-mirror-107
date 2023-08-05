@@ -1,0 +1,4 @@
+[console_scripts]
+csv-edem=csv_edem.cli:main
+csv-edem-gui=csv_edem.gui:main
+
