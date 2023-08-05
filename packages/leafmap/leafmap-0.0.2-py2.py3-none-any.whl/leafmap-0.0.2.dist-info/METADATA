@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: leafmap
+Version: 0.0.2
+Summary: A Python package for geospatial analysis and interactive mapping with minimal coding
+Home-page: https://github.com/giswqs/leafmap
+Author: Qiusheng Wu
+Author-email: giswqs@gmail.com
+License: MIT license
+Keywords: leafmap
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bqplot
+Requires-Dist: colour
+Requires-Dist: folium (>=0.12.0)
+Requires-Dist: googledrivedownloader
+Requires-Dist: ipyevents
+Requires-Dist: ipyleaflet
+Requires-Dist: matplotlib
+Requires-Dist: mss
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pycrs
+Requires-Dist: pyshp (>=2.1.3)
+Requires-Dist: python-box
+Requires-Dist: whiteboxgui
+
+# leafmap
+
+
+[![image](https://img.shields.io/pypi/v/leafmap.svg)](https://pypi.python.org/pypi/leafmap)
+
+
+**hon package for interactive mapping with ipyleaflet and ipywidgets**
+
+
+-   Free software: MIT license
+-   Documentation: https://leafmap.gishub.org
+
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
+
+
