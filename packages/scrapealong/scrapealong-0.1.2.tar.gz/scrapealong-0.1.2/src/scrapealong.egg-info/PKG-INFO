@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: scrapealong
+Version: 0.1.2
+Summary: Library for scraping data from web sites with async flavour
+Home-page: https://github.com/manuelep/scrapealong2
+Author: Manuele Pesenti
+Author-email: manuele@inventati.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/manuelep/scrapealong2/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Scrape-A-Long
+
+Library for scraping data from web sites with async flavour
+
+## Install
+
+```sh
+pip install scrapealong
+```
+
+## References
+
+* [Home](https://pypi.org/project/scrapealong/0.1.0/)
+* [Source](https://github.com/manuelep/scrapealong2)
+
+
