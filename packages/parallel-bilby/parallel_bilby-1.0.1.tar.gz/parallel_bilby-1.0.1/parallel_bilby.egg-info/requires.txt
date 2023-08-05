@@ -1,0 +1,14 @@
+future
+bilby>=1.1.1
+bilby_pipe>=1.0.3
+scipy>=1.2.0
+gwpy
+matplotlib
+numpy
+tqdm
+corner
+dynesty>=1.0.0
+schwimmbad
+pandas
+nestcheck
+mpi4py>3.0.0
