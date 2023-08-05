@@ -1,0 +1,33 @@
+#!/bin/bash
+pip3 install pip-versions
+LATEST=$(pip-versions latest plotmanx)
+NOWVER=$(pip freeze | grep plotmanx | sed -ne 's/[^0-9]*\(\([0-9]\.\)\{0,4\}[0-9][^.]\).*/\1/p')
+
+if [ "$LATEST" != "$NOWVER" ]; then
+    python3 -m pip uninstall plotman -y
+    python3 -m pip uninstall plotmanx -y
+    python3 -m pip install plotmanx==$LATEST
+
+    plotman version
+
+    echo "kill processes for plotman"
+    for pid in $(ps -ef | grep 'plotman api' | awk '{print $2}'); do kill $pid; done
+
+fi
+
+sleep 5
+
+COUNTPS=$(ps aux | grep -i 'plotman api' | wc -l)
+
+echo "Done operation in plotman updates and found ${COUNTPS} processes from the top"
+
+echo "Stop current processes plotman and restart."
+
+ps aux | grep -i 'plotman api' | awk '{print $2}' | xargs kill
+
+DS=$(ps aux | grep -i 'plotman api' | wc -l)
+
+if [ $DS -eq 1 ]; then
+    nohup plotman api >> plotmanapi.log &
+    echo "no process on plotman and start a new one"
+fi
