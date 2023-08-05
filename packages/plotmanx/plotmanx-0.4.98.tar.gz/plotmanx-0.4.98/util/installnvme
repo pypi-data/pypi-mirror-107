@@ -1,0 +1,33 @@
+#!/bin/bash
+
+F1=/mnt/local/tmp
+F2=/mnt/local/temp
+
+cd ~/chia-blockchain && . ./activate
+
+wget https://github.com/tokenchain/plotman/releases/download/yam/nvme_linux_0.4.80.zip
+
+./plmo $F1 update yes
+./plmo $F2 update yes
+for i in {1..99}; do
+
+remain=$(ps aux | grep plmo | wc -l)
+echo -n "found process plmo $remain"
+if [ $remain -eq 1 ]; then
+    rm plmo
+    unzip -o nvme_linux_0.4.80.zip
+    plotman nfs
+    ./plmo $F1 update no
+    ./plmo $F2 update no
+fi
+
+sleep 15
+done
+
+echo "complete plmo upgrade process"
+
+
+
+rm plmo && unzip -o nvme_linux_0.4.80.zip
+
+unzip -o nvme_linux_0.4.80.zip
