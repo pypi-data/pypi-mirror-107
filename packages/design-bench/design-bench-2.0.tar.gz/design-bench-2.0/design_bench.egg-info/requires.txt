@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+scikit-learn
+tensorflow==2.4.1
+transformers
+
+[all]
+gym[mujoco]
