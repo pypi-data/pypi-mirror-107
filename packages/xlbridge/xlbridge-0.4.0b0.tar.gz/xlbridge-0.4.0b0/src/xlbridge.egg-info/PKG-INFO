@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: xlbridge
+Version: 0.4.0b0
+Summary: Create Excel user-defined formulas (UDFs) using Python
+Home-page: https://xlbridge.qaplix.se
+Author: Michael Hemph
+Author-email: michael.hemph@gmail.com
+License: Proprietary
+Project-URL: Bug Tracker, https://github.com/qaplix/xlbridge/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# XlBridge Python User Library
+
+XlBridge enables writing Excel user-defined formulas (UDFs) in C#, Python (or any programming language that
+supports gRPC and protobufs).
+
+The XlBridge Python User Library provides the functionality to expose Python formulas to the XlBridge Excel add-in.
+
+> The XlBridge Excel add-in is non-free software, see <https://xlbridge.qaplix.se> for pricing and trial version availability.
+
+
