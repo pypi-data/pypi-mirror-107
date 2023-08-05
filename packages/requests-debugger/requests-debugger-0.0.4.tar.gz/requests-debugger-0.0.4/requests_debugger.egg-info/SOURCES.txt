@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+requests_debugger/__init__.py
+requests_debugger/requests_debugger.py
+requests_debugger.egg-info/PKG-INFO
+requests_debugger.egg-info/SOURCES.txt
+requests_debugger.egg-info/dependency_links.txt
+requests_debugger.egg-info/top_level.txt
