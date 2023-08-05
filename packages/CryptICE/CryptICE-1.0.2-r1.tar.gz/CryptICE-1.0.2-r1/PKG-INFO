@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: CryptICE
+Version: 1.0.2-r1
+Summary: ICE cipher for Python
+Home-page: https://github.com/Sam839/CryptICE
+Author: Ren
+Author-email: zeze839@gmail.com
+License: MIT
+Download-URL: https://github.com/Sam839/CryptICE/releases/tag/1.0.2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
