@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: NonMannerDB
+Version: 1.0.0
+Summary: 우마공DB 전용 라이브러리
+Home-page: https://github.com/CwhiteKJ/NonMannerDB
+Author: WhiteKJ
+Author-email: wjdgnsehowl@naver.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
