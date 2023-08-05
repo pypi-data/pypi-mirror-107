@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: py4vtile
+Version: 0.0.2
+Summary: Tools that helps you to develop web service for distributing vector tiles.
+Home-page: https://github.com/manuelep/py4vtile
+Author: Manuele Pesenti
+Author-email: manuele@inventati.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/manuelep/py4vtile/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mptools
+Requires-Dist: shapely
+Requires-Dist: mercantile
+Requires-Dist: pyproj
+Requires-Dist: py4web (>=1.20210522.2)
+Requires-Dist: mapbox-vector-tile
+
+# py4vtile
+
+Tools that helps you to develop web service for distributing vector tiles using py4web framework.
+
+## References
+
+* [Home](https://github.com/manuelep/py4vtile/issues)
+* [Project](https://github.com/manuelep/py4vtile)
+
+

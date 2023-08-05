@@ -1,0 +1,13 @@
+py4vtile/__init__.py,sha256=bRMTgvPc2lHcXE96RiNsGyFpyi1Z8CKcJOlvmmsvLFQ,2390
+py4vtile/geom.py,sha256=a48MM_n9-gaQnVsnAfSEiH7VsBjF9Zf6DuK_fLdhx9w,1319
+py4vtile/hashit.py,sha256=gyn6TCQDZt5TKZEvjQ5T6eXN6VJIy5hHb9vVMNkVmVo,611
+py4vtile/settings.py,sha256=12s80F4a3xHzwK1b9VT9Yq0HUkXXsgUq2mXg1vDP-6k,1065
+py4vtile/settings_private.py,sha256=HJ8RYl6l5iWrjUXqEfK4BGTlUQhjmmC30dOsXDW86Zs,139
+py4vtile/pbfpp/__init__.py,sha256=6_hZPY2QoubXHhMfJi_xwP8xcWOtqBXLSlVOk9b8TOI,4024
+py4vtile/pbfpp/common.py,sha256=7gPJ4AUI8L31DzB7-fyXO6OUSMQB_agYypknIoDFgxo,1236
+py4vtile/pbfpp/models.py,sha256=c0KFBRx9dZezhijAdKNQmEEvAbS3Xx0Y1WMU4dpiZ9g,669
+py4vtile-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py4vtile-0.0.2.dist-info/METADATA,sha256=dGle-I4qaJW7ExUob95klRILREd_O-h6NlYhCAz0O7U,992
+py4vtile-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py4vtile-0.0.2.dist-info/top_level.txt,sha256=dpzAYliW1slTreI71atmhyfY0Z-3Vptqh_griAA2XEc,9
+py4vtile-0.0.2.dist-info/RECORD,,
