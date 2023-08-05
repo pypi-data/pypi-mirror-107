@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/djangmx/__init__.py
+src/djangmx.egg-info/PKG-INFO
+src/djangmx.egg-info/SOURCES.txt
+src/djangmx.egg-info/dependency_links.txt
+src/djangmx.egg-info/top_level.txt
