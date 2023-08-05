@@ -1,0 +1,3 @@
+[console_scripts]
+pony-portal-gun=pony_portal_gun.main:app
+

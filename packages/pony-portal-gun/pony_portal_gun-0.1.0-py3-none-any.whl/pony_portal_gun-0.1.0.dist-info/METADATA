@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pony-portal-gun
+Version: 0.1.0
+Summary: 
+Author: Connie
+Author-email: conniecanelon97@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Portal Gun
+
+The awesome Portal Gun
