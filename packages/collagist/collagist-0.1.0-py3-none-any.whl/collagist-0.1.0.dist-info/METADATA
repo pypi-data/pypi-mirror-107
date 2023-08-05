@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: collagist
+Version: 0.1.0
+Summary: Image collage based on PyTorch
+Home-page: UNKNOWN
+Author: Chenchao Zhao
+Author-email: chenchao.zhao@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: numpy
+
+# Collagist
+Image collage for detector training
+
+
