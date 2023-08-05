@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: image_classification_pytorch
+Version: 0.0.18
+Summary: Image classification with pretrained models in Pytorch
+Home-page: https://github.com/denred0/image_classification_pytorch
+Author: Denis Potapov
+Author-email: potapovdenisdmit@gmail.com
+License: MIT
+Download-URL: https://github.com/denred0/image_classification_pytorch/archive/refs/tags/0.0.18.tar.gz
+Description: See description on GitHub
+Keywords: pytorch,image classification,imagenet,pretrained model
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
