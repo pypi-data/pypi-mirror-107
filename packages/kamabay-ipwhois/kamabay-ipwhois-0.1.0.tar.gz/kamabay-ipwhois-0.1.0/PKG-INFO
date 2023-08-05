@@ -1,0 +1,67 @@
+Metadata-Version: 1.1
+Name: kamabay-ipwhois
+Version: 0.1.0
+Summary: ip information gathering.
+Home-page: https://github.com/ExsoKamabay/ipwhois
+Author: Exso Kamabay
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: ``KAMABAY`` WHOIS
+        --------------------------
+        
+        
+        ``URL`` `https://github.com/ExsoKamabay/ipwhois`_
+        
+        Simple Example
+        ----------------
+        .. code :: python
+        
+                >>> from ipwhois import ipwhois
+                >>>
+                >>> ipwhois('0') # zero string default local IP
+                {
+                "asn":"AS4818",
+                "city": "Batu Pahat",
+                "completed_requests": 2,
+                "continent": "Asia",
+                "continent_code": "AS",
+                "country": "Malaysia",
+                "country_capital": "Kuala Lumpur",
+                "country_code": "MY",
+                "country_flag": "https://cdn.ipwhois.io/flags/my.svg",
+                "country_neighbours": "BN,TH,ID",
+                "country_phone": "+60",
+                "currency": "Malaysian Ringgit",
+                "currency_code": "MYR",
+                "currency_plural": "Malaysian ringgits",
+                "currency_rates": "4.146",
+                "currency_symbol": "RM",
+                "ip": "115.164.173.247",
+                "isp": "DiGi Telecommunications Sdn Bhd., Digi Internet Exchange",
+                "latitude": "1.849442",
+                "longitude": "102.9288341",
+                "org": "DiGi Telecommunications Sdn Bhd., Digi Internet Exchange",
+                "region": "Johor",\n  "success": true,
+                "timezone": "Asia/Kuala_Lumpur",
+                "timezone_dstOffset": "0",
+                "timezone_gmt": "GMT +8:00",
+                "timezone_gmtOffset": "28800",
+                "timezone_name": "Malaysia Time",
+                "type": "IPv4",
+                }
+        
+        
+        **Command line type** ``ipwhois``
+        
+        ``@copyright 21052021``
+        
+        ``mail`` `lexyong66@gmail.com`_ 
+        
+        .. _lexyong66@gmail.com : lexyong66@gmail.com
+        .. _https://github.com/ExsoKamabay/ipwhois : https://github.com/ExsoKamabay/ipwhois
+Keywords: kamabay,ip,whois,information,gathering
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities

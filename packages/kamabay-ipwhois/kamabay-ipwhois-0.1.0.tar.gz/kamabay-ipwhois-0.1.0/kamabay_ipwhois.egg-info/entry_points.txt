@@ -1,0 +1,3 @@
+[console_scripts]
+ipwhois = ipwhois.IPwhois:main
+
