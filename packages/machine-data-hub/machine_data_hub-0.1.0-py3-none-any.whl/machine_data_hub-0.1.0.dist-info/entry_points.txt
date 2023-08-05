@@ -1,0 +1,3 @@
+[console_scripts]
+mdh=machine_data_hub.cli:main
+
