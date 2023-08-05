@@ -1,0 +1,11 @@
+**/*.archive/
+**/*.git/
+**/*__pycache__/
+**/*.app/
+**/*.DS_Store
+**/*.pyc
+**/*.egg-info/
+Icon
+Icon?
+tests/test_data
+dist/
