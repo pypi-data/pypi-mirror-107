@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gcore-interface-sdk
+Version: 0.13
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: witapi
+
+Gravity Core Single Endpoint (GCSE) - перспективный единый API endpoint модуль проекта Gravity Core
+
