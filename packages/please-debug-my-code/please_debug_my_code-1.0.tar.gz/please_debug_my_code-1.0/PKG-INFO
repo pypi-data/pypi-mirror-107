@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: please_debug_my_code
+Version: 1.0
+Summary: Perfect debug helper
+Home-page: https://github.com/otter18/please_debug_my_code
+Author: ChernV (otter18)
+Author-email: vchern185@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Ваш идеальный помощник для дебага кода
+
+Больше комментариев не требуется. Просто идеальный помощник. Просто попросите. Только учитывайте, что он иногда не в настроении.
+
