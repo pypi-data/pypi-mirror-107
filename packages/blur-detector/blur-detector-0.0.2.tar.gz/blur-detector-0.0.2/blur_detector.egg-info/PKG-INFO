@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: blur-detector
+Version: 0.0.2
+Summary: Uses discrete cosine transform coefficients at multiple scales and uses max pooling on the high frequency coefficients to get the sharp areas in an image.
+Home-page: https://github.com/Utkarsh-Deshmukh/Spatially-Varying-Blur-Detection-python
+Author: utkarsh-deshmukh
+Author-email: utkarsh.deshmukh@gmail.com
+License: BSD 2-Clause "Simplified" License
+Download-URL: https://github.com/Utkarsh-Deshmukh/Spatially-Varying-Blur-Detection-python/archive/refs/heads/main.zip
+Description: # Spatially-Varying-Blur-Detection-python
+        python implementation of the paper "Spatially-Varying Blur Detection Based on Multiscale Fused and Sorted Transform Coefficients of Gradient Magnitudes" - cvpr 2017
+        
+Keywords: Spatially Varying Blur Detection
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
