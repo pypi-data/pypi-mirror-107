@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: load-testing-data-selectionsort
+Version: 0.1.0
+Summary: selection sort
+Author: AlexandrVolkov
+Author-email: hramyh.w@mail.ru
+Requires-Python: ==3.9.5
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (==7.1.2)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: pandas (==1.2.4)
