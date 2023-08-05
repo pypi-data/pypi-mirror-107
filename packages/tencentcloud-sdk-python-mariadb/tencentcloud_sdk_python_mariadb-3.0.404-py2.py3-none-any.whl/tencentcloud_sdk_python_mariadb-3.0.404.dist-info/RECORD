@@ -1,0 +1,9 @@
+tencentcloud/__init__.py,sha256=PDS9YYLZ9hjM793ysS_HDuWSK3EFd3AX5Zi6YA80UiM,630
+tencentcloud/mariadb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/mariadb/v20170312/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/mariadb/v20170312/mariadb_client.py,sha256=80p5eUqNJtojOse5i-hFx0ryJDo3d5J76iCSylIQYbs,62856
+tencentcloud/mariadb/v20170312/models.py,sha256=RLEW4_cqt7FEqQHBUVfwfbTdmYqTTj8Brq327cPwEZQ,162977
+tencentcloud_sdk_python_mariadb-3.0.404.dist-info/METADATA,sha256=aJGYdMm0Cg63sLSPyvaBcwX2B3fj6bfw8fXiveqta6o,1452
+tencentcloud_sdk_python_mariadb-3.0.404.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_mariadb-3.0.404.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_mariadb-3.0.404.dist-info/RECORD,,
