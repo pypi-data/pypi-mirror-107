@@ -1,0 +1,3 @@
+[console_scripts]
+assert-headers-py=assert_headers.cli:cli
+

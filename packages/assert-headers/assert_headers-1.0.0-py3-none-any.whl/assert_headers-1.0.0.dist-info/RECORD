@@ -1,0 +1,17 @@
+LICENSE,sha256=x5GynpALd9QxCT_XqAApRF3Y-EmQOqHqS4R4dK8OOIY,1071
+assert_headers/HeaderAssertionError.py,sha256=N3cx-BfKGEJqFiNIAHSsCLQhxTC0Pjew7y7Kn-sfAs4,269
+assert_headers/__about__.py,sha256=XcSxYPsAU8EhtKx3z47QTVe2KvoHKFhABjrdZVcfRdY,482
+assert_headers/__init__.py,sha256=W5Vb7RZ2-3V1B2rnTUfy-4M-X-1Kp4X8rMT_vOvDG_E,321
+assert_headers/__main__.py,sha256=7EN03JB90CQvbG1Rit69MkEUDZQZ2vJ6uaJPaNC8KDs,63
+assert_headers/assertHeaders.py,sha256=vzxnT3rx3A4ImUc6B_AXlx0C873QCSANKsfqtNHxQD0,2976
+assert_headers/assertHeadersFromUrl.py,sha256=5BRDgswNN-gxWvMfZvalounYpHHWfLsEdK2w9RYEKjI,495
+assert_headers/cli.py,sha256=dd0m4JkOd4ZvYgGRz2pBRS2lMxY5gnTF3cr1iOFLPnQ,2184
+assert_headers/getCLIConfiguration/__init__.py,sha256=8aQN44XcJwBnj8vDQrUrKIl_gpHXuwSALNxm1_XsvlM,441
+assert_headers/getCLIConfiguration/getJsonConfiguration.py,sha256=eqtoes1soUOBqUewpz4yosQxn8d5PsFPSyO8YrgsStY,243
+assert_headers/getCLIConfiguration/getYamlConfiguration.py,sha256=-YgWziSc1GOLcqBL4p6-qBnZjHmfnkSBB6x7gwSFU3Y,196
+assert_headers/getMeta.py,sha256=tu7ygjfC3GbOq5nDF4jP6yOhoRY55eAZhcf0akzQQ8A,226
+assert_headers-1.0.0.dist-info/entry_points.txt,sha256=12DVUw7ZgodBrpsOA6u30_F1hqyJsaEVl9ZFMNPvao8,60
+assert_headers-1.0.0.dist-info/LICENSE,sha256=x5GynpALd9QxCT_XqAApRF3Y-EmQOqHqS4R4dK8OOIY,1071
+assert_headers-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+assert_headers-1.0.0.dist-info/METADATA,sha256=jrV4WeppWoohOI3oPGkpW1M2fL_v5DZOaGLBKF9Py14,4875
+assert_headers-1.0.0.dist-info/RECORD,,
