@@ -1,0 +1,9 @@
+pytest
+port-for
+mirakuru
+redis
+
+[tests]
+pytest-cov
+pytest-xdist
+mock
