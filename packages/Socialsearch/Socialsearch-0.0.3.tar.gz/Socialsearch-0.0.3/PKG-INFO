@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Socialsearch
+Version: 0.0.3
+Summary: A very Special Searcher
+Home-page: UNKNOWN
+Author: Borys Kostka
+Author-email: borys.kostka09@gmail.com
+License: MIT
+Description: This is a special Searcher for google.com youtube.com facebook.com
+        
+        Change Log
+        ==========
+        
+        0.0.3 (24.05.2021)
+        ------------------
+        - Repaired bug
+Keywords: Searcher
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
