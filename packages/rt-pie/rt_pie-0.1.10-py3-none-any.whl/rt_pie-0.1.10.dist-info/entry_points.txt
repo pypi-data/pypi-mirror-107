@@ -1,0 +1,3 @@
+[console_scripts]
+rt_pie=rt_pie:main
+
