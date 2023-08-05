@@ -1,0 +1,4 @@
+[console_scripts]
+apihub_result=apihub.result:main
+apihub_server=apihub.server:main
+
