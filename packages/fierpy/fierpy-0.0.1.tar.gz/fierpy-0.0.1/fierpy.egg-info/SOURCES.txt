@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fierpy/__init__.py
+fierpy/fier.py
+fierpy.egg-info/PKG-INFO
+fierpy.egg-info/SOURCES.txt
+fierpy.egg-info/dependency_links.txt
+fierpy.egg-info/not-zip-safe
+fierpy.egg-info/requires.txt
+fierpy.egg-info/top_level.txt
