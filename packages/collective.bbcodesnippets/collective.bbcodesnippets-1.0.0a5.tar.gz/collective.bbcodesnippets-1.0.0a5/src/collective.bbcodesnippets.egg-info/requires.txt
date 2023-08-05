@@ -1,0 +1,11 @@
+bbcode>=1.1
+setuptools>=39.1.0
+Products.CMFPlone>=5.2
+plone.restapi
+
+[test]
+plone.app.testing
+plone.app.robotframework
+
+[test:python_version < "3"]
+mock
