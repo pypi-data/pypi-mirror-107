@@ -1,0 +1,14 @@
+nlpengine/__init__.py,sha256=8aj0Dzs8wbfObvPpUADBP9OPtdTsJGj4P1QziYRJs1A,225
+nlpengine/cli.py,sha256=y71wX5gIF4hIwl5jO73S_EdgT_4xMY3iqAolchWJPFQ,421
+nlpengine/utils.py,sha256=4tlruvipFCCYQNhvWlXroLuuOa98cO8lwk7o1N430Sc,2531
+nlpengine/classifiers/__init__.py,sha256=p668UdmgfTRcY6OgWazfKgsfGIm_oRpxw_grKTOW4fU,51
+nlpengine/classifiers/fasttext_classifier.py,sha256=KzokZ7fYs8Oa25WyBswGKTYGbIa1FeXobSV4_tVwh1c,3769
+nlpengine/feature_extraction/__init__.py,sha256=kRQOAudcnE9R4Tw-f2p1j1J4CCy5RA9U0S8AEU8WH6M,64
+nlpengine/feature_extraction/word_embeddings.py,sha256=GK2vKBALq7aaVYi2dtpiSEvwwW5nLj-n7xzyq7UflTw,1548
+nlpengine-0.0.1.dist-info/AUTHORS.rst,sha256=kOlKSmskE6pp-3rFeJEDavQvyK5jMYL9TsjWHm5JKRI,180
+nlpengine-0.0.1.dist-info/LICENSE,sha256=uW3RWfo1fJtJlAP-vVQFy1ooqw1MXtaZ2frwD7fpOvc,1097
+nlpengine-0.0.1.dist-info/METADATA,sha256=tVjQIP7jbujXUU32qUa9vXgzMH_urYi6AJydwyu-PPw,2039
+nlpengine-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+nlpengine-0.0.1.dist-info/entry_points.txt,sha256=1nMs5faR7vTXnXTVNJBVzk72EgY93yp49R_f9DH9K78,50
+nlpengine-0.0.1.dist-info/top_level.txt,sha256=xcPiGh52wcXCg_K8LejmxJN6RukgK87x4xXjg_h0Nx4,10
+nlpengine-0.0.1.dist-info/RECORD,,
