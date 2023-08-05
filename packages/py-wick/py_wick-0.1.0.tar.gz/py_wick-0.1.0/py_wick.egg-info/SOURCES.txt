@@ -1,0 +1,12 @@
+Cargo.toml
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+py_wick/__init__.py
+py_wick.egg-info/PKG-INFO
+py_wick.egg-info/SOURCES.txt
+py_wick.egg-info/dependency_links.txt
+py_wick.egg-info/not-zip-safe
+py_wick.egg-info/top_level.txt
+src/lib.rs
