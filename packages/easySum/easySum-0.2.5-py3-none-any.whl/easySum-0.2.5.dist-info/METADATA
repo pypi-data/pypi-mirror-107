@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: easySum
+Version: 0.2.5
+Summary: You can easily summarize the text.
+Home-page: https://github.com/hcpmiyuki/easySum
+Author: miyuki kimura
+Author-email: miyuki.kimura@deepbluets.page
+License: MIT
+Keywords: nlp python summarizer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: blis (==0.4.1)
+Requires-Dist: breadability (==0.1.20)
+Requires-Dist: catalogue (==1.0.0)
+Requires-Dist: certifi (==2020.4.5.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: cymem (==2.0.3)
+Requires-Dist: Cython (==0.29.19)
+Requires-Dist: dartsclone (==0.9.0)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: emoji (==0.5.4)
+Requires-Dist: ginza (==3.1.2)
+Requires-Dist: idna (==2.9)
+Requires-Dist: importlib-metadata (==1.6.0)
+Requires-Dist: ja-ginza (==3.1.0)
+Requires-Dist: ja-ginza-dict
+Requires-Dist: joblib (==0.15.1)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: mojimoji (==0.0.11)
+Requires-Dist: murmurhash (==1.0.2)
+Requires-Dist: neologdn (==0.4)
+Requires-Dist: nltk (==3.5)
+Requires-Dist: numpy
+Requires-Dist: plac (==1.1.3)
+Requires-Dist: preshed (==3.0.2)
+Requires-Dist: pycountry (==19.8.18)
+Requires-Dist: regex (==2020.5.14)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: sortedcontainers (==2.1.0)
+Requires-Dist: spacy (==2.2.4)
+Requires-Dist: srsly (==1.0.2)
+Requires-Dist: SudachiPy (==0.4.4)
+Requires-Dist: sumy (==0.8.1)
+Requires-Dist: thinc (==7.4.0)
+Requires-Dist: tinysegmenter (==0.4)
+Requires-Dist: tqdm (==4.46.0)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: wasabi (==0.6.0)
+Requires-Dist: zipp (==3.1.0)
+
+# easySum
+## LICENSE
+This software is released under the MIT License, see LICENSE.txt.
+
+## Install
+```
+pip install easySum
+```
+
+## Usage
+```
+from easySum import summarize_sentences
+
+result = summarize_sentences(<要約したい文章>, sentences_count=<要約後の文章数(デフォルトは3)>, algorithm=<アルゴリズム(デフォルトはlexrank)>)
+
+```
+- アルゴリズムは以下から選択
+  -  lex: LexRank
+  -  tex: TextRank
+  -  lsa: LSA
+  -  kl: KL
+  -  luhn: Luhn
+  -  redu: Reduction
+  -  sum: SumBasic
+
+- 現在は日本語のみに対応. 英語対応は修正中.
+
+
