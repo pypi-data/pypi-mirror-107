@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+p3dae/__init__.py
+p3dae/audio_effects.py
+p3dae.egg-info/PKG-INFO
+p3dae.egg-info/SOURCES.txt
+p3dae.egg-info/dependency_links.txt
+p3dae.egg-info/requires.txt
+p3dae.egg-info/top_level.txt
