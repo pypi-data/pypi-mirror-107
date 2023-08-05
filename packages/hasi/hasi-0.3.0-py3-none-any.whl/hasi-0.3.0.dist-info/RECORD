@@ -1,0 +1,11 @@
+hasi/__init__.py,sha256=E31Zq4X9g_wjr8rRnh43xztHFDG-RDA47B07Cib-nfA,104
+hasi/align.py,sha256=tqvbhImusOZTZpdq97gGtobfnDaRowRsdx_j_3gQj0Q,13664
+hasi/classify.py,sha256=MSWWa9p9cci11PaVTLO2szPu_M2DnnaBUidu109PBEw,3269
+hasi/diffeoregistrar.py,sha256=01XbQNN7yhPyizFcNFCAAVmAwkbywIOytuWfsgrG3zY,3913
+hasi/meansquaresregistrar.py,sha256=M_4LMrPM-0OJM9-EOG8UA_fTuk4cWnKnTPKnzQBbx-8,5934
+hasi/meshtomeshregistrar.py,sha256=AFpm9WkpdI0M0GCUAy9nTZ2Adap8oUBNwJAaKRHb5L4,6644
+hasi/pointsetentropyregistrar.py,sha256=ASSFriqK6VYkA3FcVOsVa_p9qqs1gWa0urkKgZgj0t0,5904
+hasi-0.3.0.dist-info/LICENSE,sha256=ZWwkafqf3sEq1Fc-zeKIdAkCK_38PWMbfFJDABKstJk,9229
+hasi-0.3.0.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+hasi-0.3.0.dist-info/METADATA,sha256=yTMO7ycUfrcTtsxyAOj0cbhAxm0ouiQHu_15aQtkx2w,1190
+hasi-0.3.0.dist-info/RECORD,,
