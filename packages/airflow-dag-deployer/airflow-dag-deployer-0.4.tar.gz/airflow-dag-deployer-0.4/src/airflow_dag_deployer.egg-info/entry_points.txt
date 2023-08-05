@@ -1,0 +1,3 @@
+[console_scripts]
+deploydag = deployer.deploy_dag:run
+
