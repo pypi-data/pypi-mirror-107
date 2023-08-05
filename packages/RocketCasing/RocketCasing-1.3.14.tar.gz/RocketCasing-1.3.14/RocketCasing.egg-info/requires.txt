@@ -1,0 +1,9 @@
+peppercorn
+matplotlib
+datetime
+
+[dev]
+check-manifest
+
+[test]
+coverage
