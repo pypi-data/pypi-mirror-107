@@ -1,0 +1,673 @@
+interactions:
+- request:
+    body: '{"hash": null, "name": "dev", "type": "BRANCH"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '47'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: http://localhost:19120/api/v1/trees/tree
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d\"\n}"
+    headers:
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees
+  response:
+    body:
+      string: "[ {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" :
+        \"680e230bfbbea2b5bd33d7557e2a3a22a3b8eec341229ef828412630bf59cf27\"\n}, {\n
+        \ \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d\"\n}
+        ]"
+    headers:
+      Content-Length:
+      - '247'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/contents/foo.bar?ref=dev
+  response:
+    body:
+      string: "{\n  \"message\" : \"Requested contents do not exist for specified
+        reference.\",\n  \"status\" : 404,\n  \"reason\" : \"Not Found\",\n  \"serverStackTrace\"
+        : null\n}"
+    headers:
+      Content-Length:
+      - '149'
+      Content-Type:
+      - application/json
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"commitMeta": {"author": null, "properties": null, "message": "test_message",
+      "authorTime": null, "signedOffBy": null, "committer": null, "hash": null, "commitTime":
+      null, "email": null}, "operations": [{"contents": {"id": "uuid", "metadataLocation":
+      "/a/b/c", "type": "ICEBERG_TABLE"}, "key": {"elements": ["foo", "bar"]}, "type":
+      "PUT"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '341'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: http://localhost:19120/api/v1/trees/branch/dev/commit?expectedHash=2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/main
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" : \"680e230bfbbea2b5bd33d7557e2a3a22a3b8eec341229ef828412630bf59cf27\"\n}"
+    headers:
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/dev
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"hash": "ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca",
+      "name": "main", "type": "BRANCH"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: PUT
+    uri: http://localhost:19120/api/v1/trees/branch/main?expectedHash=680e230bfbbea2b5bd33d7557e2a3a22a3b8eec341229ef828412630bf59cf27
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees
+  response:
+    body:
+      string: "[ {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" :
+        \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}, {\n
+        \ \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}
+        ]"
+    headers:
+      Content-Length:
+      - '247'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/v1.0
+  response:
+    body:
+      string: "{\n  \"message\" : \"Unable to find reference [v1.0].\",\n  \"status\"
+        : 404,\n  \"reason\" : \"Not Found\",\n  \"serverStackTrace\" : null\n}"
+    headers:
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/main
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"hash": "ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca",
+      "name": "v1.0", "type": "TAG"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '107'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: http://localhost:19120/api/v1/trees/tree
+  response:
+    body:
+      string: "{\n  \"type\" : \"TAG\",\n  \"name\" : \"v1.0\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '118'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees
+  response:
+    body:
+      string: "[ {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" :
+        \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}, {\n
+        \ \"type\" : \"TAG\",\n  \"name\" : \"v1.0\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n},
+        {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}
+        ]"
+    headers:
+      Content-Length:
+      - '367'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/v1.0
+  response:
+    body:
+      string: "{\n  \"type\" : \"TAG\",\n  \"name\" : \"v1.0\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '118'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/dev
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"hash": "ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca",
+      "name": "v1.0", "type": "TAG"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '107'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: PUT
+    uri: http://localhost:19120/api/v1/trees/tag/v1.0?expectedHash=ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees
+  response:
+    body:
+      string: "[ {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" :
+        \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}, {\n
+        \ \"type\" : \"TAG\",\n  \"name\" : \"v1.0\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n},
+        {\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}
+        ]"
+    headers:
+      Content-Length:
+      - '367'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/dev
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"dev\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.25.1
+    method: DELETE
+    uri: http://localhost:19120/api/v1/trees/branch/dev?expectedHash=ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/v1.0
+  response:
+    body:
+      string: "{\n  \"type\" : \"TAG\",\n  \"name\" : \"v1.0\",\n  \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\"\n}"
+    headers:
+      Content-Length:
+      - '118'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.25.1
+    method: DELETE
+    uri: http://localhost:19120/api/v1/trees/tag/v1.0?expectedHash=ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/main/log
+  response:
+    body:
+      string: "{\n  \"hasMore\" : false,\n  \"token\" : null,\n  \"operations\" :
+        [ {\n    \"hash\" : \"ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca\",\n
+        \   \"committer\" : \"\",\n    \"author\" : \"\",\n    \"signedOffBy\" : null,\n
+        \   \"message\" : \"test_message\",\n    \"commitTime\" : \"2021-04-19T08:51:51.178070Z\",\n
+        \   \"authorTime\" : \"2021-04-19T08:51:51.178070Z\",\n    \"properties\"
+        : { }\n  } ]\n}"
+    headers:
+      Content-Length:
+      - '372'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/contents/foo.bar?ref=main
+  response:
+    body:
+      string: "{\n  \"type\" : \"ICEBERG_TABLE\",\n  \"id\" : \"uuid\",\n  \"metadataLocation\"
+        : \"/a/b/c\"\n}"
+    headers:
+      Content-Length:
+      - '80'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"commitMeta": {"author": null, "properties": null, "message": "delete_message",
+      "authorTime": null, "signedOffBy": null, "committer": null, "hash": null, "commitTime":
+      null, "email": null}, "operations": [{"key": {"elements": ["foo", "bar"]}, "type":
+      "DELETE"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '263'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: http://localhost:19120/api/v1/trees/branch/main/commit?expectedHash=ab3035ffa631d381c99af7e048b636d64159be11a5b7f47c3398389d63b511ca
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" : \"efb37f5204f3d8aeea92105bbd30f50f11ab7cae11152a722788c51abf357ac8\"\n}"
+    headers:
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: http://localhost:19120/api/v1/trees/tree/main
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" : \"efb37f5204f3d8aeea92105bbd30f50f11ab7cae11152a722788c51abf357ac8\"\n}"
+    headers:
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.25.1
+    method: DELETE
+    uri: http://localhost:19120/api/v1/trees/branch/main?expectedHash=efb37f5204f3d8aeea92105bbd30f50f11ab7cae11152a722788c51abf357ac8
+  response:
+    body:
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: '{"hash": null, "name": "main", "type": "BRANCH"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '48'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: http://localhost:19120/api/v1/trees/tree
+  response:
+    body:
+      string: "{\n  \"type\" : \"BRANCH\",\n  \"name\" : \"main\",\n  \"hash\" : \"2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d\"\n}"
+    headers:
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+version: 1
