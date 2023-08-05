@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: elastic-tools
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/petricore-tech/elastictools.git
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: astroid (==2.5.6)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: elasticsearch (==7.12.1)
+Requires-Dist: idna (==3.1)
+Requires-Dist: isort (==5.8.0)
+Requires-Dist: lazy-object-proxy (==1.6.0)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: motor (==2.4.0)
+Requires-Dist: multidict (==5.1.0)
+Requires-Dist: pylint (==2.8.2)
+Requires-Dist: pymongo (==3.11.4)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: typing-extensions (==3.10.0.0)
+Requires-Dist: urllib3 (==1.26.4)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: yarl (==1.6.3)
+
+UNKNOWN
+
