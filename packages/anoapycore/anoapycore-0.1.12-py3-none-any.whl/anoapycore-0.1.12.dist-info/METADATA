@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: anoapycore
+Version: 0.1.12
+Summary: Anoa Python Core Package
+Home-page: https://github.com/ah4d1/anoapycore
+Author: Ahadi Aprianto
+Author-email: ahadi.aprianto@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ah4d1/anoapycore
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: imblearn (>=0.0)
+Requires-Dist: imbalanced-learn (>=0.8.0)
+Requires-Dist: kneed (>=0.7.0)
+Requires-Dist: matplotlib (>=3.3.1)
+Requires-Dist: mlxtend (>=0.18.0)
+Requires-Dist: multipledispatch (>=0.6.0)
+Requires-Dist: numpy (>=1.19.1)
+Requires-Dist: openpyxl (>=3.0.7)
+Requires-Dist: seaborn (>=0.11.1)
+Requires-Dist: sklearn (>=0.0)
+Requires-Dist: statsmodels (>=0.12.2)
+
+UNKNOWN
+
