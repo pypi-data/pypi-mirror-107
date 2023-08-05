@@ -1,0 +1,3 @@
+include helptools/files/*.js
+include helptools/files/*.svg
+include helptools/files/docs/*.html
