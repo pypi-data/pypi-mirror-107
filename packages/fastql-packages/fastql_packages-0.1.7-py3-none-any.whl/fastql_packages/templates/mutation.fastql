@@ -1,0 +1,21 @@
+import graphene
+{% for package in packages %}
+{{package}}
+{% endfor %}
+
+class {{mutation.class_name}}(graphene.Mutation):
+{% if mutation.has_argument %}
+    class Arguments:
+        {{mutation.arg_key}} = {{mutation.serialize_name}}GrapheneInputModel()
+
+    Output = {{mutation.serialize_name}}GrapheneModel
+{% endif %}
+    {% if mutation.has_argument %}
+    @staticmethod
+    def mutate(parent, info, {{mutation.arg_key}}):
+        pass
+    {% else %}
+    @staticmethod
+    def mutate(parent, info):
+        pass
+    {% endif %}
