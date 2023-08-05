@@ -1,0 +1,9 @@
+tracardi_plugin_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tracardi_plugin_sdk/plugin_runner.py,sha256=8ViThEvr4yky87rS9sDP5AhJuyzaGYIJxj7czvnOKaE,68
+tracardi_plugin_sdk/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tracardi_plugin_sdk/domain/register.py,sha256=o_Dn5hfYbI7njU6izKO8pCvrjSn4bMvmQ1Vtp1P7Fzc,394
+tracardi_plugin_sdk/domain/result.py,sha256=g79OdUrHZdDNGdo_breJli3nybNOUWtJ08RYVEqFegw,160
+tracardi_plugin_sdk-0.1.dist-info/METADATA,sha256=xIW0AJ_3jdxaTRnAg0qpui3WWiglEB9lYIbqleGEZm4,515
+tracardi_plugin_sdk-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tracardi_plugin_sdk-0.1.dist-info/top_level.txt,sha256=8tBX5i8nRD36AZcOjpWv4KBi7d_1N9k1wN56YNFzuOU,20
+tracardi_plugin_sdk-0.1.dist-info/RECORD,,
