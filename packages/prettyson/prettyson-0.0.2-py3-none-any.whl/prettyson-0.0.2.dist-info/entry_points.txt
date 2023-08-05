@@ -1,0 +1,3 @@
+[console_scripts]
+prettyson = prettyson.__main__:main
+
