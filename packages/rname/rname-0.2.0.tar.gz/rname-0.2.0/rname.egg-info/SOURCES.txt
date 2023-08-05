@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+randname/__init__.py
+randname/__main__.py
+randname/errors.py
+randname/randname.py
+randname/rname.py
+rname.egg-info/PKG-INFO
+rname.egg-info/SOURCES.txt
+rname.egg-info/dependency_links.txt
+rname.egg-info/entry_points.txt
+rname.egg-info/top_level.txt
