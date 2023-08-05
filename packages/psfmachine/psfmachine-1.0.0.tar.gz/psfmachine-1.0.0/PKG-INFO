@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: psfmachine
+Version: 1.0.0
+Summary: Tool to perform fast PSF photometry of primary and background targets from Kepler/K2 Target Pixel Files
+Home-page: https://ssdatalab.github.io/psfmachine/
+License: MIT
+Keywords: NASA, Kepler, Astronomy
+Author: Christina Hedges
+Author-email: christina.l.hedges@nasa.gov
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Dist: astropy (>=4.2,<5.0)
+Requires-Dist: corner (>=2.1.0,<3.0.0)
+Requires-Dist: fitsio (>=1.1.3,<2.0.0)
+Requires-Dist: jedi (==0.17.2)
+Requires-Dist: lightkurve (>=2.0.4,<3.0.0)
+Requires-Dist: matplotlib (>=3.3.3,<4.0.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: patsy (>=0.5.1,<0.6.0)
+Requires-Dist: pyia (>=1.2,<2.0)
+Requires-Dist: scipy (>=1.5.4,<2.0.0)
+Requires-Dist: tqdm (>=4.54.0,<5.0.0)
+Project-URL: Repository, https://github.com/ssdatalab/psfmachine
+Description-Content-Type: text/markdown
+
+# PSFMachine
+
+*PRF photometry with Kepler*
+
+<a href="https://github.com/ssdatalab/psfmachine/workflows/tests.yml">
+      <img src="https://github.com/ssdatalab/psfmachine/workflows/pytest/badge.svg" alt="Test status"/>
+</a> <a href="https://pypi.python.org/pypi/tess-ephem"><img src="https://img.shields.io/pypi/v/tess-ephem", alt="pypi status"></a>
+
+Check out the [documentation](https://ssdatalab.github.io/psfmachine/).
+Check out the [paper](#)
+
+`PSFMachine` is an open source Python tool for creating models of instrument effective Point Spread Functions (ePSFs), a.k.a Pixel Response Functions (PRFs). These models are then used to fit a scene in a stack of astronomical images. `PSFMachine` is able to quickly derive photometry from stacks of *Kepler* images and separate crowded sources.
+
+# Installation
+
+```
+pip install psfmachine
+```
+
+# Example use
+
+Below is an example script that shows how to use `PSFMachine`. Depending on the speed or your computer fitting this sort of model will probably take ~10 minutes to build 200 light curves. You can speed this up by changing some of the input parameters.
+
+```python
+import psfmachine as psf
+import lightkurve as lk
+tpfs = lk.search_targetpixelfile('Kepler-16', mission='Kepler', quarter=12, radius=1000, limit=200, cadence='long').download_all(quality_bitmask=None)
+machine = psf.TPFMachine.from_TPFs(tpfs, n_r_knots=10, n_phi_knots=12)
+machine.fit_lightcurves()
+```
+
+Funding for this project is provided by NASA ROSES grant number 80NSSC20K0874.
+
