@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lolacli
+Version: 0.1.9
+Summary: A simple cli tool to help beginners install apps in Linux
+Home-page: https://github.com/arghyagod-coder/lola
+License: MIT
+Keywords: lola,lola-installer,easy-installer,lola-linux,lola-app,lola-cli
+Author: Arghya Sarkar
+Author-email: arghyasarkar.joker@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Project-URL: Repository, https://github.com/arghyagod-coder/lola
+Description-Content-Type: text/markdown
+
+## LOLA
+`lola` : A simple CLI for installing packages on Linux easily 
+
+[![GitHub license](https://github.com/arghyagod-coder/lola/blob/master/LICENSE)
+
+
+#### Dependencies
++ click
+
+
