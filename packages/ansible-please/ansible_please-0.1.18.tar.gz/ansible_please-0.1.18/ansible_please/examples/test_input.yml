@@ -1,0 +1,6 @@
+hosts:
+    master_host:
+      - '127.0.0.1'
+host_info:
+  '127.0.0.1':
+      'python_path': /usr/bin/python3

@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: ansible-please
+Version: 0.1.18
+Summary: Helper package to make running Ansible a bit smoother
+Home-page: https://github.com/shyamsn97/ansible_please
+Author: Shyam Sudhakaran
+Author-email: shyamsn97@gmail.com
+License: MIT license
+Description: ansible_please
+        ==============
+        
+        [![image](https://img.shields.io/pypi/v/ansible_please.svg)](https://pypi.python.org/pypi/ansible_please)
+        
+        [![Build Status](https://travis-ci.com/shyamsn97/ansible_please.svg?branch=main)](https://travis-ci.com/shyamsn97/ansible_please)
+        
+        [![Documentation Status](https://readthedocs.org/projects/ansible-please/badge/?version=latest)](https://ansible-please.readthedocs.io/en/latest/?badge=latest)
+        
+        Helper package to make running Ansible a bit smoother
+        
+        - Run Ansible tasks and playbooks from python with ease!
+        
+        ### Installation
+        To install python package from pypi:
+        ```
+        python -m pip install ansible-please
+        ```
+        From source:
+        ```
+        python setup.py install
+        ```
+        
+        To install ansible plugins, like `docker_container`
+        
+        ```
+        ansible-galaxy collection install community.docker
+        ```
+        
+        
+        Overview
+        --------
+        ### Main Components:
+        - [Inventory](ansible_please/invventory.py) - Handles ansible inventory creation from input:
+          - Basic input:
+          ```
+          hosts:
+              master_host:
+                - 'localhost'
+          host_info:
+            '127.0.0.1':
+              'python_path': /usr/bin/python3
+          ```
+        - [AnsibleTask](ansible_please/ansible_task.py) - Handles individual ansible task creation
+          - Docker Task creation
+            ```
+            from ansible_please.task_templates.docker_container import DockerContainer
+        
+            docker_container_task = DockerContainer(
+              task_description="start-test-redis",
+              name="test-redis",
+              image="redis:latest",
+            )
+            ```
+            - converts to yaml:
+              ```
+              - name: '[up] start-test-redis'
+                docker_container:
+                  name: test-redis
+                  image: redis:latest
+                  user: nobody
+                  keep_volumes: false
+                  detach: true
+                  tty: false
+                  interactive: false
+                  network_mode: host
+                  container_default_behavior: compatibility
+                tags:
+                - up
+              ```
+          - `up` to start the container, `down` to tear it down
+        
+        - [Playbook](ansible_please/playbook.py) - Handles playbook creation
+            ```
+            from ansible_please.playbook import Playbook
+            p = Playbook(name="Set up master_host",
+                       hosts="master_host",
+                       tasks=[docker_container_task.up(), docker_container_task.down()])
+            ```
+          - converts to yaml:
+            ```
+            - name: Set up master_host
+              hosts: master_host
+              gather_facts: true
+              tasks:
+              - name: '[up] start-test-redis'
+                docker_container:
+                  name: test-redis
+                  image: redis:latest
+                  user: nobody
+                  keep_volumes: false
+                  detach: true
+                  tty: false
+                  interactive: false
+                  network_mode: host
+                  container_default_behavior: compatibility
+                tags:
+                - up
+              - name: '[down] start-test-redis'
+                docker_container:
+                  name: test-redis
+                  state: absent
+                  user: nobody
+                  keep_volumes: false
+                  detach: true
+                  tty: false
+                  interactive: false
+                  network_mode: host
+                  container_default_behavior: compatibility
+                tags:
+                - down
+            ```
+        - [AnsibleRunner](ansible_please/ansible_runner.py) - main handler for running playbooks
+            ```
+            r = AnsibleRunner(playbook=p, input_path="test_input.yml") # or pass in Inventory class
+            r.up()
+            ```
+        
+        [See full examples](ansible_please/examples/)
+        
+        ### Free software: MIT license
+        ### Documentation: <https://ansible-please.readthedocs.io>.
+        
+        Credits
+        -------
+        
+        This package was created with
+        [Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+        [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+        project template.
+        
+        
+        History
+        =======
+        
+        0.1.0 (2020-12-22)
+        ------------------
+        
+        -   First release on PyPI.
+        
+Keywords: ansible_please
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+Click>=7.0
+ansible-runner
+ansible
+ansible-core==2.11.0
+attrs
+loguru
+omegaconf==2.1.0.rc1
+cloudpickle
+docker
