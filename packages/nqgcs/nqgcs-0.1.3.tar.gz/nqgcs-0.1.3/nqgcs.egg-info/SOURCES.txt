@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+nqgcs/__init__.py
+nqgcs/nqgcs.py
+nqgcs.egg-info/PKG-INFO
+nqgcs.egg-info/SOURCES.txt
+nqgcs.egg-info/dependency_links.txt
+nqgcs.egg-info/not-zip-safe
+nqgcs.egg-info/requires.txt
+nqgcs.egg-info/top_level.txt
