@@ -1,0 +1,16 @@
+ggdrive-0.1.4.data/scripts/gdrive,sha256=x_F1K-AAPsejU_A3bJa-i2m9JeYANPUcKlBuXy3A8GY,753
+modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modules/backports.py,sha256=2R9mYzmfGqtEanYcBXJ80ObppqE7DIKE54RjV5MjZrI,3150
+modules/chunks.py,sha256=0G897wxjjIJ41Gam1-kgt9HJ_Si4QmQknxL7dR-Hb8s,8447
+modules/command.py,sha256=PlmYaQVsTiiNAhyoRdwTp3mK1Lak9-qTXMcxD9N4UEs,11263
+modules/config.py,sha256=vrHnj0CwLUjUfcL2oJfgxMyi8ixpdSBuBB3aE9gJP6A,355
+modules/extractor.py,sha256=LI12le8fKF5B4Dk8vx346dwun9RFbU6E7UsNLozmrYQ,5710
+modules/googleservice.py,sha256=JshI25shYFrvLW_01Zy85fhR0OEyH7HtMcoAWPLDbAk,4832
+modules/logger.py,sha256=YHHx5-5bzxb2VqjnkdanvkeUNmSLOnw7DxjXmmNCRBw,161
+modules/progresslogger.py,sha256=AY6w3KG4Lec_SD6FfXnGfnO4nK1iEQrdvkWIYUxEEJ0,4158
+modules/util.py,sha256=7UQaaR3ZM22j5KmAnGcFI8kQr8mDru0i6G_KQ4ochAI,4165
+ggdrive-0.1.4.dist-info/LICENSE,sha256=H564SUO4VBBXlCe0fpXBkwv3sKbkzQHuHfLoPjgfR2E,1068
+ggdrive-0.1.4.dist-info/METADATA,sha256=AhbfWvKsytnMT8WrHG1Nhd2FLGrrrTbwMVICe6PfTgE,6449
+ggdrive-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ggdrive-0.1.4.dist-info/top_level.txt,sha256=F7U4jdIxH3MVMmyX9rbajWuG0bj5tcZN4L1DZSxW72E,8
+ggdrive-0.1.4.dist-info/RECORD,,
