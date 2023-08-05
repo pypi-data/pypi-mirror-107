@@ -1,0 +1,15 @@
+flight/__init__.py,sha256=Mlm4Gvmb_6yQxwUbv2Ksc-BJFXLPg9H1Vt2iV7wXrA4,22
+flight/binning.py,sha256=MOixB4hlCoJ1wrTOrYsfUeEYAGBxPTQ6wV1kpEga4ew,86127
+flight/cluster.py,sha256=3u7wbZzkwDUDcxw5YZyGbY_P2eV7Uq0cllsDlgIyakg,12570
+flight/distance.py,sha256=hT_pHkZUcp4LwJtugIYQU_rporD-MjwcO5c29k2BxfA,9681
+flight/flight.py,sha256=_AITiUGGZjlc8qNiEstc-Uq-b2WTkVZJN6e0SDmHwjA,27318
+flight/metrics.py,sha256=Eb6Ay5N6iAy8_FyZsjxd5LftzHnFSPVODjJmqsaAqRI,26280
+flight/utils.py,sha256=dyaV6wVpovhbit46f-noZOc5TUxfkQpgmbzJ86i6E84,10018
+flight_genome-1.2.1.data/data/LICENSE,sha256=RGFapCHQ4X4pufH3rU70Da0sVaIbAF8uNHvokUuEKjQ,1532
+flight_genome-1.2.1.data/data/README.md,sha256=9MEEUTXiaf0CRbvjiyXseyw7CXM81CuMyKN1gSO_aPc,874
+flight_genome-1.2.1.dist-info/LICENSE,sha256=RGFapCHQ4X4pufH3rU70Da0sVaIbAF8uNHvokUuEKjQ,1532
+flight_genome-1.2.1.dist-info/METADATA,sha256=WgciSTMKK8lg2nr_wDcQe-oCarnybk321rqu3SfEF8k,1241
+flight_genome-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flight_genome-1.2.1.dist-info/entry_points.txt,sha256=wSdNUwjcdxn42dILh5T9qu0kTeNQZSmannVjIvseY9Y,47
+flight_genome-1.2.1.dist-info/top_level.txt,sha256=-hSeuXTq_-quV2R8bSYYO0Kaq56T3WdpWK3c4W9uj2g,7
+flight_genome-1.2.1.dist-info/RECORD,,
