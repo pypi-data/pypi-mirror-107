@@ -1,0 +1,24 @@
+PyMillion/__init__.py,sha256=OPYzewDrxDbobAcNKXSjHnEL_pKAimDesryyehpyoWM,29
+PyMillion/audios.py,sha256=4nNoNo7LaCv562sBGMC-ODs5AZl1EEjKu7W9aNyOYCg,718
+PyMillion/caixa.py,sha256=rMSTsbP0KptYalVZiMjGuQqNlLGnNe18AhxGT1ueHA0,1036
+PyMillion/main.py,sha256=WajS_9LfkmgkxDkujSYvjdzgmPNKz6z7j6umOMvoaRc,6963
+PyMillion/menu.py,sha256=tkCMjwBV5wSRrpG0wduufrDlRmUw6exHLxYWxC421j8,12380
+PyMillion/perguntas.py,sha256=bEQj99khSircPKnaWiXoQQ5shblOS6_EmTXZ1K5yE0w,4363
+PyMillion/pythonImg.py,sha256=tqp8J8XbQfwKJ7xjP5vtujRT-Dk3urNEIH-ZI5tMpNI,397
+PyMillion/sorteiaperg.py,sha256=McdoLjNIl65ytVV5JW6KVo-jfefbGUUZ2rTydEc_VHo,334
+PyMillion/textos.py,sha256=Mystvaw_ae56y7CtKEep_FBbNCqloXX-FX52hWFsqZ4,635
+PyMillion/src/fonts/8-BIT WONDER.ttf,sha256=4-nGT6kS2DV2oBEMRv6InojDv33DQxnif81BSIXCpQo,14328
+PyMillion/src/fonts/PixelOperator.ttf,sha256=NWmlSBcnzCd74C_6cjSNQL862fA7loew2jsZ-3F9AMg,19076
+PyMillion/src/img/PythonImg.png,sha256=AiBSEebzGqOaGN-bsgZaB2dOyiRUPZlTZ0AFMnWtg2E,44439
+PyMillion/src/sounds/acertou.wav,sha256=2D63kPESYNhVhYc9sDWpuDyDtPndZFApVUq0Td8TVhw,258174
+PyMillion/src/sounds/acertou2.wav,sha256=GaCV-FHRl8h5h9lYxXf1N5pAl4yoCodETfIMJqsxsFs,140724
+PyMillion/src/sounds/certeza.wav,sha256=5rcQtJYjgBKFgu1z2E9VpdLCkF8WEzVdMZoysq05uyM,212116
+PyMillion/src/sounds/errou.wav,sha256=kVV8BNnA3OrG7hIRGQQCQ3Bc0Qo3E6L6zVZktPCfsTg,359572
+PyMillion/src/sounds/musica.wav,sha256=bZxMOCQ0OV5Elfy3Kz00YTGl3fKcGNJxAdtlpa2c-F8,17305826
+PyMillion/src/sounds/pfinal.wav,sha256=0Y5oL8SWO0-trDs5sM2BagwxYknCGXsKa6Pl7RJjwN8,285868
+thePyMillion-1.2.0.dist-info/LICENSE,sha256=etYYtkcYn-8593rbJpZEKqf_fdTBjC_exjkzY7asS6c,1086
+thePyMillion-1.2.0.dist-info/METADATA,sha256=PuOEwAzQtfX-eNPWX3AlKHp7putihlgvWHtYG66lUiA,877
+thePyMillion-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thePyMillion-1.2.0.dist-info/entry_points.txt,sha256=Ll4YEQEC8KDRZe2w6g7MoC3gvWLHprQVwKN_WGkDx-Q,50
+thePyMillion-1.2.0.dist-info/top_level.txt,sha256=XShFYHSDS1OlS21c6dp3kvkUdnfzdM-ytAkfsHIkKt0,10
+thePyMillion-1.2.0.dist-info/RECORD,,

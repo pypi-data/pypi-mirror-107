@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: thePyMillion
+Version: 1.2.0
+Summary: Um jogo do milhão sobre python feito em python
+Home-page: https://github.com/AlfredoAndrade14/PyMillion
+Author: Alfredo Vasconcelos de Andrade e André Araújo Alves
+Author-email: alfredov.andrade@gmail.com
+License: MIT
+Keywords: jogo,game,Jogo do milhão,retro,quiz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame (>=2.0)
+
+# PyMillion
+Um jogo do milhão sobre python feito em python.
+
+## Instalação
+```
+$ pip install thePyMillion
+```
+
+## Desinstalação
+```
+$ pip unistall thePyMillion
+```
+
+## Como jogar
+Para iniciar o jogo, digite: 
+```
+$ pymillion 
+```
+
+## Controles
+- Mouse Click
+
