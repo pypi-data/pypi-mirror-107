@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bomisspell/__init__.py
+bomisspell/option_generator.py
+bomisspell.egg-info/PKG-INFO
+bomisspell.egg-info/SOURCES.txt
+bomisspell.egg-info/dependency_links.txt
+bomisspell.egg-info/requires.txt
+bomisspell.egg-info/top_level.txt
