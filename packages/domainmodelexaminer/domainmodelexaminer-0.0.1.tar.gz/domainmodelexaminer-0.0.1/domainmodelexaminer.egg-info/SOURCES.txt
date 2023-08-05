@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+domainmodelexaminer/__init__.py
+domainmodelexaminer/api.py
+domainmodelexaminer/domainmodelexaminer.py
+domainmodelexaminer/main.py
+domainmodelexaminer.egg-info/PKG-INFO
+domainmodelexaminer.egg-info/SOURCES.txt
+domainmodelexaminer.egg-info/dependency_links.txt
+domainmodelexaminer.egg-info/not-zip-safe
+domainmodelexaminer.egg-info/requires.txt
+domainmodelexaminer.egg-info/top_level.txt
