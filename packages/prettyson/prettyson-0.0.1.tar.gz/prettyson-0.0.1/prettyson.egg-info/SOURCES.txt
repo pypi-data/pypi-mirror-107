@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+prettyson/__init__.py
+prettyson/__main__.py
+prettyson/definitions.py
+prettyson/format.py
+prettyson.egg-info/PKG-INFO
+prettyson.egg-info/SOURCES.txt
+prettyson.egg-info/dependency_links.txt
+prettyson.egg-info/entry_points.txt
+prettyson.egg-info/top_level.txt
+tests/__init__.py
+tests/test_formatter.py
