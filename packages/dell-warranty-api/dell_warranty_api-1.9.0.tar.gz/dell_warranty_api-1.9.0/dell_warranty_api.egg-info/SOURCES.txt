@@ -1,0 +1,10 @@
+README.md
+setup.py
+dell_api/__init__.py
+dell_api/__main__.py
+dell_warranty_api.egg-info/PKG-INFO
+dell_warranty_api.egg-info/SOURCES.txt
+dell_warranty_api.egg-info/dependency_links.txt
+dell_warranty_api.egg-info/entry_points.txt
+dell_warranty_api.egg-info/requires.txt
+dell_warranty_api.egg-info/top_level.txt
