@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: llg
+Version: 1.1.0
+Summary: Python package to solve the LLG equation by using the Heun scheme.
+Home-page: https://github.com/lufvelasquezgo/llg
+Author: Luisa Fernanda Velásquez González
+Author-email: lufvelasquezgo@unal.edu.co
+License: MIT license
+Description: # LLG
+        
+        The main objective of this library is to solve the [LLG equation](https://en.wikipedia.org/wiki/Landau%E2%80%93Lifshitz%E2%80%93Gilbert_equation) by using the Heun schema. We also implemented a CLI in order to let you use `llg` from console. You can follow the instructions given on the [wiki](https://github.com/jdalzatec/llg/wiki). Do not hesitate to write us if you have any suggestion/question.
+        
+        - Free software: MIT license
+        - Documentation: https://github.com/jdalzatec/llg/wiki
+        
+        ## Credits
+        
+        This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [`audreyr/cookiecutter-pypackage`](https://github.com/audreyr/cookiecutter-pypackage) project template.
+        
+        
+        
+Keywords: llg
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
