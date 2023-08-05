@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MojangAuth/MojangAuth.py
+MojangAuth/__init__.py
+MojangAuthPython.egg-info/PKG-INFO
+MojangAuthPython.egg-info/SOURCES.txt
+MojangAuthPython.egg-info/dependency_links.txt
+MojangAuthPython.egg-info/requires.txt
+MojangAuthPython.egg-info/top_level.txt
