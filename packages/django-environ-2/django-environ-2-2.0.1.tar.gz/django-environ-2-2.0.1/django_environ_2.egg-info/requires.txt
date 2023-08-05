@@ -1,0 +1,11 @@
+
+[develop]
+
+[docs]
+furo==2020.12.*,>=2020.12.30b24
+sphinx>=3.5.0
+sphinx-notfound-page
+
+[testing]
+pytest>=6.2.0
+pytest-cov>=2.11.1
