@@ -1,0 +1,13 @@
+networkx
+numpy
+jieba
+js2py
+
+[test]
+pytest>=4
+pytest-cov>=2.6.0
+pytest-flake8
+pillow
+
+[tutor]
+pillow
