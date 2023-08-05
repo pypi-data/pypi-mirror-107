@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: docxify
+Version: 0.0.2
+Summary: docxify and dedocxify files for fun and profit
+Home-page: https://danhahne.com/projects/docxify
+Author: Dan Hahne
+Author-email: contact@danhahne.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: base58
+Requires-Dist: python-docx
+
+UNKNOWN
+
