@@ -1,0 +1,3 @@
+[console_scripts]
+algotides = algotides.main:main
+
