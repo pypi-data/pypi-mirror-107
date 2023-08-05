@@ -1,0 +1,13 @@
+xlbridge/__init__.py,sha256=r_mxhaRkB0Vk1jqHhQ6bK3vBB3GqUmLlrgCF0qpPffY,29
+xlbridge/object_converter.py,sha256=CZ-ocCFPSGj_k_MGygKQTSp6Xv1Xj3cGW-J4S07jpqk,4479
+xlbridge/proto_converter.py,sha256=oyZCrOSZOpto2UtyDtypEJmy7z35_CaQma4Ljaohcrc,2667
+xlbridge/reference_store.py,sha256=Vsxp8R4e2hxDA4tvOUwbl-ymGRVQtB4pm3KZNX7enhM,1061
+xlbridge/service_pb2.py,sha256=Wwn-KsKmImjmJ-41Ekw3-8UYryr8LjjEqWf7wyWAgq4,56979
+xlbridge/service_pb2_grpc.py,sha256=vl69vuICe-26uQ2y79FLwe4uj8sWw5LW1D-GZQolKmo,8440
+xlbridge/xlbridge.py,sha256=73FTLkB3bMsGWu_YVv-O06ODZafxYAP_QEnLrGevZ1E,1149
+xlbridge/xlbridge_servicer.py,sha256=Z25mOrUgAsr-QOKPA3BHSgW2Ip7hSm4o8tF6lfJ9h5s,4862
+xlbridge-0.4.0b0.dist-info/LICENSE.txt,sha256=NfJ6ypyulPaeOCLqp5BaMl1inPa9nQcLiRXq9CPFvi8,831
+xlbridge-0.4.0b0.dist-info/METADATA,sha256=YaPWKJoiRX-lq8Ql0RyskOi6yUW6Y0QCQMtCHQXOKLk,1288
+xlbridge-0.4.0b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xlbridge-0.4.0b0.dist-info/top_level.txt,sha256=F3iII4-4JDgRSNJAF03J00sPdUZBqLgd_f9tm2NbkXQ,9
+xlbridge-0.4.0b0.dist-info/RECORD,,
