@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: EduNLP
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: jieba
+Requires-Dist: js2py
+Provides-Extra: test
+Requires-Dist: pytest (>=4) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+Requires-Dist: pillow ; extra == 'test'
+Provides-Extra: tutor
+Requires-Dist: pillow ; extra == 'tutor'
+
+UNKNOWN
+
+
