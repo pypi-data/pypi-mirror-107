@@ -1,0 +1,10 @@
+coqui_stt_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coqui_stt_server/__main__.py,sha256=KDPRBEyCEQ31JdZp6_iQwz92rcByXj1MMSzlC9jMzrc,381
+coqui_stt_server/server.py,sha256=mzUNyBeSKZNq3PUH83_xU7twnT5D79yacMvWtv8r1JI,828
+coqui_stt_server/templates/index.html,sha256=QL3NNkPT8hjj5drAE3wIxIfjeg3wgYIvm8NkhWXlU3o,61
+coqui_stt_server-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+coqui_stt_server-0.0.1.dist-info/METADATA,sha256=kcSxS3HBcl4M78CWTNZz5tJ0O4TgYL2bTzLWXG_nYJY,17744
+coqui_stt_server-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+coqui_stt_server-0.0.1.dist-info/entry_points.txt,sha256=XlGpJnEW-jDo2sYdOGt17zSayoVLGEhNPR0Y5v3fWIU,63
+coqui_stt_server-0.0.1.dist-info/top_level.txt,sha256=Sv9zTNIpp52bsB_RSIPgdBIAX6bW13m-oB97-6IXP1w,17
+coqui_stt_server-0.0.1.dist-info/RECORD,,
