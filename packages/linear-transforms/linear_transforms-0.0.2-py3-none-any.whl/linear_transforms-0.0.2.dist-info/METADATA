@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: linear-transforms
+Version: 0.0.2
+Summary: Python coordinate frame transform library
+Home-page: https://github.com/antonlopezr/transforms
+Author: Antonio Lopez Rivera
+Author-email: antonlopezr99@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sympy
+Requires-Dist: numpy
+Requires-Dist: Python-Alexandria
+Requires-Dist: coverage
+Requires-Dist: coverage-badge
+
+UNKNOWN
+
+
