@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+recommender_pkg.egg-info/PKG-INFO
+recommender_pkg.egg-info/SOURCES.txt
+recommender_pkg.egg-info/dependency_links.txt
+recommender_pkg.egg-info/requires.txt
+recommender_pkg.egg-info/top_level.txt
+recpkg/__init__.py
+recpkg/evaluation.py
+recpkg/explicit.py
+recpkg/implicit.py
+recpkg/metrics.py
+recpkg/model_selection.py
+recpkg/preprocessing.py
+recpkg/recommenders.py
