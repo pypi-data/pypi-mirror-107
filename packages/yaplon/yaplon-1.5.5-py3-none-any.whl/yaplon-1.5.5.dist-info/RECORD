@@ -1,0 +1,17 @@
+.DS_Store,sha256=LG6eHBm9LcrNkdnIz0zCctOMsbUj4SVg4MyCMhONIAY,6148
+yaplon/__init__.py,sha256=esYGNsGD9vKJixN6-bSpcgYgxhAezxl29RgIysN60gg,22
+yaplon/__main__.py,sha256=fGRwW6d2Q3Dj0sbiI4dmA5nyejBqFsk2Eq0m_eROS9Y,20481
+yaplon/ojson.py,sha256=1zHxttJe2rM774i0pjs1DCuIgQWWnbDeRe1zSJwiW0k,2133
+yaplon/oplist.py,sha256=W97tcSx5fDPEfxs4W61w8Bg3hyNgdLkr-gFYN4DCpZ0,2930
+yaplon/oyaml.py,sha256=a3VGVxFWCXtzJBv436XNaKPRxwRY2pF6d0ENQfpc9_Y,8761
+yaplon/reader.py,sha256=rXf0521F7lOEDRXlEI_HmW0QOS7KLC70-UfbOl0eEi8,1809
+yaplon/writer.py,sha256=5Y1OSd9NpJyR0Wn7ie4JH5hnMxPeX6DQoy-ROZnnP3I,1577
+yaplon/file_strip/__init__.py,sha256=PuQbg_j_3PZDVRDk6GxeZykxt9dI9rZyNL_Tll14xMQ,18
+yaplon/file_strip/comments.py,sha256=2gfu3zV-UaFvy9D4Kkkig4QGYW1lxR3f-VQ4iX347VQ,3242
+yaplon/file_strip/json.py,sha256=1Xb50w4zxAqrNeKCKwjH9PCnaChFLEfHS2JMulrsOuQ,2057
+yaplon-1.5.5.dist-info/LICENSE,sha256=pudyORBC4EXzwGP9CFUdUWfEljti4ddpoKwqphe8Db0,1154
+yaplon-1.5.5.dist-info/METADATA,sha256=6LYwsAWFYAtEzX67ZbVPSdbytxjdCC0nzild2WWTRoo,4424
+yaplon-1.5.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+yaplon-1.5.5.dist-info/entry_points.txt,sha256=Zis0AqhXBHfEjC3pLECWxpGtKxDkmC1OsUoiQaxgpPw,778
+yaplon-1.5.5.dist-info/top_level.txt,sha256=Bk_5TsfhLrZdTsLQ-NG3XafJxUed3qEbl1P4ciWOY_A,7
+yaplon-1.5.5.dist-info/RECORD,,
