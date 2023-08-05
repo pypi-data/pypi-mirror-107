@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "anyio-mqtt"
+version = "0.2.0"
+description = "Very early work in progress of an AnyIO MQTT client"
+authors = ["Ellis Percival <anyio-mqtt@failcode.co.uk>"]
+license = "MIT"
+include = ["py.typed"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+anyio = "^3.1.0"
+paho-mqtt = "^1.5.1"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.8.0"
+pylint = "^2.8.2"
+mypy = "^0.812"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
