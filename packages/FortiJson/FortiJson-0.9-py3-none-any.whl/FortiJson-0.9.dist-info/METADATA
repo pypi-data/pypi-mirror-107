@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: FortiJson
+Version: 0.9
+Summary: Json formating tool that conforms to Fortinets Json RPC protocol
+Home-page: https://github.com/talbiston/fortijson-rpc
+Author: Todd Albiston
+Author-email: foxtrot711@gmail.com
+License: MIT
+Download-URL: https://github.com/talbiston/fortijson-rpc/archive/refs/tags/0.9.tar.gz
+Keywords: Fortigate,Fortinet,Fortinet api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
+
