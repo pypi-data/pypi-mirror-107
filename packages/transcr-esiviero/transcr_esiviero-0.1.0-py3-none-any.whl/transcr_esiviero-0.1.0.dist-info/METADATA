@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: transcr-esiviero
+Version: 0.1.0
+Summary: My first package to make the transcription process easier
+Home-page: https://github.com/pypa/sampleproject
+Author: Emily Siviero
+Author-email: esiviero@unibz.it
+License: MIT
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: SpeechRecognition
+Requires-Dist: nltk
+Requires-Dist: gTTS
+
+# Transcr
+
+The package helps to make the transcription process more automatic. For either an audiofile or a textfile it generates a translation in a language of choice, the transcription in IPA, the Lemma and POS-Tag of every word and exportes this informations in a csv-file. If the used file is an audio, it saves the recognized text in a textfile. In addition, it creates an audiofile with the translated speech.
+
+Before importing the package please install googletrans==3.1.0a. 
+
+
+
