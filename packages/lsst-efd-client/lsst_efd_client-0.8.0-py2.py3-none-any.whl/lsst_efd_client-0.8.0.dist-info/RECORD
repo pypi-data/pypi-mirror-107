@@ -1,0 +1,10 @@
+lsst_efd_client/__init__.py,sha256=OmcWem3R73oOlck_Dff_Dm69yGjIPbV7GZuVpEcjAJw,344
+lsst_efd_client/auth_helper.py,sha256=ET2SZ1cPT4xe-wvSKTo3ISIWSV75LRnzYAhDK33SuFc,2213
+lsst_efd_client/efd_helper.py,sha256=-EJkGCDsiOhXV5Z_nuDR_8zKo8m8b1FFR-ycMOClesc,17346
+lsst_efd_client/efd_utils.py,sha256=MFbs26-PpIjwlAMPOmEXlhLVi7bdpWL9gH05Ya5vzGk,4189
+lsst_efd_client-0.8.0.dist-info/AUTHORS.rst,sha256=wUu3oFdofOnOID60-myeqtGmg_zkAB5zF_rkWhfeqGU,157
+lsst_efd_client-0.8.0.dist-info/LICENSE,sha256=DPYt2K1XTfo1BfVhJ63aTIgwlz0Mo0_OHq6qQIwSytk,1112
+lsst_efd_client-0.8.0.dist-info/METADATA,sha256=kYg02pj_R0lPNTbKPDnpKPv8L6ISvHdUquCHmvW0H9M,4058
+lsst_efd_client-0.8.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+lsst_efd_client-0.8.0.dist-info/top_level.txt,sha256=YLkEtAXiyUSJob--H1UoJ-s4WvV527Bo08byrBbeAjs,16
+lsst_efd_client-0.8.0.dist-info/RECORD,,
