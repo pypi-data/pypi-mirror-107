@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: namely
+Version: 0.0.2
+Summary: Namely Python Client
+Home-page: https://github.com/VadymKhodak/namely
+Author: VadymKhodak
+Author-email: vaddimart@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests==2.25.1
+Requires-Dist: retrying==1.3.3
+Project-URL: Documentation, https://namely.readthedocs.io/en/latest/
+
+# namely
+
+Non-official Python client for [Namely](https://www.namely.com)
+
+Learn more about Namely API [here](https://developers.namely.com/1.0/getting-started/introduction)
+
+## Instalation
+
+```bash
+pip install namely
+```
+
+## Get started
+
+```python
+# Import Namely API Client
+from namely import Client
+
+# Initialise Namely API Client
+cl = Client("https://<your-domain>.namely.com/api/v1/", "<your-namely-api-token>")
+
+# Get all profiles
+get_all = cl.profiles.get_all()
+
+# Get profile by Namely id
+person = cl.profiles.get("<person-namely-id>")
+
+# Get all profiles by filters
+mikes = cl.profiles.filter(first_name="Mike")
+```
+
+## License
+The MIT License
+
