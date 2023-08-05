@@ -1,0 +1,1557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<title>新睿群组对抗赛, Powered by pbrats 0.3.3</title>
+
+<!--- Credits to http://www.bridgeconex.com/IndexBC.aspx for initial html pages -->
+
+<style type="text/css">
+/*隐藏水平滚动条*/
+/*body{overflow-x: hidden;overflow-y: scroll;margin: 0; padding: 5px 1px 5px 1px;  background:#F0F0F8;}*/
+body{overflow-y: scroll;margin: 0; padding: 5px 1px 5px 1px;  background:#F0F0F8;}
+h2{text-align: center;}
+h3{text-align: center;}
+/*标题等*/
+.cssBCtitle{font-size:x-large;color: #FF4020;}
+.cssBCtitleBack{background-color: #D5EAFF;}
+/*比赛名称等*/
+.cssMatchName{padding: 4px; font-size: large; color: #009000; font-weight: bold; background-color: #D0E8FA;}
+.cssFatherMatchName{padding: 4px; font-size: large; color: #009000; font-weight: bold; background-color: #C8E4F6;}
+/*队名标题*/
+.cssTeamNameTitle{font-size:large;color: #E80000;}
+/*表格外框*/
+.TableFrame{border: 2px solid #95AFFF;}
+/*表格外框,1px*/
+.TableFrame_blank1px{border: 1px solid #000040;}
+.TF_b1px_NofirstOne{border-color: #404040; border-width: 1px; border-style: none solid solid  solid;;}
+
+/*表格的外框,1px*/
+.TableFrame_TeamSumScore{border: 1px solid #A0A0A0;}
+/*牌副按钮的外框*/
+.cssBoardMenu{padding: 4px; border: 1px solid #C0C0C0; background-color: #EBF5D8;}
+.cssRoundMenu{padding: 4px; border: 1px solid #C0C0D0; background-color: #D8EBF5;}
+.td_nowrap{white-space:nowrap;}
+/*上虚线*/
+.td_topDotted{border-top-style: dotted; border-top-width: 1px; border-top-color: #D0D0D0;}
+/*左虚线*/
+.td_leftDotted{border-left-style: dotted; border-left-width: 1px; border-left-color: #D0D0D0;}
+/*上实线*/
+.td_topSolid{border-top-style: solid; border-top-width: 1px; border-top-color: #B6B6B6;}
+/*左实线*/
+.td_leftSolid{border-left-style: solid; border-left-width: 1px; border-left-color: #B6B6B6;}
+.d_lt{border-style: solid none none solid; border-color: #B6B6B6; border-width: 1px;}
+.d_tb{border-style: solid none solid none; border-color: #B6B6B6; border-width: 1px;}
+.d_top{border-style: solid none none none; border-color: #B6B6B6; border-width: 1px; padding: 1px}
+.td_top{border-style: solid none none none; border-color: #B6B6B6; border-width: 1px; }
+.td_left{border-style: none none none solid; border-color: #B6B6B6; border-width: 1px;}
+.td_none{border-style: none; white-space:nowrap;}
+.td_full{border-style: solid; border-color: #C0C0C0; border-width: 1px;}
+a:link{text-decoration: none; color: #0000D0;}
+a:visited{text-decoration: none; color: #0000C8;}
+a:hover{text-decoration:underline;color:#0000E0;}
+</style>
+
+</head>
+<body>
+<div align="center" style='white-space:nowrap;'>
+&nbsp;<div class='cssFatherMatchName'><a href='#'>在校生新睿群组对抗赛 2021-05-12</a></div><div class='cssMatchName'></div><br/>
+</div>
+
+<table class='td_nowrap' bgcolor='#F4F4F4' cellspacing='0px' cellpadding='6px' align='center'>
+    <tr>
+        <td class='td_nowrap td_leftDotted'><a href='https://xrgopher.gitee.io/studentbridge/'>在校生新睿桥牌</a></td>
+        <td class='td_nowrap td_leftDotted'><a href='#summary'>成绩简表</a></td>
+        <td class='td_nowrap td_leftDotted'><a href='#team'>对阵明细</a></td>
+        <td class='td_nowrap td_leftDotted'><a href='#boards'>单副对比</a></td>
+    </tr>
+</table>
+
+<h2 id="summary">成绩简表</h2>
+
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>主队</td>
+        <td align='center'>vs</td>
+        <td align='center'>客队</td>
+        <td align='center' colspan='3' class='td_left'>IMP</td>
+        <td align='center' colspan='3' class='td_left'>比赛胜利分</td>
+    </tr>
+    <tr><td  class='td_top'><a href='#match-1'>gopher<a></td><td class='td_top'>vs</td><td class='td_top'><a href='#match-1'>桥牌哥王</a></td><td align='right' class='d_lt'>16</td><td class='d_top''>:</td><td align='left' class='td_top'> 2</td><td align='right' class='d_lt'>14.96</td><td class='d_top' padding='1px'>:</td><td align='left' class='td_top'>5.04</td></tr><tr><td  class='td_top'><a href='#match-2'>lhylllll<a></td><td class='td_top'>vs</td><td class='td_top'><a href='#match-2'>xjtuzhu</a></td><td align='right' class='d_lt'> 6</td><td class='d_top''>:</td><td align='left' class='td_top'> 5</td><td align='right' class='d_lt'>10.44</td><td class='d_top' padding='1px'>:</td><td align='left' class='td_top'>9.56</td></tr><tr><td  class='td_top'><a href='#match-3'>立昊<a></td><td class='td_top'>vs</td><td class='td_top'><a href='#match-3'>wingzero</a></td><td align='right' class='d_lt'>13</td><td class='d_top''>:</td><td align='left' class='td_top'> 5</td><td align='right' class='d_lt'>13.12</td><td class='d_top' padding='1px'>:</td><td align='left' class='td_top'>6.88</td></tr>
+</table>
+
+
+<h2 id="team">对阵明细</h2>
+
+<table align='center'  cellspacing='0px' cellpadding='2px'>
+    <tr id="match-1" bgcolor='#F0F4F4'>
+        <td align='center' colspan='2'>
+            <big><font color='#E80000'>gopher</font>&nbsp;vs&nbsp;<font color='#009040'>桥牌哥王</font></big></span>
+        </td>
+    </tr>
+</table>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_none' rowspan='2'>牌<br>号</td>
+        <td align='center' class='td_left' rowspan='2'>局<br>况</td>
+        <td align='center' class='td_left'>开</td>
+        <td align='center' class='td_left' rowspan='2'>定约</td>
+        <td align='center' class='td_left' rowspan='2'>结果</td>
+        <td align='center' class='td_left' colspan='2'>基本分</td>
+        <td align='center' class='td_left' rowspan='2'>&nbsp;分差&nbsp;</td>
+        <td align='center' class='td_left' rowspan='2'><font color='#E80000'>主队</font></td>
+        <td align='center' class='td_left' rowspan='2'><font color='#009040'>客队</font></td>
+    </tr>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_leftSolid td_topDotted'>闭</td>
+        <td align='left' class='td_leftSolid td_topDotted'><small></small></td>
+        <td align='right' class='td_topDotted'><small>NS</small></td>
+    </tr>
+
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>1</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>-30</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'>1</td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>2</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>-20</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'>1</td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>3</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>4</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>100</td>
+    <td align='center' rowspan='2' class='d_lt'>3</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>5</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=red>&hearts;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>850</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>750</td>
+    <td align='center' rowspan='2' class='d_lt'>13</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>100</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>6</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>7</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>8</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-90</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>-10</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >E</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=black>&spades;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-80</font></td>
+
+</tr>
+
+
+    <tr>
+    <td colspan='10' class='d_lt'>
+        <table class='TableFrame_TeamSumScore' align='right' cellspacing='0px' cellpadding='6px'>
+            <tr>
+                <td align='center' class='td_none'></td><td align='center' class='td_left'><font color='#E80000'>gopher</font></td><td align='center' class='td_left'><font color='#009040'>桥牌哥王</font></td>
+            </tr>
+
+            <tr>
+                <td align='center' class='td_top'>IMP</td>
+                <td align='center' class='d_lt'><font color='#E80000'>16</font></td>
+                <td align='center' class='d_lt'><font color='#009040'>2</font></td>
+            </tr>
+
+            <tr>
+                <td align='center'' class='td_top'>比赛分</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#E80000'>14.96</font>&nbsp;</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#009040'>5.04</font>&nbsp;</td>
+            </tr>
+        </table>
+    </td>
+    </tr>
+</table>
+<table align='center'  cellspacing='0px' cellpadding='2px'>
+    <tr id="match-2" bgcolor='#F0F4F4'>
+        <td align='center' colspan='2'>
+            <big><font color='#E80000'>lhylllll</font>&nbsp;vs&nbsp;<font color='#009040'>xjtuzhu</font></big></span>
+        </td>
+    </tr>
+</table>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_none' rowspan='2'>牌<br>号</td>
+        <td align='center' class='td_left' rowspan='2'>局<br>况</td>
+        <td align='center' class='td_left'>开</td>
+        <td align='center' class='td_left' rowspan='2'>定约</td>
+        <td align='center' class='td_left' rowspan='2'>结果</td>
+        <td align='center' class='td_left' colspan='2'>基本分</td>
+        <td align='center' class='td_left' rowspan='2'>&nbsp;分差&nbsp;</td>
+        <td align='center' class='td_left' rowspan='2'><font color='#E80000'>主队</font></td>
+        <td align='center' class='td_left' rowspan='2'><font color='#009040'>客队</font></td>
+    </tr>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_leftSolid td_topDotted'>闭</td>
+        <td align='left' class='td_leftSolid td_topDotted'><small></small></td>
+        <td align='right' class='td_topDotted'><small>NS</small></td>
+    </tr>
+
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>1</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>2</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>3</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>30</td>
+    <td align='center' rowspan='2' class='d_lt'>1</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>4</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-100</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>200</td>
+    <td align='center' rowspan='2' class='d_lt'>5</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>5</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>6</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>-200</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'>5</td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>7</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>8</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>50</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>50</font></td>
+
+</tr>
+
+
+    <tr>
+    <td colspan='10' class='d_lt'>
+        <table class='TableFrame_TeamSumScore' align='right' cellspacing='0px' cellpadding='6px'>
+            <tr>
+                <td align='center' class='td_none'></td><td align='center' class='td_left'><font color='#E80000'>lhylllll</font></td><td align='center' class='td_left'><font color='#009040'>xjtuzhu</font></td>
+            </tr>
+
+            <tr>
+                <td align='center' class='td_top'>IMP</td>
+                <td align='center' class='d_lt'><font color='#E80000'>6</font></td>
+                <td align='center' class='d_lt'><font color='#009040'>5</font></td>
+            </tr>
+
+            <tr>
+                <td align='center'' class='td_top'>比赛分</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#E80000'>10.44</font>&nbsp;</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#009040'>9.56</font>&nbsp;</td>
+            </tr>
+        </table>
+    </td>
+    </tr>
+</table>
+<table align='center'  cellspacing='0px' cellpadding='2px'>
+    <tr id="match-3" bgcolor='#F0F4F4'>
+        <td align='center' colspan='2'>
+            <big><font color='#E80000'>立昊</font>&nbsp;vs&nbsp;<font color='#009040'>wingzero</font></big></span>
+        </td>
+    </tr>
+</table>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_none' rowspan='2'>牌<br>号</td>
+        <td align='center' class='td_left' rowspan='2'>局<br>况</td>
+        <td align='center' class='td_left'>开</td>
+        <td align='center' class='td_left' rowspan='2'>定约</td>
+        <td align='center' class='td_left' rowspan='2'>结果</td>
+        <td align='center' class='td_left' colspan='2'>基本分</td>
+        <td align='center' class='td_left' rowspan='2'>&nbsp;分差&nbsp;</td>
+        <td align='center' class='td_left' rowspan='2'><font color='#E80000'>主队</font></td>
+        <td align='center' class='td_left' rowspan='2'><font color='#009040'>客队</font></td>
+    </tr>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center' class='td_leftSolid td_topDotted'>闭</td>
+        <td align='left' class='td_leftSolid td_topDotted'><small></small></td>
+        <td align='right' class='td_topDotted'><small>NS</small></td>
+    </tr>
+
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>1</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>2</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>20</td>
+    <td align='center' rowspan='2' class='d_lt'>1</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>90</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>3</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>4</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>5</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>N-S</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>300</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>-200</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'>5</td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>6</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>E-W</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>600</td>
+    <td align='center' rowspan='2' class='d_lt'>12</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-5</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-1100</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>7</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>Both</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>0</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' rowspan='2' class='td_top'><small>8</small></td>
+    <td align='center' rowspan='2' class='d_lt'><font color='#A0A080'>None</font></td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-90</font></td>
+
+    <td align='center' rowspan='2' class='d_lt'>10</td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+    <td align='center' rowspan='2' class='d_lt'></td>
+</tr>
+<tr bgcolor="#F0F4F4">
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid' >S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid' >-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-100</font></td>
+
+</tr>
+
+
+    <tr>
+    <td colspan='10' class='d_lt'>
+        <table class='TableFrame_TeamSumScore' align='right' cellspacing='0px' cellpadding='6px'>
+            <tr>
+                <td align='center' class='td_none'></td><td align='center' class='td_left'><font color='#E80000'>立昊</font></td><td align='center' class='td_left'><font color='#009040'>wingzero</font></td>
+            </tr>
+
+            <tr>
+                <td align='center' class='td_top'>IMP</td>
+                <td align='center' class='d_lt'><font color='#E80000'>13</font></td>
+                <td align='center' class='d_lt'><font color='#009040'>5</font></td>
+            </tr>
+
+            <tr>
+                <td align='center'' class='td_top'>比赛分</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#E80000'>13.12</font>&nbsp;</td>
+                <td align='center' class='d_lt'>&nbsp;<font color='#009040'>6.88</font>&nbsp;</td>
+            </tr>
+        </table>
+    </td>
+    </tr>
+</table>
+
+
+<h2 id="boards">单副对比</h2>
+
+
+<h3>第 1 副</h3>
+<table align='center' cellspacing='0px' cellpadding='6px'>        <!-- Board B.1: Diagram -->
+        <table class=bchd style="font: 10pt Verdana, sans-serif; margin-left: auto; margin-right: auto">
+          <tr class=bchd1>
+            
+            <td class=bchd3 style="padding: 1px; font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; vertical-align: top;">  </td>
+
+            <td class=bchd style="font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; white-space: nowrap" colspan=2>
+                
+              <table class=bchand style="border-collapse: collapse; border-spacing: 0">
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcspades style="color: black">&spades;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">10 9 7 3</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bchearts style="color: red">&hearts;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">10 8 5 2</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcdiams style="color: red">&diams;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">A J</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcclubs style="color: black">&clubs;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">J 10 5</td>
+                </tr>
+              </table>
+
+            </td>
+            
+            <td class=bchd3 style="padding: 1px; font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; vertical-align: top;"></td>
+
+          </tr>
+          <tr class=bchd2>
+            <td class=bchd2a style="font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; white-space: nowrap">
+              <table class=bchd2a style="border-collapse: collapse">
+                <tr class=bchd2a>
+                  <td class=bchd2a1 style="padding-top: 0; padding-bottom: 0">
+                    
+              <table class=bchand style="border-collapse: collapse; border-spacing: 0">
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcspades style="color: black">&spades;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">K J 8 2</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bchearts style="color: red">&hearts;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">K J 9</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcdiams style="color: red">&diams;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">Q 9 5</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcclubs style="color: black">&clubs;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">Q 9 4</td>
+                </tr>
+              </table>
+
+                  </td>
+                  <td class=bchd2a2 style="padding-top: 0; padding-bottom: 0; width: 1em"></td>
+                </tr>
+              </table>
+            </td>
+            <td class=bchd2b style="padding: 1px; vertical-align: middle">
+                
+              <table class=bcct style="width: 4em; height: 4em; border-collapse: collapse; font: 10pt simsun, sans-serif; color: #ffffff; border: 1px solid #aaaaaa">
+                <tr class=bcct1>
+                  <td class=bcct1 style="text-align: center; vertical-align: text-top; padding: 1px"></td>
+                  <td class=bcct1 style="text-align: center; vertical-align: text-top; padding: 1px;background-color: #93C47D;">N</td>
+                  <td class=bcct1 style="text-align: center; vertical-align: text-top; padding: 1px"></td>
+                </tr>
+                <tr class=bcct2>
+                  <td class=bcct2a style="text-align: left; vertical-align: text-top; padding: 1px; background-color: #93C47D;">W</td>
+                  <td class=bcct2b style="text-align: center; padding: 1px; color: black;">&uarr;</td>
+                  <td class=bcct2c style="text-align: right; vertical-align: text-top; padding: 1px; background-color: #93C47D;">E</td>
+                </tr>
+                <tr class=bcct3>
+                  <td class=bcct3 style="text-align: center; vertical-align: text-top; padding: 1px"></td>
+                  <td class=bcct3 style="text-align: center; vertical-align: text-top; padding: 1px; background-color: #93C47D;">S</td>
+                  <td class=bcct3 style="text-align: center; vertical-align: text-top; padding: 1px"></td>
+                </tr>
+              </table>
+
+            </td>
+            <td class=bchd2c style="font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; white-space: nowrap">
+              <table class=bchd2c style="border-collapse: collapse">
+                <tr class=bchd2c>
+                  <td class=bchd2c1 style="padding-top: 0; padding-bottom: 0; width: 1em"></td>
+                  <td class=bchd2c2 style="padding-top: 0; padding-bottom: 0">
+                    
+              <table class=bchand style="border-collapse: collapse; border-spacing: 0">
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcspades style="color: black">&spades;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">Q</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bchearts style="color: red">&hearts;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">A Q</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcdiams style="color: red">&diams;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">8 7 6 4</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcclubs style="color: black">&clubs;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">A K 7 6 3 2</td>
+                </tr>
+              </table>
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class=bchd3>
+            
+            <td class=bchd3 style="padding: 1px; font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; vertical-align: bottom;"></td>
+
+            <td class=bchd3b style="font: 10pt Verdana, sans-serif; padding: 1px; text-align: left; white-space: nowrap" colspan=2>
+               
+              <table class=bchand style="border-collapse: collapse; border-spacing: 0">
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcspades style="color: black">&spades;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">A 6 5 4</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bchearts style="color: red">&hearts;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">7 6 4 3</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcdiams style="color: red">&diams;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">K 10 3 2</td>
+                </tr>
+                <tr class=bchand>
+                  <td class=bcpip style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0; width: 1em; text-align: center"><span class=bcclubs style="color: black">&clubs;</span></td>
+                  <td class=bchand style="font: 10pt Verdana, sans-serif; padding: 1px; padding-top: 0; padding-bottom: 0">8</td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+</table><p />
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-430</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-460</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 2 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>130</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>2<font color=red>&diams;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>90</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 3 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>110</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=red>&hearts;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>80</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 4 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-100</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-200</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 5 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=red>&hearts;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>850</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>100</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>N-S</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>5<font color=black>&clubs;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>500</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 6 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-300</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-3</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-500</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>E-W</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>N</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>4<font color=black>&spades;</font>X</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-5</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-1100</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 7 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>Both</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>3NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>+2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>660</font></td>
+
+</tr>
+
+</table>
+
+<h3>第 8 副</h3>
+
+<table class='TableFrame_blank1px' align='center' cellspacing='0px' cellpadding='6px'>
+    <tr  bgcolor='#D5E0FF'>
+        <td align='center'>ID</td>
+        <td align='center' class='td_left'>局况</td>
+        <td align='center' class='td_left'>做庄</td>
+        <td align='center' class='td_left'>定约</td>
+        <td align='center' class='td_left'>结果</td>
+        <td align='center' class='td_left'>基本分</td>
+    </tr>
+    
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>gopher</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-90</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>桥牌哥王</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>E</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1<font color=black>&spades;</font></td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-80</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>lhylllll</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>50</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>xjtuzhu</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-1</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='red'>50</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>立昊</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>W</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>=</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-90</font></td>
+
+</tr>
+
+<tr  bgcolor='#FAFAFA'>
+    <td align='center' class='td_top'>wingzero</td>
+    
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'><font color='#A0A080'>None</font></td>
+    <td align='center'  class='td_nowrap td_leftSolid td_topSolid'>S</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>1NT</td>
+    <td align='center'  class='td_nowrap td_leftDotted td_topSolid'>-2</td>
+    <td  colspan='2' align='right' class='td_nowrap td_leftSolid td_topSolid' ><font color='green'>-100</font></td>
+
+</tr>
+
+</table>
+
+
+</body>
+</html>
