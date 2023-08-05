@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kraken_html/html_bootstrap.py
+kraken_html/html_field.py
+kraken_html/kraken_html.py
+kraken_html/kraken_record_html.py
+kraken_html/records.py
+kraken_html.egg-info/PKG-INFO
+kraken_html.egg-info/SOURCES.txt
+kraken_html.egg-info/dependency_links.txt
+kraken_html.egg-info/top_level.txt
