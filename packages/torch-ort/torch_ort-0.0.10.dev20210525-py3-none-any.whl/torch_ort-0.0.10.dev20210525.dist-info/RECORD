@@ -1,0 +1,8 @@
+torch_ort/__init__.py,sha256=otMsaXPwEPfD-B3jwmWDymX9ulnFQMoD259dua8PmTk,53
+torch_ort/experimental/__init__.py,sha256=wFS1nJkg8WOj_bwmSIFasVjZPuyQp8Op4M7erheibL4,246
+torch_ort/experimental/debug.py,sha256=oDXkZNQ1Kxot1hUeD7WFkYuTZiqOF4PzY_qdxvSvCNk,2860
+torch_ort-0.0.10.dev20210525.dist-info/LICENSE,sha256=LwfHJ1Gu2ZeQuKSGnPIxHfhahgsi3tBfoigDWHpIkiw,1073
+torch_ort-0.0.10.dev20210525.dist-info/METADATA,sha256=6kqOBdJTv4HnNGTVVvo5j8MiYR02D2PqT9s-WDx-y5U,4610
+torch_ort-0.0.10.dev20210525.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torch_ort-0.0.10.dev20210525.dist-info/top_level.txt,sha256=WhPBgm3984KoF89q9Hz_0RXELKfeifc8JDoxt6Bpp5w,10
+torch_ort-0.0.10.dev20210525.dist-info/RECORD,,
