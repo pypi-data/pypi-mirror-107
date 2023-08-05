@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "xawsprofile"
+version = "0.2.0"
+description = "AWS profile utility"
+readme = "README.md"
+authors = ["Daniel Clayton <dclayton@godaddy.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6.1"
+click = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+dephell = "*"
+
+[tool.poetry.scripts]
+awsprofile = "xawsprofile.cli:main"
+
+[build-system]
+requires = ["setuptools", "poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
