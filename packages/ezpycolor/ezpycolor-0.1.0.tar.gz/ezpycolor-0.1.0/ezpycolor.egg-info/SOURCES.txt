@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+ezpycolor.py
+pyproject.toml
+setup.cfg
+setup.py
+ezpycolor.egg-info/PKG-INFO
+ezpycolor.egg-info/SOURCES.txt
+ezpycolor.egg-info/dependency_links.txt
+ezpycolor.egg-info/top_level.txt
