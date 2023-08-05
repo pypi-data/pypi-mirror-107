@@ -1,0 +1,12 @@
+plumbing>=2.10.4
+autopaths>=1.4.12
+biopython
+sh
+tqdm
+
+[graphs]
+numpy
+matplotlib
+
+[primers]
+regex
