@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyobjectdict/PyObjectDict.py
+pyobjectdict/__init__.py
+pyobjectdict.egg-info/PKG-INFO
+pyobjectdict.egg-info/SOURCES.txt
+pyobjectdict.egg-info/dependency_links.txt
+pyobjectdict.egg-info/top_level.txt
