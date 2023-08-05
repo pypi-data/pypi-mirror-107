@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Buche-Silberstein-model-2020
+Version: 1.0.1
+Summary: This is the Python package corresponding to: Buche, Michael R., and Meredith N. Silberstein. Statistical mechanical constitutive theory of polymer networks: The inextricable links between distribution, behavior, and ensemble. Physical Review E, 102, 012501 (2020).
+Home-page: https://github.com/mbuche/Buche_Silberstein_model_2020
+Author: Michael R. Buche
+Author-email: mrb289@cornell.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Buche_Silberstein_model_2020
+
+[![GitHub release](https://mbuche.github.io/web/badges/releasev1.0.1.svg)](https://github.com/mbuche/Buche_Silberstein_model_2020/releases/) &nbsp; [![GitHub license](https://mbuche.github.io/web/badges/licenseMIT.svg)](https://github.com/mbuche/chain_breaking_polymer_networks/blob/master/LICENSE)
+
+This is the Python package corresponding to: Buche, Michael R., and Meredith N. Silberstein. Statistical mechanical constitutive theory of polymer networks: The inextricable links between distribution, behavior, and ensemble. Physical Review E, 102, 012501 (2020).
+
+[![DOI:10.1103/PhysRevE.102.012501](https://mbuche.github.io/web/badges/PhysRevE.102.012501.svg)](https://doi.org/10.1103/PhysRevE.102.012501) &nbsp; [![PhysRevE.102.012501](https://mbuche.github.io/web/badges/badgePRE102012501.svg)](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.012501) &nbsp; [![arXiv:2004.07874](https://mbuche.github.io/web/badges/badgearXiv200407874.svg)](https://arxiv.org/abs/2004.07874)
+
+Please find more information on installation, usage, and examples [here](https://github.com/mbuche/Buche_Silberstein_model_2020/).
+
