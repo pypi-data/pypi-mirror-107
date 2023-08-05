@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyobjectdict
+Version: 1.0.0
+Summary: Package provides a js-like dictionary object with a more convenient support of dot syntax plus a few additional methods
+Home-page: https://github.com/keptt/pyobjectdict
+Author: Serhii Orkivskyi
+Author-email: 2blesteve@gmail.com
+License: MIT
+Download-URL: https://github.com/keptt/pyobjectdict/archive/refs/tags/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: dict,objectdict,pyobjectdict,dot syntax,object,pyobject,js-like,js
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
