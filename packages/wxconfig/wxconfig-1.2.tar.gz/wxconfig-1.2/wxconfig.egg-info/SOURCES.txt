@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+test/__init__.py
+test/test_config.py
+wxconfig/__init__.py
+wxconfig/config.py
+wxconfig/wxconfiggui.py
+wxconfig.egg-info/PKG-INFO
+wxconfig.egg-info/SOURCES.txt
+wxconfig.egg-info/dependency_links.txt
+wxconfig.egg-info/top_level.txt
