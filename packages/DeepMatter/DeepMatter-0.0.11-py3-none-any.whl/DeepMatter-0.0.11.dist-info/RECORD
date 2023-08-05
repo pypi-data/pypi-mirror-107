@@ -1,0 +1,13 @@
+DeepMatter/__init__.py,sha256=XF8yywk_qqcRdCIazk0Aes1Vt_XBAYCTkvy6t_MVt9w,75
+DeepMatter/rand_util/__init__.py,sha256=EKT2fkmBfKZU62--V0NkeACAk_QImUFPvhDcifwLwYg,23
+DeepMatter/rand_util/rand_gen.py,sha256=JJ8Sv23K7TMQIfp42SFSVM2xATFF6PdFrF1kTuodvA0,488
+DeepMatter/spectral_fitters/__init__.py,sha256=cWjpcJyDzBtvrImf0CG_4Hpoyq1mMXOnpGb_Y0azhZs,40
+DeepMatter/spectral_fitters/gaussian.py,sha256=tyXUbzbBwE9VZDuYNGA0JQPP8Av3ENLXU66Uf1M3BqA,3474
+DeepMatter/spectral_fitters/nn.py,sha256=nj2YbZ1cVxyfJA3yXJ5VbLG1BX2tWkqyWjHCBeuZxZY,5232
+DeepMatter/util/__init__.py,sha256=zeI9HH1EHUK25wAUeJvolwR9sVXTa4aejuAiJwKeJEg,25
+DeepMatter/util/torch_util.py,sha256=68diLXlcU070bfudYew2fsjP-qnCf5I7Df6kUo6-pfM,1339
+DeepMatter-0.0.11.dist-info/LICENSE,sha256=R2-pTh4Vnlg_UHislDo_Kbm4PL4XFjQbFQoRDqQ7lGc,1575
+DeepMatter-0.0.11.dist-info/METADATA,sha256=ij106ZYFygIUhA0oA3vpQMT7P3GtbEDdq-Ui0db7Y84,473
+DeepMatter-0.0.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+DeepMatter-0.0.11.dist-info/top_level.txt,sha256=V6Fa24Vwn9pl-8dsOfU4Bhz6iSxW4yC4_iDZ8YbGMGw,11
+DeepMatter-0.0.11.dist-info/RECORD,,
