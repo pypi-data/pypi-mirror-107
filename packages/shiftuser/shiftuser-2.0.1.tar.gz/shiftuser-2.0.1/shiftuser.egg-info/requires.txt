@@ -1,0 +1,9 @@
+shiftschema<0.4.0,>=0.3.0
+shiftboiler<0.12.0,>=0.11.1
+click<9.0.0,>=8.0.0
+bcrypt<4.0.0,>=3.2.0
+passlib<1.8.0,>=1.7.4
+PyJWT<3.0.0,>=2.1.0
+Flask-Login<0.6.0,>=0.5.0
+Flask-Principal<0.5.0,>=0.4.0
+Flask-Mail<1.0.0,>=0.9.1
