@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: aitestflow
+Version: 0.0.1
+Summary: aitestflow is a Python package used for creating automated test scripts for all types of applications. 
+Home-page: https://github.com/WIINAI-KKUMAR/aitestflow
+Author: Vinaykumar Puppala
+Author-email: vinaykumar.puppala@outlook.com
+License: UNKNOWN
+Description: # aitestflow
+        Flexible and powerful UI Automation and API with Data base analysis  with pretty good automation library for Python,
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
