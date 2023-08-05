@@ -1,0 +1,16 @@
+import setuptools
+from setuptools import setup
+
+setup(
+    name='FileHandler',
+    version='v1.0.5',
+    url='',
+    license='',
+    author='chienaeae',
+    author_email='chienaeae@gmail.com',
+    description='file processor package',
+    package_dir={"": "src/FileHandler"},
+    # packages=setuptools.find_packages(where="FileHandler"),
+    python_requires=">=3.6",
+    install_requires=["requests==2.25.1"],
+)
