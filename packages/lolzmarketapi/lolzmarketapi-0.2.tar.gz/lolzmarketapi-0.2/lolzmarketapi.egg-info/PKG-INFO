@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: lolzmarketapi
+Version: 0.2
+Summary: Использование функций маркета через python
+Home-page: UNKNOWN
+Author-email: cotanton111@gmail.com
+License: UNKNOWN
+Description: Библиотека создана для проведения операций на маркете.
+        
+        ## Установка:
+        
+        ```
+        pip install lolzmarketapi
+        ```
+        
+        ## Примеры:
+        
+        * **Узнать баланс**
+          ```
+          from marketapi import lolzmarketapi
+        
+          client = lolzmarketapi.Api(cookie, useragent)
+        
+          print(client.getBal())
+          ```
+        
+        * **Перевод средств**
+          ```
+          from marketapi import lolzmarketapi
+        
+          client = lolzmarketapi.Api(cookie, useragent)
+        
+          print(client.transfer(username, amount, comment, secret_answer))
+        
+        ## Список методов
+        
+        * **getBal()** - *Узнать баланс* (Вернет текущий баланс, баланс в холде)
+        
+        * **transfer(username, amount, comment='', secret_answer='')** - *Перевод средств*
+        
+        * **getPayments(page)** - *Получить список платежей*
+        
+        * **parseMarket(url, page)** - *Парс маркета по ссылке* (Вернет массив: [ название, цена, ссылка ])
+        
+        * **bookAccount(account_id, log)** - *Бронировать аккаунт* (Если log = 1 - вернет результат)
+        
+        * **unbookAccount(account_id)** - *Снять бронь с аккаунта* (Вернет "Completed")
+        
+        * **buyAccount(account_id, bron)** - *Купить аккаунт* (bron - параметр, какой отвечает за бронировку аккаунта. Если вы не использовали bookAccount - значение аргумента bron должно быть 0)
+        
+        * **accountInfo(account_id)** - *Информация про аккаунт* (Вернет массив [ название, цена, продавец, дата создания, гарантия, доступен к покупке ])
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

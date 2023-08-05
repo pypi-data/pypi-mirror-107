@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+lolzmarketapi.egg-info/PKG-INFO
+lolzmarketapi.egg-info/SOURCES.txt
+lolzmarketapi.egg-info/dependency_links.txt
+lolzmarketapi.egg-info/not-zip-safe
+lolzmarketapi.egg-info/top_level.txt
+marketapi/__init__.py
+marketapi/lolzmarketapi.py
