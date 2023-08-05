@@ -1,0 +1,9 @@
+entity_addict/__init__.py,sha256=I7GKZ53_MCRhMIdBIjzPitx3gkOWeScCWK7kCHE0jC0,76
+entity_addict/__version__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+entity_addict/entity.py,sha256=XpwRXI7V6FJrMjYU9yDEN7Ms4CYqtoTpMwXqbOtazHo,1310
+entity_addict/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entity_addict/test/test_entity.py,sha256=e7xitTgOc2m9LmbjnBfOrTHsGWbEte0cTNG2s2kFj3w,609
+entity_addict-1.1.0.dist-info/LICENSE,sha256=HT-OeCjF6SJC5-QqI7lCYHdggPi5GWW_ls1giDDy2oQ,1060
+entity_addict-1.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+entity_addict-1.1.0.dist-info/METADATA,sha256=Na2M-UCfZLeiU2zkKms1nNzMfHC2_HtuUIgBVdrmDo4,692
+entity_addict-1.1.0.dist-info/RECORD,,
