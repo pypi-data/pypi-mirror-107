@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: steganography-in-text
+Version: 0.1.1
+Summary: Это модуль, умеющий скрывать текст в тексте
+Home-page: https://github.com/red-lexinus/steganography_in_text
+Author: Lexinus
+Author-email: starshenkov3@gmail.com
+License: Apache License, version 2.0, see LICENSE file
+Project-URL: Bug Tracker, https://github.com/red-lexinus/steganography_in_text
+Description: # Steganography_in_text
+        
+        ## Скрывайте свои тайны удобно!!!
+        
+        ------
+        
+        <ul>
+        <li>
+        <a href="#Crypter">Работа с шифратором</a>
+        <ul>
+        <li>
+        <a href="">Работа с шифратором</a>
+        </li>
+        <li>
+        <a href="">Работа с шифратором</a>
+        </li>
+        <li>
+        <a href="">Работа с шифратором</a>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        
+        
+        
+        -----
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <h3 id="Crypter" style="color:rgb(104, 185, 255)">Шифратор</h3>
+        <p style="white-space:pre-wrap;">
+        # Для начала мы создадим объект 
+        </p>
+        
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
