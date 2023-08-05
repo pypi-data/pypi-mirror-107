@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vurf
+Version: 0.4.0
+Summary: 
+Author: Viliam Valent
+Author-email: vurf@valent.email
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.0,<9.0.0)
+Requires-Dist: lark (>=0.11.3,<0.12.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
