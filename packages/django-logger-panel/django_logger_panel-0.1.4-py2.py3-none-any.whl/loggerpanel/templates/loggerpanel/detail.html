@@ -1,0 +1,61 @@
+{% extends "loggerpanel/base.html" %}
+{% load loggerpanel %}
+
+{% block content %}
+    <main class="flex-shrink-0">
+      <div class="container">
+
+        {% if logger %}
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{{base_url}}">Loggers</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{log_name}}</li>
+            </ol>
+          </nav>
+          <h1 class="mt-5">Logger <code>{{log_name}}</code></h1>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item">
+               <span class="fw-bold">Name: </span>
+               <code>{{logger.name}}</code>
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Level: </span>
+               <code>{{logger.level | log_level_name}}</code>
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Effective Level: </span>
+               <code>{{ logger.getEffectiveLevel  | log_level_name}}</code>
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Parent: </span>
+               {% if logger.parent.name == 'root' %}
+               <code>{{ logger.parent.name }}</code>
+               {% else %}
+               <a href="{{base_url}}{{logger.parent.name}}">{{ logger.parent.name}}</a>
+               {% endif %}
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Propagate: </span>
+               <code>{{ logger.propagate}}</code>
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Handlers: </span>
+               <code>{{ logger.handlers}}</code>
+           </li>
+           <li class="list-group-item">
+               <span class="fw-bold">Disabled: </span>
+               <code>{{ logger.disabled}}</code>
+           </li>
+        </ul>
+        {% else %}
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{{base_url}}">Loggers</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{log_name}}</li>
+            </ol>
+          </nav>
+          <h1 class="mt-5">Logger Not Found</code></h1>
+      </div>
+    </main>
+{% endif %}
+{% endblock %}
