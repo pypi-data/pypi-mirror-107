@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: i3a
+Version: 1.0.0
+Summary: i3 automatic manager
+Home-page: https://gitlab.com/mgoral/i3a
+Author: Michał Góral
+Author-email: dev@goral.net.pl
+License: GPLv3+
+Description: # i3a
+        
+        Automatic tiling for sway/i3wm manager. The following layouts are possible:
+        
+        - master-stack area with DWM-like stack (stack windows are split)
+        - master-stack area with i3-like stack (stack windows are actual stack)
+        
+Platform: linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7,<3.10
+Description-Content-Type: text/markdown
