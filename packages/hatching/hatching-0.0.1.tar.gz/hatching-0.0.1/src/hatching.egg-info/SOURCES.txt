@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hatching/__init__.py
+src/hatching/auth.py
+src/hatching/hatching.py
+src/hatching.egg-info/PKG-INFO
+src/hatching.egg-info/SOURCES.txt
+src/hatching.egg-info/dependency_links.txt
+src/hatching.egg-info/top_level.txt
