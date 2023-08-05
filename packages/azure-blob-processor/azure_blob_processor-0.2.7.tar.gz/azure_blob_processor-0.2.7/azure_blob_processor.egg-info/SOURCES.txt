@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+azure_blob_processor/__init__.py
+azure_blob_processor/decompressor.py
+azure_blob_processor.egg-info/PKG-INFO
+azure_blob_processor.egg-info/SOURCES.txt
+azure_blob_processor.egg-info/dependency_links.txt
+azure_blob_processor.egg-info/requires.txt
+azure_blob_processor.egg-info/top_level.txt
+test/test.py
