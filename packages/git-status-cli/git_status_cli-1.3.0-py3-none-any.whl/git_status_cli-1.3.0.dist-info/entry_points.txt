@@ -1,0 +1,3 @@
+[console_scripts]
+gitstatus=git_status_cli.cli:main
+

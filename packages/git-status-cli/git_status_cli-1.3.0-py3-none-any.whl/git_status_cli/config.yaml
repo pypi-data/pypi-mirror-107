@@ -1,0 +1,23 @@
+# Add the folder containing all your gits here:
+#gits_folder: /absolute/path/to/your/gits/folder
+
+# You can also add individual gits here
+#individual_gits:
+#- /absolute/path/to/a/git/folder
+
+# The following aliases will be understood by gitstatus, you can add more:
+aliases:
+# gs: nvim +Git
+  gc: git commit -v
+  gca: git commit -a -v
+  ga: git add .
+  gpsh: git push
+  gpll: git pull
+
+# The following commands will be run in order before any other command:
+# default_cleaning_actions:
+# - gs
+# - gpsh
+
+# If you are sure that the default cleaning actions will sort everything up:
+default_is_enough: false
