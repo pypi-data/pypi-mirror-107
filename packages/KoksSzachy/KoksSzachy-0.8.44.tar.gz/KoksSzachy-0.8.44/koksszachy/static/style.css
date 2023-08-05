@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar img {
+  height: 80%;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 1200px;
+  }
+}
+
+.main .board-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+
+.main .board-wrapper #board {
+  width: 80%;
+}
+
+.main .board-wrapper .button-wrapper {
+  width: 50%;
+  padding: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .board-wrapper .button-wrapper button {
+  border: none;
+  background-color: #6C9C40;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.main .board-wrapper .button-wrapper button:hover {
+  background-color: #4a7226;
+}
+
+.main .inf-area {
+  width: 30%;
+  height: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .inf-area h3 {
+  font-size: 1.7rem;
+  display: block;
+  height: 20%;
+}
+
+.main .inf-area #pgnview {
+  overflow-y: scroll;
+  height: 80%;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  border: #000 1px solid;
+}
+/*# sourceMappingURL=style.css.map */
