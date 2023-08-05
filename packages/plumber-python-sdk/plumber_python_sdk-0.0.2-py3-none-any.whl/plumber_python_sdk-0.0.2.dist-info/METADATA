@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: plumber-python-sdk
+Version: 0.0.2
+Summary: An SDK built to ease interaction with the plumber sidecar in python
+Home-page: https://github.com/verstraetebert/plumber
+Author: Bert Verstraete
+Author-email: bert.verstraete@ugent.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.9
+Requires-Dist: flask (>=2.0.0)
+Requires-Dist: cloudevents (>=1.2.0)
+
+UNKNOWN
+
+
