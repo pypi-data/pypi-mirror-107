@@ -1,0 +1,16 @@
+avatarpy/__init__.py,sha256=_viTVzlHlMuCcYZ459pOB8O_0XbgJt1EpD-DrhlUqyc,137
+avatarpy/animate.py,sha256=Ap6KO62bJUnwRRgmAlcsaYuUEVql5Se6M7YObNgmxbM,4666
+avatarpy/annotation.py,sha256=Ht5lDuUvwjSDLdFutVTGNP5YG-EZsh0Jx1Q6o85peHw,3777
+avatarpy/avalens.py,sha256=3BwZCUXLyVOfaoyadaC7UhXnoHKMIT8xSYZ71Y1dFjA,5573
+avatarpy/avatar.py,sha256=UwFoh9-YriUkuNOaPAEolfgOnQVCd5am47qNFlFRJP0,16464
+avatarpy/core.py,sha256=gTVYX7QxZqcRh30pfyUfzWM1XVm4SzN_YfywMEXrs1g,6445
+avatarpy/dataset.py,sha256=YY7hJLlcl1qiWcP_X_P2SSkwQelBiH3R6Bq4xmMPJFE,352
+avatarpy/describe.py,sha256=SKv7h2IetoGa0UbAQXJGrTA3rb9jN01J5ijdTgRZudo,3550
+avatarpy/transform.py,sha256=6TQbbJ5zUCWJJxnYKiJcNrFJJdAnQ4EfBlCfGw_EUxI,2825
+avatarpy/data/freely_moving.csv,sha256=JMldlVxeDL30m7tr1oOoPRkOHydxmvmCETgnrmSo3jk,412141
+avatarpy/data/freely_moving2.csv,sha256=_LV_3LXZ5rLxsG6uOy8Fyj3Cx9NfE3Aga2k8lvuAk_Q,412328
+avatarpy-0.1.8.dist-info/LICENSE,sha256=pl_waJZY-hPBbykGLTiFDGPGt80vk-h86pxe7n4bKoI,1085
+avatarpy-0.1.8.dist-info/METADATA,sha256=iMluzCJz-esti4Ut0vQbHzJzm1DVqZdAN2Vkawtmay8,574
+avatarpy-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+avatarpy-0.1.8.dist-info/top_level.txt,sha256=8dIb8mxFyphKdChyFoZwATFMotGqO4zyUwpBfqhSzW0,9
+avatarpy-0.1.8.dist-info/RECORD,,
