@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tragic-semester-work-2
+Version: 0.1.1
+Summary: 
+Author: Пётр Куркин
+Author-email: kurkin801@mail.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
