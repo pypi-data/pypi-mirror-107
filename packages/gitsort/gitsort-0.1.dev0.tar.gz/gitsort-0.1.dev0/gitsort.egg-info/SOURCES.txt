@@ -1,0 +1,12 @@
+README.md
+setup.py
+gitsort/__init__.py
+gitsort/cli.py
+gitsort/sorters.py
+gitsort/table.py
+gitsort/utils.py
+gitsort.egg-info/PKG-INFO
+gitsort.egg-info/SOURCES.txt
+gitsort.egg-info/dependency_links.txt
+gitsort.egg-info/entry_points.txt
+gitsort.egg-info/top_level.txt
