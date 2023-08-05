@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: dendrodict
+Version: 1.0.3
+Summary: Dict type that makes it easier to work with deeply nested dicts.
+Home-page: http://bitbucket.org/sixty-north/dendrodict
+Author: Sixty North AS
+Author-email: rob@sixty-north.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+==========
+dendrodict
+==========
+
+Dictionary types that make it easier to work trees of nested dictionaries.
+
+Consider a nested regular dictionaries::
+
+  d = {
+      "en": {
+          "gb": "English (United Kingdom)",
+          "us": "English (United States)",
+          "ca": "English (Canada)",
+          "za": "English (South Africa)",
+      },
+      "no": {
+          "nb": "Norwegian (Bokmål)",
+          "nn": "Norwegian (Nynorsk)",
+      },
+      "fr": {
+          "be": "French (Belgium)",
+          "ca": "French (Canada)",
+          "fr": "French (Standard)",
+          "ch": "French (Switzerland)",
+      }
+  }
+
+from which we can construct a ``DeepDict``::
+
+  >>> from dendrodict import DeepDict
+  >>> languages = DeepDict(d)
+
+Nested dictionaries can be accessed with single application of the square brackets get-item
+operator::
+
+  >>> languages["fr", "ca"]
+  'French (Canada)'
+
+or by using a tuple as a key::
+
+  >>> languages[("no", "nb")]
+  'Norwegian (Bokmål)'
+
+The tuple key can also be used with other dictionary methods, such as ``get()``::
+
+  >>> languages.get(("en", "us"))
+  'English (United States)'
+
+It's still possible index the inner dictionary levels::
+
+  >>> languages["en"]
+  DeepDict(
+      {
+          'gb': 'English (United Kingdom)',
+          'us': 'English (United States)',
+          'ca': 'English (Canada)',
+          'za': 'English (South Africa)'
+      }
+  )
+
+which means that separate lookup operations are still supported::
+
+  >>> languages["en"]["za"]
+  'English (South Africa)'
+
+
+The tuple key form can also be used on construction, so flat dictionaries with tuple keys will be
+expanded into nested dictionaries. Consider the following single-level mapping of tuple keys to
+values::
+
+  blocks = {
+      ("mineral", "sandstone", "block"): "Sandstone",
+      ("mineral", "sandstone", "chiseled"): "Sandstone (Chiseled)",
+      ("mineral", "cobblestone", "block"): "Cobblestone",
+      ("mineral", "cobblestone", "slab"): "Cobblestone (Slab)",
+      ("mineral", "gold", "ore"): "Gold Ore",
+      ("wood", "birch", "block"): "Birch",
+      ("wood", "birch", "slab"): "Birch-Wood Slab",
+      ("wood", "oak", "block"): "Oak",
+      ("wood", "oak", "plank"): "Wooden Plank (Oak)",
+  }
+
+Created a ``DeepDict`` from this, gives a three-level structure::
+
+  >>> minecraft = DeepDict(blocks)
+
+which we can see by converted back to dictionaries using the ``to_dict()`` method::
+
+  >>> minecraft.to_dict()
+  {'mineral': {
+      'cobblestone': {
+          'block': 'Cobblestone',
+          'slab': 'Cobblestone (Slab)'
+      },
+      'gold': {
+          'ore': 'Gold Ore'
+      },
+      'sandstone': {
+          'block': 'Sandstone',
+          'chiseled': 'Sandstone (Chiseled)'
+      }
+  },
+  'wood': {
+      'birch': {
+          'block': 'Birch',
+          'slab': 'Birch-Wood Slab'
+      },
+      'oak': {
+          'block': 'Oak',
+          'plank': 'Wooden Plank (Oak)'}
+      }
+  }
+
+
+Particularly when dealing with configuration data, it can be useful to be able to use dotted names
+for access to nested items. Use ``DottedDeepDict`` for this::
+
+  displays = DottedDeepDict(
+      {
+          "resolution": {
+              "vga": {
+                  "width": 640,
+                  "height": 480,
+              },
+              "wxga": {
+                  "width": 1280,
+                  "height": 800,
+              },
+              "wqhd": {
+                  "width": 2560,
+                  "height": 1440,
+              },
+          }
+      }
+  )
+
+Dotted name syntax can be used for lookup::
+
+  >>> displays["resolution.vga.width"]
+  640
+
+or for assignment at arbitrary levels::
+
+  >>> displays["resolution.1080p.width"] = 1920
+  >>> displays["resolution.1080p.height"] = 1080
+
+Shallower levels are still available individually::
+
+  >>> displays["resolution.1080p"]
+  DottedDeepDict({'width': 1920, 'height': 1080})
+
+and can be converted back to regular dictionaries::
+
+  >>> displays["resolution.wqhd"].to_dict()
+  {'width': 2560, 'height': 1440}
+
+
