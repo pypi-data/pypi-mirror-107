@@ -1,0 +1,8 @@
+pandas
+netcdf4
+numpy
+cartopy
+matplotlib
+
+[test]
+pytest-cov
