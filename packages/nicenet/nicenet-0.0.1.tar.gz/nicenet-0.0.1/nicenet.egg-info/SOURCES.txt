@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nicenet/ActivationFunction.py
+nicenet/Dataset.py
+nicenet/Layer.py
+nicenet/Model.py
+nicenet/NeuralNetwork.py
+nicenet/__init__.py
+nicenet.egg-info/PKG-INFO
+nicenet.egg-info/SOURCES.txt
+nicenet.egg-info/dependency_links.txt
+nicenet.egg-info/requires.txt
+nicenet.egg-info/top_level.txt
