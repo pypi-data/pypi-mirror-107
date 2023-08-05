@@ -1,0 +1,8 @@
+click~=7.0
+requests
+junitparser>=2.0.0
+setuptools
+more_itertools
+
+[:platform_system == "Windows"]
+wmi
