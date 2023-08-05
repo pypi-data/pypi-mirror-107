@@ -1,0 +1,1 @@
+from .decan import main
