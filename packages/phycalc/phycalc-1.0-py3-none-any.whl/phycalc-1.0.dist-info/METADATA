@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: phycalc
+Version: 1.0
+Summary: A Simple Physics calculator
+Home-page: UNKNOWN
+Author: Snehashish Laskar
+Author-email: snehashish.laskar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+This is a very basic physics calulator! There are three classes: 
+
+-> acceleration:
+
+-> motion
+
+-> momentum
+
+
+
