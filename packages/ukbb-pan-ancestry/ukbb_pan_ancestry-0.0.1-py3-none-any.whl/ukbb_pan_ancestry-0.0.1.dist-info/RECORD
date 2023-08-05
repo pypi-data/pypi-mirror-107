@@ -1,0 +1,16 @@
+ukbb_pan_ancestry/__init__.py,sha256=WaeXk3bTVXtp9s4i_A2Db3j-56foZ9QwE3THLLZqA2Y,79
+ukbb_pan_ancestry/resources/__init__.py,sha256=S3Li8PuyLw7zXaJ0APshjgSYNr11EvhU1Zu5hlAk8WI,92
+ukbb_pan_ancestry/resources/generic.py,sha256=SxitoDmFVng5Rk9bERRJnI43nB2YlN-SLvBabXOeWDg,2118
+ukbb_pan_ancestry/resources/genotypes.py,sha256=au-T-JE7-3cYv5SSvuyphDlUey2xhCm3mt8WdCVLfXk,3700
+ukbb_pan_ancestry/resources/ld.py,sha256=esf9-6ZbO5lq0n8eSTIV7cXLS9tyIE_7GelP0IDdmTA,791
+ukbb_pan_ancestry/resources/phenotypes.py,sha256=qcXl31DduFbV1MOrtWg5SeZC24hh4Z0Z4WlOIvar84g,3875
+ukbb_pan_ancestry/resources/results.py,sha256=wbSTvREyOnVpabhMm6nLJx10u-GxL72sLbxi52yZrSo,3039
+ukbb_pan_ancestry/utils/__init__.py,sha256=k1vyZ9JggV6kRaCGuceTxwz5xS-9mRH28Q6chKDZRPY,86
+ukbb_pan_ancestry/utils/phenotype_loading.py,sha256=nxLpb-qixgplQQjZcijROacrBzobPlo_T5L1a0A4Itc,9313
+ukbb_pan_ancestry/utils/results.py,sha256=fXdJVCgVPIJPCiYiaCLCd9nwZijLq3h4uTMmYNfxBs0,3459
+ukbb_pan_ancestry/utils/results_loading.py,sha256=U0oLHLnHUhhHjRenW2OlPMckioyN51-o4mkuZMkzR3Y,2996
+ukbb_pan_ancestry-0.0.1.dist-info/LICENSE,sha256=Fx7Tm2F38_UQlwGqM-OdzeQYcYKesq8E8VLYdvhHeK8,1125
+ukbb_pan_ancestry-0.0.1.dist-info/METADATA,sha256=QlFgXfJaj_PUSxI3am7LCB6IfYP2798qJ_5VKmOFnzM,1044
+ukbb_pan_ancestry-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ukbb_pan_ancestry-0.0.1.dist-info/top_level.txt,sha256=ptYkG5IEslfCQkeEUaJblSr7l6PGpazKcR11M216y98,18
+ukbb_pan_ancestry-0.0.1.dist-info/RECORD,,

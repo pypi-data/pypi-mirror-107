@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ukbb-pan-ancestry
+Version: 0.0.1
+Summary: Functions for GWAS across all analyzable phenotypes and diverse ancestry groups in the UK Biobank.
+Home-page: https://github.com/atgu/ukbb_pan_ancestry
+Author: 
+Author-email: 
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/atgu/ukbb_pan_ancestry
+Project-URL: Issues, https://github.com/atgu/ukbb_pan_ancestry/issues
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ukbb-common
+
+# UKBB-Diverse-pops
+GWAS across all analyzable phenotypes and diverse ancestry groups in the UK Biobank.
+
+A full description of how these summary statistics were generated and how to work with them can be found here: http://pan.ukbb.broadinstitute.org/. 
+
+
