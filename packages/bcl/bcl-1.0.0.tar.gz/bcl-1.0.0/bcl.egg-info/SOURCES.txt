@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+bcl/__init__.py
+bcl/bcl.py
+bcl.egg-info/PKG-INFO
+bcl.egg-info/SOURCES.txt
+bcl.egg-info/dependency_links.txt
+bcl.egg-info/requires.txt
+bcl.egg-info/top_level.txt
