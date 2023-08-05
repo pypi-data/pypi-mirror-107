@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bomisspell
+Version: 0.0.2
+Summary: Generates misspelled tibetan word of a given word
+Home-page: https://github.com/potala-dev/bomisspell
+Author: Tenzin Kaldan
+Author-email: kaldantenzin@gmail.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: botok (<8.0,>=0.8.6)
+
+# misspell-generator
+
