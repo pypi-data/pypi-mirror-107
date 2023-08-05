@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pylint-report
+Version: 0.1.7
+Summary: Generates an html report summarizing the results of pylint.
+Home-page: https://github.com/drdv/pylint-report
+Author: Dimitar Dimitrov
+Author-email: mail.mitko@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: pylint
+
+UNKNOWN
+
+
