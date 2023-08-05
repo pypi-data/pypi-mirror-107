@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: upathlib
+Version: 0.1.0
+Summary: Package upathlib
+Home-page: https://github.com/zpz/upathlib
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+
+# upathlib
+
+This package defines some APIs for working with a cloud blob store (or object store). The intended usage is that a client package for a blob store can be built on top of these APIs by inheriting from the classes defined here.
+
+The APIs are intentionally similar to the corresponding APIs of the standard [`pathlib`](https://docs.python.org/3/library/pathlib.html) where appropriate.
+
+Local (POSIX) filesystem is treated as one particular case.
+
+## Q & A
+
+- What's the 'u' in the name?
+
+  It stands for "universal". Hey, it's just a name.
+
+
