@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "secondstate"
+version = "2.0.0"
+description = "Utility for generating datetimes within given constraints"
+authors = ["Lewis <lewis@fruiti.app>"]
+readme = "README.md"
+repository = "https://github.com/fruiti-ltd/secondstate"
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.12.0"
+pytest-monitor = "^1.6.0"
+pytest-profiling = "^1.7.0"
+gprof2dot = "^2021.2.21"
+black = "^21.5b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
