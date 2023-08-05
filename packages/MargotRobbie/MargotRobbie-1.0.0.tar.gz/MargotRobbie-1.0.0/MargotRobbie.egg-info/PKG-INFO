@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: MargotRobbie
+Version: 1.0.0
+Summary: Margot Robbie for Python
+Home-page: https://github.com/xFueY/MargotRobbie/
+Author: xFueY
+Author-email: xFueY@protonmail.com
+License: MIT
+Description: # Margot Robbie
+        Margot Robbie for Python
+        
+        ## Installation
+        ```
+        $ pip install MargotRobbie
+        ```
+        
+        ## Usage
+        ```python
+        Margot = MargotRobbie.MargotRobbie()
+        
+        print(MargotRobbie.Name)
+        print(MargotRobbie.Birthday)
+        print(MargotRobbie.Height)
+        print(MargotRobbie.Age)
+        ```
+        
+Keywords: MargotRobbie Margot Robbie
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
