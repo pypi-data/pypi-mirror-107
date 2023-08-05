@@ -1,0 +1,15 @@
+sven/__init__.py,sha256=mqVDqRweyB7xRmfSeZMQMSfxKY6sQGdW_G83R0TXK2A,1039
+sven/_version.py,sha256=O1pjqecuBPa6XW6TmQ0ORD95uatPUOQT7_j9hYU9xiM,383
+sven/react_jupyter_widget.py,sha256=ZIaPBHTSPCkDW0qeVIlAhJz5by6NQdpxwy8TsC2qmJU,2742
+sven/storyline_chart.py,sha256=XYDzZhOlpz9ceCKU6OVQ0IN4THwBxzqNdirtOpPjQMI,2681
+sven/static/extension.js,sha256=8JJrGFk-Cx_oXOA9p4nMik_7FxTxy63zNpFNNkLkTm8,3318
+sven/static/index.js,sha256=sVCY_k1Zg9crv_WmqJsFPB7DxnDcBgXo4iHDe47Dvrg,3688289
+sven/static/index.js.map,sha256=q_VXEpAKM2wywUKAvuDPRo_eQd4Uuxzl_0wKfkuNmSU,4468115
+sven_widget-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/sven.json,sha256=ld5pEJeGJvIuIJufQT2O3zEFOAmLMSKQts2Gu3SwHzM,58
+sven_widget-0.1.0a0.data/data/share/jupyter/nbextensions/sven/extension.js,sha256=8JJrGFk-Cx_oXOA9p4nMik_7FxTxy63zNpFNNkLkTm8,3318
+sven_widget-0.1.0a0.data/data/share/jupyter/nbextensions/sven/index.js,sha256=sVCY_k1Zg9crv_WmqJsFPB7DxnDcBgXo4iHDe47Dvrg,3688289
+sven_widget-0.1.0a0.data/data/share/jupyter/nbextensions/sven/index.js.map,sha256=q_VXEpAKM2wywUKAvuDPRo_eQd4Uuxzl_0wKfkuNmSU,4468115
+sven_widget-0.1.0a0.dist-info/METADATA,sha256=ORTrbAzF390HIpFkLNOtgm5WrTXJ_TC158zfhEefjtA,997
+sven_widget-0.1.0a0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+sven_widget-0.1.0a0.dist-info/top_level.txt,sha256=euFFgO050eFNVeok6QCBFNGI7ER-0O_42-GVibqAwZQ,5
+sven_widget-0.1.0a0.dist-info/RECORD,,
