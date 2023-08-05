@@ -1,0 +1,14 @@
+flex_cache/__init__.py,sha256=DeG-JQCRLexd8xvkKg2rQc_vXRE4NEX9kc6d7GqoIJg,1985
+flex_cache/basecache.py,sha256=JartDlTl7p_tLG4X-pnsUbmMphiYdfYD08tAqFfBa4E,4336
+flex_cache/diskcache.py,sha256=kMCyVDyiztG2Hc4ey_xITm569IeJ4Vg61lcodiVWqh4,1047
+flex_cache/memcache.py,sha256=kHW_P_eztlPIPQixxRETQGssskuD6-M36-KKeDMMBfM,2624
+flex_cache/nocache.py,sha256=Q35W413nGOAc6QjEvC_88GFK6BiBb07Ah9ILRt58xFc,878
+flex_cache/rediscache.py,sha256=teOH3G60YBG5E5maw2X4BqmJzOg2Z4P6wyFi5M46CGQ,3685
+redis_cache/__init__.py,sha256=9-xK__0AH7u_dCu1Wo9xD8FvkES0XI_jwihw1wSTQCI,3738
+redis_cache/basecache.py,sha256=3VvdNbY9D86wM76jBMQnc38uaWAQ0GsS2tlt9331nQk,2998
+redis_cache/memcache.py,sha256=v7tehD5AImZMI65cduOuNVq_UidT1WaIvU3dwABwmVM,2376
+python_flex_cache-0.1.4.dist-info/LICENSE,sha256=hZ61gGNz9DwwZzjjVn9iywOUFo7DomrmnpVh_xp52ew,1069
+python_flex_cache-0.1.4.dist-info/METADATA,sha256=jNfRq5kQ0hRx_fyPdEwbqBiJcIduykJCk8QjuVqQl2k,4617
+python_flex_cache-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_flex_cache-0.1.4.dist-info/top_level.txt,sha256=sRidi4hQtfl1aiiN_LOwkqYCmYplxRnzN1j-RtGTSd0,11
+python_flex_cache-0.1.4.dist-info/RECORD,,
