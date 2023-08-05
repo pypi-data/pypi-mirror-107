@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: django-ninja-keycloak
+Version: 0.0.4
+Summary: Django Ninja package to integrate keycloak authentication
+Home-page: UNKNOWN
+Author: kgaulin (Kevin Gaulin)
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,django-ninja,keycloak
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
