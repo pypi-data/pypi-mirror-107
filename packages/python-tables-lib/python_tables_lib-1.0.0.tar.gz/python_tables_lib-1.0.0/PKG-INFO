@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: python_tables_lib
+Version: 1.0.0
+Summary: A Python lib that makes creating tables easier than ever !
+Home-page: https://github.com/megat69/Lib_Tables
+Author: megat69
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/megat69/Lib_Tables/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Console Creator
+A Python lib that makes creating tables easier than ever !
+
+This lib enables you to create tables, and manipulate them from their columns and rows, instead of having to deal with the usual troubles of this process.
+
+## Install
+### Install from PyPI
+To install this library, just type `pip install python-tables-lib` and this should be ok.
+
+Visit [PyPI](https://pypi.org/project/python-tables-lib/) for more info.
+
+### Install from source
+Just download the file at [this link](https://github.com/megat69/Lib_Tables/blob/main/src/tables/__init__.py), and import it in your project.
+
+## Usage
+*See [examples](https://github.com/megat69/Lib_Tables/tree/main/examples) if wanted.*
+
+
+This library provides the `Table` class, which is the table you are going to use.
+
+### `Table` init
+This class has two optional parameters on creation :
+- `name` : A string containing the name of the table.
+- `size` : he size of the table. If not filled, the table will be flexible. Otherwise, the table will only fit this size. This should be a tuple of (rows, columns).
+
+### The `add_row`, `add_rows`, `add_column`, and `add_columns` methods
+These methods will add rows or columns to the table.
+
+They are disabled if the table size is fixed.
+
+The `add_row` and `add_column` methods will take as argument a list or tuple, and will add all its elements to the table.
+
+The `add_rows` and `add_columns` methods will take as argument a list/tuple of lists/tuples and will add all its elements to the table.
+
+### The `delete_row` and `delete_column` methods
+The names are pretty explicit : The functions deletes the row/column of the given index
+
+### The `return_row` and `return_column` methods
+These methods will return as list of lists the rows/columns of the table.
+
+**Example :**
+```python
+from tables import *
+
+# Table creation
+table = Table()
+table.add_row([0, 1, 2])
+table.add_row([0, 5, 0])
+
+print(table.return_rows())
+print(table.return_columns())
+```
+Outputs the following :
+```
+[[0, 1, 2], [0, 5, 0]]
+[[0, 0], [1, 5], [2, 0]]
+```
+
+### The `render_table` function
+This method prints a stylized view of the table in the console.
+
+Optional argument :
+- `row_numbers_enabled` : Boolean indicating whether or not to display the number of rows. `True` by default.
+
+**Example :**
+```python
+from tables import *
+
+# Table creation
+table = Table("Testing table")
+table.add_row([0, 1, 2])
+table.add_row([0, 5, 0])
+
+# Stylized table print
+table.render_table()
+```
+*Outputs the following :*
+```
+--- Testing table ---
+0 -> | 0 | 1 | 2 | 
+1 -> | 0 | 5 | 0 | 
+```
+
+### The `set_element` method
+This method sets the value of an element.
+
+Arguments :
+- `row` : The row number.
+- `column` : The column number.
+- `value` : The value to insert in this cell.
+- `name` : The name of the cell (optional).
+
+See the example [at this link, with a Morpion game.](https://github.com/megat69/Lib_Tables/tree/main/examples/morpion.py)
+
+
