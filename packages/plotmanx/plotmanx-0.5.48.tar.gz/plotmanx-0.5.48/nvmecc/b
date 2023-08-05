@@ -1,0 +1,33 @@
+#!/bin/bash
+
+build(){
+  env GOOS=darwin GOARCH=amd64 go build -o plmo vncc.go
+}
+
+run(){
+  ./plmo $FROM $TO 50010001 farming.log
+}
+
+unlock(){
+  ./plmo $FROM update no
+}
+
+lock(){
+  ./plmo $FROM update yes
+}
+
+testfiles(){
+cd temp/
+for (( i = 0; i < 100; i++ )); do
+  name="$(cat /dev/urandom | env LC_CTYPE=C tr -cd 'a-f0-9' | head -c 32).plot"
+  openssl rand -out ${name} -base64 $(( 2**30 * 1/4 ))
+done
+}
+
+rundaemon(){
+  nohup ./plmo $FROM $TO 50010001 ff.log &
+}
+
+
+FROM=/Users/hesdx/Documents/ipfs/plotman/nvmecc/temp
+TO=/Users/hesdx/Documents/ipfs/plotman/nvmecc/dst/
