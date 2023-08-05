@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: understory-fx
+Version: 0.0.4
+Summary: Tools for metamodern audiovisual effects
+License: AGPL-3.0-or-later
+Author: Angelo Gladding
+Author-email: angelo@lahacker.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pygments (>=2.9.0,<3.0.0)
+Requires-Dist: emoji (>=1.2.0,<2.0.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Project-URL: Homepage, https://github.com/canopy/understory-fx
+Description-Content-Type: text/markdown
+
+# understory-fx
+Tools for metamodern audiovisual effects
+
