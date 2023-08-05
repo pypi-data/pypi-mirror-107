@@ -1,0 +1,11 @@
+snap/__init__.py,sha256=-MMMWL3zaexEHigkmU0VHLwlf5OTnUkOsRcgz_-zZIs,129
+snap/chain.py,sha256=FEbDZVcNyH2VJDf34zbLRFgk1r_B1xX4Bt_5Dhd4DDQ,2687
+snap/config.py,sha256=D5dAkiT_EqLva_DweQ0929IIEcdgbYAkUaOQmWH88yk,4142
+snap/parallel.py,sha256=bp1QL-uHZZfZ_fAvjfH8BXqjOVX8EwsB7mWN8shMx_U,1529
+snap/util.py,sha256=8HrrfdTIBU_8KW0-BytAWYiamJthW7Xs29pYffDWYdg,3578
+snap_base-1.2.0.data/scripts/snap,sha256=mqDIm3zv-XW1kxqOQx-rpRIp5AeXemBjd2fJUn2pr6M,1744
+snap_base-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+snap_base-1.2.0.dist-info/METADATA,sha256=fixp5S7YlpyiAnBI-fERDM1vzv-KrOWsWYTc5vAR4HI,2996
+snap_base-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+snap_base-1.2.0.dist-info/top_level.txt,sha256=iykADDZV6lZoiAA3W0yDEVuUfBUz-e51kGliJ2nBiXQ,5
+snap_base-1.2.0.dist-info/RECORD,,
