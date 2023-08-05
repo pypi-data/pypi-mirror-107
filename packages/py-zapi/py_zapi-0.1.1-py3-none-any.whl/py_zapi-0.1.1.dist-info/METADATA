@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-zapi
+Version: 0.1.1
+Summary: ZeroMQ Devices API
+Home-page: https://gitlab.com/plantd/py-zapi
+License: MIT
+Author: Geoff Johnson
+Author-email: geoff.jay@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pyzmq (>=22.0)
+Project-URL: Repository, https://gitlab.com/plantd/py-zapi
+Description-Content-Type: text/markdown
+
+# Python ZAPI Library
+
+Pre-alpha state, this will change without warning.
+
+ZeroMQ devices used in `plantd`.
+
+* MDP broker
+* MDP client and worker
+
