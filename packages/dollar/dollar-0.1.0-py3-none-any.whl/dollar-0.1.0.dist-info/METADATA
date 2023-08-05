@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dollar
+Version: 0.1.0
+Summary: The parser for dict/JSON-like structures with references to self and others
+License: MIT
+Author: Peter Sandberg
+Author-email: petthosan@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
