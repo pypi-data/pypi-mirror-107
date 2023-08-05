@@ -1,0 +1,17 @@
+solari/__init__.py,sha256=oGtA8yd1iILo0BVGnF2IyGfH4YdTe6CC9ceR32269Mo,25
+solari/solari.py,sha256=cxC2hvlhVi3I8NxX6HgWVZPjNgB4wmwMTOyG3cqMDR0,7385
+solari/exceptions/__init__.py,sha256=eavwUW8p4r_CjV-FKLTQ1Jd0ih3v8DiEx-wGx-ay5Mk,83
+solari/exceptions/leona_exceptions.py,sha256=EKLRTbz_TBXoEIWza16sVuGdQQIbGjbPX9Jq5QnOb3g,634
+solari/stats/__init__.py,sha256=kWMEvr-yUP749s7vNUl8F_V0py26nT8lQdLatQqL1I4,610
+solari/stats/champions_rate_stats.py,sha256=oCtEa5RHiAb4yKkzRlsluORAsvs9RX4WsQTNx6HZWOs,9951
+solari/stats/champions_stats.py,sha256=SJRFeIJqWdXoO47q67qVpX44_eVzc5HRDLBpDTj5C7A,5645
+solari/stats/items_rate_stats.py,sha256=czK46i4HaYd4VAhCsrzFhWPs2beQGhrjPRv8cHUoFRA,4000
+solari/stats/player_rates.py,sha256=Q-JttlZwxkTsCIaDNzjhDke5w8T0zrvUnrIJeXY1e7I,7801
+solari/stats/player_stats.py,sha256=xodPicGGswlSONIS379RaswAL9JhGSEaUBmwbCnSp0c,6813
+solari/stats/stats_managers.py,sha256=fBPL986JjKqesinY_jkcTXBEQ6v-0REfq0imtxD5yrQ,16602
+solari/stats/stats_types.py,sha256=9n8T8WB8LH8BE-Rr5KeTpyGt6KR8m2zluIChyPuMmDs,3736
+solari-0.2.0.dist-info/LICENSE,sha256=S1wmj6_Xq13NlNDzeafh2QHxi-YAS7lhEVpbHNcaPBc,1066
+solari-0.2.0.dist-info/METADATA,sha256=5r2NbX78pfy4nfkQNpjBVLxw3nS6lLYVO2Sns7w88sM,2944
+solari-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+solari-0.2.0.dist-info/top_level.txt,sha256=lcM04E6C7H8AO3DdHLdCPSfm5y-0BzNn9rEDZR3nhLs,7
+solari-0.2.0.dist-info/RECORD,,
