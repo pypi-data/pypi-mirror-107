@@ -1,0 +1,47 @@
+predefinedCategories,Pattern,Unit
+consigne blowers,BLR,%
+consigne pumps,PMP,%
+Courant alimentation stack,STB_STK,A
+Courant armoire éléctrique,EPB,A
+Courant blowers,BLR,A
+Courant pompes,PMP,A
+débits lignes air,L\d{3}_O2,Nl/min
+débits lignes autres,L\d{3}_[NG],Nl/min
+débits lignes Fuel,L\d{3}_FUEL,Nl/min
+débits lignes H2,L\d{3}_H2_,Nl/min
+débits lignes vapeur,L\d{3}_H2O,Nl/min
+débits Nh,,Nl/min
+pression ligne air ,O2,mbarg
+pression ligne fuel,FUEL,mbarg
+pression reservoir H2,TNK,mbarg
+puissance bâtiment,SIS,W AC
+puissance chauffant GV,STG,W AC
+puissance chauffant stack,STB_STK_HER,W AC
+puissance pompes AC,PMP,W AC
+puissance stack,STB_STK_\d{2}\.ALIM,kW DC
+puissance total,SEH0.JT,W AC
+température échangeurs ,HEX,°C
+température einceinte thermique ,STB_TT,°C
+température lignes air,L\d{3}_O2,°C
+température lignes autres,L\d{3}_[NG],°C
+température lignes H2,L\d{3}_H2_,°C
+température lignes vapeur,L\d{3}_H2O,°C
+température réservoirs,L\d{3}_[NG],°C
+température réservoirs,TNK,°C
+temperatures du GV1 ,STG_01a,°C
+temperatures du GV2 ,STG_01b,°C
+températures lignes Fuel,L\d{3}_FUEL,°C
+temperatures Stack,STB_STK,°C
+temperatures Stack 1,STB_STK_01,°C
+temperatures Stack 2,STB_STK_02,°C
+temperatures Stack 3,STB_STK_03,°C
+temperatures Stack 4,STB_STK_04,°C
+vannes air ,O2,TOR
+vannes blower,BLR,TOR
+vannes Fuel ,FUEL,TOR
+vannes GN,GN,TOR
+vannes GV,STG,TOR
+vannes H2,H2_,TOR
+vannes pompes,PMP,TOR
+vannes stack,STB_STK,TOR
+vannes vapeur ,H2O[PR]_,TOR

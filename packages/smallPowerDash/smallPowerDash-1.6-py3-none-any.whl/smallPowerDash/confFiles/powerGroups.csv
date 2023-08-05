@@ -1,0 +1,10 @@
+PowerGroup,pattern,unit,voltage
+batiment ?,SIS,W,
+Chauffant Stack,STK_HER,W,
+Chauffant GV,STG,W,
+Chauffant Four,STB_HER,A,56
+blowers,BLR,A,48
+pompes,PMP,A,24
+pompes W PLC,PMP,W,
+Armoire électrique,EPB,A,24
+Alimentation générale,SEH0\.JT_,W,
