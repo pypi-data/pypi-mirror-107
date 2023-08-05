@@ -1,0 +1,23 @@
+pandas
+pyarrow
+fsspec
+requests
+aiohttp
+
+[:python_version < "3.7"]
+dataclasses
+
+[abfs]
+adlfs
+
+[adl]
+adlfs
+
+[gcs]
+gcsfs
+
+[gs]
+gcsfs
+
+[s3]
+s3fs
