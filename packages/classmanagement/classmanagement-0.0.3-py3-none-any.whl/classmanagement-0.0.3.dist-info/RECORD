@@ -1,0 +1,8 @@
+classmanagement/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classmanagement/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classmanagement/models/class.py,sha256=6EeI1VQv1V1V6NV5p50SkWiq9qxIIb3ga0z5a4oj26w,575
+classmanagement/models/student.py,sha256=JIyJKcaYQWGmp2xoNt9Tq8qSF2nXKwVC31HxVkGkoqM,231
+classmanagement-0.0.3.dist-info/METADATA,sha256=ydpRUoVm7ezWaW-FFA2Awfq8RoASx6Zf8Mlfn_v9bhU,285
+classmanagement-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+classmanagement-0.0.3.dist-info/top_level.txt,sha256=NTDVjcu2Y7zXFgJkNzCEZvFta3NVXENTO7pxs72RS50,16
+classmanagement-0.0.3.dist-info/RECORD,,
