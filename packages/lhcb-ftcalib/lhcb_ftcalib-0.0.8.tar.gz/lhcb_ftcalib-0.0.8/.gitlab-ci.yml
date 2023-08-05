@@ -1,0 +1,35 @@
+image: rootproject/root:6.24.00-conda
+
+stages:
+    - unittest
+    - calibration_test
+    - cli_test
+
+# before_script:
+#     - export PYTHONPATH="${PYTHONPATH}:./"
+#     - pip install -r requirements.txt
+#     - pip install root_pandas
+#     - apt update
+#     - pip install -e .
+
+before_script:
+    - export PYTHONPATH="${PYTHONPATH}:./"
+    - pip install numpy pandas "uproot>4" iminuit pytest scipy matplotlib flake8 uncertainties
+    - pip install root_pandas
+    - apt update
+    - pip install -e .
+
+unittest:
+    stage: unittest
+    script:
+        - python -m pytest -x tests/test_api.py
+
+calibration_test:
+    stage: calibration_test
+    script:
+        - python -m pytest -x tests/test_calibration.py
+
+cli_test:
+    stage: cli_test
+    script:
+        - python -m pytest -x tests/test_cli.py
