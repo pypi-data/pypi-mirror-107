@@ -1,0 +1,46 @@
+CHANGES
+=======
+
+* fix missing config obj
+* add rss support
+
+v0.2.4
+------
+
+* lol wrong src and dst variables read
+* fix error on parsing config file
+* finally fix argparse error, questionmark
+* checking argparse errors
+* fix missing import
+
+v0.2.3
+------
+
+* add more configuration options and refactor its parsing
+
+v0.2.2
+------
+
+* fix sorting of pages and update default templates
+
+v0.2.1
+------
+
+* fix required base url and tag header substitution
+
+v0.2.0
+------
+
+* clean up and update readme
+* refactor code and finish basic features
+
+v0.1.0
+------
+
+* refactor code and almost finish main functionality
+* semiworking program, still very alpha
+* Add working file discovery and destination file structure creation
+* initial template creation, barebones arg parser
+* Prepare barebones package info
+* Update readme
+* Initial commit
