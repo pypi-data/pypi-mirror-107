@@ -1,0 +1,9 @@
+elasticsearch>=7.10.1
+twitwi>=0.7.2
+requests
+pytz
+psutil
+minet<0.53,>=0.52
+future
+click
+progressbar2
