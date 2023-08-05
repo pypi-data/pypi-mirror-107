@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+docxify/__init__.py
+docxify.egg-info/PKG-INFO
+docxify.egg-info/SOURCES.txt
+docxify.egg-info/dependency_links.txt
+docxify.egg-info/entry_points.txt
+docxify.egg-info/requires.txt
+docxify.egg-info/top_level.txt
