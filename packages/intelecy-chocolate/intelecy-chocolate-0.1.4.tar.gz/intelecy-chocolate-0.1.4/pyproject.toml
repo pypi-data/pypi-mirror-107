@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "intelecy-chocolate"
+version = "0.1.4"
+description = "Intelecy fork of Chocolate"
+authors = ["areeh <are.haartveit@intelecy.com>"]
+license = ""
+
+packages = [
+    {include = "chocolate"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.19"
+pymongo = ">=3.4"
+dataset = ">=0.8"
+filelock = ">=2.0"
+ghalton = ">=0.6"
+sphinx = ">=1.5"
+pandas = ">=0.19"
+scipy = ">=0.18"
+scikit-learn = ">=0.21"
+psycopg2-binary = ">=2.8.5"
+
+[tool.poetry.dev-dependencies]
+"testing.postgresql" = {git = "https://github.com/tk0miya/testing.postgresql.git", rev = "c81ded434d00ec8424de0f9e1f4063c778c6aaa8"}
+hypothesis = ">=3.6"
+nose = "^1.3"
+codecov = ">=2.1.8"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
