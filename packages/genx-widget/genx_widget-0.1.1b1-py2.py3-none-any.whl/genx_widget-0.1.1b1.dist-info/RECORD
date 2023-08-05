@@ -1,0 +1,14 @@
+genx/__init__.py,sha256=ux74SnIJAwvdbO01TpUrZlfQMvsLFxc3G3-ata-_H6M,271
+genx/_version.py,sha256=Oi8jfe91BmU0PyKDRNq1z9XoVYF0eyyKMWLxtndMW04,280
+genx/react_jupyter_widget.py,sha256=ej8Ty_9cg8U0sb4L_hfTRIficeJzxCCHMLAzaiqCRvE,4832
+genx/static/extension.js,sha256=55R19Ysu25IPA3kEsldPL9YTZ98pp1sY5IxmkmdBNAk,3339
+genx/static/index.js,sha256=YstbxStMFQExi1kE5IuLvSHXF7ACR9x7H9rj9Vvm70s,12962189
+genx/static/index.js.map,sha256=Nl2cT1CzSeVy_YDrBij4wjt42Ziru8JrxVhnmAmH0iM,11513521
+genx_widget-0.1.1b1.data/data/etc/jupyter/nbconfig/notebook.d/genx-widget.json,sha256=k3tQ2toO5JWL5aZeusAga57X_Ku2kyGG3irNMoiWCGE,65
+genx_widget-0.1.1b1.data/data/share/jupyter/nbextensions/genx-widget/extension.js,sha256=55R19Ysu25IPA3kEsldPL9YTZ98pp1sY5IxmkmdBNAk,3339
+genx_widget-0.1.1b1.data/data/share/jupyter/nbextensions/genx-widget/index.js,sha256=YstbxStMFQExi1kE5IuLvSHXF7ACR9x7H9rj9Vvm70s,12962189
+genx_widget-0.1.1b1.data/data/share/jupyter/nbextensions/genx-widget/index.js.map,sha256=Nl2cT1CzSeVy_YDrBij4wjt42Ziru8JrxVhnmAmH0iM,11513521
+genx_widget-0.1.1b1.dist-info/METADATA,sha256=6fsgGm-b5uA7cjh8TX0xfZiqCVUhEwM1YmekTThXeZU,839
+genx_widget-0.1.1b1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+genx_widget-0.1.1b1.dist-info/top_level.txt,sha256=u0SqwELbRMKQwaT4ie5G4N9c3Vd1wB6cciqyPoVzFEk,5
+genx_widget-0.1.1b1.dist-info/RECORD,,
