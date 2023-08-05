@@ -1,0 +1,17 @@
+pyyaml>=3.5
+
+[doc]
+sphinx
+sphinx-rtd-theme
+pyzmq>=20
+hop-client==0.4
+
+[hop]
+hop-client==0.4
+
+[io]
+pyzmq>=20
+hop-client==0.4
+
+[zmq]
+pyzmq>=20
