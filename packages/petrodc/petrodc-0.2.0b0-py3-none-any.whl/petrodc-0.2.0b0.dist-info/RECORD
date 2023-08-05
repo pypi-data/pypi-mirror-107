@@ -1,0 +1,15 @@
+petrodc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petrodc/plot.py,sha256=rTcZPl1rDV05TL-5FnY1Q9nVbOD68Gp8FR2AjtziZ0Y,1144
+petrodc/ags/__init__.py,sha256=JKTfQAVUmxnnC4uxOvYhU0kKnuZ27cNRxOQp9mV8rfc,55
+petrodc/ags/sr_006.py,sha256=JSO3b63YxKUO8vjGuY5WBNW51_fnFITtEbOSfhz97S8,1560
+petrodc/deposits/__init__.py,sha256=MddpJcA6uXAlBFsVUCDa_DCj1MTlkUFAl5xBOB2WnVk,34
+petrodc/deposits/dataset.py,sha256=sN1nKEuw2VrdBlhyDvIfHDVs7MSaMtYmI-Pu_CYQGnI,863
+petrodc/npd/__init__.py,sha256=ve2YjvTs-j70K6G18Q_1oX6wRAEq0qaNxJ3m8rR6QfE,31
+petrodc/npd/wellbore.py,sha256=GARzT1HkYssSebdzprcqFU_EMrkwVNDZEl1fepmZ9qc,1859
+petrodc/usgs_eros/__init__.py,sha256=u4CfqddnzGo1YU0iwXfLA0-7WinsICtFnv41kORnJmY,45
+petrodc/usgs_eros/elevation.py,sha256=Kex4P6L9mzX22KSVTrKJM_d7hCzrLaET81MLoTPiGuE,2390
+petrodc-0.2.0b0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+petrodc-0.2.0b0.dist-info/METADATA,sha256=MTjF_EmS-jQg_0lAK-Zb0bl8ILygEIDoEfavd3Xyn0s,2943
+petrodc-0.2.0b0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+petrodc-0.2.0b0.dist-info/top_level.txt,sha256=94rWxqZv4Svn3ZIqqnudkpMyxF85Ec2ZqFoQbrcSYn0,8
+petrodc-0.2.0b0.dist-info/RECORD,,
