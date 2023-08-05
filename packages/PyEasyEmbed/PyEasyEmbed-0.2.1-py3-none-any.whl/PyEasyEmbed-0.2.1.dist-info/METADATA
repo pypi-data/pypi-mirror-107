@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: PyEasyEmbed
+Version: 0.2.1
+Summary: Library to make integration of Python in other applications more easy
+Home-page: https://github.com/swip3798/PyEasyEmbed
+Author: Christian Schweigel
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: bottle (==0.12.9)
+
+# PyEasyEmbed
+
+PyEasyEmbed is a Python implementation of [EasyEmbed](https://github.com/swip3798/EasyEmbed), a collection of tools to integrate python code into other applications using shell commands. Instead of multiple arguments, a EasyEmbed app expects one JSON-Object to deal with..
+
+## Installation
+You can install the lastest release of PyEasyEmbed from Pypi:
+```
+pip install PyEasyEmbed
+```
+
+Otherwise you can also install it from source: 
+```
+git clone https://github.com/swip3798/PyEasyEmbed.git
+cd PyEasyEmbed
+python setup.py install
+```
+
+## Usage
+
+PyEasyEmbed implements all CommandServer types of EasyEmbed. Both are mainly used the same way, the major difference lies in the execute function.  
+**CliCommandServer example:**
+```python
+# When using the CliCommandServer, import is as directly as possible to avoid additional overhead
+from EasyEmbed.command_server import CliCommandServer
+
+# The version number is the number of your application which can be used by your main app to determine if the embedded app is compatible
+ser = CliCommandServer(version = "0.1")
+
+# A command responder which returns the input JSON Object, the name of the command is determined by the name of the function
+@ser.command
+def echo(data):
+    return data
+
+# Call the execute function to dispatch the input to the available commands
+ser.execute()
+```
+**HttpCommandServer example:**
+```python
+from EasyEmbed import HttpCommandServer
+
+# The version number is the number of your application which can be used by your main app to determine if the embedded app is compatible
+ser = HttpCommandServer(version = "0.1")
+
+# A command responder which returns the input JSON Object, the name of the command is determined by the name of the function
+@ser.command
+def echo(data):
+    return data
+
+# Call the execute function to startup the HTTP Server, starting on the default port 43512
+ser.execute(debug=True, port = 43512)
+# If you want to use a different server backend, use the server paramenter (here: Tornado)
+ser.execute(debug=True, port = 43512, server = "tornado")
+```
+The HTTP server is implemented using bottlepy. This allows you to use any server backend which is compatible with bottle. This is highly recommended because it speeds up the response time by a lot (e.g. when switching to tornado, the response time decreases from 200ms to 10 ms). The full list of available server backends can be found in the [Bottle docs](https://bottlepy.org/docs/dev/deployment.html).
+## CliCommand structure 
+
+A PyEasyEmbed command has always one or two arguments. The first is the name of the called command, the second is a JSON-Object which is parsed and deliverd as a parameter to the command function. Depending on your shell interface you may need to escape quotes. If no JSON-Object is provided, the data paramter will be `None`.
+
+Example call
+```
+python example.py echo "{\"hello\":\"world\"}"
+```
+
+The command server has a standard `info` command which prints the version number of your app, the python version running etc.
+
+### Response structure
+To the command call from above the response would be the following:
+```json
+{
+    "status": 0,
+    "response": {"hello":"world"}
+}
+```
+In case an exception occured during the command function, the following is returned:
+```json
+{
+    "status": 1,
+    "message": "Exception occured while executing command!",
+    "exception": Traceback String
+}
+```
+In case the command is not defined:
+```json
+{
+    "status": -1,
+    "message": "Command does not exist!"
+}
+```
+In case the JSON-Object could not be parsed:
+```json
+{
+    "status": -3,
+    "message": "JSON data could not be parsed!"
+}
+```
+
