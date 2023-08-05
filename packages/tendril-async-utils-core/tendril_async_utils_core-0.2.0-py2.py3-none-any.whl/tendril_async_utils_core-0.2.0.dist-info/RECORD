@@ -1,0 +1,9 @@
+tendril/__init__.py,sha256=F0UD44DuZCpVvI1PX5rW4FcKQ004ORdqeOhf4JsheIY,66
+tendril/asynchronous/__init__.py,sha256=F0UD44DuZCpVvI1PX5rW4FcKQ004ORdqeOhf4JsheIY,66
+tendril/asynchronous/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tendril/asynchronous/utils/logger.py,sha256=wZrJLcrTVmS3QAfT8mgXnwxjP23zvJNBFUfx9dF1GWo,1340
+tendril_async_utils_core-0.2.0.dist-info/LICENSE,sha256=KCdRuMmO6eRFNG61epksnsviXtjdVU3wRndzE-GbEPk,35181
+tendril_async_utils_core-0.2.0.dist-info/METADATA,sha256=U-3zBqZxKDecmxFo4VIR33U8i_8lA30VwPNYCWWZZRI,5495
+tendril_async_utils_core-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+tendril_async_utils_core-0.2.0.dist-info/top_level.txt,sha256=cZ37ntjo8Mlxd4OJ5PNxFU0yufka_b2hcfS80URElIM,8
+tendril_async_utils_core-0.2.0.dist-info/RECORD,,
