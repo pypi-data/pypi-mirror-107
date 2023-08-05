@@ -1,0 +1,12 @@
+prettyson/__init__.py,sha256=fyiQBFkpBu6UkQOZPH297QjIu8iKL7ycl1rwueF1oh8,19
+prettyson/__main__.py,sha256=JZ6O_Jo_zjqsrMg36YYVGdVy4lwNnNQ3wAAG_Qx3Mk0,1427
+prettyson/definitions.py,sha256=G0ztErLFt4XaVElfTUaHaQabBjzkNWvGqHuuPCUzbV4,1447
+prettyson/format.py,sha256=3aLqPzcLdvKR-mgtpqKkAtc-OCEWHZ3nR699lMPQu1I,2085
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_formatter.py,sha256=pKsHf55cXCGp9hx0QtIva9CK1iuc3JrK6WpsgmAox6Y,3304
+prettyson-0.0.1.dist-info/LICENSE,sha256=CUF8TX5_gCvTvS8WVuzIeQQ3At0Q3STwShbLwRTPDPo,35108
+prettyson-0.0.1.dist-info/METADATA,sha256=AC2HaOvg44CPVCJ2ZccyZAwcDg2sAm45pSHlv-_Ce1M,631
+prettyson-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+prettyson-0.0.1.dist-info/entry_points.txt,sha256=fsJL2BhLM7CkFVuLkVfvqLO3nVP9Ne-3Vnxr7Ip562w,55
+prettyson-0.0.1.dist-info/top_level.txt,sha256=tq9PJofShXOWvYvnd4HIkEeXOFM4fBOJi4b-O8x2n_k,16
+prettyson-0.0.1.dist-info/RECORD,,
