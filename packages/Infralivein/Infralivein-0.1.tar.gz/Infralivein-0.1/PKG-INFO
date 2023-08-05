@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Infralivein
+Version: 0.1
+Summary: Vein detection helper Function
+Home-page: https://github.com/MirzaRiyasatAli/Infrali74.git
+Author: Mirza Riyasat Ali
+Author-email: mirzariyasatali1@domain.com
+License: MIT
+Download-URL: https://github.com/MirzaRiyasatAli/Infrali74.git
+Description: UNKNOWN
+Keywords: Veindetecting,Python,Veinfinder,Veinlocator,Veindetection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
