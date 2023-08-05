@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyasrank
+Version: 0.1.1
+Summary: A Python interface to CAIDA ASRank service
+Home-page: http://github.com/digizeph/pyasrank
+Author: Mingwei Zhang
+Author-email: mingwei@hotpotato.dev
+License: MIT
+Description: UNKNOWN
+Keywords: caida asrank
+Platform: UNKNOWN
