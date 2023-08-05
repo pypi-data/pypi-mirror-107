@@ -1,0 +1,5 @@
+azureml-core
+azureml-dataset-runtime
+tabulate
+azureml-tensorboard
+typer
