@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: condorcet
+Version: 0.1.0
+Summary: 
+Author: Mfon Eti-mfon
+Author-email: mfonetimfon@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest-mock (>=3.6.1,<4.0.0)
