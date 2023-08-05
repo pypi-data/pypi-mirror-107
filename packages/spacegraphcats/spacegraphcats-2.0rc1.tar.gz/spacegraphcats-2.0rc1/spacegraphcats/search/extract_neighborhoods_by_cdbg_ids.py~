@@ -1,0 +1,46 @@
+#! /usr/bin/env python
+"""
+Query a catlas with a sequence (read, contig, or genome), and retrieve
+cDBG node IDs and MinHash signatures for the matching unitigs in the graph.
+
+XX optionally retrieve/save contig sequences? It wouldn't add much time...
+Just disk space.
+"""
+import argparse
+import csv
+import gzip
+import os
+import sys
+import time
+import sqlite3
+
+import screed
+import sourmash
+from sourmash import MinHash
+import argparse
+import os
+import sys
+import time
+import gzip
+
+from .search_utils import get_reads_by_cdbg
+
+from ..utils.logging import notify, error
+from . import search_utils
+from . import MPHF_KmerIndex, hash_sequence
+from .catlas import CAtlas
+
+
+def main(argv=sys.argv[1:]):
+    p = argparse.ArgumentParser()
+    p.add_argument("readsfile")
+    p.add_argument("labeled_reads_sqlite")
+    p.add_argument("node_list_file", help="a cdbg_ids.txt.gz file")
+    p.add_argument("-o", "--output")
+    p.add_argument("-v", "--verbose", action="store_true")
+    args = p.parse_args(argv)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+

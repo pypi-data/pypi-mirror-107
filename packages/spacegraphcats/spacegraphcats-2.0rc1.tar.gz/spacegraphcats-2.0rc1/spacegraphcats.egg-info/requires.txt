@@ -1,0 +1,8 @@
+screed<2,>=1.0.5
+pytest
+numpy
+snakemake==6.4.0
+sortedcontainers
+sourmash<5,>=4.1.1
+khmer==3.0.0a3
+bbhash>=0.5.4
