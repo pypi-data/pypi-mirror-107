@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: AutomatiseCA-ddecristofaro
+Version: 0.0.14
+Summary: An automatic trascription system for Conversational Analysis
+Home-page: https://github.com/pypa/sampleproject
+Author: Domenico De Cristofaro
+Author-email: ddecristofar@unibz.it
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: ibm-watson
+Requires-Dist: noisereduce
+Requires-Dist: scipy
+Requires-Dist: pydub
+Requires-Dist: praat-parselmouth
+
+# AutomatiseCA Documentation
+
+Domenico De Cristofaro
+
+## About
+
+AutomatizeCA is an automated transcription program for linguists and conversation analyst experts.
+
+It is designed to be used for generating Conversation Analysis transcripts that can be improved manually.
+
+## Overview
+
+AutomatizeCA takes in a recorded speech and uses a Speech to Text API to generate a time-aligned transcript. It uses a system of functions to detect the pauses between the turns, to assign the speaker lables to the transcripts and to report and replace the backchannels.
+
+AutomatizeCA renders the final transcript in a txt file including the formats of the Jefferson Transcription System.
+
+**VERSION: 0.0.1**
+
+This is a beta version, further implementation will be done in the future.
+
+## Installation
+
+**Pre-requisites**
+
+In order to use AutomatizeCA, you should have some familiarity with using the terminal to install and run programs.
+
+You should also be aware that AutomatiseCA uses [IBM Watson&#39;s STT API]
+(https://cloud.ibm.com/apidocs/speech-to-text)
+
+**Installation Steps**
+
+**NOTE: Run these commands in order**
+
+
