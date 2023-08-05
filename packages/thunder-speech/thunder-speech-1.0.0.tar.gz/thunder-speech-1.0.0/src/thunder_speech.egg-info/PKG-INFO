@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: thunder-speech
+Version: 1.0.0
+Summary: Add a short description here!
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: scart97
+Author-email: scart.lucas@gmail.com
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Description: [![codecov](https://codecov.io/gh/scart97/thunder-speech/branch/master/graph/badge.svg?token=USCEGEGM3D)](https://codecov.io/gh/scart97/thunder-speech)
+        
+        ![Test](https://github.com/scart97/thunder-speech/workflows/Test/badge.svg)
+        
+        # Thunder speech
+        
+        A Hackable speech recognition library.
+        
+        
+        ## Note
+        
+        This project has been set up using PyScaffold 3.3. For details and usage
+        information on PyScaffold see https://pyscaffold.org/.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Provides-Extra: testing
+Provides-Extra: dev

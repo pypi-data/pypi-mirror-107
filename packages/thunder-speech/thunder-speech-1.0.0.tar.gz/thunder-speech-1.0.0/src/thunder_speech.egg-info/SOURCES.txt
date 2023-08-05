@@ -1,0 +1,80 @@
+.coveragerc
+.gitignore
+.isort.cfg
+.pre-commit-config.yaml
+.releaserc.json
+AUTHORS.rst
+LICENSE.txt
+README.md
+codecov.yml
+environment.yaml
+mkdocs.yml
+setup.cfg
+setup.py
+.github/workflows/create-release.yml
+.github/workflows/publish-ghpages.yml
+.github/workflows/publish-python.yml
+.github/workflows/python-build.yml
+docs/index.md
+docs/quick reference guide.md
+docs/api/librosa compatibility.md
+docs/api/metrics.md
+docs/api/utils.md
+docs/api/Data/dataloader utils.md
+docs/api/Data/datamodule.md
+docs/api/Data/dataset.md
+docs/api/Quartznet/blocks.md
+docs/api/Quartznet/compatibility.md
+docs/api/Quartznet/module.md
+docs/api/Quartznet/transform.md
+docs/api/Text Processing/preprocess.md
+docs/api/Text Processing/tokenize.md
+docs/api/Text Processing/transform.md
+docs/api/Text Processing/vocab.md
+docs/css/mkdocstrings.css
+src/thunder/__init__.py
+src/thunder/librosa_compat.py
+src/thunder/metrics.py
+src/thunder/utils.py
+src/thunder/data/__init__.py
+src/thunder/data/dataloader_utils.py
+src/thunder/data/datamodule.py
+src/thunder/data/dataset.py
+src/thunder/quartznet/__init__.py
+src/thunder/quartznet/blocks.py
+src/thunder/quartznet/compatibility.py
+src/thunder/quartznet/module.py
+src/thunder/quartznet/transform.py
+src/thunder/text_processing/__init__.py
+src/thunder/text_processing/preprocess.py
+src/thunder/text_processing/tokenizer.py
+src/thunder/text_processing/transform.py
+src/thunder/text_processing/vocab.py
+src/thunder_speech.egg-info/PKG-INFO
+src/thunder_speech.egg-info/SOURCES.txt
+src/thunder_speech.egg-info/dependency_links.txt
+src/thunder_speech.egg-info/not-zip-safe
+src/thunder_speech.egg-info/requires.txt
+src/thunder_speech.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_data.py
+tests/test_import.py
+tests/test_librosa_compat.py
+tests/test_metrics.py
+tests/test_utils.py
+tests/utils.py
+tests/nemo_config_samples/QuartzNet15x5Base-En.yaml
+tests/nemo_config_samples/QuartzNet15x5NR-En.yaml
+tests/nemo_config_samples/QuartzNet5x5LS-En.yaml
+tests/quartznet/test_blocks.py
+tests/quartznet/test_compatibility.py
+tests/quartznet/test_module.py
+tests/quartznet/test_transform.py
+tests/text/test_preprocess.py
+tests/text/test_tokenize.py
+tests/text/test_transforms.py
+tests/text/test_vocab.py
+third-party-licenses/NEMO-License
+third-party-licenses/librosa-License
+third-party-licenses/torchaudio-License
