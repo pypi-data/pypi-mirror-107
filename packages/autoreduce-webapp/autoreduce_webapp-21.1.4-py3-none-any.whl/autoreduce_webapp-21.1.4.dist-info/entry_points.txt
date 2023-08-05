@@ -1,0 +1,3 @@
+[console_scripts]
+autoreduce-webapp-manage = autoreduce_webapp.manage:main
+
