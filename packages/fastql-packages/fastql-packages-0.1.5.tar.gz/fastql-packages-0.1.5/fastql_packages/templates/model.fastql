@@ -1,0 +1,5 @@
+from configs.database import Model
+
+class {{modelName}}(Model):
+    pass
+
