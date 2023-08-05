@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+kikyo/__init__.py
+kikyo/client.py
+kikyo/datahub.py
+kikyo/oss.py
+kikyo/search.py
+kikyo/settings.py
+kikyo.egg-info/PKG-INFO
+kikyo.egg-info/SOURCES.txt
+kikyo.egg-info/dependency_links.txt
+kikyo.egg-info/not-zip-safe
+kikyo.egg-info/top_level.txt
+requirements/test.txt
+tests/__init__.py
