@@ -1,0 +1,11 @@
+syncstream/__init__.py,sha256=Va7gFseOE05-5uhl6PbxKLWXime5Txo_n9T1MLl1U-w,2685
+syncstream/base.py,sha256=_RKdgSnTsrIdQavOWKermqmyw90vFe-s7Xy4D6YeDyQ,2470
+syncstream/file.py,sha256=ftDmhfe5NSsiF_dqcGC3-IbbMChcGLotpls8UogudG8,10369
+syncstream/host.py,sha256=ziHGDSh2eMXEKNF6dvf8rf7igfcX7N6SvqTKvN8AsEc,13871
+syncstream/mproc.py,sha256=-vWjVznM1pRrxg5cF_vyOWhBN8WcsMZFH1dJ_54rVXQ,15653
+syncstream/webtools.py,sha256=VVO6prV7wOi7dsMRIhKwHTBB2EQjLZDCRMKlzyIO0Ik,2466
+syncstream-0.2.1.dist-info/LICENSE,sha256=zOStZWPewudj7LaJHHK6cVETVFfEemL2i2DDTT0lDHY,1067
+syncstream-0.2.1.dist-info/METADATA,sha256=FQ018IppEaS0IsJ_FMI96u5EDtNGu-aIA0V-b7if8-8,3577
+syncstream-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+syncstream-0.2.1.dist-info/top_level.txt,sha256=N-3EfRQ8aF3ZPJHeG6M3ua82ht3XQ81kRtWoyPHZlRc,11
+syncstream-0.2.1.dist-info/RECORD,,
