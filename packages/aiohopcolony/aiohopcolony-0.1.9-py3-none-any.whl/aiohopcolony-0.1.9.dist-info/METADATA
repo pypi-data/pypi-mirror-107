@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aiohopcolony
+Version: 0.1.9
+Summary: Asyncio HopColony Core Python SDK
+Home-page: https://hopcolony.io
+Author: HopColony
+Author-email: hopcolony@gmail.com
+License: MIT
+Keywords: hopcolony core cloud development backend asyncio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Requires-Dist: aiofile (==3.5.0)
+Requires-Dist: aiohttp (==3.7.4)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: pika (==1.2.0)
+Requires-Dist: pyyaml (==5.4.1)
+
+Asyncio HopColony SDK to communicate with backend for Python developers
+
+
