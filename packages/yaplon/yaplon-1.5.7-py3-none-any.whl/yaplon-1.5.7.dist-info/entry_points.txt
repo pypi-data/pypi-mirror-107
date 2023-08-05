@@ -1,0 +1,20 @@
+
+        [console_scripts]
+        yaplon=yaplon.__main__:cli
+        csv22json=yaplon.__main__:csv2json
+        csv22plist=yaplon.__main__:csv2plist
+        csv22xml=yaplon.__main__:csv2xml
+        csv22yaml=yaplon.__main__:csv2yaml
+        json22plist=yaplon.__main__:json2plist
+        json22xml=yaplon.__main__:json2xml
+        json22yaml=yaplon.__main__:json2yaml
+        plist22json=yaplon.__main__:plist2json
+        plist22xml=yaplon.__main__:plist2xml
+        plist22yaml=yaplon.__main__:plist2yaml
+        xml22json=yaplon.__main__:xml2json
+        xml22plist=yaplon.__main__:xml2plist
+        xml22yaml=yaplon.__main__:xml2yaml
+        yaml22json=yaplon.__main__:yaml2json
+        yaml22plist=yaplon.__main__:yaml2plist
+        yaml22xml=yaplon.__main__:yaml2xml
+    
