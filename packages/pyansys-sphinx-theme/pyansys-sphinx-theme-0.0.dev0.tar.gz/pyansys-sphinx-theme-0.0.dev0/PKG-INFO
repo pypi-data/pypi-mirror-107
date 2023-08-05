@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyansys-sphinx-theme
+Version: 0.0.dev0
+Summary: PyData-based Sphinx theme from the PyAnsys community
+Home-page: https://github.com/pyansys/pyansys-sphinx-theme
+Maintainer: Alexander Kaszynski
+Maintainer-email: alexander.kaszynski@ansys.com
+License: MIT
+Description: ## PyAnsys Sphinx Documentation Theme
+        
+        Install with ...
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
