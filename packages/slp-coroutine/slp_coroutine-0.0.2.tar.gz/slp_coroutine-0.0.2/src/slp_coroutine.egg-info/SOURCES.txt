@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+docs/Makefile
+docs/conf.py
+docs/index.rst
+docs/make.bat
+src/asyncio_demo.py
+src/slp_coroutine.py
+src/test_slp_coroutine.py
+src/slp_coroutine.egg-info/PKG-INFO
+src/slp_coroutine.egg-info/SOURCES.txt
+src/slp_coroutine.egg-info/dependency_links.txt
+src/slp_coroutine.egg-info/top_level.txt
