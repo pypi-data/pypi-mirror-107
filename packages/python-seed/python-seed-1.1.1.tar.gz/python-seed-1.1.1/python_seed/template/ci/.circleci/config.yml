@@ -1,0 +1,117 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+
+# Environment variables required:
+# - TWINE_USERNAME / TWINE_PASSWORD: for publishing package to PyPi
+
+version: 2
+
+common: &common
+  working_directory: ~/pyseed
+  steps:
+    # Get Code from github
+    - checkout
+
+    # Install deps
+    - run:
+        name: install dependencies
+        command: pip install tox codecov pre-commit --user
+
+    # Run tests using TOX
+    - run:
+        name: run tox
+        command: ~/.local/bin/tox
+
+    # Run pre-commit (only for python-3.7)
+    - run:
+        name: run pre-commit
+        command: |
+          if [[ "$CIRCLE_JOB" == "python-3.7" ]]; then
+             ~/.local/bin/pre-commit run --all-files
+          fi
+
+    # Upload code coverage (only if env have UPLOAD_COVERAGE=1)
+    - run:
+        name: upload coverage report
+        command: |
+          if [[ "$UPLOAD_COVERAGE" == 1 ]]; then
+             ~/.local/bin/coverage xml
+             ~/.local/bin/codecov
+          fi
+        when: always
+
+
+jobs:
+  "python-3.6":
+    <<: *common
+    docker:
+      - image: cimg/python:3.6.13
+        environment:
+          - TOXENV=py36
+
+  "python-3.7":
+    <<: *common
+    docker:
+      - image: cimg/python:3.7.10
+        environment:
+          - TOXENV=py37
+          - UPLOAD_COVERAGE=1
+
+  "python-3.8":
+    <<: *common
+    docker:
+      - image: cimg/python:3.8.10
+        environment:
+          - TOXENV=py38
+
+  "python-3.9":
+    <<: *common
+    docker:
+      - image: cimg/python:3.9.5
+        environment:
+          - TOXENV=py39
+
+  deploy:
+      docker:
+        - image: cimg/python:3.7.10
+          environment:
+            - TOXENV=release
+      working_directory: ~/pyseed
+      steps:
+        - checkout
+
+        # We Only deploy to PyPi if github tag match the python version
+        - run:
+            name: verify git tag vs. version
+            command: |
+              VERSION=$(python setup.py --version)
+              if [ "$VERSION" = "$CIRCLE_TAG" ]; then exit 0; else exit 3; fi
+
+        - run:
+            name: install dependencies
+            command: pip install tox --user
+
+        - run:
+            name: run tox
+            command: ~/.local/bin/tox
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - "python-3.6"
+      - "python-3.7":
+          filters:  # required since `deploy` has tag filters AND requires `build`
+            tags:
+              only: /.*/
+      - "python-3.8"
+      - "python-3.9"
+      - deploy:
+          requires:
+            - "python-3.7"
+          filters:
+            tags:
+              only: /^[0-9]+.*/
+            branches:
+              ignore: /.*/
