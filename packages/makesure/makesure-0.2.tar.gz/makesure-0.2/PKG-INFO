@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: makesure
+Version: 0.2
+Summary: simple validator for input data (only for python dic)
+Home-page: https://github.com/faris404/make-sure
+Author: Muhammed Faris
+Author-email: faris.um2000@gmail.com
+License: MIT
+Download-URL: https://github.com/faris404/make-sure/archive/v_0.1.tar.gz
+Description: UNKNOWN
+Keywords: makesure,validation,parser,json validator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
