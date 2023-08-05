@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: potator
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: https://github.com/otzhora/potator
+Author: Yuriy Rogachev
+Author-email: rogachev.yuiry28@gmail.com
+License: MIT
+Download-URL: https://github.com/otzhora/potator/releases/tag/v0.1.2
+Description: Small code clone detection tool. It supports multiple Code Duplication Detectors and displays its results as a nice html. 
+        
+        # Requirements
+        
+        We support Linux and macOS. It can be run on Windows under WSL
+        
+        # Usage
+        
+        Firstly you need to install dependencies
+        
+        ```bash
+        pip3 install -r requirements.txt
+        ```
+        
+        Then you will need to set up tokenizer
+        
+        ```bash
+        python3 -m dupllication.setup_tokenizer
+        ```
+        
+        Now you are ready to use this utility. 
+        
+        ```bash
+        python3 -m potator DIRECTORY -t THRESHLOD -g GRANULARIY -o OUTPUT_FILE
+        ```
+Keywords: STATIC-ANALYSIS,PLAGIARISM-DETECTION,PLAGIARISM-DETECTOR
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

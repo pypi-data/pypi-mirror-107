@@ -1,0 +1,3 @@
+[console_scripts]
+potator = potator.__main__:main
+
