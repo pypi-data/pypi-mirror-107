@@ -1,0 +1,12 @@
+tencentcloud/__init__.py,sha256=PDS9YYLZ9hjM793ysS_HDuWSK3EFd3AX5Zi6YA80UiM,630
+tencentcloud/iotvideo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iotvideo/v20191126/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iotvideo/v20191126/iotvideo_client.py,sha256=v9OELxIYABXs3cV3c0aH_qtU91BTG3XoLb0xGicXZl0,83071
+tencentcloud/iotvideo/v20191126/models.py,sha256=49nVWiJ9xHxNNh6mr3D0Y8vIdECVj2g6OnyUOoobqkg,169256
+tencentcloud/iotvideo/v20201215/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iotvideo/v20201215/iotvideo_client.py,sha256=-4B0WWWSTCDP2CkIPgwyr3vMFY_IVSD_Xi8lgJ5Rvvc,64939
+tencentcloud/iotvideo/v20201215/models.py,sha256=xKhJKBkWInTB9VyTcAnw3lIDChQ-IAFHgj9LszMEzjs,147259
+tencentcloud_sdk_python_iotvideo-3.0.404.dist-info/METADATA,sha256=XatQvUNfOJsAMBapKmH771cNWYxa0_xih5rjtUu0XJ4,1457
+tencentcloud_sdk_python_iotvideo-3.0.404.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_iotvideo-3.0.404.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_iotvideo-3.0.404.dist-info/RECORD,,
