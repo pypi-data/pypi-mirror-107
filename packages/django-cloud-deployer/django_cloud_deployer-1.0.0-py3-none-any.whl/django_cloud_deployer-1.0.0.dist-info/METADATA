@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: django-cloud-deployer
+Version: 1.0.0
+Summary: Hybrid cloud deployment (IaaS/PaaS and FaaS) of Django web applications.
+Home-page: UNKNOWN
+Author: Rui Alves
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=3.1.7)
+Requires-Dist: asgiref (>=3.3.4)
+Requires-Dist: azf-wsgi (>=0.3.1)
+Requires-Dist: azure-functions-worker (>=1.1.9)
+Requires-Dist: azure-functions (>=1.7.0)
+Requires-Dist: chevron (>=0.14.0)
+Requires-Dist: grpcio-tools (>=1.33.2)
+Requires-Dist: grpcio (>=1.33.2)
+Requires-Dist: protobuf (>=3.16.0)
+Requires-Dist: pytz (>=2021.1)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: sqlparse (>=0.4.1)
+Requires-Dist: termcolor (>=1.1.0)
+
+# Django Cloud Deployer
+
+This package facilitates hybrid cloud deployment (IaaS/PaaS and FaaS) of Django web applications. By annotating project urls with the plugin's wrapper functions, a developer can indicate in which cloud deployment model each url resource should be executed.
+
+## Requirements
+
+To use this package, you will need the following Software tools:
+
+- [Git](https://git-scm.com/)
+- [npm](https://www.npmjs.com/)
+- [Serverless Framework CLI](https://www.serverless.com/)
+
+You will also need the CLI tools of the cloud providers you will be using:
+
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+
+## Setup
+
+First, install the package:
+
+```
+pip install django-cloud-deployer
+```
+
+Then, make sure to add the package (and its requirements) to your project's requirements file:
+
+```
+pip freeze > requirements.txt
+```
+
+## Usage
+
+The package features two functions, `runInPaaS` and `runInFaaS`, that may be used to indicate in which cloud deployment model (PaaS or FaaS, respectively) a url resource should be executed.
+
+Example:
+
+```python
+# urls.py
+
+from django.urls import include, path
+from django_cloud_deployer import runInPaaS, runInFaaS
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    runInPaaS(path('faq/', views.faq, name='faq')),
+    runInPaaS(path('polls/', include('polls.urls'))),
+    runInFaaS(path('auth/', include('auth.urls'))),
+]
+```
+
+Note that, by default, url resources with run in FaaS.
+
+## CLI tool
+
+The package may be used as a CLI tool:
+
+```
+$ python -m django_cloud_deployer
+
+Usage: django_cloud_deployer <operation> 
+
+Available operations:
+- deploy 
+- check_deploy
+- destroy 
+```
+
+### Check Deploy
+
+The `check_deploy` command allows the developer to observe, based on the annotated urls, where each resource will be deployed and executed.
+
+Usage:
+
+```
+$ python -m django_cloud_deployer check_deploy
+```
+
+
+Example:
+
+```
+$ python -m django_cloud_deployer check_deploy
+
+Please enter the name of the Django settings module (e.g., 'mysite.settings'):
+> mysite.settings
+
+The following urls will run in the FaaS provider:
+^/?$
+^auth/login/?$
+^auth/logout/?$
+
+The following urls will run in the PaaS provider:
+^polls/?$
+^polls/(?P<pk>[0-9]+)/?$
+^polls/(?P<pk>[0-9]+)/results/?$
+^polls/(?P<question_id>[0-9]+)/vote/?$
+```
+
+### Deploy
+
+The `deploy` command allows the developer to deploy the django project, based on the annotated urls.
+
+Usage:
+
+```
+$ python -m django_cloud_deployer deploy <paas provider> <faas provider>
+
+Available PaaS providers:
+- heroku
+Available FaaS providers:
+- azure
+```
+
+Note that you will need to be logged in to the chosen PaaS and FaaS providers CLIs. If you are not, you will be asked to login first.
+
+After the deployment is completed, a `django_cloud_deployer.json` configuration file will be produced:
+
+```json
+{
+        "projectName": "...",
+        "paasConfig": {
+            "provider": "...",
+            "resource": "...",
+            "url": "..."
+        },
+        "faasConfig": {
+            "provider": "...",
+            "resource": "...",
+            "url": "..."
+        }
+}
+```
+
+### Destroy
+
+The `destroy` command allows the developer to delete all the infrastructure resources created with the deployment of the Django project.
+
+Usage:
+
+```
+$ python -m django_cloud_deployer destroy
+```
+
+
