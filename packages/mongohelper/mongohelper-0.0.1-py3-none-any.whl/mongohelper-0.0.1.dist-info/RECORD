@@ -1,0 +1,14 @@
+mongohelper/AutoIncrementCollection.py,sha256=pv12dOUS_OCkWIbQBmn6kJca8pu9RwfaDfuuBGFciH8,2322
+mongohelper/Collection.py,sha256=iRcXMFe43leo7pFEu7PSv25c_cTLw7lkiAAKa6oQhMc,6135
+mongohelper/FindQueries.py,sha256=X9N6i7nOgJlEF9MT7VK9NrMrEhST0CzJa-Q39Dq0DIs,246
+mongohelper/MongoDB.py,sha256=OvVcn66AjMnKwqUycI45EQS0EYTrHyvfNEY3gklfldo,2187
+mongohelper/MongoError.py,sha256=LpOb5SE0Kin-Txtebrj0cdtQ3So8bLzDN0Q93Na9O1k,40
+mongohelper/ObjectIdCollection.py,sha256=6KmMY1Dnu7S8wewfHYHwqT4Oc2V7Bn_GXlPpA8c9UUI,3367
+mongohelper/UpdateQueries.py,sha256=qEDemWbEcEPgIlj4wIkXAcxheRJxSV0GtyvmHFoJ7CE,310
+mongohelper/__init__.py,sha256=1mppdzFtvLdYep_mrtm5cBUlXQATjCyRb5YjUMl0d0U,25
+mongohelper-0.0.1.dist-info/DESCRIPTION.rst,sha256=wKQ0wYgKdwMztTKcPVemHLRZx6HLMeD930ZYSR7T9ao,99
+mongohelper-0.0.1.dist-info/METADATA,sha256=-o0ph2b7JrLZCHGgtTMQ0hHHXFjjnVVI7m1svko8N48,688
+mongohelper-0.0.1.dist-info/RECORD,,
+mongohelper-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mongohelper-0.0.1.dist-info/metadata.json,sha256=8Xyyba8ZMXBSJhlKKZ-RX4QdSPB3m3T6yb0KAzlKVLY,718
+mongohelper-0.0.1.dist-info/top_level.txt,sha256=i4_weiKPrpsL-X4qas0UslN_vTTwD9-PomanvKqVYSg,12
