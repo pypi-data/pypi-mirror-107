@@ -1,0 +1,10 @@
+README.md
+setup.py
+objectdaddy/__init__.py
+objectdaddy/detection.py
+objectdaddy/object_detector.py
+objectdaddy.egg-info/PKG-INFO
+objectdaddy.egg-info/SOURCES.txt
+objectdaddy.egg-info/dependency_links.txt
+objectdaddy.egg-info/requires.txt
+objectdaddy.egg-info/top_level.txt
