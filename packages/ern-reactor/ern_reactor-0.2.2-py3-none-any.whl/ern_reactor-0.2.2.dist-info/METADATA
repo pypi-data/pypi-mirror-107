@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ern-reactor
+Version: 0.2.2
+Summary: Do arbitrary things in reaction to Ercoin transfers
+Home-page: https://github.com/KrzysiekJ/ern_reactor
+Author: Krzysztof Jurewicz
+Author-email: krzysztof.jurewicz@gmail.com
+License: UNKNOWN
+Keywords: cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/x-rst
+Requires-Dist: dateutil (<3,>=2)
+Requires-Dist: websockets (<9,>=8)
+
+==============
+Ercoin reactor
+==============
+
+`ern_reactor` is a Python library that allows performing arbitrary actions in reaction to `Ercoin <https://ercoin.tech>`_ transfers, with live synchronization and catching up after coming back online. Licensed under `Apache License 2.0 <https://apache.org/licenses/LICENSE-2.0>`_. Python 3.8 or newer is required.
+
+How to use
+----------
+
+See the help for ``ern_reactor.ErcoinReactor``:
+
+.. code:: python
+
+   import ern_reactor
+   help(ern_reactor.ErcoinReactor)
+
+You need to implement the ``get_namespace`` and ``process_tx`` methods. To inspect the structure of the transaction dictionary which is passed to ``process_tx``, see ``ern_reactor.TransferTx.__annotations__``.
+
+A basic example
+---------------
+
+This scripts connects to a local Ercoin node and live prints transaction values for transfers received by an Ercoin address (Base64-encoded) specified on the command line:
+
+
+.. code:: python
+
+   import asyncio
+   import decimal
+   import sys
+
+   from ern_reactor import ErcoinReactor
+
+
+   class DummyReactor(ErcoinReactor):
+       def get_namespace(self):
+           return 'dummy'
+
+       async def process_tx(self, tx):
+           amount_in_ern = decimal.Decimal(tx['value']) / 10**6
+           print(f'Received {amount_in_ern} ERN')
+
+
+   if __name__ == '__main__':
+       reactor = DummyReactor(
+           node='127.0.0.1',
+           to_address=sys.argv[1],
+           ssl=False,
+       )
+       try:
+           asyncio.run(reactor.start())
+       except KeyboardInterrupt:
+           sys.exit(0)
+
+
