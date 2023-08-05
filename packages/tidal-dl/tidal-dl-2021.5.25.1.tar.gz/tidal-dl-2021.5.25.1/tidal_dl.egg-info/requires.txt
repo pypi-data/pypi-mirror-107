@@ -1,0 +1,5 @@
+aigpy>=2021.5.25.1
+requests>=2.22.0
+pycryptodome
+pydub
+prettytable
