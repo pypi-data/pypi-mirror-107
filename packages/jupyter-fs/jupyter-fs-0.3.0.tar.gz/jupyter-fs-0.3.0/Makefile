@@ -1,0 +1,106 @@
+PIP := pip
+PYTHON := python
+YARN := jlpm
+
+testjs: ## Make js tests
+	cd js; ${YARN} test
+
+testpy: ## Make py tests
+	${PYTHON} -m pytest -v jupyterfs/tests --cov=jupyterfs --cov-branch --junitxml=python_junit.xml --cov-report=xml
+
+testbrowser:
+	cd js; ${YARN} test:browser
+
+test: ## run all tests
+	make testjs
+	make testpy
+	make testbrowser
+
+lintjs: ## run linter
+	cd js; ${YARN} lint
+
+lintpy: ## run linter
+	${PYTHON} -m flake8 jupyterfs setup.py
+
+lint: ## run linter
+	make lintjs
+	make lintpy
+
+fixjs:  ## run autopep8/tslint fix
+	cd js; ${YARN} fix
+
+fixpy:  ## run autopep8
+	${PYTHON} -m autopep8 --in-place -r -a -a jupyterfs/ setup.py
+
+fix:  ## run autopep8/tslint fix
+	make fixjs
+	make fixpy
+
+annotate: ## MyPy type annotation check
+	${PYTHON} -m mypy -s jupyterfs
+
+annotate_l: ## MyPy type annotation check - count only
+	${PYTHON} -m mypy -s jupyterfs | wc -l
+
+clean: ## clean the repository
+	# python tmp state
+	find . -name "__pycache__" | xargs  rm -rf
+	find . -name "*.pyc" | xargs rm -rf
+	find . -name ".ipynb_checkpoints" | xargs  rm -rf
+	# build state
+	rm -rf build coverage* dist *.egg-info *junit.xml .jupyter MANIFEST node_modules package-lock.json pip-wheel-metadata
+	rm -rf js/dist js/lib js/node_modules js/package-lock.json js/tsconfig.tsbuildinfo
+	rm -rf jupyterfs/labdist
+	# make -C ./docs clean
+	# binder/repo2docker mess
+	rm -rf .*-log.txt .local/ binder/.[!.]* binder/*.ipynb
+
+dev_install: dev_serverextension dev_labextension ## set up the repo for active development
+	# verify
+	${PYTHON} -m jupyter serverextension list
+	${PYTHON} -m jupyter server extension list
+	${PYTHON} -m jupyter labextension list
+
+dev_labextension: js  ## build and install labextension for active development
+	cd js; ${PYTHON} -m jupyter labextension install .
+
+dev_serverextension:  ## install and enable serverextension for active development
+	${PIP} install -e .[dev]
+	${PYTHON} -m jupyter server extension enable --py jupyterfs.extension
+
+docs:  ## make documentation
+	make -C ./docs html
+	open ./docs/_build/html/index.html
+
+install:  ## do standard install of both server/labextension to site-packages
+	${PIP} install .
+
+js:  ## build javascript
+	cd js; ${YARN} build:integrity
+
+dist: clean ## create dists
+	cd js; ${YARN} install
+	${PYTHON} setup.py sdist bdist_wheel
+
+publish: dist  ## dist to pypi and npm
+	twine check dist/* && twine upload dist/*
+	cd js; npm publish
+
+publishdry: dist  ## dry-run dist to pypi and npm
+	twine check dist/*
+	cd js; npm publish --dry-run
+
+publishtest: dist  ## release to test pypi, dry-run npm publish
+	twine check dist/* && twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	cd js; npm publish --dry-run
+
+
+# Thanks to Francoise at marmelab.com for this
+.DEFAULT_GOAL := help
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+print-%:
+	@echo '$*=$($*)'
+
+.PHONY: clean dev_install dev_labextension dev_serverextension dist docs help install js test tests
