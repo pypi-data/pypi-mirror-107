@@ -1,0 +1,55 @@
+<a style="position:absolute;color:blue" href="?lang=eng">Swap&nbsp;language</a><div style="color:gray;text-align:right"> If you don't want to see the documentation here, you can add SHOW_HELP_TOOLS_DOCS = False to settings.py</div><div center-content><div class="page"><h1 class="mb-0">HelpTools</h1><h3>Установка</h3><div p>Вариант 1: Django helptools.<br>Если вы используете Django, то вы можете использовать версию HelpTools для сервера:<demo>pip install helptools</demo>Добавьте его в установленные приложения в settings.py:<pre code>
+INSTALLED_APPS = [
+    <string comma>'django.contrib.admin'</string>
+    <string comma>'django.contrib.auth'</string>
+    <span style="color:gray;font-family:Arial;font-size:20px">...........</span>
+    <string comma>'helptools'</string>
+]
+ </pre>Затем в urls.py:<pre code>
+urlpatterns = [
+    path(<string comma>'admin/'</string> admin.site.urls),
+    path(<string comma>'hlptls/'</string> include(<string>'helptools.urls'</string>))
+]
+ </pre>И наконец, в шаблоне:<pre code>
+<tag>!DOCTYPE html</tag>
+{% load helpTags %} <comm html>Загрузка тегов HelpTools</comm>
+<tag>html <string cont="ru">lang</string></tag>
+<tag>head</tag>
+    <tag>meta <string cont="UTF-8">charset</string></tag>
+    <tag>meta <string cont="viewport">name</string> <string cont="width=device-width, initial-scale=1.0">content</string></tag>
+    <tag>title</tag>Document<tag>/title</tag>
+    {% help_tools_load %} <comm html>Загрузка самого helpTools.js, работает даже без настройки статических файлов</comm>
+<span style="color:gray;font-family:Arial;font-size:20px">...........</span>
+</pre>Готово! Теперь вы можете использовать HelpTools!</div><div p style="margin-top: 12px">Вариант 2: cdn/jsdelivr<demo>https://cdn.jsdelivr.net/gh/ElouLeol/helpTools@main/helpTools.min.js</demo></div><div p>Вариант 3: Прямое скачивание.<br>Вы можете скачать <a download href="/hlptls/files/helpTools.js">helpTools.js</a> и подключить его через <tag>script</tag>.</div></div></div><div center-content><div class="page"><h2>Документация</h2><p class="text-center" style="font-size: 20px">helpTools.js состоит из двух частей:<br><a href="#recorder">VoiceRecorder</a><br><a href="#helptools">helpTools</a></p><h3 id="recorder">VoiceRecorder</h3><div p>VoiceRecorder это часть helpTools.js и нужен он для записи голоса.<break></break>Если у вас установленна версия helpTools для django,<br> то вы можете использовать тег {% recorder %}.<br>У него есть обязательный аргумент id - он в итоге станет JavaScript переменной.<br>Вы можете установить ему своё изображение через аргумент image,<br>А также установить js функцию которая будет выполнятся по окончанию записи через аргумент onstop.<break></break>Вот вариант только с JavaScript:<pre code>
+<span st>let</span> Rec = <span style="color:#608">new VoiceRecorder;</span> <comm js>Создаём новый VoiceRecorder</comm>
+<comm js>Функция recordOnclick позволит начинать и заканчивать запись одной кнопкой.</comm>
+<span pr>Rec</span>.recordOnclick(<string comma>'#identifier'</string> <span style="color:#608">function</span>(<span style="color:blue">blob</span>) {
+    <comm js>Первый аргумент который принимает функция - кнопка которая будет активировать запись.</comm>
+    <comm js>Второй аргумент - функция которая будет выполнена по окончанию записи, </comm>
+    <comm js>в неё передаётся результат в формате Blob</comm>
+});
+
+</pre>Также, можно запускать и останавливать запись вручную:<pre code>
+<comm js>Начать запись:</comm>
+<span pr>Rec</span>.startRec()
+<comm js>Завершить запись:</comm>
+<span pr>Rec</span>.stopRec()
+</pre>Сама запись после этого будет в <span pr>Rec</span>.recBlob<br>а также в <span pr>Rec</span>.recForm</div></div></div><div center-content><div class="page"><h2 id="helptools">helpTools</h2><ul class="list-group center-margin" style="width:80%"><li><a href="#htmlEscape">htmlEscape</a></li><li><a href="#htmlUnescape">htmlUnescape</a></li><li><a href="#prepChild">prepChild</a></li><li><a href="#getCookie">getCookie</a></li><li><a href="#syncGet">syncGet</a></li><li><a href="#anim">anim</a><ul class="list-group" style="margin-top:10px"><li><a href="#fade">fade</a></li><li><a href="#flip">flip</a></li></ul></li><li><a href="#timer">timer</a></li><li><a href="#beta">beta</a></li></ul><h3 id="htmlEscape">htmlEscape</h3><div p>Использование:<demo><span pr>helpTools</span>.htmlEscape(<span st>String</span>, <span st>Array</span>)</demo>Эта функция нужна для экранирования html.<br>Первый аргумунт - строка, она будет экранирована<br>(“&lt;” будет превращён в “&amp;lt;”, “"” в “&amp;quot;” и т.д.)<break></break>Второй аргумент - список разрешённых символов,<br>например, если туда передать <span style="font-family:monospace">['&lt;i&gt;', '&lt;/i&gt;']</span>,<br>то строка <span style="font-family:monospace">“&lt;i&gt;&lt;a href=&quot;/&quot;&gt;Italic&lt;/a&gt;&lt;/i&gt;”</span><br>будет превращена в <span style="font-family:monospace">&lt;i&gt;&amp;lt;a href=&amp;quot;/&amp;quot;&amp;gt;Italic&amp;lt;/a&amp;gt;&lt;/i&gt;</span>. <break></break>Так это будет выглядеть: <i>&lt;a href=&quot;/&quot;&gt;Italic&lt;/a&gt;</i></div><h3 id="htmlUnescape">htmlUnescape</h3><div p>Использование: <demo>helpTools.htmlUnescape('string')</demo>Эта функция противоположна htmlEscape,<br>“&amp;lt;” будет превращён в “&lt;”, “&amp;quot;” в “"” и т.д.<br></div></div></div><div center-content><div class="page"><h3 id="prepChild">prepChild</h3><div p>Использование:<demo><span pr>helpTools</span>.prepChild(<span st>'selector'</span>,<span st>'html'</span>)</demo>Эта функция преобразует строку в html элемент и добавляет его в самое начало другого элемента (который был передан первым аргументом)<break></break>По сути - это сокращение этой записи:<br><span pr>document</span>.querySelector(<span st>'selector'</span>).insertAdjacentHTML(<span st>'html'</span>, 'afterBegin')</div><h3 id="getCookie">getCookie</h3><div p>Использование:<demo><span pr>helpTools</span>.getCookie(<span st>'CookieName'</span>)</demo>Эта функция просто возвращает содержимое Cookie файла.</div><h3 id="syncGet">syncGet</h3><div p>Использование: <demo><span pr>helpTools</span>.syncGet(<span st>'url'</span>)</demo>Эта функция делает синхронный GET запрос и возвращает полученный ответ.</div></div></div><div center-content><div class="page"><h2 id="anim">anim</h2><div p>Использование:<demo><span pr>helpTools</span>.anim(<span st>'selector'</span>,<span st>onstop</span>)</demo>Первый аргумент принимает селектор элемента, для которого вы хотите запустить анимацию, второй аргумент - функция, которая будет выполняться по завершению анимации.<break></break>Однако, не обязательно передавать именно функцию, для некоторых действий есть ключевые слова:<pre code>
+<comm js>По завершению этой анимации элемент будет удалён:</comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> <string>'delete'</string>).fade(<string comma>'in'</string> <num>0.15</num>);
+<comm js>Эквивалентно этой записи: </comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> function() {
+    document.querySelector(<string>'selector'</string>).remove();
+}).fade(<string comma>'in'</string> <num>0.15</num>);
+<comm js>По завершению этой анимации элемент будет скрыт:</comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> <string>'hide'</string>).fade(<string comma>'in'</string> <num>0.15</num>);
+
+</pre></div><h3 id="fade">fade</h3><div p>Использование:<demo><span pr>helpTools</span>.anim(<span st>'selector'</span>).fade(<span st>'direction'</span>, <num>duration</num>)</demo>Первый аргумент - направление, если 'in', то элемент будет исчезать, если 'out', то появляться.<break></break>Второй аргумент - длительность анимации, указывается в секундах, по умолчанию - <num>0.5</num>.<break></break>Пример работы:<div><button onclick="helpTools.anim('#demo-fade').fade('out',0.3)">Показать элемент</button><button onclick="helpTools.anim('#demo-fade','hide').fade('in',0.5)">Скрыть элемент</button><demo id="demo-fade">Example Element</demo></div></div><h3 id="flip">flip</h3><div p>Использование:<demo><span pr>helpTools</span>.anim(<span st>'selector'</span>).flip(<num>duration</num>)</demo>В функцию передаётся длительность анимации,<br> указывается в секундах, по умолчанию - <num>0.5</num>.<break></break>Пример работы:<div><button onclick="helpTools.anim('#demo-flip', 'hide').flip(0.5)">Скрыть элемент</button><button onclick="helpTools.bi('demo-flip').style=''">Восстановить</button><demo id="demo-flip">Example Element</demo></div></div></div></div><div center-content><div class="page"><h2 id="timer">timer</h2><div p><div id="demo-timer"></div><break></break>Использование/создание:<demo><span style="color:#8C0086">let</span> timer = <span style="color:#8C0086">new</span> <span pr>helpTools</span>.timer(<span st>'selector'</span>)</demo><break></break>Если у вас установленна версия helpTools для django, <br>то вы можете использовать тег {% timer %}. <br>У него есть обязательный аргумент id - он в итоге станет JavaScript переменной. <br>Вы можете указать ему тег через аргумент tag (По умолчанию это span),<br>А также установить свои css классы через аргумент classes. <br>Если auto_run будет True, то секундомер будет автоматически запускаться при загрузке страницы.<break></break>После создания, вы можете управлять секундомером:<pre code>
+<comm js>Запуск:</comm>
+timer.start()
+<comm js>Приостановка (Возобновить его можно через timer.start()):</comm>
+timer.pause()
+<comm js>Сброс: </comm>
+timer.drop()
+
+</pre>Методы "pause" и "drop" возвращают время которое насчитал секундомер в формате '{минуты}:{секунды}'</div></div></div><div center-content><div class="page"><h2 id="beta">beta</h2><p class="text-center">helpTools.beta - это инструменты которые надо ещё доработать, как в техническом плане, так и в идеином.</p><h3>changeStyle</h3><div p>changeStyle был создан для изменения существующих классов, но подходит и для добавления новых.<break></break>Использование:<demo>helpTools.beta.changeStyle('selector', {object})</demo>Первый аргумент - css селектор, например <span style="font-family:monospace">"div", ".page", "#img, .img"</span> и т.д. <br>Второй - объект, принимает данные в виде {'paddeing-left': '17px', 'opacity': '0.6'} и т.д.<break></break>В итоге, это стилевое правило применяется.</div></div></div><script>new helpTools.timer('#demo-timer').start()</script>

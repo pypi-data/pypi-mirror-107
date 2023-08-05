@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: helptools
+Version: 0.0.2
+Summary: The Django version of helpTools.js.
+Home-page: UNKNOWN
+Author: Just Leo
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/plain
+
+Installation:
+Add "helptools" to INSTALLED_APPS in settings.py
+Add path('hlptls/', include('helptools.urls')) in urls.py
+Now, you can read the full documentation at http://{yoursiteurl}/hlptls
+

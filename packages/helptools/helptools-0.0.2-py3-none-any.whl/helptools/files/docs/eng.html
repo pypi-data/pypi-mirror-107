@@ -1,0 +1,254 @@
+<span style="color:gray">Warning! The original language of the documentation is Russian. Inaccuracies in translation are possible.
+	<a href="?lang=ru" style="color:blue">Swap&nbsp;language</a>
+</span>
+<span style="color:gray;text-align:right">If you don't want to see the documentation here, you can add SHOW_HELP_TOOLS_DOCS = False to settings.py</span>
+<div center-content>
+	<div class="page">
+		<h1 class="mb-0">HelpTools</h1>
+		<h3>Installation</h3>
+		<div p>
+			Option 1: Django helptools. <br>
+			If you are using Django, you can use the server-side version of HelpTools:
+			<demo>pip install helptools</demo>
+			Add it to installed apps in settings.py:
+			<pre code>
+INSTALLED_APPS = [
+    <string comma>'django.contrib.admin'</string>
+    <string comma>'django.contrib.auth'</string>
+    <span style="color:gray;font-family:Arial;font-size:20px">...........</span>
+    <string comma>'helptools'</string>
+]
+			</pre>
+			Then to urls.py:
+			<pre code>
+urlpatterns = [
+    path(<string comma>'admin/'</string> admin.site.urls),
+    path(<string comma>'hlptls/'</string> include(<string>'helptools.urls'</string>))
+]
+			</pre>
+			And after that into the template:
+<pre code>
+<tag>!DOCTYPE html</tag>
+{% load helpTags %} <comm html>Loading HelpTools Tags</comm>
+<tag>html <string cont="ru">lang</string></tag>
+<tag>head</tag>
+    <tag>meta <string cont="UTF-8">charset</string></tag>
+    <tag>meta <string cont="viewport">name</string> <string cont="width=device-width, initial-scale=1.0">content</string></tag>
+    <tag>title</tag>Document<tag>/title</tag>
+    {% help_tools_load %} <comm html>Loading helpTools.js itself, works even without setting up static files</comm>
+<span style="color:gray;font-family:Arial;font-size:20px">...........</span>
+</pre>
+			Done! You can now use the HelpTools!
+		</div>
+		<div p style="margin-top: 12px">
+			Option 2: cdn/jsdelivr
+			<demo>https://cdn.jsdelivr.net/gh/ElouLeol/helpTools@main/helpTools.min.js</demo>
+		</div>
+		<div p>
+			Option 3: Straight download. <br>
+			You can download <a download href="/hlptls/files/helpTools.js">helpTools.js</a> and use <tag>script</tag> to connect it.
+		</div>
+	</div>
+</div>
+
+<div center-content>
+	<div class="page">
+		<h2>Documentation</h2>
+		<p class="text-center" style="font-size: 20px">
+			helpTools.js has two parts:<br>
+			<a href="#recorder">VoiceRecorder</a><br>
+			<a href="#helptools">helpTools</a>
+		</p>
+		<h3 id="recorder">VoiceRecorder</h3>
+		<div p>
+			VoiceRecorder is part of helpTools.js and is used for... voice recording. 
+			<break></break>
+			If you have the django version of helpTools installed, you can use the {% recorder %} tag. <br>
+			It has a required "id" argument - it will eventually become a JavaScript variable. <br>
+			You can set your image to it using the "image" argument <br>
+			and also set the JS function to be executed at the end of the recording using the "onstop" argument.
+			<break></break>
+			Here's how to do it using only JavaScript (and helpTools, of course):
+<pre code>
+<span st>let</span> Rec = <span style="color:#608">new VoiceRecorder;</span> <comm js>Create new VoiceRecorder</comm>
+<comm js>The recordOnclick method will allow you to start and end recording with a single button.</comm>
+<span pr>Rec</span>.recordOnclick(<string comma>'#identifier'</string> <span style="color:#608">function</span>(<span style="color:blue">blob</span>) {
+    <comm js>The first argument that the function takes is the button that will activate the recording,</comm>
+    <comm js>The second argument is the function that will be executed at the end of the recording, </comm>
+    <comm js>the result in the Blob format is passed to it</comm>
+});
+
+</pre>
+			Also, you can start and stop recording manually:
+<pre code>
+<comm js>Start recording:</comm>
+<span pr>Rec</span>.startRec()
+<comm js>Stop recording:</comm>
+<span pr>Rec</span>.stopRec()
+</pre>
+			The record itself after that will be in the variables <span pr>Rec</span>.recBlob and <span pr>Rec</span>.recForm
+		</div>
+	</div>
+</div>
+<div center-content>
+	<div class="page">
+		<h2 id="helptools">helpTools</h2>
+		<ul class="list-group center-margin" style="width:80%">
+			<li><a href="#htmlEscape">htmlEscape</a></li>
+			<li><a href="#htmlUnescape">htmlUnescape</a></li>
+			<li><a href="#prepChild">prepChild</a></li>
+			<li><a href="#getCookie">getCookie</a></li>
+			<li><a href="#syncGet">syncGet</a></li>
+			<li><a href="#anim">anim</a>
+				<ul class="list-group" style="margin-top:10px">
+					<li><a href="#fade">fade</a></li>
+					<li><a href="#flip">flip</a></li>
+				</ul>
+			</li>
+			<li><a href="#timer">timer</a></li>
+			<li><a href="#beta">beta</a></li>
+		</ul>
+
+		<h3 id="htmlEscape">htmlEscape</h3>
+		<div p>
+			Usage:
+			<demo>
+				<span pr>helpTools</span>.htmlEscape(<span st>String</span>, <span st>Array</span>)
+			</demo>
+			This function escapes HTML. <br>
+			The first argument is a string, it will be escaped <br>
+			(“&lt;” will be converted to “&amp;lt;”, “"” to “&amp;quot;” and etc.)
+			<break></break>
+			The second argument is aт array of allowed characters and words<br>
+			For example, if you pass there 
+			<span style="font-family:monospace">['&lt;i&gt;', '&lt;/i&gt;']</span>,<br>
+			the string <span style="font-family:monospace">“&lt;i&gt;&lt;a href=&quot;/&quot;&gt;Italic&lt;/a&gt;&lt;/i&gt;”</span><br>
+			will be turned into <span style="font-family:monospace">&lt;i&gt;&amp;lt;a href=&amp;quot;/&amp;quot;&amp;gt;Italic&amp;lt;/a&amp;gt;&lt;/i&gt;</span>. <break></break>
+			This is how it will look: <i>&lt;a href=&quot;/&quot;&gt;Italic&lt;/a&gt;</i>
+		</div>
+		<h3 id="htmlUnescape">htmlUnescape</h3>
+		<div p>
+			Usage: 
+			<demo><span pr>helpTools</span>.htmlUnescape(<span st>'string'</span>)</demo>
+			This function is the opposite of htmlEscape,<br>
+			“&amp;lt;” will be converted to “&lt;”, “&amp;quot;” to “"” and etc.<br></div>
+	</div>
+</div>
+
+<div center-content>
+	<div class="page">
+		<h3 id="prepChild">prepChild</h3>
+		<div p>
+			Usage:
+			<demo>
+				<span pr>helpTools</span>.prepChild(<span st>'selector'</span>,
+				<span st>'html'</span>)
+			</demo>
+			This function converts a string to an html element and prepend it to another element.
+			<break></break>
+			In fact, this is a short version of this entry:<br>
+			<span pr>document</span>.querySelector(<span st>'selector'</span>).insertAdjacentHTML(<span st>'html'</span>, 'afterBegin')
+		</div>
+		<h3 id="getCookie">getCookie</h3>
+		<div p>
+			Usage:
+			<demo><span pr>helpTools</span>.getCookie(<span st>'CookieName'</span>)</demo>
+			This function just returns the content of the cookie.
+		</div>
+		<h3 id="syncGet">syncGet</h3>
+		<div p>
+			Usage: 
+			<demo><span pr>helpTools</span>.syncGet(<span st>'url'</span>)</demo>
+			This function makes a synchronous GET request and returns the received response.
+		</div>
+	</div>
+</div>
+
+<div center-content>
+	<div class="page">
+		<h2 id="anim">anim</h2>
+		<div p>
+			Usage:
+			<demo>
+				<span pr>helpTools</span>.anim(<span st>'selector'</span>,
+				<span st>onstop</span>)
+			</demo>
+			The first argument takes the selector of the element for which you want to start the animation, 
+			the second argument takes the function to be executed when the animation ends. <break></break>
+			However, it is not necessary to pass a function, for some actions there are keywords:
+<pre code>
+<comm js>After this animation, the element will be removed:</comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> <string>'delete'</string>).fade(<string comma>'in'</string> <num>0.15</num>);
+<comm js>Equivalent to this entry:</comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> function() {
+    document.querySelector(<string>'selector'</string>).remove();
+}).fade(<string comma>'in'</string> <num>0.15</num>);
+<comm js>After this animation, the element will be hidden:</comm>
+<span pr>helpTools</span>.anim(<string comma>'selector'</string> <string>'hide'</string>).fade(<string comma>'in'</string> <num>0.15</num>);
+
+</pre>
+		</div>
+		<h3 id="fade">fade</h3>
+		<div p>
+			Usage:
+			<demo>
+			<span pr>helpTools</span>.anim(<span st>'selector'</span>).fade(<span st>'direction'</span>, <num>duration</num>)
+			</demo>
+			The first argument is the direction, if 'in', then the element will disappear, if 'out', then it will appear.
+			<break></break>
+			The second argument is the animation duration, specified in seconds, default is <num>0.5</num>.
+			<break></break>
+			Example:
+			<div>
+				<button onclick="helpTools.anim('#demo-fade').fade('out', 0.3)">Show element</button>
+				<button onclick="helpTools.anim('#demo-fade', 'hide').fade('in', 0.5)">Hide element</button>
+				<demo id="demo-fade">Example Element</demo>
+			</div>
+		</div>
+		<h3 id="flip">flip</h3>
+		<div p>
+			Usage:
+			<demo>
+			<span pr>helpTools</span>.anim(<span st>'selector'</span>).flip(<num>duration</num>)
+			</demo>
+			The duration of the animation is passed to the function,<br> specified in seconds, by default - <num>0.5</num>.
+			<break></break>
+			Example:
+			<div>
+				<button onclick="helpTools.anim('#demo-flip', 'hide').flip(0.5)">Hide element</button>
+				<button onclick="helpTools.bi('demo-flip').style=''">Restore</button>
+				<demo id="demo-flip">Example Element</demo>
+			</div>
+		</div>
+	</div>
+</div>
+<div center-content>
+	<div class="page">
+		<h2 id="timer">timer</h2>
+		<div p>
+			<div id="demo-timer"></div>
+			<break></break>
+			Usage/creation:
+			<demo><span style="color:#8C0086">let</span> timer = <span style="color:#8C0086">new</span> <span pr>helpTools</span>.timer(<span st>'selector'</span>)</demo>
+			<break></break>
+			If you have the django version of helpTools installed, <br>you can use the {% timer %} tag. <br>
+			It has a required "id" argument - it will eventually become a JavaScript variable. <br>
+			You can change the tag for it using the "tag" argument. (By default, this is span),<br>
+			And also set the css classes using the "classes" argument. <br>
+			And if auto_run is True, then stopwatch will automatically run on page load.
+			<break></break>
+			After creation, you can control the stopwatch:
+<pre code>
+<comm js>Start:</comm>
+timer.start()
+<comm js>Pause (You can run it again via timer.start ()):</comm>
+timer.pause()
+<comm js>Reset: </comm>
+timer.drop()
+
+</pre>
+			The "pause" and "drop" methods return the time that the stopwatch has counted in the format '{minutes}: {seconds}'
+		</div>
+	</div>
+</div>
+<script>new helpTools.timer('#demo-timer').start()</script>
