@@ -1,0 +1,3 @@
+[console_scripts]
+heaume=heaume_cli:cli
+
