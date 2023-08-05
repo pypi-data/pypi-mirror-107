@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: aemeasure
+Version: 0.0.6
+Summary: Simple tools for logging experiments in algorithm engineering
+Home-page: https://gitlab.ibr.cs.tu-bs.de/alg/aemeasure
+Author: TU Braunschweig, IBR, Algorithms Group (Dominik Krupke)
+Author-email: krupke@ibr.cs.tu-bs.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# AeMeasure
+
+Provides a Python module for simple measurements of algorithm engineering experiments. Maybe it will also get a scheduler.
+
+
+```python
+
+from aemeasure import Measurement, read_as_pd
+
+with Measurement("my_database.json", capture_stdout="stdout", capture_stderr="stderr") as m:
+    m["instance"] = "fancy_instance"
+    m["size"]
+    m["algorithm"] = "fancy_algorithm"
+    m["parameters"] = "asdgfdfgsdgf"
+    solution = run_algorithm()
+    m["solution"] = solution.to_json_dict()
+    m["objective"] = 42
+    m["lower_bound"] = 13
+    m.save_metadata()
+
+
+table = read_as_pd("my_database.json", ["instance", "size", "algorithm", "runtime"])
+table.plot(x="size", y="runtime")
+```
+
+Following data can easily be saved:
+* Runtime (enter and exit of Measurement)
+* stdout/stderr
+* Git Revision
+* Timestamp of start
+* Hostname
+* Arguments
+* Python-File
+* Current working directory
+
+Except of stdout and stderr, these values are automatically saved when using `m.save_metadata()`.
+
+The database currently is a simple json which is rather inefficient but works. You should
+not use it in parallel because then there can be collisions when writing to the database.
+Use different files when working in parallel!
+
+A parallel version is planned that sets up a local server and also allows multiple
+workstations. It should also be easy to let it do the scheduling.
+
