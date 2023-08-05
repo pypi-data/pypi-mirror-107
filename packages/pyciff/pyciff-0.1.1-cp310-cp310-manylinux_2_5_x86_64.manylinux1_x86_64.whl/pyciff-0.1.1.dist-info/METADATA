@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyciff
+Version: 0.1.1
+Classifiers: License :: OSI Approved :: Apache Software License
+Classifiers: Development Status :: 3 - Alpha
+Classifiers: Intended Audience :: Developers
+Classifiers: Programming Language :: Python
+Classifiers: Programming Language :: Rust
+Classifiers: Operating System :: POSIX
+Classifiers: Operating System :: MacOS :: MacOS X
+Author: Michal Siedlaczek <siedlaczek@pm.me>
+Author-Email: Michal Siedlaczek <siedlaczek@pm.me>
