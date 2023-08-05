@@ -1,0 +1,6 @@
+[console_scripts]
+create_chart=load_testing_data_merge_sort.create_chart:main
+generate_data=load_testing_data_merge_sort.generate_data:main
+measure_algo=load_testing_data_merge_sort.measure_time:main
+process_one=load_testing_data_merge_sort.merge_sort:main
+
