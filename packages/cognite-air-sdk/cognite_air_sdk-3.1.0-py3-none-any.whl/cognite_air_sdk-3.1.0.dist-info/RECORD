@@ -1,0 +1,17 @@
+cognite/air/__init__.py,sha256=c19hJ1m13ITb597HTMAdhtYUx9pMD2v0fqibTtU-uT0,43
+cognite/air/_api.py,sha256=H-_JVNB7DT8h_00dyt9Kl6FyU6f0SSo0lKQ_9sI-guQ,163
+cognite/air/_backfilling_api.py,sha256=Ehk7FB5s0W3jhZTEAO_zfcnj5YE8Nc8KeV5JXKG_PH8,3874
+cognite/air/_config.py,sha256=osxMYxsww_o4_Z6xiOwtJvXEp8frWqq3tHLAnqbslNc,841
+cognite/air/_events_api.py,sha256=s4skVE2KCUz17_9ytZFzse14pAcN5q_9T6LuKD29PLk,7797
+cognite/air/_time_series_api.py,sha256=RIcLzRDP9Tmuqpqkl4SfTdNZU5uzBLVmFWThgVMgLVg,4678
+cognite/air/_utils.py,sha256=O4moZdRDL069ve_s2Xk8r2Hd0YOrNqci-TvEQ1NULXw,2272
+cognite/air/client.py,sha256=AxbYHJj67ba9X7e5XbLeoAWH7xNxNIjusoMDpwI2nSc,11694
+cognite/air/constants.py,sha256=F6YB7xJ10vrqpDfDaKvK9o2SgQlACExpCuoWwZoBbjE,2475
+cognite/air/event_utils.py,sha256=Vsgib1UON_N4jIQ3VcxgII725RJeFNB5sweXLb_Dtww,17335
+cognite/air/monitoring_task.py,sha256=DZZMhDssEwy6jEDFzQk6mQ_fu5p6RBTZ2rx-9kHs1OQ,5478
+cognite/air/ts_utils.py,sha256=99wTc0gzeLjBTqA6Z4fRON37-RUki_3AfboqKXkdNyg,4547
+cognite/air/utils.py,sha256=F_YiGIC84yCH1lcTXO2gGRgbbvVqLPfJn3Jo7-iQNww,2410
+cognite_air_sdk-3.1.0.dist-info/LICENSE,sha256=hNuCkzqU41ku04GlJp2BYxj3D4DYlHvxmNhqPg2SYfw,11348
+cognite_air_sdk-3.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+cognite_air_sdk-3.1.0.dist-info/METADATA,sha256=t6QspXOBBpjbGuZv4shUYXQ5wxAj5awMadSeVhVf4dc,585
+cognite_air_sdk-3.1.0.dist-info/RECORD,,
