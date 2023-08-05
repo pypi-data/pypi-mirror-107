@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+neologist/__init__.py
+neologist.egg-info/PKG-INFO
+neologist.egg-info/SOURCES.txt
+neologist.egg-info/dependency_links.txt
+neologist.egg-info/requires.txt
+neologist.egg-info/top_level.txt

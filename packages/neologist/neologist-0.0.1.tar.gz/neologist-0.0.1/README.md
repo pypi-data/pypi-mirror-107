@@ -1,0 +1,4 @@
+# Neologist
+
+## About
+Exactophor generator
