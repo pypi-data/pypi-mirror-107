@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: devpi-client-extensions
+Version: 0.3.1
+Summary: devpi client extensions
+Home-page: https://github.com/hoefling/devpi-client-extensions
+License: MIT
+Author: Oleg Höfling
+Author-email: oleg.hoefling@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation
+Provides-Extra: keyring
+Requires-Dist: devpi-client (>=3.0.0)
+Requires-Dist: importlib-metadata (>=1.5.0,<2.0.0); python_version < "3.8"
+Requires-Dist: keyring; extra == "keyring"
+Project-URL: Repository, https://github.com/hoefling/devpi-client-extensions
+Description-Content-Type: text/x-rst
+
+devpi-client-extensions
+=======================
+
+Some useful stuff around `devpi client`_. Although this package is proudly named
+*extensions*, currently there is only one thing implemented ready to be used:
+a hook that uses passwords from ``.pypirc`` or `keyring`_ on login to devpi server
+so you don't have to enter your password if you store it for upload anyway.
+
+Install
+-------
+
+.. code-block:: sh
+
+   $ pip install devpi-client-extensions
+
+Usage
+-----
+
+Just use the ``devpi login`` command as usual:
+
+.. code-block:: sh
+
+   $ devpi login hoefling
+   Using hoefling credentials from .pypirc
+   logged in 'hoefling', credentials valid for 10.00 hours
+
+Keyring Support
+---------------
+
+Since version 0.3, reading credentials using `keyring`_ is supported.
+Install the package with ``keyring`` extras:
+
+.. code-block:: sh
+
+   $ pip install devpi-client-extensions[keyring]
+
+Example with storing the password in keyring:
+
+.. code-block:: sh
+
+   $ keyring set https://my.devpi.url/ hoefling
+   $ devpi login hoefling
+   Using hoefling credentials from keyring
+   logged in 'hoefling', credentials valid for 10.00 hours
+
+Stats
+-----
+
+|pypi| |build| |coverage| |requirements| |black|
+
+.. |pypi| image:: https://img.shields.io/pypi/v/devpi-client-extensions.svg?logo=python&logoColor=white
+   :target: https://pypi.python.org/pypi/devpi-client-extensions
+   :alt: Package on PyPI
+
+.. |build| image:: https://github.com/hoefling/devpi-client-extensions/workflows/CI/badge.svg
+   :target: https://github.com/hoefling/devpi-client-extensions/actions?query=workflow%3A%22CI%22
+   :alt: Build status on Github Actions
+
+.. |coverage| image:: https://codecov.io/gh/hoefling/devpi-client-extensions/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/hoefling/devpi-client-extensions
+   :alt: Coverage status
+
+.. |requirements| image:: https://requires.io/github/hoefling/devpi-client-extensions/requirements.svg?branch=master
+   :target: https://requires.io/github/hoefling/devpi-client-extensions/requirements/?branch=master
+   :alt: Requirements status
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/ambv/black
+
+.. _devpi client: https://pypi.org/project/devpi-client/
+
+.. _keyring: https://pypi.org/project/keyring/
+
