@@ -1,0 +1,8 @@
+README.md
+setup.py
+gitinfo/__init__.py
+gitinfo.egg-info/PKG-INFO
+gitinfo.egg-info/SOURCES.txt
+gitinfo.egg-info/dependency_links.txt
+gitinfo.egg-info/entry_points.txt
+gitinfo.egg-info/top_level.txt
