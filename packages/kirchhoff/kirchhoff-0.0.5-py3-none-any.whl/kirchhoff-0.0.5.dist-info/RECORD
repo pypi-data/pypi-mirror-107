@@ -1,0 +1,17 @@
+kirchhoff/__init__.py,sha256=Mz1yCNCDi5QTNYQldW1R98hSAZ8PzPKtCXEGbAr_g5U,224
+kirchhoff/circuit_dual.py,sha256=fCJYDgcbFjARNeRyaLx6VRlgxFnuuBnmveG-K5yaIfw,3661
+kirchhoff/circuit_flow.py,sha256=6mEFtJ6gP9SSWuVt7_uOY-6CyKBiJh0kKe6Uv3TzkoI,9528
+kirchhoff/circuit_flux.py,sha256=TlqZ2e_nkJOcb2RErjqfLioZ61lfc5_mOqGEiXT-BhM,3637
+kirchhoff/circuit_init.py,sha256=M-Ic_RDVQwi6S6VCqnUW1ihwIWf-a9jY_Ybef3_qeos,7549
+kirchhoff/init_crystal.py,sha256=LjkLzs8Z3fA3c1naXNMyFUvjYAoVRHkKFhZnHMjr58Q,15613
+kirchhoff/init_dual.py,sha256=GdIk9irD_mHiDvvL-POZ0qLC3Um8YEWsmEMI4xqriPg,11588
+kirchhoff/init_random.py,sha256=x7WPSffpPU7EMR2IsdvI7SaMTi4jiroXS7qdzD6Uh2c,6311
+kirchhoff/kirchhoff_dual.py,sha256=L1vJHC-Jf4b1hCOym_MdEANoQJrFlXjCv92xYJC_ZPE,3656
+kirchhoff/kirchhoff_flow.py,sha256=h9wVT0xos1K6sEpauq3nUsQhe32-F4A8xTLfFTL6zJA,9502
+kirchhoff/kirchhoff_flux.py,sha256=vL-WlGpUWYWlmq1_dpyxbZR-N-ABdIhVPay3t9M9s4Q,3611
+kirchhoff/kirchhoff_init.py,sha256=M-Ic_RDVQwi6S6VCqnUW1ihwIWf-a9jY_Ybef3_qeos,7549
+kirchhoff-0.0.5.dist-info/LICENSE,sha256=T2-jea18F_EgSYN07leB-lEJhbdZ7Xu417hpWO5p7Qg,1083
+kirchhoff-0.0.5.dist-info/METADATA,sha256=TBhUD9lhb_7sDZg-gLX1TfZTy9B5DrU3I60BovtY2CA,688
+kirchhoff-0.0.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+kirchhoff-0.0.5.dist-info/top_level.txt,sha256=X3amJrDyNmrZPE2e5DORSc_UG1KiXkfk6HqO-rg2mRw,10
+kirchhoff-0.0.5.dist-info/RECORD,,
