@@ -1,0 +1,26 @@
+# Gesundheit për tutti
+
+This project consists in a chatbot that aims to help people that may have some limits to access information about services related to health in South Tyrol, such as medical services, available doctors and open pharmacies. The program accepts text, audio and image input in different languages. The user will get the results as on-screen text or audio according to his/her input and language choice.
+
+Since the aim of this project is to improve accessibility, this chatbot can be easily used by immmigrants, teenagers, elderly people or phisically challenged people.
+
+API and libraries used in the code:
+
+- Google translate
+- Google Text to Speech
+- IMB watson
+- easyocr
+- Word to number
+- Health services http://dati.retecivica.bz.it/it/dataset southtyrolean-health-activities-list
+- Available doctors http://dati.retecivica.bz.it/it/dataset/southtyrolean-doctors-on-duty
+- Open pharmacies http://dati.retecivica.bz.it/it/dataset/farmacie-di-turno-dell-alto-adige1
+
+Once the package is installed, make sure that the following dependencies are installed:
+
+  pip install googletrans==3.1.0a0
+  pip install ibm_watson
+  pip install easyocr
+  pip install gTTS
+  pip install word2number
+  
+After running the funcions you can call the function gesundheit(): in order to start using the chatbot.  
