@@ -1,0 +1,3 @@
+[console_scripts]
+i3a = i3a.app:main
+
