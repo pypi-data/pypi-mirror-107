@@ -1,0 +1,11 @@
+importlib_metadata>=3.2.0
+mousebender~=2.0.0
+resolvelib~=0.7.0
+
+[mindeps]
+build~=0.4.0
+pep517
+
+[test]
+pytest>=4
+pytest-cov>=2
