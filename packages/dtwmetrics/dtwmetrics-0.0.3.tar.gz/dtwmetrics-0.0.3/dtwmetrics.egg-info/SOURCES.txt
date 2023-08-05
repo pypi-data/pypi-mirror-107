@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dtwmetrics/__init__.py
+dtwmetrics/dtwmetrics.py
+dtwmetrics/dtwutils.py
+dtwmetrics/version.py
+dtwmetrics.egg-info/PKG-INFO
+dtwmetrics.egg-info/SOURCES.txt
+dtwmetrics.egg-info/dependency_links.txt
+dtwmetrics.egg-info/requires.txt
+dtwmetrics.egg-info/top_level.txt

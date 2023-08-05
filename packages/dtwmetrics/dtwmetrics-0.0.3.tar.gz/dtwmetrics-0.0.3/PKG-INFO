@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dtwmetrics
+Version: 0.0.3
+Summary: Dynamic time warping metrics
+Home-page: https://github.com/danielvogler/dtw_metrics
+Author: Daniel Vogler
+Author-email: geopard.py@gmail.com
+License: MIT
+Description: Dynamic time warping metrics
+Platform: UNKNOWN
