@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: py-toolkit
+Version: 0.0.4
+Summary: python toolkit for common usage
+Home-page: https://github.com/DewMaple/toolkit
+Author: DewMaple
+Author-email: dewmaple@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/DewMaple/toolkit/issues
+Project-URL: Source, https://github.com/DewMaple/toolkit
+Description: UNKNOWN
+Keywords: python,schema meta
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
