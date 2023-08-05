@@ -1,0 +1,3 @@
+[console_scripts]
+spotifyyy-dl = spotifyyy_dl:main
+
