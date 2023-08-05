@@ -1,0 +1,7 @@
+import graphene
+{% for package in packages %}
+{{package}}
+{% endfor %}
+
+class Mutation(graphene.ObjectType):
+    {{mutation.name}} = {{mutation.class}}.Field()
