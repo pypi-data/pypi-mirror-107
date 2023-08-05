@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: drafting
+Version: 0.2.3
+Summary: Color and geometric primitives
+Home-page: https://github.com/goodhertz/drafting
+Author: Rob Stenson / Goodhertz
+Author-email: rob@goodhertz.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: fonttools[ufo]
+Requires-Dist: fontPens
+Requires-Dist: more-itertools
+Provides-Extra: text
+Requires-Dist: skia-pathops ; extra == 'text'
+Requires-Dist: freetype-py ; extra == 'text'
+Requires-Dist: uharfbuzz (>=0.14.0) ; extra == 'text'
+Requires-Dist: unicodedata2 ; extra == 'text'
+Requires-Dist: ufo2ft ; extra == 'text'
+Requires-Dist: python-bidi ; extra == 'text'
+
+
+# Drafting
+
+Color and geometric primitives
+
+
