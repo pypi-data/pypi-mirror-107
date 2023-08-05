@@ -1,0 +1,4 @@
+click<8,>=7.1.2
+click-didyoumean<1,>=0.0.3
+elasticsearch<7,>=6.8.1
+PyYAML<6,>=5.1.0
