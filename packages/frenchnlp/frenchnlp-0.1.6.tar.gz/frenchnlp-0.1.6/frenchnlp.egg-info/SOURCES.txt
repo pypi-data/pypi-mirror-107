@@ -1,0 +1,11 @@
+HISTORY.md
+MANIFEST.in
+README.md
+setup.py
+frenchnlp/__init__.py
+frenchnlp/utils_xo.py
+frenchnlp.egg-info/PKG-INFO
+frenchnlp.egg-info/SOURCES.txt
+frenchnlp.egg-info/dependency_links.txt
+frenchnlp.egg-info/requires.txt
+frenchnlp.egg-info/top_level.txt
