@@ -1,0 +1,11 @@
+README.md
+setup.py
+hajkr_youtube_scraper/__init__.py
+hajkr_youtube_scraper/__main__.py
+hajkr_youtube_scraper/crawler.py
+hajkr_youtube_scraper/utils.py
+hajkr_youtube_scraper.egg-info/PKG-INFO
+hajkr_youtube_scraper.egg-info/SOURCES.txt
+hajkr_youtube_scraper.egg-info/dependency_links.txt
+hajkr_youtube_scraper.egg-info/requires.txt
+hajkr_youtube_scraper.egg-info/top_level.txt
