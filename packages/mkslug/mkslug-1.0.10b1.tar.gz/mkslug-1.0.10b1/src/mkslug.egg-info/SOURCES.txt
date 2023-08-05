@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mkslug/__init__.py
+src/mkslug/__main__.py
+src/mkslug.egg-info/PKG-INFO
+src/mkslug.egg-info/SOURCES.txt
+src/mkslug.egg-info/dependency_links.txt
+src/mkslug.egg-info/requires.txt
+src/mkslug.egg-info/top_level.txt
+test/test_mkslug.py

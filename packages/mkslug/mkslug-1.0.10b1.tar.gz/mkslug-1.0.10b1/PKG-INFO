@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mkslug
+Version: 1.0.10b1
+Summary: Make a slug value (a part of a URL) from a regular sentence.
+Home-page: https://github.com/AndyBowskill/make-slug
+Author: Andy Bowskill
+Author-email: andybowskill@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AndyBowskill/make-slug/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
+
+## Make Slug
+Make a slug value (a part of a URL) from a regular sentence.
+
+### Installation
+
+Type this command into your terminal:
+
+```bash
+pip install mkslug
+```
+
+### Usage
+
+To use mkslug, type this command into your terminal with your sentence:
+
+```bash
+python -m mkslug 'Example regular sentence.'
+```
+
+
