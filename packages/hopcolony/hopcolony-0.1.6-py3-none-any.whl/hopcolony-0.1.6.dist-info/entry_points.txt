@@ -1,0 +1,3 @@
+[console_scripts]
+hopctl = hopcolony.__main__:main
+

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hopcolony
+Version: 0.1.6
+Summary: Hopcolony Python SDK
+Home-page: https://hopcolony.io
+Author: HopColony
+Author-email: hopcolony@gmail.com
+License: MIT
+Keywords: hopcolony core cloud development backend
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: click-spinner (==0.1.10)
+Requires-Dist: kubernetes (==12.0.1)
+Requires-Dist: parsel (==1.6.0)
+Requires-Dist: pika (==1.2.0)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: pyyaml (==5.4)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: simple-term-menu (==0.10.5)
+Requires-Dist: tabulate (==0.8.7)
+Requires-Dist: typer (==0.3.2)
+Requires-Dist: webdriver-manager (==3.3.0)
+
+HopColony SDK to communicate with backend for Python developers
+
+
