@@ -1,0 +1,16 @@
+JPype1
+setproctitle
+pathlib
+urllib3
+pyparsing
+click
+prompt_toolkit
+fs
+hdfs
+wget
+func_timeout
+requests
+websockets==8.*
+pydantic
+uvicorn[standard]
+fastapi
