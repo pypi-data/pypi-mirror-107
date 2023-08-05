@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: orkestra
+Version: 0.3.8
+Summary: The elegance of Airflow + the power of AWS
+License: MIT
+Keywords: orchestration,aws,cloud
+Author-email: Stephan Fitzpatrick <knowsuchagency@gmail.com>
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: cdk
+Provides-Extra: powertools
+Project-URL: Documentation, https://knowsuchagency.github.io/orkestra/
+Project-URL: Repository, https://github.com/knowsuchagency/orkestra
+Project-URL: homepage, https://github.com/knowsuchagency/orkestra
+Description-Content-Type: text/markdown
+Description: # Orkestra
+        
+        The elegance of Airflow + the power of AWS
+        ## Getting Started
+

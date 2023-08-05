@@ -1,0 +1,66 @@
+[project]
+dependencies = []
+description = "The elegance of Airflow + the power of AWS"
+dynamic = [ "classifiers",]
+keywords = [ "orchestration", "aws", "cloud",]
+name = "orkestra"
+requires-python = ">=3.8"
+version = "0.3.8"
+readme = "README.md"
+[[project.authors]]
+name = "Stephan Fitzpatrick"
+email = "knowsuchagency@gmail.com"
+
+[build-system]
+build-backend = "pdm.pep517.api"
+requires = [ "pdm-pep517",]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/knowsuchagency/orkestra"
+homepage = "https://github.com/knowsuchagency/orkestra"
+Documentation = "https://knowsuchagency.github.io/orkestra/"
+
+[project.optional-dependencies]
+cdk = [ "aws-cdk.core", "aws-cdk.aws_events", "aws-cdk.aws_events_targets", "aws-cdk.aws_lambda_python", "aws-cdk.aws_stepfunctions_tasks",]
+powertools = [ "aws-lambda-powertools[pydantic]", "pydantic[email]",]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 79
+include = "\\.pyi?$"
+exclude = "/(\n    \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | \\.history\n  | _build\n  | buck-out\n  | build\n  | dist\n  | __pypackages__\n  | cdk.out\n)/\n"
+
+[tool.pdm.dev-dependencies]
+dev = [ "klaxon", "mkdocs-material", "pre-commit~=2.12", "black~=21.5b1", "aws-lambda-powertools~=1.16", "aws-cdk.aws_apigateway", "mangum", "fastapi", "uvicorn", "boto3", "python-dotenv",]
+test = [ "pytest~=6.2",]
+
+[tool.pdm.scripts]
+format = "black ./"
+synth = "cdk synth"
+shell = "set -x\npdm run format\npdm build\npdm run test-publish\npdm run publish\n"
+test-publish = "twine upload --repository testpypi dist/*"
+docs = "mkdocs serve"
+test = "pytest tests/"
+api = "uvicorn examples.rest:app --reload"
+
+[tool.pytest.ini_options]
+testpaths = [ "tests",]
+markers = [ "slow", "interfaces", "powertools",]
+
+[tool.pdm.scripts._]
+env_file = ".env"
+
+[tool.pdm.scripts.build]
+
+[tool.pdm.scripts.deploy]
+
+[tool.pdm.scripts.destroy]
+
+[tool.pdm.scripts.publish]
+
+[tool.pdm.scripts.pub]
