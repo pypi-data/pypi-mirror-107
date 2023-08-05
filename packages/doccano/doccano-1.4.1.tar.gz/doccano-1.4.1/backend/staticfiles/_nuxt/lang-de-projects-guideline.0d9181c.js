@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{260:function(e,n,t){"use strict";t.r(n),n.default={guideline:"Leitfaden",writeGuidelinePrompt:"Bitte schreib einen Annotationsleitfaden."}}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{277:function(e,n,t){"use strict";t.r(n),n.default={guideline:"Guideline",writeGuidelinePrompt:"Please write annotation guideline."}}}]);

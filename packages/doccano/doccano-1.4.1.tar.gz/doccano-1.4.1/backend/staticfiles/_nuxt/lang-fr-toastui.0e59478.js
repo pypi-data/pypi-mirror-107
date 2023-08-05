@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[60],{289:function(o,e,n){"use strict";n.r(e),e.default={localeCode:"fr_FR"}}}]);
