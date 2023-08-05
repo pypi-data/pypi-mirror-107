@@ -1,0 +1,4 @@
+[console_scripts]
+relatar = fiscaliza.redmine:relatar_inspecao
+validar = fiscaliza.redmine:validar_dicionario
+
