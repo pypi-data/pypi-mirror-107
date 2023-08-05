@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: aiosaber
+Version: 0.0.1.1
+Summary: A concurrent streaming package
+Home-page: https://github.com/flowsaber/aiosaber
+Author: bakezq
+Author-email: zhongquan789@gmail.com
+License: MIT
+Keywords: dataflow,asyncio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: uvloop
+Requires-Dist: makefun
+Requires-Dist: dask
+Requires-Dist: distributed
+
+# A concurrent streaming package
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Dataflow based functional syntax.
+- Implicitly parallelism for both async and non-async functions.
+- Composable for both flows and tasks.
+- Extensible with middlewares.
+
+## Installation
+
+```bash
+pip install aiosaber
+```
+
+## Example
+
+- check [tests](https://github.com/flowsaber/aiosaber/tree/main/tests) for more examples.
+
+```python
+from aiosaber import *
+
+@task
+def add(self, num):
+    for i in range(100000):
+        num += 1
+    return num
+
+@task
+async def multiply(num1, num2):
+    return num1 * num2
+
+@flow
+def sub_flow(num):
+    return add(num) | map_(lambda x: x ** 2) | add
+
+@flow
+def my_flow(num):
+    [sub_flow(num), sub_flow(num)] | multiply | view
+
+num_ch = Channel.values(*list(range(100)))
+f = my_flow(num_ch)
+asyncio.run(f.start())
+```
+
+## Middleware example
+
+```python
+from aiosaber import *
+
+class NameBuilder(BaseBuilder):
+    def __call__(self, com, *args, **kwargs):
+        super().__call__(com, *args, **kwargs)
+        com.context['name'] = type(com).__name__ + str(id(com))
+
+class ClientProvider(BaseExecutor):
+    async def __call__(self, com, **kwargs):
+        if not context.context.get('client'):
+            context.context['client'] = 'client'
+        return await super().__call__(com, **kwargs)
+
+class Filter(BaseHandler):
+    async def __call__(self, com, get, put, **kwargs):
+        async def filter_put(data):
+            if data is END or data > 3:
+                await put(data)
+
+        return await super().__call__(com, get, filter_put, **kwargs)
+
+@task
+async def add(self, num):
+    print(self.context['name'])
+    print(context.context['client'])
+    return num + 1
+
+@flow
+def myflow(num_ch):
+    return num_ch | add | view
+
+context.context.update({
+    'builders': [NameBuilder],
+    'executors': [ClientProvider],
+    'handlers': [Filter]
+})
+f = myflow(Channel.values(1, 2, 3, 4, 5))
+context.context.clear()
+asyncio.run(f.start())
+```
+
