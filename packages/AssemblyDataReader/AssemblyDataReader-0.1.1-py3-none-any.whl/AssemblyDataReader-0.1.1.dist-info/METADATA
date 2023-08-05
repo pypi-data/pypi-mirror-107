@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: AssemblyDataReader
+Version: 0.1.1
+Summary: API wrapper for Python
+Home-page: https://github.com/hohyun321/AssemblyDataReader
+Author: Kim Hohyun
+Author-email: hohyun312@gmail.com
+License: MIT
+Keywords: assembly
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: requests
+
+UNKNOWN
+
+
