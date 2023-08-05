@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: FileHandler
+Version: 1.0.14
+Summary: file processor package
+Home-page: UNKNOWN
+Author: chienaeae
+Author-email: chienaeae@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests (==2.25.1)
+
+UNKNOWN
+
