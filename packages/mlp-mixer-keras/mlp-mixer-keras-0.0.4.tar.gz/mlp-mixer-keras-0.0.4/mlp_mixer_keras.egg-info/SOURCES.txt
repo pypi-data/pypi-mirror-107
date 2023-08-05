@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mlp_mixer_keras/__init__.py
+mlp_mixer_keras/mlp_mixer.py
+mlp_mixer_keras.egg-info/PKG-INFO
+mlp_mixer_keras.egg-info/SOURCES.txt
+mlp_mixer_keras.egg-info/dependency_links.txt
+mlp_mixer_keras.egg-info/requires.txt
+mlp_mixer_keras.egg-info/top_level.txt
