@@ -1,0 +1,8 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+
+recursive-include fypy/parm *
+recursive-include fypy/tests *
+recursive-include fypy/fy4 *
+recursive-include fypy/utils *
