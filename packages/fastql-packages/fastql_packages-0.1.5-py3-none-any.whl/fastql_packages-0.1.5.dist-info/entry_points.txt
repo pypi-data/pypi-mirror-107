@@ -1,0 +1,3 @@
+[console_scripts]
+fastql=fastql_packages.main:main
+
