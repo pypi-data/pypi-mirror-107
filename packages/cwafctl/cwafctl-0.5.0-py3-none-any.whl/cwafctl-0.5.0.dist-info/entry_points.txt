@@ -1,0 +1,3 @@
+[console_scripts]
+cwafctl=cwafctl.cwafctl:start
+
