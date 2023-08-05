@@ -1,0 +1,64 @@
+[tool.poetry]
+name = 'devpi-client-extensions'
+version = '0.3.1'
+description = 'devpi client extensions'
+authors = ['Oleg Höfling <oleg.hoefling@gmail.com>']
+license = 'MIT'
+readme = 'README.rst'
+homepage = 'https://github.com/hoefling/devpi-client-extensions'
+repository = 'https://github.com/hoefling/devpi-client-extensions'
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Web Environment',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: Implementation',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+]
+packages = [
+    { include = 'devpi_ext', from = 'src' },
+]
+
+[tool.poetry.plugins.'devpi_client']
+'devpi-client-ext-login-pypirc' = 'devpi_ext.login:_pypirc_plugin'
+'devpi-client-ext-login-keyring' = 'devpi_ext.login:_keyring_plugin [keyring]'
+
+[tool.poetry.dependencies]
+python = '^3.6'
+devpi-client = '>=3.0.0'
+keyring = { version = '*', optional = true }
+importlib-metadata = { version = '^1.5.0', python = '<3.8' }
+
+[tool.poetry.extras]
+keyring = ['keyring']
+
+[tool.poetry.dev-dependencies]
+pytest = '^6.2'
+pytest-cov = '^2.12.0'
+readme-renderer = '^29.0'
+mypy = { version = '^0.812', markers = 'implementation_name == "cpython"' }
+taskipy = '^1.8.0'
+pre-commit = { version = '^2.9.0', python = '>=3.6.1' }
+setuptools-scm = '^4.1.2'
+
+[tool.taskipy.tasks]
+setup = 'poetry install && pre-commit install'
+test = 'pytest --cov=devpi_ext --cov-branch --cov-report=term-missing --cov-fail-under=100 --doctest-modules'
+lint = 'pre-commit run --all-files'
+scm = 'python -c "import setuptools_scm; print(setuptools_scm.get_version())"'
+release = 'python release.py'
+
+[tool.black]
+skip-string-normalization = true
+target_version = ['py37']
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ['poetry-core>=1.0']
+build-backend = 'poetry.core.masonry.api'
