@@ -1,0 +1,13 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+Socialsearch/__init__.py
+Socialsearch/facebook.py
+Socialsearch/github.py
+Socialsearch/google.py
+Socialsearch/youtube.py
+Socialsearch.egg-info/PKG-INFO
+Socialsearch.egg-info/SOURCES.txt
+Socialsearch.egg-info/dependency_links.txt
+Socialsearch.egg-info/top_level.txt
