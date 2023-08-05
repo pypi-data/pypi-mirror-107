@@ -1,0 +1,13 @@
+rectangle_packing_solver/__init__.py,sha256=TUcNc35xiEw0nwZW5RyfhQeQLMvYleRDebrSShQ5fME,988
+rectangle_packing_solver/__version__.py,sha256=2bWWiZeZ9acHRKU4v3uNDUjc99XtasOW4Yd-KtlkLSo,687
+rectangle_packing_solver/floorplan.py,sha256=jmhiEnW0Uc_eQLLWKH16N7Mi8V0WnGPsAv2TxLLt5_E,1266
+rectangle_packing_solver/problem.py,sha256=Nt-hCvxwgOEZvbEXK_xcG4VM0_QwdgffBTGmIvumdx8,1973
+rectangle_packing_solver/sequence_pair.py,sha256=iQ5TvbHsRjlwGDrS3Hr2GmtUkpKjr2hGn--uHI4-8D8,6772
+rectangle_packing_solver/solution.py,sha256=ysVqva8sPubxV_6rpjNwnmzhBUvwSKwgFBynBYAydIs,1406
+rectangle_packing_solver/solver.py,sha256=45TfwRWkDRh9pkmTd5JiJ-OXXPPUV64tlhjJYXY-Rss,5390
+rectangle_packing_solver/visualizer.py,sha256=1LWWSPtdoizvambLaGDl95LbDanAS5zhDAGLYvasR0E,2919
+rectangle_packing_solver-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rectangle_packing_solver-0.0.2.dist-info/METADATA,sha256=sI84AXMaWNYKPd-54Mxn__h3IKNQT-NchCK5yl2_nx4,5768
+rectangle_packing_solver-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rectangle_packing_solver-0.0.2.dist-info/top_level.txt,sha256=26Y4ppwxWKZ75DHRNx6cbptrQIgNBeYFqQb1iDaaOSc,25
+rectangle_packing_solver-0.0.2.dist-info/RECORD,,
