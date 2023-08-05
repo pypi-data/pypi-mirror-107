@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: npd-entropy
+Version: 0.1
+Summary: A Non-Parametric Differential Entropy Rate estimator
+Home-page: https://github.com/afeutrill/NPD-Entropy
+Author: Andrew Feutrill
+Author-email: andrew.feutrill@adelaide.edu.ua
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: scipy
+
+UNKNOWN
+
+
