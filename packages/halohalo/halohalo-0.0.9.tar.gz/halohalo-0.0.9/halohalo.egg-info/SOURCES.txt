@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+halohalo/__init__.py
+halohalo/__main__.py
+halohalo/experimentation.py
+halohalo/service.py
+halohalo.egg-info/PKG-INFO
+halohalo.egg-info/SOURCES.txt
+halohalo.egg-info/dependency_links.txt
+halohalo.egg-info/top_level.txt
