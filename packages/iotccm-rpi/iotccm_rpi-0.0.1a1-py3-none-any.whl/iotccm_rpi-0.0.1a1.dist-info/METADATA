@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: iotccm-rpi
+Version: 0.0.1a1
+Summary: IoT CCM SDK Implementation using Raspberry Pi.
+Home-page: https://gitlab.com/prometheuscomputing/nist-ssd-iot-testbed/iot_ccm_sdk_rpi
+Author: NIST Software and Systems Division
+Author-email: omarilias.elmimouni@nist.gov
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/prometheuscomputing/nist-ssd-iot-testbed/iot_ccm_sdk_rpi/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gpiozero
+Requires-Dist: iotccm-sdk
+Requires-Dist: smbus
+
+# IoT CCM for RPi
+
+Implementation of the IoT CCM Python SDK using a Raspberry Pi.
+
+
+## Prerequisites
+
+- Raspberry Pi
+- Python 3.6+
+- Git
+
+## Getting Started
+
