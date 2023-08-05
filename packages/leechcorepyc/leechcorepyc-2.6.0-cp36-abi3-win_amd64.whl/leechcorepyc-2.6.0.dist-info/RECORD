@@ -1,0 +1,14 @@
+leechcorepyc/FTD3XX.dll,sha256=byjsTxaR7XNoHUIL6LwvmiHvaQxtb0bsrrsvm5wUIe4,388608
+leechcorepyc/leechcore.dll,sha256=eVSd8+IQhTTi46jb3P9ZC8OWwlR+a2X60NPMIXSw9IA,100464
+leechcorepyc/leechcorepyc.pyd,sha256=Ftd0i1XwN3U9t1v88SJvCdBZZAj_jZtsPCmueOPBN4Y,36464
+leechcorepyc/leechcore_device_hvsavedstate.dll,sha256=Wqk1_sBguGKpXklzu1GihqSDMt1CZK8jWkesMqMkfSU,22640
+leechcorepyc/leechcore_device_rawtcp.dll,sha256=oQwC8cm0r5GBcfjcDO33DS5jyyxExmn6qPSVqM3rU_M,22128
+leechcorepyc/leechcore_device_sp605tcp.dll,sha256=sIIqgq09Mc3OfhBcZATzzp6o2DHL5+clXTvaO5RxiqA,29808
+leechcorepyc/vcruntime140.dll,sha256=5NWhhC1l6ZWB5SIl4K9kVeB46Vs+o9O0n2c+TVFouC0,85992
+leechcorepyc/__init__.py,sha256=egofLq6Dz1AlEbEOuraPNFJOUh7aZ7IoU4yemir1Xok,6827
+leechcorepyc-2.6.0.dist-info/LICENSE,sha256=ADWlDFumVPJoAItgiu7fk_EnBf6gHgiMb6sqn7CHmc8,36936
+leechcorepyc-2.6.0.dist-info/METADATA,sha256=q3U7T44U2VRlKU8azWmgmUpJ9rL3CcWg3B+KA+9bXug,534
+leechcorepyc-2.6.0.dist-info/RECORD,sha256=vgeKuWzR3BKhJ9LlWvv5Ax1KsrlGzD8gmNX2ABetk7c,911
+leechcorepyc-2.6.0.dist-info/top_level.txt,sha256=bOu_Wj6HonKhXtHPSx8nBYAiFhPTM83MiJWWGek_s9o,13
+leechcorepyc-2.6.0.dist-info/WHEEL,sha256=gZGf401wQ7Oo7Vbqwj7Cwpm2FrGHOvry5Sn2tckjpIE,87
+leechcorepyc-2.6.0.dist-info/RECORD,,
