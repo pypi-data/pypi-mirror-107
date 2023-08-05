@@ -1,0 +1,15 @@
+LICENSE,sha256=E4C3jixjedUhISPzknv6OOw3M7qoHVtFG2y689mNzCg,1090
+niaclass/__init__.py,sha256=AmMHT9b3D8uZ7inMA77i0VI8tfUvPGv6-91sdA60xzY,91
+niaclass/feature_info.py,sha256=LRlxYbJLVUxDNQUYJIUII5p61-zg5kOjwuyCeDiwoJY,1027
+niaclass/niaclass.py,sha256=BiAkRI9pLO43U7ZGxJamntAJbmWaZSJywCunq1JQS_g,17361
+niaclass/rule.py,sha256=WWlpkcWMPk6HKihc-4gCFM8FiiebmO6TB-QCUu9Z5JE,837
+niaclass/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niaclass/tests/conftest.py,sha256=RW96ylVFFX8KpD30-LmreewU6FELAoJuJPcM_-UHZoU,152
+niaclass/tests/test_feature_info.py,sha256=qQb80d0AyuM9BqpDQIYxGNl4v_YTVJCtKONgh6rNZfI,674
+niaclass/tests/test_files/dataset.csv,sha256=tRaWyWjWEYEjWqibeXarLYLCRfbSiVWZuiBDM-oAmCc,11960
+niaclass/tests/test_rule.py,sha256=yYfQUMDTVUF7Ksekh_h1TIS0IqGafIErly3rA8KkCRI,478
+niaclass/tests/test_run.py,sha256=mzE0W5N4Mg3f4NZfrdwkviUrDqbM_dHUzDug7aQpEsg,2426
+niaclass-0.1.1.dist-info/LICENSE,sha256=E4C3jixjedUhISPzknv6OOw3M7qoHVtFG2y689mNzCg,1090
+niaclass-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+niaclass-0.1.1.dist-info/METADATA,sha256=h4HoxRA6YfcjFu1XV_J1E7Vxmsn7fkX4hjO6g7BC55U,1919
+niaclass-0.1.1.dist-info/RECORD,,
