@@ -1,0 +1,5 @@
+requests
+urllib3
+python-keycloak
+PyJWT>=2.0.0
+jsonschema
