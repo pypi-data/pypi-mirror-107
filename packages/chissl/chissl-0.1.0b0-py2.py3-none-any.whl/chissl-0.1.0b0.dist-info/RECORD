@@ -1,0 +1,15 @@
+chissl/__init__.py,sha256=rUEIsefeY3PZf6t3NR31sjf6bgQQ6aprr8Gz8FFPMpo,2426
+chissl/_version.py,sha256=E2OKMIcti7AKRBZqgWgnlJxm2cct9eB0WRfs9ddpiJA,280
+chissl/chissl.py,sha256=cXqVeA6Y-P7q1HcGCl9KU6RktDQvvqYTiBNpilcMox8,5033
+chissl/react_jupyter_widget.py,sha256=ial2tlt75v6fD3oxPeUQ7JMFulDyV0f7a-wfxukAh_M,3576
+chissl/static/extension.js,sha256=f1cQFv_Jfifeexuu4RAOZmbe4egtmpYtCpFlEXAjeRI,3345
+chissl/static/index.js,sha256=U7I8ntOZrpIdLB40BBd6HHEAqpazOb9ij4KozrYwyDc,6578936
+chissl/static/index.js.map,sha256=HVaL-1OAS30iHbCHJlEI_AjJAWvXyVW_o452StC0wOY,7592703
+chissl-0.1.0b0.data/data/etc/jupyter/nbconfig/notebook.d/chissl-widget.json,sha256=UDRPWIHWZ5lFbLagmlSb1_0HV9avumWz6u1_Ak3Qb5M,67
+chissl-0.1.0b0.data/data/share/jupyter/nbextensions/chissl-widget/extension.js,sha256=f1cQFv_Jfifeexuu4RAOZmbe4egtmpYtCpFlEXAjeRI,3345
+chissl-0.1.0b0.data/data/share/jupyter/nbextensions/chissl-widget/index.js,sha256=U7I8ntOZrpIdLB40BBd6HHEAqpazOb9ij4KozrYwyDc,6578936
+chissl-0.1.0b0.data/data/share/jupyter/nbextensions/chissl-widget/index.js.map,sha256=HVaL-1OAS30iHbCHJlEI_AjJAWvXyVW_o452StC0wOY,7592703
+chissl-0.1.0b0.dist-info/METADATA,sha256=CXTyl0YPw8hiaLJpaRCJCR1Z0DcTJWo_al3biKqSwRk,1116
+chissl-0.1.0b0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+chissl-0.1.0b0.dist-info/top_level.txt,sha256=QsI-WP3EFafpyhrXYrnaEIph-7nr_7u-w1qkTDz9kjM,7
+chissl-0.1.0b0.dist-info/RECORD,,

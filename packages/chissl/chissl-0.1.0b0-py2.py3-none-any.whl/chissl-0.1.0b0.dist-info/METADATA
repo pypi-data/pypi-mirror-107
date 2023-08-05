@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: chissl
+Version: 0.1.0b0
+Summary: A widget for interactive machine learning using CHISSL
+Home-page: https://github.com/pnnl/chissl/tree/jupyter-widget
+Author: Dustin Arendt
+Author-email: dustin.arendt@pnnl.gov
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: ipywidgets (>=7.0.0)
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: scikit-learn (>=0.23.0)
+Requires-Dist: umap-learn (>=0.4.6)
+
+A widget for interactive machine learning using CHISSL
+
+
