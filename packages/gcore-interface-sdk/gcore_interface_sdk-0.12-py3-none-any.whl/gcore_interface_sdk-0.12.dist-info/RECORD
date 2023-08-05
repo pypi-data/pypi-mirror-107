@@ -1,0 +1,15 @@
+gc_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_sdk/functions.py,sha256=p2iCTPL42nSVlDGr-l4hNHNKelOz7Soy5z6J7NZ0SsU,1318
+gc_sdk/main.py,sha256=hfo6pVEzbLbLg7sJyUw5jdKUm3Re-SbvFDp9VBlZJa8,1318
+gc_sdk/methods.py,sha256=IEM_yOspp8LG287F_sQu-d7KP9_RIHZMwMJGQwISPUk,5295
+gc_sdk/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_sdk/functions/general_functions.py,sha256=bvA527L-RB0R7O9DXCTQz2P5X5MChZpJrATc2CpnUh0,19
+gc_sdk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gc_sdk/tests/functions.py,sha256=mGe4QHLlCEEqRYXnZyIQLggdNopRR4ERIACwEMAqbNc,1048
+gc_sdk/tests/main_test.py,sha256=Fk1qEM1F5bmEVS0kYSA8Wh2YEMBjbuSL60HmlnHjplo,624
+gc_sdk/tests/randim.py,sha256=BMS-ZhpeARsM0M6GpcUUAvQQNfZBQVnERBIwS6RQ0XA,222
+gc_sdk/tests/settings_test.py,sha256=yYK2gmXgl0q69sjJqwDM3mx5wr7unG5hqfcFuDI7n7U,45
+gcore_interface_sdk-0.12.dist-info/METADATA,sha256=8ppSQrgT2SdSJrXiI8Rnm0xdsVl-HxzkqoFypfTd8aM,347
+gcore_interface_sdk-0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gcore_interface_sdk-0.12.dist-info/top_level.txt,sha256=BRxsO2gfZkJ5myhahvVTfXI7lgkBPjsmMu-sep92Gwo,7
+gcore_interface_sdk-0.12.dist-info/RECORD,,
