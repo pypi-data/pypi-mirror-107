@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: information-flow-analysis
+Version: 0.1.0
+Summary: angr with IFC
+Home-page: UNKNOWN
+Author: Kristoffer Astrup and Sebastian Olsen
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: angr
+Requires-Dist: angr-utils
+Requires-Dist: pydot
+Requires-Dist: bingraphvis
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
+UNKNOWN
+
