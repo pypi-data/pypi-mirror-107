@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dsFramework
+Version: 0.1.14
+Summary: My first Python library
+Home-page: UNKNOWN
+Author: oribrau@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: tqdm (==4.60.0)
+Requires-Dist: Unidecode (==1.2.0)
+Requires-Dist: Flask (==2.0.1)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: fpdf (==1.7.2)
+
+UNKNOWN
+
