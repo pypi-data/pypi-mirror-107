@@ -1,0 +1,12 @@
+deck_chores/__init__.py,sha256=LAafBnFcUzNAxE2YrSrnykIcWinu3dQZBRdgC2LPTPc,90
+deck_chores/config.py,sha256=JYUbf7JNCZvxq48eq1qhRKTgrev_0zM9jm3q-KTiAG4,2510
+deck_chores/indexes.py,sha256=LfVOKjKAUrRWmm8adu9a8V2O2349UQZbEjArObNpdxk,2095
+deck_chores/jobs.py,sha256=6MBUydF_2c35UUyIkKxo698-qT9h2Y8ITT-s-2_t0bM,5069
+deck_chores/main.py,sha256=9JLOBmwaNfhtm3LQuMRQMEHvB4wxMjscWMt92bhbG8s,9834
+deck_chores/parsers.py,sha256=0edwsNWS_6lQOXeOwt3wdC6gxj4jXxkmPiuH64Fv22o,8417
+deck_chores/utils.py,sha256=mxI-_5tWDY1y3XHFF-I3BhFMLTMcmwYuU_KPDVZ286E,2521
+deck_chores-1.1.13.dist-info/entry_points.txt,sha256=xWO0JWv4zrv_tHZweCOxXstNbrLyai6ShjWJu1dQG48,53
+deck_chores-1.1.13.dist-info/LICENSE.txt,sha256=jsDSOkbudpT73DSFnv5QQPd8nLtIKzmSaLlRU7mxpuo,754
+deck_chores-1.1.13.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+deck_chores-1.1.13.dist-info/METADATA,sha256=cID60WI-mgcx7GNnCj_3XcNQEpdSuAjjRzcVfeUnwKE,4313
+deck_chores-1.1.13.dist-info/RECORD,,
