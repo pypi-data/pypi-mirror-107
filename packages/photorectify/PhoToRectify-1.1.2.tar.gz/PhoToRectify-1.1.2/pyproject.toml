@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "PhoToRectify"
+version = "1.1.2"
+description = "Rectify lens distortions with Lensfun and OpenCV"
+authors = ["David Berthel <code@davidberthel.de>"]
+readme = "README.md"
+repository = "https://gitlab.com/archaeohelper/photorectify"
+keywords = ["gis", "image", "lensfun", "opencv", "rectification"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Graphics :: Capture :: Digital Camera",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+lensfunpy = "^1.8.0"
+numpy = "^1.20.2"
+Pillow = "^8.2.0"
+opencv-contrib-python = "^4.5.1"
+scipy = "^1.6.2"
+pytest = "^6.2.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.poetry.scripts]
+photorectify = "photorectify.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
