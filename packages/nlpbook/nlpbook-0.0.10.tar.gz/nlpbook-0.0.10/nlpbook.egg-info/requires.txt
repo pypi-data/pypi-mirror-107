@@ -1,0 +1,10 @@
+pip
+packaging
+fastai>=2.3
+transformers
+torchtext
+pyspark
+awscli
+torch
+
+[dev]
