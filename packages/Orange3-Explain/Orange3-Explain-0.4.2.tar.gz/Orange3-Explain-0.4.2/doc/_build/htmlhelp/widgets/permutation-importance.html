@@ -1,0 +1,98 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature Importance</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Explain Model" href="explain-model.html" />
+    <link rel="prev" title="Welcome to Orange3 Explain documentation!" href="../index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="explain-model.html" title="Explain Model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to Orange3 Explain documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Explain 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Feature Importance</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="feature-importance">
+<h1>Feature Importance</h1>
+<p>Inspect model using the Permutation Feature Importance technique.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li>Data: dataset used to compute the explanations</li>
+<li>Model: a model which widget explains</li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul class="simple">
+<li>Selected data: data instances that belong to selected features in the plot</li>
+<li>Scores: Mean and standard deviation of score for each feature.</li>
+</ul>
+<p><strong>Feature Importance</strong> widget explains classification and regression models. The widget gets a trained model and reference data on input. It uses the provided data to compute the contribution of each feature toward the prediction, by measuring the increase in the prediction error of the model after we permuted the feature’s values, which breaks the relationship between the feature and the target.</p>
+<p><img alt="../_images/Permutation-Importance.png" src="../_images/Permutation-Importance.png" /></p>
+<ol class="simple">
+<li>Select the scoring metric.</li>
+<li>Select the number of times to permute a feature.</li>
+<li>Select the number of the features to be shown in the plot.</li>
+<li>Zoom in/out the plot.</li>
+<li>Press <em>Apply</em> to commit the selection.</li>
+<li>Plot which shows the selected number of features that are most important for a model.</li>
+<li>Get help, save the plot, make the report, set plot properties, or observe the size of input and output data.</li>
+</ol>
+<div class="section" id="example">
+<h2>Example</h2>
+<p>In the flowing example, we use the Feature Importance widget to explain features, used in Logistic regression model. In the File widget, we open Hearth disease dataset. We connect it to Logistic regression widget, which trains the model. Feature Importance widget accepts the model and data which are used to explain the features. For an explanation, we usually use the same data than for training, but it is also possible to explain the features on different data (e.g. reference data subset).</p>
+<p>The features in the plot are ordered by their relevance (e.g. Major vessels coloured is the most important feature).</p>
+<p>By selecting some arbitrary features, a filtered input dataset appears on the output of the Feature Importance widget.</p>
+<p><img alt="../_images/Permutation-Importance-Example.png" src="../_images/Permutation-Importance-Example.png" /></p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="explain-model.html" title="Explain Model"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to Orange3 Explain documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Explain 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Feature Importance</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Biolab.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>
