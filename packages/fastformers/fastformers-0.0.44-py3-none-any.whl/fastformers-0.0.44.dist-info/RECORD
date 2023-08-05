@@ -1,0 +1,15 @@
+fastformers/__init__.py,sha256=TGkY1a16BR3FKgcq58-nHECydJjLb686xMhkhi1isDw,143
+fastformers/utils.py,sha256=q-mlw0rd5v3s56tf36_yhtAURn_Qoo_6lXW8ab_h24o,232
+fastformers/models/__init__.py,sha256=1yvK7sDUESJ7JVNTEJ9Lc83BTU8yIzzM2dEVTARYa5M,197
+fastformers/models/bart.py,sha256=J3gK9nCxC5gQ9DHZeGnccJoQJ6f0IeWVh4qVaRa9C3Y,8498
+fastformers/models/bert.py,sha256=xG4kZBWwFbcvEZ7KKJTSv3mWf_6j5ZkirBBThAsfIrY,1451
+fastformers/models/distilbert.py,sha256=kjx5MbHVJWnAH8XlZS2E2hI7r0AgbvZDAqF-LG4Vuvo,3704
+fastformers/models/electra.py,sha256=W3fg1q3MY4XtuqvDkoy-NbqTE8HCjccE-Spzzwmu1jE,4496
+fastformers/models/roberta.py,sha256=rraQFfQM1GCYc8jbKpRW2Oh3C0O3hxJ2oqhVMj9HEOA,3839
+fastformers/modules/__init__.py,sha256=iS5lnVpR79UvbpK_r-Sb5LsCizgn8shhe_AVvY-jjn0,114
+fastformers/modules/modules.py,sha256=kXoY_dq2twgVFQ2U8VRIsKyyYpFzISxiy9Yh_CwFXgk,10128
+fastformers-0.0.44.dist-info/LICENSE,sha256=pnJ8ZS60lQ-zWKzU1-BVaKVFgwPYNSsep0GdwuEV4gc,11420
+fastformers-0.0.44.dist-info/METADATA,sha256=AEzn52sx-PszKzANeZtIz6HK7qZTPM8JaXpxw3Nq1qA,877
+fastformers-0.0.44.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastformers-0.0.44.dist-info/top_level.txt,sha256=fYZWgB8EbFuRDjsljRK4jhbtWu56QkDAg33sQyuJC_U,12
+fastformers-0.0.44.dist-info/RECORD,,
