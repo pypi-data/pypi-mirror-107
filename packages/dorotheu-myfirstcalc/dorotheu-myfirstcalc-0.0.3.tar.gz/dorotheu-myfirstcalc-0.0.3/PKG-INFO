@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: dorotheu-myfirstcalc
+Version: 0.0.3
+Summary: Uma simples calculadora
+Home-page: UNKNOWN
+Author: Danilo Dorotheu
+Author-email: danilo.dorotheu@outlook.com
+License: MIT
+Description: This is a very simple calculator
+        
+        
+        Change Log
+        ==========
+        0.0.3 (25/05/2021)
+        ------------------
+        - Bug fix
+        
+        0.0.2 (25/05/2021)
+        ------------------
+        - My change
+        
+        0.0.1 (24/05/2021)
+        ------------------
+        - First Release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
