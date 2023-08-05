@@ -1,0 +1,13 @@
+[run]
+omit =
+    src/valuta/contrib/django_integration/tests/*
+    src/valuta/tests/*
+    examples/simple/project/settings/*
+    examples/simple/project/wsgi.py
+    examples/simple/product/migrations/*
+    .tox/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
