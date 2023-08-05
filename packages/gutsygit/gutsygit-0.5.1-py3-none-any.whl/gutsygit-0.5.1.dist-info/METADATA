@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gutsygit
+Version: 0.5.1
+Summary: Command-line tool for fast git usage
+Author: Sander Land
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: GitPython (>=3)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
