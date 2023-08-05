@@ -1,0 +1,8 @@
+django>=2.2
+django-statusboard
+
+[with_matrix]
+matrix-nio
+
+[with_telegram]
+python-telegram-bot
