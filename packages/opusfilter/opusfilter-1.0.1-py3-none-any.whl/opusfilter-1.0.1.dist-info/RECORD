@@ -1,0 +1,15 @@
+opusfilter/__init__.py,sha256=AaCY_SA-d2LeCSQkEwkY-xZS3tDdqBPfXCCl4R8ljsw,1592
+opusfilter/classifier.py,sha256=gs71KL23LX9hftMKncKBF2888CBAiCbRE8xjVSeUehc,16649
+opusfilter/filters.py,sha256=BF3Jn-Ka7dpWEtYaUkSdvksYGXxRDBsqn0IRyJEoFSc,8354
+opusfilter/lm.py,sha256=ZEv3qEiRmsj6Th-yX4mi4GjsULWlTyllgHr7umnz-xw,8935
+opusfilter/opusfilter.py,sha256=JPj_6mvX1UFL_wSkzAnqJGqlvfo4F6i4iHLWnkv3s6k,30544
+opusfilter/pipeline.py,sha256=eDolxf3FNXxDc06L93zKJofQnUPhLIrvdGHJFCfCHEw,3959
+opusfilter/tokenization.py,sha256=oYn3bsin48ThfE8JTuay1TWD22S1t6ThAinxa13FIsw,1515
+opusfilter/word_alignment.py,sha256=i6jA5toDBJ6DtJc6C8kBsXxbAYhYXo7LRsfXl9n1oLc,5732
+opusfilter-1.0.1.data/scripts/opusfilter,sha256=71i06zZOfHWUl0brd-Qq4AVsCHLdAOIRM2ZIMtuzQyI,936
+opusfilter-1.0.1.data/scripts/opusfilter-scores,sha256=xlBvwOjBu2cPg8CDCBbVJjmDFnR59T-4Bo3vZpeWMTs,8396
+opusfilter-1.0.1.dist-info/LICENSE,sha256=PK4SM8P74Rt36wmtoJRMn6DoTBC6aAKBHadSbkIcBiU,1074
+opusfilter-1.0.1.dist-info/METADATA,sha256=nemFbm4fu0_h9iCLCE9tVrAeAvaCAyIMmWKniwlkj9A,36200
+opusfilter-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opusfilter-1.0.1.dist-info/top_level.txt,sha256=c5aCKb2pgq95RH_duH6VRkuVHrjjdwLm-AdbnNJrEoc,11
+opusfilter-1.0.1.dist-info/RECORD,,
