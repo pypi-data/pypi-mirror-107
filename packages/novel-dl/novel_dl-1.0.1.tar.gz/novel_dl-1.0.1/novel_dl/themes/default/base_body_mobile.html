@@ -1,0 +1,69 @@
+<div id="main_window">
+<div id="novel_contents">
+<div id="novel_color">
+
+<div class="contents1">
+<a href="index.html">{{title}}</a>
+</div><!--contents1-->
+</div><!--#novel_color-->
+
+<div class="novel_bn">
+<div class="link_prev">
+{%- if part!=1 %}
+<a rel="prev" href="{{part-1}}.html">&lt;&lt;&nbsp;前へ&nbsp;</a></div>
+{%- endif %}
+<div class="link_back">
+<a href="index.html">目次</a>
+</div>
+<div class="link_next">
+{%- if part!=total %}
+<a rel="next" href="{{part+1}}.html">&nbsp;次へ&nbsp;&gt;&gt;</a></div>
+{%- endif %}
+</div><!-- novel_bn -->
+
+<div id="novel_no">{{part}}/{{total}}</div>
+
+<div class="novel_subtitle">{{subtitle}}</div>
+
+<div id="novel_honbun" class="novel_view">
+{%- for i in range(0,lines) %}
+<p id="L{{ i+1 }}">{{ contents[i] }}</p>
+{%- endfor %}
+</div>
+
+</div><!--novel_color-->
+
+<div class="novel_bn footer">
+<div class="link_prev">
+<a rel="prev" href="{{part-1}}.html">&lt;&lt;&nbsp;前へ&nbsp;</a></div>
+
+<div class="link_back">
+<a href="index.html">目次</a>
+</div>
+
+<div class="link_next">
+<a rel="next" href="{{part+1}}.html">&nbsp;次へ&nbsp;&gt;&gt;</a>
+</div>
+</div><!-- novel_bn -->
+
+</div><!--novel_contents-->
+
+<!-- フッタここから -->
+<div class="upper"><a href="#top">▲ページの上部へ</a></div>
+<div id="footer">
+<div id="footernavi">
+<p>
+<a href="https://syosetu.com">小説家になろう</a>
+|
+<a href="https://syosetu.com/user/top">ホーム</a>
+|
+<a href="https://kakuyomy.jp">カクヨム</a>
+|
+<a href="https://kakuyomy.jp/my/antenna/works">ホーム</a></p>
+<form action="https://yomou.syosetu.com/search.php">
+<input name="word" size="21" type="text" />
+<input value="検索" type="submit" />
+</form>
+</div><!--footernavi-->
+</div><!--footer-->
+<!-- フッタここまで -->
