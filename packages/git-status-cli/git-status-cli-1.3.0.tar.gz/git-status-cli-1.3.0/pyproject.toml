@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "git-status-cli"
+version = "1.3.0"
+description = "Get the status of all your gits in one command!"
+license = "AGPL-3.0-or-later"
+authors = ["Alexandre Janvrin <alexandre.janvrin@reseau.eseo.fr>"]
+readme = "README.md"
+homepage = "https://github.com/LivinParadoX/gitstatus/"
+repository = "https://pypi.org/project/git-status-cli/"
+classifiers = [
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+]
+include = ["git_status_cli/**/*"]
+
+[tool.poetry.scripts]
+gitstatus = "git_status_cli.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^7.1.2"
+tabulate = "^0.8.9"
+PyYAML = "^5.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+icecream = "^2.1.0"
+neovim = "^0.3.1"
+jedi = "^0.18.0"
+bpython = "^0.21"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
