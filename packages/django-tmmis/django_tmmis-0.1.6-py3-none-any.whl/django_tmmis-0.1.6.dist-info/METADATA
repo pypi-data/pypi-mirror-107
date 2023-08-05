@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-tmmis
+Version: 0.1.6
+Summary: A Django app provided ORM to TrustMed medical information system
+Home-page: UNKNOWN
+Author: Chmelyuk Vladislav
+Author-email: neimp@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: django-mssql-backend
+
+![Pypi version](https://img.shields.io/pypi/v/django-tmmis.svg)
+![Python versions](https://img.shields.io/pypi/pyversions/django-tmmis)
+[![Upload Python Package](https://github.com/fgbm/django-tmmis/actions/workflows/python-publish.yml/badge.svg)](https://github.com/fgbm/django-tmmis/actions/workflows/python-publish.yml)
+
+### Интроспекция БД
+
+Unix:
+```shell script
+python manage.py inspectdb --database=tmmis {table_name} > tmmis/models/{table_name}.py
+```
+
+Windows:
+```shell script
+ py .\manage.py inspectdb --database=tmmis {table_name} > .\tmmis\models\{table_name}.py
+```
+
+
