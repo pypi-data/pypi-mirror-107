@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mongohelper
+Version: 0.0.11
+Summary: Python MongoDB helper
+Home-page: UNKNOWN
+Author: Alan Ngo
+Author-email: <alanngo673@gmail.com>
+License: UNKNOWN
+Description: Python MongoDB wrapper that has functionalities to find by id and return lists and dictionaries.
+Keywords: pymongo,dnspython
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
