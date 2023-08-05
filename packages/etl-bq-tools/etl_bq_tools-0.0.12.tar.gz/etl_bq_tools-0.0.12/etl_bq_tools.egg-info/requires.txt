@@ -1,0 +1,15 @@
+certifi>=2020.12.5
+pandas>=1.1.5
+numpy>=1.20.2
+prettytable>=2.1.0
+prefect>=0.14.17
+google-auth>=1.30.0
+google-cloud-bigquery>=2.15.0
+google-cloud-bigquery-storage>=2.4.0
+google-cloud-storage>=1.38.0
+pyarrow>=3.0.0
+fastavro>=1.4.0
+fastparquet>=0.5.0
+gcsfs>=2021.4.0
+color-tools>=0.0.2
+sizebytes-tools>=0.0.2
