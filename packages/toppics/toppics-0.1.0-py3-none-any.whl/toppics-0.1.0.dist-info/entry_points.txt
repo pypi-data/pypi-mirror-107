@@ -1,0 +1,3 @@
+[console_scripts]
+toppics=toppics.cli:main
+
