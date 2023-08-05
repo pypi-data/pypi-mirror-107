@@ -1,0 +1,17 @@
+memery/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+memery/_nbdev.py,sha256=CRqcDh_byPG7McW7yxbIAh-y5ZqBLrjJkzhF8esb_4s,1729
+memery/cli.py,sha256=moPKcM8j3w3QG7mSr4bpK0lyUBYNVzkQr6GXSNUCfLQ,404
+memery/core.py,sha256=XlDpHpsip-ppfYAW6YfKOJHcKaWH2G7fYbsAJKbEbwA,1761
+memery/crafter.py,sha256=gGFEvh4BJBJex1y6GosPDKuRMokxknKAtCkczedIGUM,2168
+memery/encoder.py,sha256=1SqAaF9OUD_tts8icbl8MbODaBwj_qxiE18av6qPlFk,1011
+memery/gui.py,sha256=MCGJ6cSQL_CK0Ur3ZHxiCCsNORtpf2qzJ7TvuwKVD3M,2365
+memery/indexer.py,sha256=5gKc1GGUuqkdAH6_QL8vXlotMeATVeLYUvIdY8nFz9s,1174
+memery/loader.py,sha256=LTzgEAF8z2ua0oo7JJ62w2NmElGWw9adOW1RHxJXCbI,1633
+memery/ranker.py,sha256=XWK6C-ZPdvK93qTrlvDXzcEyliEgQmIe08kvS6qmRXE,401
+memery/utils.py,sha256=mxg-hxYHUCXiirn12ERKNTr_PHnmlFJYj93SE6V9vyk,803
+memery-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+memery-0.0.2.dist-info/METADATA,sha256=arx2Z32EVXQawc9pxh6wl5Rvj3JAV6mZyVAy5H7IsW8,3133
+memery-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+memery-0.0.2.dist-info/entry_points.txt,sha256=fPgQK3Pu-NjD5NeY5Fka0NnT-htDfoo_20RzeFV533Y,48
+memery-0.0.2.dist-info/top_level.txt,sha256=LdhxxAvwEuTiXm9EmPZeZI9G2xkd8sGZYam1V9bGZwM,7
+memery-0.0.2.dist-info/RECORD,,
