@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Sciplot.egg-info/PKG-INFO
+Sciplot.egg-info/SOURCES.txt
+Sciplot.egg-info/dependency_links.txt
+Sciplot.egg-info/requires.txt
+Sciplot.egg-info/top_level.txt
+sciplot/__init__.py
+sciplot/main.py
+sciplot.egg-info/PKG-INFO
+sciplot.egg-info/SOURCES.txt
+sciplot.egg-info/dependency_links.txt
+sciplot.egg-info/requires.txt
+sciplot.egg-info/top_level.txt
