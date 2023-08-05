@@ -1,0 +1,24 @@
+#ifndef __NAUNET_MACROS_H__
+#define __NAUNET_MACROS_H__
+
+#define NAUNET_SUCCESS 0
+#define NAUNET_FAIL 1
+
+{{ macros.nspec }}
+{{ macros.nreact }}
+{# // number of equations to be solved #}
+{# {{ macros.neq }} #}
+{% if info.method == "sparse" or info.method == "cusparse" -%}
+{{ macros.nnz }}
+{% endif %}
+{% if info.method == "cusparse" -%}
+#define USE_CUDA
+#define MAXNGROUPS 4096
+#define BLOCKSIZE 64
+{% endif %}
+
+{% for idx in macros.speclist -%}
+    {{ idx }}
+{% endfor -%}
+
+#endif
