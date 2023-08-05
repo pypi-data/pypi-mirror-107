@@ -1,0 +1,2 @@
+dateutil<3,>=2
+websockets<9,>=8
