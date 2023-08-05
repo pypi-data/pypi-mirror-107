@@ -1,0 +1,132 @@
+{% if ode.header %}
+#include "{{ ode.header }}"
+{% else %}
+#include <math.h>
+#include <boost/numeric/odeint.hpp>
+#include "naunet_constants.h"
+#include "naunet_macros.h"
+#include "naunet_physics.h"
+#include "naunet_userdata.h"
+
+using namespace std;
+using namespace boost::numeric::odeint;
+
+typedef boost::numeric::ublas::vector< double > vector_type;
+typedef boost::numeric::ublas::matrix< double > matrix_type;
+{% endif %}
+
+int calculate_rates(double *k, double *y, UserData *u_data)
+{
+
+    {% for v in variables.vars -%}
+        double {{ v }} = u_data->{{ v }};
+    {% endfor %}
+
+    double Te = Tgas*8.617343e-5; //Tgas in eV (eV)
+    double lnTe = log(Te); //ln of Te (#)
+    double T32 = Tgas*0.0033333333333333335; //Tgas/(300 K) (#)
+    double invT = 1.0/Tgas; //inverse of T (1/K)
+    double invTe = 1.0/Te; //inverse of T (1/eV)
+    double sqrTgas = sqrt(Tgas); //Tgas rootsquare (K**0.5)
+
+    {% set wrap = "\n        " -%}
+    {% set bclose = wrap + "}" -%}
+    {% for assign in ode.rateeqns -%}
+        {{ assign | wordwrap(80) | replace("\n", wrap) | replace(bclose, '\n    }') }}
+        {{ "" }}
+    {% endfor %}
+
+    {% for m in ode.ratemodifier -%}
+        {{ m }};
+    {% endfor %}
+
+    return NAUNET_SUCCESS;
+}
+
+fex::fex()
+{
+    u_data = new UserData();
+};
+
+fex::fex(UserData *data)
+{
+    u_data = new UserData();
+    *u_data = *data;
+};
+
+fex::~fex()
+{
+    // delete u_data;
+};
+
+void fex::operator()(const vector_type &y, vector_type &ydot, double t)
+{
+
+    {% for v in variables.vars -%}
+        {{ v }};
+    {% endfor %}
+
+    {% for v in variables.user_var -%}
+        {{ v }};
+    {% endfor %}
+
+    double k[NREACTIONS] = {0.0};
+    double ab[NSPECIES] = {0.0};
+    for (int i=0; i<NSPECIES; i++)
+    {
+        ab[i] = y[i];
+    }
+    calculate_rates(k, ab, u_data);
+
+    {% for eq in ode.fex -%}
+        {{ eq | wordwrap(80) | replace('\n', wrap) }}
+    {% endfor %}
+
+    {% for m in ode.odemodifier -%}
+        {{ m }};
+    {% endfor %}
+
+};
+
+jac::jac()
+{
+    u_data = new UserData();
+};
+
+jac::jac(UserData *data)
+{
+    u_data = new UserData();
+    *u_data = *data;
+};
+
+jac::~jac()
+{
+    // delete u_data;
+}
+
+void jac::operator()(const vector_type &y, matrix_type &j, const double &t, vector_type &dfdt)
+{
+
+    {% for v in variables.vars -%}
+        {{ v }};
+    {% endfor %}
+
+    double k[NREACTIONS] = {0.0};
+    double ab[NSPECIES] = {0.0};
+    for (int i=0; i<NSPECIES; i++)
+    {
+        ab[i] = y[i];
+    }
+    calculate_rates(k, ab, u_data);
+
+    {% for eq in ode.jac -%}
+        {{ eq | wordwrap(80) | replace('\n', wrap) }}
+    {% endfor %}
+
+    for (int i=0; i<NSPECIES; i++)
+    {
+        dfdt[i] = 0.0;
+    }
+
+};
+
