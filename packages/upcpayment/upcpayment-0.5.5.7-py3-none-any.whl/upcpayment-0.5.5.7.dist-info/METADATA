@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: upcpayment
+Version: 0.5.5.7
+Summary: Library for upc services
+Home-page: https://github.com/xalik111/upc-lib
+Author: Valentyn Ishchenko
+Author-email: xalikxalik44@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyOpenSSL
+Requires-Dist: signxml
+
+import upcpayment<br />
+from upcpayment.Upc_payment import Upc_payment<br />
+<br />
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description', alt_total_amount=123, alt_currency=978, sd='qwe', delay=1, ref3='something')<br />
+payment.generate_signature('path_to_file')
+print('1: ', payment.signature)<br />
+<br />
+
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description')<br />
+payment.generate_signature('path_to_file')<br />
+print('2: ', payment.signature)<br />
+<br />
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description', alt_total_amount=123, sd='qwe', delay=1, ref3='something')<br />
+payment.generate_signature('path_to_file')<br />
+print('3: ', payment.signature)<br />
+
+PurchaseTime generated like this - datetime.datetime.now().strftime("%d%m%Y%H%M%S")
+
