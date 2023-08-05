@@ -1,0 +1,5 @@
+yt-dlp
+
+[dev]
+black
+twine

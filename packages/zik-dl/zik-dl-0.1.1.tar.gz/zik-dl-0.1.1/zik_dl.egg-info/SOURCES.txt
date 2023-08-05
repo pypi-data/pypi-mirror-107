@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+zik_dl/__init__.py
+zik_dl/__main__.py
+zik_dl/arguments.py
+zik_dl.egg-info/PKG-INFO
+zik_dl.egg-info/SOURCES.txt
+zik_dl.egg-info/dependency_links.txt
+zik_dl.egg-info/entry_points.txt
+zik_dl.egg-info/requires.txt
+zik_dl.egg-info/top_level.txt
