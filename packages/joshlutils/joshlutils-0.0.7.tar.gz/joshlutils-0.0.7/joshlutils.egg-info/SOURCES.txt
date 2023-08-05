@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+joshlutils/Email.py
+joshlutils/__init__.py
+joshlutils/main.py
+joshlutils.egg-info/PKG-INFO
+joshlutils.egg-info/SOURCES.txt
+joshlutils.egg-info/dependency_links.txt
+joshlutils.egg-info/requires.txt
+joshlutils.egg-info/top_level.txt
