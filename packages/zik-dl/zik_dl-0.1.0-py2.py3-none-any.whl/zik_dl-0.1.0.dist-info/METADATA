@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: zik-dl
+Version: 0.1.0
+Summary: Download, store and tag music from Youtube and more
+Home-page: https://gitlab.com/rafutek/mdl
+Author: Raphaël Roy
+Author-email: raphaelroy@tutanota.com
+License: GNU AGPLv3
+Keywords: music,download,cli,youtube-dl
+Platform: UNKNOWN
+Requires-Dist: yt-dlp
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
+
