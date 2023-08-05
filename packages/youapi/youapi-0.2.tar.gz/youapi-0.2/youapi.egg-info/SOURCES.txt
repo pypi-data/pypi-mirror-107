@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyyouapi/__init__.py
+pyyouapi/youapi.py
+youapi.egg-info/PKG-INFO
+youapi.egg-info/SOURCES.txt
+youapi.egg-info/dependency_links.txt
+youapi.egg-info/not-zip-safe
+youapi.egg-info/top_level.txt
