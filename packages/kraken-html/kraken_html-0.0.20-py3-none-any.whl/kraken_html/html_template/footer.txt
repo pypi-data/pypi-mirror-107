@@ -1,0 +1,26 @@
+<footer class="bd-footer py-5 mt-5 bg-light">
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-3 mb-3">
+                <h5> 
+                    
+                {title} 
+
+                </h5>
+                
+                {description}
+
+            </div>
+
+
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                
+                <h5>Links</h5>
+
+                {footer_items}
+
+            </div>
+        </div>
+    </div>
+</footer>
