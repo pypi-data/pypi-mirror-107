@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: kernel-driver
+Version: 0.0.6
+Summary: A Jupyter kernel driver
+Home-page: https://github.com/davidbrochart/kernel_driver.git
+Author: David Brochart
+Author-email: david.brochart@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: pyzmq
+Requires-Dist: python-dateutil
+Requires-Dist: rich
+Provides-Extra: test
+Requires-Dist: xeus-python ; extra == 'test'
+Requires-Dist: ipykernel ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+
+UNKNOWN
+
+
