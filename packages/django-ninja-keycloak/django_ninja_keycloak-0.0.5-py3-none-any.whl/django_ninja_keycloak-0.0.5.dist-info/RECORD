@@ -1,0 +1,9 @@
+django_ninja_keycloak/__init__.py,sha256=Xu4tpVGKN6CIyal5ACQNykf8s8V1r-Xbx9wHXUED_fo,106
+django_ninja_keycloak/keycloak.py,sha256=cGNXj-FS0lUbBKU2eH1dW672JVOiU6nQYRZgTShPMFU,2312
+django_ninja_keycloak/keycloak_basic_auth.py,sha256=3t3g8dfjAdQdAjNcj062mLKjPAhk8meQwGM-YtaSHms,966
+django_ninja_keycloak/keycloak_http_bearer.py,sha256=ABkXUukhE-NhJrWLHJuQ9KQ_aOXFzCbFfNCnKu-3MeA,987
+django_ninja_keycloak-0.0.5.dist-info/LICENSE,sha256=pbIMXbaorAIVW-fDch2tvtZRkVA3mz-UnXQqeCf4LDg,1086
+django_ninja_keycloak-0.0.5.dist-info/METADATA,sha256=MpseYBoxN8i-IUut9Ex0OaJZLgtYe0P9mehH2QNpwwg,3365
+django_ninja_keycloak-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_ninja_keycloak-0.0.5.dist-info/top_level.txt,sha256=enBSFgf2jhg_X22n2hBYBsYN51ZEsOfrj9J7-qh19V8,22
+django_ninja_keycloak-0.0.5.dist-info/RECORD,,
