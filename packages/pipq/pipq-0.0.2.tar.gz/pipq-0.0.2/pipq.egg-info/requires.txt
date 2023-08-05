@@ -1,0 +1,4 @@
+beautifulsoup4==4.9.3
+requests==2.22.0
+rich==10.2.2
+typer==0.3.2

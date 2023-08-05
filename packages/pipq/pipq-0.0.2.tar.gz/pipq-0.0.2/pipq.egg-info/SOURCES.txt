@@ -1,0 +1,17 @@
+README.md
+setup.py
+pipq/__init__.py
+pipq/pipq.py
+pipq.egg-info/PKG-INFO
+pipq.egg-info/SOURCES.txt
+pipq.egg-info/dependency_links.txt
+pipq.egg-info/entry_points.txt
+pipq.egg-info/requires.txt
+pipq.egg-info/top_level.txt
+pipq/display/__init__.py
+pipq/display/display.py
+pipq/display/pkgdisplay.py
+pipq/display/searchdisplay.py
+pipq/display/versionsdisplay.py
+pipq/scrape/__init__.py
+pipq/scrape/scrape.py
