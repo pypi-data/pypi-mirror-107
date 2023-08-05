@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: icerok_server
+Version: 0.1.13
+Summary: Measure you FPGA circuit!
+Home-page: https://github.com/FPGAwars/icerok-server-python
+Author: Juan Gonzalez (Obijuan)
+Author-email: obijuan.cube@gmail.com
