@@ -1,0 +1,12 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/about.1.gz
+src/about/__init__.py
+src/about/main.py
+src/pnu_about.egg-info/PKG-INFO
+src/pnu_about.egg-info/SOURCES.txt
+src/pnu_about.egg-info/dependency_links.txt
+src/pnu_about.egg-info/entry_points.txt
+src/pnu_about.egg-info/top_level.txt
