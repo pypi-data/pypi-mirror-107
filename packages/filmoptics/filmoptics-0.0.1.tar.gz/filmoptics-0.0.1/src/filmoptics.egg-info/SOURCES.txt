@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+nk/Si.nk
+nk/air.nk
+src/filmoptics/__init__.py
+src/filmoptics/main.py
+src/filmoptics/tmm_core.py
+src/filmoptics/tmm_utils.py
+src/filmoptics.egg-info/PKG-INFO
+src/filmoptics.egg-info/SOURCES.txt
+src/filmoptics.egg-info/dependency_links.txt
+src/filmoptics.egg-info/requires.txt
+src/filmoptics.egg-info/top_level.txt

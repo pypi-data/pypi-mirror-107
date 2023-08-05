@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: filmoptics
+Version: 0.0.1
+Summary: GUI app for optical calculations in film multilayers
+Home-page: https://github.com/sstandre/filmoptics
+Author: Simón Saint-André
+Author-email: simon@saintandre.com.ar
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sstandre/filmoptics/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FILMOPTICS
+
+Filmoptics is a GUI application for optical calculations on multilayer thin films. It is built around the Transfer-Matrix Method, through the [tmm](https://pypi.org/project/tmm/) package.
+
