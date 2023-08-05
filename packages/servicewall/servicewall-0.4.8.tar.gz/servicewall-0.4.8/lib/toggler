@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+"""toggle a dynamic service firewall on/off
+
+Usage: %s DEVICE "up|down|status|list"
+where DEVICE is a network interface, such as wlan0
+This script starts or stops a firewall as defined in servicewall.py
+"""
+
+#from statefulfirewall import StateFulFireWall
+from sys import argv
+from os import environ
+import json
+import time
+if not "XTABLES_LIBDIR" in environ:
+    environ["XTABLES_LIBDIR"] = "/usr/lib/xtables"
+import servicewall
+
+
+LOGGING = False
+
+if __name__ == "__main__":
+    if LOGGING:
+        with open("/tmp/toggler-logfile", "a") as logfile:
+            now = time.ctime()
+            logfile.write(now)
+            logfile.write(" ")
+            json.dump(argv, logfile)
+            logfile.write("\n")
+
+    firewall = servicewall.ServiceWall()
+    if not firewall.is_enabled():
+        raise SystemError("cannot (re)load ServiceWall, it's disabled - see systemctl")
+
+    # We expect arguments to be :
+    #       toggler iface_name new_state
+    # Normalize networkd-dispatcher's arguments :
+    try:
+        STATE_FLAG = environ["STATE"]
+    except KeyError:
+        STATE_FLAG = None
+    if STATE_FLAG == "routable":
+        argv = [argv[0], environ["IFACE"], "up"]
+
+    if len(argv) != 3:
+        print(__doc__)
+        raise SystemError("wrong number of arguments : %s" % " ".join(argv))
+
+    iface = argv[1]
+    # action should be either "up", "down" or "connectivity-change" :
+    action = argv[2]
+    print("interface %s is going %s, reloading" % (iface, action))
+
+    firewall.reload()
+
