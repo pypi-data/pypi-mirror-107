@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: aio-recurring
+Version: 0.1.2
+Summary: Schedule recurring coroutines using asyncio
+Home-page: https://github.com/skonik/aio-recurring
+License: MIT
+Keywords: asyncio
+Author: Sergey Konik
+Author-email: s.konik.job@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/skonik/aio-recurring
+Description-Content-Type: text/markdown
+
+# aio-recurring
+Recurring coroutines using asyncio
+
+## Usage:
+
+```python
+import asyncio
+from datetime import datetime
+
+from aio_recurring.job import (
+    recurring,
+    run_recurring_jobs,
+)
+
+
+@recurring(every=5)
+async def print_info_5():
+    print(f"[{datetime.now()}] This coroutine is rescheduled every 5 seconds")
+
+
+@recurring(every=10)
+async def print_info_10():
+    print(f"[{datetime.now()}] This coroutine is rescheduled every 10 seconds")
+
+
+async def main():
+    run_recurring_jobs()
+
+
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    loop.create_task(main())
+    loop.run_forever()
+
+```
