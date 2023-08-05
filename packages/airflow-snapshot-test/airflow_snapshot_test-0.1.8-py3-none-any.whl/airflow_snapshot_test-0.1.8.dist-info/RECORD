@@ -1,0 +1,6 @@
+airflow_snapshot_test/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+airflow_snapshot_test/airflow_suite.py,sha256=9C-ILdCcTQysKJ31DHD1GIuNzDIBj8TE3-smTG65SMs,2561
+airflow_snapshot_test/snapshot.py,sha256=j7iHVpZf1uSIt7kmyQK1fLxZdl5lZzGI7bdAVtix_O4,2882
+airflow_snapshot_test-0.1.8.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+airflow_snapshot_test-0.1.8.dist-info/METADATA,sha256=nnnwX9gFZ1OmbFP-Pcfb9SrKqvzwYh7bY7CPiYRahEU,574
+airflow_snapshot_test-0.1.8.dist-info/RECORD,,
