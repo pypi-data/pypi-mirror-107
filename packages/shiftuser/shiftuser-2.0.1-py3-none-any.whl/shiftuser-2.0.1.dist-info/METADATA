@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: shiftuser
+Version: 2.0.1
+Summary: User management, registration authentication and authorisation component for shiftboiler.
+Home-page: https://github.com/projectshift/shift-user
+Author: Dmitry Belyakov
+Author-email: dmitrybelyakov@gmail.com
+License: MIT License
+Download-URL: https://github.com/projectshift/shift-user/archive/2.0.1.tar.gz
+Keywords: python3,flask,click,users,auth,rbac,oauth2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Framework :: IPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: shiftschema (<0.4.0,>=0.3.0)
+Requires-Dist: shiftboiler (<0.12.0,>=0.11.1)
+Requires-Dist: click (<9.0.0,>=8.0.0)
+Requires-Dist: bcrypt (<4.0.0,>=3.2.0)
+Requires-Dist: passlib (<1.8.0,>=1.7.4)
+Requires-Dist: PyJWT (<3.0.0,>=2.1.0)
+Requires-Dist: Flask-Login (<0.6.0,>=0.5.0)
+Requires-Dist: Flask-Principal (<0.5.0,>=0.4.0)
+Requires-Dist: Flask-Mail (<1.0.0,>=0.9.1)
+
+# shift-user
+
+User management, registration authentication and authorisation component for shiftboiler
+
+[Full documentation available on GitHub](https://github.com/projectshift/shift-user)
+
+
