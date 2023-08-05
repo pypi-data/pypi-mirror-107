@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+exceptionalpy/HTTP.py
+exceptionalpy/SMTP.py
+exceptionalpy/__init__.py
+exceptionalpy.egg-info/PKG-INFO
+exceptionalpy.egg-info/SOURCES.txt
+exceptionalpy.egg-info/dependency_links.txt
+exceptionalpy.egg-info/top_level.txt
