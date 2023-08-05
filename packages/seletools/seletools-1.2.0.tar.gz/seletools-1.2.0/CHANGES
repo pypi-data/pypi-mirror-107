@@ -1,0 +1,40 @@
+Change Log
+==========
+
+1.2.0
+----------
+- Added IndexedDB interaction support (get/put/add methods)
+- Added tests for IndexedDB
+- Added log interceptor for tests
+- Added webdriver waits getter
+- Added pytest marks for tests
+
+1.1.0
+----------
+- Added scrolling support (now it's possible to scroll to any element on page, even if it's covered by another element)
+- Added tests for scrolling
+- Deleted comment in drag & drop function about using CSS selectors only
+
+1.0.5
+----------
+- Re-uploaded package with both source and wheel
+
+1.0.4
+----------
+- Updated README about XPath selectors support
+
+1.0.3
+----------
+- Fixed path for JavaScript file in drag & drop method
+
+1.0.2
+----------
+- Updated wheel build specs
+
+1.0.1
+----------
+- Updated package build method
+
+1.0.0
+----------
+- Added drag & drop support
