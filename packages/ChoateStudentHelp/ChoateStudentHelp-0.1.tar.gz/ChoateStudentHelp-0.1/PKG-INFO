@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ChoateStudentHelp
+Version: 0.1
+Summary: This module includes 6 distinct functions that I thought would be useful in my life as a student of Choate Rosemary Hall.
+Home-page: https://github.com/brianHarder/ChoateStudentHelp
+Author: Brian Harder
+Author-email: bharder23@choate.edu
+License: MIT
+Download-URL: https://github.com/brianHarder/ChoateStudentHelp/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: useful,unique
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.9
