@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sagrada-schema
+Version: 0.0.5
+Summary: A sample Python project
+Home-page: UNKNOWN
+Author: Neon Chip Ltd
+Author-email: info@neonchip.co.uk
+License: UNKNOWN
+Description: # sagrada-schema
+        
+        Holds schema objects that are used in multiple components of the sagrada project.
+        
+        Mainly just a lot of dataclasses at the moment.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown

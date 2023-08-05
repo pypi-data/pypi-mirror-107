@@ -1,0 +1,8 @@
+README.md
+setup.py
+sagrada_schema.egg-info/PKG-INFO
+sagrada_schema.egg-info/SOURCES.txt
+sagrada_schema.egg-info/dependency_links.txt
+sagrada_schema.egg-info/top_level.txt
+schema/__init__.py
+schema/product.py
