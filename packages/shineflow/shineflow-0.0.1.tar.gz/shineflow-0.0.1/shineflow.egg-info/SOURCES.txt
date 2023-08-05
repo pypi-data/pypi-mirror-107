@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+shineflow/ActivationFunction.py
+shineflow/Dataset.py
+shineflow/Layer.py
+shineflow/Model.py
+shineflow/NeuralNetwork.py
+shineflow/__init__.py
+shineflow.egg-info/PKG-INFO
+shineflow.egg-info/SOURCES.txt
+shineflow.egg-info/dependency_links.txt
+shineflow.egg-info/requires.txt
+shineflow.egg-info/top_level.txt
