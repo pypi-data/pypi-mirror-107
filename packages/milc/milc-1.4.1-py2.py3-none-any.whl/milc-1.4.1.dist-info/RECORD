@@ -1,0 +1,15 @@
+milc/__init__.py,sha256=S2JGWgUkqfx7-dbhDFMX5d0Mb4ADkijFsTGGYjMim6U,1978
+milc/ansi.py,sha256=5i5h2gh4vX6IWYms-smUA97yV6rOLc775lfNA28edLw,1909
+milc/attrdict.py,sha256=EoISzQ1RnbR2PAXcEUQt9yA4A_LZUziKMZvyLEKes38,1382
+milc/configuration.py,sha256=YWvSKLdpLkcpTZmG8x0-ivdYKb6SAW8VnoG_-cVH2ks,4505
+milc/emoji.py,sha256=PzddqN6uixYFMoGGkFm1C40_O4uQ6SP92gggnJeSLXs,822
+milc/milc.py,sha256=nYOGuwOsVy5fxQDYjuV-P5Lpsy-xRYHT3MKBNDtWBc4,26726
+milc/questions.py,sha256=ldfeAEDDjSeZ6uxhDWVoi2Opmduu4QhcD2TsB9Ro7nw,7890
+milc/subcommand/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+milc/subcommand/config.py,sha256=j9ck9CLUMEvzlVCaU7iGrwHiHqalorseWymoCQLFOyE,4021
+milc-1.4.1.data/scripts/milc-color,sha256=859gUOgUdQtv7cSrVxWiq7BngqcdSB_sqgTJA7UiTDo,1320
+milc-1.4.1.dist-info/LICENSE,sha256=MYt12Kg_MyOYTKkWzbsDfwkS89AYEE4s89NOGS-wLHI,1251
+milc-1.4.1.dist-info/METADATA,sha256=3xGT4-3duWiueLNAt6fH6OK78iVKNM80y9Vh1Pdd4hw,13710
+milc-1.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+milc-1.4.1.dist-info/top_level.txt,sha256=6ytiTn9G0uEeDegAdyt1YDNtNtYW4SnYmL8rkiZENUs,5
+milc-1.4.1.dist-info/RECORD,,
