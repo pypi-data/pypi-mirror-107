@@ -1,0 +1,3 @@
+[console_scripts]
+mystiko=pymystiko_cli.cli:main
+
