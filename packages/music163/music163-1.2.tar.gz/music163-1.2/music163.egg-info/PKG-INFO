@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: music163
+Version: 1.2
+Summary: Download the 163 music for free!
+Home-page: https://xiaodong.indouyin.cn/python/modules/music163/index.html
+Author: DY_XiaoDong
+Author-email: xiaodong@indouyin.cn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: requests
+Requires: pylucky
+Requires: urllib3
+Requires: requests
+Requires: bs4
