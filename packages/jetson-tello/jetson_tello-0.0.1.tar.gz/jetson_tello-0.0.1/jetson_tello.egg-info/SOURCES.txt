@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+jetson_tello/__init__.py
+jetson_tello/video.py
+jetson_tello.egg-info/PKG-INFO
+jetson_tello.egg-info/SOURCES.txt
+jetson_tello.egg-info/dependency_links.txt
+jetson_tello.egg-info/not-zip-safe
+jetson_tello.egg-info/requires.txt
+jetson_tello.egg-info/top_level.txt
