@@ -1,0 +1,9 @@
+pip
+packaging
+fastai>=2.3.1
+transformers
+torchtext
+pyspark
+torch
+
+[dev]
