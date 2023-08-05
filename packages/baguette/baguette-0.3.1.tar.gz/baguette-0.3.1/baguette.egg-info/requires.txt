@@ -1,0 +1,7 @@
+aiofiles
+cachetools
+jinja2
+ujson
+
+[uvicorn]
+uvicorn[standard]
