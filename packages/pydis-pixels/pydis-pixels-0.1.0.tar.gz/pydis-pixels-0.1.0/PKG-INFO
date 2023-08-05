@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pydis-pixels
+Version: 0.1.0
+Summary: Wrapper for the Python Discord Pixels API
+Home-page: https://github.com/bsoyka/pydis-pixels
+Author: Ben Soyka
+Author-email: bensoyka@icloud.com
+License: MIT
+Project-URL: Source, https://github.com/bsoyka/pydis-pixels
+Project-URL: Changelog, https://github.com/bsoyka/pydis-pixels/releases
+Description: # Pydis Pixels Wrapper
+        
+        This is a work in progress - stay tuned!
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
