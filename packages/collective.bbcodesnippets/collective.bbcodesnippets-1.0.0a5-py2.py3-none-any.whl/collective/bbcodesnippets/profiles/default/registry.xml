@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="collective.bbcodesnippets.controlpanel.IBBCodeSnippetsSettings"
+    prefix="bbcodesnippets" />
+
+  <records prefix="plone.resources/collective-bbcodesnippets"
+    interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++collective.bbcodesnippets/collective.bbcodesnippets.js</value>
+  </records>
+
+  <records prefix="plone.bundles/collective-bbcodesnippets-app"
+    interface="Products.CMFPlone.interfaces.IBundleRegistry">
+    <value key="resources">
+      <element>collective-bbcodesnippets</element>
+    </value>
+    <value key="last_compilation">2020-08-19 12:53:00</value>
+    <value key="jscompilation">++plone++collective.bbcodesnippets/collective.bbcodesnippets.js</value>
+    <value key="csscompilation"></value>
+    <value key="develop_javascript">False</value>
+    <value key="develop_css">False</value>
+    <value key="depends">plone-tinymce</value>
+    <value key="merge_with"></value>
+    <value key="enabled">True</value>
+    <value key="expression">python: member is not None</value>
+    <value key="compile">False</value>
+    <value key="enabled">True</value>
+    <value key="load_defer">False</value>
+  </records>
+
+
+  <record name="plone.custom_plugins"
+    interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+    field="custom_plugins">
+    <value purge="False">
+      <element>collectivebbcodesnippets|++plone++collective.bbcodesnippets/collective.bbcodesnippets.js</element>
+    </value>
+  </record>
+
+</registry>
