@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pdf2pptx/169.pptx
+pdf2pptx/43.pptx
+pdf2pptx/__init__.py
+pdf2pptx/__main__.py
+pdf2pptx/convertor.py
+pdf2pptx/version
+pdf2pptx_cli.egg-info/PKG-INFO
+pdf2pptx_cli.egg-info/SOURCES.txt
+pdf2pptx_cli.egg-info/dependency_links.txt
+pdf2pptx_cli.egg-info/entry_points.txt
+pdf2pptx_cli.egg-info/requires.txt
+pdf2pptx_cli.egg-info/top_level.txt
