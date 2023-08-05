@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/imgsearch/__init__.py
+src/imgsearch.egg-info/PKG-INFO
+src/imgsearch.egg-info/SOURCES.txt
+src/imgsearch.egg-info/dependency_links.txt
+src/imgsearch.egg-info/top_level.txt
