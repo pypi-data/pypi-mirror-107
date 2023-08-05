@@ -1,0 +1,14 @@
+README.md
+setup.py
+kirchhoff/__init__.py
+kirchhoff/init_crystal.py
+kirchhoff/init_dual.py
+kirchhoff/init_random.py
+kirchhoff/kirchhoff_dual.py
+kirchhoff/kirchhoff_flow.py
+kirchhoff/kirchhoff_flux.py
+kirchhoff/kirchhoff_init.py
+kirchhoff.egg-info/PKG-INFO
+kirchhoff.egg-info/SOURCES.txt
+kirchhoff.egg-info/dependency_links.txt
+kirchhoff.egg-info/top_level.txt
