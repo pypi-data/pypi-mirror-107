@@ -1,0 +1,8 @@
+six
+numpy
+scipy
+pandas
+livvkit==2.1.6
+netCDF4
+matplotlib
+pybtex
