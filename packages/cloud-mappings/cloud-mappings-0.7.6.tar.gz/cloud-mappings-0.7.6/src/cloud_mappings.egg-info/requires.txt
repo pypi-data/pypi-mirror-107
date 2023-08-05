@@ -1,0 +1,14 @@
+zict>=2.0
+
+[aws]
+boto3==1.17.73
+
+[azure]
+azure-identity==1.6.0
+azure-storage-blob==12.8.1
+
+[gcp]
+google-cloud-storage==1.38.0
+
+[tests]
+pytest==6.2.4
