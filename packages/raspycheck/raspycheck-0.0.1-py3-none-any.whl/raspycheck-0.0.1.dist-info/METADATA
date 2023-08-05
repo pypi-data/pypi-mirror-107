@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: raspycheck
+Version: 0.0.1
+Summary: Useful tool to execute commands via SSH on a RPI or grab system info from said RPI
+Home-page: https://github.com/kampfhamster309/raspycheck
+Author: Felix Harenbrock
+Author-email: felix.harenbrock@gmx.de
+License: MIT
+Keywords: Raspberry Pi,Raspi,RPI
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: paramiko (==2.7.2)
+Requires-Dist: termcolor (==1.1.0)
+
+## Package is still under construction!!
+
+
+
+
