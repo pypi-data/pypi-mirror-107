@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rfi-downloader
+Version: 0.0.3
+Summary: Batch downloader with Gtk GUI
+Home-page: https://github.com/RosalindFranklinInstitute/rfi-downloader
+Author: Tom Schoonjans
+Author-email: Tom.Schoonjans@rfi.ac.uk
+License: BSD 3-Clause License
+Project-URL: GitHub, https://github.com/RosalindFranklinInstitute/rfi-downloader
+Project-URL: Bug-Tracker, https://github.com/RosalindFranklinInstitute/rfi-downloader/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RFI-Downloader
+
+![CI](https://github.com/rosalindfranklininstitute/rfi-downloader/workflows/CI/badge.svg?branch=master&event=push) [![Total alerts](https://img.shields.io/lgtm/alerts/g/rosalindfranklininstitute/rfi-downloader.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rosalindfranklininstitute/rfi-downloader/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/rosalindfranklininstitute/rfi-downloader.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rosalindfranklininstitute/rfi-downloader/context:python)
+
+The **RFI-Downloader** is a desktop app written in Python, using Gtk+3 as widget toolkit, currently under heavy development. When ready, it will allow a user to download URLs from a text file.
+
