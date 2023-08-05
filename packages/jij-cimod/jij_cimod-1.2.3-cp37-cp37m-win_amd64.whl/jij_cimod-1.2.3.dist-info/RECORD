@@ -1,0 +1,17 @@
+cxxcimod.cp37-win_amd64.pyd,sha256=3aiTRHVe517-A-ihlpbznOV6Rb4KA40yznN88kF8UHw,1916928
+cimod/__init__.py,sha256=s7pe3tuzo5vy2SdDXVNIkZmEeGce34leSsw5_Fln9HU,342
+cimod/__version.py,sha256=PARlz-Z8IoORFo_J5plkFOnc-IkR5RRvKigvEnFucCA,68
+cimod/vartype.py,sha256=p9IbowfOlMlU5sKKsd1YT1N843qnEkJVDCRD4BRbxtM,1005
+cimod/model/__init__.py,sha256=ehjMNPnrHLsdFbbUCSKvaeMM9sTrZxEagabhwGzApgM,248
+cimod/model/binary_polynomial_model.py,sha256=y2ibUlo6zdQ4gt3XM6SBEfwKYMCMfyP1FKvSxeAMZ-0,29901
+cimod/model/binary_quadratic_model.py,sha256=sNxsMBjTv27Wzpvwi4aYRtchJZSxuyPzM4PCDJInlbM,12872
+cimod/model/legacy/__init__.py,sha256=jKllYcAN1mJolvILw4dYtR6RPy5GeKtsP2NzPFxz8N4,58
+cimod/model/legacy/binary_quadratic_model.py,sha256=83voTa5yja499M5Ncs4NJGSUIXUdYUJ3a4Urx87fXcs,14261
+cimod/utils/__init__.py,sha256=19UM6sYebl_6HIe-DRiWramCrxjBCzpoyNS186Ox-og,77
+cimod/utils/decolator.py,sha256=jfFbIUJDHjcmGxOfGAg_V4Drc91pFkCPPbxWGCfPcw0,1013
+cimod/utils/response.py,sha256=rIyHwhJ_VyID4lPy6xROcSouMJM00uYCKOeAAPJGLtU,1340
+jij_cimod-1.2.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+jij_cimod-1.2.3.dist-info/METADATA,sha256=xHUFu3w562g1SseEW0LedstrS3oazm4jcKoMpbAgS3U,3432
+jij_cimod-1.2.3.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+jij_cimod-1.2.3.dist-info/top_level.txt,sha256=3ty9PgeHFGVLgl2J3uwxePfMc68rrSTbzVH1PuEx3wo,15
+jij_cimod-1.2.3.dist-info/RECORD,,
