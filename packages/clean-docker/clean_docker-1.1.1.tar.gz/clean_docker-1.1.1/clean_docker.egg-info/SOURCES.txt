@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+clean_docker/__init__.py
+clean_docker/cli.py
+clean_docker/main.py
+clean_docker.egg-info/PKG-INFO
+clean_docker.egg-info/SOURCES.txt
+clean_docker.egg-info/dependency_links.txt
+clean_docker.egg-info/entry_points.txt
+clean_docker.egg-info/requires.txt
+clean_docker.egg-info/top_level.txt
