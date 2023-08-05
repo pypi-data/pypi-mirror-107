@@ -1,0 +1,15 @@
+README.md
+setup.py
+Augmentext/FeatureExtraction.py
+Augmentext/Global.py
+Augmentext/MedRegEx.py
+Augmentext/Normalisations.py
+Augmentext/Operations.py
+Augmentext/Pipeline.py
+Augmentext/TextOperations.py
+Augmentext/__init__.py
+Augmentext.egg-info/PKG-INFO
+Augmentext.egg-info/SOURCES.txt
+Augmentext.egg-info/dependency_links.txt
+Augmentext.egg-info/requires.txt
+Augmentext.egg-info/top_level.txt
