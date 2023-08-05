@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+akernel/akernel.py
+akernel/connect.py
+akernel/kernel.py
+akernel/kernelspec.py
+akernel/message.py
+akernel.egg-info/PKG-INFO
+akernel.egg-info/SOURCES.txt
+akernel.egg-info/dependency_links.txt
+akernel.egg-info/entry_points.txt
+akernel.egg-info/requires.txt
+akernel.egg-info/top_level.txt
