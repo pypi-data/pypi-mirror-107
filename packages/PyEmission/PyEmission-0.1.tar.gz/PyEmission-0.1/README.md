@@ -1,0 +1,2 @@
+# PyEmission
+PyEmission is a Python library for the estimation of vehicular emissions and fuel consumption. This tool covers a wide range of light-duty motor vehicles including motorcycle, passenger car, passenger truck, and light commercial truck. The tool only takes second-by-second driving cycle and vehicle characteristics data as inputs and generates results of vehicular emissions (CO2, CO, NOx, and HC) and fuel consumption. This tool can estimate both tailpipe and corresponding upstream (Well-To-Pump) emissions.
