@@ -1,0 +1,11 @@
+resolver/__init__.py,sha256=ee8_P1w4F5OC99A5r39FdOjOO6jxEhi9nZu-4axZUPU,8322
+resolver/__main__.py,sha256=GJLHdVnrbBxqBacsmJJpkbN5zoCZdYdjMwNE8pSfhaI,3346
+resolver/archive.py,sha256=_vOxxpR5v4DgqV0Fb1pADwpQMeSzb6JhJ792TG0cQj0,3851
+resolver/mindeps/__init__.py,sha256=__rTB6phIcwNDNCI4udhbugn8xZbNmEmVOjTY17rsKY,371
+resolver/mindeps/__main__.py,sha256=o_cQAqGTcQ69-Vh77gTgbmO9ffbEwsUPe2b2OeSVk7o,4794
+python_resolver-0.0.1.1.dist-info/LICENSE,sha256=z63IeB-Zlag31LE3iIJpo7QsuyDMW1b8z-ocTq4ghuQ,1113
+python_resolver-0.0.1.1.dist-info/METADATA,sha256=73-1SqEXyDrGDAK3MACQ4HVyvQsQcz8PqpSFkP8aJh0,2740
+python_resolver-0.0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_resolver-0.0.1.1.dist-info/entry_points.txt,sha256=9Nz6u8gvBwu0W5HdWUnC9sXze0cnsnVOTaJFl7KXC7U,113
+python_resolver-0.0.1.1.dist-info/top_level.txt,sha256=R1M7xLUjuk99Dr7z0l_mVPXsEmvGoWE5SwJ_Q1Xtb2Q,9
+python_resolver-0.0.1.1.dist-info/RECORD,,
