@@ -1,0 +1,8 @@
+- name: install openvpnclient
+  hosts: openvpnclient-service-group
+  become: true
+
+  roles:
+
+    - role: openvpnclient
+
