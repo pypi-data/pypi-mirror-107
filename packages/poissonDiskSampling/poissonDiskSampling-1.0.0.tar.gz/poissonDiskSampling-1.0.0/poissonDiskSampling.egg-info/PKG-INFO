@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: poissonDiskSampling
+Version: 1.0.0
+Summary: Poisson Disk Sampling Algorithm with Variable Sampling Radius
+Home-page: https://gitlab.com/abittner/poissonDiskSampling
+Author: Adrian Bittner
+Author-email: adrian.bittner@eso.org
+License: MIT
+Description: Bridson Poisson DisK Sampling with Variable Radius
+        ==================================================
+        This package contains a Python 3 implementation of the Poisson Disk Sampling algorithm of 
+        [Bridson (2007)](https://dl.acm.org/doi/10.1145/1278780.1278807). It has been adapted to be able to generate the 
+        sampling with a spatially variable sampling radius, i.e. the density of the sampling points is determined according to a
+        given density distribution. 
+        
+        
+        Usage
+        --------------------
+        The usage of the package is illustrated in the included `example.py` file and the generated Poisson Disk Samplings for a
+        set of input density distributions are displayed below and in the subdirectory `exampleVisualisations`. 
+        
+        The only required input of the routine is a 2D array specifying the sampling radii at each spatial position of the 
+        sampling grid. For instance, a uniform density distribution with a sampling radius of 5 and a sampling box of size 40x40
+        can be generated with
+        ```
+        rad = np.zeros((40,40)) + 5
+        ```
+        Note that the routine assumes the minimum chosen sampling radius to be 1. 
+        
+        Subsequently, the Poisson Disk Sampling can be generated via
+        ```
+        from poissonDiskSampling import bridsonVariableRadius
+        nParticle, particleCoordinates = bridsonVariableRadius.poissonDiskSampling(rad, k=30, radiusType='default')
+        ```
+        with the output `nParticle` containing the number of generated particles of the sampling and the 2D array 
+        `particleCoordinates` specifying the coordinates of these sampling particles. 
+        
+        The optional argument `k` states the number of attempts to create a new particle in the annulus between r and 2r around 
+        an existing particle. Following Bridson (2007), the default number is set to `k=30` but higher values might be necessary
+        some situations. 
+        
+        The other optional argument `radiusType` can be used to exploit a variation of the original Bridson (2007) algorithm.
+        The default value of the parameter is `default` in which case it implements the original approach: potential new 
+        particles are created in an annulus between radius r and 2r around an already existing particle. If 
+        `radiusType ='normDist'` is set instead, the radii of new particles are drawn from a normal distribution centered around 
+        1.5r with a standard deviation of 0.2r. 
+        
+        
+        Limitations
+        --------------------
+        Input density distributions with sharp steps in density or continuous density gradients along the x or y-axis of the 
+        grid sometimes result in an incomplete sampling. Often these issues can be avoided by increasing the number of iterations
+        `k` used to spawn new particles in an annulus around an existing particle from the default value of `k=30` to, for
+        instance, `k=100`. 
+        
+        
+        Examples
+        --------------------
+        The figures below illustrate the generated Poisson Disk Samplings for a number of exemplary input density distributions. 
+        
+        ![](https://gitlab.com/abittner/poissonDiskSampling/-/raw/master/exampleVisualisations/uniformDensity.png)
+        ![](https://gitlab.com/abittner/poissonDiskSampling/-/raw/master/exampleVisualisations/sphericalDensity.png)
+        
+        ![](https://gitlab.com/abittner/poissonDiskSampling/-/raw/master/exampleVisualisations/quartersOfConstantDensity.png)
+        ![](https://gitlab.com/abittner/poissonDiskSampling/-/raw/master/exampleVisualisations/chessboardPattern.png)
+        
+        
+        License
+        --------------------
+        This package is released under the MIT license. 
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
