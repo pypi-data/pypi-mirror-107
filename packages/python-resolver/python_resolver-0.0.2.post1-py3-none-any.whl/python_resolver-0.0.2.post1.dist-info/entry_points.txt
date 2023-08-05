@@ -1,0 +1,4 @@
+[console_scripts]
+mindeps = resolver.mindeps.__main__:entrypoint
+python-resolver = resolver.__main__:entrypoint
+
