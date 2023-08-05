@@ -1,0 +1,15 @@
+stringcompare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stringcompare/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stringcompare/functions/create_chart.py,sha256=kCsHAhjcRiJDOwi-Azp07XptMWK5TBx_9--uM7bGAxE,1509
+stringcompare/functions/generate_data.py,sha256=Mz2QEjrN-G_eag7qJxZIETJwaAWYuvZQFtVR9eYRUrk,990
+stringcompare/functions/hashing_search.py,sha256=Wntfp5vSNY4R1xBcyTq8QIbLjfdezfcf_vxHG9zEDEw,885
+stringcompare/functions/linear_search.py,sha256=K4SE0TE7XII8dPx0AvScSan03pzyj9ICsbiHZOoz-Dg,331
+stringcompare/functions/measure_time.py,sha256=fzN6bAOBYDlGx7UKRHG8RCw-M_3vnxdVcCePGs9RRwE,2326
+stringcompare/functions/stringcompare.py,sha256=4WdcpzI7ZrrbVLIu8-mJJzIVSmmhnjXvLCJ1I97jTJg,1399
+stringcompare/functions/unit_tests.py,sha256=MKQov3Z8phplJ4Yg-Vak3XuM31Mem4obq1sa_K0XGKk,797
+stringcompare/stringcompare.py,sha256=1lnyDawdGyEaCUF6vCmCBNg148YDe4TAOs_IWpf9iFY,1395
+stringcompare/unit_tests.py,sha256=MKQov3Z8phplJ4Yg-Vak3XuM31Mem4obq1sa_K0XGKk,797
+stringcompare-0.1.10.dist-info/entry_points.txt,sha256=IdZ67cGuE5-ldbGH79dQg-j7umNGPTEHKD8zM2VPUa8,52
+stringcompare-0.1.10.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+stringcompare-0.1.10.dist-info/METADATA,sha256=LN20aHvAm8EiN1OuCgF1K-d_ronfTRDoyyENxRiC4sI,546
+stringcompare-0.1.10.dist-info/RECORD,,
