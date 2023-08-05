@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+collagist/__init__.py
+collagist/vanilla.py
+collagist.egg-info/PKG-INFO
+collagist.egg-info/SOURCES.txt
+collagist.egg-info/dependency_links.txt
+collagist.egg-info/requires.txt
+collagist.egg-info/top_level.txt
