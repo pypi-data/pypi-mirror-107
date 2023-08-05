@@ -1,0 +1,3 @@
+[console_scripts]
+icerok-server=icerok_server.main:_main
+
