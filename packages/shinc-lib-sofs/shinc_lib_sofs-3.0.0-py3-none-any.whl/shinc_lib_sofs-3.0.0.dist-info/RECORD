@@ -1,0 +1,9 @@
+shinc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shinc/ocr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shinc/ocr/sofextractor.py,sha256=g9QWZplevDN-0TPdwv53X0zQA18p0s7Ib2egpRvjYp4,18278
+shinc/sof/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shinc/sof/sof.py,sha256=uyq0hx1oUgbPh1-6EZDgyhqsrvXtPVamaq6iJtPyhYU,1507
+shinc_lib_sofs-3.0.0.dist-info/METADATA,sha256=Q2uxSYDcpd4rt7q1aEj-FzHCqkTBr9R9iBzo5URV-Lw,663
+shinc_lib_sofs-3.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shinc_lib_sofs-3.0.0.dist-info/top_level.txt,sha256=nXHdakyUUFwAeRKA9fdysdYTnD4nhFFicp8jRE5eZgg,6
+shinc_lib_sofs-3.0.0.dist-info/RECORD,,
