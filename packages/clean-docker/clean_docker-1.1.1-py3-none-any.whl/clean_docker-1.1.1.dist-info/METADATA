@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: clean-docker
+Version: 1.1.1
+Summary: The CLI tool to remove all Docker artifacts from the machine
+Home-page: https://github.com/lancelote/clean-docker
+Author: Pavel Karateev
+Author-email: lancelote.du.lac@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: docker
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
+# clean-docker
+
+Basic script to get rid of Docker images, containers, volumes, and networks
+
+## Installation
+
+`pip install -U --user clean-docker`
+
+> The package will be installed in your user home directory. See `pip`
+> documentation about [user installs][1]. You need the installation directory
+> to be present in `PATH` to run `clean-docker` from the terminal.
+
+## Usage
+
+```console
+$ clean-docker --help
+Usage: clean-docker [OPTIONS]
+
+  Remove Docker images, containers, volumes, and networks
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+```
+
+## Requirements
+
+- Tested with Python 3.9+
+- You need a Docker daemon running on your machine
+
+[1]: https://pip.pypa.io/en/latest/user_guide/#user-installs
+
+

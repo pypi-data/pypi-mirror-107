@@ -1,0 +1,3 @@
+[console_scripts]
+clean-docker = clean_docker.cli:cli
+
