@@ -1,0 +1,10 @@
+Cython>=0.29
+jupyter-sphinx>=0.3
+matplotlib>=3.2.1
+numericalunits>=1.25
+numpy>=1.18.4
+scipy>=1.4.1
+Sphinx>=3.2
+sphinx-rtd-theme>=0.5
+torch>=1.5.1
+PyYAML>=5.4.1
