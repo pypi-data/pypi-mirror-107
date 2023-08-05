@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: fypy
+Version: 0.9.0
+Summary: meteorological satellite of FENGYUN
+Home-page: UNKNOWN
+Author: libin
+Author-email: libin033@126.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: numpy (>=1.0.0)
+Requires-Dist: h5py (>=2.0.0)
+Requires-Dist: netCDF4 (>=1.0.0)
+Requires-Dist: pillow (>=7.0.0)
+
+# fypy - The Python Package Installer
+
+fypy for Python
+---------------
+Just for **Meteorological Satellite of FENGYUN**.
+if you need others, please contact me by email. we will update it later.
+
+Install
+----------
+`pip install fypy` or `python -m pip install fypy`
+
+Thanks
+---------
+please thank me very much when you use it!
+
+Notes
+--------
+You’ve discovered a bug or something else you want to change - excellent!
+
+You’ve worked out a way to fix it – even better!
+
+You want to tell us about it – best of all!
+
+Contact
+-----------
+if you have any question, please contact me **libin033@163.com** . 
+
+Used fypy in your research? We’d love for you to **cite us** in your publication.
+
+
