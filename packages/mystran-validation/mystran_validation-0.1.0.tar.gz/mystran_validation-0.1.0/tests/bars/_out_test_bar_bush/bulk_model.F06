@@ -1,0 +1,872 @@
+   518103013
+
+ MYSTRAN Version 12.2a    Apr 26 2021 MYSTRAN developed by Dr Bill Case
+*** Please report any problems to the author at dbcase29@gmail.com ***                                                                                                                                                                                          
+
+ >> MYSTRAN BEGIN  :  5/18/2021 at 10:30:13. 25 The input file is /home/nic/Documents/05-dev/mystran_validation/tests/bars/_out_test_bar_bush/bulk_model.nas                                                                                                                                                                      
+
+
+ >> LINK  0 BEGIN
+
+
+INIT MASTER(S)                                                                                                                                                                                                                                                  
+NASTRAN SYSTEM(442)=-1,SYSTEM(319)=1                                                                                                                                                                                                                            
+ID BEAM FEA,Femap                                                                                                                                                                                                                                               
+SOL SESTATIC                                                                                                                                                                                                                                                    
+TIME 10000                                                                                                                                                                                                                                                      
+CEND                                                                                                                                                                                                                                                            
+  TITLE = Analyse                                                                                                                                                                                                                                               
+  SUBTITLE = test                                                                                                                                                                                                                                               
+  LABEL = test                                                                                                                                                                                                                                                  
+  ECHO = NONE                                                                                                                                                                                                                                                   
+  DISPLACEMENT(PRINT) = ALL                                                                                                                                                                                                                                     
+  SPCFORCE(PRINT) = ALL                                                                                                                                                                                                                                         
+  OLOAD(PRINT) = ALL                                                                                                                                                                                                                                            
+  MPCFORCE(PRINT) = ALL                                                                                                                                                                                                                                         
+  GPFORCE(PRINT) = ALL                                                                                                                                                                                                                                          
+  FORCE(PRINT,CORNER) = ALL                                                                                                                                                                                                                                     
+  STRESS(PRINT,CORNER) = ALL                                                                                                                                                                                                                                    
+SUBCASE 1                                                                                                                                                                                                                                                       
+  SUBTITLE = NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                
+  SPC = 1                                                                                                                                                                                                                                                       
+  LOAD = 1                                                                                                                                                                                                                                                      
+SUBCASE 2                                                                                                                                                                                                                                                       
+  SUBTITLE = NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                
+  SPC = 1                                                                                                                                                                                                                                                       
+  LOAD = 2                                                                                                                                                                                                                                                      
+BEGIN BULK                                                                                                                                                                                                                                                      
+
+
+
+
+
+       O U T P U T   F R O M   T H E   G R I D   P O I N T   W E I G H T   G E N E R A T O R   F O R   O V E R A L L   M O D E L
+                                             (reference point is basic coord system origin)
+
+                                                      Total mass =  2.091178E+09
+
+                                                             X             Y             Z
+                                       C.G. location :  3.710516E+02  0.000000E+00 -2.886142E+00
+                                        (relative to reference point in basic coordinate system)
+
+
+                             6x6 Rigid body mass matrix - about reference point in basic coordinate system
+                      ***                                                                                     ***
+                      *  2.091178E+09  0.000000E+00  0.000000E+00  *  0.000000E+00 -6.035435E+09 -0.000000E+00  *
+                      *  0.000000E+00  2.091178E+09  0.000000E+00  *  6.035435E+09  0.000000E+00  7.759347E+11  *
+                      *  0.000000E+00  0.000000E+00  2.091178E+09  *  0.000000E+00 -7.759347E+11  0.000000E+00  *
+                      *  ************  ************  ************  *  ************  ************  ************  *
+                      *  0.000000E+00  0.000000E+00  0.000000E+00  *  6.690811E+12  0.000000E+00  2.980564E+12  *
+                      *  0.000000E+00  0.000000E+00  0.000000E+00  *  0.000000E+00  3.343376E+14  0.000000E+00  *
+                      *  0.000000E+00  0.000000E+00  0.000000E+00  *  2.980564E+12  0.000000E+00  3.408917E+14  *
+                      ***                                                                                     ***
+
+
+                                    M.O.I. matrix - about reference point in basic coordinate system
+                                             ***                                        ***
+                                             *  6.690811E+12  0.000000E+00  2.980564E+12  *
+                                             *  0.000000E+00  3.343376E+14  0.000000E+00  *
+                                             *  2.980564E+12  0.000000E+00  3.408917E+14  *
+                                             ***                                        ***
+
+
+                                  M.O.I. matrix - about above c.g. location in basic coordinate system
+                                             ***                                        ***
+                                             *  6.673392E+12  0.000000E+00  7.411061E+11  *
+                                             *  0.000000E+00  4.640844E+13  0.000000E+00  *
+                                             *  7.411061E+11  0.000000E+00  5.297990E+13  *
+                                             ***                                        ***
+
+
+                                     M.O.I. matrix - about above c.g. location in principal directions
+                                             ***                                        ***
+                                             *  6.661534E+12  0.000000E+00 -1.220703E-04  *
+                                             *  0.000000E+00  4.640844E+13  0.000000E+00  *
+                                             * -9.155273E-05  0.000000E+00  5.299175E+13  *
+                                             ***                                        ***
+
+
+                                     Transformation from basic coordinates to principal directions
+                                             ***                                        ***
+                                             *  9.998720E-01 -0.000000E+00 -1.599822E-02  *
+                                             *  0.000000E+00 -1.000000E+00  0.000000E+00  *
+                                             *  1.599822E-02  0.000000E+00  9.998720E-01  *
+                                             ***                                        ***
+
+
+
+ >> LINK  0 END
+
+
+ >> LINK  1 BEGIN
+
+               DEALLOCATED  2.53E-02 MB MEMORY FROM ARRAY STF3
+
+               DEALLOCATED  2.88E-04 MB MEMORY FROM ARRAY STFKEY
+               DEALLOCATED  2.53E-02 MB MEMORY FROM ARRAY STF3
+
+ >> LINK  1 END
+
+
+ >> LINK  2 BEGIN
+
+
+ *INFORMATION: AUTOSPC Summary, Overall: after identification of all AUTOSPC's                                                               
+
+                                     AUTOSPC_RAT = 1.000000E-06
+
+                       Number of DOF's identified for AUTOSPC in component  1         =            0
+                       Number of DOF's identified for AUTOSPC in component  2         =            0
+                       Number of DOF's identified for AUTOSPC in component  3         =            0
+                       Number of DOF's identified for AUTOSPC in component  4         =            0
+                       Number of DOF's identified for AUTOSPC in component  5         =            0
+                       Number of DOF's identified for AUTOSPC in component  6         =            0
+                                                                                        ------------
+                       Total number of DOF's identified overall                       =            0
+
+
+ >> LINK  2 END
+
+
+ >> LINK  3 BEGIN
+
+ SUPERLU FACTORIZATION OF MATRIX KLL SUCCEEDED IN SUBR SYM_MAT_DECOMP_SUPRLU          
+
+ SUPERLU SPARSE SOLVER SUCCESSFUL FOR CASE        1 IN SUBR FBS_SUPRLU
+ *INFORMATION: FOR INTERNAL SUBCASE NUMBER        1 EPSILON ERROR ESTIMATE            =  4.962918E-12 Based on U'*(K*U - P)/(U'*P)
+
+ SUPERLU SPARSE SOLVER SUCCESSFUL FOR CASE        2 IN SUBR FBS_SUPRLU
+ *INFORMATION: FOR INTERNAL SUBCASE NUMBER        2 EPSILON ERROR ESTIMATE            =  2.128838E-11 Based on U'*(K*U - P)/(U'*P)
+
+
+ >> LINK  3 END
+
+
+ >> LINK  5 BEGIN
+
+
+ >> LINK  5 END
+
+
+ >> LINK  9 BEGIN
+
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                       D I S P L A C E M E N T S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+              1        0  0.0           0.0           0.0          -4.316248E-04  8.922553E-03  4.699029E-03
+              2        0 -1.870816E-01  0.0           0.0           4.316248E-04  8.922553E-03  4.666047E-03
+              3        0  0.0           0.0           0.0          -1.600097E-02 -3.594732E-03 -2.959429E-04
+              4        0  7.011176E-02  0.0           0.0           1.600097E-02 -3.594732E-03 -2.837513E-04
+              5        0  0.0           0.0          -5.772119E-03  0.0           1.007176E-02  1.055666E-05
+              6        0  0.0           0.0          -5.693513E-01  0.0           9.517654E-03 -2.536506E-06
+              7        0  0.0           0.0          -1.299296E+00  0.0          -3.606186E-03 -1.177259E-06
+              8        0 -9.376070E-02  0.0          -5.754997E-03  0.0           8.922553E-03  4.666047E-03
+              9        0  3.555086E-02  0.0          -1.299279E+00  0.0          -3.594732E-03 -2.837513E-04
+             10        0  0.0           0.0          -1.564502E+00  0.0           3.234321E-03 -3.281444E-07
+             11        0  0.0           0.0          -9.560729E-01  0.0           8.363951E-03  9.362267E-07
+             12        0  0.0           0.0          -1.602912E+00  0.0          -1.896075E-03  3.763509E-07
+                         ------------- ------------- ------------- ------------- ------------- -------------
+                MAX* :    7.011176E-02  0.0           0.0           1.600097E-02  1.007176E-02  4.699029E-03
+                MIN* :   -1.870816E-01  0.0          -1.602912E+00 -1.600097E-02 -3.606186E-03 -2.959429E-04
+
+                ABS* :    1.870816E-01  0.0           1.602912E+00  1.600097E-02  1.007176E-02  4.699029E-03
+                *for output set
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                     A P P L I E D    F O R C E S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+             10        0  0.0           0.0          -4.496180E+02  0.0           0.0           0.0         
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                          S P C   F O R C E S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+              1        0  2.060228E+00  0.0           1.124297E+02  0.0           0.0           0.0         
+              2        0  0.0           0.0           1.124297E+02  0.0           0.0           0.0         
+              3        0 -2.053358E-02  0.0           1.123793E+02  0.0           0.0           0.0         
+              4        0  0.0           0.0           1.123793E+02  0.0           0.0           0.0         
+              5        0 -2.060228E+00  9.362744E-01  0.0           0.0           0.0           0.0         
+              6        0  0.0          -1.264543E+00  0.0           0.0           0.0           0.0         
+              7        0  2.053358E-02  3.037757E-02  0.0           0.0           0.0           0.0         
+             10        0  0.0          -2.123547E-02  0.0           0.0           0.0           0.0         
+             11        0  0.0           3.513324E-01  0.0           0.0           0.0           0.0         
+             12        0  0.0          -3.220599E-02  0.0           0.0           0.0           0.0         
+                         ------------- ------------- ------------- ------------- ------------- -------------
+                MAX* :    2.060228E+00  9.362744E-01  1.124297E+02  0.0           0.0           0.0         
+                MIN* :   -2.060228E+00 -1.264543E+00  0.0           0.0           0.0           0.0         
+
+                ABS* :    2.060228E+00  1.264543E+00  1.124297E+02  0.0           0.0           0.0         
+                *for output set
+                         ------------- ------------- ------------- ------------- ------------- -------------
+     SPC FORCE TOTALS:   -1.914024E-12  1.387779E-17  4.496180E+02  0.0           0.0           0.0         
+     (for output set)
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+
+
+                                           G R I D   P O I N T   F O R C E   B A L A N C E
+                                             (in global coordinate system at each grid)
+
+                                FORCE BALANCE FOR GRID POINT        1 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                2.060228E+00  0.000000E+00  1.124297E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         1 -2.060228E+00  0.000000E+00 -1.124297E+02  0.000000E+00  0.000000E+00  1.818989E-12
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  1.818989E-12
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        2 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  1.124297E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         5 -2.046363E-12  0.000000E+00 -1.124297E+02  0.000000E+00  0.000000E+00 -1.818989E-12
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -2.046363E-12  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00 -1.818989E-12
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        3 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE               -2.053358E-02  0.000000E+00  1.123793E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         2  2.053358E-02  0.000000E+00 -1.123793E+02  0.000000E+00  0.000000E+00  0.000000E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        4 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  1.123793E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         6  5.706546E-14  0.000000E+00 -1.123793E+02  0.000000E+00  0.000000E+00  4.263256E-14
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  5.706546E-14  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  4.263256E-14
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        5 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE               -2.060228E+00  9.362744E-01  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         3  0.000000E+00 -9.362744E-01 -2.248593E+02  0.000000E+00  2.034273E+01 -4.120456E+01
+ BUSH     ELEM         7  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -2.060228E+00  0.000000E+00 -2.248593E+02  0.000000E+00  2.034273E+01 -4.120456E+01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        6 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00 -1.264543E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         3  0.000000E+00  9.362744E-01  2.248593E+02  0.000000E+00  1.279664E+04 -1.216308E+01
+ BAR      ELEM         4  0.000000E+00  3.282685E-01 -2.248593E+02  0.000000E+00 -1.279664E+04  1.216308E+01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  1.818989E-12  0.000000E+00  2.910383E-11 -1.776357E-15
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        7 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                2.053358E-02  3.037757E-02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BUSH     ELEM         8  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM        11  0.000000E+00 -3.037757E-02 -2.247587E+02  0.000000E+00 -2.027490E-01  2.500991E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  2.053358E-02  0.000000E+00 -2.247587E+02  0.000000E+00 -2.027490E-01  2.500991E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        8 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         1  2.060228E+00  0.000000E+00  1.124297E+02 -2.248593E+03  0.000000E+00  4.120456E+01
+ BAR      ELEM         5  2.046363E-12  0.000000E+00  1.124297E+02  2.248593E+03  0.000000E+00 -4.729372E-11
+ BUSH     ELEM         7  6.692343E+03 -6.660953E+02  1.049878E+05  0.000000E+00 -8.405693E+01 -2.069572E+01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  6.694403E+03 -6.660953E+02  1.052126E+05  0.000000E+00 -8.405693E+01  2.050885E+01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        9 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         2 -2.053358E-02  0.000000E+00  1.123793E+02 -1.368780E+04  0.000000E+00 -2.500991E+00
+ BAR      ELEM         6 -5.706546E-14  0.000000E+00  1.123793E+02  1.368780E+04  0.000000E+00  6.835421E-12
+ BUSH     ELEM         8 -2.537508E+03  4.050653E+01  1.705174E+07  0.000000E+00  3.186675E+01  1.260915E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -2.537529E+03  4.050653E+01  1.705197E+07  0.000000E+00  3.186675E+01 -1.240076E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       10 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00 -4.496180E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00 -2.123547E-02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         9  0.000000E+00 -1.828420E-03  2.247587E+02  0.000000E+00 -4.495153E+04  3.539245E-01
+ BAR      ELEM        10  0.000000E+00  2.306389E-02  2.248593E+02  0.000000E+00  4.495153E+04 -3.539245E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  3.469447E-18 -1.051603E-11  0.000000E+00  5.820766E-11 -2.220446E-16
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       11 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  3.513324E-01  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         4  0.000000E+00 -3.282685E-01  2.248593E+02  0.000000E+00  2.246559E+04  1.952465E+00
+ BAR      ELEM        10  0.000000E+00 -2.306389E-02 -2.248593E+02  0.000000E+00 -2.246559E+04 -1.952465E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  3.816392E-17  5.684342E-12  0.000000E+00  2.110028E-10 -1.998401E-15
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       12 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00 -3.220599E-02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         9  0.000000E+00  1.828420E-03 -2.247587E+02  0.000000E+00  2.247566E+04 -5.367665E-01
+ BAR      ELEM        11  0.000000E+00  3.037757E-02  2.247587E+02  0.000000E+00 -2.247566E+04  5.367665E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00 -6.938894E-18  3.183231E-12  0.000000E+00  1.236913E-10  2.220446E-16
+ (should all be 0)
+
+
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                        E L E M E N T   E N G I N E E R I N G   F O R C E S
+                                              F O R   E L E M E N T   T Y P E   B A R      
+  Element       Bend-Moment End A           Bend-Moment End B              - Shear -              Axial         Torque
+     ID       Plane 1       Plane 2       Plane 1       Plane 2      Plane 1       Plane 2        Force
+        1 -1.818989E-12  0.000000E+00  4.120456E+01 -2.248593E+03 -2.060228E+00  1.124297E+02  0.000000E+00  0.000000E+00
+        2  0.000000E+00  0.000000E+00 -2.500991E+00 -1.368780E+04  2.053358E-02  1.123793E+02  0.000000E+00  0.000000E+00
+        3 -4.120456E+01 -2.034273E+01  1.216308E+01  1.279664E+04 -9.362744E-01 -2.248593E+02  0.000000E+00  0.000000E+00
+        4  1.216308E+01  1.279664E+04 -1.952465E+00  2.246559E+04  3.282685E-01 -2.248593E+02  0.000000E+00  0.000000E+00
+        5  4.729372E-11 -2.248593E+03  6.366463E-12  0.000000E+00  2.046363E-12 -1.124297E+02  0.000000E+00  0.000000E+00
+        6 -6.835421E-12 -1.368780E+04  1.151523E-13  7.275958E-12 -5.706546E-14 -1.123793E+02  0.000000E+00  0.000000E+00
+        9  3.539245E-01  4.495153E+04  5.367665E-01  2.247566E+04 -1.828420E-03  2.247587E+02  0.000000E+00  0.000000E+00
+       10 -1.952465E+00  2.246559E+04  3.539245E-01  4.495153E+04 -2.306389E-02 -2.248593E+02  0.000000E+00  0.000000E+00
+       11  5.367665E-01  2.247566E+04 -2.500991E+00 -2.027490E-01  3.037757E-02  2.247587E+02  0.000000E+00  0.000000E+00
+          ------------- ------------- ------------- ------------- ------------- ------------- ------------- -------------
+ MAX* :    1.216308E+01  4.495153E+04  4.120456E+01  4.495153E+04  3.282685E-01  2.247587E+02  0.000000E+00  0.000000E+00
+ MIN* :   -4.120456E+01 -1.368780E+04 -2.500991E+00 -1.368780E+04 -2.060228E+00 -2.248593E+02  0.000000E+00  0.000000E+00
+
+ ABS* :    4.120456E+01  4.495153E+04  4.120456E+01  4.495153E+04  2.060228E+00  2.248593E+02  0.000000E+00  0.000000E+00
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                          E L E M E N T   E N G I N E E R I N G   F O R C E S
+                              F O R   E L E M E N T   T Y P E   B U S H    
+  Element      Force         Force         Force        Moment        Moment        Moment
+     ID         XE            YE            ZE            XE            YE            ZE
+        7  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+        8  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+           ------------- ------------- ------------- ------------- ------------- ------------- 
+ MAX* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MIN* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+ ABS* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+             E L E M E N T   S T R E S S E S   I N   L O C A L   E L E M E N T   C O O R D I N A T E   S Y S T E M
+                                          F O R   E L E M E N T   T Y P E   B A R      
+  Element      SA1           SA2           SA3           SA4          Axial         SA-Max        SA-Min      M.S.-T
+     ID        SB1           SB2           SB3           SB4          Stress        SB-Max        SB-Min      M.S.-C
+
+        1  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        2  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        3  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        4  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        5  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        6  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        9  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+       10  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+       11  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+          ------------- ------------- ------------- ------------- ------------- ------------- ------------- ---------
+ MAX* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ MAX* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+
+ MIN* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ MIN* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+
+ ABS* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ ABS* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        1
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc1                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+           E L E M E N T   S T R E S S E S   I N   L O C A L   E L E M E N T   C O O R D I N A T E   S Y S T E M
+                                        F O R   E L E M E N T   T Y P E   B U S H    
+                     Element   Stress-1      Stress-2      Stress-3      Stress-4      Stress-5      Stress-6
+                        ID
+                          7  5.836509E+04 -2.060228E+00 -1.332191E+03 -4.120456E+01  0.000000E+00  1.017137E+01
+                          8 -2.382957E+04  2.053358E-02  8.101307E+01  2.500991E+00  0.000000E+00 -1.013745E-01
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                       D I S P L A C E M E N T S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+              1        0  0.0           0.0           0.0          -6.902751E-06  9.755158E-03  5.137517E-03
+              2        0 -2.045391E-01  0.0           0.0           6.902751E-06  9.755158E-03  5.101457E-03
+              3        0  0.0           0.0           0.0          -3.175311E-02  7.528106E-04  6.197722E-05
+              4        0 -1.468270E-02  0.0           0.0           3.175311E-02  7.528106E-04  5.942211E-05
+              5        0  0.0           0.0          -9.231050E-05  0.0           1.101161E-02  1.153895E-05
+              6        0  0.0           0.0          -6.276400E-01  0.0           1.100465E-02 -2.767588E-06
+              7        0  0.0           0.0          -2.578386E+00  0.0           7.552111E-04  2.004896E-07
+              8        0 -1.025099E-01  0.0          -9.203668E-05  0.0           9.755158E-03  5.101457E-03
+              9        0 -7.445088E-03  0.0          -2.578352E+00  0.0           7.528106E-04  5.942211E-05
+             10        0  0.0           0.0          -1.916094E+00  0.0           5.885104E-03 -2.549041E-07
+             11        0  0.0           0.0          -1.100510E+00  0.0           1.098763E-02  1.006013E-06
+             12        0  0.0           0.0          -2.389742E+00  0.0           4.148906E-03  1.360364E-08
+                         ------------- ------------- ------------- ------------- ------------- -------------
+                MAX* :    0.0           0.0           0.0           3.175311E-02  1.101161E-02  5.137517E-03
+                MIN* :   -2.045391E-01  0.0          -2.578386E+00 -3.175311E-02  7.528106E-04 -2.767588E-06
+
+                ABS* :    2.045391E-01  0.0           2.578386E+00  3.175311E-02  1.101161E-02  5.137517E-03
+                *for output set
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                     A P P L I E D    F O R C E S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+             11        0  0.0           0.0          -2.248090E+02  0.0           4.425373E+04  0.0         
+             12        0  0.0           0.0          -2.248090E+02  0.0           4.425373E+04  0.0         
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ APPLIED FORCE TOTALS:    0.0           0.0          -4.496180E+02  0.0           8.850746E+04  0.0         
+   (for output set)
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                                          S P C   F O R C E S
+                                              (in global coordinate system at each grid)
+           GRID     COORD      T1            T2            T3            R1            R2            R3
+                     SYS
+              1        0  2.252479E+00  0.0           1.798029E+00  0.0           0.0           0.0         
+              2        0  0.0           0.0           1.798029E+00  0.0           0.0           0.0         
+              3        0  4.303412E-03  0.0           2.230110E+02  0.0           0.0           0.0         
+              4        0  0.0           0.0           2.230110E+02  0.0           0.0           0.0         
+              5        0 -2.252479E+00  1.023971E+00  0.0           0.0           0.0           0.0         
+              6        0  0.0          -1.385326E+00  0.0           0.0           0.0           0.0         
+              7        0 -4.303412E-03 -8.120319E-03  0.0           0.0           0.0           0.0         
+             10        0  0.0          -3.764099E-02  0.0           0.0           0.0           0.0         
+             11        0  0.0           3.898441E-01  0.0           0.0           0.0           0.0         
+             12        0  0.0           1.727258E-02  0.0           0.0           0.0           0.0         
+                         ------------- ------------- ------------- ------------- ------------- -------------
+                MAX* :    2.252479E+00  1.023971E+00  2.230110E+02  0.0           0.0           0.0         
+                MIN* :   -2.252479E+00 -1.385326E+00  0.0           0.0           0.0           0.0         
+
+                ABS* :    2.252479E+00  1.385326E+00  2.230110E+02  0.0           0.0           0.0         
+                *for output set
+                         ------------- ------------- ------------- ------------- ------------- -------------
+     SPC FORCE TOTALS:    1.274980E-11  9.020562E-17  4.496180E+02  0.0           0.0           0.0         
+     (for output set)
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+
+
+                                           G R I D   P O I N T   F O R C E   B A L A N C E
+                                             (in global coordinate system at each grid)
+
+                                FORCE BALANCE FOR GRID POINT        1 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                2.252479E+00  0.000000E+00  1.798029E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         1 -2.252479E+00  0.000000E+00 -1.798029E+00  0.000000E+00  0.000000E+00  0.000000E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        2 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  1.798029E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         5  8.071765E-12  0.000000E+00 -1.798029E+00  0.000000E+00  0.000000E+00  0.000000E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  8.071765E-12  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        3 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                4.303412E-03  0.000000E+00  2.230110E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         2 -4.303412E-03  0.000000E+00 -2.230110E+02  7.275958E-12  0.000000E+00  1.776357E-15
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  0.000000E+00  7.275958E-12  0.000000E+00  1.776357E-15
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        4 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  2.230110E+02  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         6 -6.432133E-12  0.000000E+00 -2.230110E+02 -7.275958E-12  0.000000E+00 -1.065814E-14
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -6.432133E-12  0.000000E+00  0.000000E+00 -7.275958E-12  0.000000E+00 -1.065814E-14
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        5 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE               -2.252479E+00  1.023971E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         3  0.000000E+00 -1.023971E+00 -3.596059E+00  0.000000E+00  2.224102E+01 -4.504958E+01
+ BUSH     ELEM         7  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -2.252479E+00  0.000000E+00 -3.596059E+00  0.000000E+00  2.224102E+01 -4.504958E+01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        6 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00 -1.385326E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         3  0.000000E+00  1.023971E+00  3.596059E+00  0.000000E+00  1.827343E+02 -1.331676E+01
+ BAR      ELEM         4  0.000000E+00  3.613553E-01 -3.596059E+00  0.000000E+00 -1.827343E+02  1.331676E+01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00  3.637979E-12  0.000000E+00  5.820766E-11 -3.552714E-15
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        7 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE               -4.303412E-03 -8.120319E-03  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BUSH     ELEM         8  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM        11  0.000000E+00  8.120319E-03 -4.460219E+02  0.000000E+00  4.249197E-02 -5.241556E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                : -4.303412E-03  0.000000E+00 -4.460219E+02  0.000000E+00  4.249197E-02 -5.241556E-01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        8 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         1  2.252479E+00  0.000000E+00  1.798029E+00 -3.596059E+01  0.000000E+00  4.504958E+01
+ BAR      ELEM         5 -8.071765E-12  0.000000E+00  1.798029E+00  3.596059E+01  0.000000E+00  1.482476E-10
+ BUSH     ELEM         7  7.316837E+03 -7.282518E+02  3.323914E+04  0.000000E+00 -9.190068E+01 -2.262692E+01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  7.319089E+03 -7.282518E+02  3.324273E+04  0.000000E+00 -9.190068E+01  2.242266E+01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT        9 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         2  4.303412E-03  0.000000E+00  2.230110E+02 -2.716274E+04  0.000000E+00  5.241556E-01
+ BAR      ELEM         6  6.432133E-12  0.000000E+00  2.230110E+02  2.716274E+04  0.000000E+00 -7.834196E-10
+ BUSH     ELEM         8  5.314069E+02 -8.482725E+00  3.386420E+07  0.000000E+00 -6.673558E+00 -2.638523E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  5.314112E+02 -8.482725E+00  3.386464E+07  0.000000E+00 -6.673558E+00  2.603033E-01
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       10 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ SPC FORCE                0.000000E+00 -3.764099E-02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         9  0.000000E+00  9.152261E-03  2.212129E+02  0.000000E+00 -2.246980E+04  6.273498E-01
+ BAR      ELEM        10  0.000000E+00  2.848872E-02 -2.212129E+02  0.000000E+00  2.246980E+04 -6.273498E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  0.000000E+00 -9.094947E-13  0.000000E+00  7.275958E-12  0.000000E+00
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       11 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00 -2.248090E+02  0.000000E+00  4.425373E+04  0.000000E+00
+ SPC FORCE                0.000000E+00  3.898441E-01  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         4  0.000000E+00 -3.613553E-01  3.596059E+00  0.000000E+00  3.373649E+02  2.221523E+00
+ BAR      ELEM        10  0.000000E+00 -2.848872E-02  2.212129E+02  0.000000E+00 -4.459109E+04 -2.221523E+00
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  4.857226E-17  6.536993E-13  0.000000E+00  7.275958E-12 -1.776357E-15
+ (should all be 0)
+
+
+                                FORCE BALANCE FOR GRID POINT       12 IN GLOBAL COORD SYSTEM        0
+
+                               T1            T2            T3            R1            R2            R3
+
+ APPLIED FORCE            0.000000E+00  0.000000E+00 -2.248090E+02  0.000000E+00  4.425373E+04  0.000000E+00
+ SPC FORCE                0.000000E+00  1.727258E-02  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MPC FORCE                0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ BAR      ELEM         9  0.000000E+00 -9.152261E-03 -2.212129E+02  0.000000E+00  3.485066E+02  2.878763E-01
+ BAR      ELEM        11  0.000000E+00 -8.120319E-03  4.460219E+02  0.000000E+00 -4.460224E+04 -2.878763E-01
+                         ------------- ------------- ------------- ------------- ------------- -------------
+ TOTALS                :  0.000000E+00  1.734723E-18 -1.080025E-12  0.000000E+00 -1.527951E-10  0.000000E+00
+ (should all be 0)
+
+
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                                        E L E M E N T   E N G I N E E R I N G   F O R C E S
+                                              F O R   E L E M E N T   T Y P E   B A R      
+  Element       Bend-Moment End A           Bend-Moment End B              - Shear -              Axial         Torque
+     ID       Plane 1       Plane 2       Plane 1       Plane 2      Plane 1       Plane 2        Force
+        1  0.000000E+00  0.000000E+00  4.504958E+01 -3.596059E+01 -2.252479E+00  1.798029E+00  0.000000E+00  0.000000E+00
+        2 -1.776357E-15 -7.275958E-12  5.241556E-01 -2.716274E+04 -4.303412E-03  2.230110E+02  0.000000E+00  0.000000E+00
+        3 -4.504958E+01 -2.224102E+01  1.331676E+01  1.827343E+02 -1.023971E+00 -3.596059E+00  0.000000E+00  0.000000E+00
+        4  1.331676E+01  1.827343E+02 -2.221523E+00  3.373649E+02  3.613553E-01 -3.596059E+00  0.000000E+00  0.000000E+00
+        5 -1.482476E-10 -3.596059E+01  1.318767E-11  7.105427E-15 -8.071765E-12 -1.798029E+00  0.000000E+00  0.000000E+00
+        6  7.834196E-10 -2.716274E+04 -1.419975E-14 -7.275958E-12  6.432133E-12 -2.230110E+02  0.000000E+00  0.000000E+00
+        9  6.273498E-01  2.246980E+04 -2.878763E-01  3.485066E+02  9.152261E-03  2.212129E+02  0.000000E+00  0.000000E+00
+       10 -2.221523E+00  4.459109E+04  6.273498E-01  2.246980E+04 -2.848872E-02  2.212129E+02  0.000000E+00  0.000000E+00
+       11 -2.878763E-01  4.460224E+04  5.241556E-01  4.249197E-02 -8.120319E-03  4.460219E+02  0.000000E+00  0.000000E+00
+          ------------- ------------- ------------- ------------- ------------- ------------- ------------- -------------
+ MAX* :    1.331676E+01  4.460224E+04  4.504958E+01  2.246980E+04  3.613553E-01  4.460219E+02  0.000000E+00  0.000000E+00
+ MIN* :   -4.504958E+01 -2.716274E+04 -2.221523E+00 -2.716274E+04 -2.252479E+00 -2.230110E+02  0.000000E+00  0.000000E+00
+
+ ABS* :    4.504958E+01  4.460224E+04  4.504958E+01  2.716274E+04  2.252479E+00  4.460219E+02  0.000000E+00  0.000000E+00
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+                          E L E M E N T   E N G I N E E R I N G   F O R C E S
+                              F O R   E L E M E N T   T Y P E   B U S H    
+  Element      Force         Force         Force        Moment        Moment        Moment
+     ID         XE            YE            ZE            XE            YE            ZE
+        7  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+        8  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+           ------------- ------------- ------------- ------------- ------------- ------------- 
+ MAX* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ MIN* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+ ABS* :    0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+             E L E M E N T   S T R E S S E S   I N   L O C A L   E L E M E N T   C O O R D I N A T E   S Y S T E M
+                                          F O R   E L E M E N T   T Y P E   B A R      
+  Element      SA1           SA2           SA3           SA4          Axial         SA-Max        SA-Min      M.S.-T
+     ID        SB1           SB2           SB3           SB4          Stress        SB-Max        SB-Min      M.S.-C
+
+        1  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        2  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        3  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        4  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        5  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        6  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+        9  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+       10  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+
+       11  0.0           0.0           0.0           0.0           0.0           0.0           0.0                                   
+           0.0           0.0           0.0           0.0                         0.0           0.0                                   
+          ------------- ------------- ------------- ------------- ------------- ------------- ------------- ---------
+ MAX* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ MAX* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+
+ MIN* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ MIN* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+
+ ABS* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ ABS* :    0.0           0.0           0.0           0.0           0.0           0.0           0.0           1.00E+10
+ *for output set
+
+
+ OUTPUT FOR SUBCASE        2
+ Analyse                                                                                                                                                                                                                                                         
+ NASTRAN SPC 1 - NASTRAN SPC 1 - lc2                                                                                                                                                                                                                             
+ test                                                                                                                                                                                                                                                            
+
+           E L E M E N T   S T R E S S E S   I N   L O C A L   E L E M E N T   C O O R D I N A T E   S Y S T E M
+                                        F O R   E L E M E N T   T Y P E   B U S H    
+                     Element   Stress-1      Stress-2      Stress-3      Stress-4      Stress-5      Stress-6
+                        ID
+                          7  6.405365E+04 -2.252479E+00 -1.456504E+03 -4.504958E+01  0.000000E+00  1.112051E+01
+                          8  4.497309E+03 -4.303412E-03 -1.696545E+01 -5.241556E-01  0.000000E+00  2.124599E-02
+
+ >> LINK  9 END
+
+    Total CPU time =  9.44E-02 seconds
+
+ >> MYSTRAN END    :  5/18/2021 at 10:30:13.119
