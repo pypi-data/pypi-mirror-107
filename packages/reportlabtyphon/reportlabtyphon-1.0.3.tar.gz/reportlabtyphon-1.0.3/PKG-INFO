@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: reportlabtyphon
+Version: 1.0.3
+Summary: Improve and enhance based on reportlab 3.5 version
+Home-page: http://pypi.python.org
+Author: typhon
+Author-email: eric.j.tong@rrd.com
+License: Apache
+Description: Improve and enhance based on reportlab 3.5 version
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
