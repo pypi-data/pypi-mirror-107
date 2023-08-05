@@ -1,0 +1,9 @@
+photorectify/__init__.py,sha256=h7qyjMLWYu8ptV6bKMRvyLgEmWm5mvVvz-Yrl1EF91g,269
+photorectify/__main__.py,sha256=f1c5misTq_hXHGWbAqF16JNrrjubdPAC3z3WX0hoU3g,14102
+photorectify/exiftool.py,sha256=AYGMcEo40Wi8wEfcZYCYvNFbkV58E51HLa1ebXyUzdU,12672
+photorectify/lensfun-db.xml,sha256=0SnCMSgMydIIfY7GsJi54JQ5AnZCpvpVVg3RxA0oosk,2028
+photorectify-1.1.1.dist-info/entry_points.txt,sha256=ypnl4q8TiqJLEKoL1w5lY7Feef6cvavHWzQgGLZVbfg,59
+photorectify-1.1.1.dist-info/LICENSE,sha256=JaTveo5vCZ_Ftrh2wmdvL-Jq7csW-sF7BpfNrns08ig,1091
+photorectify-1.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+photorectify-1.1.1.dist-info/METADATA,sha256=YTWvEX1xoaJqiCaK0uxrMOWgf-lpvapymYJYkWkfOdY,4024
+photorectify-1.1.1.dist-info/RECORD,,
