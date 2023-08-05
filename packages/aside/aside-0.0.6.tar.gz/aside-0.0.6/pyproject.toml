@@ -1,0 +1,94 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[tool.black]
+color = true
+target-version = ["py36"]
+verbose = true
+
+[tool.isort]
+color_output = true
+profile = "black"
+py_version = "36"
+skip_gitignore = true
+verbose = true
+
+[tool.pylint.master]
+fail-under = 5
+load-plugins = [
+    'pylint_pytest',
+]
+ignore-patterns = [
+    # Keep this list in sync with the contents of .gitignore
+    '.*\.egg-info',
+    '.*\.mo',
+    '\.cache',
+    '\.out',
+    '\.venv',
+    '__pycache__',
+    'build',
+]
+jobs = 0
+unsafe-load-any-extension = true
+
+[tool.pylint.format]
+max-line-length = "88"
+output-format = "colorized"
+reports = true
+
+[tool.pylint.messages_control]
+disable = [
+    # docstrings are checked by pydocstyle separately
+    "C0112", "C0114", "C0115", "C0116", "C0402", "C0403",
+    # black compatibility (noop in recent pylint versions)
+    "C0326", "C0330",
+    # import order is checked by isort
+    "C0411",
+    # allow "to do"/"fix me" comments without penalty
+    "W0511",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--color=yes",
+    "--cov-report=",
+    "--cov=aside",
+    "--import-mode=importlib",
+    "--junitxml=.out/pytest.xml",
+    "--strict-config",
+    "--strict-markers",
+    "--verbose",
+]
+cache_dir = ".cache/pytest"
+qt_api = "pyqt5"
+required_plugins = [
+    "pytest-cov",
+    "pytest-qt",
+]
+
+[tool.coverage.run]
+branch = true
+data_file = ".out/coverage.data"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
+fail_under = 50
+show_missing = true
+skip_covered = false
+skip_empty = true
+
+[tool.coverage.xml]
+output = ".out/coverage.xml"
+
+[tool.pydocstyle]
+convention = "google"
+add_select = [
+    # First line should be in imperative mood and end with a period.
+    "D400", "D401",
+    # First word of a docstring should not be "This".
+    "D404",
+]

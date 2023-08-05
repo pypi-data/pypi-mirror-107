@@ -1,0 +1,6 @@
+PyQt5
+attrs-strict
+setuptools
+
+[:python_version < "3.9"]
+importlib-resources
