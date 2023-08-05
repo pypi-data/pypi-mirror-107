@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rt_pie_lib"
+version = "0.1.11"
+description = "Real Rime PItch Estimator Library"
+authors = ["Kaspar Wolfisberg", "Luca Di Lanzo"]
+exclude = ["tmp_data", "rt_pie/serialized_models"]
+
+[tool.poetry.dependencies]
+python = "~3.7"
+numpy = "~1.19"
+mir_eval = "^0.6"
+scipy = "^1.6.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
