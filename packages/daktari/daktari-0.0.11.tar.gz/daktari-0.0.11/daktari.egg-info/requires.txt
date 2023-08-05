@@ -1,0 +1,6 @@
+ansicolors==1.1.8
+distro==1.5.0
+pyfiglet==0.7
+
+[:python_version < "3.7"]
+dataclasses==0.8
