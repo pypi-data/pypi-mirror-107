@@ -1,0 +1,16 @@
+stravatools/__init__.py,sha256=clN3TnyYyt5T_wUJLVBmutS2kYLLBET4JFB2QXnRm2Q,21
+stravatools/client.py,sha256=tla3Hfcd-j5KFBX8YtgPomZ_mBBBR7Egm9QIFStAmb8,5461
+stravatools/scraper.py,sha256=p-nc8dGGShWvLmC2AM861fv_04htpmlZmSeqyGD6Ycc,11368
+stravatools/_intern/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stravatools/_intern/tools.py,sha256=6sWQ_nvkO_NJitUWVTla8TE2iUg3KRFbnL9HdZLsAIA,1727
+stravatools/_intern/units.py,sha256=4bAd_Wgc3__lIRvsNy7zD-W81J-8r34-uuaHCGTjGn8,2418
+stravatools/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stravatools/cli/click_shell_plus.py,sha256=7ptizplOyWJW6ktcA-VggpROPyBocVcjGtjC_Dg6_1A,991
+stravatools/cli/commands.py,sha256=1bjoo-tnLjIvIwQD_RYyknLdRb96vtNakx9lCOokcIg,5350
+stravatools/cli/shell.py,sha256=IZOqzAB6Vq0fY9eU12BrtDBszIjJ00cvPSISkKcG1Cg,1109
+strava_tools-0.2.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+strava_tools-0.2.0.dist-info/METADATA,sha256=WDIN9CCvrGFktQe1RVRoqQNeDaZ7vAMXldfbU1DvZR0,3233
+strava_tools-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+strava_tools-0.2.0.dist-info/entry_points.txt,sha256=bbTSN83xWU_lWpNIptWyrLbo_yyYkGOGOGQ-ronDacI,61
+strava_tools-0.2.0.dist-info/top_level.txt,sha256=kPgrtzXCJauZSItIaO6NnEKWtHhs_MV09P_PECpxeYU,12
+strava_tools-0.2.0.dist-info/RECORD,,
