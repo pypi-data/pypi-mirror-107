@@ -1,0 +1,3 @@
+[console_scripts]
+twiget-cli = twiget_cli:main
+
