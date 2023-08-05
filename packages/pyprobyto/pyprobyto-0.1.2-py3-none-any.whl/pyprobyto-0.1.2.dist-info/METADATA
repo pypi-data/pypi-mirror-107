@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyprobyto
+Version: 0.1.2
+Summary: Sample Python Library
+Home-page: UNKNOWN
+Author: Probyto Data Science and Consulting Private Limited
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pycurl
+Requires-Dist: certifi
+Requires-Dist: urllib3
+Requires-Dist: numpy
+
+UNKNOWN
+
+
