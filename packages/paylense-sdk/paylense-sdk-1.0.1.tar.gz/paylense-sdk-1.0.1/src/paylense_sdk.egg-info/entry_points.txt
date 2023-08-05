@@ -1,0 +1,3 @@
+[console_scripts]
+paylense = paylense.cli:main
+

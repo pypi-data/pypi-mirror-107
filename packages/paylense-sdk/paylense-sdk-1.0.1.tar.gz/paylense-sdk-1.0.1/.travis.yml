@@ -1,0 +1,44 @@
+language: python
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+  - "$HOME/.pyenv"
+matrix:
+  include:
+  - os: linux
+    dist: trusty
+    sudo: false
+    env: TOXENV=flake8,coveralls
+    python: '3.6'
+  - os: linux
+    dist: trusty
+    sudo: false
+    python: '3.5'
+    env: TOXENV=py35-cover
+  - os: linux
+    dist: trusty
+    sudo: false
+    python: '3.6'
+    env: TOXENV=py36-cover
+  - os: linux
+    dist: xenial
+    sudo: required
+    python: '3.7'
+    env: TOXENV=py37-cover
+script:
+- pip install tox
+- tox
+install:
+- python setup.py install
+deploy:
+  provider: pypi
+  user: winopay
+  on:
+    tags: true
+  password:
+    secure: deploykey=
+after_success:
+- test $TRAVIS_BRANCH = "master" && .travis/semver.sh
+env:
+  global:
+    secure: key=
