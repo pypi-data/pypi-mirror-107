@@ -1,0 +1,15 @@
+easy_prime/__init__.py,sha256=cfAYoDZXb7KIqyBSAEQmOSBxaviNpYRd91_DTKtY48Y,284
+easy_prime/_sgRNA.py,sha256=Z9T1ZVBt9i9jb_m_sOc3zYhOTCmYEwjhH_Gm3uLugv4,21916
+easy_prime/_target_mutation.py,sha256=tNgRcH9LVrqwtvRbQnJsU_2o0S8bcTovgqB-JC4JHyc,13937
+easy_prime/utils.py,sha256=GaAdtMOTurVUKXDfUTVrq-14iD_HeP1BHSWlswTWuzo,17317
+easy_prime-1.1.8.data/scripts/easy_prime,sha256=yfieqkAvNOsYxDDzUIias1TlfJp2ifWSOfT8Jq0LWMQ,4115
+easy_prime-1.1.8.data/scripts/easy_prime_vis,sha256=danW0hhmHIASMZhXTdTKLeE4i_twZow98ZPq2P-HsI4,5401
+model/PE2_model_final.py,sha256=GV265dqH7dD623p0t4tX1K2g1MLH6LwnsJKe5sV--5Q,2283001
+model/PE3_model_final.py,sha256=h9IRuAuH41auLzhY6YuZMClV0ojUzfyQQQ1_vXGrQP0,188250
+model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_prime-1.1.8.dist-info/LICENSE,sha256=RHKhratmnAsoiUbqXGDUjCB45_xAqg6ZC5v9XwQWVOo,1066
+easy_prime-1.1.8.dist-info/METADATA,sha256=pbQb_JW-FBnWT_rpT2Z3qcF8nxIQlQhr4USnRpkIhQA,6378
+easy_prime-1.1.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+easy_prime-1.1.8.dist-info/top_level.txt,sha256=eSIx9zqqVYNdLRtVhT6Fj9QYr2bFHnedQ8QWFxvHwnU,22
+easy_prime-1.1.8.dist-info/RECORD,,
