@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: keys_management
+Version: 0.0.3
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Ofek Israel
+Author-email: ofek.israel@nielsen.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+KeysManagemets is a layer tool to ease the usage of application secret keys. 
+It allows to define multiple secret key,  from various sources if required, for each use case After keys definitions, the tool provides methods to support secret keys rotation when needed.
+
