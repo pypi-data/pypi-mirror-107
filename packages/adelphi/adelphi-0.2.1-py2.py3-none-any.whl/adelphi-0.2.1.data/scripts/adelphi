@@ -1,0 +1,257 @@
+#!python
+
+# Copyright DataStax, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import argparse
+import json
+import logging
+import os
+import os.path
+import sys
+from functools import partial
+
+try:
+    from tempfile import TemporaryDirectory
+except ImportError:
+    from backports.tempfile import TemporaryDirectory
+
+import click
+
+from adelphi.cql import CqlExporter
+from adelphi.exceptions import KeyspaceSelectionException, TableSelectionException
+from adelphi.gemini import GeminiExporter
+from adelphi.gh import build_github, build_origin_repo, build_branch, commit_schemas, build_pull_request
+from adelphi.nb import NbExporter, UnsupportedPrimaryKeyTypeException
+from adelphi.store import with_cluster
+
+# Exit codes
+KEYSPACE_SELECTION_EXCEPTION = 1
+TABLE_SELECTION_EXCEPTION = 2
+COLUMN_TYPE_EXCEPTION = 3
+OUTPUT_DOES_NOT_EXIST = 4
+OUTPUT_NOT_DIRECTORY = 5
+OUTPUT_NOT_WRITABLE = 6
+MUST_ANONYMIZE_SCHEMA = 7
+
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger('adelphi')
+
+
+# Final version of PyGithub with Python 2.x support includes a bug that appears when users
+# are part of a Github organization.  See https://github.com/datastax/adelphi/issues/70
+# for more detail
+#
+# Source below is Repository.create_fork from v1.45 + a fix for the bug referenced above.
+# See https://github.com/PyGithub/PyGithub/blob/v1.45/github/Repository.py#L2075-L2090 for the
+# base impl from v1.45.
+def patch_repo(repo):
+    log.info("Adding safe_create_fork function to github.Repository")
+    import six
+    from github import GithubObject, Repository
+    def safe_create_fork(self, organization=GithubObject.NotSet):
+        # TODO: I'm not sure we need to support the non-default string case here... maintaining
+        # it for now to preserve fidelity with the 1.45 impl
+        assert organization is GithubObject.NotSet or isinstance(
+            organization, (str, six.text_type)
+        ), organization
+        post_parameters = {}
+        if organization is not GithubObject.NotSet:
+            post_parameters["organization"] = organization
+        headers, data = self._requester.requestJsonAndCheck(
+            "POST", self.url + "/forks", input=post_parameters,
+        )
+        return Repository.Repository(self._requester, headers, data, completed=True)
+
+    import types
+    repo.safe_create_fork = types.MethodType(safe_create_fork, repo)
+
+
+# Note: click assumes a type of string and a required value of False unless explicitly specified
+@click.group()
+@click.option('--hosts', default='127.0.0.1', show_default=True, help='Comma-separated list of contact points')
+@click.option('--port', type=int, default=9042, show_default=True, help='Database RPC port')
+@click.option('--username', help='Database username')
+@click.option('--password', help='Database password')
+@click.option('--keyspaces',
+              help='Comma-separated list of keyspaces to include. If not specified all non-system keypaces will be included')
+@click.option('--rf', type=int, help='Replication factor to override original setting. Optional.')
+@click.option('--no-anonymize', help="Disable schema anonymization", is_flag=True)
+@click.option('--output-dir', help='Directory schema files should be written to. If not specified, it will write to stdout')
+@click.option('--purpose', help='Comments on the anticipated purpose of this schema.  Optional.')
+@click.option('--maturity', help="The maturity of this schema.  Sample values would include 'alpha', 'beta', 'dev', 'test' or 'prod'.  Optional.")
+@click.pass_context
+def export(ctx, hosts, port, username, password, keyspaces, rf, no_anonymize, output_dir, purpose, maturity):
+
+    ctx.ensure_object(dict)
+
+    # If output-dir is specified make sure it actually exists, is a directory and is writable
+    if output_dir is not None:
+        if not os.path.exists(output_dir):
+            log.error("Output directory " + output_dir + " does not exist")
+            exit(OUTPUT_DOES_NOT_EXIST)
+        if not os.path.isdir(output_dir):
+            log.error("Specified output directory " + output_dir + " exists but is not a directory")
+            exit(OUTPUT_NOT_DIRECTORY)
+        if not os.access(output_dir, os.W_OK):
+            log.error("Output directory " + output_dir + " exists but is not writable")
+            exit(OUTPUT_NOT_WRITABLE)
+
+    ctx.obj['hosts'] = hosts.split(',')
+    ctx.obj['port'] = port
+    ctx.obj['username'] = username
+    ctx.obj['password'] = password
+    ctx.obj['keyspace-names'] = keyspaces.split(',') if keyspaces is not None else None
+    ctx.obj['rf'] = rf
+    ctx.obj['anonymize'] = not no_anonymize
+    ctx.obj['output-dir'] = output_dir
+    ctx.obj['purpose'] = purpose
+    ctx.obj['maturity'] = maturity
+
+
+def build_exporter(exportclz, props):
+    def build_fn(cluster):
+        return exportclz(cluster, props)
+
+    return with_cluster(build_fn, **({k:props[k] for k in ["hosts", "port", "username", "password"]}))
+
+
+def export_keyspaces(props, exporter):
+    options = {'rf': props['rf']}
+    export_dir = props["output-dir"]
+
+    if export_dir is None:
+        print(exporter.export_all() if props["include-metadata"] else exporter.export_schema())
+    else:
+        def ks_fn(keyspace_obj, keyspace_id):
+            # Output filename should use the file-safe alphabet for b64 encoding
+            keyspace_dir_name = keyspace_id if props["anonymize"] else keyspace_obj.name
+            keyspace_dir = os.path.join(export_dir, keyspace_dir_name)
+            if not os.path.exists(keyspace_dir):
+                os.mkdir(keyspace_dir)
+            elif not os.path.isdir(keyspace_dir):
+                log.error("Specified output directory " + keyspace_dir + " exists but is not a directory")
+                exit(OUTPUT_NOT_DIRECTORY)
+            elif not os.access(keyspace_dir, os.W_OK):
+                log.error("Output directory " + keyspace_dir + " exists but is not writable")
+                exit(OUTPUT_NOT_WRITABLE)
+
+            with open(os.path.join(keyspace_dir, "schema"),'w') as schema_file:
+                log.info("Writing schema for keyspace " + keyspace_obj.name + " to file " + schema_file.name)
+                schema_file.write(exporter.export_schema(keyspace=keyspace_obj.name))
+
+            with open(os.path.join(keyspace_dir, "metadata.json"),'w') as metadata_file:
+                log.info("Writing metadata for keyspace " + keyspace_obj.name + " to file " + metadata_file.name)
+                metadata = exporter.export_metadata_dict()
+                metadata['keyspace_id'] = keyspace_id
+                metadata_file.write(json.dumps(metadata))
+
+        exporter.each_keyspace(ks_fn)
+
+
+# ============================ Command implementations ============================
+@export.command()
+@click.option('--no-metadata', help="Disable display of metadata when writing to standard out", is_flag=True)
+@click.pass_context
+def export_cql(ctx, no_metadata):
+    """Export a schema as raw CQL statements"""
+
+    ctx.obj["include-metadata"] = not no_metadata
+    if no_metadata and ctx.obj["output-dir"]:
+        log.info("Metadata is always persisted to a separate metadata file when writing to an output directory")
+
+    try:
+        exporter = build_exporter(CqlExporter, ctx.obj)
+        export_keyspaces(ctx.obj, exporter)
+    except KeyspaceSelectionException as exc:
+        log.info(exc.args[0])
+        exit(KEYSPACE_SELECTION_EXCEPTION)
+
+
+@export.command()
+@click.pass_context
+def export_gemini(ctx):
+    """Export a schema in a format suitable for use with the the Gemini data integrity test framework"""
+
+    ctx.obj["include-metadata"] = True
+
+    try:
+        exporter = build_exporter(GeminiExporter, ctx.obj)
+        export_keyspaces(ctx.obj, exporter)
+    except KeyspaceSelectionException as exc:
+        log.info(exc.args[0])
+        exit(KEYSPACE_SELECTION_EXCEPTION)
+
+
+@export.command()
+@click.option('--token', help='Personal access token for Github user')
+@click.pass_context
+def contribute(ctx, token):
+    """Contribute schemas to Adelphi"""
+
+    if not ctx.obj["anonymize"]:
+        log.error("All schemas contributed to Adelphi must be anonymized")
+        exit(MUST_ANONYMIZE_SCHEMA)
+
+    if ctx.obj["output-dir"]:
+        log.info("Output directory argument is ignored when contributing a schema to Adelphi")
+
+    gh = build_github(token)
+    origin_repo = build_origin_repo(gh)
+
+    with TemporaryDirectory() as tmpdir:
+        props = ctx.obj.copy()
+        props["output-dir"] = tmpdir
+
+        exporter = build_exporter(CqlExporter, props)
+        exporter.add_metadata("github_user", gh.get_user().login)
+        export_keyspaces(props, exporter)
+
+        if not sys.version_info[0] == 3:
+            patch_repo(origin_repo)
+            fork_repo = origin_repo.safe_create_fork()
+        else:
+            fork_repo = origin_repo.create_fork()
+        branch_name = build_branch(gh, fork_repo)
+        commit_schemas(gh, fork_repo, tmpdir, branch_name)
+        build_pull_request(gh, origin_repo, branch_name)
+
+
+@export.command()
+@click.option('--rampup-cycles', type=int, default=1000, help='Number of cycles to use for the nosqlbench rampup phase')
+@click.option('--main-cycles', type=int, default=1000, help='Number of cycles to use for the nosqlbench main phase')
+@click.pass_context
+def export_nb(ctx, rampup_cycles, main_cycles):
+    """Export a schema in a format suitable for use with the the nosqlbench performance test framework"""
+
+    ctx.obj["include-metadata"] = False
+    ctx.obj["rampup-cycles"] = rampup_cycles
+    ctx.obj["main-cycles"] = main_cycles
+
+    try:
+        exporter = build_exporter(NbExporter, ctx.obj)
+        export_keyspaces(ctx.obj, exporter)
+    except KeyspaceSelectionException as exc:
+        log.info(exc.args[0])
+        exit(KEYSPACE_SELECTION_EXCEPTION)
+    except TableSelectionException as exc:
+        log.info(exc.args[0])
+        exit(TABLE_SELECTION_EXCEPTION)
+    except UnsupportedPrimaryKeyTypeException as exc:
+        log.error(exc.args[0])
+        exit(COLUMN_TYPE_EXCEPTION)
+
+
+if __name__ == '__main__':
+    export(obj={}, auto_envvar_prefix="ADELPHI")
