@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "guap"
+version = "0.1.2"
+description = ""
+authors = ["Ulysse Bottello <ulysse@guap.ml>"]
+readme = "README.md"
+repository = "https://github.com/guap-ml/guap"
+license = "Apache-2.0"
+keywords = [
+  "Python",
+  "Machine Learning",
+  "Evaluation Metrics"
+]
+exclude = ["tests*", "doc*"]
+include = ["LICENSE"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+loguru = "^0.5.3"
+sklearn = "^0.0"
+numpy = "^1.20.2"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^2.11.1"
+tox = "^3.23.0"
+radon = "^4.5.0"
+cloc = "^0.2.5"
+black = "^20.8b1"
+isort = "^5.8.0"
+mypy = "^0.812"
+setuptools = "^54.1.2"
+hypothesis = "^6.8.1"
+twine = "^3.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
