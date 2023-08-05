@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyelas
+Version: 1.0.1
+Summary: These are the Python bindings for libelas by Andreas Geiger.
+Home-page: https://github.com/PieroV/PyElas
+Author: Pier Angelo Vendrame
+Author-email: vogliadifarniente@gmail.com
+License: GPLv3
+Project-URL: Original homepage, http://www.cvlibs.net/software/libelas/
+Project-URL: Paper, http://dx.doi.org/10.1007/978-3-642-19315-6_3
+Description: 
+        This package is the port to Python of libelas.
+        
+        It is a library for computing disparity maps of large images.
+        It was written by Andreas Geiger as a C++ library and MATLAB toolbox.
+        I wrote only the Python interface to use it in Python scripts.
+        
+        You can find the paper where the algorithm is described at
+        http://dx.doi.org/10.1007/978-3-642-19315-6_3.
+        
+Platform: Linux
+Platform: Windows
+Platform: Unix
+Platform: macOS
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.5
+Description-Content-Type: text/plain
