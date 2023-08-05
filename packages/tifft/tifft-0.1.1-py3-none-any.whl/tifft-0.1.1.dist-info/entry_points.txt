@@ -1,0 +1,3 @@
+[console_scripts]
+tifft = tifft.cli:main
+
