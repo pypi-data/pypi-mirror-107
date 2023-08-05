@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+canvas_cli/__init__.py
+canvas_cli/canvas_cli.py
+canvas_cli.egg-info/PKG-INFO
+canvas_cli.egg-info/SOURCES.txt
+canvas_cli.egg-info/dependency_links.txt
+canvas_cli.egg-info/entry_points.txt
+canvas_cli.egg-info/requires.txt
+canvas_cli.egg-info/top_level.txt

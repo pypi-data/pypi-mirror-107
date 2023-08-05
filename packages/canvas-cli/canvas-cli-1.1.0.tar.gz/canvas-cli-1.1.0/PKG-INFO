@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: canvas-cli
+Version: 1.1.0
+Summary: The Canvas CLI
+Home-page: https://github.com/canvas-medical/canvas-cli
+Author: Canvas Medical
+Author-email: engineering@canvasmedical.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/canvas-medical/canvas-cli/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
