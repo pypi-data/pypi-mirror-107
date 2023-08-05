@@ -1,0 +1,15 @@
+fast_online_packing/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+fast_online_packing/helper.py,sha256=e4l83R0YcIG4rSNpUUxIwCDvVGOL1Q4QyzsS383-g2k,768
+fast_online_packing/instance_generator.py,sha256=6G4qOx58Ew_zp3X1cL1VlyaypSa8AHT_U2olopxIDtc,5508
+fast_online_packing/mwu_max.py,sha256=2Ubr_JqCHzluJh3IUy_UB_oK7sq4-94utjDwfntMWA0,3099
+fast_online_packing/online_solver.py,sha256=Zh1XtkcSvuIcmTJq-aIoe9gnMonwYMYM5xasKsOp3zQ,10148
+fast_online_packing/packing_problem.py,sha256=USZ0Ixef2a6UBwMh_2MajBI4RFaRlmhAQD58OmQ3Bfc,9513
+fast_online_packing/offline_solvers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_online_packing/offline_solvers/base_solver.py,sha256=rinwBdOwqDVbN5oRachNEq2U6tlpqg-GXOVy53H_Arc,2660
+fast_online_packing/offline_solvers/google_knapsack_solver.py,sha256=QdU9kLce4PIpJ063uloOJAjdDdDTwkEj5DQ3qRSPWHU,6208
+fast_online_packing/offline_solvers/python_mip_solver.py,sha256=UBbr_L2qahdoJ7sunQU3gBhmHxpOoK8kwTGKu32TYFk,4670
+fast_online_packing-1.0.0.dist-info/LICENSE.txt,sha256=LJsRu8R_IGfyAcqNjRADsd-QfFZjtDIiD0Hfms-OUlg,1068
+fast_online_packing-1.0.0.dist-info/METADATA,sha256=o5tRJfQBim8C9L9zpPyibWbrtdjI07A_-TJqrLowGNc,6278
+fast_online_packing-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fast_online_packing-1.0.0.dist-info/top_level.txt,sha256=E7WfGXDzmMfBOracsl546Zi9epaIx-sVztRCJy6dw6c,20
+fast_online_packing-1.0.0.dist-info/RECORD,,
