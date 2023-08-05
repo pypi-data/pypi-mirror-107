@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: numberutilities
+Version: 1.0
+Summary: A tool to know if a numer is prime.
+Home-page: UNKNOWN
+Author: Cristina Galván
+Author-email: cristina.galvan.prieto@hotmail.com
+License: GNU GPLv3
+Keywords: prime mathematical operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+NUMBER UTILS
+==============
+
+Este es un ejemplo simple de un paquete Python. Este paquete contiene dos funciones para el cálculo de números primos. 
+La función isPrimoPy(num) devuelve si un número es primo o no. Esta función está escrita enteramente en Python.
+La función numPrimosPy(numero) devuelve una lista con los números primos desde 1 hasta el número introducido por el usuario. Esta función está escrita enteramente en Python.
+La función numPrimosR(num) imprime por consola todos los números primos desde 1 hasta el número introducido por el usuario. Función escrita con el paquete rpy2.
+This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of the License(at your option) any other version.
+
+
+
