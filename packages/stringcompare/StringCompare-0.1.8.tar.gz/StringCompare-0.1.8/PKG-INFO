@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stringcompare
+Version: 0.1.8
+Summary: This package contains functions for comparing strings, finding substrings (the first occurrence of the desired string) 
+License: .
+Author: Marsel Muzafarov, Ravil Nurgaliev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
