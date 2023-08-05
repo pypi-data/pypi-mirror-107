@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: example-pkg-wqb
+Version: 0.0.1
+Summary: 离线任务日志系统
+Home-page:  http://artifactory.jd.com/libs-py/rec/nrt/toolkit/offline/
+Author: wangqibo6
+Author-email: wangqibo6@jd.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. 
+
