@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: intelecy-chocolate
+Version: 0.1.4
+Summary: Intelecy fork of Chocolate
+Author: areeh
+Author-email: are.haartveit@intelecy.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dataset (>=0.8)
+Requires-Dist: filelock (>=2.0)
+Requires-Dist: ghalton (>=0.6)
+Requires-Dist: numpy (>=1.19,<2.0)
+Requires-Dist: pandas (>=0.19)
+Requires-Dist: psycopg2-binary (>=2.8.5)
+Requires-Dist: pymongo (>=3.4)
+Requires-Dist: scikit-learn (>=0.21)
+Requires-Dist: scipy (>=0.18)
+Requires-Dist: sphinx (>=1.5)
