@@ -1,0 +1,12 @@
+akernel/akernel.py,sha256=uW4z1j4KVJlkrorNZnahkunZjgBCItLh6WR3oSVoPOg,559
+akernel/connect.py,sha256=2EM-u_MQV2YoCjdmPnBgp4_JoequKcrhEi6sI2DuIVI,653
+akernel/kernel.py,sha256=uv2VK0im5YoceSEsw6ejyrWYe44FDt2axOVYyhMCreU,4036
+akernel/kernelspec.py,sha256=JxnIV3S0FkRmNMO8VkE5lgw-bycx8X7ZB72P2C7aNz8,516
+akernel/message.py,sha256=3Odarbxz_cE_ERTpdEpLeFuna6BGKCygm0UBLlH9xTo,3130
+akernel/quenelles.py,sha256=uW4z1j4KVJlkrorNZnahkunZjgBCItLh6WR3oSVoPOg,559
+akernel-0.0.2.dist-info/LICENSE,sha256=D4RG-56mwADojKq7mjLm37ldh6SNFelKvKIEM1x1FmY,1081
+akernel-0.0.2.dist-info/METADATA,sha256=QmMU53nb-3Dk8Ry6Ql1V6X6ZGzuPpGJDiIbnuDOu7rs,499
+akernel-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+akernel-0.0.2.dist-info/entry_points.txt,sha256=mR3QY8zSSRcTSjGeKfcZxr12Q76voZx5pceEHcdLdm0,49
+akernel-0.0.2.dist-info/top_level.txt,sha256=LsN_Cmr_Dsqa9IYZjMnpRVpMKOPhtOYLvTXXuiHnxr4,8
+akernel-0.0.2.dist-info/RECORD,,
