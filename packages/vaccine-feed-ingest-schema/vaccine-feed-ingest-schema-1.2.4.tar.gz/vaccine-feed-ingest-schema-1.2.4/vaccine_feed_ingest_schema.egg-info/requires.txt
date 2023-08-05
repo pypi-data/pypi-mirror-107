@@ -1,0 +1,10 @@
+pydantic[email]
+
+[lint]
+flake8
+black
+mypy
+isort
+
+[test]
+pytest
