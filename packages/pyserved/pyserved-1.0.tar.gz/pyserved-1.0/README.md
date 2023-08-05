@@ -1,0 +1,152 @@
+# Pyserved 1.0
+
+## Made by Shaurya Pratap Singh
+
+Transfer files from devices the quickest way possible.
+By Shaurya Pratap Singh 2021 | MIT Licence
+
+## Info
+
+This package is used to send files over a network server using sockets. The maximum size of file is 100 mbs.
+
+## How does it work?
+
+So this package comes with 2 cli commands pyserved and pyserved-c. The "pyserved" command is for starting up the server which will run on the reciever's server and pyserved-c is for the client to send the file to the server.
+
+## Installation
+
+```
+$ pip install pyserved
+```
+
+## Guide
+
+So you must have 2 computers to do this , and one sample file to transfer between the computers.
+
+### Server
+
+So in 1 computer you must run this command to start the server
+
+```
+$ pyserved
+```
+
+and by executing this command you will get the following results:
+
+```
+$ pyserved
+______________________________________________________
+
+You can find out the ip address by typing
+
+ $ ifconfig en1
+
+ or
+
+ $ ifconfig en0
+
+ or you can search google for it.
+
+
+Server HOST on which you want to run:
+PORT:
+```
+
+After filling out the server host and port you will see the following:
+
+```
+$ pyserved
+______________________________________________________
+
+You can find out the ip address by typing
+
+ $ ifconfig en1
+
+ or
+
+ $ ifconfig en0
+
+ or you can search google for it.
+
+
+Server HOST on which you want to run: 192.168.1.20
+PORT: 8089
+______________________________________________________
+[STARTING] SERVER is starting on 192.168.1.20:8089
+[RUNNING] Server is succesfully running....
+[RUNNING] The files which will be sent to you will be saved on /Users/{user}/pyserved directory.
+
+```
+
+So when you run this command the server will start the files which will be sent to you will be saved on /Users/{user}/pyserved directory.
+
+### Client
+
+While the server is running go on to the another computer and execute <s>order 66</s> this command:
+
+```
+$ pyserved-c
+```
+
+you will see this:
+
+```
+$ pyserved-c
+
+______________________________________________________
+
+Pyserved CLI Client
+
+Enter the host and port in the fields below.
+Server HOST:
+
+
+```
+
+So enter the host and port on which the server is running on.
+
+```
+$ pyserved-c
+______________________________________________________
+
+Pyserved CLI Client
+
+Enter the host and port in the fields below.
+Server HOST: 192.168.1.20
+PORT: 8089
+Now enter the path of file which you want to send
+File path:
+```
+
+Now it is asking for the path of the file which you want to send, so pick up any file which size is lower than 100mb and utf-8 encoded. (like .txt, .json, .py, .md, .ino, ipynb etc.)
+
+```
+$ pyserved-c
+______________________________________________________
+
+Pyserved CLI Client
+
+Enter the host and port in the fields below.
+Server HOST: 192.168.1.20
+PORT: 8089
+Now enter the path of file which you want to send
+File path:/Users/username/Desktop/opensource/anit/sockets/setup.py
+
+______________________________________________________
+```
+
+So after you enter the filepath go to the computer in which the server is running on and open Finder, go to /Users/username/pyserved, here you will see the copied file,initially with the name "copiedFileXXXX.filetype", if you open it will be the same file!
+
+## Update 0.9
+
+Fixed directory creation error.
+
+## Licence
+
+This project is licensed under the MIT license.The MIT license gives users express permission to reuse code for any purpose, sometimes even if code is part of proprietary software. As long as users include the original copy of the MIT license in their distribution, they can make any changes or modifications to the code to suit their own needs.
+
+#### Dont hesitate the make this code better!
+
+#### © Shaurya Pratap Singh 2021
+
+#### Huge thanks to my dad for inspiration!
