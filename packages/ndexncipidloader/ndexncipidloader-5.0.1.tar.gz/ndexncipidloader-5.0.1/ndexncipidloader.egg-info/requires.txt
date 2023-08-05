@@ -1,0 +1,7 @@
+ndex2<4.0.0,>=3.4.0
+ndexutil<1.0.0,>=0.13.0
+biothings_client
+ftpretty
+requests
+pandas
+py4cytoscape
