@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+OxidationNumberCalculator/OxidationNumber.py
+OxidationNumberCalculator/__init__.py
+OxidationNumberCalculator.egg-info/PKG-INFO
+OxidationNumberCalculator.egg-info/SOURCES.txt
+OxidationNumberCalculator.egg-info/dependency_links.txt
+OxidationNumberCalculator.egg-info/requires.txt
+OxidationNumberCalculator.egg-info/top_level.txt
