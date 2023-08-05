@@ -1,0 +1,10 @@
+peewee>=3.14.4
+
+[asyncpg]
+aiopg>=0.14.0
+
+[tormysql]
+tormysql>=0.3.8
+
+[tornado]
+tornado>=5.0
