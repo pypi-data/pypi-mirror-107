@@ -1,0 +1,8 @@
+LICENSE,sha256=a3Acd56hFSLGsoz82xRkkzT5hpUGkVhiPnjARBj70xM,11337
+guap/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+guap/metrics/__init__.py,sha256=rs5qJaHVWoKDjCii78XAw_O2werY3r6OXqMlE271wyQ,85
+guap/metrics/classification.py,sha256=0nLnhUNpxjjxF1OXShSHxp4kzCHcF4rgmeI1PjDe4_M,1997
+guap-0.1.3.dist-info/LICENSE,sha256=a3Acd56hFSLGsoz82xRkkzT5hpUGkVhiPnjARBj70xM,11337
+guap-0.1.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+guap-0.1.3.dist-info/METADATA,sha256=f1uT49idZ7IFetP30oAVWsBIgJlqZ1m4xNSSZjS9z2U,3860
+guap-0.1.3.dist-info/RECORD,,
