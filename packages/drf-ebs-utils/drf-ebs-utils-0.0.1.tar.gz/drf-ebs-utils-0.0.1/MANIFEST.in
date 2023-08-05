@@ -1,0 +1,21 @@
+include *.example
+include *.lock
+include Pipfile
+recursive-include config *.py
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include venv *.8
+recursive-include venv *.cfg
+recursive-include venv *.csh
+recursive-include venv *.exe
+recursive-include venv *.fish
+recursive-include venv *.pem
+recursive-include venv *.ps1
+recursive-include venv *.pth
+recursive-include venv *.py
+recursive-include venv *.pyc
+recursive-include venv *.tmpl
+recursive-include venv *.txt
+recursive-include venv *.typed
+recursive-include venv *.whl
+recursive-include venv *.xml
