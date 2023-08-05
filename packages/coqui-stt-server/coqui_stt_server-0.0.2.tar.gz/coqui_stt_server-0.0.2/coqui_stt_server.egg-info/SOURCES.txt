@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+coqui_stt_server/__init__.py
+coqui_stt_server/__main__.py
+coqui_stt_server/server.py
+coqui_stt_server.egg-info/PKG-INFO
+coqui_stt_server.egg-info/SOURCES.txt
+coqui_stt_server.egg-info/dependency_links.txt
+coqui_stt_server.egg-info/entry_points.txt
+coqui_stt_server.egg-info/requires.txt
+coqui_stt_server.egg-info/top_level.txt
