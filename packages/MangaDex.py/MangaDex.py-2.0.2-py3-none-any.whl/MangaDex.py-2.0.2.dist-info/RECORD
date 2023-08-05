@@ -1,0 +1,15 @@
+MangaDexPy/__init__.py,sha256=7XQWCBhBflM6uLbpHKuYcxPyDPidGSk31Cz5rtfnKv0,10422
+MangaDexPy/author.py,sha256=aYv2zZYdMMXk0YsXR321bqtQ3vpKBBeIK2o8MbUqFv0,581
+MangaDexPy/chapter.py,sha256=Cx1uFsWMqboo2_2Av_oW9LUf8M7ARFg2weOMhvfNmsY,1272
+MangaDexPy/cover.py,sha256=oa0FjtwSf0qAwmBgElkZ3lKkx1HoJ-3syVhFRKUtH6Y,803
+MangaDexPy/downloader.py,sha256=TOYTvewXMHeBt1qsdm-_SWi1g7Rwvh8BUfkgv9tIwAA,1899
+MangaDexPy/group.py,sha256=HDDb4ReviYUgft1Piqk7SEJ2fiDCUaplAnZ8ocRd6cQ,691
+MangaDexPy/manga.py,sha256=gplm32YI1MALfwZN5c5oq3rCFercLqYXtbeqJu_ozuo,2099
+MangaDexPy/network.py,sha256=qfnfS4DVMf3plipIqqfXTrZ0AEnkCLwt8KRc08ls8Ng,741
+MangaDexPy/search.py,sha256=I5_TrAkLPpaXig2YzQEYZyZY-zRWfqVwz-TGk1S0Pas,609
+MangaDexPy/user.py,sha256=67Bw6Je2PORawaTKqApxgRKvVO8esxi4jT1LPtAP2Ko,247
+MangaDex.py-2.0.2.dist-info/LICENSE.md,sha256=WNXWCXwYbKgjiH3T0W-zSk13vJNUS166urNl9KBnwDw,1078
+MangaDex.py-2.0.2.dist-info/METADATA,sha256=SRvqkrCc5UtW9S8K_XtwPFURI-BB8uVY3Tauy782uU0,3127
+MangaDex.py-2.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MangaDex.py-2.0.2.dist-info/top_level.txt,sha256=QYuk5Wa_XTDhCay1mSrdJHKAj0n3iY6QSIpwKxI8Aak,11
+MangaDex.py-2.0.2.dist-info/RECORD,,
