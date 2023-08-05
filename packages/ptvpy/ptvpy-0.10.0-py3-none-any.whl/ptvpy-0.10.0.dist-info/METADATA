@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ptvpy
+Version: 0.10.0
+Summary: A command line tool and library for particle tracking velocimetry.
+Home-page: https://gitlab.com/tud-mst/ptvpy
+Author: PtvPy developers
+License: BSD 3-Clause License
+Project-URL: Documentation, https://tud-mst.gitlab.io/ptvpy
+Project-URL: Issue tracker, https://gitlab.com/tud-mst/ptvpy/issues
+Keywords: particle tracking velocimetry,PTV
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: cerberus
+Requires-Dist: click (>=8.0.0)
+Requires-Dist: h5py
+Requires-Dist: imageio
+Requires-Dist: matplotlib
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: setuptools-scm
+Requires-Dist: scipy
+Requires-Dist: seaborn (>=0.11)
+Requires-Dist: tifffile
+Requires-Dist: toml
+Requires-Dist: trackpy
+Provides-Extra: dev
+Requires-Dist: black (>=20.8b1) ; extra == 'dev'
+Requires-Dist: docutils (==0.16) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: sphinx (~=2.4) ; extra == 'dev'
+Requires-Dist: numpydoc (==0.9.2) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+
+A free and open-source command line tool and Python library for
+`particle tracking velocimetry`_ enabling a flexible workflow with reproducible
+and reliable results.
+PtvPy depends on and extends functionality from the excellent library trackpy_ and
+provides a periphery to visualize, analyze and export the data involved.
+
+It is developed at the `Chair of Measurement & Sensor System Technique`_ at the TU
+Dresden to facilitate data analysis.
+It was eventually published in 2019 as free and open-source software.
+
+.. _particle tracking velocimetry: https://en.wikipedia.org/wiki/Particle_tracking_velocimetry
+.. _trackpy: https://soft-matter.github.io/trackpy/
+.. _Chair of Measurement & Sensor System Technique: https://tu-dresden.de/ing/elektrotechnik/iee/mst
+
