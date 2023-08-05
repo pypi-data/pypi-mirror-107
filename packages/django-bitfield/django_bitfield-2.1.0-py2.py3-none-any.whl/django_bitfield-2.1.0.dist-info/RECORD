@@ -1,0 +1,17 @@
+bitfield/__init__.py,sha256=0LbFNQvBAvi_w0vSG49wHzjbEnYfoNVo2tZHWr0lw_g,236
+bitfield/admin.py,sha256=cWom5IFACgb9pIeD7bcvRBSYiCIMZEIKoPI46uuvviI,1713
+bitfield/apps.py,sha256=YMxe_QXawj_T5oXh3JVcPmiiSx4zS9pVMShsnnkjVys,125
+bitfield/compat.py,sha256=p-D9c_umvxMZkxFe2ksMREsIxEcNFkfjwjKKkWO-3nw,154
+bitfield/forms.py,sha256=OJGo_hI2onH9prXxTSEH6XtRQiOguJanaPrWVtddEnY,2200
+bitfield/models.py,sha256=3fC6bgy7IYcsYwfe3C90z5-8MEp_oWdmzq6zw6Lphn8,8204
+bitfield/query.py,sha256=-ZecIyZS6DRYKeVWJu2z_lT_9sYiBxXDXAXyBbJr1SA,1910
+bitfield/types.py,sha256=iFNiAvnfKg3bJRa9JJam2SkyL_WgeQZdcn3lE3eG_Pc,7257
+bitfield/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitfield/tests/forms.py,sha256=MsZKbDQrtUstLS7j61uDPTeGnG1hz6oEf7KNwIJcA-k,242
+bitfield/tests/models.py,sha256=e6jo8maGNIqxxJP1RfxClUOKsoN4EXw_4miJgdKx-v0,634
+bitfield/tests/tests.py,sha256=vhxR1jzhR5Jm3--P7wdbt4rezKbrrE7iW4XQF78T0v0,18390
+django_bitfield-2.1.0.dist-info/LICENSE,sha256=0T3jNSJW3kDhCeUbg4nbdCZmWSm5YeLZOkclBMjoPVo,10829
+django_bitfield-2.1.0.dist-info/METADATA,sha256=g-KrUxbIaO5dcAa6cvG3K-5TF3N8wXbyNla6EQYWxI0,4647
+django_bitfield-2.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_bitfield-2.1.0.dist-info/top_level.txt,sha256=8aSflh21fcqYyfDe1DFi5khpa6F7Jc_phUJvWzlhZcU,9
+django_bitfield-2.1.0.dist-info/RECORD,,
