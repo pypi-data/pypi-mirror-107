@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vcue-repo
+Version: 0.0.1
+Summary: basic functionality package for handling data
+Home-page: https://github.com/losDaniel/VCUErepo.git
+Author: Carlos Valcarcel
+Author-email: losdaniel@berkeley.edu
+License: unlicensed
+Keywords: pandas data plotly scrape
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: bs4
+
+# VCUE Repo
+
+this file is for testing
+
