@@ -1,0 +1,13 @@
+awsSchema/S3.py,sha256=NCCeYxAiYUhT_u_Q6Jysb6_N9fptuF3M_B_Teqj4URc,935
+awsSchema/__init__.py,sha256=XJ5NZRv5ahaSlYm7_PUNTixULma76xIxwxi2Yy6Eb8w,23
+awsSchema/_nbdev.py,sha256=WfnRRaPzk9tu_T8qYBhgXITNPEWZ9Kck-tCyc3BX3t4,647
+awsSchema/apigateway.py,sha256=6w9XPAc_tB-JA5-jehYNsX5w7t_OfOaV7VdcCo-5sm8,4509
+awsSchema/cloudfront.py,sha256=GniNy5He28DtdLSHgCzCQN3vPy0s-KRS_zNk8p8yUWk,4145
+awsSchema/cloudfrontSchema.py,sha256=7GhfDTJXSoVjI7SsmQsyfoBvcMEVb9EFoe2ua-egxEk,102
+awsSchema/dynamodb.py,sha256=94itxdryejy1PgzkH8t-VnbvweHZlMh5NnyqvOiv5EY,244
+awsSchema-0.0.27.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+awsSchema-0.0.27.dist-info/METADATA,sha256=GNrMv4VIkLY5NJcI1py4bGYZHE69nwabHNACb4PrFa0,6951
+awsSchema-0.0.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+awsSchema-0.0.27.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+awsSchema-0.0.27.dist-info/top_level.txt,sha256=P0vPTRm4cDu0XT_nWhTvOphOrfmKkgUuMGXGL0LsLjM,10
+awsSchema-0.0.27.dist-info/RECORD,,
