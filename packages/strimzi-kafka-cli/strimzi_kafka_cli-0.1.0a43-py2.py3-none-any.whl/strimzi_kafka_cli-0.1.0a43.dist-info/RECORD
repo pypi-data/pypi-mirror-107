@@ -1,0 +1,16 @@
+kfk/commons.py,sha256=OOP7eHOgFjJpVeAeOBxxQcT5iTFCYLF1dg_358iUOcw,5313
+kfk/config.py,sha256=jbADR2CDiSVrymKJLvXxKWMjjuKz4HF5DCyEXF-M7NI,1914
+kfk/constants.py,sha256=ZHDMugwKIQgOX0MpGjXE7auXx8LPdBm-67TwbYuBwA0,494
+kfk/kubectl_command_builder.py,sha256=a6YTE50bAdsxKMme212UsfXGpqSwXkRNfeHZ006b7-k,2675
+kfk/main.py,sha256=11q_JJjJm2yE5KrUyCiG0MexiPFvOYOdX43xUZNau-o,423
+kfk/messages.py,sha256=B4GUVGqE8pVaHDnZbxtp7otyLRs4_HgB854XFqA0IV0,225
+kfk/option_extensions.py,sha256=IZpZP4U5bfsviFwZrJVq2YaSnsIZzvKABDUb1BprsXo,2052
+kfk/setup.py,sha256=dBN7nLbawG4Ll03v7kH4j_bvcTOiJpBiJbkW6gmpg7s,2208
+kfk/utils.py,sha256=k8CXQlPHxyfo3PMrKTUV5M8A_d0zgh-ao131i5VSUw0,911
+strimzi_kafka_cli-0.1.0a43.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strimzi_kafka_cli-0.1.0a43.dist-info/METADATA,sha256=iOUf9Q5q63NFLF2QESUXEFZMnA6_AIREaVkqa3Kp_-o,5828
+strimzi_kafka_cli-0.1.0a43.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+strimzi_kafka_cli-0.1.0a43.dist-info/entry_points.txt,sha256=TVZ-xBB0lYEDvd9hQhojVciSrredu5rOkBopblqSpn8,38
+strimzi_kafka_cli-0.1.0a43.dist-info/top_level.txt,sha256=qTCFbXF3QupIS44C87cVCv-JCccKRmsncri_UCJA1-M,4
+strimzi_kafka_cli-0.1.0a43.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+strimzi_kafka_cli-0.1.0a43.dist-info/RECORD,,
