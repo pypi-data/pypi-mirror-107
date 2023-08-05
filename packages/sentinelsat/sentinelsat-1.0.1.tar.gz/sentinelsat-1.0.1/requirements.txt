@@ -1,0 +1,6 @@
+requests
+click
+html2text
+geojson >= 2
+tqdm >= 4.27
+geomet
