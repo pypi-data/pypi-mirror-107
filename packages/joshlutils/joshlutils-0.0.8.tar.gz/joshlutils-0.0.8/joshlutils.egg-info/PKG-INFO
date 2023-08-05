@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: joshlutils
+Version: 0.0.8
+Summary: A simple utility package for various tasks I commonly perform
+Home-page: https://github.com/JoshLoecker/utils
+Author: Josh Loecker
+Author-email: joshloecker@icloud.com
+License: MIT
+Download-URL: https://github.com/JoshLoecker/utils/archive/refs/tags/0.0.8.tar.gz
+Description: This is a simple utilities package for common tasks I use
+        
+Keywords: Python,Python 3,Email
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
