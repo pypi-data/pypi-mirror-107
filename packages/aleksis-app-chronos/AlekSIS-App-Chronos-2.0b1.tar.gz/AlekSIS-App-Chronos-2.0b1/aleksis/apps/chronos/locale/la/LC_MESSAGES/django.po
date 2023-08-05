@@ -1,0 +1,584 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 21:05+0200\n"
+"PO-Revision-Date: 2020-08-23 13:49+0000\n"
+"Last-Translator: Jonathan Weth <teckids@jonathanweth.de>\n"
+"Language-Team: Latin <https://translate.edugit.org/projects/aleksis/aleksis-app-chronos/la/>\n"
+"Language: la\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1.1\n"
+
+#: aleksis/apps/chronos/forms.py:29
+msgid "Options for timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/menus.py:6
+msgid "Timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/menus.py:16
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:11
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:18
+msgid "My timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/menus.py:27
+#: aleksis/apps/chronos/templates/chronos/all.html:11
+#: aleksis/apps/chronos/templates/chronos/all.html:12
+msgid "All timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/menus.py:38
+msgid "Daily lessons"
+msgstr ""
+
+#: aleksis/apps/chronos/menus.py:49
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:11
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:17
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:12
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:17
+msgid "Substitutions"
+msgstr ""
+
+#: aleksis/apps/chronos/mixins.py:25
+msgid "Linked validity range"
+msgstr ""
+
+#: aleksis/apps/chronos/model_extensions.py:133
+msgid "Show announcement in timetable views?"
+msgstr ""
+
+#: aleksis/apps/chronos/model_extensions.py:141
+msgid "Can view group timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/model_extensions.py:144
+msgid "Can view person timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:71
+msgid "School term"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:74 aleksis/apps/chronos/models.py:591
+msgid "Name"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:76 aleksis/apps/chronos/models.py:641
+#: aleksis/apps/chronos/models.py:711 aleksis/apps/chronos/models.py:913
+msgid "Start date"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:77 aleksis/apps/chronos/models.py:642
+#: aleksis/apps/chronos/models.py:712 aleksis/apps/chronos/models.py:914
+msgid "End date"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:96
+msgid "The start date must be earlier than the end date."
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:103
+msgid "The validity range must be within the school term."
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:110
+msgid "There is already a validity range for this time or a part of this time."
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:117
+msgid "Validity range"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:118
+msgid "Validity ranges"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:130
+msgid "Week day"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:132
+msgid "Number of period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:134
+msgid "Start time"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:135
+msgid "End time"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:303 aleksis/apps/chronos/models.py:449
+#: aleksis/apps/chronos/models.py:1027
+msgid "Time period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:304
+msgid "Time periods"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:308 aleksis/apps/chronos/models.py:324
+#: aleksis/apps/chronos/models.py:590 aleksis/apps/chronos/models.py:756
+#: aleksis/apps/chronos/models.py:773
+msgid "Short name"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:309 aleksis/apps/chronos/models.py:325
+#: aleksis/apps/chronos/models.py:757 aleksis/apps/chronos/models.py:774
+msgid "Long name"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:311
+msgid "Foreground colour"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:312
+msgid "Background colour"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:319 aleksis/apps/chronos/models.py:342
+#: aleksis/apps/chronos/models.py:392 aleksis/apps/chronos/models.py:1034
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:46
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:29
+msgid "Subject"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:320
+msgid "Subjects"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:334
+msgid "Can view room timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:336 aleksis/apps/chronos/models.py:397
+#: aleksis/apps/chronos/models.py:453 aleksis/apps/chronos/models.py:638
+#: aleksis/apps/chronos/models.py:1043
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:47
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:30
+msgid "Room"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:337 aleksis/apps/chronos/models.py:927
+#: aleksis/apps/chronos/templates/chronos/all.html:39
+msgid "Rooms"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:345 aleksis/apps/chronos/models.py:395
+#: aleksis/apps/chronos/models.py:929 aleksis/apps/chronos/models.py:1040
+#: aleksis/apps/chronos/tables.py:35
+#: aleksis/apps/chronos/templates/chronos/all.html:17
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:28
+msgid "Teachers"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:348
+msgid "Periods"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:350 aleksis/apps/chronos/models.py:926
+#: aleksis/apps/chronos/models.py:1037 aleksis/apps/chronos/tables.py:34
+#: aleksis/apps/chronos/templates/chronos/all.html:28
+msgid "Groups"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:372 aleksis/apps/chronos/models.py:446
+#: aleksis/apps/chronos/models.py:678
+msgid "Lesson"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:373
+#: aleksis/apps/chronos/templates/chronos/lessons_day.html:9
+#: aleksis/apps/chronos/templates/chronos/lessons_day.html:19
+msgid "Lessons"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:379 aleksis/apps/chronos/models.py:1024
+msgid "Week"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:380 aleksis/apps/chronos/models.py:1025
+msgid "Year"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:383 aleksis/apps/chronos/models.py:546
+msgid "Lesson period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:399
+msgid "Cancelled?"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:401
+msgid "Cancelled for teachers?"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:404 aleksis/apps/chronos/models.py:657
+#: aleksis/apps/chronos/models.py:698 aleksis/apps/chronos/models.py:1046
+msgid "Comment"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:408
+msgid "Lessons can only be either substituted or cancelled."
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:436
+msgid "Lesson substitution"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:437
+msgid "Lesson substitutions"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:547
+msgid "Lesson periods"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:585
+msgid "Timetable widget"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:586
+msgid "Timetable widgets"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:600 aleksis/apps/chronos/models.py:613
+msgid "Absence reason"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:601
+msgid "Absence reasons"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:622 aleksis/apps/chronos/models.py:844
+#: aleksis/apps/chronos/models.py:890
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:45
+msgid "Teacher"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:630
+msgid "Group"
+msgstr "Grex"
+
+#: aleksis/apps/chronos/models.py:646 aleksis/apps/chronos/models.py:685
+msgid "Start period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:653 aleksis/apps/chronos/models.py:692
+msgid "End period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:667
+msgid "Unknown absence"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:672
+msgid "Absence"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:673
+msgid "Absences"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:681
+msgid "Date of exam"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:697 aleksis/apps/chronos/models.py:710
+#: aleksis/apps/chronos/models.py:911
+msgid "Title"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:703
+msgid "Exam"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:704
+msgid "Exams"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:713
+msgid "Comments"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:751
+msgid "Holiday"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:752
+msgid "Holidays"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:766 aleksis/apps/chronos/models.py:837
+msgid "Supervision area"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:767
+msgid "Supervision areas"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:779
+msgid "Time period after break starts"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:787
+msgid "Time period before break ends"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:827 aleksis/apps/chronos/models.py:841
+msgid "Break"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:828
+msgid "Breaks"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:875 aleksis/apps/chronos/models.py:884
+#: aleksis/apps/chronos/templates/chronos/partials/subs/subject.html:23
+#: aleksis/apps/chronos/templates/chronos/partials/supervision.html:15
+msgid "Supervision"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:876
+msgid "Supervisions"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:882
+msgid "Date"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:902
+msgid "Supervision substitution"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:903
+msgid "Supervision substitutions"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:919
+msgid "Start time period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:923
+msgid "End time period"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:936
+#, python-brace-format
+msgid "Event {self.pk}"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1013
+#: aleksis/apps/chronos/templates/chronos/partials/subs/subject.html:27
+msgid "Event"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1014
+msgid "Events"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1064
+msgid "Extra lesson"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1065
+msgid "Extra lessons"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1073
+msgid "Can view all room timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1074
+msgid "Can view all group timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1075
+msgid "Can view all person timetables"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1076
+msgid "Can view timetable overview"
+msgstr ""
+
+#: aleksis/apps/chronos/models.py:1077
+msgid "Can view all lessons per day"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:8
+msgid "Chronos"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:16
+msgid "Use parent groups in timetable views"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:18
+msgid "If an lesson or substitution has only one group and this group has parent groups, show the parent groups instead of the original group."
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:29
+msgid "Shorten groups in timetable views"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:30
+msgid "If there are more groups than the set limit, they will be collapsed."
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:38
+msgid "Limit of groups for shortening of groups"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:40
+msgid "If an user activates shortening of groups,they will be collapsed if there are more groups than this limit."
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:50
+msgid "Number of days shown on substitutions print view"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:58
+msgid "Show header box in substitution views"
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:59
+msgid "The header box shows affected teachers/groups."
+msgstr ""
+
+#: aleksis/apps/chronos/preferences.py:68
+msgid "Show parent groups in header box in substitution views instead of original groups"
+msgstr ""
+
+#: aleksis/apps/chronos/tables.py:41
+msgid "Substitution"
+msgstr ""
+
+#: aleksis/apps/chronos/tables.py:43
+msgid "Manage substitution"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:6
+msgid "Edit substitution."
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:7
+msgid "Edit substitution"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:20
+msgid "Delete"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:19
+#: aleksis/apps/chronos/templates/chronos/timetable.html:49
+msgid "SMART PLAN"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:22
+msgid "Show week timetable for"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:10
+msgid "Absent teachers"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:22
+msgid "Absent groups"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:34
+msgid "Affected teachers"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:46
+msgid "Affected groups"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/subs/badge.html:4
+msgid "Cancelled"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/subs/badge.html:6
+msgid "Cancelled for teachers"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/today.html:2
+msgid "Today"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:14
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:25
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:36
+msgid "CW"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:48
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:31
+msgid "Notes"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:56
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:41
+msgid "No substitutions available."
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:11
+msgid "Print: Substitutions"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:11
+#: aleksis/apps/chronos/templates/chronos/timetable.html:23
+#: aleksis/apps/chronos/templates/chronos/timetable_print.html:11
+msgid "Timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:28
+msgid "Group teachers:"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:54
+msgid "Show regular timetable"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:66
+msgid "Show SMART PLAN"
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:8
+#, python-format
+msgid ""
+"\n"
+"        My timetable for %(day)s\n"
+"      "
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:19
+msgid ""
+"\n"
+"              There is no timetable linked to your person.\n"
+"            "
+msgstr ""
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:29
+msgid "Go to smart plan"
+msgstr ""
+
+#: aleksis/apps/chronos/views.py:264
+msgid "The substitution has been saved."
+msgstr ""
+
+#: aleksis/apps/chronos/views.py:285
+msgid "The substitution has been deleted."
+msgstr ""
