@@ -1,0 +1,3 @@
+[console_scripts]
+pyrezfix = pyrezfix.command_line:main
+
