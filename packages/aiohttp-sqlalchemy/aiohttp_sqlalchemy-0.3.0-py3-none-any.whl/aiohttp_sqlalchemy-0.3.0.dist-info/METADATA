@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: aiohttp-sqlalchemy
+Version: 0.3.0
+Summary: SQLAlchemy 1.4 / 2.0 support for aiohttp.
+Home-page: https://github.com/ri-gilfanov/aiohttp-sqlalchemy
+License: BSD-3-Clause
+Keywords: aiohttp,sqlalchemy
+Author: Ruslan Ilyasovich Gilfanov
+Author-email: ri.gilfanov@yandex.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: SQLAlchemy (>=1.4.15,<2.0.0)
+Requires-Dist: aiohttp (>=3.7.4.post0,<4.0.0)
+Project-URL: Documentation, https://aiohttp-sqlalchemy.readthedocs.io/
+Project-URL: Repository, https://github.com/ri-gilfanov/aiohttp-sqlalchemy
+Description-Content-Type: text/x-rst
+
+==================
+aiohttp-sqlalchemy
+==================
+
+SQLAlchemy 1.4 / 2.0 support for aiohttp.
+
+By default, library forwards:
+
+* ``sqlalchemy.ext.asyncio.AsyncSession`` object as ``request['sa_main']``
+  or ``SAView.sa_main_session``
+* ``sqlalchemy.ext.asyncio.AsyncEngine`` object as ``request.app['sa_main']``
+
+
+Documentation
+-------------
+https://aiohttp-sqlalchemy.readthedocs.io/
+
+
+Installation
+------------
+::
+
+    pip install aiohttp-sqlalchemy
+
+
+Simple example
+--------------
+Install aiosqlite for work with sqlite3: ::
+
+  pip install aiosqlite
+
+Copy and paste this code in a file and run:
+
+.. code-block:: python
+
+   from aiohttp import web
+   import aiohttp_sqlalchemy
+   from aiohttp_sqlalchemy import sa_bind, sa_middleware
+   from datetime import datetime
+   import sqlalchemy as sa
+   from sqlalchemy import orm
+   from sqlalchemy.ext.asyncio import create_async_engine
+
+
+   metadata = sa.MetaData()
+   Base = orm.declarative_base(metadata=metadata)
+
+
+   class MyModel(Base):
+       __tablename__ = 'my_table'
+       id = sa.Column(sa.Integer, primary_key=True)
+       timestamp = sa.Column(sa.DateTime(), default=datetime.now)
+
+
+   async def main(request):
+       async with request.app['sa_main'].begin() as conn:
+           await conn.run_sync(Base.metadata.create_all)
+
+       async with request['sa_main'].begin():
+           request['sa_main'].add_all([MyModel()])
+           result = await request['sa_main'].execute(sa.select(MyModel))
+           data = {r.id: r.timestamp.isoformat() for r in result.scalars()}
+           return web.json_response(data)
+
+
+   app = web.Application()
+
+   engine = create_async_engine('sqlite+aiosqlite:///')
+   aiohttp_sqlalchemy.setup(app, [sa_bind(engine)])
+
+   app.add_routes([web.get('/', main)])
+   web.run_app(app)
+
