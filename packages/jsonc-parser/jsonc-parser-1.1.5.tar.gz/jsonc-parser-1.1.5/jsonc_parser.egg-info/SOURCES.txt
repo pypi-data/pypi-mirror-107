@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+jsonc_parser/__init__.py
+jsonc_parser/errors.py
+jsonc_parser/parser.py
+jsonc_parser.egg-info/PKG-INFO
+jsonc_parser.egg-info/SOURCES.txt
+jsonc_parser.egg-info/dependency_links.txt
+jsonc_parser.egg-info/top_level.txt
