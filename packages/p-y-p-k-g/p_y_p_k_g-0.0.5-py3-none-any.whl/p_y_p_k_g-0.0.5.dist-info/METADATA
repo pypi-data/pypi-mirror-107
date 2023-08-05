@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: p-y-p-k-g
+Version: 0.0.5
+Summary: Pure Python Package Template
+Home-page: https://github.com/ydcjeff/pypkg
+Author: Jeff Yang
+Author-email: ydcjeff@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/p-y-p-k-g/#files
+Project-URL: Documentation, https://pypkg.netlify.app
+Project-URL: Source Code, https://github.com/ydcjeff/pypkg
+Project-URL: Bug Tracker, https://github.com/ydcjeff/pypkg/issues
+Project-URL: Changelog, https://github.com/ydcjeff/pypkg/blob/main/CHANGELOG.md
+Keywords: python,package
+Platform: UNKNOWN
+Classifier: 
+Classifier: 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-executable ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: yapf ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: flake8-bugbear ; extra == 'tests'
+Requires-Dist: flake8-comprehensions ; extra == 'tests'
+Requires-Dist: flake8-executable ; extra == 'tests'
+
+# Pypkg [![ci](https://github.com/ydcjeff/pypkg/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/ydcjeff/pypkg/actions/workflows/ci.yaml)
+
+> Pure Python Package Template
+
+
