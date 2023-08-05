@@ -1,0 +1,6 @@
+<div>
+  <p>Votre proposition "<i>{{ poll.title }}</i>" a reçu {{ count }} {% if count > 1 %}votes{% else %}vote{% endif %}</p>
+  <ul>
+    {% autoescape off %}{{ content }}{% endautoescape %}
+  </ul>
+</div>
