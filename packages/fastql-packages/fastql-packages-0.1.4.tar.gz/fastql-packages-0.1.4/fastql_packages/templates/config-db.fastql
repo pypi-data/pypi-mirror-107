@@ -1,0 +1,21 @@
+from orator import DatabaseManager, Schema, Model
+from dotenv import load_dotenv
+from pathlib import Path
+load_dotenv(str(Path('.') / '.env'))
+from os import getenv
+
+DATABASES = {
+    "{{configs.dbdriver}}": {
+        "driver": "{{configs.dbdriver}}",
+        "host": getenv("DB_HOST", "localhost"),
+        "database": getenv("DB_NAME", "fastgql"),
+        "user": getenv("DB_USER", "root"),
+        "password": getenv("DB_PASSWORD", ""),
+        "prefix": getenv("DB_PREFIX", ""),
+        "port": getenv("DB_PORT", {{configs.dbport}})
+    }
+}
+
+db = DatabaseManager(DATABASES)
+schema = Schema(db)
+Model.set_connection_resolver(db)
