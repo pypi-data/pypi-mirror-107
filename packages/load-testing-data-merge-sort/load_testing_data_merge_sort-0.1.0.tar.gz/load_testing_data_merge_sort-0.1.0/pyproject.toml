@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "load_testing_data_merge_sort"
+version = "0.1.0"
+description = "merge sort"
+authors = ["AlexandrVolkov <hramyh.w@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "3.9.5"
+click= "7.1.2"
+matplotlib = "3.4.2"
+numpy= "1.20.3"
+pandas = "1.2.4"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+process_one = "load_testing_data_merge_sort.merge_sort:main"
+generate_data = "load_testing_data_merge_sort.generate_data:main"
+measure_algo = "load_testing_data_merge_sort.measure_time:main"
+create_chart = "load_testing_data_merge_sort.create_chart:main"
