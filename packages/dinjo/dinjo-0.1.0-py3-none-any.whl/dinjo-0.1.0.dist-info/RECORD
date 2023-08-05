@@ -1,0 +1,17 @@
+dinjo/__init__.py,sha256=76rw3Isk4beFNHW4F_LCcO_fvITe8z627sSaT_CNLZA,18
+dinjo/model.py,sha256=S5WsQJx6OGak4BH2p1nEpJk5WvuwnhOwfL_XV7UETtQ,8428
+dinjo/optimizer.py,sha256=eOsVha4_3X6Gv5OO3hpNFwlcQcXpZGLkpZm-qDPjD-A,7645
+dinjo/predefined/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dinjo/predefined/epidemiology/__init__.py,sha256=FKW3WI5GW6R4adYXrPTCwMWobXitF-dEIyHSoxFOA78,238
+dinjo/predefined/epidemiology/_seir_model.py,sha256=kiR6dqMRvHebool7C8NbOxmREdlyFeUrjrqNGgM5gdE,622
+dinjo/predefined/epidemiology/_seirv_fixed.py,sha256=ubAUmgNyTNAXDAawyR6qiu4tX7_Yn40i-iZWlrGFON8,715
+dinjo/predefined/epidemiology/_seirv_model.py,sha256=bZsPVEltQ_LiI9pp2cgb4yynRaQd5YPWNT8TE5lBO8c,851
+dinjo/predefined/epidemiology/_sir_model.py,sha256=ZAPwZ0mSTaoteZoCLI_oofCnX2s1M4kyZYZKMGBkOvU,545
+dinjo/predefined/physics/__init__.py,sha256=_yIeI-5jKgrCoibuVPJsK1fMBWOpWhayT7PfkUCiq-M,88
+dinjo/predefined/physics/_harmonic_oscillator.py,sha256=btpXR8N0mUCDgv8pFQ2-Q20v0Z_DVjhhEnWexTcf444,306
+dinjo-0.1.0.dist-info/AUTHORS,sha256=ma8VFwC0OHG1OxkH7vXAqZjQyG9l8uv8OUqBIvrP3_A,177
+dinjo-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dinjo-0.1.0.dist-info/METADATA,sha256=-T-E6bdbQi9zThgoPAi4J_6NgLuSRb5CR5hVfqmrBXw,1853
+dinjo-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dinjo-0.1.0.dist-info/top_level.txt,sha256=2AcnClaeJ-JefmjNF6NExLX1i17dOASGVboDjdHcxY4,6
+dinjo-0.1.0.dist-info/RECORD,,
