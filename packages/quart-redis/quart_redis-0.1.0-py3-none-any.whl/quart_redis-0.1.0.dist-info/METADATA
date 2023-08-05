@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: quart-redis
+Version: 0.1.0
+Summary: A easy way of setting up a redis in quart
+Home-page: https://github.com/enchant97/quart-redis
+Author: Leo Spratt
+License: MIT
+Keywords: quart redis aioredis cache
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: quart (>=0.14.1)
+Requires-Dist: aioredis (>=1.3.1)
+
+# Quart-Redis
+A easy way of setting up a redis connection in quart.
+
+## Requirements
+- quart
+- aioredis
+
+## Example of Use
+```python
+from quart import Quart
+from quart_redis import RedisHandler, get_redis
+
+app = Quart(__name__)
+app.config["REDIS_URI"] = "redis://localhost"
+redis_handler = RedisHandler(app)
+
+@app.route("/")
+async def index():
+    redis = get_redis()
+
+    val = await redis.get("my-key", encoding="utf-8")
+
+    if val is None:
+        await redis.set("my-key", "it works!")
+
+    return val
+```
+
+
