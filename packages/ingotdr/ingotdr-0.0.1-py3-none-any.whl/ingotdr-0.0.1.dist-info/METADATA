@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ingotdr
+Version: 0.0.1
+Summary: INGOT-DR (INterpretable GrOup Testing for Drug Resistance)
+Home-page: https://github.com/hoomanzabeti/ingotdr
+Author: Hooman Zabeti
+Author-email: hzabeti@sfu.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pulp
+Requires-Dist: sklearn
+
+# INGOT-DR
+
+**INGOT-DR** ( **IN**terpretable **G**r**O**up **T**esting for **D**rug **R**esistance) is an interpretable rule-based predictive model base on **Group Testing** and **Boolean Compressed Sesing**.
+
+## Installation
+
+## Train and evaluate an INGOT-DR classifier
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import balanced_accuracy_score
+import pandas as pd
+import ingot
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=33, test_size=0.2, stratify=y)
+
+clf = ingot.INGOTClassifier()
+clf.fit(X_train,y_train)
+
+y_pred = clf.predict(X_test)
+
+print("Balanced accuracy: {}".format(balanced_accuracy_score(y_test, y_pred)))
+
+
+```
+
+
+
