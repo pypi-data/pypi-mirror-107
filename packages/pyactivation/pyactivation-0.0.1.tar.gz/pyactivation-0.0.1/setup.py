@@ -1,0 +1,24 @@
+from distutils.core import setup
+setup(
+  name = 'pyactivation',     
+  packages = ['pyactivation'],  
+  version = '0.0.1',    
+  license='MIT',        
+  description = 'A small library for creating and validating license keys',  
+  author = 'Wesley Jochman',        
+  author_email = 'dolimightdesigns@gmail.com',   
+  url = 'https://github.com/dolimight/pyactivation',   
+  download_url = 'https://github.com/dolimight/pyactivation/archive/refs/tags/v_0.0.1.tar.gz',
+  keywords = ['Activation', 'License', 'Key'],
+  install_requires=[],
+  classifiers=[
+    'Development Status :: 3 - Alpha',      
+    'Intended Audience :: Developers',     
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',  
+    'Programming Language :: Python :: 3',      
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+  ],
+)
