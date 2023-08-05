@@ -1,0 +1,94 @@
+QMainWindow {
+    background-color: rgb(245, 240, 225)
+}
+
+QLineEdit {
+    background-color: rgb(254, 250, 239);
+    border: 1px solid rgb(172, 168, 158);
+    border-radius: 3;
+    color: rgb(159, 168, 171);
+    font: 12pt "DejaVu Sans Condensed";
+    max-height: 30px;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+QFrame, QToolButton {
+    border: none;
+}
+
+QLabel {
+    color: rgb(30, 61, 89);
+    font-family: "DejaVu Sans";
+}
+
+QLabel[class="QueueName"] {
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+QLabel[class="TaskText"] {
+    font-size: 16pt;
+}
+
+QLabel[class="TaskTime"] {
+    font-style: italic;
+    font-size: 15pt;
+}
+
+QToolButton[class~="QueueHeader"] {
+    qproperty-iconSize: 50px;
+}
+
+QToolButton[class~="QueueHeader"]:pressed {
+    border: 2px solid rgb(209, 86, 47);
+    border-radius: 25px;
+}
+
+QToolButton[class~="QueueHeader"]:hover:!pressed {
+    border: 1px solid rgb(209, 86, 47);
+    border-radius: 25px;
+}
+
+QToolButton[class~="CollapseQueue"]:pressed {
+    border: 2px solid rgb(30, 61, 89);
+}
+
+QToolButton[class~="CollapseQueue"]:hover:!pressed {
+    border: 1px solid rgb(30, 61, 89);
+}
+
+
+QToolButton[class="Task"] {
+    qproperty-iconSize: 30px;
+}
+
+QToolButton[class="Task"]:pressed {
+    border: 2px solid rgb(209, 86, 47);
+    border-radius: 15px;
+}
+
+QToolButton[class="Task"]:hover:!pressed {
+    border: 1px solid rgb(209, 86, 47);
+    border-radius: 15px;
+}
+
+#Settings {
+    qproperty-iconSize: 60px;
+}
+
+#Settings:pressed {
+    border: 2px solid rgb(209, 86, 47);
+    border-radius: 30px;
+}
+
+#Settings:hover:!pressed {
+    border: 1px solid rgb(209, 86, 47);
+    border-radius: 30px;
+}
+
+#Logo {
+    max-width: 270px;
+    max-height: 125px;
+    margin-left: 60px;
+}
