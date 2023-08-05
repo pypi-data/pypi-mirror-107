@@ -1,0 +1,16 @@
+<p>
+    <a class="btn btn-link" data-toggle="collapse" data-bs-toggle="collapse" href="#{system_title}" role="button" aria-expanded="{expanded}" aria-controls="{system_title}">
+    
+    {title}
+    
+    </a>
+</p>
+
+<div class="collapse" id="{system_title}">
+    <div class="card card-body">
+        
+        {content}
+    
+    </div>
+
+</div>
