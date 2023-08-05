@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: absabranchsortcodes
+Version: 0.0.1
+Summary: ABSA Branch Sort Codes Generator.
+Home-page: UNKNOWN
+Author: Hendrik du Toit
+Author-email: hendrik@brightedge.co.za
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: termcolor
+Requires-Dist: black
+Requires-Dist: ipython
+Requires-Dist: twine
+
+ABSA Branch Sort Codes
+======================
+
+Generate a "sort code" file from for ABSA Bank.  The source is a CICS file which is massaged into a destination file in the correct format for SWIFT to import.
+
+
