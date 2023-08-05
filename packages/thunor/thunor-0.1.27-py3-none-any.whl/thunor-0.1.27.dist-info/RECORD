@@ -1,0 +1,15 @@
+thunor/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+thunor/_version.py,sha256=aj7WIgyA6itadNhnw4kAalQLWgbsgYrEKDJv_8BDHqE,498
+thunor/config.py,sha256=s4Dgnpg9BHYMovV06Heky1A1QQbveG5u8on5pfRMmYI,62
+thunor/curve_fit.py,sha256=X7LuYSbDB6c5EZWtnSKhnFUeD5pKkLhodyp2D0mddSY,34557
+thunor/dip.py,sha256=qwUPK604pSnRkyCqeDIbUoGMsbIOl65QqahJUvWuSUs,5722
+thunor/helpers.py,sha256=cJXPRVD3Po48MbG9CXYmtG_dfkgYqHsT8SO1DvoHB38,4821
+thunor/io.py,sha256=n6drWNeX3msj_aR2rY9lYwMXeX0xJ77uyZ5UNxxsrKo,36511
+thunor/plots.py,sha256=XTigwx7zz31ae0NHgMunZ_SBhhrW7zvJU76blHy-idw,69782
+thunor/viability.py,sha256=4NfaC51o9Jx1Rq0paRmILEF9CwjU3oLO5FtWruO96pk,3960
+thunor-0.1.27.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+thunor-0.1.27.dist-info/METADATA,sha256=VAXeM-U2vl9k3Tz2NKl19q05Y9TDAyUFieVNxYLuxrM,2356
+thunor-0.1.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thunor-0.1.27.dist-info/top_level.txt,sha256=JWvdQci7CZXCYzmE_-m7MRfgt5Z9pRKMPMryE33YMhs,7
+thunor-0.1.27.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thunor-0.1.27.dist-info/RECORD,,
