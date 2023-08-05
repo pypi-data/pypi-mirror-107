@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: aiosubprocess
+Version: 2021.5.2
+Summary: A zero-dependence async subprocess that keeps on getting stdout and stderr.
+Home-page: https://github.com/Mulugruntz/aiosubprocess
+Author: Samuel Giffard
+Author-email: samuel@giffard.co
