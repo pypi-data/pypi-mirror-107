@@ -1,0 +1,9 @@
+setup.py
+classmanagement/__init__.py
+classmanagement.egg-info/PKG-INFO
+classmanagement.egg-info/SOURCES.txt
+classmanagement.egg-info/dependency_links.txt
+classmanagement.egg-info/top_level.txt
+classmanagement/models/__init__.py
+classmanagement/models/class.py
+classmanagement/models/student.py
