@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+kokex/__init__.py
+kokex/api.py
+kokex.egg-info/PKG-INFO
+kokex.egg-info/SOURCES.txt
+kokex.egg-info/dependency_links.txt
+kokex.egg-info/requires.txt
+kokex.egg-info/top_level.txt
+kokex/core/__init__.py
+kokex/core/parser.py
+kokex/core/preproc.py
+kokex/core/tree.py
+test/test_keywords.py
+test/test_sentences.py
