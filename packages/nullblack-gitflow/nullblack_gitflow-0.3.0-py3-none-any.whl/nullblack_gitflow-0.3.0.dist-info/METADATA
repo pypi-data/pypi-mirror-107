@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nullblack-gitflow
+Version: 0.3.0
+Summary: Scripts that help with the use of null.black's gitflow style
+Home-page: https://null.black
+Author: Troy Neubauer
+Author-email: troy@null.black
+License: LICENSE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: emrichen
+
+UNKNOWN
+
+
