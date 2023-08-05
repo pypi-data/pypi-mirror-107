@@ -1,0 +1,14 @@
+Click==7.0
+colour==0.1.5
+genanki==0.8.0
+graphviz==0.13.2
+orgparse==0.1.2
+pypandoc==1.4
+
+[all]
+black==19.10b0
+pre-commit==2.0.1
+
+[dev]
+black==19.10b0
+pre-commit==2.0.1
