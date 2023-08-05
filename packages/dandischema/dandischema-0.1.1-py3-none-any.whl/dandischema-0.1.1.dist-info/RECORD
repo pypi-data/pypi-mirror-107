@@ -1,0 +1,17 @@
+dandischema/__init__.py,sha256=jMVE6eKegndV9O0lmGwPddirpw8Rn7Pdlqw5tyj2c4w,73
+dandischema/_version.py,sha256=DTJlnJDXHIERa4bwizrpSqcAUHOyaE68eIlJvsU7r4M,497
+dandischema/consts.py,sha256=VL5KJImU2Gw4Kc4V6zmD2UsY_BAIxuusWt5ssLGbddk,31
+dandischema/metadata.py,sha256=qUyoxFvQssGtQu-D0dggJFjyBJymueK4UXCdeJW8RAc,3519
+dandischema/model_types.py,sha256=7m4lewni84NPONRfQdxk02OsrgVoSGBj1mopE3TnU28,19509
+dandischema/models.py,sha256=6ygLnR7FazAnDwGhIFz6YQJSOA2DEuIrgIPQpaZaLVc,40274
+dandischema/utils.py,sha256=vtQISOXDQzxJcvr2k1__HiKEyHTcBIWjMMkHsM-SqDM,880
+dandischema/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dandischema/tests/test_models.py,sha256=z0A5mIX3bJJ5uSlPNL2gQN9vVYJnOtV7BarQMBr3s00,14902
+dandischema/tests/test_utils.py,sha256=4SR2UdLS5V8XPRexgIWC5ODmSylg5wTRufnkh8a0xs8,645
+dandischema/tests/data/metadata/meta_000004.json,sha256=CWZHwbWGQpmnRHgGB8Z70rFEaeWS-4NzfoEhZUdQKdQ,10044
+dandischema/tests/data/metadata/meta_000008.json,sha256=ADBTPBTZTZqDGFHfUeH7jANenrtq_RZPiOLIS3pt3Ng,2950
+dandischema-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dandischema-0.1.1.dist-info/METADATA,sha256=HvowyXFVftE-rji1TTgIh6ny9-LnG4TCud1ZmwwXByw,1770
+dandischema-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dandischema-0.1.1.dist-info/top_level.txt,sha256=lapu-dce2fqleeC88KeQS_Yw6B8Vrq97EkfdJ64Y_Pw,12
+dandischema-0.1.1.dist-info/RECORD,,
