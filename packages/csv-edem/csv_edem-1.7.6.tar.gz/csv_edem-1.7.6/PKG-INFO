@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: csv-edem
+Version: 1.7.6
+Summary: Treats CSV files exported from EDEM
+License: MIT
+Author: Marcus Bruno Fernandes Silva
+Author-email: marcusbfs@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: gui
+Requires-Dist: PySimpleGUI (>=4.41.2,<5.0.0); extra == "gui"
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0); extra == "gui"
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.7,<4.0.0)
+Requires-Dist: rich (>=10.2.1,<11.0.0)
+Description-Content-Type: text/markdown
+
+# csv_edem
+Treats CSV files exported from EDEM
+

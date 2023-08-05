@@ -1,0 +1,36 @@
+[tool.poetry]
+authors = ["Marcus Bruno Fernandes Silva <marcusbfs@gmail.com>"]
+description = "Treats CSV files exported from EDEM"
+license = "MIT"
+name = "csv_edem"
+packages = [
+  {include = "csv_edem", from = "."},
+]
+readme = "README.md"
+version = "1.7.6"
+
+[tool.poetry.dependencies]
+PySimpleGUI = {version = "^4.41.2", optional = true}
+matplotlib = {version = "^3.4.2", optional = true}
+numpy = "^1.20.3"
+openpyxl = "^3.0.7"
+python = "^3.8"
+rich = "^10.2.1"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+black = "^21.5b1"
+isort = "^5.8.0"
+mypy = "^0.812"
+pyinstaller = "^4.3"
+
+[tool.poetry.extras]
+gui = ["PySimpleGUI", "matplotlib"]
+
+[tool.poetry.scripts]
+csv-edem = "csv_edem.cli:main"
+csv-edem-gui = "csv_edem.gui:main"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
