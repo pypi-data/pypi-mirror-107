@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyodhean
+Version: 1.0.0
+Summary: Optimization of District Heating Networks
+Home-page: https://github.com/sigopti/pyodhean
+Author: Nobatek/INEF4
+Author-email: jlafrechoux@nobatek.com
+License: GPLv3+
+Keywords: District,Heating,Network,Optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: Pyomo (<7,>=6)
+
+========
+PyODHeaN
+========
+
+.. image:: https://img.shields.io/pypi/v/pyodhean.svg
+    :target: https://pypi.org/project/pyodhean/
+    :alt: Latest version
+
+.. image:: https://img.shields.io/pypi/pyversions/pyodhean.svg
+    :target: https://pypi.org/project/pyodhean/
+    :alt: Python versions
+
+.. image:: https://img.shields.io/pypi/l/pyodhean.svg
+    :target: https://github.com/sigopti/pyodhean/blob/master/LICENSE
+    :alt: License
+
+.. image:: https://dev.azure.com/sigopti/pyomo/_apis/build/status/sigopti.pyodhean?branchName=master
+    :target: https://dev.azure.com/sigopti/pyomo/_build?definitionId=1
+    :alt: Build status
+
+Optimization of District Heating Networks.
+
+Install
+=======
+
+::
+
+    pip install pyodhean
+
+pyodhean supports Python >= 3.7.
+
+
