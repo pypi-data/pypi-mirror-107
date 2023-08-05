@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: tiramisu_brulee
+Version: 0.1.4
+Summary: A 2D and 3D PyTorch implementation of the Tiramisu CNN
+Home-page: https://github.com/jcreinhold/tiramisu_brulee
+Author: Jacob Reinhold
+Author-email: jcreinhold@gmail.com
+License: Apache Software License 2.0
+Keywords: tiramisu,segmentation,neural network,convolutional,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Provides-Extra: lesionseg
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===============
+tiramisù-brûlée
+===============
+
+
+.. image:: https://img.shields.io/pypi/v/tiramisu_brulee.svg
+        :target: https://pypi.python.org/pypi/tiramisu-brulee
+
+.. image:: https://api.travis-ci.com/jcreinhold/tiramisu-brulee.svg
+        :target: https://travis-ci.com/jcreinhold/tiramisu-brulee
+
+.. image:: https://readthedocs.org/projects/tiramisu-brulee/badge/?version=latest
+        :target: https://tiramisu-brulee.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+A 2D and 3D PyTorch implementation of the Tiramisu CNN
+
+This package is primarily used for multiple sclerosis (MS) lesion segmentation; specifically, T2 lesions in the brain.
+
+* Free software: Apache Software License 2.0
+* Documentation: https://tiramisu-brulee.readthedocs.io.
+
+Install
+-------
+
+The easiest way to install the package is with::
+
+    pip install tiramisu-brulee
+
+Alternatively, you can download the source and run::
+
+    python setup.py install
+
+If you want a CLI to train a 3D lesion segmentation model, install with::
+
+    pip install tiramisu-brulee[lesionseg]
+
+Basic Usage
+-----------
+
+Import the 2D or 3D Tiramisu version with:
+
+.. code-block:: python
+
+    from tiramisu_brulee.model import Tiramisu2d, Tiramisu3d
+
+
+References
+----------
+
+[1] Jégou, Simon, et al. "The one hundred layers tiramisu: Fully convolutional densenets for semantic segmentation."
+CVPR. 2017.
+
+[2] Zhang, Huahong, et al. "Multiple sclerosis lesion segmentation with Tiramisu and 2.5D stacked slices." International
+Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2019.
+
+Why the name?
+-------------
+
+Why is the name tiramisù-brûlée? Well, tiramisù is named after the neural network [1] whose name is inspired by
+the dessert; however, tiramisu—by itself—was already taken as a package on PyPI. I added brûlée to get around the
+existence of that package and because this package is written in PyTorch (torch -> burnt). Plus brûlée in English is
+often associated with the dessert crème brûlée. Why combine an Italian word (tiramisù) with a French word (brûlée)?
+Because I didn't think about it until after I already deployed the package to PyPI.
+
+
+=======
+History
+=======
+
+0.1.4 (2021-05-13)
+------------------
+
+* Add lesion segmentation CLI.
+
+0.1.3 (2021-05-13)
+------------------
+
+* Fix deployment by fixing repo name in travis.
+
+0.1.2 (2021-05-13)
+------------------
+
+* Fix supported versions and docs.
+
+0.1.1 (2021-05-13)
+------------------
+
+* Fix tests and deployment.
+
+0.1.0 (2021-05-13)
+------------------
+
+* First release on PyPI.
+
+
