@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: wizzi-utils
+Version: 6.3.2
+Summary: Handy Tools for Developers
+Home-page: https://github.com/2easy4wizzi/2021wizzi_utils
+Author: Gilad Eini
+Author-email: giladEini@gmail.com
+License: MIT
+Download-URL: https://github.com/2easy4wizzi/2021wizzi_utils/archive/refs/tags/v_6.3.2.tar.gz
+Keywords: misc tools,common algorithms,coreset tools,json tools,open cv tools,pyplot tools,socket tools,torch tools
+Platform: windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Package wizzi utils:  
+## Installation: 
+```bash
+pip install wizzi_utils 
+```
+## Usage
+```python
+import wizzi_utils as wu # imports all that is available
+print(wu.__version__) 
+wu.test_all_modules()  # run all tests in all 8 modules
+```
+* The above import will give you access to all functions and tests in wizzi_utils.<br/>
+* Other than misc_tools, it's the user's responsibility to install the requirements to sub packages such
+as torch, tensorflow and so on.
+* For convenience, the wizzi_utils imports all it can from the sub modules, therefore
+only the one import above is enough.
+* Every function is covered by a test(usually the 'func_name'_test()). Use this to see how the 
+function works and also to copy paste the signature.
+```markdown
+from wizzi_utils import algorithms as algs  
+# access wu.algs.func() or wu.algs.test.func() 
+from wizzi_utils import coreset as cot
+from wizzi_utils import json as jt
+from wizzi_utils import open_cv as cvt
+from wizzi_utils import pyplot as pyplt
+from wizzi_utils import socket as st
+from wizzi_utils import torch as tt
+from wizzi_utils import tensorflow as tft
+from wizzi_utils import tflite as tflt
+```
+
+###  misc_tools & misc_tools_test
+'pip install wizzi_utils' made sure you'll have everything needed installed so they should be fully working,
+so there is no namespace for misc_tools module(direct access from wu)<br/>
+```python
+import wizzi_utils as wu
+
+
+def main():
+    # all functions in misc_tools & misc_tools_test are imported to wizzi_utils
+    print(wu.to_str(var=2, title='my_int'))  # notice only wu namespace
+
+    # direct access to the misc_tools module
+    print(wu.misc_tools.to_str(var=2, title='my_int'))  # not needed but possible
+
+    wu.test.test_all()  # runs all tests in misc_tools_test.py
+    wu.test.to_str_test()  # runs only to_str_test
+    return
+
+
+if __name__ == '__main__':
+    wu.main_wrapper(
+        main_function=main,
+        seed=42,
+        ipv4=True,
+        cuda_off=False,
+        torch_v=True,
+        tf_v=True,
+        cv2_v=True,
+        with_profiler=False
+    )
+```
+
+### All other packages
+Other modules, e.g. torch_tools, will work only if you have all the dependencies written in the init file of the module
+or by calling wu.wizzi_utils_requirements()
+
+```python
+import wizzi_utils as wu
+
+
+def main():
+    wu.wizzi_utils_requirements()  # will print all modules names and the requirements
+
+    # access to a function in the torch module (must install torch and torchvision)
+    print(wu.tt.to_str(var=3, title='my_int'))  # notice wu and tt namespaces. tt for torch tools
+
+    # access to a function in the matplotlib module(must install matplotlib and mpl_toolkits)
+    print(wu.pyplt.get_RGB_color(color_str='r'))
+
+    # access to a module test
+    wu.algs.test.test_all()  # all tests in algorithm module
+    wu.pyplt.test.plot_3d_iterative_dashboard_test()  # specific test in pyplot module
+    return
+
+
+if __name__ == '__main__':
+    wu.main_wrapper(
+        main_function=main,
+        seed=42,
+        ipv4=True,
+        cuda_off=False,
+        torch_v=True,
+        tf_v=True,
+        cv2_v=True,
+        with_profiler=False
+    )
+```  
+      
+      
+    
+
