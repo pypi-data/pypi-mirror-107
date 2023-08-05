@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+genx-widget.json
+setup.cfg
+setup.py
+genx/__init__.py
+genx/_version.py
+genx/react_jupyter_widget.py
+genx/static/extension.js
+genx/static/index.js
+genx/static/index.js.map
+genx_widget.egg-info/PKG-INFO
+genx_widget.egg-info/SOURCES.txt
+genx_widget.egg-info/dependency_links.txt
+genx_widget.egg-info/not-zip-safe
+genx_widget.egg-info/requires.txt
+genx_widget.egg-info/top_level.txt
