@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: ezpycolor
+Version: 0.1.0
+Summary: simple colorization of strings in Python
+Home-page: https://github.com/bonifield/ezpycolor
+Author: James Bonifield
+Author-email: bonifield.tools@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ezpycolor
+simple colorization of strings in Python
+
+### Installation
+```
+pip install ezpycolor
+```
+
+### Example Output
+![ezpycolor-example-output.PNG](https://github.com/bonifield/ezpycolor/raw/main/ezpycolor-example-output.PNG)
+
+### Usage
+```
+from ezpycolor import *
+
+printgreen("hello world")
+
+s = colorpurple("hello")+" "+colorred("world")
+print(s)
+
+printrainbow("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+printbgrainbow("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+```
+
+### Objects
+```
+# print statements
+printpurple
+printblue
+printgreen
+printyellow
+printgold
+printred
+printbold
+printunderline
+printbgpurple
+printbgblue
+printbggreen
+printbgyellow
+printbggold
+printbgred
+printrainbow
+printbgrainbow
+
+# string objects
+colorpurple
+colorblue
+colorgreen
+coloryellow
+colorgold
+colorred
+colorbold
+colorunderline
+colorbgpurple
+colorbgblue
+colorbggreen
+colorbgyellow
+colorbggold
+colorbgred
+colorrainbow
+colorbgrainbow
+```
+
+
