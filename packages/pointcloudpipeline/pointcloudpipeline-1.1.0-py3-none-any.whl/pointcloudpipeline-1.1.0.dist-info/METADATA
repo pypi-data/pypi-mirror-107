@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pointcloudpipeline
+Version: 1.1.0
+Summary: A simple commandline app for converting pointclouds and get 2D images out of a pointclouds.
+Home-page: UNKNOWN
+Author: Nadine Sennhauser and Denis Nauli
+Author-email: nadine.sennhauser@ost.ch
+License: BSD-3
+Keywords: pointcloud,convert,pointcloudbrowser
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pdal
+Requires-Dist: scikit-build
+
+A simple commandline app for converting pointclouds. You can convert your Pointcloud into a viewable Entwine format or in a 2D raster.
+
+
