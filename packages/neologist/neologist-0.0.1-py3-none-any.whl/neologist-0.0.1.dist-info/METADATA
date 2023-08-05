@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: neologist
+Version: 0.0.1
+Summary: Exactophor Generator
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ravel
+Requires-Dist: appyratus
+Requires-Dist: pytest
+Requires-Dist: ipdb
+
+# Neologist
+
+## About
+Exactophor generator
+
