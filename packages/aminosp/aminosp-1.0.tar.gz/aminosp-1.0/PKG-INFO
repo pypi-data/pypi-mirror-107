@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aminosp
+Version: 1.0
+Summary: A library to create Amino bots.
+Home-page: https://github.com/NfrXDRA
+Author: NfrXDRA
+Author-email: email@gmail.com
+License: MIT
+Download-URL: https://github.com/NeforMan/AminoN/tree/master
+Description: # AminoN
+        library to make a bots for amino
+        ## Installation
+        ```
+        pip install AminoN
+        ```
+        ## How to use it?
+        you can chek the lessions or my discord server to learn how to use it
+        ##community
+        you can join with the programmers 
+        ```
+        http://aminoapps.com/c/Djjjhggghff
+        ```
+        ###import
+        ```
+        splax
+        ```
+        #what need
+        you need install requests and json and urllib to open this library
+Keywords: aminoapps,amino-py,amino,amino-bot,narvii,api,python,python3,python3.x,slimakoi,official
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

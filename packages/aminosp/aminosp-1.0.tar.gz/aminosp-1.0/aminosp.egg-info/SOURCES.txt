@@ -1,0 +1,9 @@
+README.md
+setup.py
+aminosp.egg-info/PKG-INFO
+aminosp.egg-info/SOURCES.txt
+aminosp.egg-info/dependency_links.txt
+aminosp.egg-info/requires.txt
+aminosp.egg-info/top_level.txt
+splax/AminoN.py
+splax/__init__.py
