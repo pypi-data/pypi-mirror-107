@@ -1,0 +1,11 @@
+apifairy/__init__.py,sha256=PCT9sc-g3ydO8EXGsu-YcKnt-ooOAYz_ZUQf-_jtBOU,165
+apifairy/core.py,sha256=zvFCFoFUz5CCqzvbr3TO48jrbxsz7UDccwytwbSJQzo,11541
+apifairy/decorators.py,sha256=2RyzO_jIeBQD1-XMsHg6DTKZUWs9shCiJPjUKJ9pU8M,2905
+apifairy/exceptions.py,sha256=4RX2twz1BW9HJvtbsxGYAWHr58Mcq5OfC9Zxb44KssY,153
+apifairy/templates/apifairy/redoc.html,sha256=JsX6LkdjARSb0Pr0Rv4UdnLnZ7vMk3KAJPW71C2OxWY,577
+apifairy/templates/apifairy/swagger_ui.html,sha256=-YDDzNsXJEY9wgRE0iDNBXfzLBbyEu6EyvE8E5HHs7k,1214
+apifairy-0.7.0.dist-info/LICENSE,sha256=JaEKcKBOfy5wUI8tQk4Z1uHrqMcmJgQ9JWsS9A4LmO4,1072
+apifairy-0.7.0.dist-info/METADATA,sha256=TiAM5dPxFpCADWPW5eLXtSfSNcn1hlc8ytcf8RGRi1I,1163
+apifairy-0.7.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+apifairy-0.7.0.dist-info/top_level.txt,sha256=9zgedbd8_Zk2AJWi-LHqakyCQdeV8IJDKjUoc2F0mOU,9
+apifairy-0.7.0.dist-info/RECORD,,
