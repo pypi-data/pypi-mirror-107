@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /Users/qt/work/install/bin/qt-cmake -DQT_BUILD_STANDALONE_TESTS=ON "$@"
