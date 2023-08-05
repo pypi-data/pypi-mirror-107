@@ -1,0 +1,4 @@
+[poetry.plugin]
+git-tag-version=poetry_version_plugin.plugin:GitTagVersion
+init-version=poetry_version_plugin.plugin:InitVersion
+
