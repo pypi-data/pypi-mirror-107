@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+
+"""
+<sphinx>
+
+domain-expiration
+-----------------
+
+Check if the domain is close to expiration date or if it is already expired.
+
+**Notice: Multiple usage of this check can cause a "request limit exceeded" error to happen**
+
+**Warning:** *Due to limits per IP on whois usage we recommend to strongly cache the health check ex. 1-2 days cache,
+and in case of checking multiple domains to use feature called "wait time" to sleep between checks,
+to not send too many requests a once*
+
+Parameters:
+
+- domain (domain name)
+- alert_days_before (number of days before expiration date to start alerting)
+
+</sphinx>
+"""
+from typing import Optional
+import whois
+import datetime
+import pytz
+import os
+import sys
+import re
+import time
+import subprocess
+from collections import namedtuple
+from whois._3_adjust import str_to_date
+
+
+WhoisResult = namedtuple('WhoisResult', 'expiration_date')
+
+
+class DomainCheck(object):
+    _domain: str
+    _alert_days_before: int
+    whois: whois
+
+    PATTERNS = [
+        r'Expiry Date:\s+([0-9-T:]+)Z',
+        r'Valid Until:\s+([0-9-T:]+)',  # Valid Until:                  2021-06-24
+        r'renewal date:\s+([0-9-T:]+)',
+    ]
+
+    def __init__(self, domain: str, alert_days_before: int):
+        self._domain = domain
+        self._alert_days_before = int(alert_days_before)
+        self.whois = whois
+
+        if not self._domain or self._domain == '':
+            raise Exception('Domain must be specified')
+
+    def _check_with_wait(self) -> WhoisResult:
+        time.sleep(1)
+        max_retries = 10
+        retries = 0
+
+        while retries <= max_retries:
+            try:
+                query = self._ask_whois_library(self._domain)
+
+                if not query or not query.expiration_date:
+                    return self._parse_shell_whois(self._domain)
+
+                return query
+
+            except Exception as e:
+                retries += 1
+
+                if retries > max_retries:
+                    raise e
+
+                if isinstance(e, whois.exceptions.UnknownTld):
+                    shell_check_result = self._parse_shell_whois(self._domain)
+
+                    if not shell_check_result or not shell_check_result.expiration_date:
+                        continue
+
+                    return shell_check_result
+
+                if "request limit exceeded" in str(e):
+                    time.sleep(5)
+
+    def _ask_whois_library(self, domain: str) -> WhoisResult:
+        _stdout_copy = sys.stdout
+
+        # the "whois" library is using print(), sys.stdout needs to be mocked for a moment to not print those
+        # messages
+        with open('/dev/null', 'w') as null_out:
+            try:
+                sys.stdout = null_out
+
+                return self.whois.query(domain)
+            finally:
+                sys.stdout = _stdout_copy
+
+    @staticmethod
+    def _ask_whois_in_shell(domain: str) -> str:
+        return subprocess.check_output(['whois', domain]).decode('utf-8')
+
+    def _parse_shell_whois(self, domain: str) -> WhoisResult:
+        """
+        Fallback to shell command in case, when a whois library does not support given domain TLD
+
+        :param domain:
+        :return:
+        """
+
+        try:
+            output = self._ask_whois_in_shell(domain)
+
+            for pattern in self.PATTERNS:
+                match = re.search(pattern, output, re.IGNORECASE)
+
+                if match:
+                    return WhoisResult(expiration_date=str_to_date(match.group(1)))
+
+        except subprocess.CalledProcessError:
+            pass
+
+        return WhoisResult(expiration_date=None)
+
+    def perform_check(self) -> tuple:
+        domain_check: Optional[WhoisResult] = self._check_with_wait()
+
+        if domain_check is None or domain_check.expiration_date is None:
+            return False, "Domain seems to be not registered"
+
+        try:
+            exp_date = pytz.utc.localize(domain_check.expiration_date)
+        except ValueError:
+            exp_date = domain_check.expiration_date
+
+        alert_begins = exp_date + datetime.timedelta(days=self._alert_days_before * -1)
+        now = pytz.utc.localize(datetime.datetime.now())
+        delta = exp_date - now
+
+        if now >= exp_date:
+            return False, "Domain {} expired at {}!".format(self._domain, exp_date.strftime('%Y-%m-%d'))
+
+        if now >= alert_begins:
+            return False, "The domain will expire soon in {} days".format(delta.days)
+
+        return True, "Domain {} is not expired. {} days left".format(self._domain, delta.days)
+
+
+if __name__ == '__main__':
+    check = DomainCheck(os.getenv('DOMAIN', ''), os.getenv('ALERT_DAYS_BEFORE', 20))
+    result = check.perform_check()
+
+    print(result[1])
+    sys.exit(0 if result[0] else 1)
