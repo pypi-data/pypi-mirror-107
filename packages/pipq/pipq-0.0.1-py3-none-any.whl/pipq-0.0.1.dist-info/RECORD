@@ -1,0 +1,15 @@
+pipq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipq/pipq.py,sha256=FBF-1TFSkd1A17hWiu7oGbHTbw8JJuP3nimq7I4AXxI,2926
+pipq/display/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipq/display/display.py,sha256=I44iwof0oSLm1w9uzdG3OjCOm9LModGZJ4IFNFfP1WU,109
+pipq/display/pkgdisplay.py,sha256=BF4V4VVK_mgajwUBf-x92lmCy6DscMq8Nbrz6hjvD2M,689
+pipq/display/searchdisplay.py,sha256=lEaUWzE6R49Ayz6hKWbC4QOn-A0U9YeclC7jKUEoDSw,2117
+pipq/display/versionsdisplay.py,sha256=ByM68aLnzdCt3JdbO3U8E-X-sE6Uc4aiezCI2XaHNsY,2442
+pipq/scrape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipq/scrape/scrape.py,sha256=M-K4M3PwL4mBqjxPPfaGrURoF9nVSnw0eeXFg3bCf9o,958
+pipq-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pipq-0.0.1.dist-info/METADATA,sha256=MiUgXkzkt8enubRilSO2N5hWodappLp1_Zl8YkyJ3ug,474
+pipq-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pipq-0.0.1.dist-info/entry_points.txt,sha256=IBv3t_6Pnevm4WI835Ne2cSgAtI_I0sbJ7E3kFgvMpc,41
+pipq-0.0.1.dist-info/top_level.txt,sha256=NMS5FntmFUin5cQVlRRWUk8t_dDlS2xFrrS-uoLZe8k,5
+pipq-0.0.1.dist-info/RECORD,,
