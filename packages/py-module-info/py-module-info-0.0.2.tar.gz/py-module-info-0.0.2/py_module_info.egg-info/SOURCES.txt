@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+py_module_info/__init__.py
+py_module_info/_core.py
+py_module_info/main.py
+py_module_info.egg-info/PKG-INFO
+py_module_info.egg-info/SOURCES.txt
+py_module_info.egg-info/dependency_links.txt
+py_module_info.egg-info/top_level.txt
+test/__init__.py
+test/test_function_info.py
+test/test_import_info.py
+test/test_main.py
