@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+gtts/setup.py
+playsound/playsound.py
+playsound/setup.py
+simplpython/__init__.py
+simplpython/simplpython.py
+simplpython.egg-info/PKG-INFO
+simplpython.egg-info/SOURCES.txt
+simplpython.egg-info/dependency_links.txt
+simplpython.egg-info/not-zip-safe
+simplpython.egg-info/top_level.txt
