@@ -1,0 +1,6 @@
+mptools
+shapely
+mercantile
+pyproj
+py4web>=1.20210522.2
+mapbox_vector_tile
