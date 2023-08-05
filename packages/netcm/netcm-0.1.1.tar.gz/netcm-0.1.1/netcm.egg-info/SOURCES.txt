@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+netcm/__init__.py
+netcm.egg-info/PKG-INFO
+netcm.egg-info/SOURCES.txt
+netcm.egg-info/dependency_links.txt
+netcm.egg-info/requires.txt
+netcm.egg-info/top_level.txt
