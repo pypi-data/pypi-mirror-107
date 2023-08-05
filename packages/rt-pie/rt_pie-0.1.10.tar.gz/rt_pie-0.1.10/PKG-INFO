@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: rt-pie
+Version: 0.1.10
+Summary: Real Rime PItch Estimator
+Home-page: https://github.com/wolfisberg/rt-pie
+Author: Kaspar Wolfisberg
+Requires-Python: >=3.7,<3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: librosa (>=0.8.0,<0.9.0)
+Requires-Dist: matplotlib (>=3.2,<3.3)
+Requires-Dist: mir_eval (>=0.6,<0.7)
+Requires-Dist: numpy (>=1.19,<1.20)
+Requires-Dist: sounddevice (>=0.4.1,<0.5.0)
+Requires-Dist: tensorflow (>=2.4.1,<3.0.0)
+Project-URL: Repository, https://github.com/wolfisberg/rt-pie
+Description-Content-Type: text/markdown
+
+# RT PIE<br>Real Time PItch Estimator
+
+[**pypi link**](https://pypi.org/project/rt-pie)
+
+## Installation
+
+    pip install rt_pie
+
+## Usage
+
+    from rt_pie import hello_world 
+
+    hello_world.greet()
+
+## Development
+
+Download sources
+
+    git clone ...
+
+Install dependencies
+
+    poetry install
+
+### Build / Publish
+
+    poetry build
+    poetry publish --build [--dry-run]
+
+#### Authors
+Kaspar Wolfisberg<br>
+Luca Di Lanzo
+
+
