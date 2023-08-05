@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+docs/conf.py
+docs/index.rst
+src/cvpickle.py
+src/test_cvpickle.py
+src/cvpickle.egg-info/PKG-INFO
+src/cvpickle.egg-info/SOURCES.txt
+src/cvpickle.egg-info/dependency_links.txt
+src/cvpickle.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+include src/test_*.py
+include docs/conf.py docs/*.rst
