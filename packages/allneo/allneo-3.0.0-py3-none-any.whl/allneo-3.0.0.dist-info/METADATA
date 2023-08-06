@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: allneo
+Version: 3.0.0
+Summary: complete package for neo4j developed by Roni Das
+Home-page: https://github.com/pypa/sampleproject
+Author: RONI DAS
+Author-email: roni@totaltechnology.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: neo4j
+
+Project description
+#developed by :Roni Das
+#Date : 30/05/2021
+allneo is a Python package that provides fast, flexible, and expressive toolkit this helps to work with neo4j graph database easyily and intuitively. It aims to be the fundamental high-level building block for doing practical, real world operation and data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source neo4j operation and manipulation tool available in python. We are trying to make its way toward this goal.
+
+allneo is well suited for many different kinds of neo4j operations
+
+
+
