@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: grafeno
+Version: 0.3.0
+Summary: Concept graph library
+License: AGPL-3.0
+Author: Antonio F. G. Sevilla
+Author-email: afgs@ucm.es
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: lexical
+Provides-Extra: modules
+Provides-Extra: web
+Requires-Dist: PyYAML
+Requires-Dist: networkx (>=2,<3)
+Requires-Dist: nltk; extra == "lexical"
+Requires-Dist: numpy; extra == "modules"
+Requires-Dist: pexpect; extra == "modules"
+Requires-Dist: scipy; extra == "modules"
+Requires-Dist: spacy (>=2,<3)
