@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: huoguoml-dev
+Version: 1622500796
+Summary: A platform for managing and serving Machine Learning types.
+Home-page: https://huoguoml.github.io
+Author: Steven Mi
+License: Apache 2.0
+Description: <div align="center">
+        <h1>🍲 HuoguoML</h1>
+        </div>
+        
+        
+        HuoguoML is a platform for managing and serving machine learning models. It provides a set of functionalities that can be used with all existing machine learning applications. Key features are:
+        
+        - HuoguoML Tracking: An API to log parameters, code, and results of machine learning experiments 
+        - HuoguoML Dashboard: A powerful dashboard for comparing and analysing logged experiments
+        - HuoguoML Service: A CLI to easily launch a REST service from your logged experiments that can be updated over the air
+        
+        
+        ## Installation
+        
+        Get the latest stable version of HuoguoML:
+        
+        ```bash
+        pip install huoguoml
+        ```
+        
+        or get the development version, which is updated with every commit on the main branch:
+        
+        ```bash
+        pip install huoguoml-dev
+        ```
+        
+        
+        ## Examples
+        
+        Just starting out? Try out our examples:
+        
+        | Example                          | Description   | 
+        | --------------------------       | -------------| 
+        | [MNIST](examples/mnist)    | Deployment of a MNIST classifier with HuoguoML and Tensorflow | 
+        
+        ## Documentation
+        
+        Apart from learning from the examples, we highly recommended you go through our [documentation](https://steven-mi.gitbook.io/huoguoml/).
+        
+        Our docs are built on every push to the main or dev branch.
+        
+        ## Contributors
+        
+        We encourage you to contribute to HuoguoML! Please check out the [Contributing guide](CONTRIBUTING.md) for guidelines about how to proceed.
+        
+        
+        ## License
+        
+        Apache License Version 2.0, see [LICENSE](LICENSE)
+Keywords: HuoguoML
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Unix Shell
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Provides-Extra: fastapi
+Provides-Extra: dev
+Provides-Extra: aiofiles
+Provides-Extra: uvicorn
+Provides-Extra: python-multipart
+Provides-Extra: sqlalchemy
+Provides-Extra: click
+Provides-Extra: pydoc-markdown
+Provides-Extra: documentation
+Provides-Extra: test
+Provides-Extra: pytest
+Provides-Extra: all
