@@ -1,0 +1,12 @@
+django_crypto_extensions/__init__.py,sha256=ZFwtVdD_k0fxrpTYlbYr-3v36S6m3AqDtTMKPz-t8qg,688
+django_crypto_extensions/django_fields.py,sha256=uI0mr3-POzAUd7BauOLBb4n57OvnCS3IYPCpmLanZ1s,8530
+django_crypto_extensions/drf_fields.py,sha256=rSMJgOiZhYtDd4GagZamBI7TklnHIh1K4sfGzYTXspI,3574
+django_crypto_extensions/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_crypto_extensions/tests/apps.py,sha256=PLDU5B-iaUF42R7Ulwl5kc2m_j4ErGcmKw3Cz_C10ps,194
+django_crypto_extensions/tests/models.py,sha256=5FMlQgIN8FLxAc1DJ7v6PEB-T7DoX3cDSb5rilVridQ,1477
+django_crypto_extensions/tests/settings.py,sha256=UgK5XW_92ED3GyJl3lIBx9rf4MQwGIA3mExJrg40MwY,4028
+django_crypto_extensions-1.0.2.dist-info/LICENSE,sha256=Xgi9-FoygO8RZ4713AEOaNbZ5XIlC5cIO_LXqBH6kgU,1069
+django_crypto_extensions-1.0.2.dist-info/METADATA,sha256=s2WREUb9tUlMBYwblsDaUXcwSt_nQp6uP-iJEHrVuAc,2177
+django_crypto_extensions-1.0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_crypto_extensions-1.0.2.dist-info/top_level.txt,sha256=x02Nzrj837g69GEI74fzaiDu4Hy2f_Woc-yuMYTDgog,25
+django_crypto_extensions-1.0.2.dist-info/RECORD,,
