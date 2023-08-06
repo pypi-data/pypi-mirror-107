@@ -1,0 +1,3 @@
+recursive-include pyWebBrowser/WebBrowser *.dll *.pdb *.xml *.pak *.dat *.txt *.bin *.dll.config *.exe
+recursive-include pyWebBrowser/WebBrowser/locales *.pak
+recursive-include pyWebBrowser/WebBrowser/swiftshader *.dll
