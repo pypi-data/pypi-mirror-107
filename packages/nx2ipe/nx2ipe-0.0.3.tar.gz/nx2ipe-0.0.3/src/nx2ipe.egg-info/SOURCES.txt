@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/nx2ipe/__init__.py
+src/nx2ipe/nx2ipe.py
+src/nx2ipe.egg-info/PKG-INFO
+src/nx2ipe.egg-info/SOURCES.txt
+src/nx2ipe.egg-info/dependency_links.txt
+src/nx2ipe.egg-info/top_level.txt
+src/nx2ipe/static/__init__.py
+src/nx2ipe/static/basic.xml
+src/nx2ipe/static/settings.ini
