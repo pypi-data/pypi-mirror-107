@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "simple-licence-plugin"
+version = "0.1.1"
+description = "Provides a plugin for pyarmor for checking a licence file is valid."
+authors = ["Alex Hunt <alex.hunt@csiro.au>"]
+license = "CSIRO Open Source Software Licence"
+classifiers = [
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 4 - Beta",
+    # Indicate who your project is intended for
+    "Intended Audience :: Science/Research",
+    # Pick your license as you wish (should match "license" above)
+    "License :: OSI Approved :: MIT License",
+    # Specify the Python versions you support here. In particular, ensure
+    # that you indicate whether you support Python 2, Python 3 or both.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.25.1"
+mypy = "^0.790"
+black = "^20.8b1"
+isort = "^5.7.0"
+flake8 = "^3.8.4"
+pytest = "^6.2.1"
+pytest-asyncio = "^0.14.0"
+pytest-cov = "^2.11.0"
+flake8-junit-report = "^2.1.0"
+importlib-metadata = "^3.4.0"
+lxml = "^4.6.2"
+
+[tool.black]
+line-length = 110
+target-version = ['py38']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
