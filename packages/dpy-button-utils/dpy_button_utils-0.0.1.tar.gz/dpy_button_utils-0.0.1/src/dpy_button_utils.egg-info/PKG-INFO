@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dpy-button-utils
+Version: 0.0.1
+Summary: An extension for discord.py that allows your bot to use buttons
+Home-page: https://github.com/crazygmr101/button-utils
+Author: crazygmr101
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/crazygmr101/button-utils/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+button-utils
+
+
