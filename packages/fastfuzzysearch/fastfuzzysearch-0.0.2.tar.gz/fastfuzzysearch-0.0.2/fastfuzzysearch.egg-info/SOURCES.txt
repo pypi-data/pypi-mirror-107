@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fastfuzzysearch/__init__.py
+fastfuzzysearch/fastfuzzysearch.py
+fastfuzzysearch.egg-info/PKG-INFO
+fastfuzzysearch.egg-info/SOURCES.txt
+fastfuzzysearch.egg-info/dependency_links.txt
+fastfuzzysearch.egg-info/requires.txt
+fastfuzzysearch.egg-info/top_level.txt
