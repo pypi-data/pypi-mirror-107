@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: loraspi
+Version: 1.7
+Summary: library for lora stuff
+Home-page: https://github.com/nbdy/loraspi
+Author: Pascal Eberlein
+Author-email: pascal@eberlein.io
+License: UNKNOWN
+Description: # loraspi
+        mainly intended for the [Waveshare SX1262 868](https://www.waveshare.com/sx1262-868m-lora-hat.htm) <br>
+        ## why
+        i needed a lora
+        - relay
+        - gateway
+Keywords: waveshare lora library
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
