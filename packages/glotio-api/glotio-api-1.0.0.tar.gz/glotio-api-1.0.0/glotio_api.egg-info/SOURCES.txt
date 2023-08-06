@@ -1,0 +1,9 @@
+README.md
+setup.py
+glotio/__init__.py
+glotio/runner.py
+glotio_api.egg-info/PKG-INFO
+glotio_api.egg-info/SOURCES.txt
+glotio_api.egg-info/dependency_links.txt
+glotio_api.egg-info/requires.txt
+glotio_api.egg-info/top_level.txt
