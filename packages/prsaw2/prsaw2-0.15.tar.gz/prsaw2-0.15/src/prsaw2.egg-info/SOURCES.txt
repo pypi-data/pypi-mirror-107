@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/prsaw2/__init__.py
+src/prsaw2/client.py
+src/prsaw2/errors.py
+src/prsaw2/objects.py
+src/prsaw2.egg-info/PKG-INFO
+src/prsaw2.egg-info/SOURCES.txt
+src/prsaw2.egg-info/dependency_links.txt
+src/prsaw2.egg-info/top_level.txt
