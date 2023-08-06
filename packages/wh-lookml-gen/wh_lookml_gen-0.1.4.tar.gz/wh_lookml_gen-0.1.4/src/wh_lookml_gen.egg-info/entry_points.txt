@@ -1,0 +1,7 @@
+[console_scripts]
+wh_lookml_gen = wh_lookml_gen:output
+wh_lookml_gen_init = wh_lookml_gen_init:main
+
+[target]
+view = run:output
+
