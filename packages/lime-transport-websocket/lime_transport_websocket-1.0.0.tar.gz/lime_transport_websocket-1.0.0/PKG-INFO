@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lime_transport_websocket
+Version: 1.0.0
+Summary: WebSocket transport class for the LIME protocol
+Home-page: https://github.com/chr0m1ng/lime-transport-websocket
+Author: Gabriel Santos <gabrielr@take.net>, Luis Araújo <luisc@take.net>
+Author-email: gabrielr@take.net
+License: MIT
+Description: # Lime Transport WebSocket
+        
+        WebSocket transport class for the LIME protocol.
+        
+Keywords: lime,websocket,ws,wss,transport
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
