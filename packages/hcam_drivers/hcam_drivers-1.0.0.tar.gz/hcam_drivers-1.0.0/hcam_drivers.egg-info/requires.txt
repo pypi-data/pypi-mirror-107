@@ -1,0 +1,9 @@
+astropy
+autobahn
+tornado
+pyaml
+twisted
+configobj
+tqdm
+hcam_widgets>=1.0.0
+pymodbus3
