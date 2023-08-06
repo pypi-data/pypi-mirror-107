@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: django-carousels
+Version: 0.1.2
+Summary: Django app for model-based carousels
+Home-page: https://github.com/PragmaticMates/django-carousels
+Author: Pragmatic Mates
+Author-email: info@pragmaticmates.com
+Maintainer: Pragmatic Mates
+Maintainer-email: info@pragmaticmates.com
+License: GNU General Public License (GPL)
+Description: # django-carousels
+        
+        Django app for model-based carousels.
+        
+        # Usage
+        
+        1. define carousel in admin
+        2. create carousel slides
+        3. use template tag in your template 
+Keywords: django UI carousel
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Development Status :: 3 - Alpha
