@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: SocketFactory
+Version: 1.0.7
+Summary: Python library to analyze how the shape of the stump evolves, from the cast to the finished socket, based on the three-dimensional digitization of the surfaces.
+Home-page: https://github.com/LindaGuiducci/SocketFactory.git
+Author: Linda Guiducci and Ioana Madalina Raileanu
+Author-email: ioanamadalina.raileanu@mail.polimi.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: vtk (==9.0.1)
+Requires-Dist: PyQt5 (>=5.15)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: networkx-query
+Requires-Dist: openpyxl
+Requires-Dist: plyfile
+Requires-Dist: pymeshlab
+Requires-Dist: pyvista
+
+SocketFactory
+=============
+ SocketFactory is a Python library to analyze how the shape of the stump evolves, from the cast to the finished socket, based on the three-dimensional digitization of the surfaces. The software uses algorithms and computational geometry tools in order to support data processing processes. The implemented functionalities will also help understanding the errors inherent in the production of tailored orthopedic devices, including the propagation of error during the process chain.
+ The developed library provides a set of interfaces that allows access to non-expert users and is characterized by modularity and extensibility of features.
+
+The data processing flow was developed in the following phases:
+-	Acquisition and pre-processing of data;
+-	Digital identification of anatomical landmark;
+-	Alignment of surfaces in a global reference system according to a common logic, using methods defined both for patients with transtibial and transfemoral amputation;
+-	Spatial registration of two surfaces to align them with each other;
+-	Generation of outcomes and dimensional parameters, including distance maps, cross-sections, geodesic paths and regions of interest;
+-	Extraction of summary statistical indicators of differences related to a series of scans using PCA.
+
+Functionalities
+---------------
+The provided interfaces allow to perform various features:
+1.	Mesh decimation;
+2.	Landmark selection;
+3.	Alignment of the scan according to a chosen method;
+4.	Registration of two meshes using different algorithms which the user can select from a predefined list;
+5.	Creation of 3D color quality mapper given two meshes and the related distance metric;
+6.	Computation of cross-sections and related dimensional parameters;
+7.	Generation of the geodesic path between two mesh points, calculation of length and extraction of points coordinates at certain percentages of path;
+8.	Extraction of Region Of Interest (ROI) and analysis of the quality parameters associated with it;
+9.	Application of the same color scale to N meshes for inter-map comparison;
+10.	Generation of the .pts file required by the morphing software, given two meshes;
+11.	PCA application to a set of meshes;
+12.	Differential PCA application to a set of differences between two mesh groups. 
+
+SocketFactory relies on different libraries:
+- [NumPy](http://www.numpy.org/) and [SciPy](https://www.scipy.org/) to perform mathematical operations;
+- [Pandas](https://pandas.pydata.org/), [OpenPyXL](https://openpyxl.readthedocs.io/en/stable/) and [Plyfile](https://pypi.org/project/plyfile/) to manage different data formats;
+- [PyMeshLab](https://pymeshlab.readthedocs.io/en/latest/index.html) to process data with MeshLab filters;
+- [VTK](https://www.vtk.org/) and [PyVista](https://docs.pyvista.org/) to process, visualize and analyze data;
+- [NetworkX](https://networkx.org/) and [Networkx-query](https://geronimo-iia.github.io/networkx-query/) to create and query graphs;
+- [AmpScan](https://ampscan.readthedocs.io/en/latest/#) to perform Sanders registration;
+- [Scikit-learn](https://scikit-learn.org/stable/index.html) to perform PCA;
+- [PyQt](https://riverbankcomputing.com/software/pyqt/intro) to create interfaces.
+
+Installing SocketFactory
+-------------------
+
+SocketFactory uses Python 3.8. 
+
+SocketFactory can be installed via pip from PyPI.
+
+``pip install SocketFactory``
+
+Running applications
+------------------
+
+Run in Python console:
+
+``from SocketFactory import filename``
+
+``filename.launch() ``
+
+Replace filename with the file name of related functionality.
+
+Filename list:
+1. decimation_main
+2. landmark_main
+3. alignment_main
+4. registration_main
+5. quality_mapper_main
+6. slices_main
+7. geodesic_path_main
+8. roi_main
+9. analysis_mesh_main
+10. pts_file_generation_main
+11. pca_main
+12. differential_pca_main
+
+Author
+-----
+- [Linda Guiducci](https://github.com/LindaGuiducci)
+- [Ioana Madalina Raileanu](https://github.com/madalinaraileanu)
+
