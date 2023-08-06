@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: edatk
+Version: 0.0.3
+Summary: edatk: python exploratory data analysis toolkit
+Home-page: https://github.com/edatk/edatk/
+Author: Barrett Studdard
+Author-email: barrettstuddard@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+Requires-Dist: seaborn (>=0.11)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: matplotlib (>=3.4.2)
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: jinja2 (>=3.0.1)
+
+# edatk: Python Exploratory Data Analysis Toolkit
+
+edatk is a open source project for exploratory data analysis in Python. This is a new project and while features are simple now, the goal is to automate and organize as much of the traditional eda workflow as possible. 
+
+## Installation
+```
+pip install edatk
+```
+
+## Running edatk
+```python
+import edatk as eda
+eda.auto_eda(df, save_path='C:\\Users\\username\\Documents\\edatk')
+```
+
+## Contributing
+If you are interested in contributing, please see the [contributing documentation](/docs/developer/CONTRIBUTING.md).
+
