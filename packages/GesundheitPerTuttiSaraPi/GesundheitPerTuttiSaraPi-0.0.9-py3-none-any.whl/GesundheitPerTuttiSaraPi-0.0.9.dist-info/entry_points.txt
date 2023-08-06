@@ -1,0 +1,3 @@
+[console_scripts]
+GesundheitPerTuttiSaraPi = GesundheitPerTutti_module:main
+
