@@ -1,0 +1,11 @@
+manim_rubikscube/__init__.py,sha256=ZeCfVgWBKM43MzNWw-BvkVG14cXAWfPGQD4hLUFrr2c,226
+manim_rubikscube/__main__.py,sha256=VdPoc8rpm9OZNZAM9la6XBFe9WXjB80V9_0NjIow6kY,139
+manim_rubikscube/cube.py,sha256=j7oXOk1bYZ5HlqRi7Jl9wly8Y1DsFMRoyLm2E5MSRNQ,4884
+manim_rubikscube/cube_animations.py,sha256=5dra2UZsmQYZkAifxtrxff0Pwv5kaRP_2e0rlSkkU9s,1181
+manim_rubikscube/cube_utils.py,sha256=b2-wQZxBSUsYxi5QEMgg54dFUoBsA15CCZ_kmFEPDmo,2698
+manim_rubikscube/cubie.py,sha256=bIR5Pj5qZoqPmS2jo2MnoiX33oM35UzX6DJ5v0704kE,2962
+manim_rubikscube-0.1.0.dist-info/entry_points.txt,sha256=4ojh4qxiE0ct7Pt7KxgcHzCqEI9JTCUzRjmWqxDB034,118
+manim_rubikscube-0.1.0.dist-info/LICENSE,sha256=rka6cHEbfZeyqDmQjYiWpQzupOJAt6xQlDJDFqv9UxI,1087
+manim_rubikscube-0.1.0.dist-info/WHEEL,sha256=Tf_JTHRUsYmRccQnQfn1tqmNatmXkNB0OFKM-B4YyuA,87
+manim_rubikscube-0.1.0.dist-info/METADATA,sha256=GE7qtdu_UOIA8nek7igFO_kvty0EkGosbKlHKq5OuiM,2764
+manim_rubikscube-0.1.0.dist-info/RECORD,,
