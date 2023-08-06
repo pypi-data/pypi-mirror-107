@@ -1,0 +1,191 @@
+$color_reds12: #7b7e79;
+$color_reds13: #a1a3a4;
+$color_reds14: #7b7e79;
+$color_reds16: #a1a3a4;
+$color_orange11: #ffa752;
+$color_orange7: #815127;
+$color_orange12: #fd5b3e;
+$color_purple11: #7b7e79;
+$color_purple12: #a1a3a4;
+$color_green1: #7b7e79;
+$color_green2: #a1a3a4;
+$color_light_blue1: #7b7e79;
+$color_light_blue2: #a1a3a4;
+$color_light_redj1: #7b7e79;
+$color_light_redj2: #a1a3a4;
+$color_light_rkj1: #7b7e79;
+$color_light_rkj2: #a1a3a4;
+$color_light_g2: #7b7e79;
+$color_light_g1: #a1a3a4;
+/** production
+$color_reds12: #ff69aa;
+$color_reds13: #ff5276;
+$color_reds14: #ff89ac;
+$color_reds16: #ffb4f3;
+$color_orange11: #ffa752;
+$color_orange7: #815127;
+$color_orange12: #fd5b3e;
+$color_purple11: #ce00ff;
+$color_purple12: #862fa8;
+$color_green1: #55cb77;
+$color_green2: #2e9c4b;
+$color_light_blue1: #5fb0be;
+$color_light_blue2: #3b9ab9;
+$color_light_redj1: #ffa4a5;
+$color_light_redj2: #ff5858;
+$color_light_rkj1: #39b2ff;
+$color_light_rkj2: #576cff;
+ */
+$space_padding: 10px;
+$space_padding_small: 4px;
+$space_r: 10px;
+
+.r11basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-135deg, $color_light_rkj1 0%, $color_light_rkj2 100%);
+}
+
+.r12basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-135deg, $color_reds12 0%, $color_reds13 100%);
+}
+
+.r13basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-70deg, $color_orange11 0%, $color_orange12 100%);
+}
+
+.r14basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-45deg, $color_purple11 0%, $color_purple12 100%);
+}
+
+.r15basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-100deg, $color_green1 0%, $color_green2 100%);
+}
+
+.r16basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-40deg, $color_light_blue1 0%, $color_light_blue2 100%);
+}
+
+.r18basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(40deg, $color_orange7 0%, $color_orange11 100%);
+}
+
+.r19basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-100deg, $color_reds16 0%, $color_orange12 100%);
+}
+
+.r17basic {
+  border-radius: $space_r;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(-40deg, $color_light_redj1 0%, $color_light_redj2 100%);
+}
+
+.rgreybox {
+  border-radius: $space_padding_small;
+  padding: $space_padding;
+  display: block;
+  position: relative;
+  background: linear-gradient(13deg, $color_light_g2 0%, $color_light_g1 100%);
+}
+
+.box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+
+  .box {
+    padding: 30px;
+    margin: 2%;
+    // background: linear-gradient(-50deg, $color_reds16 0%, $color_orange12 100%);
+    background: linear-gradient(-40deg, $color_light_redj1 0%, $color_light_redj2 100%);
+    width: 30%;
+    border: 1px solid $color_reds16;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: .2s all;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: ElementalEnd;
+  }
+
+  &:hover .box {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+  }
+
+  &:hover .box:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  }
+}
+
+@media(min-width: 510px) {
+  .box-wrap {
+    .midlogo.box {
+      .logo {
+        width: 76px;
+        height: 76px;
+      }
+      width: 216px;
+      p {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 510px) {
+  .box-wrap {
+    display: flex;
+    flex-direction: column;
+    .box {
+      width: 100%;
+    }
+  }
+
+  .midlogo.box {
+    p {
+      margin-left: 40px;
+    }
+  }
+}

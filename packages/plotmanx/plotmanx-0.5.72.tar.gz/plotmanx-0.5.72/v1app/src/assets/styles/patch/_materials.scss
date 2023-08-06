@@ -1,0 +1,147 @@
+@import "~compass-mixins";
+@import "~assets/styles/patch/_colorconf.scss";
+
+@mixin light_background_ver($start, $end) {
+  background-repeat: repeat;
+  @include filter-gradient($start, $end, horizontal);
+  @include background-image(radial-gradient(circle at top, $end 3%, $start 45%));
+}
+
+@mixin pv_plan_background_ver($start, $end) {
+  background-repeat: repeat;
+  @include filter-gradient($start, $end, horizontal);
+  @include background-image(radial-gradient(circle at top, $end 2%, $start 70%));
+}
+
+@mixin cover_static() {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+
+@mixin coverbasic($top_displace) {
+  position: absolute;
+  top: $top_displace;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+$to_position: 101px;
+
+@keyframes wrap_animation {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: $to_position 100%;
+  }
+}
+
+@-webkit-keyframes wrap_animation {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: $to_position 100%;
+  }
+}
+
+.anim_basic {
+
+  $xfrom: rgba(#604b31, 0.94);
+  $xxfrom: rgba(#eacda3, 0.97);
+  $xxunder: rgba(#FFC237, 0.97);
+
+
+  background-image: url("~assets/img/sheet/sheetbw.jpg");
+  background-position-x: -20px;
+  background-repeat: repeat;
+
+
+  .cover_overlay {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+
+    &.n-default {
+      background-image: linear-gradient(to top, $xfrom 0%, $xxfrom 100%);
+    }
+
+    &.p0 {
+      background-image: linear-gradient(to top, $xxfrom 0%, $xxunder 100%);
+    }
+  }
+
+  .cover_c {
+    @include coverbasic(20vh);
+
+    .target_logo {
+      width: 400px;
+    }
+  }
+
+  .cover_d {
+    @include coverbasic(50vh);
+
+    .target_logo {
+      width: 400px;
+    }
+  }
+}
+
+
+.bghmnk{
+
+  $xfrom: rgba(#604b31, 0.94);
+  $xxfrom: rgba(#eacda3, 0.97);
+  $xxunder: rgba(#FFC237, 0.97);
+
+  background-image: url("~assets/img/sheet/ssheet.jpg");
+  background-repeat: repeat;
+
+}
+
+.versace_backdrop_container {
+  position: relative;
+  z-index: -1;
+
+  .black_strip {
+    $ep: rgba($color_price_plan_start, 0.67);
+    position: absolute;
+    right: 50px;
+    height: 100vh;
+    width: 55px;
+    background-color: $ep;
+  }
+
+  .versace_layer {
+    @extend .anim_basic;
+    @include cover_static
+  }
+
+  //e9bd88
+  .versace_dark {
+    $s: rgba($color_price_plan_start, 0.9);
+    $e: rgba($color_price_plan_edark, 0.97);
+    // @include pv_plan_background_ver($s, $e);
+    @include light_background_ver($s, $e);
+    @include cover_static
+  }
+
+  .versace_light {
+    $s: rgba($color_price_plan_end, 0.9);
+    $e: rgba($color_price_plan_start, 0.97);
+    @include pv_plan_background_ver($s, $e);
+    @include cover_static
+  }
+
+  .pattern_layer {
+    @extend .anim_basic;
+    @include cover_static
+  }
+
+}

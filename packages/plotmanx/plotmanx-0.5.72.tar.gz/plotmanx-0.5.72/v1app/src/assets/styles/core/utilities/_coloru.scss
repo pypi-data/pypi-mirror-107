@@ -1,0 +1,77 @@
+@mixin noselect() {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+@mixin shadow($x,$y,$z,$r,$g,$b,$o) {
+  -webkit-box-shadow: $x $y $z rgba($r, $g, $b, $o);
+  -moz-box-shadow: $x $y $z rgba($r, $g, $b, $o);
+  box-shadow: $x $y $z rgba($r, $g, $b, $o);
+}
+
+@mixin shadow_c($x,$y,$z,$color) {
+  -webkit-box-shadow: $x $y $z $color;
+  -moz-box-shadow: $x $y $z $color;
+  box-shadow: $x $y $z $color;
+}
+
+@mixin back_spot_light($n) {
+  @for $i from 1 through $n {
+    @if ($i < 3) {
+      -webkit-box-shadow: 0 0 #{.5+$i}rem #FFF;
+      -moz-box-shadow: 0 0 #{.5+$i}rem #FFF;
+      box-shadow: 0 0 #{.5+$i}rem #FFF;
+    } @else {
+      -webkit-box-shadow: 0 0 #{.5+$i}rem #29F294;
+      -moz-box-shadow: 0 0 #{.5+$i}rem #29F294;
+      box-shadow: 0 0 #{.5+$i}rem #29F294;
+    }
+  }
+}
+
+@mixin shadow_tez() {
+  color: #eee;
+  text-shadow: 0 .5rem .5rem #fff,
+  0 .5rem 1rem #fff,
+  0 .5rem 2rem #29F294,
+  0 .5rem 3rem #29F294,
+  0 .5rem 4rem #29F294,
+  0 .5rem 5rem #29F294,
+  0 .5rem 6rem #29F294,
+  0 .5rem 7rem #29F294,
+  0 .5rem 8rem #29F294;
+}
+
+@mixin shadow_low() {
+  color: #eee;
+  text-shadow: 0 .04rem .11rem #fff,
+  0 .07rem .12rem #29F294,
+  0 .1rem .13rem #29F294;
+}
+
+@mixin gradient($direction, $listp) {
+  background: -webkit-linear-gradient($direction, $listp);
+  background: -moz-linear-gradient($direction, $listp);
+  background: -o-linear-gradient($direction, $listp);
+  background: linear-gradient($direction, $listp);
+}
+
+@mixin gradientTopBottom($start, $end) {
+  background-image: -webkit-linear-gradient(top, $start 0, $end 100%);
+  background-image: -o-linear-gradient(top, $start 0, $end 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($start), to($end));
+  background-image: linear-gradient(to bottom, $start 0, $end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end', GradientType=0);
+  background-repeat: repeat-x;
+}
+
+@mixin options($from,$to,$boxes) {
+  $b: $boxes + 1;
+  @for $n from 1 to $b {
+    &:nth-child(#{$n}) {
+      background-color: mix($to, $from, percentage($n / $b));
+    }
+  }
+}
