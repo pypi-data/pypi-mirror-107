@@ -1,0 +1,3 @@
+[console_scripts]
+pac_op = pacutils.pac_op:main
+

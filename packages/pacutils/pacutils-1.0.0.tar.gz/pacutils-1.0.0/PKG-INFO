@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pacutils
+Version: 1.0.0
+Summary: PAC utilities
+Home-page: https://gitlab.devtools.intel.com/OPAE/pyopae
+Author: Wei Huang
+Author-email: wei.huang@intel.com
+License: BSD3
+Description: file: README.md
+Keywords: PAC OPAE
+Platform: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
