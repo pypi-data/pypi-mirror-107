@@ -1,0 +1,21 @@
+kind: VariableCategory
+title: Networking
+id: network
+info: HTTP, HTTPS, DNS, SSH settings
+graphic: language
+
+---
+
+kind: VariableCategory
+title: Workloads
+id: workload
+info: All things performance and functionality
+graphic: build
+
+---
+
+kind: VariableCategory
+title: Security
+id: security
+info: Network policies, RBAC and admin access
+graphic: security
