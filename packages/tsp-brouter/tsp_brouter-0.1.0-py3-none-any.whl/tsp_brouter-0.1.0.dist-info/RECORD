@@ -1,0 +1,11 @@
+tsp_brouter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsp_brouter/brouter_call.py,sha256=g0-p52XFhkZ0o0R8V4y9GywTikS8veJFV2tdcZm5UXk,40664
+tsp_brouter/ogr_helper.py,sha256=FikemtxSQoEd0He5dfjkFfS0PvygH3t--PQ2yacNXo0,976
+tsp_brouter/ortools_tsp.py,sha256=gIh8YOI9J6GmbJPMJFJCPbbAGiPmne3M2FLKERkkAcA,4067
+tsp_brouter/tsp_brouter.py,sha256=Z-WMi1IzY-H-mCuNSRvm9MI15LSg1yBYckzmC86Yadw,18338
+tsp_brouter-0.1.0.data/scripts/tsp_brouter_cli.py,sha256=-LG7IywiPcg-RJF5p5-NdtKpCPxzpnK7si8hlsNGz5Q,18374
+tsp_brouter-0.1.0.dist-info/LICENSE,sha256=LPYv4kNSqFDTfYPQLtICLoobWCPrdCGm1T2O0dSUmFM,1073
+tsp_brouter-0.1.0.dist-info/METADATA,sha256=x9gS5K6Cc5nF55nYhC9VzAPX6LV2A8VKRJEVBoXC3Tw,4484
+tsp_brouter-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tsp_brouter-0.1.0.dist-info/top_level.txt,sha256=7vOmOJkNTxVFck8ROByPxtiKGzlcFTCk5tpawRnP6Jc,12
+tsp_brouter-0.1.0.dist-info/RECORD,,
