@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: triton
+Version: 0.4.0
+Summary: A language and compiler for custom Deep Learning operations
+Home-page: https://github.com/ptillet/triton/
+Author: Philippe Tillet
+Author-email: phil@openai.com
+License: UNKNOWN
+Download-URL: https://github.com/ptillet/triton/archive/v0.1.tar.gz
+Keywords: Compiler,Deep Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: torch
+
+UNKNOWN
+
+
