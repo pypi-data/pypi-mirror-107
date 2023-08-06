@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: link_previewer
+Version: 0.0.5
+Summary: Gives the link preview based on Open Graph Protocol
+Home-page: https://github.com/amiaynara/link_previewer.git
+Author: Amiay Narayan
+Author-email: amiayn@iitbhilai.ac.in
+License: UNKNOWN
+Description: This package creates a link preview of a URL. This largely relies on the Open Graph protocol proposed by Facebook.
+        
+        # Installation
+        ```bash
+        $ pip install link_previewer
+        ```
+        
+        # Developing Hello World
+        To install link_previewer, along with the tools you need to develop and run tests, run the following in your virtualenv:
+        ```bash
+        $ pip install -e .[dev]
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev

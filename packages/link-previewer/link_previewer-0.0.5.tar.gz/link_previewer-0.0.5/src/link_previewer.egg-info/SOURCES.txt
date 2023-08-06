@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+test_preview.py
+src/__init__.py
+src/previewer.py
+src/link_previewer.egg-info/PKG-INFO
+src/link_previewer.egg-info/SOURCES.txt
+src/link_previewer.egg-info/dependency_links.txt
+src/link_previewer.egg-info/requires.txt
+src/link_previewer.egg-info/top_level.txt
