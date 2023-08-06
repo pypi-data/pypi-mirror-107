@@ -1,0 +1,3 @@
+[console_scripts]
+formsnake = formsnake:run_server
+

@@ -1,0 +1,5 @@
+include formsnake/alembic.ini
+graft formsnake/alembic
+graft formsnake/static
+graft formsnake/templates
+global-exclude *.pyc
