@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        circuitpython-build-bundles=samourai_build_tools.scripts.build_bundles:build_bundles
+      
