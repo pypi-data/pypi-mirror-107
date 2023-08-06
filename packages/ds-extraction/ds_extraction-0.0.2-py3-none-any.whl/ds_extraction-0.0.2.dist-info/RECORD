@@ -1,0 +1,12 @@
+ds_extraction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds_extraction/edit_distance.py,sha256=TkdHTTwOiWEfb3KmUes-sYjhJU7sVjPTmpIoyHzmJpA,810
+ds_extraction/vb_ahocorasick.py,sha256=PTC8_2Z_pkZmLa0BmHZrSxAd1h4gQ-mVD4LQm3u0Kuc,5073
+ds_extraction/saved_dict/disease_dict,sha256=0Lg7FLwTCqu7qgxct-4T7nei8xNw7NF1ZVkW7WuKOUY,441996
+ds_extraction/saved_dict/symptom_dict,sha256=Cz-xj4imPAB7tioUi8OL8wbs9mVvaGauoc2v7I1jwbI,1115381
+ds_extraction/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds_extraction/utils/preprocess.py,sha256=I5txrrn-Dr8IFM49iQCeT6niuL1M_NffQ2CN8pFhzvs,9132
+ds_extraction/utils/utils.py,sha256=nnGdUETmPtFAPVCHGIsCby_f-Y6r8sDGBfHErLEWuVQ,1517
+ds_extraction-0.0.2.dist-info/METADATA,sha256=m0sIW_QmfB6qhaUmXMNColHsEBEIJBPmmdFqbap71To,606
+ds_extraction-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ds_extraction-0.0.2.dist-info/top_level.txt,sha256=gHfraZh3lNr9ER9TWqSeeW9CQFF0c_7MUSttkBFgHDE,14
+ds_extraction-0.0.2.dist-info/RECORD,,
