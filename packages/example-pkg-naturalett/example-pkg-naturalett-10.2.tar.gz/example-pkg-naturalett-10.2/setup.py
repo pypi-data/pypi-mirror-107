@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+import logging
+import os
+
+import setuptools, subprocess
+from setuptools.command.install import install
+from distutils.sysconfig import get_python_lib
+
+# LIMINAL_HOME_DAG="/opt/airflow/dags/liminal_dags.py"
+LIMINAL_HOME_DAG=os.environ.get('AIRFLOW__CORE__DAGS_FOLDER', '/opt')
+LIMINAL_RUNNER="liminal/runners/airflow/dag/liminal_dags.py"
+
+class PostInstallDependencies(install):
+    """Post-installation for dependencies"""
+    def run(self):
+        install.run(self)
+        print(f"Path is: {LIMINAL_HOME_DAG}")
+        print(f"Runner is: {LIMINAL_RUNNER}")
+        command = subprocess.run(['ln', '-sf', f'{get_python_lib()}/{LIMINAL_RUNNER}', LIMINAL_HOME_DAG], capture_output=True)
+        command2 = subprocess.run(['touch', '/opt/airflow/dags/testme'], capture_output=True)
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+    logging.info(requirements)
+
+setuptools.setup(
+    name="example-pkg-naturalett",
+    version=os.environ.get("LIMINAL_BUILD_VERSION", os.environ.get('LIMINAL_VERSION', None)),
+    author="dev@liminal.apache.org",
+    author_email='dev@liminal.apache.org',
+    description="A package for authoring and deploying machine learning workflows",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/apache/incubator-liminal",
+    packages=setuptools.find_packages(),
+    cmdclass={'install': PostInstallDependencies},
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
+    ],
+    license='Apache License, Version 2.0',
+    python_requires='>=3.6',
+    install_requires=requirements,
+    scripts=['scripts/liminal'],
+    include_package_data=True,
+    package_data={
+        'liminal': ['../DISCLAIMER', '../LICENSE', '../NOTICE', '../README.md']
+    }
+)
