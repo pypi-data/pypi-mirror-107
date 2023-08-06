@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Nipher
+Version: 0.1.2b0
+Summary: IP lookup tool to avoid manual check.
+Home-page: https://github.com/Slyrack/Nipher
+Author: Pedro Huang
+Author-email: justhuangpedro@gmail.com
+License: MIT
+Download-URL: https://github.com/Slyrack/Nipher/archive/refs/tags/v0.1.2-beta.tar.gz
+Description: UNKNOWN
+Keywords: Nipher,IP Lookup,IP Geolocation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
