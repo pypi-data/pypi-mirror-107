@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+EpicEndpoints/EpicEndpoints.py
+EpicEndpoints/__init__.py
+EpicEndpoints.egg-info/PKG-INFO
+EpicEndpoints.egg-info/SOURCES.txt
+EpicEndpoints.egg-info/dependency_links.txt
+EpicEndpoints.egg-info/requires.txt
+EpicEndpoints.egg-info/top_level.txt
