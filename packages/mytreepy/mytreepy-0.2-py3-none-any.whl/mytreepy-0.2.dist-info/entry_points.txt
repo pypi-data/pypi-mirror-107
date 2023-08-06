@@ -1,0 +1,3 @@
+[console_scripts]
+treepy = treepy.main:main
+
