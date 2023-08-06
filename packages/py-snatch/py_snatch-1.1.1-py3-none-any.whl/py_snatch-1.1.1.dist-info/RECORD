@@ -1,0 +1,14 @@
+snatch/__init__.py,sha256=_zFMzDcxdBdhQH90gCgWkq8NxqLfEhnu_CmUb5naSaY,46
+snatch/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snatch/base/data.py,sha256=f6_e1G8PISNB5DfVATWUFVNj9dRsTTJw3w8TiM5x4AE,2550
+snatch/base/data_source.py,sha256=445l712esCM3_Jysr0S-O_yOi8JC1Fs2YMKPcak2Drg,8296
+snatch/base/schema.py,sha256=KL1XbFN4AhF9QdFiq29ttZSgteB5l7l9BnkaPTELV4Q,447
+snatch/boa_vista.py,sha256=7Ix7oe9J_dDiRp6bBw3rMGYU9spjPRp3sTso1VpRHk0,2214
+snatch/conf_stela.py,sha256=_j3tdpLcE_LEHUA8-7iVOMB0JtYq3F8cI79EvXsoHkk,1203
+snatch/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snatch/helpers/load_fixtures.py,sha256=ffTwp6VpmBK3PT38x6EdOPGPSkQAHr9xOP6LaWNqeSc,695
+snatch/helpers/only_numbers.py,sha256=thNqyfUXfswPmV4OmzJG7kqJCQ1Xr_LvzMJV8d-ZtKg,141
+snatch/helpers/secrets_manager.py,sha256=gzu-LlDfu5FjL-4mheIs24CauzVskAnGmDFLGhPQYbM,2405
+py_snatch-1.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+py_snatch-1.1.1.dist-info/METADATA,sha256=RmnD34ESuJXpNpvqXKVNKWnBNkffCtfPvOqSIEQjJpQ,499
+py_snatch-1.1.1.dist-info/RECORD,,
