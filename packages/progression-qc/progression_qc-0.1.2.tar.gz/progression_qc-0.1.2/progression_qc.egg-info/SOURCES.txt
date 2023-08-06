@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+progression_qc/__init__.py
+progression_qc/__main__.py
+progression_qc/progression_qc.py
+progression_qc.egg-info/PKG-INFO
+progression_qc.egg-info/SOURCES.txt
+progression_qc.egg-info/dependency_links.txt
+progression_qc.egg-info/requires.txt
+progression_qc.egg-info/top_level.txt
+progression_qc/schemas/__init__.py
+progression_qc/schemas/infos_question.py
+progression_qc/schemas/infos_questionProg.py
+progression_qc/schemas/rétroactions.py
+progression_qc/schemas/tests.py
+progression_qc/schemas/ébauches.py
