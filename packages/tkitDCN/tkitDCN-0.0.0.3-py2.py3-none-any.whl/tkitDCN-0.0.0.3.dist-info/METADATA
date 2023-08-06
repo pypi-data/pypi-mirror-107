@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tkitDCN
+Version: 0.0.0.3
+Summary: Terry toolkit tkitDCN 动态图卷机
+Home-page: https://github.com/napoler/tkit_dcn_pytorch
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# 
+
+## 安装
+```
+pip install tkitDCN
+```
+
+使用和示例
+
+
+```
+from tkit_dcn import DeformConv2d as DCN
+# 查看类
+dir(tkit_dcn)
+
+help(DCN)
+```
+
