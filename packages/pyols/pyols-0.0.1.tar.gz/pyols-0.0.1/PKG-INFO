@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyols
+Version: 0.0.1
+Summary: I'm very frustrated with the current stats package in python. So I     wrote a new one.
+Home-page: UNKNOWN
+Author: Zoey Hu
+Author-email: zoey.zyhu@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: stats,ols,simple
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
