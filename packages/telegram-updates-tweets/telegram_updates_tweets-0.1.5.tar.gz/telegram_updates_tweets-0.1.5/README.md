@@ -1,0 +1,222 @@
+# Telegram Updates Tweets
+This package monitors the number of participants in a telegram channel and can post gains/losses updates to twitter.
+It requires a twitter API key and telegram API key.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install telegram_updates_tweets.
+
+### Simple version
+
+```bash
+pip install telegram_updates_tweets
+```
+
+### With monitoring and database logging
+
+```bash
+pip install telegram_updates_tweets[logging,monitoring]
+```
+
+## Usage
+The package is configured with a bunch of options. It also supports environmental variabls (see docker instructions below for details).
+
+### Simple version (powershell)
+```powershell
+python -m telegram_updates_tweets --tweet-losses 100 `
+--twitter-key OopNaGdhsdhgsgRg0FVAOzC `
+--twitter-secret VWyvs87IKYsgsdhdswgg23g3g3gPbcETEV8HlvmnCx `
+--twitter-access-token 134062562626437-1zh50lhr3dggsgsg8oYGrSh3eW `
+--twitter-access-token-secret 5jGpCn79ZexhcQafaf43yt3gNEKWQVzzU `
+--telegram-api-id 20161454 `
+--telegram-api-hash b7dae636835151536egwgf6ffc69 `
+--telegram-channel-name CHANNELNAME `
+--tweet-loss-template 'Der Kanal hat {loss_step} Leser verloren und ist jetzt bei {count}' `
+--tweet-graph-template '24h Bericht, aktuelle Anzahl der Leser ist {count}, Änderung {total_change:+d} Leser'
+```
+### Logging/monitoring version (powershell)
+```powershell
+python -m telegram_updates_tweets --tweet-losses 100 `
+--twitter-key OopNaGdhsdhgsgRg0FVAOzC `
+--twitter-secret VWyvs87IKYsgsdhdswgg23g3g3gPbcETEV8HlvmnCx `
+--twitter-access-token 134062562626437-1zh50lhr3dggsgsg8oYGrSh3eW `
+--twitter-access-token-secret 5jGpCn79ZexhcQafaf43yt3gNEKWQVzzU `
+--telegram-api-id 20161454 `
+--telegram-api-hash b7dae636835151536egwgf6ffc69 `
+--mongodb 127.0.0.1:27017 --telegram-channel-name CHANNELNAME `
+--tweet-loss-template 'Der Kanal hat {loss_step} Leser verloren und ist jetzt bei {count}' `
+--tweet-graph-template '24h Bericht, aktuelle Anzahl der Leser ist {count}, Änderung {total_change:+d} Leser' `
+--tweet-graph 20 `
+--tweet-graph-img-template 'Innerhalb der letzten {hours} Std.: {total_change:+d} Leser' `
+--monitoring-port 3134 --monitoring-password 'sgwjth23iut2tkjakd'
+```
+
+### Template variables
+`--tweet-loss-template` and `--tweet-gain-template`
+- `{loss_step}` is the `--tweet-losses` parameter
+- `{gain_step}` is the `--tweet-gains` parameter
+- `{count}` is the current number of participants in the channel
+- `{channel_name}` is the channel name as defined by `--telegram-channel-name`
+
+`--tweet-graph-img-template` is the title in the image of the 24h report image
+- `{hours}` is the rounded number between the oldest and the newest datapoint in the database (typically integer 24)
+- `{total_change:+d}` is the count of the oldest datapoint minus the count of the newest, `+d` add an explicit plus sign to positive numbers
+
+### Docker image
+The application can be pulled with
+
+```powershell
+docker pull jcq9kw2s/telegram_updates_tweets:latest
+```
+
+#### Env File
+To configure the application within the docker image I recommend using a `.env` file.
+The variable names have a prefix `TT_` and are the uppercase versions with underscores of the options described below.
+
+Example for `.env` with logging and monitoring:
+
+```txt
+TT_TWEET_LOSSES=100
+TT_TWITTER_KEY=g3g3g3gwegwgfejhegweg
+TT_TWITTER_SECRET=sjgpjpiowgjij0u030t32jgjpjwjijjoijygyupsjfjsofjofjo
+TT_TWITTER_ACCESS_TOKEN=162162615161515-1515kjk1j5h12hjlk1b1g54
+TT_TWITTER_ACCESS_TOKEN_SECRET=5mklmjijafkshfishifhaohfhhg3f23fih2
+TT_TELEGRAM_API_ID=515661515
+TT_TELEGRAM_API_HASH=15414141414ef1fffafffdf14
+TT_MONGODB=host.docker.internal:27017
+TT_TELEGRAM_CHANNEL_NAME=CHANNELNAME
+TT_TWEET_LOSS_TEMPLATE=Der Kanal hat {loss_step} Leser verloren und ist jetzt bei {count} #hashtag
+TT_TWEET_GRAPH_TEMPLATE=24h Bericht, aktuelle Anzahl der Leser ist {count}, Änderung {total_change:+d} Leser @someacc #hashtab
+TT_TWEET_GRAPH=20
+TT_TWEET_GRAPH_IMG_TEMPLATE=Innerhalb der letzten {hours} Std.: {total_change:+d} Leser
+TT_MONITORING_PORT=12345
+TT_MONITORING_PASSWORD=256n52jj512b412b1
+```
+#### Running docker image
+I recommend running the python module in terminal first to get the session of telegram and mount it into the container, the `session-journal` file should not need to be mounted.
+
+Powershell
+
+```powershell
+docker run --name tt -v "$pwd/anon.session:/app/anon.session" --network="host" --env-file .env -p 12345:12345 -it jcq9kw2s/telegram_updates_tweets:latest
+```
+
+For development
+
+```powershell
+docker stop tt;docker rm tt;docker run --name tt -v "$pwd/anon.session:/app/anon.session"  --network="host" --env-file .env -p 12345:12345 -it jcq9kw2s/telegram_updates_tweets:latest
+```
+
+## Options
+```text
+Usage: python -m telegram_updates_tweets [OPTIONS]
+
+  Connects to telegram as a user and checks every 60minutes the subscriber
+  count of the given channel. It allows to tweet gains and/or losses with
+  additional info.
+
+Options:
+  --tweet-gains INTEGER           Deactivated if <=0, otherwise describes the
+                                  step. Example: 100 -> tweet at 1900, 2000,
+                                  2100, ...
+
+  --tweet-losses INTEGER          Deactivated if <=0, otherwise describes the
+                                  step. Example: 100 -> tweet at 2100, 2000,
+                                  1900, ...
+
+  --tweet-loss-template TEXT      This template will be formatted and posted
+                                  on loss
+
+  --tweet-gain-template TEXT      This template will be formatted and posted
+                                  on gain
+
+  --tweet-graph INTEGER           Deactivated if <0, otherwise 0..23 specifies
+                                  the time when to post a 24h summary graph
+                                  (requires mongodb)
+
+  --tweet-graph-template TEXT     This template will be formatted and posted
+                                  if --tweet-graph is specified
+
+  --tweet-graph-img-template TEXT
+                                  This template will be formatted and used in
+                                  the image if --tweet-graph is specified
+
+  --monitoring-port INTEGER       Deactivated if <=0, otherwise 0..65000
+                                  specifies the port which allows to fetch
+                                  monitoring information. Requires
+                                  --monitoring-password
+
+  --monitoring-password TEXT      Is required if --monitoring-port is set. Is
+                                  used in basic authentication password,
+                                  username can be any.
+
+  --check-frequency INTEGER       Check period in seconds
+  --twitter-key TEXT              Also called API key, is created by the
+                                  twitter app
+
+  --twitter-secret TEXT           The secret of the twitter app
+  --twitter-access-token TEXT     The access token of the oauth procedure
+  --twitter-access-token-secret TEXT
+                                  The secret of the oauth access token
+  --telegram-api-id INTEGER       The number created by telegram
+  --telegram-api-hash TEXT        The api hash created by telegram
+  --telegram-channel-name TEXT    The name of the channel of interest
+  --mongodb TEXT                  IP:PORT of the mongo db, if not set, no data
+                                  will be logged
+
+  --help                          Show this message and exit.
+```
+
+## Monitoring
+If you want to have downtime alerts via email, I recommend using a Google Cloud Service.
+1. Start your application with `--monitoring-port` and `--monitoring-password`
+1. Go to `Operations>Monitoring>Uptime Checks`
+2. Create Uptime Check
+3. Target
+- Protocol: HTTP
+- Resource Type: URL
+- Hostname: your-server-url.host.com
+- Path: `/`
+- Check Frequency: 15min
+- More Options:
+- Regions: Global
+- Host Header: empty
+- Port: as set in `--monitoring-port`
+- Encrypt custom headers: unchecked
+- Authentication, Username: `user`
+- Authentication, Password: as set in `--monitoring-password`
+4. Response Validation
+- Response Timeout: 10s
+- Content matching is enabled: checked
+- Response Content Match Type: `Contains`
+- Response Content: `OK`
+- Log Check Failures: checked
+5.  Alert and Notification
+Create an email notification channel
+## Development
+1. After cloning this repo execute `git config core.hooksPath hooks` in the root directory.
+2. Install poetry https://python-poetry.org/docs/
+3. `poetry config settings.virtualenvs.in-project true`
+4. `poetry install`
+4. `poetry shell`
+
+## API keys
+To use this package a twitter API key and a telegram API key are needed, these keys will be used to request OAUTH tokens from one twitter account and a telegram account.
+
+1. Create a twitter APP with 'write' permission https://developer.twitter.com/en/portal/projects-and-apps
+- this creates the `--twitter-key` and the ` --twitter-secret`
+- the application will print a `authorization link`, open it, give permission to your own app the use your twitter profile
+- it will print the `--twitter-access-token` and `--twitter-access-token-secret`
+- all subsequent calls should use all four parameters
+2. Create a telegram APP as described in https://core.telegram.org/api/obtaining_api_id
+- this generates a `--telegram-api-id` (numbers) and `--telegram-api-hash` (string)
+- when the application is started with this parameters, it will ask for your phone number, you will receive a code from telegram, enter it in the application
+- this will create a token file called 'anon.session' and 'anon.session-journal'
+- all subsequent calls should not prompt for other info
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
