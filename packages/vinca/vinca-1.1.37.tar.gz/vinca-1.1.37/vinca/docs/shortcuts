@@ -1,0 +1,108 @@
+CLI
+-vD                        visual decks
+-vq {PATTERN}              visual search
+-a  [DECK]                 add a single card of type determined by deck
+-A  [DECK]                 add multiple cards
+-o  [DECK]                 add image occlusion card
+-q  {pattern} [DECK]       list cids of all matches
+-s  [DECK]                 study
+-S  [DECK]                 statistics
+-D                         lists decks (and asks?) if no arg
+-e  [DECK/CID]             edit the decks file # edit the decks file if no argument given
+-b  {dest} [DECK]          backs up all card files to dest
+-B  {dest}                 backs up an entire copy of the system to dest (reviewers, editors, &c)
+-h, --help                 print this help page
+-c  {CID}                  run the command on the specified card (will ignore deck argument)
+-d  {DECK}                 operate on the specified deck
+-x  {DECK/CID}
+--date {date}              operate on the cards due on date; reviews will be dated today
+--simulate-date            operate on the cards due on date; reviews will be dated as simulated-date
+--import {source}          import cards; resolve conflicts (there are none it is just concatenation)
+--filter  [FILE]           specifiy or create a filter file
+-                          other commands may be added by the user
+-                          card creation commands will work here and in creation mode
+
+VISUAL DECK
+- j   move down one deck
+- k   move up one deck
+- a   add one note with type basic
+- A   add several notes
+- o   (add one note with image occlusion)
+- s   study the current deck
+- S   show statistics for the current deck
+- r   rename the current deck
+- +   create a new deck
+- x   delete the current deck
+- q   run a search on the selected deck
+
+VISUAL SEARCH 
+- q   exit visual search
+- j   go down one entry
+- k   go up one entry
+- spc preview entry
+- ent preview entry
+- x   delete card
+- e   edit card
+
+
+REVIEW (for basic reviewer)
+
+     |  cont  |   no
+-----|--------|--------
+save |  enter |   
+-----|--------|--------
+no   |   x    |  q,esc
+-----|--------|--------
+
+go back in review
+-h,u    no history change, see prev card
+go back in preview
+-u      delete current card, see prev card
+-h      make current card, see prev card
+
+(there is no going forward)
+
+-     should restore the terminal after use
+- e   enter editing the front side
+- f   enter editing the front side (must be implemented)
+- b   enter editing for the back side (must be implemented)
+- t   enter editing for the tags (at bottom; may be overriden by reviewer)
+- x   delete card --> y/n
+- spc move to backside / mark as good
+- ent move to backside / mark as good
+- 1   mark as again
+- 2   mark as hard
+- 3   mark as good
+- 4   mark as easy
+- esc return to home / deck menu
+- @   suspend card
+- -   bury card
+- *   mark card (!r for mark with red)
+- if  specify path to front img file in command bar - refresh review
+----  the editor (which is executing this operation also has the privelege of changing the config / note type)
+- ib  specify path to back  img file in command bar - refresh review
+- ic  specify path to cntxt img file in command bar - refresh review
+- vf  specify path to front img file as clipboard - refresh review
+- vb  specify path to back  img file as clipboard - refresh review
+- vc  specify path to cntxt img file as clipboard - refresh review
+- H   go back one card and undo scheduling changes
+- u   go back one card and undo scheduling changes
+- p   play audio
+
+PREVIEW (for viewing cards while in add mode)
+- inherits cmds from REVIEW
+- disinherits grading cmds
+- many commands like for vb start the editor and pass it an argument
+- w   create the card and open another (of the same type)
+- ent create the card and open another (of the same type)
+- q   discard (delete) the card without saving and return to home
+- x   create the card and return to home
+- H   edit the most recent card (can be repeated to go farther back)
+- o   create image occlusion; key-bindings to types should not interfere
+
+EDIT (for basic editor)
+- this *is* vim but with option -u custom.vimrc
+- --> for such things as tab autocompletion
+- vim starts in insert mode
+- <tab> move between front and back splits
+- <enter> same as write & quit -> this will take the user to the editor shell which will transfer the user to preview.
