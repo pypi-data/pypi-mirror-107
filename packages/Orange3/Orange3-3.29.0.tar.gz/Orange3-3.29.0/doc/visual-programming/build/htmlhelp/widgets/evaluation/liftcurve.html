@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="cp1252" />
+    <title>Lift Curve</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="next" title="Predictions" href="predictions.html" />
+    <link rel="prev" title="Confusion Matrix" href="confusionmatrix.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lift-curve">
+<h1>Lift Curve</h1>
+<p>Measures the performance of a chosen classifier against a random classifier.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>Evaluation Results: results of testing classification algorithms</p></li>
+</ul>
+<p>The <strong>Lift curve</strong> shows the relation between the number of instances which were predicted positive and those that are indeed positive and thus measures the performance of a chosen classifier against a random classifier. The graph is constructed with the cumulative number of cases (in descending order of probability) on the x-axis and the cumulative number of true positives on the y-axis. Lift curve is often used in segmenting the population, e.g., plotting the number of responding customers against the number of all customers contacted. You can also determine the optimal classifier and its threshold from the graph.</p>
+<p><img alt="../../_images/LiftCurve-stamped.png" src="../../_images/LiftCurve-stamped.png" /></p>
+<ol class="simple">
+<li><p>Choose the desired <em>Target class</em>. The default class is chosen alphabetically.</p></li>
+<li><p>If test results contain more than one classifier, the user can choose which curves she or he wants to see plotted. Click on a classifier to select or deselect the curve.</p></li>
+<li><p><em>Show lift convex hull</em> plots a convex hull over lift curves for all classifiers (yellow curve). The curve shows the optimal classifier (or combination thereof) for each desired TP/P rate.</p></li>
+<li><p>Press <em>Save Image</em> if you want to save the created image to your computer in a .svg or .png format.</p></li>
+<li><p>Produce a report.</p></li>
+<li><p>2-D pane with <strong>P rate</strong> (population) as x-axis and <strong>TP rate</strong> (true positives) as a y-axis. The diagonal line represents the behavior of a random classifier. Click and drag to move the pane and scroll in or out to zoom. Click on the “<em>A</em>” sign at the bottom left corner to realign the pane.</p></li>
+</ol>
+<p><strong>Note!</strong> The perfect classifier would have a steep slope towards 1 until all
+classes are guessed correctly and then run straight along 1 on y-axis to
+(1,1).</p>
+<div class="section" id="example">
+<h2>Example</h2>
+<p>At the moment, the only widget which gives the right type of the signal needed by the <strong>Lift Curve</strong> is <a class="reference internal" href="testandscore.html"><span class="doc">Test &amp; Score</span></a>.</p>
+<p>In the example below, we try to see the prediction quality for the class ‘survived’ on the <em>Titanic</em> dataset. We compared three different classifiers in the Test Learners widget and sent them to Lift Curve to see their performance against a random model. We see the <a class="reference internal" href="../model/tree.html"><span class="doc">Tree</span></a> classifier is the best out of the three, since it best aligns with <em>lift convex hull</em>. We also see that its performance is the best for the first 30% of the population (in order of descending probability), which we can set as the threshold for optimal classification.</p>
+<p><img alt="../../_images/LiftCurve-example.png" src="../../_images/LiftCurve-example.png" /></p>
+</div>
+<div class="section" id="references">
+<h2>References</h2>
+<p>Handouts of the University of Notre Dame on Data Mining - Lift Curve. Available <a class="reference external" href="https://www3.nd.edu/~busiforc/handouts/DataMining/Lift%20Charts.html" target="_blank">here</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Orange Data Mining.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/widgets/evaluation/liftcurve.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
