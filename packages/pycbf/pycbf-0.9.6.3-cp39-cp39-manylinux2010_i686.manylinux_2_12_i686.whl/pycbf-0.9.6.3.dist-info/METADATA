@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pycbf
+Version: 0.9.6.3
+Summary: An API for CBF/imgCIF Crystallographic Binary Files
+Home-page: http://www.bernstein-plus-sons.com/software/CBF/
+License: LGPL-2.1-or-later
+Author: Herbert J. Bernstein
+Author-email: yaya@bernstein-plus-sons.com
+Maintainer: Nicholas Devenish
+Maintainer-email: ndevenish@gmail.com
+Requires-Python: >=3.6.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy (>=1.17)
+Project-URL: Repository, https://github.com/dials/pycbf
+Description-Content-Type: text/markdown
+
+# `pycbf` - CBFlib for python
+
+[![PyPI release](https://img.shields.io/pypi/v/pycbf.svg)](https://pypi.python.org/pypi/pycbf)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/pycbf.svg)](https://pypi.org/project/pycbf)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)]( https://github.com/ambv/black)
+        
+This repository builds the `pycbf` portion of [CBFlib] only, as a [manylinux]
+binary wheel installable through `pip install pycbf`.
+
+In order to do this, it has some limitations compared to the full build of CBFlib:
+
+-   No HDF5 bindings
+-   No (custom) libTiff bindings
+-   No CBF regex capabilities
+-   No header files included - this is not intended to be used as a linking
+    target
+
+In addition to the base 0.9.6, this has the following alterations:
+
+| Version     | Changes                                                                                             |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| 0.9.6.0     | Regenerated SWIG bindings for Python 3 compatibility. Compiled with `SWIG_PYTHON_STRICT_BYTE_CHAR`. |
+| ~~0.9.6.1~~ | This was an unreleased internal version.                                                            |
+| 0.9.6.2     | Drop python 2.7. Accept both `bytes` and `str`. Add `read_buffer` method, and `libimg` bindings.    |
+| 0.9.6.3     | Clean up the package installation to remove source-only files.                                      |
+
+For details, please see the [CHANGELOG](CHANGELOG.rst).
+
+[cbflib]: https://github.com/yayahjb/cbflib
+[manylinux]: https://www.python.org/dev/peps/pep-0571/
+[`yayahjb/cbflib#19`]: https://github.com/yayahjb/cbflib/pull/19
+
