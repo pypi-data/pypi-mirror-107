@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+t3dn_bip/__init__.py
+t3dn_bip/formats.py
+t3dn_bip/ops.py
+t3dn_bip/previews.py
+t3dn_bip/settings.py
+t3dn_bip/threads.py
+t3dn_bip/utils.py
+t3dn_bip.egg-info/PKG-INFO
+t3dn_bip.egg-info/SOURCES.txt
+t3dn_bip.egg-info/dependency_links.txt
+t3dn_bip.egg-info/top_level.txt
