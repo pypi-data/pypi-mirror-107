@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: VetstoriaNER
+Version: 0.7
+Summary: Species detection package for Vetstoria
+Home-page: UNKNOWN
+Author: Vetstoria
+Author-email: riza@vetstoria.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: spacy
+
+# Species Recognition Model
+
+Species detection package for Vetstoria
+
+## Installation
+
+Install the VetstoriaNER using the python package manager (pip)
+    ```
+    pip install VetstoriaNER
+    ```
+
+## How to work on with VetstoriaNER
+
+1. Import to a script file
+
+    ```
+    from VetstoriaNER import EntityRecognizer
+    ```
+
+2. passing of parameters
+
+    ```
+    ner = EntityRecognizer('<model name or path>')
+    recognizer = ner.recognizeSpecies('<phrase or the sentence>')
+    ```   
+
+#### Actual code will look like :
+```
+from VetstoriaNER import EntityRecognizer
+
+ner = EntityRecognizer('recognize-model')
+recognizer = ner.recognizeSpecies('i have a cat') 
+
+print(recognizer)
+```
+
+## LICENSE
+
+```
+MIT License
+
+Copyright (c) 2020 VetstoriaNER
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+
+
