@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tinymce-filebrowser-django
+Version: 1.0.3
+Summary: Django-based file uploader and viewer for TinyMCE
+Home-page: https://github.com/ituxka/tinymce-filebrowser-django
+Author: Nikita Sologub
+Author-email: ituxka@gmail.com
+License: MIT License
+Description: Django-based file uploader and viewer for TinyMCE
+Keywords: django tinymce fileupload
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
