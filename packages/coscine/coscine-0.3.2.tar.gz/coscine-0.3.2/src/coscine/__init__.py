@@ -1,0 +1,1 @@
+from .coscine import CoscineClient
