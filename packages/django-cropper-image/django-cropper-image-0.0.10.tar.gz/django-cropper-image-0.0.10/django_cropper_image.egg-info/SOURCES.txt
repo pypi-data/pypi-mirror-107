@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+django_cropper_image.egg-info/PKG-INFO
+django_cropper_image.egg-info/SOURCES.txt
+django_cropper_image.egg-info/dependency_links.txt
+django_cropper_image.egg-info/top_level.txt
