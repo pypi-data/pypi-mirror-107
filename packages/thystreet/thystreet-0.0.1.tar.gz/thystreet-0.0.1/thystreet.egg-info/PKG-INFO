@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: thystreet
+Version: 0.0.1
+Summary: ThyStreet
+Home-page: UNKNOWN
+Author: Support
+Author-email: support@thystreet.com
+License: UNKNOWN
+Description:     Thy Street APIs are completely RESTful and all our responses are returned in JSON.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,ThyStreet
+Platform: UNKNOWN
+Requires-Python: >=3.6
