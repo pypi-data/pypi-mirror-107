@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+PyDBModule/__init__.py
+PythonDatabaseModule.egg-info/PKG-INFO
+PythonDatabaseModule.egg-info/SOURCES.txt
+PythonDatabaseModule.egg-info/dependency_links.txt
+PythonDatabaseModule.egg-info/requires.txt
+PythonDatabaseModule.egg-info/top_level.txt
