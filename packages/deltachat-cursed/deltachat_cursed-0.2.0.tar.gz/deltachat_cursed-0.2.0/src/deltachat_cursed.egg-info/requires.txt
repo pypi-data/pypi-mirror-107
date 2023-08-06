@@ -1,0 +1,6 @@
+deltachat>=1.51.0
+urwid>=2.1.2
+urwid-readline>=0.13
+
+[test]
+pytest>=6.2.4
