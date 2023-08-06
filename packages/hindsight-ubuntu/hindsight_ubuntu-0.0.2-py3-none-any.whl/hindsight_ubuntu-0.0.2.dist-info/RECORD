@@ -1,0 +1,12 @@
+hindsight/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hindsight/common.py,sha256=MZ67Ifz34Gw0mtglu7PGc020-eZm44oCugxWVzWPZQM,2880
+hindsight/hindsight.py,sha256=tbsaHbHDX8XOskBKocgUgEXlYFQoncnS4p1b3GI0sZU,2277
+hindsight/restore.py,sha256=WRy-G1YhJc1QtQBUjOsF1rHl5--6v17SqZIDeznouMM,6190
+hindsight/save.py,sha256=rRjjcgIw-pGz5Wh2MJy3Zi_1wOjQltn6fHRqAB-Uc74,2366
+hindsight/test.py,sha256=4CkRij20k9jk1y09-x95bZvY3uHChwoicsGtMG2scak,1541
+hindsight_ubuntu-0.0.2.dist-info/LICENSE.md,sha256=9qPOKwJ2hgzKaiFk4WweTYFy-g_B9jsOhFmWyMKrA88,1081
+hindsight_ubuntu-0.0.2.dist-info/METADATA,sha256=yTDS_GOhiYtWSkJp0gLjdZTdbVJAhvTjWu2xdvb7K2c,6020
+hindsight_ubuntu-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hindsight_ubuntu-0.0.2.dist-info/entry_points.txt,sha256=ctHR4HmVmZzkiPHloJIJkZrbVjJX1EdPMlm9ax5l8EA,56
+hindsight_ubuntu-0.0.2.dist-info/top_level.txt,sha256=IEEbFC8MFeRp_C3BjzBa-MwXH0t5g8WNRU5O68dsZlk,10
+hindsight_ubuntu-0.0.2.dist-info/RECORD,,
