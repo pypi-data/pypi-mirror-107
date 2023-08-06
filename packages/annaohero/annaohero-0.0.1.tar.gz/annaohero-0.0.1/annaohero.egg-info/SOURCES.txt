@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+annaohero/__init__.py
+annaohero/annaohero.py
+annaohero.egg-info/PKG-INFO
+annaohero.egg-info/SOURCES.txt
+annaohero.egg-info/dependency_links.txt
+annaohero.egg-info/top_level.txt
+tests/test.py
