@@ -1,0 +1,183 @@
+Metadata-Version: 2.1
+Name: anabel
+Version: 0.0.11
+Summary: An end to end differentiable finite element framework.
+Home-page: https://claudioperez.github.io/anabel
+Author: Claudio M. Perez
+Author-email: claudio_perez@berkeley.edu
+License: UNKNOWN
+Project-URL: Documentation, https://claudioperez.github.io/anabel
+Project-URL: Changelog, https://github.com/claudioperez/anabel/blob/master/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/claudioperez/anabel/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+Requires-Dist: pandoc
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: anon
+Requires-Dist: meshio
+Requires-Dist: pandas
+Provides-Extra: backends
+Requires-Dist: jaxlib (>0.1.51,~=0.1) ; extra == 'backends'
+Requires-Dist: jax (>0.1.72,~=0.1) ; extra == 'backends'
+Provides-Extra: interact
+Requires-Dist: ipyvtklink ; extra == 'interact'
+Requires-Dist: pyvista ; extra == 'interact'
+Provides-Extra: jax
+Requires-Dist: jax (>0.1.72,~=0.1) ; extra == 'jax'
+Requires-Dist: jaxlib (>0.1.51,~=0.1) ; extra == 'jax'
+
+
+<h1><img src="docs/img/emtec-4.png" alt="" width=100></img>anabel</h1>
+
+An end to end differentiable finite element framework.
+
+-------------------------------------
+
+[![Code Style: Black][black-shield]]()
+[![PyPI Version][pypi-v-image]][pypi-v-link]
+[![Documentation](https://img.shields.io/badge/documentation-blue)](https://claudioperez.github.io/anabel/)
+<!-- ![Build status][build-img] -->
+<!-- [![Commits since latest release][gh-image]][gh-link] -->
+<!-- [![Github All Releases](https://img.shields.io/tokei/lines/github/claudioperez/anabel?style=plastic)]() -->
+
+[Foundations](https://claudioperez.github.io/anabel/guides/foundations)
+
+## Installation
+
+The *base* Anabel package can be installed from a terminal with the following command:
+
+```bash
+$ pip install anabel
+```
+
+This installation includes basic tools for composing "neural network" -like models along with some convenient IO utilities. However, both automatic differentiation and JIT capabilities require Google's Jaxlib module which is currently in early development and only packaged for Ubuntu systems. On Windows systems this can be easily overcome by downloading the Ubuntu terminal emulator from Microsoft's app store and enabling the Windows Subsystem for Linux (WSL). The following extended command will install Anabel along with all necessary dependencies for automatic differentiation and JIT compilation:
+
+```bash
+$ pip install anabel[jax]
+```
+
+The in-development version can be installed the following command:
+
+```bash
+$ pip install https://github.com/claudioperez/anabel/archive/master.zip
+```
+
+## Core API - Modeling PDEs 
+
+```python
+from anabel import template, diff, MappedMesh
+from anabel.interpolate import lagrange_t6
+
+@template(6)
+def poisson_template(u,v,iso,f,):
+    def poisson(uh,xyz):
+        return diff.jacx(u)(u,v)
+```
+
+<!-- ![](docs/img/pde-iso.png) -->
+
+## Utility Modules
+
+### [`anabel.sections`]()
+
+```python
+from anabel.sections import Tee
+
+t_section = Tee(bf=60, tf=6, tw=18, d=24)
+t_section.plot()
+```
+
+![](docs/img/sections/main.svg)
+
+### [`anabel.transient`]()
+
+![](docs/img/transient/main.svg)
+
+
+## Building The Documentation
+
+The following additional dependencies are required to build the project documentation:
+
+- [Pandoc](https://pandoc.org/)
+- Elstir (`pip install elstir`)
+
+To build the documentation, run the following command from the project root directory:
+
+```shell
+$ elstir build
+```
+
+## Organization of Source Code
+
+
+### Documentation
+- [`elstir.yml`]
+- [`style/`] Directory holding style/template/theme files for documentation.
+- [`docs/api/`] Automatically generated API documentation files.
+
+### Source Code
+- [`setup.py`] Installation/setup; used for pip installation.
+- [`src/anabel/`] Python source code
+- [`lib/`] C++ source code for extension library
+
+### Data
+- [`dat/quadrature/`] Quadrature scheme data.
+
+### Source Control, Testing, Continuous Integration
+- `.gitignore` Configuration for [Git]() source control.
+- [`.appveyor.yml`] configuration file for [Appveyor](https://www.appveyor.com/)
+- `.coveragerc` configuration file for [CodeCov](https://codecov.io/), used to measure testing coverage.
+- `pytest.ini` configuration file for [PyTest](), used to setup testing.
+
+
+<!-- Links to project folders -->
+[`dat/quadrature/`]: ./dat/quadrature/
+[`docs/api/`]: ./docs/api/
+[`src/anabel/`]: ./src/anabel/
+[`elstir.yml`]: ./elstir.yml
+[`style/`]: ./style/
+[`setup.py`]: ./setup.py
+[`.appveyor.yml`]: ./.appveyor.yml
+
+
+<!-- Links for badges -->
+[black-shield]: https://img.shields.io/badge/code%20style-black-000000.svg
+
+[pypi-v-image]: https://img.shields.io/pypi/v/anabel.svg
+[pypi-v-link]: https://pypi.org/project/anabel/
+
+[gh-link]: https://github.com/claudioperez/anabel/compare/0.0.9...master
+[gh-image]: https://img.shields.io/github/commits-since/claudioperez/anabel/0.0.9?style=social
+
+[build-img]: https://ci.appveyor.com/api/projects/status/github/claudioperez/anabel?branch=master&svg=true
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%claudioperez%2Fanabel.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%claudioperez%2Fanabel?ref=badge_large)
+
+
+# Changelog
+
+## 0.1.0 (2021-05-21)
+
+- First documented release
+
+## 0.0.0 (2020-07-15)
+
+- First release on PyPI.
+
+
+
+
