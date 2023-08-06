@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: yagup
+Version: 0.1.1
+Summary: Parsing and validating git urls.
+Home-page: https://github.com/SwissDataScienceCenter/yagup
+Author: Swiss Data Science Center
+Author-email: contact@datascience.ch
+License: BSD
+Description: # yagup - Yet another git url parser
+        
+        ## Usage
+        
+        Its very simple to use it:
+        
+        ```
+        from yagup import GitURL
+        GitURL.parse("ssh://github.com/foo/bar.git)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
