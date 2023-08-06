@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/hotpot/__init__.py
+src/hotpot/app.py
+src/hotpot/globals.py
+src/hotpot/sessions.py
+src/hotpot/utils.py
+src/hotpot/wrappers.py
+src/hotpot.egg-info/PKG-INFO
+src/hotpot.egg-info/SOURCES.txt
+src/hotpot.egg-info/dependency_links.txt
+src/hotpot.egg-info/requires.txt
+src/hotpot.egg-info/top_level.txt
