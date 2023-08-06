@@ -1,0 +1,9 @@
+act-api<1.1.0,>=1.0.29
+act-types
+caep
+requests
+RashlyOutlaid>=0.15
+virustotal-api
+stix2
+dateparser
+pyattck
