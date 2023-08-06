@@ -1,0 +1,3 @@
+[console_scripts]
+executable-name = zfs_uploader.__main__:main
+
