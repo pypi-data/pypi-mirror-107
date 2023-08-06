@@ -1,0 +1,817 @@
+[
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "asc"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "bib"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "unsure",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "cpg"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "RFC4180:https://tools.ietf.org/html/rfc4180 , RFC7111:https://tools.ietf.org/html/rfc7111",
+      "IANA_template" : "https://www.iana.org/assignments/media-types/text/csv",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "yes",
+      "MIME_type" : [
+         "text/csv"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "x-fmt/18",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset/tabular",
+      "extensions" : [
+         "csv"
+      ],
+      "name" : "Comma-Separated Values"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [
+         "application/dbase",
+         "application/x-dbase",
+         "application/x-dbf",
+         "application/dbf"
+      ],
+      "Long_term_format" : "no",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "X-fmt/8, x-fmt/9, x-fmt/10, x-fmt/271, x-fmt/272",
+      "comment" : "If pure database use another format (e.g. sql).",
+      "extensions" : [
+         "dbf"
+      ],
+      "name" : "dBase database file"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf , https://en.wikipedia.org/wiki/Shapefile",
+      "IANA_reference" : "",
+      "IANA_template" : "https://www.iana.org/assignments/media-types/application/vnd.dbf",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "restricted",
+      "MIME_type" : [
+         "application/vnd.dbf"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "Probably file comes in conjunction with a shapefile and is one of three mandatory files used by the shapefile data format. It is used in the specification of the Esri shapefile format with the Esri ArcInfo geographic information system, where a DBF file serves as a storage for various geometrical shape attributes Format is dBase IV.",
+      "extensions" : [
+         "dbf"
+      ],
+      "name" : "dBase database file"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "dxf"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "https://tools.ietf.org/html/rfc7946 , http://geojson.org/",
+      "IANA_reference" : "",
+      "IANA_template" : "https://www.iana.org/assignments/media-types/application/geo+json",
+      "Informal_MIME_type" : [
+         "application/vnd.geo+json"
+      ],
+      "Long_term_format" : "yes",
+      "MIME_type" : [
+         "application/geo+json"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset/geojson",
+      "extensions" : [
+         "geojson"
+      ],
+      "name" : "GeoJSON"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "gfs"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/audioVisual",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "restricted",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "gif"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "gml"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "gpx"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [
+         "text/html"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text/html",
+      "extensions" : [
+         "html"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "restricted",
+      "MIME_type" : [
+         "image/jpeg"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "jpg"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset/kml",
+      "extensions" : [
+         "kml"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "kmz"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "https://tools.ietf.org/html/rfc7763",
+      "IANA_template" : "https://www.iana.org/assignments/media-types/text/markdown",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "yes",
+      "MIME_type" : [
+         "text/markdown"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text/markdown",
+      "extensions" : [
+         "markdown"
+      ],
+      "name" : "markdown"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "https://tools.ietf.org/html/rfc7763",
+      "IANA_template" : "https://www.iana.org/assignments/media-types/text/markdown",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "yes",
+      "MIME_type" : [
+         "text/markdown"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text/markdown",
+      "extensions" : [
+         "md"
+      ],
+      "name" : "markdown"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/audioVisual",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "mkv"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/3dData",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "mtl"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/3dData",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "obj"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "osm"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text/pdf",
+      "extensions" : [
+         "pdf"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/3dData",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "http://paulbourke.net/dataformats/ply/",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "yes",
+      "MIME_type" : [
+         "application/octet-stream",
+         "text/plain"
+      ],
+      "Magic_number" : "ply",
+      "PRONOM_ID" : "fmt/831",
+      "comment" : "Two variants exist: pure ascii ply and more compact binary ply",
+      "extensions" : [
+         "ply"
+      ],
+      "name" : "Polygon File Format, Stanford Triangle Format"
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [
+         "image/png"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "png"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "points"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "prj"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "qgs"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "qpj"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "unsure",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "sbn"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "unsure",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "sbx"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "unsure",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "shp"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "unsure",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "shx"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "siard"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "svg"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tab"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tex"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tfw"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tfwx"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tif"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/image",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [
+         "image/tiff"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "tiff"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/text",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [
+         "text/plain"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "txt"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/3dData",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "x3d"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [
+         "text/xml",
+         "application/xml"
+      ],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "https://vocabs.acdh.oeaw.ac.at/archecategory/dataset/xml",
+      "extensions" : [
+         "xml"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/3dData",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "xyzi"
+      ],
+      "name" : ""
+   },
+   {
+      "ARCHE_category" : "https://vocabs.acdh.oeaw.ac.at/archecategory/collection",
+      "ARCHE_docs" : "",
+      "Further_specifications" : "",
+      "IANA_reference" : "",
+      "IANA_template" : "",
+      "Informal_MIME_type" : [],
+      "Long_term_format" : "",
+      "MIME_type" : [],
+      "Magic_number" : "",
+      "PRONOM_ID" : "",
+      "comment" : "",
+      "extensions" : [
+         "zip"
+      ],
+      "name" : ""
+   }
+]
