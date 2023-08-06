@@ -1,0 +1,17 @@
+ppf/datamatrix/__init__.py,sha256=zFHtJzzkoE8o3ZOCjnK14TQ7oZCq4qKBK8egIuf9szQ,645
+ppf/datamatrix/codec_C40.py,sha256=w3SVkLaHHAYekUmjNoA5ml8bjNLOS1NJtbZZrDgM28A,1686
+ppf/datamatrix/codec_X12.py,sha256=zw5q3N2wH0aO6wLn8qaKZKwKIntNN2d6n_I0zE4Pgi4,1446
+ppf/datamatrix/codec_ascii.py,sha256=s5zrU0i5z6_YhibNooRG4BlAW8l9B0ESxBsa6cxzEv0,953
+ppf/datamatrix/codec_common.py,sha256=6Mk62K_ekmCDMvcrIuWi1BucZ6lbJLf0uA-eck7srnI,4530
+ppf/datamatrix/codec_edifact.py,sha256=uTCInMr4zXbOjaW7W8LBVPakSiM3hPuzkRl7gGiIVoU,2750
+ppf/datamatrix/codec_text.py,sha256=ajOzLaHCv_SdnON4mV4wuhEO5UaGP7YmrENtBx1CN1w,1708
+ppf/datamatrix/datamatrix.py,sha256=rAxxZr6O_FZQ3c3N_zP1nOfd34xuJlcWVsC1fGNyh9M,10264
+ppf/datamatrix/utils.py,sha256=fRr84ZTqMDFDDdeae1l5dGHPSozLNH5LiVGuSvx7nXU,287
+pydatamatrix/__init__.py,sha256=-eiHq_K1Qvv5AX_wYhdU7BlBOZ6p8cL0_CBSEf94HkQ,227
+pydatamatrix/datamatrix.py,sha256=DNKyiPTqSiF_1i6kpSO9B_1_whMt65z-KbMUPsaA_kI,10322
+pydatamatrix/utils.py,sha256=mrpAJ8TES76qfHPrUWVUKqrhfO_7JGR_d1lMK5FhOss,285
+ppf_datamatrix-0.1.0.dist-info/LICENSE,sha256=ijEtC_Y9gRRgn6AY8zk2bVChRdyzHywXNmIkCXM7niw,2310
+ppf_datamatrix-0.1.0.dist-info/METADATA,sha256=lz8Q3xRN_sYpPVZQR_F9dgZrFQK7d8CQ-3y8pR2BccU,1824
+ppf_datamatrix-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ppf_datamatrix-0.1.0.dist-info/top_level.txt,sha256=UGdKy8kY4OroOHKsFu4nD0vmMm1vlwBAbS3ie2WMQOg,4
+ppf_datamatrix-0.1.0.dist-info/RECORD,,
