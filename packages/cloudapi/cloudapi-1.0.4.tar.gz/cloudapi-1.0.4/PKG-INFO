@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: cloudapi
+Version: 1.0.4
+Summary: BaseRESTAPI ticker, automaticaly manages request response rate limits and timeouts
+Home-page: https://github.com/zorani/cloudapi
+Author: zoran ilievski
+Author-email: pythonic@clientuser.net
+License: MIT
+Download-URL: https://github.com/zorani/cloudapi/archive/refs/tags/v1.0.4.tar.gz
+Description: file: README.md
+Keywords: baseapi,requests,rate limit,rate limits,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
