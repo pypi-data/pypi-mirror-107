@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/lime_transport_websocket/__init__.py
+src/lime_transport_websocket/websocket_transport.py
+src/lime_transport_websocket.egg-info/PKG-INFO
+src/lime_transport_websocket.egg-info/SOURCES.txt
+src/lime_transport_websocket.egg-info/dependency_links.txt
+src/lime_transport_websocket.egg-info/requires.txt
+src/lime_transport_websocket.egg-info/top_level.txt
