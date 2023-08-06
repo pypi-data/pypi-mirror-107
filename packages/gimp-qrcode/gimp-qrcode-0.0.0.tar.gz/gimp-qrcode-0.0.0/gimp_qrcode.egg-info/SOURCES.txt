@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+gimp/__init__.py
+gimp/plugins/__init__.py
+gimp/plugins/gimp-qrcode/__init__.py
+gimp_qrcode.egg-info/PKG-INFO
+gimp_qrcode.egg-info/SOURCES.txt
+gimp_qrcode.egg-info/dependency_links.txt
+gimp_qrcode.egg-info/requires.txt
+gimp_qrcode.egg-info/top_level.txt
