@@ -1,0 +1,7 @@
+serverless/__init__.py,sha256=2mSuqhgyZ_g1dLCpK4KsgfR1b9b0dsWBc5LCmEkClrI,96
+serverless/decorators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serverless/decorators/request_parser.py,sha256=4Zz_azRMlaUlEMtYH7e4i9zmXBI2owceXgDWvLmf4eU,725
+serverless.py-0.0.5.dev1.dist-info/METADATA,sha256=sfgHFYD0gFO-wiz72kVkWyshRT4lYM2170k7H3Y-1Vk,864
+serverless.py-0.0.5.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+serverless.py-0.0.5.dev1.dist-info/top_level.txt,sha256=lgDNtpvqq94Ul8Gucre5e0AakzjlArrvqr6caE3J2aw,11
+serverless.py-0.0.5.dev1.dist-info/RECORD,,
