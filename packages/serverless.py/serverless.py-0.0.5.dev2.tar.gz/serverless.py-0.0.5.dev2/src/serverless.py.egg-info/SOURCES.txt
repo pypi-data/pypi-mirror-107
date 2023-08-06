@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/serverless/__init__.py
+src/serverless.py.egg-info/PKG-INFO
+src/serverless.py.egg-info/SOURCES.txt
+src/serverless.py.egg-info/dependency_links.txt
+src/serverless.py.egg-info/top_level.txt
+src/serverless/decorators/__init__.py
+src/serverless/decorators/request_parser.py
