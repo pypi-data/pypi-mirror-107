@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: asgardeo-auth-python-sdk
+Version: 0.1.3
+Summary: Asgardeo Auth Python SDK.
+Home-page: https://github.com/asgardeo/asgardeo-auth-python-sdk#readme
+Author: ('Asgardeo',)
+Author-email: beta@asgardeo.io
+License: Apache Software License
+Download-URL: https://github.com/asgardeo/asgardeo-auth-python-sdk/releases
+Project-URL: Documentation, https://github.com/asgardeo/asgardeo-auth-python-sdk#readme
+Project-URL: Bug Tracker, https://github.com/asgardeo/asgardeo-auth-python-sdk/issues
+Project-URL: Source Code, https://github.com/asgardeo/asgardeo-auth-python-sdk#readme
+Description: # Asgardeo-auth-python-sdk
+        
+        Asgardeo Auth Python SDK provides the core methods that are needed to implement OIDC authentication in Python based apps. This SDK can be used to build SDKs for Web Applications from different frameworks such as Flask, Django and various other frameworks that use Python.
+        
+        
+Keywords: Asgardeo,OIDC,OAuth2,Authentication,Authorization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
