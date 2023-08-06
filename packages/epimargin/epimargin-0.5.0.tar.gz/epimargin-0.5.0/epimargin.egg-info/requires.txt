@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+arviz
+pymc3
+statsmodels
+flat-table
+requests
+seaborn
+tikzplotlib
+geopandas
