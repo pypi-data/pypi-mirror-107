@@ -1,0 +1,43 @@
+
+.kz_window {
+
+  .modal-header {
+    text-align: center;
+    position: relative;
+  }
+  .modal-footer {
+    top: 25px;
+    position: relative;
+  }
+  .modal-body {
+    bottom: 15px;
+    position: relative;
+  }
+  &.modal-table-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100%;
+    //  margin:10vh 10vw;
+    // height:80vh;
+    .window_top {
+      background: url("~assets/img/windows/nb1.png");
+      @include cell-bbg-long-window;
+    }
+    .window_body {
+      background: url("~assets/img/windows/nb3.png");
+      @include cell-bbg-long-window;
+      background-repeat: repeat-y;
+    }
+    .window_bottom {
+      background: url("~assets/img/windows/nb2.png");
+      @include cell-bbg-long-window;
+    }
+    .flex-column-content {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+  }
+}

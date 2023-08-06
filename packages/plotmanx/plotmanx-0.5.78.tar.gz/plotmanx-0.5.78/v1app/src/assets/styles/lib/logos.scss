@@ -1,0 +1,83 @@
+.img_bang_logo {
+  background: url("~assets/img/branding/bbgcbba.png");
+  width: 146px;
+  height: 146px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_nifty {
+  background: url("~assets/img/branding/nifty.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_metamask {
+  background: url("~assets/img/branding/foxwalletx.png");
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_bbgc_horizonal_logo {
+  background: url("~assets/img/branding/bbgcma.png");
+  width: 150px;
+  height: 44.5px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_99ex {
+  background: url("~assets/img/branding/m99ex.png");
+  width: 150px;
+  height: 44.5px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_fxiao {
+  background: url("~assets/img/branding/feixiao.png");
+  width: 150px;
+  height: 44.5px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
+.img_coinv {
+  background: url("~assets/img/branding/mcoinvoice.png");
+  width: 150px;
+  height: 44.5px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+  }
+}
+
