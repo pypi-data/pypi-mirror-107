@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rsa4py
+Version: 0.0.0.1
+Summary: python implementation of the rsa algorythem
+Home-page: UNKNOWN
+Author: Julian Wandhoven
+Author-email: julian.wandhoven@gmail.com
+License: apache-2.0
+Description: comming soon
+Keywords: rsa,Cryptography
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security :: Cryptography 
+Classifier: Programming Language :: Python :: 3
