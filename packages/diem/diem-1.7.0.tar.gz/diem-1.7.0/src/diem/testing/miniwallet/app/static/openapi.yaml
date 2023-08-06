@@ -1,0 +1,474 @@
+openapi: 3.0.3
+info:
+  title: Mini Wallet API Specification
+  description: >
+      **Introduction**
+
+
+      The **Diem MiniWallet API** has been designed as a minimum wallet application API
+      to test other wallet apps by playing as the counterparty app.
+      You can add any new API to suit your testing purposes to the implementation of the
+      Diem MiniWallet API.
+
+
+      **Enable the Diem MiniWallet Test Suite**
+
+
+      The Diem MiniWallet Test Suite is a set of tests built on top of the Diem MiniWallet API
+      and is used to validate a wallet app's integration with the Diem Payment Network (DPN). 
+      To enable the Diem MiniWallet Test Suite for your wallet app, create a Diem MiniWallet API
+      proxy to your wallet app with the following endpoints:
+
+
+        * **(Minimum required) To test sending and receiving payments on-chain:**
+          * [Create account endpoint](#post-/accounts): Used for isolating test data.
+          * [Get account balances endpoint](#get-/accounts/-account_id-/balances): Used for verifying test results.
+          * [Generate account identifier endpoint](#post-/accounts/-account_id-/account_identifiers): Used for testing receiving payments.
+          * [Send payment endpoint](#post-/accounts/-account_id-/payments): Used for testing sending payments.
+
+
+        * **To test sending and receiving payments off-chain:**
+          * [Get KYC sample endpoint](#get-/kyc_sample): Used for testing sending payments equal to or above the Travel Rule threshold limit. 
+
+
+        * **To debug:**
+          * [Get account events](#get-/get-events): Used for debugging the test suite.
+
+
+      You can implement some of these endpoints selectively if they are used for testing subset
+      features. For example, the KYC sample endpoint is not required until you test payments that
+      trigger the Travel Rule. 
+
+
+      The Diem MiniWallet Test Suite also provides tests to verify that
+      the MiniWallet API build for your application meets requirements for running payment integration 
+      tests. We will continue to improve and develop the Diem MiniWallet Test Suite to cover more use cases. 
+
+
+      We will improve and grow **MiniWallet Test Suite** to cover more cases.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1
+tags:
+  - name: Minimum
+    description: >
+        The following are the minimum required endpoints for running Diem MiniWallet Test Suite to test sending
+        and receiving payments under the Travel Rule threshold limit.
+  - name: Off-chain
+    description: >
+        The following are the required endpoints for running the Diem MiniWallet Test Suite to test payments that
+        require the Diem off-chain API (such as payments that are equal to or above the Travel Rule threshold limit).
+  - name: Optional
+    description: >
+        This is an optional debugging endpoint that is not required to be implemented for running
+        the Diem MiniWallet Test Suite.
+paths:
+  /accounts:
+    post:
+      summary: Create a new account
+      description: >
+          This method creates a new account. 
+
+          
+          * The Diem MiniWallet Test Suite isolates test data by creating a new account for each test case.
+
+          * Client should store the response account ID for all the operations to the account.
+          
+          * The balances property value shows the initial currency deposits to the account. Client can use the 
+          get account balances endpoint to check the account balances available after creating the account. 
+          
+          * When the account is required to provide Know Your Customer (KYC) data during an off-chain transaction,
+           the server should use the kyc_data property value as the KycDataObject and send it to the counterparty service.
+
+ 
+
+
+      operationId: create-account
+      tags:
+        - Minimum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAccountRequest'
+        required: true
+      responses:
+        201:
+          description: Account is created; currency balances are deposited to the account if provided.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceID'
+        400:
+          $ref: '#/components/responses/ClientError'
+  /accounts/{account_id}/balances:
+    get:
+      summary: Get account balances
+      operationId: balances
+      tags:
+        - Minimum
+      parameters:
+      - name: account_id
+        in: path
+        description: Account ID
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: Returns account balances
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Balances'
+        400:
+          $ref: '#/components/responses/ClientError'
+  /accounts/{account_id}/payments:
+    post:
+      summary: Send payment
+      operationId: send-payment
+      tags:
+        - Minimum
+      parameters:
+      - name: account_id
+        in: path
+        description: Account ID
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payment'
+        required: true
+      responses:
+        202:
+          description: >
+              The server accepts the payment request. 
+
+              * The server may reflect the payment sent in the account balance immediately. 
+                The funds being sent are considered to be in the process of being transferred 
+                out and should not be used for any other purpose. 
+              * Once a client receives the response, expect the payment to be sent in a short time. 
+                But it is not a limit to the server to complete the payment before respond the request.
+              * Client can confirm if the payment is completed by:
+                  * Checking if the sending and receiving account balances have been updated accordingly. 
+                  * Checking if the sending or receiving wallet app exposes an event using the get account events endpoint. 
+              * The optional get account events endpoint (if implemented) can be used to confirm if the action has failed. 
+
+
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceID'
+        400:
+          $ref: '#/components/responses/ClientError'
+  /accounts/{account_id}/account_identifiers:
+    post:
+      summary: Generate account identifier
+      operationId: gen-account-identifier
+      tags:
+        - Minimum
+      parameters:
+      - name: account_id
+        in: path
+        description: Account ID
+        required: true
+        schema:
+          type: string
+      responses:
+        201:
+          description: A new account identifier is generated.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountIdentifier'
+        400:
+          $ref: '#/components/responses/ClientError'
+  /kyc_sample:
+    get:
+      summary: Get KYC sample data.
+      operationId: kyc-sample
+      tags:
+        - Off-chain
+      description: >
+          This method can be used to test different behaviors during the off-chain KYC data exchange 
+          process. The data is used by the counterparty wallet app to set up its test account’s KYC data. 
+      responses:
+        200:
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KycSample'
+  /accounts/{account_id}/events:
+    get:
+      operationId: get-events
+      summary: Get account events
+      tags:
+        - Optional
+      description: >-
+          This method can be used to collect the context of a failure and will be ignored if the endpoint 
+          has not been implemented or if the call fails. 
+
+          The Diem MiniWallet implements the following events:
+
+          
+
+            | Event Type                | Data Attribute Type | Description                                                                       |
+            |---------------------------|---------------------|-----------------------------------------------------------------------------------|
+            | `info`                    | string              | Human readable message for what has occured.                                      |
+            | `created_account`         | JSON-encoded string | An account has been created.                                                      |
+            | `created_transaction`     | JSON-encoded string | An incoming or outgoing transaction has been created.                             |
+            | `updated_transaction`     | JSON-encoded string | An outgoing transactions has been updated due to Diem transactions being submitted or executed. |
+            | `created_subaddress`      | JSON-encoded string | A Subaddress has been created.                                                    |
+            | `created_payment_command` | JSON-encoded string | Off-chain payment command has been created.                                       |
+            | `updated_payment_command` | JSON-encoded string | Off-chain payment command has been updated.                                       |
+
+      parameters:
+      - name: account_id
+        in: path
+        description: Account ID
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Event'
+        400:
+          $ref: '#/components/responses/ClientError'
+components:
+  responses:
+    ClientError:
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: error message
+              stacktrace:
+                type: string
+                description: stacktrace of the error
+        text/plain:
+          schema:
+            type: string
+            example: error message and stacktrace
+  schemas:
+    Balances:
+      type: object
+      writeOnly: true
+      properties:
+        XUS:
+          type: integer
+          example: 1000000000
+        XDX:
+          type: integer
+    ResourceID:
+      required:
+      - id
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+          description: ID of the resource created.
+    CreateAccountRequest:
+      type: object
+      properties:
+        kyc_data:
+          $ref: '#/components/schemas/KycDataObject'
+        balances:
+          $ref: '#/components/schemas/Balances'
+    AccountIdentifier:
+      required:
+      - account_identifier
+      type: object
+      properties:
+        account_identifier:
+          type: string
+          readOnly: true
+          description: >
+              Diem account identifier defined in DIP-5 for receiving payment.
+          example: tdm1p7ujcndcl7nudzwt8fglhx6wxn08kgs5tm6mz4ustv0tyx
+    Payment:
+      required:
+      - id
+      - account_id
+      - amount
+      - currency
+      - payee
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        account_id:
+          type: string
+          readOnly: true
+        currency:
+          type: string
+          enum:
+          - XUS
+          - XDX
+        amount:
+          type: integer
+        payee:
+          type: string
+          description: >
+              The receiver address of the payment.
+              Only support account identifier defined in DIP-5 for now.
+              We will add Diem ID support in the future when the protocol related is stabilized.
+    KycSample:
+      description: >
+          KYC data sample for clients to create accounts to do off-chain KYC data exchanging tests.
+
+          1. `minimum` property value should be minimum valid `KycDataObject` that can pass server's
+            KYC evaluation without any additional actions during the off-chain KYC data exchange
+            process.
+          2. `reject` property value should be an example of `KycDataObject` that will be rejected
+            by server if it is presented in a counterparty service's KYC data.
+          3. `soft_match` property value should be an example of `KycDataObject` that will trigger
+            `soft_match` process and pass KYC evaluation after `additional_kyc_data` is provided
+            by counterparty service.
+          4. `soft_reject` provided value should be an example of `KycDataObject` that will trigger
+            `soft_match` process and then be rejected by KYC evaluation after `additional_kyc_data`
+            is provided.
+      required:
+      - minimum
+      - reject
+      - soft_match
+      - soft_reject
+      type: object
+      properties:
+        minimum:
+          $ref: '#/components/schemas/KycDataObject'
+        reject:
+          $ref: '#/components/schemas/KycDataObject'
+        soft_match:
+          $ref: '#/components/schemas/KycDataObject'
+        soft_reject:
+          $ref: '#/components/schemas/KycDataObject'
+    Event:
+      description: >
+          Event is optional to implement; it is log of what happened in the
+          system. Useful when the test failed. It's free to add any kind of event type and
+          data.
+      required:
+      - id
+      - account_id
+      - type
+      - data
+      - timestamp
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        account_id:
+          type: string
+          readOnly: true
+        type:
+          type: string
+          description: Event type, used for decoding data.
+          readOnly: true
+        data:
+          type: string
+          description: >
+              Event data can be human readable message, JSON-encoded string
+              or any other format. However, one event type should only have one data
+              format.
+          readOnly: true
+        timestamp:
+          type: integer
+          description: Milliseconds since the unix epoch. The time event object is
+            created by the system.
+          readOnly: true
+    KycDataObject:
+      type: object
+      description: >
+          A KycDataObject represents the know your customer or know your client (KYC) data required for exchanging
+          KYC data in Diem off-chain API.
+
+          It matches Diem off-chain KycDataObject listed at https://dip.diem.com/dip-1/#kycdataobject.
+      example: {"type": "individual", "payload_version": 1, "given_name": "Tom", "surname": "Jack"}
+      required:
+        - payload_version
+        - type
+      properties:
+        payload_version:
+          type: string
+          description: >-
+              Version identifier to allow modifications to KYC data Object without needing to bump version of entire API set. Set to 1
+        type:
+          type: string
+          enum: ["individual", "entity"]
+        given_name:
+          type: string
+          description: Legal given name of the user for which this KYC data Object applies.
+        surname:
+          type: string
+          description: Legal surname of the user for which this KYC data Object applies.
+        address:
+          description: Physical address data for this account
+          $ref: '#/components/schemas/Address'
+        dob:
+          type: string
+          description: >-
+              Date of birth for the holder of this account. Specified as an ISO 8601 calendar date format: https://en.wikipedia.org/wiki/ISO_8601
+        place_of_birth:
+          description: Place of birth for this user. line1 and line2 fields should not be populated for this usage of the address Object
+          $ref: '#/components/schemas/Address'
+        national_id:
+          $ref: '#/components/schemas/NationalId'
+        legal_entity_name:
+          type: string
+          description: >-
+              Name of the legal entity. Used when subaddress represents a legal entity rather than an individual.
+              KycData should only include one of legal_entity_name OR given_name/surname
+    Address:
+      type: object
+      properties:
+        city:
+          type: string
+          description: The city, district, suburb, town, or village
+        country:
+          type: string
+          description: Two-letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+        line1:
+          type: string
+          description: Address line 1
+        line2:
+          type: string
+          description: Address line 2 - apartment, unit, etc.
+        postal_code:
+          type: string
+          description: ZIP or postal code
+        state:
+          type: string
+          description: State, county, province, region.
+    NationalId:
+      type: object
+      required:
+        - id_value
+      description: National ID information for the holder of this account
+      properties:
+        id_value:
+          type: string
+          description: Indicates the national ID value - for example, a social security number
+        county:
+          type: string
+          description: Two-letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+        type:
+          type: string
+          description: Indicates the type of the ID
