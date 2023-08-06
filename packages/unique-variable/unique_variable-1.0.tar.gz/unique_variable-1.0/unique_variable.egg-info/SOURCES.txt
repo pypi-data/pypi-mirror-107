@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+unique_variable/__init__.py
+unique_variable/task_4_cli.py
+unique_variable.egg-info/PKG-INFO
+unique_variable.egg-info/SOURCES.txt
+unique_variable.egg-info/dependency_links.txt
+unique_variable.egg-info/top_level.txt
