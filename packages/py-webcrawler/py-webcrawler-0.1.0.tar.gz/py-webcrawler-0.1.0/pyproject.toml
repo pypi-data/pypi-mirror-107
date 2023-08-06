@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "py-webcrawler"
+version = "0.1.0"
+description = "python web crawler"
+authors = ["Patricio Tula <tula.patricio@gmail.com>"]
+packages = [
+    { include = "web_crawler"},
+    { include = "web_crawler_cli"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+bs4 = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.poetry.scripts]
+web_crawler = "web_crawler_cli.web_crawler_cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
