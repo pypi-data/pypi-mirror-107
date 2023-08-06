@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: indian_cities
+Version: 0.0.5
+Summary: Django Indian Cities
+Home-page: https://github.com/chayandatta/django_indian_cities
+Author: Chayan Datta
+Author-email: chayan.datta1996@gmail.com
+License: MIT
+Description: [![PyPI version](https://badge.fury.io/py/indian-cities.svg)](https://badge.fury.io/py/indian-cities)
+        ![PyPI - License](https://img.shields.io/pypi/l/indian-cities)
+        [![Downloads](https://pepy.tech/badge/indian-cities)](https://pepy.tech/project/indian-cities)
+        
+        # indian-cities  -- states & cities for india
+        
+        ## How to use this
+        
+        > To import
+        
+        ```
+        from dj_city import cities
+        
+        class myModel(models.Model):
+        
+            city = models.CharField(choices=cities, null=False, max_length=20)
+        
+        ```
+        
+        Requirements:
+        
+        Any version of Python, Django
+        
+        ## Installation
+        
+        To install this
+        
+        > pip install indian_cities
+        
+        ---
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
