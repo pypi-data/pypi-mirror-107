@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: readeat2021
+Version: 1.0
+Summary: this library make my NfrXDRA
+Home-page: https://github.com/NfrXDRA
+Author: nameIn
+Author-email: email@gmail.com
+License: MIT
+Download-URL: https://github.com/NfrXDRA
+Description: UNKNOWN
+Keywords: plasers
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
