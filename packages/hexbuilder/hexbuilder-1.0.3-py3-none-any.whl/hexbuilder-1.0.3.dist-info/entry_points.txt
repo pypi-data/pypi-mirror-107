@@ -1,0 +1,3 @@
+[console_scripts]
+hexbuilder = hexbuilder.builder:main
+
