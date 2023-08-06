@@ -1,0 +1,14 @@
+dataset_manager/__init__.py,sha256=6avSK3_ufoLi0y4y24kcaaA8rJFdZft1X1-gBONlW_4,29
+dataset_manager/blob.py,sha256=HrWehsHFPk7GObW1XUWlU-gha8Y2U-sw-QkjNVLA1PA,1423
+dataset_manager/connection_provider.py,sha256=PrSCBw7788a1meRFNmWBupwagJNdZEO0j38CYBBW4H8,1123
+dataset_manager/dataset.py,sha256=Gf6ZYUj8kmRJxao-X5THK8vSurUU7s02cVrQYgc3vvk,9547
+dataset_manager/dataset_manager.py,sha256=4SUF9y8246zLU8H3WsD9ecNzbES-CkT0RJwSy6OpP5Q,2118
+dataset_manager/triggers.py,sha256=fDP2uq2NbRaamnqk61bBAiBh6DkWsMaRTYaUcv0IZ0s,1069
+dataset_manager/utils.py,sha256=8zNXtPBSMMmj5g0Zi2upTQa_E5Cthjaao1qseuIwPPw,92
+mlmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlmd/dataset_manager_dao.py,sha256=X83OX84aVHaT3vzu_RJ8uX3jWp11p4Zk15ZVQsaISXU,4721
+mlmd/dataset_manager_scheme.py,sha256=UyAp2K_3m3m1mWIWglWYkWrNVl9h36xM3ADqu2Imv7s,2280
+mlmd_dataset_management-0.6.0.dist-info/METADATA,sha256=0IecM_hbjfH9_x10trcXjW6PY1QsR3t6Dk3BrkWYh6Y,618
+mlmd_dataset_management-0.6.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mlmd_dataset_management-0.6.0.dist-info/top_level.txt,sha256=e3qMLKRq7pdQESy1OJ4GUTrJEatCactlRM3G7RedWZE,21
+mlmd_dataset_management-0.6.0.dist-info/RECORD,,
