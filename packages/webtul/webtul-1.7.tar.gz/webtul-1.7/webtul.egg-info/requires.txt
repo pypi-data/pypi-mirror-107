@@ -1,0 +1,7 @@
+pycrypto
+aiomysql
+aioimaplib
+aiosmtplib
+sanic
+Pillow
+websocket-client
