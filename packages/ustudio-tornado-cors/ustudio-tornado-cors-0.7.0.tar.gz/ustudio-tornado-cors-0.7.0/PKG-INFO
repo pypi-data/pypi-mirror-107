@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: ustudio-tornado-cors
+Version: 0.7.0
+Summary: CORS support for Tornado (uStudio Fork)
+Home-page: https://github.com/ustudio/tornado-cors
+Author: globo.com
+Author-email: guilherme.cirne@corp.globo.com
+Maintainer: ustudio.com
+Maintainer-email: dev@ustudio.com
+License: MIT
+Description: UNKNOWN
+Keywords: tornado cors
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries

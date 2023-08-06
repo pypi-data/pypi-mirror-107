@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tornado_cors/__init__.py
+ustudio_tornado_cors.egg-info/PKG-INFO
+ustudio_tornado_cors.egg-info/SOURCES.txt
+ustudio_tornado_cors.egg-info/dependency_links.txt
+ustudio_tornado_cors.egg-info/requires.txt
+ustudio_tornado_cors.egg-info/top_level.txt
