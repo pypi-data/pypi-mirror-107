@@ -1,0 +1,3 @@
+[console_scripts]
+fsanzl = silabeador.__main__:main
+
