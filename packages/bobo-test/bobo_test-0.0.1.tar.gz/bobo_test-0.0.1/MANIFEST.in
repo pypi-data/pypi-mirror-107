@@ -1,0 +1,11 @@
+include *.txt
+include LICENSE
+recursive-include bobo_test *.conf
+recursive-include bobo_test *.css
+recursive-include bobo_test *.eot
+recursive-include bobo_test *.html
+recursive-include bobo_test *.js
+recursive-include bobo_test *.svg
+recursive-include bobo_test *.ttf
+recursive-include bobo_test *.woff
+recursive-include bobo_test *.woff2
