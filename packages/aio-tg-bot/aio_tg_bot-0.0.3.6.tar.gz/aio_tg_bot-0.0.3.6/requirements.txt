@@ -1,0 +1,4 @@
+loguru>=0.5.3
+bit-help>=0.0.7
+apscheduler>=3.6.3
+cached-property>=1.5.2
