@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/moretypes.py
+src/moretypes.egg-info/PKG-INFO
+src/moretypes.egg-info/SOURCES.txt
+src/moretypes.egg-info/dependency_links.txt
+src/moretypes.egg-info/top_level.txt
