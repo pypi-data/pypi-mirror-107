@@ -1,0 +1,146 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1621522366.json",
+    "title": "Root",
+    "type": "object",
+    "required": ["spec", "minter", "jwe", "is_encrypted", "content", "meta"],
+    "properties": {
+        "spec": {
+            "$id": "#root/spec",
+            "title": "Spec",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+        },
+        "minter": {
+            "$id": "#root/minter",
+            "title": "Minter",
+            "type": ["object", "null"],
+            "required": ["note", "signature"],
+            "properties": {
+                "note": {
+                    "$id": "#root/minter/note",
+                    "title": "Note",
+                    "type": "object",
+                    "required": ["item", "nonce"],
+                    "properties": {
+                        "item": {
+                            "$id": "#root/minter/note/item",
+                            "title": "Item",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                        },
+                        "nonce": {
+                            "$id": "#root/minter/note/nonce",
+                            "title": "Nonce",
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                },
+                "signature": {
+                    "$id": "#root/minter/signature",
+                    "title": "Signature",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "jwe": {
+            "$id": "#root/jwe",
+            "title": "Jwe",
+            "type": ["object", "null"],
+            "required": ["alg", "enc"],
+            "properties": {
+                "alg": {
+                    "$id": "#root/jwe/alg",
+                    "title": "Alg",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "enc": {
+                    "$id": "#root/jwe/enc",
+                    "title": "Enc",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "is_encrypted": {
+            "$id": "#root/is_encrypted",
+            "title": "Is_encrypted",
+            "type": "boolean",
+            "default": true
+        },
+        "content": {
+            "$id": "#root/content",
+            "title": "Content",
+            "type": "object",
+            "required": ["cid", "type", "encoding", "raw"],
+            "properties": {
+                "cid": {
+                    "$id": "#root/content/cid",
+                    "title": "Cid",
+                    "type": ["string", "null"],
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "type": {
+                    "$id": "#root/content/type",
+                    "title": "Type",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "encoding": {
+                    "$id": "#root/content/encoding",
+                    "title": "Encoding",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "raw": {
+                    "$id": "#root/content/raw",
+                    "title": "Raw",
+                    "type": ["string", "null"],
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "meta": {
+            "$id": "#root/meta",
+            "title": "Meta",
+            "type": "object",
+            "required": ["title", "shortname", "mediatype"],
+            "properties": {
+                "title": {
+                    "$id": "#root/meta/title",
+                    "title": "Title",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "shortname": {
+                    "$id": "#root/meta/shortname",
+                    "title": "Shortname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                },
+                "mediatype": {
+                    "$id": "#root/meta/mediatype",
+                    "title": "Mediatype",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                }
+            }
+        }
+    }
+}

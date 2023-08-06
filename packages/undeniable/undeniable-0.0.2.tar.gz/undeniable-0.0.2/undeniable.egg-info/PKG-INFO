@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: undeniable
+Version: 0.0.2
+Summary: A no nonsense NFT minting protocol built on Solana and IPFS
+Home-page: https://github.com/drbh/undeniable
+Author: drbh
+Author-email: david.richard.holtz@gmail.com
+License: UNKNOWN
+Description: ![undeniable](images/logo.png)
+        
+        Undeniable is a simple way to mint NFT's on the Solana Blockchain. Specifically, Undeniable helps token creators link bytes to their token in a permanent way.
+        
+        
+        
+        ```bash
+        python3 -m pip install undeniable
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
