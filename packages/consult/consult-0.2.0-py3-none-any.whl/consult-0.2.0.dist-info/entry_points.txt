@@ -1,0 +1,3 @@
+[console_scripts]
+consult=consult:run_consult
+
