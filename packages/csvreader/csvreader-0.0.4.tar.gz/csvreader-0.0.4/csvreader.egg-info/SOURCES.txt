@@ -1,0 +1,9 @@
+setup.py
+csvreader/__init__.py
+csvreader/__main__.py
+csvreader/csvreader.py
+csvreader.egg-info/PKG-INFO
+csvreader.egg-info/SOURCES.txt
+csvreader.egg-info/dependency_links.txt
+csvreader.egg-info/requires.txt
+csvreader.egg-info/top_level.txt
