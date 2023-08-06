@@ -1,0 +1,10 @@
+kalabash_pfxadmin_migrate/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+kalabash_pfxadmin_migrate/models.py,sha256=waUiDS2zIZ6tBtjAtm-024uth8mjwcn53TV0CPhNuPs,6095
+kalabash_pfxadmin_migrate/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalabash_pfxadmin_migrate/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalabash_pfxadmin_migrate/management/commands/migrate_from_postfixadmin.py,sha256=qb8UnivxVVL0upnwb08Rx-eE0YA7TAP5d_RihVk2qfQ,12010
+kalabash_pfxadmin_migrate-1.1.0.dist-info/LICENSE,sha256=iGz6YP06UJsa8DkLO9-ATJcBvUOOdwBkh9AF0oBbnQ0,67
+kalabash_pfxadmin_migrate-1.1.0.dist-info/METADATA,sha256=gRuGhGJjYeXCjPPu1_o0I0JNxbqFDp0VI9avRjgFmjA,651
+kalabash_pfxadmin_migrate-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kalabash_pfxadmin_migrate-1.1.0.dist-info/top_level.txt,sha256=Fm1FZtl-o8A4qAc2B1dYCcfGN7oLfe_GrSq0eYqgATE,26
+kalabash_pfxadmin_migrate-1.1.0.dist-info/RECORD,,
