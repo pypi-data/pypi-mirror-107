@@ -1,0 +1,7 @@
+pydantic>=1.8.1
+flanker>=0.9.11
+lxml>=4.6.3
+cssselect>=1.1.0
+PyMuPDF>=1.18.13
+requests-toolbelt>=0.9.1
+kikyo-bundle<0.8,>=0.7.1
