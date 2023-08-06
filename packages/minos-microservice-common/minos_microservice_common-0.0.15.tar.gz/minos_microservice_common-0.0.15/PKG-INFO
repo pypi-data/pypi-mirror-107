@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: minos-microservice-common
+Version: 0.0.15
+Summary: Python Package with common Classes and Utilities used in Minos Microservices.
+Home-page: https://clariteia.com
+License: MIT
+Keywords: clariteia,minos,microservice,saga
+Author: Clariteia Devs
+Author-email: devs@clariteia.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: aiomisc (>=14.0.3,<15.0.0)
+Requires-Dist: aiopg (>=1.2.1,<2.0.0)
+Requires-Dist: cached-property (>=1.5.2,<2.0.0)
+Requires-Dist: dependency-injector (>=4.32.2,<5.0.0)
+Requires-Dist: fastavro (>=1.4.0,<2.0.0)
+Requires-Dist: lmdb (>=1.2.1,<2.0.0)
+Requires-Dist: orjson (>=3.5.2,<4.0.0)
+Project-URL: Repository, https://github.com/clariteia/minos_microservice_common
+Description-Content-Type: text/markdown
+
+Minos Microservice Common
+=========================
+
+[![codecov](https://codecov.io/gh/Clariteia/minos_microservice_common/branch/main/graph/badge.svg)](https://codecov.io/gh/Clariteia/minos_microservice_common)
+
+![Tests](https://github.com/Clariteia/minos_microservice_common/actions/workflows/python-tests.yml/badge.svg)
+
+Python Package with common Classes and Utilities used in Minos Microservices
+
+Credits
+-------
+
+This package was created with ![Cookiecutter](https://github.com/audreyr/cookiecutter)  and the ![Minos Package](https://github.com/Clariteia/minos-pypackage) project template.
+
+
