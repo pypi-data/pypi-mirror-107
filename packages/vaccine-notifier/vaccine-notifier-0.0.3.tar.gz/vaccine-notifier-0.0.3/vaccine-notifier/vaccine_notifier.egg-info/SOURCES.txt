@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+data.db
+requirements.txt
+setup.py
+vaccinedb.db
+vaccine-notifier/trigger.py
+vaccine-notifier/vaccine_notifier.egg-info/PKG-INFO
+vaccine-notifier/vaccine_notifier.egg-info/SOURCES.txt
+vaccine-notifier/vaccine_notifier.egg-info/dependency_links.txt
+vaccine-notifier/vaccine_notifier.egg-info/entry_points.txt
+vaccine-notifier/vaccine_notifier.egg-info/requires.txt
+vaccine-notifier/vaccine_notifier.egg-info/top_level.txt
