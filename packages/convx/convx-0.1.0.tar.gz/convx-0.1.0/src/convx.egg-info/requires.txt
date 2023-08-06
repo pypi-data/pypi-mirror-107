@@ -1,0 +1,4 @@
+riposte>=0.4.1
+
+[dev]
+pytest>=6.2.4
