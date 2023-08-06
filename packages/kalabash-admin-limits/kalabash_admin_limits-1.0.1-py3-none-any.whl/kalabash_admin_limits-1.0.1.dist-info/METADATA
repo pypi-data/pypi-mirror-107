@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kalabash-admin-limits
+Version: 1.0.1
+Summary: Per administrator limits for Kalabash
+Home-page: https://alphamonak.com/
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+Requires-Dist: kalabash-admin (>=1.1.0)
+
+UNKNOWN
+
