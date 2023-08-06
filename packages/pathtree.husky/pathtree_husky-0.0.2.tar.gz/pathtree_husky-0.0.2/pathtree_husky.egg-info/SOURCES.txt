@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+pathtree_husky.egg-info/PKG-INFO
+pathtree_husky.egg-info/SOURCES.txt
+pathtree_husky.egg-info/dependency_links.txt
+pathtree_husky.egg-info/entry_points.txt
+pathtree_husky.egg-info/top_level.txt
