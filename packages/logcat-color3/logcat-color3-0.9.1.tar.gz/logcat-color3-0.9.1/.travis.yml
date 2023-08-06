@@ -1,0 +1,13 @@
+language: python
+
+dist: xenial
+
+python:
+  - 3.8
+  - nightly
+
+install: pip install colorama pyflakes
+
+script:
+  - pyflakes .
+  - python -m unittest discover ./test
