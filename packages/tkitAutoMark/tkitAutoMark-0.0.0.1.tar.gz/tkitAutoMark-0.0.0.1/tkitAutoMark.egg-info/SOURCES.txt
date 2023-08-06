@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+automark/__init__.py
+automark/automark.py
+test/test.py
+tkitAutoMark.egg-info/PKG-INFO
+tkitAutoMark.egg-info/SOURCES.txt
+tkitAutoMark.egg-info/dependency_links.txt
+tkitAutoMark.egg-info/requires.txt
+tkitAutoMark.egg-info/top_level.txt
