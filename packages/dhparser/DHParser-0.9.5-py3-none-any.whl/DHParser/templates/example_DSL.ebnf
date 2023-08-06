@@ -1,0 +1,34 @@
+# GRAMMAR_NAME-grammar
+
+#######################################################################
+#
+#  EBNF-Directives
+#
+#######################################################################
+
+@ whitespace  = linefeed        # implicit whitespace, includes linefeed, but not empty lines
+@ literalws   = right           # literals have implicit whitespace on the right hand side
+@ comment     = /#.*/           # comments range from a '#'-character to the end of the line
+@ ignorecase  = False           # literals and regular expressions are case-sensitive
+@ reduction   = flatten         # anonymous nodes are being reduced where possible
+@ disposable  = EOF             # EOF is considered a disposable symbol that can also be reduced
+@ drop        = EOF, whitespace # EOF and insignificant whitespace (tilde) will be dropped
+
+
+#######################################################################
+#
+#:  Structure and Components
+#
+#######################################################################
+
+document = ~ { WORD } §EOF      # root parser: a sequence of words preceded
+                                # by whitespace until the end of file
+
+#######################################################################
+#
+#:  Regular Expressions
+#
+#######################################################################
+
+WORD     =  /\w+/~      # a sequence of letters, optional trailing whitespace
+EOF      =  !/./        # no more characters ahead, end of file reached
