@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+__version__ = 42
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+from bot.clt import Client
+from bot.krn import Kernel
+from bot.obj import cfg
+
+import bot.all
+
+import doctest
+import shutil
+import unittest
+
+all = "adm,cms,fnd,irc,log,rss,tdo,udp"
+flags = doctest.REPORT_NDIFF|doctest.FAIL_FAST|doctest.ELLIPSIS
+
+class Test(Client):
+
+    def __init__(self):
+        super().__init__()
+        self.initialize()
+
+    def raw(self, txt):
+        if Kernel.opts("v"):
+            print(txt)
+
+def docmd(hdl, o):
+    o.parse()
+    f = Kernel.getcmd(o.cmd)
+    if f:
+        f(o)
+        o.show()
+    o.ready()
+
+def exec(main):
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
+
+def main():
+    if os.path.exists(".test"):
+        shutil.rmtree(".test")
+    cfg.debug = True
+    cfg.wd = ".test"
+    k = Kernel()
+    k.parse()
+    k.boot("test", __version__)
+    k.regs(all)
+    c = Test()
+    c.register("cmd", docmd)
+    c.start()
+    pat = "test_%s*" % "*"
+    suite = unittest.loader.TestLoader().discover("test", pattern=pat)
+    unittest.TextTestRunner(verbosity=3).run(suite)
+    doctest.testfile("../test/test1.txt", optionflags=flags, report=False, verbose=False)
+
+exec(main)
