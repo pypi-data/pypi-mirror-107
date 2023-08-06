@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: drf_pyjwt
+Version: 0.0.2
+Summary: A JSON Web Token authentication extension for the Django REST Framework.
+Home-page: https://github.com/vskrachkov/drf_pyjwt
+Author: Vicheslav Krachkov
+Author-email: vskrachkov@gmail.com
