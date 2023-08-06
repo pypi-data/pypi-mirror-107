@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ceb
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: James Calo
+Author-email: jamesafcalo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: setuptools
+
+UNKNOWN
+
