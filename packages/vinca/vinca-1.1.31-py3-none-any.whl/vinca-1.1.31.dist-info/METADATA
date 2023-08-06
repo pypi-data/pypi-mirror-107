@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vinca
+Version: 1.1.31
+Summary: A simple spaced repetition system
+Home-page: UNKNOWN
+Author: Oscar Laird
+Author-email: olaird25@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: readchar
+
+UNKNOWN
+
+
