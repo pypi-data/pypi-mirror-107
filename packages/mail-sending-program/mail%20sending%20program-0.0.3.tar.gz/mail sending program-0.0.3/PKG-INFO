@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mail sending program
+Version: 0.0.3
+Summary: gmail sending lib
+Home-page: https://pypi.org/project/mail-sending-program/
+Author: py devoleper
+Author-email: <mailsender.help@gmail.com>
+License: UNKNOWN
+Description: # mail-sender-program
+        a program that sends gmail in 2 lines of code 
+        
+        ## examples:
+        
+        ## 1 sending html to one person:
+        ```python
+        import gmail_sender as g 
+        g.send_html_gmail_to_one(email_name,password_for_gmail , to, subject, content_html)
+        
+        ```
+        ## 2 sending regular gmail to a person:
+        ```python 
+        import gmail_sender as g 
+        g.send_gmail_to_one(email_name,password_for_gmail , to, subject, content)
+        
+        ```
+        
+        ## 3 send html gmail to many people:
+        ```python 
+        import gmail_sender as g 
+        send_html_gmail_to_people_in_list(email_name,password_for_gmail , to(list), subject, content_html)
+        ```
+        
+        ## 4 send regular gmail to many people:
+        ```python 
+        import gmmail_sender as g 
+        g.send_gmail_to_people_in_list(email_name,password_for_gmail , to(list), subject, content)
+        ```
+        
+        # it is that simple
+        
+Keywords: python,gmail,html,stmlp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
