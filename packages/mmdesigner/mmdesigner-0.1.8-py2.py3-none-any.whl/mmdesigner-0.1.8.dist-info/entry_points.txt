@@ -1,0 +1,3 @@
+[console_scripts]
+mm = mmdesigner.__main__:main
+
