@@ -1,0 +1,16 @@
+DadosAbertosBrasil/__init__.py,sha256=msM6sdk29vbkyb4-IIDAM1IaZYQoXVi_b7CL-R_Db8w,1466
+DadosAbertosBrasil/bacen.py,sha256=XgWkqqzcP6MB17Cjmnhv-3tIOObSH0h6lQeLxSr1Dm4,10551
+DadosAbertosBrasil/camara.py,sha256=VM6qPCjW-VsWc0mr0st2XAe-bB5fLV0lx5eJLQV4Crg,98112
+DadosAbertosBrasil/favoritos.py,sha256=6keETaNqIyf--KMc7JHYAPRGNmB2pJ1lpXMKyBLjetg,7919
+DadosAbertosBrasil/ibge.py,sha256=3qYV2d59MTIzbZDCE_xJOpeja_G-53AWJhWRsl9wHpg,20383
+DadosAbertosBrasil/ipea.py,sha256=kbyW6NK-4SovacIWeBbbUJs5ReccoYFHAA-nPhKAlmU,16192
+DadosAbertosBrasil/senado.py,sha256=Kt76l1sruIjqMbL2gRZpjeus63OsTxHhf3TRSWfcF8Q,22641
+DadosAbertosBrasil/_utils/__init__.py,sha256=p6117nceN5ZdxXZRMrX0fEepcNMFGlBBXPxW6G2TgAE,290
+DadosAbertosBrasil/_utils/errors.py,sha256=4XnE9pYAt8PLBJBTiTaZheBkGOHHIbjpe8CeZMOC038,741
+DadosAbertosBrasil/_utils/get_data.py,sha256=ALFnoWIvKjcoiaFZL2oS9bOKZnAYH4dQ6gEn6QmisNQ,1149
+DadosAbertosBrasil/_utils/parse.py,sha256=JP9ts-pimJ_6oRtVLq0FbAU3s8Ke0e-MD94WJj_Ei3A,7044
+DadosAbertosBrasil-0.2.3.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+DadosAbertosBrasil-0.2.3.dist-info/METADATA,sha256=ZZ00Rx-7V_Dqj6FJMclR73yOIWHsWfFQkqRl8fO57Io,2914
+DadosAbertosBrasil-0.2.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+DadosAbertosBrasil-0.2.3.dist-info/top_level.txt,sha256=gmJHo5WSlmCU17lYKuUY-RDZ5Dh3-Abc3nH2vTGEmLA,19
+DadosAbertosBrasil-0.2.3.dist-info/RECORD,,
