@@ -1,0 +1,3 @@
+[console_scripts]
+whitesymex = whitesymex.cli:main
+
