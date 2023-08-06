@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: cfpq-data
+Version: 1.0.1
+Summary: Python package containing Graphs and Grammars for experimental analysis of Context-Free Path Querying algorithms
+Home-page: https://jetbrains-research.github.io/CFPQ_Data/
+Author: Vadim Abzalov
+Author-email: vadim.i.abzalov@gmail.com
+Maintainer: Nikita Kovalev
+Maintainer-email: Nikitoskova123@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://jetbrains-research.github.io/CFPQ_Data
+Project-URL: Source Code, https://github.com/JetBrains-Research/CFPQ_Data
+Project-URL: Bug Tracker, https://github.com/JetBrains-Research/CFPQ_Data/issues
+Keywords: graphs,grammars,context-free,path-query,cfpq-data
+Platform: Linux
+Platform: Mac OSX
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: boto3 (>=1.17)
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: pyformlang (>=0.1)
+Requires-Dist: rdflib (>=5.0)
+Requires-Dist: requests (>=2.25)
+Requires-Dist: tqdm (>=4.60)
+Provides-Extra: developer
+Requires-Dist: black (>=20.8b1) ; extra == 'developer'
+Requires-Dist: pre-commit (>=2.12.0) ; extra == 'developer'
+Provides-Extra: docs
+Requires-Dist: nb2plots (>=0.6) ; extra == 'docs'
+Requires-Dist: numpydoc (>=1.1) ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme (>=0.6) ; extra == 'docs'
+Requires-Dist: sphinx (>=3.5) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (>=0.3) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: codecov (>=2.1) ; extra == 'tests'
+Requires-Dist: pytest (>=6.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.10) ; extra == 'tests'
+
+CFPQ_Data
+=========
+
+.. image:: https://github.com/JetBrains-Research/CFPQ_Data/actions/workflows/tests.yml/badge.svg?branch=master
+   :target: https://github.com/JetBrains-Research/CFPQ_Data/actions/workflows/tests.yml
+
+.. image:: https://codecov.io/gh/JetBrains-Research/CFPQ_Data/branch/master/graph/badge.svg?token=6IAZM6KZT7
+   :target: https://codecov.io/gh/JetBrains-Research/CFPQ_Data
+
+.. image:: https://img.shields.io/pypi/v/cfpq-data.svg
+   :target: https://pypi.org/project/cfpq-data/
+
+.. image:: https://img.shields.io/pypi/pyversions/cfpq-data.svg
+   :target: https://pypi.org/project/cfpq-data/
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/ambv/black
+
+.. image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+   :target: https://github.com/JetBrains-Research/CFPQ_Data/blob/master/LICENSE.txt
+
+CFPQ_Data is a Python package for the creation, manipulation, and study of the
+structure, dynamics, and functions of complex Graphs and Grammars used for
+experimental analysis of Context-Free Path Querying algorithms.
+
+- **Website:** https://jetbrains-research.github.io/CFPQ_Data
+- **Tutorial:** https://jetbrains-research.github.io/CFPQ_Data/tutorial.html
+- **Documentation:** https://jetbrains-research.github.io/CFPQ_Data/reference/index.html
+- **Source Code:** https://github.com/JetBrains-Research/CFPQ_Data
+- **Bug Tracker:** https://github.com/JetBrains-Research/CFPQ_Data/issues
+
+
