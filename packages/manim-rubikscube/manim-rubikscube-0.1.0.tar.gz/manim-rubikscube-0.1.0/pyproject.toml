@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "manim-rubikscube"
+version = "0.1.0"
+description = "A Manim implementation of the classic Rubik's Cube"
+license = "MIT"
+authors = ["KingWampy <fake-noreply@email.com>"]
+readme = "README.rst"
+repository = "https://github.com/WampyCakes/manim-rubikscube"
+packages = [
+    { include = "manim_rubikscube" },
+]
+
+[tool.poetry.plugins."manim.plugins"]
+"manim_rubikscube" = "manim_rubikscube"
+
+[tool.poetry.plugins."console_scripts"]
+"manim-rubikscube" = "manim_rubikscube.__main__:main"
+
+[tool.poetry.dependencies]
+manim = "*"
+importlib-metadata = {version = "*", python = "<3.8"}
+kociemba-manim-rubikscube = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
