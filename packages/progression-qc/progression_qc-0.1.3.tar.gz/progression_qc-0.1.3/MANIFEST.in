@@ -1,0 +1,1 @@
+recursive-include progression_qc/schemas/ *.py
