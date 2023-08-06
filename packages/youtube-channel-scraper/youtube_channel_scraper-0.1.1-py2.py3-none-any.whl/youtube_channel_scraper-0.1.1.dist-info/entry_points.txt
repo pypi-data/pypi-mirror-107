@@ -1,0 +1,3 @@
+[console_scripts]
+youtube-channel-scraper=youtube_channel_scraper.__main__:run
+
