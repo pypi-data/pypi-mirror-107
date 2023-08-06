@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: djangoldp-digest
+Version: 1.0.15
+Summary: djangoldp package for digest generation
+Home-page: https://git.startinblox.com/djangoldp-packages/djangoldp-digest
+Author: Startin'blox
+Author-email: jbaptiste@startinblox.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: djangoldp (>=2.1)
+
+UNKNOWN
+
+
