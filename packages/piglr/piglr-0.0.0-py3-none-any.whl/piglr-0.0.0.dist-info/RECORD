@@ -1,0 +1,12 @@
+piglr/__init__.py,sha256=9ft435Slh6TYy-zgz-3fRtgFMN3l1yqt2Y6KTJEcYL0,77
+piglr/error.py,sha256=vWzWulwJtP7nj9gXvGWlFk_sV-nislSW2ZqOeBrTXmE,181
+piglr/game.py,sha256=Ykz0zFOpWMOzTVzQk2HOXS3Fowl1U_4G5lu85NmRJrw,4355
+piglr/state.py,sha256=sp5w2B74HHHyaHAg1JaUd678BLuP-uMkqcDwzm57ZLs,712
+piglr/version.py,sha256=6w0GIuSnFwrHjqlVszpuoV8RwCe4nKYfvnpIrF1IlhI,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pig.py,sha256=xrfG5jlV3i8TouehIaRRf4uoDB6cTg5RS5mLAIBkjIc,1637
+piglr-0.0.0.dist-info/LICENSE,sha256=CZU16owRWVq3jLAVZPQeamKRcnCk1pfmeZa686h9Fwg,1504
+piglr-0.0.0.dist-info/METADATA,sha256=1a4Jj4QkhoCaYPnGCkAvyFSmiYquhXtfbVLLaaN4TDA,2487
+piglr-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+piglr-0.0.0.dist-info/top_level.txt,sha256=dXM3Rgm3xNLGfd6EpWWHAFpo-C9grl_2SCSkwdNa_vg,12
+piglr-0.0.0.dist-info/RECORD,,
