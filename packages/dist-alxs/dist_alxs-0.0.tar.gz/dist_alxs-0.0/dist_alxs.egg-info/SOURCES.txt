@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+dist_alxs/Generaldistribution.py
+dist_alxs/__init__.py
+dist_alxs.egg-info/PKG-INFO
+dist_alxs.egg-info/SOURCES.txt
+dist_alxs.egg-info/dependency_links.txt
+dist_alxs.egg-info/not-zip-safe
+dist_alxs.egg-info/top_level.txt
