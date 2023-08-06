@@ -1,0 +1,6 @@
+<div>
+  <p>{{ count }} {% if count > 1 %}nouveaux évenements ont été partagés{% else %}nouvel évenement a été partagé{% endif %} :</p>
+  <ul>
+    {% autoescape off %}{{ content }}{% endautoescape %}
+  </ul>
+</div>
