@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytile-game-engine
+Version: 1.1.5
+Summary: A simple library for tilemaps in python/pygame.
+Home-page: https://github.com/enbyte/pytile
+Author: Enbyte Games
+Author-email: sb-mangobrains@crowder-sklar.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+Requires-Dist: numpy
+
+```pytile``` is a simple engine for rendering and colliding with tilemaps in pygame. Documentation coming soon!
+
+
