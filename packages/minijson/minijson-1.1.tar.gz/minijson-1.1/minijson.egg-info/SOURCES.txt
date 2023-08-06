@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+minijson/__bootstrap__.c
+minijson/__init__.py
+minijson/exceptions.c
+minijson/routines.c
+minijson.egg-info/PKG-INFO
+minijson.egg-info/SOURCES.txt
+minijson.egg-info/dependency_links.txt
+minijson.egg-info/not-zip-safe
+minijson.egg-info/top_level.txt
