@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+yagup/__init__.py
+yagup/exceptions.py
+yagup/schema.py
+yagup.egg-info/PKG-INFO
+yagup.egg-info/SOURCES.txt
+yagup.egg-info/dependency_links.txt
+yagup.egg-info/not-zip-safe
+yagup.egg-info/requires.txt
+yagup.egg-info/top_level.txt
+yagup/test/__init__.py
+yagup/test/test_parse.py
