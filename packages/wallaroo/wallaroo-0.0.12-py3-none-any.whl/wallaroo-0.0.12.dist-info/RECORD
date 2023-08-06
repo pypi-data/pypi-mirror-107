@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_import.py,sha256=vSQTKo_wDYLCUhiwi8IgZPx3Owc-DUk45UkBjT7zyIU,559
+tests/test_smoke.py,sha256=L9Z5YDYIvdEmbJGxswZlWuZYgs451ce8pX8TADRNLV0,1620
+wallaroo/__init__.py,sha256=e0gFYjMNyNlv0-dgz4rN1P03PdAFUxyUTfCLV-YRXOk,20
+wallaroo/sdk.py,sha256=_MaUjvGB_PiGmzLUOkh8FM1NA7bTWb5u65nLj1AsMzs,10738
+wallaroo-0.0.12.dist-info/METADATA,sha256=NNUG4oXvZ9hQLx6FjlSixz1ZWdsdm-eqFxEUntzPnYU,449
+wallaroo-0.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wallaroo-0.0.12.dist-info/top_level.txt,sha256=-xMKqZX9yRO6iQjwBNfmX-zMIvCKRtfvcY5Hqk1Hvgc,19
+wallaroo-0.0.12.dist-info/RECORD,,
