@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/config/__init__.py
+src/mongodb_ml_models/__init__.py
+src/mongodb_ml_models/constants.py
+src/mongodb_ml_models/directory_handling.py
+src/mongodb_ml_models/mongodb_handle.py
+src/mongodb_ml_models/mongodb_models_handle.py
+src/mongodb_ml_models.egg-info/PKG-INFO
+src/mongodb_ml_models.egg-info/SOURCES.txt
+src/mongodb_ml_models.egg-info/dependency_links.txt
+src/mongodb_ml_models.egg-info/requires.txt
+src/mongodb_ml_models.egg-info/top_level.txt
