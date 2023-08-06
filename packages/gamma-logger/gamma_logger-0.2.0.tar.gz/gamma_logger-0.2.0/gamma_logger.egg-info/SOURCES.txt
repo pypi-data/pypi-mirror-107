@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gamma_logger/__init__.py
+gamma_logger/logging.conf
+gamma_logger.egg-info/PKG-INFO
+gamma_logger.egg-info/SOURCES.txt
+gamma_logger.egg-info/dependency_links.txt
+gamma_logger.egg-info/top_level.txt

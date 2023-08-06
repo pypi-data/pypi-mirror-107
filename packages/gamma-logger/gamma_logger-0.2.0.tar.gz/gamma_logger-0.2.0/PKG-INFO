@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gamma_logger
+Version: 0.2.0
+Summary: A small logger
+Home-page: UNKNOWN
+Author: Gaurav Singh, Danish khajuria
+Author-email: gauravsingh0109@gmail.com, danishkhajuria@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+gamma_logger
+=================
+
+A simple logging module.
+
