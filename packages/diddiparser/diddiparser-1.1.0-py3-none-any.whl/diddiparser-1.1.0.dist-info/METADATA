@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: diddiparser
+Version: 1.1.0
+Summary: Parser for DiddiScript files.
+Home-page: https://github.com/diddileija/diddiparser/blob/main/README.md
+Author: Diego Ramirez
+Author-email: dr01191115@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, http://github.com/diddileija/diddiparser/blob/main/README.md
+Project-URL: Tracker, http://github.com/diddileija/diddiparser/issues
+Keywords: diddi diddiscript script files parse python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6, <3.10
+Description-Content-Type: text/markdown
+
+![DiddiScript icon](https://github.com/DiddiLeija/DiddiLeija/blob/main/diddiscript-icon-(short).png)
+
+# DiddiParser
+
+Parse DiddiScript files and run their simple syntax.
+
+## What's DiddiScript?
+
+Refer to [GRAMMAR.md](http://github.com/diddileija/diddiparser/blob/main/GRAMMAR.md) to learn about the DiddiScript
+environment.
+
+## Usage of DiddiParser
+
+DiddiParser is a pure Python package, installable from [PyPI](http://pypi.org/project/diddiparser) with Pip:
+
+```
+pip install diddiparser
+```
+
+Then, import the features like this:
+
+```python
+# new feature files will be added here with the
+# known features...
+from diddiparser.parser import DiddiScriptFile
+```
+
+## More help is here!
+
+Go to [SECURITY.md](http://github.com/diddileija/diddiparser/blob/main/SECURITY.md) to view the supported versions and security advisories. View [CHANGELOG.md](http://github.com/diddileija/diddiparser/blob/main/CHANGELOG.md) to view all the published versions. Or go to the related [wiki](http://github.com/diddileija/diddiparser/wiki/Home) to read a larger explanation of the package contents.
+
+
