@@ -1,0 +1,17 @@
+feature-groups:
+  -   name: StudentFeatureGroup
+
+      features:
+      - name: StudentMarksScaled
+      - name: StudentMarksAverage
+      - name: ScaleMarksByFactor
+        parameters:
+          - name-suffix: _times_{factor}
+            grid:
+              factor: [0,1]
+
+      passthrough:
+        - STUDENT_ID
+
+output:
+  format: csv

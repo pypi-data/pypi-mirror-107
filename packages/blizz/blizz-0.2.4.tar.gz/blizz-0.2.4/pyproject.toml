@@ -1,0 +1,73 @@
+[build-system]
+requires = ["flit_core >=3,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.sdist]
+exclude = [".idea", "tmp", "dist", ".tox", ".pytest_cache"]
+
+[tool.flit.metadata]
+module = "blizz"
+author = "Joerg Schneider"
+home-page = "https://github.com/joerg-schneider/blizz"
+description-file = "pypi_readme.md"
+dist-name = "blizz"
+
+requires = [
+    "pyyaml >= 5.0",
+    "click >= 7.1",
+    "colorama",
+    "tornado",
+    "pydata-sphinx-theme",
+    "sphinx",
+    "schema",
+]
+
+requires-python = ">=3.6,<4"
+
+[tool.flit.metadata.requires-extra]
+pyspark = [
+    "pyspark >= 2.4",
+    "pyspark-stubs",
+]
+pandas = [
+    "pandas >= 0.24,<1.2",
+]
+testing = [
+    "pytest >= 6.2.*",
+    "pytest-cov >= 2.10.*",
+    "flake8 >= 3.8.*",
+    "flake8-comprehensions >= 3.3.*",
+    "isort >= 5.7.*",
+]
+docs = [
+    "nbsphinx >= 0.7.*",
+    "jupyter >= 1.0",
+    "docutils",
+    "m2r == 0.2.*"
+]
+
+[tool.flit.metadata.urls]
+Documentation = "https://github.com/joerg-schneider/blizz"
+Repository = "https://github.com/joerg-schneider/blizz"
+
+[tool.flit.scripts]
+blizz = "blizz._cli:main"
+
+[tool.black]
+# quiet = "True"
+line-length = 88
+target_version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.tox
+    | \.venv
+    | data
+    | docs
+    | sphinx
+  )/
+)
+'''
