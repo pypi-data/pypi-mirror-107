@@ -1,0 +1,4 @@
+general -SRS -mechanics 
+mechanics +mechanics =mechanics
+SRS +SRS =SRS -geography
+misc +itinerary +elephant =elephant
