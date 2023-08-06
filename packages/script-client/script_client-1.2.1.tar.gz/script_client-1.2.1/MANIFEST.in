@@ -1,0 +1,2 @@
+recursive-include static *.css *.js
+recursive-include templates *.html
