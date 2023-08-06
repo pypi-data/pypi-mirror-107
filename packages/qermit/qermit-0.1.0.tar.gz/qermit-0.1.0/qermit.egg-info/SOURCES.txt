@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+_version.py
+setup.py
+qermit.egg-info/PKG-INFO
+qermit.egg-info/SOURCES.txt
+qermit.egg-info/dependency_links.txt
+qermit.egg-info/not-zip-safe
+qermit.egg-info/requires.txt
+qermit.egg-info/top_level.txt
