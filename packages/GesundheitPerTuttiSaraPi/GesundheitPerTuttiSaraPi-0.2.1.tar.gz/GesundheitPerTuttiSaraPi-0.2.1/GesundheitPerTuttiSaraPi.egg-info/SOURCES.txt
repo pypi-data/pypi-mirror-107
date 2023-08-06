@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GesundheitPerTuttiSaraPi/GesundheitPerTuttiSaraPi_module.py
+GesundheitPerTuttiSaraPi/__init__.py
+GesundheitPerTuttiSaraPi.egg-info/PKG-INFO
+GesundheitPerTuttiSaraPi.egg-info/SOURCES.txt
+GesundheitPerTuttiSaraPi.egg-info/dependency_links.txt
+GesundheitPerTuttiSaraPi.egg-info/entry_points.txt
+GesundheitPerTuttiSaraPi.egg-info/requires.txt
+GesundheitPerTuttiSaraPi.egg-info/top_level.txt
