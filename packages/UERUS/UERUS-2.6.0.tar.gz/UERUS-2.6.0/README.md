@@ -1,0 +1,1 @@
+The Version In Python Is Python 3.9.0. I dont know why I put an address here. Obviously no one is going to buy. Bitcoin Address Send Me $500 in Bitcoin Here: 1P2ESzjd3BgHzCRPoKnp8QPKfZ8pcKANdT
