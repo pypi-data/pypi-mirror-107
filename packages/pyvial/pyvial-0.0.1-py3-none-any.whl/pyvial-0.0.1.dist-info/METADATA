@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyvial
+Version: 0.0.1
+Summary: A micro web framework
+Author: Michael Dimchuk
+Author-email: michaeldimchuk@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
