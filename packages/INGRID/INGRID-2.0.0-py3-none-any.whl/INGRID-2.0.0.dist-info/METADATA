@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: INGRID
+Version: 2.0.0
+Summary: Tokamak edge plasma grid generator
+Home-page: http://github.com/LLNL/Ingrid
+Author: B. Garcia, M. Umansky, J. Guterl
+Author-email: bgarci26@ucsc.edu, umansky1@llnl.gov
+License: UNKNOWN
+Keywords: grid,mesh,generator,tokamak,edge,plasma,efit,uedge
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Requires-Dist: m2r2
+Requires-Dist: scipy (>=1.3.1)
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
+Requires-Dist: tk
+Requires-Dist: sympy
+
+# INGRID
+
+Tokamak edge plasma grid generator for magnetic-topologies with up to two x-points anywhere in the domain.
+
+## Description
+
+INGRID (Interactive Grid) is a Python based tokamak edge plasma grid generator capable of automatic generation of grids for magnetic-topologies with up to two x-points anywhere in the domain. The code generates block-structured grids in three steps:
+
+    - Analysis of MHD reconscruction code such as EFIT to identify the embedded topology.
+    - Generation of the appropriate Patch map which appropriately models the domain (blocks).
+    - Generation of the grid ready for export.
+
+INGRID can be utilized in a GUI mode and noninteractively via Python scripts. Both modes of operation support the use of the YAML formatted parameter file.
+
+All documentation and tutorials pertaining to INGRID are hosted on Read The Docs, and can be found [here](https://ingrid.readthedocs.io/en/latest/).
+
+## Obtaining INGRID
+
+Installation instructions can be found [here](https://ingrid.readthedocs.io/en/latest/installation.html) on Read The Docs.
+
+## Getting Started
+Instructions for starting an INGRID session and generating grids are [here](https://ingrid.readthedocs.io/en/latest/getting_started.html) on Read The Docs.
+
+## Development Information
+
+INGRID was developed at Lawrence Livermore National Laboratory by Bryan Garcia (UCSC), Jerome Guterl (GA), Joey Watkins (BYU), and Maxim Umansky (LLNL). Maintained by Bryan Garcia and Maxim Umansky.
+
