@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: basic-timehelper
+Version: 0.1.0
+Summary: Collection of convenient methods to deal with time-related flow
+Home-page: https://github.com/timehelper
+Author: Paolo Gervasoni Vila
+Author-email: pgervila@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pytz
+Requires-Dist: pandas
+
+# TIMEHELPER
+
+## A collection of convenience methods to handle frequent time-related patterns in a more intuitive and explicit way
+
+# To use the library, just import it and start using its methods:
+
+```
+import timehelper
+
+>>>timehelper.today_in_cet()
+'datetime.datetime(2021, 5, 30, 0, 0, tzinfo=<DstTzInfo 'CET' CEST+2:00:00 DST>)'
+>>>timehelper.get_current_time_utc()
+'datetime.datetime(2021, 5, 30, 13, 24, 4, 435579, tzinfo=<UTC>)'
+```
+
+
+
