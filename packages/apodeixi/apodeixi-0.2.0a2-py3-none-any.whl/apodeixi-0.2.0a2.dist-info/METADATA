@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: apodeixi
+Version: 0.2.0a2
+Summary: Proof-oriented, reverse Conway domain model and controllers for human organizations, inspired by Kubernetes
+Home-page: https://github.com/ChateauClaudia-Labs/apodeixi.git
+Author: Alejandro Hernandez
+Author-email: alejandro@chateauclaudia-labs.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/ChateauClaudia-Labs/apodeixi.git/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: openpyxl (>=3.0.7)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: xlsxwriter (>=1.3.8)
+Requires-Dist: nltk (>=3.6.1)
+
+# apodeixi
+Proof-oriented, reverse Conway domain model for human organizations
+
+# Running the tests
+At the root of the project, run `python -m unittest -v` (you may ommit the `-v` option to avoid seeing the results for each individual test case).
+
+*Example*:
+ 
+```
+aleja@CC-Labs-2 MINGW64 ~/Documents/Code/chateauclaudia-labs/apodeixi/project (main)
+$ python -m unittest -v
+test_multi_sheet (apodeixi.xli.tests_unit.test_BreakdownBuilder.Test_MultiSheet) ... ok
+test_generateUID (apodeixi.xli.tests_unit.test_UID_Store.Test_UIDStore) ... ok
+test_tokenize (apodeixi.xli.tests_unit.test_UID_Store.Test_UIDStore) ... ok
+```
+
+To run an individual test, you can do something like this.
+
+```
+aleja@CC-Labs-2 MINGW64 ~/Documents/Code/chateauclaudia-labs/apodeixi/project (main)
+$ python -m unittest apodeixi.xli.tests_unit.test_BreakdownBuilder.Test_MultiSheet.test_multi_sheet
+.
+----------------------------------------------------------------------
+Ran 1 test in 1.421s
+
+OK
+```
+
