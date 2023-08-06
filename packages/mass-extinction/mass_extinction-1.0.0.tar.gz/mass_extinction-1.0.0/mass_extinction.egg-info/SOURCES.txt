@@ -1,0 +1,10 @@
+README.md
+setup.py
+mass_extinction/README.md
+mass_extinction/ext_params.py
+mass_extinction/ext_types.py
+mass_extinction/mass_extinction.py
+mass_extinction.egg-info/PKG-INFO
+mass_extinction.egg-info/SOURCES.txt
+mass_extinction.egg-info/dependency_links.txt
+mass_extinction.egg-info/top_level.txt
