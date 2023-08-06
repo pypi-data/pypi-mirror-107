@@ -1,0 +1,12 @@
+include *.rst
+include CONTRIBUTORS
+include LICENSE
+include src/**/py.typed
+recursive-include docs *.bat
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-exclude tests *
+exclude *.yaml
+exclude *.yml
+exclude tox.ini

@@ -1,0 +1,11 @@
+babel>=2.8.0
+typing-extensions>=3.7.4.3
+
+[tests]
+pytest>=2.3.0
+tox>=1.6.0
+
+[type-tests]
+pytest>=2.3.0
+pytest-mypy-plugins
+mypy>=0.812
