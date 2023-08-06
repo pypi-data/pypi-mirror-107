@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.cfg
+setup.py
+src/FuzzyClustering/ClusterAidedComputing.py
+src/FuzzyClustering/ClusteringIteration.py
+src/FuzzyClustering/FuzzyClustering.py
+src/FuzzyClustering/__init__.py
+src/FuzzyClustering.egg-info/PKG-INFO
+src/FuzzyClustering.egg-info/SOURCES.txt
+src/FuzzyClustering.egg-info/dependency_links.txt
+src/FuzzyClustering.egg-info/top_level.txt
