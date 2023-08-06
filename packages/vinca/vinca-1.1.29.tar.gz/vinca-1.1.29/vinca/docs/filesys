@@ -1,0 +1,35 @@
+dir utils/core
+types [a dictionary for add commands which would set the config file]
+decks
+bindings
+dir cards
+dir parent_notes
+
+A card file will have the following:
+schedule
+tags
+config
+- reviewer
+- editor
+- parent_note
+
+it may have some auxfiles. e.g.
+basic
+-(frontimage)
+-(backimage)
+-(frontaudio)
+-(backaudio)
+-front
+-back
+latex
+-front.latex
+-back.latex
+
+Example:
+a latex card would use the default reviewer (and supply all the required auxfiles for that); have no parent note; but use an editor to edit the two latex auxfiles and convert them to images on close. It would override f and b to edit the front and back latex respectively.
+
+Example: 
+image occlusion also use the default reviewer, but have no aux files. It would link to a parent note and use a custom editor that would open the parent_note (which can be configured however) for editing, probably in a separate window.
+
+Example:
+A type the answer question would not need a parent note, but it would use a custom editor to edit the type field(s) and it would use a custom reviewer to ask for user input.
