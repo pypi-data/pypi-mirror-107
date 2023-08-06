@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ioeeoap
+Version: 0.3.0
+Summary: It is a specific form of the content of the economic effect of agricultural production through numerical values. 
+Home-page: https://github.com/pypa/setuptools
+Author: Yu Zhen、Guan Wei、Zhilin
+Author-email: distutils-sig@python.org
+License: MIT
+Project-URL: Documentation, https://setuptools.readthedocs.io/
+Description: UNKNOWN
+Keywords: ioeeoap
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Provides-Extra: testing
+Provides-Extra: docs
+Provides-Extra: ssl
+Provides-Extra: certs
