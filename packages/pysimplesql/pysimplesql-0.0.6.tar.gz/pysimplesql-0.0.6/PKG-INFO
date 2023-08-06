@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pysimplesql
+Version: 0.0.6
+Summary: sqlite3 database binding for PySimpleGUI
+Home-page: https://github.com/PySimpleSQL/pysimplesql
+Author: Jonathan Decker
+Author-email: pysimplesql@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/PySimpleSQL/pysimplesql/archive/refs/tags/0.0.6.tar.gz
+Description: Readme coming soon!
+Keywords: SQL sqlite database application front-end access libre office GUI PySimpleGUI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
