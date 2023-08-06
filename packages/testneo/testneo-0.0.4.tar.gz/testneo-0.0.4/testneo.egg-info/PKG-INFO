@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: testneo
+Version: 0.0.4
+Summary: testneo自动化测试平台
+Home-page: https://github.com/neo19850910/testneo
+Author: 胡桓
+Author-email: 1641143982@qq.com
+License: MIT
+Description: # testneo
+        自动化测试平台
+        
+        # 安装指南
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
