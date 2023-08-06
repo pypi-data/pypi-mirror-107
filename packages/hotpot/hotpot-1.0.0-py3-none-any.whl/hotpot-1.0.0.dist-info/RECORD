@@ -1,0 +1,11 @@
+hotpot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hotpot/app.py,sha256=ZINelLLMymyS033YGJBRtwnt5k688PDEzits6tBmcq8,10556
+hotpot/globals.py,sha256=67FtN4vd4z7JHs-PgfNFys3qDSTQzW1t5AkO6sE8PjE,464
+hotpot/sessions.py,sha256=wLGIZPSiCSFCyI0A8Xk6T-JMFtPsPNTKrWXVfCyXQqQ,1345
+hotpot/utils.py,sha256=yf1-seEi74IP3sBbr8PXy8DstYBppt2vNM_NolE0G94,2495
+hotpot/wrappers.py,sha256=xSv7LPagQoUb9z_3VCYOBMjB2KDSN-VlJ9-lpUotxC0,519
+hotpot-1.0.0.dist-info/LICENSE,sha256=fXHdI7q5i55Hx_IMpVTrgByvcDmSSEPrPpVq26_tWEo,1061
+hotpot-1.0.0.dist-info/METADATA,sha256=PlErc-tWF6XmruYXRfjgATXW4VxCkct5VPiqzgYdv6o,355
+hotpot-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hotpot-1.0.0.dist-info/top_level.txt,sha256=kgxHGgNakM8Pq25l7G9_gi8gS6n_65MtfY_YD2ImlYo,7
+hotpot-1.0.0.dist-info/RECORD,,
