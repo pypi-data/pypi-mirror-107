@@ -1,0 +1,12 @@
+BlacklistReport/BlacklistEntry.py,sha256=XX8fQ_yYd3q_-rKzJcI_ztvz7ZKtYz3lvKpIpL7Eqgk,887
+BlacklistReport/BlacklistReport.py,sha256=gyfzfVCDrVpzwumbJW_RzYCJKgX5Wm5iI4zrHll00wY,8359
+BlacklistReport/IpEntryPool.py,sha256=VPU0lUikJYbZMUCb0TdDgQ5r9DBwBIXuLN99KdTAywM,3790
+BlacklistReport/__init__.py,sha256=g8w8JOpshHsdV4LjPC4ZqI0X7JxXMdPXBqEpVALpnZw,318
+BlacklistReport/__threat_data.py,sha256=FgFT70ZoKDsWDs-RZvIAa6xWQo3dZ4BjtMbHlEE0cPg,3279
+BlacklistReport/schema/ReportSchema.py,sha256=9Yn353TVpvX9mPEyBPAqLSP6gedKEdzaU1iDORX6MJI,3475
+BlacklistReport/schema/__init__.py,sha256=OeFOlKRvbsTGc68cxYVQxHfFYkGQYO3ZytQ7vwHaZws,181
+BlacklistReport-0.5.0.dist-info/LICENSE,sha256=M5lwO0-3y70ktr-yOYcSX7lfqM3bkFIYZygsV_TeHh4,35115
+BlacklistReport-0.5.0.dist-info/METADATA,sha256=GGu-33Avwa3_G51JtDeYp_OGj75PqwmdDRYIV2sDFh8,3395
+BlacklistReport-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+BlacklistReport-0.5.0.dist-info/top_level.txt,sha256=N48Atqku3fNLDCZ6-9kTgxa575hdTZXUSdSMAOq6Nco,16
+BlacklistReport-0.5.0.dist-info/RECORD,,
