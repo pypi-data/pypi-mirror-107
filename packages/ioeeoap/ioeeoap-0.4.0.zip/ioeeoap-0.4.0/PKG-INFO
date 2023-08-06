@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: ioeeoap
+Version: 0.4.0
+Summary: It is a specific form of the content of the economic effect of agricultural production through numerical values. 
+Home-page: UNKNOWN
+Author: Yu Zhen、Guan Wei、Zhilin
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: pypi
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
