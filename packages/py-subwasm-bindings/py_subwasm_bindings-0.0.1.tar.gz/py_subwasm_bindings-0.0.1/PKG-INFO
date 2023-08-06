@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: py-subwasm-bindings
+Version: 0.0.1
+Classifiers: License :: OSI Approved :: Apache Software License
+Classifiers: Intended Audience :: Developers
+Classifiers: Programming Language :: Python :: 3
+Classifiers: Programming Language :: Python :: 3.6
+Classifiers: Programming Language :: Python :: 3.7
+Classifiers: Programming Language :: Python :: 3.8
+Classifiers: Programming Language :: Python :: 3.9
+Summary: Python bindings for subwasm library
+Home-Page: https://github.com/polkascan/py-subwasm-bindings
+Author: Polkascan Foundation
+Maintainer: Stichting Polkascan (Polkascan Foundation)
+Maintainer-Email: legal@polkascan.org
+License: Apache-2.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# py-subwasm-bindings
+Python bindings for subwasm utility: https://gitlab.com/chevdor/subwasm
+
+## Installation
+
+### Compile for local development
+
+```
+pip install -r requirements.txt
+maturin develop
+```
+### Build wheelhouses
+```
+pip install -r requirements.txt
+
+# Build local OS wheelhouse
+maturin build
+
+```
+
+## Usage
+
+```python
+import json
+import subwasm
+
+# Show metadata from WASM file
+metadata_str = subwasm.get_metadata("runtime_000.wasm")
+metadata_json = json.loads(metadata_str)
+print(json.dumps(metadata_json, indent=4))
+
+# Show metadata from local Substrate node
+metadata_str = subwasm.get_metadata("http://127.0.0.1:9933")
+metadata_json = json.loads(metadata_str)
+print(json.dumps(metadata_json, indent=4))
+
+```
+
+## License
+https://github.com/polkascan/py-sr25519-bindings/blob/master/LICENSE
+
