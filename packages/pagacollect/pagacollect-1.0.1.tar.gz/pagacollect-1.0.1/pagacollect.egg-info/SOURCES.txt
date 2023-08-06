@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pagacollect/__ini__.py
+pagacollect/paga_collect.py
+pagacollect.egg-info/PKG-INFO
+pagacollect.egg-info/SOURCES.txt
+pagacollect.egg-info/dependency_links.txt
+pagacollect.egg-info/top_level.txt
