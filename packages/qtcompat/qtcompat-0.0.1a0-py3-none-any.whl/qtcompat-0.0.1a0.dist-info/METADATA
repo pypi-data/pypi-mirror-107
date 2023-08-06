@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: qtcompat
+Version: 0.0.1a0
+Summary: qtcompat
+Home-page: https://bitbucket.org/bvidmar/qtcompat
+Author: Roberto Vidmar
+Author-email: rvidmar@inogs.it, ncreati@inogs.it
+License: MIT
+Download-URL: https://bitbucket.org/bvidmar/qtcompat/
+Keywords: qtcompat,PySide2,PyQt5,PySide6
+Platform: POSIX
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: pip (>=20.0.2)
+Requires-Dist: setuptools (>=45.2.0)
+
+# qtcompat
+A compatibility package to allow usage of PySide2, PyQt5 or PySide6
+in Python applications. It has been written
+in [OGS](https://inogs.it/)
+to allow our Python applications written in PyQt4 / PySide to migrate slowly
+to PyQt5 / Pyside2 and PySide6.
+
+
+## Install qtcompat ##
+Run command:
+    
+    pip3 install qtcompat 
+
+For the bleeding edge install with:
+
+    pip3 install git+https://bitbucket.org/bvidmar/qtcompat
+
+### Usage ###
+When writing a new package import all the modules required by it in
+its __init__.py file:
+
+    from qtcompat import (Signal, QtCore, Qt, QtGui, QtWidgets, LIB,                
+        QAction, QShortcut)
+
+and then import only the Qt modules needed by every new module from .
+
+To write a single scrpit simply import the required modules from **qtcompat**:
+
+    from qtcompat import QtCore, QtGui, QtWidgets
+
+
+Write applications using:
+
+    - QtCore
+    - QtGui
+    - QtWidgets
+    - QtOpenGL
+    - Signal
+    - Slot
+    - Property
+    - QOpenGLWidget
+    - QGLFormat
+    - QAction
+    - QShortcut
+    - Qt (shortcut for QtCore.Qt)
+and the application will work with any of PySide2, PyQt5 or PySide6.
+
+If more than one of these packages are installed **qtcompat** will pick
+the first one available in **this** order. To change this behaviour set the environment
+variable
+
+    QT_PREFERRED_LIB=PyQt5
+or 
+
+    QT_PREFERRED_LIB=PySide6
+
+The selected package name will be available in the LIB attribute of
+**qtcompat**.
+
+### Who do I talk to? ###
+
+* [Roberto Vidmar](http://www.inogs.it//users/roberto-vidmar)
+* [Nicola Creati](http://www.inogs.it//users/nicola-creati)
+
+
