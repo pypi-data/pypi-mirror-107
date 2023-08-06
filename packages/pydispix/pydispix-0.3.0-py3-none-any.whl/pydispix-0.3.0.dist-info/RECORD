@@ -1,0 +1,12 @@
+pydispix/__init__.py,sha256=_VerdqvecUaCG6TBoimnrWisXZ96Udk4x_93hzKCHVo,347
+pydispix/autodraw.py,sha256=NWD0KiepysQ1YmgE2GPP0PvjdX6J7tFtXnqT3VkqdeE,3264
+pydispix/canvas.py,sha256=Ief5Y-xqW4IsTAd-wQVQgej8hn7GcBZ5p0s-XPOotHs,2421
+pydispix/client.py,sha256=XicyW_pkOrNppboVOCj7YT7Ml8zdUuCzsQoyc8JYH7k,3220
+pydispix/color.py,sha256=5QuCS8_A_ZGmAQN6BBEzwoxdEahyzGI2ydYWY87g9YY,1832
+pydispix/log.py,sha256=hCuMeGELakGGh-xKBmDbWg4-uzW_s58-gfBIf8dIB9Y,445
+pydispix/ratelimits.py,sha256=ewvwmV_xgCtYYnv24yHS03WEDLVSimKxzokw1u9kI-w,2573
+pydispix-0.3.0.dist-info/LICENSE.txt,sha256=ik6bRmT4G5QAefPlYQ5vsTLCRuRIbEdUjE889tkiD6I,1064
+pydispix-0.3.0.dist-info/METADATA,sha256=1MN2PUhMgzKDdZTL2sWOk46-0HMO59cw_NUmdJAPlhA,2633
+pydispix-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pydispix-0.3.0.dist-info/top_level.txt,sha256=HAFQKDjfFUR2PgGFv6CNVhcTUFJrQuLLhTOXdg9tbO8,9
+pydispix-0.3.0.dist-info/RECORD,,
