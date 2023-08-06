@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+pyettj/__init__.py
+pyettj/ettj.py
+pyettj/gettables.py
+pyettj/version.py
+pyettj.egg-info/PKG-INFO
+pyettj.egg-info/SOURCES.txt
+pyettj.egg-info/dependency_links.txt
+pyettj.egg-info/requires.txt
+pyettj.egg-info/top_level.txt
+pyettj/exemplo/ettj.xlsx
