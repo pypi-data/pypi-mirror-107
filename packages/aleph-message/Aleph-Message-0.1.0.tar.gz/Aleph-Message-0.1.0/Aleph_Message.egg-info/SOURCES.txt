@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Aleph_Message.egg-info/PKG-INFO
+Aleph_Message.egg-info/SOURCES.txt
+Aleph_Message.egg-info/dependency_links.txt
+Aleph_Message.egg-info/requires.txt
+Aleph_Message.egg-info/top_level.txt
+aleph_message/__init__.py
