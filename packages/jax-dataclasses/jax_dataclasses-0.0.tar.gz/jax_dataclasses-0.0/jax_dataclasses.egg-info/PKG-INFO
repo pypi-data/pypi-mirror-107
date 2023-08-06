@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jax-dataclasses
+Version: 0.0
+Summary: Dataclasses + JAX
+Home-page: http://github.com/brentyi/jax_dataclasses
+Author: brentyi
+Author-email: brentyi@berkeley.edu
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: testing
