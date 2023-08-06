@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nepalithar/__init__.py
+src/nepalithar/caste.py
+src/nepalithar/helper.py
+src/nepalithar.egg-info/PKG-INFO
+src/nepalithar.egg-info/SOURCES.txt
+src/nepalithar.egg-info/dependency_links.txt
+src/nepalithar.egg-info/top_level.txt
