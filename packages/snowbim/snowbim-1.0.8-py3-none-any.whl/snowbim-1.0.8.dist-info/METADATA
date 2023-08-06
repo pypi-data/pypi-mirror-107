@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: snowbim
+Version: 1.0.8
+Summary: A package to refresh power bi model .bim file
+Home-page: https://github.com/datnguye/snowbim
+Author: datnguye
+Author-email: datnguyen.it09@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7.5
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: snowflake-connector-python (==2.4.3)
+Requires-Dist: snowflake-connector-python[pandas]
+
+# snowbim
+This is to do something awesome between snowflake database and Power BI tabular model file (.bim).
+
+We make use of [dbt (data build tool)'s profile](https://docs.getdbt.com/dbt-cli/configure-your-profile) to configure the Snowflake connection.
+
+Those are:
+* Refresh tables (key: name)
+* Refresh table's columns (key: name)
+* Refresh table's partitions (key: name)
+
+Supported Models:
+* Compatibility Level: 1550
+* Default Power BI Data Source Version: powerBI_V3
+
+Installation:
+```
+python -m pip install snowbim --upgrade
+
+# dependencies
+python -m pip install snowflake-connector-python[pandas]
+```
+
+
+Virtual enviroment:
+```
+python -m venv env
+```
+
+Activate virtual env:
+```
+Windows: 	.\env\Scripts\activate
+Linux:		source env/bin/activate
+```
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+
+
