@@ -1,0 +1,3 @@
+[console_scripts]
+nipher = nipher_src.nipher.Nipher:main
+
