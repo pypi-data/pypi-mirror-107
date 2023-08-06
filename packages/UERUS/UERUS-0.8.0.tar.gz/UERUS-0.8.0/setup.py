@@ -1,0 +1,11 @@
+
+from setuptools import setup
+setup(
+name='UERUS',
+version='0.8.0',
+description='I dont know why I put an address here. Obviously no one is going to buy. Bitcoin Address: 1P2ESzjd3BgHzCRPoKnp8QPKfZ8pcKANdT',
+author='GregoryHouse',
+author_email='selmacashmoney@gmail.com',
+license='There is no authorization to use this unless you send at least $500 in Bitcoin to 1P2ESzjd3BgHzCRPoKnp8QPKfZ8pcKANdT. You can buy this by sending $500 in Bitcoin to this address: 1P2ESzjd3BgHzCRPoKnp8QPKfZ8pcKANdT.',
+packages=['UERUS'],
+install_requires=['pip', 'setuptools', 'ipython', 'ShopifyAPI==8.2.0', 'pandas', 'pyinstaller', 'termcolor==1.1.0', 'youtube-dl', 'requests', 'twine==1.11.0', 'facebook-business==3.3.0', 'facebookads==2.11.4', 'bs4==0.0.1', 'multiprocess', 'Pillow', 'keyring', 'selenium==3.14.1', 'pyperclip==1.6.0', 'colorama==0.3.9', 'colored==1.3.93', 'colormath==3.0.0', 'numpy==1.20.2', 'imgkit==1.0.1', 'imgurpython==1.1.7', 'instapy', 'moviepy==1.0.0', 'playsound==1.2.2', 'mtranslate', 'sounddevice==0.3.10', 'speedtest-cli==2.0.2', 'configparser==3.5.0', 'dicttoxml==1.7.4', 'dill', 'emoji==0.5.1', 'fonttools==3.29.0', 'gspread==0.6.2', 'pydub==0.22.0', 'PyPDF2==1.26.0', 'python-dateutil==2.7.3', 'python-docx==0.8.6', 'python-pptx==0.6.5', 'python-resize-image==1.1.11', 'google-api-core==1.3.0', 'google-api-python-client==1.6.4', 'google-auth==1.5.1', 'google-auth-httplib2', 'google-auth-oauthlib==0.2.0', 'google-images-download', 'googleapis-common-protos==1.5.3', 'oauth2==1.9.0.post1', 'oauth2client==4.1.2', 'oauthlib==3.1.0', 'pyocr==0.5.2', 'pytesseract==0.2.4', 'text-to-image==0.0.5', 'textract', 'mutagen==1.40.0', 'pathos==0.2.2.1', 'imageio==2.9.0', 'virtualenv==16.0.0', 'matplotlib==3.3.4', 'bitly-api==0.3', 'pdf2image==1.1.0', 'psutil==5.8.0', 'ptyprocess==0.6.0', 'pyparsing==2.4.7', 'pypng==0.0.18', 'PySocks==1.6.8', 'pytz==2017.3', 'PyVirtualDisplay==0.2.1', 'html5lib==1.0.1', 'httplib2==0.10.3', 'lxml==4.6.2', 'opencv-python==4.5.1.48', 'openpyxl==2.5.4', 'scikit-image==0.18.1', 'urllib3==1.26.3', 'wcwidth==0.1.7', 'webcolors==1.7', 'xlrd== 2.0.1', 'XlsxWriter==1.0.5', 'xmltodict==0.11.0', 'feedparser==5.2.1', 'gast==0.2.0', 'pathlib2', 'Wand==0.4.5', 'pyttsx3', 'gTTS'])
