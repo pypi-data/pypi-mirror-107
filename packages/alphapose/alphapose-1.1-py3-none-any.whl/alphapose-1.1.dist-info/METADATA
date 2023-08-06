@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: alphapose
+Version: 1.1
+Summary: UNKNOWN
+Home-page: https://github.com/MVIG-SJTU/AlphaPose
+License: GPLv3
+Keywords: computer vision,human pose estimation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: six
+Requires-Dist: terminaltables
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: visdom
+Requires-Dist: tqdm
+Requires-Dist: tensorboardx
+Requires-Dist: easydict
+Requires-Dist: pyyaml
+Requires-Dist: torch (>=1.1.0)
+Requires-Dist: torchvision (>=0.3.0)
+Requires-Dist: munkres
+Requires-Dist: timm (==0.1.20)
+Requires-Dist: natsort
+Requires-Dist: pycocotools (==2.0.0)
+
+UNKNOWN
+
+
