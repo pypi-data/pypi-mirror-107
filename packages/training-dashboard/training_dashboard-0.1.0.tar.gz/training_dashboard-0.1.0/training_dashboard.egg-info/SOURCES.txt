@@ -1,0 +1,12 @@
+LICENSE
+README.txt
+setup.py
+training_dashboard/TrainingDashboard.py
+training_dashboard/__init__.py
+training_dashboard/initializers.py
+training_dashboard/utils.py
+training_dashboard.egg-info/PKG-INFO
+training_dashboard.egg-info/SOURCES.txt
+training_dashboard.egg-info/dependency_links.txt
+training_dashboard.egg-info/requires.txt
+training_dashboard.egg-info/top_level.txt
