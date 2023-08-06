@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycoord
+Version: 0.0.1
+Summary: Store and manipulate cartesian coordinates easier
+Home-page: https://github.com/KermitPurple/coord
+Author: KermitPurple (Shane McDonough)
+License: MIT
+Keywords: 2D coordinate
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Coord
+
+## A package for 2D Cartesian Coordinates
+
+This can be used to store and manipulate cartesian coordiantes in a two dimentional plane.
+
+
