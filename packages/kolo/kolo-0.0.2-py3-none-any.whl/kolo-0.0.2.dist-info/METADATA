@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kolo
+Version: 0.0.2
+Summary: Runtime inspection for Django
+Home-page: https://kolo.app
+License: © Kolo
+Author: Wilhelm Klopp
+Author-email: team@kolo.app
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
