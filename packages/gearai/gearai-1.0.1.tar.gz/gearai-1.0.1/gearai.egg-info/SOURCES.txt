@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+gearai/__init__.py
+gearai.egg-info/PKG-INFO
+gearai.egg-info/SOURCES.txt
+gearai.egg-info/dependency_links.txt
+gearai.egg-info/requires.txt
+gearai.egg-info/top_level.txt
+gearai/ga/__init__.py
+gearai/ga/tf/__init__.py
+gearai/ga/tf/keras/__init__.py
