@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: torch-airflow-sdk
+Version: 0.0.5
+Summary: test pkg
+Home-page: UNKNOWN
+Author: vaishvik24
+Author-email: vaishvik@acceldata.io
+License: MIT
+Description: airflow with torch...
+        
+        Change Log
+        ==========
+        
+        0.0.2 (29/04/2021)
+        -------------------
+        - Torch airflow
+        
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
