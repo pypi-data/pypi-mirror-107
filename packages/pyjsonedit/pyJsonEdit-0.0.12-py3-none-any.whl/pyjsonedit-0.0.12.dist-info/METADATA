@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: pyjsonedit
+Version: 0.0.12
+Summary: Edit parts of json strings & files while keeping the orginal, inconsistent formating
+Home-page: https://github.com/UrbanskiDawid/pyJsonEditor
+License: MIT
+Author: Dawid Urbanski
+Author-email: kontakt@dawidurbanski.pl
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: coverage (==5.5)
+Requires-Dist: pylint (==2.8.2)
+Requires-Dist: pytest (==6.2.4)
+Project-URL: Repository, https://github.com/UrbanskiDawid/pyJsonEditor
+Description-Content-Type: text/markdown
+
+# pyJsonEdit
+
+[![PyPI version pyjsonedit](https://badge.fury.io/py/ansicolortags.svg)](https://pypi.org/project/pyjsonedit/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)]()
+[![tests](https://github.com/UrbanskiDawid/pyJsonEditor/actions/workflows/tests.yaml/badge.svg)]()
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+
+
+Edit parts of inconsistently formatted json.
+
+It's just a bit slower that doint this by hand!
+
+
+## how to install
+
+> pip install --upgrade pyjsonedit
+
+
+# json in python
+
+**Pure pyhon** implementation of json encoder/decoder.
+
+Its slow and unnecessary!
+# matcher
+
+Now you can select **nodes** in json tree
+
+syntax!
+
+  *  | select all children in current node
+-----|-----
+ [n] | select n-th item of curent node
+ {n} | select n-th item of curent node
+ key | select node chilld by name 
+"key"| select node chilld by name
+ \>  | go to next node
+
+## example: mask multiple nodes
+> $ ./pyjsonedit/print_color **"quiz > * > q1 >*"** DOC/example.json
+
+```
+{
+    "quiz": {
+        "sport": {
+            "q1": {
+                "question": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+                "options": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+                "answer": XXXXXXXXXXXXXXX
+            }
+        },
+        "maths": {
+            "q1": {
+                "question": XXXXXXXXXXX,
+                "options": XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,
+                "answer": XXXX
+            },
+            "q2": {
+                "question": "12 - 8 = ?",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": "4"
+            }
+        }
+    }
+}
+```
+
+## example: mask selected nodes
+
+```bash
+$ import pyjsonedit
+$ pyjsonedit.string_match_mark("{'pass':123}","pass")
+{'pass':XXX}
+```
+![](DOC/mask_pass.gif)[]()
+
+
+
