@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+wpass
+wpass.egg-info/PKG-INFO
+wpass.egg-info/SOURCES.txt
+wpass.egg-info/dependency_links.txt
+wpass.egg-info/top_level.txt
