@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+turcy/__init__.py
+turcy/pattern.py
+turcy/pattern_builder.py
+turcy/patterns_large.jsonl
+turcy/patterns_small.jsonl
+turcy/tree_dep_pattern.py
+turcy/turcy.py
+turcy/utils.py
+turcy.egg-info/PKG-INFO
+turcy.egg-info/SOURCES.txt
+turcy.egg-info/dependency_links.txt
+turcy.egg-info/top_level.txt
