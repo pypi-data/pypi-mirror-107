@@ -1,0 +1,10 @@
+pidetect/__init__.py,sha256=s_X3hYFU_lxVm44JQh1SVaui2TDx-XzIdluKjjy2bTg,30
+pidetect/detector.py,sha256=8DjbYG1I2YwzXTsXK4ofXX2Z3Cqpv5l_ctQvkmzzMDA,2606
+pidetect/so/libdetect.so,sha256=7CYUsfOY5sQaYWFzjJdr8611AeVA1l87PKChQuj8k-0,2045832
+pidetect/so/libdetector.so,sha256=-MxbHv7amsd5NFkG6zwQ8fXd87fQBDK_0x7-5cBFAcw,2045624
+pidetect/so/libdetector.so.16.04,sha256=t4IBmRXTeNSsrtj5daz-qNodf2TagIMTe6w1k8_kHJk,2156600
+pidetect/so/libdetector.so.18.04,sha256=xww3NZ2WXDUDPuF7HMtyv8_9CGoYMTwwyj6tUvPTe0s,2045624
+pidetect-1.2.0.dist-info/METADATA,sha256=GcyhO8mLSyCnVAhSFX7m-HYZ0xeDw29uMmuUTDj4Bo0,236
+pidetect-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pidetect-1.2.0.dist-info/top_level.txt,sha256=3NWXLwquViHwqbLZIZU3d4iKf5XEaNK7xPm3g7w8lq8,9
+pidetect-1.2.0.dist-info/RECORD,,
