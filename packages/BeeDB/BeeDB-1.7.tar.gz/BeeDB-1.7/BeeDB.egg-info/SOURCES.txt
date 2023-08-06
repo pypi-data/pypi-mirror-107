@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+BeeDB.egg-info/PKG-INFO
+BeeDB.egg-info/SOURCES.txt
+BeeDB.egg-info/dependency_links.txt
+BeeDB.egg-info/top_level.txt
+beedb/__init__.py
