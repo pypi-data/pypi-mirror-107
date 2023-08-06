@@ -1,0 +1,14 @@
+beautifulsoup4
+click
+graphviz
+lark-parser
+lxml
+pre-commit
+pytest
+requests
+
+[dev]
+black
+isort
+pre-commit
+sphinx-click
