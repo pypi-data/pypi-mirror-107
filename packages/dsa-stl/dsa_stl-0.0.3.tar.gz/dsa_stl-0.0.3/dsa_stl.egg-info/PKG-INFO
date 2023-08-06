@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dsa-stl
+Version: 0.0.3
+Summary: DSA Algorithm
+Home-page: UNKNOWN
+Author: Aman Jaiswal (aman2000jaiswal)
+Author-email: <aman2000jaiswal14@gmail.com>
+License: UNKNOWN
+Description: # dsa_stl
+        - ##### python package for Data Structure and Algorithms.
+        ---
+        ## Installation
+        ```
+        pip install dsa_stl
+        ```
+        ---
+        ## Testing
+        
+        ```
+        from dsa_stl import hellodsa
+        testdsa()
+        ```
+        `
+        test successful...
+        `
+        ---
+        ## Available Libraries
+        - <a href="https://github.com/aman2000jaiswal14/dsa-stl/Documentation/doc_graph_stl" > graph_stl </a>
+        - <a href="https://github.com/aman2000jaiswal14/dsa-stl/Documentation/doc_directed_graph_stl" > directed_graph_stl </a>
+        - <a href="https://github.com/aman2000jaiswal14/dsa-stl/Documentation/doc_dsu_stl" > dsu_stl </a>
+        - <a href="https://github.com/aman2000jaiswal14/dsa-stl/Documentation/doc_lca_graph_stl" > lca_graph_stl </a>
+        
+Keywords: python,dsa_stl,data structure,algorithms
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
