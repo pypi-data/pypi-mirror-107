@@ -1,0 +1,7 @@
+include rsa4py/src/src/rsa.h
+include rsa4py/src/rsa.pxd
+include rsa4py/src/rsa.pyx
+include rsa4py/src/rsa_cppInter.pxd
+include rsa4py/LICENSE
+
+exclude rsa4py/src/rsa.cpp
