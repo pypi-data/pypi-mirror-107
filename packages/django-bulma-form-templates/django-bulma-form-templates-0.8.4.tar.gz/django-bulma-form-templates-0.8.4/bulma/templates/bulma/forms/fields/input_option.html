@@ -1,0 +1,4 @@
+<label class="{% if widget.type == "checkbox" %}checkbox{% elif widget.type == "radio" %}radio{% endif %}">
+    {{ field }}
+    {{ widget.label }}{{ widget.label_suffix }}
+</label>
