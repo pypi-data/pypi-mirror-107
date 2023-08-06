@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+genomics/__init__.py
+genomics/burrows.py
+genomics/global_alignment.py
+genomics/main.py
+genomics/plot_results.py
+genomics/sam_import.py
+genomics/seed_extend.py
+genomics/test.py
+giseed.egg-info/PKG-INFO
+giseed.egg-info/SOURCES.txt
+giseed.egg-info/dependency_links.txt
+giseed.egg-info/entry_points.txt
+giseed.egg-info/requires.txt
+giseed.egg-info/top_level.txt
