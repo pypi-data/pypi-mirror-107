@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/musicfp/__init__.py
+src/musicfp/__main__.py
+src/musicfp.egg-info/PKG-INFO
+src/musicfp.egg-info/SOURCES.txt
+src/musicfp.egg-info/dependency_links.txt
+src/musicfp.egg-info/entry_points.txt
+src/musicfp.egg-info/requires.txt
+src/musicfp.egg-info/top_level.txt
