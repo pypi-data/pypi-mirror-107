@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: praxpypy
+Version: 0.0.1
+Summary: EDA package
+Home-page: UNKNOWN
+Author: Praxis PGPDS Group No 2
+Author-email: <kshingana@gmail.com>
+License: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+
+def Graphs(data, variables=None, directory=os.getcwd()):
+
