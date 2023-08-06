@@ -1,0 +1,10 @@
+coveralls
+Django
+flake8
+Flask
+mock
+nose
+nose-timer
+placebo
+isort
+
