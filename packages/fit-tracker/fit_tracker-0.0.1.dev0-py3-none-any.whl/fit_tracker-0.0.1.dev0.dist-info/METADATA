@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: fit-tracker
+Version: 0.0.1.dev0
+Summary: A lightweight experiment tracker for numerical optimization problems.
+Home-page: https://github.com/atraders/fit-tracker
+Author: @genziano
+License: UNKNOWN
+Keywords: ml,operation research,optimization,logging
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Fit Tracker
+
+A lightweight package to track training of statistical/ML models.
+
+
+# Quickstart
+
+Fit tracker provides a transparent and simple way to log the results of experiments such as
+training a ML/statistical models, or running a numerical simulation where events might be indexed
+by integers or dates.
+
+The only tracker implemented so far is the `FileTracker`, that writes a log file on your disk.
+``` python
+tracker = FileTracker('path/to/logfile.log')
+```
+
+
