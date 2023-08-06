@@ -1,0 +1,6 @@
+[console_scripts]
+covid19-detection = covid19.cli.__main__:main
+
+[gui_scripts]
+covid19-detector = covid19.gui.__main__:main
+
