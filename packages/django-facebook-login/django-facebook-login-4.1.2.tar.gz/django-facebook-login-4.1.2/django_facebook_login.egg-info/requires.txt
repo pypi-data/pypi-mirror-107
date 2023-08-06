@@ -1,0 +1,10 @@
+django<3
+graphene-django<3
+
+[dev]
+pytest
+pytest-django
+pytest-cov
+responses
+fabric
+mixer
