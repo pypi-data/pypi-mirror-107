@@ -1,0 +1,16 @@
+turcy/__init__.py,sha256=zVmG-DdRdh739cKJVrLVIZnpQGB2xNREvi3bBcQ4Bgc,21
+turcy/pattern.py,sha256=cUE22-WuOzhtLkMB8mL-wxc7mOkmHbljv-kHZjj_SoA,1753
+turcy/pattern_builder.py,sha256=2MPG3s4t3SKjAaETWONx6ffvpU75rDv1xo3HPNunJiA,4519
+turcy/patterns.jsonl,sha256=K4Fs3vouf78gEGGs9n3HCi-C2O99D4UlOVZ9T3fJnBk,959878
+turcy/patterns_large.jsonl,sha256=ZU4l8RGkbfI2qfBZ7bGck3UshyQYuGRluVJPofK0Jvk,32445869
+turcy/patterns_small.jsonl,sha256=K4Fs3vouf78gEGGs9n3HCi-C2O99D4UlOVZ9T3fJnBk,959878
+turcy/tree_dep_pattern.py,sha256=-xriKnOPptdttRHc-NEjD5o_3UI_yHDwPT9BLCmiJJI,9061
+turcy/turcy.py,sha256=w4GDLurraiDBitx60CB7PtY6CHDFcnfiL9sZjOSDgUI,521
+turcy/utils.py,sha256=yUhehyyB1UxxMOxQRWFxkcnWXL7jsveGgetu4OlfGb0,3280
+turcy-0.0.32.data/data/patterns_large.jsonl,sha256=ZU4l8RGkbfI2qfBZ7bGck3UshyQYuGRluVJPofK0Jvk,32445869
+turcy-0.0.32.data/data/patterns_small.jsonl,sha256=K4Fs3vouf78gEGGs9n3HCi-C2O99D4UlOVZ9T3fJnBk,959878
+turcy-0.0.32.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+turcy-0.0.32.dist-info/METADATA,sha256=bjZPFk3Sh57dNuvef0yY4brPRQS2dg5qcaaep7k_HXI,5741
+turcy-0.0.32.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+turcy-0.0.32.dist-info/top_level.txt,sha256=_Y__5n7ZLzXb5AFKC68O7bjy3B2cLn1vxDzgQbY81cE,6
+turcy-0.0.32.dist-info/RECORD,,
