@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: automaton-linux
+Version: 0.3
+Summary: An automation library for Linux using Uinput.
+Home-page: https://github.com/Abdul-Muiz-Iqbal/Automaton/
+Author: Abdul Muiz Iqbal
+Author-email: parkermuiz0@gmail.com
+License: MIT
+Download-URL: https://github.com/Abdul-Muiz-Iqbal/Automaton/archive/refs/tags/0.3.tar.gz
+Description: # Automaton - A Linux Automation Library
+        
+        ### Note
+        Automaton supports only linux, with distributions that use gtk. For example, Ubuntu 20.04
+        
+        ### What is it
+        Automaton is a collection of libraries and custom modules designed to provide the easiest
+        interface to use when automating things in linux. It has support for:
+        - Dialogs
+        - ContextMenus
+        - Window manipulation and queries
+        - keyboard and mouse manipulation and queries
+        - Hotkeys
+        - Hotstrings
+        - Remaps
+        
+        ### Usage
+        A simple Automaton script looks like this:
+        ```python3
+        from automaton import Automaton
+        
+        app = Automaton()
+        
+        @app.hotstring("btw")
+        def btw():
+            return "by the way!"
+        
+        app.listen()
+        ```
+        More info in the (non-existant) docs. Till the docs are fixed, take a look at the examples!
+        
+        ### Requirements
+        - Python 3.9+
+        - Tkinter
+        ```
+        $ sudo apt-get -y update && \
+            apt-get -y upgrade && \
+            apt-get -y install libglib2.0-0 libgirepository-1.0-1
+        ```
+        - Whatever is in requirements.txt (duh!)
+Keywords: automation,linux,uinput
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
