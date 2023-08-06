@@ -1,0 +1,16 @@
+chemometrics/__init__.py,sha256=tHRjw_-blhV0YPrFh85TbGlfRf2IZfjUxlA4ER_eXaM,1082
+chemometrics/plotting.py,sha256=faIDwDL-ANJ98DExT6fjA54tbPZSoVM1xFBOWzrZRD0,4031
+chemometrics/preprocessing.py,sha256=F0uuFIXHEC8xWFr8wnsp30L5VBaUtdlKMFHF3WPYToQ,21121
+chemometrics/regression.py,sha256=RweUxOHRdtIi_l0hl9mdC4fUeuNajW_UowQXfMa5sPk,7580
+chemometrics/utils.py,sha256=4A5-4E5q3ocoXErr8ip9U2dIur95AdlVITElQRJ0fT8,3040
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=ULyiFSPOzRJZwD3K6ug3XJA28VhENwGJz7hE5TWv7aY,965
+tests/test_plotting.py,sha256=fBMzKadXZfQ7zTvYEzK_DmseK1xFPoGUxkJhRn4Jl2c,2416
+tests/test_preprocessing.py,sha256=kSMAEHyW0i-mJALe1Fb-F-cieTickLSgTHFoiVWrgGc,9150
+tests/test_regression.py,sha256=B5DFsLw0dRPV0FlUmN2sqDUK-Bk28Vr9Q50CwLVGX0Y,5559
+tests/test_utils.py,sha256=41OWmz1a4yrlbHDjprXO0kVwIcHsn-KxobHxg7gVVpg,1501
+chemometrics-0.1.dist-info/COPYING,sha256=VXapH-nuSz68DG5ScURElxHkl1lKk4MOK9cgZCSRDXs,34502
+chemometrics-0.1.dist-info/METADATA,sha256=33M2WAtLfm3jKUvgw87iWcH2GoEiWhGBenrrcgABQBw,3981
+chemometrics-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+chemometrics-0.1.dist-info/top_level.txt,sha256=rowZbGOoia7qDjVrxcMMpKa0agMLGBaQDSisFWubPpA,19
+chemometrics-0.1.dist-info/RECORD,,
