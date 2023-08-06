@@ -1,0 +1,25 @@
+#!/bin/python3
+import argparse
+import tornado
+from charta.server import *
+from charta.common import DEFAULT_WEB_PORT, DEFAULT_ZMQ_PORT
+
+# Parse command line arguments.
+parser = argparse.ArgumentParser("charta-server")
+parser.add_argument("--web-port", nargs="*", type=int, default=[DEFAULT_WEB_PORT], help="A port or a range of ports to try to connect the web server on. A range of ports either takes the form (start, stop, step) where step is implicitly 1 if not specified.")
+parser.add_argument("--zmq-port", type=int, default=DEFAULT_ZMQ_PORT, help="The port to connect the ZMQ server on.")
+args = parser.parse_args()
+
+assert len(args.web_port) <= 3, "No more than three values can be used to specify the range of ports to try."
+if len(args.web_port) > 1:
+    web_ports = range(*args.web_port)
+    assert len(web_ports) > 0, "The length of the range specified by --web-ports must be greater than 0."
+else:
+    web_ports = args.web_port
+
+# Create the app on the specified ports.
+app = make_app()
+http_server = tornado.httpserver.HTTPServer(app)
+port = try_listen(http_server, web_ports)
+setup_client(http_server, args.zmq_port)
+tornado.ioloop.IOLoop.current().start()
