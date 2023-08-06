@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kalabash-imap-migration
+Version: 0.1.dev0
+Summary: A plugin to migrate mailboxes using IMAP
+Home-page: https://alphamonak.com/
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Keywords: email
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.5
+License-File: LICENSE
+
+UNKNOWN
+
