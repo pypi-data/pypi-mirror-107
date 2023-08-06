@@ -1,0 +1,13 @@
+fmu/__init__.py,sha256=ftS-xRPSH-vU7fIHlnZQaCTWbNvs4owJivNW65kzsIM,85
+fmu/dataio/__init__.py,sha256=qNB8RXE3ibGPJuKTxk9esGI883sJy_43g7zk8NXtkFk,723
+fmu/dataio/_export_item.py,sha256=ZmkirSTMRzOzZIHb3wsC435WG-WAm_okEWyOMYmAodk,19831
+fmu/dataio/_grid_io.py,sha256=WAh62lWcIWG6UtFWmalB6kwF_YpabkQJ-8wzWraJSmk,3556
+fmu/dataio/_oyaml.py,sha256=9XzMB8GahvFeKNOHFGc2CrV2MMT7wwf3tH11wqit1S8,1416
+fmu/dataio/_utils.py,sha256=j1I4v4bvjggLsdPpacXWuOcJWLCh8dwK1Yl0y9m_Myg,6590
+fmu/dataio/dataio.py,sha256=cCC4fB2MXvH5H1teAXdMCvqMFAN8n55gh0YrMYZaOZQ,24613
+fmu/dataio/version.py,sha256=dRxhuU_8vwS0hj1SSVBFE8_FSdLx4bTUexxOrRo2qiw,142
+fmu_dataio-0.3.2.dist-info/LICENSE,sha256=qnGnjipMo4moQRtWPa48UB0PzVA3yKMSqinNxAT9oZc,10759
+fmu_dataio-0.3.2.dist-info/METADATA,sha256=xxwYJ0jSKgKXrqHuluL5C-Wz0jJc6jzo1AXj2eRYBVY,1533
+fmu_dataio-0.3.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+fmu_dataio-0.3.2.dist-info/top_level.txt,sha256=Z-FIY3pxn0UK2Wxi9IJ7fKoLSraaxuNGi1eokiE0ShM,4
+fmu_dataio-0.3.2.dist-info/RECORD,,
