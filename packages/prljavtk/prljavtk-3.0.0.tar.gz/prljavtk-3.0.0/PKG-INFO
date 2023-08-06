@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: prljavtk
+Version: 3.0.0
+Summary: prljav's toolkit
+Home-page: https://github.com/prljav/prljavtoolkit/
+Author: prljav
+Author-email: prljavdev@gmail.com
+License: MIT
+Description: # prljavtk
+        prljav's toolkit
+        Source (https://github.com/prljav/prljavtoolkit/
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
