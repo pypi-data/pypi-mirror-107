@@ -1,0 +1,11 @@
+bokeh
+dask
+fastparquet!=0.6.1
+holoviews
+matplotlib
+numba>=0.48
+numpy
+pandas>=1
+python-snappy
+seaborn
+tqdm
