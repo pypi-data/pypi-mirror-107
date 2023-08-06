@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dsa-stl
+Version: 0.0.1
+Summary: DSA Algorithm
+Home-page: UNKNOWN
+Author: Aman Jaiswal (aman2000jaiswal)
+Author-email: <aman2000jaiswal14@gmail.com>
+License: UNKNOWN
+Description: 
+        # dsa
+        ## hellodsa
+        ```hellodsa()```
+        - ##### input - None
+        - ##### output - Hello DSA
+        
+Keywords: python,dsa_stl,data structure,algorithms
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
