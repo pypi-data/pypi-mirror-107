@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([128, 512])
+markers = ['+','d','*','.','^','v','o','x','D','<','>','s','p','8']
+plt.figure(0)
+feng = np.array([4.08, 4.02])
+plt.semilogx(x, feng, marker=markers[-1])
+h1D2 = np.array([4.81, 4.20])
+plt.semilogx(x, h1D2, marker=markers[-1])
+h1H = np.array([3.95, 3.99])
+plt.semilogx(x, h1H, marker=markers[-1])
+l2D2 = np.array([17.09, 16.59])
+plt.semilogx(x, l2D2, marker=markers[-1])
+l2H = np.array([17.01, 16.29])
+plt.semilogx(x, l2H, marker=markers[-1])
+mu = np.array([11.40, 15.76])
+plt.semilogx(x, mu, marker=markers[-1])
+nvdg = np.array([4.05, 4.02])
+plt.semilogx(x, nvdg, marker=markers[-1])
+plt.legend(['feng', 'h1D2', 'h1H', 'l2D2', 'l2H', 'mu', 'nvdg'])
+#plt.axis([120, 2100, 0, 3.8])
+plt.ylabel('Growth of Condition Number')
+plt.xlabel('Number of Elements (log)')
+plt.savefig('plots/condition-g')

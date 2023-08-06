@@ -1,0 +1,10 @@
+current issues
+##############
+
+h1D2 - dirichletBCs seem to cause problems, leaving them out for now
+preconditioning - works for some problems but not others? (convergence stalls)
+
+other
+#####
+
+polyOrder k = 1 giving nan on fourth iter for all tests

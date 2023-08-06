@@ -1,0 +1,4 @@
+Module: dune-femnv
+Version: 1.0
+Maintainer: a.s.dedner@warwick.ac.uk
+Depends: dune-fem (>= 2.6)

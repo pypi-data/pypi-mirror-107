@@ -1,0 +1,10 @@
+from setuptools import setup, find_packages
+setup(name="dune.femnv",
+    namespace_packages=['dune'],
+    description="Python lib for dune: dune-femnv package",
+    version="${DUNE_FEMPY_VERSION}",
+    author="Lloyd Connellan",
+    packages = find_packages(),
+    zip_safe = 0,
+    package_data = {'': ['*.so']},
+  )

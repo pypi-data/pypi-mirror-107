@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dune-femnv
+Version: 2.8.0.dev20210521
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: a.s.dedner@warwick.ac.uk
+Author-email: a.s.dedner@warwick.ac.uk
+License: UNKNOWN
+Description: 
+        
+        git-dade8f088e55006052452b03d545ebc18bd164d8
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
