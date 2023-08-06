@@ -1,0 +1,13 @@
+# Utility packages
+requests
+simplejson
+deprecation
+
+# Error tracking
+sentry-sdk
+
+# Documentation requirements
+# mkdocs
+# mkdocstrings
+# mkdocs-material
+# mike
