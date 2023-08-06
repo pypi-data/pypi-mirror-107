@@ -1,0 +1,9 @@
+[console_scripts]
+dependencies = makemd.dependencies:main
+flags = makemd.flags:main
+makecv = makemd.makecv:main
+maketalk = makemd.maketalk:main
+mdfield = makemd.mdfield:main
+mdlist = makemd.mdlist:main
+mdpp = makemd.mdpp:main
+
