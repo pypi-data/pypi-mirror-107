@@ -1,0 +1,10 @@
+autoload/__init__.py,sha256=FSbvm326Qcx9_FW9JlBL3XwILrMEDCqo15TyIT98JDU,129
+autoload/_context.py,sha256=i6G5cDNuGNfaekvk6e0ZkuyLzRuYL7Mhk6ID_xVQeoQ,1426
+autoload/_globals.py,sha256=xiXeRFLTDztFIbeH683EEmZ-_lZ1wE-ZCTzXo2mJ7GI,88
+autoload/decorator.py,sha256=N5GojpuQdMBnmY_zLcUs_0Tqi2tCBeAOFJS-FjO0ZAI,310
+autoload/exception.py,sha256=g6udaK5ymcRGt4yMb60Y9eC68ltdbo2NhV2kYxq-pPo,128
+autoload/module_loader.py,sha256=KWCiDIjodUEZAWgUzjkpPfZZzVccKCAIH_P5M3jguT0,12625
+autoload_module-1.4.0.dist-info/LICENSE,sha256=nHQ1Bash2VRha0Y5LsIP10XJ1d_gg-IG8gsGRgL1DSo,1070
+autoload_module-1.4.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+autoload_module-1.4.0.dist-info/METADATA,sha256=T4HUNUZfQzySlfyPd7Dwwu50Mj2N4vBbvbkoozoCqfw,8270
+autoload_module-1.4.0.dist-info/RECORD,,
