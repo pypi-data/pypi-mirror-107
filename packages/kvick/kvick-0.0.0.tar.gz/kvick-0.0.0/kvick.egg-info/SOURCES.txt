@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+kvick.egg-info/PKG-INFO
+kvick.egg-info/SOURCES.txt
+kvick.egg-info/dependency_links.txt
+kvick.egg-info/requires.txt
+kvick.egg-info/top_level.txt
