@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.cfg
+setup.py
+src/PySparkMLtoolbox/__init__.py
+src/PySparkMLtoolbox.egg-info/PKG-INFO
+src/PySparkMLtoolbox.egg-info/SOURCES.txt
+src/PySparkMLtoolbox.egg-info/dependency_links.txt
+src/PySparkMLtoolbox.egg-info/top_level.txt
+src/PySparkMLtoolbox/fuzzyclustering/Algorithm.py
+src/PySparkMLtoolbox/fuzzyclustering/ClusterAidedComputing.py
+src/PySparkMLtoolbox/fuzzyclustering/ClusteringIteration.py
+src/PySparkMLtoolbox/fuzzyclustering/__init__.py
+src/PySparkMLtoolbox/fuzzyclustering/rddtoarray.py

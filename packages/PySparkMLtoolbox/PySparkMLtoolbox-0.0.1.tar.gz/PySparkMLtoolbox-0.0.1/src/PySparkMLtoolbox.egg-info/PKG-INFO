@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PySparkMLtoolbox
+Version: 0.0.1
+Summary: Fuzzy clustering algorithm toolbox
+Home-page: https://github.com/ChoiNgai/PySparkMLtoolbox
+Author: CAIWEI
+Author-email: caiwei-email@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ChoiNgai/PySparkMLtoolbox/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Pyspark Learning
+
+Spark version 3.0.2
+
+## MLlib
+
+
+
