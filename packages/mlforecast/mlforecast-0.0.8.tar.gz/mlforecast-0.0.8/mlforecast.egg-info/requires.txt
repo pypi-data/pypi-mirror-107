@@ -1,0 +1,14 @@
+numba
+pandas
+window-ops
+
+[aws]
+s3path
+
+[cli]
+pydantic
+pyyaml
+typer
+
+[distributed]
+dask[complete]
