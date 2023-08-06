@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: shapeeditor
+Version: 0.1.0
+Summary: GTFS Editor app for Django [Alpha]
+Home-page: https://github.com/jeancahu/GTFS_shapes_editor_JS
+Author: Jeancarlo Hidalgo
+Author-email: jeancahu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+
+
+# GTFS Shape Web Editor
+
+GTFS Editor, Django App
+
+GTFS Shape Editor uses Vue, OpenLayers/OpenStreetMap and Bootstrap.
+Editor shows a map where you can draw and route shapes, place stops. The data is bind to GTFS tables through Vue, you can edit the data in the tables just under the map.
+
+## How to use from repository ( very alpha ):
+
+    $ npm install .
+    $ npm run debug
+    $ bash bash/vendor-dep.sh
+    $ pip install .    # Use a virtual env
+
+Add the app 'shapeeditor' in Django settings
+
+    INSTALLED_APPS = [
+        ...
+        'shapeeditor',
+        ...
+    ]
+
+    SHAPEEDITOR_MAP_EXTENT_AREA = '[1,2,3,4]'
+    SHAPEEDITOR_ROUTING_MACHINE_URL = 'example.com'
+
+include apps urls in urls.py
+
+    urlpatterns = [
+        path('shapeeditor/', include('shapeeditor.urls')),
+    ]
+
+Here some live examples:
+[Editor preview](http://161.35.54.122:10066/new/shape_editor/index.html)
+<img src="http://161.35.54.122:10066/gtfs_editor.png" >
+
+
+
