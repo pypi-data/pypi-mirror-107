@@ -1,0 +1,18 @@
+figsize:
+  column_width: 89
+  gutter_width: 5
+  max_width: 183
+  max_height: 247
+  units: 'mm'
+panel_labels:
+  case: 'lower'
+  prefix: ''
+  suffix: ''
+  fontsize: 8
+  fontweight: 'bold'
+  fontfamily: 'sans-serif'
+constrained_layout_pads:
+  w_pad: 0.0138888  # 1/72 in inches
+  h_pad: 0.0138888
+  hspace: 0
+  wspace: 0
