@@ -1,0 +1,3 @@
+[console_scripts]
+ecatdump = ecatdump.cli:main
+
