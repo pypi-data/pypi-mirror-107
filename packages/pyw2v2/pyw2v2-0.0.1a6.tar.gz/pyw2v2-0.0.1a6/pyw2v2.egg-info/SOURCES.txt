@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+pyw2v2/__init__.py
+pyw2v2.egg-info/PKG-INFO
+pyw2v2.egg-info/SOURCES.txt
+pyw2v2.egg-info/dependency_links.txt
+pyw2v2.egg-info/requires.txt
+pyw2v2.egg-info/top_level.txt
+pyw2v2/components/__init__.py
+pyw2v2/components/dataset_proc.py
+pyw2v2/components/metrics.py
+pyw2v2/components/model_ctc.py
+pyw2v2/components/external/__init__.py
+pyw2v2/components/external/data_collator_ctc.py
+pyw2v2/utils/__init__.py
+pyw2v2/utils/utils.py
