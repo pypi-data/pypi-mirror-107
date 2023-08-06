@@ -1,0 +1,11 @@
+sanstem/InputLanguageError.py,sha256=SdVWDOfcO_m6cQgaE9dcxhm_kSIRvBKiXHSfO_PD_jQ,170
+sanstem/SanskritStemmer.py,sha256=sYvzpK5sfFiR87IT3v2hLcPjZMoL0JWd0iW26t7wsiA,9161
+sanstem/__init__.py,sha256=oIavmJPcny3IQlEu5ttUtBhq2JfBxJxCLYIao5mCS44,110
+sanstem/Data/devanagari_languages.csv,sha256=mfWvkEHVIFTLhYoKYFGet50Uv69Jy7aggDuE7fwXov8,84
+sanstem/Data/noun_suffixes.csv,sha256=Mq94MoVI2hNgtGtrh5665C58_WHVOpn7LO9rcuOhNNo,284
+sanstem/Data/verb_suffixes.csv,sha256=t_UKMT6fxn8K1-PSotTj2QCfaKVGOdEoQ0PQx5knVY8,418
+sanstem-1.0.1.dist-info/LICENSE,sha256=iQH2oovdnaU1Ly8Fn2obWCVTsdWjwj3laER5JkQSn50,1070
+sanstem-1.0.1.dist-info/METADATA,sha256=cZHGhWiLjJxp7dNKRjczaTmcGFtXoBDOHyGRf7VMzB0,2230
+sanstem-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sanstem-1.0.1.dist-info/top_level.txt,sha256=qrbMcqNFwfhmSTfyfi3SADuLkLEMGMqIX_Jn_4KhjmY,8
+sanstem-1.0.1.dist-info/RECORD,,
