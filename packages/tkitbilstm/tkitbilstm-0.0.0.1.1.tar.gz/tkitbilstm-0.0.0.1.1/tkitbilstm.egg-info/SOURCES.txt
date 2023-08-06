@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+test/test.py
+tkitbilstm/__init__.py
+tkitbilstm/bilstm.py
+tkitbilstm.egg-info/PKG-INFO
+tkitbilstm.egg-info/SOURCES.txt
+tkitbilstm.egg-info/dependency_links.txt
+tkitbilstm.egg-info/requires.txt
+tkitbilstm.egg-info/top_level.txt
