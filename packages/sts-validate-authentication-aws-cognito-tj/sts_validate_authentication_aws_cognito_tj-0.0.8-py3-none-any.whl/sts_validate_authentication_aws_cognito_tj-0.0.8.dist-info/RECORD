@@ -1,0 +1,7 @@
+authentication_validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authentication_validation/cognito_validation.py,sha256=-cdBHSstheOJ6YFqmVBpAEwCMpMdKx6t6NF4Ou56dnY,3188
+authentication_validation/test_cognito_validation.py,sha256=hBxAyHzzt0uTp1E5RmQLHOS3Nafdzqk-CqBj4tloBsI,1111
+sts_validate_authentication_aws_cognito_tj-0.0.8.dist-info/METADATA,sha256=SrVmQCnsoof0I-lgCikqHZ-c39sZkGw5bmNveaYRMmc,1607
+sts_validate_authentication_aws_cognito_tj-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sts_validate_authentication_aws_cognito_tj-0.0.8.dist-info/top_level.txt,sha256=bql0DdS-CyCUswdZMgNl7bk66RU-y_NF7Z1DbbvBgkQ,26
+sts_validate_authentication_aws_cognito_tj-0.0.8.dist-info/RECORD,,
