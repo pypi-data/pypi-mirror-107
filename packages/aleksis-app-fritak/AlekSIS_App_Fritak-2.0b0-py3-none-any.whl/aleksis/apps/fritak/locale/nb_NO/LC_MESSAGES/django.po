@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-02 16:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: filters.py:22 models.py:45
+msgid "Submitter"
+msgstr ""
+
+#: forms.py:28 forms.py:39 templates/fritak/archive_print.html:34
+#: templates/fritak/archive_print.html:36
+msgid "Date"
+msgstr ""
+
+#: forms.py:30 forms.py:41
+msgid "Lesson"
+msgstr ""
+
+#: forms.py:33 forms.py:44 templates/fritak/archive_print.html:35
+#: templates/fritak/archive_print.html:37
+msgid "Time"
+msgstr ""
+
+#: forms.py:50
+msgid "Please give reasons for your request."
+msgstr ""
+
+#: forms.py:53
+msgid "From"
+msgstr ""
+
+#: forms.py:54
+msgid "To"
+msgstr ""
+
+#: forms.py:55
+msgid "Reason / Project"
+msgstr ""
+
+#: forms.py:83
+msgid "Please select either a from lesson or a from time."
+msgstr ""
+
+#: forms.py:90
+msgid "Please select either a to lesson or a to time."
+msgstr ""
+
+#: forms.py:104
+msgid "The exemption cannot be carried out for days already past (date error)."
+msgstr ""
+
+#: forms.py:108
+msgid "The from date is after the to date."
+msgstr ""
+
+#: forms.py:117
+msgid "Please tell us a little bit more about your exemption."
+msgstr ""
+
+#: menus.py:6
+msgid "Requests for exemption"
+msgstr ""
+
+#: menus.py:17
+msgid "My requests"
+msgstr ""
+
+#: menus.py:30
+msgid "Approve requests 1"
+msgstr ""
+
+#: menus.py:41
+msgid "Approve requests 2"
+msgstr ""
+
+#: menus.py:52
+msgid "Archive"
+msgstr ""
+
+#: models.py:24
+msgid "In process 1"
+msgstr ""
+
+#: models.py:25
+msgid "In process 2"
+msgstr ""
+
+#: models.py:26
+msgid "Approved"
+msgstr ""
+
+#: models.py:27
+msgid "Rejected"
+msgstr ""
+
+#: models.py:35
+msgid "Start date"
+msgstr ""
+
+#: models.py:36
+msgid "Start time"
+msgstr ""
+
+#: models.py:37
+msgid "End date"
+msgstr ""
+
+#: models.py:38
+msgid "End time"
+msgstr ""
+
+#: models.py:51
+msgid "Status"
+msgstr ""
+
+#: models.py:69
+msgid "Your request for an exemption from teaching was approved"
+msgstr ""
+
+#: models.py:71
+msgid "Your request for an exemption from teaching from {}, {} to {}, {} was approved by the school management."
+msgstr ""
+
+#: models.py:92
+msgid "Your request for an exemption from teaching was rejected"
+msgstr ""
+
+#: models.py:94
+msgid "Your request for an exemption from teaching from {}, {}  to {}, {} was rejected by the school management."
+msgstr ""
+
+#: models.py:114
+msgid "First check of exemption request"
+msgstr ""
+
+#: models.py:115
+msgid "Second check of exemption request"
+msgstr ""
+
+#: models.py:118
+msgid "Exemption request"
+msgstr ""
+
+#: models.py:119
+msgid "Exemption requests"
+msgstr ""
+
+#: templates/fritak/applied_for.html:7
+msgid ""
+"\n"
+"      Your request for a teaching exemption has been successfully\n"
+"      submitted to the school management and will be examined there shortly.\n"
+"    "
+msgstr ""
+
+#: templates/fritak/applied_for.html:15
+msgid "Back to the overview"
+msgstr ""
+
+#: templates/fritak/applied_for.html:20
+msgid "Back to the dashboard"
+msgstr ""
+
+#: templates/fritak/apply_for.html:5
+msgid "New request for exemption from teaching"
+msgstr ""
+
+#: templates/fritak/apply_for.html:9
+msgid "Submit new request for exemption from teaching"
+msgstr ""
+
+#: templates/fritak/apply_for.html:18
+msgid "Submit"
+msgstr ""
+
+#: templates/fritak/archive.html:20
+msgid "Update filter"
+msgstr ""
+
+#: templates/fritak/archive_print.html:7
+msgid "Print: Exemption requests"
+msgstr ""
+
+#: templates/fritak/archive_print.html:8
+msgid "Archive of exemption requests"
+msgstr ""
+
+#: templates/fritak/archive_print.html:24
+msgid "Person"
+msgstr ""
+
+#: templates/fritak/archive_print.html:27
+msgid "Start"
+msgstr ""
+
+#: templates/fritak/archive_print.html:30
+msgid "End"
+msgstr ""
+
+#: templates/fritak/check.html:6
+msgid "Approve requests"
+msgstr ""
+
+#: templates/fritak/check.html:37
+msgid "Accept"
+msgstr ""
+
+#: templates/fritak/check.html:44
+msgid "Reject"
+msgstr ""
+
+#: templates/fritak/check.html:62 templates/fritak/index.html:68
+msgid "No requests available."
+msgstr ""
+
+#: templates/fritak/edit.html:5
+msgid "Edit request for exemption from teaching"
+msgstr ""
+
+#: templates/fritak/edit.html:12
+msgid "Change"
+msgstr ""
+
+#: templates/fritak/index.html:5
+msgid "Requests for teaching exemptions"
+msgstr ""
+
+#: templates/fritak/index.html:9
+msgid "Requests for teaching exemptions from"
+msgstr ""
+
+#: templates/fritak/index.html:15
+msgid "Make a new request"
+msgstr ""
+
+#: templates/fritak/index.html:36
+msgid "Edit"
+msgstr ""
+
+#: templates/fritak/index.html:46
+msgid "Do you really want to delete the request?"
+msgstr ""
+
+#: templates/fritak/index.html:48
+msgid "Delete"
+msgstr ""
+
+#: views.py:34
+msgid "Request for exemption from teaching deleted"
+msgstr ""
+
+#: views.py:36
+msgid "You have deleted your request for class exemptionfor the period from {} to {}."
+msgstr ""
+
+#: views.py:42
+msgid "Your request was successfully deleted."
+msgstr ""
+
+#: views.py:94
+msgid "Application for exemption from teaching submitted"
+msgstr ""
+
+#: views.py:96
+msgid "You have applied for an exemption from teaching for the period from {} to {}."
+msgstr ""
+
+#: views.py:123
+msgid "Application for exemption from teaching changed"
+msgstr ""
+
+#: views.py:125
+msgid "You have processed your request for a teaching leave for the period from {} to {}."
+msgstr ""
+
+#: views.py:131
+msgid "Your request was successfully updated."
+msgstr ""

@@ -1,0 +1,22 @@
+{% extends "core/base.html" %}
+{% load msg_box static i18n %}
+
+{% block content %}
+  <p class="flow-text">
+    <i class="material-icons left small">check</i>
+    {% blocktrans %}
+      Your request for a teaching exemption has been successfully
+      submitted to the school management and will be examined there shortly.
+    {% endblocktrans %}
+  </p>
+
+  <a class="btn blue" href="{% url "fritak_index" %}">
+    <i class="material-icons left">arrow_back</i>
+    {% trans "Back to the overview" %}
+  </a>
+
+  <a class="btn green" href="{% url "index" %}">
+    <i class="material-icons left">home</i>
+    {% trans "Back to the dashboard" %}
+  </a>
+{% endblock %}
