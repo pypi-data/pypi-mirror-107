@@ -1,0 +1,10 @@
+docopt
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+pegasusio>=0.2.12
+
+[:python_version < "3.8"]
+importlib-metadata>=0.7
