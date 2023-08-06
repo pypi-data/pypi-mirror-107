@@ -1,0 +1,12 @@
+pysats/__init__.py,sha256=DuA7qBNfi_zdf1Xc1SPdTnSfNjuZ9eejoPV7kOMLuYE,45
+pysats/generic_model.py,sha256=G1aPsE8xnHVSohg1fstLlPtR0uh2MRTBQCsG15MOZLU,2981
+pysats/gsvm.py,sha256=xKRgUA7RIxqFEq5MJqFHtXt9d5IZsXEe1YmKqVLzw3E,1500
+pysats/lsvm.py,sha256=sZAAH4r05RKwW2br60NmObQkwTNMwtuHicuV2UNdpQM,1499
+pysats/mrvm.py,sha256=gzlEwihYQAwpB2nlwQNRUq5bgaVnCJW593vMztRzteM,1649
+pysats/pysats.py,sha256=sOyYSM3APnrLUbRghOWvcgEBd2B1pgZoFshVhQmDcLI,2000
+pysats/simple_model.py,sha256=HnOeP3wosZqLvxAc6sId5YcUpZclv_j8JXgObiGbb9k,6263
+pysats/srvm.py,sha256=4RP1Udz24F3Wv15E6lnh_cpAlaIArRXafcI70Bz2v5U,1908
+pysats-0.0.1.dist-info/LICENSE,sha256=QvdcPlIvtHT7ZsxP6bMkeS9NH4IMPa1Ge7JK9Mnls_4,35179
+pysats-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pysats-0.0.1.dist-info/METADATA,sha256=tJs5gVI7DFDDU5Nh__xVwLndnZjeXOhAQUakTTJoKfg,2508
+pysats-0.0.1.dist-info/RECORD,,
