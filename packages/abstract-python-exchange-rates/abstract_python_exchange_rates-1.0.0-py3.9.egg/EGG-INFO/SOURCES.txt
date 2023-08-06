@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+abstract_python_exchange_rates.egg-info/PKG-INFO
+abstract_python_exchange_rates.egg-info/SOURCES.txt
+abstract_python_exchange_rates.egg-info/dependency_links.txt
+abstract_python_exchange_rates.egg-info/requires.txt
+abstract_python_exchange_rates.egg-info/top_level.txt
+python_exchange_rates/__init__.py
+python_exchange_rates/python_exchange_rates.py
