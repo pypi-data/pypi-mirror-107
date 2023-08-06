@@ -1,0 +1,16 @@
+similar_documents/__init__.py,sha256=XXPaTN2xtTL4cLRaZetZMna0SzZZC_SED7pkyqtlYv4,367
+similar_documents/cli.py,sha256=7VwBpWZqBaJQKD40RzHHRT029EH502ICjBW2TyxBz0E,2027
+similar_documents/cmd_utils.py,sha256=WNxVvPBlsN8WMDkyTv0qsqRRNXhnBTIJPJhCyZPoWJs,2017
+similar_documents/similar.py,sha256=B4igb_PZljImbFhR_AhVge-NiNuroOK6dyGVwtyneio,1202
+similar_documents/text_converter.py,sha256=dzzP9cuoX16qaUKr9ZQ7DcbjQ5bgukYGsOLFczYnF6g,884
+similar_documents/tokenizer.py,sha256=I8TBMpU8orr2EdzeeuFYp9yxr3hSnqrScnbrwhlGREg,615
+similar_documents-0.1.4.data/scripts/similar-documents,sha256=24KjyvjT93PSZvBl7bvn7Bz2RPeX_Tw_WSZGXEIMtJY,264
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cmd_utils_test.py,sha256=KmG6YB5LhaVRRccwe1ISHUonSHZFMk8RvMQR_R7d25Q,691
+tests/similar_test.py,sha256=cUwp9MxgBJiPTbXAYu9T83Lwbr5rwOCwouoNGGqcv4c,701
+tests/text_converter_test.py,sha256=7E-_6EatTieYS3JGlXh2XJydqLPJBR2Lq-X4ZqLkZ2o,913
+tests/tokonezer_test.py,sha256=ud077p8_ke_HNcVyosu0e2RH7My9PbFJf5SRfN1gFdY,355
+similar_documents-0.1.4.dist-info/METADATA,sha256=qub1s0JyizPH6kCyDxsyw2_eT7h-fxw-oAPzP1xKg2w,2361
+similar_documents-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+similar_documents-0.1.4.dist-info/top_level.txt,sha256=ywZV94krwscyXEdu2ksk3AsBF_uY90EP4zMJXjrEydA,24
+similar_documents-0.1.4.dist-info/RECORD,,
