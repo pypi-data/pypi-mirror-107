@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pykorbit
+Version: 0.1.9
+Summary: python wrapper for Korbit API
+Home-page: https://github.com/sharebook-kr/pykorbit
+Author: brayden.jo, jonghun.yoo
+Author-email: brayden.jo@outlook.com, jonghun.yoo@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: datetime
+Requires-Dist: numpy
+Requires-Dist: xlrd
+Requires-Dist: PyJWT
+Requires-Dist: websockets
+
+UNKNOWN
+
+
