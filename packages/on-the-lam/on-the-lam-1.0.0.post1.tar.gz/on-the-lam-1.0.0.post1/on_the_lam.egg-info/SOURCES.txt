@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+on_the_lam.egg-info/PKG-INFO
+on_the_lam.egg-info/SOURCES.txt
+on_the_lam.egg-info/dependency_links.txt
+on_the_lam.egg-info/top_level.txt
+onthelam/__init__.py
+onthelam/astoperations.py
+onthelam/lambdabuilder.py
