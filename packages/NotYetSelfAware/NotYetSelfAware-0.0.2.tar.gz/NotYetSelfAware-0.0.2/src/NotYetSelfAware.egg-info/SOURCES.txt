@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/NotYetSelfAware/__init__.py
+src/NotYetSelfAware.egg-info/PKG-INFO
+src/NotYetSelfAware.egg-info/SOURCES.txt
+src/NotYetSelfAware.egg-info/dependency_links.txt
+src/NotYetSelfAware.egg-info/top_level.txt

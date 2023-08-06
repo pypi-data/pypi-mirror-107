@@ -1,0 +1,32 @@
+# From https://packaging.python.org/tutorials/packaging-projects/
+#
+# pyproject.toml is the file that tells:
+#	- build tools (like pip and build)
+#	- what system you are using
+#	- what is required for building
+#
+# The default if this file is missing is to assume a classic setuptools build system,
+# but it is better to be explicit;
+#
+# if you have a pyproject.toml file, you will be able to rely on wheel and other packages being present.
+
+[build-system]
+
+# build-system.requires
+# 	Gives a list of packages that are needed to build your package.
+# 	Listing something here will only make it available during the build, not after it is installed.
+requires = [
+    "setuptools>=42",
+    "wheel",
+	"numpy"
+]
+
+# build-system.build-backend
+# 	technically optional
+# 		but you will get setuptools.build_meta:__legacy__ instead if you forget to include it
+#		so always include it. 
+# 	If you were to use a different build system, such as
+# 		- flit
+#		- poetry
+#	those would go here, and the configuration details would be completely different than the setuptools configuration described below.
+build-backend = "setuptools.build_meta"
