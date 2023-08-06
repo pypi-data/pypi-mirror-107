@@ -1,0 +1,9 @@
+slurm_to_wandb/__init__.py,sha256=VAPjrdgs2pG9AN0187agXAWNHEA-G_-1db7ItC0rQeQ,344
+slurm_to_wandb/main.py,sha256=bphh_fUnl-qaHh_41rsoY-HAmgbEh5TDPK-7-yP4iK0,814
+slurm_to_wandb/sacct_to_df.py,sha256=DbSQHrvzhxZk5Ag0bxJWBASd8WnzoPJ3AJ0DayMeLbY,4658
+slurm_to_wandb-0.1.0.dist-info/LICENSE,sha256=_m_FLGIdrW95PMuUTcXCIbNVrskbGHFl4bR-JV86pNc,1073
+slurm_to_wandb-0.1.0.dist-info/METADATA,sha256=Vl5s7I2vc3UCGq4jdjZQVb405l5CTLmEzjPFI2dklOs,1198
+slurm_to_wandb-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slurm_to_wandb-0.1.0.dist-info/entry_points.txt,sha256=SQ_2tcvGSw30gPEu_rY8tw9ikEbH33uMEanwO4pMmC4,61
+slurm_to_wandb-0.1.0.dist-info/top_level.txt,sha256=x3LePw8FEPCK3NQXR27Y9Uey3xyqQUya0SD93fmRsEE,15
+slurm_to_wandb-0.1.0.dist-info/RECORD,,
