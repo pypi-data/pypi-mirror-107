@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+app/__init__.py
+app/__main__.py
+deploy_actions.egg-info/PKG-INFO
+deploy_actions.egg-info/SOURCES.txt
+deploy_actions.egg-info/dependency_links.txt
+deploy_actions.egg-info/not-zip-safe
+deploy_actions.egg-info/top_level.txt
