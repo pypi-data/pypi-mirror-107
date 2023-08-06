@@ -1,0 +1,11 @@
+tasklogger/__init__.py,sha256=FqsgNshcE6C5eE2fLt4zdNHLD1XDt_VCS71bAWGUt88,91
+tasklogger/api.py,sha256=OI3hY_pcg1rCMokVFVVPMSNCQX2prcKIMUcr7YacoCI,5774
+tasklogger/logger.py,sha256=G8IE4vbX2-Y72Ni_mSqR4KHaWmGpO_FWXM7N5f9t4IY,10007
+tasklogger/stream.py,sha256=Uv6uRKK8leC1RpoubNa-zeApL_x0HbyqyCLX11Km__E,1655
+tasklogger/utils.py,sha256=hihJ0HeGz64yG7IJuI_jFWDAWyHgc6xsl5O8-QK5A3Q,389
+tasklogger/version.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+tasklogger-1.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+tasklogger-1.1.0.dist-info/METADATA,sha256=_4_AIF7mtpbzuCnTVhiyznCS8MW4epsoy13lJeLr-HI,5956
+tasklogger-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tasklogger-1.1.0.dist-info/top_level.txt,sha256=ew_BPNQQKcAcq4QE_dWNZAqOq_2ErqfPaXDYft9u4Yc,11
+tasklogger-1.1.0.dist-info/RECORD,,
