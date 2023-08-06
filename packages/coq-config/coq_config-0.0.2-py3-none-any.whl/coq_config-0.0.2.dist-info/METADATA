@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: coq-config
+Version: 0.0.2
+Summary: "Script to set up a Coq project dependencies using opam, inspired by Haskell's stack."
+Home-page: https://github.com/vzaliva/coq-config
+Author: Vadim Zaliva
+Author-email: lord@crocodile.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: cerberus (>=1.3.2)
+Requires-Dist: click (>=7.0)
+Requires-Dist: pyyaml (>=5.3.1)
+
+# Coq-config
+
+Simple script to set up a Coq project dependencies using *opam*.
+Inspired by Haskell's `stack`.
+
+## Documentation
+
+Reads `coq_config.yaml` file and set up am *opam* *switch* and install
+required packages.
+
+Optionally checks out some sub-projects from *git* (an alternative
+to using sub-modules).
+
+### Notes
+
+-   It is safe to run multiple times.
+-   The *opam* packages where the version numer was specified, will be
+    pinned, so it is safe to do `opam update` aftewards.
+-   You will need to activate opam switch specified in config with
+    `opam switch` command. The script does not change current active
+    switch for you.
+-   Tested with *opam* verson 2.0.5.
+
+## To-Do
+
+-   Run `opam init` if necessary
+-   If switch exists, check if the right compiler is used and
+    update if necessary.
+-   When adding repositories, check their URLs, not just names.
+    It they do not match the config - report error.
+-   Run `coq-config` for all `extra-deps`
+-   When re-running, make sure pinned version removed or updated
+    if changed.
+
+## Installation
+
+The easiets way to install is using `pip`:
+
+`pip install coq-config`
+
+### Manual install
+
+To run from local clone of git repository install dependencies (using
+`pip`):
+
+-   click
+-   pyyaml
+-   cerberus
+
+
+## Contact
+
+For bugs reports, contributions and source code visit [project page on
+github](https://github.com/vzaliva/coq-config).
+
+
+
