@@ -1,0 +1,10 @@
+setup.py
+yayuchen/Binomialdistribution.py
+yayuchen/Gaussiandistribution.py
+yayuchen/Generaldistribution.py
+yayuchen/__init__.py
+yayuchen.egg-info/PKG-INFO
+yayuchen.egg-info/SOURCES.txt
+yayuchen.egg-info/dependency_links.txt
+yayuchen.egg-info/not-zip-safe
+yayuchen.egg-info/top_level.txt
