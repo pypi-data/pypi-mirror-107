@@ -1,0 +1,8 @@
+setup.py
+textlist/__init__.py
+textlist/color.py
+textlist/string.py
+textlist.egg-info/PKG-INFO
+textlist.egg-info/SOURCES.txt
+textlist.egg-info/dependency_links.txt
+textlist.egg-info/top_level.txt

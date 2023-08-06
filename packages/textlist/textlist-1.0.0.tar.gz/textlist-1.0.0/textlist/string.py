@@ -1,0 +1,17 @@
+class text:
+    tab="\t"
+    enter="\n"
+    space=" "
+    clean="\033[2J\033[00H"
+    dang="𪠽"
+class shape:
+    dot="·"
+    rectangle="▭"
+    square="□"
+    triangle="▽"
+    right_triangle="◿"
+    circle="◯"
+    up="↑"
+    down="↓"
+    left="←"
+    right="→"
