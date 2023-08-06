@@ -1,0 +1,3 @@
+recursive-include puts *.py
+exclude publish.sh
+recursive-exclude tests *
