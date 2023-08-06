@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-timesince
+Version: 2021.5.27
+Summary: django timesince replacement
+Home-page: https://github.com/git/django-timesince.py
+License: Unlicense
+Description: [![](https://img.shields.io/badge/released-2021.5.8-green.svg?longCache=True)](https://pypi.org/project/django-timesince/)
+        [![](https://img.shields.io/badge/license-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+        
+        ### Installation
+        ```bash
+        $ pip install django-timesince
+        ```
+        
+        ### Examples
+        ```html
+        {% load timesince %}
+        
+        {{ created_at|timesince }} ago
+        ```
+        
+        `default`|`django_timesince`
+        -|-
+        `1 hour 5 minutes ago`|`1 hour ago`
+        `1 year 2 months ago`|`1 year ago`
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
