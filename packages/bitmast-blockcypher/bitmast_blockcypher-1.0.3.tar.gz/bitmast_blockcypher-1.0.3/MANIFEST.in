@@ -1,0 +1,3 @@
+recursive-include bitmast_blockcypher/blockchain *
+recursive-include bitmast_blockcypher/config *
+recursive-include bitmast_blockcypher/errors *

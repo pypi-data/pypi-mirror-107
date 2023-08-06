@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: bitmast-blockcypher
+Version: 1.0.3
+Summary: Python wrapper for accessing BlockCypher API
+Home-page: UNKNOWN
+Author: Aniefiok Friday
+Author-email: frier17@a17s.co.uk
+License: MIT
+Description: # Bitmast BlockCypher wrapper
+        **A python wrapper for accessing BlockCypher API and selected bitcoin features**
+        
+        The Bitmast BlockCypher tool is a python implementation of the BlockCypher, [https://www.blockcypher.com/quickstart/](https://www.blockcypher.com/quickstart/).
+        
+        ## Motivation
+        The BlockCypher API while a very rich collection of blockchain tools and services does not readily fit the design model
+        needed by Bitmast in deploying custom blockchain payment and other exchange services. To augment the work done by
+        BlockCypher, Bitmast Digital Services designed and developed this wrapper which can be integrated to other python based
+        frameworks or tools for developing applications for niche markets.
+        
+        ## Dependencies
+        The wrapper requires `blockcyher` and `bitcoinlib`.
+        The target Python language for current implmentation is Python 3.6.8
+        
+        ## Build Status
+        **Version: 1.0.2**
+        
+        Current development is version 1.0.1. This is considered the Alpha Edition.
+        
+        ## Features
+        Support PayStack features includes:
+        + Generate bitcoin or registered blockchain wallets and addresses
+        + Generate HD wallet for bitcoin
+        + Sign blockchain transactions locally to improve security of user's wallet
+        + Generate private and public keys
+        + Verify addresses for given a network
+        + Create datastructures that can be used to parse blockchain API responses into native Python classes
+        
+        ## Contributing
+        Please visit application repo for further information on extending project. Ideas and comments will be reasonably
+         appreciated.
+        
+        ## Author
+        Current development is by Aniefiok Friday [@frier17](https://gitlab.com/frier17).
+        
+        ## License
+        MIT License
+        
+        For details read license contract [here](https://mit-license.org/)
+        
+        Copyright 2020 @frier17
+        
+        
+        The MIT License (MIT)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
+        files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy,
+        modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or
+        substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+        WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+        OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
