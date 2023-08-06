@@ -1,0 +1,14 @@
+README.md
+setup.py
+s3access/__init__.py
+s3access/__pkginfo__.py
+s3access/conditions.py
+s3access/s3access.py
+s3access/s3path.py
+s3access.egg-info/PKG-INFO
+s3access.egg-info/SOURCES.txt
+s3access.egg-info/dependency_links.txt
+s3access.egg-info/requires.txt
+s3access.egg-info/top_level.txt
+tests/__init__.py
+tests/test_s3path.py
