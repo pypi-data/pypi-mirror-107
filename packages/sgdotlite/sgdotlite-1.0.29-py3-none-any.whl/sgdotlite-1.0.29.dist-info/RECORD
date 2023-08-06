@@ -1,0 +1,10 @@
+sgdotlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sgdotlite/grids.py,sha256=exf_7rLxzdZSQIiDTNautt4GCuStPL3aUNNy-qEb-Bc,54142
+sgdotlite/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sgdotlite/tools/grid_optimizer.py,sha256=FnPGAkOIyUO4_kCQOztUdF3osolT-QUWxnLc1ydp_2E,154010
+sgdotlite/tools/io.py,sha256=ypuobekhEs8Urzf56qqFAseDgzKDDTNZvu5jF-7AYvA,520
+sgdotlite/tools/plot.py,sha256=UbJ97tH5v7UQj6wSalCiJJCIVFQexKt02dYBgQ0nTh8,3407
+sgdotlite-1.0.29.dist-info/METADATA,sha256=ghQf-LC-lnPvG2C6cZPa8XCd93WERvC84HL7DYO5Q5E,1422
+sgdotlite-1.0.29.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sgdotlite-1.0.29.dist-info/top_level.txt,sha256=6UFnYdMbN5j-MTyswU2ledgremUnN8DvO6-zE8hWmjg,10
+sgdotlite-1.0.29.dist-info/RECORD,,
