@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: tgtk
+Version: 1.1.7
+Summary: A Telegram Bot written in Python to mirror files on the internet onto Telegram
+Home-page: https://github.com/reaitten/tgtk
+Author: reaitten
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/reaitten/tgtk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (==3.7.4)
+Requires-Dist: anytree (==2.8.0)
+Requires-Dist: aria2p (==0.9.1)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrdict (==2.0.1)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: cffi (==1.14.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: cryptg (==0.2.post2)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: hachoir (==3.1.1)
+Requires-Dist: idna (==2.10)
+Requires-Dist: multidict (==4.7.6)
+Requires-Dist: orjson (==3.3.1)
+Requires-Dist: Pillow (==8.1.1)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: psycopg2-binary (==2.8.5)
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: qbittorrent-api (==2020.7.7)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: rsa (==4.6)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: Telethon (==1.20)
+Requires-Dist: TgCrypto (==1.2.2)
+Requires-Dist: torrentool (==1.1.0)
+Requires-Dist: urllib3 (==1.25.10)
+Requires-Dist: yarl (==1.5.1)
+Requires-Dist: youtube-dl
+Requires-Dist: instaloader (==4.6)
+Requires-Dist: natsort (==7.1.0)
+Requires-Dist: Pyrogram (==1.1.13)
+Requires-Dist: beautifulsoup4 (<4.8.10,>=4.8.2)
+Requires-Dist: lxml
+
+# TGTK - A Telegram Bot
+
+## Notes:
+a pypi package named [tgtk](https://pypi.org/project/tgtk) containing all bot code, easily to install with 
+```
+pip install tgtk
+```
+deploying from an docker image [reaitten/tk:latest](https://hub.docker.com/r/reaitten/tk/tags?page=1&ordering=last_updated)
+
+## Deploy via Heroku CLI
+- Download [deploy.zip](https://github.com/reaitten/tgtk/releases).
+- Unzip & open a command prompt.
+- Change stack dyno to container:
+```
+heroku stack:set container --app your-app-name
+```
+- Initialise the project files as a Git Repository, push the repo to 'Heroku Git' and build the Docker Image:
+```
+git init
+git add .
+heroku git:remote -a your-app-name`
+git commit -m "initial commit"
+git push heroku main
+```
+
+# Credits
+
+> [yash-dk's TorToolkit](https://github.com/yash-dk/TorToolkit-Telegram)
+
+> [tortoolkit's tortoolkit-Telegram](https://github.com/tk/tk-Telegram)
+
+> [sahadz's tortoolkit-Telegram](https://github.com/sahadz/tk-Telegram)
+
+> [dr-qaatil <3](https://github.com/dr-qaatil)
+
+## Variables
+`IS_VPS` = False
+## Compulsory Vars
+
+`API_HASH` = Obtained from Telegram 
+
+`APP_ID` = Obtained from Telegram
+
+`BOT_TOKEN` = Obtained from Botfather
+
+`BASE_URL_OF_BOT` = IP/domain of your bot like "https://appname.herokuapp.com" (for heroku)
+
+`AUTH_CHANNEL` = It is a list of IDs of all the allowed groups and useres who can use this bot in private. Seperated by spaces e.g: "-102222 -33322211 11222333"
+
+`DB_URI` = Postgres database URL.
+
+`OWNER_ID` = self-explanatory, get value from [@userinfobot](https://t.me/userinfobot)
+
+## Optional Vars
+(IT IS RECOMMENDED TO SET THE OPTIONAL VARS FROM SETTINGS MENU, If not all vars atleast use settings menu for RCLONE that way is much easier.)
+
+`EDIT_SLEEP_SECS` = Seconds to Sleep before edits. Recommended is 40.
+
+`TG_UP_LIMIT` = Telegram Upload limit in bytes.
+
+`BOT_CMD_POSTFIX` = Set this to your bot username if you want to add the username of your bot at the end of the commands. e.g `/leech@TorToolkitBot` so the value will be @TorToolkitBot
+
+`FORCE_DOCUMENTS` = Should all the upload to telegram be made as documents or not.
+
+`COMPLETED_STR` = Character used to denote completed progress. 
+
+`REMAINING_STR` = Character used to denote remaining progress.
+
+`RCLONE_BASE_DIR` = Rclone Base Directory to where stuff should be clonned. (cannot be configured from settings)
+
+`LEECH_ENABLED` = Upload to telegram should be enabled or not.
+
+`RCLONE_ENABLED` = Upload to rclone should be enabled or not.
+
+`DEFAULT_TIMEOUT` = Default destination to choose if the user fails to choose upload destination in 60 seconds.
+
+`RCLONE_CONFIG` = rclone file path. usually it's /app/rclone.conf if you uploaded rclone.conf onto the root directory of folder.
+
+`DEF_RCLONE_DRIVE` = Default Drive for rclone to use. e.g: if my drive is called `tk-drive`, then i would add the value, `tk-drive`.
+
+`MAX_YTPLAYLIST_SIZE` = Max size of a playlist that is allowed (Number of videos)
+
+`MAX_TORRENT_SIZE` = Max torrent size in GBs
+
+Other varibles are not to be changed.
+
+## Commands
+add in [@BotFather](https://t.me/BotFather)
+
+    leech - To Leech a torrent or download a direct link
+    ytdl - Donwload YouTube Video
+    pytdl - Download YouTube Playlist
+    about - About the bot
+    status - Status of all the downloads
+    stats - Get server status
+    usettings - User Settings (private also)
+    instadl - Instagram Post/Reel/IGTV download
+    setthumb - Set the thumbnail
+    clearthumb - Clear the thumbnail
+    settings - Settings of the bot ⚠️ Admin Only
+    pauseall - Pause all torrents⚠️ Admin Only
+    resumeall - Resume all torrents⚠️ Admin Only
+    purge - Delete all torrents ⚠️ Admin Only
+    logs - Get the robot logs ⚠️ Admin Only
+
+
