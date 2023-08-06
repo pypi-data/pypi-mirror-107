@@ -1,0 +1,8 @@
+README.md,sha256=oUZX5HgGCEO_DGruudwuk11fOoMJGzI7ncq8ehP8pwI,301
+ez_torch/__init__.py,sha256=HTOg5f7AjjmBSFGV_LoFwl7MkzfCCSOig1nFmhI7v40,120
+ez_torch/models.py,sha256=lgQkuuLEzmEdAHA8stF86bulCJnTb66yQzzZVba_rU8,7216
+ez_torch/tensor_wrapper.py,sha256=JBPYOZ8n2BMXLyKjj_iTIhIzOyfIQnPt8sMJDr-2oFw,2156
+ez_torch/utils.py,sha256=TqFs62MGcGus9rNU9yCFvwCzvp0Hw-Rqapgl39bTrw4,5732
+ez_torch-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+ez_torch-0.1.1.dist-info/METADATA,sha256=4s-_UuCLUtkHc00eVx7v19wj13tyksV1zpUF2exEP6A,500
+ez_torch-0.1.1.dist-info/RECORD,,
