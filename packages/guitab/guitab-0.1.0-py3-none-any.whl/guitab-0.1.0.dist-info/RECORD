@@ -1,0 +1,16 @@
+guitab/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+guitab/_version.py,sha256=STd44OVmMHJKNi6fLNIfF1T8i71zrE8nwEvEBzZZ_HQ,497
+guitab/guitab.py,sha256=8KzRXKZfcam6z-t39ET1jRuPDa_W3_YwF7dWMEGcNmE,6421
+guitab/tab.py,sha256=Wha8DOQERNQt7JnIJ9vEBylw7oE6P10zmKW6GG-hEKQ,15401
+guitab/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guitab/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guitab/tests/global_test_data.py,sha256=cmpwjlvqkbElAO4Aa5T3SXCUOHoAWiks5x0IaDySF-Q,4054
+guitab/tests/test_guitab.py,sha256=gPsA0KUJaNznwXYGtCE_Jfr3vRXTUhKeyhNt57de1ME,2370
+guitab/tests/test_tab.py,sha256=aJv3vBmYhJlfd6hXBpjMhTYYo4KZqnjFJ22mm1Xc5ZY,5472
+guitab-0.1.0.dist-info/AUTHORS.rst,sha256=n_FFH03EBFFOOrDqNHumZ98s8kDSpycIUNKKZa2ZXfk,174
+guitab-0.1.0.dist-info/LICENSE,sha256=7qbT5vuTSlxI1dKxXxkUVQCkkHvtxj9VUTRT0NIRijg,1517
+guitab-0.1.0.dist-info/METADATA,sha256=wh0ktQcHg9yJsK_egyXU4jdWOeV2OtYGjSyhWGAE-Ls,1706
+guitab-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+guitab-0.1.0.dist-info/entry_points.txt,sha256=29PBs840vXx-zF9XyPLfF2bwDPItg64vqNaQkazH-kE,47
+guitab-0.1.0.dist-info/top_level.txt,sha256=kG2F6qC0ifzKwB5GZU2Czwm0ZncrJ9o3hhPoI2-HGM4,7
+guitab-0.1.0.dist-info/RECORD,,
