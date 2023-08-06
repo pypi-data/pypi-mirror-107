@@ -1,0 +1,3 @@
+[console_scripts]
+si = si_cli.si_cli:cli
+
