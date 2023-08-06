@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+hypnotoad/__init__.py
+hypnotoad/__version__.py
+hypnotoad.egg-info/PKG-INFO
+hypnotoad.egg-info/SOURCES.txt
+hypnotoad.egg-info/dependency_links.txt
+hypnotoad.egg-info/entry_points.txt
+hypnotoad.egg-info/requires.txt
+hypnotoad.egg-info/top_level.txt
