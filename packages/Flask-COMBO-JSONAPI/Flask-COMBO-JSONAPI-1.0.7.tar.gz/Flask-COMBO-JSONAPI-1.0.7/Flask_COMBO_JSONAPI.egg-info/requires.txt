@@ -1,0 +1,11 @@
+simplejson
+Flask<2,>=1.0.1
+marshmallow==3.2.1
+marshmallow_jsonapi==0.24.0
+sqlalchemy<1.4
+
+[docs]
+sphinx
+
+[tests]
+pytest
