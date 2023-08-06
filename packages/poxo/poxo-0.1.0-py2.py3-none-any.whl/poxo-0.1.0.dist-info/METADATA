@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: poxo
+Version: 0.1.0
+Summary: poxo
+Home-page: https://github.com/sashakile/poco
+Author: sashakile
+Author-email: saxa.kile@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: test
+
+# poxo
+*(poco)*
+
+*Pequeño y perezoso panda | Small and lazy panda*
+[EN](#Intro) | [ES](#Introducción)
+
+## Introducción
+
+Esta librería esta enfocada a ser una herramienta para aprender prácticas de programación creando una copia simple de la conocida librería [pandas](https://github.com/pandas-dev/pandas) 
+
+
+## Intro
+
+This library is intended to be a learning tool for programming while creating a simple copy of the known library [pandas](https://github.com/pandas-dev/pandas)
+
+
+
+## Ejemplo | Example
+
+```python
+import poxo as po
+
+s = po.Series() 
+```
