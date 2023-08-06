@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pmb-py-noflame
+Version: 0.0.1
+Summary: pmb restful api python wrap
+Home-page: https://github.com/MoonShineVFX/pmb_py_api
+Author: Noflame.lin
+Author-email: linjuang@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## 就是個簡單的 Wrap
+
