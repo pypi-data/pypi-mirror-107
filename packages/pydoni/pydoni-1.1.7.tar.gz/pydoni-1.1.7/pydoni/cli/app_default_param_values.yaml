@@ -1,0 +1,53 @@
+# Overwrite any default app command options here.
+#
+# Format:
+#   major minor:
+#     param1: value1
+#     param2: value2
+#     ...
+#
+# NOTE: The order that parameters are entered here is respected in presenting those
+#       parameters to the user when the app is run.
+
+data add-events-log:
+  events-log-file: /Users/Andoni/Documents/Events Log.txt
+
+data-backup:
+  verbose: True
+
+data git-sync:
+  root: /Users/Andoni/GDrive
+  ignore: [/Users/Andoni/GDrive/Work/Apple]
+  verbose: True
+  recursive: True
+
+data pg-dump:
+  backup-dir: /Users/Andoni/GDrive/Code/git-doni/pg-database/pg-dump
+  pgdump: True
+  csvdump: False
+  max-dir-size: 5
+  verbose: True
+
+movie refresh-imdb-table:
+  schema: movie
+  table: imdb
+  omdbapikey: 209e906d
+  verbose: True
+
+notes book-table-to-md:
+  output-dir: /Users/Andoni/Desktop/Markdown
+  verbose: True
+
+photo rename-mediafile:
+  initials: AKS
+  tz-adjust: 0
+  notify: True
+  verbose: True
+
+photo website-extract-image-titles:
+  website-export-dir: /Users/Andoni/Pictures/Collection Publisher Lightroom Export/andonisooklaris.com
+  outfile: auto
+  verbose: True
+
+imessage workflow-elt:
+  verbose: True
