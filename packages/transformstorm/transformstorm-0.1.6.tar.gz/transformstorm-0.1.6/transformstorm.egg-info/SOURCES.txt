@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bin/transformstorm
+transformstorm/__init__.py
+transformstorm/interfaces.py
+transformstorm/textgenerator.py
+transformstorm.egg-info/PKG-INFO
+transformstorm.egg-info/SOURCES.txt
+transformstorm.egg-info/dependency_links.txt
+transformstorm.egg-info/requires.txt
+transformstorm.egg-info/top_level.txt
