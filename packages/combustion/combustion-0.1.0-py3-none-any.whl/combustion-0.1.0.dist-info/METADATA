@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: combustion
+Version: 0.1.0
+Summary: Helpers for PyTorch model training/testing
+Home-page: https://github.com/TidalPaladin/combustion
+Author: Scott Chase Waggener
+Author-email: tidalpaladin@gmail.com
+License: Apache
+Keywords: deep learning pytorch
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: decorator
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pytorch-lightning (>=1.0.0)
+Requires-Dist: torchmetrics (>=0.3)
+Requires-Dist: hydra-core (>=1.0.0)
+Requires-Dist: torch (<=2.0.0,>=1.6.0)
+Requires-Dist: packaging
+Requires-Dist: pynvml
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: thop ; extra == 'dev'
+Requires-Dist: kornia ; extra == 'dev'
+Requires-Dist: opencv-python ; extra == 'dev'
+Requires-Dist: torchvision ; extra == 'dev'
+Requires-Dist: Pillow ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+Provides-Extra: hdf5
+Requires-Dist: h5py (<3.0) ; extra == 'hdf5'
+Provides-Extra: macs
+Requires-Dist: thop ; extra == 'macs'
+Provides-Extra: points
+Requires-Dist: torch-scatter (<2.0.5) ; extra == 'points'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-mock ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-xdist ; extra == 'testing'
+Provides-Extra: vision
+Requires-Dist: kornia ; extra == 'vision'
+Requires-Dist: opencv-python ; extra == 'vision'
+Requires-Dist: torchvision ; extra == 'vision'
+Requires-Dist: Pillow ; extra == 'vision'
+
+UNKNOWN
+
