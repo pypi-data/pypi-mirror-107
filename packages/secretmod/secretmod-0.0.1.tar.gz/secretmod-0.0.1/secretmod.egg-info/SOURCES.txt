@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+secretmod/__init__.py
+secretmod/pytransform.pyd
+secretmod/test.py
+secretmod.egg-info/PKG-INFO
+secretmod.egg-info/SOURCES.txt
+secretmod.egg-info/dependency_links.txt
+secretmod.egg-info/top_level.txt
