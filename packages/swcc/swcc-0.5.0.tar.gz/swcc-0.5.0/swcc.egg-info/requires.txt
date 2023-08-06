@@ -1,0 +1,16 @@
+click<8
+click-pathlib
+django-s3-file-field-client
+packaging
+pydantic
+pyxdg
+requests
+requests-toolbelt
+rich
+toml
+tqdm
+
+[dev]
+factory_boy
+ipython
+tox
