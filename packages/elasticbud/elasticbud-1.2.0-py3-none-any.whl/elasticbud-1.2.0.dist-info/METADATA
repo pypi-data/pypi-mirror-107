@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: elasticbud
+Version: 1.2.0
+Summary: Wrappers for writing concise Elasticsearch-integrated python APIs.
+Author: tasker
+Author-email: tasker@ialcloud.xyz
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: elasticsearch-dsl (>=7.3.0,<8.0.0)
+Requires-Dist: elasticsearch[async] (>=7.13.0,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.15.1,<0.16.0)
+Requires-Dist: pytest-depends (>=1.0.1,<2.0.0)
+Requires-Dist: tenacity (>=7.0.0,<8.0.0)
