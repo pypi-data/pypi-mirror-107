@@ -1,0 +1,15 @@
+muffin>=0.71
+donald>=0.7.2
+
+[aiohttp]
+aiohttp
+
+[httpx]
+httpx
+
+[tests]
+aiohttp
+httpx
+pytest
+pytest-aio[curio,trio]
+pytest-mypy
