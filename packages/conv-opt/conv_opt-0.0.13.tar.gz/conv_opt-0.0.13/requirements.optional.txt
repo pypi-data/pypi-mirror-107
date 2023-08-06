@@ -1,0 +1,30 @@
+[capture_output]
+capturer
+
+[cbc]
+cylp <= 0.7.2
+
+[cplex]
+cplex
+
+[cvxopt]
+cvxopt
+cvxpy >= 1.0.21
+
+[cylp]
+cylp <= 0.7.2
+
+[gurobi]
+gurobipy
+
+[minos]
+qminospy
+
+[mosek]
+mosek >= 8
+
+[soplex]
+soplex
+
+[xpress]
+xpress
