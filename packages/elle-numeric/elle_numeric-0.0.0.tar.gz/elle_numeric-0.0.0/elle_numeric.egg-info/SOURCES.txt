@@ -1,0 +1,12 @@
+README.md
+setup.py
+elle/numeric/__init__.py
+elle/numeric/inverse.py
+elle/numeric/optimize.py
+elle/numeric/path_solve.py
+elle_numeric.egg-info/PKG-INFO
+elle_numeric.egg-info/SOURCES.txt
+elle_numeric.egg-info/dependency_links.txt
+elle_numeric.egg-info/namespace_packages.txt
+elle_numeric.egg-info/not-zip-safe
+elle_numeric.egg-info/top_level.txt
