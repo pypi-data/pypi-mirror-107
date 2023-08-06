@@ -1,0 +1,11 @@
+LICENSE,sha256=yA5Ks9uueGmY2BkIfh-LaE-ybKjZYQXHS_7DZPyMI70,1090
+gibbon/__init__.py,sha256=AF958mgorX29lPrSFFajW2pDJG-jSCnnQ1wC_3NKDoc,43
+gibbon/__main__.py,sha256=Fzjt0m8zAbjDSMhAbQw5EzaomDUNjFI-0K6Q_N44TW8,759
+gibbon/tree.py,sha256=6KJcaGp4UNFJy2JZiZvD6_X-AEBNTYJ5mtxWaMj-86k,3514
+gibbon/types.py,sha256=LRwhAmQ6vt25PTRyxU0f3g2gIkab0_df4s6U6tYwuP4,116
+gibbon/util.py,sha256=Qgtt9WQCiY5jvLotkRbbRH0vkOhr1325deUTEp6jvqg,884
+gibbon-0.1.0.dist-info/entry_points.txt,sha256=ifIhMhpUj0ipctsR_of1IgNgAPiy356-CEyu0iRUBKU,47
+gibbon-0.1.0.dist-info/LICENSE,sha256=yA5Ks9uueGmY2BkIfh-LaE-ybKjZYQXHS_7DZPyMI70,1090
+gibbon-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+gibbon-0.1.0.dist-info/METADATA,sha256=oygIBNCwK1g52TIg9cldVjlzh77q2pdDMqpwslrP_Bs,2109
+gibbon-0.1.0.dist-info/RECORD,,
