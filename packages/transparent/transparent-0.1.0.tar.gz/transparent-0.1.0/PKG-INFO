@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: transparent
+Version: 0.1.0
+Summary: XAI Library to Explain Models.
+Home-page: https://github.com/transparentai-inc/transparent
+Author: Samson Qian
+Author-email: samsonqian@gmail.com
+License: MIT
+Keywords: explainable-ai lime torch_lrp grad-cam
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Transparent
+
+
