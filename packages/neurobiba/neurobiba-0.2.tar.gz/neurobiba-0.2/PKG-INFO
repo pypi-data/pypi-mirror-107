@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: neurobiba
+Version: 0.2
+Summary: small collection of functions for neural networks
+Home-page: https://github.com/displaceman/neurobiba
+Author-email: cumnaamys@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7.7
