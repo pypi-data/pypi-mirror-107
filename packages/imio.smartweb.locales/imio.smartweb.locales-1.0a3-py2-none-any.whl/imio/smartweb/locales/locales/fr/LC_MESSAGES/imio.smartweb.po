@@ -1,0 +1,848 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: imio.smartweb\n"
+"Language: fr\n"
+"X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
+
+#: imio/portletpage/profiles/default/types/PortletPage.xml
+msgid "A portlet content type for homepage."
+msgstr "Type de contenu portlet pour la homepage."
+
+#: imio/portletpage/portlets/collection/portlet.py:77
+msgid "Add Collection Portlet"
+msgstr "Ajouter une portlet collection"
+
+#: imio/portletpage/portlets/link/portlet.py:167
+msgid "Add Link Portlet"
+msgstr "Ajouter une portlet de lien"
+
+#: imio/portletpage/portlets/selection/portlet.py:59
+msgid "Add Selection Portlet"
+msgstr "Ajouter une portlet de sélection"
+
+#: imio/portletpage/portlets/text/portlet.py:45
+msgid "Add Text Portlet"
+msgstr "Ajouter une portlet de texte"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Add footer"
+msgstr "Ajouter un pied de page"
+
+#: imio/smartweb/core/behaviors/configure.zcml:28
+msgid "Add subsite properties/fields"
+msgstr "Ajoute les champs de propriétés d'un sous-site"
+
+#: imio/directory/core/contents/contact/content.py:87
+#: imio/smartweb/core/contents/sections/contact/view.pt:24
+#: imio/smartweb/core/vocabularies.py:90
+msgid "Address"
+msgstr "Adresse"
+
+#: imio/events/core/profiles/default/types/imio.events.Agenda.xml
+msgid "Agenda"
+msgstr ""
+
+#: imio/smartweb/core/behaviors/configure.zcml:20
+msgid "Allow to choose if this element must be placed in quick access."
+msgstr "Choisir si cet élément doit être placé dans les accès rapides."
+
+#: imio/smartweb/core/behaviors/configure.zcml:13
+msgid "Allow to choose if this element must excluded from parent listing views."
+msgstr "Choisir si cet élément doit être exclu de l'affichage listing de son parent."
+
+#: imio/smartweb/core/contents/folder/views.py:103
+msgid "Apply"
+msgstr "Appliquer"
+
+#: imio/directory/core/contents/contact/content.py:29
+msgid "Bad phone format"
+msgstr "Mauvais format de numéro de téléphone"
+
+#: imio/smartweb/core/contents/folder/content.py:38
+msgid "Banner"
+msgstr "Bannière"
+
+#: imio/smartweb/core/browser/banner/settings.py:21
+msgid "Banner is now again displayed from this item"
+msgstr "La bannière est à nouveau visible à partir de ce contenu"
+
+#: imio/smartweb/core/browser/banner/settings.py:24
+msgid "Banner is now hidden from this item"
+msgstr "La bannière est cachée à partir de ce contenu"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:32
+msgid "Block view"
+msgstr "Affichage blocs"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:43
+msgid "Block view with images"
+msgstr "Affichage blocs avec images"
+
+#: imio/smartweb/core/contents/sections/contact/content.py:18
+msgid "Blocks that will be displayed in contact"
+msgstr "Blocs qui vont être affichés dans le contact"
+
+#: imio/smartweb/core/contents/sections/base.py:38
+msgid "Bootstrap CSS class"
+msgstr "Classe Bootstrap"
+
+#: imio/portletpage/portlets/collection/portlet.py:48
+#: imio/portletpage/portlets/link/portlet.py:139
+#: imio/portletpage/portlets/selection/portlet.py:38
+msgid "CSS Classes"
+msgstr "Classes CSS"
+
+#: imio/portletpage/portlets/text/portlet.py:26
+msgid "CSS Classes to personalise portlet"
+msgstr "Classes CSS pour personnaliser la portlet"
+
+#: imio/portletpage/portlets/collection/portlet.py:49
+#: imio/portletpage/portlets/link/portlet.py:140
+#: imio/portletpage/portlets/selection/portlet.py:39
+msgid "CSS Classes to personnalize the portlet style"
+msgstr "Classes CSS pour personnaliser la portlet"
+
+#: imio/smartweb/core/contents/pages/footer/content.py:27
+#: imio/smartweb/core/contents/sections/base.py:44
+msgid "CSS class"
+msgstr "Classe CSS"
+
+#: imio/portletpage/portlets/templates/carousel.py:18
+msgid "Carousel"
+msgstr "Carrousel"
+
+#: imio/smartweb/core/contents/sections/links/configure.zcml:26
+msgid "Carousel view"
+msgstr "Affichage carrousel"
+
+#: imio/events/core/behaviors/topics.py:14
+msgid "Categorization"
+msgstr "Catégorisation"
+
+#: imio/smartweb/core/contents/folder/content.py:26
+msgid "Choose an item as your default folder view"
+msgstr "Choisissez un élément comme vue par défaut de votre dossier"
+
+#: imio/smartweb/core/behaviors/subsite.py:31
+msgid "Choose your display mode"
+msgstr "Choisissez votre mode d'affichage"
+
+#: imio/directory/core/contents/entity/content.py:19
+msgid "Choose zip codes for this entity"
+msgstr "Choisissez les codes postaux liés à cette entité"
+
+#: imio/directory/core/contents/contact/content.py:94
+msgid "City"
+msgstr "Commune"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Click to add footer on this context."
+msgstr "Activer un pied de page"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Click to disable subsite on this context."
+msgstr "Désactiver le mode sous-site."
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Click to enable subsite on this context."
+msgstr "Activer le mode sous-site."
+
+#: imio/directory/core/profiles/default/actions.xml
+msgid "Click to export contact to vcard."
+msgstr "Exporter le contact vers une vcard."
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Click to preview content (without editor actions)."
+msgstr "Prévisualiser le contenu (sans les boutons d'édition)."
+
+#: imio/directory/core/contents/contact/content.py:92
+msgid "Complement"
+msgstr "Complément"
+
+#: imio/directory/core/profiles/default/types/imio.directory.Contact.xml
+msgid "Contact"
+msgstr "Contact"
+
+#: imio/directory/core/profiles/default/types/imio.directory.Contact.xml
+msgid "Contact content type"
+msgstr "Contact"
+
+#: imio/directory/core/contents/contact/content.py:115
+#: imio/smartweb/core/contents/sections/contact/view.pt:34
+#: imio/smartweb/core/vocabularies.py:91
+msgid "Contact informations"
+msgstr "Coordonnées"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionContact.xml
+msgid "Contact section"
+msgstr "Section contact"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionContact.xml
+msgid "Contact section for a page"
+msgstr "Section contact pour une page"
+
+#: imio/directory/core/contents/contact/content.py:96
+msgid "Country"
+msgstr "Pays"
+
+#: imio/smartweb/core/contents/folder/content.py:39
+msgid "Define a banner for folder and children"
+msgstr "Choisir une image de bannière pour le dossier et ses (sous) contenus"
+
+#: imio/smartweb/core/behaviors/subsite.py:25
+msgid "Define a logo for subsite and children"
+msgstr "Définir un logo pour ce sous-site (et ses pages enfants)"
+
+#: imio/smartweb/core/behaviors/subsite.py:39
+msgid "Define number of levels in menu navigation subsite"
+msgstr "Définir un nombre de niveaux pour le menu de navigation du sous-site"
+
+#: imio/smartweb/core/contents/sections/macros.pt:59
+msgid "Delete section"
+msgstr "Supprimer la section"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Disable subsite"
+msgstr "Désactiver le mode sous-site"
+
+#: imio/smartweb/core/viewlets/banner.pt:11
+msgid "Display banner from this item"
+msgstr "Afficher la bannière"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "E-Guichet"
+msgstr ""
+
+#: imio/smartweb/core/contents/pages/procedure/content.py:20
+msgid "E-Guichet procedure"
+msgstr "Lien vers la démarche dans l'e-guichet iMio"
+
+#: imio/directory/core/contents/contact/content.py:68
+msgid "E-mail"
+msgstr "E-mail"
+
+#: imio/directory/core/contents/contact/content.py:130
+msgid "E-mails"
+msgstr "E-mails"
+
+#: imio/portletpage/portlets/collection/portlet.py:85
+msgid "Edit Collection Portlet"
+msgstr "Éditer la portlet collection"
+
+#: imio/portletpage/portlets/link/portlet.py:175
+msgid "Edit Link Portlet"
+msgstr "Éditer la portlet de lien"
+
+#: imio/portletpage/portlets/selection/portlet.py:67
+msgid "Edit Selection Portlet"
+msgstr "Éditer la portlet de sélection"
+
+#: imio/portletpage/portlets/text/portlet.py:53
+msgid "Edit Text Portlet"
+msgstr "Éditer la portlet de texte"
+
+#: imio/smartweb/core/contents/sections/macros.pt:43
+msgid "Edit section"
+msgstr "Modifier"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:52
+msgid "Element view"
+msgstr "Choisir un élément"
+
+#: imio/smartweb/core/contents/folder/views.py:75
+msgid "Element view form"
+msgstr "Formulaire de choix de l'élément à afficher par défaut"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Enable subsite"
+msgstr "Activer le mode sous-site"
+
+#: imio/directory/core/profiles/default/types/imio.directory.Entity.xml
+msgid "Entity"
+msgstr "Entité"
+
+#: imio/events/core/profiles/default/types/imio.events.Agenda.xml
+msgid "Entity agenda folderish content type"
+msgstr ""
+
+#: imio/directory/core/profiles/default/types/imio.directory.Entity.xml
+msgid "Entity content type"
+msgstr "Entité"
+
+#: imio/events/core/profiles/default/types/imio.events.Event.xml
+msgid "Event"
+msgstr "Événement"
+
+#: imio/smartweb/core/behaviors/listing.py:19
+msgid "Exclude from parent listing"
+msgstr "Exclure dans l'affichage listing du parent"
+
+#: imio/directory/core/profiles/default/actions.xml
+msgid "Export contact"
+msgstr "Exporter le contact"
+
+#: imio/portletpage/portlets/link/portlet.py:93
+msgid "External URL"
+msgstr "URL externe"
+
+#: imio/directory/core/vocabularies.py:94
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Facebook"
+msgstr "Facebook"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionFiles.xml
+msgid "Files section"
+msgstr "Section de fichiers"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionFiles.xml
+msgid "Files section for a page"
+msgstr "Création d'une section de fichiers dans votre page."
+
+#: imio/portletpage/portlets/collection/portlet.py:29
+msgid "Find the collection which provides the items to list"
+msgstr ""
+
+#: imio/events/core/profiles/default/types/imio.events.Folder.xml
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Folder.xml
+msgid "Folder"
+msgstr "Dossier"
+
+#: imio/events/core/profiles/default/types/imio.events.Folder.xml
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Folder.xml
+msgid "Folder content type to structure website"
+msgstr "Dossier pour structurer le site"
+
+#: imio/events/core/profiles/default/types/imio.events.Event.xml
+msgid "Folderish event content type"
+msgstr ""
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Footer.xml
+msgid "Footer"
+msgstr "Pied de page"
+
+#: imio/smartweb/core/browser/footer/settings.py:19
+msgid "Footer cannot be added here"
+msgstr "Le pied de page ne peut pas être ajouté à cet endroit"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Footer.xml
+msgid "Footer content type"
+msgstr "Pied de page"
+
+#: imio/smartweb/core/browser/footer/settings.py:43
+msgid "Footer has been successfully added"
+msgstr "Le pied de page a été ajouté avec succès"
+
+#: imio/smartweb/core/vocabularies.py:63
+msgid "Full width"
+msgstr "Pleine page"
+
+#: imio/smartweb/core/vocabularies.py:93
+msgid "Gallery"
+msgstr "Galerie"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionGallery.xml
+msgid "Gallery section"
+msgstr "Section galerie"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionGallery.xml
+msgid "Gallery section for a page"
+msgstr "Création d'une section galerie qui affichera ses images dans votre page. "
+
+#: imio/portletpage/portlets/templates/grid.py:18
+msgid "Grid"
+msgstr "Grille"
+
+#: imio/smartweb/core/vocabularies.py:61
+msgid "Half of width"
+msgstr "Moitié de la page"
+
+#: imio/smartweb/core/viewlets/banner.pt:17
+msgid "Hide banner from this item"
+msgstr "Cacher la bannière à partir de ce contenu"
+
+#: imio/smartweb/core/contents/sections/base.py:17
+#: imio/smartweb/core/contents/sections/macros.pt:22
+msgid "Hide title"
+msgstr "Cacher le titre"
+
+#: imio/smartweb/core/contents/sections/base.py:18
+msgid "Hide title for anonymous user. Title stays visible for the editor."
+msgstr "Cacher le titre pour le visiteur (non authentifié). Le titre reste visible pour l'éditeur."
+
+#: imio/smartweb/policy/utils.py:30
+msgid "I am"
+msgstr "Je suis"
+
+#: imio/portletpage/portlets/link/portlet.py:95
+msgid "Icon"
+msgstr "Icône"
+
+#: imio/smartweb/core/behaviors/quickaccess.py:20
+msgid "If selected, this item will appear in quick access menu"
+msgstr "Si vous cochez cette option, cet élément apparaîtra dans le menu des accès rapides."
+
+#: imio/smartweb/core/behaviors/listing.py:20
+msgid "If selected, this item will not appear in parent listing views"
+msgstr "Si vous cochez cette option, cet élément n'apparaîtra pas dans l'affichage listing de son parent."
+
+#: imio/smartweb/core/contents/sections/gallery/content.py:16
+#: imio/smartweb/core/contents/sections/links/content.py:16
+msgid "Image scale"
+msgstr "Échelle de l'image"
+
+#: imio/smartweb/core/behaviors/quickaccess.py:19
+msgid "Include in quick access menu"
+msgstr "Présent dans le menu des accès rapides"
+
+#: imio/directory/policy/configure.zcml:25
+msgid "Installs the imio.directory.policy add-on."
+msgstr ""
+
+#: imio/events/core/configure.zcml:32
+msgid "Installs the imio.events.core add-on."
+msgstr ""
+
+#: imio/portletpage/configure.zcml:29
+msgid "Installs the imio.portletpage add-on."
+msgstr ""
+
+#: imio/smartweb/policy/configure.zcml:26
+msgid "Installs the imio.smartweb.policy add-on."
+msgstr ""
+
+#: imio/smartweb/policy/configure.zcml:35
+msgid "Installs the imio.smartweb.policy demo contents and configuration"
+msgstr ""
+
+#: imio/portletpage/portlets/link/portlet.py:91
+msgid "Internal URL"
+msgstr "URL interne"
+
+#: imio/directory/core/contents/contact/content.py:187
+msgid "Internal note"
+msgstr "Note interne"
+
+#: imio/portletpage/portlets/selection/portlet.py:24
+msgid "Items"
+msgstr "Élements"
+
+#: imio/directory/core/contents/contact/content.py:56
+msgid "Label (Secretariat, Manager office, Sales,...)"
+msgstr "Label (Secrétariat, Bureau de la direction, Ventes, ...)"
+
+#: imio/directory/core/contents/contact/content.py:36
+msgid "Label (direction, Main number,...)"
+msgstr "Label (direction, numéro principal, ...)"
+
+#: imio/smartweb/core/behaviors/subsite.py:19
+#: imio/smartweb/core/contents/folder/content.py:33
+#: imio/smartweb/core/contents/pages/footer/content.py:17
+msgid "Layout"
+msgstr ""
+
+#: imio/portletpage/portlets/collection/portlet.py:35
+msgid "Limit"
+msgstr "Limite"
+
+#: imio/portletpage/portlets/link/portlet.py:148
+msgid "Link"
+msgstr "Lien"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Link to Facebook"
+msgstr "Lien vers Facebook"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Link to your e-guichet"
+msgstr "Lien vers votre e-guichet"
+
+#: imio/portletpage/portlets/link/portlet.py:145
+msgid "Links"
+msgstr "Liens"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionLinks.xml
+msgid "Links section"
+msgstr "Section de liens"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionLinks.xml
+msgid "Links section for a page"
+msgstr "Section de liens pour une page"
+
+#: imio/portletpage/portlets/templates/list.py:18
+msgid "List"
+msgstr "Liste"
+
+#: imio/portletpage/portlets/link/portlet.py:146
+msgid "List of links"
+msgstr "Liste de liens"
+
+#: imio/directory/core/contents/contact/content.py:217
+#: imio/directory/core/contents/entity/content.py:23
+#: imio/smartweb/core/behaviors/subsite.py:24
+msgid "Logo"
+msgstr "Logo"
+
+#: imio/smartweb/core/vocabularies.py:77
+msgid "Logo and title"
+msgstr "Logo et titre"
+
+#: imio/smartweb/core/behaviors/subsite.py:30
+msgid "Logo display"
+msgstr "Type d'affichage du logo"
+
+#: imio/smartweb/core/contents/sections/macros.pt:48
+msgid "Manage section contents"
+msgstr "Contenus"
+
+#: imio/smartweb/core/behaviors/subsite.py:38
+msgid "Menu depth"
+msgstr "Profondeur du menu"
+
+#: imio/directory/core/vocabularies.py:53
+msgid "Mission (passports, reception, parking, etc.)"
+msgstr "Mission (passeports, accueil, stationnement, etc.)"
+
+#: imio/directory/core/vocabularies.py:66
+msgid "Mobile"
+msgstr "GSM"
+
+#: imio/directory/core/contents/contact/content.py:49
+msgid "Number"
+msgstr "Numéro"
+
+#: imio/smartweb/policy/utils.py:35
+msgid "One click finding"
+msgstr "En un clic"
+
+#: imio/smartweb/core/contents/pages/procedure/content.py:33
+msgid "Only one procedure field can be filled !"
+msgstr "Un seul champ \"démarche\" peut être rempli !"
+
+#: imio/events/core/profiles/default/types/imio.events.Page.xml
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Page.xml
+msgid "Page"
+msgstr "Page"
+
+#: imio/smartweb/core/behaviors/configure.zcml:13
+msgid "Parent listing"
+msgstr "Listing du parent"
+
+#: imio/directory/core/vocabularies.py:81
+msgid "Personal email"
+msgstr "E-mail personnel"
+
+#: imio/directory/core/vocabularies.py:67
+msgid "Personal phone"
+msgstr "Téléphone personnel"
+
+#: imio/directory/core/contents/contact/content.py:120
+msgid "Phones"
+msgstr "Téléphones"
+
+#: imio/portletpage/profiles/default/types/PortletPage.xml
+msgid "PortletPage"
+msgstr ""
+
+#: imio/directory/core/vocabularies.py:49
+msgid "Position (mayor, alderman, advisor, director, head of department, etc.)"
+msgstr "Fonction (bourgmestre, échevin, conseiller, directeur, chef de service, etc.)"
+
+#: imio/smartweb/core/profiles/default/actions.xml
+msgid "Preview"
+msgstr "Prévisualiser"
+
+#: imio/directory/core/contents/contact/content.py:154
+msgid "Private contact informations"
+msgstr "Coordonnées privées"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Procedure.xml
+msgid "Procedure"
+msgstr "Démarche"
+
+#: imio/smartweb/core/contents/pages/procedure/content.py:25
+msgid "Procedure url"
+msgstr "Lien vers la démarche"
+
+#: imio/smartweb/core/behaviors/configure.zcml:20
+msgid "Quick access"
+msgstr "Accès rapide"
+
+#: imio/smartweb/core/contents/sections/contact/content.py:30
+msgid "Related contact"
+msgstr "Contact lié"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionText.xml
+msgid "Rich text section for a page"
+msgstr "Création d'une section de texte dans votre page."
+
+#: imio/smartweb/core/vocabularies.py:92
+msgid "Schedule"
+msgstr "Horaires"
+
+#: imio/smartweb/core/browser/controlpanel.py:22
+msgid "Secret key"
+msgstr "Clé secrète"
+
+#: imio/smartweb/core/browser/controlpanel.py:23
+msgid "Secret key to use API"
+msgstr "Clé secrète pour utiliser l'API"
+
+#: imio/smartweb/core/contents/sections/views.py:36
+msgid "Section title has been hidden"
+msgstr "Le titre de la section a été caché (pour le visiteur)"
+
+#: imio/smartweb/core/contents/sections/views.py:43
+msgid "Section title has been shown"
+msgstr "Le titre de la section a été affiché"
+
+#: imio/portletpage/portlets/selection/portlet.py:25
+msgid "Select the items of you portlet"
+msgstr ""
+
+#: imio/smartweb/core/contents/sections/macros.pt:54
+msgid "Select view"
+msgstr "Affichage"
+
+#: imio/smartweb/core/contents/folder/content.py:25
+msgid "Set Default page"
+msgstr "Définir la page par défaut"
+
+#: imio/smartweb/core/contents/pages/footer/content.py:22
+#: imio/smartweb/core/contents/sections/base.py:33
+msgid "Set a background image"
+msgstr "Définir une image de fond"
+
+#: imio/smartweb/core/contents/sections/macros.pt:32
+msgid "Show title"
+msgstr "Afficher le titre"
+
+#: imio/smartweb/core/browser/controlpanel.py:31
+msgid "Smartweb Settings"
+msgstr "Paramètrage de smartweb"
+
+#: imio/portletpage/portlets/collection/portlet.py:36
+msgid "Specify the maximum number of items to show in the portlet."
+msgstr "Spécifier le nombre maximum d'éléments à voir dans la portlet"
+
+#: imio/directory/core/vocabularies.py:43
+msgid "Standard (municipal administration, municipal service, CPAS, shop, etc.)"
+msgstr "Standard (administration communale, service communal, CPAS, commerce, etc.)"
+
+#: imio/events/core/profiles/default/types/imio.events.Page.xml
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.Page.xml
+msgid "Standard Page content type to print informations"
+msgstr "Page standard pour afficher de l'information"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:19
+msgid "Standard view"
+msgstr "Affichage standard"
+
+#: imio/directory/core/contents/contact/content.py:90
+msgid "Street"
+msgstr "Rue"
+
+#: imio/smartweb/core/behaviors/configure.zcml:28
+msgid "Subsite"
+msgstr "Sous-site"
+
+#: imio/smartweb/core/browser/subsite/settings.py:32
+msgid "Subsite has been disabled"
+msgstr "Le mode sous-site a été désactivé."
+
+#: imio/smartweb/core/browser/subsite/settings.py:22
+msgid "Subsite has been successfully activated"
+msgstr "Le mode sous-site a été activé avec succès"
+
+#: imio/directory/core/contents/contact/content.py:215
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:63
+msgid "Summary view"
+msgstr "Affichage liste"
+
+#: imio/smartweb/core/contents/folder/configure.zcml:74
+msgid "Summary view with images"
+msgstr "Affichage liste avec images"
+
+#: imio/smartweb/core/contents/sections/links/configure.zcml:15
+msgid "Table view"
+msgstr "Affichage tableau"
+
+#: imio/portletpage/portlets/collection/portlet.py:28
+msgid "Target collection"
+msgstr ""
+
+#: imio/portletpage/portlets/collection/portlet.py:41
+#: imio/portletpage/portlets/link/portlet.py:132
+#: imio/portletpage/portlets/selection/portlet.py:31
+msgid "Template"
+msgstr ""
+
+#: imio/portletpage/portlets/text/portlet.py:21
+msgid "Text"
+msgstr "Texte"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionText.xml
+msgid "Text section"
+msgstr "Section de texte"
+
+#: imio/portletpage/portlets/text/portlet.py:21
+msgid "The text to render"
+msgstr "Texte à afficher"
+
+#: imio/smartweb/core/vocabularies.py:60
+msgid "Third of width"
+msgstr "Tiers de la page"
+
+#: imio/portletpage/contents/portletpage/content.py:18
+#: imio/portletpage/portlets/collection/portlet.py:20
+#: imio/portletpage/portlets/link/portlet.py:89
+msgid "Title"
+msgstr "Titre"
+
+#: imio/smartweb/core/vocabularies.py:89
+msgid "Title and Subtitle"
+msgstr "Titre et Sous-titre"
+
+#: imio/events/core/behaviors/topics.py:16
+#: imio/events/core/setuphandlers.py:31
+msgid "Topics"
+msgstr "Sujets"
+
+#: imio/directory/core/vocabularies.py:95
+msgid "Twitter"
+msgstr "Twitter"
+
+#: imio/smartweb/core/vocabularies.py:62
+msgid "Two third of width"
+msgstr "Deux tiers de la page"
+
+#: imio/directory/core/contents/contact/content.py:42
+msgid "Type"
+msgstr "Type"
+
+#: imio/directory/core/contents/contact/content.py:140
+msgid "URLs"
+msgstr "URLs"
+
+#: imio/directory/policy/configure.zcml:34
+msgid "Uninstalls the imio.directory.policy add-on."
+msgstr ""
+
+#: imio/events/core/configure.zcml:41
+msgid "Uninstalls the imio.events.core add-on."
+msgstr ""
+
+#: imio/portletpage/configure.zcml:38
+msgid "Uninstalls the imio.portletpage add-on."
+msgstr ""
+
+#: imio/smartweb/policy/configure.zcml:44
+msgid "Uninstalls the imio.smartweb.policy add-on."
+msgstr ""
+
+#: imio/directory/core/contents/contact/content.py:80
+msgid "Url"
+msgstr "URL"
+
+#: imio/smartweb/core/browser/controlpanel.py:14
+msgid "Url to get forms from your e-guichet"
+msgstr "Url de récupération des démarches de votre e-guichet"
+
+#: imio/directory/core/contents/contact/content.py:118
+msgid "VAT number"
+msgstr "Numéro d'entreprise / TVA"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionVideo.xml
+msgid "Video section"
+msgstr "Section vidéo"
+
+#: imio/smartweb/core/profiles/default/types/imio.smartweb.SectionVideo.xml
+msgid "Video section for a page"
+msgstr "Création d'une section contenant une vidéo qui sera inclue dans votre page."
+
+#: imio/smartweb/core/contents/sections/video/content.py:14
+msgid "Video url"
+msgstr "Lien vers la vidéo"
+
+#: imio/smartweb/core/contents/sections/video/content.py:15
+msgid "Video url from youtube, vimeo"
+msgstr "Lien vers une vidéo Youtube ou Vimeo"
+
+#: imio/smartweb/core/contents/sections/contact/content.py:17
+msgid "Visible blocks"
+msgstr "Blocs visibles"
+
+#: imio/directory/core/vocabularies.py:96
+msgid "Website"
+msgstr "Site web"
+
+#: imio/directory/core/vocabularies.py:82
+msgid "Work email"
+msgstr "E-mail professionnel"
+
+#: imio/directory/core/vocabularies.py:68
+msgid "Work phone"
+msgstr "Téléphone professionnel"
+
+#: imio/smartweb/core/contents/folder/element_view.pt:6
+msgid "Your current folder default view is"
+msgstr "L'élément vue par défaut du dossier est"
+
+#: imio/directory/core/contents/entity/content.py:18
+msgid "Zip codes and cities"
+msgstr "Codes postaux et communes"
+
+#: imio/directory/core/contents/contact/content.py:93
+msgid "Zipcode"
+msgstr "Code postal"
+
+#: imio/directory/policy/configure.zcml:25
+msgid "imio.directory.policy"
+msgstr ""
+
+#: imio/directory/policy/configure.zcml:34
+msgid "imio.directory.policy (uninstall)"
+msgstr ""
+
+#: imio/events/core/configure.zcml:32
+msgid "imio.events.core"
+msgstr ""
+
+#: imio/events/core/configure.zcml:41
+msgid "imio.events.core (uninstall)"
+msgstr ""
+
+#: imio/portletpage/configure.zcml:29
+msgid "imio.portletpage"
+msgstr ""
+
+#: imio/portletpage/configure.zcml:38
+msgid "imio.portletpage (uninstall)"
+msgstr ""
+
+#: imio/smartweb/policy/configure.zcml:26
+msgid "imio.smartweb.policy"
+msgstr ""
+
+#: imio/smartweb/policy/configure.zcml:44
+msgid "imio.smartweb.policy (uninstall)"
+msgstr ""
+
+#. Default: "More…"
+#: imio/portletpage/portlets/templates/list.pt:25
+msgid "more_url"
+msgstr ""
