@@ -1,0 +1,13 @@
+README.md
+setup.py
+pulumi_globalgcpcloudrun/__init__.py
+pulumi_globalgcpcloudrun/_utilities.py
+pulumi_globalgcpcloudrun/deployment.py
+pulumi_globalgcpcloudrun/provider.py
+pulumi_globalgcpcloudrun/py.typed
+pulumi_globalgcpcloudrun.egg-info/PKG-INFO
+pulumi_globalgcpcloudrun.egg-info/SOURCES.txt
+pulumi_globalgcpcloudrun.egg-info/dependency_links.txt
+pulumi_globalgcpcloudrun.egg-info/not-zip-safe
+pulumi_globalgcpcloudrun.egg-info/requires.txt
+pulumi_globalgcpcloudrun.egg-info/top_level.txt
