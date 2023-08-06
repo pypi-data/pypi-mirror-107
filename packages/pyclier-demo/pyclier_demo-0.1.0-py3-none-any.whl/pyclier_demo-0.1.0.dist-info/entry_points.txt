@@ -1,0 +1,3 @@
+[console_scripts]
+pyclier-demo = pyclier_demo.cli:main
+
