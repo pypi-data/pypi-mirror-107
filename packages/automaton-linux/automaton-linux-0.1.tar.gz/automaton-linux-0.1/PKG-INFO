@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: automaton-linux
+Version: 0.1
+Summary: An automation library for Linux using Uinput.
+Home-page: https://github.com/Abdul-Muiz-Iqbal/Automaton/
+Author: Abdul Muiz Iqbal
+Author-email: parkermuiz0@gmail.com
+License: MIT
+Download-URL: https://github.com/Abdul-Muiz-Iqbal/Automaton/archive/refs/tags/0.3.tar.gz
+Description: UNKNOWN
+Keywords: automation,linux,uinput
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
