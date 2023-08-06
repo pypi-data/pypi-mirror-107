@@ -1,0 +1,16 @@
+dlshogi/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+dlshogi/common.py,sha256=ma1MMLPUHhhI26wtISffTFf3DZiavh4hH9Y9rpB_jxo,1180
+dlshogi/convert_model_to_onnx.py,sha256=-J7c_BgStNjEnLqUPvFcjkLNS8qhaIjsWiv_R2dUZUo,2909
+dlshogi/data_loader.py,sha256=IC_3lYxEgMhE7HfILdWjsLG4x1aI7ZUnMIhH8EAajYc,7804
+dlshogi/init_model.py,sha256=lZUbOAAiSthrcnauL5HNJVBmRERO1las5W7npSJAejA,636
+dlshogi/serializers.py,sha256=7oi-3yWm9IXySlYD0CvdfORvk6x0vz5jJxZw8k3A6Tk,1860
+dlshogi/swa.py,sha256=39vL8nk_6hXKu3z2mULCjaAuSd8yynGnGu49DXq_JS8,13580
+dlshogi/test.py,sha256=qwLFtA0RonJPbFC4T_Z82jnisADdaHCqSWSflFwK0fU,3949
+dlshogi/train_hcpe.py,sha256=O2B-QQy4OJGvpWphWymfJI4twIzNfJOJtexUQdEtBl4,10297
+dlshogi/train_hcpe2.py,sha256=9K-3B-hAZ87UvtPIpY9wD94B9M20tszJ1jgyc6PKo1Q,11013
+dlshogi/train_hcpe3.py,sha256=6msSaWEMVJBAsSFUQeHKZqCUNfAT95Sns8RECJODeug,12980
+dlshogi/transfer_policy_value.py,sha256=_BXgq52c7OyHsqx51wTojQkG_Kjt1rYOgzcgZxp9E9k,961
+dlshogi-0.0.1.dist-info/METADATA,sha256=Hy0zLZvaFVXHnjdTyVyWfya98H_0ttfVSHSKveITY4I,405
+dlshogi-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+dlshogi-0.0.1.dist-info/top_level.txt,sha256=H8zoEPlO50wU-dUrD2C-7WcnwZCokK6DULwzwjKouzs,8
+dlshogi-0.0.1.dist-info/RECORD,,
