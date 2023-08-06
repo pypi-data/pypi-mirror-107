@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mrkd/__init__.py
+mrkd/__main__.py
+mrkd/template.html
+mrkd.egg-info/PKG-INFO
+mrkd.egg-info/SOURCES.txt
+mrkd.egg-info/dependency_links.txt
+mrkd.egg-info/entry_points.txt
+mrkd.egg-info/requires.txt
+mrkd.egg-info/top_level.txt
