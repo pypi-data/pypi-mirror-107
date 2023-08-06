@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: flake8_loopy
+Version: 1.0.0
+Summary: flake8 plugin to check code quality in loops
+Home-page: https://github.com/bdscharf/flake8_loopy
+Author: Benjamin Scharf
+Author-email: benjamin.d.scharf@gmail.com
+License: MIT
+Download-URL: https://github.com/bdscharf/flake8_loopy/archive/refs/tags/v1.0.0.tar.gz
+Project-URL: Documentation, https://github.com/bdscharf/flake8_loopy/blob/main/README.md
+Project-URL: Source, https://github.com/bdscharf/flake8_loopy
+Project-URL: Tracker, https://github.com/bdscharf/flake8_loopy/issues
+Description: # flake8_loopy
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) ![GitHub](https://img.shields.io/github/license/bdscharf/flake8_loopy)
+        
+        basic code quality checks in loops
+        
+        ## checks
+        | error code      | description |
+        | ----------- | ----------- |
+        | LPY100      | unused variable created by ```enumerate()```: you probably do not need ```enumerate()```, or you should use ```range(len())``` instead      |
+        
+        ## todo
+        1) check for duplicated variable name in inner loop(s)
+        
+        2) iteration with index where index is only used to get an item (should iterate directly over items)
+        
+        
+        ## notes
+        this plugin is currently mostly untested and should be considered experimental. please report false positives / errors if found!
+        
+Keywords: flake8
+Platform: UNKNOWN
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/markdown
