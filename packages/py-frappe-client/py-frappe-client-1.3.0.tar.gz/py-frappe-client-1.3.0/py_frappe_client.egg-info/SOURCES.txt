@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+frappe_client/__init__.py
+frappe_client/frappe_client.py
+frappe_client/frappe_exceptions.py
+py_frappe_client.egg-info/PKG-INFO
+py_frappe_client.egg-info/SOURCES.txt
+py_frappe_client.egg-info/dependency_links.txt
+py_frappe_client.egg-info/requires.txt
+py_frappe_client.egg-info/top_level.txt
