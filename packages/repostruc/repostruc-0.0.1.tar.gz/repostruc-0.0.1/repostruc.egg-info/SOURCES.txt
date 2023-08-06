@@ -1,0 +1,14 @@
+README.md
+setup.py
+repostruc/__init__.py
+repostruc/argHandler.py
+repostruc/repostruc.py
+repostruc/returnUtils.py
+repostruc/treeUtils.py
+repostruc.egg-info/PKG-INFO
+repostruc.egg-info/SOURCES.txt
+repostruc.egg-info/dependency_links.txt
+repostruc.egg-info/entry_points.txt
+repostruc.egg-info/not-zip-safe
+repostruc.egg-info/requires.txt
+repostruc.egg-info/top_level.txt
