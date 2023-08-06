@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/helloworld_tspeer.egg-info/PKG-INFO
+src/helloworld_tspeer.egg-info/SOURCES.txt
+src/helloworld_tspeer.egg-info/dependency_links.txt
+src/helloworld_tspeer.egg-info/requires.txt
+src/helloworld_tspeer.egg-info/top_level.txt
+test/test_helloworld.py

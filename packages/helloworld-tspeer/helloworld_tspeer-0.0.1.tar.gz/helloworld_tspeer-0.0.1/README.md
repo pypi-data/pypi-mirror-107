@@ -1,0 +1,1 @@
+# Hello WorldA simple project to publish# developing Hello World'''bash$ pip install -e .[dev]'''
