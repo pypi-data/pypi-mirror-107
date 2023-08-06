@@ -1,0 +1,13 @@
+bookman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bookman/__main__.py,sha256=TOZ1gAEIaNy-usMmJTV2c7SmuSvfGAIiQGkIiysDdmQ,33
+bookman/bookman.py,sha256=6y6W3EHjfSfB82Zg-cAzI5AFETwP90aWMUAQCjVcXR4,1641
+bookman/controllers.py,sha256=U62nP7DrIDzYKe9JmEpi0DutNzogfnPG_kQm3bEyZPE,4290
+bookman/domains.py,sha256=pbh_mVf5rTiCUHeYX-QPPXN80oBOtwKahtFtAEwrcuQ,5185
+bookman/models.py,sha256=wJTHIiD8q9eEIHhvUx5PxhY7cdDayPnkaKNll5MbSAs,951
+bookman/services.py,sha256=jDJq0ffUWZOTrjYGRB0lXEhSFlol4OqXUjnHdquwmQU,1647
+bookman/settings.py,sha256=4jNf5_4ZSXyH1hGeTRUzeR2QqzCpw-NFvkw4uHondAk,53
+bookman/utils.py,sha256=zoixVxomuwoOCIDMS-TfFM-BVCCNS1ej0xetmt--mhI,605
+lodek_bookman-0.3.0.dist-info/entry_points.txt,sha256=RQuFvLUl-ZzLLdsb_NQO9poSnOASGVbIKsi2uH9eRy0,48
+lodek_bookman-0.3.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+lodek_bookman-0.3.0.dist-info/METADATA,sha256=7CynQroGrnk6eSWyB8jkmWztswGtxuihvqsGJvHQqpg,983
+lodek_bookman-0.3.0.dist-info/RECORD,,
