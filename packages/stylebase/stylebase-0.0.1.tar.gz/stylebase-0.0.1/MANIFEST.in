@@ -1,0 +1,2 @@
+recursive-include stylebase *
+global-exclude *.py[cod]
