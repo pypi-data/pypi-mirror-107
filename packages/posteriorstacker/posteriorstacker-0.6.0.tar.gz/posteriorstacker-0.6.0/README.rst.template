@@ -1,0 +1,181 @@
+PosteriorStacker
+==================
+
+Combines Bayesian analyses from many datasets.
+
+* `Introduction <#introduction>`_
+* `Method <#method>`_
+* `Tutorial <#tutorial>`_
+* `Output plot <#visualising-the-results>`_ and files
+
+Introduction
+-------------------
+
+Fitting a model to a data set gives 
+posterior probability distributions for a parameter of 
+interest. But how do you combine such probability
+distributions if you have many datasets?
+
+This question arises frequently in astronomy when
+analysing samples, and trying to infer sample
+distributions of some quantity.
+
+PosteriorStacker allows deriving sample
+distributions from posterior distributions from a number of objects.
+
+Method
+-------------------
+
+The method is described in Appendix A of
+`Baronchelli, Nandra & Buchner (2020) <https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.5284B/abstract>`_.
+
+.. image:: hbm.png
+
+The inputs are posterior samples of a single parameter,
+for a number of objects. These need to come from pre-existing analyses,
+under a flat parameter prior.
+
+The hierarchical Bayesian model (illustrated above) models the sample distribution
+as a Gaussian with unknown mean and standard deviation. The per-object
+parameters are also unknown, but integrated out numerically using
+the posterior samples.
+
+Additional to the Gaussian model (as in the paper), 
+a histogram model (using a flat Dirichlet prior distribution) is computed,
+which is non-parametric and more flexible.
+Both models are inferred using `UltraNest <https://johannesbuchner.github.io/UltraNest/>`_.
+
+The output is visualised in a publication-ready plot.
+
+Synopsis of the program::
+
+	$ posteriorstacker.py --help
+
+Licence
+--------
+AGPLv3 (see COPYING file). Contact me if you need a different licence.
+
+Install
+--------
+
+.. image:: https://img.shields.io/pypi/v/PosteriorStacker.svg
+        :target: https://pypi.python.org/pypi/PosteriorStacker
+
+.. image:: https://api.travis-ci.com/JohannesBuchner/PosteriorStacker.svg?branch=master&status=started
+        :target: https://travis-ci.com/github/JohannesBuchner/PosteriorStacker
+
+Install as usual::
+
+	pip install posteriorstacker
+
+This also installs the required `ultranest <https://johannesbuchner.github.io/UltraNest/>`_
+python package.
+
+Tutorial
+=================================
+
+In this tutorial you will learn:
+
+* How to find a intrinsic distribution from data with asymmetric error bars and upper limits
+* How to use PosteriorStacker
+
+Lets say we want to find the intrinsic velocity dispersion given some noisy data points.
+
+Our data are velocity measurements of a few globular cluster velocities in a dwarf galaxy,
+fitted with some model.
+
+Preparing the inputs
+---------------------
+
+For generating the demo input files and plots, run::
+
+	$ python3 tutorial/gendata.py
+
+You can also import posterior points from ultranest output folders::
+
+	$ load_ultranest_outputs.py --help
+
+Visualise the data
+----------------------
+
+Lets plot the data first to see what is going on:
+
+.. image:: example.png
+
+**Caveat on language**: These are not actually "the data" (which are counts on a CCD).
+Instead, this is a intermediate representation of a posterior/likelihood,
+assuming flat priors on velocity.
+
+Data properties
+-----------------
+
+This scatter plot shows:
+
+* large, sometimes asymmetric error bars
+* intrinsic scatter
+
+Resampling the data
+--------------------
+
+We could also represent each data point by a cloud of samples. Each point represents a possible true solution of that galaxy.
+
+.. image:: example-samples.png
+
+Running PosteriorStacker
+=========================
+
+We run the script with a range limit of +-100 km/s::
+
+	$ python3 posteriorstacker.py posteriorsamples.txt -80 +80 11 --name="Velocity [km/s]"
+
+Notice the parameters of the fitted gaussian distribution above.
+The standard deviation is quite small (which was the point of the original paper).
+A corner plot is at posteriorsamples.txt_out_gauss/plots/corner.pdf
+
+
+Visualising the results
+-----------------------
+
+Here is the output plot, converted to png for this tutorial with::
+
+	$ convert -density 100 posteriorsamples.txt_out.pdf out.png
+
+.. image:: out.png
+
+In black, we see the non-parametric fit.
+The red curve shows the gaussian model.
+
+The histogram model indicates that a more heavy-tailed distribution
+may be better.
+
+The error bars in gray is the result of naively averaging the posteriors.
+This is not a statistically meaningful procedure,
+but it can give you ideas what models 
+you may want to try for the sample distribution.
+
+Output files
+------------
+
+* posteriorsamples.txt_out.pdf contains a plot, 
+* posteriorsamples.txt_out_gauss contain the ultranest analyses output assuming a Gaussian distribution.
+* posteriorsamples.txt_out_flexN contain the ultranest analyses output assuming a histogram model.
+* The directories include diagnostic plots, corner plots and posterior samples of the distribution parameters.
+
+With these output files, you can:
+
+* plot the sample parameter distribution
+* report the mean and spread, and their uncertainties
+* split the sample by some parameter, and plot the sample mean as a function of that parameter.
+
+If you want to adjust the plot, just edit the script.
+
+If you want to try a different distribution, adapt the script.
+It uses `UltraNest <https://johannesbuchner.github.io/UltraNest/>`_
+for the inference.
+
+Take-aways
+-----------
+
+* PosteriorStacker computed a intrinsic distribution from a set of uncertain measurements
+* This tool can combine arbitrarily pre-existing analyses.
+* No assumptions about the posterior shapes were necessary -- multi-modal and asymmetric works fine.
