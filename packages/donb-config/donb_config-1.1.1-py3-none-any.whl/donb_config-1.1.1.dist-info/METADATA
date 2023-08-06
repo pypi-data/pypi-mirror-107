@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: donb-config
+Version: 1.1.1
+Summary: Creation of config files based either on toml or a table in a database
+Home-page: UNKNOWN
+Author: Don Beberto
+Author-email: bebert64@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: database
+Requires-Dist: peewee ; extra == 'database'
+Provides-Extra: toml
+Requires-Dist: toml ; extra == 'toml'
+
+UNKNOWN
+
+
