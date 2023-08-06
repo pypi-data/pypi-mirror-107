@@ -1,0 +1,10 @@
+README.md
+setup.py
+notutils/__init__.py
+notutils/notutils.py
+notutils.egg-info/PKG-INFO
+notutils.egg-info/SOURCES.txt
+notutils.egg-info/dependency_links.txt
+notutils.egg-info/entry_points.txt
+notutils.egg-info/requires.txt
+notutils.egg-info/top_level.txt
