@@ -1,0 +1,11 @@
+setup.py
+KDHexcel/KDHcalc.py
+KDHexcel/KDHcalcTest.py
+KDHexcel/KDHexcel.py
+KDHexcel/KDHexcelTest.py
+KDHexcel/__init__.py
+KDHexcel/jemu.csv
+KDHexcel.egg-info/PKG-INFO
+KDHexcel.egg-info/SOURCES.txt
+KDHexcel.egg-info/dependency_links.txt
+KDHexcel.egg-info/top_level.txt
