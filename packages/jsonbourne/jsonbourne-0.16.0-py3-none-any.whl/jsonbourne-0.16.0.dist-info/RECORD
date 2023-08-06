@@ -1,0 +1,16 @@
+david_webb.py,sha256=ebpQagDOVw54RvbE3wlyPRlwCh9TU7xxRXyiFBuVAb0,79
+JSON.py,sha256=NxbJuwv_EGpBRikxy0zPLqRWv0iBg6E8jf9Eitj0Ybk,924
+jsonbourne/__init__.py,sha256=gK-Odl-qXYQLwEinc0O4LeOgZN6B8qVWFnWSMH0ibF0,775
+jsonbourne/_meta.py,sha256=9fj76L6YSVsWLHgk5rdkuV2nHuMgj6gCc8QVifbycgs,151
+jsonbourne/core.py,sha256=ngx01WA7CFVo04u0VZVmcBUS1bGSlaFabvrkMj1AEyA,32001
+jsonbourne/fastapi.py,sha256=IPoGPnvjfsVOfO8H9hLguWQc-UZgF6_iCTFSC0fdoTw,459
+jsonbourne/helpers.py,sha256=PVsuZLH8JAji6_Et2PEurMHNJ1OkHQxltAOuYm7d6qE,1133
+jsonbourne/httpx.py,sha256=2BZfV7leGkQaJvFblxffc9eui_VbRgvBGQAxbf3p9_c,393
+jsonbourne/json.py,sha256=MR_BWue2IxeozMk1Ek0WkX-A6Gv6LeDW1KQz5n6XbLs,9531
+jsonbourne/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonbourne/pydantic.py,sha256=GLCm_sN24NvoCq2e1G77AS0x52msGm9gH9Ol2l1vfPQ,8546
+jsonbourne/types.py,sha256=yD0hnSe8tH8H_nZOWvx5OIJojK6-hnwPBpgxRiqZQBs,577
+jsonbourne-0.16.0.dist-info/LICENSE,sha256=PufEtkm3g2iPEYbJqg2lDjMQJ1FMm_oUPyeYPiN4PHE,1056
+jsonbourne-0.16.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+jsonbourne-0.16.0.dist-info/METADATA,sha256=ZT74T07y0eqXMXpE7hbTAnprp7m7R8G2iFQ1glpSRQA,1311
+jsonbourne-0.16.0.dist-info/RECORD,,
