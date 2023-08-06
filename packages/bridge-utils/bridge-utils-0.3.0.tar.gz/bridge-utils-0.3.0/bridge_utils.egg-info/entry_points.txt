@@ -1,0 +1,10 @@
+[console_scripts]
+lin2pbn = bridge_utils.lin2pbn.lin2pbn:main
+mdbridge2html = bridge_utils.mdbridge.mdbridge2html:main
+mdbridge2latex = bridge_utils.mdbridge.mdbridge2latex:main
+pbn2html = bridge_utils.pbn2html.pbn2html:main
+update4suit = bridge_utils.update4suit:main
+xin2pbn = bridge_utils.xin2pbn.xin2pbn:main
+zyj-convert = bridge_utils.zyj2convert:main
+zyj-update = bridge_utils.update4suit:main
+
