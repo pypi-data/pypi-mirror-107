@@ -1,0 +1,11 @@
+checkerboard/__init__.py,sha256=-HoQZS4HNz6qb3MsPI6BFC0dY-pk_D1Dzutd6Q6weIQ,215
+checkerboard/checkerboard.py,sha256=Ys_iEFRItSYbzkkTEkLdTPJFvCqONP3kEBrIDcUtNwI,3622
+checkerboard/utils.py,sha256=PqN7WD5hx7Xs4ViS6yL8gi-lHUnPxgadw9F3wQxmRoA,224
+checkerboard/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checkerboard/_tests/test_dock_widget.py,sha256=B8JT67v6qnZZ7MAD6y5ryt2N7pg_CGQHfMk7Q18KzQw,1607
+napari_checkerboard-0.0.3.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+napari_checkerboard-0.0.3.dist-info/METADATA,sha256=Jgl6gOuL6rbPXey6fc-R47jHq-kxwOV3NXP_XgSq-MM,3847
+napari_checkerboard-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_checkerboard-0.0.3.dist-info/entry_points.txt,sha256=2gTSzBK1uDBxwayC84b95jiKQsjZli5FhYtm6iDUSMI,52
+napari_checkerboard-0.0.3.dist-info/top_level.txt,sha256=zaurUQrhsNqX-fLkveNOlRIY4lXBv7NUd_dIm94xeRI,13
+napari_checkerboard-0.0.3.dist-info/RECORD,,
