@@ -1,0 +1,8 @@
+protoseq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protoseq/reader.py,sha256=S1pjbAXF0K5RLSoxwjQYuPu8tifWgSSBWFy3psxj1rU,1705
+protoseq/writer.py,sha256=xp4yw1idUSQ5sEoLhNmrWLciUp6dkieLsvaRa3EaiiA,937
+hadoop_protoseq-0.0.1.dist-info/LICENSE,sha256=ClXK8_VSbgIVfCx7xKw8n47MLxCFTvhKPzvAhLBinNw,1076
+hadoop_protoseq-0.0.1.dist-info/METADATA,sha256=mBm0NqhMRQAr8V-TGOKzvvwfCfItAYFkYDCoXDYZK78,4414
+hadoop_protoseq-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hadoop_protoseq-0.0.1.dist-info/top_level.txt,sha256=qafvpzD0xhdKdVTwxjeawC6Q-8nr-5yY72UJ4RTRsSM,9
+hadoop_protoseq-0.0.1.dist-info/RECORD,,
