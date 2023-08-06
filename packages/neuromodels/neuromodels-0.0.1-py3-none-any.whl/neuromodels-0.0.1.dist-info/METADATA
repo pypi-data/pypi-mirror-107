@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: neuromodels
+Version: 0.0.1
+Summary: Computational neuroscience models and model tools.
+Home-page: https://github.com/nicolossus/neuromodels
+Author: Nicolai Haug
+Author-email: prof.haug@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: flake8 (>=3.9.2) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# neuromodels
+
+[![Tests](https://github.com/nicolossus/neuromodels/workflows/Tests/badge.svg?branch=main)](https://github.com/nicolossus/neuromodels/actions)
+[![codecov](https://codecov.io/gh/nicolossus/neuromodels/branch/main/graph/badge.svg)](https://codecov.io/gh/nicolossus/neuromodels)
+[![GitHub license](https://img.shields.io/github/license/nicolossus/neuromodels)](https://github.com/nicolossus/neuromodels/blob/master/LICENSE)
+
+Computational neuroscience models and analysis tools.
+
+
