@@ -1,0 +1,212 @@
+{% extends "base/page.html" %}
+{% load crispy_forms_tags %}
+{% load my_filters %}
+{% load static %}
+{% block page_title %}Collection > {{ collection.name }}{% endblock %}
+{% block css %}
+<style>
+code {
+    color: rgb(0, 123, 255);
+    display: inline-block;
+    max-width: 1400px;
+    padding: 10px;
+}
+
+td.details-control {
+    background: url("{% static 'img/details_open.png' %}") no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url("{% static 'img/details_close.png' %}") no-repeat center center;
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="row">
+    {% if workflow.dag %}<div class="col-md-4">
+        <div class="card">
+           <div class="card-body">
+           {{ workflow.dag | safe }}
+           </div>
+        </div>
+    </div>{% endif %}
+    <div class="col-md-{% if workflow.dag %}8{% else %}12{% endif %}">
+        <div class="card">
+           <div class="card-body">
+               <div class="row" style="padding-bottom:20px">
+                   <div class="col-md-12">
+                       {% if workflow.has_report %}<a target="_blank" class="btn btn-primary btn-sm" href="{% url 'main:view_workflow_report' workflow.id %}">View Report</a>{% endif %}
+                       <a class="btn btn-danger btn-sm" style="float:right;" id="delete-workflow">DELETE</a>
+                       <a class="btn btn-warning btn-sm" style="float:right;" id="cancel-workflow" {% if workflow.status == "RUNNING" %}{% else %}disabled{% endif %}>CANCEL</a>
+                       <a class="btn btn-primary btn-sm" style="float:right; margin-right:2px" href="{% url 'main:edit_workflow' workflow.id %}">EDIT</a>
+                       <a class="btn btn-primary btn-sm" style="float:right; margin-right:2px" id="run-workflow" href="{% url 'main:run_workflow' workflow.id request.user.id %}" {% if workflow.status == "RUNNING" %}disabled{% endif %}>RE-RUN</a>
+                   </div>      
+               </div>
+           <table class="tablesorter table table-striped" width="100%">
+              <tbody>
+                   {% if workflow.snakefile %}<tr>
+                      <td>Snakefile</td>
+                      <td>{{ workflow.snakefile }}</td>
+                   </tr>{% endif %}
+                   {% if workflow.workdir %}<tr>
+                      <td>Workdir</td>
+                      <td>{{ workflow.workdir }}</td>
+                   </tr>{% endif %}
+                   {% if workflow.command %}<tr>
+                      <td>Command</td>
+                      <td><code>{{ workflow.command }}</code></td>
+                   </tr>{% endif %}
+                   <tr>
+                      <td>Return Code</td>
+                      <td>{{ workflow.retval }}</td>
+                   </tr>
+                   {% if request.user.is_authenticated and request.user in workflow.owners.all %}<tr>
+                      <td>WMS_MONITOR_TOKEN</td>
+                      <td><code>{{ request.user.token }}</code></td>
+                   </tr>
+                   <tr>
+                      <td>Command Line Interaction</td>
+                      <td><p>To interact with this workflow from the command line, export this variable and provide the following extra arguments</p> <br><br>
+<code>--wms-monitor {{ DOMAIN }} --wms-monitor-arg id={{ workflow.id }}</code></td>
+                   </tr>{% endif %}
+              </tbody>
+           </table>              
+           </div>
+        </div>
+    </div>
+</div>
+
+{% if workflow.error or workflow.output %}<div class="row">
+    <div class="col">
+        <div class="card">
+           <div class="card-body">
+               <div class="row">
+                 {% if workflow.error %}<p id="workflow-error" class="alert alert-info" style="width:100%">{{ workflow.error | safe }}</p>{% endif %}
+                 {% if workflow.output %}<p id="workflow-output" class="alert alert-info" style="width:100%">{{ workflow.output | safe }}</p>{% endif %}
+               </div>
+           </div>
+        </div>
+    </div>
+</div>{% endif %}
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+           <div class="card-body">
+               <div class="row">
+                   <div class="col-md-12">
+                   <p><small>This table updates every {{ WORKFLOW_UPDATE_SECONDS }} seconds</small></p>
+                   {% include "workflows/workflow_run_table.html" %}
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function() {
+
+$("#delete-workflow").click(function(){
+    var r = confirm("Are you sure you want to delete this workflow? This action cannot be undone.");
+    if (r == true) {
+        document.location = "{% url 'main:delete_workflow' workflow.id %}"
+    }
+})
+
+$("#cancel-workflow").click(function(){
+    var r = confirm("Are you sure you want to cancel this workflow? Cancelling can take up to 10 seconds.");
+    if (r == true) {
+        document.location = "{% url 'main:cancel_workflow' workflow.id %}"
+    }
+})
+
+
+function format (d) {
+    var row = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px; width:100%">'
+    $.each(d, function(i, n){
+        if ((n!="") && (i!='level')) {
+            row = row + "<tr style='width:100%'><td>" + i + "</td><td>" + n + "</td></tr>"
+        }
+    });
+    return row + '</table>';
+}
+
+    var table = $('#taskTable').DataTable( {
+        "ajax": "{% url 'main:workflow_statuses' workflow.id  %}",
+        "pageLength": 200,
+        "lengthMenu": [[50,100,200,300], [50,100,200,300]],
+        "columns": [
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": '',
+                "width": "5%"
+            },
+            { "data": "order"},
+            { "data": "level"},
+            { "data": "job" },
+            { "data": "msg" }
+        ],
+        "order": [[1, 'asc']]
+    } );
+
+    // Add event listener for opening and closing details
+    $('#taskTable tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    });
+
+
+// Channel to update table automatically
+var loc = window.location;
+var wsStart = 'ws://';
+if (loc.protocol == 'https:') {
+    wsStart = 'wss://'
+}
+var endpoint = wsStart + loc.host + "/ws/workflows/{{ workflow.id }}/";
+console.log(endpoint);
+var socket = new WebSocket(endpoint);
+
+// When the workflow statuses are updated, updat the table
+socket.onmessage = function(e){
+    var data = JSON.parse(e.data)
+    console.log(data)
+    if (data['status'] == "success") {
+        $('#taskTable').dataTable().fnClearTable();
+        $('#taskTable').dataTable().fnAddData(data['text']['statuses']);
+        $("#workflow-output").html(data['text']['output'])         
+        $("#workflow-error").html(data['text']['error'])         
+        if (data['retval'] == 0) {
+            $("#run-workflow").attr('disabled', false);
+            $("#cancel-workflow").attr('disabled', true);
+        }
+    }
+};
+socket.onopen = function(e){
+    console.log("open", e);
+};
+socket.onerror = function(e){
+    console.log("error", e)
+};
+socket.onclose = function(e){
+    console.log("close", e)
+};
+
+});
+</script>
+{% endblock %}

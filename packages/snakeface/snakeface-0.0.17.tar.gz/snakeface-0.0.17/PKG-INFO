@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: snakeface
+Version: 0.0.17
+Summary: Snakemake Interface
+Home-page: https://github.com/snakemake/snakeface
+Author: Vanessa Sochat
+Author-email: vsochat@stanford.edu
+Maintainer: Vanessa Sochat
+Maintainer-email: vsochat@stanford.edu
+License: LICENSE
+Description: # Snakemake Interface (snakeface)
+        
+        ![img/snakeface.png](img/snakeface.png)
+        
+        Snakeface is an interface for snakemake. If you are an individual, you can run
+        it locally as a notebook to run and manage workflows. If you are an institution or group,
+        you (will be able to) deploy a shared instance for others to use. To get started, please see
+        the [documentation](https://snakemake.github.io/snakeface) (not created yet).
+        
+        **Snakeface is under development!** We are developing deployment types and features
+        as they are requested. Currently, a single user notebook deployment is supported.
+        Please [open an issue](https://github.com/snakemake/snakeface/issues) to request a feature, bug fix, or different deployment type.
+        See the [documentation](https://snakemake.github.io/snakeface/) to get started.
+        
+        ## Thanks
+        
+        Snakeface wouldn't be possible without several open source libraries!
+        
+         - [Django](https://github.com/django/django) "The web framework for perfectionists" (and dinosaurs) 
+        
+        ## License
+        
+         * Free software: MPL 2.0 License
+        
+        
+Keywords: snakemake,workflow management,pipeline,interface,workflows
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: email

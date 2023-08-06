@@ -1,0 +1,3 @@
+[console_scripts]
+snakeface = snakeface.client:main
+
