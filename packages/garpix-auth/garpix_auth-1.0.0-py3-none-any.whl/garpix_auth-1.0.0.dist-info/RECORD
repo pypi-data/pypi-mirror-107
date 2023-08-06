@@ -1,0 +1,15 @@
+garpix_auth/MANIFEST.in,sha256=1DV8KCsEmu5Im0B2vozgwPsoI01ZP65FTNDvIkrmfsk,63
+garpix_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+garpix_auth/apps.py,sha256=bwiZMtU2J5e63Msi828Hd7wknoW3O-GjOINtyE4ld1w,96
+garpix_auth/settings.py,sha256=JIt8V6J2DwWiNnSSPX_qJePQhOweGQmBi2Dwu5ZOdv8,938
+garpix_auth/setup.py,sha256=W_4R_LHVhcdsQEIT95aJ7vnVRue48dgJi6spuucfJFM,1022
+garpix_auth/views.py,sha256=5mOz57SesZ56eJurF6EHUkTbwyE1QH1ssL2zMwy_3lQ,1061
+garpix_auth/models/__init__.py,sha256=qRQbrW8JLR3U-D3_ngZlUDyN-wT-DFqxsDLi_lfQYW8,57
+garpix_auth/models/backend.py,sha256=g6yaukMWcWVend4SKrp0yJ_QptoWwoo1cZG2G4y-HpE,672
+garpix_auth/rest/auth_token_serializer.py,sha256=9MGYA_LP5S7xVzVjKmyAgjrgHPZEWfx4AlbKDwsrfq4,1277
+garpix_auth/rest/authentication.py,sha256=0OW6q_9q0ZfoRzuF5oP1DuRvfEVm4TmOZuhsswNEfT4,1399
+garpix_auth/rest/obtain_auth_token.py,sha256=lPli5w0YdH_Te2Z_vsVrpIfWf0qsASc1SWoI_ZXQAOU,944
+garpix_auth-1.0.0.dist-info/METADATA,sha256=Mrji2oOjNWgWNi4n10iCps5KDeoSoQAnCihazRtORaA,864
+garpix_auth-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+garpix_auth-1.0.0.dist-info/top_level.txt,sha256=-YLfBNyP_W0DLQKCuyQSoiq6hbZnr3vnXWpkPpsmiXQ,12
+garpix_auth-1.0.0.dist-info/RECORD,,
