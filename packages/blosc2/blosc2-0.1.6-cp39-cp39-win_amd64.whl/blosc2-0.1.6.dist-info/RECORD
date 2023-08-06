@@ -1,0 +1,16 @@
+blosc2/__init__.py,sha256=yRq3vH-025ZGoVDiltlFUvUtUF2d-DitYBKHvat-1Y8,2120
+blosc2/blosc2_ext.cp39-win_amd64.pyd,sha256=dzjzskevmzCXM-qvYU2luerBtf15nY7dfm8WmvuuxmE,942080
+blosc2/utils.py,sha256=glc8jS1xSRyN1_VRYOylognxctHvXdo6irxm9UGTpsw,19605
+blosc2/version.py,sha256=js_m8PQ2W0sqE2u8EbnwOj4Lf2mj4pZf8gFa9fJIYQQ,23
+blosc2-0.1.6.data/data/bin/libblosc2.dll,sha256=ybq7qJujUN5stP2cUDhYfgtn-xRNhem9ag1LbAnqIJc,884736
+blosc2-0.1.6.data/data/include/blosc2-common.h,sha256=mgzzt6E3_VOUnFa2dh5Fe4ys8ZTQtXMDE1jLrwYiLMs,2950
+blosc2-0.1.6.data/data/include/blosc2-export.h,sha256=W6zDGVki6iszmF5e-S5jOSobL5eDLdPwfiu9pctzhGE,1758
+blosc2-0.1.6.data/data/include/blosc2.h,sha256=INXJ7n87A7NBtKeUcdt7qkBjOLuYHmpFovGjgGyqzoI,78345
+blosc2-0.1.6.data/data/lib/blosc2.lib,sha256=ebnht083lDZDOxc1zcC0Wp_Hxw8guKfywCVSSedVsc0,19100
+blosc2-0.1.6.data/data/lib/libblosc2.lib,sha256=7qPbgoeooguwRuscN4IjFsnFB0H46KR7D7FDUsM3Q4Y,2584840
+blosc2-0.1.6.data/data/lib/pkgconfig/blosc.pc,sha256=RIZMQpQ_wbmhleyy8N039BWcIeTajzvryWhvyHPa0A8,423
+blosc2-0.1.6.dist-info/LICENSE,sha256=2Uha8PI6bgViiiE5nW8AHg3_pbnAOjiL9zp3dxYR6u4,1651
+blosc2-0.1.6.dist-info/METADATA,sha256=R4qorIem00k4iGhZ95q0R3hwTvZMLltpp0p_KxM0v1c,1029
+blosc2-0.1.6.dist-info/WHEEL,sha256=5aG_HE5BgvfaHxX2klMJwmkURH-f3a4GIt9aTEktq5o,94
+blosc2-0.1.6.dist-info/top_level.txt,sha256=4xhCPjekmAas6rXRnzRerUfeEzP_RhpgmKzCmru5XFM,7
+blosc2-0.1.6.dist-info/RECORD,,
