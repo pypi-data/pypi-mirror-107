@@ -1,0 +1,11 @@
+# $service is the service name in docker-compose.yml file.
+# If is not in arguments the CLI will use the first service with build attribute in docker-compose.yml file
+
+ps=docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+up=docker-compose up
+down=docker-compose down
+exec=docker-compose exec $service
+bash=docker-compose exec $service bash
+stop=docker-compose stop
+logs=docker-compose logs $service
+run=docker-compose run --rm $service
