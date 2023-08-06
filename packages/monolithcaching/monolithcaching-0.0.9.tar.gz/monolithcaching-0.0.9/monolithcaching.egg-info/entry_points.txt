@@ -1,0 +1,3 @@
+[console_scripts]
+caching-hello = monolithcaching.console_commands.hello:print_logo
+
