@@ -1,0 +1,39 @@
+v0.4.1, 2021-05-26 -- Fix bug in Tajima's D when not using Scipy.
+ * Fixed a bug causing exceptions to be raised when calculating Tajima's D without Scipy installed. This did not affect calculated results (if no exception was raised).
+
+v0.4.0, 2019-03-13 -- Speed up population stats calculations
+ * Add faster implementation of common population stats that previously used DendroPy implementation.
+ * Add warning when uncertain base pairs are used with population stats.
+ * Fix minor bugs with loading/using multiple sequence alignments from raw Fasta format.
+
+v0.3.0, 2018-11-29 -- Improved Memory Management. Added tools for protein sequence alignments.
+ * Add ability to use protein multiple sequence alignments as input data. Useful for Shannon Entropy calculation.
+ * Improve memory management when calculating nearby residues. No longer creates a Euclidean distance matrix, but uses a KDTree instead.
+
+v0.2.4, 2017-12-14 -- Added calculation of Shannon entropy
+ * Added ability to calculate Shannon entropy for each position in a structure using a multiple sequence alignment.
+
+v0.2.3, 2017-10-26 -- Add scipy distance calculation back in as an option if scipy present.
+ * Added scipy distance calculation back. Numpy implementation was a memory hog, so will use scipy if present.
+
+v0.2.2, 2017-10-24 -- Remove Scipy dependency and refactor calls to DSSP
+ * Removed SciPy dependency, which simplifies install process.
+ * DSSP is only called if it is required, for example when there is a need to calculate secondary structure or solvent accessibility.
+ * Also removed redundant methods for writing output data to file.
+ * Updated README to reflect optional requirements for BLAST+, Exonerate and DSSP.
+
+v0.2.1post1, 2017-10-24 -- Include CHANGES.txt in distributed files (oops!)
+
+v0.2.1, 2017-10-24 -- Minor changes to documentation and distribution
+
+v0.2.0, 2017-10-24 -- Major update, first release since making biostructmap public.
+ * Added features:
+   * Additional genetic tests (Watterson's theta, nucleotide diversity)
+   * Added multi-chain support. This allows mapping of data from different chains.
+   * Some code refactoring was performed. map method is now available from the Structure class, not each individual Chain.
+ * Data requirements altered slightly. Each data object should be associated with a particular set of structure chains e.g. {('A', 'B'): data_1, ('C',): data_2}
+ * Reference sequences should be provided for each chain: {'A': seq_1, 'B': seq_1, 'C': seq_2}
+
+v0.1.1, 2016-02-24 -- Some bug fixes
+
+v0.1.0, 2016-02-12 -- Initial Release
