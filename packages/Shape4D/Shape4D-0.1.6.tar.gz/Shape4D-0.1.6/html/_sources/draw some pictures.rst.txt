@@ -1,0 +1,98 @@
+一些基本图形的绘制
+==================
+
+.. image:: picture/shape1.PNG
+
+
+1.凸多边形
+-------------------
+函数为LineXLine(P1,L1,P2,L2)  
+
+图形绘制的时候点的顺序应遵循右手法则
+
+.. image:: picture/local_coordinates.PNG
+
+一些图形的作图示例
+
+.. image:: picture/shape1.PNG
+.. image:: picture/shape2.PNG
+.. image:: picture/shape4.PNG
+.. image:: picture/shape5.PNG
+
+计算直线与直线的交点，输入为两个直线上的一点和直线的斜率，，支持三维空间下的 计算，输出为
+    1.直线相交输出点Array（P)
+
+    2.直线平行输出None
+
+    3.直线重合输出‘Line’
+
+    4.直线相异输出None
+
+    >>> P1, L1 = (0,0,0),(1,1,1)
+    >>> P2, L2 =(0,1,0),(1,-1,1)
+    >>> P = LineXLine(P1,L1,P2,L2)
+
+p的输出值为[0.5 0.5 0.5]
+
+2.中空四边形
+----------------------
+函数为P=LineXPlane(P0,L,R0,n) 
+
+图形绘制的时候点的顺序应遵循右手法则
+
+.. image:: picture/local_coordinates.PNG
+
+一些图形的作图示例
+
+.. image:: picture/shape3.PNG
+.. image:: picture/shape3ex.PNG
+
+
+
+计算直线和平面的交点，（多边形不能是凹多边形），输入直线上的一点和直线的斜率，平面上的一点和平面的法向量，输出：
+    1.相交于一点输出点Array（P1)
+
+    2.无交点输出None
+
+    3.直线与在平面上输出‘Line’
+
+    >>> P0,L =Array([0,0,0]),Array([2,1,0])
+    >>> R0,n = Array([0,0,0]),Array([0,-1,1])
+    >>> P=LineXPlane(P0,L,R0,n)
+
+p的输出值为array([0. , 0., 0.])
+
+3.变换到三维空间
+----------------------
+函数为LineXPolygon(P0,L,Polygon):
+
+通过变换使得能绘制出各种各样的三维结构，达到构建基本模型的目的
+
+.. image:: picture/local_coordinates.PNG
+
+一些图形的作图示例
+
+.. image:: picture/shapes_rotation.png
+
+变换过程中使用的矩阵
+
+.. image:: picture/matrix.PNG
+.. image:: picture/global_coordinates.PNG
+
+
+
+计算直线和多边形的交点，（多边形不能是凹多边形）三维下的计算，输入直线上的一点和直线的斜率，多边形的矩阵，输出为：
+    1.相交于一点输出点Array（P1)
+
+    2.无交点输出None，None
+
+    3.直线与多边形有两个交点输出‘Line’，同时会输出一段文字提示
+
+    >>> P0 = Array([-0.5,0,0.5])
+    >>> L  = Array([1,1,0])
+    >>> vertices1 = [(0,0,0),(1,0,0),(1,1,1),(0,1,1)]
+    >>> polygon1 = np.array(vertices1)
+    >>> P = LineXPolygon(P0,L,vertices)
+
+P的输出值为array([0. , 0.5, 0.5])
+
