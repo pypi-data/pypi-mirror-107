@@ -1,0 +1,14 @@
+bvg_grabber-0.2.1.data/scripts/bvg-grabber.py,sha256=td58Yq-o_Sq5VAQdKp6J-7aCspgKZ9zYQZlp17nMWy8,2136
+bvggrabber/__init__.py,sha256=NfBxUMUSTOaQuHohn7H8Evf_1w_mxeYuiGJR_McA438,138
+bvggrabber/api/__init__.py,sha256=NBpB9nE02OFlgLufveecBu_C7bBe0oFu7Q_JKleRJr0,9004
+bvggrabber/api/actualdeparture.py,sha256=Ifa6kRGh9gpmK-mglJ08DoAIN9Pvymv5l_tXtP7wisQ,2765
+bvggrabber/api/scheduleddeparture.py,sha256=3jNnZ1c7D44-vpF9Mm-4QBKiG_A2oTbqxois5HJZkvw,3087
+bvggrabber/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bvggrabber/utils/format.py,sha256=WI9R4hVpAin8kIVcDYKq5ALDezQY_jbY1cVG85zEEFg,1421
+bvggrabber/utils/json.py,sha256=ru-eF_dyZsRCFNDDfJCgij_LDO4j1v_kp5gcQljFCeI,450
+bvg_grabber-0.2.1.dist-info/AUTHORS,sha256=rZ1izaX5GCn0DtZb0_iDqyKaXxE7vCGG0Z9i5P59xWk,181
+bvg_grabber-0.2.1.dist-info/LICENSE,sha256=GA6GrsAchg0rtQxl1ifH0c6BURqJr9FHm5H51VY4YOE,1566
+bvg_grabber-0.2.1.dist-info/METADATA,sha256=bq0OH90JIzggVl6YrqFA9fyzF2nb3yDCDtPKRHWf8wU,3528
+bvg_grabber-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bvg_grabber-0.2.1.dist-info/top_level.txt,sha256=UUE6C1Mt7uBILVxTb_WD4SlpBGpug2B45j9f4b8A6xo,11
+bvg_grabber-0.2.1.dist-info/RECORD,,
