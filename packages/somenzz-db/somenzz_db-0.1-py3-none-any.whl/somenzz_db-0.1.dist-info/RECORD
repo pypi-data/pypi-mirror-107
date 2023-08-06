@@ -1,0 +1,12 @@
+somenzz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+somenzz/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+somenzz/db/database_client.py,sha256=KyO-cAbDe1zcCYwVpvH-zPgcOagCIKkjtbiV_1F-QRU,579
+somenzz/db/database_interface.py,sha256=SZs23NNEHschfxOeaO5sk9JqD3ANAq1y1y1OQfF5-q8,677
+somenzz/db/db2_client.py,sha256=3Jurjg3cwZHlo49-ArFF7jH2hOx1R61aeepR1cKNZAY,6947
+somenzz/db/mysql_client.py,sha256=lLDXILFph_0_1UsM1iDGJbJWBAPbmh_xGfEVmbhvfUw,2087
+somenzz/db/postgres_client.py,sha256=ozAFCSv2vGo4GrCvvS2iA-HDBCpiPzZJ18HA8SfG4r0,9996
+somenzz/db/utils.py,sha256=av6bKnVolxTLcP4HfomuBmySeJrupV_DH_5qF5YbVRc,587
+somenzz_db-0.1.dist-info/METADATA,sha256=i_cEkDsAXKXt5OT4zxRPv-YayGZn_BPS5S8FWi3P8eQ,205
+somenzz_db-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+somenzz_db-0.1.dist-info/top_level.txt,sha256=qsrBbDAXpSYm3UV0eK5qV9KOLaWfW_HO4naYPhmxgnk,8
+somenzz_db-0.1.dist-info/RECORD,,
