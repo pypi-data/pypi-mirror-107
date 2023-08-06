@@ -1,0 +1,4 @@
+[console_scripts]
+sli = dofast.sli_entry:main
+snc = dofast.sli_entry:_sync
+
