@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+paga-collect/src/paga_collect.egg-info/PKG-INFO
+paga-collect/src/paga_collect.egg-info/SOURCES.txt
+paga-collect/src/paga_collect.egg-info/dependency_links.txt
+paga-collect/src/paga_collect.egg-info/not-zip-safe
+paga-collect/src/paga_collect.egg-info/top_level.txt
