@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: PersonalExerciseTrainer
+Version: 1.0.8
+Summary: This package will help users to create its own AI based exercise trainer
+Home-page: https://www.besingular.com/
+Author: BeSingular
+Author-email: hitesh.gupta@besingular.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.9
+Description-Content-Type: text/markdown
+Requires-Dist: mediapipe
+Requires-Dist: pyautogui
+Requires-Dist: opencv-python
+
+# Personal Exercise Trainer with Machine Learning
+
+![Printing a 3d Free Photo](https://drive.google.com/uc?export=view&id=1iOjazRh00veEpBtOdA3xlvG_FDlgjE90)
+
+**What is this project all about?**
+
+This project is all about:-
+
+1.  Detecting Human Poses with Machine Learning
+2.  Building AI based Personal Exercise Trainer for specific exercise
+3.  Running exercise based on specific time slot as user input
+
+**Why is this project important?**
+
+1.  You can define how computers can detect Human Movement with the webcam.
+2.  How computer processes the real-time data and predicts the possibilities
+3.  How computers can play a crucial role in improving someone's health
+
+**What is that you will learn from this project?**
+
+1.  You will learn the fundamental concepts of programming in python like basic syntax
+2.  You will understand how variables work in python
+3.  You will be able to define list data type in python and how list indexing works
+4.  You will learn how to call a specific function from the module and use it in your code
+5.  You will learn how basic loops work in python
+6.  You will learn about identifiers or keywords in python and how to use them in code
+7.  You will be able to build your own if-else logic in python
+8.  Last but not the least you will learn about operators in python 
+
+**What is that you will be able to do after completing this project?**
+
+1.  You will be able to define how algorithms can make your computer do amazing stuff
+2.  You will be able to add your own exercises to your code
+3.  You will learn how to enhance your existing code and add features like email notification after the user is done with exercise and much more.
+
+
+
