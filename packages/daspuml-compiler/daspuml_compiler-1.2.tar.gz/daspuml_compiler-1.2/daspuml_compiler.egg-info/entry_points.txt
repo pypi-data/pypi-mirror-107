@@ -1,0 +1,3 @@
+[console_scripts]
+dasp = daspuml_compiler.main:main
+
