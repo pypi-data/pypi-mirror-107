@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+kalabash_pfxadmin_migrate/__init__.py
+kalabash_pfxadmin_migrate/models.py
+kalabash_pfxadmin_migrate.egg-info/PKG-INFO
+kalabash_pfxadmin_migrate.egg-info/SOURCES.txt
+kalabash_pfxadmin_migrate.egg-info/dependency_links.txt
+kalabash_pfxadmin_migrate.egg-info/not-zip-safe
+kalabash_pfxadmin_migrate.egg-info/requires.txt
+kalabash_pfxadmin_migrate.egg-info/top_level.txt
+kalabash_pfxadmin_migrate/management/__init__.py
+kalabash_pfxadmin_migrate/management/commands/__init__.py
+kalabash_pfxadmin_migrate/management/commands/migrate_from_postfixadmin.py
