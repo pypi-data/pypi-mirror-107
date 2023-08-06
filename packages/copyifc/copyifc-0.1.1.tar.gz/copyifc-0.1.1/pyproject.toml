@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "copyifc"
+author = "LHao"
+author-email = "bigpangl@163.com"
+home-page = "https://github.com/bigpangl/copyifc"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+description-file = "README.md"
+
