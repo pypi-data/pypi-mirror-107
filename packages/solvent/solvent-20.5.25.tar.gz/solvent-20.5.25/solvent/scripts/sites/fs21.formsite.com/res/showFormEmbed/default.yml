@@ -1,0 +1,420 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: fill
+    name: first_name
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: first_name
+        index: 0
+        uses: -1
+      - mode: name
+        value: first-name
+        index: 0
+        uses: -1
+      - mode: id
+        value: first_name
+        index: 0
+        uses: -1
+      - mode: id
+        value: first-name
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: First Name
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="First Name"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: FirstName
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextField-0
+        index: 0
+        uses: 94
+  - verb: fill
+    name: last_name
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: last_name
+        index: 0
+        uses: -1
+      - mode: name
+        value: last-name
+        index: 0
+        uses: -1
+      - mode: id
+        value: last_name
+        index: 0
+        uses: -1
+      - mode: id
+        value: last-name
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Last Name
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Last Name"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: LastName
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextField-1
+        index: 0
+        uses: 84
+  - verb: fill
+    name: email_address
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: email_address
+        index: 0
+        uses: -1
+      - mode: name
+        value: email-address
+        index: 0
+        uses: -1
+      - mode: id
+        value: email_address
+        index: 0
+        uses: -1
+      - mode: id
+        value: email-address
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Email Address
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Email Address"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: EmailAddress
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextField-2
+        index: 0
+        uses: 80
+  - verb: fill
+    name: phone_number
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: phone_number
+        index: 0
+        uses: -1
+      - mode: name
+        value: phone-number
+        index: 0
+        uses: -1
+      - mode: id
+        value: phone_number
+        index: 0
+        uses: -1
+      - mode: id
+        value: phone-number
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Phone Number
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Phone Number"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: PhoneNumber
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextField-3
+        index: 0
+        uses: 79
+  - verb: select
+    name: state
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: state
+        index: 0
+        uses: -1
+      - mode: name
+        value: state
+        index: 0
+        uses: -1
+      - mode: id
+        value: state
+        index: 0
+        uses: -1
+      - mode: id
+        value: state
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: State
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="State"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: State
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_RadioButton-4
+        index: 0
+        uses: -1
+  - verb: fill
+    name: zip_code
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: zip_code
+        index: 0
+        uses: -1
+      - mode: name
+        value: zip-code
+        index: 0
+        uses: -1
+      - mode: id
+        value: zip_code
+        index: 0
+        uses: -1
+      - mode: id
+        value: zip-code
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Zip Code
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Zip Code"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: ZipCode
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextField-5
+        index: 0
+        uses: 73
+  - verb: click
+    name: phone
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Phone
+        index: 0
+        uses: 73
+      - mode: text
+        value: Phone
+        index: 0
+        uses: 0
+      - mode: text
+        value: phone
+        index: 0
+        uses: 0
+      - mode: value
+        value: Phone
+        index: 0
+        uses: 0
+      - mode: value
+        value: Phone
+        index: 0
+        uses: 0
+      - mode: value
+        value: phone
+        index: 0
+        uses: 0
+  - verb: click
+    name: sponsorships
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Sponsorships
+        index: 0
+        uses: 73
+      - mode: text
+        value: Sponsorships
+        index: 0
+        uses: 0
+      - mode: text
+        value: sponsorships
+        index: 0
+        uses: 0
+      - mode: value
+        value: Sponsorships
+        index: 0
+        uses: 0
+      - mode: value
+        value: Sponsorships
+        index: 0
+        uses: 0
+      - mode: value
+        value: sponsorships
+        index: 0
+        uses: 0
+  - verb: fill
+    name: message
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: message
+        index: 0
+        uses: -1
+      - mode: name
+        value: message
+        index: 0
+        uses: -1
+      - mode: id
+        value: message
+        index: 0
+        uses: -1
+      - mode: id
+        value: message
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Message
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Message"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: Message
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_TextArea-13
+        index: 0
+        uses: 68
+  - verb: click
+    name: submit
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Submit
+        index: 0
+        uses: -1
+      - mode: text
+        value: Submit
+        index: 0
+        uses: -1
+      - mode: text
+        value: submit
+        index: 0
+        uses: -1
+      - mode: value
+        value: Submit
+        index: 0
+        uses: -1
+      - mode: value
+        value: Submit
+        index: 0
+        uses: -1
+      - mode: value
+        value: submit
+        index: 0
+        uses: -1
+  - verb: click
+    name: state
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: State
+        index: 0
+        uses: -1
+      - mode: text
+        value: State
+        index: 0
+        uses: -1
+      - mode: text
+        value: state
+        index: 0
+        uses: -1
+      - mode: value
+        value: State
+        index: 0
+        uses: -1
+      - mode: value
+        value: State
+        index: 0
+        uses: -1
+      - mode: value
+        value: state
+        index: 0
+        uses: -1
+      - mode: id
+        value: RESULT_RadioButton-4
+        index: 0
+        uses: 73
