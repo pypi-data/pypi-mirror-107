@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+sportsrefapi/_version.py
+sportsrefapi/nba/__init__.py
+sportsrefapi/nba/columns.py
+sportsrefapi/nba/gamelogs.py
+sportsrefapi/nba/players.py
+sportsrefapi/sportsrefapi.egg-info/PKG-INFO
+sportsrefapi/sportsrefapi.egg-info/SOURCES.txt
+sportsrefapi/sportsrefapi.egg-info/dependency_links.txt
+sportsrefapi/sportsrefapi.egg-info/top_level.txt
