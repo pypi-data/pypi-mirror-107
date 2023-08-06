@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: age-YTDownloader
+Version: 0.0.1
+Summary: YT video stream downloader
+Home-page: UNKNOWN
+Author: Moonbox88 (Sean Mooney)
+Author-email: <seanmooney@live.co.uk>
+License: UNKNOWN
+Description: 
+        # YT_Downloader
+        
+        Package for aquiring binary data for YT videos with age restrictions.
+        
+        # Usage
+        
+        To use in your project include 'import YTDownloader'
+        
+        Create a class object passing a url (for a YouTube video) string like:
+        	yt = YTDownloader.AgeRestrictedYTVideo(<url-here>)
+        	
+        Query if video is age restricted like:
+        	age_restricted = yt.is_age_restricted()
+        	
+        Either way, a binary object for the video is returned by:
+        	bytes_obj = yt.get_video()
+        
+        
+Keywords: python,video,stream,YouTube
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
