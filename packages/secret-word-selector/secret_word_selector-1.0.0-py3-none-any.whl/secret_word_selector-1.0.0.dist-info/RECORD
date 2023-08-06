@@ -1,0 +1,12 @@
+secret_word_selector-1.0.0.data/scripts/sws,sha256=d-EarrvbK_wZjUGEGcuy2RCtdsbWYs9b1ClKkHl1hNQ,3877
+swsm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swsm/auxi.py,sha256=m-3T80mf2YQOSkfpzXyAli4yiKiiyEWtYOaeFWe9FwQ,1766
+swsm/cmd_opts.py,sha256=zilDwLTOMxnGJvBcsbrpzEJ6qg7wcrfeO_35juqKyOM,1889
+swsm/conf.py,sha256=RwoENmZ76XxXcPIMmSBVyYYQGWtVK7yxZHnP1ignPKo,1626
+swsm/exception_msgs.py,sha256=R4G1GET2LXfoNa73vtH_WmCpZodVbsYqgjkdBVmDvbE,1126
+swsm/security.py,sha256=HpwXPFNxpW0HkQXJsLpKz8xQZcmKzWzIM1uCG5RtIsE,1301
+secret_word_selector-1.0.0.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+secret_word_selector-1.0.0.dist-info/METADATA,sha256=WJk0gLUF9amVmNEzE2JOdmfA8joC6HjUlZ2LviJ9aB0,2624
+secret_word_selector-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+secret_word_selector-1.0.0.dist-info/top_level.txt,sha256=sLfC6FyPqDMc1U_sQxmHe2Mh-_Z0KaUNeZ4Up5dHotQ,5
+secret_word_selector-1.0.0.dist-info/RECORD,,
