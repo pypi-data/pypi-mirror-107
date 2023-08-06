@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: baredSC
+Version: 1.0.0
+Summary: baredSC: Bayesian Approach to Retreive Expression Distribution of Single Cell
+Home-page: https://github.com/lldelisle/baredSC
+Author: Lucille Lopez-Delisle, Jean-Baptiste Delisle
+Author-email: lucille.delisle@epfl.ch
+License: GPLv3
+Description: baredSC
+        ========
+        
+        baredSC (Bayesian Approach to Retreive Expression Distribution of Single Cell) is a tool that uses a Monte-Carlo Markov Chain to estimate a confidence interval on the probability density function (PDF) of expression of one or two genes from single-cell RNA-seq data. It uses the raw counts and the total number of UMI for each cell. The PDF is approximated by a number of 1d or 2d gaussians provided by the user. The likelihood is estimated using the asumption that the raw counts follow a Poisson distribution of parameter equal to the proportion of mRNA for the gene in the cell multiplied by the total number of UMI identified in this cell.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7.*, <4
+Description-Content-Type: text/markdown
