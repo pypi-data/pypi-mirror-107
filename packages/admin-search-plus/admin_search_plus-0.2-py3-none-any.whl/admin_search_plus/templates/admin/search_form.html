@@ -1,0 +1,63 @@
+{% load i18n static %}
+{% load admin_search_plus %}
+
+{% if cl.search_fields and cl.model_admin.admin_search_plus %}
+    <div id="toolbar">
+        <form id="changelist-search" method="get">
+            <div>
+                <!-- DIV needed for valid HTML -->
+                <label for="searchbar"><img src="{% static "admin/img/search.svg" %}" alt="Search"></label>
+                <select class="form-control" id="search-param">
+                    <option value="">---------</option>
+                    {% for search_field in cl.search_fields %}
+                        {% render_search_field search_field cl %}
+                        {# <option value="{{ search_field|generate_query_string:cl }}"{% if search_field in cl.params.keys %} selected="selected"{% endif %}>{{ search_field }} {{ search_field|search_field_display }}</option> #}
+                    {% endfor %}
+                </select>
+                <input class="form-control" type="text" name="{{ search_var }}" value="{% render_search_value cl %}" id="searchbar" autofocus>
+                <button id="search-plus" type="button">{% trans 'Search' %}</button>
+                <button id="clear-results" type="button">{% trans 'Clear' %}</button>
+                {% comment %}
+                    {% if show_result_count %}
+                        <span class="small quiet">{% blocktrans count counter=cl.result_count %}{{ counter }} result{% plural %}{{ counter }} results{% endblocktrans %} (<a href="?{% if cl.is_popup %}_popup=1{% endif %}">{% if cl.show_full_result_count %}{% blocktrans with full_result_count=cl.full_result_count %}{{ full_result_count }} total{% endblocktrans %}{% else %}{% trans "Show all" %}{% endif %}</a>)</span>
+                    {% endif %}
+                {% endcomment %}
+                {% for pair in cl.params.items %}
+                    {% if pair.0 != search_var %}<input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}">{% endif %}
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        django.jQuery('#search-plus').on('click', function() {
+            var search_value = django.jQuery('#searchbar').val();
+            var search_param = django.jQuery('#search-param').val();
+            if (search_param == '' || search_value == '') {
+                alert("Please complete the search form before continuing.");
+                return false;
+            }
+            window.location.href = window.location.pathname + search_param + search_value;
+        });
+        
+        django.jQuery('#clear-results').on('click', function() {
+            window.location.href = window.location.pathname;
+        });
+    </script>
+{% elif cl.search_fields %}
+    <div id="toolbar">
+        <form id="changelist-search" method="get">
+            <div>
+                <!-- DIV needed for valid HTML -->
+                <label for="searchbar"><img src="{% static "admin/img/search.svg" %}" alt="Search"></label>
+                <input type="text" size="40" name="{{ search_var }}" value="{{ cl.query }}" id="searchbar" autofocus>
+                <input type="submit" value="{% trans 'Search' %}">
+                {% if show_result_count %}
+                    <span class="small quiet">{% blocktrans count counter=cl.result_count %}{{ counter }} result{% plural %}{{ counter }} results{% endblocktrans %} (<a href="?{% if cl.is_popup %}_popup=1{% endif %}">{% if cl.show_full_result_count %}{% blocktrans with full_result_count=cl.full_result_count %}{{ full_result_count }} total{% endblocktrans %}{% else %}{% trans "Show all" %}{% endif %}</a>)</span>
+                {% endif %}
+                {% for pair in cl.params.items %}
+                    {% if pair.0 != search_var %}<input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}">{% endif %}
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+{% endif %}
