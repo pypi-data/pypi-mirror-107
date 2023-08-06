@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+Csv_Json_Converter.egg-info/PKG-INFO
+Csv_Json_Converter.egg-info/SOURCES.txt
+Csv_Json_Converter.egg-info/dependency_links.txt
+Csv_Json_Converter.egg-info/top_level.txt
+csv_json/__init__.py
+csv_json/csv_json_conv.py
