@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: auto-aiml
+Version: 1.0.3
+Summary: Creates a best predictive regression/classification model 
+Home-page: https://github.com/yashu7890/yash
+Author: Yashwanth Agastya
+Author-email: admin@yash.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: imblearn
+Requires-Dist: xgboost
+
+# AUTO AIML
+This module takes input csv/excel file and regression/classification flag and it processes the file and create the best model.
+
+
+## Installation
+```pip install auto-aiml```
+
+## How to use it?
+Open terminal and the give regression flag yes  and No for classification then csv/ excel flag Y/N and the file location and that it you are done, wait the process to complete and you can get best model .
+
+## License
+
+Â© 2020 Yashwanth Agastya
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
