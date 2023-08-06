@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+airway.egg-info/PKG-INFO
+airway.egg-info/SOURCES.txt
+airway.egg-info/dependency_links.txt
+airway.egg-info/entry_points.txt
+airway.egg-info/requires.txt
+airway.egg-info/top_level.txt
