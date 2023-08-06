@@ -1,0 +1,8 @@
+
+[docs]
+sphinx
+
+[testing]
+pytest
+pytest-cov
+flake8
