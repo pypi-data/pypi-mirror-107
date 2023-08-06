@@ -1,0 +1,56 @@
+{% extends "core/base.html" %}
+{% load msg_box static i18n %}
+
+{% block content %}
+  <h4>{% trans Archive %}</h4>
+
+  <form method="GET">
+    <div class="row">
+      <div class="col s8 m10 l11">
+        {{ filter.form.as_p }}
+      </div>
+      <div class="col s4 m2 l1">
+        <a class="btn col s12" href="{% url "fritak_print_archive" %}">
+          <i class="material-icons center">print</i>
+        </a>
+      </div>
+    </div>
+    <button type="submit" class="waves-effect waves-light btn green">
+      <i class="material-icons left">refresh</i>
+      {% trans "Update filter" %}
+    </button>
+  </form>
+
+  <ul class="collection">
+    {% for exemption in filter.qs %}
+      <li class="collection-item">
+        <div class="row">
+          <div class="col s12 m4">
+            <p class="title">
+              <i class="material-icons left">access_time</i>
+              {{ exemption.from_date }}, {{ exemption.from_time }}
+              &mdash; {{ exemption.to_date }}, {{ exemption.to_time }}
+            </p>
+
+            <p>
+              {{ exemption.description }}
+            </p>
+          </div>
+
+          <div class="col s12 m6">
+            <p>
+              <i class="material-icons left">person</i>
+              {{ exemption.submitter }}
+            </p>
+          </div>
+
+          <div class="col s12 m2">
+            <p>
+              <span class="badge new {{ exemption.get_status.style_class }}">{{ exemption.get_status.name }}</span>
+            </p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
