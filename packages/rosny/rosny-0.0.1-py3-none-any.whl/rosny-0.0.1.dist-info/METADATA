@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rosny
+Version: 0.0.1
+Summary: A simple library for building concurrency applications.
+Home-page: https://github.com/lRomul/rosny
+Author: Ruslan Baikulov
+Author-email: ruslan1123@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# rosny
+
+rosny is a simple library for building concurrency applications.
+
+
