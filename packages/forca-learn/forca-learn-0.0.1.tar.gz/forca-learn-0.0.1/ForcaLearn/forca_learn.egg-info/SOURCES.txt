@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ForcaLearn/forca_learn.egg-info/PKG-INFO
+ForcaLearn/forca_learn.egg-info/SOURCES.txt
+ForcaLearn/forca_learn.egg-info/dependency_links.txt
+ForcaLearn/forca_learn.egg-info/top_level.txt
