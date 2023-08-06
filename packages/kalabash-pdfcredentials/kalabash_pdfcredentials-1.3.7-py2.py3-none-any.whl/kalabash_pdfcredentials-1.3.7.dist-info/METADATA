@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kalabash-pdfcredentials
+Version: 1.3.7
+Summary: Generate PDF documents containing user credentials
+Home-page: https://alphamonak.com/
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Keywords: email
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+Requires-Dist: kalabash (>=1.15.0)
+Requires-Dist: reportlab
+
+UNKNOWN
+
