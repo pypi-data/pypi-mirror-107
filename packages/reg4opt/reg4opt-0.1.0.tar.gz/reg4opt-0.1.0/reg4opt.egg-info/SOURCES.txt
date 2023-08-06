@@ -1,0 +1,12 @@
+README.md
+setup.py
+reg4opt/__init__.py
+reg4opt/interpolation.py
+reg4opt/operators.py
+reg4opt/regression.py
+reg4opt/utils.py
+reg4opt.egg-info/PKG-INFO
+reg4opt.egg-info/SOURCES.txt
+reg4opt.egg-info/dependency_links.txt
+reg4opt.egg-info/requires.txt
+reg4opt.egg-info/top_level.txt
