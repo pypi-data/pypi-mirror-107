@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sanstem/InputLanguageError.py
+sanstem/SanskritStemmer.py
+sanstem/__init__.py
+sanstem.egg-info/PKG-INFO
+sanstem.egg-info/SOURCES.txt
+sanstem.egg-info/dependency_links.txt
+sanstem.egg-info/requires.txt
+sanstem.egg-info/top_level.txt
+sanstem/Data/devanagari_languages.csv
+sanstem/Data/noun_suffixes.csv
+sanstem/Data/verb_suffixes.csv
