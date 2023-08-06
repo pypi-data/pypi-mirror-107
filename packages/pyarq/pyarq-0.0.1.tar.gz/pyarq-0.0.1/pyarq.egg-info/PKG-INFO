@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyarq
+Version: 0.0.1
+Summary: Tools for an architecture skeleton
+Home-page: https://github.com/RafaelGB/pythonScripts
+Author: Rafael Gómez Bermejo
+Author-email: sernn2@gmail.com
+License: UNKNOWN
+Description: # Introducción
+        Arquitectura basada en Python utilizada como navaja suiza para pequeñas o grandes aplicaciones
+        
+        Lista de herramientas proporcionadas:
+        - Logging
+        - Configuración
+        - Dockers
+        - API REST
+        - Cache (REDIS)
+        - Concurrencia
+        
+        # Funcionalidades actuales
+        [Enlace a ejemplos de uso](https://www.notion.so/ce7410e76b204446ae114a9ccb5cb09a?v=39826cf8d6014f2f8c2ddf38d9f72272)
+Keywords: architecture wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Adaptive Technologies
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
