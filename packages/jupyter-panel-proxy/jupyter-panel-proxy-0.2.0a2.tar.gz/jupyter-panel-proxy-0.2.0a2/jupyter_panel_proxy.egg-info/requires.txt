@@ -1,0 +1,12 @@
+jupyter-server-proxy
+panel>=0.11
+
+[build]
+param>=1.7.0
+setuptools
+
+[tests]
+flake8
+twine
+rfc3986
+keyring
