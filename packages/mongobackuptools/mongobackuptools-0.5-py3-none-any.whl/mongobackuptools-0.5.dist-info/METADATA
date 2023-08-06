@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mongobackuptools
+Version: 0.5
+Summary: A library to manage mongo backups and restoration from backup
+Home-page: https://github.com/phelipebf/mongobackup
+Author: Phil Smith
+License: MIT
+Keywords: mongo mongodb database backup
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database
+License-File: LICENSE
+Requires-Dist: boto (>=2.25)
+
+UNKNOWN
+

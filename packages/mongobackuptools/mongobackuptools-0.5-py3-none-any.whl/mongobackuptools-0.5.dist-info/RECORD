@@ -1,0 +1,9 @@
+mongobackuptools/__init__.py,sha256=yVvKTaebDKpiuzLTLbKptMjJWRQQ-n-P65ryIrpMdf4,1363
+mongobackuptools/backups.py,sha256=5E3FoS26OD6vBckN4GE8LCcbJYqf1HT7jlnHxF4EZ7U,10366
+mongobackuptools/s3.py,sha256=9a_hASPR1ohMokgdU1HEWX2HzODPJEwoRCQ4FlRL63U,3704
+mongobackuptools/shell.py,sha256=qrS0MRoS2RVt_uOj0GQ5BjfsEUvw1kujiaTNgoRXc8g,5173
+mongobackuptools-0.5.dist-info/LICENSE,sha256=BAl8miBt-oOL998fi1GghvyI5cpxC4W8PkiJKMZ3mOQ,1139
+mongobackuptools-0.5.dist-info/METADATA,sha256=ghlEfVOYysSSpIrQQ1ZO6tl8-St8LQ8Mh3mRgmMVxYM,639
+mongobackuptools-0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mongobackuptools-0.5.dist-info/top_level.txt,sha256=BO6_Efm0T3rkC_9Qf4SlmZHUAA8jbWJTXY7bdh2-Ci0,17
+mongobackuptools-0.5.dist-info/RECORD,,
