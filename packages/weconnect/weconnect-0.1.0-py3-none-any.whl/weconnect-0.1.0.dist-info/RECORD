@@ -1,0 +1,11 @@
+weconnect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weconnect/__version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+weconnect/addressable.py,sha256=XkmxFJ4H7q29H0u3ftT5ibAUpv3oK5RFsDPO8v35uMo,5440
+weconnect/elements.py,sha256=B6Dhy1YAHlJO3k-v5FN0NgcjMysdBg4ekuTW7OmirZI,53186
+weconnect/util.py,sha256=O6ksf8b7sJCFX9lrQR6GDRMUpJr5Fg_bJwuC1urCM6U,428
+weconnect/weconnect.py,sha256=fjulS2JpV-8ezaS3s3YKvb-GKW7VvPSzxVj8Snmw9Nk,14405
+weconnect-0.1.0.dist-info/LICENSE,sha256=PIwI1alwDyOfvEQHdGCm2u9uf_mGE8030xZDfun0xTo,1071
+weconnect-0.1.0.dist-info/METADATA,sha256=FTDZuUm2lN_Rh7Gdm9xjJaRsrNL_a2oA3NJ94pP_Sng,2716
+weconnect-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+weconnect-0.1.0.dist-info/top_level.txt,sha256=jao5Jgp_h9OWofMB-bZt4GD3iG76ix2acfRarAEMuUc,10
+weconnect-0.1.0.dist-info/RECORD,,
