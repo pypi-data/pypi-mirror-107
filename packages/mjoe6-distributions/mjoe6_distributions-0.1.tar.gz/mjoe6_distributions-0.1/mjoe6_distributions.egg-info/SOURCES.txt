@@ -1,0 +1,10 @@
+setup.py
+mjoe6_distributions/Binomialdistribution.py
+mjoe6_distributions/Gaussiandistribution.py
+mjoe6_distributions/Generaldistribution.py
+mjoe6_distributions/__init__.py
+mjoe6_distributions.egg-info/PKG-INFO
+mjoe6_distributions.egg-info/SOURCES.txt
+mjoe6_distributions.egg-info/dependency_links.txt
+mjoe6_distributions.egg-info/not-zip-safe
+mjoe6_distributions.egg-info/top_level.txt
