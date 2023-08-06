@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: medgpt
+Version: 0.1.4
+Summary: Temporal modeling of patients and diseases
+Home-page: https://github.com/w-is-h/medflux
+Author: w-is-h
+Author-email: w.kraljevic@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: datasets (~=1.6.0)
+Requires-Dist: ray (==1.3.0)
+Requires-Dist: wandb (~=0.10)
+Requires-Dist: x-transformers (~=0.12)
+Requires-Dist: medcat (~=1.0)
+
+# medflux
+
+
