@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyseqtender/__init__.py
+pyseqtender/pyseqtender.py
+pyseqtender.egg-info/PKG-INFO
+pyseqtender.egg-info/SOURCES.txt
+pyseqtender.egg-info/dependency_links.txt
+pyseqtender.egg-info/requires.txt
+pyseqtender.egg-info/top_level.txt
