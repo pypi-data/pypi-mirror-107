@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+parsergen/__init__.py
+parsergen/lexer.py
+parsergen/pyparse.py
+parsergen/utils.py
+parsergen.egg-info/PKG-INFO
+parsergen.egg-info/SOURCES.txt
+parsergen.egg-info/dependency_links.txt
+parsergen.egg-info/top_level.txt
