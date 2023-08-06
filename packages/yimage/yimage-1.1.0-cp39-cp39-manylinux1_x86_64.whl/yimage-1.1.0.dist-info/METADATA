@@ -1,0 +1,294 @@
+Metadata-Version: 2.1
+Name: yimage
+Version: 1.1.0
+Summary: A friendly remote sensing data library
+Home-page: UNKNOWN
+Author: Xuan Yang
+Author-email: yangxuan.ac@gmail.com
+License: MIT
+Platform: linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: opencv-python (>=4.0.0)
+Requires-Dist: Cython (>=0.29.0)
+
+yimage 1.1.0
+============
+
+*Author:* Xuan Yang
+
+*E-mail:* yangxuan.ac#gmail.com
+
+**yimage** is a friendly remote sensing data library for Python. It
+encapsulates OpenCV library and GDAL library, and uses OpenCV data
+format as a standard to provide a convenient remote sensing data I/O
+interface.
+
+Installation
+------------
+
+``pip install yimage``
+
+Prerequisites
+-------------
+
+-  Numpy
+
+   -  ``pip install numpy``
+
+-  OpenCV
+
+   -  ``pip install opencv-python``
+
+-  GDAL
+
+   -  ``pip install GDAL``
+   -  ``conda install GDAL -c conda-forge`` (We recommand this one)
+
+-  Cython
+
+   -  ``pip install Cython``
+
+Document
+--------
+
+*<package>* **yimage**
+~~~~~~~~~~~~~~~~~~~~~~
+
+use ``import yimage`` to import this package.
+
+use ``yimage.__version__`` to check the version.
+
+*<class>* **io**
+~~~~~~~~~~~~~~~~
+
+``yimage.io.read_image(filename, driver='GDAL', read_range=None, band_list=None, use_RGB=False, use_CHW=False, with_geo_info=False, only_image_info=False)``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Read image by GDAL API or OpenCV API.
+
+Args:
+
+::
+
+   filename: file path.
+   driver: the image IO driver.
+       Available options are **GDAL** and **OpenCV**.
+       Optional param. Default is **GDAL**.
+   read_range: the range you want to load to memory. You can use this parameter if only read part of range.
+       Only work for GDAL driver.
+       **None** is for reading whole range. A tuple parameter is for reading part of range.
+       For example, **(w0, h0, w, h)**. w0 and h0 are the x and y coord for the left-up point, respectively.
+       w and h are the width and height for image range.
+       Optional param. Default is **None**.
+   band_list: the bands you want to load to memory. You can use this parameter if only read part of bands.
+       Only work for GDAL driver.
+       band number starts from 1 not 0.
+       **None** is for reading all bands. A list parameter is for reading part of bands.
+       Optional param. Default is **None**.
+   use_RGB: use RGB or BGR mode to load image.
+       Only work for 3 or 4 bands image and band_list is **None**. 
+       If **False**, the data will be ordered by BGR.
+       If **True**, the data will be ordered by RGB.
+       Optional param. Default is **False**.
+   use_CHW: use CHW or HWC mode to load image.
+       If **False**, the data will be ordered by HWC.
+       If **True**, the data will be ordered by CHW.
+       Optional param. Default is **False**.
+   with_geo_info: read geographic info from image file or not.
+       Only work for GDAL driver.
+       if **True**, return an extra geographic info, including projection and geotransform.
+       Optional param. Default is **False**.
+   only_image_info: only get the shape of image without load the image to memory.
+       Only work for GDAL driver.
+       if **True**, return the shape of image instead of the image data.
+       Optional param. Default is **False**.
+
+Return:
+
+::
+
+   One of:
+       A numpy array.
+       A numpy array, geo info dict. (Only work for GDAL driver.)
+       Shape dict. (Only work for GDAL driver.)
+       Shape dict, geo dict. (Only work for GDAL driver.)
+       **None** if failed opening image file.
+
+``yimage.io.write_image(filename, img, driver='GDAL', band_list=None, use_RGB=False, use_CHW=False, dtype='uint8', gdal_driver='GTiff', compress=None, geo_info=None, color_table=None, no_data_value=None)``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Write image by GDAL API or OpenCV API.
+
+Args:
+
+::
+
+   filename: file path.
+   img: A numpy array.
+   driver: the image IO driver.
+       Available options are **GDAL** and **OpenCV**.
+       Optional param. Default is **GDAL**.
+   band_list: the bands you want to write to file. You can use this parameter if only write part of bands.
+       Only work for GDAL driver.
+       band number starts from 1 not 0.
+       **None** is for reading all bands. A list parameter is for reading part of bands.
+       Optional param. Default is **None**.
+   use_RGB: use RGB or BGR mode to write image.
+       Only work for 3 or 4 bands image and band_list is **None**. 
+       If **False**, write data ordered by BGR.
+       If **True**, write data ordered by RGB.
+       Optional param. Default is **False**.
+   use_CHW: use CHW or HWC mode to write image.
+       If **False**, write data ordered by HWC.
+       If **True**, write data ordered by CHW.
+       Optional param. Default is **False**.
+   dtype: data type of image.
+       Only work for GDAL driver.
+       Available options are **uint8**, **uint16**, **int16**, **uint32**, **int32**, **float32**, and **float64**.
+       Optional param. Default is **uint8**.
+   gdal_driver: GDAL driver.
+       Only work for GDAL driver.
+       Available options are **GTiff**, **ENVI**, **HFA**, see GDAL document for more details, https://gdal.org/drivers/raster/index.html
+       Optional param. Default is **GTiff**.
+   compress: compress algorithm for GTiff driver.
+       Only work for GDAL driver.
+       Only work for GTiff driver.
+       Available options are **None**, **LZW**, **CCITTFAX4**, see GDAL document for more details.
+       Optional param. Default is **None**.
+   geo_info: A dict parameter for geographic info.
+       Only work for GDAL driver.
+       For example,  geo_info = {'proj': proj, 'coord': coord}. Make sure key 'proj' and 'coord' exist in geo_info dict.
+       Optional param. Default is **None**.
+   color_table: A list for color table.
+       Only work for GDAL driver.
+       Only work for one channel image and uint8 type.
+       For example, color_table = [[0, 0, 0], [255, 0, 0], [255, 128, 128]]
+       Optional param. Default is **None**.
+   no_data_value: set NoData Value.
+       Only work for GDAL driver.
+       Optional param. Default is **None**.
+
+Return:
+
+::
+
+   **True** if successful, or **False**.
+
+``yimage.io.img_ordered_by_band_list(img, band_list, use_CHW=False)``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Reorder the bands of image according to band list.
+
+Args:
+
+::
+
+   img: A numpy array.
+   band_list: the bands order list.
+       band number starts from 1 not 0.
+   use_CHW: use CHW or HWC mode to reorder image.
+       If **False**, the data will be reordered by HWC.
+       If **True**, the data will be reordered by CHW.
+       Optional param. Default is **False**.
+
+Return:
+
+::
+
+   A numpy array.
+
+``yimage.io.polygonize(raster_filename, shapefile_filename, band_num=None, layer_name=None)``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Polygonize a raster data to vector data.
+
+Args:
+
+::
+
+   raster_filename: input raster data file path.
+   shapefile_filename: output vector data file path. (ArcGIS Shapefile)
+   band_num: the number of the band you want to polygonize.
+       If **None**, band 1 will be polygonized.
+       Optional param. Default is **None**.
+   layer_name: the vector layer name.
+       If **None**, the name will be set to "polygon" automatically.
+       Optional param. Default is **None**.
+
+Return:
+
+::
+
+   **True** if successful, or **False**.
+
+``yimage.io.load_color_table_file(filename)``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Load name list and color table from file.
+
+Args:
+
+::
+
+   filename: file path.
+
+Return:
+
+::
+
+   Two lists, including name list and color table list.
+
+Color table file format example:
+
+::
+
+   0 / 0 / 0 # background
+   255 / 0 / 0 # Class 1
+   0 / 255 / 0 # Class 2
+   0 / 0 / 255 # Class 3
+
+Updates
+-------
+
+Version 1.1.0 (05/25/2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Added BGR and RGB mode supported
+-  Added HWC and HCW mode supported
+-  Added LZW compress for GTiff supported
+
+Version 1.0.3 (06/20/2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Added getting image info and geo info only without reading image data
+-  Fixed a bug in write_image
+
+Version 1.0.2 (06/19/2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Added default value of driver in write_image
+
+Version 1.0.1 (06/12/2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  offset method in write_image is deprecated
+
+Version 1.0.0 (06/12/2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Support reading and writing remote sensing data
+-  Support reordering bands of data
+-  Support polygonizing the raster data
+-  Support processing color table file
+
+
