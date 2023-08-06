@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+superprocessor/__init__.py
+superprocessor/main.py
+superprocessor/util.py
+superprocessor.egg-info/PKG-INFO
+superprocessor.egg-info/SOURCES.txt
+superprocessor.egg-info/dependency_links.txt
+superprocessor.egg-info/top_level.txt
