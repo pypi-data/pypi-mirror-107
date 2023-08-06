@@ -1,0 +1,124 @@
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:47:46 - 5009-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5009
+
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:48:26 - 5030-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5030
+
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:48:48 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
+2021-05-26 20:50:00 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:1     os.pid: 5045
+
+2021-05-26 20:50:00 - 5045-MainProcess - base.py-run_job[line:123] - INFO: Running job "cron_check_db_sleep (trigger: cron[day='*', day_of_week='*', hour='*', minute='*/10'], next run at: 2021-05-26 20:50:00 CST)" (scheduled at 2021-05-26 20:50:00+08:00)
+2021-05-26 20:50:20 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_1" to job store "default"
+2021-05-26 20:50:20 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
+2021-05-26 20:50:43 - 5045-MainProcess - base.py-remove_job[line:632] - INFO: Removed job cron_1
+2021-05-26 20:51:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_1" to job store "default"
+2021-05-26 20:51:48 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:53:59 - 5557-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:53:59 - 5557-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5557
+
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:59:24 - 5978-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:59:24 - 5978-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5978
+
+2021-05-26 20:59:50 - 5993-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:59:50 - 5993-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:59:50 - 5993-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:01 - 6132-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:01 - 6132-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:01 - 6132-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:46 - 6146-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:46 - 6146-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:00:46 - 6146-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6198-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6199-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6198-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6199-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6198-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:01:40 - 6199-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6569-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6570-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6569-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6570-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6569-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:03:51 - 6570-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:23 - 6598-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:23 - 6598-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:23 - 6598-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:42 - 6625-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:42 - 6625-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:04:42 - 6625-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:06:49 - 6939-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:06:49 - 6939-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:06:49 - 6939-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:08:08 - 7121-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:08:08 - 7121-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:08:08 - 7121-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:10:54 - 7469-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:10:54 - 7469-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:10:54 - 7469-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:11:41 - 7480-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:11:41 - 7480-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:11:41 - 7480-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:13:17 - 7645-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:13:17 - 7645-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:13:17 - 7645-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:35 - 7849-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:35 - 7849-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:35 - 7849-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:58 - 7856-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:58 - 7856-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:16:58 - 7856-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:07 - 7862-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:07 - 7862-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:07 - 7862-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:27 - 7875-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:27 - 7875-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:27 - 7875-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:39 - 7880-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:39 - 7880-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:17:39 - 7880-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:23:25 - 8241-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:23:25 - 8241-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:23:25 - 8241-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:31 - 8693-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:31 - 8693-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:31 - 8693-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:43 - 8702-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:43 - 8702-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:29:43 - 8702-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:30:03 - 8706-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:30:03 - 8706-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 21:30:03 - 8706-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
