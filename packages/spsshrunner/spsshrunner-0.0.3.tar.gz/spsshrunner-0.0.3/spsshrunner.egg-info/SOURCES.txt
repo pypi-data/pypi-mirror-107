@@ -1,0 +1,8 @@
+README.md
+setup.py
+spsshrunner/__init__.py
+spsshrunner/sshrunner.py
+spsshrunner.egg-info/PKG-INFO
+spsshrunner.egg-info/SOURCES.txt
+spsshrunner.egg-info/dependency_links.txt
+spsshrunner.egg-info/top_level.txt
