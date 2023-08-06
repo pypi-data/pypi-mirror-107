@@ -1,0 +1,17 @@
+include *.rst
+recursive-include docs *.bat
+recursive-include docs *.gif
+recursive-include docs *.ico
+recursive-include docs *.ipynb
+recursive-include docs *.mp4
+recursive-include docs *.png
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.txt
+recursive-include docs Makefile
+recursive-include examples *.py
+recursive-include tulips *.data
+recursive-include tulips *.gif
+recursive-include tulips *.gz
+recursive-include tulips *.mp4
+recursive-include tulips *.png

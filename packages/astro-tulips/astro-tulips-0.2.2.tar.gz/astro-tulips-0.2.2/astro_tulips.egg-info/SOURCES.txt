@@ -1,0 +1,52 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+astro_tulips.egg-info/PKG-INFO
+astro_tulips.egg-info/SOURCES.txt
+astro_tulips.egg-info/dependency_links.txt
+astro_tulips.egg-info/requires.txt
+astro_tulips.egg-info/top_level.txt
+docs/Makefile
+docs/make.bat
+docs/source/conf.py
+docs/source/energy_and_mixing_diagram.ipynb
+docs/source/getting_started.ipynb
+docs/source/index.rst
+docs/source/installation.rst
+docs/source/interior_composition.ipynb
+docs/source/perceived_color_diagram.ipynb
+docs/source/property-diagrams.ipynb
+docs/source/requirements.txt
+docs/source/figures/energy_and_mixing.mp4
+docs/source/figures/first_animation.gif
+docs/source/figures/perceived-color-test.mp4
+docs/source/figures/perceived_color.mp4
+docs/source/figures/property_diagrams.mp4
+docs/source/figures/thumb1.png
+docs/source/figures/thumb2.png
+docs/source/figures/tulips_icon.ico
+docs/source/figures/tulips_logo.png
+examples/example_plots.py
+tulips/__init__.py
+tulips/blackbody.py
+tulips/ciexyz.py
+tulips/colormodels.py
+tulips/test_plots.py
+tulips/tulips.py
+tulips/MESA_DIR_EXAMPLE/example_animated_hist_interior_test.png
+tulips/MESA_DIR_EXAMPLE/example_animated_hist_interior_test_with_mixing.png
+tulips/MESA_DIR_EXAMPLE/example_animated_hist_test.png
+tulips/MESA_DIR_EXAMPLE/history.data
+tulips/MESA_DIR_EXAMPLE/test_single_M10.5_interior_movie.gif
+tulips/MESA_DIR_EXAMPLE/test_single_M10.5_interior_movie.mp4
+tulips/MESA_DIR_EXAMPLE/test_single_M10.5_movie.gif
+tulips/MESA_DIR_EXAMPLE/test_single_M10.5_movie.mp4
+tulips/logo/Tulips - Logo crop dark.png
+tulips/logo/Tulips - Logo crop transparent.png
+tulips/logo/Tulips - Logo crop white.png
+tulips/logo/Tulips - acronym dark.png
+tulips/logo/Tulips - acronym text 1 dark.png
+tulips/logo/Tulips - acronym text 1 white.png
+tulips/logo/Tulips_acronym_text_transparent.png
