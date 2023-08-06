@@ -1,0 +1,3 @@
+[console_scripts]
+escape-scanner-darwin-x64=escape_scanner_wrapper:main
+
