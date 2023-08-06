@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/UrbanDictAPI/__init__.py
+src/UrbanDictAPI/defs.py
+src/UrbanDictAPI/main.py
+src/UrbanDictAPI.egg-info/PKG-INFO
+src/UrbanDictAPI.egg-info/SOURCES.txt
+src/UrbanDictAPI.egg-info/dependency_links.txt
+src/UrbanDictAPI.egg-info/requires.txt
+src/UrbanDictAPI.egg-info/top_level.txt
