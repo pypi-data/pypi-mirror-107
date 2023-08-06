@@ -1,0 +1,3 @@
+[console_scripts]
+wh_lookml_gen = wh_lookml_gen.cli:main
+
