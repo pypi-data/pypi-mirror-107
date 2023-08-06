@@ -1,0 +1,13 @@
+PyQt5
+PyQt5-stubs
+cryptography
+pycodestyle
+pymysql
+requests
+emoji
+getkey
+PyYAML
+twine
+wheel
+bumpversion
+pylint
