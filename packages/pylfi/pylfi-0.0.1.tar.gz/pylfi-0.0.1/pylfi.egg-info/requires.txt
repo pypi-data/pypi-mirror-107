@@ -1,0 +1,11 @@
+numpy
+matplotlib
+scipy
+sklearn
+
+[dev]
+pytest
+pytest-cov
+flake8>=3.9.2
+isort
+twine
