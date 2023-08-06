@@ -1,0 +1,9 @@
+setup.py
+logoturtle/__init__.py
+logoturtle/__main__.py
+logoturtle/main.py
+logoturtle/parsing.py
+logoturtle.egg-info/PKG-INFO
+logoturtle.egg-info/SOURCES.txt
+logoturtle.egg-info/dependency_links.txt
+logoturtle.egg-info/top_level.txt
