@@ -1,0 +1,2 @@
+[console_scripts]
+pspick = pose_scene_pick:main

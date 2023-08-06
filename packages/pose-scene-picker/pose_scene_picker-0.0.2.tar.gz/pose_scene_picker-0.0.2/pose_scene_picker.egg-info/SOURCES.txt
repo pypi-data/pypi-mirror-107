@@ -1,0 +1,13 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+pose_scene_picker/__init__.py
+pose_scene_picker/__main__.py
+pose_scene_picker/diff_frame.py
+pose_scene_picker.egg-info/PKG-INFO
+pose_scene_picker.egg-info/SOURCES.txt
+pose_scene_picker.egg-info/dependency_links.txt
+pose_scene_picker.egg-info/entry_points.txt
+pose_scene_picker.egg-info/requires.txt
+pose_scene_picker.egg-info/top_level.txt
