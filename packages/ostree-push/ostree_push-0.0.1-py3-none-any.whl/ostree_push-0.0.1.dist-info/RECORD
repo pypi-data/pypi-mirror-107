@@ -1,0 +1,10 @@
+ostree_push-0.0.1.data/scripts/ostree-receive-shell,sha256=kym399gG-ZDSMmsCdO4zTceTj0TVpz2p0iB7OOc8nCM,2655
+otpush/__init__.py,sha256=iOlA-aI4jighOHYsJJucEorCcKXuT-GfgrLzUji19bQ,18
+otpush/push.py,sha256=gN-MZNbzol_mdRh4rkGT4V1SSF0qBHBj-vzT2TH0ZlU,18980
+otpush/receive.py,sha256=OzZJKxpx_Pm-V2tV_Db5TFHsC-I0IzAk8_9KALEYnZE,15836
+ostree_push-0.0.1.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ostree_push-0.0.1.dist-info/METADATA,sha256=fJTI10yUIF-YT6ue_T1_0B8tcHltuxfTXEKyZOdL2bI,5562
+ostree_push-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ostree_push-0.0.1.dist-info/entry_points.txt,sha256=V3_EVSaRgnrGmZ6F4kyVCUf1xy7LvuzgfU5JUTIUSW0,87
+ostree_push-0.0.1.dist-info/top_level.txt,sha256=g5iYtl6yldHeM9Nbz6JvF0rI6Sbl4MTvW63wlqGi9kA,7
+ostree_push-0.0.1.dist-info/RECORD,,
