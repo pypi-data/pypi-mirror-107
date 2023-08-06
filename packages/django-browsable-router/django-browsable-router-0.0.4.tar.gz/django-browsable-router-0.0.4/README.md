@@ -1,0 +1,103 @@
+# Django Browsable Router
+
+```
+pip install django-browsable-router
+```
+
+A Django Restframework router that can show APIViews and include other routers as navigable urls in the root view.
+
+```python
+from browsable_router import APIRouter
+from rest_framework.views import APIView
+from rest_framework.viewsets import ViewSet
+
+class TestView(APIView):
+  ...
+ 
+class TestViewSet(ViewSet):
+  ...
+
+router_1 = APIRouter()
+router_1.format_root_view("other_routes", "These are under a different route.")
+router_1.register(r"view-1", TestView.as_view(), "view_1")
+router_1.register(r"view-2", TestViewSet.as_view(), "view_2")
+
+router_2 = APIRouter()
+router_2.register(r"view-3", TestView.as_view(), "view_3")
+router_2.navigation_routes = {
+    "route": router_1,
+}
+
+urlpatterns = [
+    path("api/", include(router_2.urls))
+]
+```
+
+Resulting browsable API:
+```python
+#   API Root:
+#   """API root."""
+# 
+#   "route":    "/api/route/"
+#   "view-3":   "/api/view-3/"
+# 
+#   Other Routes:
+#   """These are under a different route."""
+# 
+#   "view-1":    "/api/route/view-1/"
+#   "view-2":    "/api/route/view-2/"
+```
+---
+### BaseAPIView
+Module also includes a custom BaseAPIView class, that simplifies making a workflow of:
+```python
+input: "raw data" 
+-> serializer = Serializer(data=...) 
+-> serializers.is_valid(raise_exception=True) 
+-> Response(data=serialziers.validated_data)
+```
+Simpy inherit from the class and any number of the included mixins. Then define the Serializers per method in the 'serializer_classes' attribute.
+```python
+from browsable_router import BaseAPIView, GetMixin, PostMixin
+from rest_framework.serializers import Serializer
+
+
+class SomeCustomView(GetMixin PostMixin, BaseAPIView):
+
+  class GetSerializer(Serializer):
+    ...
+    
+  class PostSerializer(Serializer):
+    ...
+
+  serializer_classes = {
+    "GET": GetSerializer,
+    "POST": PostSerializer,
+  }
+```
+
+This allows different serializers for different HTTP methods. Incoming data can be handled in the HTTP method function itself, in serializer's `validate()` method, or in a `handle_<method>()` function added by the mixins:
+
+```python
+class SomeCustomView(GetMixin, BaseAPIView):
+  
+  class GetSerializer(Serializer):
+    ...
+    
+    def validate(self, attrs):
+      # (2) Second place to modify the data. Run during input validation.
+      return attrs
+
+  serializer_classes = {
+    "GET": GetSerializer,
+  }
+  
+  def get(request, *args, **kwargs):
+    # (1) First place to modify the data. Run before input validation.
+    return super().get(request, *args, **kwargs)
+  
+  def handle_get(request, data, *args, **kwargs):
+    # (3) Last place to modify the data. Run after validation.
+    return data
+  
+```
