@@ -1,0 +1,16 @@
+heareval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heareval/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heareval/tasks/coughvid.py,sha256=vgp0ItgQtPT2VwnsR2TUQynUXpCwLYOK2tmlpT9Si6k,13576
+heareval/tasks/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heareval/tasks/config/coughvid.py,sha256=FANsnbKY0lXbz6A01lfRlBnSIdDXYk8LfSzNIcl6j4E,1230
+heareval/tasks/config/s3.py,sha256=sKxdy7MwjtnYSKSNCIEPu_NqL5ZrSmwtJb45vfBGaEo,359
+heareval/tasks/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heareval/tasks/util/audio.py,sha256=RURKiEIql3sZYj0Z7bm8-6D_rki8BoJLwy2TiW2wvkg,1284
+heareval/tasks/util/luigi.py,sha256=giKsY-a2CvPup0qq_N6vL7T2Tfsyx4ojdZanPW-OrhA,4640
+heareval/tasks/util/s3.py,sha256=WxfFjNzN2cbVT4PyLIl9GJSKs4sVQrZs_zxgt5vO9M8,4275
+heareval-2021.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+heareval-2021.0.1.dist-info/METADATA,sha256=_yvnqLheDKQwDACOK1k9KB0Psnxp7B2UFlyu0s-dpg4,1326
+heareval-2021.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+heareval-2021.0.1.dist-info/entry_points.txt,sha256=hG_PPQc1qBmZEHBjh2HtkSloteOAg_l4V4rKrJFVJ0o,74
+heareval-2021.0.1.dist-info/top_level.txt,sha256=aQD4B_VFN1DtEWUS88oAlE_WCirp86eF3URfty2EVOI,9
+heareval-2021.0.1.dist-info/RECORD,,
