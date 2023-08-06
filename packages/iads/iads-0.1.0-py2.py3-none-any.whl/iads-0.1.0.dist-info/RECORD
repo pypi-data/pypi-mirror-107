@@ -1,0 +1,16 @@
+iads/__init__.py,sha256=pyOGDKuKAdsMospOh3M1YDzpeNlqWEU1z2-4mEIB34k,201
+iads/classifiers/__init__.py,sha256=US7DTAsGRSlyeExpWFOAmwGsQat7FVSccoZvLW_R7aY,378
+iads/classifiers/_classifiers.py,sha256=kMxuXeKU7VkhITHYzzsAYv6Cky7rj4rAR5b7Fi_Xtcw,27226
+iads/clustering/__init__.py,sha256=T4wI6oqmJXpRGtidTCYDdWt409YD1uu0HAllqP38GKA,157
+iads/clustering/_clustering.py,sha256=3ftG0WAvqIZ-WOT4Q304WCMLYjWzrWFn9KcufUWUzrg,8313
+iads/evaluation/__init__.py,sha256=7xfiQ2zfXgw8ymU5tpJtBvav1kawkDDGPqLDTiDeCcg,85
+iads/evaluation/_evaluation.py,sha256=ZY_SU0qHwUwqmp526uThEaYI4Zn2U6XR-U3OztXC-0A,1892
+iads/text/__init__.py,sha256=lqHrrS6WkSxiyuoBneCm-PIkQ9G1uUcKuvWJUSE5v04,300
+iads/text/_porter.py,sha256=Kj0UF8U1ZKVB6-6ihU2pfU9PQ97ZNJBOmZYP2BCcfDM,4410
+iads/text/_processing.py,sha256=kMhjCYsOQhuaYeAgCgvQfBbIbGWEG3IqzqkX73vRRTw,10969
+iads/utils/__init__.py,sha256=CRjk7Cq86Y8kWUrc6YXA_8SbNMA4l3Mc5HavYq2ERkQ,636
+iads/utils/_utils.py,sha256=LD0XqrLbGKLArg2ijUDfuNsv-SWE6mmVViMnoeY5jSI,11908
+iads-0.1.0.dist-info/METADATA,sha256=13yAE9WadD5N1aGhGKdj6KUtAim4mDlwEUi5vf9dCTQ,1299
+iads-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+iads-0.1.0.dist-info/top_level.txt,sha256=PdfWrSvvXoZx_41OWIU3Hjr6i2NAjwLKc4XlX_JtqyM,5
+iads-0.1.0.dist-info/RECORD,,

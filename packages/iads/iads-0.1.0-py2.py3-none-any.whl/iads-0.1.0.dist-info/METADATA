@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: iads
+Version: 0.1.0
+Summary: "Python library for machine learning developed for the Data Science course in Licence 3 at the Sorbonne University"
+Home-page: https://github.com/MelissaLarbi/iads
+Author: Melissa LARBI
+Author-email: melissalarbi99@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/MelissaLarbi/iads
+Keywords: pca,machine learning,classification,clustering
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (==4.61.0)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: nltk (==3.6.1)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: seaborn (==0.11.1)
+Provides-Extra: test
+Requires-Dist: pytest (==6.2.3) ; extra == 'test'
+
+# indeed_mongodb_scrapper
+ Indeed Scrapper storing the data on MongoDB database
+# Installation
+## Using Pip
+```bash
+  $ pip install iads
+```
+## Manual
+```bash
+  $ git clone https://github.com/MelissaLarbi/iads.git
+  $ cd iads
+  $ python setup.py install
+```
+# Usage
+```bash
+$ iads
+```
+
