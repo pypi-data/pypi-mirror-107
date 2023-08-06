@@ -1,0 +1,3 @@
+[console_scripts]
+ANYstructure_local = ANYstructure_local.__main__:main
+
