@@ -1,0 +1,12 @@
+powersupply/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+powersupply/__main__.py,sha256=p23LrTsWq2cI8lYNIy2qldKFcw3szXuh2aCM7XV51sQ,11155
+powersupply/platform.py,sha256=jF1ie3SlCN77MGc6h8nsjZAD2Rbuf4ORCu21FC0P2oE,1494
+powersupply/platform_internals.py,sha256=jF1ie3SlCN77MGc6h8nsjZAD2Rbuf4ORCu21FC0P2oE,1494
+powersupply/powersupply.glade,sha256=pT8gLA6EhH86_2GBmumYpdiNiVJRo07Z8k4x22f5-qg,35049
+powersupply-0.5.0.dist-info/LICENSE,sha256=GRd7vqZ2c5E31NnVYIdwrVVSEAIG33HYMxOyKbq9-xU,1070
+powersupply-0.5.0.dist-info/METADATA,sha256=NQCd7YoVLzf8OJjFTG0cu9iMyYAK7erX8QGG0N4Rick,462
+powersupply-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+powersupply-0.5.0.dist-info/entry_points.txt,sha256=AUiI2cDdTIkJ9u_lW7AbJL4qze4rb8GvtnB50nuMhQ0,55
+powersupply-0.5.0.dist-info/top_level.txt,sha256=mwBPEmc3NxAyUpNE1SijiOLwR59hb4LSf4Pe9kirsgA,12
+powersupply-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+powersupply-0.5.0.dist-info/RECORD,,
