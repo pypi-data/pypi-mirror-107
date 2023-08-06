@@ -1,0 +1,3 @@
+[console_scripts]
+lastfm-backup=lastfm_backup_cli.main:cli_main
+
