@@ -1,0 +1,44 @@
+h1D2 (system)
+largest evalue: (216.809927796+0j) , smallest evalue: (0.21513570307+0j) , condition number: (1007.78217981+0j)
+largest evalue: (237.539339682+0j) , smallest evalue: (0.0489674729718+0j) , condition number: (4850.96177658+0j)
+largest evalue: (244.246727718+0j) , smallest evalue: (0.0119774036554+0j) , condition number: (20392.2932502+0j)
+scale: 4.81, 4.20
+
+h1H (system)
+largest evalue: (23.4555270022+0j) , smallest evalue: (0.187482107143+0j) , condition number: (125.108082897+0j)
+largest evalue: (23.4441601026+0j) , smallest evalue: (0.0474618630304+0j) , condition number: (493.957855964+0j)
+largest evalue: (23.4424572494+0j) , smallest evalue: (0.0119015987333+0j) , condition number: (1969.68976813+0j)
+scale: 3.95, 3.99
+
+l2D2
+system matrix is symmetric:  True
+largest evalue: (11689.2453001+0j) , smallest evalue: (2.42419843304+0j) , condition number: (4821.9011863+0j)
+largest evalue: (50864.6344671+0j) , smallest evalue: (0.617355061918+0j) , condition number: (82391.2163433+0j)
+largest evalue: (209084.637937+0j) , smallest evalue: (0.152951630064+0j) , condition number: (1366998.42852+0j)
+scale: 17.09, 16.59
+
+l2H
+system matrix is symmetric:  True
+largest evalue: (19181.5645439+0j) , smallest evalue: (6.21651983165+0j) , condition number: (3085.57924101+0j)
+largest evalue: (80099.6079879+0j) , smallest evalue: (1.52626937887+0j) , condition number: (52480.6492855+0j)
+largest evalue: (325418.87702+0j) , smallest evalue: (0.380638849726+0j) , condition number: (854928.174709+0j)
+scale: 17.01, 16.29
+
+mu
+largest evalue: (11778.6969666+0j) , smallest evalue: (1.53861763113+0j) , condition number: (7655.376312+0j)
+largest evalue: (51066.5831615+0j) , smallest evalue: (0.584925980987+0j) , condition number: (87304.3510144+0j)
+largest evalue: (209383.705576+0j) , smallest evalue: (0.152134452539+0j) , condition number: (1376306.95797+0j)
+scale: 11.40, 15.76
+
+feng
+largest evalue: (10.2617697111+0j) , smallest evalue: (0.304806029661+0j) , condition number: (33.666557458+0j)
+largest evalue: (10.5530780334+0j) , smallest evalue: (0.0768432877702+0j) , condition number: (137.332463767+0j)
+largest evalue: (10.6364704658+0j) , smallest evalue: (0.019258731606+0j) , condition number: (552.293405578+0j)
+scale: 4.08, 4.02
+
+nvdg
+largest evalue: (10.3253804304+0j) , smallest evalue: (0.304045169227+0j) , condition number: (33.960021324+0j)
+largest evalue: (10.564201967+0j) , smallest evalue: (0.0768189998009+0j) , condition number: (137.520691422+0j)
+largest evalue: (10.6381160923+0j) , smallest evalue: (0.0192579651408+0j) , condition number: (552.400838537+0j)
+scale: 4.05, 4.02
+
