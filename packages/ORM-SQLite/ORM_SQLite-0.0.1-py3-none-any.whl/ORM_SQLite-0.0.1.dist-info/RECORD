@@ -1,0 +1,10 @@
+orm_sqlite/__init__.py,sha256=_JQ9uPyb0WeHLyEtrdwIzjMyDkrInRuB1kbqG4dWboM,413
+orm_sqlite/database.py,sha256=p5hDK9D8j9x724h_egCHqU2tGM1wHg_4hE7NzYQLKn0,1833
+orm_sqlite/logger.py,sha256=OJU3L7k-zB1hQGdQ2VCZGrBsFym5or6stCMipS0R8VE,992
+orm_sqlite/manager.py,sha256=XgRmucyomHw81jox2NeKJ7BCzCgsKBwTxtQ_QPkaGsY,6645
+orm_sqlite/model.py,sha256=JixO1EXibCQfX3GqiW2q6WrCy6fyP8-9dV-7GwE885Y,3240
+ORM_SQLite-0.0.1.dist-info/LICENSE,sha256=aFg6y5hqTZk3xKWi_lf2NjdIGMElLfBifTNwSfxIVSg,1065
+ORM_SQLite-0.0.1.dist-info/METADATA,sha256=7cdO4eMelm0P6UEwN7Kc6mIUfQTQIBgwY27VLyEVQYQ,7938
+ORM_SQLite-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ORM_SQLite-0.0.1.dist-info/top_level.txt,sha256=zp3uhsfM59vvsEne9_sDMgdFLOUSrV156ZyGqxfa6ls,11
+ORM_SQLite-0.0.1.dist-info/RECORD,,
