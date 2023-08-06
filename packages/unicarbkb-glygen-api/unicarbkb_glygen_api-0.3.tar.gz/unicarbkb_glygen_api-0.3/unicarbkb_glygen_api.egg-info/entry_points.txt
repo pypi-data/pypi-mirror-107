@@ -1,0 +1,3 @@
+[console_scripts]
+unicarbkb_glygen_api = unicarbkb_glygen_api:main
+
