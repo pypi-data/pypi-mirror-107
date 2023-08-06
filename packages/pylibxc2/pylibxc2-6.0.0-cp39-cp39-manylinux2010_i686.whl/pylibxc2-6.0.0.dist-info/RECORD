@@ -1,0 +1,15 @@
+pylibxc2-6.0.0.dist-info/RECORD,,
+pylibxc2-6.0.0.dist-info/AUTHORS,sha256=O3uPMeG8sE9-rJLhLSos62MvXZFeD6oBU11Os11Ml9Y,244
+pylibxc2-6.0.0.dist-info/METADATA,sha256=jNnJ3GjYL5hwkuiaoYGYGow0S64590-UN0ejY3GkEN4,1170
+pylibxc2-6.0.0.dist-info/top_level.txt,sha256=bs7Afs5lIo7M1QSBM4kFNit5dYIiJfXuq-3oSjEFZCc,8
+pylibxc2-6.0.0.dist-info/COPYING,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+pylibxc2-6.0.0.dist-info/WHEEL,sha256=erlUWf4gntrkM-m18kyr2NqTnRsGERF3sjzoDbYLimU,109
+pylibxc/libxc.so,sha256=Mao_bcMc4fcyDWIwMmPFOyqual6xIWOySqFL8uFgf98,26327588
+pylibxc/__init__.py,sha256=mt-yrHVkyaKYPBhK4WE2nGD8wXsdxhFzxGycwsABdmw,187
+pylibxc/structs.py,sha256=jn5pRueh_u4cfDrMNkOrmh1l2ZQBVZvP99Jwx83mMmw,5151
+pylibxc/libxc.so.11,sha256=Mao_bcMc4fcyDWIwMmPFOyqual6xIWOySqFL8uFgf98,26327588
+pylibxc/functional.py,sha256=sqBOwUfS5SibGiMvV6RQCINMkq400kJj9j1uq3K_Vz8,29208
+pylibxc/flags.py,sha256=3CqsHg5DqB7-yoOF8hF11dVfT_00dcyy3r6dozbStJ0,1204
+pylibxc/version.py,sha256=eSyQRXyZR8d0tJQPRLwDd_1tXyRgb7TUvtlI-hfN620,22
+pylibxc/core.py,sha256=hInZ7fLVIckzXoCl8pJe-fkN2TD-TWllCaiX58L678c,890
+pylibxc/util.py,sha256=zVzprICoUMiUEl0OXIp9MslKCpXJU8sgQo3NpLtuJqc,6348
