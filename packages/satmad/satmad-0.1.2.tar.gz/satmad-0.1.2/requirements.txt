@@ -1,0 +1,9 @@
+astropy
+jplephem
+matplotlib
+numpy
+scipy
+sgp4
+portion
+pyerfa
+pytest
