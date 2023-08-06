@@ -1,0 +1,9 @@
+README.md
+setup.py
+basic_timehelper.egg-info/PKG-INFO
+basic_timehelper.egg-info/SOURCES.txt
+basic_timehelper.egg-info/dependency_links.txt
+basic_timehelper.egg-info/requires.txt
+basic_timehelper.egg-info/top_level.txt
+timehelper/__init__.py
+timehelper/methods.py
