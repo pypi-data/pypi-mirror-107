@@ -1,0 +1,1 @@
+ALTER TABLE unique_ips ADD COLUMN mac_address TEXT;
