@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/InferGoKeggToGOBP.py
+src/InferGoReactomeToGOBP.py
+src/InferGoSlimToGOBP.py
+src/VisPathways.py
+src/enrichment.py
+src/mergeDatabases.py
+src/simpleTime.py
+src/summarizePathwayHierarchy.py
+src/treeGO.py
+src/VisPathways.egg-info/PKG-INFO
+src/VisPathways.egg-info/SOURCES.txt
+src/VisPathways.egg-info/dependency_links.txt
+src/VisPathways.egg-info/requires.txt
+src/VisPathways.egg-info/top_level.txt
