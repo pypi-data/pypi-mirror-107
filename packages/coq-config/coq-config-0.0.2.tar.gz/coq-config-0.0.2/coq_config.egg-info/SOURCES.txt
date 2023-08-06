@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+coq_config.egg-info/PKG-INFO
+coq_config.egg-info/SOURCES.txt
+coq_config.egg-info/dependency_links.txt
+coq_config.egg-info/entry_points.txt
+coq_config.egg-info/requires.txt
+coq_config.egg-info/top_level.txt
+coqconfig/__init__.py
+coqconfig/coqconfig.py
