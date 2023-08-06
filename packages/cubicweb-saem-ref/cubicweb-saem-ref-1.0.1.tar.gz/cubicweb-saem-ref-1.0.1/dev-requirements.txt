@@ -1,0 +1,4 @@
+psycopg2-binary
+pytest
+webtest
+git+https://github.com/psycojoker/pytest-capture-deprecatedwarnings
