@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test-convx.py
+__pycache__/test-convx.cpython-38-pytest-6.2.4.pyc
+src/convx.py
+src/__pycache__/convx.cpython-38.pyc
+src/__pycache__/main.cpython-38.pyc
+src/convx.egg-info/PKG-INFO
+src/convx.egg-info/SOURCES.txt
+src/convx.egg-info/dependency_links.txt
+src/convx.egg-info/entry_points.txt
+src/convx.egg-info/requires.txt
+src/convx.egg-info/top_level.txt
