@@ -1,0 +1,7 @@
+graft collective
+graft docs
+graft binder
+include *.rst
+include *.txt
+include .coveragerc
+global-exclude *.pyc
