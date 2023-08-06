@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: localhook
+Version: 0.0.3
+Summary: Receive webhooks to your Terminal
+Home-page: https://github.com/kekayan/localhook
+Author: Kekayan Nanthakumar
+Author-email: kekayan.nanthakumar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyngrok (>=5.0.2)
+Requires-Dist: Flask (==2.0.1)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: rich
+Requires-Dist: waitress
+Requires-Dist: click (==8.0.1)
+
+# localhook
+
+<p align="center"> Webhooks delivered on terminal <p>
+<p align="center">
+<a href="https://pypi.org/project/localhook/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/localhook?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+</p>
+
+## Installation
+
+<div class="termy">
+
+```console
+$ pip install localhook
+
+---> 100%
+```
+</div>
+
+## Run it
+
+Run the server with:
+
+<div class="termy">
+
+```console
+$ localhook --port 9090
+
+         Webhooks Delivered Locally   
+
+🎉 Ready to receive webhooks on terminal 👍
+🎉 Set your webhook URL as http://50c3f3e44dca.ngrok.io
+🎉 Traffic stats available on http://127.0.0.1:4040
+
+```
+Now set the URL to receive the webhooks in terminal
+</div>
+
+
