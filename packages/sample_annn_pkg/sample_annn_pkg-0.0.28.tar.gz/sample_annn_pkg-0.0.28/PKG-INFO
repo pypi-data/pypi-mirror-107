@@ -1,0 +1,145 @@
+Metadata-Version: 1.0
+Name: sample_annn_pkg
+Version: 0.0.28
+Summary: sample_annn_pkg description
+Home-page: https://github.com/laplaciannin102/sample_annn_pkg
+Author: hoge
+Author-email: fuga@email.com
+License: Copyright (c) 2021, laplaciannin102
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Description: sample_annn_pkg
+        ===============
+        
+        -  author: laplaciannin102
+        
+        --------------
+        
+        Table of Contents
+        -----------------
+        
+        -  `sample_annn_pkg <#sample_annn_pkg>`__
+        
+           -  `Table of Contents <#table-of-contents>`__
+           -  `How to install <#how-to-install>`__
+           -  `Github repository <#github-repository>`__
+           -  `PyPI repository <#pypi-repository>`__
+        
+              -  `TestPyPI <#testpypi>`__
+              -  `PyPI <#pypi>`__
+        
+           -  `Directory structure <#directory-structure>`__
+           -  `Easy installation sample <#easy-installation-sample>`__
+           -  `How to upload pypi package <#how-to-upload-pypi-package>`__
+        
+        --------------
+        
+        How to install
+        --------------
+        
+        .. code:: shell
+        
+           pip install sample_annn_pkg
+        
+        Github repository
+        -----------------
+        
+        -  https://github.com/laplaciannin102/sample_annn_pkg
+        
+        PyPI repository
+        ---------------
+        
+        TestPyPI
+        ~~~~~~~~
+        
+        -  https://pypi.org/project/sample_annn_pkg/
+        
+        PyPI
+        ~~~~
+        
+        -  https://test.pypi.org/project/sample_annn_pkg/
+        
+        --------------
+        
+        Directory structure
+        -------------------
+        
+        ::
+        
+           sample_annn_pkg
+           ├── .gitignore
+           ├── LICENSE
+           ├── MANIFEST.in
+           ├── README.md
+           ├── README.rst
+           ├── sample_annn_pkg
+           │   ├── __init__.py
+           │   ├── sample_main_module.py
+           │   ├── sample_sub_module.py
+           │   └── datasets
+           │       ├── __init__.py
+           │       ├── load_datasets.py
+           │       └── sample_data
+           │           ├── sample_data.csv
+           │           └── sample_data.xlsx
+           ├── tests
+           │   ├── __init__.py
+           │   └── test_main_moduleXXX.py
+           ├── requirements.txt
+           └── setup.py
+        
+        Easy installation sample
+        ------------------------
+        
+        -  command
+        
+        .. code:: shell
+        
+           >> git clone https://github.com/laplaciannin102/sample_annn_pkg.git
+           >> cd sample_annn_pkg
+           >> python setup.py sdist upload -r testpypi
+           >> pip install --index-url https://test.pypi.org/simple/ sample_annn_pkg
+        
+        -  python
+        
+        .. code:: python
+        
+           >>> import sample_annn_pkg as sap
+           >>> sap.func02()
+           # success!!
+           # poyo
+           >>> df0 = sap.datasets.load_sample_data0() # load csv
+           # load sample data0
+           # file format: csv
+           # sample pandas.DataFrame:
+           #    col1  col2  col3
+           # 0     1     2     3
+           # 1     4     5     6
+           # 2     7     8     9
+           >>> df1 = sap.datasets.load_sample_data1() # load excel
+           # load sample data1
+           # file format: excel
+           # sample pandas.DataFrame:
+           #    col4  col5  col6
+           # 0  hoge    10    11
+           # 1  fuga    12    13
+           # 2  poyo    14    15
+           # 3  piyo    16    17
+        
+        --------------
+        
+        How to upload pypi package
+        --------------------------
+        
+        -  access to this URL
+        
+           -  https://github.com/laplaciannin102/sample_annn_pkg/blob/master/docs/how_to_upload_pypi_pkg.md
+        
+Platform: UNKNOWN
