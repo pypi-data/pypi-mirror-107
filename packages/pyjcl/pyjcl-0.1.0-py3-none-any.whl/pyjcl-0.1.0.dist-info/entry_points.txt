@@ -1,0 +1,3 @@
+[console_scripts]
+jcl=jcl.cli:main
+
