@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+ps3_update_dl/__init__.py
+ps3_update_dl/playstation-ca.crt
+ps3_update_dl.egg-info/PKG-INFO
+ps3_update_dl.egg-info/SOURCES.txt
+ps3_update_dl.egg-info/dependency_links.txt
+ps3_update_dl.egg-info/entry_points.txt
+ps3_update_dl.egg-info/requires.txt
+ps3_update_dl.egg-info/top_level.txt
