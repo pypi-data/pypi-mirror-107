@@ -1,0 +1,12 @@
+synapse_admin/__init__.py,sha256=oMFUl3_RZEQsJfCLdDTyBROoHWHe8XzdSoTWCDGEOoo,337
+synapse_admin/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synapse_admin/base.py,sha256=1Yrk6qHqDpwGGDUDRINr34Dbi0AxKfIuFEEhyPJt5xc,9925
+synapse_admin/management.py,sha256=dWjewlQXluHUyG2ejfSdLDUWUIPW72fwyXFxo9cv6Hk,6173
+synapse_admin/media.py,sha256=8fjosTGjHWSfahXPfYzw8-3JfeYmistxJKvx9cTf0QQ,5835
+synapse_admin/room.py,sha256=R4s6CjxbkWeGZaZciy5E8dLSpIOzN_lgHg6YYod1TJw,12816
+synapse_admin/user.py,sha256=-BF405VUNwNzgPHfLfidXfaFmS5rosHaoqMhPrZ7iuY,17955
+matrix_synapse_admin-0.1.5rc2.dist-info/LICENSE,sha256=_xeSYhF-XElQPApfW6O-yz5sGm-Rua6LUEvWH7KQ0e0,1062
+matrix_synapse_admin-0.1.5rc2.dist-info/METADATA,sha256=Z1-qoWk8fwuQSlaiyu-abc7E2N6qmGd01AqiqNaF1X8,2967
+matrix_synapse_admin-0.1.5rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+matrix_synapse_admin-0.1.5rc2.dist-info/top_level.txt,sha256=f4D3p_27sH3lru8sobRjCI3wwjNWoLXJ7bjZqbPU3Co,14
+matrix_synapse_admin-0.1.5rc2.dist-info/RECORD,,
