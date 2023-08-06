@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pytorreq
+Version: 0.1.0
+Summary: A simple python library that allows you to forward requests through the tor network
+Home-page: https://github.com/Exordio/pyTorReq
+Author: Ivan Golubev
+Author-email: exordio@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+

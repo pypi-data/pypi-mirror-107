@@ -1,0 +1,9 @@
+pytorreq.py
+setup.cfg
+setup.py
+pytorreq.egg-info/PKG-INFO
+pytorreq.egg-info/SOURCES.txt
+pytorreq.egg-info/dependency_links.txt
+pytorreq.egg-info/not-zip-safe
+pytorreq.egg-info/requires.txt
+pytorreq.egg-info/top_level.txt
