@@ -1,0 +1,9 @@
+parse_ingredient/__init__.py,sha256=7M1fJdiX3OC_Bt7N281YYfvLmJF95EWMlN0njeyeDXw,398
+parse_ingredient/ingredient.py,sha256=3UPgLrEAdc47VYDoqA610H2OLm18JxkkOWl-1Ygn8aI,1346
+parse_ingredient/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parse_ingredient/internal/client.py,sha256=ZshLcJcsW81HJRAswwDEOfRqQzpgSdWD55CKjd2YzbY,4220
+zestful_parse_ingredient-0.0.2.dist-info/LICENSE,sha256=ROupzmzz0-lbsuPALUXX9rs-51vOsr28ip1IA6GotfE,1053
+zestful_parse_ingredient-0.0.2.dist-info/METADATA,sha256=ZUrI_X0BOkKJLN84wTLs0QBTRjYumPtFriX1dids0IM,4211
+zestful_parse_ingredient-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+zestful_parse_ingredient-0.0.2.dist-info/top_level.txt,sha256=leGEFjqIOntTK48RqwVQ0UUU-bM53X1k82M5jNLmWT0,17
+zestful_parse_ingredient-0.0.2.dist-info/RECORD,,
