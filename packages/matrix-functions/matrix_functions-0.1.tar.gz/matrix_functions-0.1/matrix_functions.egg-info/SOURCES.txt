@@ -1,0 +1,8 @@
+setup.py
+matrix_functions/Matrix_functions.py
+matrix_functions/__init__.py
+matrix_functions.egg-info/PKG-INFO
+matrix_functions.egg-info/SOURCES.txt
+matrix_functions.egg-info/dependency_links.txt
+matrix_functions.egg-info/not-zip-safe
+matrix_functions.egg-info/top_level.txt
