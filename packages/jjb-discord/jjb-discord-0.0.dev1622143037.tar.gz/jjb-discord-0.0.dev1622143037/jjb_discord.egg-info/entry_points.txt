@@ -1,0 +1,3 @@
+[jenkins_jobs.publishers]
+discord-notifier = jjb_discord.discord_notifier:publisher
+
