@@ -1,0 +1,15 @@
+venture/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venture/__main__.py,sha256=0YC7azhahTeugCXIs4OckkdTZaUarqZyy0bz581k6qY,5587
+venture/config.py,sha256=w0hbetjsymWA7jtSwGl6fxEPyNFW7IzMfvCfuyZniuo,2007
+venture/icons.py,sha256=1btorZaaz_HTkOemJoUkfHzyBPZ3VbG67bx-nxVljcU,679
+venture/project_list.py,sha256=9RcNhBlcKR9akRuL8H4vCeNCaS0w7turX1f5lIdlNZc,4702
+venture/tags.py,sha256=SeqUjn2Sfzs4z5RCLLOcCSIHqZtNTit_yg0Mym-Ij6g,1110
+venture/types.py,sha256=Nw-Ygzh92pWeW42wAdU0VLvKfTHz_3iMmmf3FFkQv1E,309
+venture/ui/__init__.py,sha256=qSPdCx5tdtlRihhw_ZULYdkqSsMxAmL6lp1q5W2Qku8,1018
+venture/ui/dmenu_like.py,sha256=Z1KpapRSQ7FXLtImZKMQyJ-wRa6bLMjXVJi9ndBeoaE,2705
+venture/ui/ui_provider.py,sha256=VC1lXw2aZNbAFYCvqpE_BHoTpf8zpEzkGuArUN1PUU8,1005
+venture/util.py,sha256=b9GejMy8y4IubIbI9sdjyTcfL78zkQCOZ6WrK2I2pNo,1067
+venture-1.2.3.dist-info/entry_points.txt,sha256=TQGevqMrksZzVKDvYHK7Hjn2MkH7oiz8_FF-fISQb54,48
+venture-1.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+venture-1.2.3.dist-info/METADATA,sha256=x7uK4AFbE3dfV8522IzPmOcFZa3MwZlt-mj4SPp94Cs,3071
+venture-1.2.3.dist-info/RECORD,,
