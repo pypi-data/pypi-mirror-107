@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: glotio-api
+Version: 1.0.0
+Summary: Python bindings for the glot.io API.
+Home-page: https://github.com/raster0x2a/glotio-api
+Author: raster0x2a
+Author-email: raster0x2a@gmail.com
+License: MIT
+Keywords: glot.io api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# glot.io API for Python
+
+## Installation
+
+```
+$ pip install walkscore-api
+```
+
+## Basic Usage
+
+```py
+from glotio import Runner 
+
+
+g = Runner("[YOUR_API_KEY]")
+
+# language list
+print(Runner.get_lang().keys())
+
+g.set_lang("python")
+code = "import sys;print(input() + ', ' + sys.argv[1])"
+g.set_code(code, filename="main.py")
+g.set_stdin("input text")
+g.set_command("python3 main.py 'command line argument'")
+
+result = g.run()
+print(result)
+```
+
+## LICENCE
+
+glotio-api is made available under an MIT License.
+
