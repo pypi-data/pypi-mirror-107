@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: somesimplemath
+Version: 0.1.0
+Summary: Module for simple math.
+Home-page: UNKNOWN
+Author: Felix Ou
+Author-email: felixcou@outlook.com
+License: UNKNOWN
+Description: Simple math module similar to the built-in MATH module.
+Keywords: math
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
