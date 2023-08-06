@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ppotp
+Version: 2.3.0
+Summary: Tool to generate One-Time Passwords
+Home-page: https://github.com/peterpakos/ppotp
+Author: Peter Pakos
+Author-email: peter.pakos@wandisco.com
+License: GPLv3
+Keywords: otp one time password generator auth
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+License-File: LICENSE.txt
+Requires-Dist: pyotp
+Requires-Dist: pplogger
+Requires-Dist: pyperclip
+
+UNKNOWN
+
