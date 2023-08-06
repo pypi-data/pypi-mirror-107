@@ -1,0 +1,10 @@
+README.md
+setup.py
+python/socketmap/__init__.py
+python/socketmap/postgres.py
+python/socketmap/socketmap.py
+python/socketmap.egg-info/PKG-INFO
+python/socketmap.egg-info/SOURCES.txt
+python/socketmap.egg-info/dependency_links.txt
+python/socketmap.egg-info/requires.txt
+python/socketmap.egg-info/top_level.txt
