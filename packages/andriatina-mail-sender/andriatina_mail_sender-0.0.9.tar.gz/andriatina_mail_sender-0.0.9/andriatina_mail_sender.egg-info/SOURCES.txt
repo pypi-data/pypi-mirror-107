@@ -1,0 +1,8 @@
+setup.py
+andriatina_mail_sender.egg-info/PKG-INFO
+andriatina_mail_sender.egg-info/SOURCES.txt
+andriatina_mail_sender.egg-info/dependency_links.txt
+andriatina_mail_sender.egg-info/top_level.txt
+simple_mail_sender/__init__.py
+simple_mail_sender/mail_sender.py
+simple_mail_sender/setup.py
