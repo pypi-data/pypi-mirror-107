@@ -1,0 +1,1 @@
+print("hello from fum package ty good bye")
