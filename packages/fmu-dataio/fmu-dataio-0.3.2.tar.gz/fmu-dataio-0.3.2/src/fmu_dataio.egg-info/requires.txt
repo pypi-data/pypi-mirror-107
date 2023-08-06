@@ -1,0 +1,17 @@
+xtgeo>=2.14
+PyYAML
+
+[docs]
+sphinx
+sphinx-rtd-theme
+autoapi
+sphinx-autodoc-typehints
+sphinxcontrib-apidoc
+
+[tests]
+pytest
+black>=20.8b0
+flake8
+pytest-cov
+pytest-mock
+rstcheck
