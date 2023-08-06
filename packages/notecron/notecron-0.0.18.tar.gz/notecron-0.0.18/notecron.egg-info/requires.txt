@@ -1,0 +1,4 @@
+apscheduler
+gunicorn
+flask-migrate
+flask-script
