@@ -1,0 +1,11 @@
+README.md
+setup.py
+targen/__init__.py
+targen.egg-info/PKG-INFO
+targen.egg-info/SOURCES.txt
+targen.egg-info/dependency_links.txt
+targen.egg-info/not-zip-safe
+targen.egg-info/requires.txt
+targen.egg-info/top_level.txt
+targen/data/__init__.py
+targen/data/target.py
