@@ -1,0 +1,13 @@
+opening_hours/__init__.py,sha256=7QQDN0ltf9T33g4-rv6NrNqD3XuEKBF7lW0BQNWXKuw,59
+opening_hours/parse_opening_hours.py,sha256=ty2SlghHzr58pWeZWKwKGnpbS2E2w-oxlO1nV0T6qiQ,3177
+opening_hours/patterns.py,sha256=zmV4Taoy5NlgpKAkQ-ykKTNobxFnmjYcGRkCMR9yaRQ,5351
+opening_hours/models/__init__.py,sha256=ECHrR6RoR_Ri0bAVVASNTWAbU1-GX1E5mrcIDQPWctE,84
+opening_hours/models/day.py,sha256=u87OKVgiT_NVUXDcT0WU3SFK4EJEt2z9BuzWA0y87_k,2001
+opening_hours/models/days.py,sha256=fTbZV1N4UVc-pJQDrt0--t2gURL0_L97EysU4Toumvk,3844
+opening_hours/models/time.py,sha256=iE82-WfjE76w5JGcZH7RcgAn38viw0o20eMeP2xXTjE,4459
+opening_hours/models/times.py,sha256=IWmLJv-uvdZdmYFN6fXv7UiHqjgwJl_aE4gR9fsU-5g,3933
+jsonify_opening_hours-0.4.0.dist-info/LICENSE,sha256=kSjL8YMGhhqR348M7Slobxj3QydePEoxZ8N2JFdSAnQ,1071
+jsonify_opening_hours-0.4.0.dist-info/METADATA,sha256=HxdSj2l5PvmtozZ3sVoGD2jOKoGR-SnU0Qn-S5QS0P8,3099
+jsonify_opening_hours-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jsonify_opening_hours-0.4.0.dist-info/top_level.txt,sha256=xYATwzWI70TrifEtIppA_vfYqoDi-Qt7pfh0aFAMdRo,14
+jsonify_opening_hours-0.4.0.dist-info/RECORD,,
