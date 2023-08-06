@@ -1,0 +1,8 @@
+jesspack/__init__.py,sha256=CYC4LreAKwsffOpm-OGix8scWacZc0coM6IubJD7QgU,235
+jesspack/data/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jesspack-1.0.data/scripts/jesspack-run,sha256=_5JNOjhS70e8AZ9BbfR0DTTfvTNbrWg4VgowB1RtonE,33
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jesspack-1.0.dist-info/METADATA,sha256=laTBB2F-r1qHfncT7ap6gOqQhFlB0V4yRWeCN7VmIj8,678
+jesspack-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jesspack-1.0.dist-info/top_level.txt,sha256=AQuJ3Mm4ERrI1Viwg7IqrehSnMLWhrULruA4moMo7gE,15
+jesspack-1.0.dist-info/RECORD,,
