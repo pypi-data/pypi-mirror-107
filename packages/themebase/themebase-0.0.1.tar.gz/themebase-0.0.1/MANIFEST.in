@@ -1,0 +1,2 @@
+recursive-include themebase *
+global-exclude *.py[cod]
