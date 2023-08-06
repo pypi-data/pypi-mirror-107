@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: simplepkg
+Version: 0.4.3
+Summary: Simple python package scaffolding utility.
+Home-page: https://gitlab.com/b5n/simplepkg
+Author: Brandon Nunez
+Author-email: b@bnunez.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: pathlib
+
+# simplepkg
+
+https://pypi.org/project/simplepkg/
+
+## simplepkg creates a simple python package
+
+Files contain basic templates, the created package is immediately ready for installation via pip, or upload to PyPI.
+
+*Please utilize TestPyPI for development or testing purposes:* https://test.pypi.org/
+
+
+```
+$ simplepkg demo
+
+demo/
+├── demo
+│   ├── data
+│   │   └── config
+│   ├── logs
+│   │   └── demo.log
+│   ├── modules
+│   │   ├── demo_module.py
+│   │   └── __init__.py
+│   ├── test
+│   │   ├── __init__.py
+│   │   ├── test_app.py
+│   │   ├── test_demo_module.py
+│   │   └── test_demo.py
+│   ├── tmp
+│   │   └── tmp
+│   ├── app.py
+│   ├── __init__.py
+│   └── __main__.py
+├── LICENSE
+├── Makefile
+├── MANIFEST.in
+├── README.md
+└── setup.py
+```
+
+## Installing within a venv is recommended, for Debian:
+```
+$ sudo apt install python3-venv
+$ python3 -m venv your_venv
+$ source your_venv/bin/activate
+$ pip install simplepkg
+```
+
+## Basic usage
+```
+$ pip install simplepkg
+$ simplepkg <pkg_name> [options]
+$ cd <pkg_name>
+$ python3 -m <pkg_name>
+# Use pip to install and run the newly generated package
+$ pip install --upgrade setuptools wheel
+$ pip install .
+$ <pkg_name>
+```
+```
+usage: simplepkg <pkg_name> [options]
+
+Simple python package scaffolding utility
+
+positional arguments:
+  pkg_name           name of your new package
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -g, --git          git init this package upon creation (requires git)
+  -nl, --no-license  do _NOT_ include a license, package will not meet official PyPI requirements
+  --mit              include MIT license, default
+  --apache           include Apache license
+  --bsd2             include BSD2 license
+  --bsd3             include BSD3 license
+  --gplv2            include GPLv2 license
+  --gplv3            include GPLv3 license
+  --unlicense        include Unlicense license
+```
+
+## Run unit tests
+```
+$ cd <pkg_name>
+$ python -m unittest
+```
+
+## Build and upload to PyPI
+```
+$ python3 -m pip install --upgrade setuptools wheel
+$ python3 setup.py sdist bdist_wheel
+$ python3 -m pip install --upgrade twine
+# Upload to _test_ PyPI - test your packages here: https://test.pypi.org/
+$ twine upload --repository testpypi dist/*
+# Upload to PyPI
+$ twine upload dist/*
+```
+
+## Using make to install, upload to PyPI, etc. (see Makefile for details)
+```
+# Info
+$ make info
+# Install package
+$ make install
+# Uninstall package
+$ make uninstall
+# Remove all directories generated in previous builds, and all __pycache__ directories
+$ make clean
+# Build distributable components/wheel
+$ make build
+# Upload to TestPyPI
+$ make test
+# Upload to PyPI
+$ make pypi
+```
+
+## Regarding the default directories
+__Why data?__
+
+data is pretty common, generally utilized for config or sqlite. If you don't have data, or wish to keep it in a different location - a dot file in the home directory, `$XDG_CONFIG_DIR`, etc. simply remove the directory and update `MANIFEST.in`.
+
+__Why logs?__
+
+You may want to move your logs to another location such as `/var/logs`, a dot file in the home directory, `$XDG_CONFIG_DIR`, etc - you're free to do so - just make sure your project creates/verifies the desired location, remove the logs dir, update the logging file handler in `<pkg_name>/<pkg_name>/__init__.py`, and update `MANIFEST.in`.
+
+__Why test?__
+
+The test directory simplifies running tests. From the root you can just run `python3 -m unittest` to run all your tests. The test directory is explicitly excluded in `setup.py`, so it will not be included with installations. If you want to include tests with your package simply update `setup.py`.
+
+__Why tmp?__
+
+Occasionally you may need generate files and send them off to other places. You can generate temporary files in the `tmp` directory, send them, and then delete all files except for `tmp`. Please note that using this directory in any other way will prevent the directory from being deleted when your package is uninstalled, please see the example below for more information. This will not cause any breakage, but it does litter the python environment with unnecessary files (user will be provided a warning indicating which files upon uninstall). If you do not require temporary files or plan to use another location for temporary files such as `/tmp` you may remove the `tmp` directory and update `MANIFEST.in`.
+
+## Helpful package functions
+```
+# Installed modules can be called from anywhere, this function allows you
+# to interact with local package locations regardless of the user's 
+# working directory.
+
+def get_path(path=''):
+    """
+    Append your relative path with absolute root, or send empty call to
+    get project root. Primarily designed for accessing files local to
+    the app when deployed as a module.
+    """
+    root = Path(__file__).parent
+    path = Path(f'{root}/{path}')
+    return path
+
+# If utilizing the tmp directory this function will remove all files in
+# in accordance with the tmp guidelines in 'Regarding the default 
+# directories'.
+
+def shutdown():
+    """
+    Clean up after run. Deletes all directories and files in the tmp folder.
+    Creates a single file in the tmp folder, required for clean uninstall.
+    """
+    tmp_path = get_path('tmp')
+    for leaf in reversed(list(tmp_path.rglob('*'))):
+        try:
+            if leaf.is_file():
+                leaf.unlink()
+            elif leaf.is_dir():
+                leaf.rmdir()
+        except Exception:
+            msg = (f'Error deleting child item: {leaf}')
+            logging.error(msg)
+    tmp_uninstaller = Path(f'{tmp_path}/tmp')
+    tmp_uninstaller.touch()
+```
+
+

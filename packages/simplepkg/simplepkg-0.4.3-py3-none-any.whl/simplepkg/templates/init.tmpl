@@ -1,0 +1,15 @@
+"""
+MODULE DOCSTRING
+"""
+
+import logging
+from pathlib import Path
+
+logging.basicConfig(
+    level=logging.DEBUG, datefmt='%m-%d-%Y@%I:%M:%S',
+    format='%(levelname)s::%(asctime)s::%(funcName)s::%(message)s',
+    handlers=[
+        logging.FileHandler(f'{Path(__file__).parent}/logs/SIMPLELOG'),
+        logging.StreamHandler()
+    ]
+)

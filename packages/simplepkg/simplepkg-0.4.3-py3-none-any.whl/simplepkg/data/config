@@ -1,0 +1,27 @@
+[DEFAULT_FILES]
+make = Makefile
+manifest = MANIFEST.in
+readme = README.md
+setup = setup.py
+
+[DIRS]
+data = pkg/data
+logs = pkg/logs
+modules = pkg/modules
+pkg = pkg
+tests = pkg/test
+tmp = pkg/tmp
+
+[FILES]
+app = pkg/app.py
+config = pkg/data/config
+init_modules = pkg/modules/__init__.py
+init_pkg = pkg/__init__.py
+init_test = pkg/test/__init__.py
+logs = pkg/logs/pkg.log
+module = pkg/modules/pkg_module.py
+pkg = pkg/__main__.py
+test_app =  pkg/test/test_app.py
+test_pkg = pkg/test/test_pkg.py
+test_module = pkg/test/test_pkg_module.py
+tmp = pkg/tmp/tmp

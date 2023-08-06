@@ -1,0 +1,34 @@
+"""
+MODULE DOCSTRING
+"""
+
+import configparser
+from pathlib import Path
+from pkg.modules import pkg_module
+
+def fn_one():
+    """
+    DOCSTRING
+    """
+    print('Executed app.fn_one()')
+
+def fn_two():
+    """
+    DOCSTRING
+    """
+    print('Executed app.fn_two()')
+
+def fn_three():
+    pkg_module.module_fn()
+
+def config_demo():
+    """
+    DOCSTRING
+    """
+    root = str(Path(__file__).parent)
+    config = configparser.ConfigParser()
+    config_path = f'{root}/data/config'
+    config.read(config_path)
+    default = dict(config.items('DEFAULT'))
+    default_vals = list(default.values())
+    print(f'Executed config_demo(), list of values from config: {default_vals}')
