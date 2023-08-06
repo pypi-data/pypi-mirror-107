@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sail-ml
+Version: 0.0.1a1
+Summary: SAIL: Simple AI Library
+Home-page: UNKNOWN
+Author: Tucker Siegel
+Author-email: tgsiegel@umd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.5)
+
+SAIL is a python package designed for speed and simplicity when developing and running deep learning models. Built on top of a c++ library with python bindings, SAIL is currently in development, changes are being released daily with new features and bug fixes.
+
