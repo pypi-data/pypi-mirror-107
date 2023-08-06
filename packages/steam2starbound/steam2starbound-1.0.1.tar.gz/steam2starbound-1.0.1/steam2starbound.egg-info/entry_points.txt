@@ -1,0 +1,3 @@
+[console_scripts]
+steam2starbound = steam2starbound.__main__:main
+
