@@ -1,0 +1,4 @@
+exchangelib==3.3.0
+pretty-html-table==0.9.dev0
+pandas
+python-dotenv
