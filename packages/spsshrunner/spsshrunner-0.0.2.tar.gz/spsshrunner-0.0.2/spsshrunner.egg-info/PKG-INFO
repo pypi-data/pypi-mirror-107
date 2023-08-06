@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: spsshrunner
+Version: 0.0.2
+Summary: Facilitate SSH expect flows
+Home-page: https://github.com/steviepy/spsshrunner
+Author: Stevie Py
+Author-email: st3v13py@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Intro
+
+The **spsshrunner** package aims at facilitating SSH expect flows.
+
+# Install
+
+```shell
+$ pip install spsshrunner
+```
+
+# Use
+
+```python
+from spsshrunner.sshrunner import SshRunner
+
+my_ssh_runner = SshRunner(host="10.1.1.212", user="pi", password="raspberry", prompt="\r\npi@raspberrypi:.*", timeout=5)
+print(my_ssh_runner)
+my_ssh_runner.initiate_connection()
+my_ssh_runner.send_command(command="ls -lrt /")
+my_ssh_runner.send_command(command="pwd")
+
+```
+
