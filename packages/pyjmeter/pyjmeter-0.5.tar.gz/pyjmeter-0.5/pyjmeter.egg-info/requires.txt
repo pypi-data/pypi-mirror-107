@@ -1,0 +1,17 @@
+atomicwrites
+attrs
+colorama
+importlib-metadata
+Jinja2
+MarkupSafe
+more-itertools
+packaging
+pluggy
+py
+pytest
+pyparsing
+python-dateutil
+six
+wcwidth
+xmltodict
+zipp
