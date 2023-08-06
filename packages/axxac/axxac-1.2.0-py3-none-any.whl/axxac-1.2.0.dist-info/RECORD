@@ -1,0 +1,16 @@
+axxac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axxac/auto_case.py,sha256=oWU3aAIRwM3m3V30IXVru2Ed5HlIQPOafSUKoxkn9hw,302
+axxac/generate_case_list.py,sha256=HxC6_73_Wsui0IfzIIPx_0IJScK8B1DHgiMgO2jfWuU,3068
+axxac/generate_itest_json.py,sha256=SH_nuA4hckVTZN4rZ7wsCc2hkjqoOJTo3hpqh_u2UMM,8029
+axxac/itest_template.json,sha256=eOYpnATY443xwTm_CQzGjJ5dJ833hxjJhjVMI1Y00x0,1509
+axxac/main.py,sha256=-Ej3BMrBSyP0gDd3Sc0ufiesY7T2CYDv6n2J33QbnwY,847
+axxac/path_tool.py,sha256=OGO2QgrBGPrD7BNlKpWQoyqHllNcxzRegEptjShlwag,302
+axxac/read_case_config.py,sha256=oyh8-XR93d1TSYI3HKvzMY5k7KZavv6R1Q6_nZVACAQ,2453
+axxac/read_require_config.py,sha256=nP2_J74iLXspK15zeFa_RpFexaHQdrDUpLqlSzW2byY,3584
+axxac/require.py,sha256=5nO0s7f0Pf_YAlg__7Y82zNSTEVR5lBlzDgrBl-5I8M,4063
+axxac-1.2.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+axxac-1.2.0.dist-info/METADATA,sha256=SmUXR_RF-RhJDplYpQoSjTF9zhcRwJhVn9iNuRt_3aQ,283
+axxac-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+axxac-1.2.0.dist-info/entry_points.txt,sha256=_lmF_yvWTgLnY4aAWx3iR_atd-Km83KvCzbefPbamd4,45
+axxac-1.2.0.dist-info/top_level.txt,sha256=nSyi4yYsTEABrs_Cx8Rbah3UvxwviA-MBu7MUxrgQ-M,6
+axxac-1.2.0.dist-info/RECORD,,
