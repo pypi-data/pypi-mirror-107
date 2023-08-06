@@ -1,0 +1,21 @@
+# packaging
+pip>=9
+setuptools>=26
+twine
+wheel>=0.29
+
+# data science
+numpy
+pandas
+matplotlib
+scipy
+seaborn
+xlwt
+
+# tests/linter
+black
+coverage
+flake8
+pytest
+yapf
+

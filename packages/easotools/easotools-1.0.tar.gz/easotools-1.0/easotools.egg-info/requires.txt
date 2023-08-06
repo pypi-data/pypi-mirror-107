@@ -1,0 +1,15 @@
+pip>=9
+setuptools>=26
+twine
+wheel>=0.29
+numpy
+pandas
+matplotlib
+scipy
+seaborn
+xlwt
+black
+coverage
+flake8
+pytest
+yapf
