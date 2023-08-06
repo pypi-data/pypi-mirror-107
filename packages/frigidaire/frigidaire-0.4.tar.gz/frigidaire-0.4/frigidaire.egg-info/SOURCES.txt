@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+frigidaire/__init__.py
+frigidaire/action.py
+frigidaire/appliance.py
+frigidaire/appliance_detail.py
+frigidaire/exception.py
+frigidaire/frigidaire.py
+frigidaire.egg-info/PKG-INFO
+frigidaire.egg-info/SOURCES.txt
+frigidaire.egg-info/dependency_links.txt
+frigidaire.egg-info/top_level.txt
