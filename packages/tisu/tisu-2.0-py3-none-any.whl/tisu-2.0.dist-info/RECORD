@@ -1,0 +1,11 @@
+tisu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tisu/cli.py,sha256=xeSDio8sbgV4ns3dKUyQvm2xx2pPI7Ogz2akAL416fQ,2140
+tisu/gh.py,sha256=JrnhWnZBoJWbtfDhMQeFS5TDTkGFn5hS4E-AyJ6oVHg,4135
+tisu/models.py,sha256=jevjpkhOL81xDvnLAcGnF3Hrtu2rppfrZL3uK9I0kfY,1370
+tisu/parser.py,sha256=nHHOqg_HGjXjsleCBLO5Sz6GEc3FlzOGGLEtq54Q9JA,1621
+tisu-2.0.dist-info/LICENSE,sha256=w7Ui-XB1rtwWhmlwgskb9tcHQ2ZfEq_zkBpPN33pb7E,1484
+tisu-2.0.dist-info/METADATA,sha256=csg974ur9ENhm24o_Wu7zllv0Jyh8ipTvSW-crSvF9U,4493
+tisu-2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tisu-2.0.dist-info/entry_points.txt,sha256=6Vlxn-24O3MazBY8nX4ovExf6YR0RI9I8PxIaSF-Pyw,40
+tisu-2.0.dist-info/top_level.txt,sha256=t1wqdANjH2PHG3kyDKKiirFlRT_Gk1PNtbzN4aWLx5I,5
+tisu-2.0.dist-info/RECORD,,
