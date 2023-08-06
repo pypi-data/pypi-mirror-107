@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: opaclient
+Version: 0.1.0
+Summary: Module pdp implements a client for making authz requests to a Policy Decision Point (OPA)
+Home-page: https://docs.build.security/
+Author: Yash Tewari
+Author-email: yashtewari1996@gmail.com
