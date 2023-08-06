@@ -1,0 +1,16 @@
+pydispix/__init__.py,sha256=b_T8exWLeRVaKOBbT3ZCdW-lUoemUHBup1ctyVtOrWE,396
+pydispix/autodraw.py,sha256=eKvrT0gSZaxaBKtAYCkca2iYq-XEvt2W-FgVftzW32g,4531
+pydispix/canvas.py,sha256=1DSsTWy3kVHRDpo1xnWzKdNtF8gaJZrFIcXtmrDot_M,2722
+pydispix/church.py,sha256=8M3EbEwI39TCInWkyd0g0lIdkGy0hszRiA6YWBLn2Hk,4489
+pydispix/churches.py,sha256=tUASDVJVlPzPoDmlhmYzy6oMZXJcWp44Aogj2deoYlA,4678
+pydispix/client.py,sha256=Oj5_4wkuCqapvoCEf6PnBHydCqtaDqN8SEsmS8bjoQ4,7747
+pydispix/color.py,sha256=HXp3NmjihUXwS5MNzpCukMD1SoK_l05iB2IjYwBac3Y,1826
+pydispix/errors.py,sha256=5Tt-GbhMQlKm9LNnbYnWfCZLNMGrg7GSuXAdwIwQV_I,2775
+pydispix/log.py,sha256=hCuMeGELakGGh-xKBmDbWg4-uzW_s58-gfBIf8dIB9Y,445
+pydispix/ratelimits.py,sha256=mNi1io5vXY3lvP_LhHLfeBHiXU1Fi2k4Pb4HwWwzq-A,3551
+pydispix/utils.py,sha256=UQYRGGkZ2Mg-NLTlDxdu_otsyTNjiHLH8GZSk-BWPKQ,502
+pydispix-0.6.4.dist-info/LICENSE.txt,sha256=ik6bRmT4G5QAefPlYQ5vsTLCRuRIbEdUjE889tkiD6I,1064
+pydispix-0.6.4.dist-info/METADATA,sha256=obrqFwePwEBvl3tv7d8uicvdQEFnUM_qXXeIw6L4jIU,4471
+pydispix-0.6.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pydispix-0.6.4.dist-info/top_level.txt,sha256=HAFQKDjfFUR2PgGFv6CNVhcTUFJrQuLLhTOXdg9tbO8,9
+pydispix-0.6.4.dist-info/RECORD,,
