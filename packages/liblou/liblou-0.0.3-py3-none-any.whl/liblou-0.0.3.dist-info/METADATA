@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: liblou
+Version: 0.0.3
+Summary: A collection of tools that helped me overcome anxiety.
+Home-page: https://github.com/lmist/liblou
+Author: lim
+Author-email: louaimisto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+
+# liblou
+
+## Quickstart
+
+### Install
+```
+pip3 install liblou
+```
+
+
+## Documentation
+
+`TODO`
+
+
