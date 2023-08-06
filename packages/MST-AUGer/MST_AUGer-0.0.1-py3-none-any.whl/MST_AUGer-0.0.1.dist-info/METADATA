@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: MST-AUGer
+Version: 0.0.1
+Summary: Synthetic mixture-based data augmentation for microbial source tracking
+Home-page: https://github.com/AdeBC/MST-AUGer
+Author: Hui Chong
+Author-email: huichong.me@gmail.com
+License: GPL 3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (>=40.6.3)
+
+# MST-AUGer
+
+Synthetic mixture-based data augmentation for microbial source tracking
+
+## Installation
+
+MST-AUGer is available as in official Python Package index (PyPI). To install MST-AUGer, run the following command in your terminal.
+
+```bash
+pip install mst-auger
+```
+
+If you're in China, you can also install from mirror site (synchronized from official PyPI by Tsinghua University).
+
+```bash
+pip install mst-auger -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+## Documentation
+
+For full documentation visit [mst-auger.rtfd.io](http://mst-auger.rtfd.io/)
+
+## Author
+
+Hui Chong: huichong.me@gmail.com
+

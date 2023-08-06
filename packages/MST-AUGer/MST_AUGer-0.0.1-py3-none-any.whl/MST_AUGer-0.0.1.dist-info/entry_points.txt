@@ -1,0 +1,3 @@
+[console_scripts]
+aug = MST_AUGer:shell.aug
+
