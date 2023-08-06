@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: wbib
+Version: 0.3.6
+Summary: A helper for building Wikidata-based literature dashboards via SPARQL queries. 
+Home-page: https://github.com/lubianat/wbib
+Author: Tiago Lubiana
+Author-email: tiago.lubiana.alves@usp.br
+License: MIT license
+Keywords: wbib
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: wikidata2df
+Requires-Dist: Jinja2
+
+# Wikidata Bib
+A helper for building Wikidata-based literature dashboards via SPARQL queries. 
+
+* Free software: MIT license
+* Documentation: https://lubianat.github.io/wbib.
+
+# Credits
+## Development Lead
+
+-   Tiago Lubiana ([lubianat](https://github.com/lubianat))
+
+## Contributors
+
+-   João Vitor Ferreira Cavalcante ([jvef](https://github.com/jvfe))
+
+## Acknowledgements
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+* [Cookiecutter](https://github.com/audreyr/cookiecutter)
+
+
+# History
+
+## 0.3.6 (2021-05-30)
+
+    -Query: Changed "articles" query to select articles with at least 1 author that matches all restrictions. 
+
+## 0.3.4 (2021-05-12)
+
+- Patch: Load Jinja2 template and add Jinja2 as requirement
+## 0.3.0 (2021-05-11)
+
+-  Change code to use jinja2 templating for rendering html (contribution by @jvfe).
+
+## 0.2.0 (2021-05-07)
+
+-   Set up "advanced" mode, with yaml template for restricting the query.
+
+## 0.1.0 (2021-04-19)
+
+-   First release on PyPI.
+
+
