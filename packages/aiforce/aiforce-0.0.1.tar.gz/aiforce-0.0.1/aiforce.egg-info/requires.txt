@@ -1,0 +1,11 @@
+pip
+packaging
+piexif
+scikit-image
+scikit-learn
+opencv-python
+Pillow
+tensorflow
+tflite-support
+
+[dev]
