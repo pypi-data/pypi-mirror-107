@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: iblutil
+Version: 1.0.0
+Summary: IBL utilities
+Home-page: https://www.internationalbrainlab.com/
+Author: IBL Staff
+License: MIT
+Description: # iblrplate
+        Small utilities with minimal dependencies
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
