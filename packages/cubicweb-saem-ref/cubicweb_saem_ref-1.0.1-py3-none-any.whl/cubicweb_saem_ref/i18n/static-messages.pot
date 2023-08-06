@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# we want to override this
+msgid "cwuri"
+msgstr ""
+
+msgid "Site information"
+msgstr ""
+
+msgid "SEDAComment"
+msgstr "intitulé du versement"
+
+msgid "seda_comment_object"
+msgstr "intitulé du versement"
+
+msgid "add a SEDAComment"
+msgstr "intitulé du versement"
+

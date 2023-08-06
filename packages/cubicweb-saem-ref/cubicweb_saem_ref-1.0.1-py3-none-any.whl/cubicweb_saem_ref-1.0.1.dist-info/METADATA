@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cubicweb-saem-ref
+Version: 1.0.1
+Summary: Référenciel de Système d'Archivage Électronique Mutualisé
+Home-page: http://www.cubicweb.org/project/cubicweb-saem-ref
+Author: LOGILAB S.A. (Paris, FRANCE)
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Requires-Python: >= 3.5
+Requires-Dist: cubicweb[pyramid] (<3.27,>=3.26.1)
+Requires-Dist: cubicweb-squareui (<1.2.0,>=1.1.0)
+Requires-Dist: cubicweb-eac (<0.9.0,>=0.8.4)
+Requires-Dist: cubicweb-seda (<0.18.0,>=0.17.0)
+Requires-Dist: cubicweb-compound (<0.8.0,>=0.7.0)
+Requires-Dist: cubicweb-prov (<0.5.0,>=0.4.0)
+Requires-Dist: cubicweb-oaipmh (<0.7.0,>=0.6.0)
+Requires-Dist: cubicweb-relationwidget (<0.6.0,>=0.5.1)
+Requires-Dist: cubicweb-skos (<1.7.0,>=1.6.0)
+Requires-Dist: cubicweb-vtimeline (<0.7.0,>=0.6.0)
+Requires-Dist: cubicweb-signedrequest (<1.1.0,>=1.0.0)
+Requires-Dist: isodate (<0.7.0,>=0.6.0)
+Requires-Dist: python-dateutil (<2.9.0,>=2.8.0)
+Requires-Dist: pytz (<2021.2.0,>=2021.1.0)
+Requires-Dist: psycopg2 (<2.9.0,>=2.8.0)
+Requires-Dist: rdflib (<5.1.0,>=5.0.0)
+
+Summary
+-------
+Référenciel de Système d'Archivage Électronique Mutualisé
+
+
