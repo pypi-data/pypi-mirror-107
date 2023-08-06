@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: turtlethread
+Version: 0.0.1
+Summary: A Turtle-interface for making embroidery files
+Home-page: https://github.com/marieroald/turtlethread
+Author: Marie Roald & Yngve Mardal Moe
+Author-email: yngve.m.moe@gmail.com
+License: "GNU General Public License v3",
+Description: ============
+        TurtleThread
+        ============
+        
+        .. image:: https://readthedocs.org/projects/turtlethread/badge/?version=latest
+                :target: https://turtlethread.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        A Turtle-interface for making embroidery files
+        
+        
+        * Free software: GNU General Public License v3
+        * Documentation: https://turtlethread.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+Keywords: turtlethread
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
