@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/EX1.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/EX2.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/EX3.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/EX4.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/__init__.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer.egg-info/PKG-INFO
+Personal-Exercise-Trainer/PersonalExerciseTrainer.egg-info/SOURCES.txt
+Personal-Exercise-Trainer/PersonalExerciseTrainer.egg-info/dependency_links.txt
+Personal-Exercise-Trainer/PersonalExerciseTrainer.egg-info/requires.txt
+Personal-Exercise-Trainer/PersonalExerciseTrainer.egg-info/top_level.txt
+Personal-Exercise-Trainer/PersonalExerciseTrainer/Backend/Mediapipe_backend.py
+Personal-Exercise-Trainer/PersonalExerciseTrainer/Backend/__init__.py
