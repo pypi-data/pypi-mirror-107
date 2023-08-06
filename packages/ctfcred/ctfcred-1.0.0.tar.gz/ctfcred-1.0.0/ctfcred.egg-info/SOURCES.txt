@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/ctfcred
+ctfcred/__init__.py
+ctfcred/config.py
+ctfcred/credential.py
+ctfcred/launcher.py
+ctfcred/utils.py
+ctfcred.egg-info/PKG-INFO
+ctfcred.egg-info/SOURCES.txt
+ctfcred.egg-info/dependency_links.txt
+ctfcred.egg-info/requires.txt
+ctfcred.egg-info/top_level.txt
