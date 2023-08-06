@@ -1,0 +1,9 @@
+README.md
+pipfile_freeze.py
+setup.py
+pipfile_freeze.egg-info/PKG-INFO
+pipfile_freeze.egg-info/SOURCES.txt
+pipfile_freeze.egg-info/dependency_links.txt
+pipfile_freeze.egg-info/entry_points.txt
+pipfile_freeze.egg-info/requires.txt
+pipfile_freeze.egg-info/top_level.txt
