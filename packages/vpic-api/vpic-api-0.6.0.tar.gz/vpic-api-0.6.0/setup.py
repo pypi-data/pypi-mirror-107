@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['vpic']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['requests>=2.25.1,<3.0.0']
+
+setup_kwargs = {
+    'name': 'vpic-api',
+    'version': '0.6.0',
+    'description': 'A client library for the United States National Highway Traffic Safety Administration (NHTSA) Vehicle Product Information Catalog (vPIC) API',
+    'long_description': '# vpic-api\n\nA Python client library for decoding VINs and querying the United States \nNational Highway Traffic Safety Administration (NHTSA) [Vehicle Product \nInformation Catalog Vehicle Listing (vPIC) API](https://vpic.nhtsa.dot.gov/api/).\n\nUse this to gather information on vehicles and their specifications,\nand to decode VINs to extract information for specific vehicles. vPIC\nhas information about these types of vehicles sold or imported in\nthe USA:\n\n* Bus\n* Incomplete Vehicle\n* Low Speed Vehicle (LSV)\n* Motorcycle\n* Multipurpose Passenger Vehicle (MPV)\n* Passenger Car\n* Trailer\n* Truck\n\nvPIC has information about how manufacturers assign a VIN that\nencodes a vehicle\'s characteristics. Vehicle manufacturers provide this\ninformation to NHTSA under U.S. 49 CFR Parts 551 – 574.\n\nThe API available 24/7, is free to use, and does not require registration. NHTSA uses automatic traffic rate controls to maintain the performance of the API and their websites that use the API.\n\nSee https://vpic.nhtsa.dot.gov/api/home/index/faq for more on the API.\n\n## Using vpic.TypedClient\n\nUse vpic.TypedClient to receive responses as Python objects.\n\n### Decode a Vehicle Identification Number (VIN)\n\nDecode a 17-digit Vehicle Identification Number (VIN):\n\n```python\nfrom vpic import TypedClient\n\nc = TypedClient()\n\nresult = c.decode_vin("1FTMW1T88MFA00001")\n\nVehicle(\n    abs="",\n    ...\n    body_cab_type="Crew/ Super Crew/ Crew Max",\n    body_class="Pickup",\n    brake_system_desc="",\n    brake_system_type="Hydraulic",\n    ...\n    displacement_cc="3500.0",\n    displacement_ci="213.58310433156",\n    displacement_l="3.5",\n    ...\n    drive_type="4WD/4-Wheel Drive/4x4",\n    ...\n    engine_configuration="V-Shaped",\n    engine_cycles="",\n    engine_cylinders="6",\n    engine_hp="375",\n    engine_hp_to="",\n    engine_kw="279.6375",\n    engine_manufacturer="Ford",\n    engine_model="GTDI",\n    entertainment_system="",\n    error_code="0",\n    error_text="0 - VIN decoded clean. Check Digit (9th position) is correct",\n    ...\n    make="FORD",\n    make_id="460",\n    manufacturer_name="FORD MOTOR COMPANY, USA",\n    manufacturer_id="976",\n    model="F-150",\n    model_id="1801",\n    model_year="2021",\n    motorcycle_chassis_type="Not Applicable",\n    motorcycle_suspension_type="Not Applicable",\n    ...\n    plant_city="DEARBORN",\n    plant_company_name="",\n    plant_country="UNITED STATES (USA)",\n    plant_state="MICHIGAN",\n    ...\n    series="F-Series",\n    series2="",\n    ...\n    trim="SuperCrew-SSV",\n    ...\n    vin="1FTMW1T88MFA00001",\n    ...\n    vehicle_type="TRUCK ",\n    ...\n)\n```\n\n### Get the Models for a Make and Model Year\n\n```python\nget_models_for_make("TESLA", model_year=2020)\n\n[\n    Model(\n        model_id=1685,\n        model="Model S",\n        make_id=441,\n        make="TESLA",\n        vehicle_type_id=None\n    ),\n    Model(\n        model_id=10199,\n        model="Model X",\n        make_id=441,\n        make="TESLA",\n        vehicle_type_id=None\n    ),\n    Model(\n        model_id=17834,\n        model="Model 3",\n        make_id=441,\n        make="TESLA",\n        vehicle_type_id=None\n    ),\n    Model(\n        model_id=27027,\n        model="Model Y",\n        make_id=441,\n        make="TESLA",\n        vehicle_type_id=None\n        )\n]\n```\n\n## Using vpic.Client\n\nUse vpic.Client if you need the JSON responses returned by the vPIC API.\n\nThis client automatically standardizes variable names where vPIC uses inconsistent naming. Turn this off if you need to see the unaltered JSON responses:\n\n```python\nfrom vpic import Client\n\nc = Client(standardize_names=False)\n```\n\n### Decode a Vehicle Identification Number (VIN)\n\nDecode a 17-digit Vehicle Identification Number (VIN):\n\n```python\nfrom vpic import Client\n\nc = Client()\n\nresult = c.decode_vin("1FA6P8TD5M5100001", 2021)\n```\n\nHere are a few of the 130+ attributes vPIC returns for the VIN:\n\n```json\n{\n    "Doors": "2",\n    "ErrorCode": "0",\n    "ErrorText": "0 - VIN decoded clean. Check Digit (9th position) is correct",\n    "MakeName": "FORD",\n    "MakeId": "460",\n    "ManufacturerName": "FORD MOTOR COMPANY, USA",\n    "ManufacturerId": "976",\n    "ModelName": "Mustang",\n    "ModelId": "1781",\n    "ModelYear": "2021",\n    "PlantCity": "FLATROCK",\n    "PlantCountry": "UNITED STATES (USA)",\n    "PlantState": "MICHIGAN",\n    "Series": "I4 Coupe",\n    "VIN": "1FA6P8TD5M5100001",\n    "VehicleType": "PASSENGER CAR",\n}\n```\n\n### Get the Models for a Make and Model Year\n\n```python\nresult = c.get_models_for_make("TESLA", 2021)\n```\n\nvPIC returns a list of the models for this make and model year:\n\n```json\n[\n    {\n        "MakeId": 441,\n        "MakeName": "TESLA",\n        "ModelId": 1685,\n        "ModelName": "Model S"\n    },\n    {\n        "MakeId": 441,\n        "MakeName": "TESLA",\n        "ModelId": 10199,\n        "ModelName": "Model X"\n    },\n    {\n        "MakeId": 441,\n        "MakeName": "TESLA",\n        "ModelId": 17834,\n        "ModelName": "Model 3"\n    },\n    {\n        "MakeId": 441,\n        "MakeName": "TESLA",\n        "ModelId": 27027,\n        "ModelName": "Model Y"\n    }\n]\n```\n',
+    'author': 'David Peckham',
+    'author_email': 'dave.peckham@icloud.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/davidpeckham/vpic-api',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
