@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+myspider/__init__.py
+myspider/__main__.py
+myspider.egg-info/PKG-INFO
+myspider.egg-info/SOURCES.txt
+myspider.egg-info/dependency_links.txt
+myspider.egg-info/entry_points.txt
+myspider.egg-info/requires.txt
+myspider.egg-info/top_level.txt
+myspider/mp/__init__.py
+myspider/mp/parse_mplist.py
+myspider/sogou/__init__.py
+myspider/sogou/weixin.py
