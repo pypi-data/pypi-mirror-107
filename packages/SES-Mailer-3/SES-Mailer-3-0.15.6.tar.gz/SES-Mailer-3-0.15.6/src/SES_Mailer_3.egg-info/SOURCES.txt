@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SES_Mailer_3.egg-info/PKG-INFO
+src/SES_Mailer_3.egg-info/SOURCES.txt
+src/SES_Mailer_3.egg-info/dependency_links.txt
+src/SES_Mailer_3.egg-info/requires.txt
+src/SES_Mailer_3.egg-info/top_level.txt
+src/ses_mailer/__init__.py
