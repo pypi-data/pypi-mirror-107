@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+one_cycle_tf/__init__.py
+one_cycle_tf/one_cycle_scheduler.py
+one_cycle_tf.egg-info/PKG-INFO
+one_cycle_tf.egg-info/SOURCES.txt
+one_cycle_tf.egg-info/dependency_links.txt
+one_cycle_tf.egg-info/requires.txt
+one_cycle_tf.egg-info/top_level.txt
