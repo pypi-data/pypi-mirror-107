@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "branchConcurrentLimit": 10,
+  "prConcurrentLimit": 10,
+  "automerge": true,
+  "automergeType": "branch",
+  "timezone": "America/Los_Angeles",
+  "schedule": ["after 10pm", "before 5:00am"]
+}
