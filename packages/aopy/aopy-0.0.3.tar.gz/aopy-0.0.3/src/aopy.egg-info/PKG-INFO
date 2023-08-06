@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: aopy
+Version: 0.0.3
+Summary: Unofficial tool for interacting with the Art of Problem Solving website.
+Home-page: https://gitlab.com/epiccakeking/aopy
+Author: epiccakeking
+Author-email: epiccakeking@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/epiccakeking/aopy/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AoPy
+
+This is an unofficial package that allows for interacting with the Art of Problem Solving website.
+This package is not made by, endorsed, or otherwise affiliated with AoPS Incorporated.
+Please remember to abide by the <a href="https://artofproblemsolving.com/company/tos">AoPS Terms of Service</a>.
+Please be benevolent and responsible when using this package.
+
+## Example
+
+Note: Syntax is not final.
+
+```python
+from aopy import Session
+session = Session(True)
+print(session.get_forum_threads(170)['response']['category']['category_name'])
+```
+

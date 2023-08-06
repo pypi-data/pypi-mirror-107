@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aopy/__init__.py
+src/aopy.egg-info/PKG-INFO
+src/aopy.egg-info/SOURCES.txt
+src/aopy.egg-info/dependency_links.txt
+src/aopy.egg-info/top_level.txt
