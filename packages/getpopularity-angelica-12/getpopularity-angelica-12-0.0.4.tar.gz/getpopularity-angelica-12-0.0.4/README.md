@@ -1,0 +1,38 @@
+# Get that PopUlarity
+
+# Introduction 
+This is a small program created by a student of the Libera UniversitÃƒÂ   di Bolzano. 
+
+# What does the program do? 
+The program, as first step, provides some information about a given word, these are the following: definition, right pronunciation (IPA notation) first in the British accent and then in the American one (also the audio file is avalaible if required), thus the user has the opportunity to do a comparison between the two varieties. As last step the popularity of the given word is provided, i.e. you can check where a word is most commonly used and to which country's lexicon it belongs to. 
+
+# How does the program work? 
+1. First of all the user has to give an audio as input, i.e. he has to say the desired word using his computer's mic. 
+2. Then the program will recognise the given word and this will be shown first as an audio and then also in the written form. 
+3. If the recognised word is exact the user can go on with the program, otherwise he will be asked to repeat the word 
+4. A definition will be provided and if the first one is not the one the user was looking for, other definitions can be showed.
+5. Later the right pronunciation in the British accent will appear and the user can opt for the audio or not. 
+6. Same step for the American pronunciation.
+7. As final step the user is asked to choose between a pie or a bar chart for the results to be shown, and in the end the popularity of the word will be given. 
+
+Please note: only english words are allowed; an error can occur if the given word doesn't exist in the dictionary; another error occurs when all the definitions are provided;  only the two British and American varieties are avalaible; other errors can for sure occur, in this case the user is kindly asked to try with another word from the beginning. 
+
+# How does the user can employ the program?
+Please copy and run separately the two codes below: 
+
+     pip install getpopularity-angelica-12==0.0.4
+
+     import getpopularity
+
+
+# Final notes 
+It is important to add that the final values in the last part of the program are calculated on a scale from 0 to 100, where 100 is the location with the most popularity as a fraction of total searches in that location.
+A higher value means a higher proportion of all queries, not a higher absolute query count. So a tiny country where 80% of the queries are for "tiger" will get twice the score of a giant country where only 40% of the queries are for "tiger". 
+
+# Credits 
+- Direct access to the microphone inside Google Colab notebook: 
+  https://ricardodeazambuja.com/deep_learning/2019/03/09/audio_and_video_google_colab/
+- Information about the given word: 
+  Oxford Dictionary API 
+- Popularity of the word: 
+  https://pypi.org/project/pytrends/
