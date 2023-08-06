@@ -1,0 +1,9 @@
+setup.py
+yayuchen_package/Gaussiandistribution.py
+yayuchen_package/Generaldistribution.py
+yayuchen_package/__init__.py
+yayuchen_package.egg-info/PKG-INFO
+yayuchen_package.egg-info/SOURCES.txt
+yayuchen_package.egg-info/dependency_links.txt
+yayuchen_package.egg-info/not-zip-safe
+yayuchen_package.egg-info/top_level.txt
