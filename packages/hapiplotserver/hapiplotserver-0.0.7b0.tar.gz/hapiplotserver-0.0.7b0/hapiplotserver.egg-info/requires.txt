@@ -1,0 +1,7 @@
+hapiclient@ git+https://github.com/hapi-server/client-python@master#egg=hapiclient
+hapiplot
+Flask==1.0.2
+gunicorn==19.9.0
+python-slugify
+requests
+Pillow
