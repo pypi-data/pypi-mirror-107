@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xpdacq
+Version: 1.0.0
+Summary: acquisition module
+Home-page: https://github.com/xpdAcq/xpdacq
+Author: Songsheng Tao
+Author-email: st3107@columbia.edu
+License: UNKNOWN
+Description: # xpdAcq
+        [![test](https://github.com/xpdAcq/xpdAcq/actions/workflows/test.yml/badge.svg)](https://github.com/xpdAcq/xpdAcq/actions/workflows/test.yml)
+        [![codecov](https://codecov.io/gh/xpdAcq/xpdAcq/branch/master/graph/badge.svg)](https://codecov.io/gh/xpdAcq/xpdAcq)
+        [![Anaconda-Server Badge](https://anaconda.org/nsls2forge/xpdacq/badges/version.svg)](https://anaconda.org/nsls2forge/xpdacq)
+        
+        Acquisition packages for XPD-28 beamline at BNL
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
