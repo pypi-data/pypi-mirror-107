@@ -1,0 +1,26 @@
+{
+  "dependencyDashboard": true,
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "pre-commit/mirrors-mypy",
+        "psf/black"
+      ],
+      "versioning": "loose"
+    },
+    {
+      "automerge": true,
+      "automergeType": "branch",
+      "matchManagers": [
+        "github-actions",
+        "pre-commit"
+      ]
+    }
+  ]
+}
