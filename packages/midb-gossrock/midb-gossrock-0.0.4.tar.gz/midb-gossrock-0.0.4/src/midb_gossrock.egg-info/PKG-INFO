@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: midb-gossrock
+Version: 0.0.4
+Summary: Mostly Invisible Database. A database access layer that acts like python in-memory objects.
+Home-page: https://github.com/pypa/sampleproject
+Author: Peter Goss
+Author-email: gossrock@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/gossrock/midb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mostly Invisible Database
+
+A database access layer that acts like python in-memory objects.
+

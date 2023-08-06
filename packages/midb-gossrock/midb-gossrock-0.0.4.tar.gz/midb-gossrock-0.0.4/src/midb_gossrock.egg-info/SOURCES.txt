@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/midb/__init__.py
+src/midb_gossrock.egg-info/PKG-INFO
+src/midb_gossrock.egg-info/SOURCES.txt
+src/midb_gossrock.egg-info/dependency_links.txt
+src/midb_gossrock.egg-info/top_level.txt
