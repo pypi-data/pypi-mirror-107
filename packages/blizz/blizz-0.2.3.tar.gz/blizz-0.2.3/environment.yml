@@ -1,0 +1,17 @@
+name: blizz-dev
+channels:
+  - conda-forge
+dependencies:
+  - pyspark >= 2.4
+  - python = 3.8
+  - pytest
+  - pyspark-stubs
+  - click >= 7.1
+  - flit
+  - colorama
+  - tornado
+  - pydata-sphinx-theme
+  - sphinx
+  - jupyterlab
+  - pyyaml
+  - schema
