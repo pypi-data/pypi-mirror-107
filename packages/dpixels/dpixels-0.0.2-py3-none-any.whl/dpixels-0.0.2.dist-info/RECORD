@@ -1,0 +1,12 @@
+dpixels/__init__.py,sha256=u3u2D-uiu0-qWCgGRfA_4t9g6stCRUadBnS7HCbNJhI,340
+dpixels/autodraw.py,sha256=ekOqAIYjGY9J83HmtnwwXmfAoMPQ1-8i0dyw8Yyfecs,3433
+dpixels/canvas.py,sha256=Lc4pekmCx4JD_avoBqMEyS46g1wdguCbh2Odl2dPjIU,659
+dpixels/client.py,sha256=w3OpmqtKGWCiEa1Pmru8IPmEptLU4WZODaLEzNqs6Xc,4919
+dpixels/color.py,sha256=tHRBm79lk5Sx832RC_Vj5Xom69mCjFKBlsW27BwM3K4,1074
+dpixels/exceptions.py,sha256=yqotM9PTAX1d6Xkqzs2XllI6RDCQ7up-ZbdXXUQ3ELA,1025
+dpixels/ratelimits.py,sha256=WEthErrbCHt1lGhJKKReJiAtaOY0xDYP5S9HOOv8-74,3615
+dpixels-0.0.2.dist-info/LICENSE,sha256=8BgmgkH6UvbEY9A5LpMpsZrWt3YnDsUe73UTXpqJB68,1064
+dpixels-0.0.2.dist-info/METADATA,sha256=4gKxbr3pHHxfRIAUZwu62Buo202pPEJvy7oQRUphjF4,384
+dpixels-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpixels-0.0.2.dist-info/top_level.txt,sha256=sMGt3KG0Yv_o4EC3WqszSzxnYrot95yeY6krB67rypM,8
+dpixels-0.0.2.dist-info/RECORD,,
