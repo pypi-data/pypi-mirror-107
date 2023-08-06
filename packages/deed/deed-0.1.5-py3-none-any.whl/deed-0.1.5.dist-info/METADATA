@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: deed
+Version: 0.1.5
+Summary: ActivityFormatter for object changes (auditlog)
+Home-page: https://github.com/TruckPad/deed-py
+Author: TruckPad
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Python: >= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*
+Description-Content-Type: text/markdown
+Requires-Dist: jsonpatch (>=1.32)
+
+## deed - Python
+
+ActivityFormatter for object changes (auditlog)
+
+### Usage
+
+Try it on your python console:
+
+```python
+from deed import AuditLog, AuditMode
+
+# stored resource
+resource = {'_id': '123', 'user_id': '123',
+            'customer_id': '123',
+            'title': "My amazing post"}
+refs = [  # stakeholders
+    'post:' + resource['_id'],
+    'owner:' + resource['user_id'],
+    'customer:' + resource['customer_id'],
+]
+
+# update example
+audit_log = AuditLog(resource_type='shipment',
+                     action='update', audit_mode=AuditMode.DIFF)
+audit_log.session(actor='user:admin@example.com', where='10.0.0.2',
+                  channel='edit-form', stakeholders=refs)
+
+patch = {'title': 'My first post'}
+new_resource = {**resource, **patch}
+audit_log.audit(resource, payload=new_resource)
+```
+
+### Bottle Integration
+
+```python
+from bottle import run, request, Bottle
+from deed import AuditMode
+from deed.bottle_kit import audit, DeedPlugin
+
+from business.models import Post
+
+api = Bottle()
+api.install(DeedPlugin())
+
+
+@api.put('/post/<id:int>')
+@audit(resource_type='post', action='update', audit_mode=AuditMode.DIFF)
+def update_post(id: int):
+    stored_post = Post.find(id)
+    payload = request.json
+    updated_post = {**stored_post, **payload}
+    Post.update(updated_post)
+    request.audit.session['actor'] = 'admin'  # authorized user
+    request.audit.resource = stored_post
+    request.audit.payload = updated_post
+    return post
+
+
+if __name__ == '__main__':
+    run(api, port=8080)
+```
+
+
