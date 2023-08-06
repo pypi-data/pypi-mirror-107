@@ -1,0 +1,87 @@
+actions:
+  - noop
+  - move_left
+  - move_right
+  - move_up
+  - move_down
+  - do
+  - place_stone
+  - place_table
+  - place_furnace
+  - make_wood_pickaxe
+  - make_stone_pickaxe
+  - make_iron_pickaxe
+  - make_wood_sword
+  - make_stone_sword
+  - make_iron_sword
+
+materials:
+  - water
+  - grass
+  - stone
+  - path
+  - sand
+  - tree
+  - lava
+  - coal
+  - iron
+  - diamond
+  - table
+  - furnace
+
+walkable:
+  - grass
+  - path
+  - sand
+
+items:
+  - wood
+  - stone
+  - coal
+  - iron
+  - diamond
+  - wood_pickaxe
+  - stone_pickaxe
+  - iron_pickaxe
+  - wood_sword
+  - stone_sword
+  - iron_sword
+
+collect:
+  tree: {require: {}, receive: {wood: 1}, leaves: grass}
+  stone: {require: {wood_pickaxe: 1}, receive: {stone: 1}, leaves: path}
+  coal: {require: {wood_pickaxe: 1}, receive: {coal: 1}, leaves: path}
+  iron: {require: {stone_pickaxe: 1}, receive: {iron: 1}, leaves: path}
+  diamond: {require: {iron_pickaxe: 1}, receive: {diamond: 1}, leaves: path}
+
+place:
+  stone: {uses: {stone: 1}, where: [grass, sand, path, water, lava]}
+  table: {uses: {wood: 1}, where: [grass, sand, path]}
+  furnace: {uses: {stone: 1}, where: [grass, sand, path]}
+
+make:
+  wood_pickaxe: {uses: {wood: 1}, nearby: [table]}
+  stone_pickaxe: {uses: {wood: 1, stone: 1}, nearby: [table]}
+  iron_pickaxe: {uses: {wood: 1, coal: 1, iron: 1}, nearby: [table, furnace]}
+  wood_sword: {uses: {wood: 1}, nearby: [table]}
+  stone_sword: {uses: {wood: 1, stone: 1}, nearby: [table]}
+  iron_sword: {uses: {wood: 1, coal: 1, iron: 1}, nearby: [table, furnace]}
+
+achievements:
+  - collect_coal
+  - collect_diamond
+  - collect_iron
+  - collect_stone
+  - collect_tree
+  - defeat_zombie
+  - defeat_skeleton
+  - find_food
+  - make_iron_pickaxe
+  - make_stone_pickaxe
+  - make_wood_pickaxe
+  - make_iron_sword
+  - make_stone_sword
+  - make_wood_sword
+  - place_furnace
+  - place_stone
+  - place_table
