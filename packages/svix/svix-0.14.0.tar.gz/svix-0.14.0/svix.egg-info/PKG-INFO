@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: svix
+Version: 0.14.0
+Summary: Svix
+Home-page: https://www.svix.com
+Author: Svix
+Author-email: development@svix.com
+License: MIT
+Description: # Diahook
+        The Diahook client API documentation
+        
+        Please refer to [the documentation](https://www.diahook.com/docs/) for usage instructions.
+        
+Keywords: svix,diahook,webhooks
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
