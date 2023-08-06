@@ -1,0 +1,13 @@
+prefix=/Users/dkrishna/gitrepos/helics-packaging/helics_apps-pip/helics_apps/data
+exec_prefix=/Users/dkrishna/gitrepos/helics-packaging/helics_apps-pip/helics_apps/data/bin
+libdir=/Users/dkrishna/gitrepos/helics-packaging/helics_apps-pip/helics_apps/data/lib
+includedir=/Users/dkrishna/gitrepos/helics-packaging/helics_apps-pip/helics_apps/data/include
+
+Name: libhelicsSharedLib
+Description: HELICS C shared library
+URL: www.helics.org
+Version: 2.7.0
+Libs: -L${libdir} -lhelicsSharedLib
+Libs.private: -lstdc++ 
+Requires.private: 
+Cflags: -I${includedir} 
