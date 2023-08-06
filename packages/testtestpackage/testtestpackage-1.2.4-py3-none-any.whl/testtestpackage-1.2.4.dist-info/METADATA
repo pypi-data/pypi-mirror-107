@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testtestpackage
+Version: 1.2.4
+Summary: This is an awesome package
+Home-page: UNKNOWN
+Author: This is me
+Author-email: me@me.me
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
