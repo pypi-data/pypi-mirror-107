@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: traffic_control
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Martin
+Author-email: majianli@corp.netease.com
+License: MIT
+Description: 
+        THIS is a script to control the network condition
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
