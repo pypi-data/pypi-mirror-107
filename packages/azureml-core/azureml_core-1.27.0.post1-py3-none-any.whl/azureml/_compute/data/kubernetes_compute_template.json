@@ -1,0 +1,14 @@
+{
+  "location": "",
+  "properties": {
+    "computeType": "Kubernetes",
+    "computeLocation": "",
+    "description": "",
+    "resourceId": "",
+    "properties": {
+      "amlK8sConfig":{
+
+      }
+    }
+  }
+}
