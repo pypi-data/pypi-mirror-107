@@ -1,0 +1,10 @@
+README.md
+setup.py
+ddstable/__init__.py
+ddstable/dds-64.dll
+ddstable/ddstable.py
+ddstable/libdds.so
+ddstable.egg-info/PKG-INFO
+ddstable.egg-info/SOURCES.txt
+ddstable.egg-info/dependency_links.txt
+ddstable.egg-info/top_level.txt
