@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: vtc
+Version: 0.0.14
+Summary: A SMTPE video timecode library for Python
+Home-page: https://github.com/opencinemac/vtc-py
+Author: Billy Peake
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-sugar ; extra == 'test'
+Requires-Dist: pytest-html ; extra == 'test'
+
+UNKNOWN
+
