@@ -1,0 +1,56 @@
+[
+  {
+    "tyyppi": "muutos",
+    "tunnus": "c49858f5c9881a3b02101eff1f7e8e4893787d74",
+    "versio": "0.1.2",
+    "kuvaus": "Lis\u00e4tty PEP 517 -pakettim\u00e4\u00e4ritys"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "46fa7800296ff7191328a7db3f8e61219a063235",
+    "versio": "0.1.1",
+    "kuvaus": "Asetettu oletus `{STATIC,MEDIA}_ROOT`-polut `/tmp`-hakemistoon"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "3657b4a83db2449c43f021713e4a83d5e317d8f7",
+    "versio": "0.1",
+    "kuvaus": "Versio 0.1"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "07489ccd14bb9cd89d55ebd1aafd416b200512a0",
+    "versio": "0.1",
+    "kuvaus": "Lis\u00e4tty `django-pipeline`-laajennos"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "4d24ad0a30c614199b35949bade7de08571b43f6",
+    "versio": "0.0.5",
+    "kuvaus": "Celery-laajennos: lis\u00e4t\u00e4\u00e4n my\u00f6s asennettuihin sovelluksiin"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "599db7e53bc8b2090653590bb2e8ec0941ba7d58",
+    "versio": "0.0.4",
+    "kuvaus": "Lis\u00e4tty \"Muista sis\u00e4\u00e4nkirjautuminen\"-ruutu kirjautumissivun lomakkeelle"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "dcd53b58082a14cc29cfbb0b30e6706cc17edc32",
+    "versio": "0.0.3",
+    "kuvaus": "Lis\u00e4tty Celery-laajennos"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "93d1d925885b595ed858490622613b55caf4da22",
+    "versio": "0.0.2",
+    "kuvaus": "K\u00e4ytet\u00e4\u00e4n `entry_point.namea` osoitteistokohtaisena oletusnimiavaruutena"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "ce88a753479e4d96b183ea154510e12bc51d77f3",
+    "versio": "0.0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
