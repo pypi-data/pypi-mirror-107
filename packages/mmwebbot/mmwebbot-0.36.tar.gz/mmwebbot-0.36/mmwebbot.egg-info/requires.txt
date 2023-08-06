@@ -1,0 +1,6 @@
+ipython
+selenium
+
+[dev]
+black
+wheel
