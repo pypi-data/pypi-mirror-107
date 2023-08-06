@@ -1,0 +1,16 @@
+README.md
+setup.py
+pilmoji/__init__.py
+pilmoji/classes.py
+pilmoji/constants.py
+pilmoji/helpers.py
+pilmoji.egg-info/PKG-INFO
+pilmoji.egg-info/SOURCES.txt
+pilmoji.egg-info/dependency_links.txt
+pilmoji.egg-info/top_level.txt
+pilmoji/aio/__init__.py
+pilmoji/aio/core.py
+pilmoji/aio/http.py
+pilmoji/sync/__init__.py
+pilmoji/sync/core.py
+pilmoji/sync/http.py
