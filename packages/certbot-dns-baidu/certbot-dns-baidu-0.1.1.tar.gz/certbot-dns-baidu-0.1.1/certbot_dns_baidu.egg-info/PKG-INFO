@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: certbot-dns-baidu
+Version: 0.1.1
+Summary: Baidu DNS Authenticator plugin for Certbot
+Home-page: https://github.com/chaoers/certbot-dns-baidu
+Author: Asterisk
+Author-email: fanguofan@asteriscum.cn
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Baidu Cdn DNS Authenticator plugin for Certbot
+
+A certbot dns plugin to obtain certificates using baidu cdn.
+
+## Obtain Baidu Cdn AccessKey And SecretKey
+
+[https://su.baidu.com/console/index.html#/accountconfig](https://su.baidu.com/console/index.html#/accountconfig)
+
+## Install
+
+```bash
+pip install certbot-dns-baidu
+```
+
+Or manually:
+```bash
+git clone https://github.com/chaoers/certbot-dns-baidu.git
+cd certbot-dns-baidu
+sudo python setup.py install
+```
+
+## Credentials File
+
+An example `credentials.ini` file:
+
+```ini
+certbot_dns_baidu:dns_baidu_access_key = 12345678
+certbot_dns_baidu:dns_baidu_secret_key = 1234567890abcdef1234567890abcdef
+```
+
+```bash
+chmod 600 /path/to/credentials.ini
+```
+
+## Obtain Certificates
+
+```bash
+certbot certonly -a certbot-dns-baidu:dns-baidu \
+    --certbot-dns-baidu:dns-baidu-credentials /path/to/credentials.ini \
+    -d example.com \
+    -d "*.example.com"
+```
+
+
