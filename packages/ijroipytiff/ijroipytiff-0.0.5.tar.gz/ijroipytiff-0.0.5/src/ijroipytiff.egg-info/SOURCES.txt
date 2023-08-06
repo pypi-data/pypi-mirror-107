@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/ijroipytiff/__init__.py
+src/ijroipytiff/ij_ovalroi.py
+src/ijroipytiff/ij_roi.py
+src/ijroipytiff/ijpython_decoder.py
+src/ijroipytiff/ijpython_encoder.py
+src/ijroipytiff/wand.py
+src/ijroipytiff.egg-info/PKG-INFO
+src/ijroipytiff.egg-info/SOURCES.txt
+src/ijroipytiff.egg-info/dependency_links.txt
+src/ijroipytiff.egg-info/top_level.txt
