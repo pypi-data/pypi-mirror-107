@@ -1,0 +1,14 @@
+tensorflow>=1.15.0
+tensorflow_datasets>=4.2.0
+file-io>=0.1.0
+seqio
+t5
+sentencepiece
+
+[t5]
+t5
+seqio
+
+[transformers]
+transformers
+sentencepiece
