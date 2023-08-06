@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: netframe
+Version: 0.0.1
+Summary: NetFrame is a Python framework designed to simplify network configuration
+Home-page: https://www.github.com/xeronick/netframe
+Author: Xeronick
+Author-email: xeronick@outlook.com
+License: MIT
+Description: # netframe
+         NetFrame is a Python framework designed to simplify network configuration. By structuring each component of the config and using Netmiko to query live devices, it easy to build an application either build a new switch or router from scratch or modify specific components.
+        
+        
+        ## Installation
+        Run the following to install:
+        
+        ```python
+        pip install netframe
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
