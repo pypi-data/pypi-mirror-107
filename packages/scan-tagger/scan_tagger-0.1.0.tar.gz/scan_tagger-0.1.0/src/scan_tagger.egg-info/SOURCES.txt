@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/scan_tagger/__init__.py
+src/scan_tagger.egg-info/PKG-INFO
+src/scan_tagger.egg-info/SOURCES.txt
+src/scan_tagger.egg-info/dependency_links.txt
+src/scan_tagger.egg-info/entry_points.txt
+src/scan_tagger.egg-info/top_level.txt

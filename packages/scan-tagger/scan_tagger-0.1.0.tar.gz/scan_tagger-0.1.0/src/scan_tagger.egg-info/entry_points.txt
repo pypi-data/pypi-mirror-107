@@ -1,0 +1,3 @@
+[console_scripts]
+scan-tagger = scan_tagger:main
+
