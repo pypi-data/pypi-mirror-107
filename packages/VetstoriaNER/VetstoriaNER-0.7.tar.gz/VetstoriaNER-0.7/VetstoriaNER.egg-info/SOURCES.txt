@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+VetstoriaNER/EntityRecognizer.py
+VetstoriaNER/__init__.py
+VetstoriaNER.egg-info/PKG-INFO
+VetstoriaNER.egg-info/SOURCES.txt
+VetstoriaNER.egg-info/dependency_links.txt
+VetstoriaNER.egg-info/not-zip-safe
+VetstoriaNER.egg-info/requires.txt
+VetstoriaNER.egg-info/top_level.txt
+ner_tests/__init__.py
+ner_tests/test_params.py
