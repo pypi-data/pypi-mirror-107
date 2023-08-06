@@ -1,0 +1,10 @@
+README.md
+setup.py
+hadoop_protoseq.egg-info/PKG-INFO
+hadoop_protoseq.egg-info/SOURCES.txt
+hadoop_protoseq.egg-info/dependency_links.txt
+hadoop_protoseq.egg-info/requires.txt
+hadoop_protoseq.egg-info/top_level.txt
+protoseq/__init__.py
+protoseq/reader.py
+protoseq/writer.py
