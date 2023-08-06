@@ -1,0 +1,7 @@
+setup.py
+discordextension/__init__.py
+discordextension/messages.py
+discordextension.egg-info/PKG-INFO
+discordextension.egg-info/SOURCES.txt
+discordextension.egg-info/dependency_links.txt
+discordextension.egg-info/top_level.txt
