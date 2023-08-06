@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+instanet/__init__.py
+instanet/insta_core.py
+instanet/insta_network.py
+instanet/settings.bs
+instanet.egg-info/PKG-INFO
+instanet.egg-info/SOURCES.txt
+instanet.egg-info/dependency_links.txt
+instanet.egg-info/requires.txt
+instanet.egg-info/top_level.txt
