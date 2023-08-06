@@ -1,0 +1,9 @@
+click
+click-option-group
+einops>=0.3
+flax
+jax
+jaxlib
+optax
+torch
+tqdm
