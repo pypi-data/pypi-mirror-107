@@ -1,0 +1,12 @@
+s3access/__init__.py,sha256=QPfxXn91S0LWqVqzqp7FuOMVdTodXo89inH2IucpNzQ,231
+s3access/__pkginfo__.py,sha256=zrcTwxP3SA3F1Js78afrfeaZeJr8w2hLtFtEZoUqUmg,22
+s3access/conditions.py,sha256=wIUd8Yd1u-rAFQI4nkDMoAVBc5yr-wbEerhchSeHGyw,2124
+s3access/s3access.py,sha256=dEj8wuMG90XvQE71QKAf3dPRg0_lU-jDzhka2i6Mzv8,13497
+s3access/s3path.py,sha256=ZrcLLBXYbgkrStKRPHDqgS45Lie0XyBOY_kkFnZ6QAA,2913
+tests/__init__.py,sha256=iTw_teUZxYB_s7S7Pm3oHt6-VBZ3S3gn3bnOxxMnATY,64
+tests/test_s3path.py,sha256=GLaxSCxfcWq8JfmQCMBcwCoTrPMtY-5XZkB8d7FNRb0,2091
+s3access-0.4.2.dist-info/LICENSE,sha256=ZeK0oK-ap2QtMPGLN6nSsBr3xAK5XjCF17som2VaCZM,1073
+s3access-0.4.2.dist-info/METADATA,sha256=8jRfQXDGQAy1rOPho5K3FZdFPnhU_f4ZUF50WJ0PrWk,1235
+s3access-0.4.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+s3access-0.4.2.dist-info/top_level.txt,sha256=aJXJLippAz1dHDZT9-qHsacHsZVCtGj0v8Iyx1buEwg,15
+s3access-0.4.2.dist-info/RECORD,,
