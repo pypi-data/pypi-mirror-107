@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyprint-special
+Version: 1.0.0.0.0
+Summary: pyprint-special
+Home-page: https://github.com/PS218909/
+Author: Piyush
+Author-email: somanip409@gmail.com
+License: MIT
+Description: # **Pretty Print**
+        ---
+        #### Rules :- 
+        1. list should be 2 dimensional
+        2. every list inside the list should be equal length 
+           for example:
+            * [["item1","item2"],
+                ["item3","item4"],
+               ["item5","item6"]]
+        ### For Example :- 
+        ```
+        from prettyprint import prettyprint
+        p = prettyprint([[1,2,3],[2,3,23]])
+        print(p.prettyprint())
+        ```
+        ### output :-
+        ``` 
+        --------------------
+        |  1  |  2  |   3  |
+        --------------------
+        |  2  |  3  |  23  |
+        --------------------
+        ```
+        [github](https://github.com/PS218909/prettyprint/)
+        [youtube](https://www.youtube.com/channel/UCLHG9PMggWZaw6qp4FJLhtQ)
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
