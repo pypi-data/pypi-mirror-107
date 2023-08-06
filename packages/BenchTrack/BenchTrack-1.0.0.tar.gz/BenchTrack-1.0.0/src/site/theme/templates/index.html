@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for page in pages %}
+
+<article class="single">
+  <header>
+    <h1 id="{{ page.slug }}">{{ page.title }}</h1>
+  </header>
+  <div>
+    {{ page.content }}
+  </div>
+</article>
+
+{% endfor %}
+
+{% include "partial/pagination.html" %}
+
+{% endblock %}
