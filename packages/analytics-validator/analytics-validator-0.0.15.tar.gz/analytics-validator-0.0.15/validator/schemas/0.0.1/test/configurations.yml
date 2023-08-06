@@ -1,0 +1,7 @@
+name: "Adidas Confirmed"
+schema: 0.0.1
+datetime_format: "DD/MM/YY, hh:mm:ss"
+date_format: "DD/MM/YY"
+time_format: "hh:mm:ss"
+list_delimiter: " | "
+scope_delimiter: "::"

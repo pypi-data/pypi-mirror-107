@@ -1,0 +1,26 @@
+name: "PDP View"
+type:
+  name: "screen"
+
+scopes:
+  - name: "screen"
+    attributes:
+      - name: "name"
+        type: "string"
+        value: "PDP"
+        required: True
+
+      - name: "type"
+        type: "list/string"
+        value: "PDP"
+        required: True
+
+      - name: "test"
+        type: "enum/ProductType"
+        value: "Queue"
+        required: True
+
+      - name: "test1"
+        type: "integer"
+        value: "1"
+        required: True
