@@ -1,0 +1,10 @@
+sim/__init__.py,sha256=na91AZEIjd7Gbbx4ho4Hw9673-ztEquqENiSGC_HwW8,65
+sim/model.py,sha256=R2mF6xnQwInKD5DJU2RXndANW-zInAk2KFiBawsq_A4,122
+sim/similarity.py,sha256=sjoTYIV1SVVjIxP0u_zpD7xYwxCY3ih9v00Yh6vH9_4,2471
+sim/tools.py,sha256=SYPfGs2uGZ4IvlAxVcwhDnkB8F9CemK-lHrHN_bnFIU,599
+sim/transform.py,sha256=0dPu3ojlwwAyIcCSEhrXZXDteEASDrq0yq1p2Msfpsk,17675
+text_sim-0.0.1.dist-info/LICENSE,sha256=kzKVlhGClsaMcPW12p6d30X-2KaM9tSxv49Wwq6wETM,1088
+text_sim-0.0.1.dist-info/METADATA,sha256=bXbgSwlt9b23B2Ob-5DgO6DWD0mExeg5yl7OtaxA36E,523
+text_sim-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+text_sim-0.0.1.dist-info/top_level.txt,sha256=lf-JWfiGnB0ZZ1Sd9fz8Zh9R5MCupexpcxpg21zinzs,4
+text_sim-0.0.1.dist-info/RECORD,,
