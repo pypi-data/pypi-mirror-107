@@ -1,0 +1,37 @@
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:47:46 - 5009-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:47:46 - 5009-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5009
+
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:48:26 - 5030-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:48:26 - 5030-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5030
+
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-26 20:48:48 - 5045-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-26 20:48:48 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
+2021-05-26 20:50:00 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:1     os.pid: 5045
+
+2021-05-26 20:50:00 - 5045-MainProcess - base.py-run_job[line:123] - INFO: Running job "cron_check_db_sleep (trigger: cron[day='*', day_of_week='*', hour='*', minute='*/10'], next run at: 2021-05-26 20:50:00 CST)" (scheduled at 2021-05-26 20:50:00+08:00)
+2021-05-26 20:50:20 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_1" to job store "default"
+2021-05-26 20:50:20 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
+2021-05-26 20:50:43 - 5045-MainProcess - base.py-remove_job[line:632] - INFO: Removed job cron_1
+2021-05-26 20:51:48 - 5045-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_1" to job store "default"
+2021-05-26 20:51:48 - 5045-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 5045
+
