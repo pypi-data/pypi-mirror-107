@@ -1,0 +1,10 @@
+cmake
+ninja
+
+[all]
+pytest
+pytest-icdiff
+
+[testing]
+pytest
+pytest-icdiff
