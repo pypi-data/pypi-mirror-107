@@ -1,0 +1,1 @@
+from nepali_caste.caste import Caste

@@ -1,0 +1,1 @@
+from nepalithar.caste import Caste
