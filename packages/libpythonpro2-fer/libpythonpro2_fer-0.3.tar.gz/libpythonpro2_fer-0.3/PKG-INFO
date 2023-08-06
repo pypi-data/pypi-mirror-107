@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: libpythonpro2_fer
+Version: 0.3
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/luizfernandoliveira/libpythonpro2
+Author: Renzo Nuccitelli
+Author-email: renzo@python.pro.br
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # libpythonpro2
+        MÃ³dulo para exemplificar construÃ§Ã£o de projetos python no curso pytools.
+        
+        Nesse curso Ã© ensinado a como contribuir com projetos de cÃ³digo aberto.
+        
+        link do curso [Python Pro](https://pythonpro.com.br/)
+        
+        [![Build Status](https://travis-ci.org/luizfernandoliveira/libpythonpro.svg?branch=master)](https://travis-ci.org/luizfernandoliveira/libpythonpro)
+        [![Updates](https://pyup.io/repos/github/luizfernandoliveira/libpythonpro2/shield.svg)](https://pyup.io/repos/github/luizfernandoliveira/libpythonpro2/)
+        [![Python 3](https://pyup.io/repos/github/luizfernandoliveira/libpythonpro2/python-3-shield.svg)](https://pyup.io/repos/github/luizfernandoliveira/libpythonpro2/)
+        
+        Suportada a versÃ£o 3 de Python.
+        
+        Para instalar:
+        
+        ```console
+        py -3 -m venv .venv
+        .\.venv\Scrips\activate
+        pip install -r requirements-dev.txt
+        ```
+        
+        Para conferir qualidade do cÃ³digo:
+        
+        ```console
+        flake8
+        ```
+        TÃ³picos a serem abordados:
+        1. Git
+        2. Virtualenv
+        3. Pip
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
