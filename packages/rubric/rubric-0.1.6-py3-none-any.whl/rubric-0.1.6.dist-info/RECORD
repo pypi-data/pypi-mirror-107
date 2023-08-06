@@ -1,0 +1,15 @@
+rubric/.flake8,sha256=qS2m-SytJsusBG1O1PmfIheZ0xutPU_l6_vAN-rV8BU,353
+rubric/.gitignore,sha256=FUYSVbaOs4cwKqnZagtBBwPi26lvc4_Tw3juaxkmU5I,2035
+rubric/README.md,sha256=ClnhvUo1EJjRjObxv2mRpiZ21z6qVLyQp0EVAUzB4gM,2626
+rubric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric/makefile,sha256=6X0iABQpRs5stwmo8R7sIu2k-4yEWqLh8kK0Hj6PqiE,1424
+rubric/mypy.ini,sha256=T6NM_6C0UitgaV-gOWti1QH-FtFmXlsDLnLh6NIF6Xc,143
+rubric/pyproject.toml,sha256=VAECz7K8KFYM6Un3iZYxxU0D3N8jlk_PbxvKStPTcH0,144
+rubric/requirements-dev.txt,sha256=qj0oFuRxSoUBlv5JzQglJPdY97slZwzZoreP1qeEYOU,34
+rubric/requirements.in,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric/rubric.py,sha256=NMwJeW3nrBE_5LCFahGsg6Ag2qimaiU75i_JXioApow,3430
+rubric-0.1.6.dist-info/entry_points.txt,sha256=5CoO7XyVuNNbFIBPSX4XSLTJkca1L1bcOc0H1zunHGQ,55
+rubric-0.1.6.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+rubric-0.1.6.dist-info/METADATA,sha256=NXQX9dQWqVS66jJ_MPtni32-bUz4eQtG_QiVSAxA_m8,4152
+rubric-0.1.6.dist-info/RECORD,,
