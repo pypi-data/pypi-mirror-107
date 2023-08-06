@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "giu"
+version = "0.3.0"
+description = "Gandi LiveDNS Updater - commnand line tool to keep your dynamic ip up to date"
+authors = ["Yago Riveiro <yago.riveiro@gmail.com>"]
+maintainers = ["Yago Riveiro <yago.riveiro@gmail.com>"]
+license = "MIT"
+readme = 'README.md'
+repository = "https://github.com/yriveiro/giu"
+homepage = "https://github.com/yriveiro/giu"
+keywords = ['Gandi', 'LiveDNS', 'Dynamic IP', 'dns']
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Environment :: Console",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Framework :: tox"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.1"
+requests = "^2.25.1"
+halo = "^0.0.31"
+atoml = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+mypy = "^0.812"
+pre-commit = "^2.13.0"
+pynvim = "^0.4.3"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.0"
+pytest-mypy = "^0.8.1"
+pytest-sugar = "^0.9.4"
+requests-mock = "^1.9.3"
+tox = "^3.23.1"
+tox-docker = "^3.0.0"
+
+[tool.poetry.scripts]
+giu = 'giu.cli:giu'
+
+[tool.isort]
+line_length = 88
+force_single_line = true
+atomic = true
+use_parentheses = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
