@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PythonLinearNonlinearControl
+Version: 2.0
+Summary: Implementing linear and nonlinear control method in python
+Home-page: https://github.com/Shunichi09/PythonLinearNonlinearControl
+Author: Shunichi Sekiguchi
+Author-email: quick1st97of@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: cvxopt
+Requires-Dist: scipy
+
+UNKNOWN
+
+
