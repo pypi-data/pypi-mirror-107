@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "escape-py"
+version = "1.0.0-beta.20"
+description = "Escape's Python CLI"
+authors = ["Escape Technologies SAS <ping@escape.tech>"]
+maintainers = ["Antoine Carossio <antoine.carossio@me.com>", "Maxence Lecanu <lecanu.maxence@gmail.com>", "Alexandre Labbe <alabbe@escape.tech"]
+license = "Proprietary"
+packages = [
+    { include = "escape_cli" }
+]
+include = [
+    "LICENSE",
+]
+readme = "README.md"
+"homepage" = "https://escape.tech/"
+"repository" = "https://gitlab.com/escape.tech/product"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/escape.tech/product/issues"
+
+[tool.poetry.scripts]
+escape-py = 'escape_cli:main'
+
+[tool.poetry.dependencies]
+python     = "^3.6"
+click      = "^7.1.2"
+loguru     = "^0.5.3"
+inquirer   = "^2.7.0"
+requests   = "^2.25.1"
+simplejson = "^3.17.2"
+coverage   = "^5.5"
+Django     = "^3.2"
+Flask      = "^1.1.2"
+termcolor  = "^1.1.0"
+escape-scanner-darwin-x64 = {version = "^1.0.0-beta.20", platform = 'darwin'}
+escape-scanner-linux-x64 =  {version = '^1.0.0-beta.20', platform = 'linux' }
+
+[tool.poetry.dev-dependencies]
+pytest        = "^6.2.2"
+pytest-cov    = "^2.12.0"
+setuptools    = "^45"
+pylint        = "^2.7.4"
+yapf          = "^0.31.0"
+pylint-quotes = "^0.2.1"
+mypy          = "^0.812"
+docformatter  = "^1.4"
+unify         = "^0.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
