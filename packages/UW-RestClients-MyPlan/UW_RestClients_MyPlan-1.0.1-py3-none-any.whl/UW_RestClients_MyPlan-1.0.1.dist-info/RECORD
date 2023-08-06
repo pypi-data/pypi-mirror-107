@@ -1,0 +1,13 @@
+uw_myplan/VERSION,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+uw_myplan/__init__.py,sha256=x_5Mv3WjmQCnFoBWnpBQv44_W1--ZRq7cwTr3vmsOlY,2194
+uw_myplan/dao.py,sha256=KH_UTS7O9sMasvOU_Mc3kao3RwC7VLzthh41ZEkA0M0,370
+uw_myplan/models.py,sha256=6WZ-1qykBwlhGoZgWI1vt7HcLVc3u2Oj_TPjOjNRHnU,2810
+uw_myplan/test.py,sha256=blwFAe6bSo9HyZ9jQ43Ad2eFTSnDDrhtR6eX-w6OrBA,465
+uw_myplan/resources/myplan/file/student/api/plan/v1/2013_spring_4_9136CCB8F66711D5BE060004AC494FFE,sha256=hFj2JOZBjAU18Hcyptp_l9yPzPF3nm8iOBGsIG_u13c,4969
+uw_myplan/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_myplan/tests/test_myplan.py,sha256=_Id1twKnlhh81MYsDNfvDIsvJw6w8p8ztn5I2Loq5Ck,4015
+UW_RestClients_MyPlan-1.0.1.dist-info/LICENSE,sha256=nPXeFptZXNrjF1Ue9pp5S1n6PR4VHbQZDTN_4I0T1fg,10255
+UW_RestClients_MyPlan-1.0.1.dist-info/METADATA,sha256=ASRxzY9DHXRqmz04Q8PKSj2_U0iGBYZI_W9xm0x3F6U,652
+UW_RestClients_MyPlan-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+UW_RestClients_MyPlan-1.0.1.dist-info/top_level.txt,sha256=UOOf8QptOtJydIHS-IXCeAAOtN2bNId0m2Q_Atv1x78,10
+UW_RestClients_MyPlan-1.0.1.dist-info/RECORD,,
