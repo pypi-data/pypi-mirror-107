@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/sqlrecorder/__init__.py
+src/sqlrecorder/main.py
+src/sqlrecorder.egg-info/PKG-INFO
+src/sqlrecorder.egg-info/SOURCES.txt
+src/sqlrecorder.egg-info/dependency_links.txt
+src/sqlrecorder.egg-info/top_level.txt
