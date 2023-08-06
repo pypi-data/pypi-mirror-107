@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: django-explorer
+Version: 0.2.0
+Summary: Serve local direcotry listing from django
+Home-page: https://github.com/dhvcc/django_explorer
+License: GPLv3
+Keywords: django,python3,directory,serving,diretory-listing
+Author: dhvcc
+Author-email: 1337kwiz@gmail.com
+Requires-Python: >=3.6.2,<4
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: django (>=3,<4)
+Requires-Dist: ipython (>=7.0.0,<8.0.0); python_version >= "3.7"
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: python-magic (>=0.4.22,<0.5.0)
+Project-URL: Bug Tracker, https://github.com/dhvcc/django_explorer/issues
+Project-URL: Repository, https://github.com/dhvcc/django_explorer
+Description-Content-Type: text/markdown
+
+# django_explorer
+
+Serve local direcotry listing from your django app
+
+TODO: context type with field mapping constants
+
+## Demo app
+
+1. Install dependencies `poetry install`
+2. Run demo app `make run_demo_app` (`make run_demo_app port=8888` if you want to use custom port)
+
