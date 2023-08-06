@@ -1,0 +1,3 @@
+[console_scripts]
+blizz=blizz._cli:main
+
