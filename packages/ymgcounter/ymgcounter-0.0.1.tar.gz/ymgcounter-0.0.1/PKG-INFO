@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: ymgcounter
+Version: 0.0.1
+Summary: very basic counter
+Home-page: UNKNOWN
+Author: Yam
+Author-email: ymgchbrtv0095@gmail.com
+License: MIT
+Description: This is a very basicccc counterrr
+        =================================
+        Hope you enjoy
+        --------------
+        - By : yam
+        
+        
+        Counter
+        =======
+        Plus
+        -----
+        - you can add two numbers
+        
+        Min
+        ----
+        - you can subtract two numbers
+        
+        Mult
+        -----
+        - you can multiply two numbers
+        
+        Div
+        ----
+        - you can divide two numbers
+        
+Keywords: math,counter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

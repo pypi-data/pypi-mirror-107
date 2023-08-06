@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ymgcounter/__init__.py
+ymgcounter.egg-info/PKG-INFO
+ymgcounter.egg-info/SOURCES.txt
+ymgcounter.egg-info/dependency_links.txt
+ymgcounter.egg-info/top_level.txt
