@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+test/__init__.py
+test/test_attn_mask.py
+test/test_multiheadattention.py
+test/test_positional_encoding.py
+test/test_stack_blocks_up.py
+test/test_transformerblock.py
+torch_trafo/__init__.py
+torch_trafo.egg-info/PKG-INFO
+torch_trafo.egg-info/SOURCES.txt
+torch_trafo.egg-info/dependency_links.txt
+torch_trafo.egg-info/requires.txt
+torch_trafo.egg-info/top_level.txt
+torch_trafo.egg-info/zip-safe
