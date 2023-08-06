@@ -1,0 +1,13 @@
+oface/__init__.py,sha256=cq5_MW9inENb7rpHtPvp40FbaK4Aarac4-w80naQook,180
+oface/face_analysis.py,sha256=Un2TkB0EMtWrQW9GUL9rJdHQZq4Fc9klluL_odrV64M,4659
+oface/core/__init__.py,sha256=Q2W_oQNn1-Pz57raj28M6dFD5lL6C_yLaFM2apuhM1Y,75
+oface/core/face_align.py,sha256=kC5unxtY3ggpg2Z3EDs2Jfet54i9kND78bdAotns7WY,2358
+oface/model/__init__.py,sha256=gN8I7olwrqTgbmarQJ8e2eNTNHPwSKNfpafAnuj8bF0,199
+oface/model/base.py,sha256=O3e_xD3akaCRea5yc1whFdZ6SFDHFm3hkskV9G6iHxo,445
+oface/model/face_detection.py,sha256=xXzMV_ztHnNfXUxNW4HuFvIXitEs5LfDp620v9mgVHc,9900
+oface/model/face_recognition.py,sha256=GL_vGYMCHtGnf5_VzjpZV40WbH3P9vJ2rqVt8XeIhc0,2238
+oface-0.1.9.dist-info/LICENSE,sha256=SiW_8PXvj5cCnh0FBBjuoURyEZVCr74c2zYEnWHVRIY,1063
+oface-0.1.9.dist-info/METADATA,sha256=YTvw6O9tBnjWSg8VhPzqpPhAYYkv8f_lkqX7DHkbURo,2137
+oface-0.1.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+oface-0.1.9.dist-info/top_level.txt,sha256=BGMMtqvmyktjEzcay3rH0Xdls75DtSSUfwDEsxl19h8,6
+oface-0.1.9.dist-info/RECORD,,
