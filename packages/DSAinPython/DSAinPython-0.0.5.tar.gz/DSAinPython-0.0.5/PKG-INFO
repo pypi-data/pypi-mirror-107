@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: DSAinPython
+Version: 0.0.5
+Summary: This Package contains Data Structures and Algorithms
+Home-page: https://github.com/Armaan-268/DSA_in_Python
+Author: Armaan Chauhan
+Author-email: armaanchauhan268@gmail.com
+License: MIT
+Description: # Data Structure and in Algorithms in Python 
+        
+        A Python package of data structure codes
+        
+        ## Usage
+        
+        This package contains some common ready to use Data Structure and Algorithm implementations. The primary focus is provide pre-coded functions used in various Data Structures and Algorithm problems.
+        
+        -----------------------------------
+        Note: This package is developed and maintained by a student. Please don't mind the mistakes :)
+        
+        
+        Change Logs
+        ================================
+        
+        0.0.1 (14/05/2021)
+        ----------------------------------------------------------------
+        - First Version
+            - Contains Searches
+            
+        0.0.2 (14/05/2021)
+        ----------------------------------------------------------------
+        - First Version (2nd Release)
+            - Contains Searches
+            - Fixed some bugs
+        
+        0.0.3 (14/05/2021)
+        ----------------------------------------------------------------
+        - First Version (3rd Release)
+            - Contains Searches
+            - Fixed some bugs
+        
+        0.0.4 (20/05/2021)
+        ----------------------------------------------------------------
+        - First Version (4rd Release)
+            - Contains Searches
+            - Fixed some bugs
+            - Added Sorting Techniques
+        
+        0.0.5 (27/05/2021)
+        ----------------------------------------------------------------
+        - First Version (5rd Release)
+            - Added Stacks and Queues
+Keywords: datastructures,algorithms
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
