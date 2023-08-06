@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pybacked
+Version: 0.0.0.dev3
+Summary: a simple backup utility
+Home-page: https://github.com/bluePlatinum/pybacked
+Author: "bluePlatinum"
+Author-email: "jukic.rok@gmail.com"
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/bluePlatinum/pybacked/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A simple backup utility.
+
+Warning this is very very undeveloped ... 
+
