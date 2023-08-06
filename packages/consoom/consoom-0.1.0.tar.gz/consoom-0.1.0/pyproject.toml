@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "consoom"
+version = "0.1.0"
+description = ""
+authors = ["nhanb"]
+license = "AGPL-3.0-only"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mistune = "2.0.0rc1"
+urllib3 = "^1.26.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
