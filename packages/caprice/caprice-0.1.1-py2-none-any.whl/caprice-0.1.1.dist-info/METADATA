@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: caprice
+Version: 0.1.1
+Summary: Robust PDF generation library for Python
+Home-page: https://github.com/orklann/caprice
+Author: Aaron Elkins
+Author-email: threcius@yahoo.com
+License: GPLv2.0
+Platform: any
+
+Caprice is a robust PDF generation library for Python
+
+
