@@ -1,0 +1,3 @@
+[console_scripts]
+sftp_composer = sftp_composer.cli:main
+
