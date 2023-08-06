@@ -1,0 +1,16 @@
+numpy
+cython
+pyparsing
+
+[docs]
+sphinx
+sphinx-gallery
+sphinx_bootstrap_theme
+numpydoc
+
+[test]
+pytest>=4.6
+mypy
+pre-commit
+pytest-cov
+flake8-per-file-ignores
