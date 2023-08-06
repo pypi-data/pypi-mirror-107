@@ -1,0 +1,3 @@
+[console_scripts]
+bl2-skingen = bl2_skingen.skingen:main
+
