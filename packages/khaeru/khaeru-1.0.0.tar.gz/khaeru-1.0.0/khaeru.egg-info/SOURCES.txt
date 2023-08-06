@@ -1,0 +1,17 @@
+.gitignore
+.readthedocs.yaml
+LICENSE
+README.rst
+setup.cfg
+setup.py
+.github/workflows/publish.yaml
+doc/Makefile
+doc/conf.py
+doc/index.rst
+khaeru/__init__.py
+khaeru.egg-info/PKG-INFO
+khaeru.egg-info/SOURCES.txt
+khaeru.egg-info/dependency_links.txt
+khaeru.egg-info/requires.txt
+khaeru.egg-info/top_level.txt
+khaeru/pelican_ipython/__init__.py

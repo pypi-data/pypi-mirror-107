@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: khaeru
+Version: 1.0.0
+Summary: Python miscellany
+Home-page: https://github.com/khaeru/py
+Author: Paul Natsuo Kishimoto
+Author-email: mail@paul.kishimoto.name
+License: GPLv3
+Description: ``khaeru``: Python miscellany 
+        =============================
+        
+        .. image:: https://img.shields.io/pypi/v/khaeru.svg
+           :target: https://pypi.org/project/khaeru
+        
+        Everything that doesn't fit somewhere else.
+        
+        © 2021 Paul Natsuo Kishimoto <`mail@paul.kishimoto.name <mailto:mail@paul.kishimoto.name>`_>
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
