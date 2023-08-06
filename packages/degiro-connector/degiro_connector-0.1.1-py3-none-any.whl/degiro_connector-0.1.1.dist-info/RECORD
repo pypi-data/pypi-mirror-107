@@ -1,0 +1,13 @@
+quotecast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quotecast/api.py,sha256=HCA91nT-ILhHcY7O4YYQCM9PvhK-U5VylJMdu00mrrA,4274
+quotecast/basic.py,sha256=UIcmKyOrDV7LAVjkBRvf4YfFKdkQRGn33rgoNMLMqoQ,3573
+quotecast/utilities.py,sha256=Pa4Rx1OOMoVfoqmHAuTjDlumV6ninXDRrmdwgTmBTfE,8750
+trading/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trading/api.py,sha256=LWE8qzTaCH-2G2ZNDD4JT-jIdZhm6OzBpKhGyHpmGnQ,9559
+trading/basic.py,sha256=PdicVt1aTvPhVO99fG6lAZWrZjG70i34WoFRK2FbX38,13245
+trading/utilities.py,sha256=ZTfKpjeL3iNDv2nRCM9u4G4q4TgeihykvR1E3Cwmtu8,41427
+degiro_connector-0.1.1.dist-info/LICENSE,sha256=KaXarLIhWN51MoqhKc_ARD3xu-YD3BzbqgQs-LbfhEc,1524
+degiro_connector-0.1.1.dist-info/METADATA,sha256=bFvYpOUlLU-OvcB6ehF651Htiu7-gKgQkabdgd9DV3M,41770
+degiro_connector-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+degiro_connector-0.1.1.dist-info/top_level.txt,sha256=uI56c-J3aE7ZuYVAwKwNVrSw85NH8P7ntUmL0Px4L7U,18
+degiro_connector-0.1.1.dist-info/RECORD,,
