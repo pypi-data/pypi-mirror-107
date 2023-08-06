@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: connect-4-cli
+Version: 0.0.6
+Summary: A CLI implementation of the classic connect 4 game
+Home-page: https://github.com/gmso/connect-4-cli
+Author: Germán Mené Santa Olaya
+Author-email: german.mene@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Games/Entertainment :: Board Games
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: pynput
+
+[![Tests](https://github.com/gmso/connect-4-cli/actions/workflows/python-package.yml/badge.svg)](https://github.com/gmso/connect-4-cli/actions/workflows/python-package.yml)
+
+# Connect 4 CLI
+The classic 4-in-a-line game, also called connect 4, playable from the CLI or shell
+
+## Details
+This is a simple implementation of the classic connect 4 game. It can be played directly from the CLI or shell
+
+## Installation
+```
+pip install connect-4-cli
+```
+
+## How to play
+Simply use keyboard keys, as prompted in the game
+
+
