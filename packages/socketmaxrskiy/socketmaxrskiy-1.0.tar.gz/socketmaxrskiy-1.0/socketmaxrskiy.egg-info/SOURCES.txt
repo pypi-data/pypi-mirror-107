@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+socketmaxrskiy/__init__.py
+socketmaxrskiy/maxrskiy_ws.py
+socketmaxrskiy/models.py
+socketmaxrskiy.egg-info/PKG-INFO
+socketmaxrskiy.egg-info/SOURCES.txt
+socketmaxrskiy.egg-info/dependency_links.txt
+socketmaxrskiy.egg-info/not-zip-safe
+socketmaxrskiy.egg-info/top_level.txt
