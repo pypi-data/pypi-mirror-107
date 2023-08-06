@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pypus"
+version = "1.0.1"
+description = "Octopus cli toolkit"
+authors = ["Michael MacKenna <mmackenna@unitedfiregroup.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+click = "^8.0.0"
+termcolor = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pypus = 'pypus.cli:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
