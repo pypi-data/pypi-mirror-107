@@ -1,0 +1,7 @@
+requests
+cached-property
+attrdict
+
+[test]
+pytest>=3.6
+pytest-cov
