@@ -1,0 +1,5 @@
+streamlit==0.*,>=0.80.0
+typing-inspect==0.*,>=0.6.0
+
+[dev]
+pytest==4.*,>=4.6.0

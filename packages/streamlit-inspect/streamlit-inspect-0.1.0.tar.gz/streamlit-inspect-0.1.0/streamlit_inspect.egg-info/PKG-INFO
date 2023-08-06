@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: streamlit-inspect
+Version: 0.1.0
+Summary: Create interactive documentation using streamlit
+Home-page: UNKNOWN
+Author: Ceyda Cinarel
+Author-email: 15624271+cceyda@users.noreply.github.com
+License: MIT
+Project-URL: repository, https://github.com/cceyda/streamlit-inspect
+Description: #
+        This is a proof-of-concept 
+        
+        # Requirements
+        
+        # Contribute
+Keywords: streamlit,streamlit-component
+Platform: UNKNOWN
+Requires-Python: ==3.*,>=3.6.0
+Provides-Extra: dev

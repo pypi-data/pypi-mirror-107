@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+./streamlit_inspect/__init__.py
+./streamlit_inspect/classes.py
+./streamlit_inspect/functions.py
+streamlit_inspect.egg-info/PKG-INFO
+streamlit_inspect.egg-info/SOURCES.txt
+streamlit_inspect.egg-info/dependency_links.txt
+streamlit_inspect.egg-info/requires.txt
+streamlit_inspect.egg-info/top_level.txt
