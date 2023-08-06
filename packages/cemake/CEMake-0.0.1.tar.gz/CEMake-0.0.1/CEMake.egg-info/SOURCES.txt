@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+CEMake.egg-info/PKG-INFO
+CEMake.egg-info/SOURCES.txt
+CEMake.egg-info/dependency_links.txt
+CEMake.egg-info/requires.txt
+CEMake.egg-info/top_level.txt
