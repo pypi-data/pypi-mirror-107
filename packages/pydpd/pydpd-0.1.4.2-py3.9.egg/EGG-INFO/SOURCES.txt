@@ -1,0 +1,8 @@
+README.md
+setup.py
+pydpd/__init__.py
+pydpd/dpd.py
+pydpd.egg-info/PKG-INFO
+pydpd.egg-info/SOURCES.txt
+pydpd.egg-info/dependency_links.txt
+pydpd.egg-info/top_level.txt
