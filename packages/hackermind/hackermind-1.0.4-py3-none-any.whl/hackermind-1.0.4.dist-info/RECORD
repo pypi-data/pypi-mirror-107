@@ -1,0 +1,15 @@
+mastermind/__init__.py,sha256=JOFe9KLrw3uVefTfB-HS6_UD0LWk17k1lW9UmVZUm6w,69
+mastermind/__main__.py,sha256=sYHZdnnc8VOY-efGO8Etrun1FDc5V1hOCpoX1q6EF-g,80
+mastermind/game/__init__.py,sha256=-uihzE24p2Y3declnwafYgFKk5b820eaSo-l3TtP3Jc,76
+mastermind/game/board.py,sha256=JFiknZ39Io6MkwY31VJN4rzuUEfZa2XJrpZ6DI2P3Jo,3386
+mastermind/game/console.py,sha256=n5qhk8G1jqSg4TJiM9ftlB3hNkJ2oHfpZielpqb2uaA,11443
+mastermind/game/director.py,sha256=C9LXZwn_v_vEbrw7TTFphQlf4_yCL-prGH7NPjcNZXM,4067
+mastermind/game/paint.py,sha256=OJcNwYTemBhSY0yDfEOXHJuGjgdOdHOI9-Gp4N60GtY,4095
+mastermind/game/player.py,sha256=LzYLA2N_mwUj075XT9cqTl873JRKR7Zep8zJ9CpSHK0,1299
+mastermind/game/roster.py,sha256=G_Yy0tcwR8EKeKeh6_R6fgFrBKEf6YoynyIaezvvM7Q,1811
+mastermind/game/score.py,sha256=DZ6ebsmX73cl9UXKioJ9yvLhnZPpKWt_ok93knX7rvY,2987
+hackermind-1.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+hackermind-1.0.4.dist-info/METADATA,sha256=SuO6GUuy4DClA6oygIzPmS-d8aWhNC0EwuUXQQgFGTY,1425
+hackermind-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hackermind-1.0.4.dist-info/top_level.txt,sha256=dZGX9CmNJdPIfB9ekdRodmnz6FJTmAN8PhygDgDhzFQ,11
+hackermind-1.0.4.dist-info/RECORD,,
