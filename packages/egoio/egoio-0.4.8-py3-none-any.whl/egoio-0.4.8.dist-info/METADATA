@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: egoio
+Version: 0.4.8
+Summary: ego input/output repository
+Home-page: https://github.com/openego/ego.io
+Author: NEXT ENERGY, Reiner Lemoine Institut gGmbH, ZNES
+Author-email: ulf.p.mueller@hs-flensburg.de
+License: GNU Affero General Public License v3.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: geoalchemy2 (>=0.3.0)
+Requires-Dist: sqlalchemy (>=1.2.0)
+Requires-Dist: keyring (>=4.0)
+Requires-Dist: keyrings.alt
+Requires-Dist: psycopg2-binary
+Requires-Dist: oedialect
+Requires-Dist: numpy
+Provides-Extra: sqlalchemy
+Requires-Dist: postgresql ; extra == 'sqlalchemy'
+
+UNKNOWN
+
