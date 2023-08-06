@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: django-parser-app
+Version: 0.0.2
+Summary: A Django app to upload XL files in a convenient manner.
+Home-page: https://www.github.com/prantoamt/django-parser-app
+Author: Md. Badiuzzaman Pranto
+Author-email: prantoamt@gmail.com
+License: MIT License
+Description: =================
+        django-parser-app
+        =================
+        
+        parser_app has been created intending to upload Excel files in a convenient manner.
+        This is a rest_framework based packege and is usuable in many projects.
+        
+        Please visit original repo for more information: https://github.com/prantoamt/django-parser-app
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
