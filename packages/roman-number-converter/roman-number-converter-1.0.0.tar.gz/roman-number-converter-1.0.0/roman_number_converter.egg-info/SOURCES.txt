@@ -1,0 +1,8 @@
+README.md
+setup.py
+component/__init__.py
+component/main.py
+roman_number_converter.egg-info/PKG-INFO
+roman_number_converter.egg-info/SOURCES.txt
+roman_number_converter.egg-info/dependency_links.txt
+roman_number_converter.egg-info/top_level.txt
