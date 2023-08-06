@@ -1,0 +1,11 @@
+torch>=1.0
+tqdm
+pyprind
+six
+Cython
+torchtext
+nltk>=3.2.5
+fasttext
+pandas
+dill
+scikit-learn
