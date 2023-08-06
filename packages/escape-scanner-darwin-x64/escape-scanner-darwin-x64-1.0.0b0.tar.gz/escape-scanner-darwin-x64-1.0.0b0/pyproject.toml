@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "escape-scanner-darwin-x64"
+version = "1.0.0-beta.0"
+description = "Escape Scanner binary used by Escape CLI for Python"
+authors = ["Escape Technologies SAS <ping@escape.tech>"]
+maintainers = ["Antoine Carossio <antoine.carossio@me.com>"]
+license = "Proprietary"
+include = [
+    "LICENSE",
+]
+"homepage" = "https://escape.tech/"
+"repository" = "https://gitlab.com/escape.tech/product"
+packages = [
+    { include = "escape_scanner_wrapper" }
+]
+
+[tool.poetry.scripts]
+escape-scanner-darwin-x64 = 'escape_scanner_wrapper:main'
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/escape.tech/product/issues"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

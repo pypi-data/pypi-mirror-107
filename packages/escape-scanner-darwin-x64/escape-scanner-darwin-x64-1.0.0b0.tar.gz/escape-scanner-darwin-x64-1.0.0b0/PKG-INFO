@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: escape-scanner-darwin-x64
+Version: 1.0.0b0
+Summary: Escape Scanner binary used by Escape CLI for Python
+Home-page: https://escape.tech/
+License: Proprietary
+Author: Escape Technologies SAS
+Author-email: ping@escape.tech
+Maintainer: Antoine Carossio
+Maintainer-email: antoine.carossio@me.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Bug Tracker, https://gitlab.com/escape.tech/product/issues
+Project-URL: Repository, https://gitlab.com/escape.tech/product
