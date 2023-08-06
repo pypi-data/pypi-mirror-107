@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: regex2dfa2
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/cramppet/regex2dfa
+Author: Peter Crampton
+Author-email: cramppet@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pybind11 (>=2.5)
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+
+UNKNOWN
+
