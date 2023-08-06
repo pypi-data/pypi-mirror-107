@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: si_cli
+Version: 0.0.1
+Summary: convert resistor and capacitor values from and to 3 digit codes(si format)
+Home-page: https://github.com/ljurk/si_cli
+Author: Lukas Jurk
+Author-email: ljurk@pm.me
+License: GPLv3
+Description: # si_cli
+        
+        A tool to convert from and to cap and resistor values in a 3 digit format(SI-Format)
+        
+        ## Installation
+        
+        ```
+        pip install si_cli
+        ```
+        
+        ## Usage
+        
+        ```
+        $ si from 104
+        100 k
+        $ si from 104 --cap
+        100 nf
+        $ si to 100k
+        104
+        $ si to 100nf
+        104
+        ```
+        
+        When using `to` there is no need for the `--cap` flag. Cap values are calculated if the input ends with an `f`
+        
+Keywords: resistor cap capacitor digit si
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
