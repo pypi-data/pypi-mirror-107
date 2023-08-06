@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gtsam-stubs
+Version: 0.0.1
+Summary: PEP 561 type stubs for GTSAM
+Home-page: http://www.gtsam.org
+Maintainer: Fan Jiang
+Maintainer-email: gtsam@example.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: gtsam (>=4.0.3)
+Requires-Dist: typing-extensions (>=3.7.4) ; python_version >= "3.8"
+
+UNKNOWN
+
