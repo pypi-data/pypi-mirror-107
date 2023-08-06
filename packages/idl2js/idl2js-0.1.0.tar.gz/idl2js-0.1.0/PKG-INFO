@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: idl2js
+Version: 0.1.0
+Summary: Grammar-based Fuzzer that uses WebIDL as a grammar.
+Home-page: https://github.com/PrVrSs/idl2js
+License: Apache-2.0
+Keywords: WebIDL,fuzzer,ast,grammar,fuzzing,transpiler
+Author: Sergey Reshetnikov
+Author-email: resh.sersh@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: antlr4-python3-runtime (>=4.9.2,<5.0.0)
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: graphviz (>=0.16,<0.17)
+Requires-Dist: more_itertools (>=8.4.0,<9.0.0)
+Requires-Dist: stringcase (>=1.2.0,<2.0.0)
+Project-URL: Repository, https://github.com/PrVrSs/idl2js
+Description-Content-Type: text/markdown
+
+# idl2js
+
+[![Build Status](https://img.shields.io/travis/PrVrSs/idl2js/master?style=plastic)](https://travis-ci.org/github/PrVrSs/idl2js)
+[![Codecov](https://img.shields.io/codecov/c/github/PrVrSs/idl2js?style=plastic)](https://codecov.io/gh/PrVrSs/idl2js)
+[![Python Version](https://img.shields.io/badge/python-3.9-blue?style=plastic)](https://www.python.org/)
+[![License](https://img.shields.io/cocoapods/l/A?style=plastic)](https://github.com/PrVrSs/idl2js/blob/master/LICENSE)
+
+
+## Quick start
+
+```shell script
+pip install idl2js
+```
+
+
+### Links
+
+
+* [searchfox - webidl](https://searchfox.org/mozilla-central/source/dom/webidl)
+* [original webidl parser](https://github.com/w3c/webidl2.js)
+* [TSJS-lib-generator](https://github.com/microsoft/TSJS-lib-generator/tree/master/inputfiles/idl)
+* [ECMAScript® 2021 Language Specification](https://tc39.es/ecma262/)
+
+
+## Contributing
+
+Any help is welcome and appreciated.
+
+
+## License
+
+*idl2js* is licensed under the terms of the Apache-2.0 License (see the file LICENSE).
+
