@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: receipt-parser-core
+Version: 0.2.5
+Summary: A supermarket receipt parser written in Python using tesseract OCR
+Home-page: https://github.com/ReceiptManager/receipt-parser-legacy
+License: Apache-2.0
+Keywords: receipt,ocr,parser
+Author: Matthias Endler
+Author-email: matthias-endler@gmx.net
+Requires-Python: >=3.7,<3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Pillow (>=8.1.2,<9.0.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.4.0,<5.0.0)
+Requires-Dist: py (>=1.10.0,<2.0.0)
+Requires-Dist: pytesseract (>=0.3.6,<0.4.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
+Requires-Dist: scipy (>=1.6.2,<2.0.0)
+Requires-Dist: terminaltables (>=3.1.0,<4.0.0)
+Requires-Dist: wand (>=0.6.3,<0.7.0)
+Project-URL: Repository, https://github.com/ReceiptManager/receipt-parser-legacy
+Description-Content-Type: text/markdown
+
+# A fuzzy receipt parser written in Python  
+
+This is a fuzzy receipt parser written in Python. 
+It extracts information like the shop, the date, and the total from scanned receipts.
+It can work as a standalone script or as part of our [IOS and Android application](https://github.com/ReceiptManager/Application).
+
+## Dependencies
+The `receipt-parser-core` library depend on `imagemagick`. Please install `imagemagick`
+with your favorite package manager.
+
+## Usage
+To convert all images from the `data/img/` folder to text using tesseract and parse the resulting text files, run
+
+```
+make run
+```
+
+### Docker
+
+A `Dockerfile` is available with all dependencies needed to run the program.  
+To build the image, run
+
+```
+make docker-build
+```
+
+To run it on the sample files, try
+
+```
+make docker-run
+```
+
+By default, running the image will execute the `make run` command. To use with your own images, run the following:
+
+```
+docker run -v <path_to_input_images>:/usr/src/app/data/img mre0/receipt_parser
+```
+
+## History
+
+This project started as a hackathon idea. Read more about it on the [trivago techblog](https://tech.trivago.com/2015/10/06/python_receipt_parser/).
+Also read the comments on [HackerNews](https://news.ycombinator.com/item?id=10338199)
+There's also a [talk](https://www.youtube.com/watch?v=TuDeUsIlJz4) about the project.
+The library is now available at [PyPi](https://pypi.org/project/receipt-parser-core/#description).
+
