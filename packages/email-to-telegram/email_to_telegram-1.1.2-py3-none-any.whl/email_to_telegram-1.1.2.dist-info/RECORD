@@ -1,0 +1,15 @@
+email_to_telegram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_to_telegram/__main__.py,sha256=RAFwqCsTSs-7AKiAcW-ASknffvT67e9Olf4pn7tuKCo,1079
+email_to_telegram/constants.py,sha256=J26Me5tTVolIRJB2xWeDvPLR_g0M33KYRgfL98csMz4,2586
+email_to_telegram/email.py,sha256=msWxpG093hYToj4vA7cqDrlwgkqHivKF4Su4xUL2KoI,2313
+email_to_telegram/telegram_bot.py,sha256=lzo4Zt_JKWBHe8l5LeMgNERc17h0dfdZgPuoU3448k0,1973
+email_to_telegram/utils.py,sha256=KM7mW8Sj-saQvyK7UxPMS9I9HaP8-ZXIFUwSU_qwHGM,1707
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/fixture.py,sha256=oVBLCEvX_SeNaY_gHOglvxM6m2m62OU3pBMDcv_V4XE,1154
+test/test_util.py,sha256=cB2HVw9a0a9thsujEDiRgTONxsiY_2GsoUSZhCv-bk8,2058
+email_to_telegram-1.1.2.dist-info/LICENSE,sha256=nMCSfp7caAx8v9n07e3CcAgvcjt3J1-6jsXhP1eZIU0,1071
+email_to_telegram-1.1.2.dist-info/METADATA,sha256=LoVRzuBPdinFBHWDdymncA3vDE6mAduOxHykGh3hOMU,1672
+email_to_telegram-1.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+email_to_telegram-1.1.2.dist-info/entry_points.txt,sha256=FkJ69Zeh0eVNpgvIi38DyaVwj0TwQgVVdTCuW2bWTs8,71
+email_to_telegram-1.1.2.dist-info/top_level.txt,sha256=Ut62PdRz1OPwnJRDB1QoY4H2O-FSeSmVMYxLeISGXNk,23
+email_to_telegram-1.1.2.dist-info/RECORD,,
