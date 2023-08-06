@@ -1,0 +1,10 @@
+typer
+typing_extensions
+pandas
+coloredlogs
+
+[dev]
+pytest
+pre-commit
+pylint
+black
