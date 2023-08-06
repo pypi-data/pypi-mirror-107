@@ -1,0 +1,13 @@
+attrs==19.3.0
+configparser==4.0.2
+contextlib2==0.6.0.post1
+functools32==3.2.3-2
+genson==1.1.0
+importlib-metadata==0.23
+jsonschema==3.2.0
+more-itertools==5.0.0
+pathlib2==2.3.5
+pyrsistent==0.15.5
+scandir==1.10.0
+six==1.12.0
+zipp==0.6.0

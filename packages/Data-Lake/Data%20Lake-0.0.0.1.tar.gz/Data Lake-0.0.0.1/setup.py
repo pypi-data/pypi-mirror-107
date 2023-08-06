@@ -1,0 +1,27 @@
+from setuptools import setup
+import os
+from setuptools import setup
+
+# with open('requirements.txt') as f:
+#     required = f.read().splitlines()
+
+setup(name='Data Lake',
+      version='0.0.0.1',
+      description='processes Datalake to Bronze-Silver_Gold',
+      url='https://upload.pypi.org/legacy/',
+      author='Imparnert',
+      author_email='alex-12-04@hotmail.com',
+      license='MIT',
+      packages=['DataLake',],
+      # entry_points={'console_scripts': ['Package = Package.__main__:main'], },
+      # install_requires=required,
+      # classifiers=["Programming Language :: Python :: 3"],
+      python_requires='>=3',
+      # zip_safe=False,
+      # scripts=[
+      #           'requirements.txt',
+      #           'README.md',
+      #          ],
+      # long_description=open('README.md').read(),
+      # include_package_data=True,
+      )

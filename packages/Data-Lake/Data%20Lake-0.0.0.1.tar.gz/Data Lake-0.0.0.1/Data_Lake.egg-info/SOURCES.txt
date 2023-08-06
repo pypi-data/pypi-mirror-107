@@ -1,0 +1,16 @@
+README.md
+requirements.txt
+setup.py
+DataLake/Bronze.py
+DataLake/DataLake.py
+DataLake/Silver.py
+DataLake/Util.py
+DataLake/const.py
+DataLake/main.py
+Data_Lake.egg-info/PKG-INFO
+Data_Lake.egg-info/SOURCES.txt
+Data_Lake.egg-info/dependency_links.txt
+Data_Lake.egg-info/top_level.txt
+test/TestBronze.py
+test/TestDataLake.py
+test/TestSilver.py
