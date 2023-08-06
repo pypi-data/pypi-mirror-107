@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: kep-solver
+Version: 1.0.0rc7
+Summary: A Python package for reading and solving single instances of kidney exchange problems.
+Home-page: https://gitlab.com/wpettersson/kep_solver
+Author: William Pettersson
+Author-email: william@ewpettersson.se
+License: AGPLv3
+Keywords: kidney kidney_exchange
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: defusedxml
+Requires-Dist: pulp
+
+# kep_solver
+
+This Python package is devoted to various algorithms, procedures and mechanisms that are useful when studying kidney exchange programmes in general.
+
+## Current features
+
+* Reading instance files (json and XML formats)
+* Creation of compatibility graphs
+* Solving for the following objectives (single, or hierarchical)
+
+    * Maximise the number of transplants
+    * Maximise the number of backarcs
+    * Maximise the number of effective 2-way exchanges
+    * Minimise the number of three-cycles
+    * Maximise the score using the UK scoring mechanisms
+
+While the above objectives are exactly those in use by NHSBT when running the UKLKSS (the UK national KEP), I do intend to add further objectives
+
+## Expected users
+
+I see two classes of users of this software:
+
+* Researchers - Depending on what questions you want answered, you can either test policy changes to determine how they affect the running of a KEP, or you can implement new models or objectives to see how they perform
+* Health care institutes - I have tried to make this software as robust as possible, but for now I cannot guarantee any particular level of performance or any exact optimality of a solution. If you do want to use this software for real-world impact, feel free to get in touch and I may be able to help.
+
+## Interface
+
+This is just a Python module for now, there is no interface for using it that does not involve writing Python code. I do have the basics of a web interface ready, but it's not published yet as I want to make it more robust and clean first.
+
+## Future plans
+
+Note that some of these are easier than other, and there is no timeline on when any will be developed
+
+* Random instance generation
+* Simulating the development of a KEP over time
+* Supporting transnational pools
+
+
+## Contributing
+
+I'm still not sure what the best way to move forward with contributors is. Currently I own all of the IP, so I can license this software to other health organisations if they have specific requirements. However, if anyone contributes code I may lose this ability. I am pondering having an organisation "own" the code specifically so we can re-license to national health organisations or similar.
+
+
