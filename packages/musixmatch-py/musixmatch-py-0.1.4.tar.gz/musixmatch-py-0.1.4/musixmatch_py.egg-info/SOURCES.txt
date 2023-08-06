@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+musixmatch/__init__.py
+musixmatch/album.py
+musixmatch/artist.py
+musixmatch/charts.py
+musixmatch/endpoints.py
+musixmatch/main.py
+musixmatch/matcher.py
+musixmatch/tracks.py
+musixmatch_py.egg-info/PKG-INFO
+musixmatch_py.egg-info/SOURCES.txt
+musixmatch_py.egg-info/dependency_links.txt
+musixmatch_py.egg-info/requires.txt
+musixmatch_py.egg-info/top_level.txt
