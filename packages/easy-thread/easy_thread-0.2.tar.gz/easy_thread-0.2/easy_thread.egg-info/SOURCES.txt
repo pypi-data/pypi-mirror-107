@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+easy_thread/__init__.py
+easy_thread/easy_thread_core.py
+easy_thread/easy_thread_utils.py
+easy_thread.egg-info/PKG-INFO
+easy_thread.egg-info/SOURCES.txt
+easy_thread.egg-info/dependency_links.txt
+easy_thread.egg-info/not-zip-safe
+easy_thread.egg-info/top_level.txt
