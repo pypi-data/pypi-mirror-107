@@ -1,0 +1,69 @@
+{
+
+
+
+ "bnt_balance": "剰余",
+ "bnt_lvsum": "コンボレベル",
+ "bnt_node_num": "ノード数",
+ "bnt_lvfreeze": "クリスタルレベル",
+ "bnt_deal": "対処",
+ "bnt_price_plan": "料金プラン",
+ "bnt_share": "シェア",
+ "bnt_welcome": "ようこそ",
+ "bnt_invcode": "紹介コード",
+ "bnt_all_income": "すべての収入",
+ "bnt_all_wage": "すべての賭け",
+ "bnt_confirm": "確認して署名します",
+ "bnt_boardcast": "トランザクションに署名してコミットします。",
+ "bnt_main": "家",
+ "bnt_ninvest": "新投資",
+ "bnt_oinvest": "追いつく",
+ "bnt_trxn": "トランザクションのステータス",
+ "bnt_askcode": "コードを求めます",
+ "bnt_bicode": "招待コード",
+ "bnt_bet": "追加資金",
+ "bnt_prin": "主要な",
+
+ "n_zero_a": "可能なゼロ量",
+ "n_address_empty": "アドレスは空にすることはできません",
+ "n_upline": "あなたのアップラインコードは無効です。",
+ "n_inv": "コードは無効です招待",
+ "n_free": "無効な空き容量",
+ "n_lock": "無効なロック量",
+ "n_copy": "成功のコピー",
+ "n_round_unstarted": "このラウンドはまだ開始されていません",
+ "n_attention": "注目",
+ "n_pmt_success": "支払いが成功です！",
+ "n_hashcfm": "ハッシュ確認",
+ "n_deny": "拒否されました。",
+
+ "p_total_income": "総収入",
+ "p_cap": "資本",
+ "p_hack": "ハックパワー",
+ "p_enqueue": "キュー額",
+ "p_shared": "共有金額",
+ "p_reward": "報酬ボーナスの額",
+ "p_all_accs": "すべての投資したアカウント",
+ "p_pend_withd": "保留中の引き出し",
+ "p_frozen_amount": "冷凍額",
+
+
+
+ "p_grant": "保留中のグラントリリース",
+ "p_close": "閉じる",
+ "p_settle_withdraw": "取り下げます",
+
+ "site_name_ec": "Tron.資本",
+ "site_name_ms": "フリーメーソンの世界",
+ "msg_install": "imtokenまたは類似の財布を使用してください。",
+ "msg_switch": "メインネットワークにのみ利用できるお財布経由してくださいスイッチを<br>。",
+ "msg_new_round": "新ラウンドキャピタル・ファンディングはすぐに開始されました！",
+ "msg_invcard": "私の招待カード",
+
+
+ "msg_stay_tuned": "乞うご期待。",
+ "msg_verified_ctr": "確認済みの契約住所",
+ "msg_contr_addr": "契約住所",
+ "msg_dpl_network_tron": "トロン展開のネットワーク",
+ "msg_auditrepo": "監査レポート"
+}

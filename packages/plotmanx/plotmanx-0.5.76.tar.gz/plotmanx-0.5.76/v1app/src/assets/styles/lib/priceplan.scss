@@ -1,0 +1,210 @@
+
+.price-plan-layout {
+  @extend .purple_plan_background_x;
+  color: #fff;
+  font-family: 'Roboto-R', sans-serif;
+  font-size: 100%;
+  height: 100%;
+  line-height: 1.5;
+  padding: 2.5em;
+
+
+  h2, h3, p, ul {
+    margin: 0
+  }
+
+  h2 {
+    color: $price_dollar_md;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 0 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.0625em;
+    margin: 0 0 0.3333333333333333em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+
+  p, ul {
+    margin: 0 0 1.5em
+  }
+
+  ul {
+    color: #796583;
+    font-size: 0.75em;
+    list-style-type: none;
+    padding: 0 !important;
+
+    li {
+      margin: 0 0 0.8333333333333333em;
+    }
+  }
+
+  .uppercase, .enter_deal_button, h2 {
+    text-transform: uppercase;
+  }
+
+  sup, .small {
+    font-size: 0.6125em;
+  }
+
+  span {
+    all: unset;
+
+  }
+
+  .reset-button {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+    //color: rgba(black, 0.8);
+    // transition: color 0.1s ease-in;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      // color: rgba(black, 0.5)
+    }
+  }
+
+
+  .enter_deal_button_vm {
+    @extend .reset-button;
+    background-color: #9c83aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.75em 1.5em;
+    position: absolute;
+    bottom: 1.25em;
+    left: 50%;
+    margin-left: -60px;
+    text-decoration: none;
+    width: 120px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .cardplan {
+    text-align: center;
+    transition: all .2s ease-in-out;
+    min-height: 400px;
+    padding: 1.25em;
+    border: 2px solid $price_dollar;
+
+    .level_title {
+      font-family: 'varsace-b', 'Roboto-R',sans-serif;
+      font-weight: bold;
+    }
+
+    .enter_deal_button {
+      background-color: #9c83aa;
+    }
+
+    .bullet-content {
+      transition: color 0.1s ease-in;
+    }
+  }
+
+  .grid-1-5 {
+    @extend .cardplan;
+    border: 2px solid #5d4e65;
+    min-height: 400px;
+    padding: 1.25em;
+    position: relative;
+
+
+    @media screen and (min-width: 700px) {
+      & {
+        float: left;
+        width: 50%;
+      }
+      &:nth-child(odd) {
+        clear: left;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      & {
+        width: 33.0%;
+      }
+      &:nth-child(3n+1) {
+        clear: left;
+      }
+      &:nth-child(odd) {
+        clear: none;
+      }
+    }
+
+    @media screen and (min-width: 1120px) {
+      & {
+        width: 20%;
+      }
+      &:nth-child(odd), &:nth-child(3n+1) {
+        clear: none;
+      }
+    }
+
+  }
+
+  .cardplan.empty:hover {
+    .logocir{
+      fill: #604a27;
+    }
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-color: $color_price_plan_start;
+    box-shadow: 0px 0px 10px 0px $price_dollar,
+    0px 0px 12px 1px $price_dollar,
+    0px 0px 13px 2px $price_dollar;
+
+    z-index: 2;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      //background-color: $price_dollar;
+      // @include filter-gradient($price_dollar, $price_dollar_deep, vertical);
+      // @include background-image(linear-gradient(top, $price_dollar 0%, $price_dollar_deep 100%));
+      top: -2px;
+      bottom: -2px;
+      width: 2px;
+    }
+
+    &:before {
+      left: -2px;
+    }
+
+    &:after {
+      right: -2px;
+    }
+
+    .bullet-content {
+      color: $color_price_plan_light;
+    }
+
+    .enter_deal_button.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--disabled):not(.v-btn--loading) {
+      background-color: rgb(238, 122, 54);
+      background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+  }
+}

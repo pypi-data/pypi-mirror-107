@@ -1,0 +1,340 @@
+@use "sass:math";
+$btn-box-height: 8px;
+$cover_bg_x: rgba(52, 29, 22, 0.86);
+$cover_bg_x2: rgba(0, 75, 123, 0.86);
+@mixin claw_machine_button_style_ex1($color) {
+  box-shadow: 0 0 50px 3px $color inset,
+  0 0 0 1px $color inset,
+  0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+  0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+@mixin button_face_up() {
+  color: #f6e974;
+  background-color: #937527;
+  box-shadow: 0 0 50px 3px #6a5b1b inset,
+  0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+  0 $btn-box-height 0 0 #a28428,
+  0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+  0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5)
+}
+
+@mixin button_face_up_new($a,$b,$c,$d) {
+  color: $a;
+  background-color: $b;
+  box-shadow: 0 0 50px 3px $c inset,
+  0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+  0 $btn-box-height 0 0 $d,
+  0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+  0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5)
+}
+
+$textex: #dafffc;
+$textcolorg: #6db7c1;
+$textcolorglow: #93f2ff;
+
+.ice {
+  color: $textcolorg;
+}
+
+.flexcontainx {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  .section_b_title {
+    padding-left: 10px;
+    font-size: 9px;
+  }
+  /* .vip_number {
+     position: absolute;
+     top: 50px;
+     left: 10px;
+     width: 130px;
+     font-size: 11px;
+   }*/
+  // Basic styling for flex items
+  .flexhitem {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    order: 100;
+    text-align: center;
+  }
+
+  // Defaults for both grid/list
+  &.grid,
+  &.list {
+    .flexhitem {
+      &.flex-banner {
+        flex: 0 1 100%;
+      }
+
+      // Manually order each flexbox item
+      // as Flexbox sets an order of 0 by default
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:nth-child(5) {
+        order: 5;
+      }
+      &:nth-child(6) {
+        order: 6;
+      }
+      &:nth-child(7) {
+        order: 7;
+      }
+      &:nth-child(8) {
+        order: 8;
+      }
+      &:nth-child(9) {
+        order: 9;
+      }
+      &:nth-child(10) {
+        order: 10;
+      }
+      // Increase nth-childs depending on your grid...
+    }
+  }
+
+  //..
+  &.grid {
+    flex-direction: row;
+
+    .flexhitem {
+      flex: 0 0 25%;
+
+      &.flex-banner {
+        order: 8;
+      }
+    }
+  }
+
+  //..
+  &.list {
+    flex-direction: column;
+
+    .flexhitem {
+      flex: 0 0 100%;
+
+      &.flex-banner {
+        order: 4;
+      }
+    }
+  }
+}
+
+.container_oke {
+  color: #ffb734;
+  .session_back_color_deepblue {
+    background-color: $cover_bg_x2;
+    padding-top: 10px;
+    padding-bottom: 90px;
+  }
+  .control_face_cover {
+    background-color: $cover_bg_x;
+    padding-top: 10px;
+    padding-bottom: 90px;
+  }
+  .control_inclusive {
+    padding-top: 10px;
+    padding-bottom: 90px;
+    background-color: $cover_bg_x2;
+
+    .pad_area {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .section_title {
+        width: auto !important;
+        font-size: 10px;
+        margin-left: 10px;
+        display: block;
+        background: red;
+        line-height: 20px;
+        padding: 0;
+        align-self: center;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .flexcontainx {
+    &.grid,
+    &.list {
+      flex-direction: column;
+
+      .flexhitem {
+        flex: 0 0 100%;
+
+        &.flex-banner {
+          order: 4;
+          .rcontrollist {
+            flex-wrap: wrap;
+            order: 3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-3d {
+  display: inline-block;
+  /* 自适应 */
+  //padding: 1rem 2rem;
+  /* 自适应 */
+  /* 固定宽高 */
+
+  /* 固定宽高 */
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  margin: 5px;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  &.big {
+    width: 12rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+  &.small {
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  &.dyn {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    height: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.btn-3d:active, .btn-3d.disabled {
+  transform: translate3d(0, $btn-box-height + 1, 0);
+  -webkit-transform: translate3d(0, $btn-box-height + 1, 0);
+}
+
+.btn-3d {
+  &.red {
+    background-color: #e71d13;
+    box-shadow: 0 0 0 1px #c63702 inset,
+    0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+    0 $btn-box-height 0 0 #C24032,
+    0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+    0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5);
+    color: #f8c3b8;
+    text-shadow: #e2664f 0px 0px 15px,
+    #bc4532 0px 0px 45px,
+    #7a2b30 0px 0px 65px,
+    #432324 0px 0px 75px;
+    &:active {
+      @include claw_machine_button_style_ex1(#c63702);
+    }
+
+    &.disabled {
+      color: #b44b4d;
+      text-shadow: #8f2423 0px 0px 25px,
+      #a72a29 0px 0px 45px,
+      #b52e2c 0px 0px 65px,
+      #c93331 0px 0px 75px;
+
+      background-color: #661c01;
+      @include claw_machine_button_style_ex1(#661c01);
+    }
+  }
+
+  &.green {
+    background-color: #005600;
+    box-shadow: 0 0 0 1px #003300 inset,
+    0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+    0 $btn-box-height 0 0 #003f00,
+    0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+    0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5);
+
+    text-shadow: #6aff82 0px 0px 25px,
+    #5bd66f 0px 0px 45px,
+    #3c8d49 0px 0px 65px,
+    #25562d 0px 0px 75px;
+
+    &:active {
+      @include claw_machine_button_style_ex1(#004000);
+    }
+
+    &.disabled {
+      background-color: #001b00;
+      @include claw_machine_button_style_ex1(#001b00);
+      color: #318d57;
+
+      text-shadow: #409b53 0px 0px 20px,
+      #307440 0px 0px 45px,
+      #25562d 0px 0px 65px,
+      #1d4424 0px 0px 75px;
+    }
+  }
+
+  &.gold {
+
+    text-shadow: #c3a947 0px 0px 25px,
+    #c2940a 0px 0px 45px,
+    #a6822b 0px 0px 65px,
+    #e9bd37 0px 0px 75px;
+
+    @include button_face_up;
+
+    &:active {
+      @include claw_machine_button_style_ex1(#6a5b1b);
+      text-shadow: 1px 1px 10px 10px #987507;
+      color: #f6e974;
+    }
+
+    &.disabled {
+      background-color: #473504;
+      color: #6e5307;
+      text-shadow: 1px 1px 20px #674e06;
+      @include claw_machine_button_style_ex1(#292707);
+    }
+
+  }
+
+  &.ice-bb {
+    text-shadow: #45747a 0px 0px 25px,
+    #334957 0px 0px 45px,
+    #0070b8 0px 0px 65px,
+    #78accb 0px 0px 75px;
+
+    @include button_face_up_new(#294549, #96d4ff, #0070b8, #78accb);
+
+    &:active {
+      @include claw_machine_button_style_ex1(#1d81b8);
+      text-shadow: 1px 1px 10px 10px #2395c9;
+      color: #6fc1f6;
+    }
+
+    &.disabled {
+      background-color: #49626e;
+      color: #427995;
+      text-shadow: 1px 1px 20px #183b67;
+      @include claw_machine_button_style_ex1(#08486e);
+    }
+
+  }
+
+}

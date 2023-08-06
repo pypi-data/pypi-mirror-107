@@ -1,0 +1,73 @@
+@import "~compass-mixins";
+@import "~assets/styles/patch/_colorconf.scss";
+
+
+.n921 {
+  background-image: linear-gradient(-0.45turn, $hk1, $hk2, $hk3);
+}
+
+.n821 {
+  background-image: linear-gradient(-0.45turn, $hk1, $hk2, $color_price_plan_start);
+}
+
+.n895 {
+  background-image: linear-gradient(to top, #f83600 0%, $color_upr 39%, $color_peach 100%)
+  //linear-gradient(to top, #ff0844 0%, #ffb199 100%)
+;
+}
+
+.ui.priceboxtag.statistics .statistic > .value,
+.ui.statistics .priceboxtag.statistic > .value,
+.ui.priceboxtag.statistic > .value {
+  color: $color_dp_light;
+}
+
+
+.purple_plan_background_x {
+  background-color: rgb(33, 31, 35);
+  background-repeat: no-repeat;
+  @include filter-gradient($hk1, $hk3, horizontal);
+  @include background-image(radial-gradient(circle at top, $color_price_plan_start 5%, $color_deep_plan 80%));
+}
+
+.purple_plan_background_highlight {
+  @include filter-gradient($hk1, $hk2, vertical);
+  @include background-image(linear-gradient(top, $color_price_plan_start 5%, $color_deep_plan_h 100%));
+}
+
+.v-application {
+
+  .redline {
+    background-color: $color_dared !important;
+    border-color: $color_dared !important;
+  }
+
+  .holo_sheet {
+    z-index: 2;
+    position: relative;
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+
+  .money-tabs .v-item-group {
+    color: $color_deep_plan !important;
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+
+  .enter_deal_button.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--disabled):not(.v-btn--loading),
+  .bigpaymentsign.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--disabled):not(.v-btn--loading) {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  }
+
+  .bigenterlne.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--disabled):not(.v-btn--loading) {
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(143, 152, 157, 0.60) 100%);
+    background-blend-mode: normal, multiply;
+  }
+
+  .cloux.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined):not(.v-btn--disabled):not(.v-btn--loading) {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+}
+
