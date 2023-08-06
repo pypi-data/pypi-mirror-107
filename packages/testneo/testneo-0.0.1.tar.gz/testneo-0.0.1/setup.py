@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+     时间 : 2021-05-28 15:04
+     作者 : 胡桓
+     文件名 : setup.py
+     邮箱: 1641143982@qq.com
+"""
+import setuptools
+
+setuptools.setup(
+    name="testneo",
+    version="0.0.1",
+    author="胡桓",
+    author_email='1641143982@qq.com',
+    long_description_content_type='text/markdown',
+    url='https://github.com/neo19850910/testneo',
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='==3.9.5',
+)
