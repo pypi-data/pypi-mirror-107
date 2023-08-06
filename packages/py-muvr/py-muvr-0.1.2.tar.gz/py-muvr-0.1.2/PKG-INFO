@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: py-muvr
+Version: 0.1.2
+Summary: Nested cross validation for feature selection in Python
+Home-page: https://github.com/datarevenue-berlin/py-MUVR
+Author: Data Revenue GmbH
+Author-email: carlos@datarevenue.com
+License: MIT license
+Description: ======
+        Readme
+        ======
+        
+        The package README is available on the `landing page of the repository  <https://github.com/datarevenue-berlin/py-MUVR>`_
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-11-10)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: muvr,muv
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Obsoletes: o
+Obsoletes: m
+Obsoletes: i
+Obsoletes: g
+Obsoletes: a
+Obsoletes: m
+Obsoletes: i
