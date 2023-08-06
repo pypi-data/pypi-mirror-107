@@ -1,0 +1,9 @@
+lightshield/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightshield/exceptions.py,sha256=SG1FzVmSzF8Z2vh-Y4yhjOrVpwU92JKM8qPFp0q3Blg,546
+lightshield/proxy/__init__.py,sha256=r4Cs1Zcw6HykLQwHSBA4DgNfI9gioGMhihbvjCjliNk,25
+lightshield/proxy/endpoint.py,sha256=sGWnoAhYTyIYwJqKTvnZJIMV1wURNNtuTgpRbBOKNBE,6528
+lightshield/proxy/main.py,sha256=LBY4xnJy22bIlHEWjH19kQLJO99z_M52GW00AYpTFPU,1370
+lightshield/settings.py,sha256=Cnpa2vw9GyspS1uTukqToIQ8SL6__II8bYI0LDgLb4U,3852
+lightshield-0.1.5b0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+lightshield-0.1.5b0.dist-info/METADATA,sha256=P9G_mAUTd1xJfoRggBewBaDJkgcXpe3FrTTn7i9PWYE,2345
+lightshield-0.1.5b0.dist-info/RECORD,,
