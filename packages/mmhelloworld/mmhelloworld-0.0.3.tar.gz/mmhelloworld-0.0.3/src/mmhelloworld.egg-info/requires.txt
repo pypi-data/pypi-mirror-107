@@ -1,0 +1,12 @@
+blessings~=1.7
+
+[admin]
+black
+pytest>=3.7
+twine
+wheel
+
+[dev]
+black
+pytest>=3.7
+wheel
