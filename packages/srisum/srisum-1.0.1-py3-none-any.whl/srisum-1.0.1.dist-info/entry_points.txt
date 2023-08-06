@@ -1,0 +1,3 @@
+[console_scripts]
+srisum = srisum.__main__:main
+
