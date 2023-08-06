@@ -1,0 +1,4 @@
+[console_scripts]
+fdl=fileshare.main:download
+fup=fileshare.main:upload
+
