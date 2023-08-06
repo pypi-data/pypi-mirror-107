@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: Q-snippets-Qing25
+Version: 0.0.1
+Summary: My working code snippets
+Home-page: https://github.com/Qing25/Q-snippets
+Author: Qing25
+Author-email: 599098562@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Qing25/Q-snippets
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Q-snippets
+
+My working code snippets
+
+```python
+.
+└── q_snippets
+    ├── class.py
+    ├── data.py
+    ├── __init__.py
+    ├── optim.py
+    └── tensor_ops.py
+```
+
+### class
+
+- RoPE
+- CircleLoss
+- FocalLoss
+
+### data
+
+- timeit
+- save_json
+- load_json
+- load_yaml
+- BaseData
+- MRCSample
+- MRCBatch
+- load_data
+- MRCDataset
+- span_decode
+- Config
+
+### optim
+
+pass
+
+### tensor_ops
+
+- safesoftmax
+- feature_transform
+- select_span_rep
+- select_func
+- get_max_startend
+
+
