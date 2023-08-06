@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: daspuml_compiler
+Version: 1.0
+Summary: The project was implemented for the Theory of Compilation and Compilators class at AGH UST.
+The main goal was to implement a language and compilator that allows generating UML sequence diagram based on friendly and human-readable source code.
+Home-page: https://gitlab.com/agh-dasp/daspuml-language
+Author: Dominik Bober, Adam Klekowski, Szymon Duda, Przemysław Ziaja
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: UML
+Platform: UNKNOWN
