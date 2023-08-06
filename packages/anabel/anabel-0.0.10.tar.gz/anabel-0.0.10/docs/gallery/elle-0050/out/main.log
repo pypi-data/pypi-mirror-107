@@ -1,0 +1,2566 @@
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=lualatex 2021.4.30)  14 MAY 2021 07:31
+ restricted system commands enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-10-01> patch level 2
+Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
+Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-08-31 2.72 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-08-31 2.72 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-09-02 3.15 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-09-02 3.15 luaotfload submodule / parsers
+Lua module: luaotfload-configuration 2020-09-02 3.15 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is "/home/claudio/.texlive/texmf-var/lu
+atex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2020-08-31.lua" from kpse-res
+olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2020-08-31.lu
+a".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
+Lua module: luaotfload-fallback 2020-09-02 3.15 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-09-02 3.15 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-09-02 3.15 luaotfload submodule / Script help
+ers
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Lua module: luaotfload-loaders 2020-09-02 3.15 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-09-02 3.15 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-09-02 3.15 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-09-02 3.15 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 3
+Lua module: luaotfload-resolvers 2020-09-02 3.15 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is "/home/claudio/.texlive/texmf-var/lu
+atex-cache/generic/names".
+Lua module: luaotfload-features 2020-09-02 3.15 luaotfload submodule / features
+Lua module: luaotfload-harf-define 2020-09-02 3.15 luaotfload submodule / HarfBu
+zz font loading
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Lua module: luaotfload-harf-plug 2020-09-02 3.15 luaotfload submodule / HarfBuzz
+ shaping
+Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'
+.
+Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
+Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
+Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
+Lua module: luaotfload-letterspace 2020-09-02 3.15 luaotfload submodule / letter
+spacing
+Lua module: luaotfload-embolden 2020-09-02 3.15 luaotfload submodule / embolden
+Lua module: luaotfload-notdef 2020-09-02 3.15 luaotfload submodule / notdef
+Lua module: luaotfload-suppress 2020-09-02 3.15 luaotfload submodule / suppress
+Lua module: luaotfload-szss 2020-09-02 3.15 luaotfload submodule / Special featu
+re handling
+Lua module: luaotfload-auxiliary 2020-09-02 3.15 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-tounicode 2020-09-02 3.15 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-12-03> xparse <2020-03-03>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/claudio/.texlive/texmf-v
+ar/luatex-cache/generic/names/luaotfload-names.luc)
+\c@part=\count173
+\c@section=\count174
+\c@subsection=\count175
+\c@subsubsection=\count176
+\c@paragraph=\count177
+\c@subparagraph=\count178
+\c@figure=\count179
+\c@table=\count180
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count181
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count182
+\leftroot@=\count183
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count184
+\DOTSCASE@=\count185
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count186
+\c@MaxMatrixCols=\count187
+\dotsspace@=\muskip16
+\c@parentequation=\count188
+\dspbrk@lvl=\count189
+\tag@help=\toks17
+\row@=\count190
+\column@=\count191
+\maxfields@=\count192
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-12-03 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2020-09-24 L3 backend support: PDF output (LuaTeX)
+\l__kernel_color_stack_int=\count193
+\l__pdf_internal_box=\box49
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
+Package: unicode-math-luatex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count194
+\l__fontspec_language_int=\count195
+\l__fontspec_strnum_int=\count196
+\l__fontspec_tmp_int=\count197
+\l__fontspec_tmpa_int=\count198
+\l__fontspec_tmpb_int=\count199
+\l__fontspec_tmpc_int=\count266
+\l__fontspec_em_int=\count267
+\l__fontspec_emdef_int=\count268
+\l__fontspec_strong_int=\count269
+\l__fontspec_strongdef_int=\count270
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
+
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(/usr/share/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+Package: lualatex-math 2020/09/25 v1.9 Patches for mathematics typesetting with 
+LuaLaTeX
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
+h LuaLaTeX)
+\g__um_fam_int=\count272
+\g__um_fonts_used_int=\count273
+\l__um_primecount_int=\count274
+\g__um_primekern_muskip=\muskip17
+
+(/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbat
+im
+
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+\MT@toks=\toks22
+\MT@count=\count275
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen151
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count276
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2019/11/18 v2.7d Definitions specific to luatex (RS)
+Module microtype Info: overwriting function `keepligature' on input line 59
+LaTeX Info: Redefining \lsstyle on input line 695.
+LaTeX Info: Redefining \lslig on input line 695.
+\MT@outer@space=\skip52
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+))
+(/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2020/10/05 v1.2a Graphics/color driver for luatex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
+))
+(/usr/share/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/01/24 v 0.09 modify URL breaks
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
+(/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks23
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count277
+\Hy@pagecounter=\count278
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count279
+Package hyperref Info: Option `unicode' set `true' on input line 4338.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count280
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen153
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+))
+\Fld@menulength=\count281
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packag
+e
+with kernel methods
+)
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2020-05-15 v7.00e Hyperref driver for luaTeX
+
+(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+
+)
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+
+with kernel methods
+)
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+6.
+)
+\Hy@SectionHShift=\skip53
+)
+(/usr/share/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count287
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 54.
+
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count288
+\Gm@cntv=\count289
+\c@Gm@tempcnt=\count290
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks24
+)
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count291
+\FV@InFile=\read2
+\FV@TabBox=\box50
+\c@FancyVerbLine=\count292
+\FV@StepNumber=\count293
+\FV@OutFile=\write3
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count294
+\LTcapwidth=\dimen164
+\LT@head=\box51
+\LT@firsthead=\box52
+\LT@foot=\box53
+\LT@lastfoot=\box54
+\LT@cols=\count295
+\LT@rows=\count296
+\c@LT@tables=\count297
+\c@LT@chunks=\count298
+\LT@p@ftn=\toks25
+)
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen177
+)
+(/usr/share/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
+Package: footnotehyper 2019/11/07 v1.1a hyperref aware footnote.sty (JFB)
+\FNH@notes=\box55
+\FNH@width=\dimen178
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+)
+\Gin@req@height=\dimen179
+\Gin@req@width=\dimen180
+)
+(/usr/share/texmf-dist/tex/lualatex/selnolig/selnolig.sty
+=== Package selnolig, Version 0.302, Date 2015/10/26 ===
+Package: selnolig 2015/10/26
+(/usr/share/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(/usr/share/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count303
+)
+\CatcodeTableOther=\catcodetable12
+\CatcodeTableExpl=\catcodetable13
+)
+Inserting `Suppress ligatures selectively' at position 1 in `ligaturing'.)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen181
+\captionmargin@=\dimen182
+\captionwidth=\dimen183
+\caption@tempdima=\dimen184
+\caption@indent=\dimen185
+\caption@parindent=\dimen186
+\caption@hangindent=\dimen187
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count304
+\c@continuedfloat=\count305
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+))
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count306
+\c@subtable=\count307
+)
+(/usr/share/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count308
+\float@exts=\toks26
+\float@box=\box56
+\@float@everytoks=\toks27
+\@floatcapt=\box57
+)
+(/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip67
+\fb@frw=\dimen188
+\fb@frh=\dimen189
+\FrameRule=\dimen190
+\FrameSep=\dimen191
+)
+(/usr/share/texmf-dist/tex/latex/quoting/quoting.sty
+Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
+\quo@toppartop=\skip68
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen192
+\pgfutil@tempdimb=\dimen193
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
+))
+Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen194
+\pgf@y=\dimen195
+\pgf@xa=\dimen196
+\pgf@ya=\dimen197
+\pgf@xb=\dimen198
+\pgf@yb=\dimen199
+\pgf@xc=\dimen256
+\pgf@yc=\dimen257
+\pgf@xd=\dimen258
+\pgf@yd=\dimen259
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count313
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/01 v3.1.7a (3.1.7a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfsyssoftpath@smallbuffer@items=\count314
+\pgfsyssoftpath@bigbuffer@items=\count315
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen260
+\pgfmath@count=\count316
+\pgfmath@box=\box59
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count317
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count318
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgflinewidth=\dimen279
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfarrowsep=\dimen283
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@max=\dimen284
+\pgf@sys@shading@range@num=\count319
+\pgf@shadingcount=\count320
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfexternal@startupbox=\box63
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfnodeparttextbox=\box64
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen287
+\pgffor@skip=\dimen288
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@plot@mark@count=\count321
+\pgfplotmarksize=\dimen289
+)
+\tikz@lastx=\dimen290
+\tikz@lasty=\dimen291
+\tikz@lastxsaved=\dimen292
+\tikz@lastysaved=\dimen293
+\tikz@lastmovetox=\dimen294
+\tikz@lastmovetoy=\dimen295
+\tikzleveldistance=\dimen296
+\tikzsiblingdistance=\dimen297
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count322
+\tikznumberofchildren=\count323
+\tikznumberofcurrentchild=\count324
+\tikz@fig@count=\count325
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfmatrixcurrentrow=\count326
+\pgfmatrixcurrentcolumn=\count327
+\pgf@matrix@numberofcolumns=\count328
+)
+\tikz@expandcount=\count329
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))) (../../style/pre.tex) (./main.aux)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 197.
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,FontAdjustment={\__um_luatex_copy_fontd
+imens:
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 197.
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57
+-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern
+-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[0.9999967668407183]"[latinmodern-math.otf]:mo
+de=base;script=math;language=dflt;"<6.57-9.3075>s*[0.9999967668407183]"[latinmod
+ern-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6.57>s*[0.999996766
+8407183]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 197.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 197.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input 
+line 197.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 197.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input
+ line 197.
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096766517402.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096766517402.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096766517402.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096766517402.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096766517402.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57
+-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern
+-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontA
+djustment={\fontdimen
+(fontspec)             8\font =7.41315pt\relax \fontdimen 9\font
+(fontspec)             =4.31429pt\relax \fontdimen 10\font =4.86179pt\relax
+(fontspec)             \fontdimen 11\font =7.51169pt\relax \fontdimen 12\font
+(fontspec)             =3.77774pt\relax \fontdimen 13\font =3.97484pt\relax
+(fontspec)             \fontdimen 14\font =3.97484pt\relax \fontdimen 15\font
+(fontspec)             =3.16454pt\relax \fontdimen 16\font =2.70464pt\relax
+(fontspec)             \fontdimen 17\font =2.70464pt\relax \fontdimen 18\font
+(fontspec)             =2.73749pt\relax \fontdimen 19\font =2.18999pt\relax
+(fontspec)             \fontdimen 22\font =2.73749pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[1.000096766517402]"[latinmodern-math.otf]:mod
+e=base;script=math;language=dflt;"<6.57-9.3075>s*[1.000096766517402]"[latinmoder
+n-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6.57>s*[1.00009676651
+7402]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =7.41315pt\relax \fontdimen 9\font =4.31429pt\relax
+(fontspec)             \fontdimen 10\font =4.86179pt\relax \fontdimen 11\font
+(fontspec)             =7.51169pt\relax \fontdimen 12\font =3.77774pt\relax
+(fontspec)             \fontdimen 13\font =3.97484pt\relax \fontdimen 14\font
+(fontspec)             =3.97484pt\relax \fontdimen 15\font =3.16454pt\relax
+(fontspec)             \fontdimen 16\font =2.70464pt\relax \fontdimen 17\font
+(fontspec)             =2.70464pt\relax \fontdimen 18\font =2.73749pt\relax
+(fontspec)             \fontdimen 19\font =2.18999pt\relax \fontdimen 22\font
+(fontspec)             =2.73749pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.000096766517402]"[latinmodern-math.otf]:mode=base
+;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =7.41315pt\relax \fontdimen 9\font =4.31429pt\relax
+(fontspec)             \fontdimen 10\font =4.86179pt\relax \fontdimen 11\font
+(fontspec)             =7.51169pt\relax \fontdimen 12\font =3.77774pt\relax
+(fontspec)             \fontdimen 13\font =3.97484pt\relax \fontdimen 14\font
+(fontspec)             =3.97484pt\relax \fontdimen 15\font =3.16454pt\relax
+(fontspec)             \fontdimen 16\font =2.70464pt\relax \fontdimen 17\font
+(fontspec)             =2.70464pt\relax \fontdimen 18\font =2.73749pt\relax
+(fontspec)             \fontdimen 19\font =2.18999pt\relax \fontdimen 22\font
+(fontspec)             =2.73749pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 197.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input
+ line 197.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 197.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input
+ line 197.
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998967671640342.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998967671640342.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998967671640342.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998967671640342.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999967668407183.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998967671640342.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57
+-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern
+-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontA
+djustment={\fontdimen
+(fontspec)             8\font =0.43799pt\relax \fontdimen 9\font
+(fontspec)             =2.18999pt\relax \fontdimen 10\font =1.82864pt\relax
+(fontspec)             \fontdimen 11\font =1.21544pt\relax \fontdimen 12\font
+(fontspec)             =6.56999pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[0.9998967671640342]"[latinmodern-math.otf]:mo
+de=base;script=math;language=dflt;"<6.57-9.3075>s*[0.9998967671640342]"[latinmod
+ern-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6.57>s*[0.999896767
+1640342]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.43799pt\relax \fontdimen 9\font =2.18999pt\relax
+(fontspec)             \fontdimen 10\font =1.82864pt\relax \fontdimen 11\font
+(fontspec)             =1.21544pt\relax \fontdimen 12\font =6.56999pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9998967671640342]"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.43799pt\relax \fontdimen 9\font =2.18999pt\relax
+(fontspec)             \fontdimen 10\font =1.82864pt\relax \fontdimen 11\font
+(fontspec)             =1.21544pt\relax \fontdimen 12\font =6.56999pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 19
+7.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input
+ line 197.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 197.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input
+ line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.665pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.475pt on input line 197.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 19
+7.
+
+(/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95099pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.66568pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.4755pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 197.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 197.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 197.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Info: Redefining \microtypecontext on input line 197.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 197.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(/usr/share/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mode
+rn Roman (RS)
+)
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count330
+\scratchdimen=\dimen298
+\scratchbox=\box69
+\nofMPsegments=\count331
+\nofMParguments=\count332
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count333
+\MPscratchDim=\dimen299
+\MPnumerator=\count334
+\makeMPintoPDFobject=\count335
+\everyMPtoPDFconversion=\toks41
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
+5.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+))
+Package hyperref Info: Link coloring ON on input line 197.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count336
+)
+LaTeX Info: Redefining \ref on input line 197.
+LaTeX Info: Redefining \pageref on input line 197.
+LaTeX Info: Redefining \nameref on input line 197.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=35.0pt
+* \headsep=16.42499pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 199.
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (./main.toc)
+\tf@toc=\write5
+
+\openout5 = main.toc
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<../img/mesh5-gauss02.png, id=37, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02.png Graphic file (type png)
+<use ../img/mesh5-gauss02.png>
+Package luatex.def Info: ../img/mesh5-gauss02.png  used on input line 242.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/analytic-a.png, id=38, 1027.84pt x 770.88pt>
+File: ../img/analytic-a.png Graphic file (type png)
+<use ../img/analytic-a.png>
+Package luatex.def Info: ../img/analytic-a.png  used on input line 258.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [2<../img/mesh5-gauss02.png>]
+<../img/mesh5-gauss02-H1.png, id=51, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss02-H1.png  used on input line 268.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss02-L2.png, id=52, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss02-L2.png  used on input line 269.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 268--270
+[][] [] 
+ []
+
+[3<../img/analytic-a.png><../img/mesh5-gauss02-H1.png><../img/mesh5-gauss02-L2.p
+ng>]
+<../img/conv-3.png, id=60, 562.62195pt x 263.0628pt>
+File: ../img/conv-3.png Graphic file (type png)
+<use ../img/conv-3.png>
+Package luatex.def Info: ../img/conv-3.png  used on input line 278.
+(luatex.def)             Requested size: 469.77478pt x 219.65062pt.
+ [4<../img/conv-3.png>] [5]
+<../img/analytic-b.png, id=78, 1027.84pt x 770.88pt>
+File: ../img/analytic-b.png Graphic file (type png)
+<use ../img/analytic-b.png>
+Package luatex.def Info: ../img/analytic-b.png  used on input line 368.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [6<../img/analytic-b.png>]
+<../img/mesh5-gauss02-b-H1.png, id=87, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss02-b-H1.png  used on input line 400.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+File: ../img/mesh5-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss02-H1.png  used on input line 401.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 400--402
+[][] [] 
+ []
+
+[7<../img/mesh5-gauss02-b-H1.png>]
+<../img/mesh1-gauss02.png, id=95, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02.png Graphic file (type png)
+<use ../img/mesh1-gauss02.png>
+Package luatex.def Info: ../img/mesh1-gauss02.png  used on input line 417.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss05.png, id=96, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05.png Graphic file (type png)
+<use ../img/mesh1-gauss05.png>
+Package luatex.def Info: ../img/mesh1-gauss05.png  used on input line 424.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss08.png, id=97, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08.png Graphic file (type png)
+<use ../img/mesh1-gauss08.png>
+Package luatex.def Info: ../img/mesh1-gauss08.png  used on input line 431.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [8<../img/mesh1-gauss02.png><../img/mesh1-gauss05.png>]
+<../img/mesh1-gauss13.png, id=109, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13.png Graphic file (type png)
+<use ../img/mesh1-gauss13.png>
+Package luatex.def Info: ../img/mesh1-gauss13.png  used on input line 438.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss19.png, id=110, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19.png Graphic file (type png)
+<use ../img/mesh1-gauss19.png>
+Package luatex.def Info: ../img/mesh1-gauss19.png  used on input line 445.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [9<../img/mesh1-gauss08.png><../img/mesh1-gauss13.png>]
+<../img/mesh2-gauss02.png, id=119, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02.png Graphic file (type png)
+<use ../img/mesh2-gauss02.png>
+Package luatex.def Info: ../img/mesh2-gauss02.png  used on input line 452.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss05.png, id=120, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05.png Graphic file (type png)
+<use ../img/mesh2-gauss05.png>
+Package luatex.def Info: ../img/mesh2-gauss05.png  used on input line 459.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [10<../img/mesh1-gauss19.png><../img/mesh2-gauss02.png>]
+<../img/mesh2-gauss08.png, id=129, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08.png Graphic file (type png)
+<use ../img/mesh2-gauss08.png>
+Package luatex.def Info: ../img/mesh2-gauss08.png  used on input line 466.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss13.png, id=130, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13.png Graphic file (type png)
+<use ../img/mesh2-gauss13.png>
+Package luatex.def Info: ../img/mesh2-gauss13.png  used on input line 473.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [11<../img/mesh2-gauss05.png><../img/mesh2-gauss08.png>]
+<../img/mesh2-gauss19.png, id=140, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19.png Graphic file (type png)
+<use ../img/mesh2-gauss19.png>
+Package luatex.def Info: ../img/mesh2-gauss19.png  used on input line 480.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss02.png, id=141, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02.png Graphic file (type png)
+<use ../img/mesh3-gauss02.png>
+Package luatex.def Info: ../img/mesh3-gauss02.png  used on input line 487.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [12<../img/mesh2-gauss13.png><../img/mesh2-gauss19.png>]
+<../img/mesh3-gauss05.png, id=150, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05.png Graphic file (type png)
+<use ../img/mesh3-gauss05.png>
+Package luatex.def Info: ../img/mesh3-gauss05.png  used on input line 494.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss08.png, id=151, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08.png Graphic file (type png)
+<use ../img/mesh3-gauss08.png>
+Package luatex.def Info: ../img/mesh3-gauss08.png  used on input line 501.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [13<../img/mesh3-gauss02.png><../img/mesh3-gauss05.png>]
+<../img/mesh3-gauss13.png, id=161, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13.png Graphic file (type png)
+<use ../img/mesh3-gauss13.png>
+Package luatex.def Info: ../img/mesh3-gauss13.png  used on input line 508.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss19.png, id=162, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19.png Graphic file (type png)
+<use ../img/mesh3-gauss19.png>
+Package luatex.def Info: ../img/mesh3-gauss19.png  used on input line 515.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [14<../img/mesh3-gauss08.png><../img/mesh3-gauss13.png>]
+<../img/mesh4-gauss02.png, id=171, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02.png Graphic file (type png)
+<use ../img/mesh4-gauss02.png>
+Package luatex.def Info: ../img/mesh4-gauss02.png  used on input line 522.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss05.png, id=172, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05.png Graphic file (type png)
+<use ../img/mesh4-gauss05.png>
+Package luatex.def Info: ../img/mesh4-gauss05.png  used on input line 529.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [15<../img/mesh3-gauss19.png><../img/mesh4-gauss02.png>]
+<../img/mesh4-gauss08.png, id=181, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08.png Graphic file (type png)
+<use ../img/mesh4-gauss08.png>
+Package luatex.def Info: ../img/mesh4-gauss08.png  used on input line 536.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss13.png, id=182, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13.png Graphic file (type png)
+<use ../img/mesh4-gauss13.png>
+Package luatex.def Info: ../img/mesh4-gauss13.png  used on input line 543.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [16<../img/mesh4-gauss05.png><../img/mesh4-gauss08.png>]
+<../img/mesh4-gauss19.png, id=191, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19.png Graphic file (type png)
+<use ../img/mesh4-gauss19.png>
+Package luatex.def Info: ../img/mesh4-gauss19.png  used on input line 550.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+File: ../img/mesh5-gauss02.png Graphic file (type png)
+<use ../img/mesh5-gauss02.png>
+Package luatex.def Info: ../img/mesh5-gauss02.png  used on input line 557.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+[17<../img/mesh4-gauss13.png><../img/mesh4-gauss19.png>]
+<../img/mesh5-gauss05.png, id=200, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05.png Graphic file (type png)
+<use ../img/mesh5-gauss05.png>
+Package luatex.def Info: ../img/mesh5-gauss05.png  used on input line 564.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss08.png, id=201, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08.png Graphic file (type png)
+<use ../img/mesh5-gauss08.png>
+Package luatex.def Info: ../img/mesh5-gauss08.png  used on input line 571.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [18<../img/mesh5-gauss05.png>]
+<../img/mesh5-gauss13.png, id=210, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13.png Graphic file (type png)
+<use ../img/mesh5-gauss13.png>
+Package luatex.def Info: ../img/mesh5-gauss13.png  used on input line 578.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss19.png, id=211, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19.png Graphic file (type png)
+<use ../img/mesh5-gauss19.png>
+Package luatex.def Info: ../img/mesh5-gauss19.png  used on input line 585.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [19<../img/mesh5-gauss08.png><../img/mesh5-gauss13.png>]
+<../img/mesh1-gauss02-b.png, id=220, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02-b.png Graphic file (type png)
+<use ../img/mesh1-gauss02-b.png>
+Package luatex.def Info: ../img/mesh1-gauss02-b.png  used on input line 592.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss05-b.png, id=221, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05-b.png Graphic file (type png)
+<use ../img/mesh1-gauss05-b.png>
+Package luatex.def Info: ../img/mesh1-gauss05-b.png  used on input line 599.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [20<../img/mesh5-gauss19.png><../img/mesh1-gauss02-b.png>]
+<../img/mesh1-gauss08-b.png, id=230, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08-b.png Graphic file (type png)
+<use ../img/mesh1-gauss08-b.png>
+Package luatex.def Info: ../img/mesh1-gauss08-b.png  used on input line 606.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss13-b.png, id=231, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13-b.png Graphic file (type png)
+<use ../img/mesh1-gauss13-b.png>
+Package luatex.def Info: ../img/mesh1-gauss13-b.png  used on input line 613.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [21<../img/mesh1-gauss05-b.png><../img/mesh1-gauss08-b.png>]
+<../img/mesh1-gauss19-b.png, id=241, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19-b.png Graphic file (type png)
+<use ../img/mesh1-gauss19-b.png>
+Package luatex.def Info: ../img/mesh1-gauss19-b.png  used on input line 620.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss02-b.png, id=242, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02-b.png Graphic file (type png)
+<use ../img/mesh2-gauss02-b.png>
+Package luatex.def Info: ../img/mesh2-gauss02-b.png  used on input line 627.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [22<../img/mesh1-gauss13-b.png><../img/mesh1-gauss19-b.png>]
+<../img/mesh2-gauss05-b.png, id=251, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05-b.png Graphic file (type png)
+<use ../img/mesh2-gauss05-b.png>
+Package luatex.def Info: ../img/mesh2-gauss05-b.png  used on input line 634.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss08-b.png, id=252, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08-b.png Graphic file (type png)
+<use ../img/mesh2-gauss08-b.png>
+Package luatex.def Info: ../img/mesh2-gauss08-b.png  used on input line 641.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [23<../img/mesh2-gauss02-b.png><../img/mesh2-gauss05-b.png>]
+<../img/mesh2-gauss13-b.png, id=261, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13-b.png Graphic file (type png)
+<use ../img/mesh2-gauss13-b.png>
+Package luatex.def Info: ../img/mesh2-gauss13-b.png  used on input line 648.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss19-b.png, id=262, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19-b.png Graphic file (type png)
+<use ../img/mesh2-gauss19-b.png>
+Package luatex.def Info: ../img/mesh2-gauss19-b.png  used on input line 655.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [24<../img/mesh2-gauss08-b.png><../img/mesh2-gauss13-b.png>]
+<../img/mesh3-gauss02-b.png, id=271, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02-b.png Graphic file (type png)
+<use ../img/mesh3-gauss02-b.png>
+Package luatex.def Info: ../img/mesh3-gauss02-b.png  used on input line 662.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss05-b.png, id=272, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05-b.png Graphic file (type png)
+<use ../img/mesh3-gauss05-b.png>
+Package luatex.def Info: ../img/mesh3-gauss05-b.png  used on input line 669.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [25<../img/mesh2-gauss19-b.png><../img/mesh3-gauss02-b.png>]
+<../img/mesh3-gauss08-b.png, id=281, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08-b.png Graphic file (type png)
+<use ../img/mesh3-gauss08-b.png>
+Package luatex.def Info: ../img/mesh3-gauss08-b.png  used on input line 676.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss13-b.png, id=282, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13-b.png Graphic file (type png)
+<use ../img/mesh3-gauss13-b.png>
+Package luatex.def Info: ../img/mesh3-gauss13-b.png  used on input line 683.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [26<../img/mesh3-gauss05-b.png><../img/mesh3-gauss08-b.png>]
+<../img/mesh3-gauss19-b.png, id=291, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19-b.png Graphic file (type png)
+<use ../img/mesh3-gauss19-b.png>
+Package luatex.def Info: ../img/mesh3-gauss19-b.png  used on input line 690.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss02-b.png, id=292, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02-b.png Graphic file (type png)
+<use ../img/mesh4-gauss02-b.png>
+Package luatex.def Info: ../img/mesh4-gauss02-b.png  used on input line 697.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [27<../img/mesh3-gauss13-b.png><../img/mesh3-gauss19-b.png>]
+<../img/mesh4-gauss05-b.png, id=302, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05-b.png Graphic file (type png)
+<use ../img/mesh4-gauss05-b.png>
+Package luatex.def Info: ../img/mesh4-gauss05-b.png  used on input line 704.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss08-b.png, id=303, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08-b.png Graphic file (type png)
+<use ../img/mesh4-gauss08-b.png>
+Package luatex.def Info: ../img/mesh4-gauss08-b.png  used on input line 711.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+[28<../img/mesh4-gauss02-b.png><../img/mesh4-gauss05-b.png>]
+<../img/mesh4-gauss13-b.png, id=312, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13-b.png Graphic file (type png)
+<use ../img/mesh4-gauss13-b.png>
+Package luatex.def Info: ../img/mesh4-gauss13-b.png  used on input line 718.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss19-b.png, id=313, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19-b.png Graphic file (type png)
+<use ../img/mesh4-gauss19-b.png>
+Package luatex.def Info: ../img/mesh4-gauss19-b.png  used on input line 725.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [29<../img/mesh4-gauss08-b.png><../img/mesh4-gauss13-b.png>]
+<../img/mesh5-gauss02-b.png, id=322, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02-b.png Graphic file (type png)
+<use ../img/mesh5-gauss02-b.png>
+Package luatex.def Info: ../img/mesh5-gauss02-b.png  used on input line 732.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss05-b.png, id=323, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05-b.png Graphic file (type png)
+<use ../img/mesh5-gauss05-b.png>
+Package luatex.def Info: ../img/mesh5-gauss05-b.png  used on input line 739.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [30<../img/mesh4-gauss19-b.png><../img/mesh5-gauss02-b.png>]
+<../img/mesh5-gauss08-b.png, id=332, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08-b.png Graphic file (type png)
+<use ../img/mesh5-gauss08-b.png>
+Package luatex.def Info: ../img/mesh5-gauss08-b.png  used on input line 746.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss13-b.png, id=333, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13-b.png Graphic file (type png)
+<use ../img/mesh5-gauss13-b.png>
+Package luatex.def Info: ../img/mesh5-gauss13-b.png  used on input line 753.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+ [31<../img/mesh5-gauss05-b.png><../img/mesh5-gauss08-b.png>]
+<../img/mesh5-gauss19-b.png, id=343, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19-b.png Graphic file (type png)
+<use ../img/mesh5-gauss19-b.png>
+Package luatex.def Info: ../img/mesh5-gauss19-b.png  used on input line 760.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss02-L2.png, id=344, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss02-L2.png  used on input line 769.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss02-H1.png, id=345, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss02-H1.png  used on input line 770.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 769--771
+[] [] 
+ []
+
+[32<../img/mesh5-gauss13-b.png><../img/mesh5-gauss19-b.png>]
+<../img/mesh1-gauss05-L2.png, id=354, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss05-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss05-L2.png  used on input line 776.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss05-H1.png, id=355, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss05-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss05-H1.png  used on input line 777.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 776--778
+[][] [] 
+ []
+
+<../img/mesh1-gauss08-L2.png, id=356, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss08-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss08-L2.png  used on input line 783.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss08-H1.png, id=357, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss08-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss08-H1.png  used on input line 784.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 783--785
+[][] [] 
+ []
+
+[33<../img/mesh1-gauss02-L2.png><../img/mesh1-gauss02-H1.png><../img/mesh1-gauss
+05-L2.png><../img/mesh1-gauss05-H1.png>]
+<../img/mesh1-gauss13-L2.png, id=367, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss13-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss13-L2.png  used on input line 790.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss13-H1.png, id=368, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss13-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss13-H1.png  used on input line 791.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 790--792
+[][] [] 
+ []
+
+<../img/mesh1-gauss19-L2.png, id=369, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss19-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss19-L2.png  used on input line 797.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss19-H1.png, id=370, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss19-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss19-H1.png  used on input line 798.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 797--799
+[][] [] 
+ []
+
+[34<../img/mesh1-gauss08-L2.png><../img/mesh1-gauss08-H1.png><../img/mesh1-gauss
+13-L2.png><../img/mesh1-gauss13-H1.png>]
+<../img/mesh2-gauss02-L2.png, id=379, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss02-L2.png  used on input line 804.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss02-H1.png, id=380, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss02-H1.png  used on input line 805.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 804--806
+[][] [] 
+ []
+
+<../img/mesh2-gauss05-L2.png, id=381, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss05-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss05-L2.png  used on input line 811.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss05-H1.png, id=382, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss05-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss05-H1.png  used on input line 812.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 811--813
+[][] [] 
+ []
+
+[35<../img/mesh1-gauss19-L2.png><../img/mesh1-gauss19-H1.png><../img/mesh2-gauss
+02-L2.png><../img/mesh2-gauss02-H1.png>]
+<../img/mesh2-gauss08-L2.png, id=391, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss08-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss08-L2.png  used on input line 818.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss08-H1.png, id=392, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss08-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss08-H1.png  used on input line 819.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 818--820
+[][] [] 
+ []
+
+<../img/mesh2-gauss13-L2.png, id=393, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss13-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss13-L2.png  used on input line 825.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss13-H1.png, id=394, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss13-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss13-H1.png  used on input line 826.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 825--827
+[][] [] 
+ []
+
+[36<../img/mesh2-gauss05-L2.png><../img/mesh2-gauss05-H1.png><../img/mesh2-gauss
+08-L2.png><../img/mesh2-gauss08-H1.png>]
+<../img/mesh2-gauss19-L2.png, id=403, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss19-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss19-L2.png  used on input line 832.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss19-H1.png, id=404, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss19-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss19-H1.png  used on input line 833.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 832--834
+[][] [] 
+ []
+
+<../img/mesh3-gauss02-L2.png, id=405, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss02-L2.png  used on input line 839.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss02-H1.png, id=406, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss02-H1.png  used on input line 840.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 839--841
+[][] [] 
+ []
+
+[37<../img/mesh2-gauss13-L2.png><../img/mesh2-gauss13-H1.png><../img/mesh2-gauss
+19-L2.png><../img/mesh2-gauss19-H1.png>]
+<../img/mesh3-gauss05-L2.png, id=415, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss05-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss05-L2.png  used on input line 846.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss05-H1.png, id=416, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss05-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss05-H1.png  used on input line 847.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 846--848
+[][] [] 
+ []
+
+<../img/mesh3-gauss08-L2.png, id=417, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss08-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss08-L2.png  used on input line 853.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss08-H1.png, id=418, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss08-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss08-H1.png  used on input line 854.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 853--855
+[][] [] 
+ []
+
+[38<../img/mesh3-gauss02-L2.png><../img/mesh3-gauss02-H1.png><../img/mesh3-gauss
+05-L2.png><../img/mesh3-gauss05-H1.png>]
+<../img/mesh3-gauss13-L2.png, id=427, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss13-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss13-L2.png  used on input line 860.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss13-H1.png, id=428, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss13-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss13-H1.png  used on input line 861.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 860--862
+[][] [] 
+ []
+
+<../img/mesh3-gauss19-L2.png, id=429, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss19-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss19-L2.png  used on input line 867.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss19-H1.png, id=430, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss19-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss19-H1.png  used on input line 868.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 867--869
+[][] [] 
+ []
+
+[39<../img/mesh3-gauss08-L2.png><../img/mesh3-gauss08-H1.png><../img/mesh3-gauss
+13-L2.png><../img/mesh3-gauss13-H1.png>]
+<../img/mesh4-gauss02-L2.png, id=439, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss02-L2.png  used on input line 874.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss02-H1.png, id=440, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss02-H1.png  used on input line 875.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 874--876
+[][] [] 
+ []
+
+<../img/mesh4-gauss05-L2.png, id=441, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss05-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss05-L2.png  used on input line 881.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss05-H1.png, id=442, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss05-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss05-H1.png  used on input line 882.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 881--883
+[][] [] 
+ []
+
+[40<../img/mesh3-gauss19-L2.png><../img/mesh3-gauss19-H1.png><../img/mesh4-gauss
+02-L2.png><../img/mesh4-gauss02-H1.png>]
+<../img/mesh4-gauss08-L2.png, id=451, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss08-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss08-L2.png  used on input line 888.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss08-H1.png, id=452, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss08-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss08-H1.png  used on input line 889.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 888--890
+[][] [] 
+ []
+
+<../img/mesh4-gauss13-L2.png, id=453, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss13-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss13-L2.png  used on input line 895.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss13-H1.png, id=454, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss13-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss13-H1.png  used on input line 896.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 895--897
+[][] [] 
+ []
+
+[41<../img/mesh4-gauss05-L2.png><../img/mesh4-gauss05-H1.png><../img/mesh4-gauss
+08-L2.png><../img/mesh4-gauss08-H1.png>]
+<../img/mesh4-gauss19-L2.png, id=465, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss19-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss19-L2.png  used on input line 902.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss19-H1.png, id=466, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss19-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss19-H1.png  used on input line 903.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 902--904
+[][] [] 
+ []
+
+File: ../img/mesh5-gauss02-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss02-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss02-L2.png  used on input line 909.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+File: ../img/mesh5-gauss02-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss02-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss02-H1.png  used on input line 910.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 909--911
+[][] [] 
+ []
+
+[42<../img/mesh4-gauss13-L2.png><../img/mesh4-gauss13-H1.png><../img/mesh4-gauss
+19-L2.png><../img/mesh4-gauss19-H1.png>]
+<../img/mesh5-gauss05-L2.png, id=475, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss05-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss05-L2.png  used on input line 916.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss05-H1.png, id=476, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss05-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss05-H1.png  used on input line 917.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 916--918
+[][] [] 
+ []
+
+<../img/mesh5-gauss08-L2.png, id=477, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss08-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss08-L2.png  used on input line 923.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss08-H1.png, id=478, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss08-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss08-H1.png  used on input line 924.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 923--925
+[][] [] 
+ []
+
+[43<../img/mesh5-gauss05-L2.png><../img/mesh5-gauss05-H1.png>]
+<../img/mesh5-gauss13-L2.png, id=487, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss13-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss13-L2.png  used on input line 930.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss13-H1.png, id=488, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss13-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss13-H1.png  used on input line 931.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 930--932
+[][] [] 
+ []
+
+<../img/mesh5-gauss19-L2.png, id=489, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss19-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss19-L2.png  used on input line 937.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss19-H1.png, id=490, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss19-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss19-H1.png  used on input line 938.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 937--939
+[][] [] 
+ []
+
+[44<../img/mesh5-gauss08-L2.png><../img/mesh5-gauss08-H1.png><../img/mesh5-gauss
+13-L2.png><../img/mesh5-gauss13-H1.png>]
+<../img/mesh1-gauss02-b-L2.png, id=499, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02-b-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss02-b-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss02-b-L2.png  used on input line 944.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss02-b-H1.png, id=500, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss02-b-H1.png  used on input line 945.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 944--946
+[][] [] 
+ []
+
+<../img/mesh1-gauss05-b-L2.png, id=501, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05-b-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss05-b-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss05-b-L2.png  used on input line 951.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss05-b-H1.png, id=502, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss05-b-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss05-b-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss05-b-H1.png  used on input line 952.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 951--953
+[][] [] 
+ []
+
+[45<../img/mesh5-gauss19-L2.png><../img/mesh5-gauss19-H1.png><../img/mesh1-gauss
+02-b-L2.png><../img/mesh1-gauss02-b-H1.png>]
+<../img/mesh1-gauss08-b-L2.png, id=511, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08-b-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss08-b-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss08-b-L2.png  used on input line 958.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss08-b-H1.png, id=512, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss08-b-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss08-b-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss08-b-H1.png  used on input line 959.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 958--960
+[][] [] 
+ []
+
+<../img/mesh1-gauss13-b-L2.png, id=513, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13-b-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss13-b-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss13-b-L2.png  used on input line 965.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss13-b-H1.png, id=514, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss13-b-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss13-b-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss13-b-H1.png  used on input line 966.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 965--967
+[][] [] 
+ []
+
+[46<../img/mesh1-gauss05-b-L2.png><../img/mesh1-gauss05-b-H1.png><../img/mesh1-g
+auss08-b-L2.png><../img/mesh1-gauss08-b-H1.png>]
+<../img/mesh1-gauss19-b-L2.png, id=523, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19-b-L2.png Graphic file (type png)
+<use ../img/mesh1-gauss19-b-L2.png>
+Package luatex.def Info: ../img/mesh1-gauss19-b-L2.png  used on input line 972.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh1-gauss19-b-H1.png, id=524, 1027.84pt x 770.88pt>
+File: ../img/mesh1-gauss19-b-H1.png Graphic file (type png)
+<use ../img/mesh1-gauss19-b-H1.png>
+Package luatex.def Info: ../img/mesh1-gauss19-b-H1.png  used on input line 973.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 972--974
+[][] [] 
+ []
+
+<../img/mesh2-gauss02-b-L2.png, id=525, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02-b-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss02-b-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss02-b-L2.png  used on input line 979.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss02-b-H1.png, id=526, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss02-b-H1.png  used on input line 980.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 979--981
+[][] [] 
+ []
+
+[47<../img/mesh1-gauss13-b-L2.png><../img/mesh1-gauss13-b-H1.png><../img/mesh1-g
+auss19-b-L2.png><../img/mesh1-gauss19-b-H1.png>]
+<../img/mesh2-gauss05-b-L2.png, id=535, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05-b-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss05-b-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss05-b-L2.png  used on input line 986.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss05-b-H1.png, id=536, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss05-b-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss05-b-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss05-b-H1.png  used on input line 987.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 986--988
+[][] [] 
+ []
+
+<../img/mesh2-gauss08-b-L2.png, id=537, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08-b-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss08-b-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss08-b-L2.png  used on input line 993.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss08-b-H1.png, id=538, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss08-b-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss08-b-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss08-b-H1.png  used on input line 994.
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 993--995
+[][] [] 
+ []
+
+[48<../img/mesh2-gauss02-b-L2.png><../img/mesh2-gauss02-b-H1.png><../img/mesh2-g
+auss05-b-L2.png><../img/mesh2-gauss05-b-H1.png>]
+<../img/mesh2-gauss13-b-L2.png, id=547, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13-b-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss13-b-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss13-b-L2.png  used on input line 1000.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss13-b-H1.png, id=548, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss13-b-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss13-b-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss13-b-H1.png  used on input line 1001.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1000--1002
+[][] [] 
+ []
+
+<../img/mesh2-gauss19-b-L2.png, id=549, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19-b-L2.png Graphic file (type png)
+<use ../img/mesh2-gauss19-b-L2.png>
+Package luatex.def Info: ../img/mesh2-gauss19-b-L2.png  used on input line 1007.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh2-gauss19-b-H1.png, id=550, 1027.84pt x 770.88pt>
+File: ../img/mesh2-gauss19-b-H1.png Graphic file (type png)
+<use ../img/mesh2-gauss19-b-H1.png>
+Package luatex.def Info: ../img/mesh2-gauss19-b-H1.png  used on input line 1008.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1007--1009
+[][] [] 
+ []
+
+[49<../img/mesh2-gauss08-b-L2.png><../img/mesh2-gauss08-b-H1.png><../img/mesh2-g
+auss13-b-L2.png><../img/mesh2-gauss13-b-H1.png>]
+<../img/mesh3-gauss02-b-L2.png, id=559, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02-b-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss02-b-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss02-b-L2.png  used on input line 1014.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss02-b-H1.png, id=560, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss02-b-H1.png  used on input line 1015.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1014--1016
+[][] [] 
+ []
+
+<../img/mesh3-gauss05-b-L2.png, id=561, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05-b-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss05-b-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss05-b-L2.png  used on input line 1021.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss05-b-H1.png, id=562, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss05-b-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss05-b-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss05-b-H1.png  used on input line 1022.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1021--1023
+[][] [] 
+ []
+
+[50<../img/mesh2-gauss19-b-L2.png><../img/mesh2-gauss19-b-H1.png><../img/mesh3-g
+auss02-b-L2.png><../img/mesh3-gauss02-b-H1.png>]
+<../img/mesh3-gauss08-b-L2.png, id=571, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08-b-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss08-b-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss08-b-L2.png  used on input line 1028.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss08-b-H1.png, id=572, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss08-b-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss08-b-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss08-b-H1.png  used on input line 1029.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1028--1030
+[][] [] 
+ []
+
+<../img/mesh3-gauss13-b-L2.png, id=573, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13-b-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss13-b-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss13-b-L2.png  used on input line 1035.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss13-b-H1.png, id=574, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss13-b-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss13-b-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss13-b-H1.png  used on input line 1036.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1035--1037
+[][] [] 
+ []
+
+[51<../img/mesh3-gauss05-b-L2.png><../img/mesh3-gauss05-b-H1.png><../img/mesh3-g
+auss08-b-L2.png><../img/mesh3-gauss08-b-H1.png>]
+<../img/mesh3-gauss19-b-L2.png, id=584, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19-b-L2.png Graphic file (type png)
+<use ../img/mesh3-gauss19-b-L2.png>
+Package luatex.def Info: ../img/mesh3-gauss19-b-L2.png  used on input line 1042.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh3-gauss19-b-H1.png, id=585, 1027.84pt x 770.88pt>
+File: ../img/mesh3-gauss19-b-H1.png Graphic file (type png)
+<use ../img/mesh3-gauss19-b-H1.png>
+Package luatex.def Info: ../img/mesh3-gauss19-b-H1.png  used on input line 1043.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1042--1044
+[][] [] 
+ []
+
+<../img/mesh4-gauss02-b-L2.png, id=586, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02-b-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss02-b-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss02-b-L2.png  used on input line 1049.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss02-b-H1.png, id=587, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss02-b-H1.png  used on input line 1050.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1049--1051
+[][] [] 
+ []
+
+[52<../img/mesh3-gauss13-b-L2.png><../img/mesh3-gauss13-b-H1.png><../img/mesh3-g
+auss19-b-L2.png><../img/mesh3-gauss19-b-H1.png>]
+<../img/mesh4-gauss05-b-L2.png, id=596, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05-b-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss05-b-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss05-b-L2.png  used on input line 1056.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss05-b-H1.png, id=597, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss05-b-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss05-b-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss05-b-H1.png  used on input line 1057.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1056--1058
+[][] [] 
+ []
+
+<../img/mesh4-gauss08-b-L2.png, id=598, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08-b-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss08-b-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss08-b-L2.png  used on input line 1063.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss08-b-H1.png, id=599, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss08-b-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss08-b-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss08-b-H1.png  used on input line 1064.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1063--1065
+[][] [] 
+ []
+
+[53<../img/mesh4-gauss02-b-L2.png><../img/mesh4-gauss02-b-H1.png><../img/mesh4-g
+auss05-b-L2.png><../img/mesh4-gauss05-b-H1.png>]
+<../img/mesh4-gauss13-b-L2.png, id=608, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13-b-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss13-b-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss13-b-L2.png  used on input line 1070.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss13-b-H1.png, id=609, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss13-b-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss13-b-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss13-b-H1.png  used on input line 1071.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1070--1072
+[][] [] 
+ []
+
+<../img/mesh4-gauss19-b-L2.png, id=610, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19-b-L2.png Graphic file (type png)
+<use ../img/mesh4-gauss19-b-L2.png>
+Package luatex.def Info: ../img/mesh4-gauss19-b-L2.png  used on input line 1077.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh4-gauss19-b-H1.png, id=611, 1027.84pt x 770.88pt>
+File: ../img/mesh4-gauss19-b-H1.png Graphic file (type png)
+<use ../img/mesh4-gauss19-b-H1.png>
+Package luatex.def Info: ../img/mesh4-gauss19-b-H1.png  used on input line 1078.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1077--1079
+[][] [] 
+ []
+
+[54<../img/mesh4-gauss08-b-L2.png><../img/mesh4-gauss08-b-H1.png><../img/mesh4-g
+auss13-b-L2.png><../img/mesh4-gauss13-b-H1.png>]
+<../img/mesh5-gauss02-b-L2.png, id=620, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss02-b-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss02-b-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss02-b-L2.png  used on input line 1084.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+File: ../img/mesh5-gauss02-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss02-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss02-b-H1.png  used on input line 1085.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1084--1086
+[][] [] 
+ []
+
+<../img/mesh5-gauss05-b-L2.png, id=621, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05-b-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss05-b-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss05-b-L2.png  used on input line 1091.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss05-b-H1.png, id=622, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss05-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss05-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss05-b-H1.png  used on input line 1092.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1091--1093
+[][] [] 
+ []
+
+[55<../img/mesh4-gauss19-b-L2.png><../img/mesh4-gauss19-b-H1.png><../img/mesh5-g
+auss02-b-L2.png>]
+<../img/mesh5-gauss08-b-L2.png, id=632, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08-b-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss08-b-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss08-b-L2.png  used on input line 1098.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss08-b-H1.png, id=633, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss08-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss08-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss08-b-H1.png  used on input line 1099.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1098--1100
+[][] [] 
+ []
+
+<../img/mesh5-gauss13-b-L2.png, id=634, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13-b-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss13-b-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss13-b-L2.png  used on input line 1105.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss13-b-H1.png, id=635, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss13-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss13-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss13-b-H1.png  used on input line 1106.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1105--1107
+[][] [] 
+ []
+
+[56<../img/mesh5-gauss05-b-L2.png><../img/mesh5-gauss05-b-H1.png><../img/mesh5-g
+auss08-b-L2.png><../img/mesh5-gauss08-b-H1.png>]
+<../img/mesh5-gauss19-b-L2.png, id=644, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19-b-L2.png Graphic file (type png)
+<use ../img/mesh5-gauss19-b-L2.png>
+Package luatex.def Info: ../img/mesh5-gauss19-b-L2.png  used on input line 1112.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+<../img/mesh5-gauss19-b-H1.png, id=645, 1027.84pt x 770.88pt>
+File: ../img/mesh5-gauss19-b-H1.png Graphic file (type png)
+<use ../img/mesh5-gauss19-b-H1.png>
+Package luatex.def Info: ../img/mesh5-gauss19-b-H1.png  used on input line 1113.
+
+(luatex.def)             Requested size: 234.87692pt x 176.15768pt.
+
+Overfull \hbox (2.42972pt too wide) in paragraph at lines 1112--1114
+[][] [] 
+ []
+
+[57<../img/mesh5-gauss13-b-L2.png><../img/mesh5-gauss13-b-H1.png><../img/mesh5-g
+auss19-b-L2.png><../img/mesh5-gauss19-b-H1.png>]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1135.
+ [58] [59] [60]
+
+AED: lastpage setting LastPage
+[61] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
+
+Here is how much of LuaTeX's memory you used:
+ 33931 strings out of 478903
+ 125086,1373583 words of node,token memory allocated
+ 571 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 61 glue_spec
+, 14 attribute_list, 3 write, 1 user_defined nodes
+   avail lists: 1:2,2:804,3:157,4:354,5:302,6:42,7:3551,8:41,9:550,10:8,11:170
+ 51148 multiletter control sequences out of 65536+600000
+ 109 fonts using 32914099 bytes
+ 94i,13n,118p,508b,489s stack positions out of 5000i,500n,10000p,200000b,100000s
+
+warning  (pdf backend): unreferenced destination with name 'page.62'
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/
+texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf-dist/f
+onts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/o
+pentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/pub
+lic/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm
+-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/
+latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-r
+egular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></
+usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/tex
+mf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fo
+nts/opentype/public/lm/lmroman17-regular.otf>
+Output written on main.pdf (61 pages, 19839397 bytes).
+
+PDF statistics: 791 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 187 named destinations out of 1000 (max. 131072)
+ 80 words of extra memory for PDF output out of 10000 (max. 100000000)
+
