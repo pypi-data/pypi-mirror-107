@@ -1,0 +1,12 @@
+pssmpro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pssmpro/features.py,sha256=NKcCH2dR88avTIHfWMhL7Z6B-hbmPLqoAb1jQr7XWcE,24284
+pssmpro/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pssmpro/data/example.fasta,sha256=nmU7ABKvX2Ko_zYb3j2g4B657VdIm90ZGSudIjljeTU,761
+pssmpro/data/pssm_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pssmpro/data/pssm_files/example_1.pssm,sha256=Q3P-hghnnn6vtO2NXO97ezhhFexYd3uV7NFSvAhj4HY,48318
+pssmpro/data/pssm_files/example_2.pssm,sha256=i25X9i6rRcDs2oBb3aRKSh-ida6ovKNC0j8NxFjaqZk,40215
+pssmpro-0.0.1.dist-info/LICENSE,sha256=6jgy_x5-r4k-8qbySnwc1rGhhpwf01S7lw9pG3uQF1Y,1072
+pssmpro-0.0.1.dist-info/METADATA,sha256=aizRMx2vBIcNmJtYZniTJrHOCP8u1Wn7-z2j50qn57Y,4048
+pssmpro-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pssmpro-0.0.1.dist-info/top_level.txt,sha256=Xh8u8t0l10Tp8ORw2eSJOVSHszcXNbSYTbhH_wg3d3g,8
+pssmpro-0.0.1.dist-info/RECORD,,
