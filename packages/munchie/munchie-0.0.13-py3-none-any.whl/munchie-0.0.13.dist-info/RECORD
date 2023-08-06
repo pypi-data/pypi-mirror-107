@@ -1,0 +1,11 @@
+munchie/__init__.py,sha256=bv8br2ozmIA3YKEbL8DzWuOLe7j4coe5DmQyXZ8Z0Wo,26
+munchie/_validation_util.py,sha256=xcQGX3aW7Njg14GbDIRtxTkA8_qluU87esOXtc0xTzA,903
+munchie/files.py,sha256=NkyTK8RwGtdD7qLzBROotiyJxPbHto0bets8LFNWy-o,9210
+munchie/pretty_print.py,sha256=GFACA9gavf11PyM6bGVf-XD-k0v32P5P_JQkW8gM0eA,2959
+munchie/testing.py,sha256=br1DZRJLRA7TaZj-SaNR9PbDcR5Cr4PB0-LlNkSKRYs,45
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_files.py,sha256=HJFn6YkFwG8ILkdGGB9Jq4d4cikqnDpBN3yIpGkkYnU,26568
+munchie-0.0.13.dist-info/METADATA,sha256=-UMB2IuDgjcFc8rig7ZW8IUcITuYfDkyHu3jp1791WA,6727
+munchie-0.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+munchie-0.0.13.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+munchie-0.0.13.dist-info/RECORD,,
