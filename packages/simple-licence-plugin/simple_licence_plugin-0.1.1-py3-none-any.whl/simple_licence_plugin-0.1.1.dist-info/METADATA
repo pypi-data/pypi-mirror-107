@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simple-licence-plugin
+Version: 0.1.1
+Summary: Provides a plugin for pyarmor for checking a licence file is valid.
+License: CSIRO Open Source Software Licence
+Author: Alex Hunt
+Author-email: alex.hunt@csiro.au
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
