@@ -1,0 +1,12 @@
+---
+name: My Custom Dosing Automation
+key: my_custom_dosing_automation
+fields:
+  - key: duration
+    default: 20
+    unit: min
+    label: Duration between events
+  - key: volume
+    default: 0.5
+    unit: mL
+    label: Max volume
