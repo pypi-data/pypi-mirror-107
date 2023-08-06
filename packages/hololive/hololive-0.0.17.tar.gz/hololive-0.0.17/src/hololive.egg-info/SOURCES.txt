@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/hololive/__init__.py
+src/hololive/hololive.py
+src/hololive.egg-info/PKG-INFO
+src/hololive.egg-info/SOURCES.txt
+src/hololive.egg-info/dependency_links.txt
+src/hololive.egg-info/requires.txt
+src/hololive.egg-info/top_level.txt
