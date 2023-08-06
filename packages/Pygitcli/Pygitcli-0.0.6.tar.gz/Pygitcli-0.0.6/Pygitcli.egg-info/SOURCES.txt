@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Pygitcli/__init__.py
+Pygitcli/colors.py
+Pygitcli/git.py
+Pygitcli.egg-info/PKG-INFO
+Pygitcli.egg-info/SOURCES.txt
+Pygitcli.egg-info/dependency_links.txt
+Pygitcli.egg-info/top_level.txt
