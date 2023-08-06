@@ -1,0 +1,2 @@
+STR_HWM = 2
+RCV_HWM = 2
