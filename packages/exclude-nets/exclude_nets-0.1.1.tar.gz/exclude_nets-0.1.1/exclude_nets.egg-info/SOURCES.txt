@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+exclude_nets/__init__.py
+exclude_nets/__main__.py
+exclude_nets.egg-info/PKG-INFO
+exclude_nets.egg-info/SOURCES.txt
+exclude_nets.egg-info/dependency_links.txt
+exclude_nets.egg-info/entry_points.txt
+exclude_nets.egg-info/not-zip-safe
+exclude_nets.egg-info/top_level.txt

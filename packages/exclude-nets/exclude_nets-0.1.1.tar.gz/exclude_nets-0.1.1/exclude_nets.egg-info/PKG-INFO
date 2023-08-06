@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: exclude-nets
+Version: 0.1.1
+Summary: Exclude the given IPv4 networks.
+Home-page: https://github.com/kerryeon/exclude-nets
+Author: kerryeon
+Author-email: great.ho.kim@gmail.com
+License: UNKNOWN
+Description: # Exclude-nets
+        
+        ## Usage
+        
+        ```bash
+        exclude-nets 172.65.0.0/16
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
