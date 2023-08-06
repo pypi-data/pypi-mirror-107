@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+cpf_generator.egg-info/PKG-INFO
+cpf_generator.egg-info/SOURCES.txt
+cpf_generator.egg-info/dependency_links.txt
+cpf_generator.egg-info/top_level.txt
+src/__init__.py
