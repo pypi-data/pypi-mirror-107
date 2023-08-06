@@ -1,0 +1,16 @@
+dogemachine_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dogemachine_utils/aws_lambda.py,sha256=jsxS7yZVAlZIxDD3wbtF8ovNo3khZOlgeahbBM8ncP8,353
+dogemachine_utils/aws_login.py,sha256=E6Olmnj6FjjcuFXan-Vemon2W_rLe55sdMx2HnWURio,1287
+dogemachine_utils/aws_s3.py,sha256=tok6Wx_tzYQ929Cp8Mn_4U3U_1PqvkaVT6sdb28Abxk,825
+dogemachine_utils/aws_sns.py,sha256=CGXC1yW___UsLkmBX3OHtwf1NWomAkB6uR51XIGKKNk,3334
+dogemachine_utils/files.py,sha256=Jf_R1GvlPw15QvqSCQBMr1ApiLFmOaP-pIp_aAKbzm0,422
+dogemachine_utils/log_formatting.py,sha256=7BhR6w6sN35HeOkB1h9Mj2yExl_FrdAFgZM-OAXtkDk,3086
+dogemachine_utils/shell.py,sha256=xq5xRJ4kMb4uBa_uMPJMSnE1bXYiYjqzJm5ZhZa05qk,1824
+dogemachine_utils/testing_utils.py,sha256=RYbtmvcB3_7zI1-07KdVCC-m5CynSrwqFVbl_cywHAQ,574
+dogemachine_utils/version.py,sha256=qyILjBMkTisNkX4nHnN1sILQyBMzCVj0L6yVKpwYB8M,64
+DogeMachine_utils-0.0.1.dist-info/LICENSE,sha256=zjS5PWUVTej8nPtAMXOacR6TObypNkgNMf1zQ14Nkt0,1059
+DogeMachine_utils-0.0.1.dist-info/METADATA,sha256=CsAmtOpaBsUhpSgnEeJVJocAt_s1qfD86iymvAhjvs8,1288
+DogeMachine_utils-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+DogeMachine_utils-0.0.1.dist-info/top_level.txt,sha256=3XJQZrtxP9rzHX2MOc0B22f_-LPwgc9Om1-FClKHUyo,18
+DogeMachine_utils-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+DogeMachine_utils-0.0.1.dist-info/RECORD,,
