@@ -1,0 +1,3 @@
+[console_scripts]
+fulfyld = fulfyld.cli:app
+
