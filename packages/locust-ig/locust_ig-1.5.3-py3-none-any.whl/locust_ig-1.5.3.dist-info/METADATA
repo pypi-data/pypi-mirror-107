@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: locust-ig
+Version: 1.5.3
+Summary: Developer friendly load testing framework
+Home-page: https://locust.io/
+License: MIT
+Project-URL: Documentation, https://docs.locust.io/
+Project-URL: Code, https://github.com/locustio/locust
+Project-URL: Help/Questions, https://stackoverflow.com/questions/tagged/locust
+Project-URL: Issue tracker, https://github.com/locustio/locust/issues
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gevent (>=20.9.0)
+Requires-Dist: flask (==1.1.2)
+Requires-Dist: Werkzeug (>=1.0.1)
+Requires-Dist: requests (>=2.9.1)
+Requires-Dist: msgpack (>=0.6.2)
+Requires-Dist: pyzmq (>=16.0.2)
+Requires-Dist: geventhttpclient (>=1.4.4)
+Requires-Dist: ConfigArgParse (>=1.0)
+Requires-Dist: psutil (>=5.6.7)
+Requires-Dist: Flask-BasicAuth (>=0.2.0)
+Requires-Dist: pywin32 ; sys_platform == 'win32'
+
+don't use
+THIS IS JUST A VERSION RELEASED FOR TESTING PURPOSE
+
+for official Locust please check
+https://locust.io/
+
