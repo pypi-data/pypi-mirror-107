@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+stchess/__init__.py
+stchess/config.py
+stchess.egg-info/PKG-INFO
+stchess.egg-info/SOURCES.txt
+stchess.egg-info/dependency_links.txt
+stchess.egg-info/requires.txt
+stchess.egg-info/top_level.txt
