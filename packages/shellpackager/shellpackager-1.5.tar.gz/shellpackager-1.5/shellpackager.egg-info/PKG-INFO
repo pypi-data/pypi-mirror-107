@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: shellpackager
+Version: 1.5
+Summary: simple project, simple life
+Home-page: UNKNOWN
+Author: madhavth
+License: UNKNOWN
+Platform: UNKNOWN
+
+cli tool to create pypi project from shell scripts
+
