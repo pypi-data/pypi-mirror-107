@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: ap-rss-reader
+Version: 0.0.1
+Summary: AP RSS-reader with CLI.
+Home-page: https://github.com/aplatkouski/ap-rss-reader
+Author: Artsiom Platkouski
+Author-email: komukc.apt@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/aplatkouski/ap-rss-reader/issues
+Project-URL: Source, https://github.com/aplatkouski/ap-rss-reader
+Keywords: rss reader,console application
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black (==21.5b1) ; extra == 'dev'
+Requires-Dist: bump2version (==1.0.1) ; extra == 'dev'
+Requires-Dist: check-manifest (==0.46) ; extra == 'dev'
+Requires-Dist: darglint (==1.8.0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (==21.4.3) ; extra == 'dev'
+Requires-Dist: flake8-docstrings (==1.6.0) ; extra == 'dev'
+Requires-Dist: flake8-pytest-style (==1.4.2) ; extra == 'dev'
+Requires-Dist: flake8-typing-imports (==1.10.1) ; extra == 'dev'
+Requires-Dist: gitlint (==0.15.1) ; extra == 'dev'
+Requires-Dist: isort (==5.8.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.812) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.13.0) ; extra == 'dev'
+Requires-Dist: pre-commit-hooks (==4.0.1) ; extra == 'dev'
+Requires-Dist: pydocstyle (==6.1.1) ; extra == 'dev'
+Requires-Dist: pylint (==2.8.2) ; extra == 'dev'
+Requires-Dist: pyupgrade (==2.19.0) ; extra == 'dev'
+Requires-Dist: tox (==3.23.1) ; extra == 'dev'
+Requires-Dist: twine (==3.4.1) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage (==5.5) ; extra == 'test'
+Requires-Dist: pytest (==6.2.4) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.12.0) ; extra == 'test'
+
+# AP RSS-reader
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Python: 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![MyPy](https://img.shields.io/badge/MyPy-passing-success.svg)](https://mypy.readthedocs.io/en/stable/)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aplatkouski/ap-rss-reader/main.svg)](https://results.pre-commit.ci/latest/github/aplatkouski/ap-rss-reader/main)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Run tests](https://github.com/aplatkouski/ap-rss-reader/workflows/Run%20tests/badge.svg)](https://github.com/aplatkouski/ap-rss-reader/actions?query=workflow%3A%22Run+tests%22+branch%3Amaster)
+[![codecov](https://codecov.io/gh/aplatkouski/ap-rss-reader/branch/main/graph/badge.svg?token=FHs5Yrro0x)](https://codecov.io/gh/aplatkouski/ap-rss-reader)
+[![Requirements Status](https://requires.io/github/aplatkouski/ap-rss-reader/requirements.svg?branch=main)](https://requires.io/github/aplatkouski/ap-rss-reader/requirements/?branch=main)
+
+## Installation
+
+The project has been tested only with [python 3.8][python] on Ubuntu Linux and
+Windows 10. If you have python 3.8 and above installed in your machine, just
+install the AP Games from [PyPI][pypi ap-rss-reader]:
+
+```shell
+python --version
+pip install ap-rss-reader
+```
+
+You can find source code of this package on [github][]. See
+[aplatkouski/ap-rss-reader][] repository.
+
+## How to use it
+
+Run module:
+
+```shell
+python -m ap_rss_reader
+```
+
+Or open the python console and type:
+
+```python
+# Python version 3.8+
+from ap_rss_reader import cli
+cli.main()
+```
+
+## Development & Contributing
+
+Development of this happens on GitHub, patches including tests, documentation
+are very welcome, as well as bug reports!
+
+This project has a [code of conduct][]. By interacting with this repository,
+organization, or community you agree to abide by its terms.
+
+See also our [CONTRIBUTING.md][].
+
+## Copyright
+
+Copyright (c) 2021 Artsiom Platkouski. `ap-rss-reader` is licensed under the
+MIT License - see the [LICENSE.txt][] file for details.
+
+[python]: https://www.python.org/
+[pypi ap-rss-reader]: https://pypi.org/project/ap-rss-reader/
+[github]: https://github.com
+[aplatkouski/ap-rss-reader]: https://github.com/aplatkouski/ap-rss-reader
+[code of conduct]:
+  https://github.com/aplatkouski/ap-rss-reader/blob/master/CODE_OF_CONDUCT.md
+[contributing.md]:
+  https://github.com/aplatkouski/ap-rss-reader/blob/master/CONTRIBUTING.md
+[license.txt]:
+  https://github.com/aplatkouski/ap-rss-reader/blob/master/LICENSE.txt
+
+
