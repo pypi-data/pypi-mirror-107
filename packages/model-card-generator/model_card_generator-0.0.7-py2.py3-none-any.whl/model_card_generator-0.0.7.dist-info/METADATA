@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: model-card-generator
+Version: 0.0.7
+Summary: ML Model Card generator
+Home-page: https://github.com/g1stavo/model-card-generator
+License: GPLv3
+Author: Gustavo Salvador
+Author-email: gustavocsalvador@gmail.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests[security] (>=2.13,<3.0)
+Requires-Dist: toml (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/g1stavo/model-card-generator
+Description-Content-Type: text/markdown
+
+# model-card-generator
+ML model card generator
+
+## Run 
+```shell
+$ make run
+```
+
+## Install
+```shell
+$ poetry install
+```
+
+## Package
+Bump version with Poetry (or manually in `setup.cfg`), 
+```shell
+$ poetry version (patch|minor|major)
+```
+
+Then:
+```shell
+$ make package
+```
