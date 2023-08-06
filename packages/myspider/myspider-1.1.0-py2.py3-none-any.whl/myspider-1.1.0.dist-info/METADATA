@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: myspider
+Version: 1.1.0
+Summary: A small spider libraries
+Home-page: https://github.com/vdreamwin/myspider
+Author: vdreamwin
+Author-email: billikeu@gmail.com
+License: UNKNOWN
+Keywords: ssh linux
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# myspider
+
+简易轻便的爬虫库
+

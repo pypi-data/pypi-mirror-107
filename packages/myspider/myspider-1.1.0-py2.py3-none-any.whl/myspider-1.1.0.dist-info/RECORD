@@ -1,0 +1,11 @@
+myspider/__init__.py,sha256=bIbhnYouEKkvh9TsDwvO_2x86nO1TnIqgTsrMxNuSZs,71
+myspider/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myspider/mp/__init__.py,sha256=zx0d8WybZLjGVqwGMGEpTMt52ZhFRPWBV0jSXTZPFLk,56
+myspider/mp/parse_mplist.py,sha256=YGnzfuOujSuIzCnTOzh1jGLh3g1-EmAKbRrYeKTgeYI,4994
+myspider/sogou/__init__.py,sha256=7DxiEpT1g6hMwW1hBF17OOFRJ3DW03giEu6rgvRCTHY,17
+myspider/sogou/weixin.py,sha256=mhl4s-aqYrvjuEHmjRe8HbXB30HC_MWAtn70HdIweQU,3534
+myspider-1.1.0.dist-info/METADATA,sha256=z4lCmjNCmkg_JoFES6WzW4oRIvDFKmOunbVHiWLORG8,891
+myspider-1.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+myspider-1.1.0.dist-info/entry_points.txt,sha256=nVREghfW7Te5RaXN0jED9zJ1fWMq7qmPhYBZDmdEw70,44
+myspider-1.1.0.dist-info/top_level.txt,sha256=WxfMEvPF7k1sGvJa0liE47fbCp5UvPxbLFiVdzgV4uk,9
+myspider-1.1.0.dist-info/RECORD,,
