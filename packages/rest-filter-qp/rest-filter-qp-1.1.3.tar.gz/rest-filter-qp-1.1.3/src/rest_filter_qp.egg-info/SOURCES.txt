@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rest_filter_qp/__init__.py
+src/rest_filter_qp/config.py
+src/rest_filter_qp/filters.py
+src/rest_filter_qp/methods.py
+src/rest_filter_qp.egg-info/PKG-INFO
+src/rest_filter_qp.egg-info/SOURCES.txt
+src/rest_filter_qp.egg-info/dependency_links.txt
+src/rest_filter_qp.egg-info/top_level.txt
