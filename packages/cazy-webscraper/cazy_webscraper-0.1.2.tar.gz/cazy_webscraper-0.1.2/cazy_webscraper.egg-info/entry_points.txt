@@ -1,0 +1,5 @@
+[console_scripts]
+cazy_webscraper.py = scraper.cazy_webscraper:main
+get_genbank_sequences.py = scraper.expand.get_genbank_sequences:main
+get_pdb_structures.py = scraper.expand.get_pdb_structures:main
+
