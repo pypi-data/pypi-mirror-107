@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kolo"
+version = "0.0.2"
+description = "Runtime inspection for Django"
+authors = ["Wilhelm Klopp <team@kolo.app>"]
+homepage = "https://kolo.app"
+license = "© Kolo"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+appdirs = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
