@@ -1,0 +1,139 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.backcg {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #6f86b7;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.indexcolor {
+  overflow: hidden;
+}
+
+.subsubtitle {
+  font-size: 17px;
+  font-weight: 300;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.sublogo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.midlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallfont {
+  font-size: 13px;
+  font-weight: 300;
+  color: whitesmoke;
+  font-family: monospace;
+  &.dark {
+    color: gray(29);
+  }
+}
+
+.links {
+  padding-top: 15px;
+}
+
+$red: #e17a62;
+$white: #316231;
+$black: #000000;
+$lightened: #71d680;
+$lighten: #488f50;
+
+.backee {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  &.gold {
+    background: radial-gradient(ellipse at bottom, #b8a341 0%, #6a5b1b 100%);
+  }
+  &.bluer {
+    background: radial-gradient(ellipse at bottom, #03004b 0%, #26279d 100%);
+  }
+  &.purx {
+    background: radial-gradient(ellipse at bottom, #4a426a 0%, #1c0d3c 100%);
+  }
+  &.home {
+    background-image: linear-gradient(#000203 0%, #112300 85%, #1f353b 100%);
+  }
+  &.grass {
+    background-image: linear-gradient(#000203 0%, $black 85%, $lightened 100%);
+  }
+  &.lightgrass {
+    background-image: linear-gradient($white 0%, $black 85%, $lightened 100%);
+  }
+  &.interactive {
+    z-index: 1;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media(min-width: 510px) {
+  .container {
+    align-items: center;
+  }
+}
+
+$breakpointList: (
+  r1: (510px, (4, 8)),
+  r2: (414px, (4, 6)),
+  r3: (411px, (4, 6)),
+  r4: (375px, (4, 6)),
+  r5: (360px, (4, 6)),
+  r6: (320px, (4, 6)),
+) !default;
+
+@each $bp in $breakpointList {
+  $width-device: nth($bp, 1);
+  @media(max-width: $width-device) {
+    .container {
+      width: $width-device;
+      align-items: normal;
+    }
+  }
+}
