@@ -1,0 +1,4 @@
+[console_scripts]
+lookml_gen = lookml_generator:main
+lookml_gen_init = profile_generator:main
+
