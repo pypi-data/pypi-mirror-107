@@ -1,0 +1,77 @@
+[![CI](https://github.com/k2kobayashi/neural-homomorphic-vocoder/actions/workflows/ci.yaml/badge.svg)](https://github.com/k2kobayashi/neural-homomorphic-vocoder/actions/workflows/ci.yaml)
+[![pypi](https://github.com/k2kobayashi/neural-homomorphic-vocoder/actions/workflows/pypi-publish.yml/badge.svg)](https://github.com/k2kobayashi/neural-homomorphic-vocoder/actions/workflows/pypi-publish.yml)
+
+# neural-homomorphic-vocoder
+
+A neural vocoder based on source-filter model called neural homomorphic vocoder
+
+# Install
+
+```shell
+$ cd tools
+$ make
+```
+
+# Usage
+
+Usage for NeuralHomomorphicVocoder class
+- Input
+    - x: mel-filterbank
+    - cf0: continuous f0
+    - uv: u/v symbol
+
+```python
+import torch
+from nhv import NeuralHomomorphicVocoder
+
+net = NeuralHomomorphicVocoder(
+        fs=24000,             # sampling frequency
+        fft_size=1024,        # size for impuluse responce of LTV
+        hop_size=256,         # hop size in each mel-filterbank frame
+        in_channels=80,       # input channels (i.e., dimension of mel-filterbank)
+        conv_channels=256,    # channel size of LTV filter
+        ltv_out_channels=222, # output size of LTV filter
+        kernel_size=3,        # kernel size of LTV filter
+        group_size=8,         # group size of LTV filter
+        dilation_size=1,      # dilation size of LTV filter
+        fmin=80,              # min freq. of melspc calculation
+        fmax=7600,            # max freq. of melspc calculation
+        roll_size=24,         # roll size to calculate logspc from melspc 
+        use_causal=False,     # use causal conv LTV filter
+        use_conv_postfilter=False,     # use causal conv postfilter for NHV output
+        use_ltv_conv_postfilter=False, # use causal conv postfilter for LTV output 
+        use_reference_mag=False,       # use reference logspc calculated from melspc
+        use_quefrency_norm=True,       # enable ccep normalized by quefrency index
+        scaler_file=None      # internal scaling of melspc 
+                              # (Dict -> key="mlfb" = StandardScaler)
+)
+
+B, T, D = 3, 100, in_channels   # batch_size, frame_size, n_mels
+z = torch.randn(B, 1, T * hop_size)
+x = torch.randn(B, T, D)
+cf0 = torch.randn(B, T, 1)
+uv = torch.randn(B, T, 1)
+y = net(z, torch.cat([x, cf0, uv], dim=-1))   # z: (B, 1, T * hop_size), c: (B, D+2, T)
+y = net._forward(z, cf0, uv)
+```
+
+# Features
+
+- (2021/05/21): Work well and on training 
+- (2021/05/21): Follow same input as `ParallelWaveGANGenerater` in [kan-bayashi/ParallelWaveGAN](https://github.com/kan-bayashi/ParallelWaveGAN) but with continuous F1 and uv symbols
+- (2021/05/24): Final FIR filter is implemented by 1D causal conv layer
+- (2021/05/24): GAN training is not stable 
+- (2021/05/25): Implement reference log magnitude from melspc
+- (2021/05/27): Implement internal scaler and ltv conv postfilter
+
+# References
+
+```bibtex
+@article{liu20,
+  title={Neural Homomorphic Vocoder},
+  author={Z.~Liu and K.~Chen and K.~Yu},
+  journal={Proc. Interspeech 2020},
+  pages={240--244},
+  year={2020}
+}
+```
