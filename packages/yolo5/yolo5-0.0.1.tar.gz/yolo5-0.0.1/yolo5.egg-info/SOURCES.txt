@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+yolo5/__init__.py
+yolo5.egg-info/PKG-INFO
+yolo5.egg-info/SOURCES.txt
+yolo5.egg-info/dependency_links.txt
+yolo5.egg-info/requires.txt
+yolo5.egg-info/top_level.txt
