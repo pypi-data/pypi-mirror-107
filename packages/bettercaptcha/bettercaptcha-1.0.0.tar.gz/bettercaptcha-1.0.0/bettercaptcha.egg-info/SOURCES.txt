@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bettercaptcha/__init__.py
+bettercaptcha/image.py
+bettercaptcha.egg-info/PKG-INFO
+bettercaptcha.egg-info/SOURCES.txt
+bettercaptcha.egg-info/dependency_links.txt
+bettercaptcha.egg-info/requires.txt
+bettercaptcha.egg-info/top_level.txt
