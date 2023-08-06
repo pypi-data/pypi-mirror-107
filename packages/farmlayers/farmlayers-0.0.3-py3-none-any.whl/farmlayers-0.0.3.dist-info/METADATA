@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: farmlayers
+Version: 0.0.3
+Summary: Helper scripts for fetching and managing basic input layers Farm Mapping
+Home-page: https://github.com/Open-Source-Agriculture/farmlayers
+Author: Kipling Crossing
+Author-email: kip.crossing@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: Shapely (==1.*)
+Requires-Dist: elevation
+Requires-Dist: geojson
+Requires-Dist: geotiff (==0.1.*)
+Requires-Dist: imagecodecs
+Requires-Dist: numpy
+Requires-Dist: pylandsat (==0.6.*)
+Requires-Dist: pyshp (==2.*)
+
+# Farm Layers [early stages of dev]
+
+Helper scripts for fetching and managing basic geotiff files related to Farm Mapping
+
+Supports:
+
+- elevation
+- red bands
+- blue bands
+- green bands
+- near-inferred bands
+
+Coming:
+
+Australian Radiometric data
+- k gamma
+- u gamma
+- th gamma
+
+Install:
+
+```
+pip install farmlayers
+```
+
+Usage:
+
+Make area of interest using shapely geoms:
+
+```python
+from shapely.geometry.multipolygon import MultiPolygon
+from farmlayers import shp_to_boundaries
+
+boundaries = shp_to_boundaries("boundaries.shp")
+```
+
+Download elevation:
+
+
+```python
+from farmlayers import download_elevation
+
+download_elevation(geom=MultiPolygon(polygons=boundaries), dir="data")
+```
+
+Download soil related landsat 8 bands:
+
+```python
+from farmlayers import download_soil
+
+download_soil(geom=MultiPolygon(polygons=boundaries), dir="data")
+```
+
+Download crop related landsat 8 bands
+
+
+```python
+from farmlayers import download_crop
+
+download_crop(geom=MultiPolygon(polygons=boundaries), dir="data")
+
+```
+
