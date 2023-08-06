@@ -1,0 +1,8 @@
+setup.py
+snekcord/emojis/__init__.py
+snekcord/emojis/data.py
+snekcord/emojis/dumper.py
+snekcord_emojis.egg-info/PKG-INFO
+snekcord_emojis.egg-info/SOURCES.txt
+snekcord_emojis.egg-info/dependency_links.txt
+snekcord_emojis.egg-info/top_level.txt
