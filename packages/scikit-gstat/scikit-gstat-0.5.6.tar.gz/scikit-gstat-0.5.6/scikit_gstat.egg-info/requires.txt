@@ -1,0 +1,10 @@
+scipy
+numpy
+pandas
+matplotlib
+numba
+scikit-learn
+imageio
+
+[gstools]
+gstools>=1.3
