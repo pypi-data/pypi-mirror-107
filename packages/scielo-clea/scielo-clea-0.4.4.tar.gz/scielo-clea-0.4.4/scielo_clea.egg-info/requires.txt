@@ -1,0 +1,17 @@
+lxml
+numpy
+python-Levenshtein
+regex
+unidecode
+
+[all]
+flask
+ujson
+click
+
+[cli]
+click
+ujson
+
+[server]
+flask
