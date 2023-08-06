@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-fullclean
+Version: 0.0.1
+Summary: Force django model call full_clean before save.
+Home-page: UNKNOWN
+Author: Alfred Huang
+Author-email: 57082212@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: django,model,validator,full_clean
+Platform: any
