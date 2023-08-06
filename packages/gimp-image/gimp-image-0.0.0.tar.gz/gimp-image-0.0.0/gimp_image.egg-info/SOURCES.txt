@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+gimp/__init__.py
+gimp/image/__init__.py
+gimp/plugins/__init__.py
+gimp_image.egg-info/PKG-INFO
+gimp_image.egg-info/SOURCES.txt
+gimp_image.egg-info/dependency_links.txt
+gimp_image.egg-info/requires.txt
+gimp_image.egg-info/top_level.txt
