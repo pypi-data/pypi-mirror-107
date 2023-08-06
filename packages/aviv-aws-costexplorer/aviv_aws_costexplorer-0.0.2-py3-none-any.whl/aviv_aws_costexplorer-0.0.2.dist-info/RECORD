@@ -1,0 +1,17 @@
+aviv_aws_costexplorer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aviv_aws_costexplorer/base.py,sha256=YfjVn67ddAmj_h9-nSlRs-C3NnIvt-uHDEEY1Tb8MZA,3826
+aviv_aws_costexplorer/budgets.py,sha256=-W2UuOqg0SW3IOz3stp8DHmyqIkW2-0LF1eXMjc1ENk,1665
+aviv_aws_costexplorer/costexplorer.py,sha256=2IhRb0J5uxd9kpe9RTu9VFtYddU9CrToPdW5clWyrFI,4970
+aviv_aws_costexplorer/costreporter.py,sha256=5tAdl70ZrDQN_f9aqWJtuEt2-eyMyqAmg7Vj1BB3JEc,7132
+aviv_aws_costexplorer/datastore.py,sha256=zujieQvY_P-hThlUxRM2PgD8XEJ2EagTi_BWsqWAArg,3810
+aviv_aws_costexplorer/filters.py,sha256=BJZ2m_JQ9oJrXBesr91fWguL8aaysHZzfnadTd4_Z2M,890
+aviv_aws_costexplorer/types.py,sha256=jhVYzAOsRMaC4dIYIplkUVC4JO_YwyoKbH9wnYAJZW8,1152
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base.py,sha256=kvyEV8jF-S3oaviiFob4wnoxsBjcCs3tgdQ5XsQ7lss,900
+tests/test_costexplorer.py,sha256=89oufARg6tz2evthV53xIybNwofYYPqtWFC0IRYhkoE,1560
+tests/test_costreporter.py,sha256=Z6ch7JnVBBWO3XLXbWG2nbrrUwj21lGylQWQBgQJ6LU,1085
+aviv_aws_costexplorer-0.0.2.dist-info/LICENSE,sha256=v82gNnzfXw4WayhzblHItC4Qoq5btZTCDybtW-CH3rg,1077
+aviv_aws_costexplorer-0.0.2.dist-info/METADATA,sha256=9PKxK0cTxfJJVScGZPb7krqPxFqbEeBCGdTT5MFH3NI,2085
+aviv_aws_costexplorer-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aviv_aws_costexplorer-0.0.2.dist-info/top_level.txt,sha256=EClCJmVqFxs0WCBwna1fNBl-xg6x8_2VgvgPWrz7yUI,28
+aviv_aws_costexplorer-0.0.2.dist-info/RECORD,,
