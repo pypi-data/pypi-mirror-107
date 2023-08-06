@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/libff/__init__.py
+src/libff/libff.py
+src/libff.egg-info/PKG-INFO
+src/libff.egg-info/SOURCES.txt
+src/libff.egg-info/dependency_links.txt
+src/libff.egg-info/entry_points.txt
+src/libff.egg-info/top_level.txt
