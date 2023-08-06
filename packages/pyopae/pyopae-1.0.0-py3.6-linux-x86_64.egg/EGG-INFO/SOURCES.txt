@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+ReleaseNotes
+libdpdk.a
+opae_api.h
+setup.py
+pyopae/__init__.py
+pyopae/wrapper.c
+pyopae.egg-info/PKG-INFO
+pyopae.egg-info/SOURCES.txt
+pyopae.egg-info/dependency_links.txt
+pyopae.egg-info/top_level.txt
