@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+timed_rotating_text_file/__init__.py
+timed_rotating_text_file/test.py
+timed_rotating_text_file.egg-info/PKG-INFO
+timed_rotating_text_file.egg-info/SOURCES.txt
+timed_rotating_text_file.egg-info/dependency_links.txt
+timed_rotating_text_file.egg-info/not-zip-safe
+timed_rotating_text_file.egg-info/top_level.txt
