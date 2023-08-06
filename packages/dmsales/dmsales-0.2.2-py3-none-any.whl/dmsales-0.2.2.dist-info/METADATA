@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dmsales
+Version: 0.2.2
+Summary: DMSales API Python Client
+Home-page: https://app.dmsales.com/api-doc/default
+Author: DMSales
+Author-email: data@dmsales.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: typing-extensions (==3.10.0.0)
+
+DMSales API Python Client
+
+
