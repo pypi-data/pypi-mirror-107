@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['snakypy', 'snakypy.imake']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['snakypy-helpers>=0.1.4', 'tomlkit>=0.7.2,<0.8.0']
+
+entry_points = \
+{'console_scripts': ['imake = snakypy.imake:run']}
+
+setup_kwargs = {
+    'name': 'imake',
+    'version': '0.1.2',
+    'description': 'iMake is a command line tool to simplify commands in Python projects, discarding the usability of a Makefile file.',
+    'long_description': '# iMake\n\n[![Tests](https://github.com/snakypy/imake/actions/workflows/tests.yml/badge.svg)](https://github.com/snakypy/imake/actions/workflows/tests.yml)\n[![Python Versions](https://img.shields.io/pypi/pyversions/imake)](https://pyup.io/repos/github/snakypy/imake/)\n[![Python Whell](https://img.shields.io/pypi/wheel/imake)](https://pypi.org/project/wheel/)\n[![PyPI](https://img.shields.io/pypi/v/imake)](https://pypi.org/project/imake/#history)\n[![PyPI - Implementation](https://img.shields.io/pypi/implementation/imake)](https://pypi.org/project/imake)\n[![Isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)\n[![Mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)\n[![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/imake)](https://pypi.org/project/imake/#files)\n[![GitHub license](https://img.shields.io/github/license/snakypy/imake)](https://github.com/snakypy/imake/blob/master/LICENSE)\n\n----------------\n<div align="center">\n  <h4>\n    <a href="#requirements">Requirements</a> |\n    <a href="#installing">Install</a> |\n    <a href="#configuration">Configuration</a> |\n    <a href="#using">Using</a> |\n    <a href="#donation">Donation</a> |\n  </h4>\n  <h5>\n    | <a href="#more-commands">More Commands</a> |\n  </h5>\n</div>\n\n<div align="center">\n  <sub>Built with ❤︎ by:\n  <a href="https://williamcanin.github.io" target="_blank">William Canin</a> in free time,\n  to the sound of the playlist: <a href="https://open.spotify.com/playlist/48brJJZdVifY79QAFmEImq?si=GmsvfKqATpG4p72ZeVClIQ" target="_blank">Bursting Of The Tympanum</a></sub>\n</div>\n<br>\n<br>\n\n**iMake** is a command line tool to simplify commands in [Python](https://python.org) projects, discarding the usability of a [Makefile](https://www.gnu.org/software/make/) file.\nAs **iMake** saves on typed commands, passing them a configuration file.\n\n## Requirements\n\nTo work correctly, you will first need:\n\n- [`Python`](https://python.org) (v3.9 or recent);\n- [`Pip`](https://pip.pypa.io/en/stable/) (v21.0.1 or recent) must be installed;\n\n## Installing\n\n```shell\n$ pip install imake --user\n```\n\n## Configuration\n\nThe configuration file must exist at the location where **imake** will be called. The file must be named **.imake **, that is, a file hidden on Unix systems.\n\nTo create the file use `touch`:\n\n```shell\n$ touch .imake\n```\n\nAfter creating the file, you should leave it with the following structure. Example:\n\n```toml\n[build]\ncommands = ["python setup.py sdist"]\n```\n\nThe key with the name **commands** is an Array and must be mandatory for **iMake**. In this key you must inform the commands you want to execute using the primary key, in this case, the **build**.\n\nOption with multiple commands:\n\n```toml\n[build]\ncommands = ["rm -rf build", "rm -rf docs/_build;", "python setup.py sdist"]\n```\n\nYou can also execute commands in blocks instead of a list, as follows using triple quotes:\n\n```toml\n[clean]\ncommands = ["""\n            if [[ -d "build" ]]; then\n              rm -r build;\n            fi\n            rm -rf docs/_build;\n            rm -rf .pytest_cache;\n"""]\n```\n\n**iMake** settings still have 3 other keys, which are **description**, **header**, and **footer**. All optional.\n\nThe key **description** you must put only a description for a given command. Example:\n\n```toml\n[build]\ndescription = "This command compiles the project."\ncommands = ["rm -rf build", "rm -rf docs/_build;", "python setup.py sdist"]\n```\n\nThe **header** key is a message that will appear before the commands start. Example:\n\n```toml\n[build]\ndescription = "This command compiles the project."\nheader = "Starting the build ..."\ncommands = ["rm -rf build", "rm -rf docs/_build;", "python setup.py sdist"]\n```\n\nThe **footer** key is a message that will appear after the commands are finished. Example:\n\n```toml\n[build]\ndescription = "This command compiles the project."\nheader = "Starting the build ..."\ncommands = ["rm -rf build", "rm -rf docs/_build;", "python setup.py sdist"]\nfooter = "Build command finished!"\n```\n\n> Note: The position of the keys does not imply anything, but the values do. The command that you put first in the **commands** key will be the first to be executed.\n\nAnother interesting option is that you can call the execution of a command within another one using **imake**. Would be like this:\n\n```toml\n[build]\ndescription = "This command compiles the project."\nheader = "Starting the build ..."\ncommands = ["imake clean -q", "python setup.py sdist"]\nfooter = "Build command finished!"\n```\n\nNotice that the command **imake clean -q** is inside **commands**. Where the `-q` option means to silence verbose mode.\n\n## Using\n\nAfter making the settings in the file **.imake**, execute the command **imake** followed by the primary key, which in our example is **build**. It will look like this:\n\n```shell\n$ imake build\n```\n\nYou can run the help command, `imake -h` to show which commands are available to you. Any configuration that is in the **.imake** file will be shown in `help`, minus the description of each command, which will be shown only if you run the `--desc` or `-d` option, for example:\n\n```shell\n$ imake build --desc \n```\n\n ## More Commands\n\nFor more command information, use:\n\n```shell\n$ imake -h\n```\n\n## Donation\n\nIf you liked my work, buy me a coffee :coffee: :smiley:\n\n[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YBK2HEEYG8V5W&source)\n\n## License\n\nThe project is available as open source under the terms of the [MIT License](https://github.com/snakypy/imake/blob/master/LICENSE) ©\n\n## Credits\n\nSee, [AUTHORS](https://github.com/snakypy/imake/blob/master/AUTHORS.rst).\n',
+    'author': 'William C. Canin',
+    'author_email': 'william.costa.canin@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/snakypy/imake',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
