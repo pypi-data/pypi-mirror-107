@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fzj-ipp-webservices
+Version: 1.2
+Summary: Python Frontend for selected IPP webservices
+Home-page: UNKNOWN
+Author: Alexander Knieps
+Author-email: a.knieps@fz-juelich.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: osa (>=0.2)
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: netCDF4 (>=1.2.7)
+Requires-Dist: diagmap (>=1.3)
+
+UNKNOWN
+
+
