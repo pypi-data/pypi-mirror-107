@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autolist
+Version: 0.0.1
+Summary: Auto-Correct miswritten words by checking them with the list of given correct words
+Home-page: https://github.com/AbelR007/Autolist
+Author: AbelR007
+Author-email: abelroi007@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Autolist
+Python Basic Library to Auto-Correct miswritten words by checking them with list of given correct words
+
+
