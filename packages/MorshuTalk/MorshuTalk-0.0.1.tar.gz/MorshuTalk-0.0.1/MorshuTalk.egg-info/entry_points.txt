@@ -1,0 +1,4 @@
+[console_scripts]
+morshutalk = morshutalk.__main__:main
+morshutalkgui = morshutalkgui.__main__:main
+
