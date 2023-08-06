@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CV-skeleton-provider
+Version: 0.1.5
+Summary: provide skeleton of a person
+Home-page: https://github.com/LiiNen/CV_skeleton_provider
+Author: LiiNen
+Author-email: kjeonghoon065@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/LiiNen/CV_skeleton_provider/archive/refs/tags/v_013.tar.gz
+Keywords: Skeleton Provider
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
