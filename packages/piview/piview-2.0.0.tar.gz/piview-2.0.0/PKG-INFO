@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: piview
+Version: 2.0.0
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Home-page: https://github.com/AdyGCode/PiView-AG
+Author: Adrian Gould
+Author-email: adrian.gould@nmtafe.wa.edu.au
+License: GNU General Public License v3
+Keywords: piview
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Open Software License 3.0 (OSL-3.0)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+======
+PiView
+======
+
+
+.. image:: https://img.shields.io/pypi/v/piview.svg
+        :target: https://pypi.python.org/pypi/piview
+
+.. image:: https://img.shields.io/travis/AdyGCode/piview.svg
+        :target: https://travis-ci.com/AdyGCode/piview
+
+.. image:: https://readthedocs.org/projects/piview/badge/?version=latest
+        :target: https://piview.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+**A Raspberry Pi system information package.**
+
+.. image:: ./docs/PiView.svg
+        :target: https://pypi.python.org/pypi/piview
+        :alt: PiView Icon
+
+PiView provides the details of the Raspberry Pi currently being interrogated. System information includes, but is not limited to:
+
+- **CPU**: max load across cores, temperature, clock speed
+- **GPU**: temperature
+- **HARDWARE**: bluetooth, i2c, spi, camera statuses
+- **HOST**: boot time, model, name, revision, serial number, uptime
+- **NETWORK**: host name, interface names, ip addresses, mac addresses
+- **STORAGE**: total disk capacity, free disk capacity, total RAM and free RAM
+
+Also includes a small utility library with:
+
+- conversion of bytes into Kilobytes, Megabytes, Gigabytes and up
+- create list with a quartet of integer numbers representing the IPv4 Address
+
+* Free software: Open Software License ("OSL") v. 3.0
+* Documentation: https://piview.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+
+Requirements
+------------
+
+This project requires the following package(s):
+
+* psutils
+
+Remaining packages are Python 'built-ins'.
+
+
+Credits
+-------
+
+A very large thank you to Matt Hawkins upon whose code this package is based: https://www.raspberrypi-spy.co.uk/
+
+The original code may be found at https://github.com/tdamdouni/Raspberry-Pi-DIY-Projects/blob/master/MattHawkinsUK-rpispy-misc/python/mypi.py
+
+Thank you to Sander Huijsen for his contributions and guidance in all things Python.
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+Copyright
+---------
+
+Copyright Adrian Gould, 2021-. Licensed under
+the Open Software License version 3.0
+
+
+=======
+History
+=======
+
+2.0.0 (2021-05-27)
+-------------------------------------
+
+* Updated Package release.
+
+
+
+1.0.0 Initial Release
+-------------------------------------
+Some enhancements to come - such as return all the attached
+storage statistics
+
+Added:
+
+- python version (HOST)
+- camera supported / detected (HARDWARE)
+
+0.5.0 RAM, Storage, Host
+-------------------------------------
+Added the following:
+
+- ram total and free
+- storage total and free for 'all disks' in total
+- name to Host, this is a temporary version until further investigation done, use the host
+  name method in the network section to get host name
+
+To do:
+
+- statistics (total space, free) for each attached storage device
+
+
+0.4.0 Network Features
+-------------------------------------
+The following are implemented in this version:
+
+- host name
+- interface names
+- ip addresses
+- mac addresses
+
+Fixed missing self references in classes, removed `get` from function names
+Added missing file headers...
+
+0.3.0 Host Features
+-------------------------------------
+The following have been implemented:
+
+- boot time
+- model
+- serial number
+- uptime
+- revision
+
+
+0.2.0 Hardware Features
+-------------------------------------
+Added Hardware checking for:
+
+- SPI
+- I2C
+- BT
+
+Updated [[README]]
+Design and added PiView Icon
+
+0.1.1 GPU Features
+-------------------------------------
+
+Added:
+
+- GPU temperature
+
+0.1.0 CPU Features
+-------------------------------------
+Added:
+
+- max load across cores
+- processor temperature
+- processor clock speed
+
+0.0.3 Setup fixes
+-------------------------------------
+Small fixes to setup.cfg, and a source reformat.
+
+0.0.2 Utils
+-------------------------------------
+Added Utils to the package. Utils includes:
+
+- format_bytes
+- draw_line
+
+0.0.1 Initial Version
+-------------------------------------
+Blank project, containing:
+
+- starter folder structure
+- [[README]]
+- [[CHANGES]]
+- [[LICENSE.txt]]
+
+
