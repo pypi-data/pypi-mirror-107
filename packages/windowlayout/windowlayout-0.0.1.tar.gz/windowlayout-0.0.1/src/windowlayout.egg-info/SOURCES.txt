@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/windowlayout/__init__.py
+src/windowlayout/__main__.py
+src/windowlayout/switcher.py
+src/windowlayout/window.py
+src/windowlayout.egg-info/PKG-INFO
+src/windowlayout.egg-info/SOURCES.txt
+src/windowlayout.egg-info/dependency_links.txt
+src/windowlayout.egg-info/requires.txt
+src/windowlayout.egg-info/top_level.txt
