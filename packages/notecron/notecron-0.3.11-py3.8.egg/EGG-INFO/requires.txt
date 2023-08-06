@@ -1,0 +1,7 @@
+apscheduler
+gunicorn
+flask-migrate
+flask-script
+flask-apscheduler
+flask-sqlalchemy
+gevent
