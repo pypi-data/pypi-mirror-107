@@ -1,0 +1,123 @@
+.ipysimulate-control {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    margin: 5px;
+    padding: 10px;
+    background-color: #eeebeb;
+    -moz-box-shadow: 1px 1px 2px 1px  #ccc8c8;
+    -webkit-box-shadow: 1px 1px 2px 1px  #ccc8c8;
+    box-shadow: 1px 1px 2px 1px  #ccc8c8;
+    box-sizing: content-box;
+}
+
+.ipysimulate-control .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ipysimulate-control .button-row {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+/* Text */
+
+.ipysimulate-control .heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.ipysimulate-control .centered {
+    text-align: center;
+}
+
+
+/* Control Buttons */
+
+.ipysimulate-control button {
+    /*display: block;*/
+    background-color: #53a0a9;
+    color: white;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    margin-right: 5px;
+    /*padding: 10px 10px; Last one is left */
+    font-size: 12px;
+    -moz-box-shadow: 1px 1px 2px 0px #b1adad;
+    -webkit-box-shadow: 1px 1px 2px 0px #b1adad;
+    box-shadow: 1px 1px 2px 0px #b1adad;
+    border: none;
+}
+
+.ipysimulate-control button.last {
+    margin-right: 0px;
+}
+
+.ipysimulate-control button:hover {
+    -moz-box-shadow: 1px 1px 2px 1px #b1adad;
+    -webkit-box-shadow: 1px 1px 2px 1px #b1adad;
+    box-shadow: 1px 1px 2px 1px #b1adad;
+}
+
+
+/* Text */
+
+.ipysimulate-control .plabel {
+    font-weight: bold;
+}
+
+
+/* Sliders */
+
+.ipysimulate-control .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.ipysimulate-control .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+    border:none;
+  border-radius: 50%;
+  background: #53a0a9;
+  cursor: pointer;
+}
+
+.ipysimulate-control .slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #53a0a9;
+  cursor: pointer;
+}
+
+/* Select */
+
+.ipysimulate-control select {
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 24px;
+    line-height: 3;
+    background: #53a0a9;
+    overflow: hidden;
+    border-radius: .25em;
+    -moz-box-shadow: 1px 1px 2px 0px #b1adad;
+    -webkit-box-shadow: 1px 1px 2px 0px #b1adad;
+    box-shadow: 1px 1px 2px 0px #b1adad;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
