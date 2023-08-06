@@ -1,0 +1,405 @@
+$clawBaseMoveTime: 5s;
+$clawDescendTime: 5s;
+$clawOpenTime: 5s;
+$objectDropTime: 5s;
+$clawBaseMoveDistance: 60px;
+
+$btn-box-height: 8px; /* for now only px not rem */
+.ticketmachine {
+  background: #6c6767;
+  background: radial-gradient(ellipse at center, #565252 0%, #000000 70%);
+  background-size: 100%;
+
+  .machinebody {
+    @media(max-width: 600px) {
+      perspective: 300;
+      -webkit-perspective: 300;
+    }
+    .claw_machine {
+      @media(max-width: 600px) {
+        transform: translateZ(-215px);
+        -webkit-transform: translateZ(-215px);
+      }
+    }
+  }
+}
+
+.claw_machine {
+  display: block;
+  padding: 20px;
+  margin: auto;
+  height: 90vh;
+  width: auto;
+
+  .cls-1, .cls-11, .cls-9 {
+    fill: none;
+  }
+
+  .cls-2 {
+    isolation: isolate;
+  }
+
+  .cls-3 {
+    fill: #13264b;
+  }
+
+  .cls-4 {
+    fill: #f15058;
+  }
+
+  .cls-5 {
+    fill: #c4c782;
+  }
+
+  .cls-6 {
+    fill: #f3f3f3;
+  }
+
+  .cls-7 {
+    fill: #425270;
+  }
+
+  .cls-8 {
+    fill: #fceca1;
+  }
+
+  .cls-9 {
+    stroke: #f15c3c;
+    stroke-linecap: round;
+    stroke-width: 2px;
+  }
+
+  .cls-10, .cls-11, .cls-9 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-10 {
+    fill: #fbfcf1;
+  }
+
+  .cls-10, .cls-11 {
+    stroke: #000;
+  }
+
+  .cls-12 {
+    clip-path: url(#clip-path);
+  }
+
+  .cls-13 {
+    opacity: 0.25;
+    mix-blend-mode: lighten;
+  }
+
+  .cls-14 {
+    font-size: 12px;
+    fill: #13264a;
+    font-family: 'Baumans', cursive;
+  }
+
+  @keyframes animateClaw {
+    20% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    40% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    60% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    80% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateArm {
+    20% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    40% {
+      transform: translateX($clawBaseMoveDistance) matrix(1, 0, 0, 4, 0, -100);
+    }
+
+    60% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    80% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateHook {
+    20% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    40% {
+      transform: translateX($clawBaseMoveDistance) matrix(1, 0, 0, 1, 0, 70);
+    }
+
+    60% {
+      transform: translateX($clawBaseMoveDistance);
+    }
+
+    80% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateQuote {
+    20% {
+      /* 		transform: translateX(var($clawBaseMoveDistance)); */
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    40% {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    60% {
+      transform: matrix(1, 0, 0, 1, 0, -70);
+      /* 		transform: translateX(var($clawBaseMoveDistance)); */
+    }
+
+    80% {
+      transform: matrix(1, 0, 0, 1, -60, -70);
+      /* 		transform: translateX(var($clawBaseMoveDistance)); */
+    }
+
+    100% {
+      transform: matrix(1, 0, 0, 1, -60, 0);
+      /* 		transform: translateX(var($clawBaseMoveDistance)); */
+    }
+  }
+
+  .animate_base {
+    animation: animateClaw $clawBaseMoveTime 1 linear;
+  }
+
+  .animate_arm {
+    animation: animateArm $clawBaseMoveTime 1 linear;
+  }
+
+  .animate_claw {
+    animation: animateHook $clawBaseMoveTime 1 linear;
+  }
+
+  .animate_quote {
+    animation: animateQuote $clawBaseMoveTime 1 linear;
+  }
+
+  /**
+  .animate_quote {
+      animation: animateQuote var($clawBaseMoveTime) 1 linear;
+  }**/
+
+  #title {
+    font-size: 24px;
+  }
+
+  #showQuote {
+    font-size: 32px;
+    font-family: 'Special Elite', cursive;
+  }
+
+  #showAuthor {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+  }
+
+  #twitter {
+    font-size: 28px;
+    color: #00aced;
+    float: left;
+    vertical-align: middle;
+  }
+
+  #button {
+    float: right;
+    vertical-align: middle;
+  }
+
+  #instructions {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    display: block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
+
+  @keyframes animateButton {
+    100% {
+      fill: white;
+      transform-origin: center center;
+      transform: scale(1.05, 1.05)
+    }
+  }
+
+  #greenButton {
+    fill: green;
+    animation: animateButton 0.5s infinite alternate-reverse;
+  }
+
+  @keyframes shakeJoystick {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  #joystick {
+    /* 	transform-origin: center center; */
+    transform-origin: 55px 170px;
+    animation: shakeJoystick 0.75s infinite linear;
+  }
+
+}
+
+.container-control-claw {
+  padding: 2rem 0;
+  text-align: center;
+
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-size: 100%;
+
+  -webkit-transition: height 4.3s ease-out;
+  -moz-transition: height 4.3s ease-out;
+  -o-transition: height 4.3s ease-out;
+  transition: height 4.3s cubic-bezier(0.27, 0.3, 0.51, 1.02);
+
+  #clock_face {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+    .amount_bet {
+      letter-spacing: 0.05em;
+      font-size: 80px;
+      padding: 5px 0;
+    }
+    .ticket_no {
+      letter-spacing: 0.1em;
+      font-size: 24px;
+    }
+    .text {
+      letter-spacing: 0.1em;
+      font-size: 12px;
+      padding: 20px 0 0;
+    }
+  }
+
+  .btn-3d {
+    font-family: 'Share Tech Mono', monospace;
+    display: inline-block;
+    /* 自适应 */
+    //padding: 1rem 2rem;
+    /* 自适应 */
+    /* 固定宽高 */
+    width: 12rem;
+    height: 5rem;
+    line-height: 5rem;
+    /* 固定宽高 */
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin: 5px;
+    /**
+    no selection
+     */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+  }
+
+  .btn-3d:active, .btn-3d.disabled {
+    transform: translate3d(0, $btn-box-height + 1, 0);
+    -webkit-transform: translate3d(0, $btn-box-height + 1, 0);
+  }
+
+  @mixin claw_machine_button_style_ex1($color) {
+    box-shadow: 0 0 0 1px $color inset,
+    0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-3d {
+    &.red {
+      background-color: #e74c3c;
+      box-shadow: 0 0 0 1px #c63702 inset,
+      0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+      0 $btn-box-height 0 0 #C24032,
+      0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+      0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5);
+
+      &:active {
+        @include claw_machine_button_style_ex1(#c63702);
+      }
+
+      &.disabled {
+        background-color: #661c01;
+        @include claw_machine_button_style_ex1(#661c01);
+      }
+    }
+
+    &.green {
+      background-color: #005600;
+      box-shadow: 0 0 0 1px #003300 inset,
+      0 0 0 ($btn-box-height / 4) rgba(255, 255, 255, 0.15) inset,
+      0 $btn-box-height 0 0 #003f00,
+      0 $btn-box-height 0 1px rgba(0, 0, 0, 0.4),
+      0 $btn-box-height $btn-box-height 1px rgba(0, 0, 0, 0.5);
+
+      &:active {
+        @include claw_machine_button_style_ex1(#004000);
+      }
+
+      &.disabled {
+        background-color: #001b00;
+        @include claw_machine_button_style_ex1(#001b00);
+      }
+    }
+
+  }
+}
+
+.table_card_lott {
+  background-color: whitesmoke;
+}

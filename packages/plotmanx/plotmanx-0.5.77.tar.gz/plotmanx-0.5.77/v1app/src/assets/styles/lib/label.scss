@@ -1,0 +1,86 @@
+@mixin btn_icon {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  &.after {
+    content: "";
+  }
+}
+
+//invested
+//.f-441 {
+
+//failure
+//.f-442 {
+
+//success
+//.f-443 {
+
+.bg-c0 {
+  transform: scale(0.5);
+  width: 71px;
+  height: 71px;
+  background: url('~assets/img/appic/asstpx.png') -5px -5px;
+}
+
+.bg-j1 {
+  width: 15px;
+  height: 15px;
+  background: url('~assets/img/appic/asstpx.png') -160px -5px;
+}
+
+.bg-j2 {
+  width: 15px;
+  height: 15px;
+  background: url('~assets/img/appic/asstpx.png') -160px -30px;
+}
+
+.bg-j3 {
+  width: 15px;
+  height: 15px;
+  background: url('~assets/img/appic/asstpx.png') -160px -55px;
+}
+
+.bg-t1 {
+  width: 63px;
+  height: 63px;
+  background: url('~assets/img/appic/asstpx.png') -5px -86px;
+}
+
+.bg-t2 {
+  width: 64px;
+  height: 63px;
+  background: url('~assets/img/appic/asstpx.png') -86px -5px;
+}
+
+.bg-t3 {
+  width: 63px;
+  height: 63px;
+  background: url('~assets/img/appic/asstpx.png') -78px -86px;
+}
+
+.f-441 {
+  width: 20px;
+  height: 20px;
+  background: transparent url('~assets/img/appic/dice.png') no-repeat center top;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.f-442 {
+  width: 20px;
+  height: 20px;
+  background: transparent url('~assets/img/appic/knife_xa.png') no-repeat center top;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.f-443 {
+  width: 20px;
+  height: 20px;
+  background: transparent url('~assets/img/appic/cup_aw.png') no-repeat center top;
+  background-size: cover;
+  margin: 0 auto;
+}
