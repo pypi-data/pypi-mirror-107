@@ -1,0 +1,48 @@
+{% if request.user.is_superuser %}
+<style>
+  :root {
+    --dj-admin-bg:  rgba(74, 74, 74, 0.15);
+    --dj-admin-icon-fill: #000;
+  }
+</style>
+<div class='dj-admin-marquee' style="background: var(--dj-admin-bg); display: flex; align-items: center; justify-content: flex-end; ">
+  {% if object %}
+    <a class='dj-admin-marquee__link' href="{{ object_admin_url(object) }}" target="_blank" style="display: flex; align-items: center; margin: 0 10px;">
+      <span class='dj-admin-marquee__icon' style='margin-right: 8px; display: flex; align-items: center; justify-content: center; '>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path d="M1.6 11.04L0 16.0001L4.96 14.4001L1.6 11.04Z" fill="var(--dj-admin-icon-fill)"/>
+            <path d="M10.53 2.08407L2.72363 9.89038L6.11769 13.2844L13.924 5.47812L10.53 2.08407Z" fill="var(--dj-admin-icon-fill)"/>
+            <path d="M15.7602 2.48L13.5202 0.24C13.2002 -0.08 12.7202 -0.08 12.4002 0.24L11.6802 0.96L15.0402 4.32L15.7602 3.6C16.0802 3.28 16.0802 2.8 15.7602 2.48Z" fill="var(--dj-admin-icon-fill)"/>
+          </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="16" height="16" fill="white"/>
+          </clipPath>
+        </defs>
+        </svg>
+      </span>
+      <p class='dj-admin-marquee__text'>{% trans %} Редактирование страницы {% endtrans %}</p>
+    </a>
+  {% endif %}
+
+  <a class='dj-admin-marquee__link' href="{{ admin_url() }}" target="_blank" style="display: flex; align-items: center; margin: 0 10px;">
+   
+    <span class='dj-admin-marquee__icon' style='margin-right: 8px; display: flex; align-items: center; justify-content: center; '>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+          <path d="M8.11401 7.70725C7.05518 7.70725 6.13831 7.32749 5.38916 6.57822C4.64001 5.82908 4.26025 4.91246 4.26025 3.8535C4.26025 2.79491 4.64001 1.87817 5.38928 1.12878C6.13855 0.379759 7.0553 0 8.11401 0C9.17297 0 10.0896 0.379759 10.8387 1.1289C11.5879 1.87804 11.9678 2.79479 11.9678 3.8535C11.9678 4.91246 11.5879 5.8292 10.8386 6.57834C10.0894 7.32736 9.17261 7.70725 8.11401 7.70725V7.70725Z" fill="var(--dj-admin-icon-fill)"/>
+          <path d="M1.37097 12.3033C1.39258 11.9916 1.43628 11.6515 1.50061 11.2923C1.56555 10.9305 1.64917 10.5885 1.74927 10.2759C1.85266 9.95275 1.99329 9.63366 2.16711 9.32787C2.34753 9.01049 2.55945 8.73413 2.79724 8.50671C3.0459 8.2688 3.35034 8.07751 3.70239 7.93799C4.05322 7.79919 4.44202 7.72888 4.85791 7.72888C5.02124 7.72888 5.1792 7.7959 5.48425 7.99451C5.672 8.11694 5.8916 8.25854 6.13672 8.41516C6.34631 8.5487 6.63025 8.67382 6.98096 8.78711C7.32312 8.89782 7.67053 8.95397 8.01343 8.95397C8.35632 8.95397 8.70361 8.89782 9.04614 8.78711C9.39648 8.67395 9.68042 8.54882 9.88977 8.41528C10.1326 8.26013 10.3523 8.11853 10.5428 7.99438C10.8475 7.79578 11.0056 7.72876 11.1689 7.72876C11.585 7.72876 11.9736 7.79919 12.3243 7.93811C12.6761 8.07739 12.9807 8.26867 13.2296 8.50683C13.4673 8.73437 13.6793 9.01062 13.8595 9.32787C14.0332 9.63366 14.1738 9.95263 14.2773 10.276C14.3773 10.5886 14.4609 10.9305 14.5259 11.2923C14.5902 11.651 14.6339 11.9912 14.6555 12.3037C14.6768 12.6098 14.6875 12.9276 14.6875 13.2485C14.6875 14.0837 14.422 14.7599 13.8984 15.2585C13.3813 15.7506 12.6971 16.0002 11.8651 16.0002H4.16101C3.32898 16.0002 2.64502 15.7507 2.12781 15.2585C1.60413 14.7602 1.33862 14.084 1.33862 13.2484C1.33875 12.926 1.34961 12.608 1.37097 12.3033V12.3033Z" fill="var(--dj-admin-icon-fill)"/>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="16" height="16" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </span>
+    <p class='dj-admin-marquee__text' >{% trans %} Панель администратора {% endtrans %}</p>
+  </a>
+</div>
+
+{% endif %}
