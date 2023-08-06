@@ -1,0 +1,10 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+distributions_wahib.egg-info/PKG-INFO
+distributions_wahib.egg-info/SOURCES.txt
+distributions_wahib.egg-info/dependency_links.txt
+distributions_wahib.egg-info/not-zip-safe
+distributions_wahib.egg-info/top_level.txt
