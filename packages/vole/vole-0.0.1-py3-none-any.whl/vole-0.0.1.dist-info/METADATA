@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vole
+Version: 0.0.1
+Summary: A package for OT2 (Still in development).
+Home-page: UNKNOWN
+Author: Russell Ngo
+Author-email: biernjk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# vole
+
+
