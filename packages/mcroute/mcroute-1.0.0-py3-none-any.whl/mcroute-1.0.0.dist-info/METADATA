@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mcroute
+Version: 1.0.0
+Summary: Markov chain modelling of transportation networks.
+Home-page: https://github.com/wklumpen/mcroute
+Author: Willem Klumpenhouwer
+Author-email: willem@klumpentown.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: decorator
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# MCRoute
+Markov chain modelling of transportation networks.
+
+This package enables the modelling of networks (transportation or otherwise) in
+which movement through the network is represented by discrete state Markov
+chains.
+
+MCRoute extends the [NetworkX](https://networkx.org/documentation/stable/index.html)
+module, requiring each node and edge to have an accompanying transition
+probability matrix that can be used during network traversal calculations. The
+package also incldues utility functions for constructing transition matrices
+from data and theoretical distributions.
+
+## Get Started
+
+## Citing This Package
+Please cite the following paper (currently under preparation):
+
+**W. Klumpenhouwer** MCRoute: A Generalized Methodology for Modelling 
+Transportation Networks with Markov Chains. (Under Preparation)
+
