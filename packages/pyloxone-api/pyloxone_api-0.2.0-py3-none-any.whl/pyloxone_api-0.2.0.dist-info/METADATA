@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyloxone-api
+Version: 0.2.0
+Summary: A package for interacting at a low(ish) level with a Loxone miniserver via the Loxone websocket API
+Home-page: https://github.com/JoDehli/pyloxone-api
+License: Apache-2.0
+Author: Joachim Dehli
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Home Automation
+Requires-Dist: httpx (>=0.18.1,<0.19.0)
+Requires-Dist: pycryptodome (>=3.10.1,<4.0.0)
+Requires-Dist: websockets (>=9.0.1,<10.0.0)
+Project-URL: Bug Tracker, https://github.com/JoDehli/pyloxone-api/issues
+Project-URL: Repository, https://github.com/JoDehli/pyloxone-api
+Description-Content-Type: text/markdown
+
+# pyloxone-api
+Api for pyloxone.
+
