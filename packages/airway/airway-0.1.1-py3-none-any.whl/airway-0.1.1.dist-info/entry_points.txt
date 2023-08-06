@@ -1,0 +1,4 @@
+[console_scripts]
+airway = airway_pipeline:run
+airway-vis = airway_vis:run
+
