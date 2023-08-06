@@ -1,0 +1,11 @@
+wud/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+wud/aws.py,sha256=cnkIFRnH6LE3Mlr2UHffLvtYMqbWIufoPZp5ZZ0jtQk,5072
+wud/football.py,sha256=u6J6xTMOE7W7OeoR8-P4BdgiBVM6wrwNdndfqs7xz1A,2865
+wud/football_team_name.csv,sha256=2nvzKIoDLlyKI5TDc0Ypzkz9Rr2Jg15SjiI63MFjaB4,6408
+wud/helper.py,sha256=yxIoJcKsP1iW2FgB8lLddaBeBXpaFeH2lumKpjPdMR4,3717
+wud/linebot.py,sha256=lo4WoqqTjYZwur5FfgRzvWTjQqALQwf6RwFvX4aZ6lE,3958
+wud/scrap.py,sha256=JP3fhtY3Q9UsJw1qHEw5i-Ittq7VHSSSCegeK5Ggsjw,1531
+wud-0.1.9.dist-info/METADATA,sha256=gv9m4ZP4mr8WRSG00RFCvydsLE6SLAycPJac19tJmLw,1131
+wud-0.1.9.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+wud-0.1.9.dist-info/top_level.txt,sha256=cWTUXAKk-4tbtanGJQx0tVoslCia3TvsfyRdwrb1AcM,4
+wud-0.1.9.dist-info/RECORD,,
