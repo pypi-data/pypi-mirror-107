@@ -1,0 +1,17 @@
+cressp/__init__.py,sha256=HXdhAZPJpJWDrkrTmFL0Y5Wg0ku1wRfvgdjLxCrfOGw,220
+cressp/__main__.py,sha256=CsGrVtZmTl4kZ8MIIOcTI9pr_or1Y2SuaDpNjmJrcvk,27767
+cressp/cross_reactivity_prediction/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+cressp/cross_reactivity_prediction/main.py,sha256=rktUPoJBl2efD0CtYcXM39754aOErBsizF5OZ1N17Rw,34400
+cressp/data/__init__.py,sha256=7MbnrzFX1rGlsomtBNsAUn5sdNgwwG2syEwIVc0bwkM,25
+cressp/data/blosum62.tsv.gz,sha256=fs1IYbIj_QOgufP-R4-NO3cNvxWPpMWY9McawK3BaJE,2048
+cressp/data/parse_data.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cressp/main/cressp.py,sha256=0D3O3hF2lfaTrn9BjYOWnBiSYUgk9h8fS7hbGeeJhFo,17243
+cressp/structural_property_estimation/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+cressp/structural_property_estimation/main.py,sha256=j6CHqB2m0gHp8dk9DBb_AY_wuPgem2QYP188de_JWBI,38838
+cressp/web_application/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+cressp-0.0.12.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+cressp-0.0.12.dist-info/METADATA,sha256=fORPog2wRlyIDevl6d7vqThbxjxg3COmWZlLvWTmTRs,8751
+cressp-0.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cressp-0.0.12.dist-info/entry_points.txt,sha256=_IvUVkiHza3SGyoqAdTKCLxghq-4Mx2WW5ra9XJNRZk,51
+cressp-0.0.12.dist-info/top_level.txt,sha256=9L2PdNhIOV_zBCvjGOiK0jYabQoW3VaKw9fF1N0t0ZQ,7
+cressp-0.0.12.dist-info/RECORD,,
