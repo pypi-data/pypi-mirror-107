@@ -1,0 +1,7 @@
+colored
+dict-toolbox>=2
+jinja2
+jsonnet
+pop>=16.4
+pyyaml>=5.1
+toml
