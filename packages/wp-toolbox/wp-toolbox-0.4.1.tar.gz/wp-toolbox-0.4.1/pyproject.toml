@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wp-toolbox"
+version = "0.4.1"
+description = "Library for accessing linguistic annotated texts (https://wp-toolbox.thomas-zastrow.de)"
+authors = ["Thomas Zastrow <thomas.zastrow@mpcdf.mpg.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+elasticsearch = "^7.12.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
