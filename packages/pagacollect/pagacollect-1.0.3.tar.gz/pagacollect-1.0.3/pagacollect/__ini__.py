@@ -1,0 +1,1 @@
+from .paga_collect import Collect
