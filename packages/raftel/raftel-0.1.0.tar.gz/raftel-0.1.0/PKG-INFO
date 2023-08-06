@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: raftel
+Version: 0.1.0
+Summary: package to plot s2id easily
+Author: mitbal
+Author-email: mit.iqi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: s2sphere (>=0.2.5,<0.3.0)
+Requires-Dist: staticmap (>=0.5.5,<0.6.0)
