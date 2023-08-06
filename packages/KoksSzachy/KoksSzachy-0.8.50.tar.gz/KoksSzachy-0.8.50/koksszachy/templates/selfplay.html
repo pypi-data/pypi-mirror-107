@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KoksSzachy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <link rel="stylesheet" type="text/css" href="static/lib/chessboard.min.css">
+
+  <link rel="icon" type="image/png" href="static/favicon.png">
+
+  <script src="https://kit.fontawesome.com/fcb072c13d.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script src="static/lib/jquery.min.js"></script>
+  <script src="static/lib/chessboard.min.js"></script>
+  <script src="static/lib/chess.js"></script>
+</head>
+<body >
+  <div class="navbar">
+    <img class="kokslogo" src="static/logo.png">
+  </div>
+  <div class="main">
+    <div  class="board-wrapper">
+      <div id="board"></div>
+      <div class="button-wrapper">
+        <button id="newGameButton" class="buttons newgame" type="button" onclick="newGame()"><div class="text-wrapper"><p>New Game</p></div></button>
+
+        <form action='startAnalysis'>
+          <button id="analysisButton" class="buttons analysis" type="button" onclick="analysis()"><div class="text-wrapper"><p>Analysis</p></div></button>
+        </form>
+      </div>
+    </div>
+    <div class="inf-area">
+      <textarea id="pgnview" rows="10" style="margin-bottom: 30px;" readonly></textarea>
+      <button id="selfplay" type="button" onclick="location.href='/';">Home</button>
+    </div>
+
+    <script type="text/javascript">
+      var $SCRIPT_ROOT = "";
+      var board;
+      var chess = new Chess();
+      
+      function onDrop(source, target){
+        var move = chess.move({
+          from: source,
+          to: target,
+          promotion: 'q'
+        });
+        if (move === null) return 'snapback';
+      };
+
+      function onChange(){
+        pullMove();
+        updatePGN();
+      };
+
+      function onSnapEnd(){
+        board.position(chess.fen());
+      };
+
+      var config = {
+        draggable: false,
+        position:'start',
+        //onDragStart: onDragStart,
+        onDrop: onDrop,
+        onChange: onChange,
+        onSnapEnd: onSnapEnd
+      };
+
+      function pullMove(){
+        if (chess.game_over()) return;
+        fen = chess.fen();
+        $.get($SCRIPT_ROOT + "/spinfo/" + fen, function(data){
+          chess.move(data, {sloppy:true});
+          board.position(chess.fen());
+          console.log('move requested');
+          console.log(data);
+        })
+      };
+
+      setTimeout(function(){
+        board = Chessboard('board', config);
+      }, 0);
+
+      function newGame(){
+        chess.reset();
+        board.start();
+        console.log('New game');
+        document.getElementById('pgnview').innerHTML = "";
+      }
+
+      function analysis(){
+        var content = [chess.pgn()];  
+        pgn_dict = {"pgn":content[0],"pgnFile":"", "analyse":"true"};
+        url_encoded = jQuery.param(pgn_dict);
+        window.open(`https://lichess.org/paste?${url_encoded}`);
+      }
+        
+      textarea = document.getElementById('pgnview');
+      function updatePGN(){
+        setInterval(function(){
+          textarea.value = chess.pgn({ max_width: 5, newline_char: '\n' });
+          textarea.scrollTop = textarea.scrollHeight; // autoscroll, ostatni ruch zawsze na dole
+        }, 1000);
+      };
+
+      window.onload = function(){ //init
+        pullMove()
+      };  
+
+    </script>
+  </div>
+</body>
+</html>
