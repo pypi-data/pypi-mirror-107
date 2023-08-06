@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dynbike-functions
+Version: 0.1.4
+Summary: A small package with collection of useful functions for the Dynamic Bike
+Author: pomkos
+Author-email: albeithome@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
