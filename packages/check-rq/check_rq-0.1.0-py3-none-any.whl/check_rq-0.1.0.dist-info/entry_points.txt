@@ -1,0 +1,3 @@
+[console_scripts]
+check_rq = check_rq.check_rq:main
+
