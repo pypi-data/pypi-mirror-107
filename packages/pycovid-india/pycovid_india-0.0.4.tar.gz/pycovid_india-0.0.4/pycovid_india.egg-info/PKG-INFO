@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pycovid-india
+Version: 0.0.4
+Summary: Indian COVID-19 Vaccine and Cases Status Information
+Home-page: UNKNOWN
+Author: T.THAVASI GTI
+Author-email: ganeshanthavasigti1032000@gmail.com
+License: MIT
+Download-URL: https://github.com/THAVASIGTI/pycovid_india/archive/refs/heads/master.zip
+Description: # india_covid
+        Indian COVID-19 Vaccine and Cases Status
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
