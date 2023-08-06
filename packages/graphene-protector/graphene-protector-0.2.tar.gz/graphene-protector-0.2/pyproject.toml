@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "graphene-protector"
+version = "0.2"
+description = "Protects graphene against malicious queries"
+authors = ["alex <devkral@web.de>"]
+license = "MIT"
+repository = "https://github.com/devkral/graphene-protector"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+graphene = "*"
+graphene-django = { version = "*", optional=true }
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+graphene-django = "*"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
