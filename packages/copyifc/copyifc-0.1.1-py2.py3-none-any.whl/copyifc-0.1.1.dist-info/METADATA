@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: copyifc
+Version: 0.1.1
+Summary: Author:     LanHao
+Home-page: https://github.com/bigpangl/copyifc
+Author: LHao
+Author-email: bigpangl@163.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# copyifc
+
+### 使用示例
+
+```python
+import ifcopenshell
+from ifcopenshell.file import file
+from copyifc.copyifc import IDCache
+
+ifc_file1 = ifcopenshell.open("test.ifc")
+
+ifc_to = file()
+
+comb = IDCache(ifc_to)
+ins = ifc_file1.by_type("ifcroot")[0]  # 其他查询
+ins_new = comb.recursion_copy(ins)
+
+```
+
+仅仅提供一个递归调用，复制传入的entity_instance以及该entity_instance 指向的其他entity_instance
+
+通过原始文件的 globalid 映射目标文件中的entity_instance，防止重复复制。
+
+同时在复制时修改globalid。
+
+### 为何？
+
+当我尝试使用ifcopenshell自带的add功能时，发现这么一个问题：
+
+在复制不同的ifc文件中的部分对象到同一个ifc文件中去时，会出现一些显示异常。
+
+通过分析，揣测是在复制过程中，部分globalid相同的entity_instance，被共用了，但其实两者可能不一样。
+
+所以尝试自己通过递归手动复制来完成。
+
+并且达到了自己的效果。
+
+### ifcopenshell 依赖
+
+项目依赖于 aconda 中ifcopenshell 库,未曾在项目依赖中标注,因为pip 无法直接安装aconda的库.请自行安装.
+
