@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hololive
+Version: 0.0.17
+Summary: Gets hololive streams
+Home-page: https://github.com/marnixah/hololive-python-api
+Author: Marnixah
+Author-email: hololive@marnixah.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/marnixah/hololive-python-api/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# hololive-python-api
+
+## Installation
+```bash
+pip install hololive
+```
+
+## Usage
+
+```python
+from hololive import hololive
+streams = await hololive.get_streams()
+
+for stream in streams:
+  print(stream.title_jp) # 【Duolingo】🍑STADYYYYYYYYYYYY!!!!!!!!! #２🍑【桃鈴ねね/ ホロライブ】
+  print(stream.talent_jp) # 桃鈴ねね
+  print(stream.starttime) # 2021-05-01 03:00:00
+  print(stream.url) # https://www.youtube.com/watch?v=MWeu_kf2L94
+  ```
+
+
