@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/saxon.egg-info/PKG-INFO
+src/saxon.egg-info/SOURCES.txt
+src/saxon.egg-info/dependency_links.txt
+src/saxon.egg-info/top_level.txt
