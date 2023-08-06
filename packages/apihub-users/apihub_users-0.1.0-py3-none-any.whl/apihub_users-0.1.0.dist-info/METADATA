@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: apihub-users
+Version: 0.1.0
+Summary: user and subscription management for APIHub
+License: MIT
+Author: Yifan Zhang
+Author-email: freqyifan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.4.15,<2.0.0)
+Requires-Dist: SQLAlchemy-Utils (>=0.37.4,<0.38.0)
+Requires-Dist: fastapi (>=0.65.1,<0.66.0)
+Requires-Dist: fastapi-jwt-auth (>=0.5.0,<0.6.0)
+Requires-Dist: prometheus-client (>=0.7.0,<0.8.0)
+Requires-Dist: psycopg2-binary (>=2.8.6,<3.0.0)
+Requires-Dist: python-dotenv (>=0.17.1,<0.18.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: redis (>=3.5.3,<4.0.0)
+Requires-Dist: tanbih-pipeline (>=0.11.8,<0.12.0)
+Requires-Dist: uvicorn (>=0.13.4,<0.14.0)
