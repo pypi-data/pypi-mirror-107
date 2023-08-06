@@ -1,0 +1,13 @@
+rollet/__init__.py,sha256=y-7iX3YgmUyYtx4KKV76w_-r2XqmEITdmpXmCA1VWuw,150
+rollet/article.py,sha256=0ojgzkrM_SVuQ6L8NB_psHqozK_sKHzLErBbjujpzB8,3264
+rollet/blacklist,sha256=ug9BT_nLz_IYSE2PkIkAMhMAE4GyMGf6lSicb4GJNFM,113975
+rollet/extractor.py,sha256=1EF3s9TOiYo3R1OYyNGw50Hayee8Es7Pvr2GSOMCXv0,5089
+rollet/rollet.py,sha256=1WS-_RuvKVu3xoYeYEI8kGiHrJkQd7gVG1wRBZt_974,1095
+rollet/runtime.py,sha256=60O9x1ww6Hsi-jro__oJcp8EuOF5IeWXdyHEK1Ha0J8,2856
+rollet/settings.py,sha256=aO-v15nfHNwIUX9-rqL6mQiX4e7V0eRpoF_CkzpNr9M,3598
+rollet-0.0.1a8.dist-info/LICENSE,sha256=loFJUMLXfi281us7vzXnpIDN51Q8d_PsOrW4x28pnCw,1499
+rollet-0.0.1a8.dist-info/METADATA,sha256=caNEIGzVBKyY5Bf3YeDy51_cJk4CArp8rxE-OQybDPo,2752
+rollet-0.0.1a8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rollet-0.0.1a8.dist-info/entry_points.txt,sha256=2GcQb4nPDI-rDjDTiYXGvXG9DlZqZXBw5no1xh85Kqo,58
+rollet-0.0.1a8.dist-info/top_level.txt,sha256=kgYm5QdvZEmRkNrS4oXlrJ9EQdL27Lc5qbSEo2mqqVg,7
+rollet-0.0.1a8.dist-info/RECORD,,
