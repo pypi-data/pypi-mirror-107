@@ -1,0 +1,3 @@
+[console_scripts]
+cowherd = cowherd.run_gui:main
+
