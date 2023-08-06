@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aibro
+Version: 0.0.25
+Summary: Seamingless model training
+Home-page: https://github.com/ziyincody/AIbro_cli
+Author: AIpaca.ai
+Author-email: codyw@aipaca.ai
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ziyincody/AIbro_cli/issues
+Description: # Develop AIbro_lib
+        1. git clone the repo to local computer
+        2. `python3 -m venv venv; .venv/bin/activate`
+        3. `pip install -r requirements.txt`
+        4. Create a `.env` file to contain environment variables:
+        ```
+        SERVER_HOST="<YOUR SERVER HOST>"
+        IS_LOCAL=true
+        ```
+        5. Make sure the debug AIbro server is on and `SERVER_HOST` in `.env` is equal to the server of your choice
+        6. Run the function of your choice to debug
+        
+        # Code review
+        All new changes should be reviewed before merged.
+        
+        # Update dependencies
+        DO NOT directly run `pip install` or `pip freeze`. Instead, add the library to `requirements.in` then run `pip-compile` for better dependency management (need to run `pip install pip-tools` first)
+        
+        # Update library versions
+        1. Your change is reviewed and merged
+        2. Pump version number in `setup.py`
+        3. run `rm -r dist; python3 -m build; python3 -m twine upload --repository testpypi dist/*`
+        4. Check that your version has been updated
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

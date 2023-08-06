@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+aibro/__init__.py
+aibro/sio.py
+aibro/test.py
+aibro/train.py
+aibro/utils.py
+aibro.egg-info/PKG-INFO
+aibro.egg-info/SOURCES.txt
+aibro.egg-info/dependency_links.txt
+aibro.egg-info/requires.txt
+aibro.egg-info/top_level.txt
