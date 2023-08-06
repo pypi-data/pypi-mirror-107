@@ -1,0 +1,7 @@
+numpy
+tqdm
+scipy
+jax
+numpyro
+arviz
+pyarrow
