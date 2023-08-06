@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fluent_discourse/__init__.py
+src/fluent_discourse/discourse.py
+src/fluent_discourse/errors.py
+src/fluent_discourse.egg-info/PKG-INFO
+src/fluent_discourse.egg-info/SOURCES.txt
+src/fluent_discourse.egg-info/dependency_links.txt
+src/fluent_discourse.egg-info/requires.txt
+src/fluent_discourse.egg-info/top_level.txt
