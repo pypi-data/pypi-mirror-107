@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kvick
+Version: 0.0.0
+Summary: Python bindings for the Kvick API
+Home-page: https://github.com/kvickapi/kvick-python
+Author: Kvick
+Author-email: support@kvick.ai
+License: UNKNOWN
+Keywords: kvick,api,annotation,labeling,categorization
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: requests (>=2.25.0)
+
+UNKNOWN
+
