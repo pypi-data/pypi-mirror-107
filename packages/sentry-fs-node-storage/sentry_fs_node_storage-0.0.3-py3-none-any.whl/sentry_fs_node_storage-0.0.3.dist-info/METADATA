@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sentry-fs-node-storage
+Version: 0.0.3
+Summary: Sentry File System Node Storage
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: zstandard
+
+# Sentry File System Node Storage
+
+Sentry alternative node storage backend working on file system 
+
+
