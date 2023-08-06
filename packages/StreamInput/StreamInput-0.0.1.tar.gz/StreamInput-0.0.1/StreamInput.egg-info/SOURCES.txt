@@ -1,0 +1,8 @@
+README.md
+setup.py
+StreamInput.egg-info/PKG-INFO
+StreamInput.egg-info/SOURCES.txt
+StreamInput.egg-info/dependency_links.txt
+StreamInput.egg-info/top_level.txt
+streaminput/__init__.py
+streaminput/streaminput.py
