@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PyRapidML
+Version: 1.0.0
+Summary: An open source and low code machine learning library for quick and robust analysis
+Home-page: https://github.com/Zainali5/PyRapidML
+Author: Zain Ali
+Author-email: zainbalouch3@gmail.com
+License: UNKNOWN
+Description: # PyRapidML
+        PyCaret is an open source Python machine learning library inspired by the Pycaret Python Package
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

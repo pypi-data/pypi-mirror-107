@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PyRapidML/__init__.py
+PyRapidML/datasets.py
+PyRapidML/regression.py
+PyRapidML/utils.py
+PyRapidML.egg-info/PKG-INFO
+PyRapidML.egg-info/SOURCES.txt
+PyRapidML.egg-info/dependency_links.txt
+PyRapidML.egg-info/top_level.txt
