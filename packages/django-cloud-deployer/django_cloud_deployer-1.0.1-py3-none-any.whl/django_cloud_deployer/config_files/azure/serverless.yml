@@ -1,0 +1,39 @@
+service: {{ projectName }}
+
+custom: 
+  envVariables: ${file(./env.yml)}
+
+frameworkVersion: '2'
+
+provider:
+  name: azure
+  region: West Europe
+  runtime: python3.8 
+  environment: ${self:custom.envVariables}
+
+plugins:
+  - serverless-azure-functions
+  - serverless-python-requirements
+
+package:
+  exclude:
+    - env/**
+    - .env/**
+    - local.settings.json
+    - .vscode/**
+    - __pycache__/**
+    - node_modules/**
+    - .python_packages/**
+    - .funcignore
+    - package.json
+    - package-lock.json
+    - .gitignore
+    - .git/**
+
+functions:
+  app:
+    handler: cloud_router.main
+    events:
+      - http: true
+        authLevel: anonymous
+        route: '{*segments}'
