@@ -1,0 +1,17 @@
+citeurl/__init__.py,sha256=zXE-w2QapckAw5G4q3JVyWmIpvpfNsduKSbxuPhe1lM,41513
+citeurl/builtin-templates.yaml,sha256=cHH6alWU4BxFIVeNlIDTkZdaLgngN2DKTUVaeaaiUzM,83937
+citeurl/cli.py,sha256=AtMzla6OutrOnSDS_eeoFngXWWidvxbbfZDXOmZrfhk,12527
+citeurl/mdx.py,sha256=k_wGUbFPlACMuWCstWETlt5XL0vYeQga4GWJjbpDhZw,3243
+citeurl/web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citeurl/web/citeurl.js,sha256=fI-aysQ2ci53vIeQ2gfeVzqPJ6N90p8lp74voD3XSlU,11606
+citeurl/web/logo.svg,sha256=t1DPmIhbudXxy18Z9taipEj4ZLM2_OJHhT8KBBxz-KU,7812
+citeurl/web/makejs.py,sha256=p8y-K6nvMXMh8L0Bm89f9U7l2r6Ys7nxSu6aS4F5ADA,4809
+citeurl/web/resources.py,sha256=wInJkUs5cl-2lzJ6LAbSsIgDrYeD8YIfAjvg3kSVicU,6698
+citeurl/web/server.py,sha256=Mh_hPBHzmgwmBAJZY-K_3KQ_SZrouapjG11bbT0ljoY,7552
+citeurl/web/style.css,sha256=e1wbzDaFU1jKoOwxhWSVhRnOOmecMl_6jxjxFXYEP5U,4124
+citeurl-8.3.9.dist-info/LICENSE.md,sha256=T6b3vscLORAeVZWYfYDSVFuKq1X-gA6wOQsuYJfXtiU,1065
+citeurl-8.3.9.dist-info/METADATA,sha256=BqRNEBw7OF4W4RgsFBItdkRk0v7fXYuy6KwYYlUjSHE,6039
+citeurl-8.3.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+citeurl-8.3.9.dist-info/entry_points.txt,sha256=gEfwoyJyirslywLJOEaJtkryA8_brtvV5YBNrW4RUXE,108
+citeurl-8.3.9.dist-info/top_level.txt,sha256=WgpwPvgcGWJgfkw4r3EKesIT33CQEKoU50D4InqJams,8
+citeurl-8.3.9.dist-info/RECORD,,
