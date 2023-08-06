@@ -1,0 +1,15 @@
+README.md
+setup.py
+ansys/grpc/mapdl/C_StreamGrpc_pb2.py
+ansys/grpc/mapdl/C_StreamGrpc_pb2_grpc.py
+ansys/grpc/mapdl/__init__.py
+ansys/grpc/mapdl/_version.py
+ansys/grpc/mapdl/ansys_kernel_pb2.py
+ansys/grpc/mapdl/ansys_kernel_pb2_grpc.py
+ansys/grpc/mapdl/mapdl_pb2.py
+ansys/grpc/mapdl/mapdl_pb2_grpc.py
+ansys_grpc_mapdl.egg-info/PKG-INFO
+ansys_grpc_mapdl.egg-info/SOURCES.txt
+ansys_grpc_mapdl.egg-info/dependency_links.txt
+ansys_grpc_mapdl.egg-info/requires.txt
+ansys_grpc_mapdl.egg-info/top_level.txt

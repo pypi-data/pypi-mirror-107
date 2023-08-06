@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: ansys-grpc-mapdl
+Version: 0.4.0
+Summary: Package for ansys-grpc-mapdl python gRPC client built on 05:22:22 on 29 May 2021
+Home-page: https://github.com/pyansys/protos-mapdl
+Maintainer-email: alexander.kaszynski@ansys.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5.*

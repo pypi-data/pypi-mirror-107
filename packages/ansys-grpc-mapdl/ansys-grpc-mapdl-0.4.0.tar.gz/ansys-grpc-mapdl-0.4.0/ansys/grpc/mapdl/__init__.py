@@ -1,0 +1,1 @@
+from ansys.grpc.mapdl._version import __version__
