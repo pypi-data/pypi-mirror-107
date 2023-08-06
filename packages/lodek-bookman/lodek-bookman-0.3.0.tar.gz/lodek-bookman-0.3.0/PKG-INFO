@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lodek-bookman
+Version: 0.3.0
+Summary: Small CLI tool to manage a local library.
+Home-page: https://github.com/Lodek/bookman
+Author: Bruno Gomes
+Author-email: lodek@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, https://github.com/Lodek/bookman
+Description-Content-Type: text/markdown
+
+# About
+Bookman is a simple manager for books.
+
+Bookman uses a convention to generate books file names.
+It integrates with Google Books API to fetch information for a book and it generates a bookman formatted file name.
+
+Combined with `fzf` it's easy to find books.
+
+The bookname fileconvention is as follows:
+
+```
+[tag1][tag2]Author-One,Author-Two_Book-Title(2000)_ISBN.pdf
+```
+
+Tags can be used by bookman to open all books with a given tag, for instance.
+
