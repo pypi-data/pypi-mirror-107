@@ -1,0 +1,4 @@
+[console_scripts]
+dedocxify = docxify:dedocxify
+docxify = docxify:docxify
+
