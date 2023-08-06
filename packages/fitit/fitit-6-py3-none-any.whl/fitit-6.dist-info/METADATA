@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fitit
+Version: 6
+Summary: A helper class for curve fitting
+Home-page: https://github.com/cdoolin/fitit
+Author: Callum Doolin
+Author-email: doolin@ualberta.ca
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
