@@ -1,0 +1,3 @@
+[console_scripts]
+torecsys = torecsys.cli:main
+
