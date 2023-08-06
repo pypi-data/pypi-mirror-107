@@ -1,0 +1,3 @@
+[console_scripts]
+fum = fum.fum:main
+
