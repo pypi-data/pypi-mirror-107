@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: winds
+Version: 0.0.1
+Summary: Packages having functions that calculate wind regimes as well as other important features for wind turbine design
+Home-page: UNKNOWN
+Author: Uel Palmer Kouame
+Author-email: UNKNOWN
+License: MIT
+Description: The package was created in an effort to facilitate the analysis of wind regimes and other important consideraion for wind turbines design, different function could be call and with the introduction of parameters can give the result of the needed fuction
+Keywords: conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
