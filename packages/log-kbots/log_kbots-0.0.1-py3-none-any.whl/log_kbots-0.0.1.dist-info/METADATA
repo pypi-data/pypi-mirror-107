@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: log-kbots
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/kbots-dga-kroton/log_kbots
+Author: Bruno Nascimento
+Author-email: bruno_freddy@hotmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/kbots-dga-kroton/log_kbots
+Project-URL: Download, https://github.com/kbots-dga-kroton/log_kbots/archive/main.zip
+Keywords: log_kbots,kbots,kroton
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# log_kbots
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square)](https://www.python.org/)
+
+
