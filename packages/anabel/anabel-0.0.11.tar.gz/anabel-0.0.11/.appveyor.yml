@@ -1,0 +1,21 @@
+build: false
+
+version: '{branch}-{build}'
+
+stack: python 3.7
+
+image: Ubuntu
+
+  #init:
+  #  - export PATH="$HOME/venv$PYTHON_VERSION/bin:$PATH"
+  #
+    #- python -m pip install --upgrade pip
+
+install:
+  - pip install -U setuptools
+  - python3 setup.py install
+
+test_script:
+  - pip install pytest
+  - pytest
+
