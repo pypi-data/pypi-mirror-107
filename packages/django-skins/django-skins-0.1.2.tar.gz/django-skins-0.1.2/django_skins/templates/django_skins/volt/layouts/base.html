@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'volt/includes/head.html' %}
+
+<body>
+
+  <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-md-none">
+      <a class="navbar-brand me-lg-5" href="/">
+          <img class="navbar-brand-dark" src="{% static 'volt/img/brand/light.svg' %}" alt="Volt logo" /> <img class="navbar-brand-light" src="{% static 'volt/img/brand/dark.svg' %}" alt="Volt logo" />
+      </a>
+      <div class="d-flex align-items-center">
+          <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  </nav>
+
+  {% include 'volt/includes/sidebar.html' %} 
+    
+  <main class="content">
+
+    {% include 'volt/includes/navigation.html' %}
+
+    {% block content %}{% endblock content %}
+
+    {% include 'volt/includes/settings-box.html' %}
+
+    {% include 'volt/includes/footer.html' %}
+
+  </main>
+
+  {% include 'volt/includes/scripts.html' %}
+
+</body>
+</html>
