@@ -1,0 +1,39 @@
+# Count unique characters
+
+**This package allows you to protect the unique characters that it receives at the entrance. Works with files and strings.**
+
+## Getting started
+
+**The program receives files as input, processes them and passes them to the script.**
+
+   ` parser.add_argument('--word', help='Enter the string') `
+
+   ` parser.add_argument('--file', type=argparse.FileType('r')) `
+
+   ` arguments = parser.parse_args() `
+
+## Function run_function
+**The function receives an object as an input and determines the type, transfers the
+data to a specific function.**
+
+_args - object witch is the result of parser.parse_args()_
+
+**Returns the number of unique characters**
+
+## Function count_letter
+
+**Counts unique letters from given string. To speed up the work, the function has a cache, which, in case of
+repetition of input data, returns a ready value.**
+
+_word - input string _
+
+**Returns <int> the number of unique characters**
+
+## Function count_letter_in_file
+
+**Function read string from file**
+
+_file -input file objects _
+
+**Returns the result of function _count_letter_ or None, when file is not valid**
+\ No newline at end of file
