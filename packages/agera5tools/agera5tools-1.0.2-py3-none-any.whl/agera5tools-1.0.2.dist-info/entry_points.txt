@@ -1,0 +1,3 @@
+[console_scripts]
+agera5tools = agera5tools.cmd:cli
+

@@ -1,0 +1,13 @@
+agera5tools/__init__.py,sha256=GunyI0mCFQ54bbIUU_0zdqiOFhayeGkcioSG8rAgu6s,393
+agera5tools/cmd.py,sha256=pT1r3EmZawspPSrs7F7oM1MxvzGmxu91uu-9acaV6fc,4798
+agera5tools/dump_clip.py,sha256=c9TBw11oXtppL6evcoOws_r-CPr5sQmlCrpU2-Vp34M,2248
+agera5tools/dump_grid.py,sha256=mi0FxDUjW4R0ra7NzYmcVoOYZnIu2y6Zejy8NLe1lYs,562
+agera5tools/extract_point.py,sha256=wH7kI3CChjJI6xymsnif5ICFaui6BMLdtDyN2KHUl9M,1306
+agera5tools/grid_elevation_landfraction.nc,sha256=bn8F8DYNZp8ZD2kbhc2zZRQ8r3FQ9b5JrWpvEGITStE,12522296
+agera5tools/util.py,sha256=fQ6o2vPKwoDofwVvdpBvJQls_3TP95xcjSjKgRGC6kk,6599
+agera5tools-1.0.2.dist-info/LICENSE,sha256=ncYeuVu8bIbPKSwDU2dZtu1thKXg3UWhfs4KwmubXsA,1070
+agera5tools-1.0.2.dist-info/METADATA,sha256=YsooINtp0lbfjVu8Wr9RJyN43FuhgioSEMzzFU-SJrU,9849
+agera5tools-1.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+agera5tools-1.0.2.dist-info/entry_points.txt,sha256=zVoc9J_MzmsMkI7q4lzlZpHaqRBYw9DT6Q9SUlu4NYs,53
+agera5tools-1.0.2.dist-info/top_level.txt,sha256=6ZFk5g0Rxwpb5gVgiI3KYbVZ1bVuAOYNcIK6wOvEg1E,12
+agera5tools-1.0.2.dist-info/RECORD,,
