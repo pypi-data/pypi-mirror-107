@@ -1,0 +1,17 @@
+blosc2/__init__.py,sha256=abGR16kuMIFM8lVghgTMwpBkZhu7atuLtZmvWSpV6nk,2010
+blosc2/utils.py,sha256=agg8tu0a7pSH9EP1xlMrEf3cnFIhjWZ-BxsRrskXiZw,18953
+blosc2/version.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+blosc2/blosc2_ext.cpython-39-x86_64-linux-gnu.so,sha256=1ouCnn_melgV2rVfVjaiaQPaoKrnfIyyQCXxm04eY7Q,1528336
+blosc2-0.1.6.dist-info/RECORD,,
+blosc2-0.1.6.dist-info/METADATA,sha256=R4qorIem00k4iGhZ95q0R3hwTvZMLltpp0p_KxM0v1c,1029
+blosc2-0.1.6.dist-info/top_level.txt,sha256=4xhCPjekmAas6rXRnzRerUfeEzP_RhpgmKzCmru5XFM,7
+blosc2-0.1.6.dist-info/WHEEL,sha256=WHZmBCeCas7sF8-Y4R3nMp_8zlWu6MyuKFHT6us2Trg,102
+blosc2-0.1.6.dist-info/LICENSE,sha256=pWZQ72lIjrZJKCp3kCptWtHTBVMVAUwYmH8KyV5tAlU,1620
+blosc2-0.1.6.data/data/lib/libblosc2.so,sha256=6ZR_te1iqFIomnQapdnvW54JI6Kff9ZB8pv7rDUMlxQ,1449224
+blosc2-0.1.6.data/data/lib/libblosc2.so.2.0.0,sha256=6ZR_te1iqFIomnQapdnvW54JI6Kff9ZB8pv7rDUMlxQ,1449224
+blosc2-0.1.6.data/data/lib/libblosc2.a,sha256=6tW2vSpf6sAOLeRuhDVqzzaiNPmJoscN8Sfs2T535_w,1768532
+blosc2-0.1.6.data/data/lib/libblosc2.so.2,sha256=6ZR_te1iqFIomnQapdnvW54JI6Kff9ZB8pv7rDUMlxQ,1449224
+blosc2-0.1.6.data/data/lib/pkgconfig/blosc.pc,sha256=zThUtHe2W1CjSW5ZGXvVulYb6zk6i9htqOzYk0pU-lk,377
+blosc2-0.1.6.data/data/include/blosc2.h,sha256=3xVv15eSTkQhzfHmezJs0K7bSk0G1KoZX_RamfTpV6A,76332
+blosc2-0.1.6.data/data/include/blosc2-common.h,sha256=WNXJHJos7waBr1hBCGp1IZagH04q3DPQ1GQ0TXILUSA,2858
+blosc2-0.1.6.data/data/include/blosc2-export.h,sha256=JXmBhmaM269oPieCAXEJ8khYbzblaOWxHS9hjrZUxrc,1710
