@@ -1,0 +1,171 @@
+@mixin bet_button_sw() {
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  font-family: "mmac";
+  font-size: 25px;
+  margin: 20px;
+  height: 90px;
+  width: 100px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin ready_bet() {
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  /*  width: 100px;
+    height: 50px;*/
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  /* display: block;*/
+  span {
+    line-height: 20px;
+    font-size: 0.91em;
+    padding: 30px;
+  }
+}
+
+@mixin image_bar_url($target) {
+  background-image: url($target);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bbg_bet_customer_board {
+  background: url("~assets/img/windows/logscreen_22.png");
+  background-size: 96% 100%;
+  background-position: center top;
+  background-repeat: no-repeat !important;
+  min-height: 500px;
+
+  table {
+    font-size: small;
+    width: 600px;
+    text-align: center;
+    display: inline-table;
+    .profit {
+      @include shadow_low()
+    }
+    .headline {
+      color: $tron;
+    }
+  }
+}
+
+.bet_icon:active, .bet_icon.disabled {
+  //transform: translate3d(0, $btn-box-height + 1, 0);
+  // -webkit-transform: translate3d(0, $btn-box-height + 1, 0);
+}
+
+.bet_icon {
+  &_x {
+    color: #b0d8f6;
+    background: url("~assets/img/bet_buttons/np0x.png");
+    @include bet_button_sw;
+    &:active {
+      background: url("~assets/img/bet_buttons/np11.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      color: #6fc1f6;
+    }
+
+    &.disabled {
+      color: #427995;
+    }
+  }
+  &_f {
+    color: #ffc6a9;
+    background: url("~assets/img/bet_buttons/cp0x.png");
+    @include bet_button_sw;
+    &:active {
+      background: url("~assets/img/bet_buttons/cp11.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: #ff8a47;
+    }
+
+    &.disabled {
+      color: #954a12;
+    }
+  }
+}
+
+.bet_run_ {
+  //tanniu
+  &red {
+    @include ready_bet;
+    @include image_bar_url("~assets/img/game/tanniu.png");
+    &:active {
+      color: #ff8a47;
+    }
+
+    &.disabled {
+      cursor: default;
+      @include image_bar_url("~assets/img/game/hanniu.png");
+      color: #6A6A6A;
+    }
+
+  }
+  &blue {
+    @include ready_bet;
+    @include image_bar_url("~assets/img/game/zanniu.png");
+    &:active {
+      color: #6fc1f6;
+    }
+
+    &.disabled {
+      cursor: default;
+      @include image_bar_url("~assets/img/game/hanniu.png");
+      color: #6A6A6A;
+    }
+  }
+}
+
+.jiangchi {
+  @include image_bar_url("~assets/img/game/jiangchi.png");
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+
+@media(min-width: 510px) {
+
+}
+
+@media(max-width: 510px) {
+  .bet_run_ {
+    &red {
+      text-align: center;
+      padding-left: 10px;
+    }
+    &blue {
+      text-align: center;
+      padding-left: 10px;
+    }
+  }
+
+  .bbg_bet_customer_board table {
+    width: 100%;
+  }
+
+}
