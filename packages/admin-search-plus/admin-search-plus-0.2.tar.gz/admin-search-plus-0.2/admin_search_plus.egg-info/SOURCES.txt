@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+admin_search_plus/__init__.py
+admin_search_plus/admin.py
+admin_search_plus.egg-info/PKG-INFO
+admin_search_plus.egg-info/SOURCES.txt
+admin_search_plus.egg-info/dependency_links.txt
+admin_search_plus.egg-info/requires.txt
+admin_search_plus.egg-info/top_level.txt
+admin_search_plus/__pycache__/__init__.cpython-37.pyc
+admin_search_plus/templates/admin/search_form.html
+admin_search_plus/templatetags/__init__.py
+admin_search_plus/templatetags/admin_search_plus.py
