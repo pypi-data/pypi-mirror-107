@@ -1,0 +1,13 @@
+mongomapper/__init__.py,sha256=og_pNLgcvtHtvt33bDPJOUe5Qee3R2eKTOxFcZH-E9M,594
+mongomapper/base.py,sha256=OlY5tVWP9onNZLT5S2liNA_orWRCu7Gos61ABKuc4tI,1154
+mongomapper/config.py,sha256=rhvunIJfEv9zeGRGElPpADcHOaYgnhzR4VMO-zku0DY,233
+mongomapper/encoders.py,sha256=TbkskITerdEiWcnYxCqwCKp-U7l7DCFsGFTttN51L68,225
+mongomapper/errors.py,sha256=Ts0giRDxsxFRiUwuVoLLE47xbZucPpVXbR9ggDz3Wv0,290
+mongomapper/query.py,sha256=OkLBLohDOmpqrHhC28OzMiF6HXuTwEMwcAIeaew6lFw,823
+mongomapper/reference.py,sha256=qt_pM_vfoMjZa8WBFHb4TVBrrekMwn-nZVz_J7rdP1U,679
+mongomapper/utils.py,sha256=RLygoSD_b-Mt_mz59U7whV9khxEU7uWJ0bj2Y0nOkHU,297
+mongomapper-1.0.0.dist-info/LICENSE,sha256=lORrg03-wSXbhvxVGm0eAOXxB5Sacg35DribHfMdeUo,1070
+mongomapper-1.0.0.dist-info/METADATA,sha256=mVFYmveC5ti_wnrenhjp0CA-BfHTeqNgtehPFKb0AOo,1534
+mongomapper-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mongomapper-1.0.0.dist-info/top_level.txt,sha256=1q7qsekR2USVHFCvMtCj1x-BoSthKIFrpcRpWyhaZeQ,12
+mongomapper-1.0.0.dist-info/RECORD,,
