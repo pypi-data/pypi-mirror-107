@@ -1,0 +1,12 @@
+web_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_crawler/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_crawler/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_crawler/web_crawler.py,sha256=XA0C_d_niKZbIwlpMs7inNWLvutbQAfJUczSGMOET70,471
+web_crawler_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_crawler_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_crawler_cli/web_crawler_cli.py,sha256=wpKbppZyiH41OvVIfeYhQrQg0NxvZIQnKj_1GnH6BVU,19
+py_webcrawler-0.1.0.dist-info/entry_points.txt,sha256=Wwxtx9CttqDS6KcXVM83CoV71zM0eWIRnXS1jO8ua24,67
+py_webcrawler-0.1.0.dist-info/LICENSE,sha256=JmHVzj00auD9KtzwBx8qCIFC4eeseSzoP2V_uLBudMs,1070
+py_webcrawler-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+py_webcrawler-0.1.0.dist-info/METADATA,sha256=B4BqbboXyBxmipkrvznTL0BlkCKIuzNFK4--tWIiP6c,349
+py_webcrawler-0.1.0.dist-info/RECORD,,
