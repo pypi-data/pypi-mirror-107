@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pytgen
+Version: 0.0.2
+Summary: A simple traffic generator
+Home-page: https://github.com/ashutshkumr/pytgen
+Author: Ashutosh Kumar
+Author-email: ashutshkumr@gmail.com
+License: MIT
+Keywords: pytgen
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pytgen
+
+A simple traffic generator
+
+### Install
+
+```bash
+python -m pip install --upgrade pytgen
+```
+
+### Development Setup
+
+```bash
+git clone https://github.com/ashutshkumr/pytgen && cd pytgen
+make setup && make init
+```
+
+
