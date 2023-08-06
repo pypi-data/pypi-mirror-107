@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hej
+Version: 0.1.3
+Summary: A collection of useful tools
+Home-page: https://github.com/flystarhe/hej
+Author: hejian
+Author-email: flystarhe@qq.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: simplejson
+
+A collection of useful tools.
+
+## Install
+```sh
+python -m pip install hej
+```
+
+## Usage
+```sh
+python -m hej.files -h
+
+# with files in the [a] that are not in the [b].
+python -m hej.files a-b tmp/a tmp/b -o tmp/z -i '.jpg,.txt'
+```
+
+published with [Flit](https://flit.readthedocs.io/en/latest/).
