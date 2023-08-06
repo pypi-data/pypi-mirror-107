@@ -1,0 +1,122 @@
+# simple_scheduler
+- Does not miss future events.
+- Uses multiprocessing to schedule jobs.
+- This package uses a 24-hour clock, only.
+- Simultaneously schedule any number of jobs.
+- Recurring jobs to be precisely sheduled.
+- Event jobs to be executed within the minute.
+- Long jobs to be executed even if previous call(s) is(are) still running.
+
+## Install
+From [PyPi](https://pypi.org/project/simple_scheduler/) :
+
+    pip install simple-scheduler
+
+## How to use?
+
+### Quick-start
+    See [examples](https://github.com/Vernal-Inertia/simple_scheduler/tree/main/examples) folder.
+
+### Long
+There are two different schedulers:
+
+    >>> from simple_scheduler.event import event_scheduler    
+    >>> from simple_scheduler.recurring import recurring_scheduler
+
+Purpose of each scheduler:
+
+    >>> print(event_scheduler.__doc__)
+     Event occurs at an exact time.
+        e.g. scirpt_1 is called at 14:00 and 20:00
+        Each event is tried 3-times (but executed only once).
+
+    >>> print(recurring_scheduler.__doc__)
+     Recurring tasks are those that occur after every "x"-seconds.
+        (e.g. script_1 is called every 600 seconds)
+
+#### Using only event_scheduler
+
+    >>> print(event_scheduler.add_job.__doc__)
+
+        Assigns an event to a process.
+
+        Parameters
+        ----------
+        target : a callable function
+        tz : str
+            time zone (call the method .timezones() for more info)
+        when : list, a collection of "day|HH:MM"
+            at what precise time(s) should the function be called
+            eg. ["mon|22:04","*|03:45", ...] please "only" use 24-hour
+                                             clock with "|" as day separator
+                                             and ":" as time separator
+        job_name : str, optional
+            used to identify a job, defaults to name of the function
+            to remove jobs use this name
+        args : tuple(object,), optional
+            un-named argumets for the "target" callable
+            the default is ()
+        kwargs : dict{key:object}, optional
+            named argumets for the "target" callable
+            the default is {}
+
+        Raises
+        ------
+        Exception
+            - If time (in "when"-list) is not a collection of "day|HH:MM"
+            eg. ["tue|12:30am","thu|2:30 pm", ...] please "only" use 24-hour
+                                                   clock, with "|" as day
+                                                   separator and ":" as time
+                                                   separator
+
+        Returns
+        -------
+        None.
+
+See [examples/event.py](https://github.com/Vernal-Inertia/simple_scheduler/blob/main/examples/event.py)
+
+#### Using only recurrent_scheduler
+
+    >>> print(recurring_scheduler.add_job.__doc__)
+
+        Assigns an periodic task to a process.
+
+        Parameters
+        ----------
+        target : a callable function
+        period_in_seconds : int
+            the time period in seconds to execute this function
+        args : tuple(object,), optional
+            un-named argumets for the "target" callable
+            the default is ()
+        job_name : str, optional
+            used to identify a job, defaults to name of the function
+            to remove jobs use this name            
+        kwargs : dict{key:object}, optional
+            named argumets for the "target" callable
+            the default is {}
+
+        Returns
+        -------
+        None.
+
+See [examples/recurring.py](https://github.com/Vernal-Inertia/simple_scheduler/blob/main/examples/recurring.py)
+
+### Toggle verbose
+    >>> event_scheduler.verbose = False
+    >>> recurring_scheduler.verbose = True
+
+### Job summary
+See a summary of jobs[job_name] scheduled with associated process ids.
+    >>> event_scheduler.job_summary()
+    >>> recurring_scheduler.job_summary()
+
+### Remove jobs
+Remove future jobs that are no longer required to be scheduled.
+    >>> event_scheduler.remove_job(job_name)
+    >>> recurring_scheduler.remove_job(job_name)
+    
+### Clear schedule
+Stop all future jobs and clear the schedule
+    >>> event_scheduler.clear()
+    >>> recurring_scheduler.clear()
