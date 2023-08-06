@@ -1,0 +1,10 @@
+danbot_api/__init__.py,sha256=8eRgLoRHvDaDraAjKJwUw2zVt7HayoNIgdgd8KT8oMY,126
+danbot_api/client.py,sha256=XrZFFkNjpwDKd7KGLtJyseCtr3iwyO0GyeXyM8ZH_SU,3400
+danbot_api/errors.py,sha256=7wxiuVP99IgMDF4XmY0l-3F-CRR2ulYJMsICI1o1c1k,955
+danbot_api/helpers.py,sha256=1VMLzTyxy6CMc1ZYuZQZokJjje7mG8pQfZNWKWzDBIk,1022
+danbot_api/http.py,sha256=5LDOBtum70QpH50ZJqNWb7YvDC0B6wORtPjIpvNKvmU,1170
+danbot_hosting_py-1.0.dist-info/LICENSE,sha256=aB8vtaUweUDAJm7GBYzzoten-J-sRO4EGOSWel2jA88,1063
+danbot_hosting_py-1.0.dist-info/METADATA,sha256=4_ic9xXjYR9Y0gR67mpKR5ZTGzxgkbDqP0X9C-XQPHw,2176
+danbot_hosting_py-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+danbot_hosting_py-1.0.dist-info/top_level.txt,sha256=wrxBM-wmRM-x2nrY9bAxp8XnJaP1vaA9ClehuHBnBQE,11
+danbot_hosting_py-1.0.dist-info/RECORD,,
