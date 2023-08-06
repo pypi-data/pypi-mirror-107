@@ -1,0 +1,27 @@
+.diotooltip {
+  width: 56px;
+  height: 56px;
+  margin: 1px auto;
+  background: #2e3335;
+  background: linear-gradient(#2e3235, #181b1e);
+  border-radius: 1.5em;
+  border: 0.1em solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4),
+  0 0.5em 1em 0.3em rgba(0, 0, 0, 0.2),
+  inset 0 0.1em 0 rgba(255, 255, 255, 0.2);
+  top: 29px;
+  span {
+    margin-top: 10px;
+    display: block;
+    color: $lightened;
+    line-height: 33px;
+    text-shadow: 0 0 15px #fff,
+    0 0 110px #8cd694, 0 0 120px $lightened,
+    0 0 130px $lightened, 0 0 40px $lightened,
+    0 0 55px $lightened, 0 0 75px $lightened;
+  }
+}
+
+.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-top{
+  top: 2px !important;
+}
