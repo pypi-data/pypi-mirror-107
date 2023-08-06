@@ -1,0 +1,3 @@
+
+# THIS FILE IS GENERATED FROM SETUP.PY
+version = '2.3.2'
