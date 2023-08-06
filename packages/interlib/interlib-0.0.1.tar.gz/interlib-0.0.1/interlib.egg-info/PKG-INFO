@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: interlib
+Version: 0.0.1
+Summary: A small package for intervals and timeouts similar with javascript
+Home-page: UNKNOWN
+Author: M.Kaan Karakoç
+Author-email: karakockaan326@gmail.com
+License: UNKNOWN
+Project-URL: Github, https://gist.github.com/kaankarakoc42/4ff2926c6dd4dae4cdfd7b3897a3e92a
+Description: # what is interlib ?
+        it's a small package for simple threading with intervals it uses similar functions in javascript
+        * setTimeOut  [function, timing]
+        * setInterval [function, timing]
+         
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
