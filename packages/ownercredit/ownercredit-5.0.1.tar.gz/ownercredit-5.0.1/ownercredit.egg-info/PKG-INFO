@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: ownercredit
+Version: 5.0.1
+Summary: Ownercredit implements some concepts for a wealth-backed currency system
+Home-page: https://github.com/pjkundert/ownercredit
+Author: Perry Kundert
+Author-email: perry@hardconsulting.com
+License: Dual License; GPLv3 and Proprietary
+Description: Purpose: to implement currencies where every unit is backed by wealth, and where
+        every holder of wealth may create credit.  The system implements a limit, K, on
+        the amount of credit created relative to pledged wealth, to control inflation
+        and deflation, automatically ensuring that the value of each unit of credit
+        remains roughly constant in terms of some "reference" basket of wealth.
+        
+Keywords: ownercredit wealthcoin wealth-backed currency
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Text Processing :: Filters
