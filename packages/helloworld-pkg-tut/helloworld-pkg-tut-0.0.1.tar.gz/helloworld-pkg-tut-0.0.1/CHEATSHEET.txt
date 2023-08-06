@@ -1,0 +1,18 @@
+# To build distribution, and source distribution
+$ python setup.py bdist_wheel sdist
+
+# To install locally
+$ pip install -e .
+
+# Creating MANIFEST.in
+$ sudo pip3 install check-manifest
+$ check-manifest --create
+
+# To push to PyPI
+$ sudo pip3 install twine
+
+$ twine upload dist/*
+username: USER
+password:
+Uploading ditribution to
+...

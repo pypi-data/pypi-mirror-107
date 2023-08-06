@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: helloworld-pkg-tut
+Version: 0.0.1
+Summary: Simply prints hello <name>
+Home-page: https://https://github.com/QuantumSystems/quantum-computing
+Author: Atul Varshneya
+Author-email: atul.varshneya@gmail.com
+License: UNKNOWN
+Description: # Installation
+        pip install helloworld
+        
+        # Usage
+        
+        '''python
+        from helloworld import hw
+        
+        hw("world")
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
