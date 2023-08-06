@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "random_tools"
+version = "0.2.0"
+description = ""
+authors = ["Robin Allesiardo <robin.allesiardo@gmail.com>"]
+readme = 'README.md'  # Markdown files are supported
+repository = "https://github.com/rallesiardo/random_tools"
+homepage = "https://github.com/rallesiardo/random_tools"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+matplotlib = "^3.4.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
