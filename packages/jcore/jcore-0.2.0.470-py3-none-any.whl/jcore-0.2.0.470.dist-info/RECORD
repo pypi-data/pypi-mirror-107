@@ -1,0 +1,15 @@
+jcore/__init__.py,sha256=kMCvYrCXg2C0nYPHQ5UxPw1q-wUfSeVxbKYbcjubq-c,683
+jcore/__main__.py,sha256=PVY4r7HVCwbeUerPnPXIEqSAu2r2JeGJO_pJVgTXijc,624
+jcore/client.py,sha256=Jz6BK5nP9s1_n_IIiDh9NEty59sYOB9kw0Y9PbFdyVk,24087
+jcore/exceptions.py,sha256=cKeRlTaWVYDanM4s74WpvD29gw-1lIn0Cgyr4HPoims,1802
+jcore/jsocket.py,sha256=c3zhkCzlbHhNIP7Xi5r4jYZnvMI-7sNBt8SKC8tWlXU,10172
+jcore/message.py,sha256=7ZePccTy3ziuQMA_7fFZZyj3_NqaGEmJAboDqFzMydI,19312
+jcore/messageparser.py,sha256=bmtVg-96It3lfpIwWRT7q4kZSff-v4Ru9ODpINepiww,12800
+jcore/extensions/__init__.py,sha256=Htey0BPvFIR2ezaSGEmjEKbBxG3KLSZ6PwPh6UD6Iw8,27
+jcore/extensions/module.py,sha256=Ub368i3dU5TLXZDKr9ZWfJ--Y3m7wlonoZtNR4pUn8I,3385
+jcore/helpers/__init__.py,sha256=sMz386H7bJoXJum1FVJZf7RbkFoz4uol0FD2h5AQvFw,31
+jcore/helpers/settings.py,sha256=omWef2_pTgb6YGB3JDGj1Ggex3-ptxlYD0ADeswFcj0,3992
+jcore-0.2.0.470.dist-info/METADATA,sha256=R3qVzYQnhKG-avw3E9gyT4frl-0i1fnQKwfCxNAH0_8,3803
+jcore-0.2.0.470.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jcore-0.2.0.470.dist-info/top_level.txt,sha256=o4MYycn2tizs-BDQksjxXWsokAeVaiBH0dws8iALQQc,6
+jcore-0.2.0.470.dist-info/RECORD,,
