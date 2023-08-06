@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+giodemo/__init__.py
+giodemo/giodemo.py
+giodemo.egg-info/PKG-INFO
+giodemo.egg-info/SOURCES.txt
+giodemo.egg-info/dependency_links.txt
+giodemo.egg-info/not-zip-safe
+giodemo.egg-info/top_level.txt
