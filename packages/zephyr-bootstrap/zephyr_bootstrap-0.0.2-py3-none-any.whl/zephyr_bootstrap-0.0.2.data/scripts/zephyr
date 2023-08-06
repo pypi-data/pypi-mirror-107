@@ -1,0 +1,41 @@
+#!python
+"""
+    Purpose:
+        Entrypoint for Zephyr
+    Function Call:
+        zephyr
+    Example Call:
+        zephyr --help
+"""
+
+# Python Library Imports
+import logging
+import os
+import sys
+
+# Import the entrypoint script
+from zephyr.zephyr_cli import cli
+
+
+###
+# Main Execution
+###
+
+
+def main():
+    """
+    Purpose:
+        Execute the Zephyr CLI
+    """
+
+    cli.setup_zephyr_cli()
+    cli.zephyr_cli()
+
+
+###
+# Script Main Execution
+###
+
+
+if __name__ == "__main__":
+    main()
