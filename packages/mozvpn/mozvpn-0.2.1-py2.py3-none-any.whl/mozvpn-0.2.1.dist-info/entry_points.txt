@@ -1,0 +1,4 @@
+[console_scripts]
+mozvpn = mozvpn.cli:main
+xmozvpn = mozvpn.cli:xmozvpn
+
