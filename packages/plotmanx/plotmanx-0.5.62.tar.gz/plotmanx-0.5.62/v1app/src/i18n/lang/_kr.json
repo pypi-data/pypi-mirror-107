@@ -1,0 +1,69 @@
+{
+
+
+
+ "bnt_balance": "밸런스",
+ "bnt_lvsum": "콤보 레벨",
+ "bnt_node_num": "노드 카운트",
+ "bnt_lvfreeze": "크리스탈 수준",
+ "bnt_deal": "거래",
+ "bnt_price_plan": "가격 계획",
+ "bnt_share": "공유",
+ "bnt_welcome": "어서 오십시오",
+ "bnt_invcode": "추천 코드",
+ "bnt_all_income": "모든 소득",
+ "bnt_all_wage": "모든 베팅",
+ "bnt_confirm": "내가 확인 및 서명",
+ "bnt_boardcast": "서명 및 트랜잭션을 커밋 ...",
+ "bnt_main": "집",
+ "bnt_ninvest": "새로운 투자",
+ "bnt_oinvest": "잡아라",
+ "bnt_trxn": "거래 상태",
+ "bnt_askcode": "코드 요청",
+ "bnt_bicode": "코드를 초대",
+ "bnt_bet": "추가 기금",
+ "bnt_prin": "주요한",
+
+ "n_zero_a": "가능한 제로 금액",
+ "n_address_empty": "주소는 비워 둘 수 없습니다",
+ "n_upline": "귀하의 최대 라인 코드가 잘못되었습니다",
+ "n_inv": "코드가 유효하지 않은 초대",
+ "n_free": "잘못된 무료 양",
+ "n_lock": "잘못된 잠금 금액",
+ "n_copy": "복사 성공",
+ "n_round_unstarted": "이 라운드는 아직 시작되지 않습니다",
+ "n_attention": "관심",
+ "n_pmt_success": "지불은 성공입니다!",
+ "n_hashcfm": "해시 확인",
+ "n_deny": "거부.",
+
+ "p_total_income": "총 수입",
+ "p_cap": "자본",
+ "p_hack": "해킹 전원",
+ "p_enqueue": "대기중인 금액",
+ "p_shared": "공유 금액",
+ "p_reward": "보상 보너스 금액",
+ "p_all_accs": "모든 투자 계정",
+ "p_pend_withd": "보류 인출",
+ "p_frozen_amount": "냉동 금액",
+
+
+
+ "p_grant": "보류에 부여 출시",
+ "p_close": "닫기",
+ "p_settle_withdraw": "빼다",
+
+ "site_name_ec": "Tron.Finance",
+ "site_name_ms": "프리메이슨의 세계",
+ "msg_install": "imtoken 또는 유사한 지갑을 사용하시기 바랍니다",
+ "msg_switch": "만 주요 네트워크에 사용할 수는 지갑을 통해 스위치를 바랍니다 그림.",
+ "msg_new_round": "뉴 라운드 캐피탈 자금이 곧 시작됩니다!",
+ "msg_invcard": "내 초대 카드",
+
+
+ "msg_stay_tuned": "계속 지켜봐 주시기 바랍니다.",
+ "msg_verified_ctr": "검증 계약 주소",
+ "msg_contr_addr": "계약 주소",
+ "msg_dpl_network_tron": "트론 배포 네트워크",
+ "msg_auditrepo": "감사 보고서"
+}

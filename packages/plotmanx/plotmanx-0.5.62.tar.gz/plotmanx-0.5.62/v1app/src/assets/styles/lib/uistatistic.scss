@@ -1,0 +1,577 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/*!
+ * # Semantic UI 2.4.0 - Statistic
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Statistic
+*******************************/
+
+/* Standalone */
+.ui {
+  &.statistic {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 1em 0em;
+    max-width: auto;
+
+    &:first-child {
+      margin-top: 0em;
+    }
+
+    &:last-child {
+      margin-bottom: 0em;
+    }
+  }
+
+  /*******************************
+            Group
+*******************************/
+  /* Grouped */
+  &.statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin: 1em -1.5em -1em;
+
+    > .statistic {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 0em 1.5em 1em;
+      max-width: auto;
+    }
+
+    &.center {
+      display: flow-root;
+    }
+
+  }
+
+
+  /* Clearing */
+
+  &:after {
+    display: block;
+    content: ' ';
+    height: 0px;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &:first-child {
+    margin-top: 0em;
+  }
+
+  .value {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1em;
+    color: #1B1C1D;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .label {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.ui.statistic + .ui.statistic {
+  margin: 0em 0em 0em 1.5em;
+}
+
+
+/*******************************
+            Content
+*******************************/
+
+/* Top Label */
+.ui.statistics .statistic > .label ~ .value,
+.ui.statistic > .label ~ .value {
+  margin-top: 0rem;
+}
+
+/* Bottom Label */
+
+.ui.statistics .statistic > .value ~ .label,
+.ui.statistic > .value ~ .label {
+  margin-top: 0rem;
+}
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+   Icon Value
+---------------*/
+
+.ui.statistics .statistic > .value .icon,
+.ui.statistic > .value .icon {
+  opacity: 1;
+  width: auto;
+  margin: 0em;
+}
+
+/*--------------
+   Text Value
+---------------*/
+
+.ui.statistics .statistic > .text.value,
+.ui.statistic > .text.value {
+  line-height: 1em;
+  min-height: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ui.statistics .statistic > .text.value + .label,
+.ui.statistic > .text.value + .label {
+  text-align: center;
+}
+
+/*--------------
+   Image Value
+---------------*/
+
+.ui.statistics .statistic > .value img,
+.ui.statistic > .value img {
+  max-height: 3rem;
+  vertical-align: baseline;
+}
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+      Count
+---------------*/
+
+.ui.ten.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.ten.statistics .statistic {
+  min-width: 10%;
+  margin: 0em 0em 1em;
+}
+
+.ui.nine.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.nine.statistics .statistic {
+  min-width: 11.11111111%;
+  margin: 0em 0em 1em;
+}
+
+.ui.eight.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.eight.statistics .statistic {
+  min-width: 12.5%;
+  margin: 0em 0em 1em;
+}
+
+.ui.seven.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.seven.statistics .statistic {
+  min-width: 14.28571429%;
+  margin: 0em 0em 1em;
+}
+
+.ui.six.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.six.statistics .statistic {
+  min-width: 16.66666667%;
+  margin: 0em 0em 1em;
+}
+
+.ui.five.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.five.statistics .statistic {
+  min-width: 20%;
+  margin: 0em 0em 1em;
+}
+
+.ui.four.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.four.statistics .statistic {
+  min-width: 25%;
+  margin: 0em 0em 1em;
+}
+
+.ui.three.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.three.statistics .statistic {
+  min-width: 33.33333333%;
+  margin: 0em 0em 1em;
+}
+
+.ui.two.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.two.statistics .statistic {
+  min-width: 50%;
+  margin: 0em 0em 1em;
+}
+
+.ui.one.statistics {
+  margin: 0em 0em -1em;
+}
+
+.ui.one.statistics .statistic {
+  min-width: 100%;
+  margin: 0em 0em 1em;
+}
+
+/*--------------
+   Horizontal
+---------------*/
+
+.ui.horizontal.statistic {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ui.horizontal.statistics {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0em;
+  max-width: none;
+}
+
+.ui.horizontal.statistics .statistic {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: none;
+  margin: 1em 0em;
+}
+
+.ui.horizontal.statistic > .text.value,
+.ui.horizontal.statistics > .statistic > .text.value {
+  min-height: 0em !important;
+}
+
+.ui.horizontal.statistics .statistic > .value .icon,
+.ui.horizontal.statistic > .value .icon {
+  width: 1.18em;
+}
+
+.ui.horizontal.statistics .statistic > .value,
+.ui.horizontal.statistic > .value {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ui.horizontal.statistics .statistic > .label,
+.ui.horizontal.statistic > .label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0em 0em 0em 0.75em;
+}
+
+/*--------------
+    Floated
+---------------*/
+
+.ui[class*="left floated"].statistic {
+  float: left;
+  margin: 0em 2em 1em 0em;
+}
+
+.ui[class*="right floated"].statistic {
+  float: right;
+  margin: 0em 0em 1em 2em;
+}
+
+.ui.floated.statistic:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+@mixin ui_mixed_statistic_font_sizing($name,
+$horizontal_size,$vertical_size,
+$horizontal_size_xs,$vertical_size_xs,
+$text, $text_xs
+) {
+
+  .ui {
+    &.#{$name} {
+      &.horizontal {
+        &.statistics {
+          .statistic {
+            .value {
+              font-size: $horizontal_size_xs - 0.5rem;
+
+              &.text {
+                font-size: $text_xs - 0.5rem;
+              }
+            }
+          }
+        }
+
+        &.statistic {
+          .value {
+            font-size: $horizontal_size_xs - 0.5rem;;
+
+            &.text {
+              font-size: $text_xs - 0.5rem;;
+            }
+          }
+        }
+      }
+
+      /**
+      no horizontal
+       */
+      &.statistics {
+        .statistic {
+          .value {
+            font-size: $vertical_size_xs - 0.5rem;;
+
+            &.text {
+              font-size: $text_xs - 0.5rem;;
+            }
+          }
+        }
+      }
+
+      &.statistic {
+        .value {
+          font-size: $vertical_size_xs - 0.5rem;;
+
+          &.text {
+            font-size: $text_xs - 0.5rem;;
+          }
+        }
+      }
+    }
+  }
+  @media(min-width: 330px) {
+    .ui {
+      &.#{$name} {
+        &.horizontal {
+          &.statistics {
+            .statistic {
+              .value {
+                font-size: $horizontal_size_xs;
+
+                &.text {
+                  font-size: $text_xs;
+                }
+              }
+            }
+          }
+
+          &.statistic {
+            .value {
+              font-size: $horizontal_size_xs;
+
+              &.text {
+                font-size: $text_xs;
+              }
+            }
+          }
+        }
+
+        /**
+        no horizontal
+         */
+        &.statistics {
+          .statistic {
+            .value {
+              font-size: $vertical_size_xs;
+
+              &.text {
+                font-size: $text_xs;
+              }
+            }
+          }
+        }
+
+        &.statistic {
+          .value {
+            font-size: $vertical_size_xs;
+
+            &.text {
+              font-size: $text_xs;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(min-width: 414px) {
+    .ui {
+      &.#{$name} {
+        &.horizontal {
+          &.statistics {
+            .statistic {
+              .value {
+                font-size: $horizontal_size;
+
+                &.text {
+                  font-size: $text;
+                }
+              }
+            }
+          }
+
+          &.statistic {
+            .value {
+              font-size: $horizontal_size;
+
+              &.text {
+                font-size: $text;
+              }
+            }
+          }
+        }
+
+        /**
+        no horizontal
+         */
+        &.statistics {
+          .statistic {
+            .value {
+              font-size: $vertical_size;
+
+              &.text {
+                font-size: $text;
+              }
+            }
+          }
+        }
+
+        &.statistic {
+          .value {
+            font-size: $vertical_size;
+
+            &.text {
+              font-size: $text;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include ui_mixed_statistic_font_sizing("mini", 1.5rem, 1.5rem, 1.5rem, 1.5rem, 0.5rem, 0.5rem);
+@include ui_mixed_statistic_font_sizing("tiny", 2rem, 2rem, 2rem, 2rem, 0.9rem, 0.5rem);
+@include ui_mixed_statistic_font_sizing("small", 2rem, 3rem, 2rem, 2rem, 1rem, 0.5rem);
+@include ui_mixed_statistic_font_sizing("medium", 3rem, 4rem, 2rem, 2rem, 1rem, 0.5rem);
+@include ui_mixed_statistic_font_sizing("large", 4rem, 5rem, 2rem, 2rem, 2.5rem, 0.5rem);
+@include ui_mixed_statistic_font_sizing("huge", 5rem, 6rem, 2rem, 2rem, 2.5rem, 0.5rem);
+
+.uix {
+  &.statistics {
+
+    &.violet .value {
+      color: #e37cd8
+    }
+
+    &.purple .value {
+      color: #F208DA
+    }
+
+    &.greenb .value {
+      color: #176e1f
+    }
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    &.center {
+      display: block;
+    }
+
+    &:first-child {
+      margin-top: 0em;
+    }
+
+    line-height: 1em;
+    min-height: 2em;
+    font-weight: bold;
+    text-align: center;
+
+    .statistic {
+      .value {
+        font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        line-height: 1em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}

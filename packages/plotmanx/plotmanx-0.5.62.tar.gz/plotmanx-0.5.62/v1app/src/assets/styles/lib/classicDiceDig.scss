@@ -1,0 +1,253 @@
+
+.lap-counter {
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  .light {
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgba(25, 25, 23, 0.76);
+  }
+
+  .light-on {
+    background-color: #d2d2ca;
+  }
+
+  &.red {
+
+    .light {
+      background-color: #540707;
+    }
+
+    .light-on {
+      background-color: red;
+    }
+
+  }
+
+  &.green {
+
+    .light {
+      background-color: #214e21;
+    }
+
+    .light-on {
+      background-color: #2add34;
+    }
+
+  }
+
+  &.blue {
+
+    .light {
+      background-color: #20274e;
+    }
+
+    .light-on {
+      background-color: #02dddd;
+    }
+
+  }
+
+}
+
+.digit {
+  margin: 20px;
+}
+
+.light-row {
+  display: flex;
+  flex-direction: row;
+  width: 132px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.controls {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .counting-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &.fixheight {
+      height: 90px;
+    }
+
+    .button {
+      cursor: pointer;
+      box-shadow: 0px 1px 5px #333335;
+    }
+
+    .round-button {
+      background-color: red;
+      color: white;
+      border-radius: 100%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      vertical-align: center;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      font-size: 20px;
+      margin: 5px 12px;
+      padding: 0;
+    }
+    .round-display {
+      font-size: 16px;
+      font-weight: 400;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid;
+      overflow: hidden;
+      width: 130px;
+      @media(min-width: 600px) {
+        margin: 0 0em 2em;
+      }
+      span {
+        display: block;
+        background: rgba($white, 0);
+        color: $white;
+        line-height: 1.4;
+        padding: .65em;
+        text-decoration: none;
+      }
+
+    }
+    .reset-button p {
+      padding: 10px;
+    }
+
+    .increment-button {
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #d2d2ca;
+    }
+
+    .decrement-button {
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #d2d2ca;
+    }
+
+  }
+}
+
+.diceboard {
+  @media(max-width: 600px) {
+    perspective: 500;
+    -webkit-perspective: 500;
+  }
+  .diceone {
+    @media(max-width: 600px) {
+      transform: translateZ(-215px);
+      -webkit-transform: translateZ(-215px);
+    }
+  }
+}
+
+.prime-button {
+  background-color: #ccff00;
+  color: black;
+  border-radius: 5px;
+  margin-top: 15px;
+  p {
+    padding: 10px 15px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.red {
+  color: #d93a49;
+}
+
+.green {
+  color: #2ecc71;
+}
+
+.yellow {
+  color: #ffd400;
+}
+
+.gray {
+  color: #D3DCE6;
+}
+
+.preWrap {
+  white-space: pre-wrap;
+}
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+  @return $x1;
+}
+
+$pinWidth: 100px;
+$pinHeightFactor: ((1 + sqrt(2))/2);
+$pinHeight: $pinHeightFactor * $pinWidth;
+$pinColor: #a3260d;
+$pinRColor: #a36414;
+$pinBColor: #f1df37;
+$pinCColor: #b4a329;
+$shadowOpacity: .5;
+$shadow-size: 50px;
+$pulseSize: 100px;
+$buttonHeight: 44px;
+$buttonHeightx2: 24px;
+
+.label_s {
+  line-height: $buttonHeight - 2px;
+  display: block;
+  box-sizing: border-box;
+  height: $buttonHeight;
+  margin: 0 5px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: $pinColor;
+  border: 2px solid $pinColor;
+  border-radius: ($buttonHeight / 2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.color_label_gold {
+  line-height: $buttonHeightx2 - 2px;
+  display: block;
+  box-sizing: border-box;
+  height: $buttonHeightx2;
+  margin: 10px 2px;
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 8px;
+  color: $pinBColor;
+  background-color: $pinCColor;
+  border: 2px solid $pinRColor;
+  border-radius: ($buttonHeightx2 / 2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
