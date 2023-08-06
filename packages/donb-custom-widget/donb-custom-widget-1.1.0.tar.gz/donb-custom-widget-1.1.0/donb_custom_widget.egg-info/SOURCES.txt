@@ -1,0 +1,11 @@
+README.md
+setup.py
+donb_custom_widget/__init__.py
+donb_custom_widget/my_custom_widget.py
+donb_custom_widget/py.typed
+donb_custom_widget.egg-info/PKG-INFO
+donb_custom_widget.egg-info/SOURCES.txt
+donb_custom_widget.egg-info/dependency_links.txt
+donb_custom_widget.egg-info/requires.txt
+donb_custom_widget.egg-info/top_level.txt
+donb_custom_widget/data/ui_files/my_msg_box.ui
