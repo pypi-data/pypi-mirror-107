@@ -1,0 +1,15 @@
+page/__init__.py,sha256=t4VpvHn3r72jYk7TDEwDtxs9lKMrhm60-DUMU2hWDIs,5558
+page/_version.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+page/enrichment.py,sha256=WOTkSmc1nE3ZTahZhaTHbA0L6bA1YPI6RcUas1oEzzU,5386
+page/config/default.yaml,sha256=tOX68STtzAFx3vffEE-EV5bKPTZtrc1gsTf38XrB9YA,778
+page/tests/__init__.py,sha256=65QYpMPODA_S0Jeote6DfWlXK1Czh3eQ85JoUhT6a2o,1117
+page/tests/conftest.py,sha256=x-VtO2K5Gi6modDqPMwLqCbR-tc_q1-KH2bTuV8y0F4,1033
+page/tests/test_page.py,sha256=M4xwxfURCb1fXFWrFQw82wvnoRb44wjZJdooxqcf8SM,1240
+page_enrichment-0.1.4.data/data/requirements.test.txt,sha256=m73v_fTJMAqsH2-Zsz-V4SzfBLoMjnHCFVgwSVhol2A,64
+page_enrichment-0.1.4.data/data/requirements.txt,sha256=zIR2DHUz7E1cNEePhLC2r0RTYx7kQtAol1JzTPW9ARw,94
+page_enrichment-0.1.4.dist-info/LICENCE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+page_enrichment-0.1.4.dist-info/METADATA,sha256=MqMOVgFPal_ocry00_KHvyCgDIY6O_wI983g6uOXrU8,2779
+page_enrichment-0.1.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+page_enrichment-0.1.4.dist-info/entry_points.txt,sha256=WS-NLigNwZlRGkLuVffCJNXxn1cZigie8f7nA7sxjWA,93
+page_enrichment-0.1.4.dist-info/top_level.txt,sha256=NioHu7XHS5gr7WRLn34piDfXo6IyyWTQObt-Sevqgl8,5
+page_enrichment-0.1.4.dist-info/RECORD,,
