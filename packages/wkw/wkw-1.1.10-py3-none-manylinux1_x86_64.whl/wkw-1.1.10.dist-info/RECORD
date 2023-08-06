@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_wkw.py,sha256=31C61VoGVMFVRv5Th4iJpsYerYX6kmQA0A5zhktWyT8,12377
+wkw/__init__.py,sha256=C8S2ZDb83A3B1ju1MomYGwJhbLVxp2RUfEpsKPLCImw,80
+wkw/wkw.py,sha256=U6acDELouZMc5neyTP54Fc1fK9k8GBGqglQnEP_5-gU,7955
+wkw/lib/liblz4.so.1,sha256=EZM9-Q4iZxZTBIFtIJkq2CYtRKAF3VW9hgQDh351ZYY,207648
+wkw/lib/libwkw.so,sha256=D6eDrKw5thnCgOhP9qisVt_-upIm3tZCGin6tvrPfEg,3421112
+wkw/lib/wkw.h,sha256=15kfer3IiB3tylwlH5TY9ZsgETtsEtYSTQDXQ9TGexs,764
+wkw-1.1.10.dist-info/METADATA,sha256=NrAK1c9WowSVgSgNqIpDdtJ1o-kdlqTsct0BpIvHmbQ,280
+wkw-1.1.10.dist-info/WHEEL,sha256=ump-ejT3_LMpfzhJBET2R9E2_YCxcVR2ij2QukuDcsY,106
+wkw-1.1.10.dist-info/top_level.txt,sha256=0BducfE2ZKmIPqw2P8xo9WUO3JgEEAeX1qreqtWLbaM,10
+wkw-1.1.10.dist-info/RECORD,,
