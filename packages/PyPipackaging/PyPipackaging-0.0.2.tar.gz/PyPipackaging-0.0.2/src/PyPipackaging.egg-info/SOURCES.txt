@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/PyPipackaging.py
+src/PyPipackaging.egg-info/PKG-INFO
+src/PyPipackaging.egg-info/SOURCES.txt
+src/PyPipackaging.egg-info/dependency_links.txt
+src/PyPipackaging.egg-info/top_level.txt

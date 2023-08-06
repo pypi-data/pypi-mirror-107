@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: PyPipackaging
+Version: 0.0.2
+Summary: Say Hello
+Home-page: https://github.com/Totilarson/CorePy
+Author: Toti Larson
+Author-email: totlarson@gmail.com
+License: LICENSE.txt
+Description: # packaging tutorial
+        
+        This is a tutorial on setting up python packages for PyPi. Steps were learned from:
+        https://www.youtube.com/watch?v=GIF3LaRqgXo&t=1281s
+        
+        
+        ## Installation
+        
+        ## Executable function
+         
+        def say_hello():
+            print('Hello World')
+            
+        name = input('What is your name?\n')
+        print ('Hi, %s.' % name)
+        
+        # Notes
+        
+        1)	From the folder level with setup.py : python setup.py sdist bdist_wheel
+            a.	Builds a wheel that is appropriate to upload to PyPi
+        2)	pip install â€“e .
+            a.	installs it locally. Tests packaging.
+            b.	The â€˜â€“eâ€™ allows it to link to the code you are working on rather than building copies . The â€˜ .â€™ means install in the current directory. Everytime you change the setup.py file you need to run this
+        3)	Test it:
+            a.	python from packaging_tutorial import say_hello
+                i.	â€˜packaging_tutorialâ€™ is the py_module
+                ii.	The name â€˜hellototiâ€™ is from setup.py -> name=â€™hellototiâ€™. It is the name of the python script in the src folder. Within this script is the function say_hello
+        4)	Remove excessive files with gitignore.io
+        5)	Pip install twine
+            a.	Twine upload dist/*
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
