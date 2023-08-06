@@ -1,0 +1,11 @@
+docxlatex/__init__.py,sha256=hJFT86vdTzhst4IVDLdCJE1CMvBwvRtJrAeaMOTMNvQ,101
+docxlatex/docxlatex.py,sha256=zTr3or16rHBzyK1dDutos-bfVSTdZZHQXlfUZatt2rk,2839
+docxlatex/tagparsers.py,sha256=ny5xCeT6EHU3efQ3a7nMcIscIjgiO4U2KBzxyb4Yvag,2372
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/docxlatex.py,sha256=vhlrgJ33Fl1cypXy9rl-QkdE6-9UFZG_NwfHb73qpw8,2838
+src/tagparsers.py,sha256=ny5xCeT6EHU3efQ3a7nMcIscIjgiO4U2KBzxyb4Yvag,2372
+docxlatex-0.1.4.dist-info/LICENSE,sha256=476aMI0lyRBF8084Bm4j0uWQ4EDhMCMVHAQwYVNj3eI,1095
+docxlatex-0.1.4.dist-info/METADATA,sha256=twAwMO46rPTU6Ng9vQLYIb8QhrWYeXhPedEbdxf7klw,2362
+docxlatex-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+docxlatex-0.1.4.dist-info/top_level.txt,sha256=pwtMkd1T9tsIPtgf8itXVyavZ3qF7q-IOMtu95lvDEI,10
+docxlatex-0.1.4.dist-info/RECORD,,
