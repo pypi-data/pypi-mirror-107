@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: basic-calci
+Version: 0.0.1
+Summary: A very basic calculator that can perform arithmatic operation like addition,substraction,multiplication and division
+Home-page: UNKNOWN
+Author: Snehal S
+Author-email: snehal.3as@gmail.com
+License: MIT
+Description: This is a very simple calculator that takes two numbers that can perform addition,subtraction,multiplication and division
+        
+        
+        Change Log
+        =====================
+        
+        0.0.1   (27/05/2021)
+        =====================
+        
+        - First Release
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
