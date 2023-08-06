@@ -1,0 +1,13 @@
+{
+  "arguments": {
+    "REPORT_NAME":  {"mandatory": true, "type": "string", "base": "string"},
+    "CONFIG_TOOL": {"mandatory": false, "type": "string", "base": "string"}
+  },
+  "environment_variables": [
+    "REPORTS_PATH"
+  ],
+  "check_cmds": [
+
+  ],
+  "cmd": "python3 {EXECUTOR_FILE_PATH}"
+}
