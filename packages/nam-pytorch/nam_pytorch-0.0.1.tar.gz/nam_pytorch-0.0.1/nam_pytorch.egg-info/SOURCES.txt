@@ -1,0 +1,9 @@
+README.md
+setup.py
+nam_pytorch/__init__.py
+nam_pytorch/nam_pytorch.py
+nam_pytorch.egg-info/PKG-INFO
+nam_pytorch.egg-info/SOURCES.txt
+nam_pytorch.egg-info/dependency_links.txt
+nam_pytorch.egg-info/requires.txt
+nam_pytorch.egg-info/top_level.txt
