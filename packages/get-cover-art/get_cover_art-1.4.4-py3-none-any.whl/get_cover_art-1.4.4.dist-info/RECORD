@@ -1,0 +1,17 @@
+get_cover_art/__init__.py,sha256=bqKpG2i3wfgape4Cfhnas94NXMafx2kwqVfODV0yxJI,50
+get_cover_art/__main__.py,sha256=DdCDIqwG2Vk0zW6nH7h_rAEHiEspqE-80HTAsQV8JTQ,3244
+get_cover_art/apple_downloader.py,sha256=2MICCG9tLGQps67mqlaaUojNCaCpttyY-bw8QbZ8Cuo,3346
+get_cover_art/base_ogg.py,sha256=LnuHQJZfIuogDW-BTXcDAec_R1TF3pEpDNLrMyDoYK4,1524
+get_cover_art/cover_finder.py,sha256=OQxLts_BuFyMtNontteuphd2FPCN33oBIB6iLKPw5Gk,8502
+get_cover_art/meta_audio.py,sha256=EfMlw8qZGgL4fLgGb6e1un3izJhF3F81CzDMq8S7wUk,849
+get_cover_art/meta_flac.py,sha256=1l7t_cLAqgd6ksW1E4x5WJLUq0A_6WjWzoR7tyvhQjA,1179
+get_cover_art/meta_mp3.py,sha256=IqgL_STGj0app_RopCP_Uc6h9zPufohaBUatPwmkFUE,1298
+get_cover_art/meta_mp4.py,sha256=NL4Xf_jP1QOrSQHYmxTR3QcRCVTwWwBm5oY5b6l5X14,967
+get_cover_art/meta_opus.py,sha256=5dW0EY56E0gqwWfJ9zufC7WJ3u4RV5O9EKArw4fYh4c,200
+get_cover_art/meta_vorbis.py,sha256=4OtBjIA4DkDwQrO-oLxs5wCOfAwdsQTgIcpicL8J1rY,208
+get_cover_art/normalizer.py,sha256=wRPz8pdJ_u1jpkcz9rMMhJ8UJozWG1vvxYGdtBQBk3k,1303
+get_cover_art-1.4.4.dist-info/LICENSE,sha256=Shs7yU0Mpx_4Ix5taWVeJNqSILjtLTmVYjZzC426cPw,1065
+get_cover_art-1.4.4.dist-info/METADATA,sha256=Fw3Q2K08pHqeUUkztWxOLpC9DHzcwFWnHdgeeFC-fWY,8447
+get_cover_art-1.4.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+get_cover_art-1.4.4.dist-info/top_level.txt,sha256=yfX-VM5G_K85Qdpzo8-IHnFrjpD9FmehTzErguyck2w,14
+get_cover_art-1.4.4.dist-info/RECORD,,
