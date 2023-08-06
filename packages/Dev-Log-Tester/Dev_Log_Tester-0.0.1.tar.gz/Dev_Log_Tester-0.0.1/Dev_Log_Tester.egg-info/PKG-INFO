@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Dev-Log-Tester
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Logendher Gunasekaran
+Author-email: logendher@bytfort.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is simple python lib for add, sub, multi, div purpose
+
+Change Log
+==========
+
+0.0.1 (28/05/2021)
+------------------
+- First Release 
+

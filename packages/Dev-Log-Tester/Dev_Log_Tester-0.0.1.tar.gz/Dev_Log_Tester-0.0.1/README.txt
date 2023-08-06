@@ -1,0 +1,1 @@
+This is simple python lib for add, sub, multi, div purpose
