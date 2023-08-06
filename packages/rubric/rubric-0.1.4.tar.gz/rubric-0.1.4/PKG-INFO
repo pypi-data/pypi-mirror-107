@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: rubric
+Version: 0.1.4
+Summary: Initialize your Python project with all the linting boilerplates you need
+Home-page: https://github.com/rednafi/rubric
+License: MIT
+Keywords: python,configuration,project,initialization
+Author: rednafi
+Author-email: redowan.nafi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: aiofiles (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/rednafi/rubric
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+<h1>Rubric</h1>
+<strong>>> <i>Automate the boilerplate while initializing your Python project</i> <<</strong>
+
+&nbsp;
+
+</div>
+
+![img](https://images.unsplash.com/photo-1582184520153-cb662f665f11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1850&q=80)
+
+## Preface
+
+Rubric is an opinionated project initializer for Python. It assumes that you'll use:
+
+* [Black](https://github.com/psf/black) as the primary code formatter.
+* [Isort](https://github.com/PyCQA/isort) to sort the imports.
+* [Flake8](https://github.com/PyCQA/flake8) to ensure style guide conformance.
+* [Mypy](https://github.com/python/mypy) to check the type hints.
+* [Pip-tools](https://github.com/jazzband/pip-tools) to manage the dependencies.
+
+Following is a list of config files that Rubric is going to add to your directory:
+
+```
+root
+├── .flake8                  # Config file for .flake8
+├── .gitignore               # Python specific .gitignore file
+├── makefile                 # Makefile containing the commands to lint your code
+├── mypy.ini                 # Config file for mypy type checker
+├── pyproject.toml           # Toml file to hold a few common config vars
+├── README.md                # A readme boilerplate
+├── requirements-dev.txt     # File to specify the dev requirements
+├── requirements.in          # File to specify the top level app requirements
+└── requirements.txt         # File to specify the pinned app requirements
+```
+
+The files will contain minimal but sensible default configurations for the respective tools. You're free to change them as you like.
+
+## Installation
+
+* Make a virtual environment in your project's root directory.
+
+* Activate the environment and run:
+
+    ```
+    pip install rubric
+    ```
+
+## Usage
+
+* To inspect all the CLI options, run:
+
+    ```
+    rubric --help
+    ```
+
+    You should see the following output:
+
+    ```
+    $ rubric
+
+           ___       __       _
+          / _ \__ __/ /  ____(_)___
+         / , _/ // / _ \/ __/ / __/
+        /_/|_|\_,_/_.__/_/ /_/\__/
+
+    usage: rubric [-h] [--dirname DIRNAME] [--overwrite] run
+
+    Rubric -- Initialize your Python project ⚙️
+
+    positional arguments:
+    run                run rubric & initialize the project scaffold
+
+    optional arguments:
+    -h, --help         show this help message and exit
+    --dirname DIRNAME  target directory name
+    --overwrite        overwrite existing linter config files
+
+    ```
+
+* Initialize your project with the following command:
+
+    ```
+    rubric run
+    ```
+
+    This will run the tool in a non-destructive way—that means it won't overwrite any of the configuration files that you might have in the directory.
+
+    If you want to overwrite any of the existing config files that you might have in the directory, then run:
+
+    ```
+    rubric run --overwrite
+    ```
+
+    You can also point Rubric to a directory.
+
+    ```
+    rubric run --directory="some/custom/directory"
+    ```
+
+<div align="center">
+<i> ✨ 🍰 ✨ </i>
+</div>
+
