@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pgb/__init__.py
+src/pgb/pgb.py
+src/pgb.egg-info/PKG-INFO
+src/pgb.egg-info/SOURCES.txt
+src/pgb.egg-info/dependency_links.txt
+src/pgb.egg-info/entry_points.txt
+src/pgb.egg-info/top_level.txt
