@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dumb-file-drop
+Version: 0.0.1
+Summary: A simple webserver-based drop box which allows files uploads.  Good for quickly sharing files on your local network.
+Home-page: https://github.com/fastily/dumb-file-drop
+Author: Fastily
+Author-email: fastily@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fastily/dumb-file-drop/issues
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# dumb-file-drop
+[![Python 3.9+](https://upload.wikimedia.org/wikipedia/commons/4/4f/Blue_Python_3.9%2B_Shield_Badge.svg)](https://www.python.org)
+[![License: GPL v3](https://upload.wikimedia.org/wikipedia/commons/8/86/GPL_v3_Blue_Badge.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+Simple webserver which allows files to be uploaded to it.  Good for quickly sharing files on your local network.
+
+Files will be uploaded to `./uploads`
+
+Run:
+```bash
+python -m dumb_file_drop
+```
+
+Endpoint: [localhost:5000](http://localhost:5000)
+
+⚠️ Do not run this on public/untrusted networks!  There's no built-in authentication, so anybody could upload files to your computer!
+
