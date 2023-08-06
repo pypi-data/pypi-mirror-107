@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kuramoto
+Version: 0.2.2
+Summary: Kuramoto model on graphs
+Home-page: https://github.com/fabridamicelli/kuramoto
+Author: Fabrizio Damicelli
+Author-email: fabridamicelli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: scipy
+
+UNKNOWN
+
+
