@@ -1,0 +1,3 @@
+[console_scripts]
+catplist = catplist.catplist:catplist
+
