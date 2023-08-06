@@ -1,0 +1,15 @@
+morshutalk/__init__.py,sha256=1sSClJLpscb8p-IhvJ657cI5t5sb1mxy_NQ7z2fk2ao,28
+morshutalk/__main__.py,sha256=_zQh0utVxY4shfXcY41ZddUigpT6ZRNrmz9Q0LhQy3M,626
+morshutalk/morshu.py,sha256=BDSdFy1R99tl7ZGUj6zabDEVPXQST0EdC6Faq5oLoao,16077
+morshutalk/morshu.wav,sha256=QA867tHkc1LWDnwVR9W_e6P6yvccNwYP7L4uYQ3NCXQ,540332
+morshutalkgui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morshutalkgui/__main__.py,sha256=sjvSsCGgBwemLRzDQ7s-vjS-k3Hd0hpDVL3Sxavbvy4,289
+morshutalkgui/mainwindow.py,sha256=G12O_3KO_K9jC4tKYsrZmVY-k5ZH6B7FGnefUKWXsdg,7020
+morshutalkgui/res_rc.py,sha256=KnDV7nLiPi4aZjRRSJRwpV07TP-XZ1PR_lCS0QM6KBY,2022993
+morshutalkgui/ui_mainwindow.py,sha256=2pTtlRL5Vf4suofkWxO2WB9fuU3GOXzry2GFkj6_7Oc,7365
+MorshuTalk-0.0.1.dist-info/LICENSE.txt,sha256=oily-16zsbh7mt8vS8RLHrI2utSKffd1B4_jONdSBDI,1074
+MorshuTalk-0.0.1.dist-info/METADATA,sha256=WeMrIUkA9ziwh3d9Tr306ArnxAbztGvMUsOG6-RAP-w,3940
+MorshuTalk-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MorshuTalk-0.0.1.dist-info/entry_points.txt,sha256=2SaPmSSuo2FhBrXt0VhUu4t4l25_yJBHqGJpokTIKPs,101
+MorshuTalk-0.0.1.dist-info/top_level.txt,sha256=F589D1Pkgf27neWnPsoiSHSo-nX_V962xhQIiIOtZNY,25
+MorshuTalk-0.0.1.dist-info/RECORD,,
