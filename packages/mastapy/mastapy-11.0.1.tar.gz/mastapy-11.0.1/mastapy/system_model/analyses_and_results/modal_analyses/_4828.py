@@ -1,0 +1,87 @@
+﻿'''_4828.py
+
+KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis
+'''
+
+
+from typing import List
+
+from mastapy.system_model.part_model.gears import _2217
+from mastapy._internal import constructor, conversion
+from mastapy.system_model.analyses_and_results.static_loads import _6567
+from mastapy.system_model.analyses_and_results.system_deflections import _2442
+from mastapy.system_model.analyses_and_results.modal_analyses import _4827, _4826, _4822
+from mastapy._internal.python_net import python_net_import
+
+_KLINGELNBERG_CYCLO_PALLOID_SPIRAL_BEVEL_GEAR_SET_MODAL_ANALYSIS = python_net_import('SMT.MastaAPI.SystemModel.AnalysesAndResults.ModalAnalyses', 'KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis')
+
+
+__docformat__ = 'restructuredtext en'
+__all__ = ('KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis',)
+
+
+class KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis(_4822.KlingelnbergCycloPalloidConicalGearSetModalAnalysis):
+    '''KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis
+
+    This is a mastapy class.
+    '''
+
+    TYPE = _KLINGELNBERG_CYCLO_PALLOID_SPIRAL_BEVEL_GEAR_SET_MODAL_ANALYSIS
+
+    __hash__ = None
+
+    def __init__(self, instance_to_wrap: 'KlingelnbergCycloPalloidSpiralBevelGearSetModalAnalysis.TYPE'):
+        super().__init__(instance_to_wrap)
+        self._freeze()
+
+    @property
+    def assembly_design(self) -> '_2217.KlingelnbergCycloPalloidSpiralBevelGearSet':
+        '''KlingelnbergCycloPalloidSpiralBevelGearSet: 'AssemblyDesign' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_2217.KlingelnbergCycloPalloidSpiralBevelGearSet)(self.wrapped.AssemblyDesign) if self.wrapped.AssemblyDesign else None
+
+    @property
+    def assembly_load_case(self) -> '_6567.KlingelnbergCycloPalloidSpiralBevelGearSetLoadCase':
+        '''KlingelnbergCycloPalloidSpiralBevelGearSetLoadCase: 'AssemblyLoadCase' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_6567.KlingelnbergCycloPalloidSpiralBevelGearSetLoadCase)(self.wrapped.AssemblyLoadCase) if self.wrapped.AssemblyLoadCase else None
+
+    @property
+    def system_deflection_results(self) -> '_2442.KlingelnbergCycloPalloidSpiralBevelGearSetSystemDeflection':
+        '''KlingelnbergCycloPalloidSpiralBevelGearSetSystemDeflection: 'SystemDeflectionResults' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_2442.KlingelnbergCycloPalloidSpiralBevelGearSetSystemDeflection)(self.wrapped.SystemDeflectionResults) if self.wrapped.SystemDeflectionResults else None
+
+    @property
+    def klingelnberg_cyclo_palloid_spiral_bevel_gears_modal_analysis(self) -> 'List[_4827.KlingelnbergCycloPalloidSpiralBevelGearModalAnalysis]':
+        '''List[KlingelnbergCycloPalloidSpiralBevelGearModalAnalysis]: 'KlingelnbergCycloPalloidSpiralBevelGearsModalAnalysis' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        value = conversion.pn_to_mp_objects_in_list(self.wrapped.KlingelnbergCycloPalloidSpiralBevelGearsModalAnalysis, constructor.new(_4827.KlingelnbergCycloPalloidSpiralBevelGearModalAnalysis))
+        return value
+
+    @property
+    def klingelnberg_cyclo_palloid_spiral_bevel_meshes_modal_analysis(self) -> 'List[_4826.KlingelnbergCycloPalloidSpiralBevelGearMeshModalAnalysis]':
+        '''List[KlingelnbergCycloPalloidSpiralBevelGearMeshModalAnalysis]: 'KlingelnbergCycloPalloidSpiralBevelMeshesModalAnalysis' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        value = conversion.pn_to_mp_objects_in_list(self.wrapped.KlingelnbergCycloPalloidSpiralBevelMeshesModalAnalysis, constructor.new(_4826.KlingelnbergCycloPalloidSpiralBevelGearMeshModalAnalysis))
+        return value
