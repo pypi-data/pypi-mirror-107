@@ -1,0 +1,6 @@
+
+[dev]
+isort
+mypy
+pylint
+pytest
