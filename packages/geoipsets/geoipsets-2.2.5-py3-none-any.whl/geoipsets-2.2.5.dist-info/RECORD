@@ -1,0 +1,11 @@
+geoipsets/VERSION,sha256=9Wx5eiXxat43riLVYSSwhda8WNBcyfc9IHX0dMFwIEs,6
+geoipsets/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+geoipsets/__main__.py,sha256=3biSdXl_fIBOTyFYs6NqWB3j6AN1ERlDZEp0EtZb-uk,7417
+geoipsets/dbip.py,sha256=bc_gWDopIZIXgqXFfAS7rFzRcaP-Gb3mLuT42Nlsg9A,5415
+geoipsets/maxmind.py,sha256=Z5vwy7ExsoMME-QZkiOAz2VCHaLBrQRejeagpvUv8ww,7857
+geoipsets/utils.py,sha256=znZuFt9opo3X6-UkyWIq55Z6td3XF2D5y5v1yV9iImU,854
+geoipsets-2.2.5.dist-info/METADATA,sha256=xzgzPkoZ4vETmBkmco0YJRkrk53fGixWbtNs7qKvE4o,3334
+geoipsets-2.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+geoipsets-2.2.5.dist-info/entry_points.txt,sha256=Qb3fIIkJY7fyRHXw_8ZJpabYK-r_c_K54xE0PAtbkAQ,55
+geoipsets-2.2.5.dist-info/top_level.txt,sha256=l0vTMyzvW5qfpd51auq9VejCjFtO68PzG4lRtGbMDZ8,10
+geoipsets-2.2.5.dist-info/RECORD,,
