@@ -1,0 +1,198 @@
+/*
+ * Copyright 2020-2020 Exactpro (Exactpro Systems Limited)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+syntax = "proto3";
+
+import "th2_grpc_common/common.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/any.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "com.exactpro.th2.dataprovider.grpc";
+
+
+service DataProvider {
+
+
+  rpc getEvent (EventID) returns (EventData) {
+  }
+
+  rpc getMessage (MessageID) returns (MessageData) {
+  }
+
+  rpc getMessageStreams (google.protobuf.Empty) returns (StringList) {
+  }
+
+  rpc searchMessages (MessageSearchRequest) returns (stream StreamResponse) {
+
+  }
+
+  rpc searchEvents (EventSearchRequest) returns (stream StreamResponse) {
+
+  }
+
+  rpc getMessagesFilters (google.protobuf.Empty) returns (ListFilterName) {
+  }
+
+  rpc getEventsFilters (google.protobuf.Empty) returns (ListFilterName) {
+  }
+
+  rpc getEventFilterInfo (FilterName) returns (FilterInfo) {
+  }
+
+  rpc getMessageFilterInfo (FilterName) returns (FilterInfo) {
+  }
+
+  rpc  matchEvent (MatchRequest) returns (IsMatched) {
+  }
+
+  rpc  matchMessage (MatchRequest) returns (IsMatched) {
+  }
+}
+
+message EventData {
+  EventID event_id = 1;
+  EventID parent_event_id = 2; // Event id of parent event. It is null for root event
+  EventID batch_id = 3; // Event id of parent event. It is null for root event
+  bool is_batched = 4;
+
+  google.protobuf.Timestamp start_timestamp = 5;
+  google.protobuf.Timestamp end_timestamp = 6;
+  EventStatus successful = 7; // Aggregated status of current and children events which sync written.
+  string event_name = 8;
+  string event_type = 9;
+  bytes body = 10;
+  repeated MessageID attached_message_ids = 11;
+}
+
+
+message EventMetadata {
+  EventID event_id = 1;
+  EventID parent_event_id = 2; // Event id of parent event. It is null for root event
+  google.protobuf.Timestamp start_timestamp = 4;
+  EventStatus successful = 5; // Aggregated status of current and children events which sync written.
+  string event_name = 6;
+  string event_type = 7;
+}
+
+
+message MessageData {
+  MessageID message_id = 1; // Message id should be unique in session
+  ConnectionID session_id = 2;
+  Direction direction = 3; // Transport direction.
+  google.protobuf.Timestamp timestamp = 4; // Message creation timestamp
+  string message_type = 5; // Message type by dictionary
+  string body = 6;
+  string body_base64 = 7;
+}
+
+message LastScannedObjectInfo {
+  string id = 1;
+  int64 timestamp_millis = 2;
+  int64 scan_counter = 3;
+}
+
+message StringList {
+  repeated string list_string = 1;
+}
+
+message IsMatched {
+  bool is_matched = 1;
+}
+
+enum FilterParameterType {
+  NUMBER = 0;
+  BOOLEAN = 1;
+  STRING = 2;
+  STRING_LIST = 3;
+}
+
+message FilterName {
+  string filter_name = 1;
+}
+
+message ListFilterName {
+  repeated FilterName filter_names = 1;
+}
+
+message Parameter {
+  string name = 1;
+  FilterParameterType type = 2;
+  google.protobuf.Any default_value = 3;
+  string hint = 4;
+}
+
+message FilterInfo {
+  FilterName name = 1;
+  string hint = 2;
+  repeated Parameter parameters = 3;
+}
+
+message Filter {
+  FilterName name = 1;
+  google.protobuf.BoolValue negative = 2;
+  repeated string values = 3;
+}
+
+enum TimeRelation {
+  NEXT = 0;
+  PREVIOUS = 1;
+}
+
+message MatchRequest {
+  oneof id {
+    EventID event_id = 1;
+    MessageID message_id = 2;
+  }
+  repeated Filter filters = 3;
+}
+
+message EventSearchRequest {
+
+  google.protobuf.Timestamp start_timestamp = 1;
+  google.protobuf.Timestamp end_timestamp = 2;
+  EventID parent_event = 3;
+  TimeRelation search_direction = 4;
+  EventID resume_from_id = 5;
+  google.protobuf.Int32Value result_count_limit = 6;
+  google.protobuf.BoolValue keep_open = 7;
+  google.protobuf.Int64Value limit_for_parent = 8;
+  google.protobuf.BoolValue metadata_only = 9;
+  repeated Filter filters = 10;
+}
+
+message MessageSearchRequest {
+
+  google.protobuf.Timestamp start_timestamp = 1;
+  google.protobuf.Timestamp end_timestamp = 2;
+  MessageID resume_from_id = 3;
+  TimeRelation search_direction = 4;
+  google.protobuf.Int32Value result_count_limit = 5;
+  StringList stream = 6;
+  google.protobuf.BoolValue keep_open = 7;
+  repeated Filter filters = 8;
+}
+
+message StreamResponse {
+  oneof data {
+    EventData event = 1;
+    MessageData message = 2;
+    EventMetadata event_metadata = 3;
+    LastScannedObjectInfo last_scanned_object = 4;
+  }
+}
