@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fastsearch/__init__.py
+fastsearch/fastsearch.py
+fastsearch.egg-info/PKG-INFO
+fastsearch.egg-info/SOURCES.txt
+fastsearch.egg-info/dependency_links.txt
+fastsearch.egg-info/requires.txt
+fastsearch.egg-info/top_level.txt
