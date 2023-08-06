@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+matplotlib_publishutil.egg-info/PKG-INFO
+matplotlib_publishutil.egg-info/SOURCES.txt
+matplotlib_publishutil.egg-info/dependency_links.txt
+matplotlib_publishutil.egg-info/top_level.txt
+publishutil/__init__.py
+publishutil/figurelayout.py
