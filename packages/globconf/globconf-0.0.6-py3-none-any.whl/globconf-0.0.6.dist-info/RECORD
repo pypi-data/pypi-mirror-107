@@ -1,0 +1,10 @@
+globconf/__init__.py,sha256=3Izm-MdWSWzEycmZA-zSwY9ucEOqm7lMZODZ2mM-WjM,81
+globconf/cfgfilestore.py,sha256=WcpDxI5HyQLJJNPQmIm_vd0xre0vAuJGoNgZadCqGx4,3258
+globconf/globconf.py,sha256=WuurWiyhn2QRyxWQF2bHUIIhPk3i3jzB-mONNGXS4VA,3093
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_globconf.py,sha256=wGrBBEgba21LkJpYBXU7q1f5qayWz5hDTXqmnzI22r8,2720
+globconf-0.0.6.dist-info/LICENSE.md,sha256=gpUCmEjf2ymi9CYo6rpNrPzAxZyY7IqxljSIJXFAeEc,1074
+globconf-0.0.6.dist-info/METADATA,sha256=HFfZ8e6MkOy8-PiKBQ0jzhm1v3Izitq8WWsW83shn_k,3185
+globconf-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+globconf-0.0.6.dist-info/top_level.txt,sha256=A8Czl9SzN6forqe_xNE5aDJrJo4_MxzgwZs42yAvJBI,15
+globconf-0.0.6.dist-info/RECORD,,
