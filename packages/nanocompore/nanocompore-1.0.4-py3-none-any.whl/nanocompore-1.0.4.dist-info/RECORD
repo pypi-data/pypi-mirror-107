@@ -1,0 +1,17 @@
+nanocompore/Eventalign_collapse.py,sha256=l-J4dTjfLFsZrliyFnzeDf6qOEQPwhqd0cNb00Vqc1o,16444
+nanocompore/SampComp.py,sha256=dhGEUO3rYeTmW_42RXdAWUwaIxenZujTbIuHl9EshjY,23549
+nanocompore/SampCompDB.py,sha256=X5HcpSNaXk3CXkseBKubrCjXNuX8GAszEP6ksw-AZrw,44023
+nanocompore/SimReads.py,sha256=L-TCwqY3LxIiCrqwcVyxD8czi_fqrhhV-eGw6V9XFYM,14922
+nanocompore/SuperParser.py,sha256=M4ZdLiQYY7ar7LTD69sHQtmSbo4YbbUsf1pXIAKpeq4,7241
+nanocompore/TxComp.py,sha256=hNMKV6hNX2ZadWBQMRqye4j0yqqBjvQXAIizKXF-klU,19912
+nanocompore/Whitelist.py,sha256=OFFyi32VK91Hd0YiPtmw4liGI51Pexy4Hwf66ixd3u8,13733
+nanocompore/__init__.py,sha256=pSu7O6jXwaq1XmiVm8WN0CMPbejcxfLTxT2ZhKCh2AY,333
+nanocompore/__main__.py,sha256=lAMv7N5stW5wnQ5S7VLh85Qzp9DB1_nRfnHfHeBSVk4,14947
+nanocompore/common.py,sha256=I5jGj7t9WRGXRUy025g4bqi55J93_ixWsTgXstnzvoE,7584
+nanocompore/models/kmers_model_RNA_r9.4_180mv.tsv,sha256=Tz-VuuAclF6CD0pe1fGWaNAq8ZnvjSiAJfADU3I-VXc,424192
+nanocompore/sb_architecture,sha256=mxVKPff3PpyY7sowHM-Y25M-iejJ6fmTptatNQEJRis,64
+nanocompore-1.0.4.dist-info/entry_points.txt,sha256=ZIhEbUQwxvL9lTWd4erdnLZnGJ38EJ70xmJ-4tU3hwY,57
+nanocompore-1.0.4.dist-info/LICENSE,sha256=iGl7hRRizRYNPNQw1Xcs1Rq1DkV7biJx3_dVUmN1SYc,34607
+nanocompore-1.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+nanocompore-1.0.4.dist-info/METADATA,sha256=xRQJ9LQf55jO3fu-CYRhICtQHsKUYGrp6AJ3ZMm291Y,3475
+nanocompore-1.0.4.dist-info/RECORD,,
