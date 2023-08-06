@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+dpypx/__init__.py
+dpypx/autodraw.py
+dpypx/canvas.py
+dpypx/client.py
+dpypx/colours.py
+dpypx/errors.py
+dpypx/ratelimits.py
+dpypx.egg-info/PKG-INFO
+dpypx.egg-info/SOURCES.txt
+dpypx.egg-info/dependency_links.txt
+dpypx.egg-info/requires.txt
+dpypx.egg-info/top_level.txt
