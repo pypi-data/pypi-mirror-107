@@ -1,0 +1,12 @@
+README.md
+setup.py
+googoal/__init__.py
+googoal/config.py
+googoal/googoal.py
+googoal/odsmail.py
+googoal.egg-info/PKG-INFO
+googoal.egg-info/SOURCES.txt
+googoal.egg-info/dependency_links.txt
+googoal.egg-info/entry_points.txt
+googoal.egg-info/requires.txt
+googoal.egg-info/top_level.txt

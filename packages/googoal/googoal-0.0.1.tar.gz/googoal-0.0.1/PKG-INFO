@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: googoal
+Version: 0.0.1
+Summary: Python software for interfacing with google services.
+Home-page: https://github.com/lawrennd/googoal
+Author: Neil D. Lawrence
+Author-email: lawrennd@gmail.com
+License: MIT
+Description: 
+        goggles
+        ===
+        
+        <p align="left">
+          <a href="https://github.com/lawrennd/goggles"><img alt="GitHub Actions status" src="https://github.com/lawrennd/goggles/workflows/code-tests/badge.svg"></a>
+        </p>
+        
+        Software for interfacing with Google Services. This code was originally incorporated with the `pods` software, but split out in May 2021.
+        
+        
+        To access a spreadsheet from the script, you need to follow the
+        protocol for Oauth 2.0, the process is described (here)[https://developers.google.com/identity/protocols/OAuth2]
+        
+        Once you have the key file, you can specify its location in the
+        `.ods_user.cfg` file, using for example
+        
+        ```
+        [google docs]
+        # Set the email address of an account to access google doc information.
+        oauth2_keyfile = $HOME/oauth2-key-file-name.json
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
