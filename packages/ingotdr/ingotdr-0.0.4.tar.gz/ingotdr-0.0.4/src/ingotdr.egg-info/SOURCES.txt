@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/ingot.py
+src/ingotdr.egg-info/PKG-INFO
+src/ingotdr.egg-info/SOURCES.txt
+src/ingotdr.egg-info/dependency_links.txt
+src/ingotdr.egg-info/requires.txt
+src/ingotdr.egg-info/top_level.txt
