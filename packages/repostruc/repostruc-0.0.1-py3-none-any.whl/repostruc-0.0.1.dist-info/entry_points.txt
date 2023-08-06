@@ -1,0 +1,3 @@
+[console_scripts]
+repostruc = repostruc.repostruc:main
+
