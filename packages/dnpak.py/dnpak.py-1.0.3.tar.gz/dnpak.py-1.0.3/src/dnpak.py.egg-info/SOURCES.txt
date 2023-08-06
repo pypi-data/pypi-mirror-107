@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/dnpak/EtFile.py
+src/dnpak/EtFileSystem.py
+src/dnpak/__init__.py
+src/dnpak.py.egg-info/PKG-INFO
+src/dnpak.py.egg-info/SOURCES.txt
+src/dnpak.py.egg-info/dependency_links.txt
+src/dnpak.py.egg-info/top_level.txt
