@@ -1,0 +1,3 @@
+[console_scripts]
+connect-4-cli = src.App:main
+
