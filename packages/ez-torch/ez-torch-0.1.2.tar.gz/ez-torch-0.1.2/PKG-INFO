@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ez-torch
+Version: 0.1.2
+Summary: Utility functions and fluent interface for pytorch tensors and modules
+License: MIT
+Author: Iliya Zhecev
+Author-email: iliya.zhechev@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: torch (>=1.8.1,<2.0.0)
+Requires-Dist: torchvision (>=0.9.1,<0.10.0)
+Description-Content-Type: text/markdown
+
+# EZTorch
+
+Utility functions and fluent interface for PyTorch tensors and modules
+
+# Installation
+
+**PIP**
+```bash
+pip install git+https://github.com/ichko/ez-torch
+```
+
+**From repo**
+```bash
+git clone https://github.com/ichko/ez-torch
+cd ez-torch
+poetry install
+poetry run pytest
+```
+
+# Examples
+...
+
