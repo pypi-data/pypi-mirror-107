@@ -1,0 +1,22 @@
+numpy>=1.20
+scipy
+nbsphinx
+ipython
+jupyter
+jupytext
+pandas
+matplotlib
+pandoc
+pyqt5
+sparkmonitor
+sphinx-autobuild
+sphinx_rtd_theme
+sphinxcontrib-bibtex
+sortedcontainers
+triangle
+fenics-ufl
+x3d
+petsc4py
+pygmsh
+# gmsh - fails in CI for some reason
+
