@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aiml/__init__.py
+aiml/__main__.py
+auto_aiml.egg-info/PKG-INFO
+auto_aiml.egg-info/SOURCES.txt
+auto_aiml.egg-info/dependency_links.txt
+auto_aiml.egg-info/entry_points.txt
+auto_aiml.egg-info/requires.txt
+auto_aiml.egg-info/top_level.txt
