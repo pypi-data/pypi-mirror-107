@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: Dev_WordList_Gen
+Version: 0.0.3
+Summary: Create a Wordlist Easily.
+Home-page: UNKNOWN
+Author: Logendher Gunasekaran
+Author-email: logendher@bytfort.com
+License: MIT
+Keywords: wordlist
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Dev_WordList_Gen
+Author : Logendher Gunasekaran
+Getting Started
+Create Your Simple Wordlist in Very Easy Steps
+
+import Dev_WordList_Gen
+
+chrs="1234567890"
+mins=1
+maxs=1
+Dev_WordList_Gen.dev_generate(chrs,mins,maxs)
+
+output
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+Change Log
+==========
+
+0.0.1 (29/05/2021)
+------------------
+- First Release 
+
