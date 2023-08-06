@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: thystreet
+Version: 0.0.1
+Summary: ThyStreet
+Home-page: UNKNOWN
+Author: Support
+Author-email: support@thystreet.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,ThyStreet
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+Requires-Dist: nulltype
+
+Thy Street APIs are completely RESTful and all our responses are returned in JSON.  # noqa: E501
+
+
