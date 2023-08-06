@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/magcluster.py
+src/magcluster.egg-info/PKG-INFO
+src/magcluster.egg-info/SOURCES.txt
+src/magcluster.egg-info/dependency_links.txt
+src/magcluster.egg-info/requires.txt
+src/magcluster.egg-info/top_level.txt
