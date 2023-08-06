@@ -1,0 +1,3 @@
+[console_scripts]
+pipra = pipra.pipra:main
+
