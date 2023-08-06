@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: iqsms-rest
+Version: 0.0.4
+Summary: Модуль для работы с REST API смс-шлюза iqsms.ru (СМС Дисконт)
+Home-page: UNKNOWN
+Author: Chmelyuk Vladislav
+Author-email: neimp@yandex.ru
+License: UNKNOWN
+Description: ![Pypi version](https://img.shields.io/pypi/v/iqsms-rest.svg)
+        ![Python versions](https://img.shields.io/pypi/pyversions/iqsms-rest)
+        [![Upload Python Package](https://github.com/fgbm/iqsms-rest-python/actions/workflows/python-publish.yml/badge.svg)](https://github.com/fgbm/django-tmmis/actions/workflows/python-publish.yml)
+        
+        # IQSMS REST Gate
+        
+        Модуль для работы с REST API смс-шлюза [iqsms.ru](https://iqsms.ru/) (СМС Дисконт)
+        
+        ## Установка
+        
+        ```bash
+        pip install iqsms-rest
+        ```
+        
+        ## Использование
+        
+        Для начала использования необходимо инициализировать шлюз при помощи логина и пароля к личному кабинету:
+        ```python
+        from iqsms_rest import Gate
+        
+        gate = Gate('login', 'password')
+        ```
+        
+        ### Отправка сообщений
+        
+        ```python
+        gate.send_message('79990001122', 'Hello, World!')
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
