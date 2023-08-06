@@ -1,0 +1,12 @@
+README.md
+setup.py
+sim/__init__.py
+sim/model.py
+sim/similarity.py
+sim/tools.py
+sim/transform.py
+text_sim.egg-info/PKG-INFO
+text_sim.egg-info/SOURCES.txt
+text_sim.egg-info/dependency_links.txt
+text_sim.egg-info/requires.txt
+text_sim.egg-info/top_level.txt
