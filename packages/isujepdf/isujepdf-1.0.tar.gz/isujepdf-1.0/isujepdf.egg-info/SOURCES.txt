@@ -1,0 +1,9 @@
+README.md
+setup.py
+isujepdf/__init__.py
+isujepdf/pdf2image.py
+isujepdf/pdf2text.py
+isujepdf.egg-info/PKG-INFO
+isujepdf.egg-info/SOURCES.txt
+isujepdf.egg-info/dependency_links.txt
+isujepdf.egg-info/top_level.txt
