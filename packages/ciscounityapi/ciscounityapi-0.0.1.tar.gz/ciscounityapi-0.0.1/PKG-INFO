@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ciscounityapi
+Version: 0.0.1
+Summary: Cisco Unity API for Python
+Home-page: https://github.com/
+Author: JFK
+Author-email: info@jfk.rocks
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+License-File: LICENSE
+
+ 
+        Cisco Unity API for Python
+    
+
