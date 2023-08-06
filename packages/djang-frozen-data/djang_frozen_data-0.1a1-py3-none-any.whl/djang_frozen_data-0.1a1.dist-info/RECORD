@@ -1,0 +1,9 @@
+frozen_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frozen_data/apps.py,sha256=Q9IFNn1lh-buiK-7nevm8JTbUlTfVPFQYBeXN4ca4Wg,96
+frozen_data/exceptions.py,sha256=SxhofBA-7KI_2RS04Gza4jh3MiaZJvyMW4DODSv3DSw,490
+frozen_data/fields.py,sha256=PB8rpYZzJuHiEcMVnjBSDJTAWdx_toNYjyeuPWwbxl4,2989
+frozen_data/serializers.py,sha256=cuGSsUWLkGtq75pKEV3UHKenjFMwSLuU0g1DDaSRJKA,2721
+djang_frozen_data-0.1a1.dist-info/LICENSE,sha256=Pg-AVb8HD6XJZn52p0p3tjxjJKv92gfGnwrakjFEkp8,1065
+djang_frozen_data-0.1a1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+djang_frozen_data-0.1a1.dist-info/METADATA,sha256=IcL9ZQpcS7nqkLyXBKzvJvEY6s_Q-t6AKrIvg-6rT4U,2404
+djang_frozen_data-0.1a1.dist-info/RECORD,,
