@@ -1,0 +1,3 @@
+[console_scripts]
+mpremote = mpremote.main:main
+
