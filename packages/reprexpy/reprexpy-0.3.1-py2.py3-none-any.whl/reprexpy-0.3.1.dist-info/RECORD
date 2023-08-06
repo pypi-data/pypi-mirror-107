@@ -1,0 +1,14 @@
+.DS_Store,sha256=ZNpwZWuSDOB46i7l3Tr7-d6dq4tN8ewdbLhAfaaw8Js,6148
+reprexpy/__init__.py,sha256=dzGsY4hcgx90sZOl_9Y_MA31qvIepjZ_QM8VviWFjB8,76
+reprexpy/engine_dev.py,sha256=snj2hXTaPk8pElJQnyr_bA3PDM49ky0OI28GdXrPyBY,2425
+reprexpy/reprex.py,sha256=4XI2T7sRAXq30OfQ8BBgHXkUg9zcVvZxz61mxsjrfpQ,13905
+reprexpy/reprexpy.py,sha256=D1glEiQK6z-M_7XNdbNQOz4zhThvdv_vPNbyXp9vU2Y,7659
+reprexpy/session_info.py,sha256=RVmSG8QIUYD4ZmzDXmQH-nuSI0xDF5aZHCsmqb0_CQ8,7911
+reprexpy/examples/basic-example.py,sha256=Pbobs6RiyMGThLAyxFPp86wFAMnaHvT8BxHKXWJhJCI,296
+reprexpy/examples/error.py,sha256=8M2wHqIcTHM25tt0fcR6gRIUBggN3q8Emsrz6UtyIvk,557
+reprexpy/examples/plotting.py,sha256=bl0yq8ZAqaD-A0msfoW_6QA1nSkj0oX9SlCj6QbOLKU,231
+reprexpy-0.3.1.dist-info/LICENSE.txt,sha256=IT5tYivDDcdL3Qforil_HzE-jMBTyjpGjbIjvfLH9Ro,1061
+reprexpy-0.3.1.dist-info/METADATA,sha256=RUMYhjOJ3it4HWGqRtwBVH62-PzF4GK-4MYRpkOyLOY,5850
+reprexpy-0.3.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+reprexpy-0.3.1.dist-info/top_level.txt,sha256=5uHxUcq9qTho_DJgVJPnmDkTVJQNMHFd27ordl5sKqA,9
+reprexpy-0.3.1.dist-info/RECORD,,
