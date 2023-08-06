@@ -1,0 +1,3 @@
+[console_scripts]
+cda=color_differences_analyzer.main:app
+
