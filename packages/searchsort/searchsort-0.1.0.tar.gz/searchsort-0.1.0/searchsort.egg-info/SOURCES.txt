@@ -1,0 +1,8 @@
+setup.py
+searchsort/__init__.py
+searchsort/searching.py
+searchsort/sorting.py
+searchsort.egg-info/PKG-INFO
+searchsort.egg-info/SOURCES.txt
+searchsort.egg-info/dependency_links.txt
+searchsort.egg-info/top_level.txt

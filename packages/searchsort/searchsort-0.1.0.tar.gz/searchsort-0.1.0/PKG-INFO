@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: searchsort
+Version: 0.1.0
+Summary: Almost all Searching and Sorting Algorithms for python
+Home-page: UNKNOWN
+Author: Programmin-in-Python (MK)
+Author-email: <kalanithi6014@gmail.com>
+License: UNKNOWN
+Description: 
+        A package that allows you to :-
+        1. Search an element in an array using various searching techniques.
+        2. Sort an array using various sorting algorithms.
+        
+Keywords: python3,sort,search,sorting,searching,sorting-algorithms,searching-algorithms,search-sort,searchsort
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
