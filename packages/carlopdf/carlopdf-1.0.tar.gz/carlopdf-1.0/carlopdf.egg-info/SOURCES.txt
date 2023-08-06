@@ -1,0 +1,9 @@
+README.md
+setup.py
+carlopdf/__init__.py
+carlopdf/pdf2image.py
+carlopdf/pdf2text.py
+carlopdf.egg-info/PKG-INFO
+carlopdf.egg-info/SOURCES.txt
+carlopdf.egg-info/dependency_links.txt
+carlopdf.egg-info/top_level.txt
