@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/get_inertia
+get_inertia.egg-info/PKG-INFO
+get_inertia.egg-info/SOURCES.txt
+get_inertia.egg-info/dependency_links.txt
+get_inertia.egg-info/requires.txt
+get_inertia.egg-info/top_level.txt
