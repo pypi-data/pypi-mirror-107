@@ -1,0 +1,10 @@
+podch/__init__.py,sha256=rk8cLvFgOGLGO148LoA8ODpDbWhF9oD--coQ0S4Nq-E,43
+podch/__main__.py,sha256=Zvqv2dTFg30LUvtWd7MT-qkfmO1GltEKwSeRjS-H_TE,429
+podch/board.py,sha256=rIxJauHrRczw_Hn93_6KJbUysMLS_4A0RJv09F2wXec,2268
+podch/enums.py,sha256=hbzFV1nvTmY1JzlwoCpqX8Rcg6hrJ_uUvA53VjowNa4,376
+podch/game.py,sha256=HA0DM7dfqNYgLIkgq04D6aKzc7DXkScHXqMYN6eD8eQ,1899
+podch-1.0.1.1.dist-info/LICENSE,sha256=QQA9SnR0nAIg4z3UFQQhZLWhCT7UAfNidyNPdy0i09A,19347
+podch-1.0.1.1.dist-info/METADATA,sha256=WWWZgMJ8e53Q72AXg9Tduy2xbzRv8FYtid248nJv5U8,1144
+podch-1.0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+podch-1.0.1.1.dist-info/top_level.txt,sha256=T6CwKG8xKTBjGbWO9mXQgRSrQEJoMvmiVqmFxBZ8sT0,6
+podch-1.0.1.1.dist-info/RECORD,,
