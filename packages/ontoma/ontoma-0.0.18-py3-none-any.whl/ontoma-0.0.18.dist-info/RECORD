@@ -1,0 +1,15 @@
+ontoma/__init__.py,sha256=gPExscGG3V-85Pol5dV2JgyQWGVZA9yQ1QJzUU16TqY,329
+ontoma/cli.py,sha256=C8klAzrbyI7GwaR0pj5IxZdVu_gU-n4eJDhq6NN3gpM,1222
+ontoma/constants.py,sha256=7uetp8H7PCOHGghbWWNR90s_Q0OPE38sPOUF5deYDps,4647
+ontoma/downloaders.py,sha256=Lxi08RHl7C-Q65aNj6T-S2BIXj3_Qy4-VnLzyks9Jw4,2034
+ontoma/interface.py,sha256=NYg1-5VG2QTNzoJzfALuPctsBAai2799hQF80sZLRoA,23657
+ontoma/ols.py,sha256=RClrma9wfiC8OdGjzVM4RUptfUxjvqRyt0D12rwX_oc,8482
+ontoma/oxo.py,sha256=fYH2HqtXRUCO7JxswbwpgalPNR7fGGCcBaX3xng1xkc,3276
+ontoma/utils.py,sha256=5us5ziskghdE26HcmaBIQhQzgA8yCMV2DQps1f4oJh8,106
+ontoma/zooma.py,sha256=Eip6vw-wvYONFsixBAUL_HtgcVvd9lNpZVJ3miW00_w,3068
+ontoma-0.0.18.dist-info/LICENSE,sha256=6FDYs631Evtguvz-JUXjWKO_kRFUZdA6j05hRhdcwno,813
+ontoma-0.0.18.dist-info/METADATA,sha256=pSkch_oywyw6NzVBeKP3eRF3_iREXQdQNH49ATjgPqw,3932
+ontoma-0.0.18.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ontoma-0.0.18.dist-info/entry_points.txt,sha256=rNTn1ZCB32ssP2jTuDnHZFitQpTORmLBBFDc7oR-Q8Y,64
+ontoma-0.0.18.dist-info/top_level.txt,sha256=DKW5DiCVpA0l6q3QGIEJ8jfLbOqUO4IjPMmWV4YcYWY,7
+ontoma-0.0.18.dist-info/RECORD,,
