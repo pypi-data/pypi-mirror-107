@@ -1,0 +1,11 @@
+nicenet/ActivationFunction.py,sha256=Zu6HbNAFWMD1hxCt8vdCd3RuZVAMskTeQyyKbpQf6Jo,1593
+nicenet/Dataset.py,sha256=AYPRGD7DnQDlKboztRt6WHMSIDcCSZnuEbNZsD6ijRw,4924
+nicenet/Layer.py,sha256=l3GDGNwANmDWDgh8Wcl1F7y3J4DkVSKSAWE3Bt-L5O4,3193
+nicenet/LossFunctions.py,sha256=6vqtI2LNZrNQX55f3Mkg34DAF1JU4UGLABpSzDBm-4U,1373
+nicenet/NeuralNetwork.py,sha256=vJ4w3V6zurvosjpp7-GsIwfOiXunUCCUHczKUK7QQhA,15490
+nicenet/__init__.py,sha256=P5AH2avLfAuWqeiUpAgAXe1QA8hYY_5O9A61PlEzs14,150
+nicenet-0.0.4.dist-info/LICENSE.txt,sha256=bysYX5ZsKUR8nH44rxOh1H-nAlYWapfxZ7-ONeTiSkY,1035
+nicenet-0.0.4.dist-info/METADATA,sha256=1v7qypUIaX6GAYxm-9GZlLJ3gf8ysy-wFaHnUfsIFwI,4248
+nicenet-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nicenet-0.0.4.dist-info/top_level.txt,sha256=GMk36rw6tPoh8tXPXdS2HWsG1mlswEDgIrrClpMJ0V8,8
+nicenet-0.0.4.dist-info/RECORD,,
