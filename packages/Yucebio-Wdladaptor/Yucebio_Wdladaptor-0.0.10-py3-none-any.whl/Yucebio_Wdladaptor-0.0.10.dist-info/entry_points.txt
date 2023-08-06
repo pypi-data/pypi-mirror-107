@@ -1,0 +1,3 @@
+[console_scripts]
+yucebio_wdl_adaptor = yucebio_wdladaptor.commands:cli
+
