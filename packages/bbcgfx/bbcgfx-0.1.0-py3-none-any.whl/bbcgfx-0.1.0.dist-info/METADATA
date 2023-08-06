@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bbcgfx
+Version: 0.1.0
+Summary: BBC BASIC style graphics
+Home-page: https://github.com/c-jo/bbcgfx
+Author: Chris Johns
+Author-email: chris@lessthan3.org.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: RISC OS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bbcfgx
+
+Library to use BBC BASIC style (OS_Plot) graphics operations on RISC OS.
+
+
