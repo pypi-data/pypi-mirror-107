@@ -1,0 +1,17 @@
+dnspython
+marshmallow
+marshmallow_dataclass
+python-dateutil
+cement~=3.0
+jinja2
+pyyaml
+colorlog
+semver
+jwt
+iso8601
+tabulate
+pyOpenSSL
+requests
+aenum
+colorama
+cryptography
