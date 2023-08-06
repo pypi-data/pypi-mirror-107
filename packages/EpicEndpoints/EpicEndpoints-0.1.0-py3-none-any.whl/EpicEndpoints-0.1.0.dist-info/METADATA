@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: EpicEndpoints
+Version: 0.1.0
+Summary: An awesome package that does something
+Home-page: http://pypi.python.org/pypi/EpicEndpoints/
+Author: AtomicXYZ
+License: LICENSE
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+
+UNKNOWN
+
