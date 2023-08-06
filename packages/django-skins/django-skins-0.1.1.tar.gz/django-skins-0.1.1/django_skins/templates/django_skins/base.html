@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {% block meta %}
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      {% endblock meta %}
+    <title>{% block title %}Site Title{% endblock title %}</title>
+    {% block favicon %}{% endblock favicon %}
+
+    {% block skin_css %}{% endblock skin_css %}
+    {% block css %}{% endblock css %}
+
+    {% block skin_javascript %}{% endblock skin_javascript %}
+    {% block javascript %}{% endblock javascript %}
+  </head>
+  <body>
+    {% block body %} {% endblock body %}
+    {% block end_of_body %}{% endblock end_of_body %}
+    {% block modal %}{% endblock modal %}
+
+    {% block skin_body_javascript %}{% endblock skin_body_javascript %}
+    {% block inline_javascript %}{% endblock inline_javascript %}
+    {% block page_javascript %}{% endblock page_javascript %}
+  </body>
+</html>
