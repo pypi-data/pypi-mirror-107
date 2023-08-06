@@ -1,0 +1,10 @@
+aws_cdk/aws_fms/__init__.py,sha256=qnh7t3M2V4GS4NxCwFKngt51ZkKgjZaSuQXl2QnElXE,35554
+aws_cdk/aws_fms/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_fms/_jsii/__init__.py,sha256=0O8NzeuPPqACcfnMr9nR8eZvxv5gjmsO3uWyBReSfVs,365
+aws_cdk/aws_fms/_jsii/aws-fms@1.106.1.jsii.tgz,sha256=JlbsA0B1CfmQ49F3Bdsur6NSyEB7B5BM3uxPXrFIcqY,25380
+aws_cdk.aws_fms-1.106.1.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_fms-1.106.1.dist-info/METADATA,sha256=eFk2wyP72aZ2pO6sgY6mYDIo4yiiYipdSVdGPSbAAJo,1679
+aws_cdk.aws_fms-1.106.1.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_fms-1.106.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_fms-1.106.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_fms-1.106.1.dist-info/RECORD,,
