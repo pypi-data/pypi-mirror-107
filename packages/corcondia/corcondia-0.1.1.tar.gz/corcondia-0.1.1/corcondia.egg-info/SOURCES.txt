@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+corcondia/__init__.py
+corcondia/corcondia.py
+corcondia.egg-info/PKG-INFO
+corcondia.egg-info/SOURCES.txt
+corcondia.egg-info/dependency_links.txt
+corcondia.egg-info/requires.txt
+corcondia.egg-info/top_level.txt
