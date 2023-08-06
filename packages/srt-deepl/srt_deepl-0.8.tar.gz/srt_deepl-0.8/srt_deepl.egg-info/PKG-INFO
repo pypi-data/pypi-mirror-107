@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: srt-deepl
+Version: 0.8
+Summary: Traslate a .SRT file using DeepL and Selenium.
+Home-page: UNKNOWN
+Author: EAR
+Author-email: sinedie@protonmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,srt,deepl,languages,translator,subtitles
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6

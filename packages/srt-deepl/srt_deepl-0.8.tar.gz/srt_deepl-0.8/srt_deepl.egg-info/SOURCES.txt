@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/__init__.py
+src/deepl.py
+src/elements.py
+src/main.py
+src/srt_parser.py
+srt_deepl.egg-info/PKG-INFO
+srt_deepl.egg-info/SOURCES.txt
+srt_deepl.egg-info/dependency_links.txt
+srt_deepl.egg-info/top_level.txt
