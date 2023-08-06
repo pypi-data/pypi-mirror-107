@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sportsrefapi
+Version: 0.0.1
+Summary: Python package for parsing stats from sports reference.
+Home-page: https://gitlab.com/mefortunato/sports-reference
+Author: Mike Fortunato
+Author-email: mike@mfort.dev
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/mefortunato/sports-reference/-/issues
+Description: # sports-reference
+        
+        Python package for parsing stats from sports reference.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
