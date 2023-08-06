@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: segmentpy
+Version: 0.1a0
+Summary: Deep Learning Software for Tomography Segmentation
+Home-page: http://segmentpy.readthedocs.org
+Author: Zeliang Su, Arnaud Demortiere
+Author-email: zeliang.su@gmail.com, arnaud.demortiere@u-picardie.fr
+License: Apache 2.0
+Keywords: segmentation,CNN,XCT-image,battery
+Platform: UNKNOWN
+Requires-Python: ==3.6
+License-File: LICENSE
+Requires-Dist: numpy (==1.19.1)
+Requires-Dist: tensorflow (==1.14)
+Requires-Dist: pandas (==1.1.1)
+Requires-Dist: Pillow
+Requires-Dist: mpi4py (==3.0.3)
+Requires-Dist: matplotlib (==3.3.1)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: scikit-image (==0.16.2)
+Requires-Dist: scipy (==1.5.2)
+Requires-Dist: tqdm
+Requires-Dist: opencv-python-headless (==3.4.2.*)
+Requires-Dist: h5py (==2.8.0)
+
+UNKNOWN
+
