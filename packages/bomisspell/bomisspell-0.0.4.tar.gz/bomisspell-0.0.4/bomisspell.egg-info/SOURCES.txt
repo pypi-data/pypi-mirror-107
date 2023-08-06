@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+bomisspell/__init__.py
+bomisspell/mingzhi.py
+bomisspell/option_generator.py
+bomisspell/sgnon_jung.py
+bomisspell/utils.py
+bomisspell/yang_jug.py
+bomisspell.egg-info/PKG-INFO
+bomisspell.egg-info/SOURCES.txt
+bomisspell.egg-info/dependency_links.txt
+bomisspell.egg-info/requires.txt
+bomisspell.egg-info/top_level.txt
+bomisspell/resources/load_mapping.py
+bomisspell/resources/mapping.txt
+bomisspell/resources/mingzhi_mapping.yaml
