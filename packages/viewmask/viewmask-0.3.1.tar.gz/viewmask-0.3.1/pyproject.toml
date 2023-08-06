@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "viewmask"
+version = "0.3.1"
+description = "A Python package and CLI to view XML annotations and NumPy masks."
+license = "MIT"
+authors = ["sumanthratna <sumanthratna@gmail.com>"]
+readme = "README.rst"
+repository = "https://github.com/sumanthratna/viewmask"
+documentation = "https://viewmask.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+click = "^8.0.1"
+numpy = "^1.18.4"
+opencv-python-headless = "^4.2.0"
+openslide-python = "^1.1.1"
+dask-image = "^0.6.0"
+scikit-image = "^0.18.1"
+Pillow = "^8.0.0"
+napari = {version = "^0.4.2", optional = true}
+scipy = "^1.6.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+Sphinx = "^4.0.2"
+sphinx-click = "^3.0.0"
+napari = {extras = ["pyside2"], version = "^0.4.2"}
+
+[tool.poetry.scripts]
+viewmask = "viewmask.cli:cli"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
