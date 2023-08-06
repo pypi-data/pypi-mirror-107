@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gravity_falls.egg-info/PKG-INFO
+src/gravity_falls.egg-info/SOURCES.txt
+src/gravity_falls.egg-info/dependency_links.txt
+src/gravity_falls.egg-info/top_level.txt
