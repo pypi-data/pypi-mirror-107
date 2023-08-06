@@ -1,0 +1,9 @@
+Pint>=0.8.1
+configobj>=5.0.6
+setuptools>=39.0.1
+
+[with_pyqt5]
+PyQt5>=5.14.1
+
+[with_pyside2]
+PySide2>=5.14.1
