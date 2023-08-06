@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+asyncdictionary/__init__.py
+asyncdictionary.egg-info/PKG-INFO
+asyncdictionary.egg-info/SOURCES.txt
+asyncdictionary.egg-info/dependency_links.txt
+asyncdictionary.egg-info/requires.txt
+asyncdictionary.egg-info/top_level.txt
