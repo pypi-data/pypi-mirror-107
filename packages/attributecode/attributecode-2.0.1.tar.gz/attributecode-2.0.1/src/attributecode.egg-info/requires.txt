@@ -1,0 +1,14 @@
+jinja2<3.0,>=2.9
+click
+PyYAML<=3.13,>=3.11
+saneyaml
+boolean.py<4.0,>=3.5
+license_expression>=0.94
+packageurl_python>=0.9.0
+
+[testing]
+pytest>=6
+pytest-xdist>=2
+colorama
+py
+mock

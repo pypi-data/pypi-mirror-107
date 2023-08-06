@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>HOW TO &mdash; attributecode 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Setup" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> attributecode
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How To Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#command">Command</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#c-configuration">-c, –configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scancode">–scancode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#min-license-score">–min-license-score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference">–reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#template">–template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vartext-key-value">–vartext &lt;key&gt;=&lt;value&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sample-commands">Sample commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">attributecode</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>HOW TO</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nexB/attributecode/blob/develop/docs/source/howto.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to">
+<h1><a class="toc-backref" href="#id1">HOW TO</a><a class="headerlink" href="#how-to" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#how-to" id="id1">HOW TO</a></p>
+<ul>
+<li><p><a class="reference internal" href="#command" id="id2">Command</a></p>
+<ul>
+<li><p><a class="reference internal" href="#c-configuration" id="id3">-c, –configuration</a></p></li>
+<li><p><a class="reference internal" href="#scancode" id="id4">–scancode</a></p></li>
+<li><p><a class="reference internal" href="#min-license-score" id="id5">–min-license-score</a></p></li>
+<li><p><a class="reference internal" href="#reference" id="id6">–reference</a></p></li>
+<li><p><a class="reference internal" href="#template" id="id7">–template</a></p></li>
+<li><p><a class="reference internal" href="#vartext-key-value" id="id8">–vartext &lt;key&gt;=&lt;value&gt;</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#examples" id="id9">Examples</a></p>
+<ul>
+<li><p><a class="reference internal" href="#sample-commands" id="id10">Sample commands</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This section covers the basic usage of the command and options.</p>
+<div class="section" id="command">
+<h2><a class="toc-backref" href="#id2">Command</a><a class="headerlink" href="#command" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Usage: attributecode [OPTIONS] INPUT OUTPUT
+
+Options:
+  --version                    Show the version and exit.
+  -c, --configuration FILE     Path to an optional YAML configuration file for
+                               renaming fields name.
+  --min-license-score INTEGER  Attribute components that have license score
+                               higher than the defined --min-license-score.
+  --scancode                   Indicate the input JSON file is from
+                               scancode_toolkit.
+  --reference DIR              Path to a directory with reference files where
+                               &quot;license_file&quot; and/or &quot;notice_file&quot; located.
+  --template FILE              Path to an optional custom attribution template
+                               to generate the attribution document. If not
+                               provided the default built-in template is used.
+  --vartext &lt;key&gt;=&lt;value&gt;      Add variable text as key=value for use in a
+                               custom attribution template.
+  -q, --quiet                  Do not print error or warning messages.
+  --verbose                    Show all error and warning messages.
+  -h, --help                   Show this message and exit.
+</pre></div>
+</div>
+<div class="section" id="c-configuration">
+<h3><a class="toc-backref" href="#id3">-c, –configuration</a><a class="headerlink" href="#c-configuration" title="Permalink to this headline">¶</a></h3>
+<p>This is used for field renaming purpose.
+This configuration file is a YAML formatted file.</p>
+<p>The syntax is
+<code class="docutils literal notranslate"><span class="pre">&lt;current&gt;:</span> <span class="pre">&lt;new&gt;</span></code></p>
+<p>For instance,</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Component: name
+Confirmed Version: version
+License Expression: license_expression
+</pre></div>
+</div>
+</div>
+<div class="section" id="scancode">
+<h3><a class="toc-backref" href="#id4">–scancode</a><a class="headerlink" href="#scancode" title="Permalink to this headline">¶</a></h3>
+<p>As stated in the description, this is to tell the tool that the input is from ScanCode Toolkit.
+Note that we currently only accept JSON from ScanCode Toolkit.</p>
+</div>
+<div class="section" id="min-license-score">
+<h3><a class="toc-backref" href="#id5">–min-license-score</a><a class="headerlink" href="#min-license-score" title="Permalink to this headline">¶</a></h3>
+<p>This is used when we have a ScanCode JSON input and want to show licenses that have a score higher than the <code class="docutils literal notranslate"><span class="pre">--min-license-score</span></code>.
+For instance, if we want to show everything that has a license score greater than or equal to 40:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>attributecode --min-license-score 40 --scancode &lt;input.json&gt; &lt;output.html&gt;
+</pre></div>
+</div>
+<p>Other detected licenses whose license scores are less than 40 will not be collected.
+This option can only work with a ScanCode JSON input, and therefore the <code class="docutils literal notranslate"><span class="pre">--scancode</span></code> option flag is needed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DEFAULT_LICENSE_SCORE</span></code> is set to 100.</p>
+</div>
+</div>
+<div class="section" id="reference">
+<h3><a class="toc-backref" href="#id6">–reference</a><a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+<p>When the input has “license_file” or “notice_file” fields set, the tool needs to know where to read these files.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>attributecode --reference ~/project/license_notices/ &lt;input.csv&gt; &lt;output.csv&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="template">
+<h3><a class="toc-backref" href="#id7">–template</a><a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h3>
+<p>Point to the custom template.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>attributecode --template templates/scancode.template --scancode &lt;input.json&gt; &lt;output.html&gt;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">templates/scancode.template</span></code> is a custom template specifically for ScanCode’s JSON input.</p>
+</div>
+</div>
+<div class="section" id="vartext-key-value">
+<h3><a class="toc-backref" href="#id8">–vartext &lt;key&gt;=&lt;value&gt;</a><a class="headerlink" href="#vartext-key-value" title="Permalink to this headline">¶</a></h3>
+<p>Pass variable(s) to the Jinja2 template.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>attributecode --vartext &quot;subtitle=THIS IS A SUBTITLE&quot; &lt;input.csv&gt; &lt;output.csv&gt;
+</pre></div>
+</div>
+<p>The above command passes the variable <code class="docutils literal notranslate"><span class="pre">subtitle</span></code> to the Jinja2 template. If users want to
+access this variable, they can simply use <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">variables['subtitle']</span> <span class="pre">}}</span></code> to get the data.</p>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id9">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Some sample input files are under the <code class="docutils literal notranslate"><span class="pre">samples/</span></code> directory:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">simple_sample.csv</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">report_sample.xlsx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clean-text-0.3.0-lceupi.json</span></code></p></li>
+</ul>
+<div class="section" id="sample-commands">
+<h3><a class="toc-backref" href="#id10">Sample commands</a><a class="headerlink" href="#sample-commands" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>attributecode samples/simple_sample.csv &lt;output.html&gt;
+attributecode --vartext &quot;subtitle=THIS IS A SUBTITLE&quot; samples/simple_sample.csv &lt;output.html&gt;
+attributecode -c templates/sample.MAPPING samples/report_sample.xlsx &lt;output.html&gt;
+attributecode --template templates/scancode.template --scancode samples/clean-text-0.3.0-lceupi.json &lt;output.html&gt;
+attributecode --template templates/scancode.template --scancode --min-license-score 30 samples/clean-text-0.3.0-lceupi.json &lt;output.html&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="setup.html" class="btn btn-neutral float-left" title="Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 - 2021 nexB Inc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
