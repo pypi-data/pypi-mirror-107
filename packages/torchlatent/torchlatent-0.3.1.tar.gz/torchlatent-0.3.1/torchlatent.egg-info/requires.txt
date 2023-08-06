@@ -1,0 +1,13 @@
+numpy
+torchrua>=0.2.0
+
+[benchmark]
+aku
+tqdm
+pytorch-crf
+
+[dev]
+einops
+pytest
+hypothesis
+pytorch-crf
