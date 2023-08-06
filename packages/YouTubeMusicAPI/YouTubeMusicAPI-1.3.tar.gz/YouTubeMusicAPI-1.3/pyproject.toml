@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "requests",
+    "wheel",
+    "pafy",
+    "youtube_dl",
+    "youtube-dl",
+    "sockets"
+]
+build-backend = "setuptools.build_meta"
