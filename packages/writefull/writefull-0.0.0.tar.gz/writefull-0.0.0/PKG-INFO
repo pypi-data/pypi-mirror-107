@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: writefull
+Version: 0.0.0
+Summary: A Python library for the Writefull API
+Home-page: https://github.com/writefull/writefull-python
+Author: Writefull
+Author-email: support@writefull.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Writefull Python Library
+
