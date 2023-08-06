@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+subprocess_connection.py
+subprocess_connection.egg-info/PKG-INFO
+subprocess_connection.egg-info/SOURCES.txt
+subprocess_connection.egg-info/dependency_links.txt
+subprocess_connection.egg-info/top_level.txt
+subprocess_connection.egg-info/zip-safe

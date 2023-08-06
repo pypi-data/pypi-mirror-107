@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: subprocess-connection
+Version: 0.0.0
+Summary: Communicate objects between parent process and subprocess.
+Home-page: https://github.com/user202729/subprocess_connection
+Author: user202729
+License: GNU General Public License v3 or later (GPLv3+)
+Description: # subprocess-connection
+        
+        Connection between Python parent process and a Python subprocess through stdin/stdout.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
