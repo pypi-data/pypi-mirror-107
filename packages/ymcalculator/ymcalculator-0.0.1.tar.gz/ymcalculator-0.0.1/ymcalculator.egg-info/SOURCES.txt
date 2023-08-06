@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ymcalculator/__init__.py
+ymcalculator.egg-info/PKG-INFO
+ymcalculator.egg-info/SOURCES.txt
+ymcalculator.egg-info/dependency_links.txt
+ymcalculator.egg-info/top_level.txt
