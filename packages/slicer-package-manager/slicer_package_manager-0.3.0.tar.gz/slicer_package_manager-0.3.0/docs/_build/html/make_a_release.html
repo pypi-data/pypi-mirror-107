@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Making a release &mdash; Slicer Package Manager 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Release Notes" href="changes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Slicer Package Manager
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Administrator Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">System Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands_shell.html">Commands shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager.html">Server API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager_client.html">Python Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Release Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Maintainer Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Making a release</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-conventions">Documentation conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-environment">Setting up environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pypi-step-by-step">PyPI: Step-by-step</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Slicer Package Manager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Making a release</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/make_a_release.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="making-a-release">
+<span id="id1"></span><h1>Making a release<a class="headerlink" href="#making-a-release" title="Permalink to this headline">¶</a></h1>
+<p>A core developer should use the following steps to create a release <cite>X.Y.Z</cite> of
+<strong>slicer-package-manager</strong> on <a class="reference external" href="https://pypi.org/project/slicer-package-manager">PyPI</a>.</p>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>All CI tests are passing on <a class="reference external" href="https://app.circleci.com/pipelines/github/girder/slicer_package_manager">CircleCI</a>.</p></li>
+<li><p>You have a <a class="reference external" href="https://help.github.com/articles/generating-a-new-gpg-key/">GPG signing key</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="documentation-conventions">
+<h2>Documentation conventions<a class="headerlink" href="#documentation-conventions" title="Permalink to this headline">¶</a></h2>
+<p>The commands reported below should be evaluated in the same terminal session.</p>
+<p>Commands to evaluate starts with a dollar sign. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &quot;Hello&quot;
+Hello
+</pre></div>
+</div>
+<p>means that <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">&quot;Hello&quot;</span></code> should be copied and evaluated in the terminal.</p>
+</div>
+<div class="section" id="setting-up-environment">
+<h2>Setting up environment<a class="headerlink" href="#setting-up-environment" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>First, <a class="reference external" href="https://pypi.org">register for an account on PyPI</a>.</p></li>
+<li><p>If not already the case, ask to be added as a <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Index</span> <span class="pre">Maintainer</span></code>.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">~/.pypirc</span></code> file with your login credentials:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">distutils</span><span class="p">]</span>
+<span class="n">index</span><span class="o">-</span><span class="n">servers</span> <span class="o">=</span>
+  <span class="n">pypi</span>
+  <span class="n">pypitest</span>
+
+<span class="p">[</span><span class="n">pypi</span><span class="p">]</span>
+<span class="n">username</span><span class="o">=</span><span class="n">__token__</span>
+<span class="n">password</span><span class="o">=&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">token</span><span class="o">&gt;</span>
+
+<span class="p">[</span><span class="n">pypitest</span><span class="p">]</span>
+<span class="n">repository</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">test</span><span class="o">.</span><span class="n">pypi</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">legacy</span><span class="o">/</span>
+<span class="n">username</span><span class="o">=</span><span class="n">__token__</span>
+<span class="n">password</span><span class="o">=&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">token</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p>where <code class="docutils literal notranslate"><span class="pre">&lt;your-token&gt;</span></code> correspond to the API token associated with your PyPI account.</p>
+</div></blockquote>
+</div>
+<div class="section" id="pypi-step-by-step">
+<h2><a class="reference external" href="https://pypi.org/project/slicer-package-manager">PyPI</a>: Step-by-step<a class="headerlink" href="#pypi-step-by-step" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Make sure that all CI tests are passing on <a class="reference external" href="https://app.circleci.com/pipelines/github/girder/slicer_package_manager">CircleCI</a>.</p></li>
+<li><p>Download the latest sources</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd /tmp &amp;&amp; \
+  git clone git@github.com:girder/slicer_package_manager &amp;&amp; \
+  cd slicer_package_manager
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>List all tags sorted by version</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git fetch --tags &amp;&amp; \
+  git tag -l | sort -V
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Choose the next release version number</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ release=X.Y.Z
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To ensure the packages are uploaded on <a class="reference external" href="https://pypi.org/project/slicer-package-manager">PyPI</a>, tags must match this regular
+expression: <code class="docutils literal notranslate"><span class="pre">^[0-9]+(\.[0-9]+)*(\.post[0-9]+)?$</span></code>.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>In <cite>CHANGES.rst</cite> replace <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">Release</span></code> section header with
+<code class="docutils literal notranslate"><span class="pre">X.Y.Z</span></code> and commit the changes.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add CHANGES.rst &amp;&amp; \
+  git commit -m &quot;slicer-package-manager ${release}&quot;
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Tag the release</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git tag --sign -m &quot;slicer-package-manager ${release}&quot; ${release} master
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We recommend using a <a class="reference external" href="https://help.github.com/articles/generating-a-new-gpg-key/">GPG signing key</a>
+to sign the tag.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>Create the source distribution and wheel</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python setup.py sdist bdist_wheel
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>Publish the both release tag and the master branch</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin ${release} &amp;&amp; \
+  git push origin master
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Upload the distributions on <a class="reference external" href="https://pypi.org/project/slicer-package-manager">PyPI</a></p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">twine</span> <span class="n">upload</span> <span class="n">dist</span><span class="o">/*</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To first upload on <a class="reference external" href="https://test.pypi.org/project/slicer-package-manager">TestPyPI</a> , do the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ twine upload -r pypitest dist/*
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p>Create a clean testing environment to test the installation</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pushd $(mktemp -d) &amp;&amp; \
+  mkvirtualenv slicer-package-manager-${release}-install-test &amp;&amp; \
+  pip install slicer-package-manager==${release}
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">mkvirtualenv</span></code> command is not available, this means you do not have <a class="reference external" href="https://virtualenvwrapper.readthedocs.io/">virtualenvwrapper</a>
+installed, in that case, you could either install it or directly use <a class="reference external" href="http://virtualenv.readthedocs.io">virtualenv</a> or <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>.</p>
+<p>To install from <a class="reference external" href="https://test.pypi.org/project/slicer-package-manager">TestPyPI</a>, do the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -i https://test.pypi.org/simple slicer-package-manager==${release}
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p>Cleanup</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ popd &amp;&amp; \
+  deactivate  &amp;&amp; \
+  rm -rf dist/* &amp;&amp; \
+  rmvirtualenv slicer-package-manager-${release}-install-test
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">Release</span></code> section back in <cite>CHANGES.rst</cite>, commit and push local changes.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add CHANGES.rst &amp;&amp; \
+  git commit -m &quot;CHANGES.rst: Add \&quot;Next Release\&quot; section [ci skip]&quot; &amp;&amp; \
+  git push origin master
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="changes.html" class="btn btn-neutral float-left" title="Release Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Kitware, Inc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

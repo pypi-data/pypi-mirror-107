@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Welcome to Slicer Package Manager’s documentation! &mdash; Slicer Package Manager 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="System Prerequisites" href="prerequisites.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> Slicer Package Manager
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Administrator Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">System Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands_shell.html">Commands shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager.html">Server API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager_client.html">Python Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Release Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Maintainer Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="make_a_release.html">Making a release</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Slicer Package Manager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to Slicer Package Manager’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-slicer-package-manager-s-documentation">
+<h1>Welcome to Slicer Package Manager’s documentation!<a class="headerlink" href="#welcome-to-slicer-package-manager-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">Slicer</span> <span class="pre">Package</span> <span class="pre">Manager</span></code> includes a REST API service and CLI built on <a class="reference external" href="https://github.com/girder/girder">Girder</a> for downloading, uploading
+and organizing application and extension packages for both <a class="reference external" href="https://slicer.org">3D Slicer</a> and <a class="reference external" href="https://github.com/KitwareMedical/SlicerCustomAppTemplate">3D Slicer-based</a> applications.</p>
+<p>In a nutshell:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="user_guide.html#concepts"><span class="std std-ref">Data model</span></a> specific to this project is implemented by organizing data using standard
+Girder constructs (collection, folder and item) and by associating metadata.</p></li>
+<li><p>By default, a top-level collection named <code class="docutils literal notranslate"><span class="pre">Applications</span></code> is created with a <code class="docutils literal notranslate"><span class="pre">packages</span></code> folder
+organizing the different application.</p></li>
+<li><p>Each application folder contain a <code class="docutils literal notranslate"><span class="pre">draft</span></code> folder where unreleased packages are uploaded and one or multiple
+release folders (e.g 1.0, 2.0, …).</p></li>
+<li><p>Each release folder contain application packages (installers for the different platforms), and an <code class="docutils literal notranslate"><span class="pre">extensions</span></code>
+folder containing a flat list of extension packages.</p></li>
+<li><p>Each extension packages is associated with metadata like application revision, extension revision, operating system
+and architecture…</p></li>
+</ul>
+<p>The diagram below represents the organization:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Applications</span>
+   <span class="o">|---</span> <span class="n">packages</span>
+   <span class="o">|</span>        <span class="o">|-----</span> <span class="n">Slicer</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|-----</span> <span class="mf">1.0</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">macos</span><span class="o">.</span><span class="n">dmg</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">win</span><span class="o">.</span><span class="n">exe</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|----</span> <span class="n">extensions</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>         <span class="o">|----</span> <span class="n">Extension1</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>         <span class="o">|----</span> <span class="n">Extension2</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>         <span class="o">|----</span> <span class="n">Extension3</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>         <span class="o">|----</span> <span class="n">Extension4</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|-----</span> <span class="mf">2.0</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>        <span class="o">|</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|-----</span> <span class="n">draft</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|---</span> <span class="n">r100</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>      <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>      <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">macos</span><span class="o">.</span><span class="n">dmg</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>      <span class="o">|----</span> <span class="n">Slicer</span><span class="o">-</span><span class="n">win</span><span class="o">.</span><span class="n">exe</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>      <span class="o">|-----</span> <span class="n">extensions</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>      <span class="o">|</span>          <span class="o">|----</span> <span class="n">Extension1</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>        <span class="o">.</span>      <span class="o">.</span>          <span class="o">.</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>        <span class="o">.</span>
+   <span class="o">|</span>        <span class="o">|</span>         <span class="o">|</span>        <span class="o">|---</span> <span class="n">r101</span>
+   <span class="o">.</span>        <span class="o">.</span>         <span class="o">.</span>        <span class="o">.</span>      <span class="o">|</span>
+   <span class="o">.</span>        <span class="o">.</span>
+   <span class="o">|</span>        <span class="o">|</span>
+   <span class="o">|</span>        <span class="o">|------</span><span class="n">SlicerCustom</span>
+</pre></div>
+</div>
+<div class="section" id="what-is-girder">
+<h2>What is Girder?<a class="headerlink" href="#what-is-girder" title="Permalink to this headline">¶</a></h2>
+<p>Girder is a free and open source web-based <strong>data management platform</strong> developed by <a class="reference external" href="https://www.kitware.com">Kitware</a>.
+What does that mean? Girder is both a standalone application and a platform for building new web services.
+To know more about Girder let’s take a look at the <a class="reference external" href="https://girder.readthedocs.io">documentation</a>.</p>
+</div>
+<div class="section" id="what-is-a-slicer-package">
+<h2>What is a Slicer package?<a class="headerlink" href="#what-is-a-slicer-package" title="Permalink to this headline">¶</a></h2>
+<p>A slicer package is just an installer package for a specific release of Slicer. There is a specific Slicer package
+for each different platform (Windows, MACOSX, Linux).</p>
+</div>
+<div class="section" id="what-is-a-slicer-extension">
+<h2>What is a Slicer Extension?<a class="headerlink" href="#what-is-a-slicer-extension" title="Permalink to this headline">¶</a></h2>
+<p>An extension could be seen as a delivery package bundling together one or more Slicer modules.
+After installing an extension, the associated modules will be presented to the user as built-in ones.
+To know more about Slicer extension let’s take a look at the <a class="reference external" href="https://www.slicer.org/wiki/Documentation/Nightly/FAQ/Extensions">FAQ</a>.</p>
+</div>
+</div>
+<div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Administrator Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">System Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#git">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#docker-docker-compose">Docker &amp; Docker compose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-from-source">Install from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#run-via-docker">Run via Docker</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">User Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#how-to-use-the-slicer-package-manager">How to use the Slicer Package Manager?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#schema-of-concepts">Schema of concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#how-to-clean-up-the-draft-release-folder">How to clean up the Draft release folder?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#how-to-create-a-new-release-with-existing-uploaded-packages">How to create a new release with existing uploaded packages?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#download-statistics">Download Statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commands_shell.html">Commands shell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#use">Use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#slicer-package-manager-client">Slicer Package Manager Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#application">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#release">Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#draft">Draft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#package">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands_shell.html#extension">Extension</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Developer Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager.html">Server API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slicer_package_manager_client.html">Python Client API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Release Notes</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Maintainer Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="make_a_release.html">Making a release</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Free software: <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></p></li>
+<li><p>Source code: <a class="reference external" href="https://github.com/girder/slicer_package_manager">https://github.com/girder/slicer_package_manager</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="prerequisites.html" class="btn btn-neutral float-right" title="System Prerequisites" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Kitware, Inc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
