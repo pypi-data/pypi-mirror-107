@@ -1,0 +1,8 @@
+httpx
+pydantic[email]
+
+[testing]
+pytest
+pytest-asyncio
+pytest-cov
+pytest-recording
