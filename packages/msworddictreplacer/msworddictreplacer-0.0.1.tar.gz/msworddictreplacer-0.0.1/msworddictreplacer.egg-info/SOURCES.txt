@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+msworddictreplacer.egg-info/PKG-INFO
+msworddictreplacer.egg-info/SOURCES.txt
+msworddictreplacer.egg-info/dependency_links.txt
+msworddictreplacer.egg-info/requires.txt
+msworddictreplacer.egg-info/top_level.txt
+mswordreplacerdict/__init__.py
