@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: devispoken2written
+Version: 0.0.1
+Summary: A module to converts spoken english to written english
+Home-page: UNKNOWN
+Author: Devi Prasad
+Author-email: dp.devi03@gmail.com
+License: MIT
+Description: can convert spoken english to written english
+        
+        Change Log
+        ==========
+        
+        0.0.1 (29/05/2021)
+        -------------------
+        - First Release
+Keywords: spoken to written english
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
