@@ -1,0 +1,17 @@
+baidu_aip_sdk/__init__.py,sha256=tKk552A6U9y7YnWtpxvOlfrcViJygzu151G1LgMPOhs,468
+baidu_aip_sdk/base.py,sha256=cb9v8rCRNeEINHq-5hsa4RfSWBtf7-hLwmh8cBZmvIs,7722
+baidu_aip_sdk/bodyanalysis.py,sha256=YiDVbyZ-iipO6QigPjtsOKmeHLTPrygTYUpQOuXkGVU,3471
+baidu_aip_sdk/easydl.py,sha256=9_q62PH_J56UqSaLM1ejxFm4mhzGf2_xXpXxuI9scvI,1011
+baidu_aip_sdk/face.py,sha256=nVKP-ymWC6GirBpnAdKHkfoEC09YqiaqrF7x7tNLLi8,9022
+baidu_aip_sdk/imagecensor.py,sha256=ZjuVyTI5K-I0B5f1x33rOPfWXWj9T0_r4rXOl_ql56k,1072
+baidu_aip_sdk/imageclassify.py,sha256=XKE8YNFdmykPeIcpyaeJ66bBE0UEVdBtNxlwIUZKop8,9839
+baidu_aip_sdk/imageprocess.py,sha256=cwwnSs5CKSpbE_55GfZvV56yDokCGzGZ0oRnHE96U80,4467
+baidu_aip_sdk/imagesearch.py,sha256=QmeyBjhD_0Uk3QAqhMRLVUCRVsYaaO1tJvlGlEt2pNY,14234
+baidu_aip_sdk/kg.py,sha256=GWnpHPH7-xWZH8vKRxat_dVdPhK9Quy6TukfeS7CJAE,2617
+baidu_aip_sdk/nlp.py,sha256=BT64yfXMx_aBbvYannW8M-stYcGP9ZpYB74b8gZYlVk,6332
+baidu_aip_sdk/ocr.py,sha256=Ntq-3VAgK5s0K86XWS8cajHLnTXw2BtjldpQrYygeEs,17638
+baidu_aip_sdk/speech.py,sha256=vddwMCUrfg8R1ofDZOgrJWShB-6St5MmIfg0gA0OGes,2108
+baidu_aip_sdk-4.15.3.dist-info/METADATA,sha256=QSppN2nT84CGknDso2qrPB8eOJd4F0nRuZwzcqA0Mfk,1172
+baidu_aip_sdk-4.15.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+baidu_aip_sdk-4.15.3.dist-info/top_level.txt,sha256=UZ1ZrGZ2mouHdVPbtp85UIhcyAQNqwbrjFG7c18op_U,14
+baidu_aip_sdk-4.15.3.dist-info/RECORD,,
