@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: remake
+Version: 0.5.2
+Summary: Smart remake tool
+Home-page: https://github.com/markmuetz/remake
+Author: Mark Muetzelfeldt
+Author-email: mark.muetzelfeldt@reading.ac.uk
+Maintainer: Mark Muetzelfeldt
+Maintainer-email: mark.muetzelfeldt@reading.ac.uk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/markmuetz/remake/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: debug
+Provides-Extra: display
+Provides-Extra: testing
