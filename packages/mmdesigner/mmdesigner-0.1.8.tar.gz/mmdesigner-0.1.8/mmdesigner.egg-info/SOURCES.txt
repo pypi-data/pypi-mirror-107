@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+mmdesigner/OpenSCAD.py
+mmdesigner/__init__.py
+mmdesigner/__main__.py
+mmdesigner/cli.py
+mmdesigner.egg-info/PKG-INFO
+mmdesigner.egg-info/SOURCES.txt
+mmdesigner.egg-info/dependency_links.txt
+mmdesigner.egg-info/entry_points.txt
+mmdesigner.egg-info/top_level.txt
