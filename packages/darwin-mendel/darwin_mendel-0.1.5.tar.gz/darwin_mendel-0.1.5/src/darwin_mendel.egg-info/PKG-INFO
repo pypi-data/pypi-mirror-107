@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: darwin-mendel
+Version: 0.1.5
+Summary: Genetic Algorithm: Optimize the output of machine learning models
+Home-page: https://github.com/manishagrawal-datascience/Genetic-Algorithm.git
+Author: Manish Agrawal
+Author-email: manishagrawal.datascience@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Genetic Algorithm: A unique way for hyper-parameter tuning of ML models.
+
+The process of evolution and natural selection used in this project to select the best hyper-parameters 
+for certain regression techniques like Decision Tree Regression, Random Forest Regression, 
+Light Gradient Boosting Regression and Extreme Gradient Boosting Regression.
+
+1: Install the library
+
+    pip install darwin-mendel
+
+2: Example for Random Forest Regression
+
+    from darwin_mendel.optimize_rfr import optimize_rfr
+    import sklearn.datasets as datasets
+
+    iris = datasets.load_boston()
+    df = pd.DataFrame(iris.data)
+    x_train, x_test, y_train, y_test = train_test_split(df[[2,4,5,6,7,8,9,10,11]], 
+                                                        df[12], test_size=0.2, random_state=2021)
+
+    model, hyp_param = optimize_xgbr(x_train=x_train, y_train=y_train, y_test=y_test, x_test=x_test,
+                               number_of_generation=10, population_size=30, error_metric='RMSE', mutation_rate=0.1)
+    print(hyp_param)
+
+
+3: OutPut: 
+
+        n_estimators        368
+        max_depth             9
+        learning_rate       0.2
+        booster          gbtree
+        reg_alpha             0
+        reg_lambda            1
+        RMSE              16.76
+        Name: 0, dtype: object
+
+
+4. Arguments:
+
+
+        a. User must provide the x_train, y_train, x_test and y_test in the arguments. They should not 
+           contain any missing values and strings values.
+        b. User can select the error_metreic between "MAPE" and "RMSE", it is used to select the best model.
+           Default is "MAPE" (Mean Absolute Percentage Error).
+        c. population_size defines initial number of combination of hyper-parameters from which off-springs
+           are produced. Thumb rule is, it should be: 5 * number of variables. Default is 50.
+        d. number_of_generation is the number of new batches produced from the initial population.
+           The more the number of generation, the better will be the resut but it could increase the 
+           time consumption. Default is 10.
+        e. mutation_rate is the percentage impurity added in a new batch of off springs, it helps in
+           reaching the global minimum. Default is 0.05 i.e. 5%
+        f. random_seed has to be fixed to make the results repeatable. Default is 2021.
+        g. params: {"n_estimators": [2,3,4,.....1000],
+                    "max_features": ['sqrt', 'auto', 'log2', None],
+                    "min_samples_leaf": [2,3,4,5,6,.....16],
+                    "max_depth": [2,3,4,5,6,.....20]}
+           Above mentioned are the default ranges for each hyperparameter of Random Forest Regression.
+           User can give the range according to her need.
+
+5. Default params ranges for other algorithms.
+   
+
+        a. XGBR: 
+                {"n_estimators": [2,3,4,5,6,......1000],
+                 "max_depth": [2,3,4,5,6....20],
+                 "learning_rate": [0.001, 0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+                 "booster": ["gbtree"],
+                 "reg_alpha": [0],
+                 "reg_lambda": [1]}  
+        b. LGBMR: 
+                {"n_estimators": [2,3,4,5,6,......1000],
+                 "max_depth": [2,3,4,5,6....20],
+                 "learning_rate": [0.001, 0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+                 "boosting_type": ["gbdt"],
+                 "num_leaves": [2,3,4,5,6,....15],
+                 "reg_alpha": [0],
+                 "reg_lambda": [0]}  
+        c. DTR: 
+                {"min_samples_leaf": [1,2,3,4,5,6....20],
+                 "max_depth": [2,3,4,5,6....20],
+                 "max_features": ["auto", "sqrt", "log2"],
+                 "splitter": ["best", "random"],
+                 "criterion": ["mse", "friedman_mse", "mae"]}  
+
