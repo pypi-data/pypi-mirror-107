@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./
+pos.egg-info/PKG-INFO
+pos.egg-info/SOURCES.txt
+pos.egg-info/dependency_links.txt
+pos.egg-info/not-zip-safe
+pos.egg-info/top_level.txt
