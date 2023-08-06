@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gravity-falls
+Version: 0.0.1
+Summary: Implementation of famous ancient ciphers and encryption techniques
+Home-page: https://github.com/er-knight/gravityfalls
+Author: er-knight (Ajay Dandge)
+Author-email: menobleknight@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/er-knight/gravityfalls/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## gravity-falls
+Implementation of famous ancient ciphers and encryption techniques.
+
+Inspired by [this](https://www.freecodecamp.org/news/how-gravity-falls-can-help-you-teach-your-kids-basics-of-cryptography-18e1c6f9ac39/) article on freecodecamp.org.
+
+
