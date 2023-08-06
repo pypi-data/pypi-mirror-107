@@ -1,0 +1,8 @@
+Changelog
+=========
+
+1.0 - (2021-05-28)
+-----------------------
+
+* Add 'Generic string substitution' adapter to easily grab properties from context
+  [avoinea - refs #134513]
