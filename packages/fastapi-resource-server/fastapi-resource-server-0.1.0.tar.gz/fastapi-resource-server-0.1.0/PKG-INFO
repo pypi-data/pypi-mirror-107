@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastapi-resource-server
+Version: 0.1.0
+Summary: Build resource servers with FastAPI
+Author: Livio Ribeiro
+Author-email: livio@codata.pb.gov.br
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0,<1)
+Requires-Dist: python-jose (>=3.2,<4.0)
