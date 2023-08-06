@@ -1,0 +1,9 @@
+README.md
+setup.py
+kuramoto/__init__.py
+kuramoto/kuramoto.py
+kuramoto.egg-info/PKG-INFO
+kuramoto.egg-info/SOURCES.txt
+kuramoto.egg-info/dependency_links.txt
+kuramoto.egg-info/requires.txt
+kuramoto.egg-info/top_level.txt
