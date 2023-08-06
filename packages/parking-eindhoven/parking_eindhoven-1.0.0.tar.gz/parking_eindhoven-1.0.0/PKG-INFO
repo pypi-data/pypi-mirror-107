@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: parking_eindhoven
+Version: 1.0.0
+Summary: Asynchronous Python client for getting parking locations in Eindhoven
+Home-page: https://github.com/klaasnicolaas/parking_eindhoven
+Author: Klaas Schoute
+Author-email: hello@student-techlife.com
+License: MIT license
+Description: ## Python API fetching parking locations in Eindhoven (The Netherlands).
+        
+        This Python library is using [this API][api].
+        
+        [api]: https://data.eindhoven.nl/explore/dataset/parkeerplaatsen/information/?disjunctive.straat&disjunctive.type_en_merk&disjunctive.aantal
+Keywords: parking,eindhoven,locations,api,async,client
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
