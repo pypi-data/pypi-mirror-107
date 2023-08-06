@@ -1,0 +1,107 @@
+# Tokenization for language processing
+
+This package contains some generic configurable tools allowing to cut a string in sub-parts (cf. [Wikipedia](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization)), called `Token`, and to group them into sequences called `Tokens`. A `Token` is a sub-string from a parent string (say the initial complete text), with associated ranges of non-overlaping characters. The number of associated ranges is arbitrary. A `Tokens` is a collection of `Token`. These two classes allow to associate to any `Token` a collection of attributes in a versatile way, and to pass these attributes from one object to the next one while cutting `Token` into sub-parts (collected as `Tokens`) and eventually re-merging them into larger `Token`.
+
+`Token` and `Tokens` classes allow basic tokenization of text, such as word splitting, n-gram splitting, char-gram splitting of arbitrary size. In addition, it allows to associate several non-overlapping sub-strings into a given `Token`, and to associate arbitrary attributes to these parts. One can compare two different `Token` objects in terms of their attributes and/or ranges. One can also apply basic mathematical operations and logic to them (+,-,*,/) corresponding to the union, difference, intersection and symmetric difference implemented by Python set ; here the sets are the ranges of position from the parent string.
+
+## Installation
+
+### From Python Package Index (PIP)
+
+Simply run 
+
+```bash
+pip install iamtokenizing
+```
+
+is sufficient.
+
+### From the repository
+
+The official repository is on https://framagit.org/fraschelle/tokenizer (warn the name)
+
+Once the repository has been downloaded (or cloned), one can install this package using `pip` : 
+
+```bash
+cd tokenizer/
+pip install .
+```
+
+Once installed, one can run some tests using
+
+```bash
+cd tests/
+python3 -m unittest -v
+```
+
+(verbosity `-v` is an option).
+
+## Basic example
+
+Below we give a simple example of usage of the `Token` and `Tokens` classes.
+
+```python
+import re
+from iamtokenizing import Token
+
+string = 'Simple string for demonstration and for illustration.'
+initial_token = Token(string)
+
+# char-gram generation
+chargrams = initial_token.slice(0,len(initial_token),3)
+str(chargrams[2])
+# return 'mpl'
+
+# each char-gram conserves a memory of the initial string
+chargrams[2].string
+# return 'Simple string for demonstration and for illustration.'
+
+cuts = [(r.start(),r.end()) for r in re.finditer(r'\w+',string)]
+tokens = initial_token.split(cuts)
+# --> this is a Tokens instance, not a Token one ! (see documentation for explanation)
+
+# tokens conserve the cutted parts, but behaves like a list
+interesting_tokens = tokens[1::2]
+# so one has to take only odd elements
+
+# n-gram construction
+ngram = interesting_tokens.slice(0,len(interesting_tokens),2)
+ngram[2]
+# return Token('for demonstration', 2 ranges)
+str(ngram[2])
+# return 'for demonstration'
+
+# add attributes to a Token
+tok0 = interesting_tokens[0]
+tok0.setattr('name_of_attribute',{'some_key':'some_value'})
+# and take the attribute back
+tok0.name_of_attribute
+# return {'some_key':'some_value'}
+
+# are the two 'for' Token the same ?
+interesting_tokens[2] == interesting_tokens[-2]
+# return no, because they are not at the same position
+
+# reconstruction of a Token
+simple_demonstration = interesting_tokens[0:5:3].join()
+# one could have done interesting_tokens.join(0,5,3) as well
+
+# it contains two non-overlapping sub-parts
+str(simple_demonstration)
+# return 'Simple demonstration'
+
+# basic string methods from Python are still there
+simple_demonstration.lower()
+# return 'simple demonstration'
+
+```
+
+Other examples can be found in the [documentation](./-/tree/master/documentation) folder.
+
+## About us
+
+Package developped for Natural Language Processing at IAM : Unité d'Informatique et d'Archivistique Médicale, Service d'Informatique Médicale, Pôle de Santé Publique, Centre Hospitalo-Universitaire (CHU) de Bordeaux, France.
+
+You are kindly encouraged to signal any trouble, and to propose ameliorations and/or suggestions to the authors, via issue or merge requests.
+
+Last version : April 28, 2021

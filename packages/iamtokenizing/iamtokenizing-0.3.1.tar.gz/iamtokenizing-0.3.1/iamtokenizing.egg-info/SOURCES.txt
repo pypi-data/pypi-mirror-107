@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+iamtokenizing/__init__.py
+iamtokenizing.egg-info/PKG-INFO
+iamtokenizing.egg-info/SOURCES.txt
+iamtokenizing.egg-info/dependency_links.txt
+iamtokenizing.egg-info/top_level.txt
+iamtokenizing/tokenizer/__init__.py
+iamtokenizing/tokenizer/objects_tokenizer.py
+iamtokenizing/tokenizer/reversible_tokenizer.py
+iamtokenizing/tokenizer/spacy_tokenizer.py
+iamtokenizing/tokentokens/__init__.py
+iamtokenizing/tokentokens/tokentokens.py
+iamtokenizing/tokentokens/tools.py
