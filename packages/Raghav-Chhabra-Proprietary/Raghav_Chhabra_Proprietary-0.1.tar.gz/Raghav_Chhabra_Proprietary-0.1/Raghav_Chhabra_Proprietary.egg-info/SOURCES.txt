@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+Raghav_Chhabra_Proprietary.egg-info/PKG-INFO
+Raghav_Chhabra_Proprietary.egg-info/SOURCES.txt
+Raghav_Chhabra_Proprietary.egg-info/dependency_links.txt
+Raghav_Chhabra_Proprietary.egg-info/not-zip-safe
+Raghav_Chhabra_Proprietary.egg-info/top_level.txt
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
