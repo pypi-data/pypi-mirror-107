@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: data-tools-traders-club
+Version: 0.0.2
+Summary: Data science oriented tools package
+Home-page: UNKNOWN
+Author: Fabio Caffarello
+Author-email: fabio.caffarello@tc.com.br
+License: UNKNOWN
+Description: # Data Tools
+        
+        Data Science oriented tools package 
+        
+        ## Features
+        
+        - Connection with differents databases to perform queries
+        -- MySQL
+        -- MongoDB
+        - Data Cleaning
+        
+        ## Instalation
+        You can install this package using
+        
+        ```
+        pip install data-tools-traders-club
+        ```
+        
+        ## Usage
+        ```
+        # Connection
+        ## MySQL
+        ### Import
+        from data_tools.connection.mongodb.api import MySQL
+        
+        ### Credentials
+        username = os.getenv('MYSQL_USERNAME')
+        password = os.getenv('MYSQL_PASSWORD')
+        host = os.getenv('MYSQL_HOST')
+        
+        ### Class Instantiation
+        mysql_in =  MySQL(username, password, host)
+        
+        ### Query
+        schema = 'SCHEMA'
+        table = 'TABLE'
+        
+        query = f"""SELECT * FROM {schema}.{table} LIMIT 100"""
+        
+        df = mysql_in.select_query(query, schema)
+        
+        ## MongoDB
+        ### Import
+        from data_tools.connection.mongodb.api import MongoDB
+        
+        ### Credentials
+        username = os.getenv('MONGODB_USERNAME')
+        password = os.getenv('MONGODB_PASSWORD')
+        host_string = os.getenv('MONGODB_HOST_STRING')
+        
+        ### Class Instantiation
+        mongodb_in = MongoDB(username, password, host_string)
+        
+        ### Pipeline
+        database = os.getenv('MONGODB_DATABASE_TEST')
+        collection = os.getenv('MONGODB_COLLECTION_TEST')
+        pipeline = [
+            {
+                '$project': {
+                    'id': '$id'
+                }
+            }, {
+                '$limit': 10
+            }
+        ]
+        
+        df = mongodb_in.select_pipeline(database, collection, pipeline)
+        
+        # tools
+        ## DataCleaning
+        ### Import
+        from data_tools.tools.api import DataCleaning
+        
+        ### Class Instantiation
+        clean = DataCleaning()
+        
+        ### Rename DataFrame (snake_case)
+        df = clean.rename_dataframe_snakecase(df)
+        
+        ### Rename DataFrame (CamelCase)
+        df = clean.rename_dataframe_camelcase(df)
+        ```
+        
+        
+        ## Project Struture
+        ```
+        root
+        ├───data_tools
+        │   ├───connection
+        │   │   ├───mongodb
+        │   │   │   └── api.py
+        │   │   └───mysql
+        │   │         └── api.py
+        │   └───tools
+        │               └── api.py
+        ├───tests 
+        │   └───connection
+        │         ├───mongodb
+        │         │   └── test_api.py
+        │         └───mysql
+        │               └── test_api.py
+        ├───venv ## Virtual enviroment (Local)
+        ├───.env ## environmental variables (Local)
+        ├───.gitignore
+        ├───Authors.rst
+        ├───CONTRIBUITING.md
+        ├───History.md
+        ├───LICENSE
+        ├───Makefile
+        ├───MANIFEST.in
+        ├───README.md
+        ├───requirements.txt
+        └───setup.py
+        ```
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
