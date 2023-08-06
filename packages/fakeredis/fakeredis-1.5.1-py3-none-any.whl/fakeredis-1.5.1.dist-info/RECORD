@@ -1,0 +1,9 @@
+fakeredis/__init__.py,sha256=1l1-HGm7pK-AUNcwwD2VzYVGTRt5cYPNKpUJTJPa-NY,115
+fakeredis/_server.py,sha256=yFjvE4HN3nVjLjqZA7MHqj957_s-cRul45juxzHpyaE,94488
+fakeredis/_zset.py,sha256=YeppTthgIo6R-YCwJFZwM9-69Qn4oDURpfEDd3Ne76o,2693
+fakeredis/aioredis.py,sha256=mwes95E0vYZ6NEWup83LQEzDHR9TzwhZcMHD2z409lg,8182
+fakeredis-1.5.1.dist-info/COPYING,sha256=cx08aUesW4pjsXQTCCS1onAdlyLVqY_zz2Yve8Xgtp8,2602
+fakeredis-1.5.1.dist-info/METADATA,sha256=Fu9TeAo2UtpNMpf8Gc9AmqkSp5NxTxcvPimdYArvsA0,24954
+fakeredis-1.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fakeredis-1.5.1.dist-info/top_level.txt,sha256=tvlxqz-jGu5KXn8Vy9HmkwNCe4ACx0eoTP79ZW266Vg,10
+fakeredis-1.5.1.dist-info/RECORD,,
