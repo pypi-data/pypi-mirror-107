@@ -1,0 +1,9 @@
+node_modules
+.idea/
+build/*
+data
+.nuxt
+dist
+.DS_Store
+vendor
+private/
