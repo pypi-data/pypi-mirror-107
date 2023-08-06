@@ -1,0 +1,16 @@
+sometools/__init__.py,sha256=YvL1g3w-C_9zaawa_ytw7EK13k1473sU0Gf4xg3_VOg,744
+sometools/chinese_to_pinyin_acronym/__init__.py,sha256=XDK0hf5DICcZNU501t-InDVjrDSHFa-fLOYBmNIjVf4,32
+sometools/chinese_to_pinyin_acronym/chinese_to_pinyin.py,sha256=FLzFeumzpyL3hY2qv_j3ndA5HJjEAnPhAZm8GOyKygk,3282
+sometools/datetime_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sometools/datetime_tools/date_conversion.py,sha256=aCxlXTdWAv--SaCaZSc9W7D1sxh-k1w_SW0ZOV3Zomw,9504
+sometools/log_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sometools/log_tools/logger_main.py,sha256=CwrFTR3WHk9pJf2XScwJNIBiMM5rvA-QOXa9NDVj2oU,3571
+sometools/string_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sometools/string_tools/string_cleaning.py,sha256=mVxgcyvPrCGVomL00p5aYWAvLQd7y_NI5osctFmfzco,1071
+sometools/traditional_simplified_chinese_conversion/__init__.py,sha256=ktGHFOYnDO6cR6yPqR7de9OAlrlz9iosOenLyejbs64,20
+sometools/traditional_simplified_chinese_conversion/traditional_simplified_chinese.py,sha256=LfiPVGGcrp_7r1vaTgCybIsITDkl8G4Cnwu5GKtAUPQ,1915
+SomeTools-0.1.13.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+SomeTools-0.1.13.dist-info/METADATA,sha256=j0vkz1BHcZJuCs0AyXhE3V95-4IV8vUhLCw8WjFg6fA,5004
+SomeTools-0.1.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+SomeTools-0.1.13.dist-info/top_level.txt,sha256=45p16eHQ2ZugAUjNZkdpMc1Kt4DklGwPPzLXZtG_vQg,10
+SomeTools-0.1.13.dist-info/RECORD,,
