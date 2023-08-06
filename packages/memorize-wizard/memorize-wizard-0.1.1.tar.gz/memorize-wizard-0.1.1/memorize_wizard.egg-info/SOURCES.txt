@@ -1,0 +1,15 @@
+README.md
+setup.py
+memorize_wizard.egg-info/PKG-INFO
+memorize_wizard.egg-info/SOURCES.txt
+memorize_wizard.egg-info/dependency_links.txt
+memorize_wizard.egg-info/entry_points.txt
+memorize_wizard.egg-info/requires.txt
+memorize_wizard.egg-info/top_level.txt
+wizard/__init__.py
+wizard/main.py
+wizard/playlist.py
+wizard/server.py
+wizard/term.py
+wizard/tts.py
+wizard/utils.py
