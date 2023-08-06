@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: plogger-ls
+Version: v0.0.6
+Summary: Uma biblioteca que junta logging e print
+Home-page: https://github.com/leandrodesouzadev/plogger
+Author: Leandro de Souza
+Author-email: leandrodesouzadev@gmail.com
+License: MIT
+Download-URL: https://github.com/leandrodesouzadev/plogger/archive/refs/tags/v0.0.6.tar.gz
+Description: UNKNOWN
+Keywords: logging,print
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
