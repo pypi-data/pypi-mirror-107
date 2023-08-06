@@ -1,0 +1,114 @@
+#!/bin/bash
+
+version="0.5"
+
+set -e
+home=~
+pipe_script="pipescript.txt"
+flag_script="nscript.txt"
+
+current_directory="$(pwd)"
+
+bin_dir="$home/scripts/bin"
+
+mkdir -p $bin_dir
+
+cd $bin_dir
+
+if [[ ! -f $flag_script ]]; then
+  echo "download flag scripts template..."
+  wget -O $flag_script https://raw.githubusercontent.com/madhavth/pip_packages/master/nscript.txt
+fi
+
+
+if [[ ! -f $pipe_script ]]; then
+  echo "download pipe scripts template..."
+  wget -O $pipe_script https://raw.githubusercontent.com/madhavth/pip_packages/master/pipescript.txt
+fi
+
+cd $current_directory
+
+editor="nano"
+
+PROGNAME="ns"
+
+die() {
+    echo "$PROGNAME: $*" >&2
+    exit 1
+}
+
+usage() {
+    if [ "$*" != "" ] ; then
+        echo "Error: $*"
+    fi
+
+    cat << EOF
+Madhavth shell script creator helper
+Usage: $PROGNAME FILE_NAME <-s -- simple file>  <-e / --editor> EDITOR
+Custom Script usage title here
+Options:
+-h, --help                         display this usage message and exit
+-s, --simple 					   simple bash script without flags support
+-e, --editor					   set editor for opening new script
+-p, --pipe               pipeline template script
+EOF
+    exit 1
+}
+
+title=""
+simple=0
+arguments=()
+piped=""
+
+while [ $# -gt 0 ] ; do
+    case "$1" in
+    -h|--help)
+        usage
+        ;;
+
+	-s|--simple)
+		simple="1"
+		;;
+
+    -t|--title)
+        title="$2"
+        shift
+        ;;
+
+	-e|--editor)
+		editor="$2"
+		shift
+		;;
+
+  -p|--pipe)
+      piped="1"
+		;;
+    -*)
+        usage "Unknown option '$1'"
+        ;;
+    *)
+		 arguments+=("$1")
+#        usage "Too many arguments"
+      ;;
+    esac
+    shift
+done
+
+file=${arguments[0]}
+#nano $file
+if [[ -z $file ]]; then
+  echo "file name cannot be empty"
+  exit 1
+fi
+
+if [[ $piped == "1" ]]; then
+  cat ~/scripts/bin/pipescript.txt >> $file
+elif [[ $simple == "0" ]]; then
+	cat ~/scripts/bin/nscript.txt >> $file
+else
+	echo -n -e "#!/bin/bash\n\\nversion=\"0.1\"\n\n" >> $file
+fi
+
+$editor $file
+
+sudo chmod a+x $file
