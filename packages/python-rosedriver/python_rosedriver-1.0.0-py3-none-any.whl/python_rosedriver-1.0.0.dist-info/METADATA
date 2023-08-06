@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: python-rosedriver
+Version: 1.0.0
+Summary: A simple, unsophisticated python driver for RoseDB
+Home-page: https://github.com/LittleCrowRevi/Python-RoseDB-Driver
+Author: Revi Snow
+Author-email: snowrevy@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/LittleCrowRevi/Python-RoseDB-Driver/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python-RoseDB-Driver
+A simple, unsophisticated Python Driver for [RoseDB](https://github.com/ShindouMihou/RoseDB). Currently supports deleting, adding values to filtering and aggregation of database and collections.
+
+## Set-Up
+
+Setting up the connection is fairly simple.
+```Python
+RoseDriver = Rosebuilder.RoseDriver("127.0.0.1", 5995, "autherization")
+```
+
+
