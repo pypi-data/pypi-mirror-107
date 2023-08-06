@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: GraphEM
+Version: 0.0.1
+Summary: Gaussian Markov random ﬁelds embedded within an EM algorithm
+Home-page: https://github.com/fzhu2e/GraphEM
+Author: Feng Zhu, Dominique Guillot, Julien Emile-Geay
+Author-email: fengzhu@usc.edu, dguillot@udel.edu, julieneg@usc.edu
+License: MIT license
+Description: GraphEM
+        -------
+        
+        Gaussian Markov random ﬁelds embedded within an EM algorithm
+        
+Keywords: GraphEM
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
