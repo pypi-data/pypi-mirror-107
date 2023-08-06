@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+profile_binr/__init__.py
+profile_binr.egg-info/PKG-INFO
+profile_binr.egg-info/SOURCES.txt
+profile_binr.egg-info/dependency_links.txt
+profile_binr.egg-info/requires.txt
+profile_binr.egg-info/top_level.txt

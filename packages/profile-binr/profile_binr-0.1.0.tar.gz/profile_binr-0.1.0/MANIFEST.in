@@ -1,0 +1,4 @@
+exclude .*
+exclude Dockerfile*
+prune conda
+prune .github
