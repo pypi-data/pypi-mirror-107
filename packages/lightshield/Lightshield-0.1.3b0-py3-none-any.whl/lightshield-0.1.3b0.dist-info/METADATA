@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: lightshield
+Version: 0.1.3b0
+Summary: Library part of the Lightshield tool.
+Home-page: https://github.com/LightshieldDotDev/Lightshield
+License: Apache-2.0
+Author: Doctress
+Author-email: lightshielddev@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: aioredis (>=1.3.1,<2.0.0)
+Project-URL: Repository, https://github.com/LightshieldDotDev/Lightshield
+Description-Content-Type: text/markdown
+
+## Lightshield Tools
+
+Tools and Code-Sections of the Lightshield Framework that were better fit to be provided through dependency
+rather then included in the main project.
+
+
+
+### Ratelimiter (WIP)
+
+Multi-Host async ratelimiting service. The clients each sync via a central redis server. 
+
+#### Usage
+```python
+    from lightshield.proxy import Proxy
+    import aiohttp
+    
+    async def run():
+        p = Proxy()
+        # Initiate the redis connector in async context
+        await p.init(host='localhost', port=5432)
+        
+        async with aiohttp.ClientSession(headers={'X-Riot-Token': ''}) as session:
+            
+            # One-off requests directly through the API object.
+            await p.request('https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/SILVER/I', session=session)
+            
+            # Preselect the Method Ratelimit Zone to skip the selection of corresponding limits
+            zone = await p.get_endpoint('https://euw1.api.riotgames.com/lol/league-exp/v4/entries/')
+            for page in range(1, 10):
+                zone.request('https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/SILVER/I?page=%s' % page, session)
+```
+
