@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-imagegrid
+Version: 0.0.1
+Summary: Streamlit imagegrid
+Home-page: UNKNOWN
+Author: mharikum
+Author-email: midhunharikumar@outlook.com
+License: UNKNOWN
+Description: Imagegrid for streamlit applications
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
