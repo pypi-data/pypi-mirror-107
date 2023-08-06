@@ -1,0 +1,850 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.ThirdParty.tqdm.tqdm package &mdash; PyFoam 0.6.11-development documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PyFoam.ThirdParty.tqdm.setup module" href="PyFoam.ThirdParty.tqdm.setup.html" />
+    <link rel="prev" title="PyFoam.ThirdParty.tqdm package" href="PyFoam.ThirdParty.tqdm.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.11
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.ThirdParty.tqdm.html">PyFoam.ThirdParty.tqdm package</a> &raquo;</li>
+        
+      <li>PyFoam.ThirdParty.tqdm.tqdm package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.ThirdParty.tqdm.tqdm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyfoam-thirdparty-tqdm-tqdm-package">
+<h1>PyFoam.ThirdParty.tqdm.tqdm package<a class="headerlink" href="#pyfoam-thirdparty-tqdm-tqdm-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-PyFoam.ThirdParty.tqdm.tqdm">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-PyFoam.ThirdParty.tqdm.tqdm" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tqdm</code><span class="sig-paren">(</span><em class="sig-param">iterable=None</em>, <em class="sig-param">desc=None</em>, <em class="sig-param">total=None</em>, <em class="sig-param">leave=True</em>, <em class="sig-param">file=&lt;_io.TextIOWrapper name='&lt;stderr&gt;' mode='w' encoding='UTF-8'&gt;</em>, <em class="sig-param">ncols=None</em>, <em class="sig-param">mininterval=0.1</em>, <em class="sig-param">maxinterval=10.0</em>, <em class="sig-param">miniters=None</em>, <em class="sig-param">ascii=None</em>, <em class="sig-param">disable=False</em>, <em class="sig-param">unit='it'</em>, <em class="sig-param">unit_scale=False</em>, <em class="sig-param">dynamic_ncols=False</em>, <em class="sig-param">smoothing=0.3</em>, <em class="sig-param">bar_format=None</em>, <em class="sig-param">initial=0</em>, <em class="sig-param">position=None</em>, <em class="sig-param">gui=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Decorate an iterable object, returning an iterator which acts exactly
+like the original iterable, but prints a dynamically updating
+progressbar every time a value is requested.</p>
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__del__">
+<code class="sig-name descname">__del__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__del__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__del__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__dict__">
+<code class="sig-name descname">__dict__</code><em class="property"> = mappingproxy({'__module__': 'PyFoam.ThirdParty.tqdm.tqdm._tqdm', '__doc__': '\n    Decorate an iterable object, returning an iterator which acts exactly\n    like the original iterable, but prints a dynamically updating\n    progressbar every time a value is requested.\n    ', 'format_sizeof': &lt;staticmethod object&gt;, 'format_interval': &lt;staticmethod object&gt;, 'status_printer': &lt;staticmethod object&gt;, 'format_meter': &lt;staticmethod object&gt;, '__new__': &lt;staticmethod object&gt;, '_get_free_pos': &lt;classmethod object&gt;, '_decr_instances': &lt;classmethod object&gt;, 'write': &lt;classmethod object&gt;, 'pandas': &lt;classmethod object&gt;, '__init__': &lt;function tqdm.__init__&gt;, '__len__': &lt;function tqdm.__len__&gt;, '__enter__': &lt;function tqdm.__enter__&gt;, '__exit__': &lt;function tqdm.__exit__&gt;, '__del__': &lt;function tqdm.__del__&gt;, '__repr__': &lt;function tqdm.__repr__&gt;, '__lt__': &lt;function tqdm.__lt__&gt;, '__le__': &lt;function tqdm.__le__&gt;, '__eq__': &lt;function tqdm.__eq__&gt;, '__ne__': &lt;function tqdm.__ne__&gt;, '__gt__': &lt;function tqdm.__gt__&gt;, '__ge__': &lt;function tqdm.__ge__&gt;, '__hash__': &lt;function tqdm.__hash__&gt;, '__iter__': &lt;function tqdm.__iter__&gt;, 'update': &lt;function tqdm.update&gt;, 'close': &lt;function tqdm.close&gt;, 'unpause': &lt;function tqdm.unpause&gt;, 'set_description': &lt;function tqdm.set_description&gt;, 'moveto': &lt;function tqdm.moveto&gt;, 'clear': &lt;function tqdm.clear&gt;, 'refresh': &lt;function tqdm.refresh&gt;, '__dict__': &lt;attribute '__dict__' of 'tqdm' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'tqdm' objects&gt;})</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__enter__">
+<code class="sig-name descname">__enter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__enter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__enter__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__eq__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__exit__">
+<code class="sig-name descname">__exit__</code><span class="sig-paren">(</span><em class="sig-param">*exc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__exit__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__exit__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__ge__">
+<code class="sig-name descname">__ge__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__ge__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self&gt;=value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__gt__">
+<code class="sig-name descname">__gt__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__gt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self&gt;value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__hash__">
+<code class="sig-name descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__hash__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">iterable=None</em>, <em class="sig-param">desc=None</em>, <em class="sig-param">total=None</em>, <em class="sig-param">leave=True</em>, <em class="sig-param">file=&lt;_io.TextIOWrapper name='&lt;stderr&gt;' mode='w' encoding='UTF-8'&gt;</em>, <em class="sig-param">ncols=None</em>, <em class="sig-param">mininterval=0.1</em>, <em class="sig-param">maxinterval=10.0</em>, <em class="sig-param">miniters=None</em>, <em class="sig-param">ascii=None</em>, <em class="sig-param">disable=False</em>, <em class="sig-param">unit='it'</em>, <em class="sig-param">unit_scale=False</em>, <em class="sig-param">dynamic_ncols=False</em>, <em class="sig-param">smoothing=0.3</em>, <em class="sig-param">bar_format=None</em>, <em class="sig-param">initial=0</em>, <em class="sig-param">position=None</em>, <em class="sig-param">gui=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>iterable<span class="classifier">iterable, optional</span></dt><dd><p>Iterable to decorate with a progressbar.
+Leave blank to manually manage the updates.</p>
+</dd>
+<dt>desc<span class="classifier">str, optional</span></dt><dd><p>Prefix for the progressbar.</p>
+</dd>
+<dt>total<span class="classifier">int, optional</span></dt><dd><p>The number of expected iterations. If unspecified,
+len(iterable) is used if possible. As a last resort, only basic
+progress statistics are displayed (no ETA, no progressbar).
+If <cite>gui</cite> is True and this parameter needs subsequent updating,
+specify an initial arbitrary large positive integer,
+e.g. int(9e9).</p>
+</dd>
+<dt>leave<span class="classifier">bool, optional</span></dt><dd><p>If [default: True], keeps all traces of the progressbar
+upon termination of iteration.</p>
+</dd>
+<dt>file<span class="classifier"><cite>io.TextIOWrapper</cite> or <cite>io.StringIO</cite>, optional</span></dt><dd><p>Specifies where to output the progress messages
+[default: sys.stderr]. Uses <cite>file.write(str)</cite> and <cite>file.flush()</cite>
+methods.</p>
+</dd>
+<dt>ncols<span class="classifier">int, optional</span></dt><dd><p>The width of the entire output message. If specified,
+dynamically resizes the progressbar to stay within this bound.
+If unspecified, attempts to use environment width. The
+fallback is a meter width of 10 and no limit for the counter and
+statistics. If 0, will not print any meter (only stats).</p>
+</dd>
+<dt>mininterval<span class="classifier">float, optional</span></dt><dd><p>Minimum progress update interval, in seconds [default: 0.1].</p>
+</dd>
+<dt>maxinterval<span class="classifier">float, optional</span></dt><dd><p>Maximum progress update interval, in seconds [default: 10.0].</p>
+</dd>
+<dt>miniters<span class="classifier">int, optional</span></dt><dd><p>Minimum progress update interval, in iterations.
+If specified, will set <cite>mininterval</cite> to 0.</p>
+</dd>
+<dt>ascii<span class="classifier">bool, optional</span></dt><dd><p>If unspecified or False, use unicode (smooth blocks) to fill
+the meter. The fallback is to use ASCII characters <cite>1-9 #</cite>.</p>
+</dd>
+<dt>disable<span class="classifier">bool, optional</span></dt><dd><p>Whether to disable the entire progressbar wrapper
+[default: False].</p>
+</dd>
+<dt>unit<span class="classifier">str, optional</span></dt><dd><p>String that will be used to define the unit of each iteration
+[default: it].</p>
+</dd>
+<dt>unit_scale<span class="classifier">bool, optional</span></dt><dd><p>If set, the number of iterations will be reduced/scaled
+automatically and a metric prefix following the
+International System of Units standard will be added
+(kilo, mega, etc.) [default: False].</p>
+</dd>
+<dt>dynamic_ncols<span class="classifier">bool, optional</span></dt><dd><p>If set, constantly alters <cite>ncols</cite> to the environment (allowing
+for window resizes) [default: False].</p>
+</dd>
+<dt>smoothing<span class="classifier">float, optional</span></dt><dd><p>Exponential moving average smoothing factor for speed estimates
+(ignored in GUI mode). Ranges from 0 (average speed) to 1
+(current/instantaneous speed) [default: 0.3].</p>
+</dd>
+<dt>bar_format<span class="classifier">str, optional</span></dt><dd><p>Specify a custom bar string formatting. May impact performance.
+If unspecified, will use ‘{l_bar}{bar}{r_bar}’, where l_bar is
+‘{desc}{percentage:3.0f}%|’ and r_bar is
+‘| {n_fmt}/{total_fmt} [{elapsed_str}&lt;{remaining_str}, {rate_fmt}]’
+Possible vars: bar, n, n_fmt, total, total_fmt, percentage,
+rate, rate_fmt, elapsed, remaining, l_bar, r_bar, desc.</p>
+</dd>
+<dt>initial<span class="classifier">int, optional</span></dt><dd><p>The initial counter value. Useful when restarting a progress
+bar [default: 0].</p>
+</dd>
+<dt>position<span class="classifier">int, optional</span></dt><dd><p>Specify the line offset to print this bar (starting from 0)
+Automatic if unspecified.
+Useful to manage multiple bars at once (eg, from threads).</p>
+</dd>
+<dt>gui<span class="classifier">bool, optional</span></dt><dd><p>WARNING: internal parameter - do not use.
+Use tqdm_gui(…) instead. If set, will attempt to use
+matplotlib animations for a graphical output [default: False].</p>
+</dd>
+</dl>
+<p>out  : decorated iterator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__iter__">
+<code class="sig-name descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__iter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Backward-compatibility to use: for x in tqdm(iterable)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__le__">
+<code class="sig-name descname">__le__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__le__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self&lt;=value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__len__">
+<code class="sig-name descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__len__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__len__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__lt__">
+<code class="sig-name descname">__lt__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__lt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self&lt;value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.tqdm.tqdm._tqdm'</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__ne__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self!=value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__new__">
+<em class="property">static </em><code class="sig-name descname">__new__</code><span class="sig-paren">(</span><em class="sig-param">cls</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__new__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__new__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a new object.  See help(type) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__repr__">
+<code class="sig-name descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.__repr__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm._decr_instances">
+<em class="property">classmethod </em><code class="sig-name descname">_decr_instances</code><span class="sig-paren">(</span><em class="sig-param">instance</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm._decr_instances"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm._decr_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove from list and reposition other bars
+so that newer bars won’t overlap previous bars</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm._get_free_pos">
+<em class="property">classmethod </em><code class="sig-name descname">_get_free_pos</code><span class="sig-paren">(</span><em class="sig-param">instance=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm._get_free_pos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm._get_free_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Skips specified instance</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><em class="sig-param">nomove=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear current bar display</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cleanup and (if leave=False) close the progressbar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_interval">
+<em class="property">static </em><code class="sig-name descname">format_interval</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.format_interval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats a number of seconds as a clock time, [H:]MM:SS</p>
+<dl class="simple">
+<dt>t<span class="classifier">int</span></dt><dd><p>Number of seconds.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>out<span class="classifier">str</span></dt><dd><p>[H:]MM:SS</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_meter">
+<em class="property">static </em><code class="sig-name descname">format_meter</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">total</em>, <em class="sig-param">elapsed</em>, <em class="sig-param">ncols=None</em>, <em class="sig-param">prefix=''</em>, <em class="sig-param">ascii=False</em>, <em class="sig-param">unit='it'</em>, <em class="sig-param">unit_scale=False</em>, <em class="sig-param">rate=None</em>, <em class="sig-param">bar_format=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.format_meter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_meter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string-based progress bar given some parameters</p>
+<dl class="simple">
+<dt>n<span class="classifier">int</span></dt><dd><p>Number of finished iterations.</p>
+</dd>
+<dt>total<span class="classifier">int</span></dt><dd><p>The expected total number of iterations. If meaningless (), only
+basic progress statistics are displayed (no ETA).</p>
+</dd>
+<dt>elapsed<span class="classifier">float</span></dt><dd><p>Number of seconds passed since start.</p>
+</dd>
+<dt>ncols<span class="classifier">int, optional</span></dt><dd><p>The width of the entire output message. If specified,
+dynamically resizes the progress meter to stay within this bound
+[default: None]. The fallback meter width is 10 for the progress
+bar + no limit for the iterations counter and statistics. If 0,
+will not print any meter (only stats).</p>
+</dd>
+<dt>prefix<span class="classifier">str, optional</span></dt><dd><p>Prefix message (included in total width) [default: ‘’].</p>
+</dd>
+<dt>ascii<span class="classifier">bool, optional</span></dt><dd><p>If not set, use unicode (smooth blocks) to fill the meter
+[default: False]. The fallback is to use ASCII characters
+(1-9 #).</p>
+</dd>
+<dt>unit<span class="classifier">str, optional</span></dt><dd><p>The iteration unit [default: ‘it’].</p>
+</dd>
+<dt>unit_scale<span class="classifier">bool, optional</span></dt><dd><p>If set, the number of iterations will printed with an
+appropriate SI metric prefix (K = 10^3, M = 10^6, etc.)
+[default: False].</p>
+</dd>
+<dt>rate<span class="classifier">float, optional</span></dt><dd><p>Manual override for iteration rate.
+If [default: None], uses n/elapsed.</p>
+</dd>
+<dt>bar_format<span class="classifier">str, optional</span></dt><dd><p>Specify a custom bar string formatting. May impact performance.
+[default: ‘{l_bar}{bar}{r_bar}’], where l_bar is
+‘{desc}{percentage:3.0f}%|’ and r_bar is
+‘| {n_fmt}/{total_fmt} [{elapsed_str}&lt;{remaining_str}, {rate_fmt}]’
+Possible vars: bar, n, n_fmt, total, total_fmt, percentage,
+rate, rate_fmt, elapsed, remaining, l_bar, r_bar, desc.</p>
+</dd>
+</dl>
+<p>out  : Formatted meter and stats, ready to display.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_sizeof">
+<em class="property">static </em><code class="sig-name descname">format_sizeof</code><span class="sig-paren">(</span><em class="sig-param">num</em>, <em class="sig-param">suffix=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.format_sizeof"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.format_sizeof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats a number (greater than unity) with SI Order of Magnitude
+prefixes.</p>
+<dl class="simple">
+<dt>num<span class="classifier">float</span></dt><dd><p>Number ( &gt;= 1) to format.</p>
+</dd>
+<dt>suffix<span class="classifier">str, optional</span></dt><dd><p>Post-postfix [default: ‘’].</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>out<span class="classifier">str</span></dt><dd><p>Number with Order of Magnitude SI unit postfix.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.moveto">
+<code class="sig-name descname">moveto</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.moveto"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.moveto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.pandas">
+<em class="property">classmethod </em><code class="sig-name descname">pandas</code><span class="sig-paren">(</span><em class="sig-param">*targs</em>, <em class="sig-param">**tkwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.pandas"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.pandas" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Registers the given <cite>tqdm</cite> class with</dt><dd><p>pandas.core.
+( frame.DataFrame
+| series.Series
+| groupby.DataFrameGroupBy
+| groupby.SeriesGroupBy
+).progress_apply</p>
+</dd>
+</dl>
+<p>A new instance will be create every time <cite>progress_apply</cite> is called,
+and each instance will automatically close() upon completion.</p>
+<p>targs, tkwargs  : arguments for the tqdm instance</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span><span class="p">,</span> <span class="n">tqdm_gui</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tqdm</span><span class="o">.</span><span class="n">pandas</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># can use tqdm_gui, optional kwargs, etc</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Now you can use `progress_apply` instead of `apply`</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://stackoverflow.com/questions/18603270/">https://stackoverflow.com/questions/18603270/</a>
+progress-indicator-during-pandas-operations-python</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.refresh">
+<code class="sig-name descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.refresh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Force refresh the display of this bar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.set_description">
+<code class="sig-name descname">set_description</code><span class="sig-paren">(</span><em class="sig-param">desc=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.set_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set/modify description of the progress bar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.status_printer">
+<em class="property">static </em><code class="sig-name descname">status_printer</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.status_printer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.status_printer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage the printing and in-place updating of a line of characters.
+Note that if the string is longer than a line, then in-place
+updating may not work (it will print a new line at each refresh).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.unpause">
+<code class="sig-name descname">unpause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.unpause"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.unpause" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restart tqdm timer from last print time.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">n=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manually update the progress bar, useful for streams
+such as reading files.
+E.g.:
+&gt;&gt;&gt; t = tqdm(total=filesize) # Initialise
+&gt;&gt;&gt; for current_buffer in stream:
+…    …
+…    t.update(len(current_buffer))
+&gt;&gt;&gt; t.close()
+The last line is highly recommended, but possibly not necessary if
+<cite>t.update()</cite> will be called in such a way that <cite>filesize</cite> will be
+exactly reached and printed.</p>
+<dl class="simple">
+<dt>n<span class="classifier">int</span></dt><dd><p>Increment to add to the internal counter of iterations
+[default: 1].</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm.write">
+<em class="property">classmethod </em><code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">file=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em>, <em class="sig-param">end='\n'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#tqdm.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a message via tqdm (without overlap with bars)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tqdm_gui</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.ThirdParty.tqdm.tqdm._tqdm.tqdm</span></code></p>
+<p>Experimental GUI version of tqdm!</p>
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>iterable<span class="classifier">iterable, optional</span></dt><dd><p>Iterable to decorate with a progressbar.
+Leave blank to manually manage the updates.</p>
+</dd>
+<dt>desc<span class="classifier">str, optional</span></dt><dd><p>Prefix for the progressbar.</p>
+</dd>
+<dt>total<span class="classifier">int, optional</span></dt><dd><p>The number of expected iterations. If unspecified,
+len(iterable) is used if possible. As a last resort, only basic
+progress statistics are displayed (no ETA, no progressbar).
+If <cite>gui</cite> is True and this parameter needs subsequent updating,
+specify an initial arbitrary large positive integer,
+e.g. int(9e9).</p>
+</dd>
+<dt>leave<span class="classifier">bool, optional</span></dt><dd><p>If [default: True], keeps all traces of the progressbar
+upon termination of iteration.</p>
+</dd>
+<dt>file<span class="classifier"><cite>io.TextIOWrapper</cite> or <cite>io.StringIO</cite>, optional</span></dt><dd><p>Specifies where to output the progress messages
+[default: sys.stderr]. Uses <cite>file.write(str)</cite> and <cite>file.flush()</cite>
+methods.</p>
+</dd>
+<dt>ncols<span class="classifier">int, optional</span></dt><dd><p>The width of the entire output message. If specified,
+dynamically resizes the progressbar to stay within this bound.
+If unspecified, attempts to use environment width. The
+fallback is a meter width of 10 and no limit for the counter and
+statistics. If 0, will not print any meter (only stats).</p>
+</dd>
+<dt>mininterval<span class="classifier">float, optional</span></dt><dd><p>Minimum progress update interval, in seconds [default: 0.1].</p>
+</dd>
+<dt>maxinterval<span class="classifier">float, optional</span></dt><dd><p>Maximum progress update interval, in seconds [default: 10.0].</p>
+</dd>
+<dt>miniters<span class="classifier">int, optional</span></dt><dd><p>Minimum progress update interval, in iterations.
+If specified, will set <cite>mininterval</cite> to 0.</p>
+</dd>
+<dt>ascii<span class="classifier">bool, optional</span></dt><dd><p>If unspecified or False, use unicode (smooth blocks) to fill
+the meter. The fallback is to use ASCII characters <cite>1-9 #</cite>.</p>
+</dd>
+<dt>disable<span class="classifier">bool, optional</span></dt><dd><p>Whether to disable the entire progressbar wrapper
+[default: False].</p>
+</dd>
+<dt>unit<span class="classifier">str, optional</span></dt><dd><p>String that will be used to define the unit of each iteration
+[default: it].</p>
+</dd>
+<dt>unit_scale<span class="classifier">bool, optional</span></dt><dd><p>If set, the number of iterations will be reduced/scaled
+automatically and a metric prefix following the
+International System of Units standard will be added
+(kilo, mega, etc.) [default: False].</p>
+</dd>
+<dt>dynamic_ncols<span class="classifier">bool, optional</span></dt><dd><p>If set, constantly alters <cite>ncols</cite> to the environment (allowing
+for window resizes) [default: False].</p>
+</dd>
+<dt>smoothing<span class="classifier">float, optional</span></dt><dd><p>Exponential moving average smoothing factor for speed estimates
+(ignored in GUI mode). Ranges from 0 (average speed) to 1
+(current/instantaneous speed) [default: 0.3].</p>
+</dd>
+<dt>bar_format<span class="classifier">str, optional</span></dt><dd><p>Specify a custom bar string formatting. May impact performance.
+If unspecified, will use ‘{l_bar}{bar}{r_bar}’, where l_bar is
+‘{desc}{percentage:3.0f}%|’ and r_bar is
+‘| {n_fmt}/{total_fmt} [{elapsed_str}&lt;{remaining_str}, {rate_fmt}]’
+Possible vars: bar, n, n_fmt, total, total_fmt, percentage,
+rate, rate_fmt, elapsed, remaining, l_bar, r_bar, desc.</p>
+</dd>
+<dt>initial<span class="classifier">int, optional</span></dt><dd><p>The initial counter value. Useful when restarting a progress
+bar [default: 0].</p>
+</dd>
+<dt>position<span class="classifier">int, optional</span></dt><dd><p>Specify the line offset to print this bar (starting from 0)
+Automatic if unspecified.
+Useful to manage multiple bars at once (eg, from threads).</p>
+</dd>
+<dt>gui<span class="classifier">bool, optional</span></dt><dd><p>WARNING: internal parameter - do not use.
+Use tqdm_gui(…) instead. If set, will attempt to use
+matplotlib animations for a graphical output [default: False].</p>
+</dd>
+</dl>
+<p>out  : decorated iterator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__iter__">
+<code class="sig-name descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui.__iter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Backward-compatibility to use: for x in tqdm(iterable)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.tqdm.tqdm._tqdm_gui'</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cleanup and (if leave=False) close the progressbar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">n=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manually update the progress bar, useful for streams
+such as reading files.
+E.g.:
+&gt;&gt;&gt; t = tqdm(total=filesize) # Initialise
+&gt;&gt;&gt; for current_buffer in stream:
+…    …
+…    t.update(len(current_buffer))
+&gt;&gt;&gt; t.close()
+The last line is highly recommended, but possibly not necessary if
+<cite>t.update()</cite> will be called in such a way that <cite>filesize</cite> will be
+exactly reached and printed.</p>
+<dl class="simple">
+<dt>n<span class="classifier">int</span></dt><dd><p>Increment to add to the internal counter of iterations
+[default: 1].</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.write">
+<em class="property">classmethod </em><code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">file=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em>, <em class="sig-param">end='\n'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tqdm_gui.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_gui.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a message via tqdm_gui (just an alias for print)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.trange">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">trange</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#trange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.trange" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for tqdm(xrange(<a href="#id1"><span class="problematic" id="id2">*</span></a>args), <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs).
+On Python3+ range is used instead of xrange.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tgrange">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tgrange</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_gui.html#tgrange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tgrange" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for tqdm_gui(xrange(<a href="#id5"><span class="problematic" id="id6">*</span></a>args), <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs).
+On Python3+ range is used instead of xrange.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_pandas">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tqdm_pandas</code><span class="sig-paren">(</span><em class="sig-param">tclass</em>, <em class="sig-param">*targs</em>, <em class="sig-param">**tkwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm_pandas.html#tqdm_pandas"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_pandas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers the given <cite>tqdm</cite> instance with
+<cite>pandas.core.groupby.DataFrameGroupBy.progress_apply</cite>.
+It will even close() the <cite>tqdm</cite> instance upon completion.</p>
+<p>tclass  : tqdm class you want to use (eg, tqdm, tqdm_notebook, etc)
+targs and tkwargs  : arguments for the tqdm instance</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span><span class="p">,</span> <span class="n">tqdm_pandas</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tqdm_pandas</span><span class="p">(</span><span class="n">tqdm</span><span class="p">,</span> <span class="n">leave</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># can use tqdm_gui, optional kwargs, etc</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Now you can use `progress_apply` instead of `apply`</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">progress_apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://stackoverflow.com/questions/18603270/">https://stackoverflow.com/questions/18603270/</a>
+progress-indicator-during-pandas-operations-python</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tqdm_notebook">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tqdm_notebook</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm.html#tqdm_notebook"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tqdm_notebook" title="Permalink to this definition">¶</a></dt>
+<dd><p>See tqdm._tqdm_notebook.tqdm_notebook for full documentation</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.tnrange">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">tnrange</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm.html#tnrange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.tnrange" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for tqdm_notebook(xrange(<a href="#id9"><span class="problematic" id="id10">*</span></a>args), <a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs).
+On Python3+ range is used instead of xrange.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.main">
+<code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_main.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError">
+<em class="property">exception </em><code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">TqdmTypeError</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#TqdmTypeError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.tqdm.tqdm._tqdm'</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmTypeError.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError">
+<em class="property">exception </em><code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">TqdmKeyError</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#TqdmKeyError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.tqdm.tqdm._tqdm'</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmKeyError.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning">
+<em class="property">exception </em><code class="sig-prename descclassname">PyFoam.ThirdParty.tqdm.tqdm.</code><code class="sig-name descname">TqdmDeprecationWarning</code><span class="sig-paren">(</span><em class="sig-param">msg</em>, <em class="sig-param">fp_write=None</em>, <em class="sig-param">*a</em>, <em class="sig-param">**k</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#TqdmDeprecationWarning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="method">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">msg</em>, <em class="sig-param">fp_write=None</em>, <em class="sig-param">*a</em>, <em class="sig-param">**k</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/tqdm/tqdm/_tqdm.html#TqdmDeprecationWarning.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.tqdm.tqdm._tqdm'</em><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.ThirdParty.tqdm.tqdm.TqdmDeprecationWarning.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.ThirdParty.tqdm.setup.html" class="btn btn-neutral float-right" title="PyFoam.ThirdParty.tqdm.setup module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.ThirdParty.tqdm.html" class="btn btn-neutral float-left" title="PyFoam.ThirdParty.tqdm package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Bernhard F.W. Gschaider
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

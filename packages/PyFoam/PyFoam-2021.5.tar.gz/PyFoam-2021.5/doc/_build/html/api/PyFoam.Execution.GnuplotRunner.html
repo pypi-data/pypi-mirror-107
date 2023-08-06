@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.Execution.GnuplotRunner module &mdash; PyFoam 0.6.11-development documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PyFoam.Execution.ParallelExecution module" href="PyFoam.Execution.ParallelExecution.html" />
+    <link rel="prev" title="PyFoam.Execution.FoamThread module" href="PyFoam.Execution.FoamThread.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.11
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.Execution.html">PyFoam.Execution package</a> &raquo;</li>
+        
+      <li>PyFoam.Execution.GnuplotRunner module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.Execution.GnuplotRunner.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-PyFoam.Execution.GnuplotRunner">
+<span id="pyfoam-execution-gnuplotrunner-module"></span><h1>PyFoam.Execution.GnuplotRunner module<a class="headerlink" href="#module-PyFoam.Execution.GnuplotRunner" title="Permalink to this headline">¶</a></h1>
+<p>Runner that outputs the residuals of the linear solver with Gnuplot</p>
+<dl class="class">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.Execution.GnuplotRunner.</code><code class="sig-name descname">GnuplotCommon</code><span class="sig-paren">(</span><em class="sig-param">fname</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">start=None</em>, <em class="sig-param">end=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">adaptFrequency=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="PyFoam.Execution.StepAnalyzedCommon.html#PyFoam.Execution.StepAnalyzedCommon.StepAnalyzedCommon" title="PyFoam.Execution.StepAnalyzedCommon.StepAnalyzedCommon"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.StepAnalyzedCommon.StepAnalyzedCommon</span></code></a></p>
+<p>Class that collects the Gnuplotting-Stuff for two other classes</p>
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">fname</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">start=None</em>, <em class="sig-param">end=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">adaptFrequency=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docu</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.Execution.GnuplotRunner'</em><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.addPlots">
+<code class="sig-name descname">addPlots</code><span class="sig-paren">(</span><em class="sig-param">plots</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon.addPlots"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.addPlots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add plots. To be overriden</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.stopHandle">
+<code class="sig-name descname">stopHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon.stopHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.stopHandle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.timeChanged">
+<code class="sig-name descname">timeChanged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon.timeChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.timeChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>React to a change of the simulation time in the log</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotCommon.timeHandle">
+<code class="sig-name descname">timeHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotCommon.timeHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon.timeHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handler that reacts to the change of time. To be overridden be sub-classes</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotRunner">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.Execution.GnuplotRunner.</code><code class="sig-name descname">GnuplotRunner</code><span class="sig-paren">(</span><em class="sig-param">argv=None</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">server=False</em>, <em class="sig-param">lam=None</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">steady=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">silent=False</em>, <em class="sig-param">restart=False</em>, <em class="sig-param">logname=None</em>, <em class="sig-param">compressLog=False</em>, <em class="sig-param">noLog=False</em>, <em class="sig-param">logTail=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">remark=None</em>, <em class="sig-param">parameters=None</em>, <em class="sig-param">jobId=None</em>, <em class="sig-param">echoCommandLine=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotRunner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotRunner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon" title="PyFoam.Execution.GnuplotRunner.GnuplotCommon"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.GnuplotRunner.GnuplotCommon</span></code></a>, <a class="reference internal" href="PyFoam.Execution.BasicRunner.html#PyFoam.Execution.BasicRunner.BasicRunner" title="PyFoam.Execution.BasicRunner.BasicRunner"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.BasicRunner.BasicRunner</span></code></a></p>
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotRunner.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">argv=None</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">server=False</em>, <em class="sig-param">lam=None</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">steady=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">silent=False</em>, <em class="sig-param">restart=False</em>, <em class="sig-param">logname=None</em>, <em class="sig-param">compressLog=False</em>, <em class="sig-param">noLog=False</em>, <em class="sig-param">logTail=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">remark=None</em>, <em class="sig-param">parameters=None</em>, <em class="sig-param">jobId=None</em>, <em class="sig-param">echoCommandLine=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotRunner.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotRunner.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smallestFreq</strong> – smallest Frequency of output</p></li>
+<li><p><strong>persist</strong> – Gnuplot window persistst after run</p></li>
+<li><p><strong>steady</strong> – Is it a steady run? Then stop it after convergence</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotRunner.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.Execution.GnuplotRunner'</em><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotRunner.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotRunner.lineHandle">
+<code class="sig-name descname">lineHandle</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotRunner.lineHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotRunner.lineHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not to be called: Stops the solver</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotRunner.stopHandle">
+<code class="sig-name descname">stopHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotRunner.stopHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotRunner.stopHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not to be called: Restores controlDict</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.Execution.GnuplotRunner.</code><code class="sig-name descname">GnuplotWatcher</code><span class="sig-paren">(</span><em class="sig-param">logfile</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">silent=False</em>, <em class="sig-param">tailLength=1000</em>, <em class="sig-param">sleep=0.1</em>, <em class="sig-param">replotFrequency=3600</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">start=None</em>, <em class="sig-param">end=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">solverNotRunning=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PyFoam.Execution.GnuplotRunner.GnuplotCommon" title="PyFoam.Execution.GnuplotRunner.GnuplotCommon"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.GnuplotRunner.GnuplotCommon</span></code></a>, <a class="reference internal" href="PyFoam.Execution.BasicWatcher.html#PyFoam.Execution.BasicWatcher.BasicWatcher" title="PyFoam.Execution.BasicWatcher.BasicWatcher"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.BasicWatcher.BasicWatcher</span></code></a></p>
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">logfile</em>, <em class="sig-param">smallestFreq=0.0</em>, <em class="sig-param">persist=None</em>, <em class="sig-param">quiet=False</em>, <em class="sig-param">splitThres=2048</em>, <em class="sig-param">split_fraction_unchanged=0.2</em>, <em class="sig-param">silent=False</em>, <em class="sig-param">tailLength=1000</em>, <em class="sig-param">sleep=0.1</em>, <em class="sig-param">replotFrequency=3600</em>, <em class="sig-param">plotLinear=True</em>, <em class="sig-param">plotCont=True</em>, <em class="sig-param">plotBound=True</em>, <em class="sig-param">plotIterations=False</em>, <em class="sig-param">plotCourant=False</em>, <em class="sig-param">plotExecution=False</em>, <em class="sig-param">plotDeltaT=False</em>, <em class="sig-param">customRegexp=None</em>, <em class="sig-param">writeFiles=False</em>, <em class="sig-param">hardcopy=False</em>, <em class="sig-param">hardcopyFormat='png'</em>, <em class="sig-param">hardcopyPrefix=None</em>, <em class="sig-param">hardcopyTerminalOptions=None</em>, <em class="sig-param">raiseit=False</em>, <em class="sig-param">progress=False</em>, <em class="sig-param">longProgress=False</em>, <em class="sig-param">start=None</em>, <em class="sig-param">end=None</em>, <em class="sig-param">singleFile=False</em>, <em class="sig-param">writePickled=True</em>, <em class="sig-param">gnuplotTerminal=None</em>, <em class="sig-param">plottingImplementation=None</em>, <em class="sig-param">solverNotRunning=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smallestFreq</strong> – smallest Frequency of output</p></li>
+<li><p><strong>persist</strong> – Gnuplot window persistst after run</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.Execution.GnuplotRunner'</em><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.startHandle">
+<code class="sig-name descname">startHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher.startHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.startHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>to be called before the program is started</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.tailingHandle">
+<code class="sig-name descname">tailingHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher.tailingHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.tailingHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>called when the first line is output</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.timeChanged">
+<code class="sig-name descname">timeChanged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher.timeChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.timeChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>React to a change of the simulation time in the log</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Execution.GnuplotRunner.GnuplotWatcher.timeHandle">
+<code class="sig-name descname">timeHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Execution/GnuplotRunner.html#GnuplotWatcher.timeHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Execution.GnuplotRunner.GnuplotWatcher.timeHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handler that reacts to the change of time. To be overridden be sub-classes</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.Execution.ParallelExecution.html" class="btn btn-neutral float-right" title="PyFoam.Execution.ParallelExecution module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.Execution.FoamThread.html" class="btn btn-neutral float-left" title="PyFoam.Execution.FoamThread module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Bernhard F.W. Gschaider
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

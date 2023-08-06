@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.RunDictionary.TimelineDirectory module &mdash; PyFoam 0.6.11-development documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PyFoam.Site package" href="PyFoam.Site.html" />
+    <link rel="prev" title="PyFoam.RunDictionary.TimeDirectory module" href="PyFoam.RunDictionary.TimeDirectory.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.11
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a> &raquo;</li>
+        
+      <li>PyFoam.RunDictionary.TimelineDirectory module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.RunDictionary.TimelineDirectory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-PyFoam.RunDictionary.TimelineDirectory">
+<span id="pyfoam-rundictionary-timelinedirectory-module"></span><h1>PyFoam.RunDictionary.TimelineDirectory module<a class="headerlink" href="#module-PyFoam.RunDictionary.TimelineDirectory" title="Permalink to this headline">¶</a></h1>
+<p>Working with a directory of timelines</p>
+<p>Currently not optimal as it reads the files more often than necessary</p>
+<dl class="class">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.RunDictionary.TimelineDirectory.</code><code class="sig-name descname">TimelineDirectory</code><span class="sig-paren">(</span><em class="sig-param">case=None</em>, <em class="sig-param">dirName='probes'</em>, <em class="sig-param">writeTime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A directory of sampled times</p>
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__contains__">
+<code class="sig-name descname">__contains__</code><span class="sig-paren">(</span><em class="sig-param">value</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.__contains__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__contains__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__dict__">
+<code class="sig-name descname">__dict__</code><em class="property"> = mappingproxy({'__module__': 'PyFoam.RunDictionary.TimelineDirectory', '__doc__': 'A directory of sampled times', '__init__': &lt;function TimelineDirectory.__init__&gt;, '__iter__': &lt;function TimelineDirectory.__iter__&gt;, '__getitem__': &lt;function TimelineDirectory.__getitem__&gt;, '__contains__': &lt;function TimelineDirectory.__contains__&gt;, '__len__': &lt;function TimelineDirectory.__len__&gt;, 'positions': &lt;function TimelineDirectory.positions&gt;, 'timeRange': &lt;function TimelineDirectory.timeRange&gt;, 'getDataLocation': &lt;function TimelineDirectory.getDataLocation&gt;, 'getData': &lt;function TimelineDirectory.getData&gt;, '__dict__': &lt;attribute '__dict__' of 'TimelineDirectory' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'TimelineDirectory' objects&gt;})</em><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">value</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.__getitem__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">case=None</em>, <em class="sig-param">dirName='probes'</em>, <em class="sig-param">writeTime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>case</strong> – The case directory</p></li>
+<li><p><strong>dirName</strong> – Name of the directory with the timelines</p></li>
+<li><p><strong>writeTime</strong> – The write time-directory where the data in question is to be plotted</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__iter__">
+<code class="sig-name descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.__iter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__len__">
+<code class="sig-name descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.__len__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__len__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.RunDictionary.TimelineDirectory'</em><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.getData">
+<code class="sig-name descname">getData</code><span class="sig-paren">(</span><em class="sig-param">times</em>, <em class="sig-param">value=None</em>, <em class="sig-param">position=None</em>, <em class="sig-param">vectorMode=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.getData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.getData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get data that mstches the given times most closely
+:param times: a list with times
+:param value: name of the value. All
+if unspecified
+:param position: name of the position of the value. All
+if unspecified
+:param vectorMode: which component of the vector to use</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.getDataLocation">
+<code class="sig-name descname">getDataLocation</code><span class="sig-paren">(</span><em class="sig-param">value=None</em>, <em class="sig-param">position=None</em>, <em class="sig-param">vectorMode=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.getDataLocation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.getDataLocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Timeline sets
+:param value: name of the value. All
+if unspecified
+:param position: name of the position of the value. All
+if unspecified</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.positions">
+<code class="sig-name descname">positions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.positions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all the found positions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.timeRange">
+<code class="sig-name descname">timeRange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineDirectory.timeRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineDirectory.timeRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the range of possible times</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue">
+<em class="property">class </em><code class="sig-prename descclassname">PyFoam.RunDictionary.TimelineDirectory.</code><code class="sig-name descname">TimelineValue</code><span class="sig-paren">(</span><em class="sig-param">sDir</em>, <em class="sig-param">val</em>, <em class="sig-param">time</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A file with one timelined value</p>
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__call__">
+<code class="sig-name descname">__call__</code><span class="sig-paren">(</span><em class="sig-param">addTitle=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.__call__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the data as a SpreadsheetData-object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__dict__">
+<code class="sig-name descname">__dict__</code><em class="property"> = mappingproxy({'__module__': 'PyFoam.RunDictionary.TimelineDirectory', '__doc__': 'A file with one timelined value', '__init__': &lt;function TimelineValue.__init__&gt;, '__repr__': &lt;function TimelineValue.__repr__&gt;, 'isProbe': &lt;function TimelineValue.isProbe&gt;, 'timeRange': &lt;function TimelineValue.timeRange&gt;, 'getData': &lt;function TimelineValue.getData&gt;, '__call__': &lt;function TimelineValue.__call__&gt;, '__dict__': &lt;attribute '__dict__' of 'TimelineValue' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'TimelineValue' objects&gt;})</em><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">sDir</em>, <em class="sig-param">val</em>, <em class="sig-param">time</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sDir</strong> – The timeline-dir</p></li>
+<li><p><strong>val</strong> – the value</p></li>
+<li><p><strong>time</strong> – the timename</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__module__">
+<code class="sig-name descname">__module__</code><em class="property"> = 'PyFoam.RunDictionary.TimelineDirectory'</em><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__repr__">
+<code class="sig-name descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.__repr__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__weakref__">
+<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.getData">
+<code class="sig-name descname">getData</code><span class="sig-paren">(</span><em class="sig-param">times</em>, <em class="sig-param">vectorMode=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.getData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.getData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data values that are nearest to the actual times</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.isProbe">
+<code class="sig-name descname">isProbe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.isProbe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.isProbe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this a probe-file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.RunDictionary.TimelineDirectory.TimelineValue.timeRange">
+<code class="sig-name descname">timeRange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/RunDictionary/TimelineDirectory.html#TimelineValue.timeRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.RunDictionary.TimelineDirectory.TimelineValue.timeRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Range of times</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.Site.html" class="btn btn-neutral float-right" title="PyFoam.Site package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.RunDictionary.TimeDirectory.html" class="btn btn-neutral float-left" title="PyFoam.RunDictionary.TimeDirectory module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Bernhard F.W. Gschaider
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
