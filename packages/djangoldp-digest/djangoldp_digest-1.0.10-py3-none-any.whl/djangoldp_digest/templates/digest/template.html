@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div
+    style="min-width:320px;max-width:600px;word-wrap:break-word;word-break:break-word;margin:0 auto;background-color:#ffffff">
+    <p style="text-align:center"><img src="https://cdn.startinblox.com/logos/Republique_ESS_v3.png"
+        alt="La République de l'ESS" /></p>
+    <p>{{ user.name }},</p>
+    <p>Voici vos notifications de la semaine sur <span style='color:#F39200'>La République de l'ESS</span></p>
+    <p>
+      {% autoescape off %}{{ content }}{% endautoescape %}
+    </p>
+    <hr />
+    <p style="text-align:center">
+      <a href="{{ settings.INSTANCE_DEFAULT_CLIENT }}">Accéder à la plateforme</a> - <a
+        href="https://ess-france.org">ess-france.org</a>
+    </p>
+    <p style="text-align:center">Pour ne plus recevoir cet e-mail, rendez-vous sur votre profile et décochez la case "Je
+      souhaite recevoir les notifications par mail".</p>
+  </div>
+</body>
+
+</html>

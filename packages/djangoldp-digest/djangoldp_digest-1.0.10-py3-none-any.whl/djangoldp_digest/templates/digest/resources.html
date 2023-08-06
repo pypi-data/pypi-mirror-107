@@ -1,0 +1,8 @@
+<div style="min-width:320px;max-width:600px;word-wrap:break-word;word-break:break-word;margin:0 auto;background-color:#ffffff">
+  <div style="min-width:320px;max-width:600px;display:table-cell;vertical-align:top;width:600px">
+    <h4>{{ count }} {% if count > 1 %}nouveaux ressources ont été partagées{% else %}nouvelle ressource a été partagée{% endif %} :</h4>
+    <div style="width:100%!important">
+      {% autoescape off %}{{ content }}{% endautoescape %}
+    </div>
+  </div>
+</div>
