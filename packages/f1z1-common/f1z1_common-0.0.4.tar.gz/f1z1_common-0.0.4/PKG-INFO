@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: f1z1_common
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: angel
+Author-email: 376355670@qq.com
+License: UNKNOWN
+Description: ## 项目仓库介绍
+        - F1Z1-G 项目集合仓库
+        - F1Z1-G 的命名来自于我的女朋友 g-1015 的逆序缩写
+        
+        ## 项目结构介绍
+        ### 目录结构参考如下
+        ```
+        <project>
+        └── src
+            ├── <modules>
+            ├── __init__.py
+            ├── LICENSE
+            ├── setup.py
+        ```
+        ### 目录作用说明
+        - `<project>` 表示各项目名称
+        - `src` 用于存放源代码，`src/__init__.py` 为项目唯一入口文件， `api` 均在此文件向外暴露
+        - `src/<modules>` 用于存放各项目具体模块
+        - `src/setup.py` 用于存放各项目打包程序
+        
+        ## 项目关系介绍
+        - 各项目之间尽可能保持独立互不依赖
+        - 各项目之间可使用相同第三方依赖
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
