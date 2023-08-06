@@ -1,0 +1,3 @@
+[console_scripts]
+dttr = pygrametl.drawntabletesting.dttr:main
+
