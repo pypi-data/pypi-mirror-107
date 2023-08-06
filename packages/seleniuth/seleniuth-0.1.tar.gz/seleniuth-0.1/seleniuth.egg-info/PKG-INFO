@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: seleniuth
+Version: 0.1
+Summary: Selenium Web Login
+Home-page: https://github.com/ros4s/seleniuth
+Author: ros4s
+Author-email: c01066033993@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# seleniuth
+
+Selenium Web Auth
+
