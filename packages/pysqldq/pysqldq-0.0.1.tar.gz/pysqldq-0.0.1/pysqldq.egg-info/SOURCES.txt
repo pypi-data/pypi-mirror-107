@@ -1,0 +1,8 @@
+README.md
+setup.py
+pysqldq/__init__.py
+pysqldq/dqchecks.py
+pysqldq.egg-info/PKG-INFO
+pysqldq.egg-info/SOURCES.txt
+pysqldq.egg-info/dependency_links.txt
+pysqldq.egg-info/top_level.txt
