@@ -1,0 +1,12 @@
+gitcomp/__init__.py,sha256=z30sd_rU4rO5PaN6Xh9DnFkufTDdOq_6-gAsl4mGjkg,192
+gitcomp/__main__.py,sha256=pfqs3L1FwTlvooO4tCve-bgMkyBniVbeNYOtfUiqc-A,3689
+gitcomp/gitcomp_core.py,sha256=xOqrd6hlrIOBlzTUvUJdgpzs9vYXA3R-EeLbubksMnE,2397
+gitcomp/repository.py,sha256=Xp9iFbsTokQf3No1n3_HEB52c7vUDFj3m3wLiT3bi9w,2826
+gitcomp/ser_de.py,sha256=DgGzrDompiycEb3DCWAG96dMGGchabTPisy08fhWey8,4887
+gitcomp/user.py,sha256=x2cQj64ifnqv9oCD3neHzKiee5xqwkrQMC8yctYHLUI,2398
+gitcomp-1.0.0.dist-info/LICENSE,sha256=zQOtVjc7Y-h9RzPH-CMCdlCYZaXHsBJUYKiV-MeCvgI,1070
+gitcomp-1.0.0.dist-info/METADATA,sha256=ldrjs0-wH6134Q7m98CHOArPM1xUYZwwKocABQ-CoTI,4586
+gitcomp-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gitcomp-1.0.0.dist-info/entry_points.txt,sha256=EH1tlFZDfM9pJ6W1U4-Wy78qI3wvWFWdxVJErpjX-n4,51
+gitcomp-1.0.0.dist-info/top_level.txt,sha256=ojeMt1s9uxSBYnQ-9P2sNb65ejhHa3clgX_5wmfpRaw,8
+gitcomp-1.0.0.dist-info/RECORD,,
