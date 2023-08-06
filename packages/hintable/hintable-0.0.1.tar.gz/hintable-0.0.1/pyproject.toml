@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hintable"
+version = "0"
+description = ""
+authors = ["Sebastián Ramírez <tiangolo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-version-plugin]
+source = "init"
