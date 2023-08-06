@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+opt_einsum_fx/__init__.py
+opt_einsum_fx/_fuse.py
+opt_einsum_fx/_opt_ein.py
+opt_einsum_fx/_script.py
+opt_einsum_fx.egg-info/PKG-INFO
+opt_einsum_fx.egg-info/SOURCES.txt
+opt_einsum_fx.egg-info/dependency_links.txt
+opt_einsum_fx.egg-info/requires.txt
+opt_einsum_fx.egg-info/top_level.txt
