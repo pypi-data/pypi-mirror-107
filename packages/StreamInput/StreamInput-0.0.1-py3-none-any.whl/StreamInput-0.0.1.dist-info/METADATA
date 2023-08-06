@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: StreamInput
+Version: 0.0.1
+Summary: Extension of Python built-in input() with timeout
+Home-page: https://github.com/yzhang-dev/StreamInput
+Author: Yi Zhang
+Author-email: yizhang.dev@gmail.com
+License: MIT
+Download-URL: https://github.com/yzhang-dev/StreamInput
+Keywords: input,timeout,python3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# StreamInput
+
+StreamInput is
+
+* extension of Python built-in `input()` with timeout
+* written in [Python (3.7+) Standard Library](https://docs.python.org/3.7/library/)
+
+
+
+## Quickstart
+
+```python
+from streaminput import streaminput
+
+data = streaminput(prompt='>>> ', timeout=10)
+print(data)
+```
+
+
+
+### Install StreamInput
+
+```bash
+$ pip install streaminput
+```
+
+
+
