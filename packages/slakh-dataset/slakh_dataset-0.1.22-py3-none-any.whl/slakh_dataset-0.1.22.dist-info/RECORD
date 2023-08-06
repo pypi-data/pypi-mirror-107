@@ -1,0 +1,14 @@
+slakh_dataset/__init__.py,sha256=oaxY_XCter03vaxwYxUkAh7RI5n_05UUxjcxwDK4ZLA,61
+slakh_dataset/constants.py,sha256=SN_8nEikSRuqF4uwNKO5J2b9q5TaMlhg8EAxA_HXfhU,335
+slakh_dataset/data_classes.py,sha256=1u40ajHLEGjzcP4MaoaEiOltdssc981rvdBFCkv-lnU,610
+slakh_dataset/dataset.py,sha256=IscmiafVJFJY1pB_bv5Z4mZ3m8s6poMfHaW7E31UEL8,16791
+slakh_dataset/midi.py,sha256=z2T1_mBhDTRXK_llOm0IGe4pk-D1KE1V-F88xXfXz4w,3313
+slakh_dataset/splits/original.json,sha256=92VE6AjVI7nB2SIUtjnlWHbf_yCyegbKz6gtFdX5Gfc,37857
+slakh_dataset/splits/pitch_bend_info.json,sha256=Z7JuFqPm1Z_f1olDzqTta43SD0E4mYOnSTr75y-W9xo,1058114
+slakh_dataset/splits/problem_stems.json,sha256=k97UxPj0ug_xTkqXjNyjOgUuRQxTI0MjZdIiRMVtc3I,1243
+slakh_dataset/splits/redux.json,sha256=p4ApWMCu65s1gD4hm6JEKFKiKsM_2olUdrCir6UZack,37873
+slakh_dataset/splits/splits_v2.json,sha256=K1CfVk-hg4X2wlYCRcCJ-teGp0vyoS0_3lB4kStOSqQ,37857
+slakh_dataset-0.1.22.dist-info/LICENSE,sha256=RJd3o2WwPSh1NjwqDIKOdQXgjRyq4n9aJuilKji4ZYE,1072
+slakh_dataset-0.1.22.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+slakh_dataset-0.1.22.dist-info/METADATA,sha256=tSb-WRp69ftkIUqtWeFz41YRG2JUbG6XS8-uPXCwglA,2861
+slakh_dataset-0.1.22.dist-info/RECORD,,
