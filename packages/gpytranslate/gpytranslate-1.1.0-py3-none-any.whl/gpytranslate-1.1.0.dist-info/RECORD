@@ -1,0 +1,12 @@
+gpytranslate/__init__.py,sha256=jD2MNtcIjqGdLbHxxhvKWF6vVw_5M6oqCImScVPKs0M,192
+gpytranslate/gpytranslate.py,sha256=sdtBwnNVCj8rDL3FLHmiYXbttsaLjex3Bqj42GyDBPo,5282
+gpytranslate/sync/__init__.py,sha256=HfXESfxkjRzsp6lKffzwXBlgdg0Efkae5BBNAYO-AjA,44
+gpytranslate/sync/sync_translator.py,sha256=Uqyi0ntuEu3LqvB5eK1bx9kwae8ml0m9Sm-zkfIhTbo,4892
+gpytranslate/types/__init__.py,sha256=5fTy0_PW4iKpkLG05opzodLCGIYy0fUcGNR-_ZEUzfc,92
+gpytranslate/types/base_translator.py,sha256=GmF4mMiFyNfXZN1dhL9rCWpKb9yStQrydCFPi8ijOCQ,2077
+gpytranslate/types/translated_object.py,sha256=WZb0G_5Jc7dd34B168-BbCX4jUqcAfSTBAkpweg-LsY,1410
+gpytranslate-1.1.0.dist-info/LICENSE,sha256=UiCnq3ALVoE2_2UYK0HpZY8amAxQ-6NkJfDt6GrGhlI,32472
+gpytranslate-1.1.0.dist-info/METADATA,sha256=RTic3bCmdiPCDkHL3vfiDXVyjhYkg1ImzgJKtFPyJ8s,2256
+gpytranslate-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gpytranslate-1.1.0.dist-info/top_level.txt,sha256=FWBVx6DLl2RNVndtyRBKsKxWoD7miQh7zWj3lT7e0ME,13
+gpytranslate-1.1.0.dist-info/RECORD,,
