@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rclonepy
+Version: 0.1.0
+Summary: Run commands and manipulate files locally or over SSH using the same interface
+Home-page: https://github.com/ydlibs/rclonepy
+Author: Yair Dar
+Author-email: yair.dar@outlook.org
+License: Apache License 2.0
+Keywords: rclone s3 copy sync rsync
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Requires-Dist: spur
+Requires-Dist: paramiko (<3,>=1.13.1)
+
+# rclonepy
+
+
