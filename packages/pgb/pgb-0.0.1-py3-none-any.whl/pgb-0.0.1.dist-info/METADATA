@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pgb
+Version: 0.0.1
+Summary: Create a progress bar
+Home-page: https://github.com/ilia85-star/pgb
+Author: ilia85-star
+Author-email: ilia.mahjour.shafiei@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ilia85-star/pgb/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pgb (ProgressBar)
+### Discription:
+Create a text based ProgressBar in python!
+
+### pypi installation:
+> $ python3 -m pip install pgb
+
+### Install via github release:
+click the latest release at the releases section, download and run the ShellScript executable file.
+
+### How to use pgb:
+visit the [wiki](https://github.com/ilia85-star/pgb/wiki) page to learn!
+
+
