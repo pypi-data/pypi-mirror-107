@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+django_mom/__init__.py
+django_mom/settings.py
+django_mom.egg-info/PKG-INFO
+django_mom.egg-info/SOURCES.txt
+django_mom.egg-info/dependency_links.txt
+django_mom.egg-info/requires.txt
+django_mom.egg-info/top_level.txt
+django_mom/management/__init__.py
+django_mom/management/commands/__init__.py
+django_mom/management/commands/mom.py
