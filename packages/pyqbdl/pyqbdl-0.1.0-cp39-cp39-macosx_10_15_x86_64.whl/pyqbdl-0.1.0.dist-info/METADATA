@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyqbdl
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Adrien Guinet, Romain Thomas
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Requires-Dist: lief (==0.11.5)
+
+UNKNOWN
+
