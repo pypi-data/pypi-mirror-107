@@ -1,0 +1,13 @@
+Django>=3.1.7
+asgiref>=3.3.4
+azf-wsgi>=0.3.1
+azure-functions-worker>=1.1.9
+azure-functions>=1.7.0
+chevron>=0.14.0
+grpcio-tools>=1.33.2
+grpcio>=1.33.2
+protobuf>=3.16.0
+pytz>=2021.1
+six>=1.16.0
+sqlparse>=0.4.1
+termcolor>=1.1.0
