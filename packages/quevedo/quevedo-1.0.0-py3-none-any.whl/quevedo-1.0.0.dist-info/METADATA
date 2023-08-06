@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: quevedo
+Version: 1.0.0
+Summary: Tool for managing datasets of images with compositional semantics
+Home-page: https://github.com/agarsev/quevedo
+License: OSL-3.0
+Keywords: machine learning,computer vision,sign language,corpus linguistics,dataset
+Author: Antonio F. G. Sevilla
+Author-email: afgs@ucm.es
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: force_layout
+Provides-Extra: web
+Requires-Dist: click (>=8,<9)
+Requires-Dist: flask (>=1.1.2,<2.0.0); extra == "web"
+Requires-Dist: forcelayout (>=1.0.6,<2.0.0); extra == "force_layout"
+Requires-Dist: pillow (>=8,<9)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Documentation, https://agarsev.github.io/quevedo
+Project-URL: Repository, https://github.com/agarsev/quevedo
