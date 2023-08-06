@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: ds_extraction
+Version: 0.0.2
+Summary: DS Extraction is a library for extracting disease, symptom in the medical domain
+Home-page: https://github.com/demdecuong/extract_disease_symptom
+Author: minhnp
+Author-email: v.minhng@vinbrain.net
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: ds_extraction
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
