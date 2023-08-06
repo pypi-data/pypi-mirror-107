@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab2nextclouddeck=gitlab2nextclouddeck.main:app
+
