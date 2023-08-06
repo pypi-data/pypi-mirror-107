@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: EFumi-WhlTest
+Version: 0.3
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Erik Fumi
+Author-email: erik12357@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Example Project
+
+Not much to see here, mostly all applied from
+[Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/).
+
+### Create wheel
+
+Prepare system
+
+```bash
+python3 -m pip install --upgrade build
+```
+
+Build `.whl` file
+
+```bash
+python3 -m build
+```
+
+Find your `.whl` in `dist/`.
+
+### Try installing your wheel
+
+```bash
+# create a virtual env so it can be deleted easily by deleting `myvirtualenv`
+python3 -m venv myvirtualenv
+# enable virtual env
+source myvirtualenv/bin/activate
+# install wheel
+python3 -m pip install dist/dist/wheelie-0.0.1-py3-none-any.whl
+# run program
+myvirtualenv/bin/main.py
+```
+
+
