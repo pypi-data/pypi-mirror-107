@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyclier_demo/__init__.py
+pyclier_demo/__main__.py
+pyclier_demo/cli.py
+pyclier_demo/config.py
+pyclier_demo.egg-info/PKG-INFO
+pyclier_demo.egg-info/SOURCES.txt
+pyclier_demo.egg-info/dependency_links.txt
+pyclier_demo.egg-info/entry_points.txt
+pyclier_demo.egg-info/requires.txt
+pyclier_demo.egg-info/top_level.txt

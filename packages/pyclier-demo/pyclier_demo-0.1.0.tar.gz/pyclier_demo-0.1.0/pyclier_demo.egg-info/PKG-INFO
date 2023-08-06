@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyclier-demo
+Version: 0.1.0
+Summary: Pyclier Demo.
+Home-page: https://github.com/zhangxianbing/pyclier-demo
+Author: zhangxianbing
+Author-email: zhangxianbing09@163.com
+License: UNKNOWN
+Description: # Pyclier Demo
+        
+        Pyclier Demo.
+        
+        > Note: This project was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [`zhangxianbing/cookiecutter-pypackage`](https://github.com/zhangxianbing/cookiecutter-pypackage) project template.
+        
+        ## Installation
+        
+        ```bash
+         # install
+         git clone https://github.com/zhangxianbing/pyclier-demo
+         cd pyclier-demo && make install
+        ```
+        
+        ## Usage
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
