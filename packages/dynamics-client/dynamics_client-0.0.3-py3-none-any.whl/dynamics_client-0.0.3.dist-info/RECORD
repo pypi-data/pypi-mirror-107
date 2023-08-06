@@ -1,0 +1,14 @@
+dynamics/__init__.py,sha256=N5An0-N6zfznevFXhhg_o9riBQoV5IKBvuvEL9cXWgw,166
+dynamics/api_actions.py,sha256=4x5911aKEGFjzJUCsVWDPl7Q1knqfr921WDVeYzsbnU,5968
+dynamics/api_functions.py,sha256=tGrwcd-u_XJ7k6Kcv-zf3icF8XM29CpvlSoRiRq10C8,5215
+dynamics/client.py,sha256=2E2Y1-zwJQonvm-i-xUZh8Z7Ndtn481LmmgcZ6XL0qo,23087
+dynamics/exceptions.py,sha256=9Gk-CXBH_uopluwAZlrEyYcsCCiP-cMwYPTCtinMyPg,3326
+dynamics/normalizers.py,sha256=PtOf2NEIl3baGj1ZPAPboVRcO7mLpESAo_t9FQiQ3m4,897
+dynamics/query_functions.py,sha256=GyWKhvk0ZlL9x9CyN1AK811QDBBFwGVPd6J5NcF6HEk,24985
+dynamics/status.py,sha256=JnXFTN9fRofI0z-D3HY2eNVii117ZDmH1ljtTXielCE,1972
+dynamics/utils.py,sha256=mMdmRmZnxikR-MEe4CPE38x-_Rq-JlDerlejmmTn1pQ,4154
+dynamics_client-0.0.3.dist-info/LICENSE,sha256=aVX99MHe0Uow-2bjeqfTl5aEIdLgYWhrvYioTrZI_js,1090
+dynamics_client-0.0.3.dist-info/METADATA,sha256=dPtw1km10ud6Wsd_5yJLShoxTCFbCjBT00vw8bhnFaM,1860
+dynamics_client-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dynamics_client-0.0.3.dist-info/top_level.txt,sha256=kJGRV9Z3IFH0JgCcbwdyo9OSJ54S24_IN7mVuI3aUOU,9
+dynamics_client-0.0.3.dist-info/RECORD,,

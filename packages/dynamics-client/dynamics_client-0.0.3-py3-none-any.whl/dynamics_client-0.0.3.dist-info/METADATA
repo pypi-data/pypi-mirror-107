@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: dynamics-client
+Version: 0.0.3
+Summary: Client for making Web API request from a Microsoft Dynamics 365 Database.
+Home-page: https://github.com/MrThearMan/dynamics-client/
+Author: Matti Lamppu
+Author-email: lamppu.matti.akseli@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MrThearMan/dynamics-client/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dynamics Web API Client
+```
+pip install dynamics-client
+```
+Client for making Web API request from a Microsoft Dynamics 365 Database.
+
+API Reference Docs:
+https://docs.microsoft.com/en-us/powerapps/developer/data-platform/webapi/query-data-web-api
+
+### How to use:
+1. Init the client:     
+```python
+from dynamics import DynamicsClient
+
+client = DynamicsClient(...)
+client = DynamicsClient.from_environment()
+```  
+2. Set the table:
+```python
+client.table = "..."
+```
+3. Set row (Required for PATCH and DELETE, otherwese optional):
+```python
+client.row_id = "..."
+```
+4. Set query options (optional):
+```python
+client.select = [...], client.expand = {...}, etc.
+```
+5. Set headers (optional):
+```
+client.headers = {...} or client[...] = ...
+```
+---
+Make a GET request:
+```python
+result = client.GET()
+```
+Make a POST request:
+```python
+result = client.POST(data={...})
+```
+Make a PATCH request:
+```python
+result = client.PATCH(data={...})
+```
+Make a DELETE request:
+```python
+result = client.DELETE()
+```
+
+Remember to reset between queries:
+```python
+client.reset_query()
+```
+
+Query with no table nor query options set to get a list of tables in the database.
+Use `fetch_schema` for an xml representation of the relational ascpects of the data.
+
+
