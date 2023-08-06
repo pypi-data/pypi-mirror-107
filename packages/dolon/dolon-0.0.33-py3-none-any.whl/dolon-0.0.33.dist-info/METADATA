@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dolon
+Version: 0.0.33
+Summary: A performance tracer application.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: asyncpg
+Requires-Dist: psutil
+
+UNKNOWN
+
+
