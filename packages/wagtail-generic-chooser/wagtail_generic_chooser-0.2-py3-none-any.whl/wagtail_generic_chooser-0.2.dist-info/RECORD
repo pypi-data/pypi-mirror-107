@@ -1,0 +1,17 @@
+generic_chooser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generic_chooser/views.py,sha256=eV6iNrM8twMkYEkUefbnI01Mh-6e4O7JEwtmx3gv4qE,23001
+generic_chooser/widgets.py,sha256=mf7GutSYBGznSg_Tz0sGBWQKcEYab1hMrwOYSG_Kb7E,6859
+generic_chooser/static/generic_chooser/js/chooser-modal.js,sha256=W8ITdNO1K3kbwLuZPgh2lRsoXF4Zu9hqlIq-7Ab_fZo,3114
+generic_chooser/static/generic_chooser/js/chooser-widget-telepath.js,sha256=EZjMAVLoTEDKVEVXxo2VBWGDUabozehwjStm0SD-VtI,480
+generic_chooser/static/generic_chooser/js/chooser-widget.js,sha256=a6-jaN4sXos4Xx0n5jecj2UPQvh-YNsyzhT2Spsmu6U,2449
+generic_chooser/templates/generic_chooser/_ajax_pagination_nav.html,sha256=iDYpsXF2tx6x2sD8-zJenIVEX2ZjXt72oJ-LC1EEJd0,746
+generic_chooser/templates/generic_chooser/_create_tab.html,sha256=0F87ClfYQRW7hgfeNtufofLqCkb9RBjrUhFhg9ePauE,981
+generic_chooser/templates/generic_chooser/_listing_tab.html,sha256=NJqU_VNTO7zL-9EjZ07_epZfy0R7xdNNHI_jzQx-ndY,544
+generic_chooser/templates/generic_chooser/_results.html,sha256=KEXN2bnuuy4XCUCP60BSNFwA3XZwPu-xUknuIfDgIfc,594
+generic_chooser/templates/generic_chooser/tabbed_modal.html,sha256=BqHsJPfzG5sMXXY7TTGi68M3ZmHs8T4D_Fg2-xn1s3A,921
+generic_chooser/templates/generic_chooser/widgets/chooser.html,sha256=UIFcMse8-jSf9WXt90EJn1btjtatPCV3AlmpOeHAMg8,1548
+wagtail_generic_chooser-0.2.dist-info/LICENSE,sha256=DmoAH0hWDG_F6Pa2pvpg3xdL2ur-iKDzIAe96vhfzWs,1508
+wagtail_generic_chooser-0.2.dist-info/METADATA,sha256=grzgjFBBr6hYqhrNtz8kaCZkR8PjlNOA30twq4DGSCk,1209
+wagtail_generic_chooser-0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+wagtail_generic_chooser-0.2.dist-info/top_level.txt,sha256=G7HfHlFMPIC4Cd5rd0Rh-sH_tXaSBt4reFZmzy94eRY,16
+wagtail_generic_chooser-0.2.dist-info/RECORD,,
