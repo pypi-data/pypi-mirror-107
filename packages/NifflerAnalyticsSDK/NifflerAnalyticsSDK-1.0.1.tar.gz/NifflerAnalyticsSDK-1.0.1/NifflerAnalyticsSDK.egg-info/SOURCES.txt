@@ -1,0 +1,9 @@
+README.md
+setup.py
+NifflerAnalyticsSDK.egg-info/PKG-INFO
+NifflerAnalyticsSDK.egg-info/SOURCES.txt
+NifflerAnalyticsSDK.egg-info/dependency_links.txt
+NifflerAnalyticsSDK.egg-info/top_level.txt
+nifflieranalytics/__init__.py
+nifflieranalytics/sdk.py
+nifflieranalytics/test_sdk.py
