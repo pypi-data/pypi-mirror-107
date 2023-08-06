@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+kostyaos/__init__.py
+kostyaos.egg-info/PKG-INFO
+kostyaos.egg-info/SOURCES.txt
+kostyaos.egg-info/dependency_links.txt
+kostyaos.egg-info/not-zip-safe
+kostyaos.egg-info/top_level.txt
