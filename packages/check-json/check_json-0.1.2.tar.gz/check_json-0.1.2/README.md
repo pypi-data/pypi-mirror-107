@@ -1,0 +1,69 @@
+check_json
+===========
+
+Check_json is a Nagios/Icinga plugin for monitoring JSON files with [Jq] filters.
+
+# Installation
+
+You can install with [pip]:
+
+```bash
+python3 -m pip install check-json
+```
+
+Or install from source:
+
+```bash
+git clone https://gitlab.com/cspeterson/check_json.git check_json.git
+pip install check_json.git
+```
+
+# Usage
+
+Pass the plugin any number of Jq filters and a JSON file. The plugin will report OK so long as no filters evaluate to `false` or `null`.
+
+Outputs Nagios standard perfdata for each filter reported with `1` for success and `0` for failure.
+
+If a given filter is concluded by a comment string of the format `# some-descriptive-string`, it will be used as the perfdata label for that filter.
+
+For all of the things you can do in a filter, refer to the [JQ Manual] for for your version of libjq.
+
+```bash
+# A minimal example: report OK if a single filter evaluates to other
+# than false/null.
+check_json --filter '.select(somekey)' /path/to/jsonfile
+
+# As above, but label that filter "myfilter" in the reporting
+
+check_json --filter '.select(somekey) # myfilter' /path/to/jsonfile
+
+# Multiple, separate filters
+check_json --filter '.somekey != "somevalue"' --filter '.otherkey != "othervalue"' /path/to/jsonfile
+
+# Source a filter from a jsonfile
+check_json --filter-file /path/to/filterfile /path/to/jsonfile
+```
+
+# Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+To run the test suite:
+
+```bash
+# Up to you to create virtual environments etc
+# make dependencies
+make
+```
+
+Please make sure to update tests as appropriate.
+
+# License
+
+[MIT]
+
+
+[Jq Manual]: https://stedolan.github.io/jq/manual/
+[Jq]: https://stedolan.github.io/jq/
+[MIT]: https://choosealicense.com/licenses/mit/
+[pip]: https://pip.pypa.io/en/stable/
