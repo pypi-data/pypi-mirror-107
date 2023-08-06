@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sway_smart_workspace/__init__.py
+sway_smart_workspace/__main__.py
+sway_smart_workspace/smart_workspace.py
+sway_smart_workspace.egg-info/PKG-INFO
+sway_smart_workspace.egg-info/SOURCES.txt
+sway_smart_workspace.egg-info/dependency_links.txt
+sway_smart_workspace.egg-info/entry_points.txt
+sway_smart_workspace.egg-info/requires.txt
+sway_smart_workspace.egg-info/top_level.txt
+sway_smart_workspace/templates/controls
+sway_smart_workspace/templates/output
