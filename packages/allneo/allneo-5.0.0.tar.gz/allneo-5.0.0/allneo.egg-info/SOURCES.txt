@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+allneo/__init__.py
+allneo/count_operations.py
+allneo.egg-info/PKG-INFO
+allneo.egg-info/SOURCES.txt
+allneo.egg-info/dependency_links.txt
+allneo.egg-info/requires.txt
+allneo.egg-info/top_level.txt
