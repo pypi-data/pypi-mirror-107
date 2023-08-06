@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+localhook/__init__.py
+localhook/hook.py
+localhook.egg-info/PKG-INFO
+localhook.egg-info/SOURCES.txt
+localhook.egg-info/dependency_links.txt
+localhook.egg-info/entry_points.txt
+localhook.egg-info/requires.txt
+localhook.egg-info/top_level.txt

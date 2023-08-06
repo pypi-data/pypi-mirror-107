@@ -1,0 +1,6 @@
+pyngrok>=5.0.2
+Flask==2.0.1
+PyYAML>=5.3.1
+rich
+waitress
+click==8.0.1
