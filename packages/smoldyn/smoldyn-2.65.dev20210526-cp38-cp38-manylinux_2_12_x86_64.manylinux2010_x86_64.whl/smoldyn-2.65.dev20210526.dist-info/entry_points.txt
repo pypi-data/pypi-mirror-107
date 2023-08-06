@@ -1,0 +1,4 @@
+[console_scripts]
+biosimulators-smoldyn = smoldyn.biosimulators.__main__:main
+smoldyn = smoldyn.__main__:main
+
