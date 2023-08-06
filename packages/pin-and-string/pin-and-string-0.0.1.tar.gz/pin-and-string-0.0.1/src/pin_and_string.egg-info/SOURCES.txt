@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pin-and-string/FociMatrix.py
+src/pin-and-string/__init__.py
+src/pin_and_string.egg-info/PKG-INFO
+src/pin_and_string.egg-info/SOURCES.txt
+src/pin_and_string.egg-info/dependency_links.txt
+src/pin_and_string.egg-info/top_level.txt
