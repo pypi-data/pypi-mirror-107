@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+COVIDDataInterface.egg-info/PKG-INFO
+COVIDDataInterface.egg-info/SOURCES.txt
+COVIDDataInterface.egg-info/dependency_links.txt
+COVIDDataInterface.egg-info/requires.txt
+COVIDDataInterface.egg-info/top_level.txt
+src/__init__.py
+src/states.py
