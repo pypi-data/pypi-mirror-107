@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rclonepy
+Version: 0.2.19
+Summary: Provides Pythonic API to rclone tool
+Home-page: https://github.com/ydlibs/rclonepy
+Author: Yair Dar
+Author-email: yair.dar@outlook.org
+License: Apache License 2.0
+Description: # rclonepy
+Keywords: rclone s3 copy sync rsync
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet

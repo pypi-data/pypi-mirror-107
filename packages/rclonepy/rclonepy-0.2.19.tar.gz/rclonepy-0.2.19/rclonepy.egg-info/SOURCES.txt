@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rclonepy/__init__.py
+rclonepy/rclone_actor.py
+rclonepy.egg-info/PKG-INFO
+rclonepy.egg-info/SOURCES.txt
+rclonepy.egg-info/dependency_links.txt
+rclonepy.egg-info/requires.txt
+rclonepy.egg-info/top_level.txt
