@@ -1,0 +1,11 @@
+newsdataapi/__init__.py,sha256=TyQUqlzN7AljNjcCVuk-Uv1BEw5PzD3EfN8cKUeUDWY,61
+newsdataapi/constants.py,sha256=3-yBbngFdCJNVDtXCziUQHG_TaPbIlYx9EOOlW0j4oU,313
+newsdataapi/helpers.py,sha256=VsmOcxGJ946NzTphFCmnUfgBVcXMPNhWp7F2pi7SXxw,762
+newsdataapi/newsdataapi_client.py,sha256=GKQfErbkREC-yecPKKEGfRGkfZBSqeUsW3bIWchNaWk,12623
+newsdataapi/newsdataapi_exception.py,sha256=xf9WOkd8AS0RA9m97hk30TmDH4sn--_zEuZrk7wK3eU,141
+newsdataapi/utils.py,sha256=QG78o3UiWwWgfD4z9r1DB-CKlN6-1_MC7oX9faoDLok,192
+newsdataapi-0.1.0.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+newsdataapi-0.1.0.dist-info/METADATA,sha256=1XlwqCt92ma3vDrHPVbg9ZkJlS2A491Ln8jFNMswvYA,6528
+newsdataapi-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+newsdataapi-0.1.0.dist-info/top_level.txt,sha256=ZyqFgHGt76lmjI_0U6oyDG9ueJ-O61i_c5Bg_fToEu4,12
+newsdataapi-0.1.0.dist-info/RECORD,,
