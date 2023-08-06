@@ -1,0 +1,12 @@
+graphql_scalars/__init__.py,sha256=uJl8D-3Aq3he6gwXLCGuIHh8nbTmZF_RszJ8cuU-Fe4,280
+graphql_scalars/scalars/__init__.py,sha256=wr2BAZLAneEHyQtuTL8R5ayKnOe-m1Xx3ruQj0vm6Oo,312
+graphql_scalars/scalars/date_time.py,sha256=zoJUpOxgythPCNf4nmip3C0dMb27GfLY0kSfTlEivzA,1478
+graphql_scalars/scalars/json.py,sha256=RcaVkkCDxOZGguwcTKbDW908WOjNIN3X81MOMJk7MCw,2717
+graphql_scalars/scalars/timestamp.py,sha256=ly633mlRPQmOuTVrII9pq2VMUnxnSyt_hfTlYta5p0w,1218
+graphql_scalars/scalars/void.py,sha256=9mgryeQfWTfGU2xh3DW7WonkYs9tTtvnhcdcExb7h4A,443
+graphql_scalars/settings.py,sha256=sm5ljJuX_Jx9LEn2_qxTBt_e04El0BnUGU1hIYcadrA,731
+graphql_scalars/types.py,sha256=SMknWC4lbvxWOZV96_tbeM-VLAx7o1vhiSim1tVaSBo,90
+graphql_scalars-0.2.4.dist-info/LICENSE,sha256=TAVUY6HsYxXETzk_-EgAzHjCnaAAEMN6CLEjdIIW8h8,1064
+graphql_scalars-0.2.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+graphql_scalars-0.2.4.dist-info/METADATA,sha256=eChfRluli-OlHY-2kpBYUrpq4aidCiOmXEgKbJ0AUTg,2001
+graphql_scalars-0.2.4.dist-info/RECORD,,
