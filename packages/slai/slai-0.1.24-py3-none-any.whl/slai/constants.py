@@ -1,0 +1,2 @@
+NOTEBOOK_TRAINER_PREFIX = r"#[^\S\n\t]*keep[^\S\n\t]*\n*$"
+DEFAULT_TRAINER_TIMEOUT_S = 60 * 5
