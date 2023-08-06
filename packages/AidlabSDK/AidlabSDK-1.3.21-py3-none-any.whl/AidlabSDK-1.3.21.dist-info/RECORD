@@ -1,0 +1,15 @@
+Aidlab/Aidlab.py,sha256=ohwTQYlSWk9wasSoD4cmOY5StxHULk0e65-lok8T5ms,7591
+Aidlab/AidlabCharacteristicsUUID.py,sha256=DRdecDW1kRyhiJoVYUcWKGll9qf7ch88MSsrsngL0TI,1733
+Aidlab/AidlabNotificationHandler.py,sha256=3Dl0T6Wenqk1T4pU2q9XG0Rf3UylSlcMjFuLoTLdN3I,3411
+Aidlab/AidlabPeripheral.py,sha256=4cuj8oq2_wcwGd7_QtNMl_PIe7puNBAbxFYaXxivXD0,8099
+Aidlab/AidlabSDK.py,sha256=qOuDE1JL1Ovt3QiwtuxQWlm2rtasMCZ8kPU7PjQkL4A,18775
+Aidlab/IAidlab.py,sha256=Io1R1aJ7Wh0XAM3BLMhKe0iVPnqeUazYumegEKrJ-b0,652
+Aidlab/__init__.py,sha256=p3GjbqAysddQ2vFMqTkzplSPoRAPmAtiixGmFRIq4Qk,32
+Aidlab/aidlabsdk.dll,sha256=bjqhsTDdg6EUMBy_EGtdzwRkdn_Q00v3euhLPjXQOFg,145920
+Aidlab/aidlabsdk.dylib,sha256=DWpmwKBJSyNtiTKK8vZzEEhVXx31gpbRrKWzkj0Az7g,637728
+Aidlab/aidlabsdk.so,sha256=sUx6yzLd2Txrz6QBgFM8zdBSwsusYVJpSWOuSGXlc28,662720
+AidlabSDK-1.3.21.dist-info/LICENSE.md,sha256=72L5BQG34clC39QsD_BkbLN5dlm8drKARuF4lMr1pM8,1064
+AidlabSDK-1.3.21.dist-info/METADATA,sha256=xEv-9h2EKSO6XOWXIjtSWi7C7B25FKEptKGk1_Q2s6g,1626
+AidlabSDK-1.3.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+AidlabSDK-1.3.21.dist-info/top_level.txt,sha256=kMyLIPMp76fViu7GTF1n8Z6kqC0js8blrSPrfC-8ag4,7
+AidlabSDK-1.3.21.dist-info/RECORD,,
