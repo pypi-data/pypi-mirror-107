@@ -1,0 +1,16 @@
+import pandas as pd
+
+
+class Response:
+    def __init__(self, dict_data, code=None, data=None):
+        self.code = dict_data.get('code', -1)
+        self.data = dict_data.get('data', [])
+        self.dict_data = dict_data
+        if self.data is not None and len(self.data) > 0:
+            try:
+                self.data = pd.DataFrame(self.data)
+            except Exception as e:
+                print(e)
+
+    def __str__(self):
+        return "{} {}".format(self.code, len(self.data))
