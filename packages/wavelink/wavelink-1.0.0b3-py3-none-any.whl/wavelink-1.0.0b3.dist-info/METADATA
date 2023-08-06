@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wavelink
+Version: 1.0.0b3
+Summary: A robust and powerful Lavalink wrapper for discord.py.
+Home-page: https://github.com/PythonistaGuild/Wavelink
+Author: PythonistaGuild, EvieePy
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: discord.py (>=1.6.0)
+Requires-Dist: aiohttp (<3.8.0,>=3.6.0)
+
+.. image:: logo.png?raw=true
+    :align: center
+
+.. image:: https://img.shields.io/github/license/EvieePy/Wavelink.svg
+    :target: LICENSE
+
+Wavelink Rewrite
+================
+A current WIP for the new version of Wavelink.
+
+
