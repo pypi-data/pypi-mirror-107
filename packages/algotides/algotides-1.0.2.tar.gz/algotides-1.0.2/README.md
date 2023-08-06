@@ -1,0 +1,36 @@
+# Algo Tides
+
+### Description
+This Python application is a graphic interface for the user who owns or have access to an Algorand
+node and would like to issue operations through a GUI rather than CLI. (i.e.: manage wallets and addresses,
+send transactions, save a contact list)
+
+### Installation
+`$ pip install algotides` or you can download the `.tar.gz` package and install it that way.
+
+### Security
+Please keep in mind that this software stores some serialized data inside `<HOME_FOLDER>/.algo-tides`.  
+As a result of this any user should put over this folder permissions that are stricter than usual.  
+It is possible to inject arbitrary code when deserializing `jsonpickle` files so please be mindful.
+
+### Requirements
+* Python 3.7
+
+Packages:
+- PySide2
+- py-algorand-sdk
+- jsonpickle
+
+### Troubleshoot
+* #### qt.qpa.plugin: Could not load the Qt platform plugin "xcb"
+    This step creates a symlink from the existing library to the needed library:
+
+
+    on MXLinux 19.4:
+
+    sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0.0.0 /usr/lib/x86_64-linux-gnu/libxcb-util.so.1
+  
+
+    on Debian 10:
+  
+    sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so /usr/lib/x86_64-linux-gnu/libxcb-util.so.1
