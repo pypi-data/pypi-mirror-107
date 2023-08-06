@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: emugpio
+Version: 1.0.0
+Summary: Emulador de GPIO de 8 puertos digitales
+Home-page: https://github.com/claudior117/emugpio.git
+Author: cludio ravagnan
+Author-email: claudio@proyecto204.com.ar
+License: GPL
+Description: Proyecto educativo para python
+Keywords: sample setup
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
