@@ -1,0 +1,15 @@
+smoldyn/smoldyn.py,sha256=7is3Og_w2fB8wPJwbNMdBl_Pi7BNNEIpVv34vN3cZGk,77682
+smoldyn/_smoldyn.cpython-37m-darwin.so,sha256=O-OMPKG6r7soO_LQplQUsRPG69lgkM7PcAxCcuhOvyc,1794152
+smoldyn/__init__.py,sha256=VP_zCcXkmkY3sTHu4pUw6fADpQKGrB8zHltr7FjuMmk,216
+smoldyn/types.py,sha256=f5V2ONb7or4vFKLCi_gyCL6vtqdvn1j5MinFmyFxi48,1155
+smoldyn/utils.py,sha256=DYhkM9yei_3lLs5aK6fzis0fg6wo_CGvF9-QuMkXMqQ,1119
+smoldyn/__main__.py,sha256=8veHhD1PRzjqFKfW8EhmHDFEud3fps3K_hPX2cSWVOw,926
+smoldyn/biosimulators/combine.py,sha256=fLMRnCl2aHNWAk5r-iZbP8oz9k37YmGyn9i5xaRqPls,40129
+smoldyn/biosimulators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smoldyn/biosimulators/__main__.py,sha256=Q4rIAd_cDWH2VWjJi40sOFZPJxlxVJ72rvO9m33zPlk,552
+smoldyn/.dylibs/libjpeg.9.dylib,sha256=oReNLAl51e3gMeCf-uVVoXYX-V7ERHHe0N_AHJUf8PA,219172
+smoldyn/.dylibs/libtiff.5.dylib,sha256=xsTtEAX_sFQivjR59t3EbGNHENoRLGiJe6eeYKP4mFY,477000
+smoldyn-2.66.dev20210528.dist-info/RECORD,,
+smoldyn-2.66.dev20210528.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+smoldyn-2.66.dev20210528.dist-info/top_level.txt,sha256=2FmedD0M8FnH4zNLmZCw84tbGuurvZfurkH4l4zSybQ,8
+smoldyn-2.66.dev20210528.dist-info/METADATA,sha256=AbCoSR6mYMsnYJR_CCpUmTZ5tG6XaWh15J26nRR-ss8,2751
