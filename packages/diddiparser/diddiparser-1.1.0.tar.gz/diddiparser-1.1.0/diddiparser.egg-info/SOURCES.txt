@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+diddiparser/__init__.py
+diddiparser/main.py
+diddiparser/parser.py
+diddiparser.egg-info/PKG-INFO
+diddiparser.egg-info/SOURCES.txt
+diddiparser.egg-info/dependency_links.txt
+diddiparser.egg-info/entry_points.txt
+diddiparser.egg-info/top_level.txt
