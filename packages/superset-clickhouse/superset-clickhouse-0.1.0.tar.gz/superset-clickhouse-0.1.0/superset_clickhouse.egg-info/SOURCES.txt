@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+setup.py
+./LICENSE.txt
+./__init__.py
+./base.py
+./connector.py
+./example.py
+superset_clickhouse.egg-info/PKG-INFO
+superset_clickhouse.egg-info/SOURCES.txt
+superset_clickhouse.egg-info/dependency_links.txt
+superset_clickhouse.egg-info/entry_points.txt
+superset_clickhouse.egg-info/requires.txt
+superset_clickhouse.egg-info/top_level.txt

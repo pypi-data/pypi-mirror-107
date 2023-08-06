@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: superset-clickhouse
+Version: 0.1.0
+Summary: ClickHouse SQLAlchemy Dialect for Superset
+Home-page: UNKNOWN
+Author: nPhase, Inc.
+Author-email: etorap@redcapcloud.com
+License: Apache License, Version 2.0
+Keywords: db database cloud analytics clickhouse
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.txt
+
+superset-clickhouse
+=====================
+
+ClickHouse dialect for SQLAlchemy for Superset.
+
+Installation
+------------
+
+The package is installable through PIP::
+
+   pip install superset-clickhouse
+
+Usage
+-----
+
+The DSN format is similar to that of regular Postgres::
+
+    >>> import sqlalchemy as sa
+    >>> sa.create_engine('clickhouse://username:password@hostname:port/database')
+    Engine('clickhouse://username:password@hostname:port/database')
+    
+For SSL add ssl parameter to URL::
+
+    >>> import sqlalchemy as sa
+    >>> sa.create_engine('clickhouse://username:password@hostname:port/database?ssl=True')
+    Engine('clickhouse://username:password@hostname:port/database')
+
+It implements a dialect, so there's no user-facing API.
+
+
