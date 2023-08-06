@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dab
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/delvelabs/dab
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiodns (<3.0,>=2.0.0)
+Requires-Dist: async-timeout (<4.0.0,>=3.0.0)
+
+UNKNOWN
+
+
