@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ecatdump
+Version: 0.1.0
+Summary: This tool provides similar utility and output to ecat images that dcmdump from the dcmtk does for dicom images.
+Home-page: https://github.com/bendhouseart/ecatdump
+Author: Anthony Galassi
+Author-email: 28850131+bendhouseart@users.noreply.github.com
+License: BSD
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+
+This tool provides similar utility and output to ecat images that dcmdump from the dcmtk does for dicom images.
+
+
