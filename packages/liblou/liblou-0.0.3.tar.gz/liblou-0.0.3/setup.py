@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+
+from setuptools import (
+    find_packages,
+    setup,
+)
+
+with open('./README.md') as readme:
+    long_description = readme.read()
+
+setup(
+    name="liblou",
+    scripts=["rcli"],
+    version="0.0.3",
+    description="A collection of tools that helped me overcome anxiety.",
+    long_description_content_type='text/markdown',
+    long_description=long_description,
+    author='lim',
+    author_email='louaimisto@gmail.com',
+    url='https://github.com/lmist/liblou',
+    include_package_data=True,
+    install_requires=[
+    ],
+    python_requires='>=3.6,<4',
+    license="MIT",
+    zip_safe=False,
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Natural Language :: English',
+        'Programming Language :: Python :: 3.9',
+    ],
+)
