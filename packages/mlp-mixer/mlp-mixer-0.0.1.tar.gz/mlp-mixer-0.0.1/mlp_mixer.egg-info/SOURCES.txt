@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mlp_mixer/__init__.py
+mlp_mixer/mixer.py
+mlp_mixer.egg-info/PKG-INFO
+mlp_mixer.egg-info/SOURCES.txt
+mlp_mixer.egg-info/dependency_links.txt
+mlp_mixer.egg-info/requires.txt
+mlp_mixer.egg-info/top_level.txt
