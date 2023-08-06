@@ -1,0 +1,3 @@
+[console_scripts]
+lotify = lotify.cli:send_message
+
