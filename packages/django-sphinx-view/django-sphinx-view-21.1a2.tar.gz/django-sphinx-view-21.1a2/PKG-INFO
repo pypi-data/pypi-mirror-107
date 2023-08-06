@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-sphinx-view
+Version: 21.1a2
+Summary: Serve your Sphinx docs with Django.
+Home-page: https://noumenal.es/django-sphinx-view/
+Author: Carlton Gibson
+Author-email: carlton.gibson@noumenal.es
