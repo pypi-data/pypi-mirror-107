@@ -1,0 +1,8 @@
+name: pycbf
+description: >
+    pycbf test data files.
+
+data:
+  - https://github.com/dials/data-files/raw/2fc35b473ea4a9c68279e438d4e39e2662d9dfdb/pycbf/adscconverted.cbf
+  - https://github.com/dials/data-files/raw/2fc35b473ea4a9c68279e438d4e39e2662d9dfdb/pycbf/img2cif_packed.cbf
+  - https://github.com/dials/data-files/raw/2fc35b473ea4a9c68279e438d4e39e2662d9dfdb/image_examples/endonat3_001.mar2300
