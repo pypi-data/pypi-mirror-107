@@ -1,0 +1,6 @@
+numpy
+scipy
+astropy
+matplotlib
+stingray >= 0.3
+sphinx-astropy
