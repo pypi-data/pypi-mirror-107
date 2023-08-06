@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: allneo4j-pkg-ronidas39
+Version: 0.0.1
+Summary: complete package for neo4j
+Home-page: https://github.com/pypa/sampleproject
+Author: RONI DAS
+Author-email: roni@totaltechnology.in
+License: UNKNOWN
+Description: neo4j operations
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
