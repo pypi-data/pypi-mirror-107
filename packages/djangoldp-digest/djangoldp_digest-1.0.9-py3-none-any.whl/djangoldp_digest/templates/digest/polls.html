@@ -1,0 +1,6 @@
+<div style="min-width:320px;max-width:600px;display:table-cell;vertical-align:top;width:600px">
+  <h4>{{ count }} {% if count > 1 %}nouvelles propositions ont été mises en ligne{% else %}nouvelle proposition a été mise en ligne{% endif %} :</h4>
+  <div style="width:100%!important">
+    {% autoescape off %}{{ content }}{% endautoescape %}
+  </div>
+</div>
