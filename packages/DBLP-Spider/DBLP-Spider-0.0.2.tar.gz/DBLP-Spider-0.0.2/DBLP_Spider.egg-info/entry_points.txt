@@ -1,0 +1,3 @@
+[console_scripts]
+dblp-spider = dblp_spider:main
+

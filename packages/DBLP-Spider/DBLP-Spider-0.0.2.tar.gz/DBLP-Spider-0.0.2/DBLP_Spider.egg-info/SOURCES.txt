@@ -1,0 +1,12 @@
+README.md
+setup.py
+DBLP_Spider.egg-info/PKG-INFO
+DBLP_Spider.egg-info/SOURCES.txt
+DBLP_Spider.egg-info/dependency_links.txt
+DBLP_Spider.egg-info/entry_points.txt
+DBLP_Spider.egg-info/requires.txt
+DBLP_Spider.egg-info/top_level.txt
+dblp_spider/__init__.py
+dblp_spider/core/__init__.py
+dblp_spider/core/article.py
+dblp_spider/core/conference.py
