@@ -1,0 +1,5 @@
+
+[airflow]
+boto3
+dag_factory
+PyYaml
