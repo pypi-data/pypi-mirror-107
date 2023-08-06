@@ -1,0 +1,9 @@
+pdfminer.six
+pathlib
+os
+tqdm
+math
+multiprocessing
+csv
+re
+io

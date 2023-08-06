@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stevenpy
+Version: 0.0.2
+Summary: Parallel Pooling Batch Document Processor
+Home-page: https://github.com/stevenverwer/stevenpy
+Author: Steven Verwer
+Author-email: stevenverwer@gmail.com
+License: MIT
+Description: # stevenpy
+         Parallel pooling pdf scraper
+        
+Keywords: PARALLEL POOLING,MULTI CORE,PDF,SCRAPER,PDFMINER,PDFMINER.SIX
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

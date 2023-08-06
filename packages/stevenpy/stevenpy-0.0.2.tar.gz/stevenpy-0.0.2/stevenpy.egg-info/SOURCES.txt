@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+stevenpy/__init__.py
+stevenpy/searcher.py
+stevenpy/summarizer.py
+stevenpy/task.py
+stevenpy/tools.py
+stevenpy.egg-info/PKG-INFO
+stevenpy.egg-info/SOURCES.txt
+stevenpy.egg-info/dependency_links.txt
+stevenpy.egg-info/requires.txt
+stevenpy.egg-info/top_level.txt
