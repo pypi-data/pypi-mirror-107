@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: miraculous
+Version: 1
+Summary: A discord.py bot ready to use!
+Home-page: https://github.com/dumb-stuff/Music-bot
+Author: Rukchad Wongprayoon
+Author-email: mooping3roblox@gmail.com
+License: MIT
+Keywords: Tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: discord
+Requires-Dist: discord-ext-alternatives
+Requires-Dist: async-timeout
+Requires-Dist: youtube-dl
+
+[![CodeFactor](https://www.codefactor.io/repository/github/dumb-stuff/music-bot/badge)](https://www.codefactor.io/repository/github/dumb-stuff/music-bot)
+# Music-bot
+Greeting! Welcome to my miraculous bot repository!
+Here's how to setup!
+# Setup process
+1. If you gonna host on your pc edit last line to be bot.run("token"). If you're gonna host on  repl add .env file and add TO=token. If you're gonna to host with heroku I have file ready for you just edit config var to be KEY TO VALUE bot token
+2. Then fire it up it should show your bot name id and stuff
+Default prefix is "m." you can change at bot variable
+
+# But I just download this from pypi
+Just use 
+
+```py
+import miraculous
+
+miraculous.login("bot token")
+
+```
+
+## What I just fixed?
+- Not realtime volume changing
+- Loop don't work
+- Pausing and Resuming is not work
+- Changed how it play music without downloading
+# Errors?
+Please ensure you have all module by do
+```bash
+pip install -r requirements.txt
+```
+And check your token is not exposed if it is it may lead to this message
+```bash
+python3 main.py
+Removing cache dir /home/runner/.cache/youtube-dl ..
+Traceback (most recent call last):
+  File "main.py", line 519, in <module>
+    bot.run(os.getenv("TOr"))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 723, in run
+    return future.result()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 702, in runner
+    await self.start(*args, **kwargs)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 665, in start
+    await self.login(*args, bot=bot)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 511, in login
+await self.http.static_login(token.strip(), bot=bot)
+AttributeError: 'NoneType' object has no attribute 'strip'
+```
+Love!
+
+
