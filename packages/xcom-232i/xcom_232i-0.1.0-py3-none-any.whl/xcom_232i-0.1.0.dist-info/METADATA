@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xcom-232i
+Version: 0.1.0
+Summary: Python library to access Studer-Innotec Xcom-232i device through RS-232 over a serial port
+Home-page: https://github.com/zocker-160/xcom-232i
+License: GPL-3.0-or-later
+Author: zocker-160
+Author-email: zocker1600@posteo.net
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyserial (>=3.5,<4.0)
+Project-URL: Repository, https://github.com/zocker-160/xcom-232i
+Description-Content-Type: text/markdown
+
+# xcom-232i
+Python library to access Studer-Innotec Xcom-232i device through RS-232 over a serial port
+
