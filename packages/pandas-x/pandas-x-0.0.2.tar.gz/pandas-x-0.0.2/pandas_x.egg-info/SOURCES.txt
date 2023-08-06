@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pandas_x/__init__.py
+pandas_x/_decorators.py
+pandas_x/accessor.py
+pandas_x/algorithms.py
+pandas_x/scalar.py
+pandas_x.egg-info/PKG-INFO
+pandas_x.egg-info/SOURCES.txt
+pandas_x.egg-info/dependency_links.txt
+pandas_x.egg-info/requires.txt
+pandas_x.egg-info/top_level.txt
