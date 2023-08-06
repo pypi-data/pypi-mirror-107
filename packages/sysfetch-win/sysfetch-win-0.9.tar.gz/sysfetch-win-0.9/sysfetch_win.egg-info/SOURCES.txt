@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sysfetch_win/__init__.py
+sysfetch_win/argpar.py
+sysfetch_win/art.py
+sysfetch_win/main.py
+sysfetch_win/sysfetch.py
+sysfetch_win.egg-info/PKG-INFO
+sysfetch_win.egg-info/SOURCES.txt
+sysfetch_win.egg-info/dependency_links.txt
+sysfetch_win.egg-info/entry_points.txt
+sysfetch_win.egg-info/requires.txt
+sysfetch_win.egg-info/top_level.txt

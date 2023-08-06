@@ -1,0 +1,3 @@
+[console_scripts]
+sysfetch = sysfetch_win.main:main
+
