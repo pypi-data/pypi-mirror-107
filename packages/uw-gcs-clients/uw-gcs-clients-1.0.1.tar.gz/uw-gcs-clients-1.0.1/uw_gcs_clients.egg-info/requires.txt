@@ -1,0 +1,4 @@
+commonconf~=1.0
+google-cloud-storage<2.0,>=1.37.1
+google-api-core<2.0,>=1.26.3
+mock

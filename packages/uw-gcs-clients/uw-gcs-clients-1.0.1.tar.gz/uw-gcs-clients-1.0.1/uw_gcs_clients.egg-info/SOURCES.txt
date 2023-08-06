@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gcs_clients/VERSION
+gcs_clients/__init__.py
+gcs_clients/base.py
+gcs_clients/restclient.py
+gcs_clients/test.py
+gcs_clients/tests/__init__.py
+gcs_clients/tests/test_base.py
+gcs_clients/tests/test_restclient.py
+uw_gcs_clients.egg-info/PKG-INFO
+uw_gcs_clients.egg-info/SOURCES.txt
+uw_gcs_clients.egg-info/dependency_links.txt
+uw_gcs_clients.egg-info/requires.txt
+uw_gcs_clients.egg-info/top_level.txt
