@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: epimargin
+Version: 0.4.0
+Summary: Toolkit for estimating epidemiological metrics and evaluating public health and economic policies.
+Home-page: https://github.com/COVID-IWG/epimargin
+Author: COVID International Working Group
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
