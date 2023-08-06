@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tw_stocks/__init__.py
+tw_stocks/client.py
+tw_stocks.egg-info/PKG-INFO
+tw_stocks.egg-info/SOURCES.txt
+tw_stocks.egg-info/dependency_links.txt
+tw_stocks.egg-info/requires.txt
+tw_stocks.egg-info/top_level.txt
