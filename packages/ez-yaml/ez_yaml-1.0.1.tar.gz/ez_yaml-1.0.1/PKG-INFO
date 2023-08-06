@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ez_yaml
+Version: 1.0.1
+Summary: Straighforward wrapper around Ruamel Yaml
+Home-page: https://github.com/jeff-hykin/ez_yaml
+Author: Jeff Hykin
+Author-email: jeff.hykin@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
