@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: lambda-packager
+Version: 0.2.1
+Summary: Stop writing your own scripts and let this package your python aws lambda zips for you
+Home-page: https://github.com/hmrc/python-aws-lambda-packager
+License: Apache-2.0
+Author: cob16
+Author-email: public+github@cormacbrady.info
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/hmrc/python-aws-lambda-packager
+Description-Content-Type: text/markdown
+
+# lambda-packager
+
+##Usage
+- Just run the packager with:
+```bash
+$ lambda-packager
+ # or if not in the project directory  
+$ lambda-packager path/to/project/dir
+```
+- lambda-packager will include any dependencies defined in
+    - poetry (pyproject.toml)
+    - requirements.txt
+    - ~~Pipenv~~ (Coming soon!)
+- By default lambda-packager will include all src files that match `*.py`
+- You can customise this with the following config:
+```toml
+[tool.lambda_packager]
+src_patterns = ["lambda_packager/*.py"]
+```
+
+### Hidden files
+- hidden files and folders are ignored by default when including src files
+- if you wish to disable this then add the following config to you pyproject.toml
+```toml
+[tool.lambda_packager]
+ignore_hidden_files = false
+```
+
+## License
+
+This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
+
