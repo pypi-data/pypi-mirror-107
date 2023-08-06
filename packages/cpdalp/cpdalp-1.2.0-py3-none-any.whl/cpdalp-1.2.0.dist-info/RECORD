@@ -1,0 +1,17 @@
+cpd-alp/__init__.py,sha256=CvHL6YNGnCXB0LvScWZYmg7JkhOvhJZKjnSv4ryhY00,179
+cpd-alp/affine_registration.py,sha256=rwGzleT6nbiYS3waZHllYKK7zG68l1FiAgsSpZ1zwro,3815
+cpd-alp/deformable_registration.py,sha256=VsfAGyHzh14X0dmC3aNYi1VNGPI-qauzBMqvSqYOnJU,5074
+cpd-alp/emregistration.py,sha256=-ccBL59a3uW31tlGFUksdiLLXUxbbUpgfDQM3grAch8,6907
+cpd-alp/rigid_registration.py,sha256=_c33Op2-g52vUaL6QQuiVV46ZwgPqqtmHgh9a63Atuo,4924
+cpd-alp/utility.py,sha256=SM7A1QxFRJEP4lSXQUq_U173v-ICKi6ysImXWepUqGQ,321
+cpdalp/__init__.py,sha256=CvHL6YNGnCXB0LvScWZYmg7JkhOvhJZKjnSv4ryhY00,179
+cpdalp/affine_registration.py,sha256=rwGzleT6nbiYS3waZHllYKK7zG68l1FiAgsSpZ1zwro,3815
+cpdalp/deformable_registration.py,sha256=VsfAGyHzh14X0dmC3aNYi1VNGPI-qauzBMqvSqYOnJU,5074
+cpdalp/emregistration.py,sha256=-ccBL59a3uW31tlGFUksdiLLXUxbbUpgfDQM3grAch8,6907
+cpdalp/rigid_registration.py,sha256=_c33Op2-g52vUaL6QQuiVV46ZwgPqqtmHgh9a63Atuo,4924
+cpdalp/utility.py,sha256=SM7A1QxFRJEP4lSXQUq_U173v-ICKi6ysImXWepUqGQ,321
+cpdalp-1.2.0.dist-info/LICENSE,sha256=HGJg3LFZg0C6QQ3o8UNt3UESDr9F3fBRWPZ-KG3WFSw,1110
+cpdalp-1.2.0.dist-info/METADATA,sha256=Q69gaYRpAg7wLEY8cJpCIi40BfdjOpug4O6GG_CzXIw,2849
+cpdalp-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cpdalp-1.2.0.dist-info/top_level.txt,sha256=iPxd35w0Gy6Dlk4SOZfwn_5v0JZuk3aZEFNtI5wIybA,7
+cpdalp-1.2.0.dist-info/RECORD,,
