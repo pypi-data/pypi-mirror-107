@@ -1,0 +1,12 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/basename.1.gz
+src/basename/__init__.py
+src/basename/main.py
+src/pnu_basename.egg-info/PKG-INFO
+src/pnu_basename.egg-info/SOURCES.txt
+src/pnu_basename.egg-info/dependency_links.txt
+src/pnu_basename.egg-info/entry_points.txt
+src/pnu_basename.egg-info/top_level.txt
