@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fetch-embed"
+version = "0.1.6"
+description = ""
+authors = ["freemt"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ffreemt/fetch-embed"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "^0.17.1"
+alive-progress = "^1.6.2"
+logzero = "^1.7.0"
+numpy = "^1.20.2"
+loguru = "^0.5.3"
+joblib = "^1.0.1"
+tqdm = "^4.60.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.9.0"
+tbump = "^6.3.1"
+get-port = "^0.0.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
