@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: blizz
+Version: 0.2.0
+Summary: blizz – be blizzful.
+Home-page: https://github.com
+Author: 
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml >= 5.0
+Requires-Dist: click >= 7.1
+Requires-Dist: colorama
+Requires-Dist: tornado
+Requires-Dist: pydata-sphinx-theme
+Requires-Dist: sphinx
+Requires-Dist: schema
+Requires-Dist: nbsphinx >= 0.7.* ; extra == "docs"
+Requires-Dist: jupyter >= 1.0 ; extra == "docs"
+Requires-Dist: docutils ; extra == "docs"
+Requires-Dist: m2r == 0.2.* ; extra == "docs"
+Requires-Dist: pandas >= 0.24,<1.2 ; extra == "pandas"
+Requires-Dist: pyspark >= 2.4 ; extra == "pyspark"
+Requires-Dist: pyspark-stubs ; extra == "pyspark"
+Requires-Dist: pytest >= 6.2.* ; extra == "testing"
+Requires-Dist: pytest-cov >= 2.10.* ; extra == "testing"
+Requires-Dist: flake8 >= 3.8.* ; extra == "testing"
+Requires-Dist: flake8-comprehensions >= 3.3.* ; extra == "testing"
+Requires-Dist: isort >= 5.7.* ; extra == "testing"
+Project-URL: Documentation, https://github.com/joerg-schneider/blizz
+Project-URL: Repository, https://github.com/joerg-schneider/blizz
+Provides-Extra: docs
+Provides-Extra: pandas
+Provides-Extra: pyspark
+Provides-Extra: testing
+
+blizz – be blizzful
+===================
+
+effortless Python table schema management
