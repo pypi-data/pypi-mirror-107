@@ -1,0 +1,8 @@
+[console_scripts]
+bdtpserver = denverapi.tools.bdtpserver:main
+cryptify = denverapi.tools.cryptify:main [encryption]
+denverdb = denverapi.tools.denverdb:main
+graphics3d-mview = denverapi.graphics3d:main [gui-tools]
+rmr = denverapi.clineutils.rmr:main
+rmrdir = denverapi.clineutils.rmrdir:main
+

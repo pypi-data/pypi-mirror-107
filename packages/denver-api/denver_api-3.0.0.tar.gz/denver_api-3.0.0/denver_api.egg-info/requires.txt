@@ -1,0 +1,16 @@
+setuptools>50
+requests
+playsound
+packaging
+pip>=21
+ansiwrap
+
+[all]
+pygame
+pycryptodomex
+
+[encryption]
+pycryptodomex
+
+[gui-tools]
+pygame
