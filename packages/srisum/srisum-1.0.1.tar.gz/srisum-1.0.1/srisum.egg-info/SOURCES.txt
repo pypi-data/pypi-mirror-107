@@ -1,0 +1,16 @@
+.flake8
+.gitignore
+.isort.cfg
+.pre-commit-config.yaml
+.style.yapf
+COPYING
+README.md
+setup.py
+srisum/__init__.py
+srisum/__main__.py
+srisum.egg-info/PKG-INFO
+srisum.egg-info/SOURCES.txt
+srisum.egg-info/dependency_links.txt
+srisum.egg-info/entry_points.txt
+srisum.egg-info/requires.txt
+srisum.egg-info/top_level.txt
