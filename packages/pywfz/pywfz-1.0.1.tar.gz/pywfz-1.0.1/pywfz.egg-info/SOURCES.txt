@@ -1,0 +1,10 @@
+README.md
+setup.py
+pywfz/__init__.py
+pywfz/sql.py
+pywfz/util.py
+pywfz.egg-info/PKG-INFO
+pywfz.egg-info/SOURCES.txt
+pywfz.egg-info/dependency_links.txt
+pywfz.egg-info/requires.txt
+pywfz.egg-info/top_level.txt
