@@ -1,0 +1,15 @@
+bidsphysio.edf2bids-21.5.27-py3.8-nspkg.pth,sha256=-q0tz3KpVFX-CTMy1tiWJVqFViYWx9xDeDOxnfxREoQ,559
+bidsphysio/edf2bids/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+bidsphysio/edf2bids/edf2bidsphysio.py,sha256=gdomNmTUc_nNUFd7Nrws3oBWzq75VJAC8z6bpvoaPLE,14321
+bidsphysio/edf2bids/edfsession2bids.py,sha256=uzFNMNLA2yPHAhrq-R4sRav8rhbX0eMWcfejn8irZYY,3116
+bidsphysio/edf2bids/info.py,sha256=nQxRsA3OWLeTga6XpfqA4-RMt-602hWUPla8D3l9zoI,1218
+tests/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+tests/test_edf2bidsphysio.py,sha256=BslU_l6caYXxtVWw7MV7efNevhCe_AM4P9T22LyQE1A,5366
+tests/test_edfsession2bids.py,sha256=RhUauagRXUAbjj-bULFDSZk_c3i8tj7cHCj6VYTuCGo,2254
+tests/utils.py,sha256=kbLbbKYLyzPf3zM2waOJuddvmtPPWZR0w_1T_IeL_A8,75
+bidsphysio.edf2bids-21.5.27.dist-info/METADATA,sha256=OgX50bSNYzf3M5XWVsCpwxsJwVRs7Y3KpFDhUrobJx0,1063
+bidsphysio.edf2bids-21.5.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bidsphysio.edf2bids-21.5.27.dist-info/entry_points.txt,sha256=pz-iD-vywpngOxw-org4oj218j7UKy6Zh_7yEkRiD3s,135
+bidsphysio.edf2bids-21.5.27.dist-info/namespace_packages.txt,sha256=2FheJI0dxUB4_GQLIG6kY3N9WvHdAtvGddpujVLE9xY,11
+bidsphysio.edf2bids-21.5.27.dist-info/top_level.txt,sha256=L5cDw-5BuJykyKxyEPg0Zg6zLxwJRIET5wcn9SWjXNY,17
+bidsphysio.edf2bids-21.5.27.dist-info/RECORD,,
