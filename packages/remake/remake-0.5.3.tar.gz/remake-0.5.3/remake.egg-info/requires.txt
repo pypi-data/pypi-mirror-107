@@ -1,0 +1,12 @@
+networkx
+tabulate
+
+[debug]
+ipdb
+
+[display]
+matplotlib
+
+[testing]
+nose
+coverage
