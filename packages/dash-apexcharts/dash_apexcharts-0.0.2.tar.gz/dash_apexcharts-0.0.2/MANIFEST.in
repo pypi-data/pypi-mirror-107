@@ -1,0 +1,7 @@
+include dash_apexcharts/dash_apexcharts.min.js
+include dash_apexcharts/dash_apexcharts.min.js.map
+include dash_apexcharts/metadata.json
+include dash_apexcharts/package-info.json
+include README.md
+include LICENSE
+include package.json
