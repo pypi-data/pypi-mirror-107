@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: anawsutils
+Version: 0.1.3
+Summary: Module with miscallaneous AWS utils.
+Home-page: https://github.com/anttin/anawsutils
+Author: anttin
+Author-email: muut.py@antion.fi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# anawsutils
+
+A python3 module with micallaneous AWS utils.
+
+## Install
+
+```shell
+python3 -m pip install anawsutils
+```
+
+
