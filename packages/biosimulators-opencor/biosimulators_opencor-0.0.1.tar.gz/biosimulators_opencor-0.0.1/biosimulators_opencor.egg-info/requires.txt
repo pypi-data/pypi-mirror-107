@@ -1,0 +1,11 @@
+biosimulators_utils[cellml,logging]>=0.1.77
+lxml
+numpy
+
+[all]
+python_dateutil
+
+[docs]
+
+[tests]
+python_dateutil
