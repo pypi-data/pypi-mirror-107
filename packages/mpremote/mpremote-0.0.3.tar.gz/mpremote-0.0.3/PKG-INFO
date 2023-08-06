@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mpremote
+Version: 0.0.3
+Summary: Tool for interacting remotely with MicroPython
+Home-page: https://github.com/micropython/micropython
+Author: Damien George
+Author-email: damien@micropython.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/micropython/micropython/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mpremote -- MicroPython remote control
+
+This CLI tool is used to remotely control a MicroPython device or instance.
+
+

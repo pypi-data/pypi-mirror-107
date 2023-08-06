@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mpremote/__init__.py
+src/mpremote/console.py
+src/mpremote/main.py
+src/mpremote/pyboard.py
+src/mpremote/pyboardextended.py
+src/mpremote.egg-info/PKG-INFO
+src/mpremote.egg-info/SOURCES.txt
+src/mpremote.egg-info/dependency_links.txt
+src/mpremote.egg-info/entry_points.txt
+src/mpremote.egg-info/requires.txt
+src/mpremote.egg-info/top_level.txt
