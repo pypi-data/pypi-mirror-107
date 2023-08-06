@@ -1,0 +1,26 @@
+[
+  {
+    "tyyppi": "muutos",
+    "tunnus": "99f568ccc36cad41eef5439271c680806d0f4d7b",
+    "versio": "0.1.1",
+    "kuvaus": "Lis\u00e4tty PEP 517 -pakettim\u00e4\u00e4ritys"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "981332fe46600dfb811dece8068d4bd676b88903",
+    "versio": "0.1",
+    "kuvaus": "Versio 0.1"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "f37572debb3308dfa4b53a9f65795f6475c55a1c",
+    "versio": "0.1",
+    "kuvaus": "Pilko selaimelta l\u00e4htev\u00e4 data megatavun paketteihin"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "9d325295140157a7efc661acebbe026830177648",
+    "versio": "0.0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
