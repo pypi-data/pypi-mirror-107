@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: filmapia
+Version: 0.1
+Summary: The funniest joke in the world
+Home-page: https://github.com/WTTeneger/kinopoisk_api
+Author: Amal Agishev
+Author-email: swintages@gmail.com
+License: MIT
+Keywords: funniest joke comedy flying circus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: markdown
+Requires-Dist: requests
+
+Yah
+
