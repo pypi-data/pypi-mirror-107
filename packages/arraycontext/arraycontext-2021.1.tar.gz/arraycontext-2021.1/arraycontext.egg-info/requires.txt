@@ -1,0 +1,7 @@
+loopy>=2019.1
+numpy
+pytest>=2.3
+pytools>=2020.4.1
+
+[:python_version <= "3.6"]
+dataclasses
