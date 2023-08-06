@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: nm_feedfinder
+Version: 0.4
+Summary: Find Atom/RSS links of a website given a URL
+Home-page: https://github.com/newsmailerio/feedfinder
+Author: newsmailer.io
+Author-email: us@newsmailer.io
+License: ISC
+Description: UNKNOWN
+Keywords: rss,atom,feed,newsmail
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python :: 3
