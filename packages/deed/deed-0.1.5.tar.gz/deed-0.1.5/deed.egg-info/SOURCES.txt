@@ -1,0 +1,12 @@
+README.md
+setup.py
+deed/__init__.py
+deed/audit_modes.py
+deed/bottle_kit.py
+deed/gdpr_utils.py
+deed/tracing.py
+deed.egg-info/PKG-INFO
+deed.egg-info/SOURCES.txt
+deed.egg-info/dependency_links.txt
+deed.egg-info/requires.txt
+deed.egg-info/top_level.txt
