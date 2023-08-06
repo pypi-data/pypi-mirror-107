@@ -1,0 +1,3 @@
+[console_scripts]
+gibbon=gibbon.__main__:main
+
