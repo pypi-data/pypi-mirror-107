@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyubbink
+requirements.txt
+setup.py
+pyubbink/__init__.py
+pyubbink.egg-info/PKG-INFO
+pyubbink.egg-info/SOURCES.txt
+pyubbink.egg-info/dependency_links.txt
+pyubbink.egg-info/not-zip-safe
+pyubbink.egg-info/requires.txt
+pyubbink.egg-info/top_level.txt
