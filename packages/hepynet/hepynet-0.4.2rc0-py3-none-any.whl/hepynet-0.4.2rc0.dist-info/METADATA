@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: hepynet
+Version: 0.4.2rc0
+Summary: High energy physics, python based, neural network framework
+Home-page: https://github.com/StarPrecursor/hepynet
+Author: Zhe Yang
+Author-email: starprecursor@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.9,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: tensorflow (==2.2.0)
+Requires-Dist: tensorboard
+Requires-Dist: keras (==2.3.0)
+Requires-Dist: ray (==1.3.0)
+Requires-Dist: ray[default]
+Requires-Dist: ray[tune]
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: wrapt (<1.12.0)
+Requires-Dist: ax-platform
+Requires-Dist: sqlalchemy
+Requires-Dist: hyperopt
+Requires-Dist: HEBO
+Requires-Dist: GitPython
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn
+Requires-Dist: atlas-mpl-style
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: black
+Requires-Dist: packaging
+
+# **Hepynet**
+
+**H**igh **e**nergy physics, **py**thon-based, neural-**net**work assistant framework
+
+![forthebadge](https://img.shields.io/badge/hepynet-v0.4.2-blue)
+
+## **Introduction**
+
+The goal of the hepynet: perform DNN related high energy physics analysis tasks with simple config files
+
+- for **ATLAS Analysis**: include supports for various ATLAS analysis jobs
+
+- **Config Driven**: all tasks defined by a simple config file
+
+- **Python Based**: codes are written in Python, which is the mainstream language for DNN studies
+
+## **Installation**
+
+```bash
+pip install hepynet
+```
+
+### GPU support
+
+- You can refer to [Tensorflow GPU support](https://www.tensorflow.org/install/gpu) to set up the environment to use GPU for training
+
+- This is not mandatory, CPU alone is enough to run hepynet
+
+## **Set Up the Workspace**
+
+Please refer to [hepynet_example](https://github.com/Hepynet/hepynet_example) to see how to set up the workspace of hepynet.
+
+## **Release Note - v0.4.2**
+
+- Re-implement auto-tuning functions with [Ray](https://docs.ray.io/en/master/index.html) (currently, support three hyperparameter-tuning algorithms: [Ax](https://ax.dev/), [HyperOpt](http://hyperopt.github.io/hyperopt/) and [HEBO](https://github.com/huawei-noah/noah-research/tree/master/HEBO))
+- Minor issues fixes and improvements
+
+
