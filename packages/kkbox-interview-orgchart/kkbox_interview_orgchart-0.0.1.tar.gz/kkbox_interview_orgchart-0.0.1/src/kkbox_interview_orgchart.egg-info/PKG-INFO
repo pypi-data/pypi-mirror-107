@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kkbox-interview-orgchart
+Version: 0.0.1
+Summary: A KKBOX interview demo
+Home-page: https://gitlab.com/Ericchen0108/kkbox
+Author: Eric Chen
+Author-email: eric19920108@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/Ericchen0108/kkbox
+Description: This is a kkbox interview demo package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
