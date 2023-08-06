@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dlisio
+Version: 0.3.5
+Summary: DLIS v1
+Home-page: https://github.com/equinor/dlisio
+License: LGPL-3.0
+Platform: any
+Requires-Dist: numpy
+
+DLIS v1
+
