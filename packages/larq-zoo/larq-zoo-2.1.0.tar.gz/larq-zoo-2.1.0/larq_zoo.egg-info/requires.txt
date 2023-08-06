@@ -1,0 +1,24 @@
+numpy<1.21.0,>=1.15.0
+larq<0.13.0,>=0.9.2
+zookeeper<1.4.0,>=1.0.0
+
+[:python_version < "3.8"]
+importlib-metadata~=2.0
+
+[tensorflow]
+tensorflow>=1.15.0
+
+[tensorflow_gpu]
+tensorflow-gpu>=1.15.0
+
+[test]
+black==21.5b1
+flake8==3.9.2
+isort==5.8.0
+pytype==2021.5.25
+pytest==6.2.4
+pytest-cov==2.12.0
+pytest-mock==3.6.1
+pytest-xdist==2.2.1
+Pillow==8.2.0
+tensorflow_datasets!=4.3.0,>=3.1.0
