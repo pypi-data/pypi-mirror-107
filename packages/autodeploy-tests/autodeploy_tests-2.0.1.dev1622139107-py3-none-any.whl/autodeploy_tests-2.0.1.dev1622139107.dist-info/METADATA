@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: autodeploy-tests
+Version: 2.0.1.dev1622139107
+Summary: 
+Author: Marco Acierno
+Author-email: marcoaciernoemail@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
