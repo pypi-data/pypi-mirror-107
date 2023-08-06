@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/cjkspacer.py
+sphinxcontrib_cjkspacer.egg-info/PKG-INFO
+sphinxcontrib_cjkspacer.egg-info/SOURCES.txt
+sphinxcontrib_cjkspacer.egg-info/dependency_links.txt
+sphinxcontrib_cjkspacer.egg-info/namespace_packages.txt
+sphinxcontrib_cjkspacer.egg-info/not-zip-safe
+sphinxcontrib_cjkspacer.egg-info/requires.txt
+sphinxcontrib_cjkspacer.egg-info/top_level.txt
