@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: uw-gcs-clients
+Version: 1.0.1
+Summary: Google Cloud Storage (GCS) Clients
+Home-page: https://github.com/uw-it-aca/uw-gcs-clients
+Author: UW-IT AXDD
+Author-email: aca-it@uw.edu
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: commonconf (~=1.0)
+Requires-Dist: google-cloud-storage (<2.0,>=1.37.1)
+Requires-Dist: google-api-core (<2.0,>=1.26.3)
+Requires-Dist: mock
+
+
+See the README on `GitHub
+<https://github.com/uw-it-aca/uw-gcs-clients>`_.
+
+

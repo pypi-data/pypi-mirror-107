@@ -1,0 +1,13 @@
+gcs_clients/VERSION,sha256=FFqr4RBs0SO3EjGUuUvPi_9EQsrxxTNsPiycZx9Ilco,7
+gcs_clients/__init__.py,sha256=pQ9-slfsWl3YnFgh1FsGqgP_lOKqR9XR05qtvjoVzvg,215
+gcs_clients/base.py,sha256=C1YzHTRmbcXvHmtAkbEf9fpeGZnZNMsvKVydPfEOYhw,5999
+gcs_clients/restclient.py,sha256=Dw5sqA5jykSjMgQ1eU0rWSSCi5jlV4PVsRJlPkFyUDU,3318
+gcs_clients/test.py,sha256=V1dM8Dl4CPz5opmQKe4DQrwH-pZdGnn2qARiOE7mTiQ,420
+gcs_clients/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcs_clients/tests/test_base.py,sha256=z1OuWN-GanD4B4kZOcLZrz42141nkaJ7ttBsPZgl00U,6926
+gcs_clients/tests/test_restclient.py,sha256=y6Avkl-ACHTG9WNi4rQ26VKSPksJwn0NOQ85JPOW3v8,6821
+uw_gcs_clients-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uw_gcs_clients-1.0.1.dist-info/METADATA,sha256=ZBl0JPabbdEgyqAMpMCKrT8kHfSw2NNN6NhnfVSZDk8,738
+uw_gcs_clients-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+uw_gcs_clients-1.0.1.dist-info/top_level.txt,sha256=YPZJhh1UfiULoUq6hkQnZWKpT7N0FWOi_RNHCuUhjLo,12
+uw_gcs_clients-1.0.1.dist-info/RECORD,,
