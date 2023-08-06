@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lambda-packager
+Version: 0.2.0
+Summary: stop writing your own scripts and let this package your python aws lambda zips for you
+Author: cob16
+Author-email: public+github@cormacbrady.info
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.10.2,<0.11.0)
