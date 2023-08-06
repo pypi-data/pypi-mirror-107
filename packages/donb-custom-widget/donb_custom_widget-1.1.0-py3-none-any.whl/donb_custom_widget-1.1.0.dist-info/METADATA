@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: donb-custom-widget
+Version: 1.1.0
+Summary: Custom widget for Pyside6
+Home-page: UNKNOWN
+Author: Don Beberto
+Author-email: bebert64@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pyside6
+Requires-Dist: donb-tools
+
+UNKNOWN
+
+
