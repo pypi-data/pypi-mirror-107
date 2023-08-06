@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pmpg
+Version: 1.0
+Summary: PMPG is a minimalist python "Cargo like" project generator.
+Home-page: https://github.com/koltiradw/PMPG
+Author: Ivan Kapranov
+Author-email: koltiradw@yandex.ru
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pytest-pylint
+Requires-Dist: toml
+
+UNKNOWN
+

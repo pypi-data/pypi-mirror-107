@@ -1,0 +1,11 @@
+pmpg-1.0.data/scripts/pmpg,sha256=rbAgtejUpxYHi202XIbqKrWGeobHLf_9mkgUXD6pVYc,996
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/projectdir.py,sha256=t3Eilgf8fPfZBKfDCQzvf7-VW9D7YAtv9l1tt_PdV_U,821
+src/projrunner.py,sha256=LjSMkLTiX2kL2rVowFl3UzuhNql-vRD9n_uQ5KLhPgk,727
+src/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/util/projconfig.py,sha256=n1eNrg-H_wwrQ0Z9VjbGiuV-CUUE2ok9Z6kPYBZXTJ8,1404
+src/util/repository.py,sha256=Rcp-fi6Sgfgb3gyEvnPlJV87nbsLJ9M_jrBPk0FeIwE,327
+pmpg-1.0.dist-info/METADATA,sha256=wOy3gsPvlgfnnSIkH7hJ9Qd4D8rDReO4L9rHVYWHSOQ,306
+pmpg-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pmpg-1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+pmpg-1.0.dist-info/RECORD,,

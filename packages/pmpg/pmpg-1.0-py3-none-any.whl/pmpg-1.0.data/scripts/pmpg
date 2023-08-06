@@ -1,0 +1,40 @@
+#!python
+"""
+Main module
+"""
+
+import sys
+import os
+import src.projectdir as projectdir
+import src.projrunner as projrunner
+import src.util.projconfig as projconfig
+
+
+HELP = """
+pmpg [create name_of_proj] [run] [-h]
+List of commands:
+    create - command for creation project
+    run    - command for run project
+    -h     - help 
+"""
+
+def main():
+    """
+    Endpoint of project.
+    """
+    args = sys.argv[1:]
+    if len(args) == 2 and args[0] == "create":
+        print("Welcome to minimalistic python generator PMPG")
+        projectdir.create(os.getcwd(), args[1])
+        print(f"Project {args[1]} is generated!")
+    elif len(args) == 1 and args[0] == "run":
+        config = projconfig.parse(os.getcwd())
+        projrunner.install_packs(config["packages"])
+        projrunner.run(config["run_props"]["endpoint"])
+    elif len(args) == 1 and args[0] == "-h":
+        print(HELP)
+    else:
+        print("Invalid arguments")
+        print("Run this utility with -h to view help")
+
+main()
