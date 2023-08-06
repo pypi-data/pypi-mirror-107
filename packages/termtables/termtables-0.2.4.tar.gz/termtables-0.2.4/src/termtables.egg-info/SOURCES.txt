@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/termtables/__about__.py
+src/termtables/__init__.py
+src/termtables/main.py
+src/termtables/styles.py
+src/termtables.egg-info/PKG-INFO
+src/termtables.egg-info/SOURCES.txt
+src/termtables.egg-info/dependency_links.txt
+src/termtables.egg-info/requires.txt
+src/termtables.egg-info/top_level.txt
