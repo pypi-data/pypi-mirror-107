@@ -1,0 +1,13 @@
+sortasurvey/__init__.py,sha256=HlHzMCueX07KYiiW0sFF7yUMCG7ioUldajSXpCEbnAc,220
+sortasurvey/cli.py,sha256=LXBL_60KOnqKcgG-XDDV_MoiUqNIAOywUMbSQZNAmLk,4027
+sortasurvey/observing.py,sha256=7uWFJfnbaN-HbHOW63XZ1YcCuI7dZludhN_wugX8zlQ,8324
+sortasurvey/pipeline.py,sha256=X3Cpu1LqZToq0SaMyQtwD65W3RXMDXfFXC6rZVwj1Sg,1914
+sortasurvey/sample.py,sha256=bYW-TUxDgZHhgNEe092jfM_AEybpvJvsNEtCkrmcqLc,5211
+sortasurvey/survey.py,sha256=2-EQFOLfLK_VwZ1RJdCrPwEr4L2SFjFctw796HEdcqs,27502
+sortasurvey/utils.py,sha256=hiniZcuPTuxwoHmmbuVeo9WPW8Jj9Qcrk80L9liIiNA,18712
+sortasurvey-0.0.1.dist-info/LICENSE,sha256=VH8CDV6E6yHdqe0rvz_kYbph-sD9ADsGis6STixvx9Q,1090
+sortasurvey-0.0.1.dist-info/METADATA,sha256=nQhW4CoIE_36sXrGKgq1_yla6AjrF3uudNML8gdXDEY,849
+sortasurvey-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sortasurvey-0.0.1.dist-info/entry_points.txt,sha256=AUf8tzMMy9x2mdPNzaxOb1FFx4bNaJMY54e9grNRY_Y,49
+sortasurvey-0.0.1.dist-info/top_level.txt,sha256=pSOw0YVnv3xLk20XnIWbsrvb2YvWUtOTwvMLFA-rN4Q,12
+sortasurvey-0.0.1.dist-info/RECORD,,
