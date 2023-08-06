@@ -1,0 +1,5 @@
+django>=3.1
+websockets>=8.0
+
+[runserver]
+uvicorn[standard]
