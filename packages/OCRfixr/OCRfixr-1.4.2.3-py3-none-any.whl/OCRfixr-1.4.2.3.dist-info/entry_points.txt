@@ -1,0 +1,3 @@
+[console_scripts]
+ocrfixr = ocrfixr.run_ocrfixr:main
+
