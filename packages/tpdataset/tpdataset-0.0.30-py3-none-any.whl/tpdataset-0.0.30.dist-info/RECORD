@@ -1,0 +1,14 @@
+tpdataset/__init__.py,sha256=ldv0XXpZWvq05r_wPZ1oO8C5mN55MqcxVaz9clsELcU,255
+tpdataset/dataset.py,sha256=9czFm_qhR9pZE5GLwgIPtFlIYTzBvemDbSffmO3FgZw,87
+tpdataset/device.py,sha256=oQviOO81zot5bLgJ8T3DC6SuWkh7ieTCDFwxcYim3x0,2019
+tpdataset/download_googledrive.py,sha256=uTekzQaslNy2XfurRvveoDPPKyHdxsk6V7VtRNaV_Eo,1174
+tpdataset/raw_dataset.py,sha256=vk_2fe7GqkKkJ703Ae1WdNgXawTvqaOFGyVv5pTDM5M,5746
+tpdataset/CV/__init__.py,sha256=Kqt-uxyl3op8tzhoenEpw-71_d9mUxRJs4jPMQvyitI,52
+tpdataset/CV/celeba.py,sha256=PBJ_pALuHiw_xIkHzB9uEh6YDSU2--bWp58OTrp9mtQ,4934
+tpdataset/CV/mnist.py,sha256=lGqfG1v4ECKkB_CvOe1tH7iWwYd5SqAy4MWaxo1wjV8,3904
+tpdataset/NLP/__init__.py,sha256=Q8vdfweHdyk1maEAF0rfCh64IBLJU0vulVNXDM5u9SY,23
+tpdataset/NLP/babi.py,sha256=FiUDyF7ToeMudx2bkxB0nFTYQuckhTtBGChYLjAC5js,1504
+tpdataset-0.0.30.dist-info/METADATA,sha256=PEPvxSc3a-sPO-pmEPAc_g-gz7cqipLM870knJ61G-A,3210
+tpdataset-0.0.30.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tpdataset-0.0.30.dist-info/top_level.txt,sha256=RD83dfzoE2sb5-rxyFUlLm2s5hk_fyViT1te6bYh6Hs,10
+tpdataset-0.0.30.dist-info/RECORD,,
