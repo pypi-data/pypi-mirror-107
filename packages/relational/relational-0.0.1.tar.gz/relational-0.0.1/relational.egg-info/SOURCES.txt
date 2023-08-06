@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+relational/__init__.py
+relational/_nbdev.py
+relational/core.py
+relational.egg-info/PKG-INFO
+relational.egg-info/SOURCES.txt
+relational.egg-info/dependency_links.txt
+relational.egg-info/entry_points.txt
+relational.egg-info/not-zip-safe
+relational.egg-info/requires.txt
+relational.egg-info/top_level.txt
