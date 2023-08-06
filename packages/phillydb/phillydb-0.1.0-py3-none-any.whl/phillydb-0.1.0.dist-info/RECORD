@@ -1,0 +1,16 @@
+phillydb/__init__.py,sha256=4WUKien3vqp3dEFAp4nw1UNikM2AttcOQX8fp80eqhk,101
+phillydb/__version__.py,sha256=-NnRnu_LyG-4Qm95v7l6BPPpuV9sfg9dJgZYPKZujb8,109
+phillydb/additional_links.py,sha256=bu07aDthm1N6QJWFydVxmM9yz6b5WzmjZ8FlWnU3M48,462
+phillydb/carto_tables.py,sha256=9edeq4KYuWK9Pqxtc8QvB0lND-_LcppeX2SECv0Vv6M,17952
+phillydb/exceptions.py,sha256=1KC97XrjrOfN6pEEUOEA_3caj0FXHrfTLSgok_Rrerg,810
+phillydb/labelled_fields.py,sha256=t09PjKXU07_6vL_5hshBymW-K0R-JCsuHNh8GEHf_Mo,2119
+phillydb/search_queries.py,sha256=Qu3_P3iWZKEqQ2tpqIp76c2KI_ayQZOncAZN5ymAb0g,3209
+phillydb/tables.py,sha256=uI4jUYKceKme46XFHJ620fEOH2Y_IKhofqNMVEfnE5E,16075
+phillydb/testing_utils.py,sha256=uPQeVnfUASRsTyYYBRIfNotEuQDYWWzVRJ5qs31f_wo,1517
+phillydb/utils.py,sha256=35fDp_GtVgMXfnCglEKxtdxRdOxNxXCFi9PdDZdkb88,1035
+phillydb-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phillydb-0.1.0.dist-info/METADATA,sha256=l7wIzXTJtzunGWuMflkk1CjXJ3aNuERW1WeOuY64olM,300
+phillydb-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phillydb-0.1.0.dist-info/entry_points.txt,sha256=RW9jkHD1uvK83iBhkS7CdEZz4xInIrdBgpz0pAh-VfA,43
+phillydb-0.1.0.dist-info/top_level.txt,sha256=mkMdVwDUqlp50uHJaXWbkDOZmPmY0idHo9wviu93XJU,9
+phillydb-0.1.0.dist-info/RECORD,,
