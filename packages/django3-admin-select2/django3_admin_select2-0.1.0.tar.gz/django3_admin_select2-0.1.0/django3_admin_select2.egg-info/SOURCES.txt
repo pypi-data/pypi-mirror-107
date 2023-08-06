@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django3_admin_select2/__init__.py
+django3_admin_select2.egg-info/PKG-INFO
+django3_admin_select2.egg-info/SOURCES.txt
+django3_admin_select2.egg-info/dependency_links.txt
+django3_admin_select2.egg-info/requires.txt
+django3_admin_select2.egg-info/top_level.txt
+django3_admin_select2/static/django3_admin_select2/css/select2.min.css
+django3_admin_select2/static/django3_admin_select2/js/select2.min.js
+django3_admin_select2/templates/admin/base_site.html
