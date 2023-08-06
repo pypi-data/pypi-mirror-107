@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kalsievelib
+Version: 1.1.8
+Summary: Client-side SIEVE library
+Home-page: https://github.com/amonak/kalsievelib
+Author: Antoine Nguyen
+Author-email: amonak@alphamonak.com
+License: MIT
+Keywords: sieve,managesieve,parser,client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Email :: Filters
+
+kalsievelib
+===========
+
+Client-side Sieve and Managesieve library written in Python.
+
+* Sieve : An Email Filtering Language
+  (`RFC 5228 <http://tools.ietf.org/html/rfc5228>`_)
+* ManageSieve : A Protocol for Remotely Managing Sieve Scripts
+  (`RFC 5804 <http://tools.ietf.org/html/rfc5804>`_)
+
+
+
+
