@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "c5py"
+version = "1.0.1"
+description = """
+Analysis and visualization tools for the Augmented Reality-based Corpus (ARbC). \
+This corpus has been created in the research project 'Alignment in AR-based cooperation' \
+which was a part of the Collaborative Research Centre 'Alignment in Communication' (CRC 673) \
+under the project code C5."""
+
+license = "MIT"
+
+authors = ["Alexander Neumann <alneuman@techfak.uni-bielefeld.de>"]
+
+readme = 'README.md'  # Markdown files are supported
+
+packages = [{ include = "c5" }]
+
+include = [
+    'c5/viewer/css/*',
+    'c5/viewer/js/*',
+    'c5/viewer/index.html',
+    'c5/tools/sync/data/*'
+]
+
+repository = "https://github.com/aleneum/c5py"
+homepage = "http://wwwhomes.uni-bielefeld.de/sfb-673/projects/C5"
+
+keywords = ['data mining', 'explorative data analysis']
+
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Development Status :: 4 - Beta',
+    'Topic :: Multimedia :: Sound/Audio :: Analysis',
+    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Topic :: Scientific/Engineering :: Human Machine Interfaces',
+    'Topic :: Scientific/Engineering :: Visualization'
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "~1.1.5"
+scipy = "~1.6.0"
+matplotlib = "~3.3"
+seaborn = "^0.11"
+tables = "^3.6"
+lxml = "^4.6"
+BeautifulSoup4 = "^4.9"
+scikit-learn = "^0.23"
+# use conda/homebrew/apt to install these
+# pyqt = "^5.9.2"
+# opencv-python = "^4.4"
+
+
+
+Twisted = "^20.3.0"
+service_identity = "^18.1.0"
+[tool.poetry.dev-dependencies]
+poetry = "^1.0"
+
+[tool.poetry.scripts]
+c5sync = 'c5.tools.sync.startup:start_app'
+c5viewer = 'c5.tools.dataviewer:start_app'
+c5helper = 'c5.tools.helper:start_app'

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Project name="Project" path="/home/devel/output">
+	<Sets>
+	</Sets>
+	<Layouts default="C5 Layout">
+		<Layout height="1080" name="Default" ref="main" width="1920">
+			<Container height="1080" name="main" pos_x="0" pos_y="0" use_audio="True" width="1920"/>
+		</Layout>
+		<Layout height="1080" name="C5 Triade Layout" ref="schulter1" width="1920">
+			<Container height="358" name="schulter1" pos_x="0" pos_y="120" use_audio="True" width="636"/>
+			<Container height="477" name="hmd1" pos_x="0" pos_y="483" use_audio="False" width="636"/>
+			<Container height="358" name="schulter2" pos_x="641" pos_y="120" use_audio="True" width="636"/>
+			<Container height="477" name="hmd2" pos_x="641" pos_y="483" use_audio="False" width="636"/>
+			<Container height="358" name="schulter3" pos_x="1282" pos_y="120" use_audio="True" width="636"/>
+			<Container height="477" name="hmd3" pos_x="1282" pos_y="483" use_audio="False" width="636"/>
+		</Layout>
+		<Layout height="1080" name="C5 Layout" ref="schulter1" width="1920">
+			<Container height="358" name="schulter1" pos_x="0" pos_y="120" use_audio="True" width="636"/>
+			<Container height="477" name="hmd1" pos_x="0" pos_y="483" use_audio="False" width="636"/>
+			<Container height="358" name="schulter2" pos_x="641" pos_y="120" use_audio="True" width="636"/>
+			<Container height="477" name="hmd2" pos_x="641" pos_y="483" use_audio="False" width="636"/>
+			<Container height="358" name="top" pos_x="1282" pos_y="120" use_audio="True" width="636"/>
+		</Layout>
+	</Layouts>
+</Project>

@@ -1,0 +1,84 @@
+import ConfigParser
+import os.path
+
+import model.itemmodel as im
+
+class Configurator(object):
+    def __init__(self, file_path):
+        self.parser = ConfigParser.ConfigParser()
+        if not os.path.exists(file_path):
+            self.createTemplate()
+            self.config = open(file_path,"w")
+            self.parser.write(self.config)
+            self.config.flush()
+            self.config.close()
+        self.config = open(file_path,"r+")
+        self.parser.readfp(self.config)
+
+    def createTemplate(self):
+        self.parser.add_section("Project")
+        self.parser.set("Project", "sets", "sample")
+        self.parser.set("Project", "name", "Project")
+        self.parser.add_section("Set_sample")
+        self.parser.set("Set_sample", "layout", "default")
+
+        self.parser.add_section("Layouts")
+        self.parser.set("Layouts", "names", "default")
+        self.parser.add_section("Layout_default")
+        self.parser.set("Layout_default", "width", "640")
+        self.parser.set("Layout_default", "height", "480")
+        self.parser.set("Layout_default", "containers", "left,right")
+        self.parser.set("Layout_default", "con_left_pos_x", "0")
+        self.parser.set("Layout_default", "con_left_pos_y", "0")
+        self.parser.set("Layout_default", "con_left_height", "240")
+        self.parser.set("Layout_default", "con_left_width", "320")
+        self.parser.set("Layout_default", "con_right_pos_x", "320")
+        self.parser.set("Layout_default", "con_right_pos_y", "0")
+        self.parser.set("Layout_default", "con_right_height", "240")
+        self.parser.set("Layout_default", "con_right_width", "320")
+
+
+    def createItemModel(self):
+        self.model = im.ItemModel()
+        self.model.project_name = self.parser.get("Project", "name")
+        for set_string in self.parser.get("Project", "sets").split(","):
+            section_name = "Set_%s" % (set_string)
+            if self.parser.has_section(section_name):
+                new_set = im.SetItem()
+                new_set.layout = self.parser.get(section_name, "layout")
+                container_nr = 0
+                while (self.parser.has_option(section_name, "con_%i_files" % (container_nr))):
+                    new_container = im.ContainerItem()
+                    new_container.files = self.parser.get(section_name, "con_%i_files" % (container_nr)).split(",")
+                    new_container.syncevents = self.parser.get(section_name, "con_%i_syncevents" % (container_nr)).split(",")
+                    new_container.use_original = self.parser.getboolean(section_name, "con_%i_use_orignal" % (container_nr))
+                    new_container.is_prepared = self.parser.getboolean(section_name, "con_%i_is_prepared" % (container_nr))
+                    new_container.is_synced = self.parser.getboolean(section_name, "con_%i_is_synced" % (container_nr))
+                    new_set.containers.append(new_container)
+                self.model.addSet(new_set)
+
+    def createLayoutList(self):
+        layouts = {}
+        for layout_name in self.parser.get("Layouts", "names").split(","):
+            layout_string = "Layout_%i" % (layout_name)
+            new_layout = im.SetLayout()
+            new_layout.name = layout_name
+            new_layout.width = self.parser.getint(layout_string, "width")
+            new_layout.height = self.parser.getint(layout_string, "height")
+            for container_name in self.parser.get(layout_string, "containers").split(","):
+                container_string = "con_%s_" % (container_name)
+                new_container = im.ContainerLayout()
+                new_container.name = container_name
+                new_container.width = self.parser.get(layout_string, "%s_width" % (container_string))
+                new_container.height = self.parser.get(layout_string, "%s_height" % (container_string))
+                new_container.pos_x = self.parser.get(layout_string, "%s_pos_x" % (container_string))
+                new_container.pos_y = self.parser.get(layout_string, "%s_pos_y" % (container_string))
+                new_layout.containers[container_name] = new_container
+            layouts[layout_name] = new_layout
+        return layouts
+
+    def saveConfig(self):
+        self.parser.write(self.config)
+        self.config.flush()
+
+
