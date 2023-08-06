@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: async-web3
+Version: 0.2.4
+Summary: Async Web3 library
+Home-page: https://github.com/guanqun/async-web3.py
+License: MIT
+Keywords: ethereum,web3,asyncio
+Author: Guanqun Lu
+Author-email: guanqunlu@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: eth-abi (>=2.1.1,<3.0.0)
+Requires-Dist: eth-brownie (>=1.14.6,<2.0.0)
+Requires-Dist: eth-utils (>=1.10.0,<2.0.0)
+Requires-Dist: pytest-asyncio (>=0.15.1,<0.16.0)
+Requires-Dist: web3 (>=5.18.0,<6.0.0)
+Requires-Dist: websockets (>=8.1.0,<9.0.0)
+Project-URL: Repository, https://github.com/guanqun/async-web3.py
+Description-Content-Type: text/markdown
+
+This is an opinionated web3 library.
+
+1. async as the first citizen.
+2. websocket support as the first citizen. (IPC will be added in the near future)
+3. it supports `eth_subscribe()` and `eth_unsubscribe()`.
+
+```
+        w3 = AsyncWeb3("ws://127.0.0.1:8546")
+        await w3.connect()
+        block_stream = await w3.subscribe_block()
+        async for new_block in block_stream:
+            print(f"got new block: {new_block}")
+```
+4. It has no middleware support.
+
+
+This library tries to simplify the interaction with the *deployed* contracts. If you want to deploy a new smart contract, please checkout the awesome `brownie` tool.
+
+How to Contribute:
+
+1. install `poetry`
+2. under this folder, run `poetry install`
+3. then run `poetry shell`
+4. start the development
+5. run `poetry run pytest`
+6. send PR
+
