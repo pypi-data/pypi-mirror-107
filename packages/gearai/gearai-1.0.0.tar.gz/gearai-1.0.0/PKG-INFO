@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gearai
+Version: 1.0.0
+Summary: Gear AI is the open source Python Library for solving various AI needs
+Home-page: https://github.com/ToastCoder/gearai
+Author: ['Vigneshwar K R']
+Author-email: vicky.pcbasic@gmail.com
+License: GNU General Public Version 3
+Download-URL: https://github.com/ToastCoder/gearai/archive/master.zip
+Description: # gearai
+Keywords: ARTIFICIAL INTELLIGENCE,TENSORFLOW
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
