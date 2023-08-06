@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: combustion
+Version: 0.1.0
+Summary: Helpers for PyTorch model training/testing
+Home-page: https://github.com/TidalPaladin/combustion
+Author: Scott Chase Waggener
+Author-email: tidalpaladin@gmail.com
+License: Apache
+Keywords: deep learning pytorch
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8.0
+Provides-Extra: testing
+Provides-Extra: macs
+Provides-Extra: hdf5
+Provides-Extra: vision
+Provides-Extra: points
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
