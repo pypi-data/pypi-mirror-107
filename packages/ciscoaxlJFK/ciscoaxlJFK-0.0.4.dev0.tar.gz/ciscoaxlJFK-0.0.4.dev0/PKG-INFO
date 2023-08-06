@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ciscoaxlJFK
+Version: 0.0.4.dev0
+Summary: custom AXL/SQL Package
+Home-page: https://github.com/pypa/sampleproject
+Author: JFK
+Author-email: info@jfk.rocks
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+License-File: LICENSE
+
+ 
+        Longer description of mypackage project 
+        possibly with some documentation and/or 
+        usage examples 
+    
+
