@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: slack-click
+Version: 1.0.0
+Summary: Click support for Slack-Bolt applications
+Author: Jeremy Schulman
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (<8)
+Requires-Dist: first (>=2.0.2,<3.0.0)
+Requires-Dist: pyee (>=8.1.0,<9.0.0)
+Requires-Dist: slack-bolt (>=1.6.0,<2.0.0)
