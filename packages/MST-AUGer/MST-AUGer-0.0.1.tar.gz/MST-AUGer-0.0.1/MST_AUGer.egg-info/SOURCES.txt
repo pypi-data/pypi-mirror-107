@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+MST-AUGer/__init__.py
+MST-AUGer/data.py
+MST-AUGer/shell.py
+MST-AUGer/version.py
+MST_AUGer.egg-info/PKG-INFO
+MST_AUGer.egg-info/SOURCES.txt
+MST_AUGer.egg-info/dependency_links.txt
+MST_AUGer.egg-info/entry_points.txt
+MST_AUGer.egg-info/requires.txt
+MST_AUGer.egg-info/top_level.txt
+MST_AUGer.egg-info/zip-safe
