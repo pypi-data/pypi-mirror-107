@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: rcsb.exdb
+Version: 0.76
+Summary: RCSB Python ExDB data extraction and loading workflows
+Home-page: https://github.com/rcsb/py-rcsb_exdb
+Author: John Westbrook
+Author-email: john.westbrook@rcsb.org
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jsonschema (>=2.6.0)
+Requires-Dist: numpy
+Requires-Dist: rcsb.utils.io (>=1.00)
+Requires-Dist: rcsb.db (>=1.674)
+Requires-Dist: rcsb.utils.chemref (>=0.65)
+Requires-Dist: rcsb.utils.chem (>=0.70)
+Requires-Dist: rcsb.utils.citation (>=0.15)
+Requires-Dist: rcsb.utils.config (>=0.35)
+Requires-Dist: rcsb.utils.seq (>=0.60)
+Requires-Dist: rcsb.utils.ec (>=0.21)
+Requires-Dist: rcsb.utils.go (>=0.17)
+Requires-Dist: rcsb.utils.struct (>=0.26)
+Requires-Dist: rcsb.utils.taxonomy (>=0.31)
+Requires-Dist: rcsb.utils.dictionary (>=0.34)
+Requires-Dist: statistics ; python_version < "3.0"
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+See:  README.md
+
+
