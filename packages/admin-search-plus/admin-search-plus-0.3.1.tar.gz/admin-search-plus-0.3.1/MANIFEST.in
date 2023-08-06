@@ -1,0 +1,2 @@
+recursive-include admin_search_plus *
+recursive-exclude admin_search_plus/tests *
