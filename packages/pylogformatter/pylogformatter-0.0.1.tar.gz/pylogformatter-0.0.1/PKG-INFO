@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pylogformatter
+Version: 0.0.1
+Summary: python logging formatter. JSONFormatter、GenericFormatter、CeleryTaskFormatter
+Home-page: None
+Author: Bin Wen
+Author-email: caowb@pillar-biosciences.com
