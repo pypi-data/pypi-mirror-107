@@ -1,0 +1,71 @@
+version: '3.7'
+
+services:
+  testbrain-postgresql-service:
+    container_name: testbrain-postgresql
+    image: postgres:10.6
+    volumes:
+      - "{{DEPLOYMENT_DIR}}/var/lib/postgresql/data:/var/lib/postgresql/data"
+    command: ["postgres"]
+
+  testbrain-rabbitmq-service:
+    container_name: testbrain-rabbitmq
+    image: rabbitmq:3.7.14-management
+    volumes:
+      - "{{DEPLOYMENT_DIR}}/var/lib/rabbitmq:/var/lib/rabbitmq"
+
+  testbrain-web-service:
+    container_name: testbrain-web
+    image: appsurifyinc/testbrain:latest
+    environment:
+      DEBUG: 'True'
+      DATABASE_NAME: 'testbrain'
+      DATABASE_USERNAME: 'postgres'
+      DATABASE_PASSWORD: ''
+      DATABASE_HOST: 'testbrain-postgresql'
+      DATABASE_PORT: '5432'
+      BROKER_URL: 'amqp://guest:guest@testbrain-rabbitmq:5672//'
+      DJANGO_SETTINGS_MODULE: 'system.settings.standalone'
+    ports:
+      - 80:80
+    volumes:
+      - "{{DEPLOYMENT_DIR}}/storage:/opt/app/storage"
+      - "{{DEPLOYMENT_DIR}}/static:/opt/app/python/static"
+      - "{{DEPLOYMENT_DIR}}/media:/opt/app/python/media"
+      - "{{DEPLOYMENT_DIR}}/log:/opt/app/log"
+      - "{{DEPLOYMENT_DIR}}/run:/opt/app/run"
+      - "{{DEPLOYMENT_DIR}}/secret:/opt/app/secret"
+    command: ["web"]
+    links:
+      - testbrain-postgresql-service:testbrain-postgresql
+      - testbrain-rabbitmq-service:testbrain-rabbitmq
+    depends_on:
+      - testbrain-postgresql-service
+      - testbrain-rabbitmq-service
+
+  testbrain-worker-service:
+    container_name: testbrain-worker
+    image: appsurifyinc/testbrain:latest
+    environment:
+      DEBUG: 'True'
+      DATABASE_NAME: 'testbrain'
+      DATABASE_USERNAME: 'postgres'
+      DATABASE_PASSWORD: ''
+      DATABASE_HOST: 'testbrain-postgresql'
+      DATABASE_PORT: '5432'
+      BROKER_URL: 'amqp://guest:guest@testbrain-rabbitmq:5672//'
+      DJANGO_SETTINGS_MODULE: 'system.settings.standalone'
+    volumes:
+      - "{{DEPLOYMENT_DIR}}/storage:/opt/app/storage"
+      - "{{DEPLOYMENT_DIR}}/static:/opt/app/python/static"
+      - "{{DEPLOYMENT_DIR}}/media:/opt/app/python/media"
+      - "{{DEPLOYMENT_DIR}}/log:/opt/app/log"
+      - "{{DEPLOYMENT_DIR}}/run:/opt/app/run"
+      - "{{DEPLOYMENT_DIR}}/secret:/opt/app/secret"
+    command: ["worker"]
+    links:
+      - testbrain-postgresql-service:testbrain-postgresql
+      - testbrain-rabbitmq-service:testbrain-rabbitmq
+    depends_on:
+      - testbrain-postgresql-service
+      - testbrain-rabbitmq-service

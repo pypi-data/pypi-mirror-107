@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: testbrain
+Version: 1.1.0rc1
+Summary: Command Line Interface for Appsurify Testbrain.
+Home-page: https://appsurify.com/
+Author: Artem Demidenko
+Author-email: ar.demidenko@gmail.com
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/invertednz/Appsurify
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: Click
+Requires-Dist: requests
+Requires-Dist: configparser
+Requires-Dist: docker
+Requires-Dist: docker-compose
+Requires-Dist: shutils
+Requires-Dist: chardet
+
+Command Line Interface for Appsurify Testbrain.
+
+
