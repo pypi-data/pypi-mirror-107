@@ -1,0 +1,99 @@
+# Steganography_in_text
+
+## Скрывайте свои тайны удобно!!!
+
+------
+
+<ul>
+<li>
+<a href="#Crypter">Работа с шифратором</a>
+<ul>
+<li>
+<a href="#create_crypter">Создание шифратора</a>
+</li>
+
+<li>
+<a href="#crypter_work">Создание шифров</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Decrypter">Работа с дешифратором</a>
+<ul>
+<li>
+<a href="#create_decrypter">Создание дешифратора</a>
+</li>
+
+<li>
+<a href="#decrypter_work">Расшифровка шифров</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/red-lexinus/steganography_progect">GitHub проекта</a>
+</li>
+</ul>
+
+
+
+-----
+
+
+<h3 id="Crypter" >Шифратор</h3>
+<p id="create_crypter" style="white-space:pre-wrap;">
+"""
+Создадим наш шифратор <br>
+По умолчанию int_seed = 0 <br>
+Он необходим для первичной перемешки <br>
+списка, необходимого для шифровки <br>
+Подробнее ниже <br>
+"""
+
+from steganography_in_text import Crypter
+
+crypter = Crypter()<br>
+crypter = Crypter(int_seed)
+</p>
+<p id="crypter_work" style="white-space:pre-wrap;">
+"""<br>
+А теперь давайте зашифруем ниши сообщения<br>
+sms - будет видно после шифрации, данное сообщение будет выступать обманкой <br>
+password - это пароль типа str <br>
+secret_message - наше секретное сообщение <br>
+""" <br>
+
+message = crypter.create_message(sms, password, secret_message)
+</p>
+
+
+---
+
+<h3 id="Decrypter" >Дешифратор</h3>
+<p id="create_decrypter" style="white-space:pre-wrap;">
+"""<br>
+Создадим наш дешифратор<br>
+По умолчанию int_seed = 0<br>
+Он необходим для первичной перемешки<br>
+списка, необходимого для расшифровки<br>
+Подробнее ниже<br>
+"""<br>
+
+from steganography_in_text import Decrypter
+
+decrypter = Decrypter()<br>
+decrypter = Decrypter(int_seed)
+</p>
+<p id="decrypter_work" style="white-space:pre-wrap;">
+"""<br>
+А теперь давайте расшифруем наши сообщения<br>
+sms - это сообщение в котором возможно есть шифровка<br>
+password  - это пароль типа str<br>
+"""<br>
+
+message = decrypter.create_message(sms, password)
+</p>
+
+
+
+
+
