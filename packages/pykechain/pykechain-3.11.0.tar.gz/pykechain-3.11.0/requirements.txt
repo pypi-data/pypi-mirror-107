@@ -1,0 +1,35 @@
+# basis
+requests==2.25.1
+envparse==0.2.0
+
+# json validation (inspector)
+jsonschema==3.2.0
+
+# for version comparison
+semver==2.13.0
+
+# testing
+pytest==6.2.4
+betamax==0.8.1
+coverage<=4.5.99
+pytest-cov==2.12.0
+coveralls==3.1.0
+
+# documentation
+Sphinx==4.0.2
+nbsphinx==0.8.5
+
+# integration
+tox==3.23.1
+
+# code style
+flake8==3.9.2
+pydocstyle==6.1.1
+mypy==0.812; python_version >= '3.4'
+pre-commit==2.13.0
+
+# for package management (uploads)
+twine>=3.0.0; python_version >= '3.6'
+twine==3.4.1; python_version <= '3.5.99'
+
+pytz==2021.1
