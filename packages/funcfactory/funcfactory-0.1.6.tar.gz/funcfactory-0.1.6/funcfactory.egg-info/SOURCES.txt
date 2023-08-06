@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+funcfactory/__init__.py
+funcfactory/core.py
+funcfactory/decorators.py
+funcfactory/enums.py
+funcfactory/utils.py
+funcfactory.egg-info/PKG-INFO
+funcfactory.egg-info/SOURCES.txt
+funcfactory.egg-info/dependency_links.txt
+funcfactory.egg-info/top_level.txt
