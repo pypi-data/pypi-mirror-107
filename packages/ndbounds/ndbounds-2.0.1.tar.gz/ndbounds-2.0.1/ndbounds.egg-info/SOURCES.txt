@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ndbounds/__init__.py
+ndbounds/_api.py
+ndbounds/_bounds.py
+ndbounds/_conversion.py
+ndbounds.egg-info/PKG-INFO
+ndbounds.egg-info/SOURCES.txt
+ndbounds.egg-info/dependency_links.txt
+ndbounds.egg-info/top_level.txt
