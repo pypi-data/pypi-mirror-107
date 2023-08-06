@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: Nipher
+Version: 0.1.3
+Summary: IP lookup tool to avoid manual check.
+Home-page: https://github.com/Slyrack/Nipher
+Author: Pedro Huang
+Author-email: justhuangpedro@gmail.com
+License: MIT
+Download-URL: https://github.com/Slyrack/Nipher/archive/refs/tags/v0.1.3.tar.gz
+Description: # Nipher: a Python script to make IP Lookups
+        `Nipher` is a simple script that make multiple IP lookups to avoid to make it manually. It suports both IPV4 and IPV6.
+        
+        ## Installation
+        `Nipher` requires Python 3+.
+        
+        Use `pip` to install the package from PyPI:
+        
+        ```bash
+        pip install Nipher
+        ```
+        
+        or:
+        
+        ```bash
+        pip3 install Nipher
+        ```
+        
+        ## Usage
+        ```
+        usage: nipher [-h] [--ip IP [IP ...]] [--ipfile IPFILE] [--json] [-o OUTPUT] [-v]
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          --ip IP [IP ...]      List of IPs that will be resolved.
+          --ipfile IPFILE       File that contains the list of IPs that will be resolved.
+          --json                Saves the lookup to a .json file on the current directory.
+          -o OUTPUT, --output OUTPUT
+                                The path where to save the .json files.
+          -v, --verbose         Force complete output in the terminal.
+        
+        ```
+        >**-h** = Show the help message.
+        >
+        >**--ip** = Single or multiple IPs to make lookup. Example: `--ip 47.162.238.182 218.96.78.50 26.121.88.46`
+        >
+        >**--ipfile** = File that contains multiple IPs to make lookup. Example: `--ipfile /path/to/myfile.txt`
+        >
+        >**--json** = Param that tells the script to save the lookup result in a .json file in the current directory. [Example file](https://jsonblob.com/9e1426d0-c066-11eb-a8c9-718ff0b27e56).
+        >
+        >**-o**/**--output** = Custom path where the script should save the .json file. Example: `-o /my/custom/path`
+        >
+        >**-v**/**--verbose** = Param that tells the script to force a complete verbose, showing all the informations of all IPs. Warning: can increase total lookup time with much IPs.
+        
+        ## Additional Information
+        Nipher uses the [Ip-api API](https://ip-api.com/docs/api:json) that have some limitations, such as 45 lookups per minute. It respects the ratelimits of the API, so you don't need to worry about exploding the API and getting IP banned or think about bypass the ratelimits. Anyway, it is planned that in the future Nipher will support proxies.
+        
+        Furthermore, Nipher works in a linear sequence, no multithreaded (its planned to be implemented soon too). This way, it can lookups approximately 200 IPs in 3 minutes (can change by the API response time).
+        
+        ## TODO
+        - [ ] Implement proxy usage
+        - [ ] Implement multithreading
+        - [ ] Implement better information logging
+        - [ ] Implement API fallback to avoid `Ip-api API` ratelimits
+        
+        ## Example videos
+        **Lookup with IP file and verbose:**
+        [![asciicast](https://asciinema.org/a/GkfSiRdfMJ8S4ghWpOmDL46xB.svg)](https://asciinema.org/a/GkfSiRdfMJ8S4ghWpOmDL46xB)
+        
+        **Lookup with IP list:**
+        [![asciicast](https://asciinema.org/a/c45gX2zy1zFc75S3ORtSrt59b.svg)](https://asciinema.org/a/c45gX2zy1zFc75S3ORtSrt59b)
+        
+        **Lookup with IP file without verbose:**
+        [![asciicast](https://asciinema.org/a/B7leHeH4y5Amz4RKKEzBbGVGZ.svg)](https://asciinema.org/a/B7leHeH4y5Amz4RKKEzBbGVGZ)
+        
+Keywords: Nipher,IP Lookup,IP Geolocation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
