@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: scraperlib
+Version: 1.0.0
+Summary: Fuzzy logic tool box as matlab
+Home-page: https://github.com/Luferov/FuzzyLogicToolBox
+Author: Luferov V.S.
+Author-email: lyferov@yandex.ru
+License: UNKNOWN
+Description: # Описание библиотеки
+        
+        Пример входной структуры данных
+        
+        ```python
+        
+        document = {
+            '/sveden': {
+                'uchredLaw': ['nameUchred', 'fullnameUchred', 'addressUchred', 'telUchred', 'mailUchred', 'websiteUchred'],
+                'repInfo': ['nameRep', 'adressPlace', 'workTimeRep', 'emailRep'],
+                'regDate': None,
+                'address': None,
+                'workTime': None,
+                'telephone': None,
+                'fax': None,
+                'email': None
+            },
+            '/sveden/education': {
+                    'eduOp': {
+                        'eduCode': None,
+                        'eduName': None,
+                        'eduLevel': None,
+                        'eduForm': None,
+                        'opMain': None,
+                        'educationPlan': None,
+                        'educationShedule': None,
+                        'educationAnnotation': None
+                    }
+                },
+            '/sveden/employees': {
+                'teachingStaff': {
+                    'fio': None,
+                    'post': None,
+                    'teachingQual': None,
+                    'degree': None,
+                    'academStat': None,
+                    'employeeQualification': None,
+                    'teachingLevel': None,
+                    'teachingDiscipline': None,
+                    'profDevelopment': None,
+                    'genExperience': None,
+                    'specExperience': None
+                }
+            }
+        }
+        
+        ```
+Platform: any
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

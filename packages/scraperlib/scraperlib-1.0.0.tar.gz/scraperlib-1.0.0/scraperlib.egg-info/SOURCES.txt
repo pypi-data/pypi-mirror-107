@@ -1,0 +1,8 @@
+setup.py
+scraper/__init__.py
+scraper/scraper.py
+scraperlib.egg-info/PKG-INFO
+scraperlib.egg-info/SOURCES.txt
+scraperlib.egg-info/dependency_links.txt
+scraperlib.egg-info/requires.txt
+scraperlib.egg-info/top_level.txt
