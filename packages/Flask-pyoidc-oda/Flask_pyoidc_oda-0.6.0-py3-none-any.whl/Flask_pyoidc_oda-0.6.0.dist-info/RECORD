@@ -1,0 +1,13 @@
+flask_pyoidc/__init__.py,sha256=iQTENJgXjCLieiJ_wIt3Pagl9-335_ohEcl33sR15do,88
+flask_pyoidc/auth_response_handler.py,sha256=ZnfyusOrae4pzUZc_FHCz9EHKrl1B0pCKIaam9qE5Fs,4060
+flask_pyoidc/flask_pyoidc.py,sha256=XGyLMsyYr0WvqBob9izVBu5XSv6qWmYteliydQWNDKA,17375
+flask_pyoidc/parse_fragment.html,sha256=3zyoeoGV0L3NY9ftu_JgacsA5tAr7XS_BJQO2IppaPc,501
+flask_pyoidc/provider_configuration.py,sha256=8_MTh-xe7jV1MGSaLfetsIoJNotlvuImfPnrnZYqPnA,6868
+flask_pyoidc/pyoidc_facade.py,sha256=aQLwv2xk3wXI2pA-jsziCWIRrKeHQ_vijy1V0VhuU1A,7817
+flask_pyoidc/rbac_checker.py,sha256=snoOUzmxZPzgkY6Kb1abpb4gfc8gn_3OzM4iJkwrkKM,2310
+flask_pyoidc/user_session.py,sha256=r38FegnZ9VCB3FVI7iB0sFvnj08GZ4j34x2dH2b3iOY,3678
+Flask_pyoidc_oda-0.6.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+Flask_pyoidc_oda-0.6.0.dist-info/METADATA,sha256=6DvvOJqdeQ9kNjshVnudN4GGEEFgF0vC41aGXiKr0Ls,1506
+Flask_pyoidc_oda-0.6.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Flask_pyoidc_oda-0.6.0.dist-info/top_level.txt,sha256=gcaUKy4F97xZ8HublXZi3bjZdYyj4-5p2FJy-jvjE4o,13
+Flask_pyoidc_oda-0.6.0.dist-info/RECORD,,
