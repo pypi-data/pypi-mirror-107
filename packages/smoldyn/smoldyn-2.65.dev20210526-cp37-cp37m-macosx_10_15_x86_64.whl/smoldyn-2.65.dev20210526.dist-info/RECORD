@@ -1,0 +1,16 @@
+smoldyn-2.65.dev20210526.dist-info/RECORD,,
+smoldyn-2.65.dev20210526.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+smoldyn-2.65.dev20210526.dist-info/entry_points.txt,sha256=ssvZLL7pvQTaAo4MagqjCWJOuHKyB4N1Mel9YnV4USk,111
+smoldyn-2.65.dev20210526.dist-info/top_level.txt,sha256=2FmedD0M8FnH4zNLmZCw84tbGuurvZfurkH4l4zSybQ,8
+smoldyn-2.65.dev20210526.dist-info/METADATA,sha256=-CkhVAe_JZ2J3cfn_ZZ8xu9wufwm7Lx-HqG1SQ_lYck,2703
+smoldyn/smoldyn.py,sha256=7is3Og_w2fB8wPJwbNMdBl_Pi7BNNEIpVv34vN3cZGk,77682
+smoldyn/_smoldyn.cpython-37m-darwin.so,sha256=KAUEVRk-vrjTk7CLwa7Uhc-fpDewUC5wLpa6k_zU7wM,1785536
+smoldyn/__init__.py,sha256=VP_zCcXkmkY3sTHu4pUw6fADpQKGrB8zHltr7FjuMmk,216
+smoldyn/types.py,sha256=f5V2ONb7or4vFKLCi_gyCL6vtqdvn1j5MinFmyFxi48,1155
+smoldyn/utils.py,sha256=DYhkM9yei_3lLs5aK6fzis0fg6wo_CGvF9-QuMkXMqQ,1119
+smoldyn/__main__.py,sha256=8veHhD1PRzjqFKfW8EhmHDFEud3fps3K_hPX2cSWVOw,926
+smoldyn/biosimulators/combine.py,sha256=_t3fgIXyQvfOCXb01a8EBDpqJOiksTD6sbFDJNkSPnI,25194
+smoldyn/biosimulators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smoldyn/biosimulators/__main__.py,sha256=CF0NqYT_HrXUrwyMEDhxJrUEqI6DEnk9-upNqDy0zxo,512
+smoldyn/.dylibs/libjpeg.9.dylib,sha256=hMWrhY6Jm9OD2eqzT6Hqv7iqtudniP2S8CbQGnulxpg,219172
+smoldyn/.dylibs/libtiff.5.dylib,sha256=e4h4W3_50f5Wr9Grw_yA7twxkfuYc-WrwAYEO_9U3SI,477000
