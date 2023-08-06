@@ -1,0 +1,3 @@
+lxml
+dataclasses; python_version < '3.7'
+iso8601

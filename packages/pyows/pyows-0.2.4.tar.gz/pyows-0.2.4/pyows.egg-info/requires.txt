@@ -1,0 +1,5 @@
+iso8601
+lxml
+
+[:python_version < "3.7"]
+dataclasses
