@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+uniphi/__init__.py
+uniphi/aesCipher.py
+uniphi/common.py
+uniphi/constants.py
+uniphi/exceptions.py
+uniphi/sqlalchemy_uniphi.py
+uniphi/typeId.py
+uniphi/uniphi.py
+uniphi.egg-info/PKG-INFO
+uniphi.egg-info/SOURCES.txt
+uniphi.egg-info/dependency_links.txt
+uniphi.egg-info/entry_points.txt
+uniphi.egg-info/requires.txt
+uniphi.egg-info/top_level.txt
