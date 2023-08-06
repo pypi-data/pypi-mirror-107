@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+nqviz/__init__.py
+nqviz/board.py
+nqviz/n_queen.py
+nqviz.egg-info/PKG-INFO
+nqviz.egg-info/SOURCES.txt
+nqviz.egg-info/dependency_links.txt
+nqviz.egg-info/not-zip-safe
+nqviz.egg-info/requires.txt
+nqviz.egg-info/top_level.txt
