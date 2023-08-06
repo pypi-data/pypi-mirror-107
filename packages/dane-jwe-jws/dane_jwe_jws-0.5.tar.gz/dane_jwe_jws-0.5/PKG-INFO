@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: dane_jwe_jws
+Version: 0.5
+Summary: A library for using DANE for identity-secured JWE and JWS.
+Home-page: https://github.com/valimail/dane_jwe_jws
+Author: Ash Wilson
+Author-email: ash.d.wilson@gmail.com
+License: BSD
+Keywords: dane tlsa dns jwe jws
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+
+============
+dane_jwe_jws
+============
+
+A library for using JWE and JWS with DANE for identity-secured messaging.
+
+
+This library enables the easy generation of signed and encrypted messages,
+using TLSA records in DNS for public key discovery. This library places the
+DNS URI in the ``x5u`` protected header field. The receiving party uses this
+field for discovering the public key which is used for verifying message
+payload.
+
+Note: Currently, only RSA public keys are supported (RSA-OAEP-256 for
+encryption and RS256 for signing)
+
+.. image:: https://readthedocs.org/projects/dane-jwe-jws/badge/?version=latest
+    :target: https://dane-jwe-jws.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
+.. image:: https://circleci.com/gh/ValiMail/dane-jwe-jws.svg?style=shield
+    :target: https://circleci.com/gh/ValiMail/dane-jwe-jws
+
+
+.. image:: https://api.codeclimate.com/v1/badges/8a46b39865a6f88dc31c/maintainability
+   :target: https://codeclimate.com/github/ValiMail/dane_jwe_jws/maintainability
+   :alt: Maintainability
+
+
+.. image:: https://api.codeclimate.com/v1/badges/8a46b39865a6f88dc31c/test_coverage
+   :target: https://codeclimate.com/github/ValiMail/dane_jwe_jws/test_coverage
+   :alt: Test Coverage
+
+
+Quick Start
+===========
+
+Installation
+------------
+
+``pip install dane-jwe-jws``
+
+
+Encrypt a message using a DANE-represented identity
+---------------------------------------------------
+
+.. code-block:: python
+
+    from dane_jwe_jws.encryption import Encryption
+    test_message = "hello world!!"
+    identity_name = "dns.name.where.cert.lives.in.a.tlsa.record"
+    encrypted = Encryption.encrypt(test_message, identity_name)
+    print(encrypted)
+
+
+`More examples <https://dane-jwe-jws.readthedocs.io/en/latest/getting_started.html>`_
+
+Changelog
+=========
+
+
+v0.5
+----
+
+Fix
+~~~
+- Fix issue where only PKIX-CD certs were retrieved for authentication.
+  [Ash Wilson]
+
+  Close #9
+
+
+v0.4 (2021-05-28)
+-----------------
+
+Changes
+~~~~~~~
+- Improve flexibility of Utility.get_pubkey_from_dns(). [Ash Wilson]
+
+  Unspecified ``dane_type`` argument for Util.get_pubkey_from_dns()
+  will cause the first entity certificate of any type to be returned.
+
+  Close #7
+
+
+v0.3 (2021-05-19)
+-----------------
+
+Changes
+~~~~~~~
+- Update CHANGELOG.rst. [Ash Wilson]
+- Add strict mode support. [Ash Wilson]
+
+  Closes #1
+
+Other
+~~~~~
+- Build(deps): bump dane-discovery from 0.6 to 0.11. [dependabot[bot]]
+
+  Bumps [dane-discovery](https://github.com/valimail/dane_discovery) from 0.6 to 0.11.
+  - [Release notes](https://github.com/valimail/dane_discovery/releases)
+  - [Commits](https://github.com/valimail/dane_discovery/commits)
+- Build(deps): update pytest requirement from ~=6.0 to ~=6.2.
+  [dependabot[bot]]
+
+  Updates the requirements on [pytest](https://github.com/pytest-dev/pytest) to permit the latest version.
+  - [Release notes](https://github.com/pytest-dev/pytest/releases)
+  - [Changelog](https://github.com/pytest-dev/pytest/blob/main/CHANGELOG.rst)
+  - [Commits](https://github.com/pytest-dev/pytest/compare/6.0.0...6.2.4)
+- Build(deps): update pytest-cov requirement from ~=2.10 to ~=2.12.
+  [dependabot[bot]]
+
+  Updates the requirements on [pytest-cov](https://github.com/pytest-dev/pytest-cov) to permit the latest version.
+  - [Release notes](https://github.com/pytest-dev/pytest-cov/releases)
+  - [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst)
+  - [Commits](https://github.com/pytest-dev/pytest-cov/compare/v2.10.0...v2.12.0)
+- Build(deps): update sphinx requirement from ~=3.1 to ~=4.0.
+  [dependabot[bot]]
+
+  Updates the requirements on [sphinx](https://github.com/sphinx-doc/sphinx) to permit the latest version.
+  - [Release notes](https://github.com/sphinx-doc/sphinx/releases)
+  - [Changelog](https://github.com/sphinx-doc/sphinx/blob/4.x/CHANGES)
+  - [Commits](https://github.com/sphinx-doc/sphinx/compare/v3.1.0...v4.0.1)
+
+
+v0.2 (2020-09-14)
+-----------------
+
+Fix
+~~~
+- Correct parsing of DNS URI for message verification. [Ash Wilson]
+
+
+v0.1 (2020-08-05)
+-----------------
+
+New
+~~~
+- Initial commit. [Ash Wilson]
+
+
+
+
