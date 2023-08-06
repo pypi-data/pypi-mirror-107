@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: metrics-exporter
+Version: 0.0.1
+Summary: Metrics exporter.
+Home-page: https://github.com/WikiCommunityHealth/metrics_exporter
+Author: Alessio Gandelli & Nicola Toscan
+License: MIT
+Description: # metrics_exporter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
