@@ -1,0 +1,12 @@
+blitzen/__init__.py,sha256=l7oL6ceju5JcKN-PM-hW1NhLdsnkBzTtP4GufxtePEI,147
+blitzen/base.py,sha256=FS8ieI9JSjwojtBYl1LxxqE51yhzMeh7EJUPBTGReJg,1392
+blitzen/distributed.py,sha256=vmwmDoqa1pbprVx7KDbDlsnAWAEVc8N_YIO_eCBWb0M,6916
+blitzen/logging.py,sha256=OiKXgxr8NvePgFZooMxjxOVXFr4AKxfS9QZGYlfNfLA,1219
+blitzen/managers.py,sha256=pJGfdOpasUSUEVJAPAXWTG0XVDKpOnnNeVjswAKxKBE,17942
+blitzen/multicore.py,sha256=3-sYqjCgv5UDq-h1vw-c0XAWd4UwqlbiHyCOcfc45U4,9174
+blitzen/utils.py,sha256=t9zf20BX7NsX39dGf3ZIODm0K4zLe9zA3MrN866M-c0,5661
+blitzen-1.0.0.dist-info/LICENSE,sha256=jtSUGL4ZZo3W2WyZF9-EXrYahnZhOUxDF34D-70Qh9E,1090
+blitzen-1.0.0.dist-info/METADATA,sha256=IXXGaNS--o35rkochRrJmmtjHVizLhJSMCAKK4JMS28,5784
+blitzen-1.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+blitzen-1.0.0.dist-info/top_level.txt,sha256=hL5cswQ-rsmOqpnAWEW65hrLiziCDNCRN7mQRv4UbyE,8
+blitzen-1.0.0.dist-info/RECORD,,
