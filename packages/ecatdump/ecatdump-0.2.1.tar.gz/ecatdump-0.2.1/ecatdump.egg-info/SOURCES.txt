@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+ecatdump/__init__.py
+ecatdump/cli.py
+ecatdump/ecat_dump.py
+ecatdump/helper_functions.py
+ecatdump.egg-info/PKG-INFO
+ecatdump.egg-info/SOURCES.txt
+ecatdump.egg-info/dependency_links.txt
+ecatdump.egg-info/entry_points.txt
+ecatdump.egg-info/not-zip-safe
+ecatdump.egg-info/requires.txt
+ecatdump.egg-info/top_level.txt
