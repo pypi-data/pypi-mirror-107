@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+qtcompat/__init__.py
+qtcompat/__version__.py
+qtcompat.egg-info/PKG-INFO
+qtcompat.egg-info/SOURCES.txt
+qtcompat.egg-info/dependency_links.txt
+qtcompat.egg-info/requires.txt
+qtcompat.egg-info/top_level.txt
