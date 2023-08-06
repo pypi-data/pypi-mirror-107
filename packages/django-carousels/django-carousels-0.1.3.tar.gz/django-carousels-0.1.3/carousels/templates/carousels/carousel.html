@@ -1,0 +1,26 @@
+{% load i18n %}
+
+{% if not carousel %}
+    {% blocktrans with slug=slug %}Carousel {{ slug }} not found{% endblocktrans %}
+{% else %}
+    <div class="owl-carousel" id="carousel-{{ carousel.slug }}">
+        {% for slide in carousel.slide_set.all %}
+            <div class="carousel-slide" {% if slide.background %}style="background-image: url('{{ slide.background.url }}');"{% endif %}>
+                {% if slide.title %}
+                    <span class="slide-title">{{ slide.title }}</span>
+                {% endif %}
+                {% if slide.text %}
+                    <p class="slide-text">{{ slide.text }}</p>
+                {% endif %}
+                {% if slide.button and slide.url %}
+                    <a class="slide-button btn btn-primary" href="{{ slide.url }}">{{ slide.button }}</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#carousel-{{ carousel.slug }}.owl-carousel').owlCarousel({{ carousel.settings_as_json|safe }});
+        });
+    </script>
+{% endif %}
