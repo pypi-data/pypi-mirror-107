@@ -1,0 +1,17 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reversemx/__init__.py,sha256=uT6VeXVEb78DgR-jc0yoCvxqLl7P8qlc6niUA9Y6s_c,570
+reversemx/client.py,sha256=sWdPx10DeRCMd4DkBjSOiP-Y-vLdeO_wd5ZKWieqB7U,8349
+reversemx/version.py,sha256=jkFrkEtHP-9mUURXyTBsLG2jbugjq34oI74SBGjX4ak,53
+reversemx/exceptions/__init__.py,sha256=IvcQRcev59Mu5ftDRTKi1qMB28exIKit3X4KPa27olE,320
+reversemx/exceptions/error.py,sha256=j5qzNm57GlEvGY-vetB85OcV3FitzaLRWj0yfR0ITl8,1448
+reversemx/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reversemx/models/base.py,sha256=mKtZyPr3ua_I3r_uLDf5eWNIHWDc19RVPG6BWOpoJ7A,655
+reversemx/models/response.py,sha256=zrzpA4eNGHEepCXRGFwHmkgSeWktAvz1fBZXFdpCGxk,2841
+reversemx/net/__init__.py,sha256=b5FDgWol-x3XW8wx80ESCh499sV_wi3xKTUUdwVMLVE,59
+reversemx/net/http.py,sha256=eUorQATmLJAWdrttuQ7AmLuZMLLXdWoOtIaJ-bUHFlM,2879
+reverse_mx-1.0.0.dist-info/AUTHORS.rst,sha256=wKKJiCJcXUKNxrlTA0Pj8nwFyWtiFCkDJrXvvMO1mUw,81
+reverse_mx-1.0.0.dist-info/LICENSE,sha256=J6hvewcCDZFAbCOmjsNhaGamgb9SIikx5eBv5neMn7E,1058
+reverse_mx-1.0.0.dist-info/METADATA,sha256=A8HmhEr77F5D_K7MocsXbjeuaO5Ddk4Fv-C1g6TBgCs,2807
+reverse_mx-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+reverse_mx-1.0.0.dist-info/top_level.txt,sha256=K_PVDTBDxFyD3HtEPvS0pF7ue1Gezl84IMtD71gfEdg,19
+reverse_mx-1.0.0.dist-info/RECORD,,
