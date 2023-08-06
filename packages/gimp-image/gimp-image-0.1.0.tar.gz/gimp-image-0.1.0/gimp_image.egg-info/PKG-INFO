@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gimp-image
+Version: 0.1.0
+Summary: A utils package to bridge between GIMP/Gegl/Gtk objects and Python/NumPy/Scipy ones.
+Home-page: https://github.com/isman7/gimp-python-development/
+Author: ibenito
+Author-email: ismaelbenito@protonmail.com
+License: GNU GPLv3
+Description: # A set of tools to deal with GIMP images
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
