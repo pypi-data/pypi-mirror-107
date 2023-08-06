@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: donb-gallery
+Version: 1.0.1
+Summary: A gallery QWidget for managing objects through tags
+Home-page: UNKNOWN
+Author: Don Beberto
+Author-email: bebert64@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pyside6
+Requires-Dist: donb-custom-widget
+Requires-Dist: donb-tools
+Requires-Dist: donb-config[toml]
+Requires-Dist: peewee
+
+TODO : write an example of usage (MyGalery(options...))
+
+
+The object can have:
+
+    - thumbnail_path function, returning a path to the thumbnail to
+    be displayed on the cell's background (used by cell_widget).
+
+    - actions : tuple (libelle, function) used to create a context menu when clicked on
+    the cell. A line will be created in the menu, with the text libelle, and function
+    will be called when the line is clicked (used by cell_widget).
+
