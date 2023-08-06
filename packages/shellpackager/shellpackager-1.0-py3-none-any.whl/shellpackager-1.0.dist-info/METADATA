@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shellpackager
+Version: 1.0
+Summary: simple project, simple life
+Home-page: UNKNOWN
+Author: madhavth
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: setuptools
+Requires-Dist: twine
+
+cli tool to create pypi project from shell scripts
+
+
