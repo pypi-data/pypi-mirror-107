@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Py_Focus.egg-info/PKG-INFO
+src/Py_Focus.egg-info/SOURCES.txt
+src/Py_Focus.egg-info/dependency_links.txt
+src/Py_Focus.egg-info/top_level.txt
