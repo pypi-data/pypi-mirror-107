@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+h3pandas/__init__.py
+h3pandas/h3pandas.py
+h3pandas/test_h3pandas.py
+h3pandas.egg-info/PKG-INFO
+h3pandas.egg-info/SOURCES.txt
+h3pandas.egg-info/dependency_links.txt
+h3pandas.egg-info/requires.txt
+h3pandas.egg-info/top_level.txt

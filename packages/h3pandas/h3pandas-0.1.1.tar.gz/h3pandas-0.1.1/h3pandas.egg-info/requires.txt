@@ -1,0 +1,15 @@
+geopandas
+pandas
+shapely
+h3
+numpy
+
+[docs]
+sphinx
+numpydoc
+pytest-sphinx-theme
+
+[test]
+pytest
+pytest-cov
+flake8
