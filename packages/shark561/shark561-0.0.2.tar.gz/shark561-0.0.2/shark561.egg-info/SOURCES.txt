@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+shark561/__init__.py
+shark561/moduleA.py
+shark561.egg-info/PKG-INFO
+shark561.egg-info/SOURCES.txt
+shark561.egg-info/dependency_links.txt
+shark561.egg-info/top_level.txt
