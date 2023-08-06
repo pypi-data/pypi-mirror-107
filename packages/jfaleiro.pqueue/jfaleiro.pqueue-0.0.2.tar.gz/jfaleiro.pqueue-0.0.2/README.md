@@ -1,0 +1,85 @@
+# pqueue
+
+A simple priority queue for use cases in computational finance.
+
+Priority queues are one of the most commonly used structures in computational finance. One example are Central Limit Orders Books, or [CLOBS](https://en.wikipedia.org/wiki/Central_limit_order_book), in which the priority of the execution of orders is given by an orders' price. This specific implementation uses a [heap structure](https://en.wikipedia.org/wiki/Heap_(data_structure)) where the priority is prepended to the search key. For CLOB orders the priority is the price of an order.
+
+The original implementation of this library was done over an afternoon far back in 2016 to support agent simulations in my [doctorate thesis](https://repository.essex.ac.uk/21782/).
+
+See _LICENSE_ for important licensing information.
+
+## Instalation
+
+```bash
+pip install jfaleiro.pqueue
+```
+
+Or as a dependency in [`poetry`](https://python-poetry.org/):
+
+```bash
+poetry add jfaleiro.pqueue
+poetry update
+```
+
+## Use
+
+Say for example you have any structure, like this one, to represent an order:
+
+```python
+class NewOrder(NamedTuple):
+    """ based on https://www.fixglobal.com/home/trader-fix-tags-reading/ """
+    side: OrderSideEnum
+    symbol: str
+    quantity: int
+    price: Decimal
+    id: str = None
+    instruction: OrderExecutionInstruction = OrderExecutionInstruction.ALL_OR_NONE
+    time_in_force: OrderTimeInForceEnum = OrderTimeInForceEnum.GOOD_TIL_CANCEL
+    type: OrderTypeEnum = OrderTypeEnum.LIMIT
+```
+
+And a book with orders falling on either bid (buy orders) or asks (sell orders) side:
+
+```python
+bids = Heap()
+asks = Heap(reverse=True)
+```
+
+As you probably know, the `reverse=True` is used because orders in an "asks" side are reversed, i.e. lower prices cross before higher prices.
+
+You can add new orders in either side by using a `push`. You need do specify an `id` and a `priority`. For example, to book a new buy order the `item` is of course the order, the `priority` is the price, and the `id` is the order's id:
+
+```python
+bids.push(id=order.id, priority=order.price, item=order)
+```
+
+Adding a sell order is exactly the same. The `reverse=True` takes care of the reverse priority:
+
+```python
+asks.push(id=order.id, priority=order.price, item=order)
+```
+
+If you have an `id` of a previously booked order, you can cancel orders as easily with a `remove`:
+
+```python
+bids.remove(id=action.id)
+```
+
+You can verify crosses with a `peek`, for example, if want to verify if a cross occurred:
+
+```python
+if asks.peek().price <= bids.peek().price:
+  print('a cross happened!!')
+```
+
+After which you might want to cross (execute) orders on the top of each side:
+
+```python
+ask_order = asks.pop()
+...
+bid_order = bids.pop()
+```
+
+And that does it. It is so simple and short that you can see it as just another proof that finding the adequate patterns is 99% of any solution in engineering. Computational finance is of course no exception.
+
+You can check this [implementation of an order book](https://gitlab.com/jfaleiro/orderbook) for a full example of use of `pqueue`.

@@ -1,0 +1,97 @@
+#
+#     pqueue - A simple priority queue for use cases in computational finance.
+#
+#     Copyright (C) 2016 Jorge M. Faleiro Jr.
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU Affero General Public License as published
+#     by the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU Affero General Public License for more details.
+#
+#     You should have received a copy of the GNU Affero General Public License
+#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+# use with:
+# Makefiles:
+#   ( POETRY_VERSION=$(shell scmversion version); envsubst < pyproject.template.toml >| pyproject.toml )
+# Bash:
+#   export POETRY_VERSION=`scmversion version` && envsubst < pyproject.template.toml >| pyproject.toml
+# In QuantLET:
+#   bin/tag-version.sh
+
+[tool.poetry]
+name = "jfaleiro.pqueue"
+version = "0.0.2"
+description = 'A simple priority queue for use cases in computational finance'
+authors = ["Jorge M Faleiro Jr <j@falei.ro>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://gitlab.com/jfaleiro.open/pqueue"
+packages = [
+    # because main package is different than project's name
+    {include = "jfaleiro_pqueue"}
+]
+
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.scripts]
+# scmversion = "setup_scmversion.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+# extras
+# move to dev-dependencier or use groups
+# https://github.com/python-poetry/poetry/issues/1644
+pre-commit = { version="^2.10.1", optional=true }
+autopep8 = { version="^1.5.5", optional=true }
+isort = { version="^5.7.0", optional=true }
+pylint = { version="^2.7.0", optional=true }
+flake8 = { version="^3.8.4", optional=true }
+rope = { version="^0.18.0", optional=true }
+pytest = { version="^6.2.2", optional=true }
+coverage = { version="^5.4", optional=true }
+PyHamcrest = { version="^2.0.2", optional=true }
+behave = { version="^1.2.6", optional=true }
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.extras]
+interactive-dev = [
+    "pre-commit",
+    "autopep8",
+    "isort",
+    "pylint ",
+    "flake8",
+    "rope",
+]
+tests = [
+   "pytest",
+   "PyHamcrest",
+   "behave"
+]
+coverage = [
+   "pytest",
+   "PyHamcrest",
+   "coverage"
+]
+
+[build-system]
+requires = [
+    "poetry_core>=1.0.0",
+]
+build-backend = "poetry.core.masonry.api"
