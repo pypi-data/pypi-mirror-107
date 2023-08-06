@@ -1,0 +1,15 @@
+README.md
+setup.py
+jsonify_opening_hours.egg-info/PKG-INFO
+jsonify_opening_hours.egg-info/SOURCES.txt
+jsonify_opening_hours.egg-info/dependency_links.txt
+jsonify_opening_hours.egg-info/requires.txt
+jsonify_opening_hours.egg-info/top_level.txt
+opening_hours/__init__.py
+opening_hours/parse_opening_hours.py
+opening_hours/patterns.py
+opening_hours/models/__init__.py
+opening_hours/models/day.py
+opening_hours/models/days.py
+opening_hours/models/time.py
+opening_hours/models/times.py
