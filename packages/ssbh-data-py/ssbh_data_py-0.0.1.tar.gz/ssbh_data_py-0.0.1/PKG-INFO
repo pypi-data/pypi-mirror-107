@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ssbh_data_py
+Version: 0.0.1
+Summary: Python bindings to the ssbh_data Rust library
+Home-page: https://github.com/ScanMountGoat/ssbh_data_py
+Author: ScanMountGoat
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ScanMountGoat/ssbh_data_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ssbh_data_py
+Python bindings to the [ssbh_data](https://github.com/ultimate-research/ssbh_lib) Rust library.
+
+

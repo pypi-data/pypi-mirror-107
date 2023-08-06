@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ssbh_data_py/__init__.py
+src/ssbh_data_py.egg-info/PKG-INFO
+src/ssbh_data_py.egg-info/SOURCES.txt
+src/ssbh_data_py.egg-info/dependency_links.txt
+src/ssbh_data_py.egg-info/top_level.txt
