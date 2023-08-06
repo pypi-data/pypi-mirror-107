@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ICalculationManager/__init__.py
+src/ICalculationManager/calculation_manager_pb2.py
+src/ICalculationManager/calculation_manager_pb2_grpc.py
+src/ICalculationManager_ncn.egg-info/PKG-INFO
+src/ICalculationManager_ncn.egg-info/SOURCES.txt
+src/ICalculationManager_ncn.egg-info/dependency_links.txt
+src/ICalculationManager_ncn.egg-info/top_level.txt
+src/ISimulationNode/__init__.py
+src/ISimulationNode/simulation_node_pb2.py
+src/ISimulationNode/simulation_node_pb2_grpc.py
