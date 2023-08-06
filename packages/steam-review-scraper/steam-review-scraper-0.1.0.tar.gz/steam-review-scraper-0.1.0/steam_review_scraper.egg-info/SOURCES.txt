@@ -1,0 +1,9 @@
+README.md
+setup.py
+steam_review_scraper/__init__.py
+steam_review_scraper/scraper.py
+steam_review_scraper.egg-info/PKG-INFO
+steam_review_scraper.egg-info/SOURCES.txt
+steam_review_scraper.egg-info/dependency_links.txt
+steam_review_scraper.egg-info/requires.txt
+steam_review_scraper.egg-info/top_level.txt
