@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: andriatina-mail-sender
+Version: 0.0.7
+Summary: short Mail sender
+Home-page: UNKNOWN
+Author: Andriatina Ranaivoson
+Author-email: andriatina@aims.ac.za
+License: UNKNOWN
+Keywords: python,mail package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Mail sender gmail smtp
+
+
