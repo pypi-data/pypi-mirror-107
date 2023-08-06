@@ -1,0 +1,13 @@
+alteia_cli/__init__.py,sha256=YCdgKU89uuOiQ7s-AZlxlhw6KkM0BJZGBVHAsjx0-qk,66
+alteia_cli/analytics.py,sha256=JFo8v2Gd-XQS25SyJXHogMOwF01CU-r7gL1ea8y7dDM,30049
+alteia_cli/config.py,sha256=QBrUE-yOgeb5iFc5J6FFVfeblQenbKjQ1CK-kjPDKxc,5295
+alteia_cli/credentials.py,sha256=oCq80zSda7ZG7wTqsHExy1ADAZhTnLTZA_Ivezrs8Yg,4936
+alteia_cli/main.py,sha256=tmxXMPaNCCPanQ5hHluRap0-YvUzNDZfMQC4lt9eHe0,527
+alteia_cli/products.py,sha256=Q0Al99LwuC-wdjibo5nC1OASdm7B9X4CKIyVjHM6zuE,5558
+alteia_cli/sdk.py,sha256=EKSS02JsGmY_EKemgC6bqVVY5pQcKrLc8pM5OFTX8mA,615
+alteia_cli/share/analytic_schema.yaml,sha256=yMYdDLp5En3MX01ueq-mobhgk0jiaapTeO4vhSNcIYM,2840
+alteia_cli/utils.py,sha256=5gtz6ttzOc__6QkdmvxNeVWCd_ZROv_8b-gATT5Ld7c,2207
+alteia_cli-1.1.0.dist-info/entry_points.txt,sha256=pCpY8th0K51k22Sm4eYDzAJCp2zd0Rc17eg9doV7cIc,46
+alteia_cli-1.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+alteia_cli-1.1.0.dist-info/METADATA,sha256=TPtBRAm6tM28QUMUgQsLRyTgCuWLMKVoXwVfeeyJPas,6598
+alteia_cli-1.1.0.dist-info/RECORD,,
