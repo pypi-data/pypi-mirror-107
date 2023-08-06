@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: piglr
+Version: 0.0.1
+Summary: A Pig Reinforcement Learning Environment.
+Home-page: https://github.com/christianwlang/piglr
+Author: Christian Lang, Mike Novitsky
+Author-email: me@christianlang.io
+License: BSD
+Download-URL: https://pypi.org/project/piglr/
+Project-URL: Documentation, https://piglr.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/christianwlang/piglr
+Project-URL: Tracker, https://github.com/christianwlang/piglr/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: flake8 ; extra == 'testing'
+
+# Pig Learning Environment
+
+
