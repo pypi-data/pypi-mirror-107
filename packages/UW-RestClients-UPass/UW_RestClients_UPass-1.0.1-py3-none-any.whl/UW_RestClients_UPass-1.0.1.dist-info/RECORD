@@ -1,0 +1,17 @@
+uw_upass/VERSION,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+uw_upass/__init__.py,sha256=R4mtwjo6UdnQC9sbxKCMvhW35u0bwf7q1RP51uHRZwQ,992
+uw_upass/dao.py,sha256=diLf-xO2IOQVl9xYfDKf3_-Ak1Dt2uzasz3Ptmt6ztE,368
+uw_upass/models.py,sha256=uqAZZ1WhdEvglm-ltStuSJA8IQjLBMr9aQMoFhUThew,1212
+uw_upass/test.py,sha256=pyE-C5Wyw61t46bso3WsogqEczqHRAdjr1Xx4nKxKvw,464
+uw_upass/resources/upass/file/MyUWUpass/MyUWUpass.aspx_id_javerage,sha256=D9r76mQo5zWdB8DWiwCsiJA5inui9RAxsriuQcKPtsc,522
+uw_upass/resources/upass/file/MyUWUpass/MyUWUpass.aspx_id_javeragefac,sha256=6FqEz0g0BlOs5UjauS8hiq1D3j_vVdZVs3nTQBZVIq4,547
+uw_upass/resources/upass/file/MyUWUpass/MyUWUpass.aspx_id_jerror,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_upass/resources/upass/file/MyUWUpass/MyUWUpass.aspx_id_phil,sha256=cpCqmazvYIH5HqkWb_UGB86QtNiDYcc3U7kUxdeaVi8,168
+uw_upass/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_upass/tests/test_upass.py,sha256=bbNoAwDoEZ7ljAR1YJk-2My5AUOoPjXEOypt-qeWbBE,4022
+uw_upass/util/__init__.py,sha256=xPfZR5WltEqY8bqSKXM-4B-QEeCI3jWaqexuv4bZDcA,222
+UW_RestClients_UPass-1.0.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+UW_RestClients_UPass-1.0.1.dist-info/METADATA,sha256=pUvEK3e-0T9VoFX9Leibd46yvHPu7lj5X2-jbLujt3o,645
+UW_RestClients_UPass-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+UW_RestClients_UPass-1.0.1.dist-info/top_level.txt,sha256=XQrGIgsopqWKnZ2iwXtbezPPoPi6iy3K6YuJY1IC7NQ,9
+UW_RestClients_UPass-1.0.1.dist-info/RECORD,,
