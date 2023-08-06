@@ -1,0 +1,4 @@
+
+        [buildbot.www]
+        buildbot_enhanced_ui = buildbot_enhanced_ui:ep
+    
