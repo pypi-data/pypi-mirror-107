@@ -1,0 +1,8 @@
+[plover.command]
+textarea_clear = plover_textarea:clear_command
+textarea_close = plover_textarea:close_command
+textarea_write = plover_textarea:write_command
+
+[plover.extension]
+plover_textarea = plover_textarea.extension:Main
+

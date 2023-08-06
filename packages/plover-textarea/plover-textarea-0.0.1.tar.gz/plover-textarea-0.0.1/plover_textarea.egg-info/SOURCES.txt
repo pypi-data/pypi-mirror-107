@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_textarea/__init__.py
+plover_textarea/config.py
+plover_textarea/extension.py
+plover_textarea.egg-info/PKG-INFO
+plover_textarea.egg-info/SOURCES.txt
+plover_textarea.egg-info/dependency_links.txt
+plover_textarea.egg-info/entry_points.txt
+plover_textarea.egg-info/requires.txt
+plover_textarea.egg-info/top_level.txt
+plover_textarea.egg-info/zip-safe
