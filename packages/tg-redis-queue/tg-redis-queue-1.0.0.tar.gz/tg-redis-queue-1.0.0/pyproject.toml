@@ -1,0 +1,75 @@
+[tool.isort]
+atomic = true
+force_alphabetical_sort_within_sections = true
+include_trailing_comma = true
+known_django = "django"
+known_pytest = "pytest"
+# 120 is a random number that doesn't mean anything, it was picked because it was used in other project,
+# where it was known to make people happy
+line_length = 120
+lines_after_imports = 2
+multi_line_output = 3
+sections = "FUTURE,STDLIB,DJANGO,PYTEST,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+use_parentheses = true
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+python_files="tests.py test_*.py *_tests.py"
+
+[tool.tox]
+legacy_tox_ini = """
+
+[tox]
+isolated_build = true
+envlist = py{36,37,38,39}-redis{320,32,33,34,35}
+# Have to move tox workdir out of the project directory, since otherwise django compilemessages
+# also works on all the translation files inside virtualenvs (which is not what we want for tests) and
+# limiting the scope of compilemessages is only available since django 3.0
+toxworkdir = /tmp/tox
+
+[testenv]
+allowlist_externals  =
+    make
+    poetry
+setenv =
+    POETRY_VIRTUALENVS_CREATE=0
+deps =
+    redis320: redis==3.2.0
+    redis32: redis>=3.2.0,<3.3
+    redis33: redis>=3.3.0,<3.4
+    redis34: redis>=3.4.0,<3.5
+    redis35: redis>=3.5.0,<3.6
+passenv = REDIS_PORT REDIS_URL
+commands =
+    poetry install
+    make test
+
+[testenv:py38-redis32]
+commands =
+    poetry install
+    make quality
+    make test
+    make coverage
+"""
+
+[tool.poetry]
+name = "tg-redis-queue"
+version = "1.0.0"
+description = "Easy to use redis queue"
+authors = ["Sergey Kovalskiy <sergey@thorgate.eu>", "Jürno Ader <jyrno@thorgate.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=6.2"
+coverage = "5.5"
+prospector = ">=1.3.1"
+black = "21.4b2"
+before_after = ">=1.0.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
