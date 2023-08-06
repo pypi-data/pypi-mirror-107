@@ -1,0 +1,3 @@
+[console_scripts]
+nexus_streamer = nexus_streamer.launch_nexus_streamer:launch_streamer
+
