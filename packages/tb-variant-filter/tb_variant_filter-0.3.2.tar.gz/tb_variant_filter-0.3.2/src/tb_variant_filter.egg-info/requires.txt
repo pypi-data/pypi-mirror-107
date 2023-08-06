@@ -1,0 +1,9 @@
+intervaltree
+lxml
+pandas
+vcfpy
+requests
+py2neo>=4.2.0
+
+[test]
+pytest>=6
