@@ -1,0 +1,3 @@
+[flake8.extension]
+LPY = flake8_loopy:LoopyPlugin
+
