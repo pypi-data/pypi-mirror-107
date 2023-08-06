@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ioeeoap.egg-info/PKG-INFO
+ioeeoap.egg-info/SOURCES.txt
+ioeeoap.egg-info/dependency_links.txt
+ioeeoap.egg-info/entry_points.txt
+ioeeoap.egg-info/requires.txt
+ioeeoap.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/ioeeoap.py
