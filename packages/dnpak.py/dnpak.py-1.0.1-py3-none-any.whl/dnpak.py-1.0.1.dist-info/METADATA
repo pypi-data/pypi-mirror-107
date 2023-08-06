@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dnpak.py
+Version: 1.0.1
+Summary: A python package to manipulate DragonNest pak file
+Home-page: https://github.com/ExLog/dnpak-py
+Author: Muhammad Dony Mulya
+Author-email: exlog@protonmail.com
+License: WTFPL
+Keywords: dragonnest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
