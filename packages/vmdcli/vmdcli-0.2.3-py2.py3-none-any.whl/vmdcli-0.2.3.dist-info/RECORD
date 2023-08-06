@@ -1,0 +1,11 @@
+vmdcli/__init__.py,sha256=3_eNvmSx28DnFmQ170SJX61C0AghCqwCnje4X1Zn5DY,116
+vmdcli/_version.py,sha256=eFaaEPPToRAWoG88jCMSkeFcFDEzPqfXep7-SIcL2fk,213
+vmdcli/cli.py,sha256=KsmflE6pT6MTGWFUi4_FC0pzufpSBdEttXKMqWh5Wak,5384
+vmdcli/vmdcli.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+vmdcli-0.2.3.dist-info/AUTHORS.md,sha256=O1rpA-8Fwg2qnwz_QpSLTgubJMUvfDEjzo2hnAy7cUE,102
+vmdcli-0.2.3.dist-info/LICENSE,sha256=zg6AaPOR6skL38Uv0aEDMOX75tYUnV8qitzS9ZAjD0E,1076
+vmdcli-0.2.3.dist-info/METADATA,sha256=wnALnLkqqYHqDFYBqUly8uMNpvQEfrtKb0BpIR2AsJE,4364
+vmdcli-0.2.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+vmdcli-0.2.3.dist-info/entry_points.txt,sha256=JgZxQ320XybDnenxhUiQq2KdB-s-0PA-iFQBGS1C1GU,45
+vmdcli-0.2.3.dist-info/top_level.txt,sha256=oFm2PRvOqWnuMLDKA5pKjy0fJse5VEdSZ_yGcMnc0pM,7
+vmdcli-0.2.3.dist-info/RECORD,,
