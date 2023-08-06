@@ -1,0 +1,12 @@
+dpixels/__init__.py,sha256=P4uQAW1Wf29RzzvMH6bxzRtSrQCY9e7RiaXAC-nUQRM,340
+dpixels/autodraw.py,sha256=ikDAdFat1W0ON2_iORqbr3V9Wrqfj16DbvZE0OphsKI,3433
+dpixels/canvas.py,sha256=Lc4pekmCx4JD_avoBqMEyS46g1wdguCbh2Odl2dPjIU,659
+dpixels/client.py,sha256=w3OpmqtKGWCiEa1Pmru8IPmEptLU4WZODaLEzNqs6Xc,4919
+dpixels/color.py,sha256=tHRBm79lk5Sx832RC_Vj5Xom69mCjFKBlsW27BwM3K4,1074
+dpixels/exceptions.py,sha256=yqotM9PTAX1d6Xkqzs2XllI6RDCQ7up-ZbdXXUQ3ELA,1025
+dpixels/ratelimits.py,sha256=WEthErrbCHt1lGhJKKReJiAtaOY0xDYP5S9HOOv8-74,3615
+dpixels-0.0.1.dist-info/LICENSE,sha256=8BgmgkH6UvbEY9A5LpMpsZrWt3YnDsUe73UTXpqJB68,1064
+dpixels-0.0.1.dist-info/METADATA,sha256=ruEWn6mzulVJi-17HVXAUiTPhtBi-3ijx6WbWaPELIs,384
+dpixels-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpixels-0.0.1.dist-info/top_level.txt,sha256=sMGt3KG0Yv_o4EC3WqszSzxnYrot95yeY6krB67rypM,8
+dpixels-0.0.1.dist-info/RECORD,,
