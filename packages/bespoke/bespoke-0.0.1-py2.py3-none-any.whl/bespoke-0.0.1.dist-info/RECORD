@@ -1,0 +1,13 @@
+bespoke/__init__.py,sha256=mI8XckNv_cA0A72fO_8vBIuHSwfZhcDgCYr0Ni1JxH4,33
+bespoke/greetings.py,sha256=-JRmOcbajuswG7CKA50PPDv0z4xLluseqvnsjVuQtDk,100
+hello/__init__.py,sha256=kO2LzzSObP9Aog040VtoCxYTHoJzFiuqv3f2papc1AI,31
+hello/greetings.py,sha256=-JRmOcbajuswG7CKA50PPDv0z4xLluseqvnsjVuQtDk,100
+said/__init__.py,sha256=vzryVOx0cd-AGpSbXqcagaqLucKykSyp8TLi3wlaMo4,30
+said/greetings.py,sha256=-JRmOcbajuswG7CKA50PPDv0z4xLluseqvnsjVuQtDk,100
+text/__init__.py,sha256=yzBOOsLNi77uKR3e8lbUVN9wibiBq3b-PaJlQzCEy9c,30
+text/greetings.py,sha256=-JRmOcbajuswG7CKA50PPDv0z4xLluseqvnsjVuQtDk,100
+bespoke-0.0.1.dist-info/LICENSE,sha256=vfr9181BW7wH814Wr5AelbJ78jhC1xync351iRnhL5k,1066
+bespoke-0.0.1.dist-info/METADATA,sha256=MMlBCII0Y0OSTkdvWil8v1Wh9NZDw4vlofvLQMK8HGM,197
+bespoke-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bespoke-0.0.1.dist-info/top_level.txt,sha256=5iZtKbT3pdOX0udfiscNlGT919L_QN1e0qg7yoeFGY0,8
+bespoke-0.0.1.dist-info/RECORD,,
