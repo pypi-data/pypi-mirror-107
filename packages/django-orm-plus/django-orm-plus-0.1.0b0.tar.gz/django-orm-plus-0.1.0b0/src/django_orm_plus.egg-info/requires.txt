@@ -1,0 +1,11 @@
+django>=3.0<4
+
+[dev]
+black
+flake8
+pytest
+pytest-django
+factory_boy
+ipdb
+setuptools_scm
+tox
