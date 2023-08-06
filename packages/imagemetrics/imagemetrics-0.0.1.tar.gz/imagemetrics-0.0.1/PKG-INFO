@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: imagemetrics
+Version: 0.0.1
+Summary: Package to calculate image metrics for a binocular stereo camera image
+Home-page: https://github.com/roshanbal
+Author: roshan bal
+Author-email: <rbal408@gmail.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+This package compares the left and right halves of a stereo camera image using the luminance and sharpness metrics to assess obstruction to the lenses
+
