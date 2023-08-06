@@ -1,0 +1,13 @@
+samna/__init__.py,sha256=1aGa7lPJT1s0xJFKxDWtva-8e2quc2ydslqso8XORWE,218
+samna/samna.cpython-38-darwin.so,sha256=ONUeWnJCtyUqRy9B_NdpKCCCcgnrcfcSyyqSOU0mGD4,48966252
+samna/samnagui.cpython-38-darwin.so,sha256=Okn1f8JgHzfDmlKOuCBStOE0xoGOXZlBlHHL2UOWXKI,2041348
+samna/.dylibs/libGLEW.2.1.dylib,sha256=oahhq4WEkx7_BGIzTXRr2j2XIw_6DCJh5P1YbRvLpPc,744904
+samna/.dylibs/libViz.dylib,sha256=Pjzqi_lZhFRwbHLhrOmUTpHmo8CQd-Vu7nTMmai8IGg,824276
+samna/.dylibs/libusb-1.0.0.dylib,sha256=BjWHUrHRA9vJNOOTy8rqie66FOfCunZowU2wsuvF_kg,90788
+samna/.dylibs/libcaer.3.3.7.dylib,sha256=dSZsN-69dDbAMQyuwl5C5PGmBZ0CqqLdZfyGK8pTkqI,208712
+samna/.dylibs/liblog4cpp.dylib,sha256=avYVgjqAIz0VlUcNfeDk_Qfyg5tD12bF9mAPthBTSp0,249220
+samna-0.6.1.0.data/scripts/samnagui,sha256=HdnDx7Z06Sx84r5z5rYwudQPron8WCfcuWwUNRKIBB4,65
+samna-0.6.1.0.dist-info/RECORD,,
+samna-0.6.1.0.dist-info/WHEEL,sha256=OZYqKM1CyHVPhucOdIrOHvQLcF8LiOJ5yqSRunvjqZ0,110
+samna-0.6.1.0.dist-info/top_level.txt,sha256=m0C4jurPHgt8yFMoKbq8rYbZY8R0OPK7s-9tobXMp98,6
+samna-0.6.1.0.dist-info/METADATA,sha256=J872y9oCpVhFiQYr8WtGqB6LNNizgdifwHVwZ7RLRFU,212
