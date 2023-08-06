@@ -1,0 +1,3 @@
+[console_scripts]
+tbcli = testbrain.__main__:cli
+
