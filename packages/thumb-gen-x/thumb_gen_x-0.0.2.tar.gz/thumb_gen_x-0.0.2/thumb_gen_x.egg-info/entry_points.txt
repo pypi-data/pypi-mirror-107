@@ -1,0 +1,3 @@
+[console_scripts]
+thumb-gen-x = thumb_gen_x.__main__:main
+
