@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pure-datastructures
+Version: 0.2.0
+Summary: Data Structures packages with pure python
+Home-page: https://github.com/sodrooome/pure-datastructures
+Author: Ryan Febriansyah
+Author-email: 15523163@students.uii.ac.id
+License: UNKNOWN
+Description: # Pure Data Structures
+        
+        ![Build](https://github.com/sodrooome/pure-datastructures/workflows/Build/badge.svg) ![Downloads](https://pepy.tech/badge/pure-datastructures) ![PyPI - Status](https://img.shields.io/pypi/status/pure-datastructures) ![PyPI](https://img.shields.io/pypi/v/pure-datastructures)
+        
+        Data structures package for python, written in pure python code, not dependent on any other libraries or built-in function.
+        
+        ## List of Data Structures
+        
+        - Stack
+        - Stack + Linked List
+        - Queue
+        - List
+        - List + Ordered List
+        
+        ## Installation
+        
+        You can install this package with command :
+        
+        `pip install pure-datastructures`
+        
+        ## Usage
+        
+        A quick introduction using `pure-datastructures`. Using `OrderedList()` built-in method :
+        
+        ```python
+        import ds
+        
+        scenario = ds.OrderedList()
+        
+        # basic insertion
+        scenario.procedure_push(70)
+        scenario.procedure_push(13)
+        scenario.procedure_push(-3)
+        
+        # calculate size of array with `size()`
+        # return length of array
+        print(scenario.procedure_expand_size())
+        
+        # searching value through array with `search_obj()`
+        # return False if value is not founds
+        print(scenario.procedure_search_obj(5))
+        ```
+        
+        ## Documentation
+        
+        For documentation read in [pure-datastructures](https://sodrooome.github.io/pure-datastructures/).
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
