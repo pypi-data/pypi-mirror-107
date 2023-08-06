@@ -1,0 +1,36 @@
+import os
+import traceback
+import time
+import py2neo
+from typing import Dict
+
+
+def wait_for_db_boot(neo4j: Dict = {}, timeout_sec=120):
+    """[summary]
+
+    Args:
+        neo4j (Dict, optional): py2neo.Graph() properties as dict. Defaults to {}.
+        timeout_sec (int, optional): How long do we want to wait in seconds. Defaults to 120.
+
+    Raises:
+        TimeoutError: [description]
+    """
+
+    timeout = time.time() + timeout_sec
+    last_exception = None
+    db_runs = False
+    print(
+        f"Waiting {timeout_sec} seconds for neo4j@'{neo4j}' to boot up.", end='', flush=True)
+    while not db_runs:
+        try:
+            g = py2neo.Graph(**neo4j)
+            g.run("MATCH (n) RETURN n limit 1")
+            print("\nNeo4j booted")
+            db_runs = True
+        except Exception as e:
+            last_exception = e
+            print(".", end='', flush=True)
+            time.sleep(5)
+        if time.time() > timeout:
+            print(f"\n...neo4j@'{neo4j}' not booting up.")
+            raise last_exception
