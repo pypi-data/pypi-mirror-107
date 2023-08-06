@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Autofhm
+Version: 2.0.2
+Summary: Python Automated Machine Learning
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: feature engineering data science machine learning hyperparameter optimization
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7, <4
+Requires-Dist: deap (>=1.3)
+Requires-Dist: featuretools (>=0.24.0)
+Requires-Dist: joblib (>=0.17.0)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: pandas (>=1.1.3)
+Requires-Dist: rich (>=10.2.2)
+Requires-Dist: scikit-learn (>=0.23.2)
+Requires-Dist: stopit (>=1.1.2)
+
+UNKNOWN
+
+
