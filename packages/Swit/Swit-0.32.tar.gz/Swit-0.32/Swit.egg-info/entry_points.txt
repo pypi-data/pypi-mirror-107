@@ -1,0 +1,3 @@
+[console_scripts]
+Swit = Swit.Switter:main
+
