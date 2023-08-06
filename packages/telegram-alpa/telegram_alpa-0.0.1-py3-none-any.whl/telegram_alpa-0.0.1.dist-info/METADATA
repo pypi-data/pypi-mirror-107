@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: telegram-alpa
+Version: 0.0.1
+Summary: Python Wrapper to TelegramBot API
+Home-page: https://github.com/alpaalpa/telegram
+Author: Albert Pang
+Author-email: alpaaccount@mac.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# telegram
+
+This is a wrapper over the Telegram Bot API
+
+## Installation
+
+```
+pip install telegram-alpa
+```
+
+
+
