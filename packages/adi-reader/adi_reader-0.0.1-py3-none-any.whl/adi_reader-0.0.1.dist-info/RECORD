@@ -1,0 +1,15 @@
+adi/ADIDatCAPI_mex.h,sha256=m6k_Tbw4SagSWQtLWer7kWrXUbjRPYNJ_DCGPAKUv0U,25038
+adi/ADIDatIOWin64.dll,sha256=lDPpcYs6UO0sP2QRHIwUfBhw9VbqyAMPlIPv-oCWMu4,1828864
+adi/ADIDatIOWin64.lib,sha256=pUHZvGTnN4xo_dyzl6fC-dVntGsGI-JYnH1_mHMqUpE,8374
+adi/__init__.py,sha256=hScEdcRPfZ4YslOr5vLrgpKbSxdW9P2eZaKe9GGn14Y,56
+adi/_adi_cffi.c,sha256=2nUMYea0CYmq5vPL9RQDFIp0k3nJOV8q8Bok-5cEAqg,73282
+adi/_adi_cffi.cp36-win_amd64.pyd,sha256=BcStX5g6C-l5J_9nbAQuRVS93bzbotKQEPQ8dQprfVs,26624
+adi/_adi_cffi.cp37-win_amd64.pyd,sha256=n26d0ZvdZu6zEQF5CCYgApvo2hocBvtYb9_D5FdR-CQ,26624
+adi/_adi_cffi.cp38-win_amd64.pyd,sha256=xpQlWkB6WtJm7g9iS84Pl3gYbLiD0fu3Bu3eCjUbYL8,30720
+adi/cffi_build.py,sha256=AohrGeSVMU1i_sJYanQpkBF4hkv8WudwFmBm9llYM6o,5349
+adi/read.py,sha256=xQ3n7Vd4jsMwHIQVopplkkRAyd29Cd02liHJ6-KJUS4,18426
+adi_reader-0.0.1.dist-info/LICENSE,sha256=lnl80Dokb3hqM7tbOJhnYaA1AIFIm1LGdcTZ-wOR1Ak,1090
+adi_reader-0.0.1.dist-info/METADATA,sha256=zTAhOK4G7PZQ-Ao0zlH1tSA9YLvdyITvauJoPsvYEjs,2312
+adi_reader-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+adi_reader-0.0.1.dist-info/top_level.txt,sha256=nMcwlaMqGFXzctqbFK8B5olitOpGSbJ3hXcb8vIrPGM,4
+adi_reader-0.0.1.dist-info/RECORD,,
