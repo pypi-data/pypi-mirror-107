@@ -1,0 +1,3 @@
+[console_scripts]
+pinion = pinion.ui:cli
+
