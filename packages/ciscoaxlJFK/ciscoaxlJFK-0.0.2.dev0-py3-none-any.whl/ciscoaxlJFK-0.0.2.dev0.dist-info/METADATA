@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ciscoaxlJFK
+Version: 0.0.2.dev0
+Summary: custom AXL/SQL Package
+Home-page: https://github.com/pypa/sampleproject
+Author: JFK
+Author-email: info@jfk.rocks
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: zeep (==3.4.0)
+Requires-Dist: urllib3 (==1.23)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: six (==1.12.0)
+
+ 
+        Longer description of mypackage project 
+        possibly with some documentation and/or 
+        usage examples 
+    
+
