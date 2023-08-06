@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: state_chain
+Version: 2.0rc1
+Summary: Model algorithms as a list of functions operating on a shared state object.
+Home-page: https://state-chain-py.readthedocs.io/
+Author: Chad Whitacre et al.
+Author-email: team@aspen.io
+License: UNKNOWN
+Description: https://state-chain-py.readthedocs.io/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
