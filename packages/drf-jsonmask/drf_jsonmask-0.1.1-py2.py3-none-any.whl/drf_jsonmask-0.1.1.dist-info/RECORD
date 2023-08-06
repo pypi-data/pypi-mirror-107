@@ -1,0 +1,11 @@
+drf_jsonmask/__init__.py,sha256=seKRFEa346ujPuH6_6QtxUCizwA8z32-zxHinTwp3T4,126
+drf_jsonmask/constants.py,sha256=5qHhjY-4vAy6BRwyCPs6q3oJYssFjsJUIDp2Y5_Nfec,50
+drf_jsonmask/decorators.py,sha256=gOgWz7HfUZyltIGXW9ywyO1krX6Flys8koyywOEc5HQ,305
+drf_jsonmask/serializers.py,sha256=RLkdLewiML6P8wgYiAEMhI7GIp9OS4j3GM0k-aNhrHY,1417
+drf_jsonmask/utils.py,sha256=cn3xvCu0vI5NobTyK4z4DZuqKe3V57rMuU-xrjE8rTM,496
+drf_jsonmask/views.py,sha256=6zhgExplX43kKL91LImzYtx1rwei-ZWUjzJZAeSClN8,3687
+drf_jsonmask-0.1.1.dist-info/LICENSE,sha256=EVwD3_CHZn_t5Ua5cxSPdxv-WdeuCczT1r27P8L-Ht8,750
+drf_jsonmask-0.1.1.dist-info/METADATA,sha256=BC16UdPjtnjdHKw-aUrEAM-MldJzJ539P7Vfz0A4wvY,9982
+drf_jsonmask-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+drf_jsonmask-0.1.1.dist-info/top_level.txt,sha256=mB8Di6hYE_aEEfCI-jwuYDvj2iRYad2Zyq0uKiGK6jg,13
+drf_jsonmask-0.1.1.dist-info/RECORD,,
