@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tkitAutoMark
+Version: 0.0.0.1.4
+Summary: Terry toolkit tkitAutoMark
+Home-page: https://github.com/napoler/tkitAutoMark-pytorch
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: # tkitAutoMark
+        自动标注工具
+        
+        尝试解决长文本标注问题
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
