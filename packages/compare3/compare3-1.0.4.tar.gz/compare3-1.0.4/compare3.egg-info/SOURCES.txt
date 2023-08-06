@@ -1,0 +1,11 @@
+README.md
+setup.py
+compare3/Expression.py
+compare3/__init__.py
+compare3/compare.py
+compare3/errors.py
+compare3/main.py
+compare3.egg-info/PKG-INFO
+compare3.egg-info/SOURCES.txt
+compare3.egg-info/dependency_links.txt
+compare3.egg-info/top_level.txt
