@@ -1,0 +1,14 @@
+numba
+numpy
+tqdm
+
+[all]
+black
+flake8
+ipython
+isort
+mypy
+pdbpp
+pre-commit
+pytest
+pytest-cov
