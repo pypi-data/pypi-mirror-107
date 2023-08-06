@@ -1,0 +1,57 @@
+- tag: TOP
+  pattern: .*INVOICE\s*# 
+- tag: NUM
+  pattern: \d+\n
+  lookbehind: (?<=# )
+- tag: WORD
+  pattern: 'Date: '
+- tag: ADDR
+  pattern: .+?\s{{2}}
+  lookbehind: Bill to:\s*
+- tag: DATE
+  pattern: \d{{4}}-\d{{2}}-\d{{2}}
+  lookahead: (?=\n)
+- tag: HEAD
+  pattern: --+.*Price[^\n]*\n--+\n
+- tag: SHIP
+  pattern: Shipping\s+{0}?\d+[,\d.]*\s
+- tag: DIS
+  pattern: Discount\s+.{{0,3}}{0}?\d+[,\d.%]*\s
+- tag: LABEL
+  pattern: '[^=\n]+?'
+  lookbehind: (?<= {{50}})
+  lookahead: (?=\s+.{{0,3}}{0}\d+[,\d.]*\s)
+- tag: DLR
+  pattern: \s*.{{0,3}}{0}
+- tag: AMT
+  pattern: \d+[,\d.]*\s
+  lookbehind: (?<= {{40}}.{{23}}{0})
+- tag: ITEM
+  pattern: \d+[,\d.]*\s
+  lookbehind: (?<= {0})
+- tag: BORDER
+  pattern: ----*?
+  lookbehind: (?<=\n)
+  lookahead: (?=\n)
+- tag: SKU
+  pattern: \S[^\n]+?
+  lookbehind: (?<=\n)
+  lookahead: (?=\s\s+[^0-9\s])
+- tag: UNIT
+  pattern: \d+[,\d.]*
+  lookbehind: (?<=\s{{2}})
+  lookahead: (?=\s\s+\d)
+- tag: QTY
+  pattern: \d+[,\d.]*
+  lookbehind: (?<=\s{{2}})
+  lookahead: (?=\s\s+{0}|\s*\n)
+- tag: GAP
+  pattern: \s+
+- tag: DESC
+  pattern: '[^\n]+?'
+  lookbehind: (?<=\s{{2}}|.\n)
+  lookahead: (?=[ \t]{{2}})
+- tag: CRUD
+  pattern: .*?\n
+- tag: EOF
+  pattern: .*$

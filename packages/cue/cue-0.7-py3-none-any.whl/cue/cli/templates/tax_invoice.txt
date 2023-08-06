@@ -1,0 +1,38 @@
+@require(tagline, registered_number, tax_labels)
+{company_name}
+@if tagline:
+@tagline
+@end
+@if registered_number:
+@registered_number
+@end
+@if 'Sales tax' in tax_labels:
+                                    INVOICE                             # {{number}}
+@elif 'VAT' in tax_labels:
+                                   VAT INVOICE                          # {{number}}
+@else:
+                                   TAX INVOICE                          # {{number}}
+@end
+                                                                Date: {{date:%Y-%m-%d}}
+Bill to:
+{{billing_address}}
+
+--------------------------------------------------------------------------------
+Item code   Description                   Unit price      Qty     Price ({ex_tax_label})
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+                                                    Total ({ex_tax_label})         {$}0.00
+@for tax in tax_labels:
+@(
+def spacer():
+    return str(23 - len(tax))
+)\
+                                                    @tax{draw: ^@spacer()}{$}0.00
+@end
+                                                                      ==========
+                                                    TOTAL                  {$}0.00
+
+
+Terms: {terms}
