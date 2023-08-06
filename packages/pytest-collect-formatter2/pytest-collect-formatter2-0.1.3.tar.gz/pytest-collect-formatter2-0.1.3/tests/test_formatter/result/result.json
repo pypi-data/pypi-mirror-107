@@ -1,0 +1,54 @@
+[
+    {
+        "type": "Module",
+        "title": "tests/test_formatter/test_fromatter_v1.py",
+        "remark": null,
+        "nodeId": "tests/test_formatter/test_fromatter_v1.py",
+        "children": [
+            {
+                "type": "Class",
+                "title": "TestFormatter",
+                "remark": null,
+                "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter",
+                "children": [
+                    {
+                        "type": "Function",
+                        "title": "test_inside_class",
+                        "remark": "this is \u8fd9\u662f",
+                        "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter::test_inside_class"
+                    },
+                    {
+                        "type": "Function",
+                        "title": "test_inside_class_parametrize[1]",
+                        "remark": null,
+                        "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter::test_inside_class_parametrize[1]"
+                    },
+                    {
+                        "type": "Function",
+                        "title": "test_inside_class_parametrize[2]",
+                        "remark": null,
+                        "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter::test_inside_class_parametrize[2]"
+                    },
+                    {
+                        "type": "Function",
+                        "title": "test_inside_class_parametrize[3]",
+                        "remark": null,
+                        "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter::test_inside_class_parametrize[3]"
+                    },
+                    {
+                        "type": "Function",
+                        "title": "test_inside_class_parametrize[4]",
+                        "remark": null,
+                        "nodeId": "tests/test_formatter/test_fromatter_v1.py::TestFormatter::test_inside_class_parametrize[4]"
+                    }
+                ]
+            },
+            {
+                "type": "Function",
+                "title": "test_outside_of_class",
+                "remark": "this is remark 3",
+                "nodeId": "tests/test_formatter/test_fromatter_v1.py::test_outside_of_class"
+            }
+        ]
+    }
+]
