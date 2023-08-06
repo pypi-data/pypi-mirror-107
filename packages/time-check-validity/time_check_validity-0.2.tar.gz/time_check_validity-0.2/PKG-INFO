@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: time_check_validity
+Version: 0.2
+Summary: A package to check the time validity
+Home-page: https://github.com/abarani30/timecheck
+Author: Ali Sattar Barani
+Author-email: alisattarbarani@gmail.com
+License: MIT
+Download-URL: https://github.com/abarani30/timecheck/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: TIME,TIME VALIDITY,VALID TIME,TIME_VALID,VALID_TIME,time
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
