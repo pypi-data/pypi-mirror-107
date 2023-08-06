@@ -1,0 +1,27 @@
+{
+    "app_name": "",
+    "app_version": "0.1.0",
+    "description": "",
+    "author": "",
+    "build": {
+        "proj_dir": "",
+        "dist_dir": "dist/{app_name_lower}_{app_version}",
+        "icon": "",
+        "target": {
+            "file": "",
+            "function": "main",
+            "args": [],
+            "kwargs": {}
+        },
+        "readme": "README.md",
+        "module_paths": [],
+        "attachments": {},
+        "required": {
+            "python_version": "",
+            "enable_venv": true,
+            "venv": ""
+        },
+        "enable_console": true
+    },
+    "note": ""
+}
