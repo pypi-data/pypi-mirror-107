@@ -1,0 +1,7 @@
+#!/home/ldelisle/.conda/envs/baredSC/bin/python
+# -*- coding: utf-8 -*-
+
+from baredSC.combineMultipleModels_2d import main
+
+if __name__ == "__main__":
+    main()
