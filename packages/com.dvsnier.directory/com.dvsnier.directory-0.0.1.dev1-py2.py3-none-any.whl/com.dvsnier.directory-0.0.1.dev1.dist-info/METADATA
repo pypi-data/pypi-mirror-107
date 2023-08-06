@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: com.dvsnier.directory
+Version: 0.0.1.dev1
+Summary: this is dvsnier directory.
+Home-page: https://github.com/Alinvor/Python-DeMo
+Author: dvsnier
+Author-email: dovsnier@qq.com
+License: MIT License
+Project-URL: Wiki, https://github.com/Alinvor/Python-DeMo/wiki
+Project-URL: Bug_Tracker, https://github.com/Alinvor/Python-DeMo/issues
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/Alinvor/Python-DeM
+Keywords: dir,development
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# README
+
+this is dir modules.
+
+
