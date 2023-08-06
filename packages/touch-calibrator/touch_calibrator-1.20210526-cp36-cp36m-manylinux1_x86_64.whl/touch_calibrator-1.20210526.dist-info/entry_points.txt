@@ -1,0 +1,3 @@
+[console_scripts]
+touch_calibrator = touch_calibrator:entry_point
+
