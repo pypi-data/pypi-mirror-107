@@ -1,0 +1,14 @@
+models/__init__.py,sha256=9mnSgVehdKdbdVl4hUguKq67BBBLBSSU0IptoLhTE1U,84
+models/availability.py,sha256=U8aHHfVOP_4XcvbbYjXDcskhOC2N9FTruCoaSfjLBYc,737
+models/class.py,sha256=akw3Fwcb4XZ96d4g886qqKtMUrRO9CxEQY6o43zX2Ac,937
+models/class_inquiry.py,sha256=EHzoP3x9x_HxkV9sJZGmp9bLGp6aD6rK5adXvP30X7s,1231
+models/class_model.py,sha256=y75MS6QQzaRqy-7Ux8JYh26wxGkeMFQa5O3gC4DbQzE,980
+models/inquiry.py,sha256=tk-_H2r4a-NIjK-UMQNl3NGQ2qpasK5uV7fDZSk3DTw,1224
+models/models.py,sha256=f8cjN4gicKCwVQIEyT8JLNmoBVbS-lKmx78Pq_uyE3g,928
+models/student_class_association.py,sha256=jHL_ZZct5wg1dJ8SVaSINvcVjUuxk0wl_x716ziRx9c,301
+models/tutor_class_association.py,sha256=tJ24kSY_kKRwQPAHCWMDOLgeXbMsmHZYXGf2Otq9T0o,295
+models/user.py,sha256=UyeGrk1uZM_YPnSoiFpEsnhcSig3mhqQyCuiI_SHMRM,1782
+sts_models_tj-0.0.38.dist-info/METADATA,sha256=p1FGK0eeqOJdKSzCQKS4DOglpoUz3gfeTBxcBSeDZt4,1423
+sts_models_tj-0.0.38.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sts_models_tj-0.0.38.dist-info/top_level.txt,sha256=vH5ByFtkqB2bXlXOuK5zaaM_1GFEE9six0KgGIdPaU0,7
+sts_models_tj-0.0.38.dist-info/RECORD,,
