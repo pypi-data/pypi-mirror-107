@@ -1,0 +1,11 @@
+pycbf-0.9.6.3.dist-info/RECORD,,
+pycbf-0.9.6.3.dist-info/METADATA,sha256=XTu4BObIauMdBzXJoelIDvBGyEkV5QE7jhh-bxvFc9E,2870
+pycbf-0.9.6.3.dist-info/WHEEL,sha256=WP90zuMhg0JaIu4mlxiCILVrY3ULvmeyPjFqmmjkMl0,140
+pycbf/img.pxd,sha256=0eR9eo34d_dAHZuFK0Nf6KTLui8kKlon1YxsFmL7vXw,2375
+pycbf/__init__.py,sha256=WJmucsgH7hOVySimouh2vwx7FjQD0s0hAvdetuVI3qI,165
+pycbf/img.pyx,sha256=avdGLctXkYG2dYFnJAgjDR0tT5kc4pJ-xfrCXnvW2Ik,8907
+pycbf/_pycbf.cpython-39-x86_64-linux-gnu.so,sha256=EkuR3Rho7st-6E_eOa44Trb_mU-8y4dvwdrLuRZdGSI,4394224
+pycbf/utils.py,sha256=djTf4orwQpFPd4bXzIfXaxx04uC9_5rxg2M1bcBhB58,944
+pycbf/_wrapper.py,sha256=Sf3enSZUjs8xNjT1pkJfipnnOsmV7Wd12QCYwc4lmsE,438266
+pycbf/img.c,sha256=ZvpnLFHwpL2RdlYjLbOOOb9wYJq95WR6i3fygrNnaf4,304924
+pycbf/img.cpython-39-x86_64-linux-gnu.so,sha256=kYgDeRl15CKJMjZSwHjQ5yfDu0QwrRvQtYESr6Qh5rU,531280
