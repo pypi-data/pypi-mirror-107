@@ -1,0 +1,5 @@
+[console_scripts]
+c5helper=c5.tools.helper:start_app
+c5sync=c5.tools.sync.startup:start_app
+c5viewer=c5.tools.dataviewer:start_app
+

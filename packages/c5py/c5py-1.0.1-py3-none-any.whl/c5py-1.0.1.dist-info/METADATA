@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: c5py
+Version: 1.0.1
+Summary: Analysis and visualization tools for the Augmented Reality-based Corpus (ARbC). This corpus has been created in the research project 'Alignment in AR-based cooperation' which was a part of the Collaborative Research Centre 'Alignment in Communication' (CRC 673) under the project code C5.
+Home-page: http://wwwhomes.uni-bielefeld.de/sfb-673/projects/C5
+License: MIT
+Keywords: data mining,explorative data analysis
+Author: Alexander Neumann
+Author-email: alneuman@techfak.uni-bielefeld.de
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: BeautifulSoup4 (>=4.9,<5.0)
+Requires-Dist: Twisted (>=20.3.0,<21.0.0)
+Requires-Dist: lxml (>=4.6,<5.0)
+Requires-Dist: matplotlib (>=3.3,<3.4)
+Requires-Dist: pandas (>=1.1.5,<1.2.0)
+Requires-Dist: scikit-learn (>=0.23,<0.24)
+Requires-Dist: scipy (>=1.6.0,<1.7.0)
+Requires-Dist: seaborn (>=0.11,<0.12)
+Requires-Dist: service_identity (>=18.1.0,<19.0.0)
+Requires-Dist: tables (>=3.6,<4.0)
+Project-URL: Repository, https://github.com/aleneum/c5py
+Description-Content-Type: text/markdown
+
+# c5py
+
