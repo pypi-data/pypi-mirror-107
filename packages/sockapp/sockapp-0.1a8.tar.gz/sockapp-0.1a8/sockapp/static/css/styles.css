@@ -1,0 +1,64 @@
+.send {
+    border: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.inp {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    font-size: 90%;
+}
+
+.button {
+    background: none;
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+.selected-button {
+    background: black;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#nav {
+    width: 100%;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+.nav-buttons {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+.selected-nav-button {
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+}
