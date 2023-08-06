@@ -1,0 +1,6 @@
+[console_scripts]
+winotify = winotify:main
+
+[gui_scripts]
+winotify-nc = winotify:main
+
