@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+symbolic_dynamics/__init__.py
+symbolic_dynamics/graphs.py
+symbolic_dynamics/sofic.py
+symbolic_dynamics/utils.py
+symbolic_dynamics.egg-info/PKG-INFO
+symbolic_dynamics.egg-info/SOURCES.txt
+symbolic_dynamics.egg-info/dependency_links.txt
+symbolic_dynamics.egg-info/requires.txt
+symbolic_dynamics.egg-info/top_level.txt
+symbolic_dynamics/tests/test_sofic.py

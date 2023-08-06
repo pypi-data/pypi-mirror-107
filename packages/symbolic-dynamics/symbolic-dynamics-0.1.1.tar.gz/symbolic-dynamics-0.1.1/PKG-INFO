@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: symbolic-dynamics
+Version: 0.1.1
+Summary: A symbolic dynamics package for Python
+Home-page: https://github.com/jzc/symbolic-dynamics
+Author: Justin Cai
+Author-email: jc@justincai.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# symbolic-dynamics
+
+A symbolic dynamics package for Python using NetworkX
+
+[![Documentation Status](https://readthedocs.org/projects/symbolic-dynamics/badge/?version=latest)](https://symbolic-dynamics.readthedocs.io/en/latest/?badge=latest)
+
+Documentation: https://symbolic-dynamics.readthedocs.io/en/latest/
+
