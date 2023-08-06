@@ -1,0 +1,12 @@
+slg_utilities/__init__.py,sha256=oUAG1tXWRBaf0Xd624Xlq_CjI0YlEToZvGNw9VaLQuo,295
+slg_utilities/email_handler.py,sha256=4vu1Fh6KSZbqjaaNTHrltgcyrA32TzYZhyM3Rdqq2iA,5937
+slg_utilities/file_operations.py,sha256=a0LA8ykxm-vWNcvfPqRpzL6crLzuP2Z0mppxOSvfjgE,5715
+slg_utilities/helpers.py,sha256=Wv8vMh8SbsDsITldxl8AId7g7jqjzrodeEcX5WmdHj8,2785
+slg_utilities/image_processor.py,sha256=C6Poy8gJcc0rwESQ5FaYzGTGmaPb2WoKvhuBV0K5FAY,6049
+slg_utilities/mongo_engine.py,sha256=kpAnUwQm_cVR-pus7z98vrCRq1aN7Hz1TivGu4t3i5Y,5900
+slg_utilities/scraping_engine.py,sha256=mV0WTotHeB1jtW9pLgFBw-nALk07ufVnvR2TqVWrbj0,10382
+slg_utilities/table_helpers.py,sha256=yvYYMqr1wmymiO7-RV12IvUSdURnsWbj7l41w1PlEt0,1632
+slg_utilities-0.1.7.dist-info/METADATA,sha256=JRRRHvhHmNhoQgVpbKR0c7Tn0S-QkFo5ag8xYvce7UU,1200
+slg_utilities-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slg_utilities-0.1.7.dist-info/top_level.txt,sha256=z-NwIDuRXkkFCY75cjWDV9HEQVDzhE9KG0u-Q_-0VwE,14
+slg_utilities-0.1.7.dist-info/RECORD,,
