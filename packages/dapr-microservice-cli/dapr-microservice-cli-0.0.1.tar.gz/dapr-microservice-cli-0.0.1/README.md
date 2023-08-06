@@ -1,0 +1,79 @@
+# 服务初始化模板命令行脚手架
+
+
+## 设计要点
+
+### 命令行设计
+- project
+  - create
+    - -f --framework django/fastapi/flask/gin 
+    - -p --path project path, default current path
+    - project name
+
+- other
+
+### 项目模板目录设计
+- templates
+  - python
+    - fastapi 
+    - django 
+    - flask 
+  - go
+    - gin 
+    - dapr_grpc
+
+
+### Python FastAPI 项目模板
+
+- config 配置文件目录
+  - dev.yaml 开发配置
+  - prod.yaml 生产配置
+- doc 文档目录，包括：http请求文档
+- service 服务代码目录
+  - main.py 服务app模块文件
+  - deps.py 共享依赖模块文件
+  - models.py 模型模块文件，可以将其升级为models目录，拆分代码为多个文件
+  - routers.py 路由模块文件，可以将其升级为routers目录，拆分代码为多个文件
+  - schemas.py 校检模块文件，同上
+  - middlewares.py 中间件模块，同上
+- tests 服务测试代码目录
+- .gitignore git忽略文件设置文件
+- Dockerfile dockerfile文件
+- Makefile make运行命令
+- README.md 说明文档
+- requirements.txt python依赖包生成文件
+
+
+## pip包发布
+
+### 发布环境
+
+> pip install build pip setuptools wheel twine
+
+### 构建pip包
+
+> python3 -m build 
+
+步骤：
+1. 切换到打包根目录
+2. 执行build命令
+3. 检查是否成功构建至dist目录
+
+### 测试pip包
+
+> pip install dist/*.whl 
+
+步骤：
+1. 安装本地构建的软件包
+2. 安装后，检查当前环境是否可以检测到`dapr-microservice-cli`命令
+3. 执行`dapr-microservice-cli`进行项目创建测试
+
+### 发布pip包
+
+> twine upload dist/*
+
+
+## 参考
+
+[FastAPI 如何组织大型项目结构](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
+

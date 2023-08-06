@@ -1,0 +1,3 @@
+[console_scripts]
+dapr-microservice-cli = dapr_microservice_cli.run:cli
+

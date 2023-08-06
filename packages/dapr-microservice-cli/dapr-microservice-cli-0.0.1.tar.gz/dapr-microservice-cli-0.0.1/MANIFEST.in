@@ -1,0 +1,5 @@
+# include source dir files
+recursive-include dapr_microservice_cli *
+
+# exclude special files
+global-exclude __pycache__/*

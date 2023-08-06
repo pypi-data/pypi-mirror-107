@@ -1,0 +1,11 @@
+# API REST DOC
+
+# Server base url
+@baseUrl = http://127.0.0.1:8000
+
+### Admin
+GET {{baseUrl}}/admin
+
+
+### User Hi
+GET {{baseUrl}}/hi
