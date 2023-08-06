@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: harbour
+Version: 0.0.13
+Summary: Running docker on AWS made easy
+Home-page: https://github.com/ebanx/harbour
+Author: ebanx-dataops
+Author-email: dataops@ebanx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: click (==7.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: boto3 (==1.11.9)
+Requires-Dist: structlog (==20.1.0)
+Requires-Dist: PyMySQL (==0.9.3)
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: test
+
+UNKNOWN
+
