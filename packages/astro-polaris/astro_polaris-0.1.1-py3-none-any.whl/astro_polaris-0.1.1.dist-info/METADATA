@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: astro-polaris
+Version: 0.1.1
+Summary: Astrodynamics library in Python
+Home-page: https://github.com/Yuricst/polaris
+Author: Yuri Shimane
+Author-email: yuri.shimane@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: numba (>=0.51.2)
+Requires-Dist: pandas (>=1.1.4)
+Requires-Dist: scipy (>=1.5.2)
+
+UNKNOWN
+
+
