@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+Flask_Sessionstore3.egg-info/PKG-INFO
+Flask_Sessionstore3.egg-info/SOURCES.txt
+Flask_Sessionstore3.egg-info/dependency_links.txt
+Flask_Sessionstore3.egg-info/not-zip-safe
+Flask_Sessionstore3.egg-info/requires.txt
+Flask_Sessionstore3.egg-info/top_level.txt
+flask_sessionstore/__init__.py
+flask_sessionstore/sessions.py
