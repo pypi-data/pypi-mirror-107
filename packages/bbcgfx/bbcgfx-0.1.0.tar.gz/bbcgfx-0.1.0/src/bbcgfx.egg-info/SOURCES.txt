@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bbcgfx/__init__.py
+src/bbcgfx/bbcgfx.py
+src/bbcgfx/screen.py
+src/bbcgfx.egg-info/PKG-INFO
+src/bbcgfx.egg-info/SOURCES.txt
+src/bbcgfx.egg-info/dependency_links.txt
+src/bbcgfx.egg-info/top_level.txt
