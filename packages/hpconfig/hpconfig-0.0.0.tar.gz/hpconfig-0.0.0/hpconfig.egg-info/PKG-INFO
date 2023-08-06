@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hpconfig
+Version: 0.0.0
+Summary: A Python module to configure heat-pump systems for sustainable heating
+Home-page: https://github.com/MarcvdSluys/HPConfig
+Author: Marc van der Sluys, Paul van Kan, Martin Buitink, Chris Gieling
+License: EUPL 1.2
+Description: # HeatPump #
+        
+        A Python module to configure heat-pump systems for sustainable heating.  We intend to include heat pumps, air
+        and ground sources, solar collectors, solar panels and PV-T, heating and hot tap-water systems, and more.  The
+        code is being developed by the research group Balanced Energy Systems of the HAN University of Applied
+        Sciences in Arnhem, the Netherlands and the research group of Sustainable Energy Supply of Saxion University
+        of Applied Sciences in Deventer, the Netherlands.
+        
+        
+Keywords: heat pump,heating,energy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown

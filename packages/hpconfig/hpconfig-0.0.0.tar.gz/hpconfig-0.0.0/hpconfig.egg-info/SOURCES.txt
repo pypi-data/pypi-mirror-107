@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hpconfig/__init__.py
+hpconfig.egg-info/PKG-INFO
+hpconfig.egg-info/SOURCES.txt
+hpconfig.egg-info/dependency_links.txt
+hpconfig.egg-info/requires.txt
+hpconfig.egg-info/top_level.txt
