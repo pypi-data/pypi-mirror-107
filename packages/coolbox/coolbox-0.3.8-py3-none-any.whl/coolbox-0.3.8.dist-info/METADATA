@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: coolbox
+Version: 0.3.8
+Summary: Jupyter notebook based genomic data visulization toolkit.
+Home-page: https://github.com/GangCaoLab/CoolBox
+Author: Weize Xu
+Author-email: vet.xwz@gmail.com
+License: GPLv3
+Keywords: genomics,bioinformatics,visualization,Jupyter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7, <4
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: numpy
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib (>=3.1.1)
+Requires-Dist: jupyter (>=1.0.0)
+Requires-Dist: ipywidgets (>=7.5.1)
+Requires-Dist: nbformat
+Requires-Dist: voila
+Requires-Dist: svgutils
+Requires-Dist: intervaltree
+Requires-Dist: dna-features-viewer
+Requires-Dist: h5py
+Requires-Dist: cooler
+Requires-Dist: pybbi
+Requires-Dist: numpydoc
+Requires-Dist: fire
+Requires-Dist: pytest
+Requires-Dist: strawC
+
+See https://github.com/GangCaoLab/CoolBox
+
+
