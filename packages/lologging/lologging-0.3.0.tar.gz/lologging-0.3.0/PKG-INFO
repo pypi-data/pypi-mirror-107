@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: lologging
+Version: 0.3.0
+Summary: This is a library meant to provide meaningful logging for python cloud run services on GCP
+Home-page: https://github.com/loreal-IT-France/itfr-btdp-pyPI-lib-lologging
+Author: Clément Voisin
+Author-email: clement.voisin@loreal.com
+License: MIT
+Download-URL: https://github.com/loreal-IT-France/itfr-btdp-pyPI-lib-lologging/archive/refs/tags/0.3.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
