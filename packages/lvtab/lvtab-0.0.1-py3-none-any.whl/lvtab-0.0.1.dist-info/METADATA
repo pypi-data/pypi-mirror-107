@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lvtab
+Version: 0.0.1
+Summary: Tukey inspired, one-liner, pipe-able, tidy data compatible, letter-value tables.
+Home-page: https://github.com/alexhallam/lvtab
+Author: alexhallam
+Author-email: alexhallam6.28@gmail.com
+License: GPL LGPL
+Download-URL: https://github.com/alexhallam/lvtab/releases/tag/0.0.1
+Keywords: terminal,summary-statistics,letter-value,tukey,summary,statistics,median,hinge
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Click
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+UNKNOWN
+
+
