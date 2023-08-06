@@ -1,0 +1,15 @@
+gino_factory/__init__.py,sha256=MIJjVKSosb-CodA2ENPYDGV-l6rOkX1zQSwnIqSo-H0,33
+gino_factory/factory.py,sha256=qmZJzlYBLWUpMDAek21CEoMwa4eAIzufMI6Vj4DsrJk,6969
+gino_factory/faker.py,sha256=oVYviTGhaa-Z3FrNMgZhW8CYIR_XLRkMqBfauFo21Qs,2009
+gino_factory/proxy.py,sha256=8fLxZEbsK89bgF6xa7rdJZE1DpCtBq6cEVdnRnAZG8g,3200
+gino_factory/utils.py,sha256=GAfEIOMZbnWQOaBqsf5eV7JCt-V6dQnEdYem1mY-10k,1152
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=14wplBuc1DnS1Endfpjb-GFld6pkTNQ119LZ9i6n3Y8,1375
+tests/models.py,sha256=cG4oWf3eW7Y3J1EpVY7xujKz9b37M0O7O94axp6XsRo,1443
+tests/test_common.py,sha256=rXp067k_14eD87DtvziBP9zmUQyqtSHuIB3oNFweTo0,841
+tests/test_tree.py,sha256=I9TEuN-cM2vs65FoRUlo1Ae27K_uvXK0U5vg6a8yJp0,1401
+gino_factory-0.1.0.dist-info/LICENSE.txt,sha256=tjaGASBWJhPxlf-eacuZoAtEL4A1q0bDhUCZomYbmvI,1070
+gino_factory-0.1.0.dist-info/METADATA,sha256=X-Y8F2c2m4kJAqXNedfFnnklNuw74CXDan0hbHHS4LM,3139
+gino_factory-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gino_factory-0.1.0.dist-info/top_level.txt,sha256=8sM5yMgJz7EAU9yaPlsxwQiqFHxoyI2mnqspMukfAws,19
+gino_factory-0.1.0.dist-info/RECORD,,
