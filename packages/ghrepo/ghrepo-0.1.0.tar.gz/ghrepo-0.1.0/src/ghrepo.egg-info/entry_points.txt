@@ -1,0 +1,3 @@
+[console_scripts]
+ghrepo = ghrepo.__main__:main
+
