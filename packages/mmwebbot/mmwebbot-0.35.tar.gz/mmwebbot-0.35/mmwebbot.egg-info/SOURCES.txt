@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+mmwebbot.egg-info/PKG-INFO
+mmwebbot.egg-info/SOURCES.txt
+mmwebbot.egg-info/dependency_links.txt
+mmwebbot.egg-info/requires.txt
+mmwebbot.egg-info/top_level.txt
+webbot/__init__.py
+webbot/webbot.py
+webbot/drivers/chrome_linux
+webbot/drivers/chrome_mac
+webbot/drivers/chrome_windows.exe
