@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "thlink-backend-app-lib"
+version = "0.2.1"
+description = ""
+authors = ["thlink"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aws-lambda-powertools = "^1.16"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
