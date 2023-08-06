@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PyQuickML
+Version: 1.0.6
+Summary: An open source and low code machine learning library for quick and robust analysis
+Home-page: https://github.com/Zainali5/PyQuickML
+Author: Zain Ali
+Author-email: zainbalouch3@gmail.com
+License: UNKNOWN
+Description: # PyQuickML
+        An open source and low code machine learning library for quick and robust analysis 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
