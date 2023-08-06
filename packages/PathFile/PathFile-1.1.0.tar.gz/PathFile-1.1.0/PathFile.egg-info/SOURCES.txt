@@ -1,0 +1,9 @@
+README.md
+setup.py
+PathFile/PathFile.py
+PathFile/__init__.py
+PathFile.egg-info/PKG-INFO
+PathFile.egg-info/SOURCES.txt
+PathFile.egg-info/dependency_links.txt
+PathFile.egg-info/requires.txt
+PathFile.egg-info/top_level.txt
