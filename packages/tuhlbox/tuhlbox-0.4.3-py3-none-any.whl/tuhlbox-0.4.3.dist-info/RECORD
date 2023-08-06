@@ -1,0 +1,17 @@
+tuhlbox/__init__.py,sha256=me4O9UjdCqnK9KDV_S-OOQpNbZbdqRhS6SiAkHeG3Jo,59
+tuhlbox/cli.py,sha256=dT-WOrbYgxlk4MDLRgcKkUeu8ymcpkE1w8AsTqzJOY4,14307
+tuhlbox/doc2vec.py,sha256=aD5-QYrcKxrPY5PX9XoI74PzejKxJ2AeP3QQkg5XX-Y,3598
+tuhlbox/life.py,sha256=pMgJTxdbUQUsZS9-mJET9jF_00m_IMkrNkyNTn3XpeU,5277
+tuhlbox/stanza.py,sha256=5uwrT3HrXSHyVv3aKO3Ejs90QwrS_t7XyEoeTdEfFjw,10998
+tuhlbox/stringkernels.py,sha256=vcBK9BxjL2XaFM3mhA_snXAMYGm_Ql7g_iaYyrXjlnQ,6333
+tuhlbox/subfreq.py,sha256=-IKBcYG5oWngKwm8EDBIslUW3RgmOi5fSJuAWT7tOp4,2493
+tuhlbox/torch_classifier.py,sha256=P4v9gBOjGerWsQQ4gOGr8UmvHoXE_TdVQxCs66zIEog,2438
+tuhlbox/torch_cnn.py,sha256=QW2J5hASYzRrrQAlAiQ7QUTpic2MAZwRIv2lr9TXOq0,4476
+tuhlbox/torch_lstm.py,sha256=P0xWKAPTmn0LQ98NKrFQJG4o28DxjUCDLZecObIGPNA,1866
+tuhlbox/transformernetworks.py,sha256=AHMVReEwkmGkK8kUoO0DqNtH8uylIed8vv7T6UhOKr0,6247
+tuhlbox/tree.py,sha256=nN1rxlqyeNbin8EN_IUcqaMjJ4efnPD1_zztzKGZ2Kg,10603
+tuhlbox-0.4.3.dist-info/entry_points.txt,sha256=2xJeRx74HqL_falJbH0ODVMyRVGKDrZWoA9OPC7sPLc,143
+tuhlbox-0.4.3.dist-info/LICENSE,sha256=Xxd8gEcHBTkHCiU3e38p-dnvzsWpberQASL8NZG_Zb4,1309
+tuhlbox-0.4.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tuhlbox-0.4.3.dist-info/METADATA,sha256=dsinqAvaIS81klXrRL4yphFgzcahJr-qaZ42NKijtk8,818
+tuhlbox-0.4.3.dist-info/RECORD,,
