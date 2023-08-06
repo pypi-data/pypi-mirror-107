@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+test-module-vicky/__init__.py
+test_module_vicky.egg-info/PKG-INFO
+test_module_vicky.egg-info/SOURCES.txt
+test_module_vicky.egg-info/dependency_links.txt
+test_module_vicky.egg-info/requires.txt
+test_module_vicky.egg-info/top_level.txt

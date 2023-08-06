@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: test-module-vicky
+Version: 1.0.0
+Summary: Sample Description string
+Home-page: https://github.com/ToastCoder/test-module-vicky
+Author: Vigneshwar K R
+Author-email: vicky.pcbasic@gmail.com
+License: MIT License
+Download-URL: https://github.com/ToastCoder/test-module-vicky/archive/master.zip
+Description: # test-module-vicky
+Keywords: LEARNING
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
