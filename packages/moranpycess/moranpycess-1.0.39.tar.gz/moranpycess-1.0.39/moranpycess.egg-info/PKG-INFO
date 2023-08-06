@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: moranpycess
+Version: 1.0.39
+Summary: Python framework for Moran Processes driven by game theory
+Home-page: https://github.com/AngryMaciek/angry-moran-simulator
+Author: Maciek Bak
+Author-email: wsciekly.maciek@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The following package presents a general game-theoretical framework to carry out scientific simulations according to the Moran model. Registering distinct types of individuals together with specification of payoffs between them allows to replicate evolution of the population and observe growth dynamics.
+
+For more information please visit project's homepage!
+
