@@ -1,0 +1,13 @@
+torch
+
+[lesionseg]
+jsonargparse
+lesion-metrics
+nibabel
+pandas
+pytorch-lightning
+PyYAML
+ruyaml
+scikit-image
+torchio
+torchmetrics
