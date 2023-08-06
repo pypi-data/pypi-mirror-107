@@ -1,0 +1,3 @@
+[console_scripts]
+s3wm=s3wm.main:main
+
