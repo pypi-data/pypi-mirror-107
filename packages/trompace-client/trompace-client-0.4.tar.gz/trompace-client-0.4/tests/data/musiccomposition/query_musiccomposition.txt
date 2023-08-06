@@ -1,0 +1,8 @@
+query {
+  MusicComposition
+{
+identifier
+title
+source
+}
+}
