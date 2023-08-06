@@ -1,0 +1,10 @@
+tracardi_plugin_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tracardi_plugin_sdk/action_runner.py,sha256=1zC5uGhEd7HzSi-qTmNSnmmM9whA5nxvTjiFXa1eb7w,68
+tracardi_plugin_sdk/plugin_runner.py,sha256=8ViThEvr4yky87rS9sDP5AhJuyzaGYIJxj7czvnOKaE,68
+tracardi_plugin_sdk/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tracardi_plugin_sdk/domain/register.py,sha256=J11NHRwVrQD0PxXG7hDNUTyNIxhwXNmx9zmN0lRqh50,396
+tracardi_plugin_sdk/domain/result.py,sha256=g79OdUrHZdDNGdo_breJli3nybNOUWtJ08RYVEqFegw,160
+tracardi_plugin_sdk-0.1.1.dist-info/METADATA,sha256=CGoW2ph6hryLw8h2SAcXLfsocEmna-6iw8LmhUFgT2E,517
+tracardi_plugin_sdk-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tracardi_plugin_sdk-0.1.1.dist-info/top_level.txt,sha256=8tBX5i8nRD36AZcOjpWv4KBi7d_1N9k1wN56YNFzuOU,20
+tracardi_plugin_sdk-0.1.1.dist-info/RECORD,,
