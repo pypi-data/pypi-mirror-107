@@ -1,0 +1,117 @@
+#!/usr/bin/env python
+
+import configparser
+import getpass
+import os
+import os.path
+from swsm import auxi
+from swsm.cmd_opts import args
+from swsm import conf
+import cryptography
+from swsm import exception_msgs as em
+from swsm import security as sec
+
+
+
+swscfg = os.path.expanduser('~/.swscfg')
+config = configparser.ConfigParser()
+config.read(swscfg,encoding='latin1')
+
+# the entire program is enclosed in a try..except block to catch KB interrupts.
+
+try:	
+	if args.subparsers == 'get-from-file' or \
+		args.subparsers == 'save' or \
+		args.subparsers == 'show-all':
+			password = getpass.getpass(config.get('messages','enter password'))
+
+
+# run sws_selector function if sub-command is equal to 'get'.
+	if args.subparsers == 'get':
+	    results = auxi.sws_selector(args.word, args.positions)
+	    print(results)
+
+# this elif code block runs when the 'save' sub-command is used.
+	elif args.subparsers == 'save':
+	    try:
+	    	salt = auxi.get_salt(config)
+	    	f = sec.crypto_key(password, salt)
+	    	secrets = sec.decrypt_secrets(config, f)
+	    	auxi.add_to_secrets(secrets, args.word, args.label)
+	    	sec.encrypt_secrets(config, swscfg, f, secrets)
+	    	print(config.get('messages','save secret'))
+
+# exception code runs if no salt or no secret is found.
+	    except configparser.NoOptionError as e:
+	    	if e.option == 'secrets':
+	    		print(config.get('messages', 'no secrets'))
+	    		secrets = {}
+	    		auxi.add_to_secrets(secrets, args.word, args.label)
+	    		sec.encrypt_secrets(config, swscfg, f, secrets)
+	    		print(config.get('messages', 'save secret'))
+
+	    	elif e.option == 'salt':
+	    		if not config['first run'].getboolean('first run'):
+	    			print(config.get('messages','create salt'))
+	    			config['first run']['first run'] = 'True'
+	    		else:
+	    			print(config.get('messages', 'no salt'))
+
+	    		salt = auxi.make_salt(config, swscfg)
+
+	    		if config.has_option('secrets', 'secrets'):
+	    			old_secrets = config.get('secrets', 'secrets')
+	    			config['old secrets']['old secrets'] = old_secrets
+	    			print(config.get('messages', 'secrets found'))
+
+	    		f = sec.crypto_key(password, salt)
+	    		secrets = {}
+	    		auxi.add_to_secrets(secrets, args.word, args.label)
+	    		sec.encrypt_secrets(config, swscfg, f, secrets)
+	    		print(config.get('messages', 'save secret'))
+
+# exception code runs if fernet token is invalid. usually means
+# incorrect password.
+	    except cryptography.fernet.InvalidToken as e:
+	    	em.exceptions_msgs(e)
+
+# this elif code block runs if 'show-all' sub-command is used.
+	elif args.subparsers == 'show-all':
+		try:
+			salt = auxi.get_salt(config)
+			f = sec.crypto_key(password, salt)
+			secrets = auxi.display_secrets(config, f)
+			print(secrets)
+
+# exception code runs if there is no salt or secret, if the fernet token
+# is invalid
+		except (configparser.NoOptionError, cryptography.fernet.InvalidToken) as e:
+			em.exceptions_msgs(e)
+
+# this elif code block runs if 'get-from-file' sub-command is used.
+	elif args.subparsers == 'get-from-file':
+		try:
+			salt = auxi.get_salt(config)
+			f = sec.crypto_key(password, salt)
+			secrets = sec.decrypt_secrets(config, f)
+			secret = secrets[args.label.lower()]
+			results = auxi.sws_selector(secret, args.positions)
+			print(results)
+
+# except block runs if there is no salt or secret, if the fernet token
+# is invalid or there is a dictionary key error.			
+		except (configparser.NoOptionError,KeyError,cryptography.fernet.InvalidToken) as e:
+			em.exceptions_msgs(e)
+
+# this elif code block runs if the 'reset' sub-command is used.
+	elif args.subparsers == 'reset':
+		auxi.reset_sws(swscfg)
+
+# else code block runs when a non-suitable sub-command is issued.
+	else:
+		print(config.get('messages','make choice'))
+
+# exception runs when user interrupts program with CTRL+C [keyboard interrupt]
+except KeyboardInterrupt as e:
+	print()
+	em.exceptions_msgs(e)

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bin/sws
+src/secret_word_selector.egg-info/PKG-INFO
+src/secret_word_selector.egg-info/SOURCES.txt
+src/secret_word_selector.egg-info/dependency_links.txt
+src/secret_word_selector.egg-info/requires.txt
+src/secret_word_selector.egg-info/top_level.txt
+src/swsm/__init__.py
+src/swsm/auxi.py
+src/swsm/cmd_opts.py
+src/swsm/conf.py
+src/swsm/exception_msgs.py
+src/swsm/security.py
