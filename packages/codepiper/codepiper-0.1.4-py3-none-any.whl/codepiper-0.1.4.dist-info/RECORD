@@ -1,0 +1,12 @@
+codepiper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codepiper/build.py,sha256=AMX8WaOfgVsSwfSyyMzO4vo-0qoaeY47xSdsLCw0ODY,4386
+codepiper/cli.py,sha256=SyqkAExHk-jTWr6Qa4HiK5PeogpEk92B7cumTaV66HE,2322
+codepiper/context.py,sha256=4Kb-WKKeyjh7fR7-zM5fS1jjS-a6n26TcTcXBOyYb_4,2098
+codepiper/rollback.py,sha256=rsqeU38la7K5v05RDg9Hphs9yVyqgEqjp1icl7xAAyM,8943
+codepiper/watch.py,sha256=guK6-iBhhyoPFsDLSE1wirUuW_fA_uuB5aL7rsIvbZk,10318
+codepiper-0.1.4.dist-info/LICENSE,sha256=YVS-_Bs_E51fSFix6gj17F0EB5HHD8s62dny1ehb12c,1057
+codepiper-0.1.4.dist-info/METADATA,sha256=3BYH8EzySBndf_doQT5jSVuzSCJwWVbLWZKaRJn1awQ,1892
+codepiper-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+codepiper-0.1.4.dist-info/entry_points.txt,sha256=mo9NxS5bPoXjPYgnpUoHZHlkgy-63gwh0wyBnA9oQLg,50
+codepiper-0.1.4.dist-info/top_level.txt,sha256=YK1U00LqX5pYV2gspUydf3JejF_oUCOYm0kCpQPLtGg,10
+codepiper-0.1.4.dist-info/RECORD,,
