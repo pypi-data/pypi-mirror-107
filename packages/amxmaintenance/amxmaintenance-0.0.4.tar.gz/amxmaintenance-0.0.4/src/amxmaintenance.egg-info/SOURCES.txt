@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/amxmaintenance/__init__.py
+src/amxmaintenance.egg-info/PKG-INFO
+src/amxmaintenance.egg-info/SOURCES.txt
+src/amxmaintenance.egg-info/dependency_links.txt
+src/amxmaintenance.egg-info/requires.txt
+src/amxmaintenance.egg-info/top_level.txt
