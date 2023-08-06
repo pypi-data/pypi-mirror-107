@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: all-of-pypi
+Version: 0a0
+Summary: All of PyPI
+Home-page: https://pypi.org
+Author: Dustin Ingram
+Author-email: di@python.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+This project installs all of PyPI.
+
