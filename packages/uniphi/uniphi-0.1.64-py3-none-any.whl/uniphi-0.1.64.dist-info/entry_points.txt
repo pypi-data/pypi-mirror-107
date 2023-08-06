@@ -1,0 +1,5 @@
+[sqlalchemy.dialects]
+uniphi = uniphi.sqlalchemy_uniphi:UniphiDialect
+uniphi.http = uniphi.sqlalchemy_uniphi:UniphiHTTPDialect
+uniphi.https = uniphi.sqlalchemy_uniphi:UniphiHTTPSDialect
+
