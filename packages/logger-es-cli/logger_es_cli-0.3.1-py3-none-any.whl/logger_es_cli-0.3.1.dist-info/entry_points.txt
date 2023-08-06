@@ -1,0 +1,3 @@
+[console_scripts]
+logger-es-cli=logger_es_cli.cli_driver:app
+
