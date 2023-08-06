@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: contacts2csv
+Version: 0.0.3
+Summary: Coverting an excel sheet of contacts to Google contacts suppoerted csv format
+Home-page: UNKNOWN
+Author: Nerlin Maria Thomas and Mebin Joy
+Author-email: <nerlinandmebin@gmail.com>
+License: UNKNOWN
+Keywords: python,contacts,google_contacts
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+A simple library for coverting an excel sheet of contacts to Google contacts suppoerted csv format. Note that the package requires Pandas framework
+
+
