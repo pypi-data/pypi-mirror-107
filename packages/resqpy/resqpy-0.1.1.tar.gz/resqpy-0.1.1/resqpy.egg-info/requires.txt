@@ -1,0 +1,9 @@
+numpy
+pandas
+h5py
+lxml
+lasio
+
+[tests]
+pytest
+flake8
