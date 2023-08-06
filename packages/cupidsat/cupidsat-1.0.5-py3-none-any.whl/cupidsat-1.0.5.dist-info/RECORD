@@ -1,0 +1,11 @@
+cupid/__init__.py,sha256=WBLxTVek96Sbp3f3a0Tsod2xHs7hFLc5ua3RCWUrtgI,292
+cupid/backend.py,sha256=nrXK222yQTPjwkB8VaRy56NuyKYmCAuqEHE98Ok8AXE,85978
+cupid/plotutils.py,sha256=lzYim-BcGdvHnMvS2ZyyvRoqLp-76JPqhT5mOmoGwmU,37992
+cupid/xray.py,sha256=pZoE4iiL7nVz4TVVPNcQTH81rruqL4q8e4-OOnALQCk,18662
+cupid/xray/__init__.py,sha256=WBLxTVek96Sbp3f3a0Tsod2xHs7hFLc5ua3RCWUrtgI,292
+cupid/xray/xray.py,sha256=fOrgT4cw7sF2PgYCE0kLtHnH__QJbGjynbOdAwfQoUE,18667
+cupidsat-1.0.5.dist-info/LICENSE,sha256=kuc7Li-pGdXumEthDSpOMtouitE_XSdgk46fIs5tVtg,1092
+cupidsat-1.0.5.dist-info/METADATA,sha256=e97OGeLl9qjb-JNhpyWiKLivysjK-eaPsxib2hdrH10,564
+cupidsat-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cupidsat-1.0.5.dist-info/top_level.txt,sha256=ievVnMq9K3hFTMsfcj-AGULHWHDUDb_d7VAWSC-mR6o,6
+cupidsat-1.0.5.dist-info/RECORD,,
