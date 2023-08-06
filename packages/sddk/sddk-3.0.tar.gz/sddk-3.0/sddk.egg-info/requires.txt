@@ -1,0 +1,10 @@
+pyarrow>=3
+plotly>=4
+kaleido>=0.2.1
+beautifulsoup4>=4
+pandas>=1
+numpy>=1
+requests>=2
+matplotlib>=3.3.4
+geopandas
+shapely
