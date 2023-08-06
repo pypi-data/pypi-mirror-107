@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+compoundinterest/__init__.py
+compoundinterest.egg-info/PKG-INFO
+compoundinterest.egg-info/SOURCES.txt
+compoundinterest.egg-info/dependency_links.txt
+compoundinterest.egg-info/top_level.txt
