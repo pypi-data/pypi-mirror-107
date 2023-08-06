@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: model-card-generator
+Version: 0.0.4
+Summary: ML Model Card generator
+Home-page: https://github.com/g1stavo/model-card-generator
+Author: g1stavo
+Author-email: gustavocsalvador@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/model-card-generator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# model-card-generator
+ML model card generator
+
+## Run 
+```shell
+$ make run
+```
+
+## Package
+Bump version in `setup.cfg`, then:
+ ```shell
+$ make package
+```
+
