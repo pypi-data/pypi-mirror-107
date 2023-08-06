@@ -1,0 +1,11 @@
+pycbf-0.9.6.3.dist-info/RECORD,,
+pycbf-0.9.6.3.dist-info/METADATA,sha256=XTu4BObIauMdBzXJoelIDvBGyEkV5QE7jhh-bxvFc9E,2870
+pycbf-0.9.6.3.dist-info/WHEEL,sha256=9Sfrg2Ux3AbTDYcIWtg52nmCUby8Ab5FTYtYQN4CV9Y,142
+pycbf/img.pxd,sha256=0eR9eo34d_dAHZuFK0Nf6KTLui8kKlon1YxsFmL7vXw,2375
+pycbf/__init__.py,sha256=WJmucsgH7hOVySimouh2vwx7FjQD0s0hAvdetuVI3qI,165
+pycbf/img.pyx,sha256=avdGLctXkYG2dYFnJAgjDR0tT5kc4pJ-xfrCXnvW2Ik,8907
+pycbf/utils.py,sha256=djTf4orwQpFPd4bXzIfXaxx04uC9_5rxg2M1bcBhB58,944
+pycbf/_wrapper.py,sha256=Sf3enSZUjs8xNjT1pkJfipnnOsmV7Wd12QCYwc4lmsE,438266
+pycbf/_pycbf.cpython-37m-x86_64-linux-gnu.so,sha256=AnoPmosbxAp72Xn6iigUCxF3-IldOEDVBFwilSCWtwI,4282224
+pycbf/img.c,sha256=ZvpnLFHwpL2RdlYjLbOOOb9wYJq95WR6i3fygrNnaf4,304924
+pycbf/img.cpython-37m-x86_64-linux-gnu.so,sha256=1SbgGOnVs1B4p5f36iHukX6JB-MifIjHE1m26yQzM9k,499064
