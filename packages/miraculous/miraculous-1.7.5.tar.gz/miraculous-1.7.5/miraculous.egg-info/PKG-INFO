@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: miraculous
+Version: 1.7.5
+Summary: A discord.py bot ready to use!
+Home-page: https://github.com/dumb-stuff/Music-bot
+Author: Rukchad Wongprayoon
+Author-email: mooping3roblox@gmail.com
+License: MIT
+Description: [![CodeFactor](https://www.codefactor.io/repository/github/dumb-stuff/music-bot/badge)](https://www.codefactor.io/repository/github/dumb-stuff/music-bot)
+        [![Pypi Download Stats](https://img.shields.io/pypi/dm/miraculous)](https://pypistats.org/packages/miraculous)
+        [![Latest version](https://badge.fury.io/py/miraculous.svg)](https://pypi.org/project/miraculous/)
+        [![Test Miraculous](https://github.com/dumb-stuff/Music-bot/actions/workflows/tester.yml/badge.svg)](https://github.com/dumb-stuff/Music-bot/actions/workflows/tester.yml)
+        [![Upload Python Package](https://github.com/dumb-stuff/Music-bot/actions/workflows/python-publish.yml/badge.svg)](https://github.com/dumb-stuff/Music-bot/actions/workflows/python-publish.yml)
+        # Music-bot
+        Greeting! Welcome to my miraculous bot repository!
+        Here's how to setup!
+        # Setup process
+        1. If you gonna host on your pc edit last line to be bot.run("token"). If you're gonna host on  repl add .env file and add TO=token. If you're gonna to host with heroku I have file ready for you just edit config var to be KEY TO VALUE bot token
+        2. Then fire it up it should show your bot name id and stuff
+        Default prefix is "m." you can change at bot variable
+        
+        # But I just download this from pypi
+        Just use 
+        
+        ```py
+        from miraculous import login
+        
+        login("bot token")
+        
+        ```
+        Or if you use enviroment variable
+        ```py
+        from miraculous import login
+        from os import getenv
+        
+        login(getenv("your enviroment variable!"))
+        ```
+        ## What I just fixed?
+        - Not realtime volume changing
+        - Loop don't work
+        - Pausing and Resuming is not work
+        - Changed how it play music without downloading
+        ## What I just don't fixed yet?
+        - Sound doesn't change when looping
+        # Errors?
+        Please ensure you have all module by do
+        ```bash
+        pip install -r requirements.txt
+        ```
+        And check your token is not none if you are using enviroment variable method
+        ```bash
+        python yourscriptname.py
+        Removing cache dir /home/runner/.cache/youtube-dl ..
+        Traceback (most recent call last):
+          File "main.py", line 519, in <module>
+            bot.run(os.getenv("TOr"))
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 723, in run
+            return future.result()
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 702, in runner
+            await self.start(*args, **kwargs)
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 665, in start
+            await self.login(*args, bot=bot)
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 511, in login
+        await self.http.static_login(token.strip(), bot=bot)
+        AttributeError: 'NoneType' object has no attribute 'strip'
+        ```
+        also check your token is not exposed
+        ```bash
+        python main.py
+         * Serving Flask app "miraculous" (lazy loading)
+         * Environment: production
+           WARNING: This is a development server. Do not use it in a production deployment.
+           Use a production WSGI server instead.
+         * Debug mode: off
+        Loaded cog.globalchat!
+         * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+        Loaded cog.globalchat!
+         * Serving Flask app "" (lazy loading)
+         * Environment: production
+           WARNING: This is a development server. Do not use it in a production deployment.
+           Use a production WSGI server instead.
+         * Debug mode: off
+         * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+        Traceback (most recent call last):
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/http.py", line 293, in static_login
+            data = await self.request(Route('GET', '/users/@me'))
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/http.py", line 247, in request
+            raise HTTPException(r, data)
+        discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+        
+        The above exception was the direct cause of the following exception:
+        
+        Traceback (most recent call last):
+          File "main.py", line 584, in <module>
+            bot.run("ksdajfhkhasdkfj")
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 718, in run
+            return future.result()
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 697, in runner
+            await self.start(*args, **kwargs)
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 660, in start
+            await self.login(*args, bot=bot)
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 509, in login
+            await self.http.static_login(token.strip(), bot=bot)
+          File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/http.py", line 297, in static_login
+            raise LoginFailure('Improper token has been passed.') from exc
+        discord.errors.LoginFailure: Improper token has been passed.
+        ```
+        Love!
+        
+Keywords: Tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
