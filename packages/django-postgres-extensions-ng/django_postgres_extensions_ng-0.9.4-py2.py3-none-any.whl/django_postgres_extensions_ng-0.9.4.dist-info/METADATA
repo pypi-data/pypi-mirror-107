@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-postgres-extensions-ng
+Version: 0.9.4
+Summary: Extra features for django.contrib.postgres
+Home-page: https://github.com/ifanrx/django_postgres_extensions
+Author: ifanr
+Author-email: ifanrx@ifanr.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Django (>=3.2)
+Requires-Dist: six
+
+Django Postgres Extensions adds a lot of functionality to Django.contrib.postgres, specifically in relation to ArrayField, HStoreField and JSONField, including much better form fields for dealing with these field types. The app also includes an Array Many To Many Field, so you can store the relationship in an array column instead of requiring an extra database table.
+
+Check out http://django-postgres-extensions.readthedocs.io/en/latest/ to get started.
+
