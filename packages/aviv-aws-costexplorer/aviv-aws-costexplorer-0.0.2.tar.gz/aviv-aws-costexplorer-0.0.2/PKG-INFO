@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: aviv-aws-costexplorer
+Version: 0.0.2
+Summary: Aviv AWS CostExplorer python library
+Home-page: https://github.com/aviv-group/aviv-aws-costexplorer
+Author: Jules Clement
+Author-email: jules.clement@aviv-group.com
+License: UNKNOWN
+Description: # Aviv AWS CostExplorer
+        
+        Aims to provide a quick and comprehensive interface to AWS costexplorer api.
+        This is useful to extract cost and usage (aka CAU) data, save it and to make it available for reporting and analysis.
+        
+        ## Requirements
+        
+        - python >= 3.8
+        - boto3
+        - Access to AWS ce:cost_and_usage
+        
+        ## Development
+        
+        ```bash
+        pipenv install -d
+        ```
+        
+        ## Test, Build, Release
+        
+        ```bash
+        # Run tests
+        pipenv run pytest -v tests/
+        
+        # Build python package
+        python3 setup.py sdist bdist_wheel
+        
+        # Release on testpypi
+        python3 -m twine upload --repository testpypi dist/*
+        ```
+        
+        Note: the Pypi release is also done during the CICD process.
+        
+        ## Contribute
+        
+        Yes please! Send us your PR's
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: System
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: datastore
