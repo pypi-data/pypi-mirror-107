@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sysfetch-win
+Version: 0.9
+Summary: Fetch Info About Your Windows System
+Home-page: https://github.com/nandydark/sysfetch-win
+Author: NandyDark
+License: MIT Licence
+Keywords: sysfetch,sysfetch-win,nandydark,neofetch,neofetch-win
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: psutil
+
+## Installation
+
+```
+pip install sysfetch-win
+```
+
+## Sysfetch
+![](https://github.com/nandydark/sysfetch-win/blob/main/sysfetch.png?raw=true)
+
+![](https://github.com/nandydark/sysfetch-win/blob/main/help.png?raw=true)
+### Pypi Project https://pypi.org/project/sysfetch-win/
+
+
