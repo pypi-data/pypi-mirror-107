@@ -1,0 +1,39 @@
+---
+variables:
+  DUNE_CMAKE_FLAGS:  "-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DDUNE_ENABLE_PYTHONBINDINGS=ON -DCMAKE_CXX_COMPILER=clang++-10 -DCMAKE_C_COMPILER=clang-10 -DDUNE_GRID_GRIDTYPE_SELECTOR=ON -DCMAKE_CXX_FLAGS='-std=c++17 -O2 -g -Wall -fdiagnostics-color=always' -DDUNE_MAX_TEST_CORES=4 -DBUILD_SHARED_LIBS=TRUE -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_LATEX=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_Alberta=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_Vc=TRUE -DCMAKE_DISABLE_DOCUMENTATION=TRUE"
+  DUNECI_CMAKE_FLAGS: $DUNE_CMAKE_FLAGS
+  # adding this actually leads to the test failure seen in the core modules
+  # don't know why this is required here but not for core modules - magic?
+  DUNECI_PARALLEL:    "6"
+  PYTHONPATH:         "/duneci/modules/dune-common/build-cmake/python:/duneci/modules/dune-geometry/build-cmake/python:/duneci/modules/dune-grid/build-cmake/python:/duneci/modules/dune-istl/build-cmake/python:/duneci/modules/dune-alugrid/build-cmake/python:/duneci/modules/dune-fem/build-cmake/python:/duneci/modules/dune-fem-dg/build-cmake/python:/duneci/modules/dune-vem/build-cmake/python"
+  REBUILD:            "off"
+  REGURL:             "https://gitlab.dune-project.org/api/v4/projects/302/packages/generic"
+
+before_script:
+  - export TORTURE_TESTS=off
+  # python3 -m venv --system-site-packages /duneci/modules/dune-env
+  - python3 -m venv /duneci/modules/dune-env
+  - source /duneci/modules/dune-env/bin/activate
+  - source /duneci/bin/duneci-init-job
+  - duneci-install-module https://gitlab.dune-project.org/core/dune-common.git
+  - duneci-install-module https://gitlab.dune-project.org/core/dune-geometry.git
+  - duneci-install-module https://gitlab.dune-project.org/core/dune-grid.git
+  - duneci-install-module https://gitlab.dune-project.org/core/dune-istl.git
+  - duneci-install-module https://gitlab.dune-project.org/core/dune-localfunctions.git
+  - duneci-install-module https://gitlab.dune-project.org/extensions/dune-alugrid.git
+  - duneci-install-module https://gitlab.dune-project.org/dune-fem/dune-fem.git
+  - duneci-install-module https://gitlab.dune-project.org/dune-fem/dune-fem-dg.git
+  - duneci-install-module https://gitlab.dune-project.org/dune-fem/dune-vem.git
+
+ubuntu-20.04-clang-10-17:
+  image: registry.dune-project.org/docker/ci/ubuntu:20.04
+  script:
+    - cd $CI_PROJECT_DIR
+    - source /duneci/modules/dune-env/bin/activate
+    - ./citest.sh
+  variables:
+    # bug in CI clang-10-17 and clang-10-20 are mixed up
+    DUNECI_TOOLCHAIN: clang-10-20
+    DUNE_CMAKE_FLAGS:  "-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DDUNE_ENABLE_PYTHONBINDINGS=ON -DCMAKE_CXX_COMPILER=clang++-10 -DCMAKE_C_COMPILER=clang-10 -DDUNE_GRID_GRIDTYPE_SELECTOR=ON -DCMAKE_CXX_FLAGS='-std=c++17 -O2 -g -Wall -fdiagnostics-color=always' -DDUNE_MAX_TEST_CORES=4 -DBUILD_SHARED_LIBS=TRUE -DCMAKE_POSITION_INDEPENDENT_CODE=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_LATEX=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_Alberta=TRUE -DCMAKE_DISABLE_FIND_PACKAGE_Vc=TRUE -DCMAKE_DISABLE_DOCUMENTATION=TRUE"
+    DUNECI_CMAKE_FLAGS: $DUNE_CMAKE_FLAGS
+  tags: [duneci]
