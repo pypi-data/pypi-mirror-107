@@ -1,0 +1,3 @@
+[console_scripts]
+pyjsonedit=pyjsonedit.cli:run
+
