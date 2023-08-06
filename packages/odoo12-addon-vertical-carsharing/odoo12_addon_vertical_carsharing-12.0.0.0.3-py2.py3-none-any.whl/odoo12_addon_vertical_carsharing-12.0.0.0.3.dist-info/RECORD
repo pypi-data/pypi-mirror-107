@@ -1,0 +1,15 @@
+odoo/addons/vertical_carsharing/__init__.py,sha256=m9EwjQid0_uoD8cYfvb5nXUcNfwuHpJwwB2c3aAvtLo,44
+odoo/addons/vertical_carsharing/__manifest__.py,sha256=TfbYLp0jAzyK6rzMXSGoRM-oBGt2K2pfUMXr6ddoSSc,828
+odoo/addons/vertical_carsharing/email_tmpl/notification_email.xml,sha256=hEP0GFDAUwcrvdqb_z_1UNca_lx8j8WG7Q_8eCF4p7w,972
+odoo/addons/vertical_carsharing/migrations/12.0.1.0/post-migration.py,sha256=KXwRBqegnVWEQYQ3DHQf3An2NPN5fExwjQ-kpjAzsjc,1433
+odoo/addons/vertical_carsharing/migrations/12.0.1.0/pre-migration.py,sha256=njRLpdDjMvnX9eVA7swuM_NHUh1cgVHWwoJs_q7B3o0,331
+odoo/addons/vertical_carsharing/models/__init__.py,sha256=TpKCrFd2fDz-JOC73YJnR3yKzuc7ZQMFh2UOuZoXrH8,55
+odoo/addons/vertical_carsharing/models/models_sm_member.py,sha256=TTU2tFJZ18ao0s2B2ORFJ53Wtu_NGtc2ZStK9Hi82Vo,2596
+odoo/addons/vertical_carsharing/static/src/img/carsharing.png,sha256=FmycDVhY_i8Y8w1v0P-SLogHm_wjWTCgMdXdGcNbBiE,41066
+odoo/addons/vertical_carsharing/static/src/scss/primary_variables.scss,sha256=ugoNjzJPhkHwX4B2phal7CR4Hy3qLiBYcGqt8ldmyog,2831
+odoo/addons/vertical_carsharing/views/views.xml,sha256=ljliXy_4IDSL_eGKlDZc3_HD5LeVWLGGwLXzMMmscow,458
+odoo/addons/vertical_carsharing/views/views_members.xml,sha256=aAPuk3YqdAWqrOtJp4J1-_kFxm1D3bD-TKjC0VvGYCM,3484
+odoo12_addon_vertical_carsharing-12.0.0.0.3.dist-info/METADATA,sha256=3I0jXZHH6GQkjPMk09SJX1jnRHdB-YGFrtitOK1OTM8,405
+odoo12_addon_vertical_carsharing-12.0.0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+odoo12_addon_vertical_carsharing-12.0.0.0.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_vertical_carsharing-12.0.0.0.3.dist-info/RECORD,,
