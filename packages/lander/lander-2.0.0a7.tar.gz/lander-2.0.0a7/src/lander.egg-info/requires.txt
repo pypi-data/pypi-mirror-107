@@ -1,0 +1,18 @@
+python-dateutil>=2.6.0
+Jinja2>=2.10.1
+pydantic
+email-validator
+bleach
+pypandoc
+panflute>=2
+GitPython
+typer
+base32-lib
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+pytest
+coverage[toml]
+beautifulsoup4
