@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import webbrowser
+
+urls = [
+    'http://quora.com',
+    'http://facebook.com',
+    'http://youtube.com',
+    'http://github.com',
+    'http://telegrafi.com',
+    'http://reddit.com',
+    'http://medium.com',
+    'https://open.spotify.com'
+]
+for url in urls:
+    webbrowser.open_new_tab(url)
