@@ -1,0 +1,3 @@
+[console_scripts]
+pysmock = pysmock:main
+
