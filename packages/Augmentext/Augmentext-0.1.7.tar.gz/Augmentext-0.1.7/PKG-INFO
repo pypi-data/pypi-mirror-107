@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: Augmentext
+Version: 0.1.7
+Summary: Text augmentation library for NLP with a focus on biomedical applications.
+Home-page: https://github.com/mdbloice/Augmentext
+Author: Marcus D. Bloice
+Author-email: marcus.bloice@medunigraz.at
+License: MIT
+Description: # Augmentext
+        
+        _Augmentext_ is a text augmentation package for Natural Language Processing, with a focus on applications in the biomedical domain.
+        
+        **Augmentext is work in progress! Some features are functional, but it not yet in a usable state.**
+        
+        ## Features
+        
+        - Auto-generated, randomised misspellings
+        - Dictionary-based thesaurus word replacement
+        - Auto-generated abbreviations
+        - More to come...
+        
+        ## Biomedical Domain Specific Features
+        
+        Although a general library, Augmentext has a special focus on biomedical text, such as 
+        
+        - Replacement of mm/g^2 with common mistakes, e.g. g/mm^2 etc.
+        - Conversion of units from metric to imperial/customary and vice versa
+        - Integration of SNOMED, ICD, MeSH, RxNorm and other text corpora in to the augmentation pipeline
+        - Synonym replacement using pre-trained models using GloVe, fasttext, and word2vec.
+        
+        ## More Information
+        
+        See the project's GitHub respository <https://github.com/mdbloice/Augmentext> 
+        
+        Help will be available here once the software has been made public on GitHub: <https://augmentext.readthedocs.io>
+        
+Keywords: text,augmentation,generation,NLP,machine,learning,biomedical,bioinformatics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
