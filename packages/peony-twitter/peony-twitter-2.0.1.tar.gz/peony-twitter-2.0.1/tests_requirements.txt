@@ -1,0 +1,10 @@
+-r extras_require.txt
+-r requirements.txt
+asynctest
+codecov
+flake8
+flake8-bugbear
+pytest
+pytest-asyncio
+pytest-cov
+pytest-timeout

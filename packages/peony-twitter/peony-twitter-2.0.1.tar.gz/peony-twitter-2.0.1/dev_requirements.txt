@@ -1,0 +1,8 @@
+-r tests_requirements.txt
+autoflake
+autopep8
+flake8
+flake8-bugbear
+isort
+sphinx
+sphinx_rtd_theme
