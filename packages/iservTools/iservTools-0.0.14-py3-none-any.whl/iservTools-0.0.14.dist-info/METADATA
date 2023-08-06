@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iservTools
+Version: 0.0.14
+Summary: Tools for iServ school servers
+Home-page: UNKNOWN
+Author: Christian Eckhardt
+Author-email: Christian.Eckhardt@gmx.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: openpyxl
+
+Helps administer iServ school servers that are popular in Germany
+
+Eine Sammlung von Tools, die das Verwalten der Benutzer und der Gruppen erleichtert. Dies erfolgt erstens durch Import von Schüler- und Lehrerdaten CSV-Dateien (aus SiBank) und durch Export von CSV-Dateien für das Import-Modul von iServ. Zweitens können über einen ferngesteuerten Chrome-Browser weitere Einstellungen übernommen werden.
+
