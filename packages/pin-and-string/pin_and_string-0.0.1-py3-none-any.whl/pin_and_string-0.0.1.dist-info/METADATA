@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pin-and-string
+Version: 0.0.1
+Summary: A python module to evaluate and manupilate shapes that can be built by pins and string.
+Home-page: https://github.com/dakyol/pin-and-string
+Author: Özgür Deniz Akyol
+Author-email: dakyol@pm.me
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dakyol/pin-and-string/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# pin-and-string: A python module to evaluate and manupilate shapes that can be built by pins and string.
+
+*pin-and-string* is a **Python** package that provides functions and built-in matrices for constructing and manupilating shapes that can be built by pins and string.
+
