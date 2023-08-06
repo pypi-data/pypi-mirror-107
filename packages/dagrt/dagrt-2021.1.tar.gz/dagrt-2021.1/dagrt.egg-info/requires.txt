@@ -1,0 +1,5 @@
+mako
+numpy>=1.5
+pymbolic>=2016.2
+pytest>=2.3
+pytools>=2020.1
