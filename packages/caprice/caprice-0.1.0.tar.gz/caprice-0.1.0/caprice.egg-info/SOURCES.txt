@@ -1,0 +1,8 @@
+README.md
+setup.py
+caprice/__init__.py
+caprice/test.py
+caprice.egg-info/PKG-INFO
+caprice.egg-info/SOURCES.txt
+caprice.egg-info/dependency_links.txt
+caprice.egg-info/top_level.txt
