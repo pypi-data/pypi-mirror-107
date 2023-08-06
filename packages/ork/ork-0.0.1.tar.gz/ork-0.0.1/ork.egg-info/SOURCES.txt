@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ork/__init__.py
+ork/namegen.json
+ork/namegen.py
+ork/utils.py
+ork.egg-info/PKG-INFO
+ork.egg-info/SOURCES.txt
+ork.egg-info/dependency_links.txt
+ork.egg-info/top_level.txt
+test/test.py

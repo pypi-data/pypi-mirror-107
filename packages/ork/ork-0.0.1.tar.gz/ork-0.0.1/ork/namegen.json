@@ -1,0 +1,590 @@
+{
+  "orks": {
+    "en": {
+      "11": {
+        "front_bit": "Urzog",
+        "uvver_bit": "Drakka"
+      },
+      "12": {
+        "front_bit": "Snikrat",
+        "uvver_bit": "Grug"
+      },
+      "13": {
+        "front_bit": "Krogskull",
+        "uvver_bit": "Gitstompa"
+      },
+      "14": {
+        "front_bit": "Gorgrok",
+        "uvver_bit": "Skullcrusha"
+      },
+      "15": {
+        "front_bit": "Droknog",
+        "uvver_bit": "Facekrumpa"
+      },
+      "16": {
+        "front_bit": "Grodd",
+        "uvver_bit": "the ’Ard"
+      },
+      "21": {
+        "front_bit": "Zogwarp",
+        "uvver_bit": "Grot Kicker"
+      },
+      "22": {
+        "front_bit": "Gitzog",
+        "uvver_bit": "da Shiv"
+      },
+      "23": {
+        "front_bit": "Ruggat",
+        "uvver_bit": null
+      },
+      "24": {
+        "front_bit": "Zargruk",
+        "uvver_bit": "Blaktoof"
+      },
+      "25": {
+        "front_bit": "Stugbrog",
+        "uvver_bit": "da Hammer"
+      },
+      "26": {
+        "front_bit": "Snarkrat",
+        "uvver_bit": "Ghazbhag"
+      },
+      "31": {
+        "front_bit": "Zagblag",
+        "uvver_bit": "Steelfang"
+      },
+      "32": {
+        "front_bit": "Bokgrobber",
+        "uvver_bit": "Daggafist"
+      },
+      "33": {
+        "front_bit": "Zarknutz",
+        "uvver_bit": "Squigbiter"
+      },
+      "34": {
+        "front_bit": "Dhakadak",
+        "uvver_bit": "da Stompy"
+      },
+      "35": {
+        "front_bit": "Nargrunt",
+        "uvver_bit": "da Facegrinda"
+      },
+      "36": {
+        "front_bit": "Farksnot",
+        "uvver_bit": "Loudgob"
+      },
+      "41": {
+        "front_bit": "Gharagh",
+        "uvver_bit": "Facebiter"
+      },
+      "42": {
+        "front_bit": "Urlakk",
+        "uvver_bit": "da Maniak"
+      },
+      "43": {
+        "front_bit": "Zogger",
+        "uvver_bit": "Steelbootz"
+      },
+      "44": {
+        "front_bit": "Slazbag",
+        "uvver_bit": "Ripblade"
+      },
+      "45": {
+        "front_bit": "Squigface",
+        "uvver_bit": "’Umiechewa"
+      },
+      "46": {
+        "front_bit": "Ugul",
+        "uvver_bit": "Ironboot"
+      },
+      "51": {
+        "front_bit": "Tuska",
+        "uvver_bit": "Flame Spitta"
+      },
+      "52": {
+        "front_bit": "Nakboz",
+        "uvver_bit": "Wurldkilla"
+      },
+      "53": {
+        "front_bit": "Skarzot",
+        "uvver_bit": "Stompkrumpa"
+      },
+      "54": {
+        "front_bit": "Kroggler",
+        "uvver_bit": "Spleenrippa"
+      },
+      "55": {
+        "front_bit": "Grukk",
+        "uvver_bit": "Bigfangz"
+      },
+      "56": {
+        "front_bit": "Fragbad",
+        "uvver_bit": "Badfang"
+      },
+      "61": {
+        "front_bit": "Traknug",
+        "uvver_bit": "Snotkicka"
+      },
+      "62": {
+        "front_bit": "Grizgutz",
+        "uvver_bit": "Brewguzzla"
+      },
+      "63": {
+        "front_bit": "Shrokbog",
+        "uvver_bit": "Bonesplitta"
+      },
+      "64": {
+        "front_bit": "Kraznag",
+        "uvver_bit": "’Eadkrakka"
+      },
+      "65": {
+        "front_bit": "Gragnatz",
+        "uvver_bit": "Madeye"
+      },
+      "66": {
+        "front_bit": "Blokrotz",
+        "uvver_bit": "Trakeye"
+      }
+    },
+    "fr": {
+      "11": {
+        "front_bit": "Urzog",
+        "uvver_bit": "Drakka"
+      },
+      "12": {
+        "front_bit": "Snikrat",
+        "uvver_bit": "Grug"
+      },
+      "13": {
+        "front_bit": "Krogskull",
+        "uvver_bit": "Kraz lé Zoms"
+      },
+      "14": {
+        "front_bit": "Gorgrok",
+        "uvver_bit": "Broie lé Krânes"
+      },
+      "15": {
+        "front_bit": "Droknog",
+        "uvver_bit": "Bourre-pif"
+      },
+      "16": {
+        "front_bit": "Grodd",
+        "uvver_bit": "le Roc"
+      },
+      "21": {
+        "front_bit": "Zogwarp",
+        "uvver_bit": "Tabass'Grots"
+      },
+      "22": {
+        "front_bit": "Gitzog",
+        "uvver_bit": "eul' Sournois"
+      },
+      "23": {
+        "front_bit": "Ruggat",
+        "uvver_bit": null
+      },
+      "24": {
+        "front_bit": "Zargruk",
+        "uvver_bit": "Dent Noire"
+      },
+      "25": {
+        "front_bit": "Stugbrog",
+        "uvver_bit": "eul' Marteau"
+      },
+      "26": {
+        "front_bit": "Snarkrat",
+        "uvver_bit": "Ghazbhag"
+      },
+      "31": {
+        "front_bit": "Zagblag",
+        "uvver_bit": "Croc d'Acier"
+      },
+      "32": {
+        "front_bit": "Bokgrobber",
+        "uvver_bit": "eul' Ceste"
+      },
+      "33": {
+        "front_bit": "Zarknutz",
+        "uvver_bit": "Mord-squigs"
+      },
+      "34": {
+        "front_bit": "Dhakadak",
+        "uvver_bit": "le Krazeur"
+      },
+      "35": {
+        "front_bit": "Nargrunt",
+        "uvver_bit": "Klat' ta Face"
+      },
+      "36": {
+        "front_bit": "Farksnot",
+        "uvver_bit": "eul' Bruyant"
+      },
+      "41": {
+        "front_bit": "Gharagh",
+        "uvver_bit": "Arrache-nez"
+      },
+      "42": {
+        "front_bit": "Urlakk",
+        "uvver_bit": "eul' Maniak"
+      },
+      "43": {
+        "front_bit": "Zogger",
+        "uvver_bit": "Bottes en Fer"
+      },
+      "44": {
+        "front_bit": "Slazbag",
+        "uvver_bit": "le Joueur de Kouteau"
+      },
+      "45": {
+        "front_bit": "Squigface",
+        "uvver_bit": "Mâche-zoms"
+      },
+      "46": {
+        "front_bit": "Ugul",
+        "uvver_bit": "Botte lé Fess'"
+      },
+      "51": {
+        "front_bit": "Tuska",
+        "uvver_bit": "Crache dé Flam'"
+      },
+      "52": {
+        "front_bit": "Nakboz",
+        "uvver_bit": "Tueur de Planètes"
+      },
+      "53": {
+        "front_bit": "Skarzot",
+        "uvver_bit": "Krazébroie"
+      },
+      "54": {
+        "front_bit": "Kroggler",
+        "uvver_bit": "L'Éventreur"
+      },
+      "55": {
+        "front_bit": "Grukk",
+        "uvver_bit": "Gross' Dents"
+      },
+      "56": {
+        "front_bit": "Fragbad",
+        "uvver_bit": "Croc-pourri"
+      },
+      "61": {
+        "front_bit": "Traknug",
+        "uvver_bit": "Kraz lé Snots"
+      },
+      "62": {
+        "front_bit": "Grizgutz",
+        "uvver_bit": "eul' Gueulard"
+      },
+      "63": {
+        "front_bit": "Shrokbog",
+        "uvver_bit": "Fend-les-Os"
+      },
+      "64": {
+        "front_bit": "Kraznag",
+        "uvver_bit": "'Fraktur-têtes"
+      },
+      "65": {
+        "front_bit": "Gragnatz",
+        "uvver_bit": "l'Œil Fou"
+      },
+      "66": {
+        "front_bit": "Blokrotz",
+        "uvver_bit": "l'Œil Perçant"
+      }
+    }
+  },
+  "space wolves": {
+    "en": {
+      "11": {
+        "front_bit": "Gunnar",
+        "uvver_bit": "Bluetooth"
+      },
+      "12": {
+        "front_bit": "Ulfrich",
+        "uvver_bit": "Wolfborn"
+      },
+      "13": {
+        "front_bit": "Laars",
+        "uvver_bit": "Ghostwolf"
+      },
+      "14": {
+        "front_bit": "Sven",
+        "uvver_bit": "Icegrip"
+      },
+      "15": {
+        "front_bit": "Wulfgar",
+        "uvver_bit": "Stormcrow"
+      },
+      "16": {
+        "front_bit": "Erik",
+        "uvver_bit": "Redhowl"
+      },
+      "21": {
+        "front_bit": "Dolf",
+        "uvver_bit": "Ironaxe"
+      },
+      "22": {
+        "front_bit": "Leif",
+        "uvver_bit": "Icefang"
+      },
+      "23": {
+        "front_bit": "Olaf",
+        "uvver_bit": "Blackhelm"
+      },
+      "24": {
+        "front_bit": "Torrvald",
+        "uvver_bit": "the Red"
+      },
+      "25": {
+        "front_bit": "Logan",
+        "uvver_bit": "Wyrmslayer"
+      },
+      "26": {
+        "front_bit": "Arnkel",
+        "uvver_bit": "Thunderhowl"
+      },
+      "31": {
+        "front_bit": "Orn",
+        "uvver_bit": "Stormstrider"
+      },
+      "32": {
+        "front_bit": "Isulf",
+        "uvver_bit": "Stoneshield"
+      },
+      "33": {
+        "front_bit": "Krom",
+        "uvver_bit": "Trollbane"
+      },
+      "34": {
+        "front_bit": "Kodran",
+        "uvver_bit": "Greymane"
+      },
+      "35": {
+        "front_bit": "Baldr",
+        "uvver_bit": "Shortfang"
+      },
+      "36": {
+        "front_bit": "Varald",
+        "uvver_bit": "Iceblade"
+      },
+      "41": {
+        "front_bit": "Aesir",
+        "uvver_bit": "Warfist"
+      },
+      "42": {
+        "front_bit": "Jorin",
+        "uvver_bit": "the Berserker"
+      },
+      "43": {
+        "front_bit": "Brannak",
+        "uvver_bit": "Wyrdfang"
+      },
+      "44": {
+        "front_bit": "Kargir",
+        "uvver_bit": "Umberclaw"
+      },
+      "45": {
+        "front_bit": "Bran",
+        "uvver_bit": "Stormhowl"
+      },
+      "46": {
+        "front_bit": "Bjorn",
+        "uvver_bit": "Thunderbrow"
+      },
+      "51": {
+        "front_bit": "Kjarl",
+        "uvver_bit": "Frostskull"
+      },
+      "52": {
+        "front_bit": "Berek",
+        "uvver_bit": "Stonehelm"
+      },
+      "53": {
+        "front_bit": "Bulveye",
+        "uvver_bit": "Hammerfist"
+      },
+      "54": {
+        "front_bit": "Haldor",
+        "uvver_bit": "Grimfang"
+      },
+      "55": {
+        "front_bit": "Ingvarr",
+        "uvver_bit": "the Reaver"
+      },
+      "56": {
+        "front_bit": "Karulf",
+        "uvver_bit": "Fellhammer"
+      },
+      "61": {
+        "front_bit": "Torfin",
+        "uvver_bit": "Crowhelm"
+      },
+      "62": {
+        "front_bit": "Nesmiv",
+        "uvver_bit": "Orksbane"
+      },
+      "63": {
+        "front_bit": "Rurik",
+        "uvver_bit": "Blackblood"
+      },
+      "64": {
+        "front_bit": "Ottar",
+        "uvver_bit": "Stonefist"
+      },
+      "65": {
+        "front_bit": "Haegr",
+        "uvver_bit": "Frostcrow"
+      },
+      "66": {
+        "front_bit": "Gnyrll",
+        "uvver_bit": "Gunnhilt"
+      }
+    },
+    "fr": {
+      "11": {
+        "front_bit": "Gunnar",
+        "uvver_bit": "Bluetooth"
+      },
+      "12": {
+        "front_bit": "Ulfrich",
+        "uvver_bit": "Wolfborn"
+      },
+      "13": {
+        "front_bit": "Laars",
+        "uvver_bit": "Ghostwolf"
+      },
+      "14": {
+        "front_bit": "Sven",
+        "uvver_bit": "Icegrip"
+      },
+      "15": {
+        "front_bit": "Wulfgar",
+        "uvver_bit": "Stormcrow"
+      },
+      "16": {
+        "front_bit": "Erik",
+        "uvver_bit": "Redhowl"
+      },
+      "21": {
+        "front_bit": "Dolf",
+        "uvver_bit": "Ironaxe"
+      },
+      "22": {
+        "front_bit": "Leif",
+        "uvver_bit": "Icefang"
+      },
+      "23": {
+        "front_bit": "Olaf",
+        "uvver_bit": "Blackhelm"
+      },
+      "24": {
+        "front_bit": "Torrvald",
+        "uvver_bit": "Le Rouge"
+      },
+      "25": {
+        "front_bit": "Logan",
+        "uvver_bit": "Wyrmslayer"
+      },
+      "26": {
+        "front_bit": "Arnkel",
+        "uvver_bit": "Thunderhowl"
+      },
+      "31": {
+        "front_bit": "Orn",
+        "uvver_bit": "Stormstrider"
+      },
+      "32": {
+        "front_bit": "Isulf",
+        "uvver_bit": "Stoneshield"
+      },
+      "33": {
+        "front_bit": "Krom",
+        "uvver_bit": "Trollbane"
+      },
+      "34": {
+        "front_bit": "Kodran",
+        "uvver_bit": "Greymane"
+      },
+      "35": {
+        "front_bit": "Baldr",
+        "uvver_bit": "Shortfang"
+      },
+      "36": {
+        "front_bit": "Varald",
+        "uvver_bit": "Iceblade"
+      },
+      "41": {
+        "front_bit": "Aesir",
+        "uvver_bit": "Warfist"
+      },
+      "42": {
+        "front_bit": "Jorin",
+        "uvver_bit": "Le Berserk"
+      },
+      "43": {
+        "front_bit": "Brannak",
+        "uvver_bit": "Wyrdfang"
+      },
+      "44": {
+        "front_bit": "Kargir",
+        "uvver_bit": "Umberclaw"
+      },
+      "45": {
+        "front_bit": "Bran",
+        "uvver_bit": "Stormhowl"
+      },
+      "46": {
+        "front_bit": "Bjorn",
+        "uvver_bit": "Thunderbrow"
+      },
+      "51": {
+        "front_bit": "Kjarl",
+        "uvver_bit": "Frostskull"
+      },
+      "52": {
+        "front_bit": "Berek",
+        "uvver_bit": "Stonehelm"
+      },
+      "53": {
+        "front_bit": "Bulveye",
+        "uvver_bit": "Hammerfist"
+      },
+      "54": {
+        "front_bit": "Haldor",
+        "uvver_bit": "Grimfang"
+      },
+      "55": {
+        "front_bit": "Ingvarr",
+        "uvver_bit": "L'Écumeur"
+      },
+      "56": {
+        "front_bit": "Karulf",
+        "uvver_bit": "Fellhammer"
+      },
+      "61": {
+        "front_bit": "Torfin",
+        "uvver_bit": "Crowhelm"
+      },
+      "62": {
+        "front_bit": "Nesmiv",
+        "uvver_bit": "Orksbane"
+      },
+      "63": {
+        "front_bit": "Rurik",
+        "uvver_bit": "Blackblood"
+      },
+      "64": {
+        "front_bit": "Ottar",
+        "uvver_bit": "Stonefist"
+      },
+      "65": {
+        "front_bit": "Haegr",
+        "uvver_bit": "Frostcrow"
+      },
+      "66": {
+        "front_bit": "Gnyrll",
+        "uvver_bit": "Gunnhilt"
+      }
+    }
+  }
+}
