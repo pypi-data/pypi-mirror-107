@@ -1,0 +1,3 @@
+[console_scripts]
+slurm_to_wandb = slurm_to_wandb.main:main
+

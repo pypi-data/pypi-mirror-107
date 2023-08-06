@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+slurm_to_wandb/__init__.py
+slurm_to_wandb/main.py
+slurm_to_wandb/sacct_to_df.py
+slurm_to_wandb.egg-info/PKG-INFO
+slurm_to_wandb.egg-info/SOURCES.txt
+slurm_to_wandb.egg-info/dependency_links.txt
+slurm_to_wandb.egg-info/entry_points.txt
+slurm_to_wandb.egg-info/requires.txt
+slurm_to_wandb.egg-info/top_level.txt
