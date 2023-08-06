@@ -1,0 +1,306 @@
+Metadata-Version: 2.1
+Name: trak
+Version: 0.1.1
+Summary: A simple writing-progress tracking tool for plain text files
+Home-page: UNKNOWN
+Author: Greg Pyle
+Author-email: chaoborid@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Gambusia/trak
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate
+
+# trak: A Text-File Writing Tracker #
+`trak` is a simple writing-progress tracker for text files of the type .tex, .txt, .md, and .html.
+
+## Description
+Once invoked, `trak` initiates a writing _session_ and records an initial word
+count for every _file_ monitored in each _project_ it knows about. After the
+writing session, `trak` recounts and records word counts for every file whose final count
+varies from its initial count. Session data are recorded and can be printed to
+standard output or piped into a text file, which can later be imported into some
+other third-party program for analysis. 
+
+`trak` allows you to list all projects and project files, record details about each
+writing session, and keep track of writing records (e.g., most words written in a
+single session, longest writing streak, current writing streak, etc.). There is
+no computational overhead during an active writing session because `trak` simply
+counts and records words at the beginning and end of a writing session---it does
+not run in the background.
+
+## Installation
+The easist way to install `trak` is to use Pip.
+
+```
+$ python3 -m pip install trak
+```
+
+You can also download and install `trak` directly from GitHub. Simply clone the
+`trak` repository into whatever directory you use for downloaded programs (e.g.,
+`~/bin` in this example) and run the `setup.py` installation script.
+
+```
+$ cd ~/bin 
+$ git clone https://github.com/Gambusia/trak.git
+$ cd trak
+$ python3 setup.py install 
+```
+
+## Usage
+I do a lot of writing in text files (e.g., .txt, .tex, .md, and .html). Although
+many of the commercially available writing programs have excellent
+writing-progress tracking capabilities, there are very few such applications
+available to those of us who write in plain text files. This application,
+`trak`, is my answer to this shortcoming. Admittedly, I wrote this little
+program to meet my own personal tracking needs. But if you think you might find
+it useful (and I hope you do), please feel free to use it.
+
+To use `trak` simply type `trak` on the command line to initiate a tracking
+session. Upon its first invocation, it won't do much.
+
+```
+$ trak
+Nothing to track! Use the -n option to track a project.
+```
+
+To track a new writing project, you have to tell `trak` where to look for it. A
+project can be either a single file of type .tex, .txt, .md, or .html, or a
+directory. 
+
+```
+$ trak -n
+Project name: myproject
+Project path: ~/path/to/my/project
+```
+
+You will be asked to provide a name and path for the new project you'd like to
+track. Once you enter the required information, you will be presented with a
+message acknowledging that tracking has begun. If your project is a file, `trak`
+will monitor both the time and number of words written in that file during any
+given writing session. If your project is a directory, then `trak` will gather
+all the files of type .tex, .txt., .md, or .html recursively through the entire
+directory structure of your project and track only the modified files,
+writing-session duration, and number of words written during any given writing
+session. `trak` stores your writing projects in a file so it can remember which
+projects to monitor without you having to type them in before each writing
+session.
+
+Now that we have something to track, type `trak` again at the prompt. 
+
+```
+$ trak
+Tracking started at 2020-10-26 07:25:04
+Number of files tracked: 12
+```
+
+In this example, this project is currently tracking 12 files and this writing
+session started at 7:25 a.m. on Oct. 26, 2020. To see the tracking status, use
+the `-z` flag.
+
+```
+$ trak -z
+Tracking is ON
+This tracking session began at 2020-10-26 07:25:04
+Current writing streak is 2 days
+```
+
+As long as `trak` has some files to monitor, you simply start or stop tracking
+by typing the command `trak` on the command line without including any options.
+
+```
+$ trak
+Tracking ended at 2020-10-26 07:34:53
+No tracked files were modified. Session not recorded.
+```
+
+In this example, tracking was halted before any of the monitored files were
+modified and no data were recorded. `trak` only records writing-session data
+when monitored files are modified.
+
+To see a basic list of available options, use the `-h` flag.
+
+```
+Track and analyse writing progress
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DELETE, --delete DELETE
+                        remove file or project from further tracking; remove
+                        ignored file to resume tracking
+  -e EXPORT, --export EXPORT
+                        export data to stdout
+  -l LIST, --list LIST  list ignores, files, sessions, or projects
+  -n, --new             track a new writing project
+  -r, --record          display all-time tracking records
+  -s, --summary         display summary of selected session
+  -x, --expunge         delete all data; restore factory defaults
+  -z, --status          determine whether tracking is on or off
+```
+
+The `-d` option stands for `--delete` even though nothing really gets deleted
+from your file system. When you define a project for `trak` to monitor, if the
+project is a directory, `trak` walks recursively through the entire directory
+structure finding all files of type .tex, .txt, .md, and .html and monitors them
+for writing activity. If these files remain unmodified during a writing session,
+they're ignored. Only those files that show writing activity will be recorded.
+Therefore, there is little need to delete a file from tracking.
+
+However, in the event that you do want to stop monitoring a file, you can ignore
+it by using the `-d` option with the argument 'file' to indicate that you want
+to 'delete' (or, more appropriately, _ignore_) a file. You will be asked to make a
+selection among the files belonging to one of the tracked projects. 
+
+```
+$ trak -d file
+Project in which file resides: my_project_name
+[0] /Path/to/my/file1.txt
+[1] /Path/to/my/file2.txt
+[2] /Path/to/my/mytexfile.tex
+[3] /Path/to/my/index.html
+Choose a file to ignore [0-3]: 2
+The file /Path/to/my/mytexfile.tex will no longer be tracked
+``` 
+
+To convince yourself that the file is now being ignored, list all the files
+currently being monitored using the `-l` or `--list` option with the argument
+'files' to display a list of files grouped by project. You can also list
+'sessions', 'projects', and 'ignores' (i.e., ignored files). 
+
+```
+$ trak -l files
+Project my_project_name:
+
+/Path/to/my/file1.txt
+/Path/to/my/file2.txt
+/Path/to/my/index.html
+Total: 3 files tracked
+```
+
+For a list of all the ignored files, we can also use the `-l` option.
+
+```
+$ trak -l ignores
+Project            Ignored Files
+-----------------  ------------------------
+my_new_project     /Path/to/mytexfile.tex
+```
+
+The display shows us that we currently have only one file currently being
+ignored. If you'd like to stop ignoring this file, just delete the ignore using
+the `-d` option.  
+
+```
+$ trak -d ignore
+[0] my_new_project /Path/to/mytexfile.tex
+Select a file to stop ignoring [0-0]: 0
+The file /Path/to/mytexfile.tex in project my_new_project will now be tracked
+``` 
+
+One of the reasons I wanted a writing tracker was to keep track of things like
+my longest writing session, or most words written during a writing session, or
+longest daily writing streak. You can access all of that by invoking the `-r`
+option.
+
+```
+$ trak -r
+--------------------------------  ------------------------------
+Total number of words tracked     553
+Total number of sessions tracked  7
+Total number of modified files    5
+Longest session                   2020-10-20 0:06:58
+Most words written in a session   2020-10-20 182 words
+Longest writing streak            Starting on 2020-10-24: 2 days
+Current streak                    0 days
+--------------------------------  ------------------------------
+```
+
+As you can see from the above output, the longest writing session occurred on
+2020-10-20 for an impressive 6 minutes and 58 seconds. Maybe you'd like to see a
+summary of that writing session by invoking the `-s` option.  
+
+```
+$ trak -s
+[0] 2020-10-19 23:33:40 to 2020-10-19 23:36:52
+[1] 2020-10-19 23:44:05 to 2020-10-19 23:45:55
+[2] 2020-10-20 06:03:46 to 2020-10-20 06:09:06
+[3] 2020-10-20 23:20:46 to 2020-10-20 23:27:44
+[4] 2020-10-20 23:29:33 to 2020-10-20 23:31:17
+[5] 2020-10-20 23:32:13 to 2020-10-20 23:32:39
+[6] 2020-10-24 09:15:33 to 2020-10-24 09:17:11
+Select session to summarise [0-6]: 
+``` 
+
+You're presented with a list of all of the recorded writing sessions. Several
+sessions were recorded on the 2020-10-20, but number 3 looks like the session
+we're interested in. Here is the output.  
+
+```
+----------------  ------------------------------------
+Session ID        2cb0cf46-135d-11eb-bfbd-787b8ac95650
+Start time        2020-10-20 23:20:46
+End time          2020-10-20 23:27:44
+Total duration    0:06:58
+Files modified    3
+Total word count  125
+----------------  ------------------------------------
+Modified Files
+Project     File         Words Written
+----------  ---------    --------------
+myproject   test.html               36
+myproject   test.txt                21
+myproject   test.md                 68
+```
+
+All the details about writing session 2cb0cf46-135d-11eb-bfbd-787b8ac95650 (an
+alpha-numeric ID number that's automatically generated by `trak`) are provided
+in the output. Notice that `trak` only tracks individual writing sessions. It
+does not track the start/stop times of writing in individual files. It only
+calculates the word change (added or deleted) in the project's tracked files
+from the beginning to the end of a writing session.
+
+Finally, you may want to analyse the data yourself. The export function can be
+invoked by calling the `-e` option together with an argument that tells `trak`
+which data to export (tracks, files, projects, or sessions). Comma-separated
+data are simply written to standard output, which you can pipe into file on the
+command line and use however you like. The exported data even have
+comma-separated column headers so it's clear what data have been exported. For
+example, here is the exported output for 'tracks' (i.e., the files that have
+been modified since the first clean invokation of `trak`).  
+
+```
+$ trak -e tracks
+track_id, project_name, file_name, start_wc, end_wc
+2cb0cf46-135d-11eb-bfbd-787b8ac95650, myproject, test.html, 5, 41
+2cb0cf46-135d-11eb-bfbd-787b8ac95650, myproject, test.txt, 20, 41
+2cb0cf46-135d-11eb-bfbd-787b8ac95650, myproject, test.md, 16, 84
+668ff326-135e-11eb-a0cd-787b8ac95650, myproject, test.html, 41, 44
+c5dd9c8e-135e-11eb-b671-787b8ac95650, myproject, test.md, 94, 104
+```
+
+This is just raw, comma-separated output of tracked data. The first row provides
+the column headings (track_id is really the session ID, which can be used to
+link exported session data with tracks). The output includes a track ID, project
+name, modified file name, starting word count, and ending word count. Obviously,
+different data will be exported for files, projects, and sessions.
+
+Finally, you can clear all data from `trak` by calling the `-x` option. This
+simply deletes all the data files used to store historical tracking data. This
+might be a useful function after you've backed up all your data using the export
+function described immediately above.
+
+I hope you find this program useful. Good luck, and happy writing!
+
+
