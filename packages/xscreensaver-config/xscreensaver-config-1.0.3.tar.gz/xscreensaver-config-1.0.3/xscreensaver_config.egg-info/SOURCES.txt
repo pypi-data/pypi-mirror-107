@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_dummy.py
+xscreensaver_config/ConfigParser.py
+xscreensaver_config/__init__.py
+xscreensaver_config.egg-info/PKG-INFO
+xscreensaver_config.egg-info/SOURCES.txt
+xscreensaver_config.egg-info/dependency_links.txt
+xscreensaver_config.egg-info/top_level.txt
+xscreensaver_config/multiline_parser/IMultilineParser.py
+xscreensaver_config/multiline_parser/ProgramsParser.py
+xscreensaver_config/multiline_parser/__init__.py
