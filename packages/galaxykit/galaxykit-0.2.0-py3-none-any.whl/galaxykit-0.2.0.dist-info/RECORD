@@ -1,0 +1,14 @@
+galaxykit/__init__.py,sha256=tM_hDRBZsPiVAvePDHGo2EzoqjxnDUoMxZlW64aZBMU,32
+galaxykit/client.py,sha256=8Hpr4NoS6yUzmJOETV5R9ogL982m2p5oTJl-YJiRylY,5159
+galaxykit/command.py,sha256=6GOnuLCp3XZ6xT0JW8sp-bpEag7ul8nIdNL6rNutzB8,6526
+galaxykit/containers.py,sha256=FQAUUTOQA6ZVs9K54x5ypPDG9ou3lwMgEUrq5ZgIy04,375
+galaxykit/dockerutils.py,sha256=Qewg18GMj33NVQuEFt5y3H-7Y49UWVSaU_3Mkrp4mYQ,1475
+galaxykit/groups.py,sha256=Ia3x12J_NML83NhckEzNhvEEJyiGPJYOMOJ7pulFHEk,2778
+galaxykit/namespaces.py,sha256=cdsEs4p1OIrpeb53DaP37j_S1FIWkSg8frIaP0GWi7M,1970
+galaxykit/users.py,sha256=VnHNHFFCwL4LOpjp945m9fXln1MnsfIL6CoIb5Dpm6I,2587
+galaxykit-0.2.0.dist-info/LICENSE.md,sha256=FWBoQXekYNSXRU86l255USna3L9nZDC1idXqak4rizc,718
+galaxykit-0.2.0.dist-info/METADATA,sha256=ba0bVx6N3p2z83Ozfga4v-OrDY0s5aq6s3qHkctt9L4,617
+galaxykit-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+galaxykit-0.2.0.dist-info/entry_points.txt,sha256=IJDSQvffc049wLCLTfrf95Blo61aU7ca7QeHSB3fLP8,54
+galaxykit-0.2.0.dist-info/top_level.txt,sha256=VjOrfTIUB_6PYdscogzxes1YcjzxmAaqeMommuk4vaM,10
+galaxykit-0.2.0.dist-info/RECORD,,
