@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: script-client
+Version: 1.2.1
+Summary: script client
+Home-page: UNKNOWN
+Author: TDC
+Author-email: tiandachun@meicai.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: JPype1 (>=0.7.4)
+Requires-Dist: loguru (>=0.3.2)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: tornado (>=6.1)
+Requires-Dist: APScheduler (>=3.7.0)
+Requires-Dist: psutil (>=5.8.0)
+
+script client
+
+
