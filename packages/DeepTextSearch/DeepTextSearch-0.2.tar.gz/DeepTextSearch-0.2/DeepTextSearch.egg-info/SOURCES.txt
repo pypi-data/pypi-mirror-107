@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DeepTextSearch/DeepTextSearch.py
+DeepTextSearch/__init__.py
+DeepTextSearch.egg-info/PKG-INFO
+DeepTextSearch.egg-info/SOURCES.txt
+DeepTextSearch.egg-info/dependency_links.txt
+DeepTextSearch.egg-info/requires.txt
+DeepTextSearch.egg-info/top_level.txt
