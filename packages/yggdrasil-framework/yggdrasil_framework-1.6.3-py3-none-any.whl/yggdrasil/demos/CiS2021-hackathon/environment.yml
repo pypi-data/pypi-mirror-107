@@ -1,0 +1,11 @@
+name: CiS2021-hackathon-environment
+channels:
+  - conda-forge
+dependencies:
+  - zeromq
+  - yggdrasil
+  - trimesh
+  - networkx
+  - pygments
+  - rise
+  - jupyter_contrib_nbextensions
