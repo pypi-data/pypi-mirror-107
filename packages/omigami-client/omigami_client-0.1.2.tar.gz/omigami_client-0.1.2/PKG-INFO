@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: omigami_client
+Version: 0.1.2
+Summary: A client to access Omigami
+Home-page: https://github.com/datarevenue-berlin/omigami_client
+Author: Data Revenue GmbH
+Author-email: carlos@datarevenue.com
+License: MIT license
+Description: ======
+        Readme
+        ======
+        
+        The package README is available on the `landing page of the repository  <https://github.com/omigami/omigami_client>`_
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-05-18)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: omigami_client
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
