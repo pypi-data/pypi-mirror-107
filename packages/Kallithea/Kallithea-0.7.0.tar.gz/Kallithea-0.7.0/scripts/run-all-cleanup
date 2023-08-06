@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Convenience script for running various idempotent source code cleanup scripts
+
+set -e
+set -x
+
+hg files 'set:!binary()&grep("^#!.*python")' 'set:**.py' | xargs scripts/deps.py
+dot -Tsvg deps.dot > deps.svg
+
+scripts/docs-headings.py
+scripts/generate-ini.py
+scripts/whitespacecleanup.sh
+hg files 'set:!binary()&grep("^#!.*python")' 'set:**.py' | xargs scripts/source_format.py
+
+hg files 'set:!binary()&grep("^#!.*python")' 'set:**.py' | xargs scripts/pyflakes
+echo "no blocking problems found by $0"

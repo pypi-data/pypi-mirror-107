@@ -1,0 +1,209 @@
+/* bootstrap progress bar has margin-bottom we don't want that in files list */
+.cs_files .progress {
+  margin-bottom: 0;
+}
+/* progress bars should be aligned right */
+.cs_files .changes {
+  float: right;
+  color: @kallithea-theme-main-color;
+}
+
+/* colors for deleted/changed/added, both for 3 labels in top right corner with total count, and for per file "diffstat" (rendered as Bootstrap progress-bar) */
+.changes .added {
+  color: inherit;
+  background-color: @add-bg-color;
+}
+.changes .changed {
+  background: @change-bg-color;
+}
+.changes .deleted {
+  background-color: @delete-bg-color;
+}
+/* binary
+NEW_FILENODE = 1
+DEL_FILENODE = 2
+MOD_FILENODE = 3
+RENAMED_FILENODE = 4
+CHMOD_FILENODE = 5
+BIN_FILENODE = 6
+*/
+.changes .bin {
+  background-color: @add-bg-color;
+}
+/* added binary */
+.changes .bin.bin1 {
+  background-color: @add-bg-color;
+}
+/* deleted binary*/
+.changes .bin.bin2 {
+  background-color: @delete-bg-color;
+}
+/* mod binary*/
+.changes .bin.bin3 {
+  background-color: @change-bg-color;
+}
+/* rename file*/
+.changes .bin.bin4 {
+  background-color: #6D99FF;
+}
+/* chmod file*/
+.changes .bin.bin5 {
+  background-color: #6D99FF;
+}
+
+/* center collapse button */
+.diff-collapse {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.code-difftable {
+  /* the whole line should be colored */
+  border-collapse: collapse;
+  border-radius: 0px !important;
+  width: 100%;
+  table-layout: fixed;
+
+  /* line coloring */
+  .context {
+    background: none repeat scroll 0 0 @highlight-line-color;
+    color: #999;
+  }
+  .add {
+    background: none repeat scroll 0 0 #DDFFDD;
+  }
+  .add ins {
+    background: none repeat scroll 0 0 #AAFFAA;
+    text-decoration: none;
+  }
+  .del {
+    background: none repeat scroll 0 0 #FFDDDD;
+  }
+  .del del {
+    background: none repeat scroll 0 0 #FFAAAA;
+    text-decoration: none;
+  }
+
+  /* tabs */
+  td.code pre u:before {
+    content: "\21a6";
+    display: inline-block;
+    width: 0;
+  }
+  /* CR */
+  td.code pre u.cr:before {
+    content: "\21a4";
+    display: inline-block;
+  }
+  /* whitespace characters */
+  td.code pre u {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  /* trailing spaces */
+  td.code pre i {
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* line number columns */
+  td.lineno {
+    width: 4em;
+    border-right: 1px solid @panel-default-border !important;
+    vertical-align: middle !important;
+    font-size: 11px;
+    font-family: @font-family-monospace;
+    line-height: normal;
+    text-align: center;
+  }
+  td.lineno[colspan="2"] {
+    width: 8em;
+  }
+  td.lineno a {
+    color: #aaa !important;
+    display: inline-block;
+    min-width: 2em;
+    text-align: right;
+  }
+  tr.line:hover td.lineno a {
+    color: #333 !important;
+  }
+  /** CODE **/
+  .code {
+    display: block;
+  }
+  .code pre {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+    min-height: 17px;
+    line-height: 17px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  /* leading +/- on changed lines */
+  .del .code pre:before {
+    content: "-";
+    color: #800;
+  }
+  .add .code pre:before {
+    content: "+";
+    color: #080;
+  }
+  .code pre:before {
+    content: " ";
+    margin: 0 2px;
+  }
+}
+
+/* comment bubble */
+.add-bubble {
+  position: relative;
+  display: none;
+  float: left;
+  width: 0px;
+  height: 0px;
+  left: -8px;
+  box-sizing: border-box;
+}
+.commentable-diff tr.line:hover td .add-bubble {
+  display: block;
+  z-index: 1;
+}
+.add-bubble div {
+  background: @kallithea-theme-main-color;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1em;
+  cursor: pointer;
+  padding: 0.1em 0.1em 0.1em 0.12em;
+  border: 1px solid @kallithea-theme-main-color;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.add-bubble div:before {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: "kallithea";
+  content: '\1f5ea';
+}
+.add-bubble div:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* file diff icons */
+.icon-diff-modified:before {
+  color: #d0b44c;
+}
+.icon-diff-removed:before {
+  color: #bd2c00;
+}
+.icon-diff-added:before {
+  color: #6cc644;
+}
+.icon-diff-renamed:before {
+  color: #677a85;
+}
