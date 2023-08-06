@@ -1,0 +1,5 @@
+<h3>Cette semaine, vous avez reçu:</h3>
+<div>
+  {% if inbox_messages != "" %}<p>{% autoescape off %}{{ inbox_messages }}{% endautoescape %}</p>{% endif %}
+  {% if inbox_mentions != "" %}<p>{% autoescape off %}{{ inbox_mentions }}{% endautoescape %}</p>{% endif %}
+</div>

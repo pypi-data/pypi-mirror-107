@@ -1,0 +1,6 @@
+<div style="border-top:1px solid #1ea5b3;padding-top:15px;margin-top:30px;">
+  <h4>Dans la thématique <b>{{ circle.name }}</b> que vous suivez, il y a eu :</h4>
+  {% if polls != "" %}{% autoescape off %}{{ polls }}{% endautoescape %}{% endif %}
+  {% if resources != "" %}{% autoescape off %}{{ resources }}{% endautoescape %}{% endif %}
+  {% if events != "" %}{% autoescape off %}{{ events }}{% endautoescape %}{% endif %}
+</div>
