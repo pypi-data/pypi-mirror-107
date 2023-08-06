@@ -1,0 +1,20 @@
+# Tests
+
+`tests` is an optional argument that may be passed to specify the tests to run.
+
+The argument should a comma-seperated list of tests. Available tests are:
+
+* `ltp-smoke`
+
+By default, a `boot` test is always ran before the tests specified on the command line.
+
+## Example
+
+Perform boot and ltp-smoke tests on a `qemu-x86_64`.
+
+```sh
+tuxsuite test \
+--device qemu-x86_64 \
+--kernel https://storage.tuxboot.com/x86_64/bzImage \
+--tests ltp-smoke
+```
