@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.py
+sensorbucket/sensorbucket.egg-info/PKG-INFO
+sensorbucket/sensorbucket.egg-info/SOURCES.txt
+sensorbucket/sensorbucket.egg-info/dependency_links.txt
+sensorbucket/sensorbucket.egg-info/top_level.txt
