@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: email-to-telegram
+Version: 1.1.2
+Summary: Telegram bot that reads a mail file and forwards to Telegram chat
+Home-page: https://github.com/ItsNotGoodName/email-to-telegram
+Author: ItsNotGoodName
+Author-email: gurnaindeol@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/ItsNotGoodName/email-to-telegram
+Description: # Email to Telegram
+        
+        Telegram bot that reads a mail file and forwards to Telegram chat.
+        It has to be paired up with a mail server such as [Postfix](<https://en.wikipedia.org/wiki/Postfix_(software)>).
+        It can handle forwarding image attachments that are PNG or JPG.
+        
+        An Ansible role is available.
+        https://github.com/ItsNotGoodName/ansible-role-email-to-telegram
+        
+        # Installation
+        
+        ```
+        pip install email-to-telegram
+        ```
+        
+        # Configuration
+        
+        Copy and edit `config.def.ini` to one of the following paths.
+        
+        - `/etc/email-to-telegram/config.ini`
+        - `config.ini`
+        
+        You can get the `chat_id` from the web version of Telegram.
+        https://stackoverflow.com/a/45577773
+        
+        # Example systemd service file
+        
+        ```
+        [Unit]
+        Description=Starts email-to-telegram
+        After=network.target
+        
+        [Service]
+        User=telegram
+        ExecStart=email-to-telegram
+        Restart=on-failure
+        RestartSec=5s
+        
+        [Install]
+        WantedBy=multi-user.target
+        ```
+        
+Keywords: bot,telegram
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: test

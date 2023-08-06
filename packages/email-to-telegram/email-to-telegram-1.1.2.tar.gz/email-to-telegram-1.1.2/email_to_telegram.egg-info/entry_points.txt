@@ -1,0 +1,3 @@
+[console_scripts]
+email-to-telegram = email_to_telegram.__main__:main
+
