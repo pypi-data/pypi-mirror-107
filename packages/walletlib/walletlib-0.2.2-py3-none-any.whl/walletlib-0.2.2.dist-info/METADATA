@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: walletlib
+Version: 0.2.2
+Summary: Library for accessing cryptocurrency wallet files
+Home-page: https://github.com/jimtje/walletlib
+Author: jim zhou
+Author-email: jimtje@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+License-File: LICENSE.md
+Requires-Dist: pycryptodome (==3.9.9)
+Requires-Dist: Click (==7.1.2)
+Requires-Dist: coincurve (==13.0.0)
+Requires-Dist: bsddb3 (==6.2.9)
+Requires-Dist: base58 (==2.1.0)
+Requires-Dist: arrow (==0.17.0)
+Requires-Dist: betterproto (==1.2.5)
+
+UNKNOWN
+
