@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: spoonbill
+Version: 1.0.1b1
+Summary: An instrument to flatten OCDS data
+Home-page: https://github.com/open-contracting/spoonbill
+Author: Open Contracting Partnership
+Author-email: data@open-contracting.org
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: ijson (>=2.5)
+Requires-Dist: jsonref
+Requires-Dist: jsonpointer
+Requires-Dist: xlsxwriter
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: click-logging
+Requires-Dist: ocdskit
+Requires-Dist: ocdsextensionregistry
+Requires-Dist: dataclasses ; python_version < "3.7"
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-click ; extra == 'docs'
+Requires-Dist: sphinx-changelog ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: jmespath ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: openpyxl ; extra == 'test'
+Requires-Dist: jsonpointer ; extra == 'test'
+Requires-Dist: ijson (>=2.5) ; extra == 'test'
+Requires-Dist: jsonref ; extra == 'test'
+Requires-Dist: xlsxwriter ; extra == 'test'
+Requires-Dist: requests ; extra == 'test'
+Requires-Dist: click ; extra == 'test'
+Requires-Dist: click-logging ; extra == 'test'
+Requires-Dist: ocdskit ; extra == 'test'
+Requires-Dist: ocdsextensionregistry ; extra == 'test'
+Requires-Dist: dataclasses ; (python_version < "3.7") and extra == 'test'
+
+*********
+Spoonbill
+*********
+
+Spoonbill is a library and command-line tool to convert OCDS data from JSON to Excel/CSV
+
+Installation
+############
+
+Use the package manager `pip <https://pip.pypa.io/en/stable/>`_ to install spoonbill.
+
+.. code-block:: bash
+
+   pip install spoonbill
+
+Features
+############
+
+The primary use case for OCDS Flatten Tool is to convert data that conforms to the Open Contracting Data Standard from JSON to Excel / CSV (*hereinafter tables*).
+
+It aims to improve the user's experience with performing a simple transformation of JSON to tables by:
+
+1. Mitigating a high number of tables through rollup of top-level arrays into the initial table.
+2. Exploring the dataset to see what fields are available and customization to fit your requirements.
+3. Storing objects that follow the same schema in the same table. For example, an array of Document objects is allowed under 5 different objects (Award, Contract, Planning, Tenders,Implementation) woud be created as a single table.
+
+For more examples see `documentation <https://open-contracting.github.io/spoonbill/index.html>`_
+
+
