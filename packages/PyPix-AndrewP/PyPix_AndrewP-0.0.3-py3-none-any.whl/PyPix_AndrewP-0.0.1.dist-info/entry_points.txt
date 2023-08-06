@@ -1,0 +1,3 @@
+[console_scripts]
+PyPix-scan-pbi = PyPix.scan_pbi:main
+
