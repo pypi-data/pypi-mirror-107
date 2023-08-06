@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: upcpayment
+Version: 0.5.5.7.4
+Summary: Library for upc services
+Home-page: https://github.com/xalik111/upc-lib
+Author: Valentyn Ishchenko
+Author-email: xalikxalik44@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyOpenSSL
+Requires-Dist: signxml
+
+# Generate sign for PaymentPage-method:
+```
+import upcpayment
+from upcpayment.Upc_payment import Upc_payment
+
+#example with additional fields
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description', alt_total_amount=123, alt_currency=978, sd='qwe', delay=1, ref3='something')
+payment.generate_signature('path_to_file')
+print('1: ', payment.signature)
+
+#example for standard payment
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description')
+payment.generate_signature('path_to_file')
+print('2: ', payment.signature)
+
+#example of wrong payment
+payment = Upc_payment('1756190', 'E7884956', 100, '980', 'ua', 123, 'description', alt_total_amount=123, sd='qwe', delay=1, ref3='something')
+payment.generate_signature('path_to_file')
+print('3: ', payment.signature)
+```
+PurchaseTime generated like this - datetime.datetime.now().strftime("%d%m%Y%H%M%S")<br />
+When you make POST-request to gateway - take PurchaseTime from object payment - **payment.purchase_time**<br />
+<br />
+
+# XML-method
+To generate xml with signature use generate_xml_with_signature method to all objects:
+```
+xml_with_sign = payment.generate_xml_with_signature('private_key')
+```
+
+## MPIEnrol
+
+### MPIEnrolRequest
+```
+from upcpayment import Upc_payment_xml
+
+#With card data:
+payment = Upc_payment_xml.MPIEnrolRequest('merchant_id', 'terminal_id', 'amount', 'currency', 'order_id', 'description', card_num='card_number', exp_year='exp_year', exp_month='exp_month')
+#With UpcToken:
+payment = Upc_payment_xml.MPIEnrolRequest('merchant_id', 'terminal_id', 'amount', 'currency', 'order_id', 'description', upctoken='upctoken')
+```
+Additional arguments: **device_category**
+
+### MPIAuthRequest
+```
+payment = Upc_payment_xml.MPIAuthRequest('merchant_id', 'terminal_id', 'order_id', 'status', 'cavv', 'eci', cavv_alg')
+```
+
+## AuthorizationRequest
+```
+payment = Upc_payment_xml.AuthorizationRequest('merchant_id', 'terminal_id', 'amount', 'currency', 'order_id', 'description', 'card_num', 'exp_year', 'exp_month', 'cv_num', 'date', 'status', 'cavv', 'eci', 'cavv_alg)
+```
+
+
+
+
+
+
