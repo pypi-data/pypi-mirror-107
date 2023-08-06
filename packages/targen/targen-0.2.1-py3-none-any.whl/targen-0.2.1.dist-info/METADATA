@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: targen
+Version: 0.2.1
+Summary: Tools for generating targets for ML experiments. Documentation link: https://sbjelogr.github.io/targen/
+Home-page: https://github.com/sbjelogr/targen
+Author: Sandro Bjelogrlic
+Author-email: sandro.bjelogrlic@gmail.com
+License: Open Source
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn (>=0.22.2)
+Requires-Dist: pandas (>=0.25)
+Requires-Dist: matplotlib (>=3.1.1)
+Requires-Dist: scipy (>=1.4.0)
+Requires-Dist: joblib (>=0.13.2)
+
+# targen
+
+Generate a synthetic target for data science experiments
+
+## Installation
+
+```bash
+pip install targen
+```
+
+
