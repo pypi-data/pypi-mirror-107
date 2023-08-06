@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: compiler-identification
+Version: 1.0.0
+Summary: Identifying the properties of a C/C++ compiler, such as type and version
+Home-page: https://github.com/yugabyte/compiler-identification
+Author: Mikhail Bautin
+Author-email: mbautin@users.noreply.github.com
+License: UNKNOWN
+Description: # compiler-identification
+        
+        A useful tool in identifying the version of C/C++ compilers, mainly various versions of GCC and
+        Clang present in various Linux districtions and versions of macOS.
+        
+        Usage:
+        
+        ```python
+        from compiler_identification import CompilerIdentification
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
