@@ -1,0 +1,3 @@
+[console_scripts]
+vaccine-notifier = trigger:main
+
