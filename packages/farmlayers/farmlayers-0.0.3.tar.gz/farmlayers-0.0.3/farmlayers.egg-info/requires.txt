@@ -1,0 +1,9 @@
+Pillow
+Shapely==1.*
+elevation
+geojson
+geotiff==0.1.*
+imagecodecs
+numpy
+pylandsat==0.6.*
+pyshp==2.*
