@@ -1,0 +1,15 @@
+README.md
+setup.py
+Commit_Man.egg-info/PKG-INFO
+Commit_Man.egg-info/SOURCES.txt
+Commit_Man.egg-info/dependency_links.txt
+Commit_Man.egg-info/entry_points.txt
+Commit_Man.egg-info/not-zip-safe
+Commit_Man.egg-info/requires.txt
+Commit_Man.egg-info/top_level.txt
+src/__init__.py
+src/argparser.py
+src/cmManager.py
+src/fileSystemUtils.py
+src/logfileUtils.py
+src/main.py
