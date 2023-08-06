@@ -1,0 +1,13 @@
+aiohttp
+natsort
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[tests]
+pytest
+asynctest
+pytest-asyncio
+pytest-recording
+vcrpy
