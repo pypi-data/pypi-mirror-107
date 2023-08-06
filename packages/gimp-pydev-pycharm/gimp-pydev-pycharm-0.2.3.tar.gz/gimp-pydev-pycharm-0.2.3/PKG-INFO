@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gimp-pydev-pycharm
+Version: 0.2.3
+Summary: A PyDev for PyCharm debugging inside the GIMP python environment
+Home-page: https://github.com/isman7/gimp-python-development/
+Author: ibenito
+Author-email: ismaelbenito@protonmail.com
+License: GNU GPLv3
+Description: # A PyDev debugger client inside GIMP
+        
+        
+        ![GIMP PyDev Demo](https://github.com/isman7/gimp-python-development/raw/master/GIMP-PyDev-Demo-2.jpeg)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
