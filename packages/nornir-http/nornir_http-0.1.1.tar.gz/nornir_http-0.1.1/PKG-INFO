@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nornir-http
+Version: 0.1.1
+Summary: http plugins for nornir
+License: Apache-2.0
+Author: ubaumann
+Author-email: github@m.ubaumann.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.18.1,<0.19.0)
+Requires-Dist: nornir (>=3,<4)
