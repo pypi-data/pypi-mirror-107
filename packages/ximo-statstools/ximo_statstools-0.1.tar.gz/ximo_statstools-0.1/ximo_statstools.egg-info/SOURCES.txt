@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ximo_statstools/Binomialdistribution.py
+ximo_statstools/Gaussiandistribution.py
+ximo_statstools/Generaldistribution.py
+ximo_statstools/__init__.py
+ximo_statstools.egg-info/PKG-INFO
+ximo_statstools.egg-info/SOURCES.txt
+ximo_statstools.egg-info/dependency_links.txt
+ximo_statstools.egg-info/not-zip-safe
+ximo_statstools.egg-info/top_level.txt
