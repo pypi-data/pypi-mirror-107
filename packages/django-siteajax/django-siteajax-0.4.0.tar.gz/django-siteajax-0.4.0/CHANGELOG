@@ -1,0 +1,25 @@
+django-siteajax changelog
+=========================
+
+
+v0.4.0 [2021-05-27]
+-------------------
++ Middleware is now optional in certain cases.
+
+
+v0.3.0 [2021-05-27]
+-------------------
++ Ajax objects are now lazy to allow faster middleware processing.
+
+
+v0.2.0 [2021-05-26]
+-------------------
++ Added 'Ajax.restore_history' flag.
++ Added 'ajax_dispatch' decorator.
++ Added support for 'event-header' htmx extension ('Ajax.event').
++ JS. CDN is now linked to 1.4.0.
+
+
+v0.1.0 [2021-05-25]
+-------------------
++ Basic functionality.
