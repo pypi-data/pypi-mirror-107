@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: heareval
+Version: 2021.0.1
+Summary: Holistic Evaluation of Audio Representations (HEAR) 2021 -- Evaluation Kit
+Home-page: https://github.com/neuralaudio/hear2021-eval-kit
+Author: 
+Author-email: 
+License: Apache-2.0
+Download-URL: https://github.com/neuralaudio/hear2021-eval-kit
+Project-URL: Bug Tracker, https://github.com/neuralaudio/hear2021-eval-kit/issues
+Project-URL: Source Code, https://github.com/neuralaudio/hear2021-eval-kit
+Description: # hear2021-eval-kit
+        
+        Evaluation kit for HEAR 2021 NeurIPS competition
+        
+        ```
+        pip install heareval
+        ```
+        
+        If you are pushing code to this repo, please make sure you have
+        pre-commit hooks installed:
+        ```
+        pre-commit install
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

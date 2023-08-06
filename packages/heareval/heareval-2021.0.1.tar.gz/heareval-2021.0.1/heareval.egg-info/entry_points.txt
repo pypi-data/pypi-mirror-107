@@ -1,0 +1,3 @@
+[console_scripts]
+hear2021_tasks_coughvid = heareval.tasks.coughvid:main
+
