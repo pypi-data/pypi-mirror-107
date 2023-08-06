@@ -1,0 +1,6 @@
+confluent-kafka
+python-dotenv
+coverage
+prompt-toolkit
+pydantic
+pyinquirer
