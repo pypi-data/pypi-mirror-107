@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+percstat/__init__.py
+percstat/percstat.py
+percstat.egg-info/PKG-INFO
+percstat.egg-info/SOURCES.txt
+percstat.egg-info/dependency_links.txt
+percstat.egg-info/top_level.txt
