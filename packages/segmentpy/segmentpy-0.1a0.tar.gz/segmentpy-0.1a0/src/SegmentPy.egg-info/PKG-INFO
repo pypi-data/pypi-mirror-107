@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: segmentpy
+Version: 0.1a0
+Summary: Deep Learning Software for Tomography Segmentation
+Home-page: http://segmentpy.readthedocs.org
+Author: Zeliang Su, Arnaud Demortiere
+Author-email: zeliang.su@gmail.com, arnaud.demortiere@u-picardie.fr
+License: Apache 2.0
+Keywords: segmentation,CNN,XCT-image,battery
+Platform: UNKNOWN
+Requires-Python: ==3.6
+License-File: LICENSE
+
+UNKNOWN
+
