@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+faultybot/__init__.py
+faultybot.egg-info/PKG-INFO
+faultybot.egg-info/SOURCES.txt
+faultybot.egg-info/dependency_links.txt
+faultybot.egg-info/requires.txt
+faultybot.egg-info/top_level.txt
