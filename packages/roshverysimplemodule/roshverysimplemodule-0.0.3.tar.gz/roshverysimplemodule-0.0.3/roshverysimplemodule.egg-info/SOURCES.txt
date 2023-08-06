@@ -1,0 +1,11 @@
+setup.py
+roshverysimplemodule/__init__.py
+roshverysimplemodule/add.py
+roshverysimplemodule/subtract.py
+roshverysimplemodule.egg-info/PKG-INFO
+roshverysimplemodule.egg-info/SOURCES.txt
+roshverysimplemodule.egg-info/dependency_links.txt
+roshverysimplemodule.egg-info/top_level.txt
+roshverysimplemodule/extras/__init__.py
+roshverysimplemodule/extras/divide.py
+roshverysimplemodule/extras/multiply.py
