@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: magLabUtilities
+Version: 1.2.0
+Summary: Commonly used utilities in the UC Denver magnetics lab.
+Home-page: https://github.com/MarkTravers/magLabUtilities
+Author: Mark Travers
+Author-email: mark.2.travers@ucdenver.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dill (==0.3.3)
+Requires-Dist: multipledispatch (==0.6.0)
+Requires-Dist: multiprocess (==0.70.11.1)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: pathos (==0.2.7)
+Requires-Dist: pox (==0.2.9)
+Requires-Dist: ppft (==1.6.6.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: openpyxl (==3.0.5)
+
+Release 1.2.0
+	-Parametric test utilities
+		-Parameter space abstracted from test case
+		-Test case manager enables pipeline approach to evaluating test cases with an arbitrary list of functions
+		-File directory creation
+		-Cubit geometry generation (supports Cubit scripts written in Python 2)
+		-Magstrom simulation configuration generator and executer
+
+
