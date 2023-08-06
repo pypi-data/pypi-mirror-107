@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: jupyter_bbox_widget
+Version: 0.1.0
+Summary: A Jupyter widget for annotating images with bounding boxes
+Home-page: https://github.com/gereleth/jupyter-bbox-widget
+Author: gereleth
+Author-email: daria.voznyak@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
