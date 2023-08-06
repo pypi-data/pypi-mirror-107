@@ -1,0 +1,13 @@
+bidict
+cyac
+gensim>=4.0
+jsonschema
+memory-profiler
+numpy
+regex
+scipy
+smart-open
+spacy>2.3
+typer
+wasabi
+yarl
