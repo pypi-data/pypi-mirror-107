@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: zeplyn
+Version: 0.1.1
+Summary: Zeplyn allows to you release python package fastly and easily in one command
+Author: ssantoshp
+Author-email: santoshpassoubady@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Zeplyn
+
+## Usage
+
+Zeplyn allows to you release python package fastly and easily in one command: 
+
+```zeplyn publish```
+
+You should run that command in your command prompt in the folder directory where you want to put your package
+
+Zeplyn also have a ```zeplyn create``` command which automatically create a readme file, a setup.py file and a src folder where your package's code is going to be stored.
+
+Full documentation here : https://github.com/ssantoshp/zeplyn
