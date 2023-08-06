@@ -1,0 +1,10 @@
+numpy
+Biopython
+tqdm
+pyyaml
+atomicwrites
+torch
+python-igraph
+pandas
+scikit-learn
+requests
