@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+inorgqm/__init__.py
+inorgqm/multi_electron.py
+inorgqm.egg-info/PKG-INFO
+inorgqm.egg-info/SOURCES.txt
+inorgqm.egg-info/dependency_links.txt
+inorgqm.egg-info/requires.txt
+inorgqm.egg-info/top_level.txt
+inorgqm/utils/__init__.py
+inorgqm/utils/utils.py
+test/test_iqm.py
