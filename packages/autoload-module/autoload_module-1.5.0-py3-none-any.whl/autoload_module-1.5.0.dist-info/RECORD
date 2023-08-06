@@ -1,0 +1,11 @@
+autoload/__init__.py,sha256=FSbvm326Qcx9_FW9JlBL3XwILrMEDCqo15TyIT98JDU,129
+autoload/_context.py,sha256=vvQZ4fCQ3QKamOiqapEEEgfQvlfi4OoE0urUBnPUABc,1422
+autoload/_globals.py,sha256=x2sgI9aTLUGNTb2kMavXhQv1_dSEpENBQ00YMiwSbEU,200
+autoload/_import.py,sha256=Dda9kaC7oT0toEfPRnbftbQEeDbnFJ6NuwxFf1u7-kU,5374
+autoload/decorator.py,sha256=cpbM52bQ36uczHvz_D91GuBlYM-fAsbC4Vz4-Q1Cwq8,430
+autoload/exception.py,sha256=g6udaK5ymcRGt4yMb60Y9eC68ltdbo2NhV2kYxq-pPo,128
+autoload/module_loader.py,sha256=u1jSNidp-tLhH-OR3hRW6tNFr0xCERuESO9HqL4njDg,9056
+autoload_module-1.5.0.dist-info/LICENSE,sha256=nHQ1Bash2VRha0Y5LsIP10XJ1d_gg-IG8gsGRgL1DSo,1070
+autoload_module-1.5.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+autoload_module-1.5.0.dist-info/METADATA,sha256=7phHXVkNZJfHJmVhtjhYYdpU60VR1Q_5oPjRWfzsPSw,8381
+autoload_module-1.5.0.dist-info/RECORD,,
