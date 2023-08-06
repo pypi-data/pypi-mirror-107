@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: codr
+Version: 0.1.0
+Summary: 
+Author: Adam Parkin
+Author-email: pzelnip@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bullet (>=2.2.0,<3.0.0)
