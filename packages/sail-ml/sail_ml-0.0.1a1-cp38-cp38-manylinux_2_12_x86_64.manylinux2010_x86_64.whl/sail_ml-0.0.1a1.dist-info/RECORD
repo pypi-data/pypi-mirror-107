@@ -1,0 +1,14 @@
+sail/__init__.py,sha256=wGX8tSfAlmKMeYfaIULPrU-9v8PL4dAGwx9xkYCe5uo,148
+sail/tensor.py,sha256=FfMJ8Ii4hZGdkhdb2tl0H-6WJCKD94KXjN7o-3Bt4XM,4074
+sail/dtype.py,sha256=yf9u4MsYW__LVpRgjZ5jjOXTBlFlIYijX1nR4K5E42A,1547
+sail/_sail_docs.py,sha256=aDFES_S0hJDei7UVpXHQqXdn6OEz1Zt_L77QeA9yfCs,7555
+sail/csrc/libsail_c.so,sha256=7iEhec5mFbKWTDccE5hr9ROYXFQXAfemG_Be8SCfQpM,25740104
+sail/csrc/__init__.py,sha256=2DetH7S7jbFf-ZxrsxWA3IHOAcGrTYMDSFfUc3bzfv4,877
+sail_ml.libs/libblas-8d819fb1.so.3.2.1,sha256=-4RZ6xGXYvafkvoOw7QnCiteBhdOMW3mVveDQPDajw0,357816
+sail_ml.libs/libboost_program_options-mt-33c4eeb7.so.5,sha256=Ke6FYKhj_P9GbBiaY7Pg3cw5VkXXv_CtqJ-hNilYhV4,395080
+sail_ml.libs/libgfortran-139be63a.so.3.0.0,sha256=spGBfVHtj5iqi_e0IvcpHPYC31B3vELXuMfRbzdDOt0,1023952
+sail_ml-0.0.1a1.dist-info/top_level.txt,sha256=uFX2PMKRLm1sBclJrN_nwk2JfzAuO1eNN31j_gQGiTQ,5
+sail_ml-0.0.1a1.dist-info/LICENSE,sha256=buWCtGXJ6C0FBURqkDv0DM0HRgk_5nH9NAmmKR15lNg,1521
+sail_ml-0.0.1a1.dist-info/METADATA,sha256=HLUe0IQlt1MbyXZxTExZM4qoCbpoGxDYZPI-NvvJwjc,510
+sail_ml-0.0.1a1.dist-info/RECORD,,
+sail_ml-0.0.1a1.dist-info/WHEEL,sha256=9ouD5vtHKeI5Fp5dT4ciqv9oZDHXBBpbctyak-WqTkY,148
