@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: strawC
+Version: 0.0.2.1
+Summary: Straw bound with pybind11
+Home-page: https://github.com/aidenlab/straw
+Author: Neva C. Durand
+Author-email: neva@broadinstitute.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.3

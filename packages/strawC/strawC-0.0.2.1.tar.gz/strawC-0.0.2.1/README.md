@@ -1,0 +1,1 @@
+Repo for packaging [strawC python package](https://github.com/aidenlab/straw/tree/master/pybind11_python)

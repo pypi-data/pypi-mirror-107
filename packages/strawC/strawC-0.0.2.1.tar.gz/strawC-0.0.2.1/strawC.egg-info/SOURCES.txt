@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/straw.cpp
+src/straw.h
+strawC.egg-info/PKG-INFO
+strawC.egg-info/SOURCES.txt
+strawC.egg-info/dependency_links.txt
+strawC.egg-info/not-zip-safe
+strawC.egg-info/requires.txt
+strawC.egg-info/top_level.txt
