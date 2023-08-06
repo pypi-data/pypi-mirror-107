@@ -1,0 +1,16 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=asrXnaatMaMKmSap7zwH3AeSYqq0MeRlJDdv5bXo5KY,2713
+src/conf.py,sha256=TbIHk48lVb_v2ZJTbce2_KUrYCAP0yodG-9zUdAkcbY,995
+src/logging.py,sha256=jDHYDfsdu1WY0viFT9RrToIfthq134LU_NPEhCFKU2E,697
+src/common/__init__.py,sha256=iTHZ-6GB_fy-FxEGKktLOlMZ4kWlVvtag1rAbuYJMhw,270
+src/common/_version.py,sha256=7laO2T6HtGHGvqn4SNMbwiGjkxKXUl3tP2KtQ6BHPiA,27
+src/common/pass_through_list.py,sha256=oXJq9Od-inMZPzplLuXqF22wNDY2HcKrFokJmn2DugY,542
+src/common/plugin.py,sha256=_JneCbhB5cu-1HumoT5H2fHcDHXsLHAN043H1CDwXvw,17760
+src/common/run_command.py,sha256=uUY9v6RhT1EEElRD6LEnBICZDlvKbOJqb-CTbRcWsMI,6461
+src/common/validate_allowed_workspace.py,sha256=i5jAMXUQigk7S7-uwr_H5aygATykqrR22rSMU85qdjk,712
+tfremote-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tfremote-0.0.8.dist-info/METADATA,sha256=jNzNsgDYIKbI6UUYeXaUvsZzq3lPwTnk2RiM4iY0IbM,5536
+tfremote-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tfremote-0.0.8.dist-info/entry_points.txt,sha256=yMRmZr9Bv6UWZez-an9Ma8SQ0Qygo5J58WRovFmC2Ps,63
+tfremote-0.0.8.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+tfremote-0.0.8.dist-info/RECORD,,
