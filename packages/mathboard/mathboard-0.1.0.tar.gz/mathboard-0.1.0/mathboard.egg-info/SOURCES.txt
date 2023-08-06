@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+mathboard/__init__.py
+mathboard/module.py
+mathboard.egg-info/PKG-INFO
+mathboard.egg-info/SOURCES.txt
+mathboard.egg-info/dependency_links.txt
+mathboard.egg-info/top_level.txt
+mathboard/test/__init__.py
+mathboard/test/test.py
