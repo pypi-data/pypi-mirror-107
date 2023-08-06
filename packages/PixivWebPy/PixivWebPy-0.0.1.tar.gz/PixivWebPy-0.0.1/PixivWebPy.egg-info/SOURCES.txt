@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+PixivWebPy.egg-info/PKG-INFO
+PixivWebPy.egg-info/SOURCES.txt
+PixivWebPy.egg-info/dependency_links.txt
+PixivWebPy.egg-info/requires.txt
+PixivWebPy.egg-info/top_level.txt
+pixivwebpy/__init__.py
+pixivwebpy/api.py
+pixivwebpy/utils.py

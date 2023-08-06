@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PixivWebPy
+Version: 0.0.1
+Summary: A Pixiv Web API
+Home-page: https://github.com/Rorical/pixiv-web-py
+Author: Rorical
+Author-email: rorical@shugetsu.space
+License: UNKNOWN
+Download-URL: https://github.com/Rorical/pixiv-web-py/releases
+Description: # pixiv-web-py
+         pixiv web api in python
+        
+        
+Keywords: pixiv,api,pixiv web api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
