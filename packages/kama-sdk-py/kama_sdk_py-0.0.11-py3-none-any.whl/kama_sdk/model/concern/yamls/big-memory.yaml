@@ -1,0 +1,86 @@
+kind: Concern
+id: sdk.concern.memory
+cached:
+  mem_dump:
+    kind: PromDataSupplier
+    step: 5m
+    source: "sum(
+              container_memory_usage_bytes{
+                namespace='${get::ns}',
+                image!='',
+                container_name!='POD'
+              }
+            )"
+
+  mem_timeseries:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props mem_dump
+    humanizer: kind::BytesHumanizer
+
+  mem_timeseries_no_hum:
+    kind: PromMatrixToSeriesSupplier
+    source: get::props mem_dump
+
+  mem_latest:
+    kind: TimeseriesAggregationSupplier
+    source: get::props mem_timeseries_no_hum
+
+  friendly_mem_latest:
+    kind: QuantityHumanizationSupplier
+    source: get::props mem_latest
+    backend: kind::BytesHumanizer
+
+  cluster_avail_dump:
+    kind: PromDataSupplier
+    source: "sum(kube_node_status_capacity_memory_bytes) - sum(kube_node_status_allocatable_memory_bytes)"
+
+  cluster_avail_sum:
+    kind: TimeseriesAggregationSupplier
+    source:
+      kind: PromMatrixToSeriesSupplier
+      source: get::props cluster_avail_dump
+
+  cluster_avail_sum_hum:
+    kind: QuantityHumanizationSupplier
+    id: sdk.supplier.memory-concern.cluster_avail_hum
+    source: get::props cluster_avail_sum
+    backend: kind::BytesHumanizer
+
+  pct_used:
+    kind: PercentageSupplier
+    numerator: get::props mem_latest
+    denominator: get::props cluster_avail_sum
+    rounding: 2
+
+---
+
+id: sdk.concern-card-adapter.memory
+kind: ConcernCardAdapter
+spec:
+  type: Block
+  title: Application Memory
+  sections:
+    - type: Section
+      width: 1
+      elements:
+        - type: "Text"
+          text: get::props concern=>friendly_mem_latest
+          style: { fontSize: '20px', centered: true, bold: true }
+
+        - type: Tag
+          text: "${get::props concern=>pct_used}% of ${get::props concern=>cluster_avail_sum_hum} Used"
+          style: { centered: true, mt: '4px' }
+
+    - type: Section
+      width: 2
+      style: { pr: '40px' }
+      elements:
+        - type: TimeseriesGraph
+          data: get::props concern=>mem_timeseries
+          style:
+            width: 100%
+            height: 100%
+
+    - type: Section
+      width: 1
+      elements: []

@@ -1,0 +1,24 @@
+kind: Provider
+id: provider.presets.default
+title: Absolute Default
+info: Bare minimum defaults set by the publisher.
+is_default: true
+labels:
+  type: preset
+  space: app
+source:
+  kind: ConfigSupplier
+  field_key: default_vars
+
+---
+
+kind: Provider
+id: provider.presets.high-limits
+title: High Limits
+info: Sets high limits on everything
+labels:
+  type: preset
+  space: app
+source:
+  kind: PresetAssignmentsSupplier
+  source: with-high-limits

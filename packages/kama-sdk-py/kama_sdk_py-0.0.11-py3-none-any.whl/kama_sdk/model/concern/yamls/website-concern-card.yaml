@@ -1,0 +1,155 @@
+kind: Concern
+id: org.concern.main-website
+labels:
+  space: app
+cached:
+  svc:
+    kind: ResourcesSupplier
+    serializer: legacy
+    many: false
+    selector: expr::services:ice-cream
+  kat_res: get::props svc
+  best_url:
+    kind: BestSvcUrlSupplier
+    source: get::props svc
+  port_forward_spec:
+    kind: PortForwardSpecSupplier
+    source: get::props svc
+  is_online: get::sdk.predicate.svc_serving
+  pods: get::props svc=>pods
+  pod_statuses: get::sdk.supplier.res_pods_minifier
+  endpoint_ips: get::props svc=>endpoint_ips
+  logo: https://freeiconshop.com/wp-content/uploads/edd/ice-cream-cone-outline-filled.png
+  status:
+    kind: IfThenElse
+    source: get::props is_online
+    if_true: Online
+    if_false: Offline
+  mem_dump: get::forgiveme
+  cpu_dump: get::forgivemetoo
+
+---
+
+kind: PromDataSupplier
+id: forgiveme
+step: 15m
+source: "sum(
+          container_memory_usage_bytes{
+            namespace='temp',
+            image!='',
+            container_name!='POD'
+          }
+        )"
+
+---
+
+kind: PromDataSupplier
+id: forgivemetoo
+step: 15m
+source: "sum(
+          rate(
+            container_cpu_usage_seconds_total{
+              namespace='monitoring'
+              }[20m]
+            )
+          )"
+
+---
+
+
+kind: MultiPredicate
+id: sdk.predicate.svc_serving
+source:
+  - kind: Predicate
+    operator: truthiness
+    challenge: get::props svc
+  - kind: Predicate
+    operator: greater-than
+    challenge: get::props endpoint_ips=>__count__
+    check_against: 0
+
+---
+
+kind: ConcernCardAdapter
+id: org.concern-card-adapter.main-website
+title: Website
+spec:
+  type: Block
+  title: Website Status
+  sections:
+    - type: Section
+      width: 1
+      elements:
+        - type: ThreePartHeader
+          style:
+            mb: 13px
+          title:
+            type: Line
+            elements:
+              - type: Text
+                text: Ice-Cream Store
+                style: [bold, calm]
+              - type: ClearTag
+                text: get::props concern=>status
+          subtitle:
+            type: Line
+            elements:
+              - type: Text
+                text: "localhost:${get::props concern=>port_forward_spec.pod_port}"
+                style: [hov_underline, hov_point]
+                action:
+                  type: port_forward
+                  uri:
+                    kind: MergeSupplier
+                    source:
+                      - get::props concern=>port_forward_spec
+                      - logo_url: get::props concern=>logo
+              - type: Icon
+                name: open_in_new
+                style:
+                  emotion: warning2
+          graphic:
+            type: Image
+            uri: get::props concern=>logo
+
+        - type: Line
+          elements:
+          - Workloads
+          - type: StatusDots
+            data: get::props concern=>pod_statuses
+            shape: square
+            spacing: 1.5px
+
+    - type: Section
+      width: 1
+      elements:
+        - type: SeriesSummary
+          first: graph
+          style: 
+            mt: -10px
+          data:
+            kind: SeriesSummarySupplier
+            humanizer: kind::BytesHumanizer
+            source:
+              kind: PromMatrixToSeriesSupplier
+              source: get::props concern=>mem_dump
+        - type: SeriesSummary
+          first: graph
+          style: 
+            width: 100%
+          data:
+            kind: SeriesSummarySupplier
+            humanizer: kind::CoresHumanizer
+            source:
+              kind: PromMatrixToSeriesSupplier
+              source: get::props concern=>cpu_dump
+        - type: SeriesSummary
+          first: graph
+          style: 
+            width: 100%
+          data:
+            kind: SeriesSummarySupplier
+            humanizer: kind::CoresHumanizer
+            source:
+              kind: PromMatrixToSeriesSupplier
+              source: get::props concern=>cpu_dump

@@ -1,0 +1,25 @@
+kind: ConcernSuperSet
+id: overview
+sets:
+  - id::org.concern-grid.main
+  - id::sdk.concern.resource_tables.deployments
+  - id::sdk.concern.resource_tables.pods
+
+---
+
+kind: ConcernGridAdapter
+title: Application
+id: org.concern-grid.main
+one_shot: false
+concern_seeds:
+  - concern_ref: id::org.concern.main-website
+    adapter_ref: id::org.concern-card-adapter.main-website
+
+  - concern_ref: id::nmachine.prom.concern.monitoring
+    adapter_ref: id::nmachine.prom.concern-card-adapter.monitoring
+
+  - concern_ref: id::sdk.concern.telem
+    adapter_ref: id::sdk.concern-card-adapter.telem
+
+  - concern_ref: id::sdk.concern.memory
+    adapter_ref: id::sdk.concern-card-adapter.memory
