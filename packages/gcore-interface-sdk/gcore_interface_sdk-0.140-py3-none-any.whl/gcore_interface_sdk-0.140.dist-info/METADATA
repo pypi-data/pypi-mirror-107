@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gcore-interface-sdk
+Version: 0.140
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: witapi
+
+#GCore SDK - (Gravity Core Interface Software Development Kit) - представляет из себя модуль с классом MainController, через методы которого
+#реализовано исполнение всех методов API GCore. Все методы, а так-же их описания хранятся в файле methods.py, в форме словаря.
+
+#---Getting started---
+#Для исполнения метода создайте экземпляр класса, передав ему ip, port GCore API.*
+#Для просмотра всех доступных методов используйте метод класса get_api_methods.
+#Для отправки метода используйте метод класса execute_method, передавая в виде аргумента method_name (method_name="open_entry_gate", например).
+
+
+#* - Если на GCore API включена защита по логину и паролю, передайте их в соответсвующих атрибутах login и password;
+#так-же вы можете передать название главного метода general_method.(используется на GCore API
+#для более глубокой дифференциации методов, например метод user_commands - для методов клиентского приложения (для которого написан этот SDK),
+#или метод wserver_command - для комманд, которые приходят от WServer.)
+
+
