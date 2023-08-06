@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/parallelsoup/__init__.py
+src/parallelsoup.egg-info/PKG-INFO
+src/parallelsoup.egg-info/SOURCES.txt
+src/parallelsoup.egg-info/dependency_links.txt
+src/parallelsoup.egg-info/top_level.txt
