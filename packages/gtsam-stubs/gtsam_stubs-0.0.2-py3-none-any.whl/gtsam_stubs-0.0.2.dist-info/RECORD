@@ -1,0 +1,14 @@
+gtsam-stubs/__init__.pyi,sha256=hr_EyfJLgxOllPavtUU1rzVsVQwSeAoukA7hQvjilqs,112
+gtsam-stubs/imuBias.pyi,sha256=hNUV2PuFopxCaVBLWSmMcTes9pWz6BPaw4U0vju9T2g,29
+gtsam-stubs/noiseModel.pyi,sha256=bMCGY_Lq4efJHhgfG9XQwc31hBBVaEHmfI7AopViYD8,32
+gtsam-stubs/symbol_shorthand.pyi,sha256=nAyO_fLchMN03fsOvOhdUjDRN0seybGsBromKdH3xIs,38
+gtsam-stubs/gtsam/__init__.pyi,sha256=AspJQnBnsNpMgErIZLZtsMOxXK7LjK5QTYRppNQ8O2U,156759
+gtsam-stubs/gtsam/imuBias.pyi,sha256=QXgjbK_lIOrB9oGDUzVVoSbWkQbHkkj1z6hvF7_lRPk,1140
+gtsam-stubs/gtsam/symbol_shorthand.pyi,sha256=GIpLcRFne3HezPAHTjXfKEGPHoyinhiRshr3ItodOVU,676
+gtsam-stubs/gtsam/noiseModel/__init__.pyi,sha256=m38EgXEoYELgt1Yx5BPRgCNkxAS1K4QKYlp5BfO_BkY,2639
+gtsam-stubs/gtsam/noiseModel/mEstimator.pyi,sha256=fb-mT4FgjTmOezvTyOHjLCdTeQIEhG2Qrg29DLdCeiQ,2879
+gtsam-stubs/utils/__init__.pyi,sha256=tX3BA4rwK-9amlLtoYqajbuZKyezbOziNuOcBTVn0gI,64
+gtsam_stubs-0.0.2.dist-info/METADATA,sha256=bVIgWsOa9CIiVfV0WqtZivF4upShWt2UOe1YNw7mIcA,806
+gtsam_stubs-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gtsam_stubs-0.0.2.dist-info/top_level.txt,sha256=EZP_2duo10ISKJZ070ACqCTKRATZnPgDcRFu37GMX7Q,12
+gtsam_stubs-0.0.2.dist-info/RECORD,,
