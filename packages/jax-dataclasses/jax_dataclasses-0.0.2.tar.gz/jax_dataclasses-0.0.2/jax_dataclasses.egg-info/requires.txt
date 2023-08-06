@@ -1,0 +1,7 @@
+flax
+jax
+jaxlib
+
+[testing]
+pytest
+pytest-cov
