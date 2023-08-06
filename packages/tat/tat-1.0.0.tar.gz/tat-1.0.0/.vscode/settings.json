@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "pythonenv/bin/python",
+    "markdownlint.config": {
+        "default": true,
+        "MD007": false,
+        "MD038": false
+    },
+    "restructuredtext.confPath": "${workspaceFolder}/docs/source"
+}
