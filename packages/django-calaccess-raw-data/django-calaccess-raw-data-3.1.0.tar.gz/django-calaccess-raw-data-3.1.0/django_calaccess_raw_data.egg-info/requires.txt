@@ -1,0 +1,6 @@
+django>=3.2.*
+django-postgres-copy>=2.5.*
+requests
+clint
+hurry.filesize
+pytz
