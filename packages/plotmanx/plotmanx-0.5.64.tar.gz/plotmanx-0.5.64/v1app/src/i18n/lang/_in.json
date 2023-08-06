@@ -1,0 +1,69 @@
+{
+
+
+
+ "bnt_balance": "संतुलन",
+ "bnt_lvsum": "कॉम्बो स्तर",
+ "bnt_node_num": "नोड गणना",
+ "bnt_lvfreeze": "क्रिस्टल स्तर",
+ "bnt_deal": "सौदा",
+ "bnt_price_plan": "मूल्य योजना",
+ "bnt_share": "शेयर",
+ "bnt_welcome": "स्वागत हे",
+ "bnt_invcode": "रेफरल कोड",
+ "bnt_all_income": "सभी आय",
+ "bnt_all_wage": "सभी दांव",
+ "bnt_confirm": "मैं इस बात की पुष्टि और संकेत",
+ "bnt_boardcast": "हस्ताक्षर और लेन-देन के लिए प्रतिबद्ध ...",
+ "bnt_main": "घर",
+ "bnt_ninvest": "नए निवेश",
+ "bnt_oinvest": "पकड़ो",
+ "bnt_trxn": "लेन-देन स्थिति",
+ "bnt_askcode": "कोड के लिए पूछें",
+ "bnt_bicode": "निमंत्रण कोड",
+ "bnt_bet": "ऐड निधि",
+ "bnt_prin": "प्रधान अध्यापक",
+
+ "n_zero_a": "शून्य राशि उपलब्ध",
+ "n_address_empty": "पता खाली नहीं हो सकता",
+ "n_upline": "आपका अप लाइन कोड अमान्य है",
+ "n_inv": "आमंत्रित कोड अमान्य है",
+ "n_free": "अमान्य मुक्त राशि",
+ "n_lock": "अमान्य ताला राशि",
+ "n_copy": "कॉपी सफलता",
+ "n_round_unstarted": "इस दौर अभी तक शुरू नहीं किया गया है",
+ "n_attention": "मुहब्बत करना",
+ "n_pmt_success": "भुगतान सफलता है!",
+ "n_hashcfm": "हैश की पुष्टि की",
+ "n_deny": "से इनकार किया।",
+
+ "p_total_income": "कुल आय",
+ "p_cap": "राजधानी",
+ "p_hack": "हैक पावर",
+ "p_enqueue": "कतारबद्ध राशि",
+ "p_shared": "साझा की गई राशि",
+ "p_reward": "इनाम बोनस राशि",
+ "p_all_accs": "सभी निवेश खातों",
+ "p_pend_withd": "लंबित निकासी",
+ "p_frozen_amount": "जमे हुए राशि",
+
+
+
+ "p_grant": "विचाराधीन पर अनुदान रिलीज",
+ "p_close": "बंद करे",
+ "p_settle_withdraw": "निकालना",
+
+ "site_name_ec": "Tron.Finance",
+ "site_name_ms": "मेसोनिक दुनिया",
+ "msg_install": "imtoken या इसी तरह के बटुए का उपयोग कर कृपया",
+ "msg_switch": "केवल मुख्य नेटवर्क के लिए उपलब्ध अपने बटुए के माध्यम से शुरू कर दें <br>।",
+ "msg_new_round": "नए दौर कैपिटल फंडिंग जल्द ही शुरू कर रहा है!",
+ "msg_invcard": "मेरे निमंत्रण कार्ड",
+
+
+ "msg_stay_tuned": "बने रहें।",
+ "msg_verified_ctr": "सत्यापित अनुबंध पता",
+ "msg_contr_addr": "अनुबंध पता",
+ "msg_dpl_network_tron": "ट्रोन तैनाती नेटवर्क",
+ "msg_auditrepo": "लेखा परीक्षा रिपोर्ट"
+}

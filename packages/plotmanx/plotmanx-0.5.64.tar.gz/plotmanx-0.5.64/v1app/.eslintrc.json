@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "@nuxtjs",
+    "eslint:recommended",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": [
+      2,
+      "never"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "no-unused-vars": "off",
+    "no-prototype-builtins": "off",
+    "camelcase": "off",
+    "eqeqeq": "off",
+    "no-undef": "off",
+    "no-console": "off",
+    "space-before-function-paren": "off",
+    "object-property-newline": [
+      "error"
+    ],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "always",
+          "normal": "never",
+          "component": "any"
+        }
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "vue/max-attributes-per-line": "off"
+  }
+}

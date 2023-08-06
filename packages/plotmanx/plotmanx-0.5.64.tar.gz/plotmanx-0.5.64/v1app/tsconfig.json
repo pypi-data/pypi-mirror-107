@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    // These settings are required for TypeScript project references
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "lib": [
+      "DOM.Iterable",
+      "DOM",
+      "ES2020",
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/api/*"
+      ]
+    },
+    "noUnusedLocals": false
+  },
+  "exclude": ["nuxt.config.js","src/**/*.js","src/**/*.d.ts","src/**/*.vue"]
+}
