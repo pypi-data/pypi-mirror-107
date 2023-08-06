@@ -1,0 +1,28 @@
+{% extends 'oscar/dashboard/vouchers/voucher_form.html' %}
+{% load currency_filters %}
+{% load i18n %}
+
+{% block extrascripts %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        var groupCheckbox = $('#id_limit_usage_by_group'),
+            groupSelect = $('#id_groups'),
+            childrenCheckbox = $('#id_create_children'),
+            childrenCount = $('#id_auto_generate_child_count');
+
+        if (groupCheckbox.length > 0 && groupSelect.length > 0) {
+            groupSelect.prop("disabled", !groupCheckbox.get(0).checked);
+            groupCheckbox.on('change', function() {
+                groupSelect.prop("disabled", !this.checked);
+            });
+        }
+
+        if (childrenCheckbox.length > 0 && childrenCount.length > 0) {
+            childrenCount.prop("disabled", !childrenCheckbox.get(0).checked);
+            childrenCheckbox.on('change', function() {
+                childrenCount.prop("disabled", !this.checked);
+            });
+        }
+    </script>
+{% endblock %}
