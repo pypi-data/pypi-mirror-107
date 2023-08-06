@@ -1,0 +1,197 @@
+#!python
+
+import const as consts
+
+from time import sleep
+from tinydb import TinyDB, Query
+import os
+import npm
+import pathlib
+import platform
+import subprocess
+import sys
+import tinydb_encrypted_jsonstorage as tae
+from emoji import emojize
+
+import netaddr
+import requests as req
+import socket
+
+import randomname
+import tarfile
+
+# Pass to node app
+# daemon = False
+# config = None
+# naccounts = "3"
+# eth_balance = "1000"
+# host = consts.subnet
+# port = consts.port
+
+
+def main():
+    rocket = emojize(':rocket:')
+    # Start by clearing the screen
+    sleep(1.3)
+    print("""
+        Clearing screen.
+            """)
+    sleep(2)
+    os.system('clear')
+    print("""
+            That was cool right?
+            """)
+    sleep(1.1)
+    print(f"""
+          Hi, { consts.user },\n
+
+            Welcome back to the rocket cli { rocket }.
+
+            """)
+
+    # terminal_menu = TerminalMenu(os.listdir(str(consts.home)))
+    # menu_entry_index = terminal_menu.show()
+    # How to capture above input
+
+    print("Reading from constants \n")
+    print(f"Current user is: {consts.user}")
+    print(f"Current node is: {consts.nodejs}")
+    print(f"Current Subnet is: {consts.subnet}")
+    print(f"Current LHost is: {consts.localhost}")
+    print(f"Current port is: {consts.port}")
+    print(f"Current homedir is: {consts.home}")
+
+    # create_homedir(consts.home)
+    # setup_cli(consts.home)
+
+
+def create_homedir(projdir, key=None, dbpath=None, storage=None):
+    if not projdir.exists():
+        projdir.mkdir(parents=False, exist_ok=True)
+
+        print("Created new project directory in Documents.")
+        print("Looks like you're a new user.\n I'll make a tinydb for you..")
+
+        # Create a tinydb
+        db = TinyDB(
+            encryption_key=key,
+            path=dbpath,
+            storage=storage
+        )
+
+        inject = {"name": f"{const.user}"}
+        db.insert(inject)
+
+        print("Created DB. \n")
+        print(db.all())
+
+        return projdir
+    else:
+        print("Welcome back.")
+        print("Loading database...\n")
+        print(f"Loaded database at { dbpath } ...\n")
+
+# def is_path(obj: object, name: str) -> pathlib.Path
+
+
+def glue(*argp, string=False, ex=False):
+    for path in argp:
+        isinstance(pathlib.Path)
+    parts = argp
+    path = pathlib.Path.cwd().joinpath(*parts)
+    if string:
+        return str(path)
+    return path
+
+
+def knows(app, bin_path):
+    '''
+    Returns a boolean value indicating if a binary application
+    exists on the host machine.
+    Requires a binary app name
+    Optional: path to binary, defaults to local bin
+    '''
+
+    app_parts = [bin_path, app]
+    app_path = pathlib.Path.cwd().joinpath(*app_parts)
+
+    answer = False
+
+    if app_path.is_file():
+        answer = True
+        return answer
+    return answer
+
+
+def setup_cli(projdir):
+    # Give our projects random names like Docker does with containers
+    new_projname = randomname.get_name()
+    parts = [projdir, new_projname]
+    new_projdir = pathlib.Path.cwd().joinpath(*parts)
+
+    # In the rare case randomname
+    # generates the same name twice
+    if not new_projdir.exists():
+        new_projdir.mkdir(parents=False)
+        print("Check documents bro")
+        # If it did, repeat
+    else:
+        setup_cli(projdir)
+
+    # Mimic NodeJS
+    # Download a fresh package from the repo
+    pkgurl = f'https://github.com/trufflesuite/ganache-cli/archive/refs/tags/{VCLI}.tar.gz'
+    res = req.get(pkgurl, stream=True)
+    if res.status_code == 200:
+
+        pkgname = GCLI + "-" + VCLI.replace('v', '')
+        tarname = GCLI + "_" + VCLI + ".tar.gz"
+
+        tarparts = [new_projdir, tarname]
+        tarpath = pathlib.Path.cwd().joinpath(*tarparts)
+
+        with open(tarpath, 'wb') as f:
+            print(f"Downloading package: { pkgname }")
+            print('\n')
+            print('-------------------------------------------')
+            f.write(res.raw.read())
+            print(f"I downloaded your package to { tarpath } ")
+
+        #     # Unpackage and npm install
+        #     # Dont forget to sign it
+        print(
+            f"Starting unpackage on tarfile: { tarname } in project { new_projname }")
+        tarobj = tarfile.open(tarpath)
+        print("I'm assemlbing the extract path...")
+        print('\n')
+        print('-------------------------------------------')
+        str_projdir = new_projdir
+        print(f"Determined extract path should be: \n {str_projdir}")
+        print('\n')
+        print('-------------------------------------------')
+        print("Extracting...")
+        tarobj.extractall(str(str_projdir))
+        tarobj.close()
+        print(f"Finished.\n Please check {str_projdir}")
+        print('\n')
+        print('-------------------------------------------')
+        print('Changing to extracted directory...\n')
+
+        extract_parts = [new_projdir, pkgname]
+        extract_path = pathlib.Path.cwd().joinpath(*extract_parts)
+
+        os.chdir(str(extract_path))
+        print("Performing list dir here: \n")
+        print(os.system('ls'))
+
+        # Prepare an argument vector to send
+        # argv[const.npm]
+        Popen(["npm", "install"])
+
+    else:
+        sys.exit(
+            "I didn't get an okay from Github's server.\n Check connection maybe?.\n")
+
+
+if __name__ == "__main__":
+    main()
