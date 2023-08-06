@@ -1,0 +1,11 @@
+pycbf/__init__.py,sha256=WJmucsgH7hOVySimouh2vwx7FjQD0s0hAvdetuVI3qI,165
+pycbf/_wrapper.py,sha256=Sf3enSZUjs8xNjT1pkJfipnnOsmV7Wd12QCYwc4lmsE,438266
+pycbf/img.c,sha256=ZvpnLFHwpL2RdlYjLbOOOb9wYJq95WR6i3fygrNnaf4,304924
+pycbf/img.pxd,sha256=0eR9eo34d_dAHZuFK0Nf6KTLui8kKlon1YxsFmL7vXw,2375
+pycbf/img.pyx,sha256=avdGLctXkYG2dYFnJAgjDR0tT5kc4pJ-xfrCXnvW2Ik,8907
+pycbf/utils.py,sha256=djTf4orwQpFPd4bXzIfXaxx04uC9_5rxg2M1bcBhB58,944
+pycbf/_pycbf.cpython-39-darwin.so,sha256=IlQcOyUiByVizB3nzV7Y4dsV6S_ctpdIVe8fvV4g2Kk,1191320
+pycbf/img.cpython-39-darwin.so,sha256=vVBQkOnRXg9r4xNqZ814QVXBDGbi81GNDzByM0ByScI,124821
+pycbf-0.9.6.3.dist-info/WHEEL,sha256=PDXymTSW4SrEnZKojrpInoepjxeXRGEU_GWuii8Wd_M,99
+pycbf-0.9.6.3.dist-info/METADATA,sha256=XTu4BObIauMdBzXJoelIDvBGyEkV5QE7jhh-bxvFc9E,2870
+pycbf-0.9.6.3.dist-info/RECORD,,
