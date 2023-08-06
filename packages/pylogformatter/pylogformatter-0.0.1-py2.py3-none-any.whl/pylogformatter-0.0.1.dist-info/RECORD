@@ -1,0 +1,9 @@
+pylogformatter/__init__.py,sha256=Cyg_Zrk8u8RaXdLwx6wzH9CAvWGHQHlLGgu9DY6Xo5U,111
+pylogformatter/celery.py,sha256=jmHh6oOXbMsVTBj73LH2jn0feuvus4P3FbAD9OsrRn8,1005
+pylogformatter/generic.py,sha256=X0olvf2V1Xsf4Vtb342n_-coeJkbVEFEdEPx7W0uH0U,2671
+pylogformatter/json.py,sha256=jVoPOKR9YZvN2MNDkZw-gHltwf12l-8xkYb1_DXlY10,3010
+pylogformatter/replace_celery_logger.py,sha256=NnJWWFHp9WjmEBSJP0ELGSN4hRENY-Vb9oQ5T2bMrRI,2112
+pylogformatter-0.0.1.dist-info/LICENSE,sha256=f23ue3u3OX8R9Be-hJNE-xWjc8-RW_YeqL-zxaRinCo,1095
+pylogformatter-0.0.1.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+pylogformatter-0.0.1.dist-info/METADATA,sha256=AA95vUPo91wQTE5odlEdj0YurWlEKrhNmIfeEV6sc_I,1537
+pylogformatter-0.0.1.dist-info/RECORD,,
