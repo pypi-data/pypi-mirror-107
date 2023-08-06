@@ -1,0 +1,10 @@
+django_mom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mom/settings.py,sha256=a-JiwP6n1dZI0WiIa-F4voaofGeq1-UNToGkKPETSCY,142
+django_mom/management/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_mom/management/commands/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_mom/management/commands/mom.py,sha256=-UCxVZta09a0O5dwTOJS1pEyzmchDbUfKGlFYY_ie9g,15638
+django_mom-0.0.1.dist-info/LICENSE,sha256=KO9PUo_3cVW2HQ_jo899evpWcAosf2emFjruh95JqrQ,1051
+django_mom-0.0.1.dist-info/METADATA,sha256=kKASDFAB3KAWd7UPB87Eaa6xOWTPC9wF984gYWlr3kI,1636
+django_mom-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_mom-0.0.1.dist-info/top_level.txt,sha256=ixbyqrubqxADic6clNvy-Y_4DP3jpqahUtQfX6d_AZ0,11
+django_mom-0.0.1.dist-info/RECORD,,
