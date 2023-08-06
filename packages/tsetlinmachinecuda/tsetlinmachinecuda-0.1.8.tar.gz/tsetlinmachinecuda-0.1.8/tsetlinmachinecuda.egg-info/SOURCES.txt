@@ -1,0 +1,10 @@
+README.md
+setup.py
+tsetlinmachinecuda/__init__.py
+tsetlinmachinecuda/kernels.py
+tsetlinmachinecuda/tm.py
+tsetlinmachinecuda/tools.py
+tsetlinmachinecuda.egg-info/PKG-INFO
+tsetlinmachinecuda.egg-info/SOURCES.txt
+tsetlinmachinecuda.egg-info/dependency_links.txt
+tsetlinmachinecuda.egg-info/top_level.txt
