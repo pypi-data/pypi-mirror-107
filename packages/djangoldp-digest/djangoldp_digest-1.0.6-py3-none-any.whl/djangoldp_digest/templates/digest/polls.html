@@ -1,0 +1,6 @@
+<div>
+  <p>{{ count }} {% if count > 1 %}nouvelles propositions ont été mises en ligne{% else %}nouvelle proposition a été mise en ligne{% endif %} :</p>
+  <ul>
+    {% autoescape off %}{{ content }}{% endautoescape %}
+  </ul>
+</div>
