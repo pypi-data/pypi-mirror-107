@@ -1,0 +1,13 @@
+README.md
+setup.py
+configTemplate/__init__.py
+configTemplate/error_managers.py
+configTemplate/errors.py
+configTemplate/exceptions.py
+configTemplate/files.py
+configTemplate/templates.py
+configTemplate.egg-info/PKG-INFO
+configTemplate.egg-info/SOURCES.txt
+configTemplate.egg-info/dependency_links.txt
+configTemplate.egg-info/requires.txt
+configTemplate.egg-info/top_level.txt

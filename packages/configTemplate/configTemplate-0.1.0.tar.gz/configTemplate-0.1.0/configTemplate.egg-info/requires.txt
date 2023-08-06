@@ -1,0 +1,6 @@
+termcolor==1.1.0
+pyyaml<5.5,>=5.4
+
+[dev]
+pytest<6.3,>=6.2
+flake8<3.10,>=3.9
