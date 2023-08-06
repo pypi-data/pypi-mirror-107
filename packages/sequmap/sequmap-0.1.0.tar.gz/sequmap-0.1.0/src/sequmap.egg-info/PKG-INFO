@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sequmap
+Version: 0.1.0
+Summary: An AA/NT sequence encoder using umap & pca
+Home-page: https://github.com/MurrellGroup/SeqUMAP
+Author: Ben Murrell
+Author-email: murrellb@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sequmap
+
+Encode and embed sequences as kmer vectors (both NT and AA) and generate projections using UMAP
+
+### Setup
+
+```
+pip install sequmap
+```
+
+### Usage
+
+Embed and project sequences using
+
+```
+from sequmap import sequmap, NT_DICT
+proj = sequmap(seqs, ndim, k = 5, lookup_dic = NT_DICT, n_neighbors = 30, min_dist = 0.001) 
+
+```
+
+where `seqs` is an array of strings, `ndim` is the number of projected dimensions and `k` is the kmer size. By default, sequences are embedded by counting all unique kmers and the distance between sequences is estimated using the SquaredEuclidean distance between dimensionality-reduced kmer vector.
+
+Additionally, a simpler `seqpca` method is included which just performs PCA in the kmer domain, used as follows:
+
+```
+from sequmap import seqpca, NT_DICT
+proj = seqpca(seqs, ndim, k = 5, lookup_dic = NT_DICT) 
+
+```
+
+The following lookup dictionaries are included for sequence encoding:
+
+```
+AA_DICT = Dict(
+    'A' => 1, 'C' => 2, 'D' => 3, 'E' => 4, 'F' => 5, 
+    'G' => 6, 'H' => 7, 'I' => 8, 'K' => 9, 'L' => 10, 
+    'M' => 11, 'N' => 12, 'P' => 13, 'Q' => 14, 'R' => 15, 
+    'S' => 16, 'T' => 17, 'V' => 18, 'W' => 19, 'Y' => 20, 
+    '*' => 21, 'X' => 22
+    )
+
+NT_DICT = Dict('A' => 1, 'C' => 2, 'G' => 3, 'T' => 4)
+```
+
+

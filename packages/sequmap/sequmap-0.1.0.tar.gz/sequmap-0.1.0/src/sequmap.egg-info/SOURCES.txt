@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sequmap/__init__.py
+src/sequmap/main.py
+src/sequmap.egg-info/PKG-INFO
+src/sequmap.egg-info/SOURCES.txt
+src/sequmap.egg-info/dependency_links.txt
+src/sequmap.egg-info/requires.txt
+src/sequmap.egg-info/top_level.txt
