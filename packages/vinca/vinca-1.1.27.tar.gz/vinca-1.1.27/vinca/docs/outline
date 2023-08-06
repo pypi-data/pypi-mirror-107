@@ -1,0 +1,27 @@
+a simple mode var
+- home / add / review
+- (edit is a subclass of add)
+- (preview is a subclass of edit)
+
+If a then vinka hands controls entirely over to the basic editor until receiving control back
+If r likewise to the reviewer.
+The previewer is presented with a list of the editor's shortcuts and asked to honor them.
+The editor is responsible for initializing the card's files (using an id and timestamp provided by vinka)
+
+reload conditions
+- after add
+- after edit
+- on load
+
+vinka will show a list of decks but it only handles very basic things like changes between cards.
+
+vinka is designed to be entirely modular so that any part can be edited or replaced. A CARD is the source of authority. It decides what editor edits it, what reviewer reviews it, and what scheduler schedules it. The browser can be changed at will.
+
+The browser may save quite a bit of extra data to try to speed up and facilitate its operations, but the cards ultimately determine this. They are self contained: they specify their servants, their history, and their due date. This is true even when multiple cards correspond to a single note e.g. image occlusion. The cards specify their parent note which is stil conceived of as subservient.
+
+4 strengths
+-----------
+browsing - visual mode
+statistics - 8 lines of unicode blocks
+reviewing  - very customizable
+opening    - last command with different arg; tab completion; BASH ALIASES 
