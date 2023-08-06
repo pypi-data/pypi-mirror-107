@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/metrics/__init__.py
+src/metrics/filters.py
+src/metrics/halstead.py
+src/metrics/parser.py
+src/metrics/raw.py
+src/metrics_felbeaver.egg-info/PKG-INFO
+src/metrics_felbeaver.egg-info/SOURCES.txt
+src/metrics_felbeaver.egg-info/dependency_links.txt
+src/metrics_felbeaver.egg-info/requires.txt
+src/metrics_felbeaver.egg-info/top_level.txt
