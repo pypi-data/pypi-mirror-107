@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/C/imagemorph.c
+src/python/imagemorph.py
+src/python/imagemorph.egg-info/PKG-INFO
+src/python/imagemorph.egg-info/SOURCES.txt
+src/python/imagemorph.egg-info/dependency_links.txt
+src/python/imagemorph.egg-info/requires.txt
+src/python/imagemorph.egg-info/top_level.txt
