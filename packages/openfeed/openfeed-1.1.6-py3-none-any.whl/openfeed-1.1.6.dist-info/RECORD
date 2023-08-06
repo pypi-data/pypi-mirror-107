@@ -1,0 +1,10 @@
+openfeed/__init__.py,sha256=M0UswTgfHwxnkwLhySq4EErRxKgtNrC4fcvK2F31qhc,247
+openfeed/openfeed_client.py,sha256=gitjJPajkCx98M9howaZN6_DVmRzJxjMIMBYdGcFk60,23384
+openfeed/generated/openfeed_api_pb2.py,sha256=kkY8CQ3CYfPSAuncbqn8exMDb8K5Vzidyve7bMgoc9A,72840
+openfeed/generated/openfeed_instrument_pb2.py,sha256=kQBqBWIGkBGZEzZQbNXX1mp5Ah_F_DOoTTbkxu0l2n0,54940
+openfeed/generated/openfeed_pb2.py,sha256=6hpGkkgaVpIZuCAKQj3-BydmG09MwvaIib2zDj-ZUfQ,286094
+openfeed-1.1.6.dist-info/LICENSE,sha256=tRRi9eYCp6fiAVoBQGw1_X5xKHOA4iPRC5hK21ultGI,1090
+openfeed-1.1.6.dist-info/METADATA,sha256=cC7_PrRnQmC8lI8Sh-pwwylMzMX20zuXFSJflSzdVKY,2398
+openfeed-1.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openfeed-1.1.6.dist-info/top_level.txt,sha256=FOj92-FJPd-juBOKyR_H9a-vPsnf-Ox4QPsP86VhzRE,9
+openfeed-1.1.6.dist-info/RECORD,,
