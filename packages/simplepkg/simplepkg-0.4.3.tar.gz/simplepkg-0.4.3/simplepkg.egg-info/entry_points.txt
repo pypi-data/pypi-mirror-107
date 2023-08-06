@@ -1,0 +1,3 @@
+[console_scripts]
+simplepkg = simplepkg.__main__:main
+

@@ -1,0 +1,29 @@
+"""
+MODULE DOCSTRING
+"""
+
+import logging
+from pkg import app
+
+
+def main():
+    """
+    DOCSTRING
+    """
+    app_func()
+    # logging setup in __init__.py
+    logging.info('Executed successfully!')
+
+
+def app_func():
+    """
+    DOCSTRING
+    """
+    app.fn_one()
+    app.fn_two()
+    app.fn_three()
+    app.config_demo()
+
+
+if __name__ == '__main__':
+    main()

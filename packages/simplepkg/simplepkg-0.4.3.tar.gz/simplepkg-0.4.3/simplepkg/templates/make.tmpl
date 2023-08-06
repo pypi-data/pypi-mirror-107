@@ -1,0 +1,43 @@
+.PHONY: info pypi test install uninstall build clean twine setuptools
+PKGNAME = $(shell grep 'name=' setup.py | sed "s/name=//g; s/'//g; s/,//g; s/ //g")
+
+info:
+	$(info Target dependencies are listed in brackets [depone deptwo])
+	$(info )
+	$(info Choose a target:)
+	$(info )
+	$(info make pypi: upload to pypi [build twine])
+	$(info make test: upload to test pypi [build twine])
+	$(info make install: install $(PKGNAME) [setuptools])
+	$(info make uninstall: uninstall $(PKGNAME) [setuptools])
+	$(info make build: build distributable components [clean setuptools])
+	$(info make clean: remove all directories generated in previous builds and runs)
+	$(info make twine: installs twine, not intended to be run directly)
+	$(info make setuptools: installs setuptools and wheel, not intended to be run directly)
+	@:
+
+pypi: build twine
+	twine upload dist/*
+
+test: build twine
+	twine upload --repository testpypi dist/*
+
+install: setuptools
+	python3 -m pip install .
+
+uninstall:
+	python3 -m pip uninstall $(PKGNAME) -y
+
+build: clean setuptools
+	python3 setup.py sdist bdist_wheel
+
+clean:
+	rm -rf build dist *.egg-info
+	find . -type d -name '__pycache__' -exec rm -rf {} +
+
+twine:
+	python3 -m pip install --upgrade twine
+
+setuptools:
+	python3 -m pip install --upgrade setuptools wheel
+
