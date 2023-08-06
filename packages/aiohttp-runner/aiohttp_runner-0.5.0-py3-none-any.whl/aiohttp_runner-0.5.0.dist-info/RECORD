@@ -1,0 +1,12 @@
+aiohttp_runner/__init__.py,sha256=PxM4-SuluIn0sVKA7BzgQKu2FBsP3xJzDMeNDC_lhQ8,581
+aiohttp_runner/_calendar.py,sha256=ayHEpXlfri6S8udTaZdFS2LZXwtoMtApaKIO2UZy9XI,1599
+aiohttp_runner/_gunicorn_http_runner.py,sha256=55Ccnof5rnJrUGtiD11kZQUsOy6vsMfgmxM7zpMWBh8,3752
+aiohttp_runner/_gunicorn_subprocess.py,sha256=vJfspKS40zQPX1B177HxU85ybkUTPevAlOFCQlpnkwQ,2635
+aiohttp_runner/_http_runner.py,sha256=_wqfSiQDddEjGg7PV5tclOXN7b4LW9e6JQMHyajoCxA,722
+aiohttp_runner/_serialize.py,sha256=SGewzHLxaXnXSMnEkdO5nqllRkXFi3YtnqeROXfR2NU,875
+aiohttp_runner/_simple_http_runner.py,sha256=YWToPJUMVYLb0ls9u964vBWte-IpB5lpm8UqU5GLpd4,797
+aiohttp_runner/_utils.py,sha256=cMjDJJJfVUPeCTnGz5CEf612SL1XgIqwrBV9niYobzE,2571
+aiohttp_runner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttp_runner-0.5.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aiohttp_runner-0.5.0.dist-info/METADATA,sha256=2L8JkCQyfiT8gQN7TTUgOKxPmQF6fXWAvdH7xQBrnY8,1515
+aiohttp_runner-0.5.0.dist-info/RECORD,,
