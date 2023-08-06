@@ -1,0 +1,4 @@
+G :- (A before B) during (C before D) 
+  where A.id = B.id 
+      & C.id = D.id 
+      & A.id = C.id

@@ -1,0 +1,2 @@
+OPERATING :- ON before OFF
+TWO_CLOSE_OPS :- op1:OPERATING before op2:OPERATING where op2.begin - op1.end < 50

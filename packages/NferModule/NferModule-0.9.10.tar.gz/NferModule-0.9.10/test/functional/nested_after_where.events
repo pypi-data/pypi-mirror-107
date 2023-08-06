@@ -1,0 +1,11 @@
+C|10|id;foo|1;false
+A|20|id|2
+C|30|id;foo|1;false
+A|40|id|1
+B|50|id|2
+C|60|id;foo|1;false
+B|70|id|1
+B|80|id|1
+A|90|id|2
+C|95|id;foo|2;true
+B|99|id|2

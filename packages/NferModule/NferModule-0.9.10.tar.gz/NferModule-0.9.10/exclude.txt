@@ -1,0 +1,35 @@
+Algorithm to separate exclusion rules
+
+For an exclusion BIE
+  For an expression
+    check if the lhs and rhs reference the lhs of the BIE
+      the lhs of the BIE may be an AIE, in which case reference requires checking if map expr reference the exlusion rule and the left side
+
+expr_in_exclusion_bie(bie, expr) {
+  if (bie lhs is a bie)
+    if (expr belongs normally in bie lhs)
+      true
+    else
+      false
+  else
+    if (expr belongs normally in bie)
+      if (expr references lhs label)
+        true
+      else
+        false
+    else
+      false
+  fi
+}
+
+expr_references_lhs(label, expr) {
+  if (expr is map or time)
+    if (expr references label) 
+      true
+    else
+      false
+  else
+    if (expr is binary) 
+      this(expr left) or this(expr right)
+  fi
+}

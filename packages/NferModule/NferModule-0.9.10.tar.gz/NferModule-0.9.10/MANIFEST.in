@@ -1,0 +1,6 @@
+recursive-include python/nfer/www *
+recursive-include python/nfer/static *
+include python/README.md
+include gensrc/parser/dsl.tab.h
+graft inc/
+exclude README.md

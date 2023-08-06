@@ -1,0 +1,9 @@
+module test_module {
+  import two_tests;
+
+  TESTING :- TEST during (ON before OFF) where TEST.pid = ON.pid & ON.pid = OFF.pid
+}
+
+module two_tests {
+  TWOTESTS :- t1:TESTING before t2:TESTING where t2.begin - t1.end < 50
+}

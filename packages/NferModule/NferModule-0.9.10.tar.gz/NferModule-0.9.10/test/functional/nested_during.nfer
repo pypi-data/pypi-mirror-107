@@ -1,0 +1,1 @@
+G :- (A before B) during (C before D)

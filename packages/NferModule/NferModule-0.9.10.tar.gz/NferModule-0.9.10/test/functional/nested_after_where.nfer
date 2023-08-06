@@ -1,0 +1,4 @@
+D :- A before (B unless after C)
+  where B.id = C.id
+      & C.foo
+      & B.id = A.id

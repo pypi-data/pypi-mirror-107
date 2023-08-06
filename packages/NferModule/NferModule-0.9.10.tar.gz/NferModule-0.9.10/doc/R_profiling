@@ -1,0 +1,15 @@
+> library("profmem")
+> profmem(r <- nfer(t))
+Rprofmem memory profiling of:
+r <- nfer(t)
+
+Memory allocations:
+       bytes             calls
+1      42408 nfer() -> .Call()
+2      42408 nfer() -> .Call()
+3      42408 nfer() -> .Call()
+4      42408 nfer() -> .Call()
+total 169632                  
+> system.time(r <- nfer(t))
+   user  system elapsed 
+  0.259   0.000   0.260 

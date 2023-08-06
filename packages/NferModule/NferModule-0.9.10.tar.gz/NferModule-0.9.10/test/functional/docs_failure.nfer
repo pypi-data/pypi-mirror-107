@@ -1,0 +1,3 @@
+OPERATING :- ON before OFF where ON.pid = OFF.pid
+SUCCESS   :- TEST where TEST.success
+FAILURE   :- OPERATING unless contain SUCCESS

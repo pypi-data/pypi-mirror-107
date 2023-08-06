@@ -1,0 +1,9 @@
+A|10|foo|true
+B|20|bar|true
+C|30
+A|40|foo|false
+B|50|bar|true
+C|60
+A|70|foo|true
+B|80|bar|false
+C|90

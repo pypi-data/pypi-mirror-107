@@ -1,0 +1,59 @@
+/*
+ * lanl.nfer
+ * 
+ *  Created on: Jun 6, 2017
+ *      Author: skauffma
+ *
+ *    nfer - a system for inferring abstractions of event streams
+ *   Copyright (C) 2017  Sean Kauffman
+ *
+ *   This file is part of nfer.
+ *   nfer is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+module lanl {
+  import sensors, actuators, controllers;
+
+  controller_spawned :- USREVENT_EVENT-15
+  sensor_actuator_spawned :- USREVENT_EVENT-16
+  controller_killed :- USREVENT_EVENT-18
+  sensor_killed :- USREVENT_EVENT-19
+  actuator_killed :- USREVENT_EVENT-26
+}
+
+module sensors {
+  sensor :- USREVENT_EVENT-20 before USREVENT_EVENT-21
+  sensor_ok :- USREVENT_EVENT-12 during sensor
+  sensor_failed :- USREVENT_EVENT-13
+}
+
+module actuators {
+  actuator :- USREVENT_EVENT-22 before USREVENT_EVENT-23
+  brake_ok :- (USREVENT_EVENT-14 before USREVENT_EVENT-1) during actuator
+  accel_ok :- (USREVENT_EVENT-14 before USREVENT_EVENT-4) during actuator
+  actuator_ok :- brake_ok coincide accel_ok
+
+  brake_warn :- (USREVENT_EVENT-14 before USREVENT_EVENT-2) during actuator
+  accel_warn :- (USREVENT_EVENT-14 before USREVENT_EVENT-5) during actuator
+  brake_error :- (USREVENT_EVENT-14 before USREVENT_EVENT-3) during actuator
+  accel_error :- (USREVENT_EVENT-14 before USREVENT_EVENT-6) during actuator
+  conflict :- USREVENT_EVENT-7 during actuator
+}
+
+module controllers {
+  controller_started :- e:USREVENT_EVENT-11 map { pid -> e.pid }
+  controller :- woke:USREVENT_EVENT-24 before sleep:USREVENT_EVENT-25 where woke.pid = sleep.pid map { pid -> woke.pid }
+  actuator_responded :- (req:USREVENT_EVENT-9 before resp:USREVENT_EVENT-10) during c:controller where req.pid = resp.pid & req.pid = c.pid map { pid -> c.pid }
+  sensor_responded   :- (req:USREVENT_EVENT-8 before resp:USREVENT_EVENT-10) during c:controller where req.pid = resp.pid & req.pid = c.pid map { pid -> c.pid }
+}

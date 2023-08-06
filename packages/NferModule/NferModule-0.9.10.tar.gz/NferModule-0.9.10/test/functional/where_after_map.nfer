@@ -1,0 +1,1 @@
+C :- B unless after A where B.id = A.id

@@ -1,0 +1,4 @@
+D :- A before (B before C)
+  where B.id = C.id 
+      & (A.id < B.id)
+      | (A.id > B.id)

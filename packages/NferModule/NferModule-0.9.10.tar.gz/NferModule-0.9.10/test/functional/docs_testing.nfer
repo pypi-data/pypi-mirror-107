@@ -1,0 +1,2 @@
+OPERATING :- ON before OFF where ON.pid = OFF.pid map { proc -> ON.pid }
+TESTING :- TEST during OPERATING where TEST.pid = OPERATING.proc

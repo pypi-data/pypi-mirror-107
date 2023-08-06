@@ -1,0 +1,4 @@
+D :- (A before B) unless contain C
+  where A.id = B.id 
+      & A.id = C.id
+      & A.id = 2

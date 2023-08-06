@@ -1,0 +1,10 @@
+C|10
+B|20|foo|bob
+B|30|foo|bill
+B|40|foo|bob
+A|50|foo|bob
+C|55
+B|60|foo|bill
+A|65|foo|bill
+B|70|foo|bill
+C|75

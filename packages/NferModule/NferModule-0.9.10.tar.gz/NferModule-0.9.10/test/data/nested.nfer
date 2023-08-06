@@ -1,0 +1,2 @@
+D :- (A before B) during C where (A.foo < B.foo & C.foo = "bar") | (A.bar > B.bar & C.bar = "foo")
+G :- D during (E before F) where (E.x = F.x & E.x = D.x) & (E.y = F.y | E.y = D.y)

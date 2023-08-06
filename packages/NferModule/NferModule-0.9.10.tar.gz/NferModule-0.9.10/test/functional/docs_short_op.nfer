@@ -1,0 +1,1 @@
+SHORT_OP :- ON before OFF where OFF.begin - ON.end < 12
