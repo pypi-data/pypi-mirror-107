@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: informathion
+Version: 0.1.9
+Summary: Measurements for Expected Opportunity Loss
+Home-page: https://github.com/migueltorrescosta/informathion
+License: AGPL-3.0-only
+Author: migueltorrescosta
+Author-email: miguelptcosta1995@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Project-URL: Repository, https://github.com/migueltorrescosta/informathion
+Description-Content-Type: text/x-rst
+
+Measurements for Expected Opportunity Loss
+------------------------------------------
+
+To use (with caution), simply do::
+
+    >>> from informathion import ExpectedOpportunityLoss
+    >>> ExpectedOpportunityLoss(rewards, inputs)
