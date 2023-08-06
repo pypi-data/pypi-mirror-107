@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sicp-streams"
+version = "0.1.0"
+description = ""
+authors = ["Xu Siyuan <inqb@protonmail.com>"]
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Education"
+]
+packages = [
+    { include = "sicp_streams", from = "src" },
+    { include = "streamtools", from = "src" },
+    { include = "streamdemo", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
