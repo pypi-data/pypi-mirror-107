@@ -1,0 +1,3 @@
+[console_scripts]
+dasp = compiler.main:main
+
