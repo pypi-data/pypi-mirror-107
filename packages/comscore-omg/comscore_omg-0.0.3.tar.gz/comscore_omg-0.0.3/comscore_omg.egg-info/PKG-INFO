@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: comscore-omg
+Version: 0.0.3
+Summary: This is a module that allows you to connect to the Comscore library developed by Annalect and obtain synthesized information
+Home-page: UNKNOWN
+Author: Data house CL
+Author-email: data.analitica@omnicommediagroup.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,omnicom,sql,comscore
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
