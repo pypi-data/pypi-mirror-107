@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: extract-wiki-words
+Version: 0.1
+Summary: Script to extract words from Wikipedia dump files and create dictionaries.
+Home-page: https://github.com/javatechy/dokr
+Author: Pierre Alexis
+Author-email: pierre.alexis@lxs.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# extract_wiki_words - Extract words from Wikipedia dumps and create dictionaries
+This script can extract words from Wikipedia XML dumps and create dictionaries.
+
+Install `extract_wiki_words` on your system using : 
+
+```
+pip install extract_wiki_words
+```
+
+Usage of the script to create a dictionary from a Wikipedia dump (https://dumps.wikimedia.org):
+
+```
+extract_wiki_words frwiki-20210520-pages-articles-multistream.xml
+```
+
