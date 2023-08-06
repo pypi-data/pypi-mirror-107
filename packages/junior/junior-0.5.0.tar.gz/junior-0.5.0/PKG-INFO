@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: junior
+Version: 0.5.0
+Summary: A full stack web framework, powered by Flask.
+Home-page: https://itsjunior.com
+Author: Chris Whalen
+Author-email: chris@chriswhalen.ca
+Maintainer: Chris Whalen
+Maintainer-email: chris@chriswhalen.ca
+License: MIT
+Project-URL: Documentation, https://itsjunior.readthedocs.io
+Project-URL: Source, https://github.com/chriswhalen/junior
+Project-URL: Issues, https://github.com/chriswhalen/junior/issues
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: mysql
+Provides-Extra: postgres
+License-File: LICENSE.md
+
+
+junior
+======
+
+[![test](https://github.com/chriswhalen/junior/actions/workflows/test.yml/badge.svg)](https://github.com/chriswhalen/junior/actions/workflows/test.yml)
+[![analyze](https://github.com/chriswhalen/junior/actions/workflows/analyze.yml/badge.svg)](https://github.com/chriswhalen/junior/actions/workflows/analyze.yml)
+[![docs](https://readthedocs.org/projects/itsjunior/badge/?version=latest)](https://itsjunior.readthedocs.io/en/latest/?badge=latest)
+
+A full stack web framework, powered by [Flask]( https://flask.palletsprojects.com ).
+
+Copyright © 2020, 2021
+Chris Whalen <chris@chriswhalen.ca>
+
+This software is offered under the [MIT License]( ./LICENSE.md ).
+
+
