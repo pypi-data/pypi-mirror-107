@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cue
+Version: 0.7
+Summary: Accounting system for linux
+Home-page: https://kosciuszko.cloud
+Author: Jonas McCallum
+Author-email: jonasmccallum@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: testing

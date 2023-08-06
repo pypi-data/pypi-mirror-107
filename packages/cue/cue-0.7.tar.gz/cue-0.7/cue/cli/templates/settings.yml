@@ -1,0 +1,88 @@
+!!omap
+- org_name: {org_name}
+
+
+# Invoice details
+
+- tagline: Best coffee in Palo Alto # optional
+
+- registered_number:
+#   - VAT Reg No: GB123 4567 89     # UK, EU, etc
+#   - ABN: 12 345 678 900           # Aus (not required for invoices < $1,000)
+
+- transaction_taxes: !!omap
+    - Sales tax: 7.5%               # rates vary in USA (check http://salestax.avalara.com)
+#   - VAT: 18%                      # UK, EU etc
+#   - GST: 10%                      # Aus (if you are registered for GST)
+
+- terms: 7 days. Please include invoice number in remittance.
+
+
+# Currency localization
+
+- $: '$'                            # £, €, ¥, etc
+- precision: '1.00'                 # 2dp (remove zeros to decrease, eg. '1' for yen)
+- sep: ','                          # thousands separator
+- dp_chr: '.'                       # decimal point
+
+
+# Ledger
+
+- method: accrual                   # accrual|cash
+- posting: auto                     # auto|manual
+
+- account_types: !!omap
+    - Asset: DR
+    - XAsset: CR
+    - Liability: CR
+    - Equity: CR
+    - Revenue: CR
+    - XRevenue: DR
+    - Expense: DR
+
+- starting_accounts: !!omap
+    - Asset:
+        - 110 - Cash: '100.00'      # Cash & Bank < 120
+        - 120 - Accounts Receivable
+        - 130 - Inventory           # Current Assets < 150
+        - 150 - Equipment
+    - XAsset:
+        - 190 - Accumulated Depreciation
+    - Liability:
+        - 220 - Accounts Payable
+        - 230 - Tax Payable         # Current Liabilities < 250
+    - Equity:
+        - 310 - Starting Capital: '100.00'
+        - 320 - Retained Earnings
+    - Revenue:
+        - 410 - Sales
+    - XRevenue:
+        - 490 - Discounts
+    - Expense:
+        - 500 - COGS
+        - 510 - Wages
+        - 520 - Tax
+        - 530 - Rent
+        - 540 - Utilities
+        - 550 - Depreciation
+        - 590 - Other Expense
+
+- ar_config: !!omap
+    - revenue: 410 - Sales
+    - discounts: 490 - Discounts
+    - ar: 120 - Accounts Receivable
+    - cash: 110 - Cash
+    - Sales tax: 230 - Tax Payable
+
+
+# Sequences
+
+- invoice_seq: 563
+- journal_seq: 0
+
+# - bank_details:                     # not yet implemented
+#     !!omap
+#     - Chase IL: 071000013/987654321 # USA (routing number/account number for check printing)
+#     - Lloyds: 12-34-56/987654321    # UK (sort code/account number for direct deposits)
+#     - HSBC: 12345678/987654321      # EU, Asia (BIC/account number for direct deposits, wire transfers)
+#     - ANZ: 123-456/987654321        # Aus (BSB/account number for direct deposits)
