@@ -1,0 +1,11 @@
+sftp_composer/__init__.py,sha256=FATtomjqYFMrQ5ASkfb8A00grQ5HVuaaBgDyH2auOSo,269
+sftp_composer/cli.py,sha256=4IJH65dSpFzSNiLe7rx-uc7Q2JtGoV1JLgE7ADRaZhY,835
+sftp_composer/model.py,sha256=GmOeLivTmYeURu1WAqkHRI37N9z9j-j9mmPB9pp4QfI,499
+sftp_composer/sftp_composer.py,sha256=wAmAa1p8vV9gqglD43iOWezB8T85haL9qkBnMAtUl8M,2113
+sftp_composer-0.0.1.dist-info/AUTHORS.rst,sha256=MSKoomA9zxuM-RsCNmG0GNyclTRERlBHM2zqKkEJs_Q,95
+sftp_composer-0.0.1.dist-info/LICENSE,sha256=OT6vK5Kz1JvqE545tv0gW26ZxJmZmYauxVVFhqgw390,16726
+sftp_composer-0.0.1.dist-info/METADATA,sha256=8pZRUmMu_pqj4uYWqHxFcaw8TwWTjxckv3t0VdYuOh0,1760
+sftp_composer-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sftp_composer-0.0.1.dist-info/entry_points.txt,sha256=mqinWtY4VXdf-I-C0j3NeZqqcZ1MhFM4iUa3_8p6Jas,58
+sftp_composer-0.0.1.dist-info/top_level.txt,sha256=dm2WMCpnIKV5hZan0J60KoAPXw2MIFcPFRZk7JlZ4YU,14
+sftp_composer-0.0.1.dist-info/RECORD,,
