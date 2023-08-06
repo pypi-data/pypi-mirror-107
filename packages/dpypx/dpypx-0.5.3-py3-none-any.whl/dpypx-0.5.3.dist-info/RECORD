@@ -1,0 +1,12 @@
+dpypx/__init__.py,sha256=oQ4R8Nu9KVZdi-Br3Fri_JU6hS7vGhhEAbJLR3c0Lgk,202
+dpypx/autodraw.py,sha256=h5MkzFii0q8xn_oBytb0A6oDSdxuCs2pMmjoR__zHaI,3959
+dpypx/canvas.py,sha256=x-HoidXP_S_HHluYHTXYtgmpK1jeUULT13CJw2gaf68,2317
+dpypx/client.py,sha256=KTtj3Mes7dfhSGLU8CJJuuADbmJZCYiPHti583TZaEA,4236
+dpypx/colours.py,sha256=Ycy-BCyY-v89UIqSRRcoMCTGGJJkrqJ4YGAutMRhvak,1314
+dpypx/errors.py,sha256=xKOqsmy86W1yyvIKHvJ5goa4V0R8dXRYDYeHWGtEdrQ,726
+dpypx/ratelimits.py,sha256=q_K5COulsUl-JvsRb1EwfQWUZzEHuTKL6FQfSAFfcXU,3705
+dpypx-0.5.3.dist-info/LICENSE.txt,sha256=ik6bRmT4G5QAefPlYQ5vsTLCRuRIbEdUjE889tkiD6I,1064
+dpypx-0.5.3.dist-info/METADATA,sha256=xlHF1YGreUVC6z7REDgZcOhT915ILh5TK_7lhvCiy_M,2446
+dpypx-0.5.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpypx-0.5.3.dist-info/top_level.txt,sha256=v8E_LkBnB4wkao2qyrHbf2-bHFy40I4x38p9X_Hm4zA,6
+dpypx-0.5.3.dist-info/RECORD,,
