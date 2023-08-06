@@ -1,0 +1,145 @@
+# mugmoment
+
+mugmoment is a python3 library to download chat logs from twitch VODs.
+
+By default, it exports in the default json format of twitch (referred to in this project as "raw"), but it can also export the chat to various other formats, such as a simpler json, txt and html.
+
+## Installation
+
+### PyPI
+
+This package is available on PyPI as `mugmoment`.
+
+### Poetry
+
+This project uses [poetry](https://python-poetry.org/), and the recommended way of installing it is running `poetry install` on the root of this repository, which will install it in a venv.
+
+## Usage
+
+### Get raw chat logs
+
+`mugmoment.fetch_raw(vod_id)` can be used to fetch raw VOD chat logs in the same format as twitch.
+
+```python
+import mugmoment
+
+vod_id = 983321676
+chat_log = mugmoment.fetch_raw(vod_id)
+print(chat_log[0])
+# {'_id': '36007596-db82-4f7e-8d24-f19fc75dd5c9', 'created_at': '2021-04-11T03:16:42.603Z', 'updated_at': '2021-04-11T03:16:42.603Z', 'channel_id': '28219022', 'content_type': 'video', 'content_id': '983321676', 'content_offset_seconds': 7.9030000000000005, 'commenter': {'display_name': 'Encode_NA', '_id': '156774711', 'name': 'encode_na', 'type': 'user', 'bio': "I don't know much about them, but I'm sure twitch.tv is great.", 'created_at': '2017-05-13T19:10:06.262184Z', 'updated_at': '2021-03-26T11:14:49.88742Z', 'logo': 'https://static-cdn.jtvnw.net/user-default-pictures-uv/294c98b5-e34d-42cd-a8f0-140b72fba9b0-profile_image-300x300.png'}, 'source': 'chat', 'state': 'published', 'message': {'body': ':( what a way to go', 'emoticons': [{'_id': '555555558', 'begin': 0, 'end': 1}], 'fragments': [{'text': ':(', 'emoticon': {'emoticon_id': '555555558', 'emoticon_set_id': ''}}, {'text': ' what a way to go'}], 'is_action': False, 'user_color': '#5F9EA0', 'user_notice_params': {}}}
+```
+
+### Get chat logs in other formats
+
+#### Simpler dictionary
+
+`mugmoment.fetch_simple(vod_id)` can be used to fetch VOD chat logs and convert them to a simpler format.
+
+```python
+import mugmoment
+
+vod_id = 983321676
+chat_log = mugmoment.fetch_simple(vod_id)
+print(chat_log[0])
+# {'author': 'Encode_NA', 'body': ':( what a way to go', 'offset': 7.9030000000000005, 'fancy_offset': '00:07'}
+```
+
+**Note:** `fancy_offset` has the format hh:mm:ss. If the vod is shorter than an hour, then it'll be displayed in mm:ss format instead.
+
+#### txt
+
+`mugmoment.fetch_txt(vod_id)` can be used to fetch VOD chat logs and convert them to a txt format.
+
+```python
+import mugmoment
+
+vod_id = 983321676
+chat_log = mugmoment.fetch_txt(vod_id)
+print(chat_log)
+# 00:07 <Encode_NA> :( what a way to go\r\n[...]
+```
+
+**Note:** Offset on each line has the format hh:mm:ss. If the vod is shorter than an hour, then it'll be displayed in mm:ss format instead.
+
+#### html
+
+`mugmoment.fetch_html(vod_id)` can be used to fetch VOD chat logs and convert them to an html format. This is a WIP feature and may be developed further in the future.
+
+```python
+import mugmoment
+
+vod_id = 983321676
+chat_log = mugmoment.fetch_html(vod_id)
+print(chat_log)
+# <span class="timeoffset">00:07</span> <span class="author" style="color: #5F9EA0">Encode_NA</span>: <span class="message"><img alt=":(" class="emote emote-555555558" src="https://static-cdn.jtvnw.net/emoticons/v2/555555558/default/dark/1.0" srcset="https://static-cdn.jtvnw.net/emoticons/v2/555555558/default/dark/1.0 1x,https://static-cdn.jtvnw.net/emoticons/v2/555555558/default/dark/2.0 2x,https://static-cdn.jtvnw.net/emoticons/v2/555555558/default/dark/3.0 4x"> what a way to go</span><br>\r\n[...]
+```
+
+You may also set the following arguments to render further parts of the chat:
+
+- `render_badges`: If set to true, badges will be rendered before the usernames. This involves 2 API calls to twitch.
+- `render_ext_emotes`: If set to true, third party emotes (BetterTTV, FrankerFaceZ) will be rendered. This involves 1 API call to twitch and 4 API calls to BetterTTV.
+
+**Note:** `timeoffset` has the format hh:mm:ss. If the vod is shorter than an hour, then it'll be displayed in mm:ss format instead.
+
+### Convert raw chat logs to other formats
+
+The following converter functions are available:
+
+- `mugmoment.converters.ttv_raw_to_simple_format(raw_log)`
+- `mugmoment.converters.ttv_raw_to_txt(raw_log)`
+- `mugmoment.converters.ttv_raw_to_html(raw_log)`
+
+These functions output same data as calling `mugmoment.fetch_formatname`.
+
+**Example:**
+
+```python
+import mugmoment
+
+vod_id = 983321676
+raw_log = mugmoment.fetch_raw(vod_id)
+chat_log = mugmoment.converters.ttv_raw_to_simple_format(raw_log)
+print(chat_log[0])
+# {'author': 'Encode_NA', 'body': ':( what a way to go', 'offset': 7.9030000000000005, 'fancy_offset': '00:07'}
+```
+
+### Get badges
+
+`mugmoment.fetch_badges_by_vod_id(vod_id)` and `mugmoment.fetch_badges_by_channel_login(channel_login)` can be used to fetch raw badge list in the same format as twitch.
+
+```python
+import mugmoment
+
+vod_id = 983321676
+badges = mugmoment.fetch_badges_by_vod_id(vod_id)
+print(badges[0])
+# {'id': 'YW1iYXNzYWRvcjsxOw==', 'setID': 'ambassador', 'version': '1', 'title': 'Twitch Ambassador', 'image1x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/1', 'image2x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/2', 'image4x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/3', 'clickAction': 'VISIT_URL', 'clickURL': 'https://www.twitch.tv/team/ambassadors', '__typename': 'Badge'}
+
+channel_login = "vargskelethor"
+badges = mugmoment.fetch_badges_by_channel_login(channel_login)
+print(badges[0])
+# {'id': 'YW1iYXNzYWRvcjsxOw==', 'setID': 'ambassador', 'version': '1', 'title': 'Twitch Ambassador', 'image1x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/1', 'image2x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/2', 'image4x': 'https://static-cdn.jtvnw.net/badges/v1/2cbc339f-34f4-488a-ae51-efdf74f4e323/3', 'clickAction': 'VISIT_URL', 'clickURL': 'https://www.twitch.tv/team/ambassadors', '__typename': 'Badge'}
+```
+
+### Get third party (BetterTTV and FrankerFaceZ) emotes
+
+`mugmoment.fetch_third_party_emotes_by_channel_id(channel_id)` and `mugmoment.fetch_third_party_emotes_by_vod_id(vod_id)` can be used to fetch a dictionary of all BetterTTV and FrankerFaceZ emotes that can be used in this channel (this includes shared emotes and globals).
+
+```python
+import mugmoment
+
+channel_id = 28219022
+emotes = mugmoment.fetch_third_party_emotes_by_channel_id(channel_id)
+print(emotes["vargD"])
+# {'id': '6078c1f239b5010444d0008f', 'alt': 'vargD | BTTV channel emote', 'src': 'https://cdn.betterttv.net/emote/6078c1f239b5010444d0008f/1x', 'srcset': 'https://cdn.betterttv.net/emote/6078c1f239b5010444d0008f/1x 1x,https://cdn.betterttv.net/emote/6078c1f239b5010444d0008f/2x 2x,https://cdn.betterttv.net/emote/6078c1f239b5010444d0008f/3x 4x', 'global': False, 'source': 'bttv'}
+
+vod_id = 983321676
+emotes = mugmoment.fetch_third_party_emotes_by_vod_id(vod_id)
+print(emotes["ALERTA"])
+# {'id': '604447c0306b602acc59852a', 'alt': 'ALERTA | BTTV channel emote from Rakyz', 'src': 'https://cdn.betterttv.net/emote/604447c0306b602acc59852a/1x', 'srcset': 'https://cdn.betterttv.net/emote/604447c0306b602acc59852a/1x 1x,https://cdn.betterttv.net/emote/604447c0306b602acc59852a/2x 2x,https://cdn.betterttv.net/emote/604447c0306b602acc59852a/3x 4x', 'global': False, 'source': 'bttv'}
+```
+
+## Shoutouts
+
+- [RechatTool](https://github.com/jdpurcell/RechatTool)'s codebase helped with figuring out how to do pagination in the API.
+- [BetterTTV](https://github.com/night/betterttv)'s API is used heavily for emotes, and emote matching is based on that codebase.
