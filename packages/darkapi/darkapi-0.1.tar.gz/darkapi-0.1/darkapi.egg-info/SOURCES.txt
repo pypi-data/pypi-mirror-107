@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+darkapi.egg-info/PKG-INFO
+darkapi.egg-info/SOURCES.txt
+darkapi.egg-info/dependency_links.txt
+darkapi.egg-info/not-zip-safe
+darkapi.egg-info/top_level.txt
+pydarkapi/__init__.py
+pydarkapi/darkapi.py
