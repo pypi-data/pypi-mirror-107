@@ -1,0 +1,8 @@
+__pycache__
+venv
+.idea
+build
+dist
+nvmecc/temp/*.plot
+nvmecc/dst
+nvmecc/plmo
