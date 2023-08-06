@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: MC-API
+Version: 0.0.5
+Summary: Es un paquete que te permitira obtener datos de un usuario de Minecraft y de los Servicios de Mojan y servidores de Minecraft
+Home-page: https://github.com/fab-henao/MC.git
+Author: Fabian Henao
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: mojang,minecraft,api,mojang api,minecraft api
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: simple-colors
+
+Es un paquete que te permitira obtener datos de un usuario de Minecraft y de los Servicios de Mojan y servidores de Minecraft
+
+Repositorio del proyecto en Github: https://github.com/fab-henao/MC.git
+
+## Importar el modulo
+`from MC_API import MC_Arch as MC`
+
+`MC.MC.Servicios_MCC.services_Check()` No devuelve nada, solo impreme los servicios
+
+Devuelve una Lista con los nombres
+`MC.MC.User_MC.get_History_Names()` //Necesita como parametro un nombre
+
+No devuelve nada, imprime si esta disponible o no el nombre
+`MC.MC.User_MC.get_Name_Free()` //Necesita como parametro un nombre
+
+Devuele un String con la URL del render del Skin
+`MC.MC.User_MC.get_Render_Skin()` //Necesita como parametro un nombre
+
+Devuelve un String con el identificador del Usuario
+`MC.MC.User_MC.get_UUID()` //Necesita como parametro un nombre
+
