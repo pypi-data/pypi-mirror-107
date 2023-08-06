@@ -1,0 +1,4 @@
+requests~=2.24
+dkimpy~=1.0
+dnspython~=2.0
+patatt<2.0,>=0.4
