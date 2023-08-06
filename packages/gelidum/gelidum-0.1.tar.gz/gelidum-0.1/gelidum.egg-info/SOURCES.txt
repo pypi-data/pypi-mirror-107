@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gelidum/__init__.py
+gelidum/decorator.py
+gelidum/exceptions.py
+gelidum/freeze.py
+gelidum/frozen.py
+gelidum/utils.py
+gelidum.egg-info/PKG-INFO
+gelidum.egg-info/SOURCES.txt
+gelidum.egg-info/dependency_links.txt
+gelidum.egg-info/requires.txt
+gelidum.egg-info/top_level.txt
