@@ -1,0 +1,10 @@
+setup.py
+distpy_nano/Binomialdistribution.py
+distpy_nano/Gaussiandistribution.py
+distpy_nano/Generaldistribution.py
+distpy_nano/__init__.py
+distpy_nano.egg-info/PKG-INFO
+distpy_nano.egg-info/SOURCES.txt
+distpy_nano.egg-info/dependency_links.txt
+distpy_nano.egg-info/not-zip-safe
+distpy_nano.egg-info/top_level.txt
