@@ -1,0 +1,7 @@
+codecov
+pytest>=4.6
+pytest-cov
+pytest-runner
+parameterized
+Flask-SQLAlchemy
+email_validator
