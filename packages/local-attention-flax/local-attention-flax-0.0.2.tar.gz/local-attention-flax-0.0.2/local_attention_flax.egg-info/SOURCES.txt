@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+local_attention_flax/__init__.py
+local_attention_flax/local_attention_flax.py
+local_attention_flax.egg-info/PKG-INFO
+local_attention_flax.egg-info/SOURCES.txt
+local_attention_flax.egg-info/dependency_links.txt
+local_attention_flax.egg-info/requires.txt
+local_attention_flax.egg-info/top_level.txt

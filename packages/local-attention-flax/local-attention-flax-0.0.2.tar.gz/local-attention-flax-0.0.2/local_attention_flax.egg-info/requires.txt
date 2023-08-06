@@ -1,0 +1,4 @@
+einops>=0.3
+flax
+jax
+jaxlib
