@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: specc
+Version: 0.2.14
+Summary: UNKNOWN
+Home-page: https://github.com/jvdoorn/SpectrumAnalyzer
+Author: Julian van Doorn
+Author-email: jvdoorn@antarc.com
+License: MIT
+Project-URL: Source, https://github.com/jvdoorn/SpectrumAnalyzer
+Project-URL: Tracker, https://github.com/jvdoorn/SpectrumAnalyzer/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
