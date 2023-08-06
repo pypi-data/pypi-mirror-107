@@ -1,0 +1,14 @@
+xbrl_parser/__init__.py,sha256=AdI4XlGG6z-Izoi0R3SHHZ6aG4cYweGAmNdqBB8Tcfw,2716
+xbrl_parser/cache.py,sha256=oB4f5yJfFGc0VaO1f0GlY2iii3XCdsis8v9tf8teDlA,6528
+xbrl_parser/instance.py,sha256=M9dAVIeVAPD2ngBSPoVoAYyw2jGGN4ReKQL31A0laUY,25614
+xbrl_parser/linkbase.py,sha256=EfRO4ZPN6aH_UPJKFuhFHfWzg7g595HSb-tZTeb1dE8,27024
+xbrl_parser/taxonomy.py,sha256=PQT-Og8oa7JPcsPeJPIoRfQbldG78_b62_eDQBTZywc,16456
+xbrl_parser/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbrl_parser/helper/connection_manager.py,sha256=5V-exyX3FRk0PG2X5Y0BBYhMDMh_FVrQ6NIU5D9hYKU,2328
+xbrl_parser/helper/uri_resolver.py,sha256=atjyLhQjSl0wtMQM5IBPX5Rypqh-4QcBzVH1ZD1qXOk,2041
+xbrl_parser/helper/xml_parser.py,sha256=HRwToWXUx0k7afPfDUjDlgY4d3d7yqCesjEkP5puyQU,870
+py_xbrl-1.2.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+py_xbrl-1.2.1.dist-info/METADATA,sha256=cJ1mpqUkO5MmAj5mG8OBsvp7aErQmaoB8WRsuMgSpT0,8339
+py_xbrl-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py_xbrl-1.2.1.dist-info/top_level.txt,sha256=_aWP0Lf373A4JV8vsOU_gKvfPmH_kGQiY_vYkp-gjFo,12
+py_xbrl-1.2.1.dist-info/RECORD,,
