@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: quiet-py-wasm
+Version: 0.1.1
+Summary: Python interface to WASM build of Quiet. Work in progress: Current not suitable for use.
+Author: Martin Moxon
+Author-email: moxon6@googlemail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyAudio (>=0.2.11,<0.3.0)
+Requires-Dist: wasmer (>=1.0.0,<2.0.0)
+Requires-Dist: wasmer-compiler-cranelift (==1.0.0)
