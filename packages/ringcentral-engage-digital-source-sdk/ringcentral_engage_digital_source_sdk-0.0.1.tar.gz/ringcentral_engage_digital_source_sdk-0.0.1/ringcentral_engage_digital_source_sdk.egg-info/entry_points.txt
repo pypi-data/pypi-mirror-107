@@ -1,0 +1,3 @@
+[console_scripts]
+rces = ringcentral_engage_digital_source_sdk.rces:main
+
