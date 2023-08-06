@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: molar
+Version: 0.2.1
+Summary: "A database to store chemical data"
+Home-page: https://github.com/aspuru-guzik-group/molar
+Author: "Theophile Gaudin", "Ian Benlolo", "Zheng Yu Cui"
+Author-email: "theophile.gaudin@gmail.com"
+License: MIT
+Keywords: chemistry,molecule,synthesis,database,postgres,rest,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Click (>=7.0)
+Requires-Dist: rich (>=10.1.0)
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: python-jose[cryptography] (>=3.2.0)
+Provides-Extra: backend
+Requires-Dist: alembic (>=1.6.3) ; extra == 'backend'
+Requires-Dist: emails (>=0.6) ; extra == 'backend'
+Requires-Dist: pydantic[email] (>=1.8.2) ; extra == 'backend'
+Requires-Dist: python-multipart (>=0.0.5) ; extra == 'backend'
+Requires-Dist: pytz (>=2019.3) ; extra == 'backend'
+Requires-Dist: psycopg2-binary (>=2.8.6) ; extra == 'backend'
+Requires-Dist: passlib (>=1.7.4) ; extra == 'backend'
+Requires-Dist: SQLAlchemy (>=1.4.15) ; extra == 'backend'
+Requires-Dist: bcrypt (>=3.2.0) ; extra == 'backend'
+Requires-Dist: fastapi (>=0.63.0) ; extra == 'backend'
+Requires-Dist: docker (>=4.4.4) ; extra == 'backend'
+Requires-Dist: uvicorn (>=0.13.4) ; extra == 'backend'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+![test](https://gitlab.com/tgaudin/goldmine/badges/%{default_branch}/pipeline.svg) ![coverage](https://gitlab.com/tgaudin/goldmine/badges/%{default_branch}/coverage.svg)
+
+# Molar :tooth:
+
+Molar is a database management system that aims to make it easy to handle chemical data.
+
+## Installing the client
+
+If you have git and python installed, it's as easy as:
+
+```bash
+$ git clone git@gitlab.com:tgaudin/goldmine.git
+cd goldmine && pip install -e .
+```
+
+## Using the client
+
+
+## Backend
+
+To run the backend there are two possibilities: either run the docker image we prepared or install it directly on the machine. 
+
+The first options is easier, but the second options will give you more flexibility in term of configuration and infrastructure.
+
+### Installing the backend with Docker
+...
+
+### Installing the backend without Docker
+
+...
+
+
