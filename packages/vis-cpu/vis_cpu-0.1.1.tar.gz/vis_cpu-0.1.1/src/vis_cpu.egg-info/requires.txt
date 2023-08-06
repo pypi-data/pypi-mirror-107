@@ -1,0 +1,17 @@
+numpy
+scipy
+astropy
+
+[docs]
+sphinx
+nbsphinx
+sphinx_rtd_theme
+numpydoc
+
+[gpu]
+pycuda
+skcuda
+
+[test]
+pytest
+pytest-cov
