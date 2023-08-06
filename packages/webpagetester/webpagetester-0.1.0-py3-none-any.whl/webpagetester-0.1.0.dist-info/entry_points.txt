@@ -1,0 +1,3 @@
+[console_scripts]
+webpagetester = webpagetester.scripts.webtester:console_testing
+
