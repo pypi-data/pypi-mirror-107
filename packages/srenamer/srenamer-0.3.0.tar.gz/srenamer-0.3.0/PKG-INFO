@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: srenamer
+Version: 0.3.0
+Summary: This is a simple file renamer for TV shows and anime.
+Home-page: https://github.com/evorition/srenamer
+License: MIT
+Author: Maxim Makovskiy
+Author-email: makovskiyms@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: tmdbsimple (>=2.8.0,<3.0.0)
+Project-URL: Repository, https://github.com/evorition/srenamer
+Description-Content-Type: text/markdown
+
+# srenamer
+
+srenamer is the simple renaming tool for TV shows and anime.
+
+### Installation
+It's recomended to install with [pipx](https://pipxproject.github.io/pipx/)
+to not mess with default python installation.
+```
+$ pipx install srenamer
+```
+

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "srenamer"
+version = "0.3.0"
+description = "This is a simple file renamer for TV shows and anime."
+authors = [
+    "Maxim Makovskiy <makovskiyms@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/evorition/srenamer"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+tmdbsimple = "^2.8.0"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+pylint = "^2.8.2"
+
+[tool.poetry.scripts]
+srenamer = "srenamer.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
