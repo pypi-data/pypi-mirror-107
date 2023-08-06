@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pylark
+Version: 0.0.2
+Summary: Feishu/Lark Open API Python Sdk, Support ALL Open API and Event Callback.
+Home-page: https://github.com/chyroc/pylark
+Author: chyroc
+Author-email: chyroc@qq.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+
+# pylark
