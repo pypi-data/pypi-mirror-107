@@ -1,0 +1,3 @@
+[console_scripts]
+ap_rss_reader = ap_rss_reader.cli:main
+
