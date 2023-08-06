@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cerebro-image-processing
+Version: 0.0.2
+Summary: Lightweight image processing package with utility functions for computer vision.
+Home-page: https://github.com/crblab/imgproc
+Author: Hieu Pham
+Author-email: hieupt.ai@gmail.com
+License: MIT
+Download-URL: https://github.com/crblab/imgproc/archive/v_01.tar.gz
+Description: # Image Processing Package
+        This is a lightweight Python image processing package with utility functions that are frequently use in computer vision.
+        ## Installation
+        This library can be installed via pip command:
+        ```shell
+        $ pip install cerebro-image-processing
+        ```
+        Or install from source:
+        ```shell
+        $ git clone https://github.com/crblab/imgproc.git && cd imgproc
+        $ python setup.py install
+        ```
+        ## Maintainers
+        * [Hieu Pham](https://github.com/hieupth) (author)
+        ## License
+        [MIT License](https://github.com/crblab/imgproc/blob/main/LICENSE) <br>
+        Copyright (c) 2021, [Cerebro Labs](https://github.com/crblab). All rights reserved.
+        
+Keywords: image processing
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

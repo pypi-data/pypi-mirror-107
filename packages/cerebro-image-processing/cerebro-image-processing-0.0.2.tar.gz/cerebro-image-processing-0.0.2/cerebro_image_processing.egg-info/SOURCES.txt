@@ -1,0 +1,13 @@
+README.md
+setup.py
+cerebro/__init__.py
+cerebro/image/__init__.py
+cerebro/image/colors.py
+cerebro/image/image.py
+cerebro/image/preprocessing.py
+cerebro/image/transform.py
+cerebro_image_processing.egg-info/PKG-INFO
+cerebro_image_processing.egg-info/SOURCES.txt
+cerebro_image_processing.egg-info/dependency_links.txt
+cerebro_image_processing.egg-info/requires.txt
+cerebro_image_processing.egg-info/top_level.txt
