@@ -1,0 +1,14 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/scraper.py,sha256=csbSQF3J1VsNDFp4AFIQfhQ_BBZW65bJTfl4AXy6Wqc,2092
+roboparse/__init__.py,sha256=5k_UVXPBmA6vhcA0aG9J98r4e7gg2uqKkui2RbhPVRo,95
+roboparse/parser.py,sha256=lQ9AgXJc5pFReozfUYKY6UXGmLNc7Uf4JgiMKBmyJ7E,1165
+roboparse/routers.py,sha256=hC-BLzgx34IkBnTrvMbnTvDumaYlNdFgzNLcyHnZE-c,1354
+roboparse/schemas.py,sha256=HkIIYvUgTizMdEN8RWmpLthx4Pv5vagpqeZn3-0HJ5A,370
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=-xNJWEdp3GAkwetBcn0MBmLOtau7dGBpWHep9Ay_E9Y,1355
+tests/test_parser.py,sha256=rIB8gVQ8axBHBk2zGLFJ2Eyi3dmp6pM-eBBnvt8VE3M,428
+roboparse-0.0.1.dist-info/LICENSE,sha256=dKtWahZGxUmnKGlRQAxlTl_RcivkWarXKrCKIunKzws,1067
+roboparse-0.0.1.dist-info/METADATA,sha256=HVVh5-ZVIk5JbZYuVdxmhXJTjFhjrmxfvPNj-OUv6mE,3614
+roboparse-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+roboparse-0.0.1.dist-info/top_level.txt,sha256=Q6hWT2UQD6esjxrA5r0yXsjvK3ZLQYqO9Pl7eAkxOwY,24
+roboparse-0.0.1.dist-info/RECORD,,
