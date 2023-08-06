@@ -1,0 +1,12 @@
+README.md
+setup.py
+word2Tex/__init__.py
+word2Tex/cite2Tex.py
+word2Tex/doi2bib.py
+word2Tex/fixBibTex.py
+word2Tex.egg-info/PKG-INFO
+word2Tex.egg-info/SOURCES.txt
+word2Tex.egg-info/dependency_links.txt
+word2Tex.egg-info/entry_points.txt
+word2Tex.egg-info/requires.txt
+word2Tex.egg-info/top_level.txt
