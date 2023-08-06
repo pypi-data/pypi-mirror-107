@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dqc
+Version: 0.1.0
+Summary: Differentiable Quantum Chemistry
+Home-page: https://github.com/diffqc/dqc/
+Author: mfkasim1
+Author-email: firman.kasim@gmail.com
+License: Apache License 2.0
+Keywords: project library deep-learning dft quantum-chemistry
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.8.2)
+Requires-Dist: scipy (>=0.15)
+Requires-Dist: basis-set-exchange
+Requires-Dist: h5py (>=3.1.0)
+Requires-Dist: pylibxc2 (>=6.0.0)
+Requires-Dist: xitorch (>=0.3)
+Requires-Dist: torch (>=1.8)
+
+UNKNOWN
+
+
