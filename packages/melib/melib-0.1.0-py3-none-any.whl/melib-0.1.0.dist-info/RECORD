@@ -1,0 +1,12 @@
+melib/data/bearing.xlsx,sha256=pwIc1H6hBQYKZyQLGEjM60DlPg2lRUA1zdfjyLgjpiI,27265
+melib/data/mats.xlsx,sha256=5V5Ewrpz-vrPTbBlXS-5bi0HjmUJjiLJ1qUPsdilVUQ,26308
+melib/data/sgear.xlsx,sha256=GH0E6w16KiXxlPM6-5M8WgNVOTFqYmZ079LfWUruKu4,10650
+melib/data/shaft.xlsx,sha256=w5s7WbhKSYnEshAp7gMWxEnbfbwwHbHACD1zJmjw0Ac,19396
+melib/data/vbelt.xlsx,sha256=WCDffh-DmiLkfqbgPykAW9zDZ5bmgXcg-yg8Y4T-rUo,28444
+melib/excel.py,sha256=Oq2FyP33y7UqCsNGdBOxvvpjpboUuGWJjLVBkRIIJRM,25787
+melib/library.py,sha256=gV-D9_IwSqfEH3p7F6hE_7UB_4VLYD0tDkCTlDmVWjE,79295
+melib/xt.py,sha256=7h_RxBBA-wJB8krz_mztYGyoAVu6SjE4AUV8PTZcwLU,44639
+melib-0.1.0.dist-info/LICENSE,sha256=X8mYuaMkalLiQmC57fa8VlC_WsKe3ZA8AuFs2jc-9Cw,1090
+melib-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+melib-0.1.0.dist-info/METADATA,sha256=A19I5LwyzNjzXlvvrnRtLsxzy8WH3JEuXP05cLNRKrg,473
+melib-0.1.0.dist-info/RECORD,,
