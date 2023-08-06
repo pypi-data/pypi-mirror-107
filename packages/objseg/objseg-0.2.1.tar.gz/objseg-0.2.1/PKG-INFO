@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: objseg
+Version: 0.2.1
+Summary: A cell segmentation pipeline
+Home-page: https://github.com/tsuijenk/BLMPP
+Author: Jenkin Tsui
+Author-email: jenkin.tsui@aya.yale.edu
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Cell Segmentation by Jenkin Tsui
+
+
+All output files are compressed.
+The outputting cell image (.jpeg) file is saved to the /data_output folder.
+
+There is an example image that can be used in the /examples folder.
+
+
