@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mongobackuptools/__init__.py
+mongobackuptools/backups.py
+mongobackuptools/s3.py
+mongobackuptools/shell.py
+mongobackuptools.egg-info/PKG-INFO
+mongobackuptools.egg-info/SOURCES.txt
+mongobackuptools.egg-info/dependency_links.txt
+mongobackuptools.egg-info/requires.txt
+mongobackuptools.egg-info/top_level.txt
