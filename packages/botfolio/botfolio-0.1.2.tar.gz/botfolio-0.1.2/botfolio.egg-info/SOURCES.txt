@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+botfolio/__init__.py
+botfolio.egg-info/PKG-INFO
+botfolio.egg-info/SOURCES.txt
+botfolio.egg-info/dependency_links.txt
+botfolio.egg-info/not-zip-safe
+botfolio.egg-info/requires.txt
+botfolio.egg-info/top_level.txt
+botfolio/exchange/__init__.py
+botfolio/exchange/ftx.py
