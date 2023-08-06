@@ -1,0 +1,6 @@
+<div>
+  <p>Dans la thématique <b>{{ circle.name }}</b> que vous suivez, il y a eu :</p>
+  {% if polls != "" %}{% autoescape off %}{{ polls }}{% endautoescape %}{% endif %}
+  {% if resources != "" %}{% autoescape off %}{{ resources }}{% endautoescape %}{% endif %}
+  {% if events != "" %}{% autoescape off %}{{ events }}{% endautoescape %}{% endif %}
+</div>
