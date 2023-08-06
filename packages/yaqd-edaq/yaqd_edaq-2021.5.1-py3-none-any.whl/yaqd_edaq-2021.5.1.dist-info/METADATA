@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: yaqd-edaq
+Version: 2021.5.1
+Summary: yaq daemons for edaq sensor recording systems
+Home-page: https://yaq.fyi
+Author: Blaise Thompson
+Author-email: blaise@untzag.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: yaqd-core>=2020.06.3
+Requires-Dist: pyserial
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Project-URL: Issues, https://gitlab.com/yaq/yaqd-edaq/issues
+Project-URL: Source, https://gitlab.com/yaq/yaqd-edaq
+Provides-Extra: dev
+
+# yaqd-edaq
+
+[![PyPI](https://img.shields.io/pypi/v/yaqd-edaq)](https://pypi.org/project/yaqd-edaq)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-edaq)](https://anaconda.org/conda-forge/yaqd-edaq)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+[![ver](https://img.shields.io/badge/calver-YYYY.M.MICRO-blue)](https://calver.org/)
+[![log](https://img.shields.io/badge/change-log-informational)](https://gitlab.com/yaq/yaqd-edaq/-/blob/master/CHANGELOG.md)
+
+yaq daemons for edaq sensor recording systems
+
+This package contains the following daemon(s):
+
+- https://yaq.fyi/daemons/edaq-isopod
+
+## calibration
+
+Following is an example you might use to apply callibration to the quadmf.
+
+```python
+import yaqc
+
+edaq = yaqc.Client(38000)
+config = edaq.get_config()
+
+
+print('Calibrate which channel?')
+chno = input()
+print(f'Will calibrate {chno}')
+edaq.remove_calibration(chno)
+
+
+calibpoints = config.get('calibpoints', 3)
+calibvalues = config.get('calibvalues', [4,7,10])
+
+for i in range (1,calibpoints+1):
+    print(f'place probe in pH={calibvalues[i-1]} buffer, then press enter')
+    input()
+    edaq.add_calibration_point(chno, i, calibvalues[i-1])
+
+print('Calibration Complete')
+```
+

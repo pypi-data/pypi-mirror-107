@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-edaq-isopod=yaqd_edaq._edaq_isopod:EdaqIsoPod.main
+
