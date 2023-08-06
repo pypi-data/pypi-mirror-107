@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: webpagetester
+Version: 0.0.3
+Summary: Basic Tool for automated testing if libraries exists
+Home-page: https://github.com/willi-z/mdd
+Author: WILLI Zschiebsch
+License: BSD-3-Clause
+Project-URL: Source Code, https://github.com/willi-z/msys
+Project-URL: Issue Tracker, https://github.com/willi-z/msys/issues/
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (~=56.0.0)
+Requires-Dist: requests (~=2.25.1)
+Requires-Dist: urllib3 (~=1.26.3)
+Requires-Dist: click (~=8.0)
+
+[![pipeline status](http://gitlab/Willi/webpagetester/badges/master/pipeline.svg)](http://gitlab/Willi/webpagetester/-/commits/master)
+[![coverage report](http://gitlab/Willi/webpagetester/badges/master/coverage.svg)](http://gitlab/Willi/webpagetester/-/commits/master)
+
+
+```
+<gitlab-url>/-/settings/ci_cd
+```
+
+### Install
+
+````shell
+pip install webpagetester
+````
+
+### Test
+
+````shell
+webpagetester -f tests/files/working_urls.txt -f tests/files/special_urls.txt -f tests/files/wrong_urls.txt -o report.txt
+````
+
+### Usage
+
+enter:
+``` shell
+webpagetester --help
+```
+to see all current options.
+
+#### Test single URLs
+
+``` shell
+webpagetester -p http://google.de -p https://google.de -p http://this.does.not.exit
+```
+Returns:
+``` shell
+http://google.de Web site exists
+https://google.de Web site exists
+http://this.does.not.exit Web site does not exist
+Press Enter to close...
+```
+
+#### From File
+
+Create a file with an unknown url in each line.
+
+pages.txt:
+``` text
+http://google.de
+https://google.de
+http://this.does.not.exit
+```
+
+Then use the following command: 
+
+``` shell
+webpagetester -f pages.txt -o report.txt
+```
+
+Returns:
+``` shell
+http://google.de Web site exists
+https://google.de Web site exists
+http://this.does.not.exit Web site does not exist
+Press Enter to close...
+```
+
+and in report.txt:
+``` text
+FOUND:
+======
+http://google.de
+https://google.de
+
+
+NOT FOUND:
+==========
+http://this.does.not.exit
+```
+
+#### Saving a "Screenshot"
+
+Create a file with an unknown url in each line.
+
+Then use the following command: 
+
+``` shell
+webpagetester -p https://google.de -s True
+```
+
+Returns:
+``` shell
+http://google.de Web site exists
+Press Enter to close...
+```
+
+and a ``https#$$google_de.html``-file
+Be aware that links still work so to be safe only look at the files without internet!
+
+
+### Testing
+
+```
+python setup.py test
+```
+
+### TODO
+* page scanner
+* screenshoots (maby via html response)
+* vpn
+    - stem.torproject.org
+    - or https://medium.com/@jasonrigden/using-tor-with-the-python-request-library-79015b2606cb
+
+
