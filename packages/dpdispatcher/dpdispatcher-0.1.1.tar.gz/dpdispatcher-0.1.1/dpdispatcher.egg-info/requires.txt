@@ -1,0 +1,10 @@
+monty>2.0.0
+paramiko
+psutil
+typing_extensions
+oss2
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme
