@@ -1,0 +1,199 @@
+#!/bin/bash
+
+set -e
+
+version="1.0.6.1"
+PROGNAME=$0
+
+die() {
+    echo "$PROGNAME: $*" >&2
+    exit 1
+}
+
+echop() {
+    echo "${@}" >&2
+}
+
+
+usage() {
+    if [ "$*" != "" ] ; then
+        echo "Error: $*"
+    fi
+
+    cat << EOF
+Usage: $PROGNAME -f SHELL_SCRIPT -d DESCRIPTION_TO_SHOW_ON_PY_PI
+Madhavth shell script package creator for pyPi
+Options:
+-h, --help                 display this usage message and exit
+-s, --setup 				   creates setup.py and make ready for build
+-u, --upload			   upload package to pypi
+-d, --description 		  description for package
+-f, --full              creates a package under pip_packages and creates setup as well as build
+-v, --version         version
+EOF
+    exit 1
+}
+
+setup=0
+upload=0
+desc=""
+full=1
+
+check_if_flag_args()
+{
+  if [[ $2 == "-"* ]]; then
+    usage "Not a valid argument for $1"
+  fi
+}
+
+REM_ARGS=()
+
+while [ $# -gt 0 ] ; do
+    case "$1" in
+      -v|--version)
+      echo "version is $version"
+      exit 0
+      ;;
+
+
+    -h|--help)
+        usage
+        ;;
+
+    -d|--description)
+        check_if_flag_args $1 $2
+        desc="$2"
+        shift
+        ;;
+
+
+	-s|--setup)
+		setup=1
+    full=0
+		;;
+
+	-u|--upload)
+		upload=1
+    full=0
+		;;
+
+  -f|--full)
+      full=1
+    ;;
+
+    -*)
+    usage "Unknown option $1"
+      ;;
+
+    *)
+        REM_ARGS+=" $1"
+      ;;
+    esac
+    shift
+done
+
+#echop "REM_ARGS are ${REM_ARGS[@]}"
+package=${REM_ARGS[0]}
+package="$(echo ${package//[[:blank:]]/})"
+
+if [[ -z "$package" ]]; then
+  echo "script not provided.. please provide a script"
+  exit 1
+fi
+
+
+if [[ -f "$package" ]]; then
+  echo "processing..."
+else
+  echo "file $package doesnt exists"
+  exit 1
+fi
+
+
+function create_setup()
+{
+package=$1
+description=$2
+
+echo -e "\
+#setup.py
+from setuptools import setup
+
+setup(
+    name='$1',
+    scripts=['$1'],
+    version= '0.1',
+    description = '${description:-"simple project, simple life"}',
+    long_description = 'just a humble project',
+    author = 'madhavth'
+)
+" > setup.py
+
+# echo -e "\
+# metadata]
+# name = $package
+# version = 0.1
+# author = madhavth
+# description = A small example package
+# long_description = file: README.md
+# long_description_content_type = text/markdown
+# " > setup.cfg
+
+
+echo -e "\
+  just a simple project
+" > README.md
+
+}
+
+
+function twine_up()
+{
+
+file=$1
+dont=$2
+
+rm -rf dist
+
+python3 setup.py bdist_wheel | grep $file
+python3 setup.py sdist | grep $file
+
+if [[ -z $dont ]]; then
+twine upload dist/* --verbose
+fi
+}
+
+home=~
+location="$home/test/my_pip_packages"
+packagelocation="$location/${package}-package"
+
+if [[ "$full" == "1" ]]; then
+  mkdir -p "$packagelocation"
+  cp $package $packagelocation
+  cd "$packagelocation"
+  create_setup $package $desc
+  twine_up $package "dont_ty"
+  echo ""
+  echo -e '\nHit [Ctrl]+[D] to exit this child shell.'
+  echo " -------------------------------"
+  echo "created required files for PyPI in directory ${packagelocation}"
+  echo "---------------------------------------------------"
+  echo "---------------------------------------------------"
+  echo "upload package to PyPI from this directory by using the following command"
+  echo "shellpackager -u $package"
+  echo "---------------------------------------------------"
+  echo "---------------------------------------------------"
+  echo ""
+  $SHELL
+fi
+
+
+if [[ "$setup" == "1" ]]; then
+  create_setup $package $desc
+  cd "$packagelocation"
+fi
+
+if [[ "$upload" == "1" ]]; then
+  twine_up $package
+  pip install dist/*.tar.gz
+fi
