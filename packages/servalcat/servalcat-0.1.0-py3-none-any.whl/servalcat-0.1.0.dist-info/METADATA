@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: servalcat
+Version: 0.1.0
+Summary: Structure refinement and validation for crystallography and single particle analysis
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MPL-2.0
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: gemmi (>=0.4.6)
+
+UNKNOWN
+
+
