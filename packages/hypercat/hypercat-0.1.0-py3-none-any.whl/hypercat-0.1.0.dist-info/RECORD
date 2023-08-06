@@ -1,0 +1,17 @@
+hypercat/hypercat.py,sha256=tYwrDZoNWpwc6Ng3cqfukIZhBJmDXkaMYNsTvF5UYo0,46407
+hypercat/hypercatgui.py,sha256=81kugVdJsErJHzAPvb4K-H4IPkmSNB_13ieb9-FUnNI,21162
+hypercat/imageops.py,sha256=BGShEITGCUZ3Lu4Z61Kh8-Db-WwRSCpOXGcDgBsO5Og,32941
+hypercat/interferometry.py,sha256=17UiciK09a2yLtLrl4ZxMfw9MI_enCLdz_9Kpl2AVx0,25663
+hypercat/ioops.py,sha256=j54G4maxPQ42TiY6tGD_Pgo0TrjZBQdrIJCTkEYu3Lg,30035
+hypercat/loggers.py,sha256=cNPTkrji3w9_gAE_XFxqEivCJK7sqs06Bn5jZbzS1_Y,847
+hypercat/morphology.py,sha256=Lja17WWUn2e08VQTrCfK3f0Hk11ThwO0tWz70-w0b_4,38201
+hypercat/ndiminterpolation.py,sha256=mm3tnfmexCiytu2_dJ5llo7ppeiD3GxfGynhtQE9XEk,9985
+hypercat/obsmodes.py,sha256=C0aV_aLPKX6v31DXtsDFXcIYNwcUYXhO-VSjImHeYNc,16470
+hypercat/plotting.py,sha256=hGruSdW1wdvl8TgJUDjcQnZFvtoV3Cl4KEAziLcCzfw,14075
+hypercat/psf.py,sha256=Ct2hkgk-jtzzXX4UgX8Z7HcsHYK_vHDTcvMq42LvBYA,9481
+hypercat/units.py,sha256=bYA-xaBqTILWTcH6Hsn2BuByV4zgbyzGRqVoDklM6sc,5837
+hypercat/utils.py,sha256=eSwSjQgOZbmFYlvMxeu8kxnqmUiNbYdo9pLr1CpGnrU,7667
+hypercat-0.1.0.dist-info/LICENSE,sha256=5kpsppaloFxE4Z8GrVqjdzkYzr-nJDE9DlFis3VZjSQ,1595
+hypercat-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+hypercat-0.1.0.dist-info/METADATA,sha256=P4bQ3UPBrptqDoPWL6uDIhk0iVFlR530QMafvplNZ1c,2488
+hypercat-0.1.0.dist-info/RECORD,,

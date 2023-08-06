@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: hypercat
+Version: 0.1.0
+Summary: Hypercube of clumpy AGN tori
+Home-page: https://github.com/rnikutta/hypercat
+License: BSD-3-Clause
+Keywords: astronomy,active galactic nuclei,hypercubes,extremely large telescopes,morphology
+Author: Robert Nikutta
+Author-email: robert.nikutta@gmail.com
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Dist: astropy (>=3.1.2)
+Requires-Dist: h5py (>=2.9.0)
+Requires-Dist: matplotlib (>=3.0.3)
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: scikit-image (>=0.15.0)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: urwid (>=2.0.1)
+Project-URL: Repository, https://github.com/rnikutta/hypercat
+Description-Content-Type: text/markdown
+
+hypercat
+========
+Hypercubes of (clumpy) AGN tori
+
+**Authors:** Robert Nikutta [\<robert.nikutta@gmail.com\>](mailto:robert.nikutta@gmail.com), Enrique Lopez-Rodriguez, Kohei Ichikawa
+
+**Version:** 2021-05-31
+
+**License:** BSD-3-Clause, please see [LICENSE](./LICENSE) file
+
+**Attribution:** Please cite this repository, and the following papers:
+
+[R. Nikutta, E. Lopez-Rodriguez, K. Ichikawa, N. A. Levenson, C. Packham, A. Alonso-Herrero, S. F. Hönig; "Hypercubes of AGN Tori (HYPERCAT) -- I. Models and Image Morphology"; ApJ 2021, accepted for publication](TODO: link)
+
+[Nikutta, Lopez-Rodriguez, Ichikawa, Levenson, Packham, Alonso-Herrero, Hönig; "Hypercubes of AGN Tori (HYPERCAT) -- II. Reolving the Torus with with Extremely Large Telescopes"; ApJ 2021, under review](TODO: link)
+
+**Synopsis:**
+Handle a hypercube of CLUMPY brightness maps. Easy-to-use classes and
+functions are provided to interpolate images in many dimensions
+(spanned by the model parameters), extract monochromatic or
+multi-wavelength images, as well as rotate images, zoom in and out,
+apply PSFs, extract interferometric signals, etc.
+
+**User Manual and Examples:**
+For installation instructions and many usage examples, please see the
+HYPERCAT User Manual [User Manual](./docs/manual/) and the [example
+Jupyter notebooks](./examples/)
+
