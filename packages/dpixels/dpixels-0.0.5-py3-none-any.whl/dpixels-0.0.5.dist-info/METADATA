@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dpixels
+Version: 0.0.5
+Summary: A(nother) wrapper for the Python Discord Pixels API.
+Home-page: https://github.com/CircuitSacul/dpixels
+Author: Circuit
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: aiohttp
+
+# dpixels
+A(nother) wrapper for the Python Discord Pixel API.
+
+
