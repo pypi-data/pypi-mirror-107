@@ -1,0 +1,20 @@
+# Hi! This is an example of packages.vurf file
+
+
+with default:
+  # This is another comment
+  package  # And you can have a comment here as well
+  # Ifs use python's eval to get the value
+  if you_excited:
+    package2
+  elif day == 'good':
+    package3
+  else:
+    package4
+  # You can use modules "os" and "pathlib"
+  if pathlib.Path("~/.config").exists():
+    package5
+
+
+# Make vim think that this is config for syntax highlighting
+# vim:ts=2:sw=2:ft=config
