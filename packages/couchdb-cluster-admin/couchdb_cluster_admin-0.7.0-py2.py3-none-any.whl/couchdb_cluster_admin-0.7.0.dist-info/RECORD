@@ -1,0 +1,15 @@
+couchdb_cluster_admin/__init__.py,sha256=_8UYXWCeaTq-609d_jFSAnPQq2z0rhDtQSZPAxuotxE,102
+couchdb_cluster_admin/add_replica_node.py,sha256=GGu5nvHIOT3hYgma-LV2Z373BJjwe90aEcnWBLOp-oY,2758
+couchdb_cluster_admin/copy_db_to_new_cluster.py,sha256=6JN44PpCgxxlyl9fyRz303QUvvpfY3g2TOHJzEew5oo,4193
+couchdb_cluster_admin/describe.py,sha256=1OZioYDj-wGQtkqXd1slXL9nyt4xK9ZaAiMjAxt9Jxk,1246
+couchdb_cluster_admin/doc_models.py,sha256=PSk8sd2Wc7Y1Yi6Js2Q_3BoKk5ND9AwyNr8GhzU1EnQ,4477
+couchdb_cluster_admin/file_plan.py,sha256=s5jMlVBmoD8kIq7OcAWy5QKDoxKR1uxzzuIeVw5ZWv0,7327
+couchdb_cluster_admin/remove_node.py,sha256=DrvTncprlG2LUjRjKgksIpHPfb3O733PPO3iYNDk2dI,3252
+couchdb_cluster_admin/replicate_db_to_new_node.py,sha256=dVVYzvvQJdoiJ4gKyIlGeNgtp6-7hA4wkrk2t86gs-Q,2690
+couchdb_cluster_admin/suggest_shard_allocation.py,sha256=wUV6n8RXFHnoh2LFLf_mVRwpP6Y1NyX8nkHGu6TBfpk,17697
+couchdb_cluster_admin/utils.py,sha256=Z-HqfgBlefgKNvKg4p8CA_T4XvjWTxMxBfS6pF3X4Dw,8080
+couchdb_cluster_admin-0.7.0.dist-info/LICENSE,sha256=LV9eTM09qZh5RSxN0Wv-ayI6eZMODs7mIzBnu_kPrmY,1506
+couchdb_cluster_admin-0.7.0.dist-info/METADATA,sha256=KrEGeaCJrNTMAhmaH3fad0Xw_rJXR81MGTDla4aWmGI,6063
+couchdb_cluster_admin-0.7.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+couchdb_cluster_admin-0.7.0.dist-info/top_level.txt,sha256=nRSUDBfZvT_aQKR7ab_pP6y2yUOgHPadl2CTf92dxK8,22
+couchdb_cluster_admin-0.7.0.dist-info/RECORD,,
