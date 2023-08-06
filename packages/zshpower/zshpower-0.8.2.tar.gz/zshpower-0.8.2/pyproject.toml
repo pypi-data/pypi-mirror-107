@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "zshpower"
+version = "0.8.2"
+description = "ZSHPower is a theme for ZSH with a manager."
+readme = "README.rst"
+authors = ["William C. Canin <william.costa.canin@gmail.com>"]
+license = "MIT"
+keywords=["zsh-theme", "snakypy", "zsh", "theme", "power"]
+homepage = "https://github.com/snakypy/zshpower"
+repository = "https://github.com/snakypy/zshpower"
+include = ["LICENSE"]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3"
+]
+
+packages = [
+    { include = "snakypy" }
+]
+
+[tool.poetry.scripts]
+zshpower = "snakypy.zshpower.cli:main"
+zshpower-draw = "snakypy.zshpower.draw:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/snakypy/zshpower/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+snakypy-helpers = "^0.1.4"
+docopt = "^0.6.2"
+tomlkit = "^0.7.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.1"
+black = "^21.5b1"
+tox = "^3.23.0"
+pytest = "^6.2.3"
+pre-commit = "^2.12.1"
+ipython = "^7.23.1"
+mypy = "^0.812"
+isort = "^5.8.0"
+imake = "^0.1.0"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.tox
+    | \venv
+    | build
+    | venv
+    | dist
+    | docs
+    | tmp
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+src_paths = ["snakypy", "tests"]
+line_length = 88
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+cache_dir = "/tmp/.pytest_cache"
+# addopts = "-ra -q"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
