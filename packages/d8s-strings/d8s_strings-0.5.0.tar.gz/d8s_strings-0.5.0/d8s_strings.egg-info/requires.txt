@@ -1,0 +1,11 @@
+d8s-hypothesis==0.*
+d8s-uuids==0.*
+d8s-lists==0.8.0
+hypothesis
+inflect
+more_itertools
+d8s-dicts==0.6.0
+d8s-math==0.7.0
+
+[:python_version < "3.8"]
+importlib-metadata
