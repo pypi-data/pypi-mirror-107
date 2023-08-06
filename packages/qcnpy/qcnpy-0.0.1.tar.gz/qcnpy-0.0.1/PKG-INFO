@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qcnpy
+Version: 0.0.1
+Summary: Variational quantum algorithms for machine learning.
+Home-page: https://github.com/KristianWold/qcnpy
+Author: Kristian Wold
+Author-email: kristian.wold@hotmail.com
+License: UNKNOWN
+Description: # qcnpy
+        Quantum Circuit Network
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
