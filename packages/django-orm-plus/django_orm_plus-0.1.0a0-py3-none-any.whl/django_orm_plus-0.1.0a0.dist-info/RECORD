@@ -1,0 +1,10 @@
+django_orm_plus/__init__.py,sha256=xcW5O4dWARMVxggPZ54ysV2O8kxBF2kzFikigykQuwc,334
+django_orm_plus/_fetch_related.py,sha256=_NSLEnu1hA-Vls38SSUjutjlp4fyWWu9aP-VPQQM_Dc,5279
+django_orm_plus/_mixins.py,sha256=VFpqtO2ZPvmgljAQqKO1MRdqXfTAvDlieK3tvMXlyrw,551
+django_orm_plus/_strict_mode.py,sha256=uuHZWl_yD5ohaGan-FnV_WrLMZYBRGsSGzTFmNOWmfo,7540
+django_orm_plus/_util.py,sha256=uv9G0aOpdvSYrlfpBjF2G2yVc6CvK_ycu9jlSjtbKTc,264
+django_orm_plus-0.1.0a0.dist-info/LICENSE,sha256=PzYgiyYMAnbvR5sbOlU77-jxWjg-Gk33ueHEtzpOyj4,1061
+django_orm_plus-0.1.0a0.dist-info/METADATA,sha256=mV-Ec-ZHc2HxlEcr8huzsK007sfYFlAugEWezJJ1W8Y,3885
+django_orm_plus-0.1.0a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_orm_plus-0.1.0a0.dist-info/top_level.txt,sha256=_f7W6L-Z9YDML_skQw0fErVmVHYT1d6eeaP70jhzcmU,16
+django_orm_plus-0.1.0a0.dist-info/RECORD,,
