@@ -1,0 +1,3 @@
+[console_scripts]
+jembe = jembe.cli.jembe:jembe
+
