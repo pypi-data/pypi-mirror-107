@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  slai-{{SLAI_PROJECT_NAME}}-workspace:
+    image: 133672401164.dkr.ecr.us-east-1.amazonaws.com/slai-project-workspace-dev
+    command:
+      ["/bin/bash", "-c", "tail -f /dev/null"]
+    volumes:
+      - ./models:/workspace/models
+      - ./handlers:/workspace/handlers
+      - ./.slai:/workspace/.slai
