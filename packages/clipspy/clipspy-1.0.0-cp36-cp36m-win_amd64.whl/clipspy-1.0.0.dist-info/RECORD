@@ -1,0 +1,17 @@
+clips/__init__.py,sha256=Xtw5YxLGg6Cq1aSWIX1zaQpHeDu_4XdRq-nkUQSLOek,2474
+clips/_clips.pyd,sha256=ozLNKotYAVAAx2N1vw1tG1rSmmYyvKErKmDYNaBfFr0,1281536
+clips/agenda.py,sha256=5rh9tuQaKJbdyFNTNeZ1WpXMRgIh_ctanFXNls01tr0,12531
+clips/classes.py,sha256=FdxsU7ZdPOSQoGC8LK33JSsArFZc4FknhWxZbFCy0nQ,28087
+clips/clips_build.py,sha256=cue0bAdBM8QEmv3ftpdsDZqKlDiKL-UKo_wZUOg_vrs,2364
+clips/common.py,sha256=9Ep31xeEeYnd_NDAG4y330WasryMBgMWWgagqo9buSY,7235
+clips/environment.py,sha256=1qmc01xk4twpwxFSGCfiWliCKLSxf_1tRkmayhVTCcU,6501
+clips/facts.py,sha256=iLeWTo_H-iWwOPNHWoaqg1HYjQHs7btJbteVHufrgyM,20258
+clips/functions.py,sha256=zwYt7zQGl_H-W2uziJKdXv7nnzkplFcLZhqUF0DXyqo,14198
+clips/modules.py,sha256=KGTVOA33CbNtkigDbZR_xMloD_vr1Gyte-6RwOXW3XY,8139
+clips/routers.py,sha256=4-RQFfSPwUNQ51fXPhIxeV62EelYECwRstoZlGfvSfM,8526
+clips/values.py,sha256=VKccNaPR8MUvwFGYxF0DAxKuzXFUmopEVTllWVQAqiM,5459
+clipspy-1.0.0.data/data/lib/clips.cdef,sha256=71X-n5OcEE4avRPVCYU6RGvNEyS7NeoColjFPfOAlh8,21723
+clipspy-1.0.0.dist-info/METADATA,sha256=I6PTzJCGcQ_zpJy6M-TCaeC5g_fSYyHyw4UMURBi3q4,3368
+clipspy-1.0.0.dist-info/RECORD,,
+clipspy-1.0.0.dist-info/WHEEL,sha256=xq3J6sB2oJqjv0tDC7tGUGvne1fOugw1JUmk86QA7UM,106
+clipspy-1.0.0.dist-info/top_level.txt,sha256=DmDvygPhpQhte2MFpofW9QJffoBbf9-wr59gj502DM0,13
