@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: django-crypto-extensions
+Version: 1.0.0
+Summary: Extensions for Django in terms of Cryptography.
+Home-page: https://github.com/DjangoCrypto/django-crypto-extensions
+Author: DjangoCrypto
+Author-email: kamil1marczak@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=2.2)
+Requires-Dist: djangorestframework (>=3.9.2)
+Requires-Dist: cryptography (==3.4.7)
+Requires-Dist: setuptools (==57.0.0)
+
+DJANGO-CRYPTO-EXTENSIONS
+========================
+
+
+.. image:: https://img.shields.io/pypi/v/django-crypto-extensions
+    :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/pyversions/django-crypto-extensions
+    :alt: PyPI - Python Version
+
+.. image:: https://readthedocs.org/projects/django-crypto-extensions/badge/?version=latest
+   :target: https://django-crypto-extensions.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation
+
+.. image:: https://travis-ci.com/DjangoCrypto/django-crypto-extensions.svg?branch=main
+    :target: https://travis-ci.com/DjangoCrypto/django-crypto-extensions
+    :alt: Travis CI
+
+
+Documentation
+-------------
+
+For more information on installation and configuration see the documentation at:
+
+https://django-crypto-extensions.readthedocs.io/
+
+
+CONTRIBUTION
+=================
+
+**TESTS**
+
+- Make sure that you add the test for contributed field to test/test_fields.py and run with command before sending a
+  pull request:
+
+```bash
+$ pip install tox  # if not already installed
+$ tox
+```
+
+Or, if you prefer using Docker (recommended):
+
+```bash
+docker build -t django_crypto_extensions .
+docker run -v $(pwd):/app -it django_crypto_extensions /bin/bash
+tox
+```
+
+
