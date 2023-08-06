@@ -1,0 +1,399 @@
+import requests
+import base64
+import json
+import datetime
+from copy import deepcopy
+import pickle
+import tempfile
+import functools
+
+
+class Address:
+    def __init__(self, *args, **kwargs):
+        """
+        Base class for address into DPD class for label generation
+
+        Available fields:
+            name: STR
+            tel: STR
+            email: STR
+            organisation: STR
+            address1: STR
+            address2: STR
+            address3: STR
+            address4: STR
+            postcode : STR
+
+        Must has minimum of:
+            name
+            address1
+            address2
+            postcode
+
+        """
+        self.name = kwargs.get("name", "")
+        self.tel = kwargs.get("tel", "")
+        self.email = kwargs.get("email", "")
+        self.address_1 = kwargs.get("address1", "")
+        self.address_2 = kwargs.get("address2", "")
+        self.address_3 = kwargs.get("address3", "")
+        self.address_4 = kwargs.get("address4", "")
+        self.postcode = kwargs.get("postcode", "")
+
+        if len(self.address_1) == 0:
+            raise Exception("Delivery address line 1 missing")
+        elif len(self.address_2) == 0:
+            raise Exception("Delivery address line 2 missing")
+        elif len(self.postcode) == 0:
+            raise Exception("Delivery postcode missing")
+        elif len(self.name) == 0:
+            raise Exception("Delivery name missing")
+
+    def __str__(self):
+        return f"{self.name}, {self.address_1}, {self.address_2}"
+
+
+class Parcel(Address):
+    def __init__(self, *args, **kwargs):
+        """
+        Order object to be passed into DPD class for label generation
+
+        Available fields:
+            name: STR
+            tel: STR
+            email: STR
+            organisation: STR
+            address1: STR
+            address2: STR
+            address3: STR
+            address4: STR
+            postcode : STR
+            shipping ref: STR
+            delivery instructions: STR
+            email_updates: BOOL
+            telephone_updates: BOOL
+            weight: FLOAT
+            pcs: INT
+
+        Must has minimum of:
+            address1
+            address2
+            postcode
+            wight
+            pcs
+
+        By default allows communication from DPD via both email and telephone
+        """
+        self.shipping_ref = kwargs.get("shipping_ref", "")
+        self.delivery_instructions = kwargs.get("instructions", "")
+        self.email_updates = kwargs.get("email_updates", True)
+        self.telephone_updates = kwargs.get("telephone_updates", True)
+        self.weight = kwargs.get("weight", 1)
+        self.pcs = kwargs.get("pcs", 1)
+        super().__init__(*args, **kwargs)
+
+
+class Delivery:
+    def __init__(self, parcel, service, req, dpd):
+        self.parcel = parcel
+        self.service = service
+        self.consignment = ""
+        self.dpd = dpd
+        self.parcels = []
+
+    @property
+    def address(self):
+        return f"{self.parcel.name}\n{self.parcel.organisation}\n{self.parcel.address_1}\n{self.parcel.address_2}\n{self.parcel.address_3}\n{self.parcel.address_4},{self.parcel.postcode}".replace("\n\n","\n").replace("\n\n","\n")
+
+    @property
+    def service_name(self):
+        """Returns the service name from service code"""
+        services = {'1^01': 'Parcel Sunday',
+                    '1^06': 'Freight Parcel Sunday',
+                    '1^08': 'Pallet Sunday',
+                    '1^09': 'Expresspak Sunday',
+                    '1^11': 'Dpd Two Day',
+                    '1^12': 'Dpd Next Day',
+                    '1^13': 'Dpd 12:00',
+                    '1^14': 'Dpd 10:30',
+                    '1^16': 'Parcel Saturday',
+                    '1^17': 'Parcel Saturday 12:00',
+                    '1^18': 'Parcel Saturday 10:30',
+                    '1^22': 'Parcel Return To Shop',
+                    '1^29': 'Parcel Sunday 12:00',
+                    '1^31': 'Freight Parcel Sunday 12:00',
+                    '1^32': 'Expresspak Dpd Next Day',
+                    '1^33': 'Expresspak Dpd 12:00',
+                    '1^34': 'Expresspak Dpd 10:30',
+                    '1^36': 'Expresspak Saturday',
+                    '1^37': 'Expresspak Saturday 12:00',
+                    '1^38': 'Expresspak Saturday 10:30',
+                    '1^51': 'Expresspak Sunday 12:00',
+                    '1^69': 'Pallet Sunday 12:00',
+                    '1^71': 'Pallet Dpd Two Day',
+                    '1^72': 'Pallet Dpd Next Day',
+                    '1^73': 'Pallet Dpd 12:00',
+                    '1^74': 'Pallet Dpd 10:30',
+                    '1^76': 'Pallet Saturday',
+                    '1^77': 'Pallet Saturday 12:00',
+                    '1^78': 'Pallet Saturday 10:30',
+                    '1^81': 'Freight Parcel Dpd Two Day',
+                    '1^82': 'Freight Parcel Dpd Next Day',
+                    '1^83': 'Freight Parcel Dpd 12:00',
+                    '1^84': 'Freight Dpd 10:30',
+                    '1^86': 'Freight Parcel Saturday',
+                    '1^87': 'Freight Parcel Saturday 12:00',
+                    '1^88': 'Freight Parcel Saturday 10:30',
+                    '1^91': 'Parcel Ship To Shop',
+                    '1^98': 'Expak - Pickup Classic'}
+
+        return services[self.service]
+
+    def get_label(self, out_type=1):
+        """
+        Gets the raw label data in either HTML or
+        :param out_type:  1= html, 2= citizen-clp, 3= eltron-epl
+        :return: data
+        """
+        self.dpd._get_label(self,)
+
+class DPD():
+
+    def __init__(self, user, password, account_no, sender_address, host="https://api.dpd.co.uk/"):
+        """
+
+        :param user: DPD user name
+        :param password: DPD Password
+        :param account_no: DPD account number
+        :param sender_address: Address object for senders address
+        :param host: Can specify any alternative host URL if needed
+        """
+
+        self.user = user
+        self.login = base64.b64encode(f"{user}:{password}".encode("utf-8"))
+        self.host = host
+        self.account_no = account_no
+        self.sender_address = sender_address
+        self.geo = None
+
+    def _get_check_geosession(func):
+
+        def wrapper(self, *args, **kwargs):
+            """Used to get the geosession string from DPD,
+               will obtain a new session if the previous one is a day old
+
+               returns: geosession string
+            """
+            now = datetime.datetime.now
+
+            # get pickle object
+            try:
+                geo = pickle.load(open(f"{tempfile.gettempdir()}/geo.pk", "rb"))
+            except FileNotFoundError:
+                geo = [None, datetime.datetime(year=1980, month=now().month, day=now().day)]
+
+            # if geosession is over 12 hours old get a new one
+            if geo[1] < now() - datetime.timedelta(hours=12):
+                # get the header for request
+                headers_data = {'Content-Type': 'application/json',
+                                'Accept': 'application/json',
+                                'Authorization': f'Basic {self.login.decode()}'}
+
+                # request geosession
+                req = requests.post(self.host + "/user/?action=login", headers=headers_data)
+
+                # check respose is valid
+                self._check_response_valid(req)
+
+                # get the geosession object
+                geo = [req.json()["data"]["geoSession"], datetime.datetime.now()]
+
+                # set and store
+                pickle.dump(geo, open(f"{tempfile.gettempdir()}/geo.pk", "wb"))
+
+                self.geo = geo[0]
+
+            return func(self, *args, **kwargs)
+
+        return wrapper
+
+    def _check_response_valid(self, rep):
+        if rep.status_code != 200:
+            if rep.status_code == 401:
+                raise Exception(
+                    "Authentication error, login details incorrect or API access not enabled. Check credentials or speak to DPD intergration")
+            elif rep.status_code == 404:
+                raise Exception("Endpoint not found")
+            else:
+                raise Exception("Unspecified geosession error")
+
+    def _get_header(self):
+        return {'Accept': 'application/json', "GeoClient": f"{self.user}/{self.account_no}", "GeoSession": self.geo}
+
+    @_get_check_geosession
+    def get_available_services(self, parcel):
+        # get available header service
+
+        # construct the URL
+        url = f"/shipping/network/?businessUnit=0&deliveryDirection=1&numberOfParcels={parcel.pcs}&shipmentType=0&totalWeight={parcel.weight}&deliveryDetails.address.countryCode=GB&deliveryDetails.address.countryName=&deliveryDetails.address.locality=&deliveryDetails.address.organisation=test&deliveryDetails.address.postcode={parcel.postcode}&deliveryDetails.address.street={parcel.address_1}&deliveryDetails.address.town={parcel.address_2}&collectionDetails.address.countryCode=GB&collectionDetails.address.postcode={self.sender_address.postcode}"
+        # get the request
+        req = requests.get(self.host + url, headers=self._get_header())
+        # check the response
+        self._check_response_valid(req)
+
+        # create dictionary for available services
+        services = {}
+        for i in req.json()["data"]:
+            services[i["network"]["networkDescription"].title()] = i["network"]["networkCode"]
+
+        return services
+
+    @_get_check_geosession
+    def _get_label(self, delivery, out_type=1):
+
+        """
+        Used to get a label from a shipment
+
+        :param delivery: Delivery object
+        :param out_type: 1= html, 2= citizen-clp, 3= eltron-epl
+        :return: Delivery Object
+
+        """
+        if not delivery or type(delivery) is not Delivery:
+            raise Exception("delivery not found, please add a Delivery object")
+        if not out_type in [1,2,3]:
+            raise Exception("invalid out_put type")
+
+        # get output type as per DPD Api docs
+        if out_type == 1:
+            # makes sense
+            accept = "text/html"
+        elif out_type == 2:
+            #these are to be sent directly to the printer, not human readable
+            accept = "text/vnd.citizen-clp"
+        elif out_type == 3:
+            #these are to be sent directly to the printer, not human readable
+            accept = "text/vnd.eltron-epl"
+
+        # change header
+        header = self._get_header()
+        header["accept"] = accept
+
+        # get the request
+        req = requests.post(self.host + "/shipping/shipment" + + str(delivery.shippment_id) + "/label/", headers=header)
+        # validate the request
+        self._check_response_valid(req)
+
+        return req.content
+
+    @_get_check_geosession
+    def create_shipment(self, parcel, service):
+        """
+        Used to create a DPD shipment
+
+        :param parcel: Parcel object
+        :param service: DPD service code i.e 1^12
+        :return: Delivery Object
+
+        """
+        if not parcel or type(parcel) is not Parcel:
+            raise Exception("Parcel not found, please add a Parcel object")
+        if not service or type(service) is not str:
+            raise Exception("service not valid")
+
+        # get the DPD shipping object
+        ship_obj = self._get_ship_obj(parcel, service)
+        # get the request
+        req = requests.post(self.host + "/shipping/shipment", headers=self._get_header(), json=ship_obj)
+        # validate the request
+        self._check_response_valid(req)
+        # get the delivery object
+        Delivery(parcel, service)
+
+
+    @_get_check_geosession
+    def create_shipment(self, parcel, service):
+        """
+        Used to create a DPD shipment
+
+        :param parcel: Parcel object
+        :param service: DPD service code i.e 1^12
+        :return: Delivery Object
+
+        """
+        if not parcel or type(parcel) is not Parcel:
+            raise Exception("Parcel not found, please add a Parcel object")
+        if not service or type(service) is not str:
+            raise Exception("service not valid")
+
+        # get the DPD shipping object
+        ship_obj = self._get_ship_obj(parcel, service)
+        # get the request
+        req = requests.post(self.host + "/shipping/shipment", headers=self._get_header(), json=ship_obj)
+        # validate the request
+        self._check_response_valid(req)
+        # get the delivery object
+        Delivery(parcel, service)
+
+    def _get_ship_obj(self, parcel, service):
+        """creates the shipping object for the request"""
+
+        now = datetime.datetime.now().strftime("%Y-%m-%dT15:00:00")
+        base = {
+            "jobId": None,
+            "collectionOnDelivery": None,
+            "invoice": None,
+            "collectionDate": now,
+            "consolidate": None,
+            "consignment": [
+                {
+                    "consignmentNumber": None,
+                    "consignmentRef": None,
+                    "parcel": [],
+                    "collectionDetails": {
+                        "contactDetails": {
+                            "contactName": self.sender_address.name,
+                            "telephone": self.sender_address.tel,
+                        },
+                        "address": {
+                            "organisation": self.sender_address.organisation,
+                            "countryCode": "GB",
+                            "postcode": self.sender_address.postcode,
+                            "street": self.sender_address.address_1,
+                            "locality": self.sender_address.address_2,
+                            "town": self.sender_address.address_3,
+                            "county": self.sender_address.address_4
+                        }
+                    },
+                    "deliveryDetails": {
+                        "contactDetails": {
+                            "contactName": parcel.name,
+                            "telephone": parcel.tel
+                        },
+                        "address": {
+                            "organisation": parcel.name,
+                            "countryCode": "GB",
+                            "postcode": parcel.postcode,
+                            "street": parcel.address_1,
+                            "locality": parcel.address_2,
+                            "town": parcel.address_3,
+                            "county": parcel.address_4,
+                        },
+                        "notificationDetails": {
+                            "email": parcel.email if parcel.email_updates else None,
+                            "mobile": parcel.tel if parcel.tel_updates else None
+                        }
+                    },
+                    "networkCode": service,
+                    "numberOfParcels": parcel.pcs,
+                    "totalWeight": parcel.weight,
+                    "shippingRef1": "RET" + str(parcel.shipping_ref),
+                    "customsValue": None,
+                    "deliveryInstructions": parcel.delivery_instructions,
+                    "parcelDescription": "",
+                    "liabilityValue": None,
+                    "liability": None
+                }
+            ]
+        }
+        return base
