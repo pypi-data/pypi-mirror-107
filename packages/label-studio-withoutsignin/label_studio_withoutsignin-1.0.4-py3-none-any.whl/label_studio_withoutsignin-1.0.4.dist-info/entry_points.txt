@@ -1,0 +1,3 @@
+[console_scripts]
+label-studio = label_studio_withoutsignin.server:main
+
