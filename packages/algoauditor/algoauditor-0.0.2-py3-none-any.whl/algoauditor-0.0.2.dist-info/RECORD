@@ -1,0 +1,13 @@
+algoauditor/__init__.py,sha256=lf2qEm_MmXytDHkaHmcfaBtVpCvXcrQqkMG31z_CYGo,118
+algoauditor/gender_tag_dataset.py,sha256=_lAvkbEeic680RuQkKxgdpGlfgsb6_sPP0A8aduiCqo,1165
+algoauditor/nlg.py,sha256=990vXJ1bTMJpIchKkVev_dvQsfS73taSlqScf_iof80,4465
+algoauditor/nlp.py,sha256=4Nqggk6eY_aChD9SdcjmSgmKNuPEYGy3-hhQY54tn1k,1857
+algoauditor/public/nlg.html,sha256=EkOMnT8eaIRWy989t7EDrPpKz4p8_hRySBvpcayku1k,4873
+algoauditor/public/nlg.js,sha256=d1Z7hPL7SIfy7c4XeUdOyZg8yEcQOjvKt6Wa3KbetTg,9033
+algoauditor/public/nlg_json.js,sha256=pzh3zqZo_gNEVZuCxCZL1_YvYDeBgoAgn8ZWhNOmLBI,20407
+algoauditor/public/styles.css,sha256=f18MX5PFxZ1J-9H6pmcR0reQJevQuhASO_Xk2G5U2UM,2411923
+algoauditor/utils/__init__.py,sha256=OfhUR8KxOzeCXY9nk4k8rkLqr4jaZluSg4xl0LGLj7I,55
+algoauditor/utils/api_response_handler.py,sha256=NmqGInO7iejSPQNxKiMGiteYHZ1X_d80JiYIKrGiHi4,1488
+algoauditor-0.0.2.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+algoauditor-0.0.2.dist-info/METADATA,sha256=ItakuFkwoD9wziaGNgTo5tDBigpN22eNnKxQoJVlG4U,1553
+algoauditor-0.0.2.dist-info/RECORD,,
