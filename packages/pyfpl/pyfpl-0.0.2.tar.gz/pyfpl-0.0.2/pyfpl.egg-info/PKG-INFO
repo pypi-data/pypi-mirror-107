@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyfpl
+Version: 0.0.2
+Summary: FPL Analytics
+Home-page: https://github.com/abhijith-git/pyfpl
+Author: Abhijith Chandradas
+Author-email: <abhijith.chandradas@gmail.com>
+License: MIT
+Description: # pyfpl
+        fpl analytics
+        
+Keywords: python,football,fpl,data visualization,analytics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
