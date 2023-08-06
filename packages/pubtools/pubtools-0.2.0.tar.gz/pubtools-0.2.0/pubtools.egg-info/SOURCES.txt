@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pubtools/__init__.py
+pubtools.egg-info/PKG-INFO
+pubtools.egg-info/SOURCES.txt
+pubtools.egg-info/dependency_links.txt
+pubtools.egg-info/top_level.txt
