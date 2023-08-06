@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bin/charta-server
+charta/__init__.py
+charta/charts.py
+charta/client.py
+charta/common.py
+charta/server.py
+charta.egg-info/PKG-INFO
+charta.egg-info/SOURCES.txt
+charta.egg-info/dependency_links.txt
+charta.egg-info/requires.txt
+charta.egg-info/top_level.txt
