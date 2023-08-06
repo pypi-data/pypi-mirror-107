@@ -1,0 +1,16 @@
+labbcat/GraphStore.py,sha256=9WkqIvEaTXHPGdsNHhbRYWxHZY1WHRkjB-2h4X-jzVg,1198
+labbcat/GraphStoreAdministration.py,sha256=X83QeLigE5arMmViX8N70yCBkpkWsxV4RoWRio5M5RU,983
+labbcat/GraphStoreQuery.py,sha256=_TE-BYpkb0Jdpdr_PjZJ_kcmpR-7JTQVXyGtmm1-FDk,21939
+labbcat/Labbcat.py,sha256=Khq4C99Oy8BhOFrhQCaTjuePGGAGIM-bpndAHahYbbw,9521
+labbcat/LabbcatAdmin.py,sha256=lJO_VyQ61MVzLCci63Hb2PGO_Die28NQI1raYKwH_zQ,35644
+labbcat/LabbcatEdit.py,sha256=fRcBbBHIF_T3i75ClcB-aAGY9bHiitZxEeM7V7RztlM,5182
+labbcat/LabbcatView.py,sha256=iNnydbbXzdU7fqtUbCJzB7UBgAQZDSI9LYuuHOtgf68,57041
+labbcat/Response.py,sha256=rKKr0nN0ZIj0cFWcNSXqtmDuc6rAQV71T5_YWu2kFPM,2665
+labbcat/ResponseException.py,sha256=egIhUMJPLqiAhkHIzIwk-Md4itIK_3BJfT0QaNOgUpk,1137
+labbcat/__init__.py,sha256=M36sk1dZrCc6RQbDhdIE5rJDlqz-ux8YNHrpjWIFIHM,261
+labbcat/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+nzilbb_labbcat-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nzilbb_labbcat-0.4.0.dist-info/METADATA,sha256=Ykgg2RuE18R5WELMo6KNPrAPZjrZfJEv8ZEOI03HduU,3554
+nzilbb_labbcat-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nzilbb_labbcat-0.4.0.dist-info/top_level.txt,sha256=VLnJcwGH4wyujz38zESw0GwY34ZgS26xMsILisRJTOw,8
+nzilbb_labbcat-0.4.0.dist-info/RECORD,,
