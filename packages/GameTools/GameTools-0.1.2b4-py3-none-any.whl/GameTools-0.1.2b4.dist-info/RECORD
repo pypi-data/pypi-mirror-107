@@ -1,0 +1,16 @@
+GameTools/__init__.py,sha256=96g6Kkw_Cx4KpSWO86DTHqjLRHMpmsQJwf-z6dAn4O0,201
+GameTools/Entity/__init__.py,sha256=tpUCJGfedONA3iFHH-bcIoN7T3lMbZmpsAPsW0rulIM,297
+GameTools/Entity/shapes.py,sha256=Izvprupgv-UKliyGe-W2ij4ILgRwlzsPSjYP7fVnFCQ,23
+GameTools/Templates/ProjectTemplates.py,sha256=XPuwl1IqA1V3DfwtRGWkWyyWp_9HXBnyB6VGGu3dxCM,2871
+GameTools/Templates/__init__.py,sha256=6-jIqdHaR1feZiadKNli64oLjCT1x4-ZQoldI74I6Kc,30
+GameTools/Timing/DeltaTime.py,sha256=C1dQsr9IaqaGpVZni6zPLfLRArRiPOS4y-GDBBaBMz0,268
+GameTools/Timing/__init__.py,sha256=0Tv0vJN1tIUPaJTEQydpNwcCL1b0iATUC8y9oStHgwA,23
+GameTools/Tools/Messaging.py,sha256=7dV3oZXwTWCiUFEpINpmxjL-nd28ZnivEkt4FukN3t8,1195
+GameTools/Tools/__init__.py,sha256=CoIiiWBjYHXXJfY8MX8CUIpR9oznVA0tsUyDtjRpsNI,29
+GameTools/Tools/Math/Basics.py,sha256=WW0M34sIZAqP1ZMfDaywagTgn2xsqOZRkbbRF63mo_c,512
+GameTools/Tools/Math/__init__.py,sha256=xCUO0w4RRGsYQKbLU4BN0_4u82yZ8_2JEYDbQX10aRg,63
+GameTools-0.1.2b4.dist-info/LICENSE.txt,sha256=aYyAlRli911RR2YpomeHiUyWiIMKOzsTomuoTuvkhAI,1100
+GameTools-0.1.2b4.dist-info/METADATA,sha256=gGvcG3DaJMf79Ie0keHhkw3SqLOrSvZKc3HN-GLHawE,2155
+GameTools-0.1.2b4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+GameTools-0.1.2b4.dist-info/top_level.txt,sha256=gHdS6Zc5ylWs3Pvbcapf8fjwiCrRHa8KD1S7fRGa1Fk,10
+GameTools-0.1.2b4.dist-info/RECORD,,
