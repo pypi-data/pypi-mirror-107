@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+entity_context_crawler/__main__.py
+entity_context_crawler.egg-info/PKG-INFO
+entity_context_crawler.egg-info/SOURCES.txt
+entity_context_crawler.egg-info/dependency_links.txt
+entity_context_crawler.egg-info/entry_points.txt
+entity_context_crawler.egg-info/top_level.txt

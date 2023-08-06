@@ -1,0 +1,3 @@
+[console_scripts]
+ecc = entity_context_crawler.__main__:main
+
