@@ -1,0 +1,15 @@
+torch==1.7.1
+torchvision==0.8.2
+pillow
+numpy
+scipy
+joblib
+matplotlib
+sprocket-vc
+parallel_wavegan
+tensorboardX
+torch-optimizer
+pytorch_lamb
+gdown
+museval
+typeguard
