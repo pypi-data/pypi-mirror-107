@@ -1,0 +1,12 @@
+poseutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poseutils/common.py,sha256=2oA7FAZ5yauTIfnmK7yBUv-HjrxMvw4FlUb5N2a0Awk,342
+poseutils/constants.py,sha256=RbkOn1nYdS_0DJH_7pbaf2eB5ydsGnI7LQ-ILxxGKko,3567
+poseutils/metrics.py,sha256=O_WGTTHOtkBONWofOGMdAi9n1guShGEr9dC9hy0WCGQ,612
+poseutils/props.py,sha256=JvB-VikdPEFxdhJrGyzSTjdmTBANCEOybFglLhWrR3w,5292
+poseutils/transform.py,sha256=4AFPxenEGpojBAtXMs0kvgqR1DLKct6Ekm3L72N-rHs,1199
+poseutils/view.py,sha256=V6Vnkc372DwHHutrkFQKm-dl5n5WOq_h5XDFBWX52qk,1290
+poseutils-0.2.2.dist-info/LICENSE.txt,sha256=Lo2O9_xV5PeTVUXe4u-kPD40NQH0woC9bssMP_lEYgU,1050
+poseutils-0.2.2.dist-info/METADATA,sha256=AbpOBQFFDUGFWcn_Gbv-0cEfT1LwTZse4cZX6c2klCk,808
+poseutils-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+poseutils-0.2.2.dist-info/top_level.txt,sha256=jM3TebhXCnH4zibqRR6FGekwmbOcRr1rhwJXtda88Oc,10
+poseutils-0.2.2.dist-info/RECORD,,
