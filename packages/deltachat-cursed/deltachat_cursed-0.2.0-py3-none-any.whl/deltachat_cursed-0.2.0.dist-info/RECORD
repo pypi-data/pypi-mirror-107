@@ -1,0 +1,16 @@
+deltachat_cursed/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+deltachat_cursed/__main__.py,sha256=vBQ82334kX06ImDbFlPFgiBRiLIinwNk3z8Khs6hd74,31
+deltachat_cursed/event.py,sha256=ugPao8BWQvC43Y88PrCHFcVbklWHvLT_5YQzb5L5Ndw,3334
+deltachat_cursed/main.py,sha256=CZBhykoBzgB_-yrCUptQqJVeU4d33W26EvTInAtPjnA,6697
+deltachat_cursed/oauth2.py,sha256=2soksXJy_ByFTHYFc0sTRsZdhq73aZZVg0pDgbNLxg8,2821
+deltachat_cursed/ui/__init__.py,sha256=NsncLsXL-EKxlQ62_cxUPZ_Xdwd20aXD84Sj5NHKpwA,6529
+deltachat_cursed/ui/chatlist_widget.py,sha256=Nu-Y-lAdK-lSmf4wpuRLtN8u_29tl15ByX-SDyFzXYQ,3177
+deltachat_cursed/ui/containers.py,sha256=cEv-YhxCIFKYTauGfXx-3Vlw6ZqluEh82R2BsFZyPPw,5017
+deltachat_cursed/ui/msgs_widget.py,sha256=OduI0Huxo-yLGFt1N0FuyNK75xs7j4MwK9sTXB4B6Xs,5302
+deltachat_cursed/ui/msgsend_widget.py,sha256=3IYMD_lh42FV07gDmnQJQ_GWKG5MSQ_jaOcx_vtNOm0,3491
+deltachat_cursed-0.2.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+deltachat_cursed-0.2.0.dist-info/METADATA,sha256=ohjcCHRR_E9GBe8bKjtykJgBcQdeGnn1XP3vPpbbklg,5002
+deltachat_cursed-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+deltachat_cursed-0.2.0.dist-info/entry_points.txt,sha256=hd5H-k9ATGEeyBf432RU1RFc8WgI5v6GPyNUYOlA1uk,90
+deltachat_cursed-0.2.0.dist-info/top_level.txt,sha256=UQrPQLHThVbb4u22wTUTj-TDl7FQLWoprOWU5C6E0RM,17
+deltachat_cursed-0.2.0.dist-info/RECORD,,
