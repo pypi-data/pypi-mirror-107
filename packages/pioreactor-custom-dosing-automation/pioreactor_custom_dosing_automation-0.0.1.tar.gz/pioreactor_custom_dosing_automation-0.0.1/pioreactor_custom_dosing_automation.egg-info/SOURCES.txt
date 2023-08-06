@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pioreactor_custom_dosing_automation/__init__.py
+pioreactor_custom_dosing_automation/additional_config.ini
+pioreactor_custom_dosing_automation.egg-info/PKG-INFO
+pioreactor_custom_dosing_automation.egg-info/SOURCES.txt
+pioreactor_custom_dosing_automation.egg-info/dependency_links.txt
+pioreactor_custom_dosing_automation.egg-info/entry_points.txt
+pioreactor_custom_dosing_automation.egg-info/top_level.txt
+pioreactor_custom_dosing_automation/ui/contrib/automations/dosing/my_custom_dosing_automation.yaml
