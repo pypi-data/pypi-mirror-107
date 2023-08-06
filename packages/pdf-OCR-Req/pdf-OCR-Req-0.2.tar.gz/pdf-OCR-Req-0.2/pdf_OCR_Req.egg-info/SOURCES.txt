@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.py
+OcrReqPackage/__init__.py
+OcrReqPackage/ocr_req_or_not.py
+OcrReqPackage/packageData/sampleData.dat
+pdf_OCR_Req.egg-info/PKG-INFO
+pdf_OCR_Req.egg-info/SOURCES.txt
+pdf_OCR_Req.egg-info/dependency_links.txt
+pdf_OCR_Req.egg-info/requires.txt
+pdf_OCR_Req.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+python-package to tell if the pdf needs ocr to detect the text.
+
+This is a minimal python package, 
+
+Contributing:
+
+Please do! Guidelines:
+
+ - This lesson is for beginners. Yes there are plenty of super fancy things we don't cover here; someday, we'll make a different, super fancy lesson to teach those things.
+ - Max 100 lines per PR please.
+ - Open an issue or empty PR first to talk about controversial changes.
