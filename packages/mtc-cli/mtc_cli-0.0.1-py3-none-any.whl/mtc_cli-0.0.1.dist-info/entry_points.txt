@@ -1,0 +1,3 @@
+[console_scripts]
+mtc = mtc.__main__:_main
+
