@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+gimp/__init__.py
+gimp/plugins/__init__.py
+gimp/plugins/pydev/__init__.py
+gimp/plugins/pydev/pydev
+gimp_pydev_pycharm.egg-info/PKG-INFO
+gimp_pydev_pycharm.egg-info/SOURCES.txt
+gimp_pydev_pycharm.egg-info/dependency_links.txt
+gimp_pydev_pycharm.egg-info/requires.txt
+gimp_pydev_pycharm.egg-info/top_level.txt
