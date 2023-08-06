@@ -1,0 +1,15 @@
+pandas
+PyYAML
+scipy
+
+[Kepler telescope light curves]
+astropy
+
+[Nigerian NMIS data]
+geopandas
+
+[Olivetti Faces]
+netpbmfile
+
+[google trends interface]
+pytrends

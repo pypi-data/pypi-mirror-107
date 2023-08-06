@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pods
+Version: 0.0.32a0
+Summary: Python software for Open Data Science
+Home-page: https://github.com/sods/ods
+Author: Neil D. Lawrence
+Author-email: lawrennd@gmail.com
+License: MIT
+Description: 
+        pods
+        ===
+        
+        # Python open data science software. 
+        
+        This repository contains utilities and tools for open data science including tools for accessing data sets in python. 
+        
+        
+        
+        ## Datasets
+        
+        There is a set of notebooks describing the data sets that can be accessed available in the notebooks subdirectory. 
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: google trends interface
+Provides-Extra: Nigerian NMIS data
+Provides-Extra: Kepler telescope light curves
+Provides-Extra: Olivetti Faces
