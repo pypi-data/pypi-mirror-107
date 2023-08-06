@@ -1,0 +1,7 @@
+setup.py
+imagemetrics/__init__.py
+imagemetrics/analyze.py
+imagemetrics.egg-info/PKG-INFO
+imagemetrics.egg-info/SOURCES.txt
+imagemetrics.egg-info/dependency_links.txt
+imagemetrics.egg-info/top_level.txt
