@@ -1,0 +1,7 @@
+setup.py
+src/my_test/__init__.py
+src/my_test/my_test.py
+src/yz_test.egg-info/PKG-INFO
+src/yz_test.egg-info/SOURCES.txt
+src/yz_test.egg-info/dependency_links.txt
+src/yz_test.egg-info/top_level.txt
