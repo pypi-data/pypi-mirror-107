@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: expositor
+Version: 2021.2.dev3
+Summary: Spinher is a Python module which shows the user progress whenever a Command-Line application is launched. The `whirl()` function does all the magic.
+Home-page: https://github.com/gerrishons/expositor
+Author: Gerrishon Sirere
+Author-email: secretum.inc@pm.me
