@@ -1,0 +1,8 @@
+[console_scripts]
+sbot = shoebot.run:main
+sbot-video-export = shoebot.util.video_export:main
+shoebot = shoebot.ide.ide:main
+
+[gui_scripts]
+shoebot=shoebot.ide.ide:main
+

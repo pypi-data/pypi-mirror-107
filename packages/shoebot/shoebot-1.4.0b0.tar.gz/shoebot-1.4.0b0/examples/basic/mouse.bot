@@ -1,0 +1,12 @@
+"""
+Background color set by mouse position
+"""
+
+size(255, 255)
+colorrange(255)
+colormode(HSB)
+
+
+def draw():
+    background(MOUSEX, MOUSEY, 180)
+    circle(MOUSEX - 16, MOUSEY - 16, 32, 32, fill=1)
