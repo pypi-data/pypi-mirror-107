@@ -1,0 +1,14 @@
+uw_coda/VERSION,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+uw_coda/__init__.py,sha256=MIqi7u6kux15cYQoq-Zsa1f4U85PCsOyCS9z_xHJKR0,1250
+uw_coda/dao.py,sha256=e3aS0ppNUpSkJ9gTCnS1-h-LvReqrJdBqYDWWwHzreU,627
+uw_coda/test.py,sha256=urZKwP9LB-2Zn1Yq6JY_n3pgw-qiwyprkXh0mr6eSLE,462
+uw_coda/resources/coda/file/api/v1/course/2014-winter-POL S-201-A/cgpa,sha256=ooJDVwqYuhrXvNZuhg4uC_5B-44FEeM9b_zJOHj8iTk,24
+uw_coda/resources/coda/file/api/v1/course/2014-winter-POL S-201-A/fail_rate,sha256=03zQuoZzvfussH_BwF9uA6Bd0DblIHOVoWeigz_Uy8A,38
+uw_coda/resources/coda/file/api/v1/course/2014-winter-POL S-201-A/majors/2,sha256=tSc2UQ-bzCgJ1tTB2ca-I6U1Od7rrHIc1wCz2EEAOsE,191
+uw_coda/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_coda/tests/test_endpoints.py,sha256=zb_oHJg-ulytZ8jO3R7xw18JTaXHj4CRWIolsv6ttSg,901
+UW_RestClients_CoDa-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+UW_RestClients_CoDa-1.0.1.dist-info/METADATA,sha256=wTN8alaowNxOuXLwFWZOC8aev-H0pCFinle0zxw8_i4,703
+UW_RestClients_CoDa-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+UW_RestClients_CoDa-1.0.1.dist-info/top_level.txt,sha256=z0JZr1XJxpRt3TY_XnzO6nI9PDjfezgdzwIfivzQRSA,8
+UW_RestClients_CoDa-1.0.1.dist-info/RECORD,,
