@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: skbel
+Version: 1.0.1
+Summary: SKBEL - Bayesian Evidential Learning framework built on top of scikit-learn.
+Home-page: https://github.com/robinthibaut/skbel
+Author: Robin Thibaut
+Author-email: robin.thibaut@UGent.be
+License: MIT
+Description: SKBEL - Bayesian Evidential Learning framework built on top of scikit-learn.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
