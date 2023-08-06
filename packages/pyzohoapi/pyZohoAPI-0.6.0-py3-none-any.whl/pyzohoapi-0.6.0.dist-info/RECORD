@@ -1,0 +1,16 @@
+LICENSE,sha256=7BlrxZr2WlcASZEVdq49GJybrXGXl-c1O6qqchACzww,1094
+pyzohoapi/__init__.py,sha256=4rzjDz1xdtVwrcldMH-M6hPTwlPALQY4MqNQ-Rd_2Cc,303
+pyzohoapi/books.py,sha256=sydFizsBilYV4VDwOFYh5WzMZYSnGcnesh9GhhAsNvg,1677
+pyzohoapi/core/__init__.py,sha256=x_N4dhY-2o1RcEdm1KJjEz_JawYqeS5TPiugy2AWhTY,16057
+pyzohoapi/core/collection.py,sha256=igbL-vFMT3mF1_DwjWLbG9zkB_2sb13tJOFbuwfYp5k,12536
+pyzohoapi/core/utils.py,sha256=TmQEeUVf_vkIoMGoY2yWwOEm2SEtePfxctzu_aFQ5VI,1600
+pyzohoapi/exceptions/__init__.py,sha256=gsKT9JAh9nw8NJm7ZDRLLst9Ze3J8xIDNyz633LdF0U,2352
+pyzohoapi/inventory.py,sha256=VkZFRuxH0rIO8S9OpfqYKsiD4uHyjsctxJ_uaT5UZyo,1934
+pyzohoapi/objecttypes/__init__.py,sha256=6XFZjEhFSU_lZ5xdlI04n1oOHbHFWVc17ALs4myRL1Q,2717
+pyzohoapi/objecttypes/mixins/__init__.py,sha256=qpgw6ww4tAG36-WaiitMUiYiy3vURKYep7kUBtYuBfI,3519
+pyzohoapi/objecttypes/mixins/CompositeItemOps.py,sha256=gIc3ia5HvKm5QL7ZiRmSWpk0alxBCcmf-3H7QgwKyDo,2004
+pyzohoapi/objecttypes/mixins/CustomFields.py,sha256=sLfp-OirsDQL-40CTZ74Q476IB5MO5b3dDk9b5tT59E,1862
+pyzohoapi-0.6.0.dist-info/LICENSE,sha256=7BlrxZr2WlcASZEVdq49GJybrXGXl-c1O6qqchACzww,1094
+pyzohoapi-0.6.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+pyzohoapi-0.6.0.dist-info/METADATA,sha256=DdWSJwbUjNgK5DX3Iwa74_0QpvbidKSHFggB95-d7Cw,2757
+pyzohoapi-0.6.0.dist-info/RECORD,,
