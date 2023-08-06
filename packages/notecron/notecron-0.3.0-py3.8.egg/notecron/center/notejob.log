@@ -1,0 +1,30 @@
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1299-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1299-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1299-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-27 10:08:07 - 1298-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-27 10:08:07 - 1298-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 1298
+
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-add_job[line:445] - INFO: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check" to job store "default"
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-27 10:08:29 - 1308-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_del_job_log" to job store "default"
+2021-05-27 10:08:29 - 1308-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 1308
+
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-_real_add_job[line:886] - INFO: Added job "cron_check_db_sleep" to job store "default"
+2021-05-27 10:08:29 - 1307-MainProcess - base.py-start[line:171] - INFO: Scheduler started
+2021-05-27 10:08:29 - 1307-MainProcess - CuBackgroundScheduler.py-_process_jobs[line:62] - INFO: due_jobs:0     os.pid: 1307
+
