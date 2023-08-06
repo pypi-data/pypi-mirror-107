@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO PROBE NMS RAW DATA SET</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GP-J-NMS-3-ENTRY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1996-12-08</publication_date>
+            <country>USA</country>
+            <description>This Galileo Probe Mass Spectrometer (GPMS) data set includes:
+                (1) Jupiter atmospheric entry data from December 7, 1995; (2)
+                Instrument characterization data; March - April, 1985; (3)
+                Residual background data from Earth testing; 1985 - 1989; (4)
+                Residual background data from space; 1989, 1990, 1992; (5)
+                Characterization data from the refurbished Engineering Unit (NOT
+                YET AVAILABLE - December, 1998); (6) Sequence and conversion
+            tables necessary to process the data.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GP-J-NMS-3-ENTRY-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO PROBE; JUPITER; MASS SPECTROMETER; GP; PLANET; GPMS; GALILEO PROBE MASS SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>JOHN HABERMAN</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.gp-j-nms-3-entry-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

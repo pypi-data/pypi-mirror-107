@@ -1,0 +1,55 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE            = "temporary CAT, B. Harris, 2006-07-27;      
+D.Kazden, updated ARCHIVE_STATUS, added REFERENCE_KEY_ID, 2012-02-29;        
+2018-08-06, D. Kazden, removed ARCHIVE_STATUS keyword;"                      
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P10-J-GTT-3-RDR-HIGHRES-V1.0"          
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  =                                         
+    "PIONEER 10 JUPITER GEIGER TUBE TELESCOPE HIGH-RES DATA V1.0"            
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = "N/A"                                   
+    STOP_TIME                      = "N/A"                                   
+    DATA_SET_RELEASE_DATE          = "N/A"                                   
+    PRODUCER_FULL_NAME             = "N/A"                                   
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "N/A"                                   
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 10 geiger tube telescope data."                                
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      Pioneer 10 geiger tube telescope data."                                
+                                                                             
+    CITATION_DESC                  = "N/A"                                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+      Pioneer 10 geiger tube telescope data."                                
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "N/A"                                   
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P10                                     
+    INSTRUMENT_ID                  = GTT                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "VANALLENETAL1974B"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

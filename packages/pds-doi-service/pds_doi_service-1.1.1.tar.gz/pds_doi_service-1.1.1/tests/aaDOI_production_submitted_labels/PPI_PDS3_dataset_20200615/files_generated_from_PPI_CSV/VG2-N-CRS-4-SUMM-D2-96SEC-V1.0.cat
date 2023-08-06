@@ -1,0 +1,189 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+920805 -- SJOY from JPLPDS::RMONARREZ 920527                                  
+          received by mail                                                    
+          revised capitalization (UP-&#10095;LC);                                    
+920828 -- EFRIED Included full reference description for J. Geo. Res.         
+          references Need full ref. for Science;                              
+920911 -- EFRIED changed DATA_SET_ID;                                         
+920918 -- RMONARREZ updated Data Set templates according to new std.          
+          Data Set Template -&#10095; Spacecraft Data Set Template                   
+          event_start_time, event_stop_time -&#10095; start_time, stop_time;         
+920920 -- EFRIED changed DATA_SET_ID and DATA_SET_NAME;                       
+920921 -- EFRIED Included full reference for Science                          
+920925 -- RMONARREZ Updated PROCESSING_LEVEL_ID to match DATA_SET_ID          
+          last changes made;                                                  
+110629 -- DKAZDEN removed unnecessary keyword;                                
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated DATA_SET_RELEASE_DATE and CITATION_DESC;"           
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-CRS-4-SUMM-D2-96SEC-V1.0"         
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP CRS RESAMPLED SUMMARY D2 RATE ELEC 96SEC V1.0"                  
+                                                                              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-24T22:00:00                      
+    STOP_TIME                      = 1989-08-25T10:00:00                      
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 2002-01-31                               
+    PRODUCER_FULL_NAME             = "DR. RICHARD S. SELESNICK"               
+    DETAILED_CATALOG_FLAG          = "Y"                                      
+                                                                              
+    CITATION_DESC         = "Selesnick, R.S., VG2-N-CRS-4-SUMM-D2-96SEC-V1.0, 
+                       VG2 NEP CRS RESAMPLED SUMMARY D2 RATE ELEC 96SEC V1.0, 
+                             NASA Planetary Data System, 2002."               
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      Voyager 2 96 second resolution counting rate description data           
+      from the D2 detector in the Cosmic Ray System (CRS) electron            
+      telescope (TET) on Voyager 2 during the Neptune encounter from          
+      1989-08-25 to 1989-08-25."                                              
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      Counting rate from the D2 detector in the Cosmic Ray                    
+      System (CRS) electron telescope (TET) on Voyager 2 during               
+      the Neptune encounter.                                                  
+      The D2 detector nominally responds to                                   
+      electrons with kinetic energies above approximately 2.5 MeV             
+      (see detector description for details)."                                
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+    Counting rate from the D2 detector in the Cosmic Ray                      
+    System (CRS) electron telescope (TET) on Voyager 2 during                 
+    the Neptune encounter.                                                    
+    The D2 detector nominally responds to                                     
+    electrons with kinetic energies above approximately 2.5 MeV               
+    (see detector description for details).                                   
+                                                                              
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Sampling parameter name             : time                                
+    Sampling parameter resolution       : 6.0 seconds                         
+    Minimum sampling parameter          : n/a                                 
+    Maximum sampling parameter          : n/a                                 
+    Sampling parameter interval         : 96.0 seconds                        
+    Minimum available sampling interval : 96.0 seconds                        
+    Data set parameter name             : D2 rate                             
+    Noise level                         : 0.000 counts/second                 
+    Data set parameter unit             : counts/second                       
+                                                                              
+    The D2 detector is located behind the D1 detector in the TET              
+    telescope, so that most of the electrons observed by D2 have              
+    to penetrate D1 first.  The D2 rate therefore applies to                  
+    higher energy electrons and the threshold energy is less                  
+    distinct than for D1, but is near 2.5 MeV.  The rate can be               
+    calculated from the electron differential flux in the same                
+    way as the D1 RATE (see D1 RATE description) with the                     
+    following calibration table.                                              
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. D2 response function                                             
+    -------------------------------------------------------------------       
+           |   11.    23.    41.    61.    80.    90.   100.                  
+    -------------------------------------------------------------------       
+    0.989  |  0.000  0.000  0.000  0.001  0.002  0.001  0.001                 
+    1.179  |  0.000  0.000  0.000  0.013  0.023  0.021  0.018                 
+    1.372  |  0.000  0.000  0.000  0.037  0.052  0.051  0.043                 
+    1.567  |  0.000  0.019  0.028  0.063  0.082  0.066  0.061                 
+    1.763  |  0.041  0.034  0.045  0.090  0.111  0.098  0.080                 
+    1.959  |  0.106  0.078  0.072  0.119  0.142  0.125  0.097                 
+    2.157  |  0.255  0.186  0.127  0.152  0.170  0.146  0.109                 
+    2.355  |  0.488  0.381  0.228  0.206  0.212  0.176  0.126                 
+    2.553  |  0.772  0.627  0.361  0.272  0.255  0.202  0.139                 
+    2.752  |  1.019  0.864  0.501  0.340  0.299  0.226  0.152                 
+    2.951  |  1.220  1.053  0.634  0.400  0.335  0.250  0.165                 
+    3.150  |  1.461  1.218  0.746  0.459  0.375  0.289  0.188                 
+    3.350  |  1.628  1.378  0.940  0.515  0.456  0.411  0.282                 
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+    The ENCYCLOPEDIA GENERATOR program was run by Nand Lal at Goddard         
+    Space Flight Center to read the EDR tape, check for error                 
+    conditions, and reformat the data to generate a CRS encyclopedia          
+    tape. The resulting tape was sent to CalTech for subsequent data          
+    analysis.                                                                 
+                                                                              
+    The VCRUSH program was run at CalTech to select data of interest          
+    from CRS encyclopedia tapes. In the case of counting rate data,           
+    no further analysis was done to produce the data in the PDS               
+    data sets.                                                                
+                                                                              
+    Note: Neither the ENCYCLOPEDIA GENERATOR or VCRUSH software are           
+    available for public use."                                                
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Data Confidence Overview                                                    
+  ========================                                                    
+    Each data point represents a six-second accumulation,                     
+    so that the statistical uncertainty is obtained according                 
+    to Poisson statistics by taking the square root of one sixth              
+    of the counting rate.  However, larger uncertainties are                  
+    associated with the conversion from counting rate to flux.                
+                                                                              
+                                                                              
+  Data Coverage and Quality                                                   
+  =========================                                                   
+    The following table contains hourly summaries of the percentage of        
+    the data available, data quality, and contamination codes. A data         
+    quality id of -1 indicates that no attempt has been made to specify       
+    a data quality for this time range. A contamination code of -1            
+    signifies that no evaluation of possible contamination has been           
+    made.                                                                     
+                                                                              
+    -------------------------------------------------------------------       
+    Table 2. Hourly Data Coverage and Quality Summaries                       
+    -------------------------------------------------------------------       
+    Start Time            Mode  Percent  Quality  Contam  NumGood             
+    -------------------------------------------------------------------       
+    1989-Aug-24 23:00:14  D2     72.972    -1       -1      81                
+    1989-Aug-25 00:01:02  D2    102.702    -1       -1     114                
+    1989-Aug-25 01:00:14  D2     89.189    -1       -1      99                
+    1989-Aug-25 02:01:02  D2    102.702    -1       -1     114                
+    1989-Aug-25 03:00:14  D2     78.378    -1       -1      87                
+    1989-Aug-25 04:01:02  D2     97.297    -1       -1     108                
+    1989-Aug-25 05:00:14  D2    100.000    -1       -1     111                
+    1989-Aug-25 06:01:02  D2    102.702    -1       -1     114                
+    1989-Aug-25 07:00:14  D2     81.081    -1       -1      90                
+    1989-Aug-25 08:01:02  D2     97.297    -1       -1     108                
+    1989-Aug-25 09:00:14  D2     91.891    -1       -1     102                
+    1989-Aug-25 09:57:50  D2    100.000    -1       -1     111"               
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = CRS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "STONEETAL1989"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SELESNICK&STONE1991A"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SELESNICK&STONE1991B"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  END_OBJECT                       = DATA_SET                                 
+END

@@ -1,0 +1,88 @@
+PDS_VERSION_ID                    = PDS3
+LABEL_REVISION_NOTE              = "
+             2012-06-06, D. Kazden, minor updates for version 3 standards;
+             2020-02-05, D. Kazden, updated CITATION_DESC;"
+
+OBJECT                       = DATA_SET
+  DATA_SET_ID                    = "GO-A-PWS-4-SUMM-GSA60S-V1.0"
+
+  OBJECT                         = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "
+      GO A PWS RESAMP SUMMARY GASPRA SPECTRUM ANALYZER 60S V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = N
+    DATA_OBJECT_TYPE               = "TIME_SERIES"
+    START_TIME                     = 1991-10-29T06:39:00.000
+    STOP_TIME                      = 1991-10-30T08:47:00.000
+    DATA_SET_RELEASE_DATE          = 1995-06-19
+    PRODUCER_FULL_NAME             = "DR. WILLIAM S. KURTH"
+    DETAILED_CATALOG_FLAG          = "N"
+    DATA_SET_TERSE_DESC            = " This data set includes 1-minute 
+    averages of the electric and magnetic wave spectra obtained during
+    the period that the Galileo plasma wave receiver was operated during
+    the flyby of Gaspra."
+    ABSTRACT_DESC                  = " This data set includes 1-minute
+    averages of the electric and magnetic wave spectra obtained during
+    the period that the Galileo plasma wave receiver was operated during
+    the electric field spectrum is the electric field spectral density in 
+    units of V^2/m^2/Hz. The magnetic field spectrum is provided in units
+    of magnetic field spectral density, nT^2/Hz.  The spectral information
+    is averaged and binned into 49 logarithmically-spaced channels from about
+    6 Hz to 5.6 MHz for the electric measurements and 34 channels from about
+    6 Hz to 75 kHz for the magnetic.  Note that these 'channels' do not
+    generally correspond to the 158 specific channels described in the 
+    instrument description document. The reduction in spectral resolution for
+    this data set was performed in order to make the set more conducive to use
+    as a browse data set.   The sources of this browse data set are the High
+    Frequency Receiver, Sweep Frequency Receiver, and Spectrum Analyzer which
+    make up the Low Rate Science portion of the PWS." 
+    CITATION_DESC                  = "Kurth, W.S., GO-A-PWS-4-SUMM-GSA60S-V1.0,
+                                     GO A PWS RESAMP SUMMARY GASPRA SPECTRUM 
+                                     ANALYZER 60S V1.0, NASA Planetary Data
+                                     System, 1995."
+    DATA_SET_DESC                  = "This data set includes 1-minute averages
+    of the electric and magnetic wave spectra obtained during the period that
+    the Galileo plasma wave receiver was operated during the flyby of Gaspra.
+    The parameter provided for the electric field spectrum is the electric 
+    field spectral density in units of V^2/m^2/Hz. The magnetic field spectrum
+    is provided in units of magnetic field spectral density, nT^2/Hz.  The 
+    spectral information is averaged and binned into 49 logarithmically-spaced
+    channels from about 6 Hz to 5.6 MHz for the electric measurements and 34 
+    channels from about 6 Hz to 75 kHz for the magnetic.  Note that these 
+    'channels' do not generally correspond to the 158 specific channels 
+    described in the instrument description document. The reduction in 
+    spectral resolution for this data set was performed in order to make the
+    set more conducive to use as a browse data set.   The sources of this 
+    browse data set are the High Frequency Receiver, Sweep Frequency 
+    Receiver, and Spectrum Analyzer which make up the Low Rate
+    Science portion of the PWS." 
+
+    CONFIDENCE_LEVEL_NOTE          = "
+    This data set includes all available Low Rate Science spectrum analyzer
+    data within the interval of time covered. The data included in this set
+    have been checked for accuracy by including only those words from the
+    telemetry stream which did not have parity errors based on parity bits
+    included with the data as part of the PWS data processing unit functions.
+    The magnetic spectra contain narrowband interference lines at 2.4 kHz and
+    harmonics.  Missing data are indicated by zero."
+
+  END_OBJECT                     = DATA_SET_INFORMATION
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                       = DATA_SET_MISSION
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = GASPRA
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = GO
+    INSTRUMENT_ID                  = PWS
+  END_OBJECT                     = DATA_SET_HOST
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "N/A"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                     = DATA_SET
+END

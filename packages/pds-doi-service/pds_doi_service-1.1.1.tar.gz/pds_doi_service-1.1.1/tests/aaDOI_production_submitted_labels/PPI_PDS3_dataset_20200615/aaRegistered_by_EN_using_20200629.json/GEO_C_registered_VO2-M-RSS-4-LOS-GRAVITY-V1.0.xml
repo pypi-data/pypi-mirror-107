@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VO2 MARS RADIO SCIENCE SUBSYSTEM RESAMPLED LOS GRAVITY V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VO2-M-RSS-4-LOS-GRAVITY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1990-06-15</publication_date>
+            <country>USA</country>
+            <description>Line of sight (LOS) gravity data were obtained as part of the
+                Radio Science Experiment by tracking 79 orbits of the Viking
+                Orbiter 2. The data set consists of a table with the following
+                columns: spacecraft latitude, longitude (degrees), accelerations,
+                and altitude (km). The acceleration data were determined from
+                differentiation of raw Doppler residuals and are expressed as
+                units of mm/s**2. To obtain LOS gravity in milligals,
+                accelerations need to be multiplied by 100. An acceleration of
+                1.20 mm/s**2, therefore, corresponds to 120 mgal, a large gravity
+            anomaly.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VO2-M-RSS-4-LOS-GRAVITY-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING ORBITER 2; MARS; RADIO SCIENCE; VO2; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>WILLIAM L. SJOGREN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vo2-m-rss-4-los-gravity-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

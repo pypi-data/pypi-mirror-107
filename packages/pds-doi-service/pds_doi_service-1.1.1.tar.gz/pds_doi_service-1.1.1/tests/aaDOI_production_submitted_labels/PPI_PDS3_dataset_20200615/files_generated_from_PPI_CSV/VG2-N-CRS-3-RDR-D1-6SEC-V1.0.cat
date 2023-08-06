@@ -1,0 +1,230 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+920805 -- SJOY from JPLPDS::RMONARREZ 920527                                  
+          received by mail revised capitalization (UP-&#10095;LC);                   
+920828 -- EFRIED Included full reference description for J. Geo Res.          
+          references Need full ref. for Science;                              
+920911 -- EFRIED changed DATA_SET_ID;                                         
+920918 -- RMONARREZ updated Data Set templates according to new std.          
+          Data Set Template -&#10095; Spacecraft Data Set Template                   
+          event_start_time, event_stop_time -&#10095; start_time, stop_time;         
+920920 -- EFRIED Changed DATA_SET_ID and DATA_SET_NAME;                       
+920921 -- EFRIED Included full reference for Science last changes made;       
+110628 -- DKAZDEN removed unnecessary keyword;                                
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated DATA_SET_RELEASE_DATE and CITATION_DESC;"           
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-CRS-3-RDR-D1-6SEC-V1.0"           
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP CRS CALIB RDR D1 RATE HI RESOLUTION ELEC 6SEC V1.0"             
+                                                                              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-25T05:08:50                      
+    STOP_TIME                      = 1989-08-25T05:21:02                      
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 2002-01-31                               
+    PRODUCER_FULL_NAME             = "DR. RICHARD S. SELESNICK"               
+    DETAILED_CATALOG_FLAG          = "Y"                                      
+                                                                              
+    CITATION_DESC           = "Selesnick, R.S., VG2-N-CRS-3-RDR-D1-6SEC-V1.0, 
+                            VG2 NEP CRS CALIB RDR D1 RATE HI RESOLUTION       
+                            ELEC 6SEC V1.0, NASA Planetary Data System, 2002."
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+    Voyager 2 6 second high time resolution counting rate description         
+    data from the D1 detector in the Cosmic Ray System (CRS) electron         
+    telescope (TET) on Voyager 2 during the Neptune encounter from            
+    1989-08-25 to 1989-08-25."                                                
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+    This data set describes the data of the high time resolution              
+    counting rate from the D1 detector in the Cosmic Ray System (CRS)         
+    electron telescope (TET) on Voyager 2 during the Neptune encounter.       
+    The D1 detector nominally responds to electrons with kinetic              
+    energies above approximately 1 MeV (see detector description for          
+    details).                                                                 
+                                     "                                        
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+    This data set describes the data of the high time resolution counting     
+    rate from the D1 detector in the Cosmic Ray System (CRS) electron         
+    telescope (TET) on Voyager 2 during the Neptune encounter.                
+    The D1 detector nominally responds to electrons with kinetic energies     
+    above approximately 1 MeV (see detector description for details).         
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+      Sampling parameter name             : time                              
+      Sampling parameter resolution       : 6.0 seconds                       
+      Minimum sampling parameter          : n/a                               
+      Maximum sampling parameter          : n/a                               
+      Sampling parameter interval         : 6.0 seconds                       
+      Minimum available sampling interval : 6.0 seconds                       
+      Data set parameter name             : D1 rate                           
+      Noise level                         : 0.000 counts/second               
+      Data set parameter unit             : counts/second                     
+                                                                              
+      The D1 rate is the counting rate from the D1 detector                   
+      of the Cosmic Ray System (CRS) electron telescope (TET).                
+      When the rate is above background it is approximately                   
+      proportional to the omnidirectional flux of electrons                   
+      with kinetic energy greater than ~1 MeV.                                
+      To obtain an accurate flux the D1 calibration tables                    
+      should be used (see below).  When the rate is near                      
+      background, the background rate should be subtracted.                   
+      The background rate is due to gamma rays generated in                   
+      the spacecraft RTG and to penetrating cosmic rays.  It                  
+      varies slightly with time on the time scale of months,                  
+      but is generally near 25 counts per second.  When the                   
+      rate is near saturation, corrections for discriminator                  
+      deadtime should be made.  The discriminator deadtime is                 
+      approximately 20 micro-seconds (it varies slightly with                 
+      the electron energy spectrum), so that the saturation                   
+      level is approximately 50,000 counts per second.                        
+      When the correction is near a factor of two or less                     
+      a reliable corrected rate can be obtained from the formula              
+      {corrected rate} = {uncorrected rate}/(1+deadtime*{uncorrected rate})   
+      When the deadtime correction is substantially larger than               
+      a factor of two, reliable corrections are not available.                
+      In this case, electron pileup and baseline shift may also               
+      be important, which may increase or decrease the expected               
+      rate.  The data points are 6 second averages taken                      
+      once every 96 seconds.                                                  
+                                                                              
+      Table 1 below provides the D1 response function R(E,theta)              
+      which is a function of electron energy E in MeV (column at left)        
+      and angle theta in degrees from the TET axis (row at top).              
+      Each table entry is R in cm**2 for the corresponding E and theta.       
+      The D1 electron rate is related to the differential intensity           
+      j(E,alpha) in (cm**2 s sr MeV)**-1, where alpha is the electron         
+      pitch-angle, by integrating the product R*j over E and solid angle.     
+      Note that the angle between the TET axis and the local magnetic         
+      field direction is also required.  The D1 RATE is then obtained         
+      by adding the background rate and applying the inverse of the           
+      deadtime correction described above.  At energies above the             
+      maximum provided R can be approximated by the value at the              
+      highest provided energy.  At angles above the maximum provided R        
+      can be approximated by zero.                                            
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. D1 response function                                             
+    -------------------------------------------------------------------       
+            |  11.    15.    23.    32.    41.    51.    61.                  
+    -------------------------------------------------------------------       
+            |                                                                 
+      0.618 | 0.014  0.005  0.007  0.007  0.006  0.003  0.001                 
+      0.801 | 0.151  0.134  0.103  0.087  0.038  0.016  0.008                 
+      0.989 | 1.384  1.440  1.219  0.998  0.610  0.311  0.143                 
+      1.179 | 2.233  2.402  2.095  1.796  1.255  0.689  0.380                 
+      1.372 | 2.829  2.938  2.593  2.241  1.636  0.956  0.583                 
+      1.567 | 3.212  3.283  2.936  2.536  1.940  1.167  0.724                 
+      1.763 | 3.495  3.534  3.206  2.772  2.161  1.356  0.860                 
+      1.959 | 3.708  3.705  3.404  2.964  2.357  1.495  0.969                 
+      2.157 | 3.620  3.790  3.452  3.053  2.427  1.602  1.049                 
+      2.355 | 3.995  3.948  3.576  3.231  2.617  1.758  1.155                 
+      2.553 | 4.096  4.091  3.735  3.395  2.735  1.875  1.263                 
+      2.752 | 4.154  4.098  3.808  3.426  2.792  1.927  1.298                 
+      2.951 | 4.043  4.054  3.727  3.371  2.819  1.951  1.339                 
+      3.150 | 3.946  4.029  3.700  3.335  2.648  1.956  1.358                 
+      3.350 | 3.876  4.194  3.611  3.573  2.863  1.927  1.290                 
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. D1 response function (continued)                                 
+    -------------------------------------------------------------------       
+            |  70.    80.    90.   100.                                       
+    -------------------------------------------------------------------       
+      0.618 | 0.002  0.001  0.000  0.000                                      
+      0.801 | 0.010  0.007  0.004  0.001                                      
+      0.989 | 0.163  0.095  0.047  0.018                                      
+      1.179 | 0.386  0.217  0.113  0.056                                      
+      1.372 | 0.526  0.301  0.163  0.087                                      
+      1.567 | 0.617  0.366  0.201  0.117                                      
+      1.763 | 0.679  0.413  0.241  0.146                                      
+      1.959 | 0.730  0.461  0.270  0.179                                      
+      2.157 | 0.760  0.484  0.296  0.207                                      
+      2.355 | 0.809  0.518  0.329  0.242                                      
+      2.553 | 0.836  0.551  0.363  0.292                                      
+      2.752 | 0.856  0.564  0.392  0.319                                      
+      2.951 | 0.845  0.548  0.401  0.348                                      
+      3.150 | 0.837  0.559  0.400  0.374                                      
+      3.350 | 0.792  0.486  0.440  0.375                                      
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+    The ENCYCLOPEDIA GENERATOR program was run by Nand Lal at Goddard         
+    Space Flight Center to read the EDR tape, check for error                 
+    conditions, and reformat the data to generate a CRS encyclopedia          
+    tape. The resulting tape was sent to CalTech for subsequent data          
+    analysis.                                                                 
+                                                                              
+    The VCRUSH program was run at CalTech to select data of interest          
+    from CRS encyclopedia tapes. In the case of counting rate data,           
+    no further analysis was done to produce the data in the PDS               
+    data sets.                                                                
+                                                                              
+    Note: Neither the ENCYCLOPEDIA GENERATOR or VCRUSH software are           
+    available for public use."                                                
+                                                                              
+  CONFIDENCE_LEVEL_NOTE            = "                                        
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+    Each data point represents a six-second accumulation,                     
+    so that the statistical uncertainty is obtained according                 
+    to Poisson statistics by taking the square root of one sixth              
+    of the counting rate. However, larger uncertainties are                   
+    associated with the conversion from counting rate to flux.                
+                                                                              
+                                                                              
+  Data Coverage and Quality                                                   
+  =========================                                                   
+    The following table contains hourly summaries of the percentage of        
+    the data available, data quality, and contamination codes. A data         
+    quality id of -1 indicates that no attempt has been made to specify       
+    a data quality for this time range. A contamination code of -1            
+    signifies that no evaluation of possible contamination has been           
+    made.                                                                     
+                                                                              
+    -------------------------------------------------------------------       
+    Table 2. Hourly Data Coverage and Quality Summaries                       
+    -------------------------------------------------------------------       
+    Start Time            Mode  Percent  Quality  Contam  NumGood             
+    -------------------------------------------------------------------       
+    1989-Aug-25 05:21:02  D1     19.833    -1       -1     357 "              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = CRS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "STONEETAL1989"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SELESNICK&STONE1991A"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SELESNICK&STONE1991B"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  END_OBJECT                       = DATA_SET                                 
+END

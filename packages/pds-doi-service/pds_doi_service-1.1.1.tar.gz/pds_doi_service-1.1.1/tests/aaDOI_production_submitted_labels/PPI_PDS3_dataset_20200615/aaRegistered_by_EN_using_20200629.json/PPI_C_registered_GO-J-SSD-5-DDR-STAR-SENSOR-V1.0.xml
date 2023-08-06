@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GO JUP SSD DERIVED ELECTRON FLUX V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GO-J-SSD-5-DDR-STAR-SENSOR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2000-10-01</publication_date>
+            <country>USA</country>
+            <description>The Galileo star scanner is providing data on the instantaneous
+                flux of 1.5 to 30 MeV electrons in the Jovian environment. It is
+                able to measure fluxes of ~1 x 105 electrons cm-2 sec-1 or
+                greater which generally means the data are usable inside of about
+                12 and rarely as far out as 16.5 Jovian Radii (RJ). Typically,
+                the data points are spaced about 400 or 80 seconds apart with
+                infrequent periods of more rapid data depending upon the
+                operational mode. It should be noted that data are generally
+                accurate in time to only within 20 seconds without special
+                processing. Pitch angle information generally cannot be extracted
+                from this data set. Separate files exist for the Jovian insertion
+                event (J0) and all subsequent perijove passes except J5 which
+            occurred during a period of solar conjunction.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GO-J-SSD-5-DDR-STAR-SENSOR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO ORBITER; JUPITER; IO PLASMA TORUS; IO; IMAGER; GO; PLANET; PLASMA CLOUD; SATELLITE; SSD; GALILEO ORBITER STAR SCANNER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>MR. PAUL FIESELER</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.go-j-ssd-5-ddr-star-sensor-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

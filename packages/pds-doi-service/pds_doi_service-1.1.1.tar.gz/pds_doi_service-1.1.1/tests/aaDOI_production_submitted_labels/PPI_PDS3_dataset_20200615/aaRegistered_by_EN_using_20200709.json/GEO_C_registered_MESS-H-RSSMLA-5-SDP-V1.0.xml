@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER MERCURY RSS/MLA LEVEL 5 DERIVED DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-H-RSS/MLA-5-SDP-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2016-05-06</publication_date>
+            <country>USA</country>
+            <description>This data set contains archival results from radio science
+                investigations conducted during the MESSENGER mission. Radio
+                measurements were made using the MESSENGER spacecraft and
+                Earth-based stations of the NASA Deep Space Network (DSN). The
+                data set includes three products: 1) high-resolution spherical
+                harmonic models of Mercury's gravity field. These results
+                were derived from raw radio tracking data; 2) measurements of
+                Mercury's radius at several locations around the planet.
+                These radii are derived from radio occultations; and 3) spherical
+                harmonic models of Mercury's surface shape. Both Mercury
+                Laser Altimeter (MLA) data and occultation data were used to
+                generate the shape models. The investigations were conducted by
+            personnel at JHU/APL, GSFC, and JPL.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-H-RSS%2FMLA-5-SDP-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; MERCURY; RADIO SCIENCE; MESS; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>MARK E. PERRY</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-h-rss-mla-5-sdp-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

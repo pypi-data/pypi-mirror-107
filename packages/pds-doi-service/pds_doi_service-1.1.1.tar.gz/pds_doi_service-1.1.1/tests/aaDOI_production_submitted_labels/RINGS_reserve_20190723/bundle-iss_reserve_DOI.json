@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:cassini_iss_saturn",
+        "title": "Cassini ISS Observations of the Saturn System",
+        "authors": [
+            {
+                "first_name": "Carolyn",
+                "last_name": "Porco"
+            }
+        ],
+        "publication_date": "2019-09-15",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO PROBE DOPPLER WIND EXPERIMENT DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GP-J-DWE-3-ENTRY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1996-12-08</publication_date>
+            <country>USA</country>
+            <description>A total of seven data sets are used to derive the wind profile.
+                These include two trajectory data files (probe and orbiter),
+                three frequency data files including the 'quicklook'
+                data set comprising 1/2 resolution frequency data from the
+                orbiter CDS, and two data files containing the full tape recorder
+                (SDR) data. Additionally, the probe descent trajectory data are
+                supplemented with probe descent velocity/altitude/pressure/time
+                data from the Atmospheric Structure Instrument. Finally, the
+                Jovian atmospheric structure, based on measurements by the
+            Atmospheric Structure Instrument, is included.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GP-J-DWE-3-ENTRY-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO PROBE; JUPITER; RADIO SCIENCE; GP; PLANET; DWE; DOPPLER WIND EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DAVID ATKINSON</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.gp-j-dwe-3-entry-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,1313 @@
+PDS_VERSION_ID                    = PDS3                                       
+LABEL_REVISION_NOTE              = "                                          
+92-08  -- EFRIED;                                                             
+920911 -- EFRIED;                                                             
+920918 -- EFRIED, updated Data Set templates according to new std.            
+Data Set Template -&#10095; Spacecraft Data Set Template                             
+event_start_time, event_stop_time -&#10095; start_time, stop_time, last changes made;
+920922 -- EFRIED, Revised DATA_SET_ID and DATA_SET_NAME;                      
+921022 -- RMONARREZ, Removed 'Z' from the start and stop_time;                
+110607 -- DKAZDEN, removed unnecessary keywords;                              
+111122 -- DKAZDEN, updated REFERENCE_KEY_ID;                                  
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated CITATION_DESC;"                                     
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-PRA-4-SUMM-BROWSE-48SEC-V1.0"     
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP PRA RESAMPLED SUMMARY BROWSE 48SEC V1.0"                        
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-18T00:00:00                      
+    STOP_TIME                      = 1989-09-06T23:59:59                      
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 1991-07-22                               
+    PRODUCER_FULL_NAME             = "DR. DAVID R. EVANS"                     
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    CITATION_DESC          = "Evans, D.R., VG2-N-PRA-4-SUMM-BROWSE-48SEC-V1.0,
+                              VG2 NEP PRA RESAMPLED SUMMARY BROWSE 48SEC V1.0,
+                                 NASA Planetary Data System, 1991."           
+    DATA_SET_TERSE_DESC            = "                                        
+      Voyager 2 48 second Planetary Radio Astronomy (PRA) data                
+      from the Voyager 2 Neptune West Longitude System during                 
+      the Neptune encounter from 1989-08-18 to 1989-09-06."                   
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This dataset consists of edited browse data derived from an             
+      original dataset obtained from the Voyager 2 Planetary Radio            
+      Astronomy (PRA) instrument in the                                       
+      vicinity of Neptune. Data are provided for 70 instrument                
+      channels covering the range from 1.2 kHz to 1326 kHz in                 
+      uniform 19.2 kHz steps, each 1 kHz wide. Data are included              
+      for the period 1989:0:0:0 through 1989:23:59:59."                       
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+    This dataset consists of edited browse data derived from an               
+    original dataset obtained from the Voyager 2 Planetary Radio              
+    Astronomy (PRA) instrument in the                                         
+    vicinity of Neptune. Data are provided for 70 instrument                  
+    channels covering the range from 1.2 kHz to 1326 kHz in                   
+    uniform 19.2 kHz steps, each 1 kHz wide. Data are included                
+    for the period 1989:0:0:0 through 1989:23:59:59.                          
+                                                                              
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Sampling Parameter Name             : time                                
+    Sampling Parameter Resolution       : 0.001 seconds                       
+    Minimum Sampling Parameter          : N/A                                 
+    Maximum Sampling Parameter          : N/A                                 
+    Sampling Parameter Interval         : 48.0 seconds                        
+    Minimum Available Sampling Interval : 12.0 seconds                        
+    Data Set Parameter Name             : radio wave spectrum                 
+    Noise Level                         : 2400 mB                             
+    Data Set Parameter Unit             : millibel                            
+                                                                              
+    Radio wave spectrum: A set of derived parameters consisting of power      
+    fluxes at various contiguous frequencies over a range of                  
+    frequencies. The MKS units are: (hertz.meter**2).                         
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+   In order to produce this dataset from the original raw PRA data,           
+   several steps have been taken:                                             
+                                                                              
+    1. The PRA operates in a variety of modes; data from modes                
+       in which the receiver does not scan rapidly through its                
+       frequency range have been removed;                                     
+    2. The data have been calibrated as best we know how;                     
+    3. The data have been split into Left Hand Circular (LHC)                 
+       and Right Hand Circular (RHC) components;                              
+    4. The data have been binned into 48-second intervals.                    
+                                                                              
+    Thus, values at a given channel are separated in time by an               
+    increment of 48 seconds; each 48-second time interval has                 
+    associated with it a value for LHC polarization and one for               
+    RHC polarization.                                                         
+                                                                              
+    During data gaps, the entire record is absent from the                    
+    dataset; that is, missing records have not been zero-filled               
+    or otherwise marked. Bad data within a record is indicated                
+    by the value zero, which cannot otherwise occur.                          
+                                                                              
+    Each datum is returned as a 16-bit quantity; it represents                
+    the mean power received in the given channel at the                       
+    specified time and polarization. The returned quantity is                 
+    the value in mB about a reference flux density. The value of              
+    0 mB represents a voltage of 1 microvolt across the front                 
+    end of the receiver.  To convert a returned quantity to flux,             
+    use the formula:                                                          
+                                                                              
+            flux   = 7.0x10^(-22)x10^(mB/1000) W m-2 Hz-1 "                   
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+    This dataset includes all the available low-rate scanning                 
+    mode data for the frequency range below 1326 kHz for the                  
+    time interval covered. Known bad data have been set to zero.              
+    Data which appear to exceed the Full Scale Deflection (FSD)               
+    of the instrument (i.e. the most intense signal which can be              
+    measured reliably) have also been set to a zero (should they              
+    occur). Planetary Radio Astronomy (PRA) suffers                           
+    from interference from many other instruments aboard the                  
+    spacecraft. No attempt had been made to remove these                      
+    interferences in this dataset. The two most obvious examples              
+    of this interference are low-frequency spikes which occur                 
+    every twelve minutes throughout the dataset (due to LECP                  
+    operation), and a strong, wandering interference (from PPS)               
+    that occurs in the range 200 to 600 kHz at various times                  
+    throughout the encounter. An example of the latter is to be               
+    found at 1986-01-24 09:00:00 SCET.                                        
+                                                                              
+                                                                              
+  Data Quality and Coverage                                                   
+  =========================                                                   
+    Table 1 contains hourly summaries of the percentage of the data           
+    available, data quality, and contamination codes. Tables 2 and 3          
+    contain descriptions of the data quality and data contamination           
+    ID's respectively.                                                        
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. Hourly Data Coverage and Quality Summaries                       
+    -------------------------------------------------------------------       
+    Start Time           Mode            Percent  Qual  Contam  NumGood       
+    -------------------------------------------------------------------       
+    1989-08-18T01:00:00  POLLO1          101.333   -1     -1     10868        
+    1989-08-18T02:00:00  POLLO1           97.333   -1     -1     10439        
+    1989-08-18T03:00:00  POLLO1          101.333   -1     -1     10868        
+    1989-08-18T04:00:00  POLLO1          102.667   -1     -1     11011        
+    1989-08-18T05:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T06:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T07:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T08:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T09:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T10:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T11:00:00  POLLO1           98.667   -1     -1     10582        
+    1989-08-18T12:00:00  POLLO1          101.333   -1     -1     10868        
+    1989-08-18T13:00:00  POLLO1          101.333   -1     -1     10868        
+    1989-08-18T14:00:00  POLLO1          102.667   -1     -1     11011        
+    1989-08-18T15:00:00  POLLO1          100.000   -1     -1     10725        
+    1989-08-18T16:00:00  POLLO1           94.667   -1     -1     10153        
+    1989-08-18T17:00:00  POLLO1           92.000   -1     -1      9867        
+    1989-08-18T18:00:00  POLLO1           94.667   -1     -1     10153        
+    1989-08-18T19:00:00  POLLO1           92.000   -1     -1      9867        
+    1989-08-18T20:00:00  POLLO1           94.667   -1     -1     10153        
+    1989-08-18T21:00:00  POLLO1           92.000   -1     -1      9867        
+    1989-08-18T22:00:00  POLLO1           96.000   -1     -1     10296        
+    1989-08-18T23:00:00  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T00:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-19T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T03:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T04:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-19T05:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-19T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T07:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T10:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T11:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-19T12:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-19T13:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T14:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-19T15:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-19T16:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-19T17:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T18:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T19:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-19T20:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-19T21:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-19T22:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-19T23:00:47  POLLO1          128.000   -1     -1     13728        
+    1989-08-20T00:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-20T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T03:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-20T04:00:47  POLLO1          101.333   -1     -1     10868        
+    1989-08-20T05:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T07:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-20T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-20T10:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T11:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-20T12:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-20T13:00:47  POLLO1           72.000   -1     -1      7722        
+    1989-08-20T14:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-20T15:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-20T16:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T17:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-20T18:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-20T19:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-20T20:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T21:00:47  POLLO1           86.667   -1     -1      9295        
+    1989-08-20T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-20T23:00:03  POLLO1          105.333   -1     -1     11297        
+    1989-08-21T00:00:47  POLLO1          142.667   -1     -1     15301        
+    1989-08-21T01:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T02:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-21T03:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-21T04:00:02  POLLO1           97.333   -1     -1     10439        
+    1989-08-21T05:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-21T06:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-21T07:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-21T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-21T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-21T10:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T11:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-21T12:00:47  POLLO1          108.000   -1     -1     11583        
+    1989-08-21T13:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T14:00:47  POLLO1          121.333   -1     -1     13013        
+    1989-08-21T15:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-21T16:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-21T17:00:47  POLLO1           86.667   -1     -1      9295        
+    1989-08-21T18:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T19:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T20:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-21T21:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-21T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-21T23:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-22T00:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-22T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T03:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T04:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-22T05:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T07:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-22T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-22T10:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-22T11:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T12:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T13:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T14:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-22T15:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T16:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-22T17:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T18:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-22T19:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-22T20:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T21:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-22T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-22T23:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T00:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T02:00:47  POLLO1           98.667   -1     -1     10582        
+    1989-08-23T03:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-23T04:00:47  POLLO1          100.000   -1     -1     10725        
+    1989-08-23T05:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T07:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T10:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T11:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-23T12:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T13:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T14:00:47  POLLO1          102.667   -1     -1     11011        
+    1989-08-23T15:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T16:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-23T17:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-23T18:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-23T19:00:47  POLLO1           86.667   -1     -1      9295        
+    1989-08-23T20:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-23T21:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-23T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-23T23:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-24T00:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-24T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-24T02:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-24T03:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-24T04:00:47  POLLO1           98.667   -1     -1     10582        
+    1989-08-24T05:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-24T06:00:47  POLLO1          101.333   -1     -1     10868        
+    1989-08-24T07:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-24T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-24T09:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-24T10:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-24T11:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-24T12:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-24T13:00:47  POLLO1          101.333   -1     -1     10868        
+    1989-08-24T14:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-24T15:00:30  POLLO1           89.333   -1     -1      9581        
+    1989-08-24T16:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-24T17:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-24T18:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-24T19:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-24T20:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-24T21:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-24T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-24T23:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-25T00:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T01:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-25T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T03:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-25T04:00:47  POLLO1          101.333   -1     -1     10868        
+    1989-08-25T05:00:47  POLLO1           98.667   -1     -1     10582        
+    1989-08-25T06:00:47  POLLO1          114.667   -1     -1     12298        
+    1989-08-25T07:00:47  POLLO1          116.000   -1     -1     12441        
+    1989-08-25T08:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-25T09:00:14  POLLO1          128.000   -1     -1     13728        
+    1989-08-25T10:00:01  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T11:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-25T12:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T13:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-25T14:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T15:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-25T16:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-25T17:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-25T18:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-25T19:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-25T20:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-25T21:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-25T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-25T23:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-26T00:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-26T01:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-26T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T03:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T04:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-26T05:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T07:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T08:00:47  POLLO1           98.667   -1     -1     10582        
+    1989-08-26T09:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-26T10:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T11:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T12:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-26T13:00:47  POLLO1           98.667   -1     -1     10582        
+    1989-08-26T14:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T15:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-26T16:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T17:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T18:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T19:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-26T20:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-26T21:00:47  POLLO1           86.667   -1     -1      9295        
+    1989-08-26T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-26T23:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-27T00:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-27T01:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-27T02:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T03:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-27T04:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-27T05:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-27T06:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T07:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-27T08:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T09:00:47  POLLO1           92.000   -1     -1      9867        
+    1989-08-27T10:00:48  POLLO1           90.667   -1     -1      9724        
+    1989-08-27T11:00:47  POLLO1           90.667   -1     -1      9724        
+    1989-08-27T12:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-27T13:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T14:00:47  POLLO1           84.000   -1     -1      9009        
+    1989-08-27T15:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T16:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-27T17:00:47  POLLO1           93.333   -1     -1     10010        
+    1989-08-27T18:00:47  POLLO1           96.000   -1     -1     10296        
+    1989-08-27T19:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-27T20:00:47  POLLO1           97.333   -1     -1     10439        
+    1989-08-27T21:00:47  POLLO1           89.333   -1     -1      9581        
+    1989-08-27T22:00:47  POLLO1           94.667   -1     -1     10153        
+    1989-08-27T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T03:00:46  POLLO1           85.333   -1     -1      9152        
+    1989-08-28T04:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-28T05:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T06:00:46  POLLO1           86.667   -1     -1      9295        
+    1989-08-28T07:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-28T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T10:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T11:00:46  POLLO1          126.667   -1     -1     13585        
+    1989-08-28T12:00:00  POLLO1          212.000   -1     -1     22737        
+    1989-08-28T13:00:46  POLLO1          138.667   -1     -1     14872        
+    1989-08-28T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T17:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-28T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-28T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-28T20:00:46  POLLO1           97.333   -1     -1     10439        
+    1989-08-28T21:00:46  POLLO1           85.333   -1     -1      9152        
+    1989-08-28T22:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-28T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T04:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T05:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T06:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T07:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-29T08:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T10:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T12:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-29T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T15:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-29T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-29T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T19:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T20:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-29T21:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-08-29T22:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-29T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T04:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T05:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T06:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T08:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T10:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T12:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-30T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T15:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-08-30T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-30T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-30T20:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-30T21:01:46  POLLO1           85.333   -1     -1      9152        
+    1989-08-30T22:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-30T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T01:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T02:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-31T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T04:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-31T05:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T06:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T10:00:44  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T11:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T12:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-08-31T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T16:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-08-31T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T20:00:46  POLLO1           86.667   -1     -1      9295        
+    1989-08-31T21:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-08-31T22:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-08-31T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T04:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T05:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-01T06:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-01T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T10:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T12:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-01T13:00:46  POLLO1           89.333   -1     -1      9581        
+    1989-09-01T14:00:46  POLLO1           88.000   -1     -1      9438        
+    1989-09-01T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T19:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-01T20:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-01T21:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-01T22:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-01T23:00:46  POLLO1           89.333   -1     -1      9581        
+    1989-09-02T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T02:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-02T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T04:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T05:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T06:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-02T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T10:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-02T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T12:00:46  POLLO1           97.333   -1     -1     10439        
+    1989-09-02T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-02T14:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-02T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T20:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-02T21:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-02T22:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-02T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T01:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T02:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-03T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T04:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T05:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T06:00:46  POLLO1           88.000   -1     -1      9438        
+    1989-09-03T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T10:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-03T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T12:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-03T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-03T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-03T20:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-03T21:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-03T22:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-03T23:00:46  POLLO1           89.333   -1     -1      9581        
+    1989-09-04T00:00:13  POLLO1           93.333   -1     -1     10010        
+    1989-09-04T01:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-04T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T03:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T04:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-04T05:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-04T06:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T09:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T10:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-04T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T12:00:46  POLLO1           88.000   -1     -1      9438        
+    1989-09-04T13:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-04T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-04T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-04T19:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-04T20:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-04T21:00:46  POLLO1           82.667   -1     -1      8866        
+    1989-09-04T22:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-04T23:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T00:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T01:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-05T02:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T03:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-05T04:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T05:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-05T06:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T07:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T08:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T09:00:46  POLLO1           90.667   -1     -1      9724        
+    1989-09-05T10:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T11:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T12:00:46  POLLO1           96.000   -1     -1     10296        
+    1989-09-05T13:00:46  POLLO1           93.333   -1     -1     10010        
+    1989-09-05T14:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T15:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T16:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T17:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T18:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T19:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T20:00:46  POLLO1           56.000   -1     -1      6006        
+    1989-09-05T21:00:46  POLLO1           92.000   -1     -1      9867        
+    1989-09-05T22:00:46  POLLO1           94.667   -1     -1     10153        
+    1989-09-05T23:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T00:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T01:00:45  POLLO1           96.000   -1     -1     10296        
+    1989-09-06T02:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T03:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T04:00:45  POLLO1           97.333   -1     -1     10439        
+    1989-09-06T05:00:45  POLLO1           90.667   -1     -1      9724        
+    1989-09-06T06:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T07:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T08:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T09:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T10:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T11:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T12:02:07  POLLO1          100.000   -1     -1     10725        
+    1989-09-06T13:00:45  POLLO1           90.667   -1     -1      9724        
+    1989-09-06T14:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T15:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T16:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T17:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T18:00:45  POLLO1           96.000   -1     -1     10296        
+    1989-09-06T19:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T20:00:45  POLLO1           97.333   -1     -1     10439        
+    1989-09-06T21:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T22:00:45  POLLO1           94.667   -1     -1     10153        
+    1989-09-06T23:00:45  POLLO1           92.000   -1     -1      9867        
+    1989-09-06T23:59:57  POLLO1           97.333   -1     -1     10439        
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 2. Data Quality ID Descriptions                                     
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no attempt has been made to specify a data quality for this          
+         time range                                                           
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 3. Data Contamination ID Descriptions                               
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no evaluation of possible contamination has been made                
+                                                                              
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+The separation into LHC and RHC polarization components is                    
+performed on the basis of the polarization of the incoming                    
+wave as perceived by the instrument. This takes into account                  
+neither the antenna transfer function nor the spacecraft                      
+orientation with respect to the source. In general, the                       
+mapping of perceived polarization back to emitted                             
+polarization cannot be solved without a knowledge of both                     
+of these factors, as well as a knowledge of the type of                       
+polarization coming from the source region (e.g. is it                        
+linear or circularly polarized?).                                             
+                                                                              
+Most planetary emissions are circularly polarized. Below is                   
+a table showing the response of the experiment to a low                       
+frequency (100 kHz) LHC wave. The response does not change                    
+much up to about 5 MHz.                                                       
+                                                                              
+The coordinate system used is: THETA == 0 is along the MAG                    
+boom;PHI == 0 is the bisector of the two PRA antennas. The                    
+third column is the apparent value of the left hand                           
+component as perceived by the receiver. That is, a value of                   
++1.0 indicates that the incoming LHC wave is correctly                        
+detected as a pure LHC wave.  A value of -1.0 will be                         
+detected as being of the correct strength, but incorrect                      
+polarity. A value of, say, 0.6 indicates that the total                       
+energy is split 60% into the apparent LHC component and 40%                   
+into the apparent RHC component. The table below has been                     
+produced using a wire-frame model of the spacecraft                           
+comprising 168 separate elements, and derived using the                       
+method of moments procedure. IT IS ONLY A MODEL, not a                        
+measurement; but appears to be very accurate for the low                      
+band of the PRA instrument.                                                   
+                                                                              
+  THETA      PHI         AFP                                                  
+                                                                              
+     0         0      -0.99960                                                
+    10         0      -0.99727                                                
+    10        10      -0.99723                                                
+    10        20      -0.99715                                                
+    10        30      -0.99706                                                
+    10        40      -0.99696                                                
+    10        50      -0.99688                                                
+    10        60      -0.99681                                                
+    10        70      -0.99679                                                
+    10        80      -0.99683                                                
+    10        90      -0.99692                                                
+    10       100      -0.99708                                                
+    10       110      -0.99729                                                
+    10       120      -0.99754                                                
+    10       130      -0.99782                                                
+    10       140      -0.99809                                                
+    10       150      -0.99832                                                
+    10       160      -0.99851                                                
+    10       170      -0.99862                                                
+    10       180      -0.99866                                                
+    10       190      -0.99862                                                
+    10       200      -0.99850                                                
+    10       210      -0.99833                                                
+    10       220      -0.99812                                                
+    10       230      -0.99789                                                
+    10       240      -0.99767                                                
+    10       250      -0.99747                                                
+    10       260      -0.99730                                                
+    10       270      -0.99719                                                
+    10       280      -0.99711                                                
+    10       290      -0.99709                                                
+    10       300      -0.99710                                                
+    10       310      -0.99713                                                
+    10       320      -0.99718                                                
+    10       330      -0.99723                                                
+    10       340      -0.99727                                                
+    10       350      -0.99728                                                
+    20         0      -0.99613                                                
+    20        10      -0.99591                                                
+    20        20      -0.99537                                                
+    20        30      -0.99455                                                
+    20        40      -0.99350                                                
+    20        50      -0.99228                                                
+    20        60      -0.99099                                                
+    20        70      -0.98969                                                
+    20        80      -0.98849                                                
+    20        90      -0.98744                                                
+    20       100      -0.98661                                                
+    20       110      -0.98600                                                
+    20       120      -0.98562                                                
+    20       130      -0.98541                                                
+    20       140      -0.98534                                                
+    20       150      -0.98534                                                
+    20       160      -0.98535                                                
+    20       170      -0.98533                                                
+    20       180      -0.98528                                                
+    20       190      -0.98519                                                
+    20       200      -0.98512                                                
+    20       210      -0.98510                                                
+    20       220      -0.98520                                                
+    20       230      -0.98546                                                
+    20       240      -0.98590                                                
+    20       250      -0.98655                                                
+    20       260      -0.98738                                                
+    20       270      -0.98837                                                
+    20       280      -0.98949                                                
+    20       290      -0.99068                                                
+    20       300      -0.99189                                                
+    20       310      -0.99305                                                
+    20       320      -0.99410                                                
+    20       330      -0.99499                                                
+    20       340      -0.99565                                                
+    20       350      -0.99604                                                
+    30         0      -0.99745                                                
+    30        10      -0.99686                                                
+    30        20      -0.99529                                                
+    30        30      -0.99278                                                
+    30        40      -0.98942                                                
+    30        50      -0.98537                                                
+    30        60      -0.98080                                                
+    30        70      -0.97595                                                
+    30        80      -0.97102                                                
+    30        90      -0.96622                                                
+    30       100      -0.96171                                                
+    30       110      -0.95763                                                
+    30       120      -0.95404                                                
+    30       130      -0.95098                                                
+    30       140      -0.94842                                                
+    30       150      -0.94634                                                
+    30       160      -0.94475                                                
+    30       170      -0.94365                                                
+    30       180      -0.94309                                                
+    30       190      -0.94316                                                
+    30       200      -0.94395                                                
+    30       210      -0.94551                                                
+    30       220      -0.94785                                                
+    30       230      -0.95095                                                
+    30       240      -0.95471                                                
+    30       250      -0.95900                                                
+    30       260      -0.96367                                                
+    30       270      -0.96853                                                
+    30       280      -0.97344                                                
+    30       290      -0.97823                                                
+    30       300      -0.98277                                                
+    30       310      -0.98691                                                
+    30       320      -0.99052                                                
+    30       330      -0.99349                                                
+    30       340      -0.99570                                                
+    30       350      -0.99704                                                
+    40         0      -0.99973                                                
+    40        10      -0.99855                                                
+    40        20      -0.99515                                                
+    40        30      -0.98957                                                
+    40        40      -0.98198                                                
+    40        50      -0.97261                                                
+    40        60      -0.96178                                                
+    40        70      -0.94988                                                
+    40        80      -0.93730                                                
+    40        90      -0.92446                                                
+    40       100      -0.91170                                                
+    40       110      -0.89936                                                
+    40       120      -0.88770                                                
+    40       130      -0.87697                                                
+    40       140      -0.86741                                                
+    40       150      -0.85926                                                
+    40       160      -0.85286                                                
+    40       170      -0.84853                                                
+    40       180      -0.84663                                                
+    40       190      -0.84741                                                
+    40       200      -0.85100                                                
+    40       210      -0.85732                                                
+    40       220      -0.86608                                                
+    40       230      -0.87684                                                
+    40       240      -0.88906                                                
+    40       250      -0.90218                                                
+    40       260      -0.91567                                                
+    40       270      -0.92906                                                
+    40       280      -0.94198                                                
+    40       290      -0.95413                                                
+    40       300      -0.96525                                                
+    40       310      -0.97514                                                
+    40       320      -0.98362                                                
+    40       330      -0.99049                                                
+    40       340      -0.99557                                                
+    40       350      -0.99870                                                
+    50         0      -0.99822                                                
+    50        10      -0.99614                                                
+    50        20      -0.98981                                                
+    50        30      -0.97929                                                
+    50        40      -0.96479                                                
+    50        50      -0.94669                                                
+    50        60      -0.92548                                                
+    50        70      -0.90173                                                
+    50        80      -0.87609                                                
+    50        90      -0.84919                                                
+    50       100      -0.82165                                                
+    50       110      -0.79406                                                
+    50       120      -0.76705                                                
+    50       130      -0.74130                                                
+    50       140      -0.71760                                                
+    50       150      -0.69696                                                
+    50       160      -0.68052                                                
+    50       170      -0.66947                                                
+    50       180      -0.66488                                                
+    50       190      -0.66738                                                
+    50       200      -0.67706                                                
+    50       210      -0.69334                                                
+    50       220      -0.71512                                                
+    50       230      -0.74097                                                
+    50       240      -0.76936                                                
+    50       250      -0.79890                                                
+    50       260      -0.82839                                                
+    50       270      -0.85690                                                
+    50       280      -0.88375                                                
+    50       290      -0.90848                                                
+    50       300      -0.93074                                                
+    50       310      -0.95028                                                
+    50       320      -0.96683                                                
+    50       330      -0.98017                                                
+    50       340      -0.99002                                                
+    50       350      -0.99612                                                
+    60         0      -0.98327                                                
+    60        10      -0.97987                                                
+    60        20      -0.96916                                                
+    60        30      -0.95122                                                
+    60        40      -0.92640                                                
+    60        50      -0.89528                                                
+    60        60      -0.85861                                                
+    60        70      -0.81728                                                
+    60        80      -0.77225                                                
+    60        90      -0.72447                                                
+    60       100      -0.67489                                                
+    60       110      -0.62449                                                
+    60       120      -0.57437                                                
+    60       130      -0.52585                                                
+    60       140      -0.48065                                                
+    60       150      -0.44091                                                
+    60       160      -0.40915                                                
+    60       170      -0.38792                                                
+    60       180      -0.37938                                                
+    60       190      -0.38472                                                
+    60       200      -0.40386                                                
+    60       210      -0.43537                                                
+    60       220      -0.47683                                                
+    60       230      -0.52529                                                
+    60       240      -0.57777                                                
+    60       250      -0.63164                                                
+    60       260      -0.68479                                                
+    60       270      -0.73567                                                
+    60       280      -0.78320                                                
+    60       290      -0.82667                                                
+    60       300      -0.86562                                                
+    60       310      -0.89966                                                
+    60       320      -0.92846                                                
+    60       330      -0.95165                                                
+    60       340      -0.96880                                                
+    60       350      -0.97948                                                
+    70         0      -0.93784                                                
+    70        10      -0.93265                                                
+    70        20      -0.91587                                                
+    70        30      -0.88772                                                
+    70        40      -0.84885                                                
+    70        50      -0.80029                                                
+    70        60      -0.74333                                                
+    70        70      -0.67940                                                
+    70        80      -0.61001                                                
+    70        90      -0.53664                                                
+    70       100      -0.46074                                                
+    70       110      -0.38380                                                
+    70       120      -0.30751                                                
+    70       130      -0.23393                                                
+    70       140      -0.16570                                                
+    70       150      -0.10605                                                
+    70       160      -0.58708E-01                                            
+    70       170      -0.27369E-01                                            
+    70       180      -0.15059E-01                                            
+    70       190      -0.23404E-01                                            
+    70       200      -0.52162E-01                                            
+    70       210      -0.99231E-01                                            
+    70       220      -0.16109                                                
+    70       230      -0.23348                                                
+    70       240      -0.31212                                                
+    70       250      -0.39319                                                
+    70       260      -0.47360                                                
+    70       270      -0.55104                                                
+    70       280      -0.62388                                                
+    70       290      -0.69098                                                
+    70       300      -0.75152                                                
+    70       310      -0.80483                                                
+    70       320      -0.85026                                                
+    70       330      -0.88706                                                
+    70       340      -0.91444                                                
+    70       350      -0.93161                                                
+    80         0      -0.83577                                                
+    80        10      -0.82843                                                
+    80        20      -0.80429                                                
+    80        30      -0.76395                                                
+    80        40      -0.70874                                                
+    80        50      -0.64057                                                
+    80        60      -0.56170                                                
+    80        70      -0.47456                                                
+    80        80      -0.38152                                                
+    80        90      -0.28485                                                
+    80       100      -0.18662                                                
+    80       110      -0.88899E-01                                            
+    80       120       0.61719E-02                                            
+    80       130       0.96112E-01                                            
+    80       140       0.17796                                                
+    80       150       0.24824                                                
+    80       160       0.30315                                                
+    80       170       0.33897                                                
+    80       180       0.35274                                                
+    80       190       0.34287                                                
+    80       200       0.30954                                                
+    80       210       0.25477                                                
+    80       220       0.18202                                                
+    80       230       0.95629E-01                                            
+    80       240       0.14867E-03                                            
+    80       250      -0.10017                                                
+    80       260      -0.20167                                                
+    80       270      -0.30144                                                
+    80       280      -0.39722                                                
+    80       290      -0.48725                                                
+    80       300      -0.57007                                                
+    80       310      -0.64432                                                
+    80       320      -0.70863                                                
+    80       330      -0.76146                                                
+    80       340      -0.80125                                                
+    80       350      -0.82644                                                
+    90         0      -0.64612                                                
+    90        10      -0.63686                                                
+    90        20      -0.60599                                                
+    90        30      -0.55482                                                
+    90        40      -0.48577                                                
+    90        50      -0.40206                                                
+    90        60      -0.30732                                                
+    90        70      -0.20513                                                
+    90        80      -0.98827E-01                                            
+    90        90       0.86836E-02                                            
+    90       100       0.11490                                                
+    90       110       0.21763                                                
+    90       120       0.31479                                                
+    90       130       0.40422                                                
+    90       140       0.48353                                                
+    90       150       0.55008                                                
+    90       160       0.60105                                                
+    90       170       0.63378                                                
+    90       180       0.64612                                                
+    90       190       0.63686                                                
+    90       200       0.60599                                                
+    90       210       0.55482                                                
+    90       220       0.48577                                                
+    90       230       0.40206                                                
+    90       240       0.30732                                                
+    90       250       0.20513                                                
+    90       260       0.98827E-01                                            
+    90       270      -0.86834E-02                                            
+    90       280      -0.11490                                                
+    90       290      -0.21763                                                
+    90       300      -0.31479                                                
+    90       310      -0.40422                                                
+    90       320      -0.48353                                                
+    90       330      -0.55008                                                
+    90       340      -0.60105                                                
+    90       350      -0.63378                                                
+   100         0      -0.35274                                                
+   100        10      -0.34287                                                
+   100        20      -0.30954                                                
+   100        30      -0.25477                                                
+   100        40      -0.18202                                                
+   100        50      -0.95629E-01                                            
+   100        60      -0.14887E-03                                            
+   100        70       0.10017                                                
+   100        80       0.20167                                                
+   100        90       0.30144                                                
+   100       100       0.39722                                                
+   100       110       0.48725                                                
+   100       120       0.57007                                                
+   100       130       0.64433                                                
+   100       140       0.70863                                                
+   100       150       0.76146                                                
+   100       160       0.80125                                                
+   100       170       0.82644                                                
+   100       180       0.83577                                                
+   100       190       0.82843                                                
+   100       200       0.80429                                                
+   100       210       0.76395                                                
+   100       220       0.70874                                                
+   100       230       0.64057                                                
+   100       240       0.56170                                                
+   100       250       0.47456                                                
+   100       260       0.38152                                                
+   100       270       0.28485                                                
+   100       280       0.18662                                                
+   100       290       0.88899E-01                                            
+   100       300      -0.61720E-02                                            
+   100       310      -0.96112E-01                                            
+   100       320      -0.17796                                                
+   100       330      -0.24824                                                
+   100       340      -0.30315                                                
+   100       350      -0.33896                                                
+   110         0       0.15059E-01                                            
+   110        10       0.23404E-01                                            
+   110        20       0.52161E-01                                            
+   110        30       0.99231E-01                                            
+   110        40       0.16109                                                
+   110        50       0.23348                                                
+   110        60       0.31212                                                
+   110        70       0.39319                                                
+   110        80       0.47360                                                
+   110        90       0.55104                                                
+   110       100       0.62388                                                
+   110       110       0.69098                                                
+   110       120       0.75152                                                
+   110       130       0.80483                                                
+   110       140       0.85026                                                
+   110       150       0.88706                                                
+   110       160       0.91444                                                
+   110       170       0.93161                                                
+   110       180       0.93784                                                
+   110       190       0.93265                                                
+   110       200       0.91587                                                
+   110       210       0.88772                                                
+   110       220       0.84885                                                
+   110       230       0.80029                                                
+   110       240       0.74333                                                
+   110       250       0.67940                                                
+   110       260       0.61001                                                
+   110       270       0.53664                                                
+   110       280       0.46074                                                
+   110       290       0.38380                                                
+   110       300       0.30751                                                
+   110       310       0.23393                                                
+   110       320       0.16570                                                
+   110       330       0.10605                                                
+   110       340       0.58708E-01                                            
+   110       350       0.27369E-01                                            
+   120         0       0.37938                                                
+   120        10       0.38472                                                
+   120        20       0.40386                                                
+   120        30       0.43537                                                
+   120        40       0.47683                                                
+   120        50       0.52529                                                
+   120        60       0.57777                                                
+   120        70       0.63164                                                
+   120        80       0.68479                                                
+   120        90       0.73567                                                
+   120       100       0.78320                                                
+   120       110       0.82667                                                
+   120       120       0.86562                                                
+   120       130       0.89966                                                
+   120       140       0.92846                                                
+   120       150       0.95165                                                
+   120       160       0.96880                                                
+   120       170       0.97948                                                
+   120       180       0.98327                                                
+   120       190       0.97987                                                
+   120       200       0.96916                                                
+   120       210       0.95122                                                
+   120       220       0.92640                                                
+   120       230       0.89528                                                
+   120       240       0.85861                                                
+   120       250       0.81728                                                
+   120       260       0.77225                                                
+   120       270       0.72447                                                
+   120       280       0.67489                                                
+   120       290       0.62449                                                
+   120       300       0.57437                                                
+   120       310       0.52585                                                
+   120       320       0.48065                                                
+   120       330       0.44091                                                
+   120       340       0.40915                                                
+   120       350       0.38792                                                
+   130         0       0.66488                                                
+   130        10       0.66738                                                
+   130        20       0.67706                                                
+   130        30       0.69334                                                
+   130        40       0.71512                                                
+   130        50       0.74096                                                
+   130        60       0.76936                                                
+   130        70       0.79890                                                
+   130        80       0.82839                                                
+   130        90       0.85690                                                
+   130       100       0.88375                                                
+   130       110       0.90848                                                
+   130       120       0.93074                                                
+   130       130       0.95028                                                
+   130       140       0.96683                                                
+   130       150       0.98017                                                
+   130       160       0.99002                                                
+   130       170       0.99612                                                
+   130       180       0.99822                                                
+   130       190       0.99614                                                
+   130       200       0.98981                                                
+   130       210       0.97929                                                
+   130       220       0.96479                                                
+   130       230       0.94669                                                
+   130       240       0.92548                                                
+   130       250       0.90173                                                
+   130       260       0.87609                                                
+   130       270       0.84919                                                
+   130       280       0.82165                                                
+   130       290       0.79406                                                
+   130       300       0.76705                                                
+   130       310       0.74130                                                
+   130       320       0.71760                                                
+   130       330       0.69696                                                
+   130       340       0.68052                                                
+   130       350       0.66947                                                
+   140         0       0.84663                                                
+   140        10       0.84741                                                
+   140        20       0.85100                                                
+   140        30       0.85732                                                
+   140        40       0.86608                                                
+   140        50       0.87684                                                
+   140        60       0.88906                                                
+   140        70       0.90218                                                
+   140        80       0.91567                                                
+   140        90       0.92906                                                
+   140       100       0.94198                                                
+   140       110       0.95413                                                
+   140       120       0.96525                                                
+   140       130       0.97514                                                
+   140       140       0.98362                                                
+   140       150       0.99049                                                
+   140       160       0.99557                                                
+   140       170       0.99870                                                
+   140       180       0.99973                                                
+   140       190       0.99855                                                
+   140       200       0.99515                                                
+   140       210       0.98957                                                
+   140       220       0.98198                                                
+   140       230       0.97261                                                
+   140       240       0.96178                                                
+   140       250       0.94988                                                
+   140       260       0.93730                                                
+   140       270       0.92446                                                
+   140       280       0.91170                                                
+   140       290       0.89936                                                
+   140       300       0.88770                                                
+   140       310       0.87697                                                
+   140       320       0.86741                                                
+   140       330       0.85926                                                
+   140       340       0.85286                                                
+   140       350       0.84853                                                
+   150         0       0.94309                                                
+   150        10       0.94316                                                
+   150        20       0.94395                                                
+   150        30       0.94551                                                
+   150        40       0.94785                                                
+   150        50       0.95095                                                
+   150        60       0.95471                                                
+   150        70       0.95900                                                
+   150        80       0.96367                                                
+   150        90       0.96853                                                
+   150       100       0.97344                                                
+   150       110       0.97823                                                
+   150       120       0.98277                                                
+   150       130       0.98691                                                
+   150       140       0.99052                                                
+   150       150       0.99349                                                
+   150       160       0.99570                                                
+   150       170       0.99704                                                
+   150       180       0.99745                                                
+   150       190       0.99686                                                
+   150       200       0.99529                                                
+   150       210       0.99278                                                
+   150       220       0.98942                                                
+   150       230       0.98537                                                
+   150       240       0.98080                                                
+   150       250       0.97595                                                
+   150       260       0.97102                                                
+   150       270       0.96622                                                
+   150       280       0.96171                                                
+   150       290       0.95763                                                
+   150       300       0.95404                                                
+   150       310       0.95098                                                
+   150       320       0.94842                                                
+   150       330       0.94634                                                
+   150       340       0.94475                                                
+   150       350       0.94365                                                
+   160         0       0.98528                                                
+   160        10       0.98519                                                
+   160        20       0.98512                                                
+   160        30       0.98510                                                
+   160        40       0.98520                                                
+   160        50       0.98546                                                
+   160        60       0.98590                                                
+   160        70       0.98655                                                
+   160        80       0.98738                                                
+   160        90       0.98837                                                
+   160       100       0.98949                                                
+   160       110       0.99068                                                
+   160       120       0.99189                                                
+   160       130       0.99305                                                
+   160       140       0.99410                                                
+   160       150       0.99499                                                
+   160       160       0.99565                                                
+   160       170       0.99604                                                
+   160       180       0.99613                                                
+   160       190       0.99591                                                
+   160       200       0.99537                                                
+   160       210       0.99455                                                
+   160       220       0.99350                                                
+   160       230       0.99228                                                
+   160       240       0.99099                                                
+   160       250       0.98969                                                
+   160       260       0.98849                                                
+   160       270       0.98744                                                
+   160       280       0.98661                                                
+   160       290       0.98600                                                
+   160       300       0.98562                                                
+   160       310       0.98541                                                
+   160       320       0.98534                                                
+   160       330       0.98534                                                
+   160       340       0.98535                                                
+   160       350       0.98533                                                
+   170         0       0.99866                                                
+   170        10       0.99862                                                
+   170        20       0.99850                                                
+   170        30       0.99833                                                
+   170        40       0.99812                                                
+   170        50       0.99789                                                
+   170        60       0.99767                                                
+   170        70       0.99747                                                
+   170        80       0.99730                                                
+   170        90       0.99719                                                
+   170       100       0.99711                                                
+   170       110       0.99709                                                
+   170       120       0.99710                                                
+   170       130       0.99713                                                
+   170       140       0.99718                                                
+   170       150       0.99723                                                
+   170       160       0.99727                                                
+   170       170       0.99728                                                
+   170       180       0.99727                                                
+   170       190       0.99723                                                
+   170       200       0.99715                                                
+   170       210       0.99706                                                
+   170       220       0.99696                                                
+   170       230       0.99688                                                
+   170       240       0.99681                                                
+   170       250       0.99679                                                
+   170       260       0.99683                                                
+   170       270       0.99692                                                
+   170       280       0.99708                                                
+   170       290       0.99729                                                
+   170       300       0.99754                                                
+   170       310       0.99782                                                
+   170       320       0.99809                                                
+   170       330       0.99832                                                
+   170       340       0.99851                                                
+   170       350       0.99862                                                
+   180         0       0.99960"                                               
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PRA                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "WARWICKETAL1989"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

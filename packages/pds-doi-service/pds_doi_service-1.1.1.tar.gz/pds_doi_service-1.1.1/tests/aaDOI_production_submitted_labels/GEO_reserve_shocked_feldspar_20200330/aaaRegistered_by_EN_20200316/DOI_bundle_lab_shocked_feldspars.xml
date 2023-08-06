@@ -1,0 +1,57 @@
+<records>
+    <record>
+    	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id>1518490</id>
+        <title>Laboratory Shocked Feldspars Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:lab_shocked_feldspars::2.0</accession_number>   <!-- LIDVID -->
+        <!--
+        <doi_infix>my-example-infix</doi_infix>
+        <report_numbers>EX-001-2017</report_numbers>
+        <contract_numbers>Example-001-2017</contract_numbers>
+        <other_numbers>OtherIdentifyingNumbers</other_numbers>
+        -->
+        <publisher>PDS Geosciences (GEO) Node</publisher>
+        <availability>NSSDCA</availability>
+        <publication_date>2020-01-01</publication_date>
+        <country>USA</country>
+        <description>Laboratory Shocked Feldspars bundle.</description>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Alab_shocked_feldspars&amp;version=2.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <date_record_added>2020-01-01</date_record_added>
+        <keywords>PDS;  PDS4;  GEO; ; Raw; Calibrated; Derived; Investigation of Laboratory Shocked Feldspars; Center for Planetary Exploration at Stony Brook University; Raman Spectrometer; Nicolet iN10MX FTIR microscope</keywords>
+        <authors>
+            <author>
+                <email/>
+                <first_name> J. R.</first_name>
+                <last_name>Johnson</last_name>
+                <affiliations/>
+            </author>
+        </authors>
+        <contributors>
+            <contributor>
+                <email/>
+                <first_name> Jennifer</first_name>
+                <last_name>Ward</last_name>
+                <contributor_type/>
+                <affiliations>
+                    <affiliation/>
+                </affiliations>
+            </contributor>
+        </contributors>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:lab_shocked_feldspars::2.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>
+    </record>
+</records>

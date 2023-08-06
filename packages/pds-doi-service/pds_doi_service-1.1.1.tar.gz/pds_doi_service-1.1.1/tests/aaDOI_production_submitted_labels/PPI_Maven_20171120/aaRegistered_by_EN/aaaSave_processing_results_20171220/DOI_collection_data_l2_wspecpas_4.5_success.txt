@@ -1,0 +1,15 @@
+﻿This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<records>
+<record successful="true">
+<osti_id>1414260</osti_id>
+<product_nos>
+urn:nasa:pds:maven.lpw.calibrated:data.w.specpas::4.5
+</product_nos>
+<title>
+MAVEN Langmuir Probe and Waves (LPW) Calibrated Passive Mode Spectra Data Collection
+</title>
+<contract_nos/>
+<doi status="posted">10.17189/1414260</doi>
+<status>SUCCESSFUL</status>
+</record>
+</records>

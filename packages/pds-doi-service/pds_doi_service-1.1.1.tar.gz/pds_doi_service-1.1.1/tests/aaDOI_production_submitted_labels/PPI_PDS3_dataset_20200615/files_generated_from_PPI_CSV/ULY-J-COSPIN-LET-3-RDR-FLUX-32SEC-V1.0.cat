@@ -1,0 +1,128 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional Keywords added by D. Kazden, 2009-09-15;                          
+Z's removed from time by D. Kazden, 2010-05-05,                              
+Updated CITATION_DESC, D. Kazden, 2020-02-12;"                               
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-COSPIN-LET-3-RDR-FLUX-32SEC-V1.0"
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULY JUP COSPIN LOW ENERGY TELESCOPE 32 
+                                        SEC PARTICLE FLUX"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-01-25T00:00:02.000                 
+    STOP_TIME                      = 1992-02-16T23:57:57.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "K.P. WENZEL"                           
+    DETAILED_CATALOG_FLAG          = "N"                                     
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULY JUP COSPIN LOW ENERGY TELESCOPE    
+                                          32 SEC PARTICLE FLUX"              
+    CITATION_DESC    = "Wenzel, K.P., ULY-J-COSPIN-LET-3-RDR-FLUX-32SEC-V1.0,
+                    ULY JUP COSPIN LOW ENERGY TELESCOPE 32 SEC PARTICLE FLUX,
+                        NASA Planetary Data System, 1998."                   
+    ABSTRACT_DESC                  = "This data set contains COSPIN Low      
+                                      Energy Telescope (LET) particle flux   
+                                      rates from the Ulysses Jupiter         
+                                      encounter 1992-Jan-25 to 1992-Feb-16." 
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set contains COSPIN Low Energy Telescope (LET)               
+      particle flux rates from the Ulysses Jupiter encounter                 
+      1992-Jan-25 to 1992-Feb-16.                                            
+                                                                             
+      COSPIN-LET RECORD FORMAT                                               
+      (REFERENCE: [SIMPSONETAL1992A] page 382, table 4)                      
+                                                                             
+      UDS REPRESENTATIVE: T.R. SANDERSON (ESTCS1::TSANDERS)                  
+                                                                             
+      Data                                                                   
+      ====                                                                   
+      RECORD FORTRAN FORMAT:                                                 
+                                                                             
+      implicit real(l)                                                       
+      character*24 time                                                      
+      read(1,'(a24,38(1x,1pe9.2))') time,l1,l2,l3,                           
+                l4,l5,l6,l7,l8,l9,l10,l11,                                   
+                l12,l13,l14,l15,l16,l17,l18,l19,l20,                         
+                l21,l22,l23,l24,l25,l26,l27,l28,l29,                         
+                l30,l31,l32,l33,l34,l35,l36,l37,l38                          
+                                                                             
+      PARAMETER LIST:                                                        
+                                                                             
+        TIME: spacecraft event time in the format                            
+              yyyy-mm-ddThh:mm:ss.sssZ                                       
+        L1:     protons   (0.9-1.2 MeV)                                      
+        L2:     protons   (1.2-3.0 MeV)                                      
+        L3:     protons   (1.8-3.8 MeV)                                      
+        L4_11:  protons   (1.8-3.8 MeV)   sectors 1 to 8                     
+        L12:    protons   (3.8-8.0 MeV)                                      
+        L13_20: protons   (3.8-8.0 MeV)   sectors 1 to 8                     
+        L21:    protons   (8.0-19.0 MeV)                                     
+        L22:    alphas    (1.0-5.0 MeV)                                      
+        L23:    alphas    (1.9-3.7 MeV)                                      
+        L24:    alphas    (3.7-8.4 MeV)                                      
+        L25:    alphas    (8.4-19.0 MeV)                                     
+        L26     Li,Be,B   (1.9-4.9 MeV)                                      
+        L27     Li,Be,B   (4.9-26 MeV)                                       
+        L28     C,N,O     (2.6-7.1 MeV)                                      
+        L29     C,N,O     (7.1-39.0 MeV)                                     
+        L30     Z&#10095;=10     (3.0-9.0 MeV)                                      
+        L31     10&#10094;=Z&#10094;=20 (9.0-50 MeV)                                       
+        L32     Z&#10095;=20     (12.0-75.0 MeV)                                    
+        L33     electrons (0.3-1.0 MeV)                                      
+        L34_38  single detector counting rates                               
+                                                                             
+      FLUX UNITS:      (/cm^2/s/sr/MeV)                                      
+                                                                             
+      TIME RESOLUTION: 32 seconds                                            
+                                                                             
+      NOTES:                                                                 
+                                                                             
+      The response of the LET rate channels is affected by at least          
+      three different effects originating in the electronic circuits:        
+      dead-time effect; pulse pile-up; and baseline shift."                  
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      None provided. For more information regarding the confidence           
+      level of this data set please contact:                                 
+        TREVOR R. SANDERSON                                                  
+        ESTEC, Space Sciences Dept.                                          
+        Postbus 299                                                          
+        2200 AG Noordwijk                                                    
+        THE NETHERLANDS                                                      
+        Phone:    31-71-565-3577   Fax: 31-71-565-4698                       
+        Internet: tsanders@estcs1.estec.esa.nl"                              
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = "COSPIN-LET"                            
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MARSDENETAL1991"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "SIMPSONETAL1992A"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

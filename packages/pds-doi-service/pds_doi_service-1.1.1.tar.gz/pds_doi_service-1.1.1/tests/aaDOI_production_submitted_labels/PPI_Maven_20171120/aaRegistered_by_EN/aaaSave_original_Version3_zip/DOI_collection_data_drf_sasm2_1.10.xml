@@ -1,0 +1,36 @@
+<records>
+    <record>
+        <title>MAVEN Solar Array Switch Module 2 Data Return Files (DRF) Collection</title>
+        <creators>Jakosky, Bruce, M.; Luhmann, Janet, G.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>08/10/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Amaven.anc%3Adata.drf.sasm2&amp;version=1.10</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.anc:data.drf.sasm2::1.10</product_nos>
+            
+        <description>
+         A collection of MAVEN Solar Array Switching Module 2 Data Return Files (DRFs).
+      </description>
+        <keywords>PDS; PDS4; Maven; Raw; Mars Atmosphere and Volatile EvolutioN Mission; MAVEN; Mars</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

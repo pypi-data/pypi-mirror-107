@@ -1,0 +1,103 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+      Original author and date unknown;                                      
+      Tyler Brown, Nov 1998, streamlined template;                           
+      Mark Sharlow, Jan 18 2000, updated ODL header and edited;              
+      Mark Sharlow, Feb 18 2000, deleted SFDU label;                         
+      Mark Sharlow, Feb 22 2000, reformatted slightly;                       
+      D. Kazden, Aug 28, 2012, added ABSTRACT_DESC, DATA_SET_TERSE_DESC      
+      and CITATION_DESC;                                                     
+      D. Kazden, Feb 11, 2020, updated CITATION_DESC;"                       
+                                                                             
+RECORD_TYPE                    = STREAM                                      
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "PVO-V-OIMS-4-IONDENSITY-12S-V1.0"      
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "PVO VENUS ION MASS SPECTROMTER LOW     
+                                      RES ION DENSITY V1.0"                  
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                     
+    START_TIME                     = 1978-12-05T14:41:18.480                 
+    STOP_TIME                      = 1987-08-18T00:00:00.000                 
+    DATA_OBJECT_TYPE               = "TIME_SERIES"                           
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. PAUL CLOUTIER"                     
+    DETAILED_CATALOG_FLAG          = "N"                                     
+    ABSTRACT_DESC                  = "The PV-OIMS low resolution dataset     
+    contains data from the Orbiter Ion Mass Spectrometer (OIMS) experiment   
+    for orbits 1-2996, including data for the period periapsis +/- 30 minutes
+    for each orbit. The dataset is divided into multiple files, each of which
+    contains 1 orbit."                                                       
+    DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) Ion Mass           
+    Spectrometer (OIMS) low resolution ion density data set for the period   
+    periapsis +/- 30 minutes for orbits 1- 2996 (1978-12-05 - 1987-08-18)."  
+    CITATION_DESC         = "Cloutier, P., PVO-V-OIMS-4-IONDENSITY-12S-V1.0, 
+                    PVO VENUS ION MASS SPECTROMTER LOW RES ION DENSITY V1.0, 
+                              NASA Planetary Data System, 1993."             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+                                                                             
+Data Set Overview                                                            
+=================                                                            
+The PV-OIMS low resolution dataset contains data from the Orbiter Ion        
+Mass Spectrometer (OIMS) experiment for orbits 1-2996, including data        
+for the period periapsis +/- 30 minutes for each orbit. The dataset          
+is divided into multiple files, each of which contains 1 orbit. The          
+user should be able to easily get to any desired orbit by selecting the      
+appropriate file.                                                            
+                                                                             
+The user should be aware that some of the data columns have been             
+coded.  For example, the values -999999 is the missing data value for        
+that point.                                                                  
+                                                                             
+column    type       bytes   description                                     
+==========================   ========================================        
+date      integer      5     Date given in the format YYDOY where YY         
+                             is the year and DOY is the day-of-year          
+                             (Jan 1 =1)                                      
+UT        float       10     Universal Time second of day                    
+orbit     integer      7     PVO orbit number                                
+perisecs  float       10     Seconds after periapsis, negative before        
+                             periapsis                                       
+den_1     integer      8     Number density of 1 AMU particle                
+den_2     integer      8     Number density of 2 AMU particle                
+den_4     integer      8     Number density of 4 AMU particle                
+den_8     integer      8     Number density of 8 AMU particle                
+den_12    integer      8     Number density of 12 AMU particle               
+den_14    integer      8     Number density of 14 AMU particle               
+den_16    integer      8     Number density of 16 AMU particle               
+den_18    integer      8     Number density of 18 AMU particle               
+den_28    integer      8     Number density of 28 AMU particle               
+den_30    integer      8     Number density of 30 AMU particle               
+den_32    integer      8     Number density of 32 AMU particle               
+den_44    integer      8     Number density of 44 AMU particle               
+                                                                             
+ "                                                                           
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "The user should be aware that some of  
+    the data columns have been coded. For example, the values -999999 is     
+    the missing data value for that point."                                  
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = "PVO"                                   
+    INSTRUMENT_ID                  = "OIMS"                                  
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "N/A"                                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                       = DATA_SET                                  
+                                                                             
+END

@@ -1,0 +1,89 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+S. Joy, Sep., 1993;                                                          
+S. Joy, Dec., 1998, streamlined;                                             
+D. Kazden, Oct.22, 2012, added ABSTRACT_DESC, DATA_SET_TERSE_DESC, and       
+CITATION_DESC, removed Zs from time;                                         
+D. Kazden, Feb. 11, 2020, updated PRODUCER_FULL_NAME and CITATION_DESC;"     
+                                                                             
+OBJECT                         = DATA_SET                                    
+  DATA_SET_ID                    = "PVO-V-POS-6-SEDR-ORBITATTITUDE--V1.0"    
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "PVO V SUPP EXPERIMENTER                
+                                      DATA RECORD SC ORBIT/ATTITUDE V1.0"    
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T06:55:00.000                 
+    STOP_TIME                      = 1992-10-08T18:14:07.018                 
+    DATA_SET_RELEASE_DATE          = 1993-07-01                              
+    PRODUCER_FULL_NAME             = "DR. LARRY BRACE"                       
+    DETAILED_CATALOG_FLAG          = "N"                                     
+    DATA_OBJECT_TYPE               = TABLE                                   
+    ABSTRACT_DESC                  = "                                       
+     This dataset contains the Supplemental Experimenter Data Records (SEDR) 
+     as provided by the Pioneer project to the Magnetometer team             
+     (C.T. Russell -     PI). The dataset covers the entire period of orbital
+     operations, orbits 1-5055 (1978-12-05 to 1992-10-07). Each orbit was    
+     originally provided on a separate IBM 9-track 800 bpi tape which        
+     contained 6 files: 1) Standard Label file [sl] , 2) Ephemeris file      
+     [ep], 3) S/C Attitude file [at], 4) Pulse Time file [pt], 5) Selected   
+     Roll Reference file [sr], 6) Spin period file [sp]. The original        
+     structure has been preserved within the limitations of the CD-ROM       
+     media, and the PDS data archive rules. The data                         
+     remain in individual orbit files in IBM binary and EBCDIC               
+     representations."                                                       
+    DATA_SET_TERSE_DESC            = "                                       
+     This dataset contains Pioneer Venus Orbiter (PVO) spacecraft position   
+     and orientation data in Venus Solar Orbital (VSO) coordinates."         
+    CITATION_DESC         = "Brace, L., PVO-V-POS-6-SEDR-ORBITATTITUDE--V1.0,
+                  PVO V SUPP EXPERIMENTER DATA RECORD SC ORBIT/ATTITUDE V1.0,
+                             NASA Planetary Data System, 1993."              
+    DATA_SET_DESC                  = "                                       
+     This dataset contains the Supplemental Experimenter Data Records (SEDR) 
+     as provided by the Pioneer project to the Magnetometer team             
+     (C.T. Russell -     PI). The dataset covers the entire period of orbital
+     operations, orbits 1-5055 (1978-12-05 to 1992-10-07). Each orbit was    
+     originally provided on a separate IBM 9-track 800 bpi tape which        
+     contained 6 files: 1) Standard Label file [sl] , 2) Ephemeris file      
+     [ep], 3) S/C Attitude file [at], 4) Pulse Time file [pt], 5) Selected   
+     Roll Reference file [sr], 6) Spin period file [sp]. The original        
+     structure has been preserved within the limitations of the CD-ROM       
+     media, and the PDS data archive rules. The data                         
+     remain in individual orbit files in IBM binary and EBCDIC               
+     representations.                                                        
+                                                                             
+     One additional file has been provided by the UCLA Magnetometer team who 
+     have taken the primary responsibility for the SEDR archive. There is a  
+     ''corrected pulse time file'' which is identical to the original pulse  
+     time file in structure but which differs in content. The data in this   
+     file have been corrected using the OEFD phase information from the XXXXX
+     channel. These data give a more accurate approximation of the actual    
+     Sun pulse than is contained in the raw SEDR data. When there are no OEFD
+     data available to make this correction, there is no corrected pulse time
+     file. This situation occurs near solar conjunctions."                   
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+     The original SEDR data have not been altered or corrected in any way    
+     during the archive process. A ''corrected pulse time'' file has been    
+     included in this archive which was not a part of the original SEDR."    
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = "N/A"                                   
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_MISSION                          
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                     = DATA_SET_MISSION                          
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = PC-456.O4                               
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

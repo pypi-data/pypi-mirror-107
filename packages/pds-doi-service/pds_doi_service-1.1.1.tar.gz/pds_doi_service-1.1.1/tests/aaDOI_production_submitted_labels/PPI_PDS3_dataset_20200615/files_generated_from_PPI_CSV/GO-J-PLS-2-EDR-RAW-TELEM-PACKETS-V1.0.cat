@@ -1,0 +1,172 @@
+PDS_VERSION_ID                    = PDS3
+LABEL_REVISION_NOTE              = "
+            1997, K. Ackerson, initial draft;
+            2000-03-10, K. Ackerson, major revision;
+            2000-03-16, M. Sharlow, added new PDS keywords;
+            2003-06-25, S. Joy, added targets, terse description;
+            2003-08-18, S. Joy, minor revisions requested at peer review;
+            2012-06-14, D. Kazden, removed unnecessary keywords;
+            2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;"
+
+OBJECT                           = DATA_SET
+  DATA_SET_ID                    = "GO-J-PLS-2-EDR-RAW-TELEM-PACKETS-V1.0"
+  OBJECT                         = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "
+                     GALILEO JUPITER PLASMA RAW PACKETIZED TELEMETRY V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = N
+    START_TIME                     = 1995-12-07T15:30
+    STOP_TIME                      = 2003-09-21T18:45
+    DATA_SET_RELEASE_DATE          = 2000-01-01
+    PRODUCER_FULL_NAME             = "DR. KENT ACKERSON"
+    DETAILED_CATALOG_FLAG          = Y
+    DATA_OBJECT_TYPE               = "N/A"
+    CITATION_DESC                  = "Frank, L.A., Paterson, W.R.,
+     Ackerson, K.L., GALILEO JUPITER PLASMA RAW PACKETIZED TELEMETRY V1.0,
+     GO-J-PLS-2-EDR-RAW-TELEM-PACKETS-V1.0,NASA Planetary Data System,
+     2000"
+    ABSTRACT_DESC                  = "
+     This data set contains instrument packet files (IPFs) from the Plasma
+     Science experiment (PLS) onboard the Galileo spacecraft during the
+     Jupiter orbital operations phase. This data set is a very raw, binary
+     form. It is archived for completeness only. There is another PDS data
+     set (GO-J-PLS-3-RDR-FULLRES-V1.0) that contains all of the plasma
+     detector counts in a form that is much easier to work with. The
+     primary advantage of this data set is that it contains instrument
+     housekeeping and engineering data in addition to the counts."
+    DATA_SET_TERSE_DESC            = "
+     This data set contains instrument packet files (IPFs) from the Plasma
+     Science experiment (PLS) onboard the Galileo spacecraft during the
+     Jupiter orbital operations phase. This data set is in a very raw,
+     complex binary form."
+    DATA_SET_DESC                  = "
+
+  Data Set Overview
+  =================
+    This data set contains instrument packet files (IPFs) from the Plasma
+    Science experiment (PLS) onboard the Galileo spacecraft during the
+    Jupiter orbital operations phase. This data set is a very raw, binary
+    form. It is archived for completeness only. There is another PDS data
+    set (GO-J-PLS-3-RDR-FULLRES-V1.0) that contains all of the plasma
+    detector counts in a form that is much easier to work with. The
+    primary advantage of this data set is that it contains instrument
+    housekeeping and engineering data in addition to the counts.
+
+
+  Parameters
+  ==========
+    The packetized telemetry files for the PLS instrument are described
+    by the Galileo project document '625-205 GLL-3-280 Phase 2: Telemetry
+    Measurements and Data Formats, Appendix A'. This document is included
+    in the DOCUMENT/PROJECT/GLL3_280 directory of all PDS data volumes
+    that include files from this data set. The parameters include both
+    analog housekeeping values and digital data.
+
+
+  Processing
+  ==========
+    These data have been processed only by the Galileo ground data system
+    (GDS). The telemetry packets associated  with the PLS experiment have
+    been separated from other telemetry packets by the GDS.  In addition,
+    there has been  some effort to correct packet header problems
+    associated with telemetry dropouts by the GDS.
+
+
+  Ancillary Data
+  ==============
+    Each data volume contains a set of as-run spacecraft event files.
+    These files collect all of the uplink and downlink commands to the
+    spacecraft that affect the PLS instrument. These files are located
+    in the DATA/AR_SEF directory of the data volume that contains the PLS
+    data files.                                                               
+                                                                              
+    In addition, calibration tables and a calibration document have been      
+    included with this archive, primarily in support of the RDR data          
+    product mentioned above.                                                  
+     
+                                                                              
+  Coordinate System                                                       
+  =================                                                           
+    Data are provided in PLS instrument coordinates. Please refer to the      
+    instrument description paper [FRANKETAL1992] for a description of the     
+    instrument mounting, detector fields of view, and spin phase              
+    sectoring. PLS packets contain information about the spacecraft spin      
+    phase that allows sectors to be computed.                                 
+          
+                                                                              
+  Software                                                                
+  ========                                                                    
+    There are no software provided with this archive.                         
+        
+                                                                              
+  Media/Format                                                             
+  ============                                                                
+    These data are archived on CDROM. The data files are  in a complex        
+    binary format described by the GLL 3-280 document described above.        
+    Data files are described by detached PDS minimum labels."                 
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Review                                                                  
+  ======                                                                      
+    These data have been through the Galileo ground data system 'besting'
+    process and are generally considered to be archive quality raw data.
+
+
+  Data Coverage/Quality
+  =====================
+    All data that was received on the ground from the PLS instrument
+    after 1996 are included in this data set. Note that the Io flyby data
+    in orbit zero were recorded on tape and not returned until June, 1996.
+    This data set contains gaps in coverage. Many of these gaps were
+    planned (insufficient telemetry coverage to provide continuous data)
+    and others were not (telemetry dropouts, station outages, etc.).
+
+
+  Limitations
+  ===========
+    These are raw data. No effort has been made to calibrate the data or
+    eliminate instrumental effects. Only users who are extremely familiar
+    with this instrument and its operation should attempt to use these
+    data in this form."
+
+  END_OBJECT                     = DATA_SET_INFORMATION
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = JUPITER
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = IO
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = EUROPA
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = GANYMEDE
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = CALLISTO
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = AMALTHEA
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = GO
+    INSTRUMENT_ID                  = PLS
+  END_OBJECT                     = DATA_SET_HOST
+
+  OBJECT                         = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                     = DATA_SET_MISSION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "FRANKETAL1992"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                     = DATA_SET
+END

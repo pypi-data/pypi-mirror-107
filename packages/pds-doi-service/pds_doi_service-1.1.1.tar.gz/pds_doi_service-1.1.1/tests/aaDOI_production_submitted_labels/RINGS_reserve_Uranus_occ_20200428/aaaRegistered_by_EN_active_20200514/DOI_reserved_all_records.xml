@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- ============================================ -->
+    <!-- DOI-U_reserved_uranus_occ_u14_opmt_200cm.xml -->
+    <!-- ============================================ -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1518641</id>
+    	
+        <title>Uranus System Occultation of star u14 (Hipparcos 79085) Observed from the OPMT 200cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>R. G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-06-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u14_opmt_200cm</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ================================================= -->
+    <!-- DOI-U_reserved_uranus_occ_u102_irtf_320cm_1.0.xml -->
+    <!-- ================================================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1518613</id>
+    	
+        <title>Uranus System Occultation of star u102 (UCAC2 22794648) Observed from the IRTF 320cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>R. G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-06-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u102_irtf_320cm::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================================= -->
+    <!-- DOI-U_reserved_uranus_occ_u0_kao_91cm_1.0.xml -->
+    <!-- ============================================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1518638</id>
+    	
+        <title>Uranus System Occultation of star u0 (SAO 158687) Observed from the KAO 91cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>R. G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-06-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u0_kao_91cm::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================================ -->
+    <!-- DOI-U_reserved_uranus_occ_u14_opmt_106cm.xml -->
+    <!-- ============================================ -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1518639</id>
+    	
+        <title>Uranus System Occultation of star u14 (Hipparcos 79085) Observed from the OPMT 106cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>R. G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-06-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u14_opmt_106cm</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ================================================= -->
+    <!-- DOI-U_reserved_uranus_occ_u17b_saao_188cm_1.0.xml -->
+    <!-- ================================================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1517613</id>
+    	
+        <title>Uranus System Occultation of star u17b (Hipparcos 80841) Observed from the SAAO 188cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>R. G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-06-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u17b_saao_188cm::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>
+

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VOYAGER 2 JUP PLASMA WAVE SPECTROMETER EDITED SPEC 4.0SEC</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-J-PWS-2-SA-4.0SEC</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1988-08-01</publication_date>
+            <country>USA</country>
+            <description>This data set consists of 4-second edited, wave electric field
+                intensities from the Voyager 2 Plasma Wave Receiver spectrum
+                analyzer obtained in the vicinity of the Jovian magnetosphere.
+                For each 4-second interval, a field strength is determined for
+                each of the 16 spectrum analyzer channels whose center
+                frequencies range from 10 Hertz to 56.2 kiloHertz and which are
+                logarithmically spaced in frequency, four channels per decade.
+                The time associated with each set of intensities (16 channels) is
+                the time of the beginning of the scan. During data gaps where
+                complete 4-second spectra are missing, no entries exist in the
+                file, that is, the gaps are not zero-filled or tagged in any
+                other way. When one or more channels are missing within a scan,
+                the missing measurements are zero-filled. Data are edited but not
+                calibrated. The data numbers in this data set can be plotted in
+                raw form for event searches and simple trend analysis since they
+                are roughly proportional to the log of the electric field
+                strength. Calibration procedures and tables are provided for use
+            with this data set</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-J-PWS-2-SA-4.0SEC</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; JUPITER; PLASMA WAVE SPECTROMETER; VG2; PLANET; PWS; PLASMA WAVE RECEIVER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. WILLIAM S. KURTH</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-j-pws-2-sa-4.0sec</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,139 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;             
+    2006-07-26, B. Harris, minor updates for version 3 standards;            
+    2010-05-05, D. Kazden, removed Z's from time;                            
+    2018-08-10, D. Kazden, removed ARCHIVE_STATUS keyword;                   
+    2020-02-12, D. Kazden, updated CITATION_DESC;"                           
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-EPAC-4-SUMM-PRTL2-FLUX-1HR-V1.0" 
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULYSSES JUPITER EPAC PRTL2 SECTORED    
+                                        PROTON FLUX 1 HR V1.0"               
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-01-25T00:00:00.000                 
+    STOP_TIME                      = 1992-02-28T23:00:00.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "ERHARD KEPPLER"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      This data set contains Ulysses Energetic Particle Composition          
+      Experiment (EPAC) 1 hour averaged sectored proton flux data            
+      from the Ulysses Jupiter encounter 1992-Jan-25 to 1992-Feb-28."        
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      This data set contains Ulysses Energetic Particle Composition          
+      Experiment (EPAC) 1 hour averaged sectored proton flux data            
+      from the Ulysses Jupiter encounter 1992-Jan-25 to 1992-Feb-28.         
+      These data were recorded by Proton-Rate Sectored Telescope 2           
+      (PRTL2)."                                                              
+                                                                             
+    CITATION_DESC      = "Keppler, E., ULY-J-EPAC-4-SUMM-PRTL2-FLUX-1HR-V1.0,
+                   ULYSSES JUPITER EPAC PRTL2 SECTORED PROTON FLUX 1 HR V1.0,
+                        NASA Planetary Data System, 1998."                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set contains Ulysses Energetic Particle Composition          
+      Experiment (EPAC) 1 hour averaged sectored proton flux data            
+      from the Ulysses Jupiter encounter 1992-Jan-25 to 1992-Feb-28.         
+      These data were recorded by Proton-Rate Sectored Telescope 2           
+      (PRTL2).                                                               
+                                                                             
+      Data                                                                   
+      ====                                                                   
+      The file names for ULYSSES-KEP Experiment data files are:              
+                                                                             
+       Tyydoy.TAB                                                            
+                                                                             
+      These are ASCII files. The data entries in the files are always        
+      single precision float values containing one hour averages in          
+                                                                             
+        Flux / (s cm^2 sr)                                                   
+                                                                             
+      starting at midnight for each day. The corresponding times are         
+      integers indicating start of average. The entries are separated        
+      by blanks. Then the total length of the ASCII records are: 130         
+      Bytes with 24 records per file. Bad or absent data are flagged         
+      with -9.99999e+10.                                                     
+                                                                             
+      The data entries include:                                              
+                                                                             
+        PRTL2     Proton-Rate Sectored (~500-1000 keV) Telescope 2,          
+                  Sectors 1-8                                                
+                                                                             
+      The record structure is as follows:                                    
+                                                                             
+      1 character string (24 Bytes) with the format                          
+                                                                             
+             yyyy-mm-ddThh:mm:ss.sssZ                                        
+               yyyy = year                                                   
+               mm   = month                                                  
+               dd   = day                                                    
+               hh   = hours                                                  
+               mm   = minutes                                                
+               ss.sss   = seconds                                            
+                                                                             
+      8 reals (13 Bytes, e.g. -1.23456E+03) for                              
+                                                                             
+             PRTL2 (8 sectors)"                                              
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      None provided. For more information regarding the confidence           
+      level of the data set please contact:                                  
+        ERHARD KEPPLER                                                       
+        Max-Planck-Institut fur Aeronomie                                    
+        Postfach 20                                                          
+        37189 Katlenburg-Lindau                                              
+        GERMANY                                                              
+        Phone: 49-555-697-9296   Fax: 49-555-697-9240                        
+        Internet: keppler@pgate2.mpae.gwdg.de"                               
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = EPAC                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DROLIASETAL1995"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KEPPLERETAL1992B"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KEPPLER&KRUPP1995"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPP1994"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPPETAL1994"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPPETAL1995"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "SCHULZETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

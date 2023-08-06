@@ -1,0 +1,421 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;              
+B. Harris, added abstract and citation, 2005-07-20;                           
+D.Kazden, removed unnecessary keywords, updated REFERENCE_KEY_IDs, 2011-10-14;
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-13;"                 
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+DATA_SET_ID                        = "VG1-J-LECP-4-SUMM-SECTOR-15MIN-V1.1"    
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG1 JUP LECP CALIBRATED RESAMPLED       
+                                         SECTORED 15MIN V1.1"                 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1979-02-28T00:00:11.000                  
+    STOP_TIME                      = 1979-03-22T23:44:44.000                  
+    DATA_SET_RELEASE_DATE          = 1998-05-01                               
+    PRODUCER_FULL_NAME             = "BARRY H. MAUK"                          
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+                                                                              
+    ABSTRACT_DESC           = "                                               
+      This data set consists of resampled data from the Low Energy            
+      Charged Particle (LECP) experiment on Voyager 1 while the               
+      spacecraft was in the vicinity of Jupiter.  This instrument             
+      measures the intensities of in-situ charged particles (&#10095;26 keV          
+      electrons and &#10095;30 keV ions) with various levels of                      
+      discrimination based on energy, mass species, and angular               
+      arrival direction.  A subset of almost 100 LECP channels are            
+      included with this data set.  The LECP data are globally                
+      calibrated to the extent possible (see below) and they are time         
+      averaged to about 15 minute time intervals with the exact               
+      beginning and ending times for those intervals matching the             
+      LECP instrumental cycle periods (the angular scanning periods)."        
+                                                                              
+    CITATION_DESC           = "                                               
+      Krimigis, S. M., Mauk, B. H., Armstrong, T. P.,                         
+      VG1 JUP LECP CALIBRATED RESAMPLED SECTORED 15MIN V1.1,                  
+      VG1-J-LECP-4-SUMM-SECTOR-15MIN-V1.1, NASA Planetary Data System, 1998." 
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      This data set consists of resampled data from the Low Energy            
+      Charged Particle (LECP) experiment on Voyager 1 while the               
+      spacecraft was in the vicinity of Jupiter."                             
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  DATA SET OVERVIEW                                                           
+  =================                                                           
+                                                                              
+    Version 1.1                                                               
+    -----------                                                               
+      This version 1.1 data set replaces the version 1.0 data set             
+      (DATA_SET_ID = VG1-J-LECP-4-15MIN) previously archived with             
+      the PDS.  Data records from the version 1.0 data set provided           
+      data for each of 8 sectors, plus the average for all sectors            
+      in a separate record for each channel.  This resulted in 9              
+      repeated times per channel.  Data records for the version 1.1           
+      data set provide all data for a given channel and time period           
+      (8 sectors, plus the average for all sectors) in a single               
+      record.  Other changes to this version include upgrading of             
+      the associated labels and templates to PDS version 3.2                  
+      compliance, modification of the time formats and flag values.           
+                                                                              
+                                                                              
+    Data Set Description                                                      
+    --------------------                                                      
+      This data set consists of resampled data from the Low Energy            
+      Charged Particle (LECP) experiment on Voyager 1 while the               
+      spacecraft was in the vicinity of Jupiter.  This instrument             
+      measures the intensities of in-situ charged particles (&#10095;26 keV          
+      electrons and &#10095;30 keV ions) with various levels of                      
+      discrimination based on energy, mass species, and angular               
+      arrival direction.  A subset of almost 100 LECP channels are            
+      included with this data set.  The LECP data are globally                
+      calibrated to the extent possible (see below) and they are time         
+      averaged to about 15 minute time intervals with the exact               
+      beginning and ending times for those intervals matching the             
+      LECP instrumental cycle periods (the angular scanning periods).         
+      The LECP instrument has a rotating head for obtaining angular           
+      anisotropy measurements of the medium energy charged particles          
+      that it measures.  The cycle time for the rotation is variable,         
+      but during encounters it is always faster than 15 minutes.              
+      Thus, the full angular anisotropy information is preserved with         
+      this data.  The data is in the form of 'rate' data which has            
+      not been converted to the usual physical units.  The reason is          
+      that such a conversion would depend on uncertain determinations         
+      such as the mass species of the particles and the level of              
+      background.  Both mass species and background are generally             
+      determined from context during the study of particular regions.         
+      To convert 'rate' to 'intensity' for a particular channel one           
+      performs the following tasks: 1) Decide on the level of                 
+      background contamination and subtract that off the given rate           
+      level.  Background is to be determined from context and from            
+      making use of sector 8 rates (sector 8 has a 2 mm Al shield             
+      covering it).  2) Divide the background corrected rate by the           
+      channel geometric factor and by the energy bandpass of the              
+      channel.  The geometric factor is found in entry                        
+      'CHANNEL_GEOMETRIC_FACTOR' as associated with each channel              
+      'CHANNEL_ID'.  To determine the energy bandpass, one must judge         
+      the mass species of the of the detected particles (for ions but         
+      not for electrons).  The energy band passes are given in                
+      entries 'MINIMUM_INSTRUMENT_PARAMETER' and                              
+      'MAXIMUM_INSTRUMENT_PARAMETER' in table 'FPLECPENERGY', and are         
+      given in the form 'energy/nucleon'.  For channels that begin            
+      their names with the designations 'CH' these bandpasses can be          
+      used on mass species that are accepted into that channel (see           
+      entries 'MINIMUM_INSTRUMENT_PARAMETER' AND                              
+      'MAXIMUM_INSTRUMENT_PARAMETER' in table 'FPLECPCHANZ', which            
+      give the minimum and maximum 'Z' value accepted -- these                
+      entries are blank for electron channels).  For other channels           
+      the given bandpass refers only to the lowest 'Z' value                  
+      accepted.  The and passes for other 'Z' values are not all              
+      known, but some are given in the literature (e.g.                       
+      [KRIMIGISETAL1979A]).  The final product of these instructions          
+      will be the particle intensity with the units: counts/(cm^2 str         
+      sec keV).                                                               
+                                                                              
+                                                                              
+This figure represents the structure of a single data record. Note that the   
+'SECTOR_STRUCTURE' (SECTOR1, SECTOR2, etc.) are not columns, but rather a     
+grouping of the DATA_VALUE and STANDARD_DEVIATION columns.                    
+                                                                              
+            SECTOR1             SECTOR2                  AVERAGE              
+       __________________  __________________       __________________        
+ ____ | _____  _________ || _____  _________ |     | _____  _________ |       
+|    |||DATA ||STANDARD ||||DATA ||STANDARD ||     ||DATA ||STANDARD ||       
+|TIME|||VALUE||DEVIATION||||VALUE||DEVIATION|| ... ||VALUE||DEVIATION||       
+|____|||_____||_________||||_____||_________||     ||_____||_________||       
+      |__________________||__________________|     |__________________|       
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Electron Rate                                                             
+    -------------                                                             
+      Sampling Parameter Name           : TIME                                
+      Data Set Parameter Name           : ELECTRON RATE                       
+      Sampling Parameter Resolution     : 15.000000                           
+      Sampling Parameter Interval       : 15.000000                           
+      Data Set Parameter Unit           : COUNTS/SECOND                       
+      Noise Level                       : 0.000000                            
+      Sampling Parameter Unit           : MINUTE                              
+                                                                              
+      A measured parameter equaling the number of electrons hitting           
+      a particle detector per specified accumulation interval.  The           
+      counted electrons may or may not be discriminated as to their           
+      energies (e.g.  greater than E1, or between E1 and E2).                 
+                                                                              
+                                                                              
+    Ion Rate                                                                  
+    --------                                                                  
+      Sampling Parameter Name           : TIME                                
+      Data Set Parameter Name           : ION RATE                            
+      Sampling Parameter Resolution     : 15.000000                           
+      Sampling Parameter Interval       : 15.000000                           
+      Data Set Parameter Unit           : COUNTS/SECOND                       
+      Noise Level                       : 0.000000                            
+      Sampling Parameter Unit           : MINUTE                              
+                                                                              
+      A measured parameter equaling the number of ions striking a             
+      particle detector per specified accumulation interval.  The             
+      counted ions may or may not be discriminated as to their                
+      energies (e.g.  energy/nucleon or energy/charge between E1              
+      and E2 or greater than E1) and/or as to their ion composition           
+      (atomic number Z or mass number greater than Z1 or M1, or               
+      between Z1 and z2 or M1 and M2).                                        
+                                                                              
+                                                                              
+  Source Instrument Parameters                                                
+  ============================                                                
+    Instrument Host ID                : VG1                                   
+    Data Set Parameter Name           : ION RATE                              
+    Instrument Parameter Name         : ION RATE                              
+    Important Instrument Parameters   : 1                                     
+                                                                              
+    Instrument Host ID                : VG1                                   
+    Data Set Parameter Name           : ELECTRON RATE                         
+    Instrument Parameter Name         : ELECTRON RATE                         
+    Important Instrument Parameters   : 1                                     
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+    Processing Level Id               : 4                                     
+    Software Flag                     : Y                                     
+    Processing Start Time             : 1988-08-01                            
+                                                                              
+                                                                              
+    Processing History                                                        
+    ------------------                                                        
+      Source Data Set ID                : VG1-J-LECP-2-                       
+      Software                          : PFAT:VGER                           
+      Product Data Set ID               : VG1-J-LECP-4-15MIN                  
+                                                                              
+                                                                              
+    Software 'PFAT:VGER'                                                      
+    --------------------                                                      
+      Software Name                     : PFAT:VGER                           
+      Software Type                     : PIN                                 
+      Software Release Date             : N/A                                 
+      Node ID                           : N/A                                 
+      Cognizant Engineer                : N/A                                 
+      Software Access Description       : N/A                                 
+                                                                              
+                                                                              
+  Data Coverage                                                               
+  =============                                                               
+                                                                              
+    Filename Records Start                     Stop                           
+    -------------------------------------------------------------------       
+    T790228  2112    1979-02-28T00:00:11.000Z  1979-02-28T23:44:35.000Z       
+    T790301  2112    1979-03-01T00:00:11.000Z  1979-03-01T23:59:47.000Z       
+    T790302  1936    1979-03-02T00:15:47.000Z  1979-03-02T23:59:47.000Z       
+    T790303  1760    1979-03-03T00:15:23.000Z  1979-03-03T23:59:47.000Z       
+    T790304  1892    1979-03-04T00:19:23.000Z  1979-03-04T22:59:48.000Z       
+    T790305  2112    1979-03-05T00:01:00.000Z  1979-03-05T23:59:47.000Z       
+    T790306  2068    1979-03-06T00:14:59.000Z  1979-03-07T00:14:44.000Z       
+    T790307  2068    1979-03-07T00:29:56.000Z  1979-03-07T23:59:56.000Z       
+    T790308  1848    1979-03-08T00:14:44.000Z  1979-03-08T23:59:08.000Z       
+    T790309  2112    1979-03-09T00:15:08.000Z  1979-03-10T00:14:44.000Z       
+    T790310  1980    1979-03-10T00:29:56.000Z  1979-03-10T23:59:56.000Z       
+    T790311  2112    1979-03-11T00:14:44.000Z  1979-03-12T00:14:44.000Z       
+    T790312  2068    1979-03-12T00:29:56.000Z  1979-03-12T23:59:32.000Z       
+    T790313  1980    1979-03-13T00:14:44.000Z  1979-03-13T23:29:56.000Z       
+    T790314  2024    1979-03-14T00:02:20.000Z  1979-03-14T23:59:32.000Z       
+    T790315  2112    1979-03-15T00:15:08.000Z  1979-03-16T00:14:44.000Z       
+    T790316  2068    1979-03-16T00:29:56.000Z  1979-03-16T23:44:44.000Z       
+    T790317  2112    1979-03-17T00:00:20.000Z  1979-03-17T23:55:08.000Z       
+    T790318  1936    1979-03-18T00:15:08.000Z  1979-03-18T23:44:44.000Z       
+    T790319  2156    1979-03-19T00:00:44.000Z  1979-03-20T00:14:20.000Z       
+    T790320  2112    1979-03-20T00:29:56.000Z  1979-03-21T00:14:20.000Z       
+    T790321  1980    1979-03-21T00:29:56.000Z  1979-03-21T23:59:32.000Z       
+    T790322  2024    1979-03-22T00:15:08.000Z  1979-03-22T23:44:44.000Z "     
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+    At all times during this planetary encounter there exist data             
+    in this data set that can be rated with the highest confidence            
+    level.  However, some of the channels of data are contaminated            
+    by various kinds and various levels of contaminations.  It is             
+    therefore imperative, in using this data set, that the                    
+    contamination tables within the catalog be examined.  Also, not           
+    all kinds of contamination have been fully documented.  When in           
+    doubt the data supplier must be contacted.                                
+                                                                              
+    Some channels are subject to serious contaminations, and many             
+    of these contaminations cannot be removed except with a region-           
+    by-region analysis, which has not been done for this data.                
+    Thus, to use this data it is absolutely vital that the                    
+    contamination types ('CONTAMINATION_ID' , 'CONTAMINATION_DESC')           
+    and the levels of contamination ('DATA_QUALITY_ID'                        
+    corresponding to the definitions 'DATA_QUALITY_DESC') be                  
+    carefully examined for all regions of study.  A dead time                 
+    correction procedure has been applied in an attempt to correct            
+    the linear effects of detector overdrive (pulse-pileup).  This            
+    procedure does not fix severely overdriven detectors.  A                  
+    procedure is available for correcting Voyager 2 LECP electron             
+    contamination of low energy ion channels, but its effectiveness           
+    has been evaluated only for the Uranus data set.  Thus,                   
+    corrections have been applied only to the Uranus data set.                
+                                                                              
+    Also included with this data are one standard deviation                   
+    statistical uncertainties for the directional data (sectors 1             
+    through 8 and an average) expressed as a percent. Unknown values are      
+    generally coded as such, however in some instances the value              
+    will read 'zero' when its status is unknown.                              
+                                                                              
+    An ancillary data file (SUMMARY.TAB) describes data confidence            
+    for the period covered in the data files.  This file provides             
+    the following information:                                                
+                                                                              
+       parameter name               description                               
+       ----------------------------------------------------------             
+       time                         time in the format                        
+                                    yyyy-mm-ddThh:mm:ss.sssZ                  
+                                                                              
+       coverage                     percent coverage during hour              
+                                                                              
+       sector_confidence_structure  this structure consists of two            
+                                    columns (contamination_id and             
+                                    data_quality_id) repeated 8 times         
+                                    (once each for sectors 1-8)               
+                                                                              
+       contamination_id             contamination ID during hour for sector   
+                                                                              
+       data_quality_id              data quality ID during hour for sector    
+                                                                              
+    Also included with this data are one standard deviation                   
+    statistical uncertainties for the directional data (sectors 1             
+    through 8) expressed as a percent.  Unknown values are                    
+    generally coded as such, however in some instances the value              
+    will read 'zero' when its status is unknown.                              
+                                                                              
+                                                                              
+    Contamination Desc                                                        
+    ------------------                                                        
+      -1: affected data is unrated with regard to contamination type          
+       0: affected data is uncontaminated by contamination type               
+       1: affected data is marginally contaminated by contamination           
+          type                                                                
+       2: affected data is seriously contaminated by a contamination          
+          type, but the measurement is probably retrievable                   
+       3: affected data is seriously contaminated by contamination            
+          type, and the retrievability of the measurement is                  
+          questionable                                                        
+       4: affected data is so contaminated by contamination type              
+          that the measurement cannot be retrieved                            
+                                                                              
+                                                                              
+    Data Quality Desc                                                         
+    -----------------                                                         
+      1: Ion channels penetrating background. All ion channels are            
+         subject to background due to high energy particles that              
+         penetrate detector shielding. Channels that are the result           
+         of 'particle multiple parameters' measurements are less              
+         subject to such contamination (channels 'CH__'). A crude             
+         quality parameter has been derived from the ratio of the             
+         shielded and unshielded 53 to 85 keV 'pl01' ion channel.             
+         All other channels must be judged independently from                 
+         context and from a corresponding ratio. No corrections               
+         have been applied.                                                   
+                                                                              
+      2: Solar UV. When the lowest energy ion and electron                    
+         detectors (electron detector less affected) face the sun             
+         (sector 1) substantial background counts can occur in the            
+         lowest (pl01) and (somewhat) next to lowest (pl02) ion               
+         channels. A very crude quality parameter is derived from             
+         the ratio of the sun-facing and adjacent sector for the              
+         pl01 channel. This parameter should not be accepted as               
+         the last word but should be only used for guidance, and it           
+         can be misleading. Electrons must be judged separately. No           
+         corrections have been applied.                                       
+                                                                              
+      3: Ion channel electron contamination. The lowest energy ion            
+         channels (pl01 through pl05) are subject to contamination            
+         from &#10095; 400 keV electrons which penetrate the magnetic                
+         shielding. This condition is well diagnosed on Voyager 2             
+         but not on Voyager 1. Context, corresponding Voyager 2               
+         measurements, and the correlation between moderate energy            
+         electron channels and these ion channels must be use to              
+         diagnose this condition for Voyager 1. A correction has              
+         been applied only to the Voyager 2 Uranus data.                      
+                                                                              
+      4: Ion detector overdrive. If the fluxes striking a detector            
+         is too high, the output of that detector becomes anomalous           
+         due to pulse pileup (linear effects) and baseline                    
+         restoration (non-linear effects) problems. All detectors             
+         are subject to possible problems. A crude quality                    
+         parameter has been derived based on the total rate                   
+         striking the detector that measures the lowest energy ions           
+         (pl01-pl08). Pl01-5 are the channels most strongly affected,         
+         with the greatest effects occurring for the lowest energy            
+         channels. A dead-time correction procedure has been applied          
+         to the data to help alleviate the less severe problems.              
+                                                                              
+      5: Detector noise. The detector/electronics noise for the               
+         lowest energy detectors (ions in particular) is not too              
+         far below the lowest energy discrimination levels. That              
+         noise can appear as background counts in the lowest energy           
+         channels if the detector noise increases as a result of              
+         the detector being overdriven, etc. The lowest                       
+         discrimination can be adjusted by ground command to help             
+         alleviate this problem. A crude quality parameter has been           
+         derived based on reasonable/unreasonable ratios of the ion           
+         channels pl01 and pl02. This parameter should be used only           
+         as a rough guide and can be misleading. No correction has            
+         been applied.                                                        
+                                                                              
+      6: Electron channels penetrating background. All electron               
+         channels are subject to background due to high energy                
+         particles that penetrate detector shielding. A crude                 
+         quality parameter has been derived based on the ratio of             
+         the shielded and unshielded 37 to 70 keV 'eb02' electron             
+         channel. All other channels must be judged independently             
+         from context and from a corresponding ratio. No correction           
+         has been applied.                                                    
+                                                                              
+      7: Electron detector overdrive. If the fluxes striking a                
+         detector is too high, the output of that detector becomes            
+         anomalous due to pulse pileup (linear effects) and                   
+         baseline restoration (non-linear effects) problems. All              
+         detectors are subject to possible problems. A crude                  
+         quality parameter has been derived based on the total rate           
+         striking the detector that measures the lowest energy                
+         electrons (eb01-eb05). The greatest effects occur for the            
+         lowest energy channels. A dead-time correction procedure             
+         has been applied to the data to help alleviate less severe           
+         problems.                                                            
+                                                                              
+      8: Miscellaneous bad data spikes. There are 'spikes' in the             
+         data processed for this instrument due to telemetry                  
+         problems and other processing problems. Their are routines           
+         to eliminate these spikes, however, sometimes real events            
+         (fast changing) are also eliminated. We have chosen to               
+         leave the spikes in and to eliminate them when needed from           
+         context. "                                                           
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG1                                      
+    INSTRUMENT_ID                  = LECP                                     
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1979A"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+END_OBJECT                         = DATA_SET                                 
+END

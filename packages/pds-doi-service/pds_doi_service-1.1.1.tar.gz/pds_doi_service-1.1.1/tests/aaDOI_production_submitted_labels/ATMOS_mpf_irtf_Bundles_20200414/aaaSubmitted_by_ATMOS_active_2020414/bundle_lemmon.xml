@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.sch" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<Product_Bundle  
+    xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1301.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:mpf_mpim</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>IMP Opacities Bundle</title>
+        <information_model_version>1.3.0.1</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>Lemmon opacities</alternate_id>
+                <comment>Derived opacities from Mars Pathfinder</comment>
+            </Alias>
+        </Alias_List>
+        <Citation_Information>
+            <author_list>Lemmon, M.</author_list>
+            <editor_list>Smith, P. H.; Lemmon, M.; Beebe, R. F.</editor_list>
+            <publication_year>2015</publication_year>
+            <keyword>opacities</keyword>
+            <description>Derived opacities from Mars Pathfinder</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2015-04-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Bundle of derived dataset</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>1997-07-04T23:51:03.008Z</start_date_time>
+            <stop_date_time>1997-07-17T09:48:12.695Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>Pathfinder</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars_pathfinder</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>Observing system for Pathfinder-IMP</name>
+            <Observing_System_Component>
+                <name>mpim</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:imp.mpfl</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Pathfinder</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mpfl</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:mpf_mpim:document:lemmondoc</lid_reference>
+            <reference_type>bundle_to_document</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+    </Bundle>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mpf_mpim:derived</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mpf_mpim:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mpf_mpim:context</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_context_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mpf_mpim:schema</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_schema_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

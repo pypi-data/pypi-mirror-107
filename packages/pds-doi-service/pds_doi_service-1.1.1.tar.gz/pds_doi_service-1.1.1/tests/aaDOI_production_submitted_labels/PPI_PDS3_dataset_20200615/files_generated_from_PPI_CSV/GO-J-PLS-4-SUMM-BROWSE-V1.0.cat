@@ -1,0 +1,239 @@
+PDS_VERSION_ID                  = PDS3                                         
+LABEL_REVISION_NOTE            = "                                            
+  1997, K. Ackerson, initial draft;                                           
+  2000-03-13, K. Ackerson, major revision;                                    
+  2000-03-16, M. Sharlow, added new PDS keywords;                             
+  2003-06-25, S. Joy, minor revisions, added targets, terse description;      
+  2003-08-18, S. Joy, minor revisions requested at peer review;               
+  2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;                      
+  2020-02-04, D. Kazden, updated CITATION_DESC; "                             
+                                                                              
+OBJECT                       = DATA_SET                                       
+  DATA_SET_ID                    = "GO-J-PLS-4-SUMM-BROWSE-V1.0"              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "GALILEO JUPITER PLASMA RESAMPLED        
+                                       BROWSE SPECTRA V1.0"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1995-12-07T15:30                         
+    STOP_TIME                      = 2003-09-21T18:45                         
+    DATA_SET_RELEASE_DATE          = 2003-11-21                               
+    PRODUCER_FULL_NAME             = "DR. KENT ACKERSON"                      
+    DETAILED_CATALOG_FLAG          = Y                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+                                                                              
+    CITATION_DESC                  = "Frank, L.A., Paterson, W.R.,            
+       Ackerson, K.L., GALILEO JUPITER PLASMA RESAMPLED BROWSE SPECTRA V1.0,  
+       GO-J-PLS-4-SUMM-BROWSE-V1.0,NASA Planetary Data System, 2003"          
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set contains spin averaged count rates from selected ion      
+      and electron channels from the Plasma Science experiment (PLS)          
+      onboard the Galileo spacecraft during the Jupiter orbital operations    
+      phase. Effects due to spacecraft charging and to background from high   
+      energy penetrating radiation have not been removed."                    
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+    This data set contains spin averaged count rates from selected ion        
+    and electron channels from the Plasma Science experiment (PLS)            
+    onboard the Galileo spacecraft during the Jupiter orbital operations      
+    phase."                                                                   
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Overview:                                                                 
+    =========                                                                 
+                                                                              
+    This data set contains spin averaged count rates from selected ion        
+    and electron channels from the Plasma Science experiment (PLS)            
+    onboard the Galileo spacecraft during the Jupiter orbital operations      
+    phase. Effects due to spacecraft charging and to background from high     
+    energy penetrating radiation have not been removed.                       
+                                                                              
+    Parameters:                                                               
+    ===========                                                               
+                                                                              
+    The ion count rate data files cover the E/Q range of 4.2 - 52521          
+    Volts in 14 energy bands for the 2P, 4P, and 6P detectors. Electron       
+    count rate data file also covers 14 energy bands from the E4 detector     
+    in the E/Q range 3.9 - 48790 Volts. The energy bands are:                 
+                                                                              
+    -----------------------------------------------                           
+     Band              E/Q, Volts                                             
+                                                                              
+                 P2,P4,P6                 E4                                  
+    -----------------------------------------------                           
+                                                                              
+       1         4.2-     7.2         3.9 -    6.7                            
+       2         8.6-    14.5         8.0 -   13.5                            
+       3        17.3-    29.0        16.1 -   26.9                            
+       4        34.3-    57.1        31.9 -   53.1                            
+       5        67.4-   112.0        62.6 -  104.0                            
+       6       132.5-   219.9       123.1 -  204.3                            
+       7       244.3-   454.4       227.0 -  422.1                            
+       8       549.0-   960.7       510.0 -  892.5                            
+       9      1153. -  1958.       1071.  -  1819.                            
+      10      2324. -  3788.       2159.  -  3519.                            
+      11      4575. -  7777.       4250.  -  7225.                            
+      12      8821. - 15189        8194.  - 14110                             
+      13     17971  - 29829       16694   - 27710                             
+      14     34770  - 52521       32300   - 48790                             
+                                                                              
+    -------------------------------                                           
+     Sensor    Polar angle                                                    
+             coverage, theta                                                  
+    -------------------------------                                           
+     4E       81 deg-102 deg   perpendicular to the s/c spin vector           
+     2P       35 deg-59  deg   generally farther from the sun                 
+     4P       78 deg-99  deg   perpendicular to the s/c spin vector           
+     6P      118 deg-141 deg   generally closer to the sun                    
+                                                                              
+    Processing:                                                               
+    ===========                                                               
+                                                                              
+    The browse data files are obtained by averaging data for one energy       
+    spectrum from the reduced data record (RDR) files. The PLS instrument     
+    obtains an energy spectrum in either one spacecraft rotation (LPW) or     
+    two spacecraft rotations (RTS).  The time tag is set to the               
+    spacecraft clock (SCLK) value at the start of the average.  Energy        
+    averaging is done by adding together all available measurements           
+    within each energy band and dividing by the number of samples.            
+                                                                              
+    Ancillary Data:                                                           
+    ===============                                                           
+                                                                              
+    Several ancillary files are provided with these data: calibration         
+    tables, calibration document, and a spacecraft events file.               
+                                                                              
+    Calibration:                                                              
+                                                                              
+      PLSCALIB.TXT  Describes the calibration algorithm and pitfalls.         
+      PLS_DETS.TAB  maps detector numbers to detector names/functions         
+      E_STEP_1.TAB  E-steps for electron detectors 14,16,18, and 20.          
+      E_STEP_2.TAB  E-steps for ion dets 3,5,9,11 and mass spec dets 6,7      
+      E_STEP_3.TAB  E-steps for electron detectors 15,17, and 19.             
+      E_STEP_4.TAB  E-steps for ion dets 4,8,10 and mass spec dets 1,2,12,13  
+      M_STEP_1.TAB  M-steps for the mass spectrometer channels                
+      SECTOR.TXT    AACS sector values for quadrant and octant sectoring modes
+      CALIB_1.TAB   Calibration factors to convert count rates from           
+                    electron detectors 14,16,18, and 20 to differential flux. 
+      CALIB_2.TAB   Calibration factors to convert                            
+                    count rates from ion detectors 3,5,9,11 and mass spec     
+                    detectors 6,7 to differential flux.                       
+      CALIB_3.TAB   Calibration factors to convert count rates from           
+                    electron detectors 15,17, and 19 to differential flux.    
+      CALIB_4.TAB   Calibration factors to convert count rates from ion       
+                    detectors 4,8,10 and mass spec                            
+                    detectors 1,2,12,13 to differential flux.                 
+                                                                              
+    Spacecraft Events:                                                        
+                                                                              
+    XXX_EVNT.TXT   A time ordered file extracted from the As-Run              
+    Spacecraft Events Files (ARSEF) that provides the timing of events        
+    that are significant to the plasma experiment. These events include       
+    which type of data (RTS or LPW) is being generated by PLS, and            
+    whether the data is being acquired. This file also includes the times     
+    of thruster firings.  All PLS high voltages are turned off during         
+    thruster firings. The 'XXX' in the file name is the orbit name (i.e.      
+    G01 for orbit Ganymede 1).                                                
+                                                                              
+    Coordinate System:                                                        
+    ==================                                                        
+                                                                              
+    Data are provided in PLS instrument coordinates. Please refer to the      
+    instrument description paper [FRANKETAL1992] for a description of the     
+    instrument mounting, detector fields of view, and spin phase              
+    sectoring.                                                                
+                                                                              
+    Software:                                                                 
+    =========                                                                 
+                                                                              
+    There are no software provided with this archive.                         
+                                                                              
+    Media/Format:                                                             
+    =============                                                             
+                                                                              
+    These data are archived on either CDROM or DVDROM media. Data from        
+    each detector is stored in a separate data file. The data files are       
+    simple  ASCII tables that are described by a detached PDS label           
+    (Table Object).  Each of the four tables have the following               
+    structure:                                                                
+                                                                              
+    Col#    Name  Format   Description                                        
+    -----------------------------------------------------------------------   
+    1       Time    A24      Spacecraft event time (UTC)                      
+    2       SCLK    A11      Spacecraft clock counter                         
+    3       Band_1  1PE8.2   Spin averaged count rate for energy band 1       
+    4       Band_2  1PE8.2   Spin averaged count rate for energy band 2       
+    .        .        .       .      .       .     .   .     .     .  .       
+    .        .        .       .      .       .     .   .     .     .  .       
+    .        .        .       .      .       .     .   .     .     .  .       
+    16      Band_14 1PE8.2   Spin averaged count rate for energy band 14"     
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+    Review:                                                                   
+    =========                                                                 
+                                                                              
+    These data are provided so that users can get a quick look into the       
+    data acquired by the PLS instrument. They are not intended for            
+    detailed analysis. Lots of PLS data can be quickly scanned using          
+    these data in order to identify regions of potential interest. Once       
+    such a region is identified, the user is strongly encouraged to use       
+    the RDR data set (GO-J-PLS-2-RDR-RAWCOUNTS-V1.0) in their analysis.       
+                                                                              
+    Data Coverage/Quality:                                                    
+    ======================                                                    
+                                                                              
+    All data that were received on the ground from the PLS instrument         
+    after December 1995 are included in this data set. This data set          
+    contains gaps in coverage. Many of these gaps were planned                
+    (insufficient telemetry coverage to provide continuous data) and          
+    others were not (telemetry dropouts, station outages, etc.). "            
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = IO                                       
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = EUROPA                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = GANYMEDE                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = CALLISTO                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = AMALTHEA                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = "IO PLASMA TORUS"                        
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = GO                                       
+    INSTRUMENT_ID                  = PLS                                      
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "GALILEO"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "FRANKETAL1992"                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

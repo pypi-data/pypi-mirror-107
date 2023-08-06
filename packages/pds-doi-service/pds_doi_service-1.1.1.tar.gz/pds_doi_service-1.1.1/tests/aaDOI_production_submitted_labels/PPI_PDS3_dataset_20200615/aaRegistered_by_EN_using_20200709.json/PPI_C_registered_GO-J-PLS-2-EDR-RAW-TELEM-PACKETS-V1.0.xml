@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO JUPITER PLASMA RAW PACKETIZED TELEMETRY V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GO-J-PLS-2-EDR-RAW-TELEM-PACKETS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2000-01-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains instrument packet files (IPFs) from the
+                Plasma Science experiment (PLS) onboard the Galileo spacecraft
+                during the Jupiter orbital operations phase. This data set is a
+                very raw, binary form. It is archived for completeness only.
+                There is another PDS data set (GO-J-PLS-3-RDR-FULLRES-V1.0) that
+                contains all of the plasma detector counts in a form that is much
+                easier to work with. The primary advantage of this data set is
+                that it contains instrument housekeeping and engineering data in
+            addition to the counts.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GO-J-PLS-2-EDR-RAW-TELEM-PACKETS-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO ORBITER; JUPITER; AMALTHEA; CALLISTO; EUROPA; GANYMEDE; IO; PLASMA ANALYZER; GO; PLANET; SATELLITE; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. KENT ACKERSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.go-j-pls-2-edr-raw-telem-packets-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

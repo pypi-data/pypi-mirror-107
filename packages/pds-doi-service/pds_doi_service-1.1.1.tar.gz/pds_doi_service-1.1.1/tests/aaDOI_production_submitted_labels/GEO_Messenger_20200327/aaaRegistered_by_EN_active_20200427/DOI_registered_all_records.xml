@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- ========================================= -->
+    <!-- bundle_trang2017_merc_spaceweathering.xml -->
+    <!-- ========================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>Mercury Space Weathering Maps Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:trang2017_mercury_space_weathering::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-05-08</publication_date>
+            <country>USA</country>
+            <description>Mercury Space Weathering Maps</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Atrang2017_mercury_space_weathering&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; MESSENGER; MASCS; Mercury</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>David</first_name>
+                    <last_name>Trang</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:trang2017_mercury_space_weathering::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =========================== -->
+    <!-- bundle_mess_mla_derived.xml -->
+    <!-- =========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER MLA Derived (GDR/RADR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_mla_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-07-18</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER MLA derived observations
+                consist of laser ranges and instrument data collected by the MLA
+                instrument during fly-by and orbital operations of Mercury.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_mla_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; MESSENGER; Mercury Laser Altimeter; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Neumann</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_mla_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ============================== -->
+    <!-- bundle_mess_xrs_calibrated.xml -->
+    <!-- ============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER XRS Calibrated (CDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_xrs_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-07-31</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER XRS CDR data consist of
+                x-ray spectra and instrument data collected by the XRS instrument during
+                cruise, fly-by and orbital operations at Mercury, along with observations
+                of Venus, and observations taken of Cassiopeia-A for calibration.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_xrs_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; MESSENGER; X-Ray Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R. D.</first_name>
+                    <last_name>Starr</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_xrs_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mess_grs_raw.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER GRS Raw (EDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_grs_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-06-25</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER GRS uncalibrated observations consist of science
+                and instrument data collected by the GRS sensor.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_grs_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; MESSENGER; Gamma Ray Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Peplowski</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_grs_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mess_xrs_raw.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER XRS Raw (EDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_xrs_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-05-29</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER XRS Raw (EDR) data consist of
+                x-ray spectra and instrument data collected by the XRS instrument during
+                cruise, fly-by and orbital operations at Mercury, along with observations
+                of Venus, and observations taken of Cassiopeia-A for calibration.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_xrs_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; MESSENGER; X-Ray Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R. D.</first_name>
+                    <last_name>Starr</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_xrs_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mess_mla_raw.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER MLA Raw (EDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_mla_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-06-19</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER MLA raw observations consist of laser ranges and
+                instrument data collected by the MLA instrument during fly-by
+                and orbital operations of Mercury. Also included are observations
+                of Earth and Venus for calibration purposes.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_mla_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; MESSENGER; Mercury Laser Altimeter; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Neumann</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_mla_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ============================== -->
+    <!-- bundle_mess_mla_calibrated.xml -->
+    <!-- ============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER MLA Calibrated (CDR/RDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_mla_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-07-17</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER MLA calibrated and reduced observations consist of laser
+                ranges and instrument data collected by the MLA instrument during fly-by
+                and orbital operations of Mercury. Also included are observations of
+                Earth and Venus for calibration purposes.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_mla_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Derived; MESSENGER; Mercury Laser Altimeter; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Neumann</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_mla_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ========================== -->
+    <!-- bundle_mess_ns_derived.xml -->
+    <!-- ========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER NS Calibrated/Derived (CDR/DDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_ns_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-07-18</publication_date>
+            <country>USA</country>
+            <description>
+                This volume contains calibrated (CDR) and derived (DDR)
+                data and associated documentation from the MESSENGER
+                Neutron Spectrometer (NS).
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_ns_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Derived; MESSENGER; Neutron Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>D. J.</first_name>
+                    <last_name>Lawrence</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_ns_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =========================== -->
+    <!-- bundle_mess_xrs_derived.xml -->
+    <!-- =========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER XRS Derived (RDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_xrs_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-08-21</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER XRS RDR data consist of
+                maps of the ratio of elements detected by the XRS instrument during
+                orbital operations at Mercury.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_xrs_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; MESSENGER; X-Ray Spectrometer; Mercury</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>L. R.</first_name>
+                    <last_name>Nittler</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_xrs_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================== -->
+    <!-- bundle_mess_ns_raw.xml -->
+    <!-- ====================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER NS Raw (EDR) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_ns_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-06-07</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER NS uncalibrated observations consist
+                of science and instrument data collected by the Neutron
+                Spectrometer sensor.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_ns_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; MESSENGER; Neutron Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>D. J.</first_name>
+                    <last_name>Lawrence</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_ns_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =========================== -->
+    <!-- bundle_mess_grs_derived.xml -->
+    <!-- =========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER GRS Derived Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mess_grs_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-07-26</publication_date>
+            <country>USA</country>
+            <description>
+                The MESSENGER GRS derived observations consist of science
+                and instrument data collected by the GRS sensor.
+            </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amess_grs_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-27</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Derived; MESSENGER; Gamma Ray Spectrometer; Mercury; Earth; Venus</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P. N.</first_name>
+                    <last_name>Peplowski</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mess_grs_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>
+

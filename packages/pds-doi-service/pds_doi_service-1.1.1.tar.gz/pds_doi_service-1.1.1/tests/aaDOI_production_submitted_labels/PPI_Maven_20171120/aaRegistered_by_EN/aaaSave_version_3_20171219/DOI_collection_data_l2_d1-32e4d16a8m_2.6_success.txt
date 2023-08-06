@@ -1,0 +1,14 @@
+﻿<records>
+<record successful="true">
+<osti_id>1414232</osti_id>
+<product_nos>
+urn:nasa:pds:maven.static.c:data.d1_32e4d16a8m::2.6
+</product_nos>
+<title>
+MAVEN SupraThermal And Thermal Ion Composition (STATIC) Calibrated Energy Flux: 16 Energy X 64 Solid Angle X 8 Mass Bins Data Collection
+</title>
+<contract_nos/>
+<doi status="posted">10.17189/1414232</doi>
+<status>SUCCESSFUL</status>
+</record>
+</records>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VO1/VO2 MARS ATMOSPHERIC WATER DETECTOR 4 V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VO1/VO2-M-MAWD-4-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1989-11-01</publication_date>
+            <country>USA</country>
+            <description>This data set consists of the raster-averaged radiant intensities
+                and associated data parameters produced from data acquired by the
+                Mars Atmospheric Water Detectors (MAWD) onboard the Viking
+                Orbiters. The basic observations give temporal coverage spanning
+                just over two martian years and variable, but extensive, spatial
+                coverage of the planet. MAWD was a five-channel grating
+                spectrometer measuring solar radiation reflected from the surface
+                and atmosphere of Mars in and out of water vapor bands in the 1.4
+                micrometer spectral interval. The data set described here
+                contains the solar reflected radiant intensities (i.e.,
+                radiances) measured by MAWD, derived water vapor column
+                abundances, a derived '1.4-micrometer brightness', and
+                ancillary data (e.g., viewing geometry, surface elevation and air
+                mass). Column water vapor abundances were derived by comparing
+                the reflected radiant intensities in three water vapor absorption
+                bands to radiant intensities in the two interspersed continua
+                observed air mass and then normalized by the air mass to obtain a
+                vertical column abundance. A basic description of the instrument,
+                its observational modes and its derived data products is given in
+                [FARMER_ETAL_1977]. A description of the global and seasonal
+                variation of water vapor on Mars, based on the complete MAWD
+                observational record, is given in [JAKOSKY_FARMER_1982]. This
+                data set was generated from the raster-level data base
+                constructed during the Viking Mission on the original data
+                processing system (IRPS: Infrared Processing System) by the MAWD
+                Science Team, led by C. B. Farmer, JPL. Together with the
+                instantaneous field of view (IFOV) radiances and geometry, the
+                raster-level radiances, associated water column abundances and
+                ancillary data have been archived at the NSSDC (NSSDC id
+                75-075A-03A, 75-083A-03A). Data from the final phase of the VO-1
+                mission were added, supervised by R. Zurek, JPL. Eventually, the
+                data set was restructured, additional quality flags were
+                introduced, and a second estimate of the water vapor column
+                abundance (WFAPT, termed COLUMN_H2O_A in the data set) was added
+                [by R. Zurek, JPL [JAKOSKY_ETAL_1988].]. The data base was
+                restructured, while preserving key unique parameters, into a
+                consistent format with the Viking Orbiter Infrared Thermal Mapper
+                (IRTM) data [R. Mehlman, R. Zurek]. Both the MAWD and IRTM data
+                sets were then accessible with the XXFUNC package. Further
+                quality checking of the MAWD data was carried out by B. Jakosky,
+            U. Colorado.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VO1%2FVO2-M-MAWD-4-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING ORBITER 1; VIKING ORBITER 2; MARS; INFRARED SPECTROMETER; VO1; VO2; PLANET; MAWD; MARS ATMOSPHERIC WATER DETECTOR</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>C.B. FARMER</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vo1-vo2-m-mawd-4-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

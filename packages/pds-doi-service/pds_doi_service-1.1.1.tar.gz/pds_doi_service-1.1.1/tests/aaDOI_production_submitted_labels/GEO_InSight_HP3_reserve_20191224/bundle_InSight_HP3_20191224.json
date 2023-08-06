@@ -1,0 +1,17 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:insight_hp3_tem",
+        "title": " Mars InSight Lander HP3 Data Archive",
+        "authors": [
+            {
+                "first_name": "Tilman",
+                "last_name": "Spohn"
+            }
+        ],
+        "publication_date": "2020-01-01",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]
+

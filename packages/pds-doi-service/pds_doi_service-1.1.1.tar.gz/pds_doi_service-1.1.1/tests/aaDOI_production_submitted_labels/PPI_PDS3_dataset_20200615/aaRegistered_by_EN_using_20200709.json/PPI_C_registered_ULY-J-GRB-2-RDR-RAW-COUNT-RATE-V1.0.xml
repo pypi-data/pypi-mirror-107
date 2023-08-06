@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>ULY JUP GRB SOLAR X-RAY/COSMIC GAMMA-RAY RAW COUNT RATE</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>ULY-J-GRB-2-RDR-RAW-COUNT-RATE-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-05-01</publication_date>
+            <country>USA</country>
+            <description>The archived data consist of count rates from the sum of two
+                hemispherical detectors covering 4 pi steradians and operating
+                continuously. The detectors are 3 mm thick CsI scintillators
+                coupled to photomultiplier tubes. The nominal energy range is
+                25-150 keV, but the below table should be consulted to find the
+                accurate thresholds for any day of the mission. A more complete
+                description of the instrument may be found in [HURLEYETAL1992]
+                and [COTINETAL1983]. Although the prime objectives of this
+                investigation are the study of solar and cosmic x- and gamma-ray
+                bursts, it should be noted that the experiment is also sensitive
+                to solar protons and electrons. The former deposit energy
+                directly in the scintillator if they are energetic enough, while
+                the latter may produce x- radiation locally by bremsstrahlung.
+                Thus although the counting rates are generally stable at about
+                500 c/s over the long term, there are periods of weeks to a month
+                or so when the rates increase considerably due to particles.
+                Examples may be found in March 1991 (solar protons) and February
+                1992 (particles in the Jovian magnetosphere). The time resolution
+                of the data takes on one of four values depending on the
+                telemetry rate and instrument operating mode: 0.25, 0.5, 1, or 2
+            seconds.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=ULY-J-GRB-2-RDR-RAW-COUNT-RATE-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>ULYSSES; JUPITER; GAMMA RAY DETECTOR; ULY; PLANET; GRB; SOLAR X-RAY/COSMIC GAMMA-RAY BURST INSTRUMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>ROGER WILLIAMS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.uly-j-grb-2-rdr-raw-count-rate-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

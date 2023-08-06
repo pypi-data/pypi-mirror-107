@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO ORBITER AT JUPITER CALIBRATED MAG HIGH RES V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GO-J-MAG-3-RDR-HIGHRES-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1997-07-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains high time resolution magnetic field vectors
+                acquired by the Galileo magnetometer (MAG). It includes both
+                satellite flyby and non-flyby data. These data were acquired in
+                order to characterize various portions of the Jovian magnetosphere
+                at high time resolution. The Galileo Magnetospheres Working Group
+                (MWG) collectively acquired high time resolution data for short
+                intervals in order to try and regain some of the magnetospheric
+                science lost due to the low data rates of the phase 2 mission (no
+                high gain antenna) mission. These observations are scattered in
+                Jovian distance, local time, System III longitude, etc. in order
+                to provide some insight into processes that may be active in
+            different regions of the magnetosphere.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GO-J-MAG-3-RDR-HIGHRES-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO ORBITER; IO PLASMA TORUS; GANYMEDE; IO; CALLISTO; AMALTHEA; EUROPA; JUPITER; MAGNETOMETER; GO; PLASMA CLOUD; SATELLITE; PLANET; MAG; TRIAXIAL FLUXGATE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DR. MARGARET G. KIVELSON</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.go-j-mag-3-rdr-highres-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

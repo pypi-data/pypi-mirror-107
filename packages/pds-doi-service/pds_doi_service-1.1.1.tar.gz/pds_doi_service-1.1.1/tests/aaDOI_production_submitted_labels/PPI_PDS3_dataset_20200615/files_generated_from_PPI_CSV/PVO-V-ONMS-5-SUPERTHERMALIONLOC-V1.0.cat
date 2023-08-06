@@ -1,0 +1,142 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-28, D. Kazden, updated to meet PDS 3.8 standards;       
+             2020-02-11, D. Kazden, updated CITATION_DESC and                
+             DATA_SET_RELEASE_DATE;"                                         
+                                                                             
+    OBJECT                         = DATA_SET                                
+    DATA_SET_ID                    = "PVO-V-ONMS-5-SUPERTHERMALIONLOC-V1.0"  
+                                                                             
+    OBJECT                         = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  =                                         
+                "PVO VENUS ONMS DERIVED SUPERTHERMAL ION LOCATION V1.0"      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+                                                                             
+    START_TIME                     = 1978-12-05T15:06:25                     
+    STOP_TIME                      = 1992-10-07T19:50:29                     
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    DATA_SET_RELEASE_DATE          = 1996-09-01                              
+    PRODUCER_FULL_NAME             = "DR. WAYNE KASPRZAK"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) neutral mass       
+                                      spectrometer (ONMS) ion loc data for   
+                                      all Venus orbits (1-5055, 1978-12-05 to
+                                      1992-10-07)."                          
+    ABSTRACT_DESC                  = "                                       
+    This dataset contains start and stop times/locations where               
+superthermal ions were detected by the Neutral Mass Spectrometer             
+instrument aboard the Pioneer Venus Orbiter. The instrument detected         
+superthermal, energetic or fast ions whose energy exceeds 36 eV in           
+the spacecraft frame of reference.  These ions were observed in              
+early orbits during measurements of the neutral density near                 
+periapsis, have an erratic and unpredictable signature, and occur            
+at too high an altitude to be due to the neutral atmosphere. When the        
+altitude of periapsis increased above the point where neutral density        
+measurements could be made, the instrument was configured                    
+specifically to detect superthermal ions.  In general, for orbit             
+numbers 1 to 645, data were taken from the RPA mode.  The gas                
+background signal with the filament on is about a factor of 10               
+less in this mode than in non-RPA mode, resulting in a lower                 
+detection threshold. For orbit numbers above 923, the instrument             
+was deliberately configured with the filament off and non-RPA                
+mode data was used. For mass 16 the RPA voltage is about +3.8                
+volts."                                                                      
+    CITATION_DESC      = "Kasprzak, W., PVO-V-ONMS-5-SUPERTHERMALIONLOC-V1.0,
+                       PVO VENUS ONMS DERIVED SUPERTHERMAL ION LOCATION V1.0,
+                          NASA Planetary Data System, 1996."                 
+                                                                             
+    DATA_SET_DESC                  = "                                       
+         orbits          time                                                
+             1        1978-12-05T15:06:25.000Z                               
+           645        1980-09-10T17:30:20.000Z                               
+                                                                             
+          4710        1991-12-29T00:40:49.000Z                               
+          5055        1992-10-07T19:50:29.000Z                               
+                                                                             
+    The data reduction process has been described in Kasprzak                
+et al. (1987). The method used to reduce the data assumes                    
+cylindrical symmetry of the ion source.  In actual fact, the                 
+source is asymmetrical in its angular response (Guenther, 1989).             
+This can introduce as much as a factor of 2 scatter in the data.             
+No simple solution has been found for modeling this asymmetry                
+since the actual ion drift vector is unknown. The minimum energy             
+of an ion detectable by the ONMS in this ion mode is 35.9 eV.                
+The maximum transmission is assumed to occur about 10 V above                
+this value.  On the nightside of Venus the spacecraft potential              
+is negative and the most probable ion energy is near 40 eV.                  
+                                                                             
+The ion species regularly monitored include: He+, N+, O+,                    
+N+ and/or CO+ and CO2+. Because of the paucity of data at other              
+mass numbers only mass 16 (atomic oxygen) has been reduced to a              
+flux and number density. As part of the reduction process the                
+angle in the ecliptic plane of the apparent ion flow in spacecraft           
+reference frame has been deduced. The flux values are estimated              
+in the spacecraft reference frame relative to spacecraft ground.             
+The density is computed from the flux by dividing it by a speed              
+corresponding to 40 eV. No correction has been applied to the                
+angle, density or flux in order to remove the effect of spacecraft           
+velocity.                                                                    
+                                                                             
+The dataset fields are:                                                      
+                                                                             
+VARIABLE    COMMENT                                                          
+--------------------------------------------------------                     
+ ORBIT         Orbit number                                                  
+ MASS          Mass number of species                                        
+                    4  He+                                                   
+                   12  C+                                                    
+                   14  N+                                                    
+                   16  O+                                                    
+                   28  CO+ and/or N2+                                        
+                   30  NO+                                                   
+                   32  O2+                                                   
+                   44  CO2+                                                  
+ BTIME         Beginning time                 -|                             
+ BTPER         Time from periapsis (sec)       |                             
+ BALTIT        Altitude in (km)                |-- START                     
+ BSZA          Solar zenith angle (deg)        |                             
+ BLAT          Local solar time (hr)          -|                             
+ ETIME         Ending Time                    -|                             
+ ETPER         Time from periapsis (sec)       |                             
+ EALTIT        Altitude in (km)                |-- FINISH                    
+ ESZA          Solar zenith angle (deg)        |                             
+ ELAT          Local solar time (hr)          -|"                            
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+       In order to fit the data, a minimum of 30 points were required        
+    in 36 seconds. In addition, the maximum to minimum count ratio was       
+    required to be factor of 3 or greater in order to insure that there      
+    was a definitive spin modulation.  The center 12 seconds of data is      
+    divided by the fitting function to derive the equivalent flux for        
+    that point. The center of the new fitting interval is adjusted so        
+    that it is centered on the expected signal maximum predicted from        
+    the previous interval fit. As a result of this method of fitting,        
+    discontinuities may exist near minimum angle of attack where one         
+    12 second interval adjoins the next interval.                            
+                                                                             
+See Kasprzak et al. (1987).                                                  
+                                                                             
+Kasprzak, W.T., H.B.  Niemann and P.  Mahaffy, Observations of               
+Energetic Ions on the Nightside of Venus, Journal of Geophysical             
+Research, vol. 32, 291-298, 1987. "                                          
+                                                                             
+END_OBJECT                         = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KASPRZAKETAL1987"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+END_OBJECT                     = DATA_SET                                    
+END

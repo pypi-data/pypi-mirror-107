@@ -1,0 +1,12 @@
+﻿<records>
+<record successful="false">
+<osti_id>0</osti_id>
+<product_nos>urn:nasa:pds:ladee_nms:data_derived</product_nos>
+<title>
+LADEE Neutral Mass Spectrometer Derived Data Collection
+</title>
+<contract_nos/>
+<doi status="posted"/>
+<status>Validation Error(s): UNPARSEABLE DATE: 10/1/2014</status>
+</record>
+</records>

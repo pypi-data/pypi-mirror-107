@@ -1,0 +1,21 @@
+<records> 
+    <record status="Reserved"> 
+        <title>Laboratory Shocked Feldspars Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name>J. R.</first_name> 
+               <last_name>Johnson</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2020-03-11</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:lab_shocked_feldspars</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record> 
+</records>

@@ -1,0 +1,346 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+J. MAFI (PPI), 1998-05-18;                                                    
+X. LIU (added DATA_SET_TERSE_DESC), 2002-08-26;                               
+D. Kazden, removed Zs from START_TIME and STOP_TIME, added ABSTRACT_DESC and  
+CITATION_DESC;                                                                
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-10-26;                             
+D. Kazden, updated CITATION_DESC and ABSTRACT_DESC, 2020-02-27;"              
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-J-CRS-5-SUMM-FLUX-V1.0"             
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG2 JUP CRS DERIVED                     
+PROTON/ION/ELECTRON FLUX BROWSE V1.0"                                         
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1979-07-03T00:00:00.000                  
+    STOP_TIME                      = 1979-08-03T23:45:00.000                  
+    DATA_SET_RELEASE_DATE          = 1997-12-01                               
+    PRODUCER_FULL_NAME             = "NATIONAL SPACE SCIENCE DATA CENTER"     
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    ABSTRACT_DESC                  = "The Cosmic Ray Subsystem (CRS) was      
+      designed for cosmic ray studies. It consists           
+      of two high Energy Telescopes (HET), four Low Energy                    
+      Telescopes (LET) and The Electron Telescope (TET). The                  
+      detectors have large geometric factors (~ 0.48 to 8 cm^2 ster)          
+      and long electronic time constants (~ 24 [micro]sec) for low            
+      power consumption and good stability. Normally, the data are            
+      primarily derived from comprehensive ([Delta]E[1], [Delta]E[2]          
+      and E) pulse-height information about individual events.                
+      Because of the high particle fluxes encountered at Jupiter and          
+      Saturn, greater reliance had to be placed on counting rates in          
+      single detectors and various coincidence rates. In inter-               
+      planetary space, guard counters are placed in anticoincidence           
+      with the primary detectors to reduce the background from                
+      high-energy particles penetrating through the sides of the              
+      telescopes. These guard counters were turned off in the Jovian          
+      magnetosphere when the accidental anticoincidence rate became           
+      high enough to block a substantial fraction of the desired              
+      counts. Fortunately, under these conditions the spectra were            
+      sufficiently soft that the background, due to penetrating               
+      particles, was small."                                                  
+    CITATION_DESC  = "Vogt, R.E., Stone, E.C., JR, VG2-J-CRS-5-SUMM-FLUX-V1.0,
+                     VG2 JUP CRS DERIVED PROTON/ION/ELECTRON FLUX BROWSE V1.0,
+                        NASA Planetary Data System, 1997."                    
+    DATA_SET_TERSE_DESC            = "                                        
+Voyager 2 Cosmic Ray (CRS) data from the Jupiter encounter. The data set      
+provides 15 minute averages of the ion flux for particles between 0.42 and    
+8.3 MeV. Electron fluxes are also provided for particles above 0.5 MeV."      
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+      Instrument P.I.       : Rochus E. Vogt                                  
+      Data Supplier         : National Space Science Data Center              
+      Data sampling rate    : variable (1 hr for FPHA data, 15 min.           
+                              for all others)                                 
+      Data Set Start Time   : 1979-07-03T00:00:00.000Z                        
+      Data Set Stop Time    : 1979-08-03T23:45:00.000Z                        
+                                                                              
+      (The following description has been excerpted from                      
+      [NSSDCCRS1979])                                                         
+                                                                              
+      As its name implies, the Cosmic Ray Subsystem (CRS) was                 
+      designed for cosmic ray studies [STONEETAL1977B]. It consists           
+      of two high Energy Telescopes (HET), four Low Energy                    
+      Telescopes (LET) and The Electron Telescope (TET). The                  
+      detectors have large geometric factors (~ 0.48 to 8 cm^2 ster)          
+      and long electronic time constants (~ 24 [micro]sec) for low            
+      power consumption and good stability. Normally, the data are            
+      primarily derived from comprehensive ([Delta]E[1], [Delta]E[2]          
+      and E) pulse-height information about individual events.                
+      Because of the high particle fluxes encountered at Jupiter and          
+      Saturn, greater reliance had to be placed on counting rates in          
+      single detectors and various coincidence rates. In inter-               
+      planetary space, guard counters are placed in anticoincidence           
+      with the primary detectors to reduce the background from                
+      high-energy particles penetrating through the sides of the              
+      telescopes. These guard counters were turned off in the Jovian          
+      magnetosphere when the accidental anticoincidence rate became           
+      high enough to block a substantial fraction of the desired              
+      counts. Fortunately, under these conditions the spectra were            
+      sufficiently soft that the background, due to penetrating               
+      particles, was small.                                                   
+                                                                              
+      The data on proton and ion fluxes at Jupiter were obtained              
+      with the LET. The thicknesses of individual solid-state                 
+      detectors in the LET and their trigger thresholds were chosen           
+      such that, even in the Jovian magnetosphere, electrons made,            
+      at most, a very minor contribution to the proton counting               
+      rates [LUPTON&STONE1972]. Dead time corrections and accidental          
+      coincidences were small (&#10094; 20%) throughout most of the                  
+      magnetotail, but were substantial (&#10095; 50%) at flux maxima                
+      within 40 R[J] Of Jupiter. Data have been included in this              
+      package for those periods when the corrections are less than            
+      ~ 50% and can be corrected by the user with the dead time               
+      appropriate to the detector (2 to 25 [micro]sec). The high              
+      counting rates, however, caused some baseline shift which may           
+      have raised proton thresholds significantly. In the inner               
+      magnetosphere, the L[2] counting rate was still useful because          
+      it never rolled over. This rate is due to 1.8- to 13-MeV                
+      protons penetrating L[1] (0.43 cm^2 ster) and &#10095; 9-MeV protons           
+      penetrating the shield (8.4 cm^2 ster). For an E^-2 spectrum,           
+      the two groups would make comparable contributions; but in the          
+      magnetosphere, for the E^-3 to E^-4 spectrum above 2.5 MeV              
+      [MCDONALDETAL1979], the contribution from protons penetrating           
+      the shield would be only 3 to 14%.                                      
+                                                                              
+      The LET L[1]L[2]L[4] and L[1]L[2]L[3] coincidence-                      
+      anticoincidence rates give the proton flux between 1.8 and 8            
+      MeV and 3 to 8 MeV with a small alpha particle contribution             
+      (~10^-3). Corrections are required for dead time losses in              
+      L[1], accidental L[1]L[2] coincidences and anticoincidence              
+      losses from L[4]. Data are given only for periods when these            
+      corrections are relatively small. In addition to the rates              
+      listed in the table, the energy lost in detectors L[1], L[2]            
+      and L[3] was measured for individual particles. For protons,            
+      this covered the energy range from 0.42 to 8.3 MeV. Protons             
+      can be identified positively by the [Delta]E vs. E technique,           
+      their spectra obtained and accidental coincidences greatly              
+      reduced. Because of telemetry limitations, however, only a              
+      small fraction of the events could be transmitted, and                  
+      statistics become poor unless pulse-height data are averaged            
+      over a period of one hour.                                              
+                                                                              
+      HET and LET detectors share the same data lines and pulse-              
+      height analyzers; thus, the telescopes can interfere with one           
+      another during periods of high counting rates. To prevent such          
+      an interference and explore different coincidence conditions,           
+      the experiment was cycled through four operating modes, each            
+      192 seconds long. Either the HETs or the LETs were turned on            
+      at a time. LET-D was cycled through L[1] only and L[1]L[2]              
+      coincidence requirements. The TET was cycled through various            
+      coincidence conditions, including singles from the front                
+      detectors. At the expense of some time resolution, this                 
+      procedure permitted us to obtain significant data in the outer          
+      magnetosphere and excellent data during the long passage                
+      through the magnetotail region.                                         
+                                                                              
+      Some of the published results from this experiment required             
+      extensive corrections for dead time, accidental coincidences            
+      and anticoincidences ([VOGTETAL1979A], [VOGTETAL1979B];                 
+      [SCHARDTETAL1981]; [GEHRELS1981]). These corrections can be             
+      applied only on a case-by-case basis after a careful study of           
+      the environment and many self-consistency checks. They cannot           
+      be applied on a systematic basis and we have no computer                
+      programs to do so; therefore, data from such periods are not            
+      included in the Data Center submission. The scientists on the           
+      CRS team will, however, be glad to consider special requests            
+      if the desired information can be extracted from the data.              
+                                                                              
+      Description of the Data                                                 
+      -----------------------                                                 
+      (1) LD1 RATE gives the nominal &#10095; 0.43-MeV proton flux cm^-2             
+          s^-1 sr^-1. This rate includes all particles which pass             
+          through a 0.8 mg/cm^2 aluminum foil and deposits more than          
+          220 keV in a 34.6 [micron] Si detector on Voyager 1 (209            
+          keV, 33.9 [microns] on Voyager 2) Therefore, heavy ions,            
+          such as oxygen and sulfur are also detected; however, their         
+          contribution is believed to be relatively small. Only a             
+          small percentage of the pulses in this detector are larger          
+          than the maximum energy that can be deposited by a proton.          
+          Heavy ions would produce such large pulses, unless their            
+          energy spectra were much steeper than the proton spectrum.          
+          The true flux, F[t], can be calculated from the data:               
+                                                                              
+                                     F                                        
+                      F[t]  = ----------------                                
+                              1 - 1.26x10^-4 F                                
+                                                                              
+          and corrections are small for F &#10094; 1000 cm^-2 s^-1.                  
+                                                                              
+      (2) LD2 RATE is not suitable for an absolute flux determination         
+          and is given in counters per s. The detector responds to            
+          protons and ions that penetrate either (a) 0.8 mg/cm^2 Al           
+          plus 8.0 mg/cm^2 Si and lose at least 200 keV in a 35               
+          [micron] Si detector (1.8 to 13 MeV) or (b) pass through            
+          &#10095; 140 mg/cm^2 Al. For an E^-2 proton spectrum, the                  
+          contributions from (a) and (b) would be about equal;                
+          however, the proton spectrum is substantially softer                
+          throughout most of the magnetosphere and the detector               
+          should respond primarily to (a). Dead time corrections              
+          are given by                                                        
+                                                                              
+                                    R                                         
+                     R[t]  = ----------------                                 
+                             1 - 2.55x10^-5 R                                 
+                                                                              
+          where R is the count rate in counts/s. Thus, correction to          
+          the supplied data are small for R &#10094; 4000 c/sec, but become          
+          80 large in the middle magnetosphere that the magnitude of          
+          even relative intensity changes becomes uncertain.                  
+                                                                              
+      (3) LD L[1].L[2]. L[4]. SL COINCIDENCE RATE gives the total             
+          proton flux (cm^-2 s^-1 sr^-1) between ~ 1.8 and ~ 8.1 MeV          
+          with a small admixture of alpha particles. Accidental               
+          coincidences become substantial at higher rates and the             
+          flux derived from pulse-height analysis should be used if           
+          accuracy is desired.                                                
+                                                                              
+      (4) LDTRP RATE gives proton flux (cm^-2 s^-1 sr^-1) between             
+          3.0 and 8.0 MeV with a small alpha particle contribution            
+          (L[1]L[2]L[3] coincidences are required).                           
+                                                                              
+      (5) IBS4E RATE gives the electron flux (cm^-2 s^-1 sr^-1) for           
+          electrons with a range between 4 and 10 mm in Si; this              
+          corresponds approximately to the energy range of 2.6-5.1            
+          MeV. Accidental coincidence and dead time corrections are           
+          generally small in the magnetotail and have not been                
+          applied to these data. Because of differences between               
+          Voyager 1 and 2, we give the average rate for HET I and II          
+          for Voyager 1 and the HET I rate for Voyager 2.                     
+                                                                              
+      (6) IBS3E RATE is the same as (5); but the electron range               
+          falls between 10 and 16 mm of Si, or approximately 5.1-8            
+          MeV.                                                                
+                                                                              
+      (7) IBS2E RATE is the same as (5); but the electron range               
+          falls between 16 and 22 mm of Si, or approximately 8-12             
+          MeV.                                                                
+                                                                              
+      (8) D4L RATE is not suitable for an absolute electron flux              
+          determination. This counting rate includes all pulses from          
+          detector D[4] of TET which exceed 0.5 MeV. The shielding            
+          varies with direction of incidence but is at least 1.2 cm           
+          of Si. In the Jovian environment, the detector responds             
+          primarily to electrons with energies above ~ 6 MeV. The             
+          D[4]L rate is useful primarily for determining relative             
+          changes in the high-energy electron flux. This rate has a           
+          high background from the RTG. Where needed, the dead time           
+          corrections should be applied as to the LD[2] rate ([tau]           
+          ~ 2.55x10^-5 s).                                                    
+                                                                              
+      (9) Pulse-height Analyzed Proton Flux (FPHA) is derived from a          
+          [Delta]E vs. E analysis of pulses from L[1], L[2] and L[3]          
+          of LET and gives the average proton flux (cm^-2 s^-1 sr^-1          
+          MeV^-1) in six energy channels. Where required, a                   
+          correction should be applied for the dead time in LD1 as            
+          follows:                                                            
+                                                                              
+                                        FPHA                                  
+                      FPHA[t]  = -------------------                          
+                                 1 - 1.26x10^-4 FLD1                          
+                                                                              
+          where FPHA is the listed flux of this rate (9) and FLD1 is          
+          the flux given in rate 1. FPHA gives the most accurate              
+          value of the proton flux available from this experiment;            
+          however, the counting statistics are poorer than for the            
+          other rates because of limited sampling. Fluxes derived             
+          from rate 3 (LD) which cover the same energy range as FPHA          
+          will be higher because of poorer definition of the energy           
+          threshold, accidental coincidences and a variable, but              
+          small, background contribution.                                     
+                                                                              
+                       ENERGY CHANNELS (MEV) OF FPHA                          
+                                                                              
+                         (absolute accuracy ~ 10%)                            
+                                                                              
+                       VOYAGER 1            VOYAGER 2                         
+                                                                              
+             1       1.829 - 2.045        1.807 - 2.001                       
+             2       2.045 - 3.104        2.001 - 3.309                       
+             3       3.104 - 3.753        3.309 - 3.984                       
+             4       3.753 - 4.530        3.984 - 4.761                       
+             5       4.530 - 6.284        4.761 - 6.041                       
+             6       6.284 - 8.091        6.041 - 8.043                       
+                                                                              
+                                                                              
+      Data Coverage                                                           
+      ================                                                        
+      Filename       Recs            Start                     Stop           
+      ----------------------------------------------------------------------- 
+      BS2E_RATE.TAB  2424  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      BS3E_RATE.TAB  2424  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      BS4E_RATE.TAB  2424  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      D4L_RATE.TAB   2744  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      FPHA_RATE.TAB  632   1979-07-03T00:00:00.000Z  1979-08-03T23:00:00.000Z 
+      LD1_RATE.TAB   2744  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      LD2_RATE.TAB   1056  1979-07-03T00:00:00.000Z  1979-07-13T23:45:00.000Z 
+      LD_RATE.TAB    2526  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z 
+      LDTRP_RATE.TAB 2520  1979-07-03T00:00:00.000Z  1979-08-03T23:45:00.000Z"
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+                                                                              
+      Data confidence level information is described in the                   
+      DATA_SET_DESCRIPTION.                                                   
+                                                                              
+      Missing Data Flag                                                       
+      =================                                                       
+      Any data column whose value is -9.99999e+10 is a missing data           
+      value."                                                                 
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = CRS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "GEHRELS1981"                            
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "LUPTON&STONE1972"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "MCDONALDETAL1979"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "NSSDCCRS1979"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SCHARDTETAL1981"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "STONEETAL1977B"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "VOGTETAL1979A"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "VOGTETAL1979B"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

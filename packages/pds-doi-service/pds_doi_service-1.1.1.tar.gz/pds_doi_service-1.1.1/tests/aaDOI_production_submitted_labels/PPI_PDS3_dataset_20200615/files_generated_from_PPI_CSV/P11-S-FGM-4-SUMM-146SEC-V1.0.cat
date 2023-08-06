@@ -1,0 +1,204 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. Kazden, updated ARCHIVE_STATUS, added ABSTRACT_DESC, CITATION_DESC, and   
+CONFIDENCE_LEVEL_NOTE, removed Zs from START_TIME and STOP_TIME, removed     
+unnecessary keywords, 2012-03-09;                                            
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-09;"                
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P11-S-FGM-4-SUMM-146SEC-V1.0"          
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P11 FLUXGATE MAGMETOMETER 146          
+                                      SECOND SATURN ENCOUNTER DATA"          
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1979-09-01T09:33:58.000                 
+    STOP_TIME                      = 1979-09-01T22:30:16.000                 
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "Mario H. Acuna"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+Pioneer 11 Fluxgate Magnetometer (FGM) data from the Saturn encounter        
+period between 1979-09-01T22:30:16.000Z and 1979-09-01T22:30:16.000Z.        
+The data set provides 146 second magnetic field averages in RK spherical     
+coordinates and spacecraft trajectory data."                                 
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+Pioneer 11 Fluxgate Magnetometer (FGM) data from the Saturn encounter        
+period between 1979-09-01T22:30:16.000 and 1979-09-01T22:30:16.000.          
+The data set provides 146 second magnetic field averages in RK spherical     
+coordinates and spacecraft trajectory data."                                 
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set consists of magnetic field vector data recorded by       
+      the Fluxgate Magnetometer on board the Pioneer 11 spacecraft,          
+      during the Saturn encounter period.  Data include 146 second           
+      averages of the magnetic field data in RK spherical coordinates        
+      and spacecraft trajectory data.                                        
+                                                                             
+                                                                             
+      Data Sampling                                                          
+      ==============                                                         
+      At Saturn, instantaneous vector measurements were obtained             
+      every 146.3 second, in synchronism with the spacecraft spin            
+      period of 7.7 second.                                                  
+                                                                             
+                                                                             
+      Data Processing                                                        
+      ===============                                                        
+      No detailed information of data processing is found in the NSSDC       
+      documentation pertinent to this data set.                              
+                                                                             
+      Pioneer 11 spacecraft was operating under a spin-stablized             
+      condition and had a spin period of 7.7 second.
+                                                                             
+                                                                             
+      Data Format                                                            
+      ============                                                           
+      The Pioneer 11 magnetometer data for Saturn encounter were 
+      originally written on an ASCII magnetic tape.  The original 
+      file was re-formatted into a new ASCII file named          
+      P11_FGM_SAT_ENC_146SEC.TAB which contains the following data columns:
+      --------------------------------------------------------------------   
+      Column  Column   Column                                                
+      Name    Format   Description                                           
+      --------------------------------------------------------------------   
+      TIME    A24      Time in yyyy-mm-ddThh:mm:ss.sssZ        
+      R       F7.4     Distance of Pioneer 11 from Saturn in Rs              
+      LAT     F9.4     Latitude of Pioneer 11 (unknown coordinates)
+      LON     F10.4    Longitude of Pioneer 11 (unknown coordinates)
+      BR      F10.6    Radial component of the magnetic field in
+                           RK coordinates
+      BTHETA  F10.6    Polar component of the magnetic field in 
+                           RK coordinates
+      BPHI    F10.6    Azimuthal component of the magnetic field in
+                           RK coordinates
+      --------------------------------------------------------------------   
+                                                                             
+                                                                             
+      Coordinate System for Data                                             
+      ===========================                                            
+      RK coordinates is based on two principle directions, Saturn to
+      Pioneer 11, R, and Saturn spin axis, J.  X=R points away from 
+      Saturn.  Y is a vector in the direction of J cross R.  Z is X 
+      cross Y.  Radial direction R, points away from Saturn, polar 
+      direction THETA, positive northward, and azimuthal direction, 
+      PSI, parallel to the X-Y plane, positive eastward.                     
+
+      The NSSDC documentation associated with this data set doesn't 
+      provide information on the coordinate system used for spacecraft 
+      trajectory data. 
+
+
+      Ancillary Data                                                         
+      ==============                                                         
+      There is no ancillary data associated with this data set.              
+                                                                             
+                                                                             
+      Instrument Calibration                                                 
+      ======================                                                 
+      The fluxgate magnetometer was calibrated at the GSFC Magnetic
+      Test Facility by means of a 2 meter diameter, single axis 
+      Helmholtz coil system.  Typically hysteresis observed after 
+      exposure to 2.5 mT fields was less than 1 part in 10**3 (one
+      count).  Temperature stability is better than +- 0.5% over the
+      temperature range of -20 to +40 degree Celsius in spite of the
+      open loop design of the instrument.  This is due to the fact 
+      that the characteristics of the magnetic material used in the
+      sensor cores are fairly independent of temperature over the
+      indicated range.  The stability figure includes the A/D converter
+      drift and a large portion of it is due to the single ramp design 
+      of the latter.  Nevertheless, minimum power consumption 
+      requirements and flight qualified component availability 
+      precluded the used of more stable A/D converter designs
+      (ACUNA&NESS1974)."
+                                                                             
+      CONFIDENCE_LEVEL_NOTE   = "                                            
+      Confidence Level Overview                                              
+      =========================                                              
+      No data confidence information is found in the NSSDC documentation     
+      pertinent to this data set.                                            
+                                                                             
+      There is no flagged values in this data set.                           
+                                                                             
+      "                                                                      
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = SATURN                                  
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P11                                     
+    INSTRUMENT_ID                  = FGM                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 11"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1975"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNAETALL1980"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "BELCHER1973"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCCULLOCH&KOMES1973"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MEAD1974"                              
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITH1973"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

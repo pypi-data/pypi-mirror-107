@@ -1,0 +1,449 @@
+PDS_VERSION_ID                     = PDS3                                      
+LABEL_REVISION_NOTE               = "                                         
+    2008-05-06 RS:hinson  - original;                                         
+    2008-05-07 RS:simpson - added section Low Solar Zenith Angles;            
+    2008-05-08 RS:hinson  - added details about aeroid under PARAMETERS;      
+    2009-02-06 PPI: updated for new archive structure;                        
+    2018-08-06, PPI:Kazden - removed ARCHIVE_STATUS keyword;"                 
+RECORD_TYPE                       = STREAM                                    
+                                                                              
+OBJECT                            = DATA_SET                                  
+ DATA_SET_ID                      = "MGS-M-RSS-5-EDS-V1.0"                    
+                                                                              
+ OBJECT                           = DATA_SET_INFORMATION                      
+  DATA_SET_NAME                   = "MGS RS: IONOSPHERIC ELECTRON DENSITY     
+                                     PROFILES V1.0"                           
+  DATA_SET_COLLECTION_MEMBER_FLG  = "N"                                       
+  DATA_OBJECT_TYPE                = TABLE                                     
+  START_TIME                      = 1998-12-24T03:47:00                       
+  STOP_TIME                       = 2005-06-09T23:52:00                       
+  DATA_SET_RELEASE_DATE           = 2008-05-31                                
+  PRODUCER_FULL_NAME              = "DAVID P. HINSON"                         
+  DETAILED_CATALOG_FLAG           = "N"                                       
+  DATA_SET_TERSE_DESC             = "Mars Global Surveyor radio occultation   
+                                     ionospheric electron density profiles -  
+                                     reorganized onto one volume."            
+  CITATION_DESC                   = "Hinson, D.P., Mars Global Surveyor       
+                                     Radio Occultation Profiles of the        
+                                     Ionosphere - Reorganized,                
+                                     MGS-M-RSS-5-EDS-V1.0,                    
+                                     NASA Planetary Data System,              
+                                     2008."                                   
+                                                                              
+  ABSTRACT_DESC                   = "                                         
+    This data set contains 5600 ionospheric electron density                  
+    profiles (EDS files) derived from Mars Global Surveyor (MGS)              
+    radio occultation data.  The profiles were previously archived            
+    in the MGS-M-RSS-5-SDP-V1.0 data set along with other reduced             
+    data products from the MGS Radio Science Team (RST).  Here they           
+    have been pulled from the original 38 volumes and reorganized in          
+    chronological order on a single volume.  The profiles themselves          
+    have not been modified, and the labels have been edited only to           
+    conform with the requirements of the new data set.  This set of           
+    profiles is accompanied by a single occultation summary file              
+    which lists key characteristics of each experiment."                      
+                                                                              
+  DATA_SET_DESC                   = "                                         
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+      MGS radio occultation experiments were conducted using a 3.6-cm         
+      wavelength radio signal transmitted by the spacecraft and received      
+      on Earth.  In principle this 'downlink' configuration allows            
+      atmospheric structure to be sampled twice per orbit. Occultation        
+      entry and exit generally occurred in the northern and southern          
+      hemispheres, respectively, and the latitude of the measurements         
+      drifted gradually in response to changes in the observing geometry.     
+      However, far more experiments were performed at occultation             
+      entry than exit, owing to a problem with one of the gimbals used        
+      to point the spacecraft high-gain antenna (HGA).  This resulted         
+      in particularly dense coverage at latitudes of 60-80 deg in the         
+      northern hemisphere. The coverage in longitude of the data set          
+      is fairly dense and uniform with few exceptions.                        
+                                                                              
+      EDS files are stored as ASCII tables, preceded by a header record       
+      which contains supplementary information as described below.            
+      The headers from each individual file have been collected in a          
+      single occultation summary file, which may be useful for scanning       
+      the data set, identifying profiles of particular interest, and          
+      reviewing the coverage in latitude, season, and solar zenith            
+      angle.                                                                  
+                                                                              
+      David Hinson at Stanford University created all EDS files and the       
+      occultation summary file.                                               
+                                                                              
+      For more information about these data, see [TYLERETAL1992],             
+      [HINSONETAL1999], [HINSONETAL2001], and [TYLERETAL2001].                
+                                                                              
+                                                                              
+    Parameters                                                                
+    ==========                                                                
+      Each EDS file contains a table of electron number density versus        
+      radius from Mars' center of mass.  The file also specifies the          
+      altitude of each sample relative to the equipotential surface, or       
+      areoid, whose mean equatorial radius is 3,396,000 m.  Each profile      
+      extends in altitude from about 90 km to 200 km with a sample            
+      spacing of about 1 km.  A header record prepended to each table         
+      provides information about observing times, experiment geometry,        
+      and files used in the data processing.                                  
+                                                                              
+      The radius of the reference areoid at a given latitude and              
+      longitude is computed using a spherical harmonic model of the           
+      gravity field, with an additional centrifugal term that arises          
+      from the rotation of Mars.  Note that different spherical harmonic      
+      models were used in defining the altitude scale for the experiments     
+      conducted in 1998 (GGM50A02.SHA) and those conducted in 1999-2006       
+      (JGM75C01.SHA).  See [KONOPLIV&SJOGREN1995] for a definition            
+      of how the coefficients in these models are normalized.  The            
+      spherical harmonic models can be found in PDS data set                  
+      MGS-M-RSS-5-SDP-V1.0.                                                   
+                                                                              
+                                                                              
+    Processing                                                                
+    ==========                                                                
+      The MGS radio occultation experiments were optimized for sounding       
+      the neutral atmosphere, but electron density profiles were also         
+      obtained from a limited subset of observations.  The retrieval          
+      algorithm involves no a priori assumptions about the shape of           
+      the electron density profile, the peak density, or the altitude         
+      of the peak, but the electron density is assumed to be zero at          
+      altitudes below about 90 km and above about 250 km.  The typical        
+      uncertainty in the MGS electron density profiles is several             
+      thousand per cubic centimeter.  At this level of sensitivity,           
+      reliable profiles could be obtained over an altitude range of           
+      about 90-200 km for experiments in which the solar zenith angle         
+      was less than about 90 degrees.                                         
+                                                                              
+      Electron density profiles are derived from raw receiver output          
+      in several steps.                                                       
+                                                                              
+      First, deterministic sources of frequency change are identified         
+      and removed coherently. These included motion of the spacecraft,        
+      motion of the Earth receiving station, drift of the UltraStable         
+      Oscillator (USO), and relativistic effects associated with              
+      gravity fields of solar system bodies.  This leaves the carrier         
+      signal at a known frequency except for phase drift associated           
+      with passage of the radio ray through Mars' atmosphere and/or           
+      ionosphere.  Drift associated with passage through solar plasma         
+      or the Earth's atmosphere or ionosphere is assumed to be                
+      negligible over the time of a Mars occultation (approximately           
+      two minutes).                                                           
+                                                                              
+      Second, using an accurate reconstruction of the spacecraft              
+      trajectory, the phase of the signal versus time is converted            
+      into a measure of refraction angle versus impact parameter --           
+      the perpendicular distance between the incoming raypath and the         
+      center of curvature of the atmosphere.                                  
+                                                                              
+      Third, the index of refraction versus radius is obtained using          
+      an Abel inversion [FJELDBOETAL1971].  At ionospheric heights, the       
+      refractive index is determined predominantly by free electrons,         
+      and there is a simple linear relationship between refractive            
+      index and electron number density.  An electron density profile         
+      is obtained by applying this linear transformation to the               
+      refractive index profile, using coefficients that depend on the         
+      measurement frequency (8423 MHz).                                       
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+
+      The following description of the data is based on the original,
+      CD-WO form of the archive.  The current form of the archive
+      is an electronic archive volume containing all the data from
+      the original CD-WO.  In the current archive, the data are
+      organized into subdirectories of the DATA directory,
+      according to data type and (when possible) year and month of
+      the data.  The descriptions of the meanings and names of the
+      various data types remain the same as those given in this file.
+
+      Data are stored on a single volume in the EDS directory                 
+      in subdirectories in the order they were collected.  Twelve             
+      subdirectories have been defined with names of the form                 
+      yyyy_ddd  where  yyyy  is the year and  ddd  is the day-of-year         
+      of the first profile in each directory.  Directory boundaries           
+      have been chosen so that collections have common characteristics,       
+      such as similar Ls values, or are easily separated by periods           
+      when there was little MGS RST activity, such as solar conjunction       
+      or spacecraft anomalies when no data were collected.  When these        
+      criteria allowed more than 1000 profiles in a directory,                
+      arbitrary boundaries were added.  The largest directory                 
+      contains only 877 profiles.  The directories and their                  
+      boundaries are summarized below.                                        
+                                                                              
+      Electron density profiles are stored with file names of                 
+      the form  ydddhmmC.EDS  where  y  is the least significant              
+      digit of the year,  ddd  is the three-digit day number,                 
+      h  is a one-character string denoting the hour, and  mm  is             
+      a two-character string denoting the minute in which data                
+      acquisition began.  h  is  'A' if the hour was  00,  'B'                
+      if the hour was  01, ... and 'X' if the hour was 23.  In                
+      most cases  mm  is the two-digit minute; but when data were             
+      collected from two sources and the start time was in the                
+      same minute, the second digit in  mm  was changed to a                  
+      letter in the second file name (minute  00  becomes  0A,  01            
+      becomes  0B,  etc.).  C  is a single character                          
+      indicating the version of the file, starting with 'A'.                  
+                                                                              
+      An occultation summary file is stored in the OCS directory.             
+      Its file name is 812506AA.OCS where 812 indicates that the              
+      first occultation was from December 1998 and 506 indicates that         
+      the last occultation was from June 2005. 'AA' is a two                  
+      character string which indicates that this is the first version         
+      of the file.                                                            
+                                                                              
+                                                                              
+    Ancillary Data                                                            
+    ==============                                                            
+      OCCLOG.TAB in the DOCUMENT directory provides single-line               
+      summaries for each observation opportunity.  Parameters listed          
+      mostly relate to settings of and quick-look results from data           
+      acquisition.  See detached PDS label OCCLOG.LBL for details.            
+                                                                              
+                                                                              
+    Coordinate System                                                         
+    =================                                                         
+      MGS RST SDP files use a Mars centered body-fixed coordinate             
+      system with positive east longitude.                                    
+                                                                              
+      Gravity models generally use the IAU 1991 [DAVIESETAL1992B]             
+      coordinate frame.  Variations are noted in the labels of                
+      specific gravity products.                                              
+                                                                              
+                                                                              
+    Software                                                                  
+    ========                                                                  
+      None.                                                                   
+                                                                              
+                                                                              
+    Media/Format                                                              
+    ============                                                              
+
+      The following description pertains to the original, CD-WO
+      form of the archive:
+
+      The archival data set was written on CD-WO media using the              
+      Sun Ultra-60/PlexWriter system.  The CD-WO volumes conform              
+      to ISO 9660 standards."                                                 
+                                                                              
+                                                                              
+  CONFIDENCE_LEVEL_NOTE           = "                                         
+                                                                              
+    Overview                                                                  
+    ========                                                                  
+      Data in this archive have been reduced as part of mission data          
+      analysis activities of the MGS Radio Science Team.  Products            
+      of questionable validity have been flagged or omitted.                  
+                                                                              
+                                                                              
+    Review                                                                    
+    ======                                                                    
+      This archival data set was reviewed by the MGS Radio Science            
+      Team prior to submission to the Planetary Data System (PDS).            
+                                                                              
+      All of the profiles had been in the public domain as elements           
+      of the MGS-M-RSS-5-SDP-V1.0 data set for as much as seven years         
+      before this reorganized data set was compiled.                          
+
+      When the unified archive was created from the CD-WO volumes,
+      many of the descriptive textual files were changed.  However,
+      their contents are essentially the same as in the original,
+      reviewed files.
+
+                                                                              
+    Data Coverage                                                             
+    ==============                                                            
+                                                                              
+      This section describes the data in the original CD-WO
+      archive.  The same data are preserved in the present
+      form of the archive, but the directory structure has
+      changed considerably.   
+
+      The following table describes the directories that contain              
+      the profiles.  Each directory is represented by one row.  The           
+      first two columns list the year and day-of-year of the first            
+      and last profiles in each directory, respectively.  The first           
+      column is also the directory name.  The third and fourth                
+      columns provide the same information in standard calendar               
+      format.  The fifth and sixth columns give the number of the             
+      Martian year (MY, as defined by [CLANCYETAL2000]) and the               
+      approximate areocentric longitude of the Sun (Ls, in degrees)           
+      of the first and last profiles in each directory, respectively.         
+      The last column specifies the number of profiles in each                
+      directory.  Blank rows denote major gaps between measurements           
+      in different Martian years.                                             
+                                                                              
+       Start     End       Start       End      Start   End                   
+      yyyy_ddd yyyy_ddd  yyyy-mm-dd yyyy-mm-dd  MY/Ls  MY/Ls   Number         
+      -------- --------  ---------- ----------  ------ ------  ------         
+      1998_358 1998_365  1998-12-24 1998-12-31  24/074 24/077    32           
+      1999_068 1999_086  1999-03-09 1999-03-27  24/108 24/116    43           
+      1999_126 1999_149  1999-05-06 1999-05-29  24/135 24/146   220           
+                                                                              
+      2000_306 2001_031  2000-11-01 2001-01-31  25/070 25/111   732           
+      2001_032 2001_157  2001-02-01 2001-06-06  25/111 25/174   840           
+                                                                              
+      2002_305 2002_365  2002-11-01 2002-12-31  26/089 26/116   526           
+      2003_001 2003_080  2003-01-01 2003-03-21  26/116 26/156   650           
+      2003_081 2003_155  2003-03-22 2003-06-04  26/156 26/197   630           
+      2003_173 2003_183  2003-06-22 2003-07-02  26/208 26/214    76           
+                                                                              
+      2004_328 2004_357  2004-11-23 2004-12-22  27/119 27/133   270           
+      2004_361 2005_090  2004-12-26 2005-03-31  27/135 27/185   877           
+      2005_091 2005_160  2005-04-01 2005-06-09  27/185 27/227   704           
+                                                                              
+                                                                              
+      MGS radio occultation experiments were capable of sounding              
+      the lower neutral atmosphere under a wide range of conditions,          
+      but reliable electron density profiles could be obtained only           
+      when the solar zenith angle was less than about 90 degrees              
+      at the location of the measurement.  For this reason the MGS            
+      mission produced far fewer electron density profiles (5600)             
+      than profiles of the neutral atmosphere (21243).                        
+                                                                              
+      Coverage of the ionosphere was limited by other factors.                
+      This is particularly true during the pre-mapping phases of              
+      the mission, which extended into early 1999.  Prior to the              
+      start of the mapping phase, the spacecraft frequently                   
+      conducted special maneuvers for aerobraking and temperature             
+      control, and scientific observations were constrained by                
+      numerous other operational issues.  The following discussion            
+      summarizes the most significant gaps in coverage that occurred          
+      during the mapping phase of the mission.                                
+                                                                              
+      Low Solar Zenith Angles                                                 
+      -----------------------                                                 
+        Because the orbit of Mars is outside the orbit of Earth,              
+        occultations tend to take place near the terminator.                  
+        Scientists interested in studying convection in the                   
+        neutral atmosphere or peak electron densities in the                  
+        ionosphere will find relatively few observations near                 
+        local noon except where the occultation point is at polar             
+        latitudes.                                                            
+                                                                              
+      Solar Conjunction                                                       
+      ------------------                                                      
+        The noise level of the radio occultation measurements                 
+        increased dramatically near solar conjunction.  This                  
+        prevented retrieval of profiles in the following intervals:           
+        2000_153 - 2000_213                                                   
+        2002_197 - 2002_250                                                   
+        2004_204 - 2004_283                                                   
+        2006_263 - 2006_277                                                   
+                                                                              
+      Beta Supplement                                                         
+      ----------------                                                        
+        The range of motion of one of the gimbals that controls               
+        pointing of the spacecraft HGA was severely restricted                
+        until late in the mission, when the obstruction vanished              
+        for reasons unknown. During the extended intervals when               
+        the failed gimbal prevented normal operations, the                    
+        spacecraft was configured in a 'beta supplement' mode                 
+        that restored most of its functionality. This had no                  
+        effect on measurements at occultation entry (northern                 
+        hemisphere) but experiments could not be conducted                    
+        routinely at occultation exit (southern hemisphere) when              
+        the spacecraft was in the beta supplement mode:                       
+        2000_039 - 2001_171                                                   
+        2002_073 - 2003_253                                                   
+        2004_204 - 2005_251                                                   
+                                                                              
+      Spacecraft Anomalies and Emergencies                                    
+      --------------------------------------                                  
+        The spacecraft occasionally stopped collecting scientific             
+        data for periods of several days in response to problems              
+        with flight software or hardware.  This prevented                     
+        occultation experiments from being conducted in the                   
+        following intervals:                                                  
+        2001_123 - 2001_129                                                   
+        2002_059 - 2002_065                                                   
+        2002_092 - 2002_100                                                   
+        2003_162 - 2003_168                                                   
+        2004_358 - 2004_360                                                   
+        2005_239 - 2005_251                                                   
+        2005_256 - 2005_261                                                   
+                                                                              
+                                                                              
+    Data Quality                                                              
+    =============                                                             
+                                                                              
+      Each profile includes uncertainties on the estimates of                 
+      electron number density.  This is the best source of                    
+      information about data quality.  Some obvious trends are                
+      apparent in the error bars, such as a general increase                  
+      in the noise level when the spacecraft was close to solar               
+      conjunction.  Data quality can vary significantly between               
+      successive experiments, and sometimes from one DSN complex              
+      to another, and these variations are reflected in the                   
+      error bars.                                                             
+                                                                              
+      Some error sources are difficult to quantify, and their                 
+      effects are therefore not included in the formal                        
+      uncertainties. As a general rule, diametric occultations                
+      yield more reliable results than grazing occultations.                  
+      (The header of each profile includes several parameters,                
+      such as the 'angle from diametric', that characterize                   
+      the experiment geometry.)                                               
+                                                                              
+                                                                              
+    Limitations                                                               
+    ===========                                                               
+      The limitations in this data set follow from the quality of             
+      the execution, which is described above under Data Coverage             
+      and Quality."                                                           
+                                                                              
+                                                                              
+ END_OBJECT                       = DATA_SET_INFORMATION                      
+                                                                              
+ OBJECT                           = DATA_SET_MISSION                          
+  MISSION_NAME                    = "MARS GLOBAL SURVEYOR"                    
+ END_OBJECT                       = DATA_SET_MISSION                          
+                                                                              
+ OBJECT                           = DATA_SET_TARGET                           
+  TARGET_NAME                     = MARS                                      
+ END_OBJECT                       = DATA_SET_TARGET                           
+                                                                              
+ OBJECT                           = DATA_SET_HOST                             
+  INSTRUMENT_HOST_ID              = MGS                                       
+  INSTRUMENT_ID                   = RSS                                       
+ END_OBJECT                       = DATA_SET_HOST                             
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "CLANCYETAL2000"                          
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "DAVIESETAL1992B"                         
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "FJELDBOETAL1971"                         
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "HINSONETAL1999"                          
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "HINSONETAL2001"                          
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "HINSONETAL2004"                          
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "KONOPLIV&SJOGREN1995"                    
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "TYLERETAL1992"                           
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "TYLERETAL2001"                           
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+END_OBJECT                        = DATA_SET                                  
+                                                                              
+END

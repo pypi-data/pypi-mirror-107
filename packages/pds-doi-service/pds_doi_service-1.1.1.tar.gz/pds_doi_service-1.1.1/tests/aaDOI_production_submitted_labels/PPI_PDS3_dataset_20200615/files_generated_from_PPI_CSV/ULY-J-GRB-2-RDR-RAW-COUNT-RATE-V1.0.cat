@@ -1,0 +1,172 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional Keywords added by D. Kazden, 2009-09-15;                          
+Z's removed from time by D. Kazden, 2010-05-05;
+Updates to CITATION_DESC and ABSTRACT_DESC, 2020-01-31"                              
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-GRB-2-RDR-RAW-COUNT-RATE-V1.0"   
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME              = "                                           
+ULY JUP GRB SOLAR X-RAY/COSMIC GAMMA-RAY RAW COUNT RATE"                     
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-01-25T00:00:00.126                 
+    STOP_TIME                      = 1992-02-17T23:59:59.941                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "ROGER WILLIAMS"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULY JUP GRB SOLAR X-RAY/COSMIC         
+                                          GAMMA-RAY RAW COUNT RATE"          
+    CITATION_DESC                  = "Williams, R., ULY JUP GRB SOLAR        
+          X-RAY/COSMIC GAMMA-RAY RAW COUNT RATE,                             
+          ULY-J-GRB-2-RDR-RAW-COUNT-RATE-V1.0, NASA Planetary Data System,   
+          1998 "                                                             
+    ABSTRACT_DESC                  = "The archived data consist of count     
+                                    rates from the sum of two hemispherical  
+                                    detectors covering 4 pi steradians and   
+                                    operating continuously. The detectors    
+                                    are 3 mm thick CsI scintillators         
+                                    coupled to photomultiplier tubes. The    
+                                    nominal energy range is 25-150 keV, but  
+                                    the below table should be consulted to   
+                                    find the accurate thresholds for any day 
+                                    of the mission. Although the prime       
+                                    objectives of this investigation are the 
+                                    study of solar and cosmic x- and         
+                                    gamma-ray bursts, it should be noted     
+                                    that the experiment is also sensitive    
+                                    to solar protons and electrons. The      
+                                    former deposit energy directly in the    
+                                    scintillator if they are energetic       
+                                    enough, while the latter may produce     
+                                    x- radiation locally by bremsstrahlung.  
+                                    Thus although the counting rates are     
+                                    generally stable at about 500 c/s over   
+                                    the long term, there are periods of      
+                                    weeks to a month or so when the rates    
+                                    increase considerably due to particles.  
+                                    Examples may be found in March 1991      
+                                    (solar protons) and February 1992        
+                                    (particles in the Jovian magnetosphere). 
+                                    The time resolution of the data takes    
+                                    on one of four values depending on the   
+                                    telemetry rate and instrument operating  
+                                    mode: 0.25, 0.5, 1, or 2 seconds."       
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      The archived data consist of count rates from the sum of two           
+      hemispherical detectors covering 4 pi steradians and                   
+      operating continuously. The detectors are 3 mm thick CsI               
+      scintillators coupled to photomultiplier tubes. The nominal            
+      energy range is 25-150 keV, but the below table should                 
+      be consulted to find the accurate thresholds for any day of            
+      the mission. A more complete description of the instrument may         
+      be found in [HURLEYETAL1992] and [COTINETAL1983]. Although the         
+      prime objectives of this investigation are the study of solar          
+      and cosmic x- and gamma-ray bursts, it should be noted that the        
+      experiment is also sensitive to solar protons and electrons.           
+      The former deposit energy directly in the scintillator if they         
+      are energetic enough, while the latter may produce x- radiation        
+      locally by bremsstrahlung. Thus although the counting rates are        
+      generally stable at about 500 c/s over the long term, there are        
+      periods of weeks to a month or so when the rates increase              
+      considerably due to particles. Examples may be found in March          
+      1991 (solar protons) and February 1992 (particles in the Jovian        
+      magnetosphere).  The time resolution of the data takes on one          
+      of four values depending on the telemetry rate and instrument          
+      operating mode: 0.25, 0.5, 1, or 2 seconds.                            
+                                                                             
+      YEAR  DAY  LOWER THRESHOLD  UPPER THRESHOLD KEV/CHANNEL                
+      1992    22    16.11          161.10           10.07                    
+      1992    25    16.04          160.42           10.03                    
+      1992    26    15.98          159.83            9.99                    
+      1992    27    16.23          163.38           10.15                    
+      1992    28    15.99          159.95           10.00                    
+      1992    47    14.89          171.77           10.74                    
+      1992    48    14.87          171.57           10.72                    
+      1992    57    24.54          167.29           10.46                    
+                                                                             
+      Please note that this file has been converted to ASCII FORMAT          
+      (.TAB) files at PDS/PPI Node.                                          
+                                                                             
+      The '.TAB' files contain the following columns:                        
+                                                                             
+        TIME     = spacecraft event time in the format                       
+                   yyyy-mm-ddThh:mm:ss.sssZ                                  
+        HEADER   = Header information that is high 6 bits of binary          
+                   HEADER specification                                      
+        VERSION  = Version that is low order 2 bits of binary HEADER         
+                   specification                                             
+        SUBHEAD  = Subheader                                                 
+        COUNTS   = Counts                                                    
+        INT_TIME = Integration Time                                          
+                                                                             
+      Parameters                                                             
+      ==========                                                             
+      INSTRUMENT OPERATING MODE FOR DATA FILES:                              
+                                                                             
+      file        mode        file        mode                               
+      --------    --------    --------    -------                            
+      T92025      A1          T92037      A2                                 
+      T92026      A1          T92038      A2                                 
+      T92027      A1          T92039      A1                                 
+      T92028      A1          T92040      A2                                 
+      T92029      A1          T92041      A1                                 
+      T92030      A1          T92042      A1                                 
+      T92031      A2          T92043      A1                                 
+      T92032      A2          T92044      A2                                 
+      T92033      A2          T92045      A2                                 
+      T92034      A2          T92046      A2                                 
+      T92035      A2          T92047      A2                                 
+      T92036      A2          T92048      A2"                                
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      Data rate changes produce short spikes in the count rates due          
+      to a processing artifact. These can in principle be corrected          
+      if the data are scanned and the rate changes are identified;           
+      the count rate spikes can then be adjusted to their correct            
+      values. There are also short (one sample long) count rate              
+      dropouts, due to an artifact of the onboard software."                 
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = GRB                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "COTINETAL1983"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "HURLEYETAL1992"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "HURLEYETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "HURLEY&SOMMER1994"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "WAITEETAL1992"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

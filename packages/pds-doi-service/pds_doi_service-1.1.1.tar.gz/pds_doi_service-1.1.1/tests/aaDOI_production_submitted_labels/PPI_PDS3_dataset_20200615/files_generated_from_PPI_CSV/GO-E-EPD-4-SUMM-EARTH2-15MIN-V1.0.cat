@@ -1,0 +1,94 @@
+PDS_VERSION_ID                    = PDS3
+LABEL_REVISION_NOTE              = "
+             2006-07-26, B. Harris, minor updates for version 3 standards;
+             2012-06-04, D. Kazden, removed unnecessary keywords, removed Zs 
+             from START_TIME and STOP_TIME;
+             2018-07-31, D. Kazden, removed ARCHIVE_STATUS keyword;"
+
+OBJECT                           = DATA_SET
+  DATA_SET_ID                    = "GO-E-EPD-4-SUMM-EARTH2-15MIN-V1.0"
+
+  OBJECT                          = DATA_SET_INFORMATION
+   DATA_SET_NAME                 = "
+                      GO EARTH EPD RESAMPLED SUMMARY EARTH2 15.0 MIN V1.0"
+   DATA_SET_COLLECTION_MEMBER_FLG = "N"
+   DATA_OBJECT_TYPE               = "TABLE"
+   DETAILED_CATALOG_FLAG          = "N"                              
+   START_TIME                     = 1992-11-06T17:01:10.000
+   STOP_TIME                      = 1992-12-18T15:08:38.000
+   DATA_SET_RELEASE_DATE          = 1995-06-02
+   PRODUCER_FULL_NAME             = "CHRISTOPHER R. BRULL"
+   DATA_SET_TERSE_DESC            = "
+               This data set contains fifteen minute averaged rate
+               data for all 64 EPD channels.  The browse set covers 
+               the Earth 2 encounnter data from 1992 Day 311 
+               through day 353.  All available motor positions 
+               except zero are included in the averages."
+   ABSTRACT_DESC                  = "
+               This data set contains fifteen minute averaged rate
+               data for all 64 EPD channels.  The browse set covers
+               the Earth 2 encounnter data from 1992 Day 311
+               through day 353.  All available motor positions
+               except zero are included in the averages."
+   CITATION_DESC                  = "
+               GO EARTH EPD RESAMPLED SUMMARY EARTH2 15.0 MIN V1.0,
+               GO-E-EPD-4-SUMM-EARTH2-15MIN-V1.0, NASA Planetary
+               Data System, 1995"
+   DATA_SET_DESC                  = "
+               This data set contains fifteen minute averaged rate
+               data for all 64 EPD channels.  The browse set covers
+               the Earth 2 encounnter data from 1992 Day 311
+               through day 353.  All available motor positions
+               except zero are included in the averages.
+
+  Data Set Overview
+  =================
+    The rates reported are in unites of counts/sec.  Each entry in the
+    browse document is averaged over a fifteen minute time span by the
+    'Quality Controlled Averaging' routine developed by Dennis Haggerty
+    and Tom Armstrong as part of the Ulysses HiScale project [HAGGERTY93].
+    The energetic particle data included in this browse set are summarized
+    by Williams et al. [WILLIAMSETAL91].
+
+    Williams, D. J., R. W. McEntire, S. M. Krimigis, E. C. Roelof, S.
+    Jaskulek, B. Tossman, B. Wilken, W. Studemann, T. P. Armstrong, T. A.
+    Fritz, L. J. Lanzerotti, J. G. Roederer, Energetic Particles at Venus:
+    Galileo Results, Science, 253, 1525, 1991.
+
+    Haggerty, Dennis and Tom Armstrong, Memo to HiScale Investigator Team
+    describing Quality Controlled Averaging subroutine, University of
+    Kansas, June 22, 1993.
+
+    Townsend, John P., Jr., Galileo Energetic Particles Detector Archive
+    Processor, Applied Physics Laboratory, Johns Hopkins University,
+    March, 1991. "
+
+     CONFIDENCE_LEVEL_NOTE          = "
+
+    Data in this browse set includes only that data which has
+    valid data flag markers as a result of processing done by the Galileo
+    Energetic Particles Detector Archive Processor [EPDPROC91]."
+
+END_OBJECT = DATA_SET_INFORMATION
+
+OBJECT     = DATA_SET_TARGET
+TARGET_NAME                    = "EARTH"
+END_OBJECT = DATA_SET_TARGET
+
+OBJECT     = DATA_SET_HOST
+INSTRUMENT_HOST_ID             = GO
+INSTRUMENT_ID                  = EPD
+END_OBJECT = DATA_SET_HOST
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                       = DATA_SET_MISSION
+
+OBJECT     = DATA_SET_REFERENCE_INFORMATION
+REFERENCE_KEY_ID               = "WILLIAMSETAL91"
+END_OBJECT = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT = DATA_SET
+END
+
+

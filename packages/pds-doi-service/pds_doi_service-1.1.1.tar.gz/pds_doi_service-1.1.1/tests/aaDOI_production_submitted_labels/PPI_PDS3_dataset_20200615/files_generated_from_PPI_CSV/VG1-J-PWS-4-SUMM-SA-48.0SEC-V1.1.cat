@@ -1,0 +1,206 @@
+PDS_VERSION_ID                      = PDS3                                   
+ LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;            
+ D.Kazden (PPI), 2010-05-20, removed Z's from time, added CITATION_DESC,     
+ ABSTRACT_DESC, and DATA_SET_TERSE_DESC keywords;                            
+ D. Kazden (PPI), 2011-10-17, updated REFERENCE_KEY_IDs;                     
+ D. Kazden (PPI), 2020-02-26, updated CITATION_DESC;"                        
+ RECORD_TYPE                        = STREAM                                 
+                                                                             
+ OBJECT                             = DATA_SET                               
+ DATA_SET_ID                        = "VG1-J-PWS-4-SUMM-SA-48.0SEC-V1.1"     
+                                                                             
+ OBJECT                             = DATA_SET_INFORMATION                   
+ DATA_SET_NAME                     = "VG1 JUP PWS RESAMPLED SPECTRUM ANALYZER
+                                         48SEC V1.1"                         
+ DATA_SET_COLLECTION_MEMBER_FLG     = N                                      
+ START_TIME                         = 1979-02-28T00:00:00.000                
+ STOP_TIME                          = 1979-03-22T23:59:12.000                
+ DATA_SET_RELEASE_DATE              = 1998-05-01                             
+ PRODUCER_FULL_NAME                 = "WILLIAM S. KURTH"                     
+ DETAILED_CATALOG_FLAG              = N                                      
+ DATA_OBJECT_TYPE                   = "TABLE"                                
+ CITATION_DESC              = "Kurth, W.S., VG1-J-PWS-4-SUMM-SA-48.0SEC-V1.1,
+                          VG1 JUP PWS RESAMPLED SPECTRUM ANALYZER 48SEC V1.1,
+                                NASA Planetary Data System, 1998."           
+ ABSTRACT_DESC                      = "                                      
+    Voyager 1 Plasma Wave Subsystem (PWS)                                    
+    averaged spectrum analyzer 48.0 second data at Jupiter."                 
+ DATA_SET_TERSE_DESC                ="                                       
+    Voyager 1 Plasma Wave Subsystem (PWS)                                    
+    averaged spectrum analyzer 48.0 second data at Jupiter."                 
+ DATA_SET_DESC                      = "                                      
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    Instrument P.I.                : Donald A. Gurnett                       
+    Data Supplier                  : William S. Kurth                        
+    Data sampling rate             : 48 seconds                              
+    Data Set Start Time            : 1979-02-28T00:00:00.000Z                
+    Data Set Stop Time             : 1979-03-22T23:59:12.000Z                
+                                                                             
+                                                                             
+    Version 1.1                                                              
+    -----------                                                              
+      This version 1.1 data set replaces the version 1.0 data set            
+      (DATA_SET_ID = VG1-J-PWS-4-SA-48.0SEC) previously archived             
+      with the PDS.  Changes to this version include upgrading of            
+      the associated labels and templates to PDS version 3.2                 
+      compliance and modification of the time formats and flag               
+      values.                                                                
+                                                                             
+                                                                             
+    Data Set Description                                                     
+    --------------------                                                     
+      This data set consists of 48-second calibrated, averaged wave          
+      electric field intensities from the Voyager 1 Plasma Wave              
+      Receiver spectrum analyzer obtained in the vicinity of the             
+      Jovian magnetosphere.  For each 48-second interval, a                  
+      geometric average field strength is determined for each of             
+      the 16 spectrum analyzer channels whose center frequencies             
+      range from 10 Hertz to 56.2 kiloHertz and which are                    
+      logarithmically spaced in frequency, four channels per                 
+      decade.  Averages are stored in units of volt/meter.  During           
+      data gaps where complete 48-second intervals are missing, no           
+      entries exist in the file, that is, the gaps are not                   
+      zero-filled or tagged in any other way.  Additional                    
+      information about this data set and the instrument which               
+      produced it can be found elsewhere in this catalog.  An                
+      overview of the data in this data set can be found in                  
+      [SCARFETAL1979] and a complete instrument description can be           
+      found in [SCARF&GURNETT1977].                                          
+                                                                             
+      Processing Level Id            : 4                                     
+      Software Flag                  : Y                                     
+      Processing Start Time          : 1988-02-01                            
+                                                                             
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+    Sampling Parameter Name        : TIME                                    
+    Data Set Parameter Name        : PLASMA WAVE SPECTRUM                    
+    Sampling Parameter Resolution  : 48.000000                               
+    Minimum Sampling Parameter     : 197709051420.000000                     
+    Sampling Parameter Interval    : 48.000000                               
+    Minimum Available Sampling Int : 4.000000                                
+    Data Set Parameter Unit        : VOLT/METER                              
+    Noise Level                    : 0.000005                                
+    Sampling Parameter Unit        : SECOND                                  
+                                                                             
+    A set of derived parameters consisting of wave electric field            
+    intensities or electric field spectral densities at various              
+    contiguous frequencies over a range of frequencies.  The MKS             
+    units are: Volts/Meter or Volts**2/(Hertz Meter**2),                     
+    respectively.                                                            
+                                                                             
+                                                                             
+  Source Instrument Parameters                                               
+  ============================                                               
+    Instrument Host ID              : VG1                                    
+    Data Set Parameter Name         : PLASMA WAVE SPECTRUM                   
+    Instrument Parameter Names      : ELECTRIC FIELD WAVEFORM                
+                                      ELECTRIC FIELD COMPONENT               
+                                      MAGNETIC FIELD COMPONENT               
+                                      WAVE ELECTRIC FIELD INTENSITY          
+                                      WAVE MAGNETIC FIELD INTENSITY          
+    Important Instrument Parameters : 1 (for all parameters)                 
+                                                                             
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+                                                                             
+    Processing History                                                       
+    ------------------                                                       
+      Source Data Set ID          : N/A                                      
+      Software                    : UNK                                      
+      Product Data Set ID         : VG1-J-PWS-4-SA-48.0SEC                   
+                                                                             
+      Source Data Set ID          : VG1-J-PWS-2-SA-4.0SEC                    
+      Software                    : V1J48                                    
+      Product Data Set ID         : VG1-J-PWS-4-SA-48.0SEC                   
+                                                                             
+                                                                             
+    Software 'V1J48'                                                         
+    ----------------                                                         
+      Software Name               : V1J48                                    
+      Software Type               : N/A                                      
+      Software Release Date       : 1988-08-01                               
+      Node ID                     : PPI-IOWA                                 
+      Cognizant Engineer          : LARRY J. GRANROTH                        
+      Software Access Description : NOT ACCESSIBLE THROUGH PDS               
+                                    CATALOG - CONTACT NODE                   
+                                                                             
+      V1J48 is a specialized, hard-coded routine to process a                
+      specific interval of Voyager 1 PWS spectrum analyzer data              
+      around Jupiter encounter.  Input is from MSF or CD data sets           
+      produced and stored at the University of Iowa, and output is           
+      to ASCII text files which are compatible with PDS data                 
+      loading procedures.  These files contain information                   
+      corresponding to the VG1-J-PWS-4-SA-48.0SEC data set.                  
+                                                                             
+                                                                             
+  Data Coverage                                                              
+  =============                                                              
+                                                                             
+    Filename Records Start                     Stop                          
+    -------------------------------------------------------------------      
+    T790228  12203   1979-02-28T00:00:00.000Z  1979-03-07T00:00:00.000Z      
+    T790307  12458   1979-03-07T00:00:00.000Z  1979-03-14T00:00:00.000Z      
+    T790314  12478   1979-03-14T00:00:00.000Z  1979-03-21T00:00:00.000Z      
+    T790321  3556    1979-03-21T00:00:00.000Z  1979-03-22T23:59:12.000Z "    
+                                                                             
+                                                                             
+ CONFIDENCE_LEVEL_NOTE              = "                                      
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    This data set includes all available spectrum analyzer data              
+    within the interval of time covered.  The data set has been              
+    cleaned as well as possible for periodic noise spikes due to a           
+    stepper motor operating on the LECP and a modulated grid within          
+    the PLS.  The averages do not include these noise spikes.                
+    Other possible sources of noise which have not been eliminated           
+    include random intense spikes of noise below 1 kiloHertz due to          
+    the operation of attitude control thrusters.  Other randomly             
+    occurring spikes or time periods of intense spikes over the              
+    entire frequency range are indicative of telemetry errors.  No           
+    attempt has been made to remove spikes since some could be               
+    valid data, i.e.  real bursts of wave activity.  The 17.8-Hz             
+    channel is sometimes contaminated by interference from the PRA           
+    instrument, depending on that instrument's mode.  This                   
+    interference is at a relatively constant level.                          
+                                                                             
+                                                                             
+  Missing Data Flag                                                          
+  =================                                                          
+    Any columns containing the value -9.99e+10 or -9 (depending              
+    upon column format) is a missing data value."                            
+                                                                             
+ END_OBJECT                         = DATA_SET_INFORMATION                   
+                                                                             
+ OBJECT                             = DATA_SET_TARGET                        
+ TARGET_NAME                        = JUPITER                                
+ END_OBJECT                         = DATA_SET_TARGET                        
+                                                                             
+ OBJECT                             = DATA_SET_HOST                          
+ INSTRUMENT_HOST_ID                 = VG1                                    
+ INSTRUMENT_ID                      = PWS                                    
+ END_OBJECT                         = DATA_SET_HOST                          
+                                                                             
+ OBJECT                             = DATA_SET_MISSION                       
+ MISSION_NAME                       = "VOYAGER"                              
+ END_OBJECT                         = DATA_SET_MISSION                       
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = ""                      
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = "SCARF&GURNETT1977"                    
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = "SCARFETAL1979"                        
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ END_OBJECT                         = DATA_SET                               
+ END

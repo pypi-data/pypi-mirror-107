@@ -1,0 +1,39 @@
+<records>
+    <record>
+        <title>MAVEN Solar Energetic Particle (SEP) Calibrated Data Bundle</title>
+        <creators>Larson, Davin, E.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>11/14/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amaven.sep.calibrated&amp;version=1.9</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.sep.calibrated::1.9</product_nos>
+            
+        <description>
+         A bundle that contains MAVEN Solar Energetic Particle (SEP) calibrated Level 2 science data, as well as the raw count data from which they are derived, and 
+         ancillary ephemeris data. The calibrated data are in physical units, and 
+         include electron and ion spectra in the 4 look directions (2 look directions 
+         for each sensor/file).
+      </description>
+        <keywords>PDS; PDS4; Maven; Calibrated; Magnetosphere; Particles; Ions; Solar Energetic; Electrons; Mars Atmosphere and Volatile EvolutioN Mission; MAVEN; Solar Energetic Particle Experiment</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VOYAGER 2 JUPITER PLASMA DERIVED ION MOMENTS 96 SEC</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-J-PLS-5-ION-MOM-96.0SEC</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1988-08-01</publication_date>
+            <country>USA</country>
+            <description>THIS DATA SET CONTAINS THE BEST ESTIMATES OF THE TOTAL ION
+                DENSITY FROM VOYAGER 2 AT JUPITER IN THE PLS VOLTAGE RANGE
+                (10-5950 EV/Q). IT IS CALCULATED USING THE METHOD OF MCNUTT ET
+                AL. (1981) WHICH TO FIRST ORDER CONSISTS OF TAKING THE TOTAL
+                MEASURED CURRENT AND DIVIDING BY THE COLLECTOR AREA AND PLASMA
+                BULK VELOCITY. THIS METHOD IS ONLY ACCURATE FOR HIGH MACH NUMBER
+                FLOWS DIRECTLY INTO THE DETECTOR, AND MAY RESULT IN
+                UNDERESTIMATES OF THE TOTAL DENSITY OF A FACTOR OF 2 IN THE OUTER
+                MAGNETOSPHERE. THUS ABSOLUTE DENSITIES SHOULD BE TREATED WITH
+                CAUTION, BUT DENSITY VARIATIONS IN THE DATA SET CAN BE TRUSTED.
+                THE LOW RESOLUTION MODE DENSITY IS USED AT ALL TIMES EXCEPT DAY
+                190 2100-2200 WHEN THE LARGER OF THE HIGH AND LOW RESOLUTION MODE
+                DENSITIES IN A 96 SEC PERIOD IS USED. COROTATION IS ASSUMED
+                INSIDE L=17.5, AND A CONSTANT VELOCITY COMPONENT OF 200 KM/S INTO
+                THE D CUP IS USED OUTSIDE OF THIS. THESE ARE THE DENSITIES GIVEN
+                IN THE MCNUTT ET AL. (1981) PAPER CORRECTED BY A FACTOR OF 1.209
+                (.9617) FOR DENSITIES OBTAINED FROM THE SIDE (MAIN) SENSOR. THIS
+                CORRECTION IS DUE TO A BETTER CALCULATION OF THE EFFECTIVE AREA
+                OF THE SENSORS. DATA FORMAT: COLUMNS 1-6 ARE TIME (YEAR, DAY,
+                HOUR, MIN, SEC, MSEC) COLUMN 7 IS THE MOMENT DENSITY IN CM-3.
+                EACH ROW HAS FORMAT (6I4, E12.3). VALUES OF 1.E32 INDICATE THAT
+                THE PARAMETER COULD NOT BE OBTAINED FROM THE DATA USING THE
+                STANDARD ANALYSIS TECHNIQUE. ADDITIONAL INFORMATION ABOUT THIS
+                DATASET AND THE INSTRUMENT WHICH PRODUCED IT CAN BE FOUND
+                ELSEWHERE IN THIS CATALOG. AN OVERVIEW OF THE DATA IN THIS DATA
+                SET CAN BE FOUND IN MCNUTT ET AL. (1981) AND A COMPLETE
+            INSTRUMENT DESCRIPTION CAN BE FOUND IN BRIDGE (1977).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-J-PLS-5-ION-MOM-96.0SEC</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; JUPITER; PLASMA ANALYZER; VG2; PLANET; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JOHN D. RICHARDSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-j-pls-5-ion-mom-96.0sec</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

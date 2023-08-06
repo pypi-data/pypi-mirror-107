@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 JUP PLS PLASMA DERIVED ION MOMENTS
+        96.0 SEC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-J-PLS-5-SUMM-ION-MOM-96.0SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1997-12-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains the best
+                estimates of the total ion density from Voyager 2 at Jupiter in the PLS
+                voltage range (10-5950 eV/Q). It is calculated using the method of
+                which to first order consists of taking the total measured current and
+                dividing by the collector area and plasma bulk velocity. This method is
+                only accurate for high mach number flows directly into the detector, and
+                may result in underestimates of the total density of a factor of 2 in the
+                outer magnetosphere. Thus absolute densities should be treated with
+                caution, but density variations in the data set can be trusted. The low
+                resolution mode density is used at all times except day 190 2100-2200 when
+                the larger of the high and low resolution mode densities in a 96 sec
+                period is used. Corotation is assumed inside L=17.5, and a constant
+                velocity component of 200 km/s into the D cup is used outside of this.
+                Data format: column 1 is time (yyyy-mm-ddThh:mm:ss.sssZ), column 2 is
+                the moment density in cm^-3. Each row has format (a24, 1x, 1pe9.2). Values
+                of -9.99e+10 indicate that the parameter could not be obtained from the
+                data using the standard analysis technique. Additional information about
+                this data set and the instrument which produced it can be found elsewhere
+            in this catalog.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-J-PLS-5-SUMM-ION-MOM-96.0SEC-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; JUPITER; PLASMA INSTRUMENT; VG2; PLANET; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JOHN D. RICHARDSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-j-pls-5-summ-ion-mom-96.0sec-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

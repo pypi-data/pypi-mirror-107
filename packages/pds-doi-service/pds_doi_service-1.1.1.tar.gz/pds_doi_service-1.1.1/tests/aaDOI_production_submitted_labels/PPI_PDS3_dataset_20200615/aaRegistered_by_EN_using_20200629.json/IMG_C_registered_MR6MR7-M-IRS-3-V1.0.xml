@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MR6/MR7 MARS INFRARED SPECTROMETER CALIBRATED DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MR6/MR7-M-IRS-3-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1989-11-01</publication_date>
+            <country>USA</country>
+            <description>This data set is a partial collection of spectra in digital form
+                from the Mariner 6 and 7 Infrared Spectrometer experiments. All
+                Mars and near-Mars sky spectra are included here, as well as some
+                relevant laboratory spectra of blackbody sources. Lacking are the
+                inflight spectra of reference targets including the wavelength
+                calibration spectra. The IRS data are arranged as a single set of
+                512 spectra calibration spectra, followed by 122 Mariner 6
+                spectra, followed by 354 Mariner 7 spectra. The latter set is
+                larger because the long-wavelength channel detector system failed
+                on Mariner 6. These spectra are presented here in raw form, as
+                originally supplied to the NSSDC on microfiche. Note that the
+                geometry information in the spectrum headers was revised by the
+                producer in 1984 to account for the revision in the location of
+            the Mars pole following Mariner 9 observations.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MR6%2FMR7-M-IRS-3-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MARINER 6; MARINER 7; MARS; INFRARED SPECTROMETER; MR6; MR7; PLANET; IRS</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>TERRY Z. MARTIN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mr6-mr7-m-irs-3-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

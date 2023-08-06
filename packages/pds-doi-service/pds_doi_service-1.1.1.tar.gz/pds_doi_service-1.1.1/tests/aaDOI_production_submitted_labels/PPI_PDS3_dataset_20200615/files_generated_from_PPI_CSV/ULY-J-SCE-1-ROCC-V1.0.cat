@@ -1,0 +1,343 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "CREATED: 2001-06-22, J. MAFI;          
+D. Kazden(PPI) removed Zs from time, added CITATION_DESC and ABSTRACT_DESC   
+keywords, for validation"                                                    
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-SCE-1-ROCC-V1.0"                 
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULY JUP SCE RAW ODR V1.0"              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-02-03T11:20:09.000                 
+    STOP_TIME                      = 1992-02-09T20:46:15.000                 
+    DATA_SET_RELEASE_DATE          = 2001-08-01                              
+    PRODUCER_FULL_NAME             = "MICHAEL K. BIRD"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    CITATION_DESC                  = "Bird, M.K., ULY JUP SCE RAW ODR V1.0,  
+                                      ULY-J-SCE-1-ROCC-V1.0, NASA Planetary  
+                                      Data System, 2001"                     
+    ABSTRACT_DESC                  = "This data set contains raw Radio       
+      Occultation (ROCC) Original Data Records data from the Ulysses (ULY)   
+      Solar Corona Experiment (SCE) obtained during the ULY Jupiter flyby.   
+      The data target the Io Plasma Torus (IPT) and cover the period         
+      1992-02-03 11:20 to 1992-02-09 20:46."                                 
+     DATA_SET_TERSE_DESC            = "                                      
+      Ulysses SCE radio occultation raw ODRs of the Io Plasma Torus          
+      obtained during the Ulysses Jupiter flyby: 1992-02-04 20:28 to         
+      1992-02-09 14:19."                                                     
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set contains raw Radio Occultation (ROCC) Original Data      
+      Records data from the Ulysses (ULY) Solar Corona Experiment (SCE)      
+      obtained during the ULY Jupiter flyby. The data target the Io          
+      Plasma Torus (IPT) and cover the period 1992-02-03 11:20 to            
+      1992-02-09 20:46.                                                      
+                                                                             
+      The data set includes 41 NASA Deep Space Network (DSN) Original        
+      Data Record files (ODR), and documentation. These data are             
+      obtained from the Radio Science Support group at JPL. They consist     
+      of time-ordered, high-time resolution Doppler data from special        
+      radio science receivers (so-called 'open loop' data).                  
+                                                                             
+      The radio downlinks from Ulysses were monitored during the             
+      passage of the spacecraft through the IPT shortly after closest        
+      approach to Jupiter. The electron content of the Io torus was          
+      derived from the dispersive phase shift of the S-band (2.3 GHz)        
+      signal with respect to the X-band (8.4 GHz) signal. Corrections        
+      were applied for non-Jovian contributions to the change in             
+      electron content arising from the interplanetary medium and the        
+      terrestrial ionosphere. Ulysses' North-to-South encounter              
+      trajectory was well suited for investigating the global structure      
+      of the Jovian plasma environment near Io's orbit, especially its       
+      latitudinal extent and azimuthal variations. (IPT investigation        
+      description adapted from [BIRDETAL1993]. For more information          
+      please refer to the complete paper.)                                   
+                                                                             
+                                                                             
+      Parameters                                                             
+      ==========                                                             
+      Open loop data records (ODRs) contain 8-bit samples of receiver        
+      output. Each block of (nominally) 500 data samples from each of        
+      four receivers (or channels) is accompanied a 166 byte header.         
+      Each ODR is accompanied by a full PDS label which describes both       
+      the content and format of the file at the bit level. Header            
+      information includes:                                                  
+           Date and time of first data sample                                
+           Sample rate and channel assignments                               
+           Receiver local oscillator (POCA) frequency                        
+           Attenuator settings                                               
+           RMS voltages at several stages in the receiving chain             
+                                                                             
+      Channel assignments are as follows:                                    
+        Channel 1     X-RCP (X-band right circularly polarized)              
+        Channel 2     S-RCP (S-band right circularly polarized)              
+        Channel 3     X-LCP (X-band left circularly polarized)               
+        Channel 4     S-LCP (S-band left circularly polarized)               
+                                                                             
+      The ODR is described by a Software Interface Specification (SIS),      
+      included as RSC1110A.ASC in the DOCUMENT/RSC1110A directory of         
+      this volume.                                                           
+                                                                             
+                                                                             
+      Processing                                                             
+      ==========                                                             
+      Open loop data (ODRs) are not edited or otherwise processed before     
+      being incorporated into this archive. A 32-byte label at the           
+      beginning of each ODR tape is not included in the data file; it        
+      gives the software version of the data taking equipment and is         
+      saved instead in the PDS label that accompanies the data file.         
+                                                                             
+                                                                             
+      Data                                                                   
+      ====                                                                   
+      ODRs were generated at stations of the NASA Deep Space Network         
+      (DSN) and were distributed on 6250 bpi tape. Those tapes have been     
+      copied to disk files, defined as PDS TABLE Objects, and archived       
+      on this DVD-WO volume. Ancillary data to support analysis are          
+      provided in the GEOMETRY, and DOCUMENT directories.                    
+                                                                             
+      A nominal ODR contains 36000 records, each record having 166 bytes     
+      of header data and 2000 bytes of 8-bit sample data.                    
+                                                                             
+      On this volume ODR files have names of the form 'ydddhhmm.ODR'         
+      where 'y' gives the least significant digit of the year, 'ddd' is      
+      the 3-digit day-of-year, 'hh' is the 2-digit hour, and 'mm' is the     
+      2-digit minute on which data acquisition for the file began.           
+                                                                             
+      Each ODR data file is accompanied by a full PDS detached label         
+      with name 'ydddhhmm.LBL' which completely describes the contents       
+      of the ODR file. The format and contents are also described in         
+      RSC1110A.ASC in the DOCUMENT/RSC1110A directory of this archival       
+      volume.                                                                
+                                                                             
+                                                                             
+      Ancillary Data                                                         
+      ==============                                                         
+      For each ODR, there is a set of ancillary files needed for             
+      analysis. These are stored in the DOCUMENT and GEOMETRY                
+      directories, as appropriate.                                           
+                                                                             
+        Observing Geometry                                                   
+        ------------------                                                   
+        A NAIF (PDS Navigation and Ancillary Information) 'transfer'         
+        format SPK files is provided for the period 1992-01-05 to            
+        1995-10-31. This file contains the positions of Ulysses,             
+        Jupiter, Earth, the Sun, and Jupiter's four Galilean satellites      
+        (Io, Europa, Ganymede, and Callisto) in data modules that can be     
+        used readily with NAIF Toolkit software. This 'transfer' format      
+        SPK file (ULY92106.XSP) is located in the GEOMETRY directory.        
+        The XSP file is accompanied by a detached PDS label                  
+        (ULY92106.LBL) which describes some of the SPK file's                
+        characteristics.                                                     
+                                                                             
+        Before using 'transfer' NAIF files, the user should convert          
+        ASCII carriage-return line-feed delimiters on each record to the     
+        default delimiter for text files on the local system, then use       
+        the NAIF utility SPACIT to convert the archival file to local        
+        binary.                                                              
+                                                                             
+        An overview of the SPICE data system can be found in SPICE.TXT       
+        located in the DOCUMENT directory of this volume.                    
+                                                                             
+        For additional information on acquiring, installing, and using       
+        SPICE data or software please contact the PDS NAIF node:             
+                                                                             
+          Address:  Jet Propulsion Laboratory                                
+                    Mail Stop 301-125L                                       
+                    Pasadena, California 91109-8099                          
+                                                                             
+          Phone:    (818) 354-3869                                           
+                                                                             
+          E-mail:   Charles.Acton@jpl.nasa.gov                               
+                      or                                                     
+                    pds_operator@naif.jpl.nasa.gov                           
+                                                                             
+        Documentation                                                        
+        -------------                                                        
+        A copy of a document [RSC-11-10A] describing the format of the       
+        Ulysses ODR data contained on this volume is provided in the         
+        DOCUMENT/RSC1110A directory.                                         
+                                                                             
+                                                                             
+      Coordinate System                                                      
+      =================                                                      
+      SPK ephemeris files and quaternion files were produced for the         
+      J2000 inertial reference frame. SPICE reader routines may be used      
+      to convert these to other coordinate systems.                          
+                                                                             
+      Other data types are not dependent on definition of a coordinate       
+      system.                                                                
+                                                                             
+                                                                             
+      Software                                                               
+      ========                                                               
+      Software for parsing, reducing, and analyzing these data has been      
+      developed at Stanford University, the Jet Propulsion Laboratory,       
+      and other institutions. Because parsing must be done at the bit        
+      level, adaptation of the software to other platforms is not always     
+      easy. No software has been prepared for general distribution, and      
+      none is included with this archive. Users should refer to the PDS      
+      labels and Software Interface Specifications                           
+      (/DOCUMENT/RSC1110A/RSC1110A.ASC) for detailed information on file     
+      formats before writing their own software.                             
+                                                                             
+                                                                             
+      Media/Format                                                           
+      ============                                                           
+      This archival data set is written on DVD-R media using a Pioneer       
+      DVR-A03 recorder (DVD-R for General, 650 nm wavelength). The DVD-R     
+      volume conforms to ISO 9660 standards."                                
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE                    = "                             
+                                                                             
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      The ODR data files have been tested by being read, a histogram         
+      computed of sample values, time-averaged power spectra derived         
+      from the samples, and one-second averages generated of sample          
+      power. Data quality concerns discovered in this process are listed     
+      the 'Data Coverage and Quality' section below.                         
+                                                                             
+                                                                             
+      Review                                                                 
+      ======                                                                 
+      Prior to creation of the final version of the archival data set,       
+      the archive was distributed to both PDS and non-PDS personnel,         
+      including the PDS Radio Science advisor, for preliminary review.       
+                                                                             
+                                                                             
+      Data Coverage and Quality                                              
+      =========================                                              
+      The following table describes data file size and coverage:             
+                                                                             
+      File          bytes     start time        stop time                    
+      ------------  --------  ----------------  ----------------             
+      20341120.ODR  21768300  1992-02-03 11:20  1992-02-03 12:43             
+      20341246.ODR  77976000  1992-02-03 12:46  1992-02-03 17:46             
+      20341746.ODR  50285856  1992-02-03 17:46  1992-02-03 21:00             
+      20351118.ODR  30064080  1992-02-04 11:18  1992-02-04 13:14             
+      20351314.ODR  77976000  1992-02-04 13:14  1992-02-04 18:14             
+      20351814.ODR  40161972  1992-02-04 18:14  1992-02-04 20:49             
+      20371245.ODR  23475108  1992-02-06 12:45  1992-02-06 14:15             
+      20371415.ODR  77976000  1992-02-06 14:15  1992-02-06 19:15             
+      20371915.ODR  23184864  1992-02-06 19:15  1992-02-06 20:45             
+      20372015.ODR  21755304  1992-02-06 20:15  1992-02-06 21:38             
+      20372139.ODR  77976000  1992-02-06 21:39  1992-02-07 02:39             
+      20380239.ODR  32871216  1992-02-07 02:39  1992-02-07 04:45             
+      20380350.ODR   4555098  1992-02-07 03:50  1992-02-04 04:33             
+      20380407.ODR  17228364  1992-02-07 04:07  1992-02-07 05:14             
+      20380523.ODR  73646166  1992-02-07 05:23  1992-02-07 10:06             
+      20381007.ODR  29362296  1992-02-07 10:07  1992-02-07 11:59             
+      20381119.ODR  26043984  1992-02-07 11:19  1992-02-07 12:59             
+      20381259.ODR  77976000  1992-02-07 12:59  1992-02-07 17:59             
+      20381759.ODR  42791496  1992-02-07 17:59  1992-02-07 20:44             
+      20382011.ODR  23020248  1992-02-07 20:11  1992-02-07 21:39             
+      20382140.ODR  77976000  1992-02-07 21:40  1992-02-08 02:40             
+      20390240.ODR  50931324  1992-02-08 02:40  1992-02-08 05:56             
+      20390350.ODR  29581062  1992-02-08 03:50  1992-02-08 05:44             
+      20390544.ODR  77976000  1992-02-08 05:44  1992-02-08 10:44             
+      20390556.ODR    539334  1992-02-08 05:56  1992-02-08 05:58             
+      20390602.ODR  29379624  1992-02-08 06:02  1992-02-08 07:55             
+      20391044.ODR  13206102  1992-02-08 10:44  1992-02-08 11:35             
+      20391116.ODR  35990256  1992-02-08 11:16  1992-02-08 13:34             
+      20391135.ODR  31183902  1992-02-08 11:35  1992-02-08 13:35             
+      20391335.ODR  77976000  1992-02-08 13:35  1992-02-08 18:35             
+      20391336.ODR  18246384  1992-02-08 13:36  1992-02-08 14:46             
+      20391835.ODR  34950576  1992-02-08 18:35  1992-02-08 20:49             
+      20392020.ODR  21530040  1992-02-08 20:20  1992-02-08 21:43             
+      20392143.ODR  77976000  1992-02-08 21:43  1992-02-09 02:43             
+      20400243.ODR  77976000  1992-02-09 02:43  1992-02-09 07:43             
+      20400416.ODR  15001716  1992-02-09 04:16  1992-02-09 05:14             
+      20400743.ODR   3210012  1992-02-09 07:43  1992-02-09 07:56             
+      20401015.ODR   3853314  1992-02-09 10:15  1992-02-09 10:29             
+      20401130.ODR  25379022  1992-02-09 11:30  1992-02-09 13:07             
+      20401308.ODR  77976000  1992-02-09 13:08  1992-02-09 18:08             
+      20401808.ODR  40915740  1992-02-09 18:08  1992-02-09 20:46             
+                                                                             
+                                                                             
+      General data quality issues:                                           
+                                                                             
+      Ulysses' S-band downlink is elliptically polarized with an axial       
+      ratio of approximately 2:1. While, with a 2:1 axial ratio, a           
+      difference of 10 dB might be expected between the signal-to-noise      
+      ratios (SNR) of the S-band LCP and RCP, the actual difference is       
+      around 15 dB. This deviation from the expected difference may be       
+      attributed to the fact that the value of 2:1 used for the axial        
+      ratio is only approximate.                                             
+                                                                             
+      There appears to be a broad noise apron around the carrier             
+      (approx. 10 dB and extending to +/-100 Hz) each time a signal is       
+      present.                                                               
+                                                                             
+      Specific data quality issues:                                          
+                                                                             
+        The S-band downlink was started 1992-02-05 19:44 (DOY 36). As a      
+        result there is no signal on channels 2 and 4 on days 34 and 35.     
+                                                                             
+        20341246.ODR - A/D converter saturated on ch. 3                      
+        20341746.ODR - A/D converter saturated on ch. 3                      
+        20351314.ODR - variation in sample power large on ch. 3 (+/-3        
+                       dB about its mean)                                    
+        20380350.ODR - histogram of sample values on ch. 1 suggest A/D       
+                       converter not working; unable to compute spectra      
+                       or sample power vs. time for any channel              
+        20380407.ODR - abnormal histogram of sample values on ch. 1          
+        20390240.ODR - variation in sample power large on ch. 3              
+                       (+/-2.5 dB about its mean)                            
+        20390350.ODR - abnormal histogram of sample values on ch. 1          
+        20390544.ODR - abnormal histogram of sample values on ch. 1;         
+                       variation in sample power large on ch. 3 (+/-2        
+                       dB about its mean)                                    
+        20390556.ODR - only 124 sec. of data; no carrier on any channel      
+        20390602.ODR - receiver tuning predicts not good enough: carrier     
+                       signal drifts out of passband on ch. 1 and 3          
+        20392020.ODR - A/D converter on ch. 3 slightly saturated             
+        20400243.ODR - receiver tuning predicts not good enough: carrier     
+                       signal drifts out of passband on ch. 1 and 3          
+        20400416.ODR - abnormal histogram of sample values on ch. 1          
+        20400743.ODR - receiver tuning predicts not good enough: carrier     
+                       signal near edge of passband on ch. 1 and 3 for       
+                       first half of file, then drifts outside for           
+                       second half                                           
+        20401015.ODR - abnormal histogram of sample values on ch. 1          
+        20401808.ODR - no signal during second half of file on ch. 2 and     
+                       4                                                     
+                                                                             
+                                                                             
+      Limitations                                                            
+      ===========                                                            
+      See 'Data Coverage and Quality' section above."                        
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = SCE                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1993"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DSN820-13"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

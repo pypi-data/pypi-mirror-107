@@ -1,0 +1,232 @@
+PDS_VERSION_ID                      = PDS3                             
+LABEL_REVISION_NOTE                = "2004-05-04, R. Orosei, draft    
+                                      2004-11-16, R. Orosei, rev.     
+                                      2007-09-06, R. Noschese, rev.   
+                                      2016-10-01, R. Orosei, rev."    
+                                                                      
+PRODUCT_ID                         = "DATASET.CAT"                    
+                                                                      
+RECORD_TYPE                        = STREAM                           
+RELEASE_ID                         = 0001                             
+REVISION_ID                        = 0000                             
+                                                                      
+OBJECT                             = DATA_SET                         
+  DATA_SET_ID                      = "MEX-M-MARSIS-2-EDR-EXT6-V1.0"   
+                                                                      
+  OBJECT                           = DATA_SET_INFORMATION             
+    DATA_SET_NAME                  = "MARS EXPRESS MARS MARSIS        
+                                      EXPERIMENT DATA RECORD EXTENSION
+                                      6 V1.0"                         
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                              
+    DATA_OBJECT_TYPE               = "TABLE"                          
+    START_TIME                     = 2017-01-01T07:01:21              
+    STOP_TIME                      = 2017-12-31T22:48:18              
+    DATA_SET_RELEASE_DATE          = 2018-12-31                       
+    PRODUCER_FULL_NAME             = "ROBERTO OROSEI"                 
+    ARCHIVE_STATUS                 = "PRE PEER REVIEW"                
+    DETAILED_CATALOG_FLAG          = "N"                              
+                                                                      
+    DATA_SET_TERSE_DESC            = "This data set contains the      
+                    CODMAC Level 2 MARSIS data for the Mars Express   
+                    mission"                                          
+                                                                      
+    ABSTRACT_DESC                  = "This dataset contains the       
+                    scientific telemetry produced by the MARSIS       
+                    instrument after editing for duplicated and       
+                    corrupted packets, together with geometric        
+                    information computed on ground to locate          
+                    observations in space and time. Both subsurface   
+                    and ionosphere sounding data are included in      
+                    the dataset."                                     
+                                                                      
+    CITATION_DESC                  = "Orosei, R., F. Cantini, M.      
+                    Cartacci, A. Cicchetti and R. Noschese, MARS      
+                    EXPRESS MARS MARSIS EXPERIMENT DATA RECORD        
+                    EXTENSION 6 V1.0, MEX-M-MARSIS-2-EDR-EXT6-V1.0,   
+                    ESA Planetary Science Archive, 2016."             
+                                                                      
+    CONFIDENCE_LEVEL_NOTE          = "Data quality in a data product  
+                    label is indicated through the DATA_QUALITY_ID    
+                    element, and measures the integrity of the        
+                    telemetry stream from the instrument."            
+                                                                      
+    DATA_SET_DESC                  = "                                
+                                                                      
+Data Set Overview                                                     
+=================                                                     
+                                                                      
+MARSIS Level 1b data products consist of the data produced by the     
+instrument reconstructed from the scientific telemetry, sorted by     
+instrument state and data type, and provided with spacecraft position,
+velocity and attitude information.                                    
+                                                                      
+                                                                      
+Parameters                                                            
+==========                                                            
+                                                                      
+MARSIS data are organized into groups of echoes called frames. A frame
+contains one or more echoes, with or without on-board processing. Each
+echo, depending on the kind of processing it underwent, is recorded   
+either as a time series of signal samples, or as the complex spectrum 
+of the signal itself produced by means of a FFT. Scientific data in a 
+frame are complemented by a set of ancillary data, produced by the    
+instrument and recording parameter values used in pulse transmission, 
+echo reception and on-board processing.                               
+                                                                      
+                                                                      
+Processing                                                            
+==========                                                            
+                                                                      
+Level 1b processing starts by cleaning, merging and time-ordering the 
+packets. Duplicate data are deleted, missing packets are padded out,  
+and the data are organised by orbits. Data are then sorted by         
+instrument data types and instrument modes, and provided with         
+spacecraft position, velocity and attitude information.               
+                                                                      
+MARSIS Level 1b processing orders data in a useful way for the        
+intended users (i.e. radar scientists) and applications (i.e. quick   
+look to monitor hardware performance and higher-level processing),    
+altering and manipulating them as little as possible to avoid the risk
+of introducing errors and, at the same time, including all necessary  
+information from all relevant sources. Level 1b data are in           
+scientifically useful form, i.e. individual spectra, but they are     
+uncalibrated.                                                         
+                                                                      
+                                                                      
+Data                                                                  
+====                                                                  
+                                                                      
+The list of EDR data Products is:                                     
+                                                                      
+E_AIS           Active Ionosphere Sounding data frames with geometry  
+information                                                           
+                                                                      
+E_CAL           Data frames acquired in Calibration mode with geometry
+information                                                           
+                                                                      
+E_RXO           Data frames acquired in Receive Only mode with        
+geometry information                                                  
+                                                                      
+E_SSx_ACQ_CMP   On-board-processed Subsurface Sounding data in        
+Acquisition state, with geometry information                          
+                                                                      
+E_SSx_TRK_CMP   On-board-processed Subsurface Sounding data in        
+Tracking state, with geometry information                             
+                                                                      
+Where 'x' stands for a number between 1 and 5.                        
+                                                                      
+EDR Data Products consist of two binary files, each of which contains 
+a PDS binary TABLE object, and a single detached PDS label describing 
+their structure. The first file, called Frame file (FRM) contains the 
+instrument data proper, exactly in the same format (bit by bit) as    
+they were produced by the instrument. Each frame corresponds to a     
+record in the file, which is also a row in the PDS binary TABLE object
+into which frames are organised.                                      
+                                                                      
+The second file constituting an EDR is called a Geometry file (GEO),  
+and contains one record, corresponding to one line of the PDS binary  
+TABLE object into which data are organised, for every frame in the    
+corresponding FRM file. Columns of the table contains the values of   
+parameters describing the geometry of observation for the             
+corresponding frame.                                                  
+                                                                      
+                                                                      
+Ancillary Data                                                        
+==============                                                        
+                                                                      
+No Ancillary data are provided.                                       
+                                                                      
+                                                                      
+Coordinate System                                                     
+=================                                                     
+                                                                      
+Locations on the surface of Mars are expressed in planetocentric      
+coordinates. Longitude increases to the East and is comprised in the  
+range 0 - 360 degrees.                                                
+                                                                      
+                                                                      
+Software                                                              
+========                                                              
+                                                                      
+MARSIS data products can be read by the PDS software NASAView, which  
+reads a PDS label and displays the associated image or table.         
+                                                                      
+                                                                      
+Media/Format                                                          
+============                                                          
+                                                                      
+The standard distribution format for the data is transfer through     
+Internet from the Planetary Science Archive of ESA, which can be      
+accessed at the following URL:                                        
+                                                                      
+http://www.cosmos.esa.int/web/psa/psa-introduction                    
+                                                                      
+                                                                      
+Confidence Level Overview                                             
+=========================                                             
+                                                                      
+This data set contains all data for the Mars Express MARSIS for the   
+interval described above. Every effort has been made to ensure that   
+all data returned by the spacecraft is included and that processing is
+accurate.                                                             
+                                                                      
+                                                                      
+Review                                                                
+======                                                                
+                                                                      
+The MARSIS EDR data have been reviewed internally by the Mars Express 
+MARSIS team prior to release to the PDS. The data set has been also   
+peer reviewed by the PSA.                                             
+                                                                      
+                                                                      
+Data Coverage and Quality                                             
+=========================                                             
+                                                                      
+All data in the stated interval are included, to the best of our      
+knowledge and attempts to determine completeness. The instrument was  
+operated only briefly during cruise for periodic instrument health.   
+The late deployment of the MARSIS antenna allowed the start of science
+operations only six months before the end of the nominal mission.     
+                                                                      
+Data quality in a data product label is indicated through the         
+DATA_QUALITY_ID element, and measures the integrity of the telemetry  
+stream from the instrument. The permitted values of DATA_QUALITY_ID   
+are the following:                                                    
+                                                                      
+-1: percentage of corrupted data not available                        
+ 0: no corrupted data                                                 
+ 1: less than 2% corrupted data                                       
+ 2: less than 5% corrupted data                                       
+ 3: less than 10% corrupted data                                      
+ 4: more than 10% corrupted data                                      
+                                                                      
+                                                                      
+Limitations                                                           
+===========                                                           
+                                                                      
+There are no known limitations at this time."                         
+                                                                      
+  END_OBJECT                       = DATA_SET_INFORMATION             
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = MARS                             
+    TARGET_TYPE                    = PLANET                           
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = PHOBOS                           
+    TARGET_TYPE                    = SATELLITE                        
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_HOST                    
+    INSTRUMENT_HOST_ID             = MEX                              
+    INSTRUMENT_ID                  = MARSIS                           
+  END_OBJECT                       = DATA_SET_HOST                    
+                                                                      
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION   
+    REFERENCE_KEY_ID               = "PICARDIETAL2004"                
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION   
+                                                                      
+END_OBJECT                         = DATA_SET                         
+                                                                      
+END

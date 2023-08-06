@@ -1,0 +1,142 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional Keywords added by D. Kazden, 2009-09-15;                          
+Z's removed from time by D. Kazden, 2010-05-05;                              
+Updated CITATION_DESC, D. Kazden, 2020-02-13;"                               
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-HISCALE-4-SUMM-DE-V1.0"          
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULYSSES JUPITER HISCALE DEFLECTED      
+                                        ELECTRONS COUNTS"                    
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1991-12-31T00:00:00.000                 
+    STOP_TIME                      = 1992-02-16T23:45:00.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "THOMAS P. ARMSTRONG"                   
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULYSSES JUPITER HISCALE DEFLECTED      
+                                      ELECTRONS COUNTS"                      
+    CITATION_DESC           = "Armstrong, T.P., ULY-J-HISCALE-4-SUMM-DE-V1.0,
+                                ULYSSES JUPITER HISCALE DEFLECTED ELECTRONS  
+                                COUNTS, NASA Planetary Data System, 1998."   
+    ABSTRACT_DESC                  = "This data set consists of HISCALE      
+                                      Deflected Electron (DE) measurements   
+                                      taken during the Ulysses Jupiter       
+                                      encounter 1991-12-31 to 1992-02-16.    
+                                      This includes 1 hour averaged inbound  
+                                      cruise data (1991-12-31 to 1992-02-01),
+                                      and 15 minute averaged encounter data  
+                                      (1992-02-02 to 1992-02-16)."           
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set consists of HISCALE Deflected Electron (DE)              
+      measurements taken during the Ulysses Jupiter encounter                
+      1991-12-31 to 1992-02-16. This includes 1 hour averaged                
+      inbound cruise data (1991-12-31 to 1992-02-01), and 15                 
+      minute averaged encounter data (1992-02-02 to 1992-02-16).             
+                                                                             
+      The Heliosphere Instrument for Spectra, Composition, and               
+      Anisotropy at Low Energies is designed to make measurements of         
+      interplanetary ions and electrons throughout the entire                
+      Ulysses mission.                                                       
+                                                                             
+      The ions (Ei &#10095; 50 keV) and electrons (Ee &#10095; 30 keV) are                 
+      identified uniquely and detected by five separate solid-state          
+      detector telescopes that are oriented to give nearly complete          
+      pitch-angle coverage from the spinning spacecraft.                     
+                                                                             
+      Ion elemental abundances are determined by a del E vs E                
+      telescope using a thin 5 micrometer front solid state detector         
+      element in a three element telescope.  Experiment operation is         
+      controlled by a microprocessor-based data system.                      
+                                                                             
+      Inflight calibration is provided by radioactive sources                
+      mounted on telescope covers which can be closed for                    
+      calibration purposes and for radiation protection during the           
+      course of the mission.                                                 
+                                                                             
+      Ion and electron spectral information is determined using both         
+      broad-energy-range rate channels and a 32 channel pulse-height         
+      analyses (channels spaced logarithmically) for more detailed           
+      spectra.                                                               
+                                                                             
+      About DE (Deflected Electrons)                                         
+                                                                             
+      The Deflected Electron measurements are made using special             
+      logic of the LEMS30 detector system.                                   
+                                                                             
+      DE1     30-50   keV  electrons                                         
+      DE2     50-90   keV  electrons                                         
+      DE3     90-165  keV  electrons                                         
+      DE4     165-300 keV  electrons                                         
+                                                                             
+      HISCALE References (cited in [ARMSTRONG&SAHI1996])                     
+                                                                             
+      Curtis, D.W., ISPM/Ulysses LAN Data Processing Software                
+      Status, Dec. 1986.                                                     
+                                                                             
+      Gold R.E., LAN Accelerator Calibration Test Plan, August 1991.         
+                                                                             
+      Guynn D.R. Jr., LAN Experiment Data System Performance and             
+      Interface Specification, June 1992.                                    
+                                                                             
+      Kohl, J.W., J.H. Crawford, Calibration of Solar Polar Energy           
+      Model LAN-2B Detector Head at GSFC Low Energy Accelerator,             
+      July 1986.                                                             
+                                                                             
+      Simnett, G.M., R.E. Gold, The RTG Background in the LAN                
+      Experiment and the Shielding Required to Control It, April             
+      1980.                                                                  
+                                                                             
+      Tappin, S.J., HSIO-HiScale I/O Library, June 1991.                     
+                                                                             
+      Ximenez de Ferran S., Ulysses Spin Reference Pulse, May 1985."         
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      None provided. For more information regarding the confidence           
+      level of this data set please contact:                                 
+        THOMAS P. ARMSTRONG                                                  
+        Dept. of Physics and Astronomy                                       
+        University of Kansas                                                 
+        Lawrence, KS 66045                                                   
+        USA                                                                  
+        Phone: 1-913-864-4726  Fax: 1-913-864-5262                           
+        Internet: armstrong@kuphsx.phsx.ukans.edu"                           
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = HISCALE                                 
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "ARMSTRONGETAL1991"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "ARMSTRONG&SAHI1996"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "CHENG1992"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

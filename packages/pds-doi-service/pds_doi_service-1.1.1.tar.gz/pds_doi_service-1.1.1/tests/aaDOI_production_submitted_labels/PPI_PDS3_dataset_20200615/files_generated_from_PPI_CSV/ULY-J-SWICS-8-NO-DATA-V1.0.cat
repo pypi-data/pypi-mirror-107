@@ -1,0 +1,67 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;             
+    2006-07-26, B. Harris, minor updates for version 3 standards;            
+    2009-09-16, D. Kazden removed ARCHIVE_STATUS keyword"                    
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-SWICS-8-NO-DATA-V1.0"            
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULY JUPITER SOLAR WIND ION             
+                                        COMPOSITION SPECTROMETER NO DATA"    
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = "N/A"                                   
+    STOP_TIME                      = "N/A"                                   
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "N/A"                                   
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "N/A"                                   
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      No SWICS data were archived with PDS for the Ulysses                   
+      Jupiter Encounter."                                                    
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      No SWICS data were archived with PDS for the Ulysses                   
+      Jupiter Encounter."                                                    
+                                                                             
+    CITATION_DESC                  = ",                                      
+      ULY JUPITER SOLAR WIND ION COMPOSITION SPECTROMETER NO DATA,           
+      ULY-J-SWICS-8-NO-DATA-V1.0, NASA Planetary Data System, 1998"          
+                                                                             
+    DATA_SET_DESC                  = "                                       
+      No SWICS data were archived with PDS for the Ulysses                   
+      Jupiter Encounter."                                                    
+    CONFIDENCE_LEVEL_NOTE          = "N/A"                                   
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = SWICS                                   
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "GALVINETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "GEISSETAL1992"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MALLETAL1993"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "OGILVIEETAL1994"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

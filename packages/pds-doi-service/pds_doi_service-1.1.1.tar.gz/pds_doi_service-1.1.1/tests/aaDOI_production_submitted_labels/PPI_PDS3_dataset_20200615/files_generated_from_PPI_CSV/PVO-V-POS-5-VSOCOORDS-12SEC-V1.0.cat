@@ -1,0 +1,99 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE          = "                                             
+S.Joy, 1993;                                                                 
+S. Joy, Nov 10, 1998, streamlined;                                           
+D. Kazden, Oct 19, 2012, added ABSTRACT_DESC, DATA_SET_TERSE_DESC and        
+CITATION-DESC;                                                               
+D. Kazden, Feb 11, 2020, updated CITATION_DESC;"                             
+                                                                             
+OBJECT                       = DATA_SET                                      
+  DATA_SET_ID                    = "PVO-V-POS-5--VSOCOORDS-12SEC-V1.0"       
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "                                       
+             PVO VENUS SC POSITION DERIVED VSO COORDS 12 SECOND VER1.0"      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T07:20:07.282                 
+    STOP_TIME                      = 1992-10-08T16:30:37.204                 
+    DATA_SET_RELEASE_DATE          = 1993-09-01                              
+    PRODUCER_FULL_NAME             = "MURIEL KNIFFIN"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    ABSTRACT_DESC                  = "This dataset contains Pioneer Venus    
+Orbiter (PVO) spacecraft position and orientation data in Venus Solar        
+Orbital (VSO) coordinates. This dataset is sampled every 12 seconds near     
+periapsis, and at 1 minute or 10 minute rates in the solar wind,             
+the lowest rates near apoapsis.  Planetocentric and heliocentric             
+position vectors and solar zenith angle (Sun-Venus-PVO) are also             
+provided. The VSO parameters are derived from the PVO Supplemental           
+Experimenter Data Records (SEDR), other parameters are taken                 
+directly from the SEDR dataset."                                             
+    DATA_SET_TERSE_DESC            = "This dataset contains Pioneer Venus    
+Orbiter (PVO) spacecraft position and orientation data in Venus Solar        
+Orbital (VSO) coordinates."                                                  
+    CITATION_DESC          = "Kniffin, M., PVO-V-POS-5--VSOCOORDS-12SEC-V1.0,
+                   PVO VENUS SC POSITION DERIVED VSO COORDS 12 SECOND VER1.0,
+                             NASA Planetary data System, 1993."              
+    DATA_SET_DESC                  =  "                                      
+This dataset contains Pioneer Venus Orbiter (PVO) spacecraft                 
+position and orientation data in Venus Solar Orbital (VSO)                   
+coordinates. This dataset is sampled every 12 seconds near                   
+periapsis, and at 1 minute or 10 minute rates in the solar wind,             
+the lowest rates near apoapsis.  Planetocentric and heliocentric             
+position vectors and solar zenith angle (Sun-Venus-PVO) are also             
+provided. The VSO parameters are derived from the PVO Supplemental           
+Experimenter Data Records (SEDR), other parameters are taken                 
+directly from the SEDR dataset.                                              
+                                                                             
+                                                                             
+                Dataset Contents                                             
+                                                                             
+column    description                              unit                      
+--------------------------------------------------------                     
+Time:     Seconds since 1966-01-01T00:00:00        second                    
+X VSO:    VSO-X coordinate of PVO (Rv=6050 km)     Rv                        
+Y VSO:    VSO-Y coordinate of PVO (Rv=6050 km)     Rv                        
+Z VSO:    VSO-Z coordinate of PVO (Rv=6050 km)     Rv                        
+Altitude: Venus Center to PVO Range minus 6050 km  km                        
+SZA:      Solar zenith angle                       degree                    
+PLONG:    Planetocentric longitude                 degree                    
+PLAT:     Planetocentric latitude                  degree                    
+SPX VSO:  PVO spin axis X component in VSO coords  N/A                       
+SPY VSO:  PVO spin axis Y component in VSO coords  N/A                       
+SPZ VSO:  PVO spin axis Z component in VSO coords  N/A                       
+CLAT:     Heliocentric celestial latitude          degree                    
+CLONG:    Heliocentric celestial longitude         degree                    
+ELONG:    Earth's heliocentric celestial longitude degree                    
+RSUN:     Sun - PVO range 1 A.U. = 149,674,000 km  AU                        
+                                                                             
+This dataset is used by the program PVROT to transform magnetic              
+field vectors from Inertial Spacecraft Coordinates (ISC) to                  
+VSO Coordinates. Please refer to the coordinate system template              
+for definitions of these two coordinate systems."                            
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "This dataset                           
+contains parameters which are either taken directly from the                 
+Supplemental Experimenter Data Records (SEDR) or are derived                 
+entirely from those parameters. The SEDR does contain some                   
+gaps, spurious values, and other problems which may cause some               
+data values to be untrustworthy."                                            
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = POS                                     
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_MISSION                          
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                     = DATA_SET_MISSION                          
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "PC-456.O4"                             
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+END_OBJECT                     = DATA_SET                                    
+END

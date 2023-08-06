@@ -1,0 +1,206 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+     M. Kniffin, 2-18-93;                                                    
+     M. Kniffin, 3-09-93, updated with new datasetid and datasetname;        
+     M. Kniffin, 3-10-93, Ran on jplpds through lvtool and loader and put    
+        into database.  Correct small errors;                                
+     S. Joy, 11-11-98, Streamlined;                                          
+     D. Kazden, 10-17-12, added ABSTRACT_DESC, DATA_SET_TERSE_DESC,          
+        CITATION_DESC, removed Zs from START_TIME and STOP_TIME;             
+     D. Kazden, 20-02-11, updated CITATION_DESC;"                            
+                                                                             
+OBJECT                       = DATA_SET                                      
+DATA_SET_ID                    = "PVO-V-OMAG-3-P-SENSOR-HIRES-V1.0"          
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+   DATA_SET_NAME                  = "                                        
+                         PVO VENUS MAG CALIBRATED P-SENSOR HIGH RES V1.0"    
+   DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+   START_TIME                     = 1988-10-15T13:44:37.287                  
+   STOP_TIME                      = 1992-10-08T16:30:39.579                  
+   DATA_SET_RELEASE_DATE          = 1993-09-01                               
+   PRODUCER_FULL_NAME             = "MURIEL KNIFFIN"                         
+   DETAILED_CATALOG_FLAG          = N                                        
+   DATA_OBJECT_TYPE               = "TIME SERIES"                            
+   ABSTRACT_DESC                  = "This dataset contains full resolution   
+magnetometer data from the Pioneer Venus Orbiter spacecraft beginning with   
+orbit 3602 (Oct 16, 1988) and continuing until the orbiter was lost in the   
+Venusian atmosphere (orbit 5055, Oct 7, 1992). The dataset differs from the  
+high resolution magnetometer dataset from theprevious orbits due to an       
+anomaly in the multiplexor that controlled the sampling of the magnetometer  
+sensors. During orbit 3602, and for the remainder of the mission, the        
+spacecraft downlink contained magnetometer data from only the P sensor. The  
+P sensor is the sensor which is aligned with the spacecraft spin axis,       
+nominally in the direction of the ecliptic normal."                          
+   DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) magnetometer (OMAG) 
+high resolution data acquired after the multiplexer anomaly that allowed     
+data from only a single sensor (P-sensor) to be returned to the ground       
+(orbits 3602-5055, 1988-10-15 to 1992-10-08)."                               
+   CITATION_DESC            = "Kniffin, M., PVO-V-OMAG-3-P-SENSOR-HIRES-V1.0,
+                             PVO VENUS MAG CALIBRATED P-SENSOR HIGH RES V1.0,
+                               NASA Planetary Data System, 1993."            
+   DATA_SET_DESC                  =  "                                       
+Dataset Overview                                                             
+                                                                             
+This dataset contains full resolution magnetometer data from the Pioneer     
+Venus Orbiter spacecraft beginning with orbit 3602 (Oct 16, 1988) and        
+continuing until the orbiter was lost in the Venusian atmosphere (orbit      
+5055, Oct 7, 1992). The dataset differs from the high resolution magnetometer
+dataset from theprevious orbits due to an anomaly in the multiplexor that    
+controlled the sampling of the magnetometer sensors. During orbit 3602, and  
+for the remainder of the mission, the spacecraft downlink contained          
+magnetometer data from only the P sensor. The P sensor is the sensor which   
+is aligned with the spacecraft spin axis, nominally in the direction of the  
+ecliptic normal.                                                             
+                                                                             
+After the anomaly was first detected, the magnetometer team made a           
+substantial effort to recover the average magnetic field vector using the    
+single sensor data. Since the sensor is not perfectly aligned with the       
+spacecraft spin axis, a small amount of spin modulation is present in the    
+sensor data. In theory, the amplitude of the spin plane field can be         
+determined from the amplitude of the spin modulation and knowledge of the    
+true sensor mounting geometry. In practice, this turned out to be a very     
+difficult task because the spin axis of the spacecraft is not sufficiently   
+constant in body-fixed coordinates.                                          
+                                                                             
+                                                                             
+Data Processing                                                              
+                                                                             
+This dataset has been calibrated to account for sensor zero levels, gains,   
+and geometry. The data are given in units of nanoTesla. The data are at the  
+full downlink sampling resolution. They have not been resampled during the   
+data processing procedure. After the anomaly, the onboard calibrate signal   
+continued to function and the calibration of the instrument was repeatedly   
+checked. No change in gain was detected. The technique used to check the zero
+levels earlier in the mission could not be used after the anomaly occurred.  
+Since the operations were limited to the low power available on the          
+spacecraft, and since the magnetometer became a low priority instrument, it  
+was not possible to check the zero levels to the levels desirable. However,  
+it is clear that towards the end of the mission the zero levels had drifted  
+significantly. It is recommended that these data be used principally in a    
+variometer mode, i.e. for changes only.                                      
+                                                                             
+The dataset contains the following columns:                                  
+                                                                             
+Column  Description &#10094;units&#10095;                                                  
+___________________________________________________________________________  
+UT      S/C event time (UT) of the sample &#10094;seconds since 1966&#10095;               
+P1      Measured value of the P sensor at the sample time &#10094;nT&#10095;               
+P2      Measured value of the P sensor at the sample time + 38 microsecs &#10094;nT&#10095;
+P2      Measured value of the P sensor at the sample time + 76 microsecs &#10094;nT&#10095;
+Bz      The derived value of the spacecraft z-axis aligned magnetic          
+          field component at the sample time &#10094;nT&#10095;.                           
+                                                                             
+Data Sampling                                                                
+                                                                             
+The data 'P' columns are values which have been sampled from the P           
+sensor directly. The magnetometer samples each sensor 38 microseconds after  
+the previous sensor sample. The data processing procedure uses the P1 sample 
+to determine the Bz value and hence it is sampled at the start of sweep      
+(time-tag) time.                                                             
+                                                                             
+Ancillary Products                                                           
+                                                                             
+  Other datasets on the CD-ROM are the Ephemeris which contains spacecraft   
+position in Venus Solar Orbital coordinates, spacecraft altitude, solar      
+zenith angle, Venus centered longitude and latitude, spacecraft spin axis    
+components, celestial longitude and latitude of the spacecraft, celestial    
+longitude of the earth, and the Sun-spacecraft range.                        
+  Other ancillary datasets are the: 1) phase and offset which contains the   
+phase amplitude of sun synchronous modulation of the 4 signals (E100, E730,  
+E5.4 and E30K), and offsets of the G sensor. 2) The engineering dataset which
+contains temperatures, magnetometer modes, magnetometer sample format,       
+magnetometer spin average select, telemetry data format, telemetry bit rate, 
+spacecraft spin period, pulse time, the difference between the Sun pulse time
+and the Rip pulse time, and the pulse time flag.                             
+                                                                             
+References:                                                                  
+                                                                             
+      Russell, C.T., R.C. Snare, J.D. Means and R.C. Elphic, 'Pioneer        
+      Venus Orbiter Fluxgate Magnetometer', IEEE Trans. Geo. Elec.,          
+      vol. GE 18, no. 1 p. 32, 1980."                                        
+                                                                             
+   CONFIDENCE_LEVEL_NOTE          = "                                        
+These data have been reprocessed several times during the course             
+of the mission. Each successive reprocessing has eliminated some             
+of the problems found in earlier version of the data.  Please bring          
+to the attention of the original investigator any suspicious section         
+of data.  No zero level correction has been applied to the data."            
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = OMAG                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_MISSION                          
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                     = DATA_SET_MISSION                          
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = RUSSELLETAL1980                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = ELPHICETAL1980A                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = ELPHICETAL1980B                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = LUHMANNETAL1981                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = RUSSELLETAL1981                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = ELPHIC1981                               
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = LUHMANNETAL1982                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = RUSSELLETAL1985                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = PHILLIPSETAL1986                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = SAUNDERSETAL1986                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = MCCOMASETAL1986                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = PHILLIPSETAL1987                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = RUSSELLETAL1988                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = RUSSELL1990                              
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = ORLOWSKIETAL1991                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

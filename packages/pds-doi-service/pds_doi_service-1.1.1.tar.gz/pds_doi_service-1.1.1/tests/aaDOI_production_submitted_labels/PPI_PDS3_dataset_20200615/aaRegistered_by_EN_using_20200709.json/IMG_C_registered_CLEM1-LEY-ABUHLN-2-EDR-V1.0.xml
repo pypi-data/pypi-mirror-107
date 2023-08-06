@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CLEM1-LUN/EAR/SKY-ASTAR/BSTAR/UVVIS/HRES/LWIR/NIR-2-EDR-V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CLEM1-L/E/Y-A/B/U/H/L/N-2-EDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1995-01-01</publication_date>
+            <country>USA</country>
+            <description>The Clementine EDR (Engineering Data Record) Image Archive
+                contains 88 CD-ROM volumes with more than 1.9 million images.
+                Each volume contains approximately 3 lunar orbits but may vary in
+                the number of orbits depending on the size of each orbit. The
+                first volume in the set begins with orbit number 32--the start of
+                the systematic lunar mapping phase of the mission. The image data
+                products for the engineering checkout and operational rehearsal
+                orbits (orbits 1-31), low Earth orbits, and earth phasing loop
+                orbits are located on the last eight volumes at the end of the
+            volume set.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CLEM1-L%2FE%2FY-A%2FB%2FU%2FH%2FL%2FN-2-EDR-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CLEMENTINE 1; SKY; EARTH; MOON; CAMERA; CLEM1; CALIBRATION; PLANET; SATELLITE; A-STAR; B-STAR; HIRES; LWIR; NIR; UVVIS; A STAR TRACKER CAMERA; B STAR TRACKER CAMERA; LIDAR HIGH-RESOLUTION IMAGER; LONG WAVELENGTH INFRARED CAMERA; NEAR INFRARED CAMERA; ULTRAVIOLET/VISIBLE CAMERA</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>NAVAL RESEARCH LABORATORY</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.clem1-l-e-y-a-b-u-h-l-n-2-edr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

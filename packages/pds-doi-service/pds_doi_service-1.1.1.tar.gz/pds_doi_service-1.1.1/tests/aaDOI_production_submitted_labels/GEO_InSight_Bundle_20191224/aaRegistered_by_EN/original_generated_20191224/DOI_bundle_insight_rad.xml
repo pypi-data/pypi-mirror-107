@@ -1,0 +1,34 @@
+<records>
+    <record>
+        <title>Mars InSight Lander Radiometer Data Archive</title>
+        <creators>InSight RAD Science Team</creators>
+        <publisher>PDS Geosciences (GEO) Node</publisher>
+        <publication_date>06/11/2019</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Ainsight_rad&amp;version=2.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:insight_rad::2.0</product_nos>
+            
+        <description>InSight Radiometer Data Archive</description>
+        <keywords>PDS;  PDS4;  Insight;  Insight Lander;  cameras;  Mars;  geosciences;  imaging; ; Raw; Calibrated; Derived; Surface; Geosciences; InSight; RAD</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS Operator</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

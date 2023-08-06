@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": " urn:nasa:pds:uranus_occ_support ",
+        "title": " Uranus Occultation Support Bundle",
+        "authors": [
+            {
+                "first_name": "R. G.",
+                "last_name": "French"
+            }
+        ],
+        "publication_date": "2020-02-01",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]

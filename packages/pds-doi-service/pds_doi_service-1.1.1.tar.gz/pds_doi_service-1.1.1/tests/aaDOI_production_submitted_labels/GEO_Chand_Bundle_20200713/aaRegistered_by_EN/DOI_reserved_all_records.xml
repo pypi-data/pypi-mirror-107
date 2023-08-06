@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- ====================================================== -->
+    <!-- DOI-U_reserved_msl_apxs_supplement_sols_0_2301_1.0.xml -->
+    <!-- ====================================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1519050</id>
+    	
+        <title>Overview of MSL APXS Targets from Sol 0 to 2301</title> 
+        <authors> 
+            <author> 
+               <first_name>J.A.</first_name> 
+               <last_name>Berger</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Geosciences Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-07-09</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:msl_apxs_supplement_sols_0_2301::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================ -->
+    <!-- DOI-U_reserved_relab_1.0.xml -->
+    <!-- ============================ -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id>1519032 </id>
+    	
+        <title>RELAB Spectral Library Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name>R.</first_name> 
+               <last_name>Milliken</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Geosciences Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2019-11-21</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:relab::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>
+

@@ -1,0 +1,167 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+    2001-11-05, S. Joy, initial draft;                                        
+    2003-04-16, J. Mafi, major revision, tables added;                        
+    2003-06-25, S. Joy, minor revisions, added targets;                       
+    2003-06-25, S. Joy, minor revisions requested at peer review;             
+    2006-07-25, B. Harris,                                                    
+       added ABSTRACT_DESC, CITATION_DESC, DATA_SET_MISSION;                  
+    2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;                    
+    2020-03-11, D. Kazden, updated DATA_SET_RELEASE_DATE and CITATION_DESC;"  
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "GO-J-MAG-2-REDR-RAW-DATA-V1.0"          
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+                GALILEO ORBITER JUPITER RAW MAGNETOMETER DATA V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1995-11-06T00:21                         
+    STOP_TIME                      = 2003-09-21T18:45                         
+    DATA_SET_RELEASE_DATE          = 2004-08-13                               
+    PRODUCER_FULL_NAME             = "DR. MARGARET G. KIVELSON"               
+    DETAILED_CATALOG_FLAG          = Y                                        
+   DATA_OBJECT_TYPE               = "TABLE"                                   
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+       All edited raw Galileo Magnetometer data aquired at Jupiter. Data      
+       are properly time tagged and include everything needed for             
+       determining and applying a calibration."                               
+                                                                              
+    ABSTRACT_DESC           = "                                               
+       This data set contains raw magnetic field data acquired by the         
+       Galileo Orbiter magnetometer at Jupiter. The data set covers the       
+       time period from 1995-11-06T00:21:30 UT (Jupiter approach) until       
+       the end of mission (March 2003). The raw magnetometer data set         
+       includes various forms of data: recorded high time resolution,         
+       real-time survey (RTS), optimal averager (opt/avg), snapshot, and      
+       the calibration parameters required to generate processed data         
+       products. In addition corrected rotor angles and spacecraft            
+       relative clock and cone angles are provided to simplify future         
+       calibration and reprocessing of the data."                             
+                                                                              
+    CITATION_DESC           = "Kivelson, M.G., Khurana, K.K.,                 
+      Russell, C.T., Walker, R.J., Joy, S.P.,Green, J.,                       
+      GO-J-MAG-2-REDR-RAW-DATA-V1.0, GALILEO ORBITER JUPITER RAW MAGNETOMETER 
+      DATA V1.0, NASA Planetary Data System, 2004."                           
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+       Data Set Overview                                                      
+       =================                                                      
+                                                                              
+       This data set contains raw magnetic field data acquired by the         
+       Galileo Orbiter magnetometer at Jupiter. The data set covers the       
+       time period from 1995-11-06T00:21:30 UT (Jupiter approach) until       
+       the end of mission (March 2003). The raw magnetometer data set         
+       includes various forms of data: recorded high time resolution,         
+       real-time survey (RTS), optimal averager (opt/avg), snapshot, and      
+       the calibration parameters required to generate processed data         
+       products. In addition corrected rotor angles and spacecraft            
+       relative clock and cone angles are provided to simplify future         
+       calibration and reprocessing of the data. These data have been         
+       extracted from the packetized telemetry stream, time-tagged and        
+       time-ordered, and had duplicate records removed. Obviously             
+       corrupted data (e.g. spikes) have also been removed. MAG data are      
+       uncalibrated and provided in data numbers.                             
+                                                                              
+                                                                              
+       Parameters                                                             
+       ==========                                                             
+                                                                              
+       Data Sampling:                                                         
+                                                                              
+       Data acquisition strategies varied throughout the mission. High        
+       time resolution data were acquired only for short intervals near       
+       targeted satellite encounters and occasionally elsewhere in the        
+       magnetosphere. These data were recorded to tape and played back        
+       during the 'cruise' portion of each orbit. During the Jupiter          
+       Approach period, most fields and particles (MWG) instruments were      
+       off. The magnetometer, on the other hand, acquired low resolution      
+       (opt/avg) data. During the bulk of the prime mission, the MWG          
+       instruments were allowed to acquire continuous RTS data whenever       
+       the spacecraft was inside 50 Jovian radii (Rj). When the MWG was       
+       not returning RTS data, MAG used its opt/avg capability to             
+       acquire low time resolution averages of the field. In general,         
+       these are ~32 minute averages, although some higher rate data          
+       (1-8 minute) were used to fill small gaps in RTS data coverage.        
+                                                                              
+       RTS, opt/avg, and snapshot data were all stored in the MAG             
+       internal memory buffer. RTS data were continuously averaged at         
+       MAG memory address 4800 and transmitted to Earth in real-time.         
+       When an Opt/Avg ON command was given data were stored in the MAG       
+       memory buffer beginning at address 4800 and continuing to higher       
+       addresses until Opt/Avg OFF was commanded, another Opt/Avg ON was      
+       commanded and the MAG buffer began filling at 4800 again, or the       
+       MAG memory buffer filled. Opt/avg data was returned to Earth via       
+       Memory Read-Out (MRO) as telemetry permitted. Since RTS and            
+       opt/avg data used the MAG memory buffer in different ways, they        
+       could not be collected simultaneously. Snapshot data, which            
+       completely filled the MAG memory buffer, could likewise not be         
+       collected simultaneously with opt/avg, and caused periodic spikes      
+       in RTS data. Snapshot corruption of RTS data is discussed in more      
+       detail in the 'Data Quality and Coverage' section of this              
+       document. For a more detailed discussion how MAG RTS, opt/avg,         
+       and snapshot data are collected, please refer to                       
+       [KIVELSONETAL1992].                                                    
+                                                                              
+       When high-resolution data were available, but the RTS data were        
+       either lost or corrupted, simulated RTS (sRTS) data have been          
+       generated from the high-resolution data. sRTS data were averaged       
+       down to the RTS rate, then interpolated to be continuous with the      
+       existing RTS data.                                                     
+                                                                              
+       During the prime mission, the RTS data rate varied, depending the      
+       downlink capability. MAG has several different possible                
+       RTS data rates depending on the telemetry format:                      
+                                                                              
+       ----------------------------------------------------------------       
+       Table 1.               MAG RTS Rates                                   
+       ----------------------------------------------------------------       
+        Format     MAG bit rate    Time between samples    Corner Freq.       
+                     (bps)         (seconds)    (mf)         (Hz)             
+       ----------------------------------------------------------------       
+          A-D         2               24         36          1/34             
+          E           4               12         18          1/34             
+          F           6                8         12          1/17             
+          G           8                6          9          1/17             
+          H          12                4          6          1/17             
+          I          18               8/3         4          1/17             
+                                                                              
+       Similarly, the opt/avg data can be acquired at different rates.        
+       The relatively high data rates fill the MAG internal memory            
+       buffer more quickly and are only used to cover short data              
+       disruptions.                                                           
+                                                                              
+       ----------------------------------------------------------------       
+       Table 2.          Optimal Averager Data Rates                          
+       ----------------------------------------------------------------       
+       Time between samples     Buffer fill time     Corner Freq.             
+        (RIM)   (hh:mm:ss.ss)     (day/hh:mm)            (Hz)                 
+       ----------------------------------------------------------------       
+           1     00:01:00.67         03:22             1/67                   
+           2     00:02:01.33         06:44             1/134                  
+           4     00:04:02.67         13:29             1/268                  
+           8     00:08:05.33       1/02:58             1/536                  
+          16     00:16:10.67       2/05:56             1/1072                 
+          32     00:32:21.33       4/11:51             1/2144                 
+                                                                              
+       The instrument has the ability to acquire longer time averages,        
+       but these modes were not used at Jupiter.                              
+                                                                              
+       After the prime mission ended (December 1997), RTS data                
+       acquisition was limited to a few days near perijove with the           
+       exception of a few orbits. When RTS data were acquired, they were      
+       acquired exclusively in the 2 bps (24 sec/sample) telemetry            
+       formats. There were no modifications to the opt/avg data               
+       acquisition strategy associated with the end of the prime              
+       mission.                                                               
+                                                                              
+       Both the opt/avg and the RTS data processor compute field              
+       averages by applying a recursive filter and decimate algorithm to      
+       the data. The instrument applies a calibration, decimates vectors      
+       down to minor frame (mf) samples (2/3 second) and despins the          
+       data using the spin angle value broadcast on the spacecraft bus.       
+       The corner frequencies of the recursive filter are provided in         
+       tables 1 and 2 for the various sample durations. BOTH RTS AND THE      
+       OPT/AVG DATA ARE TIME TAGGED AT THE TIME OF DECIMATION (END

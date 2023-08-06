@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <!-- DOI_reserved_cassini_vims_saturn_document_vims-browse-interpretation-key.xml -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>VIMS Browse Image Interpretation Key</title> 
+        <authors> 
+            <author> 
+               <first_name>M.</first_name> 
+               <last_name>Showalter</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2020-03-31</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Document</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:cassini_vims_saturn:document:vims-browse-interpretation-key</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>

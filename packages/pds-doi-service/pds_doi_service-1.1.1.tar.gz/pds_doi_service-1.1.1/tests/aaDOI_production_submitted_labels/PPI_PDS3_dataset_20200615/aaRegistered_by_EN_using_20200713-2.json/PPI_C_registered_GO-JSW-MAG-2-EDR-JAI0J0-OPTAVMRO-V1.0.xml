@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GO JUP/SW MAG EDR JUPAPPROACH/IO/JUP OPTAVG MRO V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GO-J/SW-MAG-2-EDR-JA/I0/J0-OPTAVMRO-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1997-01-31</publication_date>
+            <country>USA</country>
+            <description>This data set contains magnetic field vectors acquired by the
+                Galileo magnetometer before and during inbound shock and
+                magnetopause crossings, the Io flyby on Dec 7 (341), 1995, and
+                the part of the J0 orbital cruise. The data were acquired in the
+                optimal averager mode of the instrument. These are raw data
+                provided in their original EDR form. Processing done internal to
+            the instrument remains in the data set.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GO-J%2FSW-MAG-2-EDR-JA%2FI0%2FJ0-OPTAVMRO-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO ORBITER; JUPITER; IO; MAGNETOMETER; GO; PLANET; SATELLITE; MAG; TRIAXIAL FLUXGATE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. MARGARET G. KIVELSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.go-j-sw-mag-2-edr-ja-i0-j0-optavmro-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

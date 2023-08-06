@@ -1,0 +1,229 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. KAZDEN, updated ARCHIVE_STATUS, added ABSTRACT_DESC, CITATION_DESC and    
+CONFIDENCE_LEVEL_NOTE, removed unnecessary keywords, 2012-03-06;             
+D. KAZDEN, removed ARCHIVE_STATUS keyword, 2018-08-09;"                      
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P11-J-FGM-4-SUMM-5MIN-V1.0"            
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P11 FLUXGATE MAGMETOMETER 5 MINUTE     
+                                      JUPITER SUMMARY DATA"                  
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1974-12-02T23:31:40.000                 
+    STOP_TIME                      = 1974-12-03T11:12:16.000                 
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "Mario H. Acuna"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+Pioneer 11 Fluxgate Magnetometer (FGM) data from the Jupiter encounter       
+period between 1974-12-02T23:31:40.000 and 1974-12-03T11:12:16.000.          
+The data set provides 5 minute magnetic field averages in both Inertial      
+Heliocentric and System III (1957.0) coordinates, and spacecraft             
+trajectory data in System I and System III (1957.0) coordinates."            
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+P11 FGM data from the Jupiter encounter between 1974-12-02T23:31:40.000 and  
+1974-12-03T11:12:16.000. Included are 5 minute magnetic field averages and   
+spacecraft trajectory data."                                                 
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set consists of magnetic field vector data recorded          
+      by the Fluxgate Magnetometer onboard the Pioneer 11 spacecraft,        
+      during the Jupiter encounter period.  Data include 5 minute            
+      averages of the magnetic field in both Inertial Heliocentric           
+      and System III (1957.0) coordinates.  Spacecraft trajectory            
+      data are also provided, in System I and System III (1957.0)            
+      coordinates.                                                           
+                                                                             
+                                                                             
+      Data Sampling                                                          
+      ==============                                                         
+      The fluxgate magnetometer data is multiplexed into one of              
+      the Science Subcom formats available on the spacecraft.                
+      Two separate 6-bit words per subcom cycle are assigned                 
+      to the instrument and thus 3 complete cycles are required              
+      to read out the contents of the output buff.  At a bit rate            
+      of 2048 bps, a complete subcom cycle requires 6 second and             
+      a vector measurement is obtained approximately every 18 to             
+      24 second depending on the actual roll rate of the spacecraft,         
+      which is nominally 5 revolutions per minute (ACUNA&NESS1974).          
+                                                                             
+      The NSSDC documentation does not contain information about what        
+      data resolution this data set (5 minute) is averaged from.             
+                                                                             
+                                                                             
+      Data Processing                                                        
+      ===============                                                        
+      No detailed information of data processing is found in the NSSDC       
+      documentation pertinent to this data set.                              
+                                                                             
+      Pioneer 11 spacecraft was operating under a spin-stablized             
+      condition and had a spin period of 12 seconds.                         
+                                                                             
+                                                                             
+      Data Format                                                            
+      ============                                                           
+      The Pioneer 11 magnetometer data for Jupiter encounter were            
+      originally written on a BCD magnetic tape created at NSSDC from        
+      a card deck supplied by the PI team.  The original file was            
+      re-formatted into a new ASCII file named P11_FGM_JUP_ENC_5MIN.TAB      
+      which contains the following data columns:                             
+      --------------------------------------------------------------------   
+      Column  Column   Column                                                
+      Name    Format   Description                                           
+      --------------------------------------------------------------------   
+      TIME    A24      Ground received time in yyyy-mm-ddThh:mm:ss.sssZ      
+      R       F5.2     Distance of Pioneer 11 from Jupiter in Rj             
+      LAT     F6.1     Latitude of Pioneer 11 in System III (1957.0)         
+      LON1    F7.1     Longitude of Pioneer 11 in System I                   
+      LON3    F7.1     Longitude of Pioneer 11 in System III (1957.0)        
+      BX      F8.4     X component of the magnetic field in Inertial         
+                           Heliocentric coordinates                          
+      BY      F8.4     Y component of the magnetic field in Inertial         
+                           Heliocentric coordinates                          
+      Bz      F8.4     Z component of the magnetic field in Inertial         
+                           Heliocentric coordinates                          
+      BR      F8.4     Radial component of the magnetic field in             
+                           System III (1957.0)                               
+      BTHETA  F8.4     Polar component of the magnetic field in              
+                           System III (1957.0)                               
+      BPHI    F8.4     Azimuthal component of the magnetic field in          
+                           System III (1957.0)                               
+      N       I2       Number of data points used in averaging               
+      --------------------------------------------------------------------   
+                                                                             
+                                                                             
+      Coordinate System for Data                                             
+      ===========================                                            
+      System I is a planetographic spherical coordinates at Jupiter.  This   
+      system used a relatively faster Jupiter spin rate (877.90 degree per   
+      24 hours) to describe cloud features within 10 degree of the equator.  
+      The Central Meridian Longitude was established at 12:00 Greenwich Mean 
+      Time on July 14, 1897.                                                 
+                                                                             
+      System III (1957.0) is a planetographic spherical coordinates. In this 
+      system, the Jovian rotation period is defined to be 9h55m29.37s        
+      and the Central Meridian Longitude is defined at 00:00 UT on           
+      January 1, 1957.                                                       
+                                                                             
+      Inertial Heliocentric coordinates is a Cartesian system, defined based 
+      on two principle directions, the Jupiter spin axis J, and the direction
+      from the sun to the first point of Aries, X.  The Y direction is given 
+      by the cross product of J and X.  The Z direction is defined as the    
+      cross product of X and Y.                                              
+                                                                             
+                                                                             
+      Ancillary Data                                                         
+      ==============                                                         
+      There is no ancillary data associated with this data set.              
+                                                                             
+                                                                             
+      Instrument Calibration                                                 
+      ======================                                                 
+      The fluxgate magnetometer was calibrated at the GSFC Magnetic          
+      Test Facility by means of a 2 meter diameter, single axis              
+      Helmholtz coil system.  Typically hysteresis observed after            
+      exposure to 2.5 mT fields was less than 1 part in 10**3 (one           
+      count).  Temperature stability is better than +- 0.5% over the         
+      temperature range of -20 to +40 degree Celsius in spite of the         
+      open loop design of the instrument.  This is due to the fact           
+      that the characteristics of the magnetic material used in the          
+      sensor cores are fairly independent of temperature over the            
+      indicated range.  The stability figure includes the A/D converter      
+      drift and a large portion of it is due to the single ramp design       
+      of the latter.  Nevertheless, minimum power consumption                
+      requirements and flight qualified component availability               
+      precluded the used of more stable A/D converter designs                
+      (ACUNA&NESS1974)."                                                     
+                                                                             
+      CONFIDENCE_LEVEL_NOTE   = "                                            
+      Confidence Level Overview                                              
+      =========================                                              
+      No data confidence information is found in the NSSDC documentation     
+      pertinent to this data set.                                            
+                                                                             
+      There is no flagged values in this data set.                           
+                                                                             
+      "                                                                      
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P11                                     
+    INSTRUMENT_ID                  = FGM                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 11"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1975"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNAETALL1980"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "BELCHER1973"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCCULLOCH&KOMES1973"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MEAD1974"                              
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITH1973"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

@@ -1,0 +1,288 @@
+PDS_VERSION_ID                      = PDS3                                   
+ LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;            
+ D. Kazden (PPI) 2010-05-17, removed Z's from time, added CITATION_DESC,     
+ ABSTRACT_DESC, and DATA_SET_TERSE_DESC keywords;                            
+ D. Kazden (PPI) 2011-10-17, updated REFERENCE_KEY_IDs;                      
+ D. Kazden (PPI) 2020-02-26, updated CITATION_DESC"                          
+ RECORD_TYPE                        = STREAM                                 
+                                                                             
+ OBJECT                             = DATA_SET                               
+ DATA_SET_ID                        = "VG1-J-PRA-4-SUMM-BROWSE-48SEC-V1.0"   
+                                                                             
+ OBJECT                             = DATA_SET_INFORMATION                   
+ DATA_SET_NAME                      = "VG1 JUP PRA RESAMPLED SUMMARY BROWSE  
+                                         48SEC V1.0"                         
+ DATA_SET_COLLECTION_MEMBER_FLG     = N                                      
+ START_TIME                         = 1979-01-06T00:00:48.000                
+ STOP_TIME                          = 1979-04-13T23:58:24.000                
+ DATA_SET_RELEASE_DATE              = 1998-05-01                             
+ PRODUCER_FULL_NAME                 = "MICHAEL L. KAISER"                    
+ DETAILED_CATALOG_FLAG              = N                                      
+ DATA_OBJECT_TYPE                   = "TIME SERIES"                          
+ CITATION_DESC           = "Kaiser, M.L., VG1-J-PRA-4-SUMM-BROWSE-48SEC-V1.0,
+                             VG1 JUP PRA RESAMPLED SUMMARY BROWSE 48SEC V1.0,
+                             NASA Planetary Data System, 1998."              
+ ABSTRACT_DESC                      = "                                      
+    This data set consists of edited browse data derived from an             
+    original data set obtained from the Voyager 1 Planetary Radio            
+    Astronomy (PRA) instrument in the vicinity of Jupiter.  Data             
+    are provided for 70 instrument channels covering the range from          
+    1.2 kHz to 1326 kHz in uniform 19.2 kHz steps, each 1 kHz wide.          
+    Data are included for the period 1979-01-06 00:00:48 through             
+    1979-04-13 23:58:24."                                                    
+ DATA_SET_TERSE_DESC                = "                                      
+    This data set consists of edited browse data originally obtained from the
+    VG1 PRA instrument near Jupiter. Data are provided for 70 instrument     
+    channels covering the range from 1.2 kHz to 1326 kHz in uniform 19.2 kHz 
+    steps, each 1 kHz wide."                                                 
+ DATA_SET_DESC                      = "                                      
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    Instrument P.I.     : James W.  Warwick                                  
+    Data Supplier       : Michael L. Kaiser                                  
+    Data sampling rate  : 48 seconds                                         
+    Data Set Start Time : 1979-01-06T00:00:48.000Z                           
+    Data Set Stop Time  : 1979-04-13T23:58:24.000Z                           
+                                                                             
+    This data set consists of edited browse data derived from an             
+    original data set obtained from the Voyager 1 Planetary Radio            
+    Astronomy (PRA) instrument in the vicinity of Jupiter.  Data             
+    are provided for 70 instrument channels covering the range from          
+    1.2 kHz to 1326 kHz in uniform 19.2 kHz steps, each 1 kHz wide.          
+    Data are included for the period 1979-01-06 00:00:48 through             
+    1979-04-13 23:58:24.  In order to produce this data set from             
+    the original raw PRA data, several steps have been taken:                
+                                                                             
+    1. The PRA operates in a variety of modes; data from modes in            
+       which the receiver does not scan rapidly through its frequency        
+       range have been removed;                                              
+                                                                             
+    2. The data have been calibrated as best we know how;                    
+                                                                             
+    3. The data have been split into Left Hand Circular (LHC) and            
+       Right Hand Circular (RHC) components;                                 
+                                                                             
+    4. The data have been binned into 48-second intervals.                   
+                                                                             
+    Thus, values at a given channel are separated in time by an              
+    increment of 48 seconds; each 48-second time interval has                
+    associated with it a value for LHC polarization and one for RHC          
+    polarization.                                                            
+                                                                             
+    During data gaps, the entire record is absent from the data              
+    set; that is, missing records have not been zero-filled or               
+    otherwise marked.  Bad data within a record is indicated by the          
+    value zero, which cannot otherwise occur.                                
+                                                                             
+    Each datum is returned as a 16-bit quantity; it represents the           
+    mean power received in the given channel at the specified time           
+    and polarization.  The returned quantity is the value in mB              
+    about a reference flux density.  To convert a returned quantity          
+    to flux, use the formula:                                                
+                                                                             
+    flux   = 7.0x10^(-22)x10^(mB/1000) W m-2 Hz-1                            
+                                                                             
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+                                                                             
+    Data Set Parameter 'RADIO WAVE SPECTRUM'                                 
+    ----------------------------------------                                 
+      Data Set Parameter Name        : RADIO WAVE SPECTRUM                   
+      Data Set Parameter Unit        : MILLIBEL                              
+      Sampling Parameter Name        : TIME                                  
+      Sampling Parameter Unit        : SECOND                                
+      Sampling Parameter Resolution  : 0.001                                 
+      Sampling Parameter Interval    : 48                                    
+      Minimum Available Sampling Int : 12                                    
+      Noise Level                    : 2400                                  
+                                                                             
+      A set of derived parameters consisting of power fluxes at              
+      various contiguous frequencies over a range of frequencies.            
+      Millibels may be converted to watts/m**2/Hz by using the               
+      formula for flux indicated above.                                      
+                                                                             
+                                                                             
+  Source Instrument Parameters                                               
+  ============================                                               
+    Instrument Host ID              : VG1                                    
+    Data Set Parameter Name         : RADIO WAVE SPECTRUM                    
+    Instrument Parameter Name       : WAVE FLUX DENSITY                      
+                                      ELECTRIC FIELD WAVEFORM                
+                                      ELECTRIC FIELD COMPONENT               
+                                      MAGNETIC FIELD COMPONENT               
+                                      WAVE ELECTRIC FIELD INTENSITY          
+                                      WAVE MAGNETIC FIELD INTENSITY          
+    Important Instrument Parameters : 1 (for all parameters)                 
+                                                                             
+                                                                             
+  Data Coverage                                                              
+  =============                                                              
+                                                                             
+    Filename Records Start                     Stop                          
+    -------------------------------------------------------------------      
+    T790106  1565    1979-01-06T00:00:48.000Z  1979-01-06T23:59:12.000Z      
+    T790107  1430    1979-01-07T00:01:36.000Z  1979-01-07T23:59:12.000Z      
+    T790108  1454    1979-01-08T00:01:36.000Z  1979-01-08T23:59:12.000Z      
+    T790109  1518    1979-01-09T00:01:36.000Z  1979-01-09T23:59:12.000Z      
+    T790110  1517    1979-01-10T00:01:36.000Z  1979-01-10T23:59:12.000Z      
+    T790111  1522    1979-01-11T00:01:36.000Z  1979-01-11T23:59:12.000Z      
+    T790112  1460    1979-01-12T00:01:36.000Z  1979-01-12T23:25:36.000Z      
+    T790113   298    1979-01-13T07:27:12.000Z  1979-01-13T23:58:24.000Z      
+    T790114  1460    1979-01-14T00:00:48.000Z  1979-01-14T23:59:12.000Z      
+    T790115  1535    1979-01-15T00:01:36.000Z  1979-01-15T23:59:12.000Z      
+    T790116  1424    1979-01-16T00:01:36.000Z  1979-01-16T23:59:12.000Z      
+    T790117  1442    1979-01-17T00:01:36.000Z  1979-01-17T23:59:12.000Z      
+    T790118  1440    1979-01-18T00:01:36.000Z  1979-01-18T23:59:12.000Z      
+    T790119  1371    1979-01-19T00:01:36.000Z  1979-01-19T23:59:12.000Z      
+    T790120  1396    1979-01-20T00:01:36.000Z  1979-01-20T23:59:12.000Z      
+    T790121  1540    1979-01-21T00:01:36.000Z  1979-01-21T23:58:24.000Z      
+    T790122  1551    1979-01-22T00:00:48.000Z  1979-01-22T23:59:12.000Z      
+    T790123  1039    1979-01-23T00:01:36.000Z  1979-01-23T23:59:12.000Z      
+    T790124  1407    1979-01-24T00:01:36.000Z  1979-01-24T23:58:24.000Z      
+    T790125  1515    1979-01-25T00:01:36.000Z  1979-01-25T23:59:12.000Z      
+    T790126  1575    1979-01-26T00:01:36.000Z  1979-01-26T23:59:12.000Z      
+    T790127  1556    1979-01-27T00:01:36.000Z  1979-01-27T23:59:12.000Z      
+    T790128  1578    1979-01-28T00:01:36.000Z  1979-01-28T23:59:12.000Z      
+    T790129  1602    1979-01-29T00:01:36.000Z  1979-01-29T23:57:36.000Z      
+    T790130  1625    1979-01-30T00:01:36.000Z  1979-01-30T23:59:12.000Z      
+    T790131  1775    1979-01-31T00:00:48.000Z  1979-01-31T23:59:12.000Z      
+    T790201  1751    1979-02-01T00:00:48.000Z  1979-02-01T23:59:12.000Z      
+    T790202  1704    1979-02-02T00:00:48.000Z  1979-02-02T23:24:48.000Z      
+    T790203  1250    1979-02-03T06:25:36.000Z  1979-02-03T23:59:12.000Z      
+    T790204  1607    1979-02-04T00:00:48.000Z  1979-02-04T23:59:12.000Z      
+    T790205  1659    1979-02-05T00:00:48.000Z  1979-02-05T23:59:12.000Z      
+    T790206  1409    1979-02-06T00:00:48.000Z  1979-02-06T23:59:12.000Z      
+    T790207  1648    1979-02-07T00:00:48.000Z  1979-02-07T23:58:24.000Z      
+    T790208  1676    1979-02-08T00:00:00.000Z  1979-02-08T23:59:12.000Z      
+    T790209  1219    1979-02-09T00:00:48.000Z  1979-02-09T23:59:12.000Z      
+    T790210  1604    1979-02-10T00:00:48.000Z  1979-02-10T23:24:00.000Z      
+    T790211  1190    1979-02-11T06:24:48.000Z  1979-02-11T23:57:36.000Z      
+    T790212  1678    1979-02-12T00:06:24.000Z  1979-02-12T23:59:12.000Z      
+    T790213  1655    1979-02-13T00:00:48.000Z  1979-02-13T23:59:12.000Z      
+    T790214  1457    1979-02-14T00:00:48.000Z  1979-02-14T23:59:12.000Z      
+    T790215  1661    1979-02-15T00:01:36.000Z  1979-02-15T23:59:12.000Z      
+    T790216  1533    1979-02-16T00:00:48.000Z  1979-02-16T23:59:12.000Z      
+    T790217  1678    1979-02-17T00:00:48.000Z  1979-02-17T23:59:12.000Z      
+    T790218  1692    1979-02-18T00:00:48.000Z  1979-02-18T23:59:12.000Z      
+    T790219  1611    1979-02-19T00:00:48.000Z  1979-02-19T23:59:12.000Z      
+    T790220  1600    1979-02-20T00:00:48.000Z  1979-02-20T23:23:12.000Z      
+    T790221  1272    1979-02-21T01:24:00.000Z  1979-02-21T23:59:12.000Z      
+    T790222  1730    1979-02-22T00:00:48.000Z  1979-02-22T23:59:12.000Z      
+    T790223  1764    1979-02-23T00:00:48.000Z  1979-02-23T23:59:12.000Z      
+    T790224  1645    1979-02-24T00:00:48.000Z  1979-02-24T23:59:12.000Z      
+    T790225  1700    1979-02-25T00:00:48.000Z  1979-02-25T23:59:12.000Z      
+    T790226  1679    1979-02-26T00:00:48.000Z  1979-02-26T23:59:12.000Z      
+    T790227  1710    1979-02-27T00:00:48.000Z  1979-02-27T23:59:12.000Z      
+    T790228  1697    1979-02-28T00:00:48.000Z  1979-02-28T23:58:24.000Z      
+    T790301  1674    1979-02-29T00:00:00.000Z  1979-02-29T23:58:24.000Z      
+    T790302  1694    1979-03-02T00:00:00.000Z  1979-03-02T23:59:12.000Z      
+    T790303  1381    1979-03-03T00:00:48.000Z  1979-03-03T23:59:12.000Z      
+    T790304  1700    1979-03-04T00:00:48.000Z  1979-03-04T23:59:12.000Z      
+    T790305  1701    1979-03-05T00:00:48.000Z  1979-03-05T23:59:12.000Z      
+    T790306  1661    1979-03-06T00:00:48.000Z  1979-03-06T23:59:12.000Z      
+    T790307  1726    1979-03-07T00:00:48.000Z  1979-03-07T23:59:12.000Z      
+    T790308  1700    1979-03-08T00:00:48.000Z  1979-03-08T23:59:12.000Z      
+    T790309  1714    1979-03-09T00:00:48.000Z  1979-03-09T23:59:12.000Z      
+    T790310  1635    1979-03-10T00:00:48.000Z  1979-03-10T23:59:12.000Z      
+    T790311  1718    1979-03-11T00:00:48.000Z  1979-03-11T23:59:12.000Z      
+    T790312  1676    1979-03-12T00:00:48.000Z  1979-03-12T23:59:12.000Z      
+    T790313  1731    1979-03-13T00:00:48.000Z  1979-03-13T23:59:12.000Z      
+    T790314  1709    1979-03-14T00:00:48.000Z  1979-03-14T23:59:12.000Z      
+    T790315  1654    1979-03-15T00:00:48.000Z  1979-03-15T23:58:24.000Z      
+    T790316  1617    1979-03-16T00:00:00.000Z  1979-03-16T23:59:12.000Z      
+    T790317  1670    1979-03-17T00:00:48.000Z  1979-03-17T23:54:24.000Z      
+    T790318  1667    1979-03-18T00:06:24.000Z  1979-03-18T23:58:24.000Z      
+    T790319  1674    1979-03-19T00:00:48.000Z  1979-03-19T23:59:12.000Z      
+    T790320  1674    1979-03-20T00:00:48.000Z  1979-03-20T23:59:12.000Z      
+    T790321  1664    1979-03-21T00:00:48.000Z  1979-03-21T23:59:12.000Z      
+    T790322  1647    1979-03-22T00:00:48.000Z  1979-03-22T23:59:12.000Z      
+    T790323  1676    1979-03-23T00:00:48.000Z  1979-03-23T23:59:12.000Z      
+    T790324  1669    1979-03-24T00:00:48.000Z  1979-03-24T23:59:12.000Z      
+    T790325  1685    1979-03-25T00:00:48.000Z  1979-03-25T23:59:12.000Z      
+    T790326  1366    1979-03-26T00:00:48.000Z  1979-03-26T23:59:12.000Z      
+    T790327   660    1979-03-27T00:00:48.000Z  1979-03-27T09:09:36.000Z      
+    T790328  1354    1979-03-28T00:20:00.000Z  1979-03-28T23:59:12.000Z      
+    T790329  1692    1979-03-29T00:00:48.000Z  1979-03-29T23:59:12.000Z      
+    T790330  1651    1979-03-30T00:00:48.000Z  1979-03-30T23:59:12.000Z      
+    T790331  1666    1979-03-31T00:00:48.000Z  1979-03-31T23:58:24.000Z      
+    T790401  1666    1979-03-32T00:00:00.000Z  1979-03-32T23:59:12.000Z      
+    T790402  1570    1979-04-02T00:00:48.000Z  1979-04-02T23:59:12.000Z      
+    T790403  1652    1979-04-03T00:00:48.000Z  1979-04-03T23:53:36.000Z      
+    T790404  1636    1979-04-04T00:01:36.000Z  1979-04-04T23:59:12.000Z      
+    T790405  1140    1979-04-05T00:00:48.000Z  1979-04-05T23:59:12.000Z      
+    T790406  1678    1979-04-06T00:00:48.000Z  1979-04-06T23:59:12.000Z      
+    T790407  1622    1979-04-07T00:00:48.000Z  1979-04-07T23:59:12.000Z      
+    T790408  1695    1979-04-08T00:00:48.000Z  1979-04-08T23:59:12.000Z      
+    T790409  1433    1979-04-09T00:00:48.000Z  1979-04-09T20:34:24.000Z      
+    T790410  1250    1979-04-10T05:28:48.000Z  1979-04-10T23:20:00.000Z      
+    T790411   287    1979-04-11T14:03:12.000Z  1979-04-11T23:59:12.000Z      
+    T790412  1671    1979-04-12T00:00:48.000Z  1979-04-12T23:59:12.000Z      
+    T790413  1601    1979-04-13T00:00:48.000Z  1979-04-13T23:58:24.000Z "    
+                                                                             
+                                                                             
+ CONFIDENCE_LEVEL_NOTE              = "                                      
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    This data set includes all the available low-rate scanning mode          
+    data for the frequency range below 1326 kHz for the time                 
+    interval covered.  Known bad data have been set to zero.  Data           
+    which appear to exceed the Full Scale Deflection (FSD) of the            
+    instrument (i.e.  the most intense signal which can be measured          
+    reliably) have also been set to a zero (should they occur).              
+    Planetary Radio Astronomy (PRA) suffers from interference from           
+    many other instruments aboard the spacecraft.  No attempt had            
+    been made to remove these interferences in this data set.  Two           
+    obvious examples are the 136 and 193 kHz channels which are              
+    nearly always contaminated by interference.                              
+                                                                             
+    The separation into LHC and RHC polarization components is               
+    performed on the basis of the polarization of the incoming wave          
+    as perceived by the instrument.  This takes into account                 
+    neither the antenna transfer function nor the spacecraft                 
+    orientation with respect to the source.  In general, the                 
+    mapping of perceived polarization back to emitted polarization           
+    cannot be solved without a knowledge of both of these factors,           
+    as well as a knowledge of the type of polarization coming from           
+    the source region (e.g.  is it linear or circularly                      
+    polarized?).                                                             
+                                                                             
+    Most planetary emissions are circularly polarized.  Below is a           
+    table showing the response of the experiment to a low frequency          
+    (100 kHz) LHC wave.  The response does not change much up to             
+    about 5 MHz.                                                             
+                                                                             
+    The coordinate system used is: THETA == 0 is along the MAG               
+    boom; PHI == 0 is the bisector of the two PRA antennas.  The             
+    third column is the apparent value of the left hand component            
+    as perceived by the receiver.  That is, a value of +1.0                  
+    indicates that the incoming LHC wave is correctly detected as a          
+    pure LHC wave.  A value of -1.0 will be detected as being of             
+    the correct strength, but incorrect polarity.  A value of, say,          
+    0.6 indicates that the total energy is split 60% into the                
+    apparent LHC component and 40% into the apparent RHC                     
+    component."                                                              
+                                                                             
+ END_OBJECT                         = DATA_SET_INFORMATION                   
+                                                                             
+ OBJECT                             = DATA_SET_TARGET                        
+ TARGET_NAME                        = JUPITER                                
+ END_OBJECT                         = DATA_SET_TARGET                        
+                                                                             
+ OBJECT                             = DATA_SET_HOST                          
+ INSTRUMENT_HOST_ID                 = VG1                                    
+ INSTRUMENT_ID                      = PRA                                    
+ END_OBJECT                         = DATA_SET_HOST                          
+                                                                             
+ OBJECT                             = DATA_SET_MISSION                       
+ MISSION_NAME                       = "VOYAGER"                              
+ END_OBJECT                         = DATA_SET_MISSION                       
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = "WARWICKETAL1979A"                     
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ END_OBJECT                         = DATA_SET                               
+ END

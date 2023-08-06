@@ -1,0 +1,164 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-23, D. Kazden, updated to meet PDS 3.8 standards;       
+             2020-02-11, D. Kazden, updated CITATION_DESC;"                  
+                                                                             
+    OBJECT                        = DATA_SET                                 
+    DATA_SET_ID                   = "PVO-V-ONMS-3-SUPERTHRMLOXYGN-HIRES-V1.0"
+                                                                             
+    OBJECT                         = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "PVO VENUS ONMS CALIBRATED SUPERTHERMAL 
+                                      OXYGEN HIGH RES. V1.0"                 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+                                                                             
+    START_TIME                     = 1978-12-05T15:07:07                     
+    STOP_TIME                      = 1992-07-20T00:22:49                     
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    DATA_SET_RELEASE_DATE          = 1993-03-31                              
+    PRODUCER_FULL_NAME             = "DR. WAYNE KASPRZAK"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) neutral mass       
+                                      spectrometer (ONMS) calibrated         
+                                      superthermal oxygen high res data      
+                                      for all Venus orbits (3-5055,          
+                                      1978-12-05 to 1992-7-20)."             
+    ABSTRACT_DESC                  = "                                       
+    This dataset has one point for each point measured, that went            
+into a successful data fitting for that time interval. The individual        
+flux and density values are computed by dividing each data value by          
+the value of the fitting function at the corresponding time.                 
+                                                                             
+    The instrument has detected superthermal, energetic                      
+or fast ions whose energy exceeds 36 eV in the spacecraft                    
+frame of reference.  These ions were observed in early orbits                
+during measurements of the neutral density near periapsis, have              
+an erratic and unpredictable signature, and occur at too high an             
+altitude to be due to the neutral atmosphere. When the altitude              
+of periapsis increased above the point where sensible neutral                
+density measurements could be made, the instrument was configured            
+specifically to detect superthermal ions.  In general, for orbit             
+numbers 1 to 645, data were taken from the RPA mode.  The gas                
+background signal with the filament on is about a factor of 10               
+less in this mode than in non-RPA mode, resulting in a lower                 
+detection threshold. For orbit numbers above 923, the instrument             
+was deliberately configured with the filament off and non-RPA                
+mode data was used. For mass 16 the RPA voltage is about +3.8                
+volts."                                                                      
+    CITATION_DESC   = "Kasprzak, W., PVO-V-ONMS-3-SUPERTHRMLOXYGN-HIRES-V1.0,
+                PVO VENUS ONMS CALIBRATED SUPERTHERMAL OXYGEN HIGH RES. V1.0,
+                       NASA Planetary Data System, 1993."                    
+                                                                             
+    DATA_SET_DESC                  ="                                        
+    The data reduction process has been described in Kasprzak                
+et al. (1987). The method used to reduce the data assumes                    
+cylindrical symmetry of the ion source.  In actual fact, the                 
+source is asymmetrical in its angular response (Guenther, 1989).             
+This can introduce as much as a factor of 2 scatter in the data.             
+No simple solution has been found for modeling this asymmetry                
+since the actual ion drift vector is unknown. The minimum energy             
+of an ion detectable by the ONMS in this ion mode is 35.9 eV.                
+The maximum transmission is assumed to occur about 10 V above                
+this value.  On the nightside of Venus the spacecraft potential              
+is negative and the most probable ion energy is near 40 eV.                  
+                                                                             
+The ion species regularly monitored include: He+, N+, O+,                    
+(N+ +  CO+), and CO2+. Because of the paucity of data at other               
+mass numbers only mass 16 (atomic oxygen) has been reduced to a              
+flux and number density. As part of the reduction process the                
+angle in the ecliptic plane of the apparent ion flow in spacecraft           
+reference frame has been deduced. The flux values are estimated              
+in the spacecraft reference frame relative to spacecraft ground.             
+The density is computed from the flux by dividing it by a speed              
+corresponding to 40 eV. No correction has been applied to the                
+angle, density or flux in order to remove the effect of spacecraft           
+velocity.                                                                    
+                                                                             
+   Several parameters result from the fit: 1) the best estimate              
+of the flux for the interval (used to generate the low resolution            
+(LORES) data set); 2) the phase shift of signal maximum with                 
+respect to that predicted by the position of the velocity vector             
+and its error; 3) the fitting parameter B (Kasprzak et al., 1987);           
+and 4) the effective angle of attack.  Other items can be derived            
+from this data: 1) the apparent direction of the ion flow projected          
+into the ecliptic plane; and 2) one component of the ion drift               
+perpendicular to the plane of axis of the ONMS and the spin axis.            
+The phase angle is negative if the predicted signal maximum from             
+the spacecraft velocity is ahead of the true signal maximum when             
+viewed along the -Z spacecraft axis with clockwise rotation.  The            
+drift component is derived from the condition that the total                 
+relative velocity in the moving reference frame has no component             
+perpendicular to the (ONMS axis, Z axis) plane.                              
+                                                                             
+The dataset fields are:                                                      
+                                                                             
+YEAR      YY=2 digit year (e.g. 78 for 1978)                                 
+DOY       DDD=3 digit day of year (e.g. 053)                                 
+UT        Universal time represented as the                                  
+          number of milliseconds since                                       
+          1966-01-01T00:00:00Z stored as a double                            
+          precision floating point number.                                   
+ORBIT     Orbit number                                                       
+MS        Mass number -                                                      
+               16 for O                                                      
+F         Flag -                                                             
+               D single data point flux, density                             
+               A fitted parameters for interval                              
+DENSITY   Effective number density assuming a 40 eV                          
+          ion (particles/cm{3})                                              
+FLUX      Flux (particles/cm{2}/s)                                           
+AZ ANG    Azimuth angle of apparent ion flow direction                       
+          projected into the ecliptic plane (deg)                            
+PHASE     Phase shift of signal maximum with respect to                      
+          that predicted by velocity vector (deg)                            
+ERROR     Error in phase shift (deg)                                         
+ANGATK    Effective angle of attack (deg)                                    
+WP DIR    Direction of drift component perpendicular to                      
+          (ONMS axis, Z axis) projected into the                             
+          ecliptic plane (deg)                                               
+WP XY     Magnitude of drift component (m/s)                                 
+B         Fitting parameter                                                  
+                                                                             
+Kasprzak, W.T., H.B.  Niemann and P.  Mahaffy, Observations of               
+Energetic Ions on the Nightside of Venus, Journal of Geophysical             
+Research, vol. 32, 291-298, 1987.  "                                         
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+   In order to fit the data a minimum of 30 points were required             
+in 36 seconds. In addition, the maximum to minimum count ratio was           
+required to be factor of 3 or greater in order to insure that there          
+was a definitive spin modulation.  The center 12 seconds of data is          
+divided by the fitting function to derive the equivalent flux for            
+that point. The center of the new fitting interval is adjusted so            
+that it is centered on the expected signal maximum predicted from            
+the previous interval fit. As a result of this method of fitting,            
+discontinuities may exist near minimum angle of attack where one             
+12 second interval adjoins the next interval.                                
+                                                                             
+See Kasprzak et al. (1987).                                                  
+                                                                             
+Kasprzak, W.T., H.B.  Niemann and P.  Mahaffy, Observations of               
+Energetic Ions on the Nightside of Venus, Journal of Geophysical             
+Research, vol. 32, 291-298, 1987. "                                          
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KASPRZAKETAL1987"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

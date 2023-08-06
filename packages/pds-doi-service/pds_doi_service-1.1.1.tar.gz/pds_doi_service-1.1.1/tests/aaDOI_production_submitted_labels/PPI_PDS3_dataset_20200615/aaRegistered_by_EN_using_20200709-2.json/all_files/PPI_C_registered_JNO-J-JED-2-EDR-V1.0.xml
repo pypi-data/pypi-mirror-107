@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>JUNO J ENERGETIC PARTICLE DETECTOR UNCALIBRATED V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>JNO-J-JED-2-EDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2017-06-23</publication_date>
+            <country>USA</country>
+            <description>Abstract
+                ========
+                This data set consists of the JUNO JEDI (Jupiter Energetic-Particle
+                Detector) uncalibrated observations, also known as EDRs. The system
+                is made up of 3 instrument subsystems (pucks) aligned in three
+                directions on the spinning JUNO spacecraft. The pucks each have 6 look
+                directions (telescopes) with a time of flight (TOF) and a deposited
+                energy detection (SSD) system.  In addition, the pulse height of the
+                signal in the TOF system can be used for energy measurement. The
+                instruments can be operated in a variety of modes, differing in the
+                way they use and combine these measurements. More details are available
+                in the INSTRUMENT.CAT file and the JEDI SIS.
+                
+                The EDRs are organized in files covering one day of spacecraft event
+                time (SCET). There are potentially 10 different files per puck,
+                corresponding to the available data gathering modes: HIERSESP,
+                HIERSISP, HIERSTOFXER, HIERSTOFXPHR, LOERSESP, LOERSISP, LOERSTOFXER,
+                LOERSTOFXPHR, NONPTOFXER, NONPTOFXPHR. Depending on how the pucks are
+                operated, not all data types will be available for all pucks for any
+            particular time range.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=JNO-J-JED-2-EDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>JUNO; JUPITER; ENERGETIC PARTICLE DETECTOR; JNO; PLANET; JEDI; JUPITER ENERGETIC-PARTICLE DETECTOR INSTRUMENT</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>BARRY MAUK</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.jno-j-jed-2-edr-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:pioneer89cdd</logical_identifier>
+    <version_id>1.1</version_id>
+    <title>Pioneer 8 and 9 Cosmic Dust Detector Calibration Notebook Bundle</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Bundle</product_class>
+    <Alias_List>
+      <Alias>
+        <alternate_id>Pioneer 8/9 CDD</alternate_id>
+        <alternate_title>Pioneer 8/9 CDD</alternate_title>
+      </Alias>
+    </Alias_List>
+    <Citation_Information>
+      <author_list>Berg, O.E.; Williams, D.R.</author_list>
+      <editor_list>Williams, D.R.; McLaughlin, S.A.</editor_list>
+      <publication_year>2017</publication_year>
+      <doi>10.17189/1518456</doi>
+      <description>This bundle contains digital reproductions of two hand-written laboratory
+      notebooks of calibration analyses for the Pioneer 8 and 9 Cosmic Dust Detectors (CDD). These
+      results aided the calibration effort for the Apollo 17 Lunar Ejecta And Meteorite Experiment
+      (LEAM) detector, which was identical to the Pioneer CDDs.</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-02-26</modification_date>
+        <version_id>1.1</version_id>
+        <description>SMc: Changed lid_references for CDD instruments from ...cdd.pioner_8/9
+        to ...cdd.p8/9 per RCh at EN.</description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2015-07-27</modification_date>
+        <version_id>1.0</version_id>
+        <description>Creation.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Context_Area>
+    <Time_Coordinates>
+      <!-- Date on front of first notebook -->
+      <start_date_time>1967-10-10Z</start_date_time>
+      <!-- Date of a report faxed to O.Berg and pasted near front of second notebook -->
+      <stop_date_time>1996-03-05Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <description>Digital reproductions of two hand-written laboratory notebooks of calibration
+      analyses for the Pioneer 8 and 9 Cosmic Dust Detectors (CDD). These results aided the
+      calibration effort for the Apollo 17 Lunar Ejecta And Meteorite Experiment (LEAM) detector,
+      which was identical to the Pioneer CDDs.</description>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>Pioneer 8</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.pioneer_8</lid_reference>
+        <reference_type>bundle_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Investigation_Area>
+      <name>Pioneer 9</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.pioneer_9</lid_reference>
+        <reference_type>bundle_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Pioneer 8 Cosmic Dust Detector</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:cdd.p8</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Pioneer 8</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p8</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Pioneer 9 Cosmic Dust Detector</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:cdd.p9</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Pioneer 9</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p9</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Dust</name>
+      <type>Dust</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:dust.dust</lid_reference>
+        <reference_type>bundle_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  </Context_Area>
+  <Bundle>
+    <bundle_type>Archive</bundle_type>
+  </Bundle>
+  <File_Area_Text>
+    <File>
+      <file_name>readme.txt</file_name>
+      <file_size unit="byte">432</file_size>
+    </File>
+    <Stream_Text>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+      <description>Brief overview of this bundle.</description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+    </Stream_Text>
+  </File_Area_Text>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:pioneer89cdd:calibration</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_calibration_collection</reference_type>
+  </Bundle_Member_Entry>
+</Product_Bundle>

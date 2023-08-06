@@ -1,0 +1,61 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "CREATED, PPI-UCLA, 4/14/04;            
+D. Kazden, updated ARCHIVE_STATUS, START_TIME and STOP_TIME, removed         
+unnecessary keywords, 2012-04-03;                                            
+D. Kazden, removed ARCHIVE_STATUS keyword, 2018-08-02;"                      
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "M10-H-MAG-4-SUMM-M3-SUMMARY-V1.0"      
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "                                       
+      MARINER 10 MERC MAG SUMM M3 SUMMARY V1.0"                              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1975-03-15T23:55:23.101                 
+    STOP_TIME                      = 1975-03-16T23:51:19.301                 
+    DATA_SET_RELEASE_DATE          = 2004-05-01                              
+    PRODUCER_FULL_NAME             = NULL                                    
+    DETAILED_CATALOG_FLAG          = Y                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+    Mariner 10 Magnetometer (MAG) averaged M3 SUMMARY data at Mercury."      
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+    Mariner 10 Magnetometer (MAG) averaged M3 SUMMARY data at Mercury."      
+                                                                             
+    CITATION_DESC                  = "TBD"                                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+       Data Set Overview                                                     
+       =================                                                     
+    Mariner 10 Magnetometer (MAG) averaged M3 SUMMARY data at Mercury."      
+                                                                             
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = ""                                      
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "MERCURY"                               
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = M10                                     
+    INSTRUMENT_ID                  = MAG                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "MARINER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = ""                                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

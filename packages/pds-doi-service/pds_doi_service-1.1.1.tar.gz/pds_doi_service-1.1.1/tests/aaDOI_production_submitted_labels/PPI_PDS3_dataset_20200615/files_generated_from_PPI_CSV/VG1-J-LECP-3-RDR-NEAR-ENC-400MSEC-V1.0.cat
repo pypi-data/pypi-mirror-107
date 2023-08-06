@@ -1,0 +1,335 @@
+PDS_VERSION_ID                      = PDS3
+LABEL_REVISION_NOTE                = "B. Harris, added abstract and
+citation, 2005-07-20;
+D. Kazden removed unnecessary keywords, updated REFERENCE_KEY_IDs 2011-04-12;
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-13;"
+
+RECORD_TYPE                        = STREAM
+OBJECT                             = DATA_SET
+  DATA_SET_ID                      = "VG1-J-LECP-3-RDR-NEAR-ENC-400MSEC-V1.0"
+
+  OBJECT                           = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "
+          VG1 LECP 0.4 SEC HIGH RESOLUTION JUPITER NEAR ENCOUNTER DATA"
+    DATA_SET_COLLECTION_MEMBER_FLG = N
+    START_TIME                     = 1979-03-04T19:41:36.010
+    STOP_TIME                      = 1979-03-06T08:18:15.190
+    DATA_SET_RELEASE_DATE          = 2002-08-21
+    PRODUCER_FULL_NAME             = "BARRY H. MAUK"
+    DETAILED_CATALOG_FLAG          = N
+    DATA_OBJECT_TYPE               = "TABLE"
+    ABSTRACT_DESC           = "
+        This near encounter data set consists of electron and ion
+        counting rate data from the Low Energy Charged Particle (LECP)
+        experiment on Voyager 1 while the spacecraft was within the
+        very close vicinity of Jupiter. This instrument measures the
+        intensities of in-situ charged particles ( &#10095;15 keV electrons
+        and &#10095;30 keV ions) with various levels of discrimination based
+        on energy range and mass species.  The LECP data are
+        globally calibrated to the extent possible.
+        Particles include low energy electrons, protons, alpha
+        particles, medium energy protons and ions, high energy and
+        intensity protons, electrons, alpha particles, and Z &#10095;= nuclei."
+    CITATION_DESC           = "
+        Krimigis, S. M., Mauk, B. H., Armstrong, T. P.,
+        VG1 LECP 0.4 SECOND HIGH RESOLUTION JUPITER NEAR ENCOUNTER DATA,
+        VG1-J-LECP-3-RDR-NEAR-ENC-400MSEC-V1.0, NASA Planetary Data
+        System, 2002."
+    DATA_SET_TERSE_DESC            = "
+     Voyager 1 Energetic Particle (LECP) data from the Jupiter near
+     encounter period between 1979-03-04T19:41:36 and 1979-03-06T08:18:16.
+     The data set provides 0.4 second counting rates."
+    DATA_SET_DESC                  = "
+
+  Data Set Overview
+  =================
+
+    Data Set Description
+    --------------------
+      This near encounter data set consists of electron and ion
+      counting rate data from the Low Energy Charged Particle (LECP)
+      experiment on Voyager 1 while the spacecraft was within the
+      very close vicinity of Jupiter. This instrument measures the
+      intensities of in-situ charged particles ( &#10095;15 keV electrons
+      and &#10095;30 keV ions) with various levels of discrimination based
+      on energy range and mass species. A subset of almost 100 LECP
+      channels are included in this data set. The LECP data are
+      globally calibrated to the extent possible.  During Jupiter
+      near encounter, the LEMPA (Low Energy Magnetospheric Particle
+      Analyzer) subsystem was turned on for data collection.
+      Particles include low energy electrons, protons, alpha
+      particles, medium energy protons and ions, high energy and
+      intensity protons, electrons, alpha particles, and Z &#10095;= nuclei.
+      The near encounter data are 0.4 second rate measurements within
+      1/8 of the LECP instrumental motor rotation period (the
+      angular scanning periods, or step period).
+
+      The LECP instrument has a rotating head for obtaining angular
+      anisotropy measurements of the medium energy charged particles.
+      A gear-drive motor steps through eight equal angular sectors
+      per revolution for data collection. The cycle time for the
+      rotation is 48 minutes or 25.6 minutes during cruise mode,
+      and 192 second or 48 second during the planetary encounter.
+
+      The data were originally collected in the form of 'rates',
+      which were not always converted into the usual physical
+      units. The reason is that such a conversion would depend on
+      uncertain determinations such as the mass species of the
+      particles and the level of background. Both mass species
+      and background are generally determined from context during
+      the study of particular regions. To convert 'rate' to
+      'intensity' for a particular channel one performs the
+      following tasks: 1) decide on the level of background
+      contamination and subtract that off the given rate level.
+      Background is to be determined from context and from making
+      use of sector 8 rates (sector 8 is covered by a 2 mm
+      Aluminium sunshield and used for data calibration).
+      2) Divide the background corrected rate by the channel
+      geometric factor and by the energy bandpass of the channel.
+      To determine the energy bandpass, one must judge the mass
+      species of the detected particles (for ions but not for
+      electrons). The energy band passes are given in the form
+      of 'energy/nucleon'. For channels that begin their names
+      with the designations 'ch' these bandpasses can be used on
+      mass species that are accepted into that channel, which
+      gives the minimum and maximum 'Z' value accepted -- these
+      entries are blank for electron channels). For other channels
+      the given bandpass refers only to the lowest 'Z' value
+      accepted. The bandpasses for other 'Z' values are not all
+      known, but some are given in the literature (e.g.
+      [KRIMIGISETAL1979A]). The final product of these
+      instructions will be the particle intensity in the
+      unit of 'counts/(cm**2 sr sec keV)'.  LECP data can
+      also be in the form of flux, whose unit is
+      'cm**-1 sr**-1 sec**-1'.
+
+           Near Encounter Channel Definitions for Voyager 1 LECP
+           CH  CH    LOW     HIGH    MEAN   GEOMETRIC    CH
+          Num NAME (MeV/N) (MeV/N) (Mev/N)   FACTOR     LOGIC
+                                             cm**2 sr  DEFINITIN
+         --------------------------------------------------------
+           1  EB01  0.015   0.037   0.020   0.00600
+           2  EBD1  0.015   0.500   0.020   0.00012
+           3  EB02  0.037   0.061   0.045   0.00600
+           4  EBD2  0.037   0.500   0.045   0.00012
+           5  EB03  0.070   0.112   0.090   0.00600
+           6  EBD3  0.070   0.500   0.090   0.00012
+           7  EB04  0.130   0.183   0.120   0.00600
+           8  EBD4  0.130   0.500   0.120   0.00012
+           9  EB05  0.200   0.500   0.200   0.00600
+          10  EBD5  0.200   0.500   0.200   0.00012
+          11  EG06  0.252   2.000   0.250   0.00200
+          12  EG07  0.480   2.000   0.500   0.00200
+          13  EG08  0.853   2.000   0.900   0.00200
+          14  EG09  2.100   5.000   2.000   0.00200
+          15  E44   0.350   1.500   0.500   1.31000
+          16  E45   2.500 100.000   2.000   1.31000
+          17  E37   6.000 100.000   6.000   1.31000
+          18  PL01  0.030   0.053   0.025   0.04020
+          19  PL02  0.053   0.085   0.050   0.04020
+          20  PL03  0.085   0.139   0.100   0.04020
+          21  PL04  0.139   0.200   0.150   0.04020
+          22  PL05  0.200   0.550   0.250   0.04020
+          23  PL06  0.540   1.050   0.600   0.04020
+          24  PL07  1.050   2.030   1.000   0.04020
+          25  PL08  2.030   4.010   2.500   0.04020
+          44  AL01  0.980   1.770   1.000   0.04020
+          45  AL02  1.770   4.220   2.500   0.04020
+          77  ESA0  2.500  99.999   2.500   0.49350    A-B COINC.
+          78  ESB0  8.500  99.999   8.500   0.94620    B 4 PI SR
+          79  AB10  8.500  99.999   8.500   0.05040    A-B COINC.
+          80  DP09  0.285   5.020   0.250   0.00084    DELTA'
+          81  DP10  0.480   2.580   0.600   0.00084    DELTA'
+          82  DP11  0.725   1.640   1.000   0.00084    DELTA'
+          83  PD09  0.285   5.250   0.250   0.00260    DELTA
+          84  PD10  0.480   2.720   0.600   0.00260    DELTA
+          85  PD11  0.725   1.580   1.000   0.00260    DELTA
+          86  AB12 54.000  87.300  50.000   0.05040    A-B COINC.
+          87  AB13 87.300 152.000 100.000   0.05040    A-B COINC.
+          88  PSA1 15.800 158.000  15.000   0.49350    A 2 PI SR
+          89  PSA2 15.800  49.000  25.000   0.49350    A 2 PI SR
+          90  PSA3 16.300  26.200  25.000   0.49350    A 2 PI SR
+          91  PSB1 54.000 174.000  50.000   0.94620    B 4 PI SR
+          92  PSB2 54.000  87.300  50.000   0.94620    B 4 PI SR
+          93  PSB3 54.000  59.000  50.000   0.94620    B 4 PI SR
+          94  DA03  0.480   2.450   0.600   0.00084    DELTA'
+          95  DA04  0.780   1.410   1.000   0.00084    DELTA'
+          96  DZ01  0.405  18.800   0.600   0.00084    DELTA'
+          97  AD03  0.480   2.580   0.600   0.00260    DELTA
+          98  AD04  0.780   1.480   1.000   0.00260    DELTA
+          99  ZD01  0.400  19.800   0.600   0.00260    DELTA
+         --------------------------------------------------------
+
+
+      Near encounter data are stored in files for channels from
+      different rate groups indicated by the file names, e.g.
+
+        V1YYDOY{A,B,...,H}NG0{1,2, ..., 9}.CSV
+        ------- ---------   --------------
+         | | |      |         |
+         | | |      |         rate group number
+         | | |      |
+         | | |      starting time A: 00:00:00
+         | | |                    B: 03:00:00
+         | | |                    C: 06:00:00
+         | | |                    D: 09:00:00
+         | | |                    E: 12:00:00
+         | | |                    F: 15:00:00
+         | | |                    G: 18:00:00
+         | | |                    H: 21:00:00
+         | | |
+         | |  3-digit day of year
+         | |
+         | 2-digit year
+         |
+         Voyager 1
+
+
+      Rate group definitions are listed as below:
+      -------------------------------------------------------
+       rate          channel names
+       group             in
+        #             the rate group
+      -------------------------------------------------------
+        1     PL01  PL02  PL03  EB04 EBP04
+        2     EB01 EBP01  EB02 EBP02  EB03 EBP03  EG06
+        3     PD09  DP09  PD10  DP10  PD11  DP11  AD03  DA03
+        4     EG07  EG08  EG09  EB05 EBP05
+        5     PSA3  PSB3  AB12  AB13
+        6     PL04  ZD01  DZ01  ESA0  ESB0
+        7     PSA1  PSB1  PSA2  PSB2
+        8     AL01  AL02  PL08  AD04  DA04
+        9     AB10  PL05  PL06  PL07
+      -------------------------------------------------------
+
+
+      Near encounter data file has the format described as:
+      ==================================================================
+      name        data type                 description
+      ------------------------------------------------------------------
+      TIME           char  time in the format 'yyyy-mm-dd hh:mm:ss.sss '
+      STEP           int   step position (0-7)
+      MOTOR_MOVEMENT int   motor movement: 0 - no movement, 1 - movement
+                               during accumulation
+      CH1_RATE       real counts measured during accumulation interval
+      ACC_TIME_CH1   real  accumulation time for CH1
+      CH2_RATE       real  counts measured during accumulation interval
+      ACC_TIME_CH2   real  accumulation time for CH2
+           ...
+           ...
+           ...
+      CHn_RATE       real  counts measured during accumulation interval
+      ACC_TIME_CHn   real  accumulation time for CHn
+
+      where n is determined by the above table given rate group number.
+
+
+  Parameters
+  ==========
+      Processing Level Id            : 3
+      Software Flag                  : Y
+      Processing Start Time          : UNK
+
+
+    Electron Rate
+    -------------
+      Sampling Parameter Name        : TIME
+      Data Set Parameter Name        : ELECTRON RATE
+      Sampling Parameter Resolution  : 0.400000
+      Sampling Parameter Interval    : 0.400000
+      Data Set Parameter Unit        : COUNTS
+      Noise Level                    : 0.000000
+      Sampling Parameter Unit        : SECOND
+
+      A measured parameter equaling the number of electrons hitting
+      a particle detector per specified accumulation interval. The
+      counted electrons may or may not be discriminated as to their
+      energies (e.g. greater than E1, or between E1 and E2).
+
+
+    Ion Rate
+    --------
+      Sampling Parameter Name        : TIME
+      Data Set Parameter Name        : ION RATE
+      Sampling Parameter Resolution  : 0.400000
+      Sampling Parameter Interval    : 0.400000
+      Data Set Parameter Unit        : COUNTS
+      Noise Level                    : 0.000000
+      Sampling Parameter Unit        : SECOND
+
+      A measured parameter equaling the number of ions striking a
+      particle detector per specified accumulation interval. The
+      counted ions may or may not be discriminated as to their
+      energies (e.g. energy/nucleon or energy/charge between E1 and
+      E2 or greater than E1) and/or as to their ion composition
+      (atomic number Z or mass number greater than Z1 or M1, or
+      between Z1 and z2 or M1 and M2).
+
+
+  Source Instrument Parameters
+  ============================
+      Instrument Host ID              : VG1
+      Data Set Parameter Name         : ELECTRON RATE
+      Instrument Parameter Name       : ELECTRON RATE
+      Important Instrument Parameters : 1
+
+      Instrument Host ID              : VG1
+      Data Set Parameter Name         : ION RATE
+      Instrument Parameter Name       : ION RATE
+      Important Instrument Parameters : 1                        "
+
+      CONFIDENCE_LEVEL_NOTE = "
+
+  Confidence Level Overview
+  =========================
+    At all times during this planetary encounter there exist data
+    in this data set that can be rated with the highest confidence
+    level. However, some of the channels of data are contaminated
+    by various kinds and various levels of contaminations. It is
+    therefore imperative, in using this data set, that the
+    contamination tables within the catalog be examined. Also, not
+    all kinds of contamination have been fully documented. When in
+    doubt the data supplier must be contacted.
+
+    Some channels are subject to serious contaminations, and many
+    of these contaminations cannot be removed except with a region-
+    by-region analysis, which has not been done for this data.
+    Thus, to use this data it is absolutely vital that the
+    contamination types ('CONTAMINATION_ID' , 'CONTAMINATION_DESC')
+    and the levels of contamination ('DATA_QUALITY_ID'
+    corresponding to the definitions 'DATA_QUALITY_DESC') be
+    carefully examined for all regions of study. A dead time
+    correction procedure has been applied in an attempt to correct
+    the linear effects of detector overdrive (pulse-pileup). This
+    procedure does not fix severely overdriven detectors. A
+    procedure is available for correcting Voyager 2 LECP electron
+    contamination of low energy ion channels, but its effectiveness
+    has been evaluated only for the Uranus data set. Thus,
+    corrections have been applied only to the Uranus data set.
+
+
+  Missing Data Flag
+  =================
+    Any data column whose value is NULL is a missing data value."
+
+  END_OBJECT                       = DATA_SET_INFORMATION
+
+  OBJECT                           = DATA_SET_TARGET
+    TARGET_NAME                    = JUPITER
+  END_OBJECT                       = DATA_SET_TARGET
+
+  OBJECT                           = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = VG1
+    INSTRUMENT_ID                  = LECP
+  END_OBJECT                       = DATA_SET_HOST
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "VOYAGER"
+  END_OBJECT                       = DATA_SET_MISSION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1979A"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                         = DATA_SET
+END

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VL1/VL2 MARS METEOROLOGY DATA CALIBRATED DATA PRESSURE V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VL1/VL2-M-MET-3-P-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1989-11-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains the martian surface atmospheric pressure
+                readings obtained through much of the duration of the Viking
+                Lander 1 and 2 missions (data are included for Viking Lander 1
+                sols 0 - 2245 and Viking Lander 2 sols 0 - 1050). The data are
+                derived from the ambient pressure sensor carried onboard the
+                Landers and values are presented on a point by point basis. The
+                sampling rate was variable throughout the mission maximum
+                sampling rate was one measurement per second, but ranged up to 65
+                minutes for Lander 1 and 105 minutes for Lander 2. For further
+                background information on the Viking Meteorology Instrument
+                System (VMIS) and results from this experiment, see
+                CHAMBERLAIN_ETAL1976, HESS_ETAL_1976A, HESS_ETAL_1976B, and
+                HESS_ETAL_1977. For discussions of analyses of experiment data,
+                see also TILLMAN_1977, HESS_ETAL_1980, and TILLMAN_1988. An
+                earlier version of this data set is archived at the NSSDC (NSSDC
+            ID 75-075C-07D and 75-083C-07D).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1%2FVL2-M-MET-3-P-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING LANDER 1; VIKING LANDER 2; MARS; METEOROLOGY; VL1; VL2; PLANET; MET; VIKING METEOROLOGY INSTRUMENT SYSTEM</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>JAMES E. TILLMAN</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vl1-vl2-m-met-3-p-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

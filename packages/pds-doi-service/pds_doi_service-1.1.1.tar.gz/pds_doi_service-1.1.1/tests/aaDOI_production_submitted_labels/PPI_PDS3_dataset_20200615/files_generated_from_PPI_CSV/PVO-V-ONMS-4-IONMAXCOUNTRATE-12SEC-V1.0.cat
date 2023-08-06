@@ -1,0 +1,233 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "S. Joy, 1992 version 1.0 template;     
+                                     S. Joy 7/97 streamlined Version 3       
+                                     template;                               
+                                     D. Kazden, 8/27/2012, minor updates;    
+                                     D. Kazden, 2/11/2020, updated           
+                                     CITATION_DESC;"                         
+                                                                             
+OBJECT                             = DATA_SET                                
+    DATA_SET_ID                  = "PVO-V-ONMS-4-IONMAXCOUNTRATE-12SEC-V1.0" 
+                                                                             
+    OBJECT                         = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "                                       
+      PVO VENUS ONMS BROWSE SUPRTHRML ION MAX COUNT RATE 12S V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T15:06                        
+    STOP_TIME                      = 1992-10-07T19:50                        
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    DATA_SET_RELEASE_DATE          = 1993-03-31                              
+    PRODUCER_FULL_NAME             = "DR. WAYNE KASPRZAK"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer Venus (PVO) neutral mass spectrometer (ONMS) ion count         
+      rate data for all Venus orbits (1-5055, 1978-12-05 to                  
+      1992-10-07)."                                                          
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      This data set represents the maximum count rate per second in a        
+      12 second period beginning with the time of the first data point       
+      for a given mass number. Although species other than O+ cannot be      
+      reduced to to a flux and direction it is possible to estimate the      
+      approximate flux from the maximum count rate per second occurring      
+      within one spin period (about 12 seconds). The maximum count rate      
+      can be approximately converted to a flux using:                        
+                                                                             
+     [4.E7 (particles/cm**2/sec)]/[1.E4 (counts/sec)].                       
+                                                                             
+     This sensitivity is for O+. At higher mass numbers the sensitivity      
+     is less, being about a factor of 2.5 lower for Ar+."                    
+                                                                             
+    CITATION_DESC   = "Kasprzak, W., PVO-V-ONMS-4-IONMAXCOUNTRATE-12SEC-V1.0,
+                        PVO VENUS ONMS BROWSE SUPRTHRML ION MAX COUNT        
+                        RATE 12S V1.0, NASA Planetary Data System, 1993."    
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    This data set represents the maximum count rate per second in a          
+    12 second period beginning with the time of the first data point         
+    for a given mass number. Although species other than O+ cannot be        
+    reduced to to a flux and direction it is possible to estimate the        
+    approximate flux from the maximum count rate per second occurring        
+    within one spin period (about 12 seconds). The maximum count rate        
+    can be approximately converted to a flux using:                          
+                                                                             
+      [4.E7 (particles/cm**2/sec)]/[1.E4 (counts/sec)].                      
+                                                                             
+    This sensitivity is for O+. At higher mass numbers the sensitivity       
+    is less, being about a factor of 2.5 lower for Ar+.                      
+                                                                             
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+                                                                             
+    Sampling Parameter Name             : TIME                               
+    Sampling Parameter Resolution       : 12.0 seconds                       
+    Minimum Sampling Parameter          : N/A                                
+    Maximum Sampling Parameter          : N/A                                
+    Sampling Parameter Interval         : 12.0 seconds                       
+    Minimum Available Sampling Interval : 12.0 seconds                       
+    Data Set Parameter Name             : ION RATE                           
+    Noise Level                         : UNK                                
+    Data Set Parameter Unit             : particles/second                   
+                                                                             
+    This data set represents the maximum count rate per second in a          
+    12 second period beginning with the time of the first data point for     
+    a given mass number.                                                     
+                                                                             
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+                                                                             
+    The instrument has detected superthermal, energetic or fast ions         
+    whose energy exceeds 36 eV in the spacecraft frame of reference.         
+    These ions were observed in early orbits during measurements of the      
+    neutral density near periapsis, have an erratic and unpredictable        
+    signature, and occur at too high an altitude to be due to the            
+    neutral atmosphere. When the altitude of periapsis increased above       
+    the point where sensible neutral density measurements could be made,     
+    the instrument was configured specifically to detect superthermal        
+    ions. In general, for orbit numbers 1 to 645, data were taken from       
+    the RPA mode. The gas less in this mode than in non-RPA mode,            
+    resulting in a lower detection threshold. For orbit numbers above        
+    923, the instrument was deliberately configured with the filament        
+    off and non-RPA mode data was used. For mass 16 the RPA voltage is       
+    about +3.8 volts.                                                        
+                                                                             
+    The superthermal ion species regularly monitored include: He+, N+,       
+    O+, (N+ +  CO+), and CO2+. Because of the paucity of data at other       
+    mass numbers only mass 16 (atomic oxygen) has been reduced to a          
+    flux and number density. As part of the reduction process the            
+    angle in the ecliptic plane of the apparent ion flow in spacecraft       
+    reference frame has been deduced. The flux values are estimated          
+    in the spacecraft reference frame relative to spacecraft ground.         
+    The density is computed from the flux by dividing it by a speed          
+    corresponding to 40 eV. No correction has been applied to the            
+    angle, density or flux in order to remove the effect of spacecraft       
+    velocity.                                                                
+                                                                             
+    The data reduction process has been described in KASPRZAKETAL1987.       
+    The method used to reduce the data assumes cylindrical symmetry of       
+    the ion source. In actual fact, the source is asymmetrical in its        
+    angular response (GUENTHER1989). This can introduce as much as a         
+    factor of 2 scatter in the data. No simple solution has been found       
+    for modeling this asymmetry since the actual ion drift vector is         
+    unknown. The minimum energy of an ion detectable by the ONMS in this     
+    ion mode is 35.9 eV. The maximum transmission is assumed to occur        
+    about 10 V above this value. On the nightside of Venus the               
+    spacecraft potential is negative and the most probable ion energy is     
+    near 40 eV.                                                              
+                                                                             
+                                                                             
+    PVONMS                                                                   
+    ------                                                                   
+      Software Release Date             : 1993-03-23                         
+      Cognizant Full Name               : DR. WAYNE T. KASPRZAK              
+                                                                             
+      All data were processed at NASA/Goddard Space Flight Center using      
+      custom programmed software.  The data represent a reduction to         
+      physical units (density, flux) and were processed from an              
+      intermediate engineering unit file (current, count/sec etc.). Unit     
+      and 1/8 unit amu sweeps are not contained in the processed data        
+      sets but are available from the engineering unit data set. The         
+      engineering unit data is converted to ambient values using             
+      spacecraft velocity and attitude, the theoretical expected system      
+      response, and the corresponding calibration factors. Superthermal      
+      ion data for species other than O{+} is available in engineering       
+      unit form.                                                             
+                                                                             
+      NOTE: Software is available by contacting the PPI Node                 
+                                                                             
+                                                                             
+  Data                                                                       
+  ====                                                                       
+                                                                             
+    --------------------------------------------------------                 
+    Table 1. Data set fields                                                 
+    --------------------------------------------------------                 
+    Variable  Comment                                                        
+    --------------------------------------------------------                 
+    YEAR      YY=2 digit year (e.g. 78 for 1978)                             
+    DOY       DDD=3 digit day of year (e.g. 053)                             
+    UT        Universal time represented as the                              
+              number of milliseconds since                                   
+              1966-01-01T00:00:00Z stored as a double                        
+              precision floating point number.                               
+    ORBIT     Orbit number                                                   
+    TFP       Time from periapsis (sec)                                      
+    MASS      Mass number -                                                  
+                    4 for He+                                                
+                   12 for C+                                                 
+                   14 for N+                                                 
+                   16 for O+                                                 
+                   28 for N2+ and/or CO+                                     
+                   30 for NO+                                                
+                   32 for O2+                                                
+                   44 for CO2+                                               
+    PULSE     Maximum count rate/sec in 12 second interval                   
+    VALT      Altitude (km)                                                  
+    VLAT      Latitude (deg N)                                               
+    VLST      Local solar time (hr)                                          
+    VSZA      Solar zenith angle (deg)                                       
+                                                                             
+                                                                             
+  References                                                                 
+  ==========                                                                 
+    Kasprzak, W.T., H.B. Niemann and P. Mahaffy, Observations of             
+    Energetic Ions on the Nightside of Venus, Journal of Geophysical         
+    Research, vol. 32, 291-298, 1987."                                       
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    In order to fit the data a minimum of 30 points were required in         
+    36 seconds. In addition, the maximum to minimum count ratio was          
+    required to be factor of 3 or greater in order to insure that there      
+    was a definitive spin modulation. The center 12 seconds of data is       
+    divided by the fitting function to derive the equivalent flux for        
+    that point. The center of the new fitting interval is adjusted so        
+    that it is centered on the expected signal maximum predicted from        
+    the previous interval fit. As a result of this method of fitting,        
+    discontinuities may exist near minimum angle of attack where one         
+    12 second interval adjoins the next interval.                            
+                                                                             
+    See [KASPRZAKETAL1987]."                                                 
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "GUENTHER1989"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KASPRZAKETAL1987"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "NIEMANNETAL1980B"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "NIEMANN&KASPRZAK1983"                  
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

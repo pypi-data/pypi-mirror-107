@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:kaguya_grs_spectra",
+        "title": "Kaguya Gamma-Ray Spectrometer Corrected Spectra Bundle",
+        "authors": [
+            {
+                "first_name": "Naoyuki",
+                "last_name": "Yamashita"
+            }
+        ],
+        "publication_date": "2020-01-22",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]

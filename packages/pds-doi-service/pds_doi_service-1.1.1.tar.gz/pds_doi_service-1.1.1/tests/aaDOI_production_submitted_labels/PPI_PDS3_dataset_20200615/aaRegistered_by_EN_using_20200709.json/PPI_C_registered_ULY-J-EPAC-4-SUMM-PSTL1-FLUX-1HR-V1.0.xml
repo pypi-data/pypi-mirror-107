@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>ULYSSES JUPITER EPAC PSTL1 PROTON SPECTRAL DATA 1 HR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>ULY-J-EPAC-4-SUMM-PSTL1-FLUX-1HR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-05-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains Ulysses Energetic Particle Composition
+                Experiment (EPAC) 1 hour averaged sectored proton flux data from
+                the Ulysses Jupiter encounter 1992-Jan-25 to 1992-Feb-28. These
+            data were recorded by Proton Spectral Telescope 1 (PSTL1).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=ULY-J-EPAC-4-SUMM-PSTL1-FLUX-1HR-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>ULYSSES; JUPITER; ENERGETIC PARTICLE DETECTOR; ULY; PLANET; EPAC; ENERGETIC PARTICLE COMPOSITION INSTRUMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>ERHARD KEPPLER</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.uly-j-epac-4-summ-pstl1-flux-1hr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

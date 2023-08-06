@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER E/V/H GRNS 2 GAMMA RAY SPECTROMETER RAW DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-E/V/H-GRNS-2-GRS-RAWDATA-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2015-03-06</publication_date>
+            <country>USA</country>
+            <description>Abstract ======== This data set consists of the MESSENGER GRS
+                uncalibrated observations, also known as EDRs. The GRS experiment
+                is a gamma ray spectrometer designed to observe spectrum of gamma
+                rays emitted from Mercury's surface in the energy range from
+                0.1 to 10 MeV. There are ten GRS EDR data products: the raw
+                spectra data, the spectra data from the shield (2 versions),
+                shield count rate data, the anti-coincident spectra data, the
+                microphonics data, the software rate counter data, the status
+                parameters, the state of the instrument, and a GRS instrument
+            command list.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-E%2FV%2FH-GRNS-2-GRS-RAWDATA-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; CALIBRATION; EARTH; MERCURY; VENUS; GAMMA RAY SPECTROMETER; MESS; PLANET; GRS</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>PATRICK PEPLOWSKI</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-e-v-h-grns-2-grs-rawdata-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

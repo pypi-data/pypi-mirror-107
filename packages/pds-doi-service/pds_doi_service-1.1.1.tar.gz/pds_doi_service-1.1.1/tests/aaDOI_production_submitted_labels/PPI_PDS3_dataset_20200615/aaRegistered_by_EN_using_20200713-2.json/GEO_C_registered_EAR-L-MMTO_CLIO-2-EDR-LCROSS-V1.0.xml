@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MMT OBSERVATORY 6.5M CLIO RAW DATA OBSERVATIONS OF LCROSS</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>EAR-L-MMTO_CLIO-2-EDR-LCROSS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2010-02-05</publication_date>
+            <country>USA</country>
+            <description>This archive contains raw observations of the 2009-10-09 impact
+                of the LCROSS spacecraft on the moon by the CLIO instrument on
+                the MMT Observatory 6.5m telescope. The archive consists of
+                uncalibrated FITS images of the event. This is one of several
+            data sets of Earth-based observations of the impact.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=EAR-L-MMTO_CLIO-2-EDR-LCROSS-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MMT OBSERVATORY; BIAS; FLAT FIELD; SKY; MOON; HD 22859; HD 28099; HD 43607; CAMERA; MMTO; CALIBRATION; SATELLITE; STAR; CLIO</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>FAITH VILAS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.ear-l-mmto_clio-2-edr-lcross-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,2284 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- =================== -->
+    <!-- bundle_mer1_rmc.xml -->
+    <!-- =================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Rover Motion Counter Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_rmc::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-26</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains rover motion counter data for Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_rmc&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>Bob</first_name>
+                    <last_name>Deen</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>Doug</first_name>
+                    <last_name>Alexander</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_rmc::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer1_mtes_calibrated_radiance.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Mini-TES Calibrated Radiance Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mtes_calibrated_radiance::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-30</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Mini-TES instrument
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mtes_calibrated_radiance&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 1; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mtes_calibrated_radiance::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ========================== -->
+    <!-- bundle_mer1_mi_sci_raw.xml -->
+    <!-- ========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Microscopic Imager Science Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mi_sci_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-25</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Microscopic Imager (MI)
+                on Mars Exploration Rover 1 (Opportunity). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mi_sci_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Microscopic Imager</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>K.</first_name>
+                    <last_name>Herkenhoff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mi_sci_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mer2_rat_raw.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 RAT Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_rat_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-29</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Rock Abrasion Tool
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_rat_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Rock Abrasion Tool</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>S.</first_name>
+                    <last_name>Gorevan</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_rat_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =========================== -->
+    <!-- bundle_mer_apxs_derived.xml -->
+    <!-- =========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER APXS Derived Oxide Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer_apxs_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-04-29</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains oxide abundances derived from the Alpha Particle X-ray Spectrometer
+                data on both Mars Exploration Rovers (Spirit and Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer_apxs_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Alpha Particle X-ray Spectrometer; Mars Exploration Rover 2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Gellert</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer_apxs_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer2_mtes_derived_temperature.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Mini-TES Derived Brightness Temperative Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mtes_derived_temperature::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains brightness temperature data from the Mini-TES instrument
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mtes_derived_temperature&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 2; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mtes_derived_temperature::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ============================== -->
+    <!-- bundle_mer2_pancam_sci_raw.xml -->
+    <!-- ============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Pancam Science Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_pancam_sci_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-11</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 2 (Spirit). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_pancam_sci_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_pancam_sci_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================== -->
+    <!-- bundle_mer2_mb_raw.xml -->
+    <!-- ====================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 MB Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mb_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-30</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Moessbauer Spectrometer (MB)
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mb_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Moessbauer Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Klingelh&#246;fer</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mb_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer1_mtes_derived_temperature.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Mini-TES Brightness Temperature Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mtes_derived_temperature::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains derived brightness temperature data from the Mini-TES instrument
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mtes_derived_temperature&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 1; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mtes_derived_temperature::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mer1_rat_raw.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 RAT Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_rat_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-23</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Rock Abrasion Tool
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_rat_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Rock Abrasion Tool</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>S.</first_name>
+                    <last_name>Gorevan</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_rat_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================== -->
+    <!-- bundle_mer1_mb_raw.xml -->
+    <!-- ====================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 MB Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mb_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-30</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Moessbauer Spectrometer (MB)
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mb_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Moessbauer Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Klingelh&#246;fer</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mb_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ===================== -->
+    <!-- bundle_mer2_mb_pp.xml -->
+    <!-- ===================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 MB Summed Spectra Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mb_pp::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-07</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains summed spectra (PDS4 partially processed) data from the
+                Moessbauer Spectrometer (MB) on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mb_pp&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Partially Processed; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Moessbauer Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Klingelh&#246;fer</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mb_pp::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mer2_apxs_pp.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 APXS Xray Spectra (Partially Processed) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_apxs_pp::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-20</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains Xray Spectra (Partially Processed) data from the
+                Alpha Particle X-ray Spectrometer on Mars Exploration Rover 2 (Spirit).
+                Raw APXS data have been converted to ASCII tables and spectra from previous
+                integrations have been removed.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_apxs_pp&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Partially Processed; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Alpha Particle X-ray Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Gellert</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_apxs_pp::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================= -->
+    <!-- bundle_mer2_mtes_derived_emissivity.xml -->
+    <!-- ======================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Mini-TES Derived Emissivity Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mtes_derived_emissivity::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains emissivity data from the Mini-TES instrument
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mtes_derived_emissivity&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 2; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mtes_derived_emissivity::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ============================ -->
+    <!-- bundle_ruff_pdart14_mtes.xml -->
+    <!-- ============================ -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>Ruff PDART 2014 Mini-TES Mirror-dust-corrected Emissivity Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:ruff_pdart14_mtes::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2017-09-13</publication_date>
+            <country>USA</country>
+            <description>Mars Exploration Rover Mini-TES Mirror-dust-corrected Emissivity
+            by Steve Ruff, PDART 2014</description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aruff_pdart14_mtes&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Mars Exploration Rover; MER-2; Mini-TES</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>Steve</first_name>
+                    <last_name>Ruff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:ruff_pdart14_mtes::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ================================ -->
+    <!-- bundle_mer_pancam_photometry.xml -->
+    <!-- ================================ -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER Pancam Photometry Archive Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer_pancam_photometry::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2015-10-10</publication_date>
+            <country>USA</country>
+            <description>MER Pancam Photometry Archive Bundle</description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer_pancam_photometry&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Spectroscopy; Mars Exploration Rover; MER1; Pancam; MER2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>Jeffrey R.</first_name>
+                    <last_name>Johnson</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer_pancam_photometry::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ========================= -->
+    <!-- bundle_mer_mb_derived.xml -->
+    <!-- ========================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER MB Relative Iron Abundance Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer_mb_derived::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-07</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains relative iron abundances derived from from the
+                Moessbauer Spectrometer (MB) on both Mars Exploration Rovers (Spirit and Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer_mb_derived&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Moessbauer Spectrometer; Mars Exploration Rover 2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Klingelh&#246;fer</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer_mb_derived::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ========================== -->
+    <!-- bundle_mer2_mi_sci_raw.xml -->
+    <!-- ========================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Microscopic Imager Science Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mi_sci_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-25</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Microscopic Imager (MI)
+                on Mars Exploration Rover 2 (Spirit). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mi_sci_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Microscopic Imager</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>K.</first_name>
+                    <last_name>Herkenhoff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mi_sci_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer1_pancam_sci_derived_color.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Pancam Derived Color Mosaic Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_pancam_sci_derived_color::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-22</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains color mosaics from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 1 (Opportunity). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_pancam_sci_derived_color&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_pancam_sci_derived_color::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================================== -->
+    <!-- bundle_mer2_pancam_sci_calibrated2.xml -->
+    <!-- ====================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Pancam Science Calibrated Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_pancam_sci_calibrated2::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-19</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 2 (Spirit). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_pancam_sci_calibrated2&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_pancam_sci_calibrated2::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =================================== -->
+    <!-- bundle_mer_documentation_edited.xml -->
+    <!-- =================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>Mars Exploration Rover (MER) Documentation Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer_documentation::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-02-07</publication_date>
+            <country>USA</country>
+            <description>Mars Exploration Rover (MER) documentation bundle. This bundle contains the
+                primary members of MER mission, spacecraft, instrument and dataset documentation.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer_documentation&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Mars Exploration Rover; Mars Exploration Rover 1; Mars Exploration Rover 2; MER1 Alpha Particle X-ray Spectrometer; MER2 Alpha Particle X-ray Spectrometer; MER1 Moessbauer Spectrometer; MER2 Moessbauer Spectrometer; MER1 Microscopic Imager; MER2 Microscopic Imager; MER1 Miniature Thermal Emission Spectrometer; MER2 Miniature Thermal Emission Spectrometer; MER1 Navigation Camera; MER2 Navigation Camera; MER1 Panoramic Camera; MER2 Panoramic Camera; MER1 Rock Abrasion Tool; MER2 Rock Abrasion Tool</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>MER Science</first_name>
+                    <last_name>Team</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <first_name>PDS Geosciences</first_name>
+                    <last_name>Node</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer_documentation::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ============================== -->
+    <!-- bundle_mer1_pancam_sci_raw.xml -->
+    <!-- ============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Pancam Science Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_pancam_sci_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-11</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 1 (Opportunity). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_pancam_sci_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_pancam_sci_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =================== -->
+    <!-- bundle_mer2_rmc.xml -->
+    <!-- =================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Rover Motion Counter Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_rmc::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-26</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains rover motion counter data for Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_rmc&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>Bob</first_name>
+                    <last_name>Deen</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>Doug</first_name>
+                    <last_name>Alexander</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_rmc::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ===================================== -->
+    <!-- bundle_mer_pancam_derived_opacity.xml -->
+    <!-- ===================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER Pancam Science Derived Atmospheric Opacity Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer_pancam_derived_opacity::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-21</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains atmospheric opacity data from the Panoramic Cameras (Pancam)
+                on both Mars Exploration Rovers. These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer_pancam_derived_opacity&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Atmosphere; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; MER1 Panoramic Camera; Mars Exploration Rover 2; MER2 Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>M.</first_name>
+                    <last_name>Lemmon</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer_pancam_derived_opacity::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================== -->
+    <!-- bundle_mer2_mtes_raw.xml -->
+    <!-- ======================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Mini-TES Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mtes_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-29</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Mini-TES instrument
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mtes_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 2; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mtes_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================= -->
+    <!-- bundle_mer1_mtes_derived_emissivity.xml -->
+    <!-- ======================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Mini-TES Derived Emissivity Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mtes_derived_emissivity::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains derived emissivity data from the Mini-TES instrument
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mtes_derived_emissivity&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 1; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mtes_derived_emissivity::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ===================== -->
+    <!-- bundle_mer1_mb_pp.xml -->
+    <!-- ===================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 MB Summed Spectra Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mb_pp::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-07</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains summed spectra (PDS4 partially processed) data from the
+                Moessbauer Spectrometer (MB) on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mb_pp&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Partially Processed; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Moessbauer Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>G.</first_name>
+                    <last_name>Klingelh&#246;fer</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mb_pp::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ===================================== -->
+    <!-- bundle_mer2_navcam_sci_calibrated.xml -->
+    <!-- ===================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Navcam Science Calibrated Radiance Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_navcam_sci_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated radiance data from the Navigation Cameras (Navcam)
+                on Mars Exploration Rover 2 (Spirit). These data were calibrated by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_navcam_sci_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Navigation Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.M.</first_name>
+                    <last_name>Soderblom</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>J.R.</first_name>
+                    <last_name>Johnson</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name> Joseph</first_name>
+                    <last_name>J.</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>M.J.</first_name>
+                    <last_name>Wolff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_navcam_sci_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================== -->
+    <!-- bundle_mer1_apxs_raw.xml -->
+    <!-- ======================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 APXS Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_apxs_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-04-29</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Alpha Particle X-ray Spectrometer
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_apxs_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Alpha Particle X-ray Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Gellert</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_apxs_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer2_mtes_calibrated_radiance.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Mini-TES Calibrated Radiance Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mtes_calibrated_radiance::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-30</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Mini-TES instrument
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mtes_calibrated_radiance&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 2; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mtes_calibrated_radiance::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================== -->
+    <!-- bundle_mer2_apxs_raw.xml -->
+    <!-- ======================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 APXS Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_apxs_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-17</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Alpha Particle X-ray Spectrometer
+                on Mars Exploration Rover 2 (Spirit).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_apxs_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Alpha Particle X-ray Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Gellert</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_apxs_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================== -->
+    <!-- bundle_mer1_mtes_raw.xml -->
+    <!-- ======================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Mini-TES Raw Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mtes_raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-28</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains raw data from the Mini-TES instrument
+                on Mars Exploration Rover 1 (Opportunity).
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mtes_raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Raw; Surface; Geosciences; Atmosphere; Atmospheres; Mars Exploration Rover; Mars Exploration Rover 1; Mini Thermal Emission Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>P.</first_name>
+                    <last_name>Christensen</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mtes_raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================= -->
+    <!-- bundle_mer1_apxs_pp.xml -->
+    <!-- ======================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 APXS Xray Spectra (Partially Processed) Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_apxs_pp::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-20</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains Xray Spectra (Partially Processed) data from the
+                Alpha Particle X-ray Spectrometer on Mars Exploration Rover 1 (Opportunity).
+                Raw APXS data have been converted to ASCII tables and spectra from previous
+                integrations have been removed.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_apxs_pp&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Partially Processed; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Alpha Particle X-ray Spectrometer</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Gellert</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_apxs_pp::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ======================================== -->
+    <!-- bundle_mer2_pancam_sci_derived_color.xml -->
+    <!-- ======================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Pancam Derived Color Mosaic Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_pancam_sci_derived_color::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-22</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains color mosaics from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 2 (Spirit). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_pancam_sci_derived_color&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_pancam_sci_derived_color::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================================== -->
+    <!-- bundle_mer1_pancam_sci_calibrated2.xml -->
+    <!-- ====================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Pancam Science Calibrated Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_pancam_sci_calibrated2::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-18</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Panoramic Cameras (Pancam)
+                on Mars Exploration Rover 1 (Opportunity). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_pancam_sci_calibrated2&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Panoramic Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_pancam_sci_calibrated2::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ===================================== -->
+    <!-- bundle_mer1_navcam_sci_calibrated.xml -->
+    <!-- ===================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Navcam Science Calibrated Radiance Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_navcam_sci_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-10-01</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated radiance data from the Navigation Cameras (Navcam)
+                on Mars Exploration Rover 1 (Opportunity). These data were calibrated by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_navcam_sci_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Navigation Camera</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>J.M.</first_name>
+                    <last_name>Soderblom</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>J.F.</first_name>
+                    <last_name>Bell III</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>J.R.</first_name>
+                    <last_name>Johnson</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name> Joseph</first_name>
+                    <last_name>J.</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>M.J.</first_name>
+                    <last_name>Wolff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_navcam_sci_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ================================= -->
+    <!-- bundle_mer2_mi_sci_calibrated.xml -->
+    <!-- ================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER2 Microscopic Imager Science Calibrated Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer2_mi_sci_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-26</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Microscopic Imager (MI)
+                on Mars Exploration Rover 2 (Spirit). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer2_mi_sci_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 2; Microscopic Imager</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>K.</first_name>
+                    <last_name>Herkenhoff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer2_mi_sci_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ================================= -->
+    <!-- bundle_mer1_mi_sci_calibrated.xml -->
+    <!-- ================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MER1 Microscopic Imager Science Calibrated Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:mer1_mi_sci_calibrated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-11-26</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains calibrated data from the Microscopic Imager (MI)
+                on Mars Exploration Rover 1 (Opportunity). These data were produced by the science
+                team.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amer1_mi_sci_calibrated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Surface; Geosciences; Mars Exploration Rover; Mars Exploration Rover 1; Microscopic Imager</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>K.</first_name>
+                    <last_name>Herkenhoff</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:mer1_mi_sci_calibrated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>
+

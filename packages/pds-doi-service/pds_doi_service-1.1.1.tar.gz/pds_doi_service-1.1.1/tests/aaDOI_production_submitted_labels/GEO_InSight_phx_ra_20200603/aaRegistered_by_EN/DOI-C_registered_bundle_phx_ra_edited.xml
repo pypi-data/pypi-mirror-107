@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>Phoenix Robotic Arm Data Set</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:phx_ra::1.1</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2014-04-03</publication_date>
+            <country>USA</country>
+            <description>The Phoenix Robotic Arm derived and test data set migrated from PDS3</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aphx_ra&amp;version=1.1</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-03</date_record_added>
+            <keywords>PDS;  PDS3;  GEO; Derived; Phoenix; Robotic Arm; Phoenix Lander; Mars</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>A.</first_name>
+                    <last_name>Shaw</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Arvidson</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>M.</first_name>
+                    <last_name>Robinson</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Bonitz</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>J.</first_name>
+                    <last_name>Carsten</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>A.</first_name>
+                    <last_name>Trebi-Ollennu</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>R.</first_name>
+                    <last_name>Volpe</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <first_name>E.</first_name>
+                    <last_name>Guinness</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <email/>
+                    <first_name>S.</first_name>
+                    <last_name>Slavney</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:phx_ra::1.1</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

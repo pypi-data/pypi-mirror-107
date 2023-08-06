@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>PVO VENUS ELECT TEMP PROBE DERVD ELECT DENS LOW RES VER 1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>PVO-V-OETP-5-LORESELECTRONS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-10-01</publication_date>
+            <country>USA</country>
+            <description>This file gives the Ne, Te and Vs measurements derived by fitting
+                the radial probe voltampere curves taken whenever PVO was within
+                the ionosphere (ie., between the inbound and outbound ionopause
+                crossings). Data from essentially every orbit in 1979 and 1980
+                included ionosphere transits. After the summer of 1980, however,
+                periapsis could no longer be maintained at low altitudes, and it
+                rose slowly. After April 1981 periapsis was above the altitude of
+                the dayside ionopause, so the spacecraft encountered the
+                ionosphere only in the terminator regions and on the nightside
+                where the ionosphere extends to much higher altitudes. Dayside
+                measurements again became available early in 1992 when periapsis
+                returned to low enough altitudes. The PVO Entry period of between
+                July and October 1992 provided only nightside periapsis data.
+                During the intervening period (1981-91), only nightside UADS
+                measurements in the high altitude (downstream) ionosphere were
+                available. Note that High Resolution Ne data from the 1981-91
+                interval provide measurements in the dayside magnetosheath and in
+                the solar wind, but these data have limited accuracy because of
+                spacecraft photoelectron contributions. See [BRACEETAL1988] for
+                further details on the interpretation of High Resolution
+            measurements made outside the ionosphere.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=PVO-V-OETP-5-LORESELECTRONS-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>PIONEER VENUS ORBITER; VENUS; PLASMA ANALYZER; PVO; PLANET; OETP; ELECTRON TEMPERATURE PROBE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. ROBERT THEIS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.pvo-v-oetp-5-loreselectrons-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

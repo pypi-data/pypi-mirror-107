@@ -1,0 +1,468 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional keywords added by D. Kazden, 2009-09-16;                          
+Z's removed from time by D. Kazden, 2010-05-05;                              
+Updated CITATION_DESC, D. Kazden, 2020-02-13;"                               
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                   = "ULY-J-URAP-4-SUMM-WFA-PEAK-E-10MIN-V1.0"  
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "                                       
+ULY JUP URAP WAVEFORM ANALYZER PEAK E-FIELD 10 MIN"                          
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1991-11-26T00:00:00.000                 
+    STOP_TIME                      = 1992-06-07T23:50:00.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "ROGER HESS"                            
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULY JUP URAP WAVEFORM ANALYZER         
+                                             PEAK E-FIELD 10 MIN"            
+    CITATION_DESC       = "Hess, R., ULY-J-URAP-4-SUMM-WFA-PEAK-E-10MIN-V1.0,
+                          ULY JUP URAP WAVEFORM ANALYZER PEAK E-FIELD 10 MIN,
+                                  NASA Planetary data System, 1998."         
+    ABSTRACT_DESC                  = "A. UDS data files -------------------- 
+                                      Eight files are provided that conform  
+                                      to the UDS conventions regarding the   
+                                      naming of files and the format of the  
+                                      data. The eight files are divided into 
+                                      4 pairs of files with each pair        
+                                      consisting of a file containing data   
+                                      averaged over a 10 minute period and   
+                                      a file containing the maximum data     
+                                      value during the same 10 minute        
+                                      period. The 4 pairs of file contain    
+                                      data for the RAR, the PFR, WFA -       
+                                      magnetic field, and WFA - magnetic     
+                                      field."                                
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      A    UDS  data  files                                                  
+                                                                             
+      Eight files are provided that conform to the UDS conventions           
+      regarding the naming of files and the format of the data. The          
+      eight files are divided into 4 pairs of files with each pair           
+      consisting of a file containing data averaged over a 10 minute         
+      period and a file containing the maximum data value during the         
+      same 10 minute period. The 4 pairs of file contain data for            
+      the RAR, the PFR, WFA - magnetic field, and WFA - magnetic             
+      field.                                                                 
+                                                                             
+      A.3    Waveform Analyzer Electric Field                                
+                                                                             
+      Four UDS files are produced per day for the WFA data. Two of           
+      the files contain average and peak data for the Ex signals and         
+      two files contain average and peak data for magnetic field             
+      data. The high band channels (upper 12 frequencies) always             
+      contain By. The low band channels (lower 10 frequencies)               
+      contain either By or Bz depending on the mode of the                   
+      instrument. A flag specifying the mode is provided for each            
+      time interval.                                                         
+                                                                             
+      The lowest two frequencies of the WFA are derived in a                 
+      different manner so they have been left out of the UDS data.           
+      This leaves 10 frequencies from the low band and 12                    
+      frequencies from the high band. The frequencies are given              
+      below.                                                                 
+                                                                             
+      The peak data provided by the WFA high band frequently do not          
+      exceed the threshold background so the average values have             
+      been used in all cases.                                                
+                                                                             
+      The files of 10 minute averaged data were computed by, for all         
+      data falling within the 10 minute periods, finding the average         
+      values for each frequency.                                             
+                                                                             
+      Similiarly, the files of peak data were computed by, for all           
+      data falling within the 10 minute periods, finding the maximum         
+      value for each frequency.                                              
+                                                                             
+      The WFA data is affected by interference from other                    
+      instruments. In particular, interference from the PFR occurs           
+      and is dependent on the PFR scan mode. For this reason a               
+      flag indicating the PFR mode is provided in the WFA files.             
+                                                                             
+      WFA electric field data:                                               
+                                                                             
+      The names of the files are (following the PDS convention):             
+                                                                             
+           Tyyddd.TAB    -&#10095; Average data                                     
+           Tyyddd.TAB    -&#10095; Peak data                                        
+                                                                             
+       yy: Last two digits of year.                                          
+      ddd:  Day of year (1..366).                                            
+                                                                             
+      The files are Ascii and contain one line for each time period          
+      (even if there are no valid data for a time period) so they            
+      contain 144 lines each. The format of the data is indicated            
+      by the following Fortran read statement (which can be used to          
+      read the files):                                                       
+                                                                             
+              DIMENSION F(22)                                                
+              READ(1,100) TIME,IPFRMODE,IBPS,F                               
+        100   FORMAT(A24,1X,A2,A1,A1,22(1X,1PE9.2))                          
+                                                                             
+      The variables are defined as follows:                                  
+                                                                             
+      TIME:  Spacecraft event time in the format                             
+             yyyy-mm-ddThh:mm:ss.sssZ.                                       
+                                                                             
+      PFRMODE:  Indicates the scan mode of the PFR instrument.               
+                                                                             
+        1: Fast scan mode.                                                   
+        2: Slow scan mode.                                                   
+        3: Fixed-frequency mode.                                             
+        4: The mode switched during the averaging interval.                  
+        5: The mode could not be determined.                                 
+                                                                             
+      BPS:  Telemetry bit rate:                                              
+                                                                             
+        1: 128 bps.                                                          
+        2: 256 bps.                                                          
+        3: 512 bps.                                                          
+        4: 1024 bps.                                                         
+        5: Bit rate changed during averaging period.                         
+        6: Bit rate unknown.                                                 
+                                                                             
+      F: Contains the data for Ex (peak values) of the 22 frequency          
+      channels. The frequencies are:                                         
+                                                                             
+        F(1): 0.22 Hz                                                        
+        F(2): 0.33 Hz                                                        
+        F(3): 0.44 Hz                                                        
+        F(4): 0.66 Hz                                                        
+        F(5): 0.88 Hz                                                        
+        F(6): 1.33 Hz                                                        
+        F(7): 1.77 Hz                                                        
+        F(8): 2.66 Hz                                                        
+        F(9): 3.55 Hz                                                        
+        F(10):  5.33 Hz                                                      
+        F(11):  9.00 Hz                                                      
+        F(12):  14.00 Hz                                                     
+        F(13):  19.00 Hz                                                     
+        F(14):  28.00 Hz                                                     
+        F(15):  37.00 Hz                                                     
+        F(16):  56.00 Hz                                                     
+        F(17):  75.00 Hz                                                     
+        F(18):  112.00 Hz                                                    
+        F(19):  149.00 Hz                                                    
+        F(20):  224.00 Hz                                                    
+        F(21):  299.00 Hz                                                    
+        F(22):  448.00 Hz                                                    
+                                                                             
+      These data are electric field intensities detected by the              
+      Waveform Analyzer (WFA) on the X antenna of the URAP                   
+      instrument.                                                            
+                                                                             
+      Units:  microvolt/Hz**.5 measured at the receiver input                
+      terminals. To convert to electric field strength the given             
+      data must be divided by the effective length of the antenna.           
+      This is complicated by the fact that the effective length              
+      depends on the antenna impedance which is affected by the              
+      plasma conditions local to the Ulysses spacecraft. The                 
+      impedance will also depend on the frequency. In general, the           
+      WFA frequencies can be affected by the plasma so a single              
+      number cannot be used for the effective antenna length.                
+                                                                             
+      Time resolution:  10 minutes                                           
+                                                                             
+      Fill value for bad or missing data is -9.99e+10                        
+                                                                             
+      SUMMARY PLOTS                                                          
+      =============                                                          
+      URAP  SUMMARY  PLOT  DESCRIPTION                                       
+                                                                             
+      A URAP Summary Plot is a plot of one day of Ulysses Unified Radio      
+      and Plasma (URAP) experiment data.  The URAP experiment consists       
+      of five instruments:  Radio Astronomy Receiver (RAR), Plasma           
+      Frequency Receiver (PFR), Wave Form Analyzer (WFA), Fast Envelope      
+      Sampler (FES), and Sounder (SND). The Summary Plot consists of         
+      six plot panels.  Data are plotted in the form of dynamic spectra      
+      (3 dimensional plots of wave intensity versus frequency and time,      
+      with the degree of darkness proportional to the wave intensity.        
+      Frequency is plotted along the vertical axis, and time along the       
+      horizontal axis.                                                       
+                                                                             
+      Most of the data are stretched (assigned a grey shade) between         
+      minimum and maximum data values, the maximum being the minimum         
+      plus dynamic range designated for a receiver.  The specified           
+      dynamic ranges are shown at the right side of the plot, under the      
+      heading 'Dyn.  Range'.  A linear interpolation is done between         
+      minimum and maximum values to determine the degree of darkness of      
+      the plotted data point.  Data at or below the minimum are plotted      
+      as white, and data at or above the maximum value are shown as          
+      black.  The pixel-font uses a 4x4 dot pattern to represent 16          
+      shades of gray.                                                        
+                                                                             
+      The plot consists of six panels, the first four of which are           
+      plotted with time along the horizontal axis.  For these plots the      
+      time increment is 128 seconds, which means that 675 time steps         
+      are represented along the horizontal axis, corresponding to 24         
+      hours of data.  For data with a higher time resolution than this,      
+      the maximum data value occurring during a 128 second interval is       
+      plotted.  Frequency is plotted along the vertical axis.                
+      Frequency labels such as 100K refer to 100 KHz; otherwise the          
+      labels refer to Hz.  Dynamic ranges shown at the right of the          
+      panels are in telemetry units, except for the WFA ranges, which        
+      are in logarithm of floating point DPU-FFT output.  The panels         
+      are described in order from top to bottom.                             
+                                                                             
+      Panel 1  This is a dynamic spectrum of RAR X antenna electric          
+               field data.  The full set of 12 high receiver frequencies     
+               and 64 low receiver frequencies is plotted, with              
+               interpolation done for any missing frequencies                
+               (extrapolation is not done).  The high receiver frequencies   
+               have a logarithmic spacing between approximately 50 KHz and   
+               1 MHz.  The low receiver frequencies are spaced linearly in   
+               frequency between 1.25 and 48.5 KHz.                          
+                                                                             
+      Panel 2  This panel is a dynamic spectrum of electric field data       
+               from RAR, PFR and WFA instruments.  The 12 frequencies of     
+               the RAR high receiver Z antenna data are plotted.  A gap      
+               separates RAR and PFR data.  The PFR data is the peak data    
+               from the X antenna.  Thirty-two PFR frequencies are plotted,  
+               ranging from 0.5 to 35 KHz.  When the PFR is in fixed tune    
+               mode, there are 32 times as many PFR samples at a single      
+               frequency.  They are spread across the 32 frequencies, to     
+               permit a better representation of the single frequency data.  
+               Twenty-four WFA frequencies from the X electric field         
+               antenna are plotted at the bottom of the panel.  The low      
+               receiver frequencies range between about 0.1 to 5 Hz; the     
+               high receiver frequencies range from 9 to 448 Hz.  The        
+               frequencies are approximately logarithmically spaced.  The    
+               data plotted are average data from the WFA instrument.        
+                                                                             
+      Panel 3  WFA magnetic field data are plotted here.  The high           
+               receiver data (upper 12 frequencies) are always from the Y    
+               search coil.  The low receiver (lower 12 frequencies) will    
+               be either Y or Z search coil data, depending on which search  
+               coil was being sampled (indicated in panel 4).  Frequencies   
+               and units are as for the WFA Ex data.                         
+                                                                             
+      Panel 4  This panel indicates various instrument statuses.  A dark     
+               line indicates an 'on' condition, and a light line indicates  
+               'off'.  Six status flags are shown.  These are:  a) RAR SUM:  
+               The flag indicates whether the RAR is in summation (X+Z)      
+               mode.  A dark line indicates summation is on.  There are a    
+               pair of lines for this flag.  The top line of the pair        
+               indicates RAR high receiver summation, and the second line    
+               indicates low RAR receiver summation.  b) RAR POLAR: This     
+               flag indicates RAR polarization mode on or off.  Again, the   
+               first of the two polarization lines is for the high receiver  
+               and the next is for the low receiver.  c) PFR Fast:  a dark   
+               line indicates that the PFR is in fast-scan mode; a light     
+               line indicates that the mode is slow-scan; no line indicates  
+               fixed-tune (single-frequency) mode.  The fixed tune           
+               frequency is shown during the fixed tune interval.  Note      
+               that the PFR causes a mode (and bit rate) dependent           
+               interference in the WFA data.  d) Greater than 10 Hz Ez:      
+               This flag indicates that the WFA high receiver data is from   
+               the Ez antenna (dark) or, alternatively, from the WFA Bz      
+               antenna (light).  Note that neither of these types of data    
+               is plotted on the Summary Plot.  (Only Ex data is plotted     
+               for the high band EWFA; only By data is plotted for the high  
+               band BWFA.) e) Less than 10 Hz By:  This indicates whether    
+               the magnetic data in the low receiver is from the By (dark)   
+               or Bz (light) antenna.  This flag does correspond to the      
+               data plotted for the B lo receiver.  f) 1024 bps:  A dark     
+               line indicates 1024 bps data.  A light line indicates 512     
+               bps.  A blank corresponds to a bit rate lower than 512 bps    
+               or a data gap.                                                
+                                                                             
+      Panels 5,6  The bottom two side-by-side panels (to the right of        
+               the plot label) show data for each observed FES event for     
+               high band and low band detectors.  For each event, shown by   
+               a straight horizontal line, 1024 data points are taken.  On   
+               the plot, however, only the maximum value of 4 contiguous     
+               points is displayed.  Up to 56 individual events may be       
+               plotted.  The events are plotted from bottom to top of panel  
+               in order of their occurrence.  The vertical scale is time of  
+               event in hours of the day.  Each event shown represents the   
+               most intense FES event observed during 49 formats (a format   
+               is 32 sec at 1024 bps).  These panels are in the form of      
+               dynamic spectra; therefore the degree of darkness is          
+               proportional to the intensity of data observed during event.  
+               The FES low and hi band plots show two vertical lines at the  
+               beginning of each plot.  These indicate the instrument        
+               antenna and filter status.  For the FES high band the Ex      
+               antenna is flagged by a black point, and the Ez antenna by a  
+               light point.  The 6-60 kHz filter is shown by black, the      
+               2-20 kHz filter is designated by a light point and all        
+               filters with an upper limit of 6 kHz or lower are designated  
+               by a blank.  For the low receiver antenna, a black point      
+               indicates Ex, a light point, Ez, and no point, the B search   
+               coils.  For the low band filter, a black point indicates      
+               2-10 Khz, a light point .6-6 kHz, and no point indicates the  
+               upper frequency limit is lower than 2 kHz.  When the FES      
+               receiver is attached to the B antenna, the band is always     
+               0.01-1 kHz.                                                   
+                                                                             
+                                                                             
+      The option exists for plotting electron plasma frequency fpe, ion      
+      plasma frequency fpi and electron gyrofrequency fce as lines on        
+      the dynamic spectra.  The fpe data is plotted on the PFR plot,         
+      fpi is plotted on the EWFA panel, and fce is shown on the BWFA         
+      panel.  These data are obtained from Ulysses files of plasma           
+      (SWOOPS) and magnetometer (MAG) data, provided by the respective       
+      instrument teams.                                                      
+                                                                             
+      Various plot labels are printed in the lower left-hand corner of       
+      the Summary Plot.  The first 3 lines give date of the plotted          
+      data, version number of the Summary Plot program, and date the         
+      plot was generated.  The next 2 lines designate the RAR high and       
+      low receiver modes at the beginning and end of the plotted time        
+      interval.  The modes are M (measure mode), L (linear sweep), and       
+      F (freeze mode).  For measure mode, the list number is given           
+      after the '#' sign.  For freeze mode, the frequency number             
+      follows the '#' sign.  For the low receiver in measure mode, 'F'       
+      designates full list, 'E' indicates first half of list, and 'O'        
+      implies the second half of the list is used.                           
+                                                                             
+      The next line indicates RAR background type and offset.                
+      Designation for the RAR background determination is as follows:        
+      Background type '0' indicates offset values (computed minus            
+      standard background values) and dynamic ranges may be specified        
+      for the RAR receiver.  Background type '1' indicates that for          
+      each frequency a background is computed from the data for that         
+      day, and a histogram of data minus background for all frequencies      
+      is used to automatically set the offset and dynamic range for          
+      each RAR receiver.  The offset and range depend on the percentage      
+      of white and black pixels chosen by the user.  The offsets             
+      (either chosen or computed) are shown after the '/'.  The 3            
+      offsets shown correspond to offsets for the RAR X high, X low,         
+      and Z high, respectively.                                              
+                                                                             
+      The next line shows the minimum and maximum data values in             
+      telemetry units for the RAR low X data for the day.  In the next       
+      3 lines, distances and angles are given as determined using            
+      various locations, namely, Ulysses (U), Sun (S), Jupiter (J), and      
+      Earth (E). The last 2 lines give the longitude and latitude of         
+      the spacecraft in either heliographic coordinates (_H) or              
+      ecliptic coordinates (_E), as determined from the SEDR database.       
+                                                                             
+       Backgrounds may be computed from the data.  This is done              
+       separately for each RAR receiver (RAR X high, RAR X low, RAR Z        
+       high) as well as for the non-RAR receivers (PFR, WFA high, WFA        
+       low, B WFA high and B WFA low).  The goal is to achieve a full        
+       utilization of the gray scale.  To accomplish this, a percentage      
+       of white and black pixels is specified, typically 4% white and 4%     
+       black.  Histograms of the data values are computed for each           
+       panel.  The background and range are defined by these histograms;     
+       i.e.  they are calculated to provide the percentages of black and     
+       white pixels specified."                                              
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      None provided. For more information regarding the confidence           
+      level of this data set please contact:                                 
+        ROGER HESS                                                           
+        NASA/Goddard Space Flight Center                                     
+        Mailstop 690.2                                                       
+        Greenbelt, MD 20771                                                  
+        USA                                                                  
+        Phone: 1-301-286-1394                                                
+        Internet: hess@urap.gsfc.nasa.gov"                                   
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = URAP                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BARROW&LECACHEUX1993"                  
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "CANUETAL1992"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "CANUETAL1993"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DESCH1994"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DESCHETAL1994"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "FARRELLETAL1993A"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "FARRELLETAL1993B"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "HOANGETAL1993"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KAISER&DESCH1992"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KAISERETAL1992"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KAISER1993"                            
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KAISERETAL1993A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KAISERETAL1993B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KELLOGGETAL1993"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "LECACHEUXETAL1992"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "LINETAL1993"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "LINETAL1994"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MACDOWALLETAL1993"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MEYER-VERNETETAL1993"                  
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "OSHEROVICHETAL1993"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "REINERETAL1993A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "REINERETAL1993B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "REINERETAL1994"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "STONEETAL1992B"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "THIESSEN&KELLOGG1993"                  
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "ZARKAETAL1993"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

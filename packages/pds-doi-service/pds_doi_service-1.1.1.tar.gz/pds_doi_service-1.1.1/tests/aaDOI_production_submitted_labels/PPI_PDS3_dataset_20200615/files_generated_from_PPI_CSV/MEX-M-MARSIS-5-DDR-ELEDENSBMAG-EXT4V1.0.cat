@@ -1,0 +1,402 @@
+PDS_VERSION_ID                     = PDS3
+
+RECORD_TYPE                       = STREAM
+
+
+LABEL_REVISION_NOTE  = "2014-10-28, C. Piker, first draft
+                        
+                        2015-11-20, D. Morgan, Updated to include verification
+                                       flag description"
+
+
+OBJECT                  = DATA_SET
+  DATA_SET_ID             = "MEX-M-MARSIS-5-DDR-ELEDENS/BMAG-EXT4V1.0"
+
+  OBJECT                  = DATA_SET_INFORMATION
+    DATA_SET_NAME           = "MEX: MARSIS ELECTRON PLASMA DENSITY AND
+                               MAGNETIC FIELD DATA"
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"
+    DATA_OBJECT_TYPE        = SPREADSHEET
+    ARCHIVE_STATUS          = "IN QUEUE"
+    START_TIME              = 2012-12-30T19:37:20
+    STOP_TIME               = 2014-12-31T17:39:38
+    DATA_SET_RELEASE_DATE   = 2016-05-08
+    PRODUCER_FULL_NAME      = "DAVID D. MORGAN"
+    DETAILED_CATALOG_FLAG   = "N"
+    DATA_SET_TERSE_DESC     = "
+      This data set contains local environment electron plasma density and
+      magnetic field magnitude measurements derived from the Mars Express
+      MARSIS Active Ionospheric Sounder data from launch to the end of the
+      nominal mission."
+
+    ABSTRACT_DESC           = "
+      This data set tabulates local electron densities and local magnetic 
+      field strengths magnetic field strengths obtained from Mars Advanced 
+      Radar for Subsurface and Ionosphere Sounding (MARSIS) Active Ionospheric
+      Sounding (AIS) mode ionograms.  The electron density is obtained by 
+      measuring the increment in frequency between the plasma frequency 
+      harmonics, visible as bright vertical lines at low frequency and delay 
+      time in many MARSIS ionograms.  Similarly, the local magnetic field 
+      strength is found by measuring the difference in delay time between 
+      electron cyclotron echoes, visible as bright horizontal lines at low 
+      frequency on many ionograms.  Both the measured quantity and the derived
+      result are included in the archive product.  We also include a data 
+      quality flag giving the impression of the archivist as to how reliable 
+      each result is.  This archive product includes only data from the
+      nominal mission, which starts about orbit 1850 and ends on orbit 2539."
+
+    CITATION_DESC           = "D.D. Morgan, and C.W. Piker, MARS EXPRESS
+      MARSIS ELECTRON PLASMA DENSITY AND MAGNETIC FIELD MAGNITUDE,
+      MEX-M-MARSIS-5-DDR-ELEDENS/BMAG-EXT4V1.0, NASA Planetary Data
+      System, 2013."
+
+    CONFIDENCE_LEVEL_NOTE = "
+
+      Standard Quality Flags:
+
+      Confidence in the measurements provided by this
+      dataset is indicated in a set of two quality flags.  For plasma
+      frequency harmonics the data quality flag values are:
+
+        1 - Harmonics are visible but there is significant doubt as to the
+            correct value of the interval between harmonics.  This doubt 
+            occurs because the harmonics are blurred and difficult to locate
+            precisely or because the frequency interval between harmonics is
+            not unique.
+
+        2 - Best quality.  Harmonics are clear with well-defined interval
+            between them.
+
+      For electron cyclotron echoes the data quality flag value are:
+        
+        1 - 1 or 2 echoes, look faint
+
+        2 - 1 clearer echo, with more echoes
+
+        3 - Best quality, with 5 or more clear echoes, giving the best
+            confidence aligning the trace.
+        
+      Verification flags:
+
+      For a limited set of data, the electron densities have been verified by
+      a second independent measurement.  For the points where a verification
+      has been attempted, the verification flag values are:
+
+        empty field - No verification attempted
+
+        1 - Verification attempted; difference between archived value and
+            independently measured value is greater than or equal to one
+            frequency pixel, which is 0.01 MHz in the frequency range where
+            this method of measurement is applicable.
+
+        2 - Verification attempted; difference between archived value and
+            independently measured value is less than one frequency pixel,
+            0.01 MHz."
+
+    DATA_SET_DESC           = "
+    Data Set Overview
+    =================
+    This data set tabulates local electron densities and local magnetic 
+    field strengths obtained from Mars Advanced Radar for Subsurface and 
+    Ionosphere Sounding (MARSIS) Active Ionospheric Sounding (AIS) mode
+    ionograms.  The electron density is obtained by measuring the increment
+    in frequency between the plasma frequency harmonics, visible as bright
+    vertical lines at low frequency and delay time in many MARSIS 
+    ionograms. Similarly, the local magnetic field strength is found by
+    measuring the difference in delay time between electron cyclotron
+    echoes, visible as bright horizontal lines at low frequency on many
+    ionograms.  Both the measured quantity and the derived result are 
+    included in the archive product.  We also include a data quality flag
+    giving the impression of the archivist as to how reliable each result
+    is.  This archive product includes only data from the fourth extended
+    mission, which starts about orbit 11450 and ends on orbit 13959.
+  
+    Parameters
+    ==========
+    This data set consists of electron plasma density and magnetic field
+    magnitudes along with spacecraft position information in a Mars - Sun
+    coordinate system as well as data quality flags.
+
+    Processing
+    ==========
+    The local electron densities are obtained from individual ionograms by 
+    measuring the frequency spacing between plasma frequency harmonics, 
+    primarily visible at sounding frequencies below 1 MHz.  These harmonics 
+    appear as bright vertical lines at approximately constant frequency 
+    intervals.  The local plasma frequency is equal to the frequency
+    interval between the vertical lines.  An adjustable scale with digital
+    readout coordinated with the computer screen cursor is used on the
+    graphical representation of the ionogram to manually measure the
+    interval between harmonic lines.  A quality flag is assigned by the
+    operator to each measurement.  The criteria for assigning the various
+    values of this flag are given elsewhere in this document.  The measured
+    plasma frequency and its corresponding quality flag are written to the
+    output file.
+
+    During further processing the plasma frequency is converted to electron
+    density using the well-known formula: 
+
+      n_e [cm^-3] = (f_pe [MHz] /8.980e-3) ^2
+
+    where n_e is the electron density in particles per cubic centimeter and
+    f_pe is the electron plasma frequency in megahertz.  
+
+    For more complete explanation of this process, and for discussion of
+    how the plasma frequency harmonics are generated, please refer to
+    Gurnett et al. (2005, 2008), Morgan et al. (2008, 2013a, 2013b), and
+    Duru et al. (2008).  A fully automated method of obtaining the local
+    plasma frequency is given by Andrews et al. (2013).
+
+    The local magnetic field strengths are obtained from individual
+    ionograms by measuring the time-delay spacing between electron
+    cyclotron echoes, visible as equally spaced bright horizontal at low
+    frequency on an ionogram.  The constant time-delay interval between the
+    echoes is equal to the electron cyclotron period, i. e., the inverse of
+    the electron cyclotron frequency.  An adjustable scale with digital
+    readout coordinated with the computer screen cursor is used on the
+    graphical representation of the ionogram to manually measure the time
+    interval between electron cyclotron echoes.  A quality flag is assigned
+    by the operator to each measurement.  The criteria for assigning the 
+    various values of this flag are given elsewhere in this document.  The
+    measured electron cyclotron period and its corresponding quality flag
+    are written to the output file.
+
+    The electron cyclotron period is converted to magnetic field strength
+    by using the well-known relation between magnetic field strength and
+    electron cyclotron frequency, written here in terms of the electron
+    cyclotron period:   
+
+      |B| [nT] = 1000/(28 * T [ms])
+
+    where T is the measured electron cyclotron period in milliseconds and
+    |B| is magnitude of the magnetic field in nanotesla.  For a more
+    complete explanation of this process along with discussion of how the
+    electron cyclotron echoes are generated, please refer to  Gurnett et
+    al. (2005, 2008), Akalin et al. (2010), and Morgan et al. (2011).
+
+    Data
+    ====
+    The electron plasma density and magnetic field magnitude data set is
+    provided as simple ASCII SPREADSHEET objects with fields delimited via
+    commas.  Each row in a spreadsheet contains a fixed number of fields, 
+    however some  fields may have a null entry, i.e. two adjacent commas
+    with no value.  This occurs when one of the measurments (either the
+    plasma density or B-field magnitude) was unclear.  In these case only
+    the measurement which could be made with a mimimum of confidence is
+    included and the other is left empty.  One row in each spreadsheet
+    corresponds to a single frame in the upstream
+    MEX-M-MARSIS-3-RDR-AIS-V1.0 dataset.
+
+
+    Ancillary Data
+    ==============
+    Ancillary spacecraft position data are provided adjacent to the 
+    measurements to which they pertain.  In addition to the primary
+    measurements, each row a product contains up to 2 data quality flags
+    and a handful of spacecraft ephemerides considered relevent by the
+    dataset producers.
+
+
+    Coordinate System
+    =================
+    The primary data are scalar measurements that reflect conditions local
+    to the spacecraft.  Because these quantities are scalars, no coordinate
+    system is required for their intrinsic description; however the
+    corresponding spacecraft position within the Mars-Sun system may be
+    important in analyzing these products.  As a convenience to the archive
+    user, the following position data fields are provided inline within the
+    data product files:
+
+      ALTITUDE ABOVE THE GEODE
+      PLANETOGRAPHIC LATITUDE
+      PLANETOCENTRIC LATITUDE
+      LOCAL TRUE SOLAR TIME
+      WEST LONGITUDE
+      MARS-SUN DIRECTION DISTANCE (X)
+      MARS-SUN PERPENDICULAR DIRECTION DISTANCE (RHO)
+      SOLAR ZENITH ANGLE
+
+    A description of each field may be found by reading any data label on
+    this volume.  Further position information may be found in the
+    GEO_INDEX.TAB file in the INDEX directory.  Also, the spacecraft event
+    time field  provided as input to the NAIF Spice toolkit may be used to
+    generate coordinate values in almost any imaginable system.
+
+
+    Software
+    ========
+    As the data are formatted as simple ASCII spreadsheets, no
+    programs are provided on this volume.
+
+
+    Confidence Level Overview
+    =========================
+    For electron cyclotron echoes the data quality flags are given as follows:
+
+    0 - NO echoes
+    1 - 1 or 2 echoes, look faint
+    2 - 1 clearer echo, with more echoes
+    3 - Best (this usually is multiple, 5 or greater, that gives the best 
+        confidence aligning the trace
+
+    For plasma frequency harmonics the data quality flags are given as
+    follows:
+
+    0 - NO plasma frequency harmonics
+    1 - Harmonics are visible but there is significant doubt as to the correct
+        value of the interval between harmonics.  This doubt occurs because 
+        the harmonics are blurred and difficult to locate precisely or because
+        the frequency interval between harmonics is not unique.
+    2 - The harmonics are well determined with a unique frequency interval 
+        between them.
+
+    Review
+    ======
+    The MARSIS Electron Plasma Density and Magnetic Field Magnitude data will
+    be reviewed internally by the Mars Express MARSIS team prior to release to
+    the PSA. The data set will also be peer reviewed by the PSA and PDS.
+
+
+    Data Coverage and Quality
+    =========================
+    Data coverage is effected by MARSIS being a dual-mode instrument.  In
+    general, MARSIS coverage of the nightside of Mars is dedicated to
+    Subsurface mode, since that is when the ionosphere interferes least with
+    subsurface measurements.  This means that when Mars Express periapsis is
+    primarily on the nightside, MARSIS AIS measurements are limited to
+    altitudes above about 850 km, about 5 minutes on either side of periapsis.
+    Early in the mission, there are also some partial orbits with a ten
+    minute gap poleward of periapsis.  These partial orbital passes are not
+    guaranteed to be included in this archive set.  A full orbital pass in
+    the MARSIS nominal mission consists of approximately 35 min 50 seconds of
+    continuously acquired ionograms. 
+
+    For both plasma frequency harmonic's electron density measurements and
+    electron cyclotron echo-magnetic field strength measurements, all full
+    orbital passes between orbits 11450 and 13959, 
+    2012-12-30T19:37:20 through 2014-12-31T17:39:38, are here archived.  These orbits
+    and dates approximately bracket the beginning of regular data collection
+    for the fourth extended mission of MARSIS and the end of the
+    fourth extended mission. 
+
+    For the nominal mission volume the archived electron cyclotron echo
+    magnetic field strength data include a number of orbits prior to orbit
+    1994 which were taken during the commissioning phase of MARSIS.  Both
+    archived electron cyclotron echo-magnetic field strength and plasma
+    frequency harmonic-electron density data include a number of partial
+    orbits that were collected as targets of opportunity.  We include such
+    data with no guarantee of completeness of coverage.
+
+    The uncertainty in frequency measurements for MARSIS AIS is discussed by 
+    Morgan et al. (2013). MARSIS AIS samples 160 frequencies over 1.26
+    seconds in collecting data for an ionogram.  These frequencies are spaced
+    at somewhat irregular intervals in order to avoid interference features
+    and discontinuities in the receiver sensitivity; however, the general
+    trend in spacing between sampled frequencies is quasilogarithmic.  The
+    implication of this sampling regime is that over most of the sampled
+    frequencies, between 0.5 MHz and 5.5 MHz, the fractional uncertainty in
+    frequency is approximately 2%.  At frequencies below 0.5 MHz, down to the
+    minimum sampling frequency of 0.1 MHz, the uncertainty increases sharply
+    to around 12%.  The vertical lines that yield the local plasma frequency
+    virtually always occur below frequencies of 1 MHz and above 0.3 MHz.
+    Figure 3 of Morgan et al. (2013) indicates that measurement error will be
+    below 4% in this range and will center about 2.5%.  Because the local
+    electron density is proportional to the square of the plasma frequency,
+    the fractional error on the electron density will be approximately twice
+    that on the plasma frequency or about 5%.
+
+    The time width of an electron cyclotron echo on an ionogram is usually 
+    about twice the time width of the sounding pulse, which is 91.4
+    microseconds.  Therefore, we estimate the error in any single measurement 
+    of the electron cyclotron period as +/- 0.1828 milliseconds.  Because the 
+    fractional error in magnetic field strength is equal to the fractional 
+    error in time, and the absolute error in time is constant, the fractional 
+    error in magnetic field increases as the electron cyclotron period 
+    decreases and the magnetic field increases.  We can take into account the 
+    effect of having more electron cyclotron echoes to measure when the 
+    magnetic field is high by dividing by the square root of the number of 
+    echoes.  The resulting estimated percent errors are as follows:
+
+         T_echo ms     |B| nT       Error on |B| %
+         ---------     ------       -------------- 
+           0.25         40.7            13%
+           1.17         30.6             6.0%
+           2.08         17.2             4.5%
+           3.0          11.9             3.8%
+           3.9           9.1             3.2%
+           4.8           7.4             3.0%
+           5.7           6.2             2.8%
+           6.6           5.3             2.5%
+           7.6           4.7             2.3%
+
+    
+    Limitations
+    ===========
+    Because the local electron density and magnetic field strength are
+    collected at most one time from an ionogram, the frequency of collection
+    is 1/7.543 Hz or 0.133 Hz.  Practical limits on the plasma frequency
+    harmonics are 0.03 to .75 MHz or local electron density of 10 to 7000
+    cm^-3.  Practical limits on the electron cyclotron period are 7.5 ms to
+    200 microseconds or 5 nT to 180 nT.  The measurements described in this
+    document are not observed when the Mars Express spacecraft is outside of
+    the magnetosheath of Mars because (1) the values are typically too low to
+    be measured and (2) the solar wind flow around the spacecraft convects the
+    plasma away from the spacecraft before it can interact with the antenna
+    and receiver of the MARSIS sounder.  This effect is explained in detail in
+    the reference DURUETAL2008.
+    "
+
+  END_OBJECT              = DATA_SET_INFORMATION
+
+  OBJECT                  = DATA_SET_TARGET
+    TARGET_NAME             = MARS
+  END_OBJECT              = DATA_SET_TARGET
+
+  OBJECT                  = DATA_SET_HOST
+    INSTRUMENT_HOST_ID      = MEX
+    INSTRUMENT_ID           = MARSIS
+  END_OBJECT              = DATA_SET_HOST
+
+  OBJECT                  = DATA_SET_MISSION
+    MISSION_NAME            = "MARS EXPRESS"
+  END_OBJECT              = DATA_SET_MISSION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "GURNETTETAL2005"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "GURNETT_DA_ETAL2008"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "MORGAN_DD_ETAL2008"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "AKALIN_F_ETAL_SWIM2010"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "MORGAN_DD_ETAL2013_CRX"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "DURUETAL2008"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "MORGAN_DD_ETAL2011"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "MORGAN_DD_ETAL2013"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "ANDREWS_DJ_ETAL2013"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT              = DATA_SET
+
+END

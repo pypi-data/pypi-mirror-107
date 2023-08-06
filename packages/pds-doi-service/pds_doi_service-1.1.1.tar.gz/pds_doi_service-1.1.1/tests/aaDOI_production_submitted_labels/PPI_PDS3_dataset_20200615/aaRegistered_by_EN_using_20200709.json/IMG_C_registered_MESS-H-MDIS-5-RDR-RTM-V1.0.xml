@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESS MDIS MAP PROJ REGIONAL TARGETED
+        MOSAIC RDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-H-MDIS-5-RDR-RTM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2016-05-06</publication_date>
+            <country>USA</country>
+            <description>Abstract
+                ========
+                The Mercury Dual Imaging System (MDIS) consists of two cameras, a Wide
+                Angle Camera (WAC) and a Narrow Angle Camera (NAC), mounted on a
+                common pivot platform. This dataset include regional mosaics of
+                targeted observations directed at specific regions of interest.
+                Four types of targeted observations are included:
+                (a) WAC 3-color targeted observations acquired mainly during
+                the primary mission, to complement 1 km/pixel 8-color mapping
+                with a higher spatial resolution 3-color product;
+                (b) WAC observations of targets that were observed repeatedly at
+                different photometric geometries in order to improve photometric
+                models of Mercury; these were observed initially in 8 color and
+                since early 2013 in 11 colors;
+                (c) WAC 8- or 11-color science targeted observations; and
+                (d) NAC image strips acquired either for high-resolution imaging of
+                morphology or as context for MASCS or MLA observations.
+                The images in each observation share a common SITE_ID in the
+                file name and PDS label. The SITE_ID corresponds to a targeting
+                request entered into a database, in response to which a series of
+                images was acquired. There is one SITE_ID for each time the
+                region of interest is observed; thus for photometry targets,
+                the same geographic region of interest is covered by many sets
+                of images, each set sharing a common SITE_ID and distinct
+                photometric geometry.
+                
+                Each mosaic is map projected in an orthographic projection, and
+                contains one or more image planes. NAC mosaics contain 4 backplanes:
+                observation ID, solar incidence angle, emission angle, and phase
+                angle. WAC color products contain 3 backplanes: solar incidence angle,
+            emission angle, and phase angle.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-H-MDIS-5-RDR-RTM-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; MERCURY; FRAMING CAMERA; MESS; PLANET; MDIS-NAC; MDIS-WAC; MERCURY DUAL IMAGING SYSTEM 
+                                         NARROW ANGLE CAMERA; MERCURY DUAL IMAGING SYSTEM 
+                                         WIDE ANGLE CAMERA</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>CHRISTOPHER HASH</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-h-mdis-5-rdr-rtm-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

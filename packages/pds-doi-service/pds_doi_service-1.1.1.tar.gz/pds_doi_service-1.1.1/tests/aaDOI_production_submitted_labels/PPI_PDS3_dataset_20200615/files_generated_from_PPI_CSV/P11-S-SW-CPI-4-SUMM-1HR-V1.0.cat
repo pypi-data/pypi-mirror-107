@@ -1,0 +1,89 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. Kazden, updated ARCHIVE_STATUS, PRODUCER_FULL_NAME, START_TIME and        
+STOP_TIME, added ABSTRACT_DESC and CITATION_DESC, 2012-03-09;                
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-10;"                
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P11-S-SW-CPI-4-SUMM-1HR-V1.0"          
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P11 SATURN SOLAR WIND CPI CRUISE 1 HOUR
+                                      COUNT DATA V1.0"                       
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1979-07-31T00:00:00                     
+    STOP_TIME                      = 1979-10-04T00:00:00                     
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "John A. Simpson"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+      Pioneer 11 cruise Charged Particle Instrument (CPI) 1 hour             
+      count data."                                                           
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 11 cruise Charged Particle Instrument (CPI) 1 hour             
+      count data."                                                           
+                                                                             
+    DATA_SET_DESC                = "                                         
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+                                                                             
+                                                                             
+  Data Sampling                                                              
+  ==============                                                             
+                                                                             
+                                                                             
+  Data Format                                                                
+  ============                                                               
+    --------------------------------------------------------------------     
+    Column  Column   Column                                                  
+    Name    Format   Description                                             
+    --------------------------------------------------------------------     
+    --------------------------------------------------------------------     
+                                                                             
+                                                                             
+  Coordinate System                                                          
+  =================                                                          
+                                                                             
+                                                                             
+  Calibration                                                                
+  ==========="                                                               
+                                                                             
+    CONFIDENCE_LEVEL_NOTE        = "                                         
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  ========================= "                                                
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SATURN"                                
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SOLAR WIND"                            
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P11                                     
+    INSTRUMENT_ID                  = CPI                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 11"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "N/A"                                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

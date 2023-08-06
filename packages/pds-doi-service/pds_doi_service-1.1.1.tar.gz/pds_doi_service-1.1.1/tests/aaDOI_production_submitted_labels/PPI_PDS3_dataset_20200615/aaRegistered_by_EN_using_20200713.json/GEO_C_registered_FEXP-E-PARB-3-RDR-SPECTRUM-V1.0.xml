@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>FIELD EXP EARTH PARABOLA CALIBRATED RDR SPECTRUM V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>FEXP-E-PARB-3-RDR-SPECTRUM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1991-05-28</publication_date>
+            <country>USA</country>
+            <description>PARABOLA data were obtained at three GRSFE modeling sites in the
+                Lunar Crater Volcanic Field. The playa site, the cobble site, and
+                the mantled flow site. Each site was imaged by PARABOLA at a
+                variety of solar incidence angles to characterize the scattering
+                properties of the surface completely. This information can be
+                used as a reference to correct airborne data from ASAS and AVIRIS
+                from any lighting and viewing geometry, or as a base data set to
+                test radiative transfer models. Six sets of data from the playa
+                site were gathered primarily on July 17, 1989 with solar
+                incidence angles that varied from 28 to 71 degrees. Five sets of
+                cobble site data were gathered during the morning of July 18,
+                1989 with incidence angles from 19 to 57 degrees. Data from the
+                mantled flow site was obtained six times during the afternoon of
+                July 18 with incidence angles from 21 to 73 degrees. In all, over
+                1000 data points exist for each site to characterize its
+                scattering properties. Additionally, an equal number of points
+            exist for the sky above the sites.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=FEXP-E-PARB-3-RDR-SPECTRUM-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>FIELD EXPERIMENT; EARTH; SPECTROMETER; FEXP; PLANET; PARB; PARABOLA</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DONALD W. DEERING</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.fexp-e-parb-3-rdr-spectrum-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

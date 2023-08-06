@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MGN V RSS LINE OF SIGHT ACCELERATION PROFILES V1.13</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MGN-V-RSS-5-LOSAPDR-L2-V1.13</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1997-01-01</publication_date>
+            <country>USA</country>
+            <description>Line of Sight Acceleration Profile Data Records (LOSAPDR) consist
+                of data from Doppler tracking of the orbiting spacecraft. The
+                relative motion of the spacecraft and the earth-based radio
+                receiver is measured very precisely, and known motions are
+                removed a priori (i.e. earth rotation, planetary motions,
+                spacecraft orbital motion, solar pressure, drag), leaving small
+                velocity changes caused by variations in the mass distribution of
+                the planet. The residual Doppler frequency shifts are linearly
+                proportional to the component of velocity in the Earth direction.
+                Numerical differentiation of these velocity residuals with
+                respect to time produces line-of-sight (LOS) gravity. These
+                measures are accelerations at spacecraft altitude which can be
+                modeled for geophysical interpretation. For information on
+            Magellan gravity investigations see papers in [ICARUSMGN1994].</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MGN-V-RSS-5-LOSAPDR-L2-V1.13</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MAGELLAN; VENUS; RADIO SCIENCE; MGN; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>WILLIAM L. SJOGREN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mgn-v-rss-5-losapdr-l2-v1.13</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

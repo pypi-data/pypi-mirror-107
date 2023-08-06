@@ -1,0 +1,85 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-30, D. Kazden, updated to meet PDS 3.8 standards;       
+             2020-02-11, D. Kazden, updated CITATION_DESC;"                  
+                                                                             
+  OBJECT                         = DATA_SET                                  
+  DATA_SET_ID                    = "PVO-V-OETP-5-IONOPAUSELOCATION-V1.0"     
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "PVO VENUS ELECT TEMP PROBE DERVD       
+                                      IONOPAUSE LOCATION VER 1.0"            
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T15:07:34.817                 
+    STOP_TIME                      = 1992-10-07T19:46:27.000                 
+    DATA_OBJECT_TYPE               = TABLE                                   
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. ROBERT F. THEIS"                   
+    DETAILED_CATALOG_FLAG          = N                                       
+    ABSTRACT_DESC                  = "The Ionopause File. This file gives    
+    the orbit-by-orbit times and locations of the ionopause crossings, which 
+    are evident as sharp gradients in Ne at the top of the ionosphere.       
+    (These crossings always occur within 30 minutes of periapsis, so they    
+    may be seen in the High Resolution Ne files)."                           
+    DATA_SET_TERSE_DESC            = "PVO VENUS ELECT TEMP PROBE DERVD       
+                                            IONOPAUSE LOCATION VER 1.0"      
+    CITATION_DESC       = "Theis, R. F., PVO-V-OETP-5-IONOPAUSELOCATION-V1.0,
+                 PVO VENUS ELECT TEMP PROBE DERVD IONOPAUSE LOCATION VER 1.0,
+                           NASA Planetary Data System, 1993."                
+                                                                             
+    DATA_SET_DESC                  = "                                       
+The Ionopause File.  This file gives the orbit-by-orbit times and            
+locations of the ionopause crossings, which are evident as sharp gradients   
+in Ne at the top of the ionosphere. (These crossings always occur within 30  
+minutes of periapsis, so they may be seen in the High Resolution Ne files).  
+                                                                             
+The ionopause and bow shock crossing times and locations are easily          
+identified in the high resolution Ne measurements (Theis et al., 1980).      
+These files contain the UT, altitude, latitude, SZA and local time of each   
+crossing.                                                                    
+                                                                             
+On the dayside, the ionopause is taken (somewhat arbitrarily) at the level   
+in the steep gradient of the ionopause where Ne = 1x102 cm-3.  On the        
+nightside, the ionopause is selected at somewhat lower densities because     
+the absence of spacecraft photoelectrons lowers the Ne measurement           
+threshold.  In both cases, the intent is to identify the ionopause as the    
+point where the first rise of Ne above the background density occurs.  Of    
+course, the ionopause itself is not a point but is the extend region in which
+the ionopause density gradient occurs."                                      
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+The ionopause location is selected at that point in the steep gradient of the
+ionopause where Ne crosses through the level of 1x102 cm-3.  When the        
+spacecraft is in darkness, the pe background is absent and the ionospheric   
+Ne is also much lower, so the ionopause is identified as the first rise in Ne
+above whatever background is present.  The ionopause is identified by a      
+human operator who views each high resolution Ne pass plot on an             
+interactive computer terminal.  He selects the ionopause somewhat            
+subjectively as the time of the first rise above the background Ne, which    
+may consist of magnetosheath plasma or photoelectrons.  The 40 minute        
+pass plots used for this purpose provide only a 5-10 second accuracy in      
+the crossing times.  When irregularities or waviness in the ionopause        
+produce several ionopause crossings, the outer most crossing is the only     
+one identified."                                                             
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "THEISETAL1980"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  END_OBJECT                     = DATA_SET                                  
+  END

@@ -1,0 +1,36 @@
+<records>
+    <record>
+        <title>MAVEN Solar Energetic Particle (SEP) Raw Ion and Electron Counts Data Collection</title>
+        <creators>Larson, Davin, E.; Lillis, Robert, J.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>11/14/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Amaven.sep.calibrated%3Adata.counts&amp;version=1.9</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.sep.calibrated:data.counts::1.9</product_nos>
+            
+        <description>
+         A collection of raw MAVEN Solar Energetic Particle (SEP) ion and electron counts for each of the 256 particles counters.
+      </description>
+        <keywords>PDS; PDS4; Maven; Raw; Magnetosphere; Particles; Ions; Solar Energetic; Electrons; Mars Atmosphere and Volatile EvolutioN Mission; MAVEN; Solar Energetic Particle Experiment; Mars</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

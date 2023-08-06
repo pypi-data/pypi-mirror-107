@@ -1,0 +1,257 @@
+PDS_VERSION_ID           = PDS3
+LABEL_REVISION_NOTE     = "
+  2006-03-30, Robert A. Johnson (U. IOWA), initial;
+  2016-03-01, C. Piker (UIowa), addition of delay times table"
+
+
+RELEASE_ID              = 0005
+REVISION_ID             = 0000
+
+RECORD_TYPE             = STREAM
+
+OBJECT                  = DATA_SET
+  DATA_SET_ID             = "MEX-M-MARSIS-3-RDR-AIS-EXT6-V1.0"
+
+  OBJECT                  = DATA_SET_INFORMATION
+    DATA_SET_NAME           = "MARS EXPRESS MARS MARSIS RDR
+                               ACTIVE IONOSPHERE SOUNDING EXT6 V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"
+    DATA_OBJECT_TYPE        = TABLE
+    ARCHIVE_STATUS          = "ACCUMULATING"
+    START_TIME              = 2017-01-01T03:53:32.000
+    STOP_TIME               = 2018-07-02T17:04:20.663
+    DATA_SET_RELEASE_DATE   = 2017-12-21
+    PRODUCER_FULL_NAME      = "ANDREW J. KOPF"
+    DETAILED_CATALOG_FLAG   = "N"
+    DATA_SET_TERSE_DESC     = "
+      This data set contains the Mars Express MARSIS Active
+      Ionospheric Sounder data from orbit 16470 through the end
+      of the sixth extended mission.  The data are fully calibrated in
+      units of spectral density."
+
+    ABSTRACT_DESC           = "
+      The Mars Express MARSIS Active Ionospheric Sounder (AIS) full
+      resolution data set includes all spectral information
+      calibrated in units of spectral density for the Mars Express
+      sixth extended mission.  The data set consists of a
+      transmit frequency followed by a time series of spectral density
+      measurements of the received power.  Browse products contain
+      a spectrogram overview plot and individual ionograms for each
+      sounding  activity."
+
+    CITATION_DESC           = "A.J. Knopf, L.J. Granroth, and C.W. 
+      Piker, MARS EXPRESS M MARSIS ACTIVE IONOSPHERIC SOUNDER,
+      MEX-M-MARSIS-3-RDR-AIS-EXT6-V1.0, NASA Planetary Data System, 2017."
+
+    CONFIDENCE_LEVEL_NOTE = "Corrupted data have been flagged in data
+                             files where they occurred.  The label file
+                             for each data product contains an entry
+                             to flag this condition."
+
+    DATA_SET_DESC           = "
+
+  Data Set Overview
+  =================
+    The Mars Express Mars Advanced Radar for Subsurface and Active
+    Ionospheric Sounding (MARSIS) data set includes all spectral
+    information calibrated in units of spectral density for the
+    Active Ionospheric Sounder over the  Mars Express
+    mission.  This data set includes calibrated values for each
+    transmit event and the corresponding temporal data for each
+    frequency channel.
+
+
+  Parameters
+  ==========
+    This data set comprises the electric field spectral densities
+    obtained via the electric dipole antenna sensor.
+
+
+  Processing
+  ==========
+    Data in this data set were processed by the use of a number of
+    software programs.  These programs re-assembled and
+    de-compressed the raw telemetry data.  These raw values were
+    then calibrated into physical units: power received by the
+    electric antenna.  The data products were calibrated using the
+    best calibration tables and algorithms available at the time
+    of data archiving.  Should a significant improvement in
+    calibration become available, an erratum will be noted in the
+    erratum section.  Later versions of the products may contain
+    better calibrations.
+
+  Data
+  ====
+    The AIS calibrated full resolution data set includes several
+    binary tables of wave spectra as a function of time from each of
+    the various transmit events.  Each table will contain fixed-
+    length records including columns for time, transmit frequency,
+    and spectral densities from the temporal measurements.  The
+    number of transmit frequencies is constant at 160 frequencies per
+    frame and the number of samples per transmit frequency is
+    constant at 80 per transmit pulse.
+
+    Interpreting the provided intensities as remote emissions requires
+    knowledge of the time delay between the emitted pulse and the
+    measured electric spectral density.  The time offsets from the onset
+    of the transmit pulse until the measurement of each spectral density
+    value may be found from the relation:
+
+       delay time (microseconds) = 167.443 + 91.4286 * (item-1)
+
+    where item is the ITEM number from the SPECTRAL density column of
+    the AIS_TABLE data products.  The first item value is 1, not 0.
+
+    To make this more explicit these time values are pre-calculated
+    in the table below.
+
+         ITEM*  Delay (microsec)      ITEM*   Delay (microsec)
+         ----   ----------------      ----    ----------------
+            1             167.44        41             3824.59
+            2             258.87        42             3916.02
+            3             350.30        43             4007.44
+            4             441.73        44             4098.87
+            5             533.16        45             4190.30
+            6             624.59        46             4281.73
+            7             716.01        47             4373.16
+            8             807.44        48             4464.59
+            9             898.87        49             4556.02
+           10             990.30        50             4647.44
+           11            1081.73        51             4738.87
+           12            1173.16        52             4830.30
+           13            1264.59        53             4921.73
+           14            1356.01        54             5013.16
+           15            1447.44        55             5104.59
+           16            1538.87        56             5196.02
+           17            1630.30        57             5287.44
+           18            1721.73        58             5378.87
+           19            1813.16        59             5470.30
+           20            1904.59        60             5561.73
+           21            1996.02        61             5653.16
+           22            2087.44        62             5744.59
+           23            2178.87        63             5836.02
+           24            2270.30        64             5927.44
+           25            2361.73        65             6018.87
+           26            2453.16        66             6110.30
+           27            2544.59        67             6201.73
+           28            2636.02        68             6293.16
+           29            2727.44        69             6384.59
+           30            2818.87        70             6476.02
+           31            2910.30        71             6567.45
+           32            3001.73        72             6658.87
+           33            3093.16        73             6750.30
+           34            3184.59        74             6841.73
+           35            3276.02        75             6933.16
+           36            3367.44        76             7024.59
+           37            3458.87        77             7116.02
+           38            3550.30        78             7207.45
+           39            3641.73        79             7298.87
+           40            3733.16        80             7390.30
+         -----------------------      ------------------------
+         * Here ITEM refers to the ITEM number of the column
+           named SPECTRAL_DENSITY in the AIS_TABLE of the
+           data products on this volume.
+
+    A basic method for determining the range at which an emission was
+    generated is to multiply the delays above with 1/2 the speed of
+    light in a vacuum.
+
+      apparent range (kilometers) =  0.1499 * (167.443 + 91.4286 * (item-1))
+
+    The assumption that the signal propagates at the speed of light in
+    a vacuum does not hold when the pulse traverses regions where the
+    local plasma frequency is near the pulse frequency.  For more
+    information on these effects and more see the file:
+
+         AIS_SIGNAL_PROCESSING_REQ.PDF
+
+    in the DOCUMENT directory of this volume.
+
+
+  Ancillary Data
+  ==============
+    No Ancillary data are provided.
+
+
+  Coordinate System
+  =================
+    The data in this data set are measurements of wave electric
+    fields measured by the MARSIS electric sensors.  These fields are
+    presented as detected by the sensors and are not rotated into any
+    other coordinate system.  If desired the SPICE kernels can be
+    used with the SPICE toolkit to convert from the spacecraft frame
+    to virtually any frame which may be of use in analyzing these
+    data.  However, for many purposes, the wave amplitudes are
+    extremely useful and may be entirely adequate with no coordinate
+    transformations at all.
+
+
+  Software
+  ========
+    Sample code is provided with these data which demonstrates how
+    to read these files in order to build a set of time-ordered
+    wave spectra.  The sample code and algorithms are found in the
+    SOFTWARE directory.
+
+
+  Confidence Level Overview
+  =========================
+    This data set contains all active ionospheric calibrated data for
+    the Mars Express MARSIS for the interval described above.  Every
+    effort has been made to ensure that all data returned to Iowa
+    from the spacecraft is included and that the calibration is
+    accurate.
+
+
+  Review
+  ======
+    The MARSIS active ionospheric sounder data will be reviewed
+    internally by the Mars Express MARSIS team prior to release to
+    the PDS. The data set will also be peer reviewed by the PDS.
+
+
+  Data Coverage and Quality
+  =========================
+    All data in the stated interval are included to the best of our
+    knowledge and attempts to determine completeness.  In general,
+    the instrument was operated only briefly during early cruise
+    phase for the purpose of Antenna deployment and periodic
+    instrument health. During this time, flight restrictions
+    precluded any transmit events and hence no science data.
+
+    Beginning in June of 2005 commissioning of the instrument
+    commenced more-or-less continuously for about a month.  During
+    this period instrument gain settings and transmit frequencies
+    were optimized for maximum signal-to-noise ratios as well as
+    avoidance of interference generated by the spacecraft and by
+    other instruments.
+
+
+  Limitations
+  ===========
+    One measurement quality issue deals with the data compression
+    algorithm used by the MARSIS onboard processor, which generates
+    values of zero when the measured AIS values should be small but
+    non-zero."
+
+  END_OBJECT              = DATA_SET_INFORMATION
+
+  OBJECT                  = DATA_SET_TARGET
+    TARGET_NAME             = MARS
+  END_OBJECT              = DATA_SET_TARGET
+
+  OBJECT                  = DATA_SET_HOST
+    INSTRUMENT_HOST_ID      = MEX
+    INSTRUMENT_ID           = MARSIS
+  END_OBJECT              = DATA_SET_HOST
+
+  OBJECT                  = DATA_SET_MISSION
+    MISSION_NAME            = "MARS EXPRESS"
+  END_OBJECT              = DATA_SET_MISSION
+
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID        = "GURNETTETAL2005"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT              = DATA_SET
+END

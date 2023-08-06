@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO PROBE NET FLUX RADIOMETER DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GP-J-NFR-3-ENTRY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1996-12-08</publication_date>
+            <country>USA</country>
+            <description>The Galileo Probe Net Flux Radiometer (NFR) measured net and
+                upward radiation fluxes in Jupiter's atmosphere between
+                about 0.44 bars and 14 bars, using five spectral channels to
+                separate solar and thermal components. The instrument used an
+                optical head extending through the probe wall to obtain views of
+                the Jovian atmosphere. It sampled upward and downward radiation
+                fluxes with a single 40 degree (full angle) conical field of view
+            chopped between directions +/- 45 degrees from horizontal.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GP-J-NFR-3-ENTRY-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO PROBE; JUPITER; RADIOMETER; GP; PLANET; NFR; NET FLUX RADIOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>LAURENCE SROMOVSKY</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.gp-j-nfr-3-entry-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

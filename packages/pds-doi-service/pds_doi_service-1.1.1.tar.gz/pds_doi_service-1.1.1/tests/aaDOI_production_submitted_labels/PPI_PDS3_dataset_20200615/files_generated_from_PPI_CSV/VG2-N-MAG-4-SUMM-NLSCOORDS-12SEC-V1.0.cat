@@ -1,0 +1,11 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+920812 -- EFRIED;                                                             
+920818 -- EFRIED, Corrected REFKEYID to include year;                         
+920911 -- EFRIED;                                                             
+920918 -- RMONARREZ, updated Data Set templates according to new std.         
+Data Set Template -&#10095; Spacecraft Data Set Template event_start_time,           
+event_stop_time -&#10095; start_time, stop_time;                                     
+920924 -- EFRIED, Revised DATA_SET_ID and DATA_SET_NAME;                      
+921009 -- EFRIED, Revised AUTHOR_FULL_NAME last changes made;                 
+110602 -- DKAZDEN, removed unnecessary keywords, changed END

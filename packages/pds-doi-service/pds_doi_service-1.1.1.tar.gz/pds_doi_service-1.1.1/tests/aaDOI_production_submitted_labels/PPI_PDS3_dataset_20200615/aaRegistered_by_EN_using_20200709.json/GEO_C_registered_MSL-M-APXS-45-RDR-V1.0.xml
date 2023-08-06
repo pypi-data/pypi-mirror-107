@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MSL MARS ALPHA PARTICLE X-RAY SPECTROMETER 4/5 RDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MSL-M-APXS-4/5-RDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2013-03-20</publication_date>
+            <country>USA</country>
+            <description>The MSL APXS RDR data set contains calibrated spectra and oxide
+                weight percent data derived from observations of the APXS
+                instrument aboard the Mars Science Laboratory rover. Two types of
+                products are included: summed X-ray spectra in counts as a
+                function of energy, and abundance data for a set of standard
+                elements and oxides, derived from the summed spectra. Both
+                product types are given as ASCII text files in
+                comma-separated-value (CSV) format, suitable for reading with
+            spreadsheet software.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MSL-M-APXS-4%2F5-RDR-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MARS SCIENCE LABORATORY; MARS; SPECTROMETER; MSL; PLANET; APXS; ALPHA PARTICLE X-RAY SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RALF GELLERT</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.msl-m-apxs-4-5-rdr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

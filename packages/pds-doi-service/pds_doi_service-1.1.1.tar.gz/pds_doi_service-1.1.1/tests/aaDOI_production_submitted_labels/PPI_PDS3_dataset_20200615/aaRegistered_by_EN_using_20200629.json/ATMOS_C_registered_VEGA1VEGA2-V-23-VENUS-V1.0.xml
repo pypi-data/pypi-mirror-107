@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VEGA1/VEGA2 VENUS DATA</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VEGA1/VEGA2-V-2/3-VENUS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2020-02-01</publication_date>
+            <country>USA</country>
+            <description>The longest-lived in-situ measurement
+                platforms at Venus have been the Soviet VEGA balloons in 1985 and the only
+                high-quality pressure/temperature profile in the lowest 10km of the atmosphere
+            is that from the VEGA-2 lander.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VEGA1%2FVEGA2-V-2%2F3-VENUS-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VEGA 1; VEGA 2; VENUS; METEOROLOGY; VEGA1; VEGA2; PLANET; VG1BL; VG2BL; VG2LR; VEGA 1 BALLOON; VEGA 2 BALLOON; VEGA2 LANDER METEO</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RALPH D. LORENZ</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vega1-vega2-v-2-3-venus-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

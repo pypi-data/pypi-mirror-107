@@ -1,0 +1,181 @@
+PDS_VERSION_ID                = PDS3                                           
+LABEL_REVISION_NOTE          = "                                              
+Received from instrument team, 2002;                                          
+Mark Sharlow (ODL, format), 2003;                                             
+D. Kazden, 2009-04-09, additional Keywords included;                          
+D. Kazden, updated CITATION_DESC;"                                            
+RECORD_TYPE                  = STREAM                                         
+                                                                              
+OBJECT                       = DATA_SET                                       
+  DATA_SET_ID                  = "LP-L-MAG-4-LUNAR-FIELD-TS-V1.0"             
+OBJECT                         = DATA_SET_INFORMATION                         
+    DATA_SET_NAME                  =                                          
+        "LP Moon MAG Level 4 Lunar Magnetic Field Time Series V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1998-01-16                               
+    STOP_TIME                      = 1999-07-29                               
+    DATA_SET_RELEASE_DATE          = 2003-10-01                               
+    PRODUCER_FULL_NAME             = "LON L. HOOD"                            
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_SET_TERSE_DESC = "                                                   
+LP magnetometer (MAG) Level 2 Data (CODMAC Level 4).                          
+Selected and filtered time series data at 5 second intervals.                 
+Approximate measurements of the lunar crustal magnetic field with             
+external (solar wind and magnetospheric) fields removed or minimized."        
+    CITATION_DESC              = "Hood, L.L., LP-L-MAG-4-LUNAR-FIELD-TS-V1.0, 
+                   LP Moon MAG Level 4 Lunar Magnetic Field Time Series V1.0, 
+                                   NASA Planetary Data System, 2003."         
+    ABSTRACT_DESC = "                                                         
+LP magnetometer (MAG) Level 2 Data (CODMAC Level 4).                          
+Selected and filtered time series data at 5 second intervals.                 
+Approximate measurements of the lunar crustal magnetic field with             
+external (solar wind and magnetospheric) fields removed or minimized."        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  ====================================================================        
+  Overview:                                                                   
+  =========                                                                   
+                                                                              
+    Lunar Prospector magnetometer (MAG) Level 2 Data (CODMAC Level 4).        
+    Selected and filtered time series data at 5 second intervals from         
+    the Lunar Prospector (LP) polar orbital mission to the Moon               
+    (January 1998 to July 1999).  These data represent approximate            
+    measurements of the lunar crustal magnetic field with external            
+    (solar wind and magnetospheric) fields removed or minimized.              
+    Latitude / longitude coverage is limited to specific regions              
+    overpassed by thespacecraft during the selected intervals.  Vector        
+    magnetic field components are given in two coordinate systems:            
+    Selenographic (SG) coordinates and east, north, and radial (ENR)          
+    coordinates.                                                              
+                                                                              
+                                                                              
+  ======================================================================      
+  Parameters:                                                                 
+  =========                                                                   
+                                                                              
+    The measured parameters consist of the three vector components            
+    of the lunar crustal magnetic field in SG and ENR coordinates             
+    sampled at 5-second intervals.  The units of the field measurements       
+    are nanoTeslas (nT). 1 nT = 0.00001 Gauss.  SG coordinates is a           
+    system centered in the Moon with X directed toward 0 N, 0 E, Z            
+    directed toward the north selenographic pole, and Y directed toward       
+    0 N, 90 E.  ENR coordinates are centered at the instantaneous             
+    spacecraft location with X directed eastward, Y directed northward,       
+    and Z directed radial to the Moon.                                        
+                                                                              
+                                                                              
+  ======================================================================      
+  Processing:                                                                 
+  =========                                                                   
+                                                                              
+    Data were first selected from magnetically quiet periods when the         
+    Moon was in a lobe of the Earth's magnetotail or when the Moon was in     
+    the solar wind but the spacecraft was in the lunar wake.                  
+    Hand-editing was applied to eliminate intervals of obvious                
+    transient external fields.  Finally, long-wavelength (&#10095; 500 km)           
+    non-lunar fields were minimized (detrended) using a suitable filter.      
+                                                                              
+                                                                              
+  ======================================================================      
+  File Names and Format:                                                      
+  =========                                                                   
+                                                                              
+    Each file (in ascii format) is named as yy_ddd_nnx.TAB, where yy is       
+    year number (98 or 99), ddd is day of year, nn is orbit number on the     
+    selected day, x is an optional letter (A, B, etc.) to distinguish         
+    multiple files in one day, and 'TAB' indicates an ASCII table file.       
+    Each file contains the Universal time hour of day of the                  
+    measurement, the magnetic field components (BX, BY, BZ) in SG             
+    coordinates, the magnetic field components (BE, BN, BR) in ENR            
+    coordinates, the latitude, longitude, and approximate altitude            
+    (in kilometers) above the lunar surface at which the measurement          
+    was obtained. The altitude is estimated by subtracting the mean           
+    lunar radius (1738 km) from the radial distance of the spacecraft         
+    to the lunar center of figure.                                            
+                                                                              
+    List of columns in the files:                                             
+                                                                              
+      Column 1: Hour of day in Universal time (to 4 decimal places)           
+      Column 2: BX in nanoTeslas; X component of the magnetic field           
+                in SG Coordinates.  See Data Set Description for              
+                definition of SG Coordinates.                                 
+      Column 3: BY in nanoTeslas; Y component of the magnetic field           
+                in SG Coordinates.                                            
+      Column 4: BZ in nanoTeslas; Z component of the magnetic field           
+                in SG Coordinates.                                            
+      Column 5: BE in nanoTeslas; East comp. of the magnetic field            
+                in ENR coordinates.  See Data Set Description for             
+                definition of ENR coordinates.                                
+      Column 6: BN in nanoTeslas; North comp. of the magnetic field           
+                in ENR coordinates.                                           
+      Column 7: BR in nanoTeslas; Radial comp. of the magnetic field          
+                in ENR coordinates.                                           
+      Column 8: Lunar Latitude in degrees; north is positive.                 
+      Column 9: Lunar east longitude in degrees.                              
+      Column 10: Approximate altitude of spacecraft in kilometers."           
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+                                                                              
+  ======================================================================      
+  Review:                                                                     
+  =======                                                                     
+                                                                              
+    These data have been examined by the data producer, and as of             
+    2003-10-01 are being prepared for peer review by the PDS.                 
+                                                                              
+                                                                              
+  ======================================================================      
+  Limitations:                                                                
+  ============                                                                
+                                                                              
+    The quality of the measurements is a strong function                      
+    of the spacecraft altitude, which varies from a minimum of about 80       
+    km during the first year of the mission to about 15 km during the         
+    final six months of the mission.  The best crustal field measurements     
+    were therefore obtained during the final ''extended mission'' phase       
+    when the orbit periapsis was lowest.  The surface resolution of the       
+    measurements is normally of the same order as the spacecraft              
+    altitude.  However, at the lowest altitudes (about 15 km), the            
+    resolution is limited also by the orbit track separation, which is        
+    approximately 30 km at the lunar equator.  The accuracy to which the      
+    crustal field is measured at a single point along the spacecraft          
+    trajectory is limited by residual external field variations and is        
+    approximately 0.1 nT.                                                     
+                                                                              
+                                                                              
+  ======================================================================      
+  Data Coverage:                                                              
+  ==============                                                              
+                                                                              
+    The coverage of the measurements over the lunar surface is limited to     
+    those areas on the near and far side when the Moon and the LP             
+    spacecraft were favorably located to allow direct measurements of the     
+    crustal magnetic field."                                                  
+                                                                              
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = MOON                                     
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = LP                                       
+    INSTRUMENT_ID                  = MAG                                      
+  END_OBJECT                     = DATA_SET_HOST                              
+
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                 = "LUNAR PROSPECTOR"                         
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID             = "N/A"                                      
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

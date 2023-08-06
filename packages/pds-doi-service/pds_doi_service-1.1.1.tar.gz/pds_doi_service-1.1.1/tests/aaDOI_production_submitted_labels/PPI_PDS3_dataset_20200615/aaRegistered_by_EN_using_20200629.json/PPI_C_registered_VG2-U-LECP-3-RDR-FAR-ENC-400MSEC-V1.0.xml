@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 LECP 0.4S HIGH RESOLUTION URANUS FAR ENCOUNTER DATA</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2002-08-21</publication_date>
+            <country>USA</country>
+            <description>This far encounter data set consists of electron and ion
+                counting rate data from the Low Energy Charged Particle (LECP)
+                experiment on Voyager 2 while the spacecraft was within the
+                vicinity of Uranus. This instrument measures the intensities
+                of in-situ charged particles ( &gt;13 keV electrons and &gt;24 keV
+                ions) with various levels of discrimination based on energy
+                range and mass species. A subset of almost 100 LECP channels
+                are included in this data set. The LECP data are globally
+                calibrated to the extent possible.  During Uranus far
+                encounter, the entire LEPT (Low Energy Particle Telescope)
+                and part of the LEMPA (Low Energy Magnetospheric Particle
+                Analyzer) subsystems were turned on for data collection.
+                Particles include electrons, protons, alpha particles, and
+                light, medium, and heavy nuclei particles.  The far encounter
+                data are 0.4 second rate measurements within 1/8 of the LECP
+                instrumental motor rotation period (the angular scanning
+            periods, or step period).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CHARGED PARTICLE ANALYZER; LECP; LOW ENERGY CHARGED PARTICLE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>BARRY H. MAUK</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-u-lecp-3-rdr-far-enc-400msec-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

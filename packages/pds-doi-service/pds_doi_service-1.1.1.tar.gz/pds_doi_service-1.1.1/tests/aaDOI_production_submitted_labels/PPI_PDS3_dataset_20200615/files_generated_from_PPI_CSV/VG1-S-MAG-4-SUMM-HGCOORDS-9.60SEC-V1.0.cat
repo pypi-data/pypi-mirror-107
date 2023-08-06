@@ -1,0 +1,311 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+X. LIU (added DATA_SET_TERSE_DESC) 2002-10-02;                                
+D. Kazden added ABSTRACT_DESC and CITATION_DESC, 2011-04-27;                  
+D. Kazden updated REFERENCE_KEY_IDs, 2011-10-19;                              
+D. Kazden updated CITATION_DESC, 2020-02-27;"                                 
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG1-S-MAG-4-SUMM-HGCOORDS-9.60SEC-V1.0" 
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG1 SAT MAG RESAMPLED HELIOGRAPHIC (RTN)
+                                      COORDS 9.60SEC V1.0"                    
+DATA_SET_COLLECTION_MEMBER_FLG     = N                                        
+    START_TIME                     = 1980-11-10T00:00:34.923                  
+    STOP_TIME                      = 1980-11-21T00:00:25.465                  
+    DATA_SET_RELEASE_DATE          = 1996-01-01                               
+    PRODUCER_FULL_NAME             = "NATIONAL SPACE SCIENCE DATA CENTER"     
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    ABSTRACT_DESC                  = "This data set includes calibrated       
+    magnetic field data acquired by the Voyager 1 Low Field Magnetometer      
+    (LFM) during the Saturn encounter. Coverage begins in the solar wind      
+    inbound to Saturn and continues past the last outbound bowshock crossing. 
+    The data are in Heliographic (RTN) coordinates and have been averaged     
+    from the 1.92 second summary rate to a 9.6 second sample rate. All        
+    magnetic field measurements are given in nanoTesla (nT). The magnetic     
+    field data are calibrated (see the calibration description included in    
+    the Voyager 1 Magnetometer instrument catalog file for details)."         
+    CITATION_DESC              = "Ness, N.F., Connerney, J.E., Lepping, R.P., 
+                         VG1-S-MAG-4-SUMM-HGCOORDS-9.60SEC-V1.0, VG1 SAT MAG  
+                         RESAMPLED HELIOGRAPHIC (RTN) COORDS 9.60SEC V1.0,    
+                              NASA Planetary Data System, 1996."              
+    DATA_SET_TERSE_DESC            = "                                        
+    Voyager 1 1.92 second averaged magnetometer data from the Saturn          
+    encounter in Heliographic (RTN) coordinates."                             
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+                                                                              
+    This data set includes calibrated magnetic field data acquired by         
+    the Voyager 1 Low Field Magnetometer (LFM) during the Saturn              
+    encounter. Coverage begins in the solar wind inbound to Saturn and        
+    continues past the last outbound bowshock crossing. The data are in       
+    Heliographic (RTN) coordinates and have been averaged from the 1.92       
+    second summary rate to a 9.6 second sample rate. All magnetic field       
+    measurements are given in nanoTesla (nT). The magnetic field data         
+    are calibrated (see the calibration description included in the           
+    Voyager 1 Magnetometer instrument catalog file for details).              
+                                                                              
+                                                                              
+    Parameters                                                                
+    ==========                                                                
+                                                                              
+    The full LFM instrument sample rate is 1 sample per 0.06 seconds.         
+    Full telemetry resolution 'detail' data must be obtained from the         
+    instrument team. For this data set, the data have been resampled to       
+    9.6 seconds from 1.92 second summary data. The 1.92 second data were      
+    in turn resampled from the detail data.                                   
+                                                                              
+    The LFM has eight dynamic ranges. The instrument is designed switch       
+    between dynamic ranges automatically depending upon the observed          
+    magnetic field magnitude and fluctuations. Instrument digitization        
+    uncertainty depends upon dynamic range as indicated in the following      
+    table (from [BEHANNONETAL1977]).                                          
+                                                                              
+    -----------------------------------------------                           
+    LFM Dynamic ranges and quantization uncertainty                           
+    -----------------------------------------------                           
+    Range (nT)               Quantization (nT)                                
+    -----------------------------------------------                           
+    1.  +/- 8.8                    +/- .0022                                  
+    2.  +/- 26                     +/- .0063                                  
+    3.  +/- 79                     +/- .019                                   
+    4.  +/- 240                    +/- .059                                   
+    5.  +/- 710                    +/- .173                                   
+    6.  +/- 2100                   +/- .513                                   
+    7.  +/- 6400                   +/- 1.56                                   
+    8.  +/- 50,000                 +/- 12.2                                   
+                                                                              
+                                                                              
+    Processing                                                                
+    ==========                                                                
+                                                                              
+    Voyager EDR's undergo the following processing in order to produce        
+    these 9.6 second averaged summary data:                                   
+                                                                              
+      * Read EDR                                                              
+      * Unpack header block (rec. id, s/c id, tel. mode, FDS counts,          
+        data flags)                                                           
+      * Convert selected time tags to integer time (yy/ddd/hh:mm:ss.fff)      
+      * Unpack sub-header block (MAG status words, plasma data)               
+      * Unpack science block (MAG counts)                                     
+      * Convert counts to gammas                                              
+      * Apply sensor and boom alignment matrices                              
+      * Rotate (optional) 1.92 second averages while averaging detail         
+        gammas to create 1.92 second averages                                 
+      * Average 1.92 second data to 9.6 seconds                               
+      * Write Summary record                                                  
+                                                                              
+    Counts are measured onboard using 12 bit words that may represent         
+    values ranging from 0-4096. Integer counts are converted to magnetic      
+    field units (gammas) by subtracting a zero offset, from the measured      
+    MAG value and multiplying this difference by the sensitivity of the       
+    instrument.                                                               
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+                                                                              
+    The data files are given in ASCII, fixed field width, comma               
+    delimited tables. The record structure is described in the following      
+    table:                                                                    
+                                                                              
+    --------------------------------------------------------------------      
+    9.6 Second Heliographic (RTN) Coordinates                                 
+    --------------------------------------------------------------------      
+    Column   Type    Description &#10094;units&#10095;                                      
+    --------------------------------------------------------------------      
+    time     a23     spacecraft event time (UT) of the sample in the          
+                     format: yyyy-mm-ddThh:mm:ss.sss                          
+    sclk     a12     spacecraft clock in the format:                          
+                     MOD65536:MOD60:FDS-LINE                                  
+    mag_id   i1      magnetometer ID (1 = LFM, 2 = HFM)                       
+    Br       f9.3    average of detail magnetic field R component in nT       
+    Bt       f9.3    average of detail magnetic field T component in nT       
+    Bn       f9.3    average of detail magnetic field N component in nT       
+    Bmag     f9.3    magnitude of the averaged magnetic field components      
+                     in nT                                                    
+    avg_Bmag f9.3    average of the magnetic field magnitude over the         
+                     averaging interval in nT                                 
+    Delta    f7.3    spacecraft centered heliographic magnetic field          
+                     latitude in degrees: Delta = asin(Bn/Bmag)               
+    Lambda   f7.3    spacecraft centered heliographic magnetic field          
+                     longitude in degrees: Lambda = atan(Bt/Br)               
+    rms_Br   f8.3    root-mean-square deviation of Br over the averaging      
+                     interval in nT                                           
+    rms_Bt   f8.3    root-mean-square deviation of Bt over the averaging      
+                     interval in nT                                           
+    rms_Bn   f8.3    root-mean-square deviation of Bn over the averaging      
+                     interval in nT                                           
+    npts     i2      number of detail points in the average                   
+                                                                              
+    [Note that the magnetic field vector descriptions given above             
+    are best at lower latitudes, including all latitudes reached by           
+    Voyager during the Saturn encounter]                                      
+                                                                              
+                                                                              
+    Ancillary Data                                                            
+    ==============                                                            
+                                                                              
+    An ancillary data file containing the derived spacecraft magnetic         
+    field is provided with this data at a 48 second sample rate. These        
+    data provide zero level offsets used in the data processing.              
+    Spacecraft field data is provided in spacecraft coordinates as            
+    follows:                                                                  
+                                                                              
+    --------------------------------------------------------------------      
+    48 Second Spacecraft Field (Payload) Averages                             
+    --------------------------------------------------------------------      
+    Column   Type    Description &#10094;units&#10095;                                      
+    --------------------------------------------------------------------      
+    time     a23     spacecraft event time (UT) of the sample in the          
+                     format: yyyy-mm-ddThh:mm:ss.sss                          
+    sclk     a12     spacecraft clock in the format:                          
+                     MOD65536:MOD60:FDS-LINE                                  
+    mag_id   i1      magnetometer ID (1 = LFM, 2 = HFM)                       
+    Bx       1pe10.3 average Bx spacecraft field in nT (payload coords.)      
+    By       1pe10.3 average By spacecraft field in nT (payload coords.)      
+    Bz       1pe10.3 average Bz spacecraft field in nT (payload coords.)      
+    Bmag     1pe10.3 magnitude of spacecraft field in nT                      
+    rms_Bx   1pe10.3 root-mean-square deviation of Bx over the averaging      
+                     interval in nT                                           
+    rms_By   1pe10.3 root-mean-square deviation of By over the averaging      
+                     interval in nT                                           
+    rms_Bz   1pe10.3 root-mean-square deviation of Bz over the averaging      
+                     interval in nT                                           
+    npts     i4      number of points in the average                          
+                                                                              
+                                                                              
+    Coordinate Systems                                                        
+    ==================                                                        
+                                                                              
+    These data are provided in a heliographic right handed spherical          
+    coordinate system known as RTN. RTN coordinates are defined by the        
+    following directions:                                                     
+                                                                              
+      R - radial direction: along the Sun to spacecraft line, positive        
+          in the anti-Sunward direction                                       
+      T - tangetial direction: Omega (the Sun's spin axis) X R (parallel      
+          to the Solar Equatorial plane)                                      
+      N - normal direction: completes the right handed set                    
+                                                                              
+                                                                              
+    References                                                                
+    ==========                                                                
+                                                                              
+    The reference documents for this data set are:                            
+                                                                              
+    [ACUNAETAL1981B]      Acuna, M.H., J.E.P. Connerney, and N.F. Ness,       
+                          Topology of Saturn's Main Magnetic Field,           
+                          Nature, 292, 721, 1981.                             
+                                                                              
+    [BEHANNONETAL1981B]   Behannon, K.W., J.E.P. Connerney, and N.F.          
+                          Ness, Saturn's Magnetic Tail: Structure and         
+                          Dynamics, Nature, 292, 753, 1981.                   
+                                                                              
+    [BEHANNONETAL1983]    Behannon, K.W., R.P. Lepping, and N.F. Ness,        
+                          Structure and Dynamics of Saturn's Outer            
+                          Magnetosphere and Boundary Regions, J.              
+                          Geophys. Res., 88, 8791, 1983.                      
+                                                                              
+    [CONNERNEYETAL1983]   Connerney, J.E.P., M.H. Acuna, and N.F. Ness,       
+                          Currents in Saturn's Magnetosphere, J.              
+                          Geophys. Res., 88, 8779, 1983.                      
+                                                                              
+    [LEPPINGETAL1981D]    Lepping, R.P., L.F. Burlaga, and L.W. Klein,        
+                          Surface Waves on Saturn's Magnetopause,             
+                          Nature, 292, 750, 1981.                             
+                                                                              
+    [NESSETAL1981]        Ness, N.F., M.H. Acuna, R.P. Lepping, J.E.P.        
+                          Connerney, K.W. Behannon, L.F. Burlaga, and         
+                          F.M. Neubauer, Magnetic Field Studies by            
+                          Voyager 1: Preliminary Results at Saturn,           
+                          Science, 212, 211, 1981.                            
+                                                                              
+    [NESSETAL1982B]       Ness, N.F., M.H. Acuna, K.W. Behannon, L.F.         
+                          Burlaga, J.E.P. Connerney, R.P. Lepping, and        
+                          F.M. Neubauer, Magnetic Field Studies by            
+                          Voyager 2: Preliminary Results at Saturn,           
+                          Science, 215, 558, 1982."                           
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+    Review                                                                    
+    ======                                                                    
+                                                                              
+    These data have been reviewed by the instrument team and are of the       
+    highest quality that can be generated at this time. Science results       
+    based on these data have been published in several journals               
+    (Science, Nature, JGR, etc.). After submission to the PDS, these          
+    data successfully completed the peer review process.                      
+                                                                              
+                                                                              
+    Data Coverage and Quality                                                 
+    =========================                                                 
+                                                                              
+    These data originally included an 8-byte flag indicating software or      
+    spacecraft hardware intervention which reduced confidence in the          
+    data. However, these flags were provided only at a 48 second rate         
+    and are not included in this data set. To identify data confidence        
+    concerns in this data set please refer to the data flag provided in       
+    the 48 second data set. Data confidence conditions apply beginning        
+    at the record matching the time tag of the 48 second data and             
+    persist for 48 seconds (or 5 records in the 9.6 second data)."            
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = SATURN                                   
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG1                                      
+    INSTRUMENT_ID                  = MAG                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "ACUNAETAL1981B"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BEHANNONETAL1977"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BEHANNONETAL1981B"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BEHANNONETAL1983"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "CONNERNEYETAL1983"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "LEPPINGETAL1981D"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "NESSETAL1981"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "NESSETAL1982B"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

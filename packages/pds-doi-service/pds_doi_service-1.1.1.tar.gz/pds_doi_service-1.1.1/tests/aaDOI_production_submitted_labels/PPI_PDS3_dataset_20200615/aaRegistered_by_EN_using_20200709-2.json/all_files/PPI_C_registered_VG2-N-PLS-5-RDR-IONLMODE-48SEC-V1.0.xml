@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 NEP PLS DERIVED RDR ION OUTBND MAGSHTH L-MODE 48SEC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-N-PLS-5-RDR-IONLMODE-48SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1991-07-22</publication_date>
+            <country>USA</country>
+            <description>This data set gives the best available values for ion densities,
+                temperatures, and velocities near Neptune derived from data
+                obtained by the Voyager 2 plasma experiment. All parameters are
+                obtained by fitting the observed spectra (current as a function
+                of energy) with Maxwellian plasma distributions, using a
+                non-linear least squares fitting routine to find the plasma
+                parameters which, when coupled with the full instrument response,
+                best simulate the data. The PLS instrument measures
+                energy/charge, so composition is not uniquely determined but can
+                be deduced in some cases by the separation of the observed
+                current peaks in energy (assuming the plasma is co-moving). In
+                the upstream solar wind protons are fit to the M-long data since
+                high energy resolution is needed to obtain accurate plasma
+                parameters. In the magnetosheath the ion flux so low that several
+                L-long spectra (3-5) had to be averaged to increase the
+                signal-to-noise ratio to a level at which the data could be
+                reliably fit. These averaged spectra were fit using 2 proton
+                maxwellians with the same velocity. The values given in the
+                upstream magnetosheath are the total density and the
+                density-weighted temperature. In both the upstream solar wind and
+                magnetosheath full vector velocities, densities and temperatures
+                are derived for each fit component. In the magnetosphere, spectra
+                do not contain enough information to obtain full velocity
+                vectors, so flow is assumed to be purely azimuthal. In some cases
+                the azimuthal velocity is a fit parameter, in some cases rigid
+                corotation is assumed. In the 'outer' magnetosphere
+                (L&gt;5) two distinct current peaks appear in the spectra H+ and
+                N+. In the inner magnetosphere the plasma is hot and the
+                composition is ambiguous, although two superimposed Maxwellians
+                are still required to fit the data. These spectra are fit using
+                two compositions, one with H+ and N+ and the second with two H+
+                components. The N+ composition is preferred by the data provider.
+                All fit values in the magnetosphere come with one sigma errors.
+                It should be noted that no attempt has been made to account for
+                the spacecraft potential, which is probably about -10 V in this
+                region and will effect the density and velocity values. In the
+                outbound magnetosheath and solar wind both moment and fit values
+                are given for velocity, density, and thermal speed. The
+                signal-to-noise ratio in the M-longs is very low, especially near
+                the magnetopause, which can result in the analysis giving
+                incorrect values. The L-long spectra have too low an energy
+                resolution to permit accurate determinations parameters in many
+                regions temperature and non-radial velocity components may be
+            inaccurate.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-N-PLS-5-RDR-IONLMODE-48SEC-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; NEPTUNE; PLASMA ANALYZER; VG2; PLANET; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>JOHN D. RICHARDSON</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-n-pls-5-rdr-ionlmode-48sec-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

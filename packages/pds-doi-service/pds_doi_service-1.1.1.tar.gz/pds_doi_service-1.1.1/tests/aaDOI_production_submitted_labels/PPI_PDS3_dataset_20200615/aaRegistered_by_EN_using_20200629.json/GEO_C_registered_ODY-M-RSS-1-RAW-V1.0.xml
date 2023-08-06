@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>2001 MARS ODYSSEY RADIO SCIENCE RAW DATA SET - V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>ODY-M-RSS-1-RAW-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2002-02-28</publication_date>
+            <country>USA</country>
+            <description>2004-02-27 RS:simpson added2004-03-01 RS:simpson revisedThis data
+                set contains archival raw, partially processed, and
+                ancillary/supporting radio science data acquired during the 2001
+                Mars Odyssey (ODY) mission. The radio observations were carried
+                out using the ODY spacecraft and Earth-based receiving stations
+                of the NASA Deep Space Network (DSN). The observations were
+                designed to test the spacecraft radio system, the DSN ground
+                system, and ODY operations procedures and to be used in
+                reconstructing the spacecraft orbit, generating high-resolution
+                gravity field models of Mars, and determining the nature of the
+                near-Sun solar plasma. Of most interest are likely to be the
+                Orbit Data Files in the ODF directory and the ionospheric and
+                tropospheric media calibration files in the ION and TRO
+                directories, respectively. The first ODF in the data set begins
+                on 2002-01-06, which was actually in the late stages of the
+                Aerobraking Phase and just before periapsis was lowered for about
+                2 weeks to about 200 km; the Mapping altitude was about 400 km.
+                Data were delivered to PDS in approximately chronological order
+                at the rate of 1-3 CD-WO volumes per month, of which about 0.01
+                GB/month were ODF's. By volume, the largest data type was
+                either the Archival Tracking Data File (TDF; until early 2003) or
+                the Tracking and Navigation File (TNF; beginning early 2003),
+            both of which served as parents of the ODF.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=ODY-M-RSS-1-RAW-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>2001 MARS ODYSSEY; MARS; SUN; RADIO SCIENCE; ODY; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RICHARD A. SIMPSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.ody-m-rss-1-raw-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

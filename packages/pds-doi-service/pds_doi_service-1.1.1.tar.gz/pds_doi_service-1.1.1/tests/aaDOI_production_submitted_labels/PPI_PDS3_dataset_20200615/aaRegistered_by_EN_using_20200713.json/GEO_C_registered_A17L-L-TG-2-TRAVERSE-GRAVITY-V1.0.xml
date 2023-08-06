@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>APOLLO 17 TRAVERSE GRAVIMETER DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>A17L-L-TG-2-TRAVERSE-GRAVITY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2011-12-31</publication_date>
+            <country>USA</country>
+            <description>This data set contains a table of readings from the Traverse
+                Gravimeter Experiment performed during the Apollo 17 mission. The
+                gravimeter, which recorded relative measurements of the local
+                gravitational field at the lunar surface, was manually run by the
+                astronauts near the Lunar Module landing site. The data table
+                includes 23 valid gravity values, with calibrations and
+                corrections, that were obtained from 12 to 14 December 1972. The
+                absolute value for the Lunar Module site was estimated to be
+                162,694.6 milligal with an uncertainty of 5 milligal. Supporting
+                documentation includes the Apollo 17 Traverse Gravimeter
+            Experiment Final Report.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=A17L-L-TG-2-TRAVERSE-GRAVITY-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>APOLLO 17 LUNAR MODULE; MOON; ACCELEROMETER; A17L; SATELLITE; TG; TRAVERSE GRAVIMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DAVID WILLIAMS</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.a17l-l-tg-2-traverse-gravity-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 JUP CRS DERIVED
+        PROTON/ION/ELECTRON FLUX BROWSE V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-J-CRS-5-SUMM-FLUX-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1997-12-01</publication_date>
+            <country>USA</country>
+            <description>The Cosmic Ray Subsystem (CRS) was
+                designed for cosmic ray studies. It consists
+                of two high Energy Telescopes (HET), four Low Energy
+                Telescopes (LET) and The Electron Telescope (TET). The
+                detectors have large geometric factors (~ 0.48 to 8 cm^2 ster)
+                and long electronic time constants (~ 24 [micro]sec) for low
+                power consumption and good stability. Normally, the data are
+                primarily derived from comprehensive ([Delta]E[1], [Delta]E[2]
+                and E) pulse-height information about individual events.
+                Because of the high particle fluxes encountered at Jupiter and
+                Saturn, greater reliance had to be placed on counting rates in
+                single detectors and various coincidence rates. In inter-
+                planetary space, guard counters are placed in anticoincidence
+                with the primary detectors to reduce the background from
+                high-energy particles penetrating through the sides of the
+                telescopes. These guard counters were turned off in the Jovian
+                magnetosphere when the accidental anticoincidence rate became
+                high enough to block a substantial fraction of the desired
+                counts. Fortunately, under these conditions the spectra were
+                sufficiently soft that the background, due to penetrating
+            particles, was small.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-J-CRS-5-SUMM-FLUX-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; JUPITER; CHARGED PARTICLE ANALYZER; VG2; PLANET; CRS; COSMIC RAY SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>NATIONAL SPACE SCIENCE DATA CENTER</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-j-crs-5-summ-flux-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

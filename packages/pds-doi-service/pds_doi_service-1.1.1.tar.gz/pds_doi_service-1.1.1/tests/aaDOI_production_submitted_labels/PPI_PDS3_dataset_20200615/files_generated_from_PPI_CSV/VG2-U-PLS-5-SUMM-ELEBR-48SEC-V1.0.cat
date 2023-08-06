@@ -1,0 +1,136 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-10-29, SJOY, created template;                                         
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-22, D. Kazden, removed unnecessary keywords, added ABSTRACT_DESC,   
+              CITATION_DESC, DATA_SET_TERSE_DESC and                          
+              DATA_SET_COLLECTION_MEMBER_FLG;                                 
+  2012-02-02, D. Kazden, updated REFERENCE_KEY_IDs;                           
+  2020--3-09, D. Kazden, updated CITATION_DESC;"                              
+OBJECT                        = DATA_SET                                      
+  DATA_SET_ID                   = "VG2-U-PLS-5-SUMM-ELEBR-48SEC-V1.0"         
+  OBJECT                        = DATA_SET_INFORMATION                        
+    DATA_SET_NAME                 = "VG2 URA PLS DERIVED SUMM ELECTRON BROWSE 
+                                     48SEC V1.0"                              
+    START_TIME                    = 1986-01-24T07:06:31.204                   
+    STOP_TIME                     = 1986-01-24T23:59:19.137                   
+    DATA_OBJECT_TYPE              = "TIME SERIES"                             
+    DATA_SET_RELEASE_DATE          = 1993-02-01                               
+    PRODUCER_FULL_NAME            = "JOHN D. RICHARDSON"                      
+    DETAILED_CATALOG_FLAG         = "Y"                                       
+    DATA_SET_COLLECTION_MEMBER_FLG = "N/A"                                    
+    ABSTRACT_DESC                 = "This data set contains the               
+          thermal electron density and temperature in the PLS energy          
+          range (10-5950 eV) from Voyager 2 at Uranus derived by              
+          fitting the low energy electron component with a Maxwellian         
+          distribution, and the moment density and temperature of the         
+          hot electrons calculated after the signal from the thermal          
+          component is subtracted from the electron spectra. The              
+          moment density and temperature obtained by integrating over         
+          the entire measured distribution function are also given."          
+    CITATION_DESC      = "Richardson, J.D., VG2-U-PLS-5-SUMM-ELEBR-48SEC-V1.0,
+                          VG2 URA PLS DERIVED SUMM ELECTRON BROWSE 48SEC V1.0,
+                            NASA Planetary Data System, 1993."                
+    DATA_SET_TERSE_DESC           = "This data set contains the               
+          thermal electron density and temperature in the PLS energy          
+          range (10-5950 eV) from Voyager 2 at Uranus."                       
+    DATA_SET_DESC                 = "                                         
+          This data set contains the thermal electron density and             
+          temperature in the PLS energy range (10-5950 eV) from               
+          Voyager 2 at Uranus derived by fitting the low energy               
+          electron component with a Maxwellian distribution, and the          
+          moment density and temperature of the hot electrons                 
+          calculated after the signal from the thermal component is           
+          subtracted from the electron spectra. The moment density            
+          and temperature obtained by integrating over the entire             
+          measured distribution function are also given. This is a            
+          subset of the data set VG2-U-PLS-5-RDR-ELEFIT-48SEC which           
+          should be obtained before this data is used, since it               
+          contains information on the type of fit performed and LECP          
+          contamination of the data. Spacecraft charging may result           
+          in underestimation of thermal electron density in some              
+          regions. The first six columns are the time tag (year, day,         
+          hour, min, sec, msec), columns 7 and 8 are the total moment         
+          density and temperature, columns 9 and 10 are the fit               
+          density and temperature of the thermal electron component,          
+          and 11 and 12 are the moment density and temperature of the         
+          suprathermal electrons. Each row has the format                     
+          (6I4,6E12.4). Values of 1.E32 indicate that the parameter           
+          could not be obtained from the data using the standard              
+          analysis technique. Additional information about this               
+          dataset and the instrument which produced it can be found           
+          elsewhere in this catalog. An overview of the data in this          
+          data set can be found in Sittler et al. (1987) and a                
+          complete instrument description can be found in bridge              
+          (1977).                                                             
+                                                                              
+  OBJECT                        = DSPARMINFO                                  
+    SAMPLING_PARAMETER_NAME       = TIME                                      
+    SAMPLING_PARAMETER_RESOLUTION = 48.000000                                 
+    MINIMUM_SAMPLING_PARAMETER    = N/A                                       
+    MAXIMUM_SAMPLING_PARAMETER    = N/A                                       
+    SAMPLING_PARAMETER_INTERVAL   = 48.000000                                 
+    MINIMUM_AVAILABLE_SAMPLING_INT= 48.000000                                 
+    SAMPLING_PARAMETER_UNIT       = SECOND                                    
+    DATA_SET_PARAMETER_NAME       = ELECTRON DENSITY                          
+    NOISE_LEVEL                   = N/A                                       
+    DATA_SET_PARAMETER_UNIT       = CM-3                                      
+                                                                              
+    SAMPLING_PARAMETER_NAME       = TIME                                      
+    SAMPLING_PARAMETER_RESOLUTION = 48.000000                                 
+    MINIMUM_SAMPLING_PARAMETER    = N/A                                       
+    MAXIMUM_SAMPLING_PARAMETER    = N/A                                       
+    SAMPLING_PARAMETER_INTERVAL   = 48.000000                                 
+    MINIMUM_AVAILABLE_SAMPLING_INT= 48.000000                                 
+    SAMPLING_PARAMETER_UNIT       = SECOND                                    
+    DATA_SET_PARAMETER_NAME       = ELECTRON TEMPERATURE                      
+    NOISE_LEVEL                   = N/A                                       
+    DATA_SET_PARAMETER_UNIT       = CM-3 "                                    
+                                                                              
+    CONFIDENCE_LEVEL_NOTE         = "                                         
+          This data set provides an estimate of the electron                  
+          parameters in the PLS energy range (10-5950 eV). The                
+          thermal electron parameters may be underestimated in some           
+          regions due to negative spacecraft charging which is not            
+          corrected for. Electron parameters may also be unreliable           
+          between 1736 and 1854 scet on Jan 24 where electron                 
+          temperatures are below the instrument energy threshold.             
+          Between 1920 and 2150 scet on Jan 24 the spacecraft had a           
+          large (several hundred volt) negative potential, so                 
+          electron parameters in this region should also be treated           
+          with caution. The instrument threshold for detecting                
+          electrons is a density of about 0.001 cm-3. At times when           
+          the density is near this value all derived parameters are           
+          suspect. From 1621 to 1649 on Jan. 24 sunlight created an           
+          artificial signal so this data should be discarded. The             
+          LECP stepper motor is also creates a spurious signal in the         
+          PLS detector."                                                      
+  END_OBJECT                    = DATA_SET_INFORMATION                        
+                                                                              
+  OBJECT                        = DATA_SET_TARGET                             
+    TARGET_NAME                   = "URANUS"                                  
+  END_OBJECT                    = DATA_SET_TARGET                             
+                                                                              
+  OBJECT                        = DATA_SET_HOST                               
+    INSTRUMENT_HOST_ID            = "VG2"                                     
+    INSTRUMENT_ID                 = "PLS"                                     
+  END_OBJECT                    = DATA_SET_HOST                               
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                        =  DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID              = "BRIDGEETAL1977"                          
+  END_OBJECT                    =  DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+  OBJECT                        =  DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID              = "BRIDGEETAL1986"                          
+  END_OBJECT                    =  DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+  OBJECT                        =  DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID              = "SITTLERETAL1987"                         
+  END_OBJECT                    =  DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                    = DATA_SET                                      
+END

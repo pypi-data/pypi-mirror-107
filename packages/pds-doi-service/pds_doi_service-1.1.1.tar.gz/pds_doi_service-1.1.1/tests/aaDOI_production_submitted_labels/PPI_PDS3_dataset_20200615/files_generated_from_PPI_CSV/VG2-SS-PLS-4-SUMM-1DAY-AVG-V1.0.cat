@@ -1,0 +1,102 @@
+PDS_VERSION_ID                      = PDS3                                    
+                                                                             
+LABEL_REVISION_NOTE            = "temporary CAT, B. Harris, 2008-03-14;      
+D. Kazden, added REFERENCE_KEY_ID, 2011-12-14;                               
+PPI, updated START_TIME, STOP_TIME, DATA_SET_RELEASE_DATE and                
+DATA_OBJECT_TYPE, 2014-09-10;                                                
+PPI, updated DATA_SET_DESCRIPTION, 2015-05-15;                               
+PPI, updated STOP_TIME, DATA_SET_RELEASE_DATE, 2016-02-05;                   
+PPI, updated DATA_SET_NAME, 2017-01-20                                       
+PPI, updated STOP_TIME, 2017-09-27;                                          
+PPI, updated STOP_TIME,DATA_SET_RELEASE_DATE , 2018-01-31;                   
+PPI, updated PRODUCER_FULL_NAME and CITATION_DESC, 2020-01-31;               
+PPI, updated STOP_TIME, DATA_SET_RELEASE_DATE and CITATION_DESC, 2020-05-20;"
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "VG2-SS-PLS-4-SUMM-1DAY-AVG-V1.0"       
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "VOYAGER 2 SOLAR WIND PLS 1 DAY         
+                                      AVERAGES V1.0"                         
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1977-08-22T00:00:00.000                 
+    STOP_TIME                      = 2018-11-04T00:00:00.000                 
+    DATA_SET_RELEASE_DATE          = 2019-10-10                              
+    PRODUCER_FULL_NAME             = "JOHN D. RICHARDSON"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = TABLE                                   
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      Voyager 2 plasma data of the solar wind, 1 day averages."              
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      Voyager 2 plasma data of the solar wind, 1 day averages."              
+                                                                             
+    CITATION_DESC                  = "Richardson, J. D., VOYAGER 2 SOLAR WIND
+                    PLS 1 DAY AVERAGES V1.0, VG2-SS-PLS-4-SUMM-1DAY-AVG-V1.0,
+                    NASA Planetary Data System, 2019"                        
+                                                                             
+    DATA_SET_DESC                  = "                                       
+This dataset contains daily averages of Voyager 2 data.                      
+The columns are:                                                             
+                                                                             
+1. decimal year                                                              
+2. day                                                                       
+3. V2-Sun-Earth angle                                                        
+4. V2 heliolatitude                                                          
+5. Earth heliolatitude                                                       
+6. V2 heliolongitude                                                         
+7. Earth heliolongitude                                                      
+8. VR (km/s, RTN coordinate system)                                          
+9. VT                                                                        
+10. VN                                                                       
+11. Den (cm-3, moment)                                                       
+12. Den (cm-3, fit) These are best values to use                             
+13. W (thermal speed, km/s, moment) T(ev)=0.0052*W*W                         
+14. W (thermal speed, km/s, fit) T(ev)=0.0052*W*W                            
+    These are best values to use                                             
+15. R (AU, distance from Sun)                                                
+                                                                             
+Sometimes either the low density or noise causes                             
+the standard V2 analysis to fail. In these cases                             
+we have looked carefully at the spectra, at spectrograms,                    
+averaged data, looked at lower energy resolution L-mode                      
+data, and done anything possible to determine reasonable                     
+plasma parameters. In some cases, when we use L mode data,                   
+we have had to fix the thermal speed of the plasma based on                  
+previous and subsequent observed values. In all these cases                  
+we assume the flow is purely radial. The daily averages labeled              
+'augmented' have these values added; the other daily averages have           
+only values from our standard analysis. The data formats                     
+are identical.                                                               
+"                                                                            
+    CONFIDENCE_LEVEL_NOTE          = "N/A"                                   
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SOLAR WIND"                            
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+  REFERENCE_KEY_ID                = "N/A"                                    
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = VG2                                     
+    INSTRUMENT_ID                  = PLS                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "VOYAGER"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+  REFERENCE_KEY_ID                = "BRIDGEETAL1979B"                        
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

@@ -1,0 +1,145 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+S. JOY (adapted from the BROWSE dataset template, 1992-10-27;                 
+E. Fried (made some last changes),1992-11-04;                                 
+X. LIU (minor fix and added DATA_SET_TERSE_DESC), 2002-09-17;                 
+D. Kazden, removed unnecessay keywords, 2011-06-07;                           
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-11-22;                             
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-14;                  
+D. Kazden (PPI), updated CITATION_DESC, 2020-03-03;"                          
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0"     
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG2 NEP PRA EDITED RDR HIGH RATE        
+                                      60MS V1.0"                              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-05-25T06:58:32                      
+    STOP_TIME                      = 1989-09-27T17:52:43                      
+    DATA_SET_RELEASE_DATE          = 1991-07-22                               
+    PRODUCER_FULL_NAME             = "DR. DAVID R. EVANS"                     
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_TERSE_DESC            = "                                        
+Voyager 2 edited high rate Radio Astronomy data from the Neptune encounter.   
+The data set provides 60 millisecond calibrated measurements of the wave      
+flux density at 4 given frequencies and a bandwidth."                         
+                                                                              
+    CITATION_DESC          = "Evans, D.R., VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0,
+                                VG2 NEP PRA EDITED RDR HIGH RATE 60MS V1.0,   
+                                NASA Planetary Data System, 1991."            
+    ABSTRACT_DESC                  = "                                        
+                                                                              
+This data set (VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0) contains data              
+acquired by the Voyager-2 Planetary Radio Astronomy (PRA) instrument          
+during the Neptune encounter.  Since the PRA instrument is able to            
+observe planetary phenomenon at much larger ranges than other fields          
+and particles experiments, thus the PRA data cover a variable and             
+longer encounter period. PRA lowband data provided here cover the             
+entire Neptune Encounter Phase (1989-05-25 to 1989-09-27)."                   
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+This data set (VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0) contains data              
+acquired by the Voyager-2 Planetary Radio Astronomy (PRA) instrument          
+during the Neptune encounter.  Since the PRA instrument is able to            
+observe planetary phenomenon at much larger ranges than other fields          
+and particles experiments, thus the PRA data cover a variable and             
+longer encounter period. PRA lowband data provided here cover the             
+entire Neptune Encounter Phase (1989-05-25 to 1989-09-27).                    
+                                                                              
+Each file within the dataset represents a single PRA high rate frame,         
+of duration 48 seconds. Each file contains a 28 octet header, followed        
+by 1280000 octets of data.                                                    
+                                                                              
+The header format is described as below:                                      
+--------------------------------------------------------------------          
+Length (bytes) Name            Contents                                       
+--------------------------------------------------------------------          
+2              Year            Year A.D.                                      
+2              Day             Day of year (1 Jan == 1)                       
+1              Hour            Hour of day (midnight == 0)                    
+1              Minute          Minute of hour (o'clock = 0)                   
+1              Second          Second of Minute                               
+                                 (exact minute == 0)                          
+1              Spacecraft      1 == V1, 2 == V2                               
+2              Integral FDS    Integer part of FDS count                      
+1              Fractional FDS  Fractional part of FDS count                   
+4              Freq. 1         Frequency of 1st channel (Hz)                  
+4              Freq. 2         Frequency of 2nd channel (Hz)                  
+4              Freq. 3         Frequency of 3rd channel (Hz)                  
+4              Freq. 4         Frequency of 4th channel (Hz)                  
+1              Bandwidth       Bandwidth (kHz)                                
+--------------------------------------------------------------------          
+where all values are unsigned, and multi-octet values are presented           
+with the most significant byte first.                                         
+                                                                              
+The data are 16 bit numbers, most significant byte first, with 0              
+indicating unavailable data. The data are presented as a single               
+stream of 16 bit numbers. The frame is logically divided into lines           
+(although there is no indication of the lines within the file). This          
+terminology comes from the fact that in this high rate mode, the PRA          
+data are treated exactly as if they were imaging data, and a 48 second        
+image comprises 800 horizontal scan lines. Similarly, there are 800           
+logical lines within a PRA frame. Each line comprises 800 values,             
+representing 400 data pairs. In the high rate mode, the PRA measures          
+the flux at two frequencies _simultaneously_ and returns these two data       
+sequentially. A sample pair is acquired every (actually every 138.88...       
+microseconds), through an RC filter with a 100 microsecond time constant.     
+A single line comprises 60 milliseconds of data. Lines are NOT contiguous     
+in time. There is a 4444.44... microsecond gap between the ending of one      
+line and the start of the succeeding line.                                    
+                                                                              
+The PRA samples a frequency pair in this manner for 24 seconds. It then       
+has the option of switching to a second pair for the final 24 seconds.        
+These frequencies are designated Freq. 1 through Freq. 4 in the header.       
+The data are presented such that the higher of the relevant frequency         
+pair is presented first."                                                     
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+Permitted downlink bit error rates are considerably higher for high           
+rate operation than for low rate. Consequently, it is not uncommon            
+for there to be considerable noise in a high rate frame. The probability      
+of any particular datum being incorrect is small, but there are a lot of      
+data in a frame. Generally, a datum should not be assumed to be real if       
+it forms no part of a pattern and is markedly different from its neighbors.   
+Bit error rates are as likely to result in a falsely low reading as a         
+falsely high one.                                                             
+                                                                              
+The data presented are calibrated but not otherwise manipulated. An           
+improvement in data quality can often be obtained by making allowance         
+for the 2.4 kHz spacecraft switching power supply, whose signal is            
+clearly superimposed on much of the PRA high rate data.                       
+                                                                              
+The noise background is considerably higher for these data than for           
+low rate data. This is because of the wide bandwidth usually used             
+(200 kHz instead of the 1 kHz used for low rate), which permits many          
+harmonics of the spacecraft power supply to appear in the data, as well       
+as many of the noise products of other spacecraft subsystems. However,        
+most naturally occurring signals last for (at least) several samples          
+and have an appearance quite unlike the distinctly regular artificial         
+interferences."                                                               
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                  = NEPTUNE                                    
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID           = VG2                                        
+    INSTRUMENT_ID                = PRA                                        
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                 = "VOYAGER"                                  
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID             = "WARWICKETAL1989"                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                       = DATA_SET                                   
+END

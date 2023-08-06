@@ -1,0 +1,152 @@
+﻿  PDS_VERSION_ID               = PDS3
+  RECORD_TYPE                  = STREAM
+  LABEL_REVISION_NOTE          = "2013-02-01 GEO:Slavney Post-peer review"
+  
+  OBJECT                       = DATA_SET
+    DATA_SET_ID                = "MSL-M-APXS-4/5-RDR-V1.0"
+
+    OBJECT                     = DATA_SET_MISSION
+      MISSION_NAME             = "MARS SCIENCE LABORATORY"
+    END_OBJECT                 = DATA_SET_MISSION
+    
+    OBJECT                     = DATA_SET_INFORMATION
+      DATA_SET_NAME            = "MSL MARS ALPHA PARTICLE X-RAY 
+                                  SPECTROMETER 4/5 RDR V1.0"
+      DATA_SET_COLLECTION_MEMBER_FLG = "N"
+      DATA_OBJECT_TYPE         = SPREADSHEET
+      START_TIME               = 2012-198T00:00:00
+      STOP_TIME                = "UNK"
+      DATA_SET_RELEASE_DATE    = 2013-03-20
+      PRODUCER_FULL_NAME       = "RALF GELLERT"
+      DETAILED_CATALOG_FLAG    = "N"
+      DATA_SET_TERSE_DESC      = "Calibrated spectra and 
+        oxide weight percent data derived from observations of the APXS 
+        instrument aboard the Mars Science Laboratory rover."
+      CITATION_DESC            = "Gellert, R., Mars
+        Science Laboratory Alpha Particle X-Ray Spectrometer
+        RDR Data V1.0, MSL-M-APXS-4/5-RDR-V1.0, NASA Planetary Data 
+        System, 2013."
+      ABSTRACT_DESC            = "The MSL APXS RDR data set contains 
+        calibrated spectra and oxide weight percent data derived from 
+        observations of the APXS instrument aboard the Mars Science 
+        Laboratory rover. Two types of products are included: summed
+        X-ray spectra in counts as a function of energy, and abundance data
+        for a set of standard elements and oxides, derived from the 
+        summed spectra. Both product types are given as ASCII text files 
+        in comma-separated-value (CSV) format, suitable for reading with 
+        spreadsheet software."
+
+      DATA_SET_DESC            = "
+
+    Data Set Overview
+    =================
+      The Alpha-Particle X-Ray Spectrometer (APXS) is a contact
+      instrument that uses X-ray spectroscopy to determine the
+      elemental composition of soils and rocks. Atmosphere argon can
+      also be measured by the APXS. The APXS is deployed on
+      selected targets along the rover traverse to determine the
+      elemental composition of samples. Materials processed by the
+      Sample Acquisition - Sample Processing and Handling (SA/SPaH)
+      system can also be delivered to the observation tray or to the
+      martian surface for analysis by APXS. Elements heavier than Na
+      can be detected by APXS. If present at sufficient levels, the
+      abundances of these elements can also be determined.
+      
+      There are two APXS RDR data products. The first product is the summed
+      X-ray spectrum in counts as a function of energy, which is
+      derived from the APXS EDR. The second product is the standard elemental
+      oxide abundance, which is derived from the summed X-ray spectrum. 
+      Both products are stored as ASCII text in a Comma Separated
+      Value (CSV) format. Each CSV file has an associated detached PDS
+      label, also stored as ASCII text.
+      
+    Processing
+    ==========
+      The APXS X-ray spectrum RDR products are considered CODMAC Level 4 or
+      Resampled Data, equivalent to NASA level 1B. The spectra
+      are generated from the APXS EDR products (CODMAC Level 2, NASA Level 0) 
+      archived in the PDS data set MSL-M-APXS-2-EDR-V1.0.
+      
+      The summed X-ray spectrum, product type RSP, is generated from the APXS
+      EDR product by converting channel number to energy and summing
+      together all buffers acquired at good temperatures. The RSP product
+      consists of two fields, the first of which contains an energy value
+      in eV and the second contains total counts for that energy channel.
+      The count field value for first record is the counting time in
+      seconds. The value for the last record is the overflow, that is,
+      counts observed at that energy and higher. There is a header record
+      at the start of the file that gives field headings for the two
+      fields.      
+
+      The APXS oxide abundance RDR products are considered CODMAC Level 5 or
+      Derived Data, equivalent to NASA Level 2. The oxide abundance products,
+      product type RWP, are generated from the X-ray spectra.
+
+      The oxide abundance product contains abundance data for
+      a set of standard oxides and elements. There are three fields in the
+      product: the oxide or element name, the weight percent, and the
+      standard error of the weight percent value. The first record in the
+      file is a header record that provides a description
+      of the target sample.
+
+  
+    Software
+    ========
+      APXS RDR products are ASCII comma-delimited files that can be
+      read using a text editor or with spreadsheet software such as
+      Excel.  No special software is required.
+"
+
+
+
+    CONFIDENCE_LEVEL_NOTE          = "
+
+    Confidence Level Overview
+    =========================
+      See CAMPBELLETAL2012 for a description of the calibration 
+      applied to the APXS data.
+      
+    Review
+    ======
+      The APXS RDR products are reviewed internally by the APXS team 
+      prior to release to the PDS. PDS also performs an external peer
+      review of the APXS RDR. 
+
+    Data Coverage and Quality
+    =========================
+      Nominally one APXS RDR spectrum is generated for each APXS EDR data 
+      product, and one APXS RDR oxide abundance product is generated for 
+      each RDR spectrum. Both the EDR and the RDR products may be revised 
+      during the course of the mission. Revisions are indicated in the 
+      product's PDS label by the keywords PRODUCT_VERSION_ID and
+      PRODUCT_CREATION_TIME, and in the ERRATA.TXT file that accompanies
+      the APXS archive.
+
+    Limitations
+    ===========
+      N/A
+      
+    Data Compression
+    ===============
+      No data compression is used. 
+
+"
+
+  END_OBJECT                      = DATA_SET_INFORMATION
+
+  OBJECT                          = DATA_SET_TARGET
+    TARGET_NAME                   = MARS
+  END_OBJECT                      = DATA_SET_TARGET
+
+  OBJECT                          = DATA_SET_HOST
+    INSTRUMENT_HOST_ID            = "MSL"
+    INSTRUMENT_ID                 = "APXS"
+  END_OBJECT                      = DATA_SET_HOST
+
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID              = "CAMPBELLETAL2012"
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                        = DATA_SET
+
+END

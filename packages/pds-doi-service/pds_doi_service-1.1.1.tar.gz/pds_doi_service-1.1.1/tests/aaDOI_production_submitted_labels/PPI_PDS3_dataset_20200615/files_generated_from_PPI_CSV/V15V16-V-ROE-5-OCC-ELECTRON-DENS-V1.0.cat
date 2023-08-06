@@ -1,0 +1,198 @@
+PDS_VERSION_ID                    = PDS3                                       
+LABEL_REVISION_NOTE              = "Received at PPI Node, 2010;               
+2014-04-14, added DATA_SET_REFERENCE_INFORMATION keyword, minor edits;        
+2018-08-13, D. Kazden, removed ARCHIVE_STATUS keyword;"                       
+RECORD_TYPE                      = STREAM                                     
+                                                                              
+OBJECT                           = DATA_SET                                   
+  DATA_SET_ID                    = "V15/V16-V-ROE-5-OCC-ELECTRON-DENS-V1.0"   
+  OBJECT                         = DATA_SET_INFORMATION                       
+  DATA_SET_NAME                  =                                            
+       "V15/V16 VENUS ROE 5 OCC ELECTRON DENS V1.0"                           
+  DATA_SET_COLLECTION_MEMBER_FLG = "N"                                        
+  DATA_OBJECT_TYPE               = TABLE                                      
+  START_TIME                     = "UNK"                                      
+  STOP_TIME                      = "UNK"                                      
+  DATA_SET_RELEASE_DATE          = "NULL"                                     
+  PRODUCER_FULL_NAME             = "PAUL WITHERS"                             
+  DETAILED_CATALOG_FLAG          = "N"                                        
+  DATA_SET_TERSE_DESC            = "                                          
+Venera 15 and 16 Radio Occultation Ionospheric Electron Density               
+Profiles,Version 1.0"                                                         
+  CITATION_DESC                  = "                                          
+A. L. Gavrik, Yu. A. Gavrik, P. Withers, S. Joy, Venera 15 and 16             
+Radio Occultation Ionospheric Electron Density Profiles,                      
+Version 1.0, V15/V16-V-ROE-5-OCC-ELECTRON-DENS-V1.0,                          
+NASA Planetary Data System, 2010."                                            
+  ABSTRACT_DESC                  = "                                          
+This dataset contains 29 ionospheric electron density profiles (EDS files)    
+derived from Venera 15 and 16 radio occultation data. A total of 155          
+profiles are believed to be available and it is hoped that all will           
+eventually be archived."                                                      
+  DATA_SET_DESC                  = "                                          
+                                                                              
+                                                                              
+Data Set Overview                                                             
+==================                                                            
+                                                                              
+This dataset contains 29 ionospheric electron density profiles                
+(EDS files) derived from Venera 15 and 16 radio occultation data.             
+A total of 155 profiles are believed to be available and it is                
+hoped that all will eventually be archived. These profiles were               
+produced by A. L. Gavrik, who worked on the Venera 15 and 16 radio            
+occultation experiment, and prepared for the PDS by P. Withers.               
+                                                                              
+The DATA/ directory contains one .TAB file and one .LBL file for each         
+occultation. Each .TAB file contains a series of altitudes and                
+electron densities for an occultation. The LBL file contains                  
+information about how to read the data and some ancillary information         
+about the data acquisition (time, location, etc.).                            
+                                                                              
+Each .TAB file in the ANC/ directory obeys the following naming               
+convention:                                                                   
+                                                                              
+ANCYYYYMMDDHXXXQV.TAB                                                         
+                                                                              
+where YYYY is the year of the occultation (e.g. 1983), MM is the              
+month (e.g. 10), DD is the day of the month (e.g. 12), H is a                 
+letter corresponding to the hour of the occultation, as discussed             
+in the next sentence, XXX is either V15 for Venera 15 occultations            
+or V16 for Venera 16 occultations, Q is either N for ingress or X for         
+egress, and V is a version label (e.g. A for the first version). An           
+occultation time of 05:54:00 has hour 05 and H is 'F'. Similiarly, an hour    
+of 00 leads to H being A, 01 to B, 02 to C, and so on until 23 to X. Thus     
+filename ANC19831012FV15NA.TAB corresponds to an ingress occultation on       
+1983-10-12 at a time with hour 05 by Venera 15, first version. Each           
+.LBL file in the ANC/ directory is named in a corresponding manner.           
+The same naming convention is used in the EDS/ directory, with the            
+replacement of 'ANC' in the filename with 'EDS'.                              
+                                                                              
+Dates and times used to produce these filenames are in the Moscow             
+winter timezone, not UTC. This is discussed further in the section            
+headed 'Timing'.                                                              
+                                                                              
+Parameters                                                                    
+==========                                                                    
+                                                                              
+Each .TAB file in the ANC/ directory contains the following items.            
+                                                                              
+Name of spacecraft (V15 or V16)                  SCT                          
+Date of occultation, Moscow winter time          MOSCOW_WINTER_DATE           
+Time of occultation, Moscow winter time          MOSCOW_WINTER_TIME           
+Latitude of occultation, degrees north           LATITUDE                     
+Longitude of occultation, degrees west           WEST_LONGITUDE               
+Solar zenith angle of occultation, degrees       SOLAR_ZENITH_ANGLE           
+Name of original file supplied by A. L. Gavrik   ORIG_FILENAME                
+                                                                              
+The name of the original file supplied by A. L. Gavrik may contain            
+useful information. These files appear to follow some naming convention,      
+but this convention has not yet been fully understood. For instance,          
+information on the occultation summarized in file ANC19831012FV15A.TAB        
+was originally delivered in a file named 0566_b15.012.                        
+                                                                              
+Each .TAB file in the EDS/ directory contains the following items.            
+                                                                              
+Altitude, km                                     ALTITUDE                     
+Electron density, number per cubic centimeter    ELECTRON_DENSITY             
+                                                                              
+The altitude is presumed to be relative to a sphere of radius 6052 km.        
+                                                                              
+Uncertainties in these parameters are not specified precisely.                
+Uncertainty in absolute altitude is less than 2 km. Relative                  
+altitudes for a given occultation are significantly more accurate.            
+Uncertainty in electron density varies with altitude, being smaller           
+at high altitudes than at low altitudes as a result of the data               
+processing techniques used. Hence the smallest electron densities             
+reported at low altitudes are significantly smaller than the                  
+smallest reported at high altitudes. Uncertainty in electron density          
+at high altitude varies between 200 and 5000 electrons per cubic              
+centimeter, with a typical value of 500 electrons per cubic centimeter.       
+This value is sensitive to fluctuations in the total electron content         
+(i.e. electrons per unit area) along the ray of the radio signal.             
+Hence it is influenced by properties of the solar wind along the line         
+of sight at the time of the occultation. Uncertainty in electron              
+density near the ionospheric peak is approximately 10000 to 20000             
+electrons per cubic centimeter.                                               
+                                                                              
+Timing                                                                        
+======                                                                        
+                                                                              
+All dates and times reported in this dataset are in the Moscow winter         
+timezone, not UTC. This time zone is currently three hours ahead of UTC.      
+Times have not been converted into UTC in order to (A) eliminate the          
+possibility of introducing an error and (B) retain flexibility in the         
+case that delivery of additional profiles from the Venera 15 and 16           
+radio occultation experiments involves Moscow summer time.                    
+                                                                              
+Data Processing                                                               
+===============                                                               
+                                                                              
+Data processing is described in the documents listed in the REF.CAT           
+file and in some of the other files in the CATALOG/ directory. The            
+principal equations used were:                                                
+                                                                              
+N(p) = (-2 m f c) / (v-perp e^2) x                                            
+          integral from r=p to r=infinity of df dr / sqrt(r^2 - p^2)          
+                                                                              
+and p = H + L c df / (v-perp f)                                               
+                                                                              
+where N is electron density, p is the impact parameter of the radio           
+ray, m is the electron mass, f is the frequency, c is the speed of            
+light, v-perp is the line-of-sight component of the velocity of the           
+transmitter with respect to the receiver, e is the elementary charge,         
+df is the residual frequency change caused by the ionosphere of               
+Venus, H is the distance of closest approach of the ray to Venus, and         
+L is the separation between the spacecraft and Venus. These equations         
+are in Gaussian units, inserting 4 pi eps-0, where eps-0 is the               
+permittivity of free space, to the numerator of the right hand side           
+of the first equation converts them into SI units."                           
+                                                                              
+                                                                              
+CONFIDENCE_LEVEL_NOTE             = "                                         
+                                                                              
+Data Coverage and Quality                                                     
+=========================                                                     
+                                                                              
+Given the small number of available occultations, data coverage is            
+limited. No gaps have been identified in individual profiles.                 
+Uncertainties in the ionospheric electron densities are not known             
+precisely, as discussed above.                                                
+                                                                              
+Limitations and Caveats                                                       
+=======================                                                       
+                                                                              
+These data products come from two Soviet spacecraft whose operations          
+ended over 25 years ago. Therefore the documentation and other aspects        
+of the dataset are not as complete as would be expected for a current         
+NASA mission. Nevertheless, it is felt that archiving the dataset in          
+its current state, thereby preserving it for posterity, is better             
+than risking that it be lost irrevocably.                                     
+                                                                              
+"                                                                             
+ END_OBJECT                      = DATA_SET_INFORMATION                       
+                                                                              
+ OBJECT                          = DATA_SET_TARGET                            
+  TARGET_NAME                    = VENUS                                      
+ END_OBJECT                      = DATA_SET_TARGET                            
+                                                                              
+ OBJECT                          = DATA_SET_HOST                              
+  INSTRUMENT_HOST_ID             = "V15"                                      
+  INSTRUMENT_ID                  = ROE                                        
+ END_OBJECT                      = DATA_SET_HOST                              
+                                                                              
+ OBJECT                          = DATA_SET_HOST                              
+  INSTRUMENT_HOST_ID             = "V16"                                      
+  INSTRUMENT_ID                  = ROE                                        
+ END_OBJECT                      = DATA_SET_HOST                              
+                                                                              
+ OBJECT                          = DATA_SET_MISSION                           
+  MISSION_NAME                   = "VENERA 15 AND 16"                         
+ END_OBJECT                      = DATA_SET_MISSION                           
+                                                                              
+ OBJECT                          = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID             = "UNK"                                      
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                       = DATA_SET                                   
+                                                                              
+END

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:a17sep</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Apollo 17 Surface Electrical Properties Experiment Calibrated ASCII Data Bundle</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Bundle</product_class>
+    <Citation_Information>
+      <editor_list>Williams, D.R.; McLaughlin, S.A.</editor_list>
+      <publication_year>2019</publication_year>
+      <description>This bundle contains two comma-delimited ASCII files of calibrated lunar surface
+      electromagnetic field and navigation (range) data from the Surface Electrical Properties (SEP)
+      Experiment at the Apollo 17 landing site for the time span of 11-13 December 1972. One file
+      contains straightened science and navigation (range) data; the other file contains only
+      unstraightened science data. These data were extracted from binary files held on magnetic tape
+      at the NASA Space Science Data Coordinated Archive as data set PSPG-00559, then reformatted to
+      ASCII. This bundle also contains a high-resolution digital reproduction of the SEP final
+      technical report that contains plots of the complete set of processed lunar field data, as
+      decibal values versus range, and explanations the data processing and calibration techniques
+      implemented by the SEP instrument team.</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2017-03-27</modification_date>
+        <version_id>1.0</version_id>
+        <description>Creation. Revised Oct/Nov 2019 to include the SEP data collection.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Context_Area>
+    <Time_Coordinates>
+      <start_date_time>1972-12-11Z</start_date_time>
+      <stop_date_time>1977-12-13Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Calibrated</processing_level>
+      <description>Calibrated lunar electromagnetic science data and navigation (range) data from
+      the Surface Electrical Properties (SEP) Experiment at the Apollo 17 landing site for the time
+      span of 11-13 December 1972, along with a high-resolution digital reproduction of the SEP
+      final technical report that contains plots of the complete set of processed lunar field data,
+      as decibal values versus range. The SEP experiment consisted o two stationary, orthogonal,
+      electric dipole transmitting antennae laid on the lunar surface near the Lunar Module and a
+      wide-bandwidth, mutually-perpendicular, three-component receiver antenna mounted on the Lunar
+      Roving Vehicle which traversed away from the transmitting receiver with the purpose of
+      obtaining data about electromagnetic energy transmission, absorption, and reflection
+      characteristics of the lunar regolith. Comparisons of the transmitted and received signals at
+      frequencies of 1, 2.1, 4, 8.1, 16, and 32 MHz were used to determine layering, search for
+      pressure of water below the surface, and measure electrical properties in situ, all as a
+      function of depth.</description>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>Apollo 17</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_17</lid_reference>
+        <reference_type>bundle_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Apollo 17 Lunar Module</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a17l</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Apollo 17 Surface Electrical Properties (SEP) Experiment</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:sep.a17l</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+        <reference_type>bundle_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  </Context_Area>
+  <Bundle>
+    <bundle_type>Archive</bundle_type>
+  </Bundle>
+  <File_Area_Text>
+    <File>
+      <file_name>readme.txt</file_name>
+      <file_size unit="byte">3080</file_size>
+    </File>
+    <Stream_Text>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+      <description>Brief overview of this bundle.</description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+    </Stream_Text>
+  </File_Area_Text>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:a17sep:data</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_data_collection</reference_type>
+  </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+    <lid_reference>urn:nasa:pds:a17sep:document</lid_reference>
+    <member_status>Primary</member_status>
+    <reference_type>bundle_has_document_collection</reference_type>
+  </Bundle_Member_Entry>
+</Product_Bundle>

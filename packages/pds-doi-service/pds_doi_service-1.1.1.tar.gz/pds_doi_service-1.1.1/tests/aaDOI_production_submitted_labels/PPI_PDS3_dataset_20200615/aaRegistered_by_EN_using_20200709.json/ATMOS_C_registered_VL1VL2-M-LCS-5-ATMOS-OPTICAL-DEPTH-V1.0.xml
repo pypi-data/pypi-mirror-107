@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VL1/VL2 MARS LCS DERIVED ATMOSPHERIC OPTICAL DEPTH V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VL1/VL2-M-LCS-5-ATMOS-OPTICAL-DEPTH-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1989-11-01</publication_date>
+            <country>USA</country>
+            <description>Viking Lander camera images of the Sun were used to compute total
+                normal atmospheric optical depth at the two landing sites over a
+                period of about 900 Mars days. The data set contains 1044
+                measurements of optical depth and associated error estimates. The
+                optical depths were derived from Sun diode images, which were
+                obtained by the Lander cameras at a wavelength of 0.67
+                micrometers. Note that no images of Phobos were used in deriving
+                this data set. Studies of diurnal, seasonal, and annual
+                variations in optical depth, surface-based observations of great
+                dust storms, and analyses of the contributions of ice haze and
+                dust particles to the observed optical depth, have been carried
+                out using these data. See COLBURN_ETAL_1989, POLLACK_ETAL_1977,
+                and POLLACK_ETAL_1977 for further information on the derivation
+            and interpretation of this data set.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1%2FVL2-M-LCS-5-ATMOS-OPTICAL-DEPTH-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING LANDER 1; VIKING LANDER 2; MARS; CAMERA; VL1; VL2; PLANET; CAM1; CAM2; CAMERA 1; CAMERA 2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DAVID S. COLBURN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vl1-vl2-m-lcs-5-atmos-optical-depth-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

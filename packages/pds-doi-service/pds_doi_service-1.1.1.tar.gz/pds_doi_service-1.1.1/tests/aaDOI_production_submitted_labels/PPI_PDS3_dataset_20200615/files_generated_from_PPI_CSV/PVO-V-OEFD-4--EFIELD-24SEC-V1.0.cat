@@ -1,0 +1,261 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+     M. Kniffin, 3-09-93;                                                    
+     M. Kniffin, 3-10-93, updated changes from R. Strangeway;                
+     M. Kniffin, 3-16-93, Ran on jplpds through lvtool and loader and put    
+         into database.  Correct small errors;                               
+     S. Joy, 11-11-98, Streamlined;                                          
+     D. Kazden, 10-18-12, added ABSTRACT_DESC, DATA_SET_TERSE_DESC and       
+     CITATION_DESC;                                                          
+     D. Kazden, 2020-02-11, updated CITATION_DESC;"                          
+                                                                             
+OBJECT                       = DATA_SET                                      
+DATA_SET_ID                    = "PVO-V-OEFD-4--EFIELD-24SEC-V1.0"           
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+   DATA_SET_NAME                  = "                                        
+                    PVO VENUS EFD BROWSE ELECTRIC FIELD 24SEC AVGS V1.0"     
+   DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+   START_TIME                     = 1978-12-05T07:20:07.282                  
+   STOP_TIME                      = 1992-10-08T16:30:23.299                  
+   DATA_SET_RELEASE_DATE          = 1993-06-30                               
+   PRODUCER_FULL_NAME             = "MURIEL KNIFFIN"                         
+   DETAILED_CATALOG_FLAG          = N                                        
+   DATA_OBJECT_TYPE               = "TIME SERIES"                            
+   ABSTRACT_DESC                  = "This data set contains wave electric    
+field amplitudes measured at four different frequencies by the Pioneer Venus 
+Orbiter Electric Field Detector.  The data are averaged over 24 second       
+intervals on 12 second centers.  Each averaging interval contains both the   
+minimum amplitude, average amplitude and peak amplitude for that interval at 
+each of the four frequencies.  The four frequencies are 100 Hz,              
+730 Hz, 5.4 kHz, 30 kHz.  The frequency filters are narrow-band,             
+with a 30% bandwidth.  Thus wave amplitudes are given in V/m/root(Hz).       
+The filters are continuously active, but data are only provided at a         
+rate determined by the spacecraft telemetry rate.  The wave antenna          
+is oriented perpendicular to the spacecraft spin axis, and so the wave       
+instrument measures only wave fields in the spacecraft spin plane.           
+The wave antenna is a small Y-shaped structure, with effective               
+separation of 0.76 meters."                                                  
+   DATA_SET_TERSE_DESC            = "This data set contains wave electric    
+field amplitudes measured at four different frequencies by the Pioneer Venus 
+Orbiter Electric Field Detector."                                            
+   CITATION_DESC             = "Kniffin, M., PVO-V-OEFD-4--EFIELD-24SEC-V1.0,
+                         PVO VENUS EFD BROWSE ELECTRIC FIELD 24SEC AVGS V1.0,
+                                       NASA Planetary Data System, 1993."    
+   DATA_SET_DESC                  =  "                                       
+This data set contains wave electric field amplitudes measured               
+at four different frequencies by the Pioneer Venus Orbiter Electric          
+Field Detector.  The data are averaged over 24 second intervals on 12        
+second centers.  Each averaging interval contains both the minimum           
+amplitude, average amplitude and peak amplitude for that interval at         
+each of the four frequencies.  The four frequencies are 100 Hz,              
+730 Hz, 5.4 kHz, 30 kHz.  The frequency filters are narrow-band,             
+with a 30% bandwidth.  Thus wave amplitudes are given in V/m/root(Hz).       
+The filters are continuously active, but data are only provided at a         
+rate determined by the spacecraft telemetry rate.  The wave antenna          
+is oriented perpendicular to the spacecraft spin axis, and so the wave       
+instrument measures only wave fields in the spacecraft spin plane.           
+The wave antenna is a small Y-shaped structure, with effective               
+separation of 0.76 meters.                                                   
+  The Electric field data file contains the following information:           
+                                                                             
+RECORD LENGTH  =    56                                                       
+NUMBER OF COLUMNS =    13                                                    
+OPERATING SYSTEM = SUN/UNIX                                                  
+ #  NAME      UNITS     SOURCE  DESCRIPTION                                  
+001 UT        SECONDS   PVO                                                  
+002 E100HZMX  V/M/HZ.5  PVO EFD 2 spin max                                   
+003 E100HZAV  V/M/HZ.5  PVO EFD 2 spin ave                                   
+004 E100HZMN  V/M/HZ.5  PVO EFD 2 spin min                                   
+005 E730HZMX  V/M/HZ.5  PVO EFD 2 spin max                                   
+006 E730HZAV  V/M/HZ.5  PVO EFD 2 spin ave                                   
+007 E730HZMN  V/M/HZ.5  PVO EFD 2 spin min                                   
+008 E5.4KHZMX V/M/HZ.5  PVO EFD 2 spin max                                   
+009 E5.4KHZAV V/M/HZ.5  PVO EFD 2 spin ave                                   
+010 E5.4KHZMN V/M/HZ.5  PVO EFD 2 spin min                                   
+011 E30KHZMX  V/M/HZ.5  PVO EFD 2 spin max                                   
+012 E30KHZAV  V/M/HZ.5  PVO EFD 2 spin ave                                   
+013 E30KHZMN  V/M/HZ.5  PVO EFD 2 spin min                                   
+MISSING DATA FLAG  =  1.000000E+32                                           
+AVERAGE INTERVAL   =     00:00:24.000                                        
+                                                                             
+  There is also a file available that contains ephemeris                     
+data.  This is located in the directory /DATA/EPHEM and                      
+has the following information:                                               
+                                                                             
+RECORD LENGTH      =    64                                                   
+NUMBER OF COLUMNS  =    15                                                   
+OPERATING SYSTEM = SUN/UNIX                                                  
+ #        NAME     UNITS     SOURCE   DESCRIPTION                            
+001      UTIME     SECONDS   PVO                                             
+002      X VSO     RV        PVO SEDR Position X                             
+003      Y VSO     RV        PVO SEDR Position Y                             
+004      Z VSO     RV        PVO SEDR Position Z                             
+005      ALT       KM        PVO SEDR Altitude                               
+006      SZA       DEG       PVO SEDR Solar Zenith Angle                     
+007      PLONG     DEG       PVO SEDR Planetary longitude                    
+008      PLAT      DEG       PVO SEDR Planetary latitude                     
+009      SPX VSO             PVO SEDR Spin axis X                            
+010      SPY VSO             PVO SEDR Spin axis Y                            
+011      SPZ VSO             PVO SEDR Spin axis Z                            
+012      CLAT      DEG       PVO SEDR Celestial latitude                     
+013      CLONG     DEG       PVO SEDR Celestial longitude                    
+014      ELONG     DEG       PVO SEDR Earth celestial longitude              
+015      RSUN      AU        PVO SEDR Distance to the Sun                    
+MISSING DATA FLAG  =  1.000000E+32                                           
+AVERAGE INTERVAL   =     00:00:12.000                                        
+                                                                             
+  Other ancillary data products are available.  A file                       
+containing phase and offset data is located in the directory                 
+/DATA/PHASEOFF.  It contains the following information:                      
+                                                                             
+RECORD LENGTH  =    56                                                       
+NUMBER OF COLUMNS =    13                                                    
+OPERATING SYSTEM = SUN/UNIX                                                  
+  # NAME      UNITS     SOURCE  DESCRIPTION                                  
+001 UT        SECONDS   PVO                                                  
+002 E100 PH   DEG       PVO EFD Modulation phase                             
+003 E100 AMP  V/M/HZ.5  PVO EFD Modulation amplitude                         
+004 E730 PH   DEG       PVO EFD Modulation phase                             
+005 E730 AMP  V/M/HZ.5  PVO EFD Modulation amplitude                         
+006 E5.4KPH   DEG       PVO EFD Modulation phase                             
+007 E5.4KAMP  V/M/HZ.5  PVO EFD Modulation amplitude                         
+008 E30K PH   DEG       PVO EFD Modulation phase                             
+009 E30K AMP  V/M/HZ.5  PVO EFD Modulation amplitude                         
+010 TAV       NT        PVO MAG Average T sensor offset                      
+011 GDIFFX    NT        PVO MAG S/C field G correction X                     
+012 GDIFFY    NT        PVO MAG S/C field G correction Y                     
+013 GDIFFZ    NT        PVO MAG S/C field G correction Z                     
+MISSING DATA FLAG  =  1.000000E+32                                           
+AVERAGE INTERVAL   =     00:00:24.000                                        
+                                                                             
+  A file containing engineering data is located in the directory             
+/DATA/ENGR.  It contains the following information:                          
+                                                                             
+RECORD LENGTH =     64                                                       
+NUMBER OF COLUMNS =    14                                                    
+OPERATING SYSTEM = SUN/UNIX                                                  
+  # NAME      UNITS     SOURCE DESCRIPTION                                   
+001 UT      SECONDS   PVO                                                    
+002 ElecT   DEG       PVO MAG Electronics temperature                        
+003 PsensT  DEG       PVO MAG P&T sensor temperature                         
+004 GsensT  DEG       PVO MAG G sensor temperature                           
+005 MODE    1:2:3     PVO MAG Fast Normal or Gradiometer                     
+006 SMPLRATE 1 or 3   PVO MAG Sample format                                  
+007 CAL     0 or 1    PVO MAG Calibration                                    
+008 SAS     1:2:4     PVO MAG Spin average select                            
+009 FORMAT  0-15      PVO EDR TLM data format                                
+010 BITRAT  BITS/S    PVO EDR Bit rate                                       
+011 SPIN    SECONDS   PVO SEDR Spin period                                   
+012 TFS     SECONDS   PVO SEDR Pulse time                                    
+013 SMINR   SECONDS   PVO SEDR Sun-RIP difference                            
+014 PTFLAG            PVO SEDR Pulse Time flag                               
+MISSING DATA FLAG  =  1.000000E+32                                           
+  FORMAT: 0:ENG,1:UNK,2:UNK,3:PGM,4:ACS,5:CMRO,6:PYBK,7:DMRO,8:LACR,         
+          9:PERA,10:PERB,11:PERC,12:PERD,13:PERE,14:APOA,15:APOB             
+                                                                             
+  A file containing instrument status information is located in the          
+directory /DATA/INSTSTAT.  It contains the following information:            
+                                                                             
+RECORD LENGTH  =    56                                                       
+NUMBER OF COLUMNS =    13                                                    
+OPERATING SYSTEM = SUN/UNIX                                                  
+ #  NAME      UNITS     SOURCE  DESCRIPTION                                  
+001 UT        SECONDS   PVO                                                  
+002 PCOS      NT        PVO MAG Norm(P cos amp)                              
+003 PSIN      NT        PVO MAG Norm(P sin amp)                              
+004 DX        NT        PVO MAG Norm(Tsin-Gcos)                              
+005 DY        NT        PVO MAG Norm(Gsin+Tcos)                              
+006 DZ        NT        PVO MAG Norm(Gdc-Pdc)                                
+007 RAMP                PVO MAG S2xy / S1xy                                  
+008 DPHS      DEG       PVO MAG Phase S2 - S1                                
+009 DC1       NT        PVO MAG DC of S1                                     
+010 DC2       NT        PVO MAG DC of S2                                     
+011 ZCOS      NT        PVO MAG Cos amp of Z sens                            
+012 ZSIN      NT        PVO MAG Sin amp of Z sens                            
+013 ZDC       NT        PVO MAG DC  amp of Z sens                            
+MISSING DATA FLAG  =  1.000000E+32                                           
+AVERAGE INTERVAL   =     00:00:24.000"                                       
+                                                                             
+   CONFIDENCE_LEVEL_NOTE          = "                                        
+The instrument noise level (and hence sensitivity) is determined             
+by the ambient environment at the time of observation.  Photo-               
+electrons emitted from various spacecraft surfaces appear to be              
+a strong source of electric field interference.  As a consequence            
+data acquired when the spacecraft is in sunlight often are contaminated      
+by spin modulated interference, especially when the spacecraft is            
+in the low density solar wind, where the Debye length is several             
+meters.  The noise is usually lowest when the antenna elements               
+are in the spacecraft shadow.  The noise level is also reduced               
+when the spacecraft is deep within the dayside ionosphere,                   
+where the Debye length is much smaller than the antenna size.                
+The noise is not present when the spacecraft is within the                   
+optical shadow of the planet.  In this case, however, additional             
+noise features are observed (mainly at 100 Hz) when the                      
+spacecraft is at low altitude within the nightside ionosphere.  This         
+interference is readily discriminated in the high resolution data,           
+where the noise is present as a sharp pulse occurring twice per              
+spin.                                                                        
+The averaging scheme used can be subject to temporal aliasing when           
+the data rate is sufficiently low, such that only one or two data            
+are obtained per 24 second interval.  Since the sampling interval            
+and spin period are not exactly synchronized, periodic noise signals,        
+such as the interference, are aliased by the low sampling frequency.         
+In this case the data display periodic structure, but with a period          
+much longer than the spin period.                                            
+The instrument was calibrated in air.  No attempt to incorporate             
+changes in antenna-plasma coupling due to changes in Debye                   
+length have been included in the data processing."                           
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = OEFD                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_MISSION                          
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                     = DATA_SET_MISSION                          
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = SCARFETAL1979B                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = TAYLORETAL1979A                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = TAYLORETAL1979B                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = SCARFETAL1980A                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = SCARFETAL1980B                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = SCARFETAL1980C                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = SCARFETAL1983                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = RUSSELL1991                             
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = STRANGEWAY1991                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

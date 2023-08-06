@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>APOLLO 15 HEAT FLOW THERMAL CONDUCTIVITY RDR SUBSAMPLED V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>A15A-L-HFE-3-THERMAL-CONDUCTIVITY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2012-01-31</publication_date>
+            <country>USA</country>
+            <description>This data set comprises a reduced, subsampled set of the data
+                returned from the Apollo 15 Heat Flow Experiment from 31 July
+                1971 through 31 December 1974. The experiment consisted of two
+                probes placed by the Apollo 15 astronauts in holes drilled in the
+                lunar surface near the Apollo 15 Lunar Surface Experiments
+                Package site to measure the thermal conductivity. The data
+                consist of a set of ten ASCII tables with time, temperature
+                differences, and average temperatures readings measured by the
+                thermocouples in the heat flow probes and probe cables. The data
+                have been restored and reformatted from binary data held on
+                magnetic tapes at the NASA National Space Science Data Center
+            (NSSDC) under NSSDC ID of PSPG-00093 (old NSSDC ID 71-063C-06A).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=A15A-L-HFE-3-THERMAL-CONDUCTIVITY-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>APOLLO 15 LUNAR SURFACE EXPERIMENTS PACKAGE; MOON; GEOTHERMAL HEAT FLOW PROBE; A15A; SATELLITE; HFE; HEAT FLOW EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>H. KENT HILLS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.a15a-l-hfe-3-thermal-conductivity-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

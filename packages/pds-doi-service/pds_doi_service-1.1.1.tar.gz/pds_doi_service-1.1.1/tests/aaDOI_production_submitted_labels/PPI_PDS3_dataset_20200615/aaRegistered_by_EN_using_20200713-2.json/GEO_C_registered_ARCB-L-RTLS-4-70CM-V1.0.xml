@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>ARECIBO MOON RADIO TELESC RESAMPLED 70 CM RADAR MOSAIC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>ARCB-L-RTLS-4-70CM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1990-06-15</publication_date>
+            <country>USA</country>
+            <description>High resolution radar map compiled from measurements made between
+                1981 and 1984 with the 70 cm wavelength radar at Arecibo
+                Observatory. The data have resolutions ranging from 2 to 5
+                kilometers. The pixel spacing is 0.1 degrees in latitude and
+                longitude. The point at line 1000 and sample 1000 corresponds to
+                0 degrees latitude and 0 degrees longitude. The pixel values are
+                scaled to represent 20 * log10 (backscattered power). Observed
+                power has been corrected for antenna beam, scattering area and
+                scattering law. Observed power of 1000, which is the lunar
+                average, thus has a value of 60 in the data set. Radar was
+                transmitted in left-hand circular polarization, and both
+                right-hand circular polarization (i.e. polarized) and left-hand
+            circular polarization (i.e. depolarized) echoes were received.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=ARCB-L-RTLS-4-70CM-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>ARECIBO OBSERVATORY; MOON; RADAR; ARCB; SATELLITE; RTLS; RADIO TELESCOPE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>THOMAS W. THOMPSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.arcb-l-rtls-4-70cm-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Document 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:cassini_iss_saturn:document:iss-data-user-guide</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Cassini Imaging Science Subsystem (ISS) Data User's Guide</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Document</product_class>
+        <Citation_Information>
+            <author_list>Knowles, Ben</author_list>
+            <publication_year>2018</publication_year>
+            <doi>doi0</doi>
+            <keyword>Cassini ISS Users Guide</keyword>
+            <description>Provides a comprehensive introduction to the data produced by
+                the Cassini Imaging Science Subsystem (ISS),</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-09-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version under PDS4</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Document>
+        <document_name>Cassini Imaging Science Subsystem (ISS) Data User's Guide</document_name>
+        <doi>doi4</doi>
+        <author_list>Knowles, Ben</author_list>
+        <publication_date nilReason="inapplicable">2018-09-16</publication_date>
+        <document_editions>1</document_editions>
+        <description>Provides a comprehensive introduction to the data produced by the Cassini Imaging 
+            Science Subsystem (ISS), with emphasis on methods for obtaining, searching and
+            radiometrically calibrating ISS images for purposes of scientific research.
+        </description>
+        <Document_Edition>
+            <edition_name>First</edition_name>
+            <language>English</language>
+            <files>1</files>
+            <description>Provides a comprehensive introduction to the data produced by the Cassini Imaging 
+                Science Subsystem (ISS), with emphasis on methods for obtaining, searching and
+                radiometrically calibrating ISS images for purposes of scientific research.
+            </description>
+            <Document_File>
+                <file_name>iss-data-user-guide.pdf</file_name>
+                <creation_date_time>2018-09-16</creation_date_time>
+                <document_standard_id>PDF/A</document_standard_id>
+            </Document_File>
+        </Document_Edition>
+    </Document>
+</Product_Document>

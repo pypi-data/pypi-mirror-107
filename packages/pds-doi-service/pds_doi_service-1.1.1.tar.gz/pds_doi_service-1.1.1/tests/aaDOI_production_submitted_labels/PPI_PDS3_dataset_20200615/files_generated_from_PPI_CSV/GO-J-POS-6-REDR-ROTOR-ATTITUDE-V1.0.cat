@@ -1,0 +1,248 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "1998-06-14, S. Joy, initial draft;      
+                 2002-09-02, S. Joy, generalized to all mission phases;       
+                 2003-08-18, S. Joy, minor revisions after peer review;       
+                 2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;"      
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "GO-J-POS-6-REDR-ROTOR-ATTITUDE-V1.0"    
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+          GO JUPTER POS ANCILLARY ROTOR ATTITUDE V1.0"                        
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1995-11-28T01:34                         
+    STOP_TIME                      = 2003-09-21T18:45                         
+    DATA_SET_RELEASE_DATE          = 2002-09-14                               
+    PRODUCER_FULL_NAME             = "MR. STEVEN P. JOY"                      
+    DETAILED_CATALOG_FLAG          = Y                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+                                                                              
+    CITATION_DESC                  = "                                        
+      Joy, S.P., Mafi, J.N., GO JUPTER POS ANCILLARY ROTOR ATTITUDE V1.0,     
+      GO-J-POS-6-REDR-ROTOR-ATTITUDE-V1.0, NASA Planetary Data System, 2002"  
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set contains the attitude data for the rotor of the           
+      Galileo spacecraft. The data provided are derived from the              
+      Attitude and Articulation Control System (AACS) data downlink as        
+      provided by the Galileo project to the magnetometer team. This          
+      data set covers portions of the Jupiter Approach (JA) and all           
+      orbit operation mission phases (J0-J35). The data are                   
+      discontinuous. The sampling frequency varies with mission phase.        
+      The coverage period is from 1995-11-28T01:34 to 2001-09-21              
+      (exact time of last sample is currently unknown)."                      
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      This data set contains the attitude data for the rotor of the Galileo   
+      spacecraft. The data provided cover portions of the Jupiter Approach    
+      (JA) and all orbit operation mission phases (J0-J35)."                  
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+Overview                                                                      
+========                                                                      
+                                                                              
+This data set contains the attitude data for the rotor of the Galileo         
+spacecraft. The data provided are derived from the Attitude and               
+Articulation Control System (AACS) data downlink as provided by the           
+Galileo project to the magnetometer team. This data set covers                
+portions of the Jupiter Approach (JA) and all orbit operation mission         
+phases (J0-J35). The data are discontinuous. The sampling frequency           
+varies with mission phase. The coverage period is from                        
+1995-11-28T01:34 to 2001-09-21 (exact time of last sample                     
+is currently unknown).                                                        
+                                                                              
+Data Sampling                                                                 
+=============                                                                 
+                                                                              
+The data set is derived from 3 downlink sources, depending on the mission     
+phase.  During the recorded intervals, attitude data are played back with     
+the other recorded fields and particles data. During these periods data are   
+available every minor frame (~2/3 second). Attitude data in these periods     
+are all sampled at the same time, no interpolation is required.               
+                                                                              
+When real-time Science (RTS) data are being acquired, attitude data are       
+acquired simultaneously once every 5 major frames (~5 minutes).               
+                                                                              
+When neither RTS or recorded data are being acquired, AACS data are           
+only returned in the engineering stream, not as a true data stream. The       
+data during these intervals are subcommutated. Right Ascension (RA),          
+Declination (DEC), and Rotor Twist values are not synchronously sampled.      
+In order to make the data from these intervals useful, the RA and DEC data    
+have been linearly interpolated to the time of the twist samples. Samples     
+from these intervals are available about once every two hours. Only the       
+MAG and DDS instruments acquire data during these mission phases. This        
+sampling frequency is adequate given the long averages acquired by these      
+instruments during these mission phases.                                      
+                                                                              
+Data Processing                                                               
+===============                                                               
+                                                                              
+When data are simultaneously available from all three AACS channels, no       
+processing is applied other than to convert data numbers into radians.        
+When data are not simultaneously sampled, the RA and DEC values are           
+linearly interpolated between samples to the time of the TWIST samples.       
+Beginning in Phase 2A, the rotor spin angle was no longer included in the     
+downlink. This value is calculated on the ground by using the values of       
+RA, DEC, and TWIST and the difference between Earth's equatorial and          
+ecliptic poles.                                                               
+                                                                              
+The EME-50 to System III (1965) rotation matrix is computed by using the      
+SPICE SPK kernel S980326B.XSP (final prime mission reconstruction). These     
+values can be reproduced by using the following pseudo-code fragment:         
+                                                                              
+      INTEGER            I, LU                                                
+      CHARACTER*24       SCLK                                                 
+      DOUBLE PRECISION   ET, E502J2K (3,3), J2K2S3(3,3), E502S3(3,3)          
+                                                                              
+C                                                                             
+C     Load Kernels                                                            
+C                                                                             
+      CALL CLPOOL()                                                           
+      CALL LDPOOL ('P_CONST.KER')                                             
+      CALL LDPOOL ('LEAP_SEC.KER')                                            
+      CALL LDPOOL ('P_CONST.KER')                                             
+      CALL SPKLEF ('GLL_JUP.SPK', LU)                                         
+C                                                                             
+C     Begin loop through data, reading a sclk and computing a matrix          
+C                                                                             
+      READ (10, 999) SCLK                                                     
+      CALL SCS2E  (-77, SCLK, ET)                                             
+      CALL IRFTRN ('FK4', 'J2000', E502J2K)                                   
+      CALL BODMAT (599, ET, J2K2S3)                                           
+C                                                                             
+C     Reverse sign of row three to make system left handed                    
+C                                                                             
+      DO 10, I = 1, 3                                                         
+10       J2K2S3(3,I) = -J2K2S3(3,I)                                           
+      CALL MXM(E502J2K, J2K2S3, E502S3)                                       
+                                                                              
+                                                                              
+C     End loop, E502S3 contains the EME50 -&#10095; System III rotation matrix       
+                                                                              
+Data                                                                          
+====                                                                          
+                                                                              
+All data are archived in a single ASCII table.                                
+                                                                              
+Column  Type     Description &#10094;units&#10095;                                          
+-______________________________________________________________               
+time     char     Spacecraft event time (UTC), PDS time format.               
+sclk     char     Spacecraft clock counter.                                   
+RA       real     Rotor right ascension, EME-50. &#10094;radians&#10095;                    
+DEC      real     Rotor declination, EME-50.     &#10094;radians&#10095;                    
+TWIST    real     Rotor EME-50 spin phase angle. &#10094;radians&#10095;                    
+SPIN     real     Rotor ECL-50 spin phase angle. &#10094;radians&#10095;                    
+A11      real     EME50-&#10095;SYS3 matrix row 1, column 1 value.                   
+A12      real     EME50-&#10095;SYS3 matrix row 1, column 2 value.                   
+A13      real     EME50-&#10095;SYS3 matrix row 1, column 3 value.                   
+A21      real     EME50-&#10095;SYS3 matrix row 2, column 1 value.                   
+A22      real     EME50-&#10095;SYS3 matrix row 2, column 2 value.                   
+A23      real     EME50-&#10095;SYS3 matrix row 2, column 3 value.                   
+A31      real     EME50-&#10095;SYS3 matrix row 3, column 1 value.                   
+A32      real     EME50-&#10095;SYS3 matrix row 3, column 2 value.                   
+A33      real     EME50-&#10095;SYS3 matrix row 3, column 3 value.                   
+                                                                              
+Ancillary Data                                                                
+==============                                                                
+                                                                              
+There are several SPICE kernels used in the production of this data set.      
+All of the SPICE kernels used to produce this data set are contained on       
+the MWG archive volume DVD in the EXTRAS/SPICE/KERNELS directory.             
+The kernels (PDS PRODUCT_ID) used to create this were:                        
+                                                                              
+  S980326B.TSP  - Prime Mission Reconstruction (JA - E12)                     
+  S000131A.TSP  - GEM reconstruction (E12-E26)                                
+  S020128A.TSP  - GMM (I27-I33) reconstruction, A34/J35 predict.              
+  MK00062B.TSC  - Galileo spacecraft clock kernel.                            
+  NAIF0007.TLS  - Leapseconds kernel.                                         
+  PCK00006.TPC  - Planetary constants kernel.                                 
+                                                                              
+Coordinates                                                                   
+===========                                                                   
+                                                                              
+The basic rotor coordinate system has its Z-axis aligned with the spin        
+axis (positive in the opposite direction as the HGA) and its +Y-axis          
+pointing outward from the spacecraft body along the magnetometer boom.        
+X completes the right handed set. This coordinate system spins with the       
+rotor at a period of approximately 19 seconds.                                
+                                                                              
+Earth Mean Equator and dynamical equinox of Besselian year 1950 (EME-50)      
+is an inertial coordinate system used by the Galileo project for              
+navigation purposes. This system also commonly known as Fundamental           
+Catalog (4) or 'FK4' by the SPICE software. At the reference epoch, this      
+system has its +Z axis parallel to the Earth's north pole and its +X axis     
+points to the first point of Aries.                                           
+                                                                              
+System III (1965) is the standard planetographic (left handed) coordinate     
+system as defined by the IAU for Jupiter [DESSLER1983]. The Central           
+Meridian Longitude is taken at 00 UTC on January 1, 1965. The rotation        
+period for Jupiter is defined to be 9h 55m 29.71s (870.536 deg/day). "        
+                                                                              
+CONFIDENCE_LEVEL_NOTE          = "                                            
+                                                                              
+The AACS data are basically raw data that have been converted to physical     
+units. There are some data spikes and dropouts (zero filled) in the data      
+set. In areas where RA and DEC values needed to be linearly interpolated,     
+obviously bad points were edited out before interpolating. No attempt has     
+been made to interpolate data in the vicinity of spacecraft maneuvers.        
+The spacecraft has a wobble that is less than a milliradian in amplitude.     
+Linear interpolation, where applied does not reproduce this wobble. The       
+basic attitude data is expected to be reliable at nearly the quantization     
+level of about 0.0001 radians.                                                
+                                                                              
+During the Phase 2A mission the rotor spin angle is no longer included        
+in the downlink. The difference between the spin angle and the twist          
+angle is strictly a function of the rotor RA and DEC. This difference is      
+computed on the ground and subtracted from the twist angle to generate        
+spin angle where it is missing (after May, 1996).                             
+                                                                              
+The rotation matrix data have been generated by software from the Galileo     
+project approved SPICE kernels. The software has been tested extensively      
+and verified.  Data can be considered to be reliable to the precision         
+implied by the number of significant digits provided."                        
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = IO                                       
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = EUROPA                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = GANYMEDE                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = CALLISTO                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = AMALTHEA                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = "IO PLASMA TORUS"                        
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = GO                                       
+    INSTRUMENT_ID                  = POS                                      
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "GALILEO"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "DESSLER1983"                            
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+END_OBJECT                     = DATA_SET                                     
+END

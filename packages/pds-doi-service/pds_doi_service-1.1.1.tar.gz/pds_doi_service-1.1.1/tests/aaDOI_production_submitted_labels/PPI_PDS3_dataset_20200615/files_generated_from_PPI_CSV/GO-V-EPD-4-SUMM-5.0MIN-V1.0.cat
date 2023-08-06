@@ -1,0 +1,74 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+UNK,        UNK, initial draft;                                              
+2012-07-06, D. Kazden, updated to meet PDS 3.8 Standards"                    
+                                                                             
+OBJECT                         = DATA_SET                                    
+                                                                             
+DATA_SET_ID                    = "GO-V-EPD-4-SUMM-5.0MIN-V1.0"               
+                                                                             
+OBJECT                         = DATA_SET_INFORMATION                        
+DATA_SET_NAME                  = "GO VEN EPD RESAMPLED SUMMARY 5.0 MIN v1.0" 
+DATA_OBJECT_TYPE               = TABLE                                       
+DATA_SET_COLLECTION_MEMBER_FLG = "N"                                         
+START_TIME                     = 1990-041T03:10:10                           
+STOP_TIME                      = 1990-041T08:35:10                           
+DATA_SET_RELEASE_DATE          = 1993-11-09                                  
+PRODUCER_FULL_NAME             = "Christopher R. Brull"                      
+DETAILED_CATALOG_FLAG          = "N"                                         
+ABSTRACT_DESC                  = "This data set contains 5 minute averages   
+for the energetic particle detector rate data obtained from the LEMMS        
+telescope during the time the detector was operated during the Venus         
+encounter."                                                                  
+DATA_SET_TERSE_DESC            = "This data set contains 5 minute averages   
+for the energetic particle detector rate data obtained from the LEMMS        
+telescope during the time the detector was operated during the Venus         
+encounter."                                                                  
+CITATION_DESC                  = TBD                                         
+                                                                             
+DATA_SET_DESC                  = "                                           
+This data set contains 5 minute averages for the energetic                   
+particle detector rate data obtained from the LEMMS telescope during         
+the time the detector was operated during the Venus encounter.  The          
+data are recorded in five minute averages for each of 17 LEMMS               
+channels.  (The CMS telescope was not powered up during the Venus            
+encounter.)  All of the data was taken with the telescope                    
+perpendicular to the spacecraft spin axis (motor step position = 4).         
+The rates reported are in units of counts/sec.  Each entry in the            
+browse document is averaged over a five minute time span to reduce the       
+amount of data more condusive for browsing.  The energetic particle          
+data included in this browse set are summarized by Williams et al.           
+[WILLIAMSETAL91]."                                                           
+                                                                             
+CONFIDENCE_LEVEL_NOTE          = "                                           
+Data in this browse set includes only that data which has                    
+valid data flag markers as a result of processing done by the Galileo        
+Energetic Particles Detector Archive Processor [EPDPROC91].  A gap in        
+the data exists from ~06:38 to ~07:38."                                      
+                                                                             
+END_OBJECT                     = DATA_SET_INFORMATION                        
+                                                                             
+OBJECT                         = DATA_SET_MISSION                            
+  MISSION_NAME                   = "GALILEO"                                 
+END_OBJECT                     = DATA_SET_MISSION                            
+                                                                             
+OBJECT                         = DATA_SET_TARGET                             
+  TARGET_NAME                    = "VENUS"                                   
+END_OBJECT                     = DATA_SET_TARGET                             
+                                                                             
+OBJECT                         = DATA_SET_HOST                               
+  INSTRUMENT_HOST_ID             = GO                                        
+  INSTRUMENT_ID                  = EPD                                       
+END_OBJECT                     = DATA_SET_HOST                               
+                                                                             
+OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+  REFERENCE_KEY_ID               = "WILLIAMSETAL91"                          
+END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                             
+OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+  REFERENCE_KEY_ID               = "EPDPROC91"                               
+END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                             
+END_OBJECT = DATA_SET                                                        
+END
+

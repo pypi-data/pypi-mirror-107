@@ -1,0 +1,184 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+X. LIU (added DATA_SET_TERSE_DESC), 2002-08-26;                               
+D. Kazden, removed Zs from STRAT_TIME and STOP_TIME, added ABSTRACT_DESC and  
+CITATION_DESC, 2011-05-18;                                                    
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-11-02;                             
+D. Kazden, updated CITATION_DESC, 2020-02-28;"                                
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-J-PRA-4-SUMM-BROWSE-48SEC-V1.0"     
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG2 JUP PRA RESAMPLED SUMMARY BROWSE    
+48SEC V1.0"                                                                   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1979-04-25T00:00:00.000                  
+    STOP_TIME                      = 1979-08-04T23:04:00.000                  
+    DATA_SET_RELEASE_DATE          = 1997-12-01                               
+    PRODUCER_FULL_NAME             = "MICHAEL L. KAISER"                      
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    ABSTRACT_DESC                  = "This data set consists of edited browse 
+      data derived from an original data set obtained from the Voyager 2      
+      Planetary Radio Astronomy (PRA) instrument in the vicinity of Jupiter.  
+      Data are provided for 70 instrument channels covering the range from    
+      1.2 kHz to 1326 kHz in uniform 19.2 kHz steps, each 1 kHz wide. Data    
+      are included for the period 1979-04-25 00:00:00.000 through             
+      1979-08-04 23:04:00.000."                                               
+    CITATION_DESC         = "Kaiser, M.L., VG2-J-PRA-4-SUMM-BROWSE-48SEC-V1.0,
+                              VG2 JUP PRA RESAMPLED SUMMARY BROWSE 48SEC V1.0,
+                              NASA Planetary Data System, 1997."              
+    DATA_SET_TERSE_DESC            = "Voyager 2 Radio Astronomy (PRA) data    
+    from the Jupiter encounter.  The data set provides 48 second edited browse
+    radio mean power data. The data are provided for 70 instrument channels,  
+    covering 1.2 kHz to 1326 kHz."                                            
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+      Instrument P.I.       : James W. Warwick                                
+      Data Supplier         : Michael L. Kaiser                               
+      Data sampling rate    : 48 seconds                                      
+      Data Set Start Time   : 1979-04-25T00:00:00.000Z                        
+      Data Set Stop Time    : 1979-08-04T23:04:00.000Z                        
+                                                                              
+      This data set consists of edited browse data derived from an            
+      original data set obtained from the Voyager 2 Planetary Radio           
+      Astronomy (PRA) instrument in the vicinity of Jupiter. Data             
+      are provided for 70 instrument channels covering the range              
+      from 1.2 kHz to 1326 kHz in uniform 19.2 kHz steps, each 1 kHz          
+      wide. Data are included for the period 1979-04-25 00:00:00.000          
+      through 1979-08-04 23:04:00.000. In order to produce this data          
+      set from the original raw PRA data, several steps have been             
+      taken:                                                                  
+                                                                              
+      1. The PRA operates in a variety of modes; data from modes in           
+      which the receiver does not scan rapidly through its frequency          
+      range have been removed;                                                
+      2. The data have been calibrated as best we know how;                   
+      3. The data have been split into Left Hand Circular (LHC) and           
+      Right Hand Circular (RHC) components;                                   
+      4. The data have been binned into 48-second intervals.                  
+                                                                              
+      Thus, values at a given channel are separated in time by an             
+      increment of 48 seconds; each 48-second time interval has               
+      associated with it a value for LHC polarization and one for             
+      RHC polarization.                                                       
+                                                                              
+      During data gaps, the entire record is absent from the                  
+      data set; that is, missing records have not been zero-filled            
+      or otherwise marked. Bad data within a record is indicated by           
+      the value zero, which cannot otherwise occur.                           
+                                                                              
+      Each datum is returned as a 16-bit quantity; it represents the          
+      mean power received in the given channel at the specified time          
+      and polarization. The returned quantity is the value in mB              
+      about a reference flux density. To convert a returned quantity          
+      to flux, use the formula:                                               
+                                                                              
+      flux   = 7.0x10^(-22)x10^(mB/1000) W m-2 Hz-1                           
+                                                                              
+      Parameters                                                              
+      ==========                                                              
+                                                                              
+      Data Set Parameter 'RADIO WAVE SPECTRUM'                                
+      ----------------------------------------                                
+      Data Set Parameter Name        : RADIO WAVE SPECTRUM                    
+      Data Set Parameter Unit        : MILLIBEL                               
+      Sampling Parameter Name        : TIME                                   
+      Sampling Parameter Unit        : SECOND                                 
+      Sampling Parameter Resolution  : 0.001                                  
+      Sampling Parameter Interval    : 48                                     
+      Minimum Available Sampling Int : 12                                     
+      Noise Level                    : 2400                                   
+                                                                              
+      A set of derived parameters consisting of power fluxes at               
+      various contiguous frequencies over a range of frequencies.             
+      Millibels may be converted to watts/m**2/Hz by using the                
+      formula for flux indicated above.                                       
+                                                                              
+      Source Instrument Parameters                                            
+      ============================                                            
+      Instrument Host ID              : VG2                                   
+      Data Set Parameter Name         : RADIO WAVE SPECTRUM                   
+      Instrument Parameter Name       : WAVE FLUX DENSITY                     
+                                        ELECTRIC FIELD WAVEFORM               
+                                        ELECTRIC FIELD COMPONENT              
+                                        MAGNETIC FIELD COMPONENT              
+                                        WAVE ELECTRIC FIELD INTENSITY         
+                                        WAVE MAGNETIC FIELD INTENSITY         
+      Important Instrument Parameters : 1 (for all parameters)                
+                                                                              
+      Data Coverage                                                           
+      =============                                                           
+Filename   Records               Start                 Stop                   
+-------------------------------------------------------------------           
+Volume ID: VG_1502                                                            
+PRA.DAT  128633   1979-04-25T00:00:00.000Z  1979-08-04T23:04:00.000Z"         
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+      Confidence Level Overview                                               
+      =========================                                               
+      This data set includes all the available low-rate scanning              
+      mode data for the frequency range below 1326 kHz for the time           
+      interval covered. Known bad data have been set to zero. Data            
+      which appear to exceed the Full Scale Deflection (FSD) of the           
+      instrument (i.e. the most intense signal which can be measured          
+      reliably) have also been set to a zero (should they occur).             
+      Planetary Radio Astronomy (PRA) suffers from interference from          
+      many other instruments aboard the spacecraft. No attempt had            
+      been made to remove these interferences in this data set. Two           
+      obvious examples are the 136 and 193 kHz channels which are             
+      nearly always contaminated by interference.                             
+                                                                              
+      The separation into LHC and RHC polarization components is              
+      performed on the basis of the polarization of the incoming              
+      wave as perceived by the instrument. This takes into account            
+      neither the antenna transfer function nor the spacecraft                
+      orientation with respect to the source. In general, the                 
+      mapping of perceived polarization back to emitted polarization          
+      cannot be solved without a knowledge of both of these factors,          
+      as well as a knowledge of the type of polarization coming from          
+      the source region (e.g. is it linear or circularly                      
+      polarized?).                                                            
+                                                                              
+      Most planetary emissions are circularly polarized. Below is a           
+      table showing the response of the experiment to a low frequency         
+      (100 kHz) LHC wave. The response does not change much up to             
+      about 5 MHz.                                                            
+                                                                              
+      The coordinate system used is: THETA == 0 is along the MAG              
+      boom; PHI == 0 is the bisector of the two PRA antennas. The             
+      third column is the apparent value of the left hand component           
+      as perceived by the receiver. That is, a value of +1.0                  
+      indicates that the incoming LHC wave is correctly detected as           
+      a pure LHC wave. A value of -1.0 will be detected as being of           
+      the correct strength, but incorrect polarity. A value of, say,          
+      0.6 indicates that the total energy is split 60% into the               
+      apparent LHC component and 40% into the apparent RHC component."        
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PRA                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "WARWICKETAL1979B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

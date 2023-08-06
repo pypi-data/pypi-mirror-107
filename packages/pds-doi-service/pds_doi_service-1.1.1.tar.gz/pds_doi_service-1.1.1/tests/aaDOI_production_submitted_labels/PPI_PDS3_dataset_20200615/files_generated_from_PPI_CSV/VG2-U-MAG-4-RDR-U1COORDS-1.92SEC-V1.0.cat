@@ -1,0 +1,135 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-08-31, RMONARREZ, received by ftp;                                     
+  1992-09-14, EFRIED;                                                         
+  1992-09-18, EFRIED,                                                         
+                updated Data Set templates according to new std.              
+                Data Set Template -&#10095; Spacecraft Data Set Template             
+                event_start_time, event_stop_time -&#10095; start_time, stop_time;   
+  1992-09-24, EFRIED,                                                         
+          Revised DATA_SET_ID and DATA_SET_NAME;                              
+  1992-10-12, EFRIED,                                                         
+          Revised AUTHOR_FULL_NAME;                                           
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-21, D. Kazden, removed unnecessary keywords, added                  
+          ABSTRACT_DESC, CITATION_DESC and DATA_SET_TERSE_DESC;               
+  2012-02-01, D. Kazden, updated REFERENCE_KEY_IDs;                           
+  2020-03-04, D. Kazden, updated CITATION_DESC;"                              
+                                                                              
+OBJECT                         = DATA_SET                                     
+  DATA_SET_ID                    = "VG2-U-MAG-4-RDR-U1COORDS-1.92SEC-V1.0"    
+                                                                              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "VG2 URA MAG RESAMPLED RDR U1 COORDINATES
+                                      1.92SEC V1.0"                           
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    START_TIME                     = 1986-01-24T07:00:00.005                  
+    STOP_TIME                      = 1986-01-25T03:59:58.001                  
+    DATA_OBJECT_TYPE               = "TIME SERIES"                            
+    DATA_SET_RELEASE_DATE          = 1993-02-01                               
+    PRODUCER_FULL_NAME             = "DR. NORMAN F. NESS"                     
+    DETAILED_CATALOG_FLAG          = "Y"                                      
+    ABSTRACT_DESC                  = " This data set includes data from the   
+          Low Field Magnetometer (LFM) in the during the Uranus encounter. The
+          encounter data (1986-01-24T07:00:00  -&#10095; 1986-01-25T04:00:00) have   
+          been averaged from the 60ms instrument sample rate to a 1.92 second 
+          resampled rate and are provided in the Uranus Longitude (U1)        
+          coordinate system. Magnetometer data in the solar wind are given in 
+          Heliographic coordinates."                                          
+    CITATION_DESC        = "Ness, N.F., VG2-U-MAG-4-RDR-U1COORDS-1.92SEC-V1.0,
+                        VG2 URA MAG RESAMPLED RDR U1 COORDINATES 1.92SEC V1.0,
+                            NASA Planetary Data System, 1993."                
+    DATA_SET_TERSE_DESC            = "This data set contains LFM data in      
+          the solar wind at Uranus.  The data were averaged from the 60ms     
+          instrument sample rate to a 1.92 second resampled rate given in     
+          the Uranus Longitude (U1) coordinate system. Magnetometer data are  
+          in HG coordinates."                                                 
+    DATA_SET_DESC                  = "                                        
+          This data set includes data from the Low Field Magnetometer (LFM)   
+          in the solar wind during the Uranus encounter. The                  
+          encounter data (1986-01-24T07:00:00  -&#10095; 1986-01-25T04:00:00)        
+          have been averaged from the 60ms instrument sample rate             
+          to a 1.92 second resampled rate and                                 
+          are provided in the Uranus Longitude (U1) coordinate system.        
+          Magnetometer data in the solar wind are given in Heliographic       
+          coordinates and are also available in a separate dataset.           
+          The dataset consists of the following columns:                      
+           1) ctime (decimal seconds since 1966-01-01T00:00:00.000),          
+           2) pdstime (ISO standard time format),                             
+           3-5) spacecraft clock (m65536,m60,fds-line),                       
+           6) magnetometer id (1 = LFM, 2 = HFM),                             
+           7) Br (radial component),                                          
+           8) Bphi (longitudinal component),                                  
+           9) Btheta (colatitudinal component),                               
+          10) Bmag  (magnitude of the average components),                    
+          11) avg_Bmag (average of the magnitude of the raw components),      
+          12) Lambda (longitude = tan^-1(Bt/Br)),                             
+          13) Delta (latitude = sin^-1(Bn/avg_Bmag) ),                        
+          14-16) rms vector (Pythagorean root mean square deviation           
+               of the component averages),                                    
+          17) npts (number of points in average),                             
+          18) flag a character string which indicates software or             
+              s/c hardware intervention which reduces confidence              
+              in the data (NULL flags represent 'good' data).                 
+                                                                              
+                                                                              
+          The U1 coordinate system is a non-inertial spherical coordinate     
+          system that rotates with Uranus with a period of                    
+          17.24 hours. The system components are:                             
+          R     - Radial along the Uranus-S/C line, positive away from Uranus,
+          Phi   - east longitudinal component,                                
+          Theta - colatitudinal component.                                    
+                                                                              
+                                                                              
+              An ancillary data file containing the derived spacecraft        
+          magnetic field is provided with this data at a 48 second            
+          sample rate. These data provide zero level offsets used in          
+          the data processing. S/C field data is provided in spacecraft       
+          coordinates.                                                        
+                                                                              
+    SAMPLING_PARAMETER_NAME        = TIME                                     
+    SAMPLING_PARAMETER_RESOLUTION  = 1.920000                                 
+    MINIMUM_SAMPLING_PARAMETER     = 19770820120000.000000                    
+    MAXIMUM_SAMPLING_PARAMETER     = UNK                                      
+    SAMPLING_PARAMETER_INTERVAL    = 1.920000                                 
+    MINIMUM_AVAILABLE_SAMPLING_INT = 0.060000                                 
+    SAMPLING_PARAMETER_UNIT        = SECOND                                   
+    DATA_SET_PARAMETER_NAME        = MAGNETIC FIELD VECTOR                    
+    NOISE_LEVEL                    = 0.006000                                 
+    DATA_SET_PARAMETER_UNIT        = NANOTESLA                                
+                                                                              
+"                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+          This dataset contains some data gaps and spikes. The                
+          dataset does contain a flag value which has been provided           
+          by the PI (Norman Ness) that indicates whether or not a             
+          particular record has been contaminated by software error           
+          or by spacecraft interference ( a flag value of 1 indicates         
+          a bad value, 0 indicates that the record has either not             
+          been evaluated or is good). Some records that are obviously         
+          contaminated have not been flagged. The hourly summary data         
+          will show a contamination code and data quality code of 2           
+          when data in the hour have not been flagged but are                 
+          obviously in error and a contamination code of 1 when the           
+          hour contains flagged records."                                     
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = "URANUS"                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = "VG2"                                    
+    INSTRUMENT_ID                  = "MAG"                                    
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "NESSETAL1986"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

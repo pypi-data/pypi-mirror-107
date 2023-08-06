@@ -1,0 +1,229 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. Kazden, added ABSTRACT_DESC and CITATION_DESC, updated ARCHIVE_STATUS,    
+2012-03-01;                                                                  
+D. Kazden, removed ARCHIVE_STATUS keyword, 2018-08-06;"                      
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P10-J-HVM-4-SUMM-NEAR-ENC-1MIN-V1.0"   
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P10 JUPITER HVM B-FIELD INSIDE 7 RJ JG 
+                                      COORDS 1 MIN AVG V1.0"                 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1973-12-03T21:50:58.560                 
+    STOP_TIME                      = 1973-12-04T07:54:02.880                 
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "EDWARD J. SMITH"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+      Pioneer 10 Vector Helium Magnetometer (HVM) data from the Jupiter      
+      encounter period between 1973-12-03T21:50 and 1973-12-04T07:54."       
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 10 Vector Helium Magnetometer (HVM) data from the Jupiter      
+      encounter period between 1973-12-03T21:50 and 1973-12-04T07:54.        
+      The data set provides 1.0 minute magnetic field averages and           
+      spacecraft trajectory data in JG coordinates."                         
+                                                                             
+    DATA_SET_DESC                = "                                         
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    This data set consists of magnetic field vector data recorded by         
+    the Vector Helium Magnetometer onboard the Pioneer 10 spacecraft,        
+    during the close encounter to Jupiter (inside 7 RJ). The vector          
+    data are provided in a Jupiter-centered JG coordinates (see              
+    descriptions in Sections of Data Format and Coordinate System for        
+    Data). Also included are the spacecraft trajectory data (distance        
+    from Jupiter, latitude, and longitude) in the same coordinates.          
+                                                                             
+                                                                             
+  Data Sampling                                                              
+  ==============                                                             
+    These data are provided in 1 minute averages. The resolution from        
+    which the 1 minute averages were generated is unknown. The               
+    magnetometer measures the three field components over a frequency        
+    range from 0 to 10 Hz. At encounter the data rate was 1024 bits/sec      
+    and the magnetometer sampling rate was one vector measurement every      
+    3/16 second, corresponding to 5.33 samples/sec.                          
+                                                                             
+                                                                             
+  Data Format                                                                
+  ============                                                               
+    The Pioneer 10 magnetometer data for the close encounter to Jupiter      
+    were originally written on a 9-track, 1600 bpi, ASCII encoded            
+    magnetic tape. The original file was re-formatted into ASCII. The        
+    data file contains the following data columns:                           
+    --------------------------------------------------------------------     
+    Column  Column   Column                                                  
+    Name    Format   Description                                             
+    --------------------------------------------------------------------     
+    TIME    A24      Ground received time in yyyy-mm-ddThh:mm:ss.sss         
+    R       F12.4    Distance of Pioneer 10 from Jupiter in Rj               
+    LAT     F12.4    Latitude of Pioneer 10 in JG coordinates                
+    LON     F12.4    Longitude of Pioneer 10 in JG coordinates               
+    BX      F12.4    X component of the magnetic field in JG coordinates     
+    BY      F12.4    Y component of the magnetic field in JG coordinates     
+    Bz      F12.4    Z component of the magnetic field in JG coordinates     
+    --------------------------------------------------------------------     
+                                                                             
+                                                                             
+  Coordinate System for Data                                                 
+  ===========================                                                
+    JG coordinates is defined as the X axis in the direction of G, the       
+    equatorial vector lying in the System III (1957.0) Prime Meridian;       
+    the Z axis in the direction of J, the spin axis of Jupiter;  and         
+    the Y axis parallel to Jupiter's equatorial plane and completing         
+    the right-handed orthogonal system.                                      
+                                                                             
+                                                                             
+  Instrument Calibration                                                     
+  ======================                                                     
+    The in-flight calibration consists of impressing eight precisely         
+    known currents on the sensor coil system and measuring the resulting     
+    fields with the magnetometer. The instrument is designed to carry        
+    out a nominal mission with only one instrument-on command. The           
+    instrument comes on in the automatic ranging/spectrum analyzer           
+    mode and automatically ranges to the proper scale by comparing           
+    the +X and |Z| axis outputs with fixed reference voltages. The           
+    only function commands sent to this instrument during the Pioneer        
+    F&G missions were those to initiate the in-flight calibration            
+    sequence periodically during the cruise phase. At the conclusion         
+    of this sequence the instrument automatically returned to the            
+    automatic ranging mode. A 6-bit digital house-keeping word               
+    indicates the operating mode of the instrument.                          
+                                                                             
+    The in-flight calibration onboard the Pioneer spacecraft was done        
+    by ground command once or twice a week. The low range sensors were       
+    calibrated at field magnitude of 13 GAMMA and 26 GAMMA during the        
+    interplanetary cruise period. While the high range sensors were          
+    calibrated near planetary encounter where the field magnitude was        
+    as high as +/-43,000 GAMMA and 86,800 GAMMA. There are two kind of       
+    instrument calibration parameters, sensor scale factor (gain) and        
+    offset.                                                                  
+                                                                             
+    The conventional approach to checking the magnetometer scale             
+    factors in flight is to apply calibration field changes, dB to           
+    the sensors so that the corresponding voltage change dV can be           
+    determined. Normally several step changes are applied sequentially       
+    so that the linearity can be tested directly. After two years of         
+    in-flight calibrations, no change has been detected in the Pioneer       
+    10 or 11 scale factors which were then known to an accuracy of           
+    1 percent or better.                                                     
+                                                                             
+    The sensor offsets were determined in-flight using two different         
+    techniques.  For the two sensors in the spin plane, the offset           
+    was calculated by averaging the spinning data in a time interval         
+    of an integral number of spin period. The offset of the spin axis        
+    sensor was determined by an adaptation of a variance technique           
+    developed by L. Davis [BELCHER1973]. The essential assumption            
+    was made that over short intervals of time (5 minutes), the              
+    fluctuations in the interplanetary field are principally changes         
+    in direction and tend to conserve the magnitude of the field."           
+                                                                             
+    CONFIDENCE_LEVEL_NOTE        = "                                         
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    The vector helium magnetometer noise spectrum is independent of          
+    frequency (white) with a field equivalent power spectral density         
+    of 10**-4 GAMMA**2/HZ. For signal bandwidths less than 1 Hz,             
+    corresponding for example to values averaged over a few seconds          
+    or more, fields smaller than 0.01 GAMMA can be detected.                 
+                                                                             
+    The maximum relative error of the magnetometer sensors is given by       
+               dB/B &#10094;= dB0/B + dk/k                                          
+    where B0 is the total offset error and dk is the scale factor error.     
+    The scale factor accuracy is as good as 1%. And the total offset         
+    error is mainly caused by the spin axis sensor error because it          
+    is not readily determined as the two in spin-plane sensors. The          
+    ratio of the standard deviation of the offset in spinning axis           
+    to the field magnitude is about 0.05. Thus, the maximum relative         
+    error in the magnetic field measurement is 0.06.                         
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================                                                  
+    This data set has a nearly 2-hour data gap between                       
+    1973-12-04T04:08:58 and 1973-12-04T05:51:05 in this data set, on top     
+    of sporadic missing data points after 1973-12-04T06:18:00.000.           
+                                                                             
+    There are no flagged values in this data set."                           
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P10                                     
+    INSTRUMENT_ID                  = HVM                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1975"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNAETALL1980"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "BELCHER1973"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCCULLOCH&KOMES1973"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MEAD1974"                              
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITH1973"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

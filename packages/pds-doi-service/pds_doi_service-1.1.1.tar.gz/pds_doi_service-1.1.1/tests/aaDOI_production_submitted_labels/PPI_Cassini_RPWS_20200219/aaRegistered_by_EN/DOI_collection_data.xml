@@ -1,0 +1,37 @@
+<records>
+    <record>
+        <id>1517823</id>
+        <title>Cassini RPWS Electron Densities from Upper Hybrid and Plasma Wave Frequencies</title>
+        <creators>Persoon, A.M.; Groene, J.B.; West, E.E.; Kurth, W.S.; Wahlund, J.-E.; Gurnett, D.A.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>01/26/2020</publication_date>
+        <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Acassini-rpws-electron_density%3Adata&amp;version=1.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:cassini-rpws-electron_density:data::1.0</product_nos>
+            
+        <description>
+				This collection provides electron number density values derived from features observed in plasma wave data obtained by the Cassini Radio and Plasma Wave Science (RPWS) instruments, along with observed or derived characteristic frequencies, and useful positional parameters for the spacecraft and related bodies.  When present, frequency values of narrowband emissions at the upper hybrid resonance were digitized and combined with measured or model magnetic field to derive electron number density.  At other times, features such as the upper cutoff in auroral hiss or electron plasma oscillations were used to determine the plasma frequency and electron density.
+		</description>
+        <keywords>PDS;  PDS4;  PPI;  Cassini;  RPWS; ; Derived; Magnetosphere; Ionosphere; Particles; Electrons; Plasma; CASSINI-HUYGENS; CASSINI ORBITER; RADIO AND PLASMA WAVE SCIENCE for CO; Saturn; Enceladus; Jupiter; Earth</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS Operator</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

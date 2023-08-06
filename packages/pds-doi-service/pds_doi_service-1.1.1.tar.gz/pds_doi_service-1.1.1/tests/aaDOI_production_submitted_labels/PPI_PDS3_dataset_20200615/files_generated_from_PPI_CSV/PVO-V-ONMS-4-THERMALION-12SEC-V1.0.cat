@@ -1,0 +1,191 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-27, D. Kazden, updated to meet PDS 3.8 standards;       
+             2020-02-11, D. Kazden, updated CITATION_DESC;"                  
+                                                                             
+    OBJECT                         = DATA_SET                                
+  DATA_SET_ID                      = "PVO-V-ONMS-4-THERMALION-12SEC-V1.0"    
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  =                                         
+                          "PVO VENUS ONMS BROWSE THERMAL ION 12 SECOND V1.0" 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1980-03-15T10:26:29                     
+    STOP_TIME                      = 1992-09-25T23:09:39                     
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    DATA_SET_RELEASE_DATE          = 1993-03-31                              
+    PRODUCER_FULL_NAME             = "DR. WAYNE KASPRZAK"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_SET_TERSE_DESC           = "Pioneer Venus (PVO) neutral mass .      
+                                     spectrometer (ONMS) ion mass and density
+                                     data for all Venus orbits (1-5055,      
+                                     1980-03-15 to 1992-09-25)."             
+    ABSTRACT_DESC                  = "                                       
+    Thermal ions can be measured with the filament off and the               
+     ion repeller set at 0 V. Species observed include He+, N+, O+,          
+     CO+ and/or N2+, NO+, O2+ and CO2+. H+ is not measurable with the        
+     current instrument configuration. One component of the ion drift        
+     in the ecliptic plane can also be determined. Thermal ion               
+     measurements have been taken sporadically at the end of neutral         
+     density passes and on alternate orbits when superthermal ions are       
+     not being measured. "                                                   
+    CITATION_DESC        = "Kasprzak, W., PVO-V-ONMS-4-THERMALION-12SEC-V1.0,
+                            PVO VENUS ONMS BROWSE THERMAL ION 12 SECOND V1.0,
+                            NASA Planetary Data System, 1993."               
+                                                                             
+    DATA_SET_DESC                  ="                                        
+     The ONMS instrument was not operated on all orbits and some             
+     orbits are devoted to engineering studies. Typically neutral            
+     density passes occupied -40 min. to +30 min. relative to the time       
+     of periapsis.  Ion and superthermal ion mode passes typically are       
+     15 to 20 minutes in duration on either side of periapsis. Neutral       
+     density passes during entry also took about this same amount of         
+     time.                                                                   
+                                                                             
+     The data values of the data set are sampled approximately               
+     once per 12 seconds based on GMT times that have been supplied by       
+     the Pioneer Venus Project.  Each representative data point is           
+     constructed using an exponentially weighted average of the data         
+     over a 24 second interval centered at sample point time.                
+                                                                             
+     The data have the following characteristics:                            
+                                                                             
+     LOGICAL RECORD SIZE:               80 bytes                             
+     FORMAT:                            ASCII                                
+     FILES:                             1                                    
+                                                                             
+     The field names used in RECORD 1:                                       
+                                                                             
+      VARIABLE       COMMENT                                                 
+        DATE      YYDDD                                                      
+                  YY=2 digit year (e.g. 78 for 1978)                         
+                  DDD=3 digit day of year (e.g. 053)                         
+        UT        Universal Time represented as the                          
+                  number of milliseconds since                               
+                  1966-01-01T00:00:00Z stored as a double                    
+                  precision floating point number.                           
+        ORBIT     Orbit number                                               
+        PSEC      Time after periapsis (sec)                                 
+        DENS        Density in particles/cm**3                               
+        WPXY        Minimum ion drift m/sec                                  
+        PHSE        Phase shift (degrees)                                    
+        MASS        Mass number -                                            
+                     4 for He+                                               
+                    12 for C+                                                
+                    14 for N+                                                
+                    16 for O+                                                
+                    28 for N2+ and/or CO+                                    
+                    30 for NO+                                               
+                    32 for O2+                                               
+                    44 for CO2+                                              
+        VALT        Altitude above the mean surface of                       
+                    Venus in km                                              
+        VLAT        Venus latitude in degrees                                
+        VLST        Venus local solar time in hr                             
+        VSZA        Venus solar zenith angle in degrees                      
+                                                                             
+     The relationship between thermal ion density and instrument             
+     output was established by direct comparison of the O+ signal with       
+     the O+ density determined from the Orbiter Ion Mass Spectrometer        
+     (OIMS) instrument using O+ data from orbit number 530 at 300            
+     seconds from periapsis.  Other species are assumed to have the          
+     same sensitivity as that of O+. In this mode superthermal ions          
+     cannot be distinguished from thermal ions.                              
+                                                                             
+     The data reduction process has been described in Kasprzak et al.        
+     (1992) but was similar to the technique used for the Superthermal O+    
+     ion data. In order to fit the superthermal O+ data, a minimum of 30     
+     points were required in 36 seconds. In addition, the maximum to         
+     minimum count ratio was required to be factor of 3 or greater in        
+     order to insure that there was a definitive spin modulation.  The       
+     center 12 seconds of data is divided by the fitting function to         
+     derive the equivalent flux for that point. The center of the new        
+     fitting interval is adjusted so that it is centered on the expected     
+     signal maximum predicted from the previous interval fit. As a result    
+     of this method of fitting, discontinuities may exist near minimum       
+     angle of attack where one 12 second interval adjoins the next           
+     interval.                                                               
+                                                                             
+     The method used to reduce the data assumes cylindrical                  
+     symmetry of the ion source.  In actual fact, the source is              
+     asymmetrical in its angular response (Guenther, 1989). This can         
+     introduce as much as a factor of 2 scatter in the data. The ion         
+     species regularly monitored include: He+, N+, O+, N2+ and/or CO+, NO+   
+     and CO2+. As part of the reduction process the minimum ion drift in     
+     the ecliptic plane of the apparent ion flow in spacecraft reference     
+     frame has been deduced. The density is computed by assuming the ions    
+     are thermal energy with a speed equivalent to that of the spacecraft    
+     An approximate correction for spacecraft potential has been applied.    
+     The data are normalized to the OIMS instrument for O+ and all           
+     species are assumed to have the same sensitivity.                       
+                                                                             
+     Several parameters result from the fit: 1) the best estimate            
+     of the density for an approximate 12 second interval (LORES data        
+     set); and 2) the phase shift of signal maximum; and 3) the minimum      
+     ion drift speed in the ecliptic plane. The phase angle is negative      
+     if the predicted signal maximum from the spacecraft velocity is         
+     ahead of the true signal maximum when viewed along the -Z               
+     spacecraft axis with clockwise rotation.  The drift component is        
+     derived from the condition that the total relative velocity in the      
+     moving reference frame has no component perpendicular to the (ONMS      
+     axis, Z axis) plane.                                                    
+                                                                             
+     All data were processed at NASA/Goddard Space Flight Center             
+     using custom programmed software. The software is available.            
+     The data represent a reduction to physical units (density, flux)        
+     and were processed from an intermediate engineering unit file           
+     (current, count/sec etc.). Unit and 1/8 unit amu sweeps are not         
+     contained in the processed data sets but are available from the         
+     engineering unit data set. The engineering unit data is converted       
+     to ambient values using spacecraft velocity and attitude, the           
+     theoretical expected system response, and the corresponding             
+     calibration factors. Superthermal ion data for species other            
+     than O+ is available in engineering unit form.                          
+                                                                             
+     Kasprzak, W.T. and H.B. Niemann, Evidence for Enhanced Dynamic          
+       Flow in Ionospheric Holes from the Pioneer Venus Neutral Mass         
+       Planetary Space Sciences, 40, 33-45,1992."                            
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+     In order to fit the data a minimum of 30 points were required           
+     in 36 seconds. In addition, the maximum to minimum count ratio was      
+     required to be factor of 3 or greater in order to insure that there     
+     was a definitive spin modulation.  The center 12 seconds of data is     
+     divided by the fitting function to derive the equivalent flux for       
+     that point. The center of the new fitting interval is adjusted so       
+     that it is centered on the expected signal maximum predicted from       
+     the previous interval fit. As a result of this method of fitting,       
+     discontinuities may exist near minimum angle of attack where one        
+     12 second interval adjoins the next interval.                           
+                                                                             
+     See Kasprzak et al. (1992).                                             
+                                                                             
+     Kasprzak, W.T. and H.B. Niemann, Evidence for Enhanced Dynamic          
+       Flow in Ionospheric Holes from the Pioneer Venus Neutral Mass         
+       Planetary Space Sciences, 40, 33-45,1992."                            
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "BRACEETAL1987"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KASPRZAK&NIEMANN1992"                    
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+  END_OBJECT                     = SATA_SET                                  
+END

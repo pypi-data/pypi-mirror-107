@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>JUNO E/J/S/SS WAVES CALIBRATED BURST FULL RESOLUTION V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>JNO-E/J/SS-WAV-3-CDR-BSTFULL-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>3000-01-01</publication_date>
+            <country>USA</country>
+            <description>The Juno Waves calibrated burst waveform full resolution data set
+                includes all high rate science electric field waveforms from 50Hz up to
+                45.25 MHz and magnetic field waveforms from 50Hz to 20kHz with sample
+                rates that depend on the receiver used to obtain the waveforms.  This
+                is the complete waveform data set containing all high rate binning mode
+                data and record mode data received from Waves from launch until the end
+                of mission including initial checkout, the Earth flyby, the Jupiter
+                orbits and cruise.
+                
+                Data are acquired from the Waves Low Frequency Receiver (LFR) and High
+                Frequency Receiver (HFR) and are typically losslessly compressed on
+                board.  These data are presented in binary SERIES objects.  This data
+                set comprises highest temporal resolution data obtained by Waves (or all
+                other Juno instruments, for that matter).  Pre-rendered spectrograms
+                generated from these data are included as well to provide the user with
+                a quick view of the content of the data.  This data set should be among
+                the last used of any in the Waves archive as it provides highly detailed
+                information on very short isolated intervals in time.  The Waves full
+            resolution survey data provide context for these data.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=JNO-E%2FJ%2FSS-WAV-3-CDR-BSTFULL-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>JUNO; EARTH; JUPITER; SOLAR SYSTEM; PLASMA WAVE SPECTROMETER; JNO; PLANET; PLANETARY SYSTEM; WAV; WAVES</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DR. WILLIAM S. KURTH</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.jno-e-j-ss-wav-3-cdr-bstfull-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

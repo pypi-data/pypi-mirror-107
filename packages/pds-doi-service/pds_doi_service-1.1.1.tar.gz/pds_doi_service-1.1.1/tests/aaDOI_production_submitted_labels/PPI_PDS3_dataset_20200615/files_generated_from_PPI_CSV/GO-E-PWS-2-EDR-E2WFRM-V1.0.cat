@@ -1,0 +1,132 @@
+PDS_VERSION_ID                  = PDS3
+
+LABEL_REVISION_NOTE                = "B. Harris, 2006-07-14,
+                                        added ARCHIVE_STATUS, ABSTRACT_DESC,
+                                        DATA_SET_TERSE_DESC, CITATION_DESC,
+                                        DATA_SET_MISSION;
+                                        D. Kazden, 2012-06-28, removed Zs
+                                        from START_TIME and STOP_TIME;
+                                        D. Kazden, 2018-08-01, removed
+                                        ARCHIVE_STATUS keyword;
+                                        D. Kazden, 2020-03-11, updated
+                                        CITATION_DESC;"  
+
+OBJECT                       = DATA_SET
+  DATA_SET_ID                    = "GO-E-PWS-2-EDR-E2WFRM-V1.0"
+  OBJECT                         = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "
+      GO E PWS EDITED EARTH 2 WAVEFORM RECEIVER V1.0"  
+      DATA_SET_COLLECTION_MEMBER_FLG = N
+    START_TIME                     = 1992-11-24T15:12:01.580
+    STOP_TIME                      = 1992-12-12T18:47:15.513
+    DATA_SET_RELEASE_DATE          = 1996-08-01
+    PRODUCER_FULL_NAME             = "DR. WILLIAM S. KURTH"
+    DETAILED_CATALOG_FLAG          = "N"
+
+    DATA_SET_TERSE_DESC            = "                                        
+     This data set includes wideband waveform measurements from the Galileo
+    plasma wave receiver obtained during the second Earth encounter."         
+                                                                              
+    ABSTRACT_DESC           = "                                               
+      This data set includes wideband waveform measurements from the Galileo
+    plasma wave receiver obtained during the second Earth encounter.  These
+    measurements are electric or magnetic waveforms obtained by rapidly
+    sampling the potential at the input to the receiver from either the
+    electric dipole antenna or the magnetic search coil antenna.  The sample
+    rates are 201,600 s^-1, 25,200 s^-1, or 3,150 s^-1 taken through bandpass 
+    filters of 80, 10, or 1 kHz, respectively."                               
+                                                                              
+    CITATION_DESC           = "Kurth, W.S., GO-E-PWS-2-EDR-E2WFRM-V1.0,
+                            GO E PWS EDITED EARTH 2 WAVEFORM RECEIVER V1.0,
+                               NASA Planetary Data System, 1996."          
+
+    DATA_SET_DESC                  = "
+    This data set includes wideband waveform measurements from the Galileo
+    plasma wave receiver obtained during the second Earth encounter.  These
+    measurements are electric or magnetic waveforms obtained by rapidly
+    sampling the potential at the input to the receiver from either the
+    electric dipole antenna or the magnetic search coil antenna.  The sample
+    rates are 201,600 s^-1, 25,200 s^-1, or 3,150 s^-1 taken through bandpass 
+    filters of 80, 10, or 1 kHz, respectively.  Each sample is a 4-bit 
+    measurement after an automatic gain control (AGC) amplifier designed to 
+    keep the signal amplitude in a range commensurate with the optimal 
+    analog-to-digital converter dynamic range with a time constant of about 
+    500 msec.  As such, the measurements are not absolutely calibrated, 
+    although it is possible to determine the approximate AGC gain from a 
+    digital performance parameter available every 2.667 seconds, assuming the 
+    signal amplitude does not vary appreciably over the 2.667 second interval.
+    Alternately, the sweep frequency receiver (low rate) portion of the 
+    instrument can be used to determine the absolute amplitude of waves.  In
+    many cases, the waveform data are used without any calibration for the
+    purposes of identifying characteristic frequencies of the plasma via
+    resonances or cutoffs, observing discrete emissions such as chorus or
+    whistlers, or looking at the detailed form of the waveforms.
+    
+    In general, the waveform samples are not continuous over long time
+    periods due to the limited telemetry capability of the Galileo data
+    system and limits on the bandwidth available to the PWS instrument.
+    Instead, sequences of contiguous samples are collected for up to about
+    67 msec followed by a gap.  The number of consecutive samples between
+    gaps is determined by the telemetry format and the bandwidth (instrument
+    mode).  Details of the timing, number of consecutive samples in a series, 
+    and the effective duty cycle are described in the inst.cat, rowpfx.fmt,
+    and edrhdr.fmt files included with the data set.
+    
+    The data are formatted in files covering no more than 1 RIM (60.667 s)
+    each up to 91 data records, with a record containing 10 or 80 blocks of 
+    contiguous waveform samples.  The data in any one file are from only a 
+    single combination of instrument mode (waveform) and telemetry format, 
+    however, the antenna can change within a file; this is noted in the 
+    record header information, but is only updated every 2.667 sec, hence, 
+    may not be accurate less than 2.667 seconds after a real antenna change.  
+    Since the instrument mode information is also updated only once per 2.667 
+    seconds, the last data in a record (less than 2.667 seconds) may actually 
+    be in a different mode.
+    
+    The typical uses of the waveform data are to (1) display the waveform
+    of plasma wave and other signals such as dust impacts, and (2) as
+    highly detailed (in time and frequency) spectra through the use of
+    Fourier transforms.  To avoid artifacts, we suggest not transforming
+    over the gaps but limiting the input to the Fourier transform to a
+    single contiguous series of samples.  Spectra from individual waverform
+    series can be stacked in order to generate frequency-time dynamic
+    spectrograms.
+    
+    During the time interval spanned by this data
+    set, Galileo approached Earth from the local early morning sector, made a
+    close approach to Earth by passing through the magnetosphere, plasmasphere,
+    ionosphere, and finally exited the Earth system in the local late morning."
+
+    CONFIDENCE_LEVEL_NOTE          = "
+    This data set includes all available wideband waveform data within the
+    interval of time covered.  Original EDRs contained inaccuracies in the
+    instrument status and Spacecraft Event Time (SCET).  Each file contains
+    a corrected SCET in the attached PDS label and binary EDR header, and
+    corrected instrument status information in the record headers.  The mag-
+    netic spectra contain narrowband interference lines at 2.4 kHz and har-
+    monics.  Operation of the UVS grating stepper motor produces a series of
+    narrowband interference lines in the magnetic spectra between about 100 Hz
+    and 2 kHz.  Missing data are indicated by zero."
+
+  END_OBJECT                     = DATA_SET_INFORMATION
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = "EARTH"
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = "GO"
+    INSTRUMENT_ID                  = "PWS"
+  END_OBJECT                     = DATA_SET_HOST
+
+  OBJECT                         = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                     = DATA_SET_MISSION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "N/A"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                     = DATA_SET
+
+END

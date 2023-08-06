@@ -1,0 +1,40 @@
+<records>
+    <record>
+        <title>MAVEN ROSE Raw Data Bundle</title>
+        <creators/>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>11/13/2019</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amaven.rose.raw&amp;version=1.9</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.rose.raw::1.9</product_nos>
+            
+        <description>
+            This bundle contains raw data concerning the radio signal transmitted from Earth
+            and the radio signal received at Earth, calibration collections containing a 
+            prediction for the frequency of the radio signal received at Earth and information 
+            on the effects of Earth's ionosphere, troposphere, and weather, and a browse
+            collection contains plots that provide an overview of received data. 
+         </description>
+        <keywords>PDS;  PDS4;  PPI;  Rose;  Earth; ; Raw; Mars Atmosphere and Volatile EvolutioN Mission; MAVEN; Radio Science Instrument</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS Operator</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

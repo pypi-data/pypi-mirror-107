@@ -1,0 +1,78 @@
+PDS_VERSION_ID                 = PDS3                                          
+LABEL_REVISION_NOTE       = "2016-04-26, Rob Wilson"                          
+   RECORD_TYPE                        = STREAM                                
+                                                                              
+OBJECT            = DATA_SET                                                  
+  DATA_SET_ID                 = "JNO-SW-JAD-2-UNCALIBRATED-V1.0"              
+                                                                              
+  OBJECT          = DATA_SET_INFORMATION                                      
+    DATA_SET_NAME = "JUNO SW JOVIAN AURORAL DISTRIBUTION UNCALIBRATED V1.0"   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                = 2011-10-20T22:26:34.121                       
+    STOP_TIME                 = 2014-01-28T02:23:34.521                       
+    DATA_SET_RELEASE_DATE     = 2017-01-31                                    
+    PRODUCER_FULL_NAME        = "ROBERT J WILSON"                             
+    DETAILED_CATALOG_FLAG     = N                                             
+    DATA_OBJECT_TYPE          = "TABLE"                                       
+                                                                              
+    DATA_SET_TERSE_DESC       = "This data set consists of all of the         
+     uncalibrated data collected by the JADE (Jovian Auroral Plasma           
+     Distributions Experiment) on-board the Juno spacecraft.                  
+     For more information about the instrument and data sets, see             
+     [MCCOMAS2013] and [WILSON2014]."                                         
+    CITATION_DESC             = "                                             
+      McComas, D.J., P. Valek, F. Allegrini, C. Loeffler, R.J. Wilson,        
+      JUNO SW JOVIAN AURORAL DISTRIBUTION UNCALIBRATED V1.0,                  
+      JNO-SW-JAD-2-UNCALIBRATED-V1.0, NASA Planetary Data System, 2017."      
+    ABSTRACT_DESC             = "This data set consists of all of the         
+     uncalibrated data collected by the JADE (Jovian Auroral Plasma           
+     Distributions Experiment) on-board the Juno spacecraft.                  
+     For more information about the instrument and data sets, see             
+     [MCCOMAS2013] and [WILSON2014]."                                         
+    DATA_SET_DESC             = "                                             
+                           This volume contains JADE flight software 3 data   
+                           from launch (2011) through 2014.  It is of limited 
+                           use for scientists as it is all operations data.   
+                           We strongly encourage you to use flight software 4 
+                           data in volume JNOJAD_2002 (2015 and onwards)."    
+                                                                              
+    CONFIDENCE_LEVEL_NOTE           = "                                       
+                                                                              
+  Review                                                                      
+  ======                                                                      
+    These data have been reviewed by the instrument team and are of the       
+    highest quality that can be generated at this time. After submission to   
+    the PDS, these data will be approved through the peer review process.     
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+    The main limitation to using this data set is that the data are not       
+    calibrated and every bit was taken for operational testing or high voltage
+    checkouts.  We do not expect any one to use this dataset for science."    
+                                                                              
+                                                                              
+  END_OBJECT      = DATA_SET_INFORMATION                                      
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = "SOLAR WIND"      /* Only for cruise */       
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_HOST                                 
+    INSTRUMENT_HOST_ID        = "JNO"                                         
+    INSTRUMENT_ID             = "JAD"                                         
+  END_OBJECT                  = DATA_SET_HOST                                 
+                                                                              
+  OBJECT                      = DATA_SET_MISSION                              
+    MISSION_NAME              = "JUNO"                                        
+  END_OBJECT                  = DATA_SET_MISSION                              
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "MCCOMAS2013"                                 
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "WILSON2014"                                  
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+END_OBJECT          = DATA_SET                                                
+END

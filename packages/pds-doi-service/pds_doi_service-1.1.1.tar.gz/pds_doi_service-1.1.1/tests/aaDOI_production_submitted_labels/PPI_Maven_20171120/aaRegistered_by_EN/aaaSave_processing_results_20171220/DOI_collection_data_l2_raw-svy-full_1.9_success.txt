@@ -1,0 +1,13 @@
+﻿This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<records>
+<record successful="true">
+<osti_id>1414250</osti_id>
+<product_nos>urn:nasa:pds:maven.sep.calibrated:data.counts::1.9</product_nos>
+<title>
+MAVEN Solar Energetic Particle (SEP) Raw Ion and Electron Counts Data Collection
+</title>
+<contract_nos/>
+<doi status="posted">10.17189/1414250</doi>
+<status>SUCCESSFUL</status>
+</record>
+</records>

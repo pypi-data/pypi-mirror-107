@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MAGELLAN SOLAR CORONA
+        AND FARADAY ROTATION V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MGN-SS-RSS-1-ODR-OPENLOOP-SW-SCINT-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-12-31</publication_date>
+            <country>USA</country>
+            <description>This data set contains raw and partially processed data from
+                observations of Magellan radio transmissions while the signal
+                was passing through the solar corona.  Scintillations on the
+                signal can be related to structure and motion of the coronal
+                material [WOO1993]; polarization of the signal can be used to
+                infer magnetic field within the plasma.
+                
+                Data were acquired using stations of the NASA Deep Space Network
+                (DSN).  The Magellan spacecraft transmitted signals that were
+                100 percent linearly polarized at 13 cm and right-elliptically
+                polarized at 3.6 cm.  During summer 1992, when Magellan was in
+                solar superior conjunction, the spacecraft came within 0.6 solar
+            radii of the Sun's center when viewed from Earth.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MGN-SS-RSS-1-ODR-OPENLOOP-SW-SCINT-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MAGELLAN; SUN; RADIO SCIENCE; MGN; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>PLANETARY DATA SYSTEM PLANETARY\n                                         PLASMA INTERACTIONS NODE</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mgn-ss-rss-1-odr-openloop-sw-scint-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

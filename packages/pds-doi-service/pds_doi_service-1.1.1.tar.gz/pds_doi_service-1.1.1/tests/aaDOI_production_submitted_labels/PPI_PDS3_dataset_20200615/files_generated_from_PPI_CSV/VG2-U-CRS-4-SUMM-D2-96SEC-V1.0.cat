@@ -1,0 +1,96 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-08-31, RMONARREZ, received by ftp;                                     
+  1992-09-14, EFRIED;                                                         
+  1992-09-18, EFRIED, updated Data Set templates according to new std.        
+          Data Set Template -&#10095; Spacecraft Data Set Template                   
+          event_start_time, event_stop_time -&#10095; start_time, stop_time;         
+  1992-09-22, EFRIED, Revised DATA_SET_ID and DATA_SET_NAME                   
+          Included full reference for Science and J. of G.;                   
+  1992-09-25, EFRIED, Updated PROCESSING_LEVEL_ID to match DATA_SET_ID;       
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-29, D. Kazden, removed unnecessary keywords, added ABSTRACT_DESC,   
+               CITATION_DESC and DATA_SET_TERSE_DESC;                         
+  2011-08-05, D. Kazden, changed DATA_OBJECT_TYPE from TIME_SERIES to TABLE;  
+  2020-03-04, D. Kazden, updated CITATION_DESC;"                              
+                                                                              
+OBJECT                          = DATA_SET                                    
+   DATA_SET_ID                    = "VG2-U-CRS-4-SUMM-D2-96SEC-V1.0"          
+                                                                              
+   OBJECT                         = DATA_SET_INFORMATION                      
+     DATA_SET_NAME                  = "VG2 URA CRS RESAMPLED SUMMARY D2 RATE  
+                                       ELEC 96SEC V1.0"                       
+     DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+     START_TIME                     = 1986-01-24T10:00:00.000                 
+     STOP_TIME                      = 1986-01-25T00:00:00.000                 
+     DATA_OBJECT_TYPE               = "TABLE"                                 
+     DATA_SET_RELEASE_DATE          = 1993-02-01                              
+     PRODUCER_FULL_NAME             = "RICHARD S. SELESNICK"                  
+     DETAILED_CATALOG_FLAG          = "Y"                                     
+     ABSTRACT_DESC                  = "Counting rate from the D2 detector in  
+the Cosmic Ray System (CRS) electron telescope (TET) on Voyager 2 during      
+the Uranus encounter. The D2 detector nominally responds to electrons with    
+kinetic energies above approximately 2.5 MeV."                                
+     CITATION_DESC         = "Selesnick, R.S., VG2-U-CRS-4-SUMM-D2-96SEC-V1.0,
+                        VG2 URA CRS RESAMPLED SUMMARY D2 RATE ELEC 96SEC V1.0,
+                              NASA Planetary Data System, 1993."              
+     DATA_SET_TERSE_DESC            = "Counting rate from the D2 detector in  
+the Cosmic Ray System (CRS) electron telescope (TET) on Voyager 2 during      
+the Uranus encounter."                                                        
+     DATA_SET_DESC                  = "                                       
+                                                                              
+Counting rate from the D2 detector in the Cosmic Ray                          
+System (CRS) electron telescope (TET) on Voyager 2 during                     
+the Uranus encounter.                                                         
+The D2 detector nominally responds to electrons with                          
+kinetic energies above approximately 2.5 MeV                                  
+(see detector description for details).                                       
+                                                                              
+    SAMPLING_PARAMETER_NAME         = TIME                                    
+    SAMPLING_PARAMETER_RESOLUTION   = 6.0                                     
+    MINIMUM_SAMPLING_PARAMETER      = N/A                                     
+    MAXIMUM_SAMPLING_PARAMETER      = N/A                                     
+    SAMPLING_PARAMETER_INTERVAL     = 96.0                                    
+    MINIMUM_AVAILABLE_SAMPLING_INT  = 96.0                                    
+    SAMPLING_PARAMETER_UNIT         = SECOND                                  
+    DATA_SET_PARAMETER_NAME         = D2 RATE                                 
+    NOISE_LEVEL                     = 0.000                                   
+    DATA_SET_PARAMETER_UNIT         = COUNTS/SECOND                           
+                                                                              
+                                                                              
+"                                                                             
+     CONFIDENCE_LEVEL_NOTE          = "                                       
+Each data point represents a six-second accumulation,                         
+so that the statistical uncertainty is obtained according                     
+to Poisson statistics by taking the square root of one sixth                  
+of the counting rate.  However, larger uncertainties are                      
+associated with the conversion from counting rate to flux                     
+(see the DATA_SET_OR_INST_PARM_DESC)"                                         
+  END_OBJECT                      = DATA_SET_INFORMATION                      
+                                                                              
+  OBJECT                          = DATA_SET_TARGET                           
+    TARGET_NAME                     = "URANUS"                                
+  END_OBJECT                      = DATA_SET_TARGET                           
+                                                                              
+  OBJECT                          = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID              = "VG2"                                   
+    INSTRUMENT_ID                   = "CRS"                                   
+  END_OBJECT                      = DATA_SET_HOST                             
+                                                                              
+  OBJECT                          = DATA_SET_MISSION                          
+    MISSION_NAME                    = "VOYAGER"                               
+  END_OBJECT                      = DATA_SET_MISSION                          
+                                                                              
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID                = "STONEETAL1986"                         
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID                = "SELESNICK&STONE1991"                   
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID                = "COOPER&STONE1991"                      
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION            
+END_OBJECT                      = DATA_SET                                    
+END

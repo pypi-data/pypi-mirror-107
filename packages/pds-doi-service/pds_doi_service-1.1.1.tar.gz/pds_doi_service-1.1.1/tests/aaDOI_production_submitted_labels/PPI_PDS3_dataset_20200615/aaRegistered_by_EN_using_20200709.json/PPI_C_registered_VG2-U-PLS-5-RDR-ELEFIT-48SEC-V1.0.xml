@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 URA PLS DERIVED RDR ELECTRON FIT 48SEC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-U-PLS-5-RDR-ELEFIT-48SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-02-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains electron parameters in the PLS energy
+                range (10-5950 eV) at Uranus during the Voyager 2 encounter.
+                Parameters are calculated in several ways. Total moment density
+                and temperature are given. Each electron spectrum is also fit
+                with a thermal component and 1-3 hot components depending on how
+                many Maxwellians are needed to fit the entire distribution. The
+                moment density and temperature of the hot component is calculated
+                after the thermal component is subtracted from the spectrum. The
+                CHI-Square value for each fit is given. The spacecraft charge is
+                not calculated consistently, and may result in factor of 2-3
+                errors in the thermal electron density. Data is unreliable inside
+                5 RU and in the occultation regions. At Uranus measurements were
+                taken using both a long and a short integration time. Each 48 SEC
+                measurement frame contained either an E1-Short and an E2-Long
+                measurement or an E2-Short and an EI-Long. To reduce systematic
+                errors, complete electron spectra were obtained only by combining
+                two long or two short spectra. The instrument threshold is at a
+                density of about 0.001 CM-3 yield data close to this value should
+                be treated with caution. Flags in the data indicate whether the
+                full analysis could be performed and if the data was contaminated
+                by LECP stepping. A complete description of this data set is in
+            Sittler et al. (1987).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-PLS-5-RDR-ELEFIT-48SEC-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; URANUS; PLASMA ANALYZER; VG2; PLANET; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JOHN D. RICHARDSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-u-pls-5-rdr-elefit-48sec-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

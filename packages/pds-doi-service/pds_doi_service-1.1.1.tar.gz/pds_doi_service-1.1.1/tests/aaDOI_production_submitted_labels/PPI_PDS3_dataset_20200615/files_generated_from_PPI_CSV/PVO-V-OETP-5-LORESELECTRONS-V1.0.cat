@@ -1,0 +1,259 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+    2006-07-26, B. Harris, minor updates for version 3 standards;            
+    2012-09-05, D. Kazden, minor updates, removed unnecessary keywords,      
+    added STOP_TIME and REFERENCE_KEY_IDs, updated DATA_OBJECT_TYPE;
+    2020-01-31, D. Kazden Updated CITATION_DESC"        
+                                                                             
+OBJECT                    = DATA_SET                                         
+  DATA_SET_ID                   = "PVO-V-OETP-5-LORESELECTRONS-V1.0"         
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "PVO VENUS ELECT TEMP PROBE             
+                                      DERVD ELECT DENS LOW RES VER 1.0"      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T15:07:34.817                 
+    STOP_TIME                      = 1992-10-07T19:46:27.000                 
+    DATA_OBJECT_TYPE               = TABLE                                   
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. ROBERT THEIS"                      
+    DETAILED_CATALOG_FLAG          = N                                       
+                                                                             
+DATA_SET_TERSE_DESC            = "                                           
+This file gives the Ne, Te and Vs measurements derived by fitting the        
+radial probe voltampere curves taken whenever PVO was within the ionosphere  
+(ie., between the inbound and outbound ionopause crossings)."                
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+This file gives the Ne, Te and Vs measurements derived by fitting the radial 
+probe voltampere curves taken whenever PVO was within the ionosphere (ie.,   
+between the inbound and outbound ionopause crossings).  Data from            
+essentially every orbit in 1979 and 1980 included ionosphere transits."      
+                                                                             
+    CITATION_DESC                  = "Theis, Robert,                         
+PVO VENUS ELECT TEMP PROBE DERVD ELECT DENS LOW RES VER 1.0,                 
+PVO-V-OETP-5-ELECTRONDENSITY-LORES-V1.0, NASA Planetary Data System, 1993"   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+This file gives the Ne, Te and Vs measurements derived by fitting the radial 
+probe voltampere curves taken whenever PVO was within the ionosphere         
+(ie., between the inbound and outbound ionopause crossings).  Data from      
+essentially every orbit in 1979 and 1980 included ionosphere transits.       
+After the summer of 1980, however, periapsis could no longer be              
+maintained at low altitudes, and it rose slowly.  After April 1981 periapsis 
+was above the altitude of the dayside ionopause, so the spacecraft           
+encountered the ionosphere only in the terminator regions and on the         
+nightside where the ionosphere extends to much higher altitudes. Dayside     
+measurements again became available early in 1992 when periapsis             
+returned to low enough altitudes.  The PVO Entry period of between July      
+and October 1992 provided only nightside periapsis data.  During the         
+intervening period (1981-91), only nightside UADS measurements in the        
+high altitude (downstream) ionosphere were available.  Note that High        
+Resolution Ne data from the 1981-91 interval provide measurements in the     
+dayside magnetosheath and in the solar wind, but these data have limited     
+accuracy because of spacecraft photoelectron contributions.  See Brace et    
+al, 1988 (ref. 53) in the bibliography for further details on the            
+interpretation of High Resolution measurements made outside the              
+ionosphere.                                                                  
+                                                                             
+As noted earlier, the geophysical values are listed at 12 second intervals in
+the UADS.  Each OETP entry represents a time-weighted average of those       
+radial probe measurements taken within approximately 10 seconds of the       
+UADS-assigned times.  If no voltampere curves were recovered within that     
+20 second interval (this occurs at very low spacecraft telemetry rates), no  
+UADS value is entered in that 12 second slot.  The instrument actually       
+takes voltampere curves at a rate of 120/minute, but telemetry rate          
+limitations permit the recovery of raw voltampere curves at intervals        
+between 4 to 32 seconds, depending upon the telemetry rate and               
+spacecraft data format currently in use.                                     
+                                                                             
+The Ne values in the UADS file may actually be based on either the ion or    
+electron current collected by the probe, depending upon the magnitude of     
+the density at the time.  The radial probe electron currents saturate the    
+electrometer when Ne &#10095; 4x104 cm-3, so it is necessary to switch over to Ni   
+measurements at that point.  Since the ion currents are about a factor of    
+50 smaller, the Ni measurements can be made up to densities of about 2 x     
+106 cm-3, much greater than is present anywhere in the Venus ionosphere.     
+We assume that Ni = Ne everywhere in the ionosphere, so either may be        
+used to construct the UADS file.  To minimize any discontinuity that may     
+occur at the Ne/Ni switch-over point due to systematic measurement           
+errors, Ne is normalized to Ni using a small universal correction factor.    
+This factor is 0.7, and is based on comparisons of the overlapping Ne and    
+Ni measurements from many individual orbits.                                 
+                                                                             
+There are good theoretical reasons to believe that the Ni measurements       
+are inherently more accurate at densities exceeding 3 or 4x104 cm-3, so      
+this normalization approach improves the accuracy of the Ne                  
+measurements.  The Ni measurements become less accurate at lower             
+densities because of uncertain changes in the ion composition, ion drift     
+velocity, and a positive ion current component produced by                   
+photoelectrons (Ipe) leaving the probe.  Ipe becomes comparable to the       
+true ion currents at Ni of approximately 1x104cm-3.  The pe currents         
+produce a spin modulated signal that is modelled using measurements          
+made in the solar wind just prior to the bow shock crossing where the        
+ambient densities are too small to produce detectable ion currents.  This    
+spin modulated Ipe waveform, whose amplitude is different from orbit to      
+orbit because of solar EUV variations, is subtracted from the net positive   
+current measurements made in the subsequent ionospheric passage.  This       
+subtraction gives the true ion current which is directly convertible to Ni.  
+The spin maximum Ipe for each orbit is also used to construct the solar      
+EUV file, as is described later.                                             
+                                                                             
+Because of the low spatial resolution of the UADS, and the fact that only    
+ionosphere data are included, this file is not the best source of            
+information about the ionopause.  Features such as the ionopause, and        
+plasma clouds above the ionopause, are resolved better using the High        
+Resolution Data File which is not restricted to measurements within the      
+ionosphere.                                                                  
+                                                                             
+                                                                             
+  OBJECT                         = DSPARMINFO                                
+    SAMPLING_PARAMETER_NAME        = TIME                                    
+    SAMPLING_PARAMETER_RESOLUTION  = N/A                                     
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                     
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                     
+    SAMPLING_PARAMETER_INTERVAL    = 12                                      
+    MINIMUM_AVAILABLE_SAMPLING_INT = N/A                                     
+    SAMPLING_PARAMETER_UNIT        = SECOND                                  
+    DATA_SET_PARAMETER_NAME        = ELECTRON DENSITY                        
+    NOISE_LEVEL                    = 2                                       
+    DATA_SET_PARAMETER_UNIT        = CM**-3                                  
+  END_OBJECT                     = DSPARMINFO                                
+                                                                             
+  OBJECT                         = DSPARMINFO                                
+    SAMPLING_PARAMETER_NAME        = TIME                                    
+    SAMPLING_PARAMETER_RESOLUTION  = N/A                                     
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                     
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                     
+    SAMPLING_PARAMETER_INTERVAL    = 12                                      
+    MINIMUM_AVAILABLE_SAMPLING_INT = N/A                                     
+    SAMPLING_PARAMETER_UNIT        = SECOND                                  
+    DATA_SET_PARAMETER_NAME        = ELECTRON TEMPERATURE                    
+    NOISE_LEVEL                    = UNK                                     
+    DATA_SET_PARAMETER_UNIT        = DEGREES KELVIN                          
+  END_OBJECT                     = DSPARMINFO                                
+                                                                             
+  OBJECT                         = DSPARMINFO                                
+    SAMPLING_PARAMETER_NAME        = TIME                                    
+    SAMPLING_PARAMETER_RESOLUTION  = N/A                                     
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                     
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                     
+    SAMPLING_PARAMETER_INTERVAL    = 12                                      
+    MINIMUM_AVAILABLE_SAMPLING_INT = N/A                                     
+    SAMPLING_PARAMETER_UNIT        = SECOND                                  
+    DATA_SET_PARAMETER_NAME        = SPACECRAFT POTENTIAL                    
+    NOISE_LEVEL                    = UNK                                     
+    DATA_SET_PARAMETER_UNIT        = VOLTS                                   
+  END_OBJECT                     = DSPARMINFO                                
+                                                                             
+                                                                             
+                                                                             
+"                                                                            
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+The UADS data are based on operator-assisted voltampere curve fits.  The     
+absolute accuracy of the data depends primarily upon the accuracy of the     
+Langmuir probe theory (Krehbiel, et al., 1980) and our success in avoiding   
+the inclusion of data from curves that were obtained in situations in which  
+the theory does not apply (e.g., probe in wake of the telemetry antenna,     
+very low densities, pe contamination, spacecraft potential too negative,     
+etc.).  Where these effects have been avoided, the errors in Te should not   
+exceed 5% when Ne exceeds 500 cm-3 in sunlight and about 30 cm-3 in          
+darkness.  However, Te errors may be larger in regions of great spatial      
+structure where the plasma parameters change while they are being            
+measured, or in regions where the electron energy distribution is            
+nonmaxwellian or appears to have two temperatures.  These conditions are     
+often found in the nightside ionosphere and at the ionopause.  In these      
+cases, the curve-fitting is done so as to measure the temperature of the     
+lower temperature component of the plasma.  The curves would have to be      
+refitted to obtain information on the higher temperature component.          
+                                                                             
+The accuracy of the Ne measurements is determined by the accuracy of the     
+Ni measurements to which they are normalized by a fixed factor that was      
+determined by comparisons at densities in the vicinity of 4 x 104 cm-3.      
+Therefore the Ne accuracy is nominally 10%, but the error increases at low   
+densities where pe background and/or spacecraft charging effects can be      
+important, as described earlier.  Ne is given in the UADS file for densities 
+down to 2 cm-3 and Te for densities down to 10 cm-3, which are observed      
+only in the nightside ionosphere and ionotail.  The Ne error is expected to  
+grow as the density approaches these limits, but the Te measurements are     
+less subject to error at low densities because knowledge of Vs is not        
+needed to obtain the temperature.  In spite of the reduced accuracy, Ne      
+measurements below 30 cm-3 are retained in the UADS file because they        
+do reflect real variations that may be of interest even when their absolute  
+accuracy may be uncertain by a factor of 2 or more.  Examples include the    
+detection of weak ionospheric tail rays and plasma clouds (Brace et al.,     
+1987).                                                                       
+                                                                             
+The error in Ni is not expected to exceed 10% at densities above 4 x104      
+cm-3.  Ne is used for densities below 4 x104 cm-3.  As noted earlier, Ne is  
+normalized to Ni at their overlap point to gain the greater inherent         
+accuracy of the ion measurements.  The normalization factor is based on      
+the overlapping Ne and Ni measurements from many orbits, and the factor      
+does not change throughout the mission.  Therefore, small discontinuities    
+in the density measurement may sometimes be seen at the crossover point      
+if ionospheric conditions lead to unusual spacecraft potentials, ion         
+compositions, or other factors that are assumed constant when adopting a     
+fixed relationship between the ion and electron currents.  We assume that    
+the normalization factor remains constant over the full range of Ne, and     
+this may not be correct."                                                    
+                                                                             
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+                                                                             
+OBJECT     = DATA_SET_HOST                                                   
+INSTRUMENT_HOST_ID             = PVO                                         
+INSTRUMENT_ID                  = OETP                                        
+END_OBJECT = DATA_SET_HOST                                                   
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "ALEXANDERETAL1985"                       
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "BRACEETAL1987"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "BRACEETAL1988"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "BRACEETAL1990"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "ELPHICETAL1984"                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KREHBIELETAL1980"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "MAHAJANETAL1990"                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "RUSSELLETAL1988"                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "THEISETAL1980"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "THEISETAL1984"                           
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                       = DATA_SET                                  
+END

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VOYAGER 1 SATURN PLASMA DERIVED ION MOMENTS 96 SEC</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG1-S-PLS-5-ION-MOM-96.0SEC</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1988-08-01</publication_date>
+            <country>USA</country>
+            <description>THIS DATA SET CONTAINS ESTIMATES OF THE ION MOMENT DENSITY IN THE
+                PLS VOLTAGE RANGE (10-5950 EV/Q) AT SATURN DURING THE VOYAGER 1
+                ENCOUNTER. RIGID COROTATION IS ASSUMED, WHICH LEADS TO AN
+                UNDERESTIMATE OF THE DENSITY IN SOME REGIONS, AS DOES THE USE OF
+                AN ACCEPTANCE AREA RELEVANT FOR A COLD BEAM FOR PLASMA WHICH IS
+                TRANSONIC IS SOME REGIONS. DENSITIES MAY BE UNDERESTIMATED BY A
+                FACTOR OF 2-3 IN THE INNER MAGNETOSPHERE, SO THIS DATA SET SHOULD
+                BE USED PRIMARILY FOR STUDIES USING VARIATIONS IN PLASMA DENSITY.
+                THE FIT DENSITIES GIVE A BETTER ESTIMATE OF THE ABSOLUTE DENSITY.
+                THIS IS THE DATA SHOWN AND DESCRIBED IN DETAIL IN LAZARUS AND
+                MCNUTT (1983). DATA FORMAT: COLUMNS 1-5 ARE TIME (YEAR, DAY,
+                HOUR, MIN, SEC) AND COLUMN 6 IS THE MOMENT DENSITY IN CM-3. EACH
+                ROW HAS FORMAT (I5,I4,2I3,I4,F8.3). VALUES OF 1.E32 INDICATE THAT
+                THE PARAMETER COULD NOT BE OBTAINED FROM THE DATA USING THE
+                STANDARD ANALYSIS TECHNIQUE. ADDITIONAL INFORMATION ABOUT THIS
+                DATASET AND THE INSTRUMENT WHICH PRODUCED IT CAN BE FOUND
+                ELSEWHERE IN THIS CATALOG. AN OVERVIEW OF THE DATA IN THIS DATA
+                SET CAN BE FOUND IN LAZARUS AND MCNUTT (1983) AND A COMPLETE
+            INSTRUMENT DESCRIPTION CAN BE FOUND IN BRIDGE (1977).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG1-S-PLS-5-ION-MOM-96.0SEC</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 1; SATURN; PLASMA ANALYZER; VG1; PLANET; PLS; PLASMA SCIENCE EXPERIMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JOHN D. RICHARDSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg1-s-pls-5-ion-mom-96.0sec</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

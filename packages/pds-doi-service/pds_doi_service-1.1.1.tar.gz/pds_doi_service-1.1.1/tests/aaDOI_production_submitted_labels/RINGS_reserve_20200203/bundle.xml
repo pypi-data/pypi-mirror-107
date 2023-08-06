@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle 
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:uranus_occ_support</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Uranus Occultation Support Bundle</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>French, R. G.; McGhee-French, C. A.; Gordon, M. K.</author_list>
+            <publication_year>2020</publication_year>
+            <doi>$bundle_doi$</doi>
+            <keyword>uranus rings</keyword>
+            <keyword>uranus rings global model</keyword>
+            <keyword>uranus rings model</keyword>
+            <keyword>uranus atmosphere</keyword>                                     
+            <description>The support bundle for the highly derived, Uranus system, Earth-Based occultation bundles. Contains the global Uranus ring system model, support materials, and documentation used to produce the individual occultation profiles in the supported bundles.</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-01-29</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Target_Identification>
+            <name>Uranus Rings</name>
+            <type>Ring</type>
+        </Target_Identification>
+        <Target_Identification>
+            <name>Uranus Atmosphere</name>
+            <type>Planet</type>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>10.1088/0004-6256/139/4/1649</doi>
+            <reference_text>French, R. G. et al. (2010)
+                "Occultation Observations of Saturn's B Ring and Cassini Division", Astron. J. 139, 1649-1667.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1006/icar.1993.1066</doi>
+            <reference_text>French, R. G. et al. (1993) "Geometry of the Saturn System from the 3 July 1989 Occultation of 28 Sgr and Voyager Observations" Icarus 103, 163-214./reference_text>
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+        <description>The support bundle for the highly derived Uranus system occultation bundles. Contains the global Uranus ring system model, support materials, and documentation used for analysis of the individual occultations.</description>
+    </Bundle>
+    <File_Area_Text>
+        <File>
+            <file_name>readme.txt</file_name>
+        </File>
+        <Stream_Text>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+        </Stream_Text>
+    </File_Area_Text>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:uranus_occ_support:context</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_context_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:uranus_occ_support:data</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:uranus_occ_support:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:uranus_occ_support.spice:spice_kernels</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_spice_kernel_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:uranus_occ_support:schema</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_schema_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

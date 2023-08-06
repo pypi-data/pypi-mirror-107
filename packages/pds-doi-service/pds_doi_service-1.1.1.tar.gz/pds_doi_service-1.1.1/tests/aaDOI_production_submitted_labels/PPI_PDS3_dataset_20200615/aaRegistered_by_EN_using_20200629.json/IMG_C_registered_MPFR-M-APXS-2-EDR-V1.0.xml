@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MPF ROVER MARS ALPHA PROTON X-RAY
+        SPECTROMETER EDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MPFR-M-APXS-2-EDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-01-04</publication_date>
+            <country>USA</country>
+            <description>The APXS EDRs are a collection of 27 measurements (173 data files)
+                obtained by the Alpha Proton X-ray Spectrometer (APXS). Of these,
+                nine are measurements of rock, seven are of soil (if Scooby Doo
+                is an indurated soil rather than a rock), and eleven are of atmosphere.
+                The atmosphere was measured on Sol 1 to determine background cosmic
+                ray levels, on a few occasions for electronics noise tests, and
+                sometimes as a result of the APXS deployment mechanism not reaching
+            the intended rock surface.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MPFR-M-APXS-2-EDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MICROROVER FLIGHT EXPERIMENT; MARS; SPECTROMETER; MPFR; PLANET; APXS; ALPHA PROTON X-RAY
+                                         SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>ALLAN J. RUNKLE</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mpfr-m-apxs-2-edr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

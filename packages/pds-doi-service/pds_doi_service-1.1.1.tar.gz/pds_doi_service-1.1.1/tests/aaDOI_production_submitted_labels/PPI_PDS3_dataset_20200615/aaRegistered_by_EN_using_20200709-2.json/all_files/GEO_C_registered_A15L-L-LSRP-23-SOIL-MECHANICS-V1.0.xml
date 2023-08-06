@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>APOLLO 15 LSRP SOIL MECHANICS DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>A15L-L-LSRP-2/3-SOIL-MECHANICS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2011-09-01</publication_date>
+            <country>USA</country>
+            <description>This dataset contains tables of raw readings and reduced data
+                from all six runs on 01 August 1971 of the Lunar Self-Recording
+                Penetrometer (LSRP) on the surface of the Moon for the Apollo 15
+                Soil Mechanics experiment. Supporting documentation includes
+                digitized scans in JPEG and PDF format of the original LSRP soil
+                mechanics dataset on microfilm, videos and transcripts of the
+                LSRP as it was operated on the Moon, diagrams and maps of the
+                experiment areas, and photography of the Apollo 15 Station 8
+            where the experiment was performed.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=A15L-L-LSRP-2%2F3-SOIL-MECHANICS-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>APOLLO 15 LUNAR MODULE; MOON; SOIL STRENGTH ANALYZER; A15L; SATELLITE; LSRP; LUNAR SELF-RECORDING PENETROMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DAVID WILLIAMS</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.a15l-l-lsrp-2-3-soil-mechanics-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

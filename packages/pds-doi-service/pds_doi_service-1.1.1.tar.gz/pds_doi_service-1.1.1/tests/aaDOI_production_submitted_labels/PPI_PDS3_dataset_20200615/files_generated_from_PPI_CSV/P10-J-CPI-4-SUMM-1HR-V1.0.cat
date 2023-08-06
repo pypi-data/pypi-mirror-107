@@ -1,0 +1,88 @@
+PDS_VERSION_ID                      = PDS3                                    
+RECORD_TYPE                        = STREAM                                  
+LABEL_REVISION_NOTE                = "                                       
+D. KAZDEN, added ABSTRACT_DESC, CITATION_DESC, updated ARCHIVE_STATUS,       
+2012-02-29;                                                                  
+D. KAZDEN, removed ARCHIVE_STATUS keyword, 2018-08-06;"                      
+OBJECT                             = DATA_SET                                
+                                                                             
+  DATA_SET_ID                      = "P10-J-CPI-4-SUMM-1HR-V1.0"             
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P10 JUPITER CPI 1 HOUR COUNT DATA V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1973-11-26T00:15:00                     
+    STOP_TIME                      = 1973-12-31T23:59:59                     
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "John A. Simpson"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+       Pioneer 10 cruise Charged Particle Instrument (CPI) 1 hour            
+      count data covering 1973-11-26 to 1973-12-31."                         
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 10 cruise Charged Particle Instrument (CPI) 1 hour             
+      count data covering 1973-11-26 to 1973-12-31."                         
+                                                                             
+    DATA_SET_DESC                = "                                         
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+                                                                             
+                                                                             
+  Data Sampling                                                              
+  ==============                                                             
+                                                                             
+                                                                             
+  Data Format                                                                
+  ============                                                               
+    --------------------------------------------------------------------     
+    Column  Column   Column                                                  
+    Name    Format   Description                                             
+    --------------------------------------------------------------------     
+    --------------------------------------------------------------------     
+                                                                             
+                                                                             
+  Coordinate System                                                          
+  =================                                                          
+                                                                             
+                                                                             
+  Calibration                                                                
+  ==========="                                                               
+                                                                             
+    CONFIDENCE_LEVEL_NOTE        = "                                         
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================  "                                               
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "JUPITER"                               
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SOLAR WIND"                            
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P10                                     
+    INSTRUMENT_ID                  = CPI                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = ""                                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

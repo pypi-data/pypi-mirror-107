@@ -1,0 +1,479 @@
+PDS_VERSION_ID                = PDS3                                           
+LABEL_REVISION_NOTE                = "                                        
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-13;                  
+D. Kazden (PPI), updated CITATION_DESC;"                                      
+RECORD_TYPE                  = STREAM                                         
+                                                                              
+OBJECT                       = DATA_SET                                       
+  DATA_SET_ID                   = "VG1-J-PWS-5-DDR-ELE-DENSITY-1S-V1.0"       
+                                                                              
+  OBJECT                        = DATA_SET_INFORMATION                        
+    DATA_SET_NAME                  = "                                        
+      VG1 J PLASMA WAVE SPECTROMETER DENSITY 1S V1.0"                         
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1979-03-01T19:58:22.500Z                 
+    STOP_TIME                      = 1979-03-21T14:25:32.500Z                 
+    DATA_SET_RELEASE_DATE          = 2007-11-05                               
+    PRODUCER_FULL_NAME             = "DR WILLIAM S. KURTH"                    
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "SPREADSHEET"                            
+                                                                              
+    ABSTRACT_DESC                  = "Electron plasma density data set        
+      for Jupiter's outer magnetosphere derived from high-resolution          
+      wideband measurements of low-frequency radio and plasma waves           
+      obtained by Voyagers 1 and 2 during their 1979 flybys.  Density         
+      data were measured at 1-second intervals."                              
+    CITATION_DESC                  = "Barnhart, B.L., Kurth, W.S.,            
+      Groene, J.B., Piker, C.W., Faden, J.B., Santolik, O., and D.A.          
+      Gurnett, VG1-J-PWS-5-DDR-ELE-DENSITY-1S-V1.0, VG1 J PLASMA WAVE         
+      SPECTROMETER DENSITY 1S V1.0, NASA Planetary Data System, 2007."        
+    DATA_SET_TERSE_DESC            = "ASCII day files of select               
+      density measurements from Voyager 1 and 2 spacecraft event              
+      time (SCET) 1979-03-01T19:58:22.500Z to                                 
+      1979-03-21T14:25:32.500Z.  Also includes relevant measured              
+      and calculated plasma frequencies."                                     
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+    This data set consists of ASCII formatted plasma wave frequency           
+    and electron plasma density measurements as measured by the Plasma        
+    Waves Science instrument and calculated from the equations of cold        
+    plasma theory.  These frequency measurements were taken from              
+    Voyager 1 electric field waveform samples from Voyager 1 Plasma           
+    Wave Science (PWS) waveform receiver obtained during its Jupiter          
+    flyby.  The data set includes select measurements from spacecraft         
+    event time (SCET) 1979-03-01T19:58:22.500Z to                             
+    1979-03-21T14:25:32.500Z.  The data are separated into day files          
+    and the individual data points are taken every 1-second.  As will         
+    be explained in more detail below, the frequency measurements and         
+    therefore the density measurements in this data set are measured          
+    from high-resolution wideband plasma wave spectra.  To learn more         
+    about these spectra and their specific submitted volumes, see the         
+    Related PDS Products section in the AAREADME files found in the           
+    root directory of this volume.                                            
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+    While the data essential to this volume are the electron plasma           
+    densities, there are a number of other plasma parameters included         
+    with this data.  The data set consists of ASCII files with one            
+    record per time step, occurring in 1-second increments.  Each             
+    record includes the time, magnetic field strength (obtained from          
+    the Voyager 1 magnetometer), the electron cyclotron frequency (if         
+    available), the frequency of the cutoff or resonance measured, a          
+    code indicating the name of the frequency measured, the calculated        
+    electron density, and a set of position coordinates for the               
+    spacecraft at the time of the observation.  Also included in each         
+    record are the electron plasma frequency fpe, extraordinary mode          
+    cutoff frequency fR=0, ordinary mode cutoff frequency fL=0, upper         
+    hybrid resonance frequency fUH, and a quality index.  One of these        
+    four frequencies is just a copy of the measured cutoff or resonance       
+    frequency while the remaining frequencies are calculated using the        
+    magnetic field data and the equations of cold plasma theory.              
+    Different files are used for each day.                                    
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+    The ASCII density data files produced in this volume were derived         
+    from measuring the characteristic frequencies from the local plasma.      
+    The density was calculated from these data, along with cyclotron          
+    frequency data derived from magnetic field data, using the equations      
+    of cold plasma theory.                                                    
+                                                                              
+    In order to measure these characteristic frequencies, this work           
+    utilizes a new program that allows the operator to highlight the          
+    general vicinity of the cutoff or resonance on a frequency-time           
+    spectrogram.  Then, an algorithm finds the cutoff or resonance in         
+    the region and records the frequency at 1 second intervals.  Hence,       
+    the automated procedure has a high temporal resolution (1 second)         
+    and requires a relatively low level of both manual effort and             
+    subjective judgment by the operator.                                      
+                                                                              
+    There are two different algorithms used: one for cutoff detection         
+    and one for resonance or peak detection.  The cutoff detection            
+    algorithm is controlled by a small number of parameters that can          
+    be set by the operator.  The first parameter is the cutoff level.         
+    In determining possible cutoff candidates, the algorithm scans the        
+    region highlighted by the operator and records two separate points,       
+    one above the cutoff level and one below.  The closer the two points      
+    are, temporally, the steeper the slope will be.  Therefore, the           
+    operator can change the location of the cutoff level to manipulate        
+    where the algorithm looks for cutoffs within the highlighted region       
+    of interest.  The next parameter is the slope magnitude, which            
+    designates the minimum magnitude of the finite difference slope           
+    where the cutoff must reside.  The operator may raise the slope           
+    level in order to scan only for sharp cutoffs, or lower it in order       
+    to accommodate less steep slopes, depending on the quality of the         
+    spectrum data.  When there is more than one possible cutoff, the          
+    detection program will display them as cutoff candidates.  The            
+    cutoff level, slope magnitude and cutoff candidates are displayed by      
+    the program for viewing by the operator.  While the algorithm             
+    chooses the lowest frequency cutoff by default, the operator may          
+    override the algorithm and choose any of the possible cutoffs to be       
+    recorded.                                                                 
+                                                                              
+    While most of the characteristic frequencies are, by definition,          
+    the cutoff of propagating wave modes, there are certain                   
+    circumstances when the characteristic frequency is denoted as the         
+    peak of a wave mode in the spectrum.  Because of this, there is an        
+    algorithm specifically for resonance or peak detection.  Many             
+    spectra of interest to this study include Z-mode radiation, which         
+    has a low-frequency cutoff at fL=0.  Barbosa et al.                       
+    [BARBOSAETAL1990B] demonstrated that taking the peak of the Z-mode        
+    as fL=0 yields the highest consistency in the determination of            
+    fpe.  Hence, when the Z-mode is enhanced, we utilize the peak             
+    detection algorithm to identify fL=0 from which fpe and the               
+    electron density can be derived.  This algorithm can also be used         
+    to determine fUH when an enhancement at that frequency is present         
+    in the spectrum.  In order to measure this resonance or spectral          
+    peak, the peak detection algorithm fits a Gaussian curve to the           
+    highest peak within the region specified by the program operator.         
+    The algorithm then records the frequency of the Gaussian's peak           
+    as the peak frequency in the spectrum.  The algorithm displays            
+    the spectrum and a darker line which is the Gaussian.  Because            
+    there may be noise which exhibits a large peak in the highlighted         
+    spectrum, the spectrum is displayed along with the Gaussian curve         
+    and a vertical line designating where the peak was measured.              
+    The operator always has the ability to manually change the peak's         
+    location and alter the measurement in such cases.                         
+                                                                              
+    While the operator utilizes a color spectrogram to guide the cutoff       
+    and peak detectors, we emphasize that this is only used as a means        
+    of identifying the appropriate range in frequency for the algorithm       
+    to search.  The direct use of color spectrograms tends to mislead         
+    an operator to perceive a cutoff that is not equivalent to the            
+    cutoff in the actual power spectrum [BARBOSAETAL1990B]. Because           
+    this may lead to a systematic error in the data, the algorithm            
+    utilizes the spectrum itself, and does not depend on a color scale        
+    to determine the characteristic frequencies. This should reduce           
+    systematic error and lead to more accurate results.                       
+                                                                              
+  Data Coverage                                                               
+  =============                                                               
+    This data set does not provide complete coverage of the time              
+    intervals when Voyager 1 was within Jupiter's magnetosphere.  Two         
+    criteria were necessary in order for density measurements to be           
+    obtained.  First, wideband waveform data must exist.  These data are      
+    waveforms sampled at 4-bit resolution and have a frequency range          
+    from 40 Hz to 12 kHz.  1600 samples are collected for 55.56-msec          
+    at a rate of 28,800 samples per second, and are then followed by a        
+    4.44-msec gap.  These 60-msec intervals make up one line of               
+    waveform samples.  The spectrograms then consist of 48-second             
+    'frames', consisting of up to 800 lines or 48 seconds each.  Because      
+    these data compete with Voyager imaging data for the downlink             
+    resource, data is available only a fraction of the time.  Plasma          
+    wave spectra data can be either continuous, periodic (such as one         
+    48-second frame out of every four such frames), or simply present         
+    sporadically.  Second, spectral features which exhibit a cutoff or        
+    resonance related to the electron density must be observable in the       
+    spectrum.  By far the most prevalent emission of use is the               
+    non-thermal continuum radiation, whose low frequency cutoff is at         
+    fpe.  This radiation literally fills the magnetosphere between the        
+    magnetopause and higher density regions of the inner magnetosphere.       
+    However, some regions include other emissions and regions when the        
+    plasma frequency does not have a clear cutoff.  If the plasma             
+    frequency is not measured directly from the spectrum for any reason,      
+    it may be calculated from the local magnetic field data (essentially      
+    fce) and one of three other characteristic frequencies using the          
+    equations of cold plasma theory.  Thus, magnetic field data must          
+    exist for regions when fpe is not present, or the electron density        
+    cannot be calculated.  Typically, continuum radiation is not present      
+    inside of approximately 20 to 25 Jovian radii.  There is at least         
+    twice as much data derived from Voyager 1 than Voyager 2 and data         
+    exists typically from approximately 20 to 65 Jovian radii.                
+                                                                              
+  Interpretations                                                             
+  ===============                                                             
+    High resolution wideband waveform data were used to measure               
+    characteristic frequencies (peaks and cutoffs) which relate to the        
+    electron plasma density.  When dealing with a variety of                  
+    spectrograms and plasma conditions found in different regions of          
+    the Jovian magnetosphere, it is necessary to interpret the present        
+    modes and characteristic frequencies correctly in order to determine      
+    the most accurate value for the electron plasma density.  Below, we       
+    will briefly discuss the methods used for interpreting different          
+    spectra.  A more thorough explanation of the interpretations              
+    including examples of different spectra can be found in the               
+    DENSITY.DOC and DENSITY.PDF files within the DOCUMENTS directory          
+    accessible from the root directory of this volume.                        
+                                                                              
+    The simplest spectra to interpret for the purposes of determining         
+    the electron plasma density are those that include non-thermal            
+    continuum radiation with a clear low frequency cutoff and with no         
+    other emissions obscuring the cutoff.  For the purposes of this           
+    data set, we agree with the Gurnett et al. [1981] interpretation          
+    that based upon PWS data it is appropriate to assume that the             
+    continuum radiation cutoff is fpe and we can accurately determine         
+    the local electron plasma density using the appropriate equation          
+    from cold plasma theory.  The electron plasma density is directly         
+    proportional to the square of the electron plasma frequency and           
+    therefore in this case the determination of the density does not          
+    depend on magnetic field measurements.  When there is only one            
+    cutoff present in the continuum radiation, we assume that the             
+    continuum radiation is propagating in the ordinary mode and that          
+    the cutoff is indeed the plasma frequency.  An alternate possibility      
+    would be to identify this cutoff as the R=0 cutoff at fR=0.  But,         
+    most theories [Shaw and Gurnett, 1980; Moses et. al., 1987;               
+    Barbosa et al., 1990] favor the L,O mode as the most likely               
+    continuum radiation component, hence, we assume that there is always      
+    at least some L,O component present when the continuum radiation is       
+    detected.                                                                 
+                                                                              
+    Sometimes, more than one wave mode cutoff is present at different         
+    frequencies for the same time period.  When this is the case, we          
+    use a guess-and-check system called Consistency Checks.  The method       
+    is as follows:                                                            
+                                                                              
+    1. Assume that one frequency cutoff/peak present in the spectrum is       
+       a particular characteristic frequency.                                 
+    2. Use the local magnetic field data (which determines fce) along         
+       with the equations from cold plasma theory to calculate the            
+       remaining characteristic frequencies.                                  
+    3. Look for consistency between the calculated frequencies and the        
+       remaining spectral features (cutoffs/peaks) present.                   
+                                                                              
+    A consistent interpretation is one where the calculated frequencies       
+    match the cutoffs/peaks present in the spectrum.  In some examples        
+    there exist two spectral cutoffs which need identification in order       
+    to calculate the electron plasma density.  By using a Consistency         
+    Check, (mainly, assuming fpe is the lower cutoff and calculating the      
+    remaining characteristic frequencies) it is found that when the           
+    plasma frequency is assumed to be the lower frequency cutoff, the         
+    cutoff at higher frequencies matches the calculated R=0 frequency.        
+                                                                              
+    In addition to the non-thermal continuum radiation with a low             
+    frequency cutoff at fpe, another mode of propagating waves (called        
+    Z-mode) is sometimes also present.  Based upon results from our           
+    consistency checks and in agreement with the previous work of             
+    Barbosa et. al. [1990], we conclude that there are two types of           
+    Z-mode radiation: weak, broadband Z-mode and intense, narrowband          
+    Z-mode. We interpret the L=0 frequency as the cutoff of the weak,         
+    broadband radiation, however, when the Z-mode emission becomes            
+    intense we have found that taking the L=0 frequency as the peak of        
+    the intense emission gives the most consistent estimate for fpe.          
+    This is because as the intensity of this peak increases, the width        
+    of the emission appears to broaden due to limitations in the Fourier      
+    transform and the low dynamic range of the 4-bit waveform system on       
+    Voyager 1.  Barbosa et al. [1990] demonstrated that taking the peak       
+    of the Z-mode as fL=0 yields the highest consistency in the               
+    determination of fpe, which concurs with our consistency checks.          
+    Thus, in regions where Z-mode is present, we can determine the            
+    electron density by either measuring the cutoff of the broadband          
+    Z-mode as fL=0 or the peak of the narrowband intense Z-mode as fL=0,      
+    and using the equations of cold plasma theory.                            
+                                                                              
+    As Voyager approaches the lobe of the magnetosphere, the density as       
+    well as fpe drops precipitously and approaches or even drops below        
+    the cyclotron frequency.  Perraut et al. [PERRAUTETAL1998] studied        
+    one such case obtained by the Galileo plasma wave instrument.  In         
+    order to determine the proper identification of the characteristic        
+    frequencies and determine the electron plasma density, we utilize         
+    our previous consistency check method.  When an interpretation is         
+    found to be consistent with the spectrum, we assume temporal              
+    continuity of the cutoffs, and extend the interpretation into             
+    regions where a consistency check is not possible due to lack of          
+    features in the spectrum or a lack of magnetic field data.  While         
+    there is no method for determining the density certainly in these         
+    regions, we believe that assuming that the spectrum does not change       
+    greatly in a span on the order of minutes is appropriate and              
+    suitable to determine the density.  A more thorough look into time        
+    periods where fpe &#10094;&#10094; fce, including multiple examples, is included        
+    in the DENSITY.DOC and DENSITY.PDF files in the DOCUMENTS folder          
+    found in the root directory of this volume.                               
+                                                                              
+  Ancillary Data                                                              
+  ==============                                                              
+    None                                                                      
+                                                                              
+                                                                              
+  Coordinate System                                                           
+  =================                                                           
+    Included in this data set are two coordinate systems that ensure an       
+    accurate location of the density data points.  The first system of        
+    coordinates consists of distance, longitude and magnetic latitude         
+    and is referred to commonly as the Jovigraphic coordinate system,         
+    or one that is fixed to the rotation of the planet. We have used the      
+    System III Jovigraphic coordinate system which uses the planet's          
+    magnetic field to measure the rotation. The radial distance is            
+    defined as the distance from the center of Jupiter to the spacecraft      
+    (in kilometers) divided by the radius of Jupiter at the equator           
+    (71492km).  In the usual astronomical convention, the longitude is        
+    a west longitude which increases with time from an observer above         
+    the system, rather than just the angle of rotation about the z-axis.      
+                                                                              
+    The other coordinate system included is referred to as the                
+    Jovicentric Solar Ecliptic (JSE) system. This coordinate system has       
+    its x-axis point from Jupiter toward the Sun, and its y-axis is           
+    chosen to be in the ecliptic plane pointing toward dusk (thus             
+    opposing planetary motion). Its z-axis is parallel to the ecliptic        
+    pole. All X, Y, and Z coordinates are measured in Jovian radii (1         
+    Rj = 71492km).                                                            
+                                                                              
+                                                                              
+  Software FIX FIX FIX FIX FIX                                                
+  ========                                                                    
+    Included in this volume is Java BROWSE software that allows a user        
+    to view the high resolution spectrogram data.  Also, the Browse tool      
+    allows the user to print the cutoff/resonance data used to determine      
+    the electron density.  This allows all users to see firsthand the         
+    interpretations invoked in this study, and determine for themselves       
+    the accuracy of the density determination for a particular time           
+    period.  The resonance/peak and cutoff detection algorithms are also      
+    included in this section to insure replicability by all users.            
+                                                                              
+                                                                              
+                                                                              
+  Media/Format                                                                
+  ============"                                                               
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE                  = "                                
+                                                                              
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+    In order to determine the density, we used an analysis tool that          
+    measured characteristic frequencies from PWS wideband spectrograms.       
+    This frequency detection tool contained both a cutoff and peak            
+    algorithm which measured either the cutoff of the spectrum or the         
+    peak, respectively.  Two different semi-interchangeable systems of        
+    confidence analysis were used depending on which algorithm was used.      
+                                                                              
+    In order to record the confidence of the cutoff frequency                 
+    measurements, data quality indices were given to each data point.         
+    The indices range from 0 to 3 with 0 being a cutoff with the highest      
+    confidence and 3 being the least. The amount of noise in the              
+    spectrum dictates the quality rating given to a particular data           
+    point.  Points with a minimal amount of noise are given values of 0,      
+    whereas points where the spectral noise is so great that the cutoff       
+    is unclear are given a 1 or 2 index depending on the severity of the      
+    noise.  A data quality index of 3 is given when there are                 
+    obstructions in the spectrum blocking the ability for an accurate         
+    measurement, or when there is such a significant amount of                
+    background spectral noise that the spectra must be time-averaged          
+    over a longer period of time in order to interpret the cutoff.  For       
+    example, the Voyager wideband receivers have notch filters that are       
+    used to suppress interference at the power supply frequency of            
+    2.4 kHz and its third harmonic.  When a cutoff resides near a notch       
+    filter, a data quality index of 3 is used.  While the notch filters       
+    do not span more than 200 Hz, any measurement made near them is           
+    considered uncertain.                                                     
+                                                                              
+    In order to determine an estimate of the error of a peak                  
+    measurement, the full-width at half maximum of the Gaussian curve         
+    is measured and recorded along with its peak frequency.  The              
+    narrower the peak is, the more accurate the measurement will be.          
+    This quantitative method is superior to the quality data indices          
+    described above.  However, to provide a consistent data set we have       
+    also translated the width of the peak to quality indices by               
+    assigning an index of 0 for 0 &#10094; deltaf &#10094;= 20 Hz, 1 for                    
+    20 &#10094; deltaf &#10094;= 35 Hz, 2 for 35 &#10094; deltaf &#10094;= 50 Hz, and 3 for               
+    deltaf &#10095; 50 Hz.                                                           
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+    Since the Fourier transform parameters used to produce the spectra        
+    yield a spectral resolution of 28 Hz, this represents the ultimate        
+    accuracy with which a cutoff can be determined.  Previously, we           
+    discussed the Consistency Check method when two or more                   
+    characteristic frequencies were identified consistently with the          
+    spectrum and used to determine fpe, whether the plasma frequency is       
+    visible or not.  For all the density data compiled using this             
+    process with Voyager 1 and 2, the calculated frequencies typically        
+    agree with the features observed in the spectrum to several 10's of       
+    Hz.  Almost all cases agree to within 100 Hz.                             
+                                                                              
+    The uncertainty in fpe translates into a variable uncertainty in the      
+    plasma density and is greater in a relative sense when the plasma         
+    frequency is low.  For example, if we assume an error of 100 Hz in        
+    any measurement, a measurement at 300 Hz produces a 70% fractional        
+    uncertainty in the density.  However, if the measurement is made at       
+    3 kHz, then the fractional uncertainty of the density is much             
+    smaller, approximately 7%.                                                
+                                                                              
+    It is important to note that if the plasma frequency is not present       
+    in the spectrum, the electron plasma density must be calculated           
+    using another characteristic frequency and the cyclotron frequency,       
+    which is directly proportional to the local magnetic field.  If           
+    magnetic field data do not exist for a region where the plasma            
+    frequency cannot be measured, the density can not be determined.          
+                                                                              
+    There are a small number of regions containing anomalous magnetic         
+    field data which may affect the density calculation.  These magnetic      
+    field dropouts are sharp, momentary decreases or increases in the         
+    magnetic field which are instrumental effects and do not represent        
+    realistic occurrences.  They are characterized by a magnetic              
+    fluctuation of several orders of magnitude in a span of less than         
+    one minute.  Regions of anomalous magnetic field data which               
+    affected density measurements were changed manually from their            
+    anomalous values to the floater value -1 and the subsequent               
+    freqeuency and density calculations were changed appropriately.           
+                                                                              
+    During any given time step in Voyager spectrogram data, there may         
+    be more than one measurable frequency which can be used to calculate      
+    the density.  To obtain the final data set included in this volume,       
+    a number of steps were followed to take many measured frequencies         
+    and conclude with only one density measurement for each time step.        
+    Firstly, each frequency cutoff and/or peak that could be measured         
+    from Voyager spectrogram data was measured separately and saved in        
+    individual folders designating the frequency which had been measured      
+    (e.j. p_files, l_files, r_files, u_files).  The digitized frequency       
+    data files contain only a time stamp, a frequency measurement, and        
+    either a data quality index or a full-width at half-maximum value.        
+    Next, this data were run through a program which creates new files        
+    (1 for each measured frequency) with the same structure as in the         
+    final data of this volume.  This includes compiling magnetic field        
+    data and coordinate data for each time step, and calculating the          
+    characteristic frequencies and density based upon the appropriate         
+    measured frequency.  This output a maximum of four separate versions      
+    (based upon how many frequencies were measured) of the final data         
+    for each particular time step.                                            
+    It is necessary to use only one interpretation (one measured              
+    frequency) of the spectra for a particular time step in order to          
+    obtain only one calculation of the density for that time step.            
+    Therefore, an 'index' file is created which specifies the correct         
+    interpretations to be used for every Voyager 1 and 2 time period.         
+    Then, a program was run which read the index file, selected the           
+    correct time record (from either p, L, R, or u files), and copied         
+    the record into the final data day-files.                                 
+    The final day-files were then checked for measurement errors or           
+    anomalous magnetic field data which caused incorrect density              
+    calculations.  Data points found were either deleted or the fce           
+    values, based directly upon magnetic field measurements, were             
+    switched from their anomalous value to -1 floater values.  For a          
+    complete list of manually altered data values, see POSTPROD_V1.TXT        
+    and POSTPROD_V2.TXT which are located in the EXTRAS directory             
+    accessible from the root directory of this volume.  The final step        
+    converted the files into .CSV files which are the final data found        
+    in this volume.                                                           
+                                                                              
+    The present investigation focuses only on the outer magnetosphere.        
+    However, the work of Scarf et al. in 1979 [SCARFETAL1979] has             
+    shown that in the inner magnetosphere, other wave                         
+    phenomena such as the upper hybrid resonance band can be used to          
+    infer the plasma density.  For future investigations, our                 
+    resonance/peak algorithm may be used to accurately determine the          
+    plasma density in regions inside ~20 Jovian radii. "                      
+                                                                              
+   END_OBJECT                   = DATA_SET_INFORMATION                        
+                                                                              
+   OBJECT                       = DATA_SET_TARGET                             
+      TARGET_NAME                  = JUPITER                                  
+   END_OBJECT                   = DATA_SET_TARGET                             
+                                                                              
+   OBJECT                       = DATA_SET_HOST                               
+      INSTRUMENT_HOST_ID          = VG1                                       
+      INSTRUMENT_ID               = PWS                                       
+   END_OBJECT                   = DATA_SET_HOST                               
+                                                                              
+   OBJECT                       = DATA_SET_MISSION                            
+      MISSION_NAME                 = VOYAGER                                  
+   END_OBJECT                   = DATA_SET_MISSION                            
+                                                                              
+   OBJECT                       = DATA_SET_REFERENCE_INFORMATION              
+      REFERENCE_KEY_ID             = "SCARF&GURNETT1977"                      
+   END_OBJECT                   = DATA_SET_REFERENCE_INFORMATION              
+                                                                              
+END_OBJECT                   = DATA_SET                                       
+END

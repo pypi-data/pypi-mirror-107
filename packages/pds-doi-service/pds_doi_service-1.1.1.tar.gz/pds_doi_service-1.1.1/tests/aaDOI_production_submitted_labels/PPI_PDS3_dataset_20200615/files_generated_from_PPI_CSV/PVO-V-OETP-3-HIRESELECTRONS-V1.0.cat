@@ -1,0 +1,131 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-30, D. Kazden, updated to meet PDS 3.8 standards;       
+             2020-02-11, D. Kazden, updated CITATION_DESC;"                  
+                                                                             
+    OBJECT                         = DATA_SET                                
+  DATA_SET_ID                   = "PVO-V-OETP-3-HIRESELECTRONS-V1.0"         
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "PVO VENUS ELECT TEMP PROBE CALIB       
+                                      HIGH RES ELECTRONS VER 1.0"            
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T13:31:29.898                 
+    STOP_TIME                      = 1992-10-07T20:11:28.102                 
+    DATA_OBJECT_TYPE               = TABLE                                   
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. ROBERT F. THEIS"                   
+    DETAILED_CATALOG_FLAG          = N                                       
+    ABSTRACT_DESC                  = "The High Resolution Ne File. These data
+    are based on measurements of the electron saturation current or the ion  
+    saturation current taken from as many voltampere curves as the telemetry 
+    data rate permitted. Since Ne is assumed equal to Ni everywhere in the   
+    ionosphere, either can be used as a measure of Ne. The ion current is    
+    used at high densities (Ni &#10095; 4x104cm-3) and the electron current is used 
+    at lower densities. Typically, 4 to 8 high resolution density samples are
+    obtained in the interval between recovered voltampere curves, although   
+    this ratio is bit rate dependent. This provides Ne and Ni measurements at
+    much smaller intervals than is possible from the voltampere curves       
+    themselves. High resolution measurements are typically available at 2 to 
+    8 second intervals depending upon the telemetry rate available to the    
+    OETP at the time."                                                       
+    DATA_SET_TERSE_DESC            = "PVO VENUS ELECT TEMP PROBE CALIB HIGH  
+                                             RES ELECTRONS VER 1.0"          
+    CITATION_DESC          = "Theis, R. F., PVO-V-OETP-3-HIRESELECTRONS-V1.0,
+                 PVO VENUS ELECT TEMP PROBE CALIB HIGH RES ELECTRONS VER 1.0,
+                             NASA Planetary Data System, 1993."                                   
+    DATA_SET_DESC                  = "                                       
+ The High Resolution Ne File.  These data are based on measurements of       
+the electron saturation current or the ion saturation current taken from as  
+many voltampere curves as the telemetry data rate permitted.  Since Ne is    
+assumed equal to Ni everywhere in the ionosphere, either can be used as a    
+measure of Ne.  The ion current is used at high densities (Ni &#10095; 4x104cm-3)   
+and the electron current is used at lower densities.  Typically, 4 to 8 high 
+resolution density samples are obtained in the interval between recovered    
+voltampere curves, although this ratio is bit rate dependent.  This provides 
+Ne and Ni measurements at much smaller intervals than is possible from       
+the voltampere curves themselves.  High resolution measurements are          
+typically available at 2 to 8 second intervals depending upon the telemetry  
+rate available to the OETP at the time.                                      
+                                                                             
+The High Resolution file provides measurements of Ne (or Ni) within 30       
+minutes either side of periapsis at somewhat higher resolution than is       
+possible from the voltampere curves.  However, these measurements are        
+less accurate when the spacecraft is outside the ionosphere, where Ne is     
+typically well below 100 cm-3.  In sunlight, spacecraft photoelectron        
+densities at the radial probe location are of the order of 30-50 cm-3.  In   
+darkness, the Ne measurements can be made down to densities of about 2       
+cm-3 because the pe background is absent.  However, the measurements         
+made in the Venus umbra are often degraded at low densities because of       
+the presence of hot electrons that charge the spacecraft to potentials that  
+lie beyond the range of the OETP sweep voltage.  This makes it impossible    
+to drive the probe positive with respect to the plasma potential.  In        
+addition, deBye shielding causes the probe to become enveloped in the ion    
+sheath of the spacecraft at very low densities, further reducing its access  
+to the ambient ionospheric plasma.  Empirically derived corrections for      
+this effect have been applied to the high resolution data in order to        
+provide at least a lower limit of Ne, but the errors could exceed a factor of
+2 at densities below 10 cm-3.  This correction does not allow Ne to be less  
+than 2 cm-3.  When the electron current at maximum positive voltage is       
+less than a certain very low value an Ne value of 2 cm-3 is entered in the   
+High Resolution file simply to serve as an upper limit on Ne, and to show    
+that data were actually being taken.                                         
+                                                                             
+In summary, the high resolution Ne measurements provide about a factor       
+of 8 higher resolution than the UADS file whose resolution is limited by     
+the recovery rate of raw voltampere curves.  Therefore the high resolution   
+data better resolve such small scale features as the ionopause and the       
+plasma clouds often found above the ionopause.  Also, the UADS densities     
+often stop somewhere within the ionopause density gradient, so this          
+feature can best be resolved using the High Resolution data.  However,       
+certain artifacts have not been removed from the data, so one must be        
+careful not of over-interpret them. (See section on accuracy)"               
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+In general, the high resolution Ne measurements have a lower absolute        
+accuracy than the UADS (voltampere curve) measurements because               
+factors such as the spacecraft potential and Te are not available to         
+calculate Ne more precisely.  To reduce such errors in the high resolution   
+data, they are normalized to the voltampere curve measurements.  This        
+normalization is entirely different from the Ne-Ni normalization employed    
+in deriving the UADS data.                                                   
+                                                                             
+Another source of error in the High Resolution Ne measurements is the        
+jump discontinuities that occur when the spacecraft passes from sunlight     
+to shadow.  An abrupt change in spacecraft potential occurs at that point,   
+and this changes the probe voltage which is referenced to the spacecraft.    
+The Ne measurements cannot easily be corrected for this change because       
+they are not based on voltampere curves but measurements at a fixed          
+positive potential. Therefore a discontinuity may occur in Ne at the         
+sunlight-shadow boundary if Ne is sufficiently low that spacecraft           
+photoelectron emission affects the spacecraft potential.                     
+                                                                             
+The precision of the high resolution data is probably somewhat better than   
+that of the UADS data because the latter may suffer from the effects of      
+volt ampere curve distortion due to small scale density variations and spin  
+effects which do not show up in the single point samples used in the high    
+resolution measurements.  This feature makes the high resolution data        
+more valuable in resolving small scale, and small amplitude plasma           
+structure."                                                                  
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "N/A"                                     
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

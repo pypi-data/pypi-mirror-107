@@ -1,0 +1,407 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. KAZDEN, added ABSTRACT_DESC, CITATION_DESC, updated ARCHIVE_STATUS,       
+2012-02-28;                                                                  
+D. KAZDEN, removed ARCHIVE_STATUS keyword, 2018-08-06;"                      
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P10-J-CRT-4-SUMM-FLUX-15MIN-V1.0"      
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P10 JUPITER CRT ELECTRON/PROTON/ION    
+                                      FLUX 15 MIN AVGS V1.0"                 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1973-11-26T00:00:00                     
+    STOP_TIME                      = 1973-12-15T14:45:00                     
+    DATA_SET_RELEASE_DATE          = NULL                                    
+    PRODUCER_FULL_NAME             = "FRANK B. MCDONALD"                     
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+      Pioneer 10 Cosmic-ray telescope (CRT) data from the Jupiter            
+      encounter period, covering 1973-11-26 to 1973-12-15. The data set      
+      provides 15.0 minute flux averages from 18 electron, proton, and       
+      heavy ion channels."                                                   
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 10 Cosmic-ray telescope (CRT) data from the Jupiter            
+      encounter period, covering 1973-11-26 to 1973-12-15. The data set      
+      provides 15.0 minute flux averages from 18 electron, proton, and       
+      heavy ion channels."                                                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    This data set consists of particle flux data and their associated        
+    statistic errors recorded by the Cosmic Ray Telescope subsystems         
+    onboard the Pioneer 10 spacecraft, during the Jupiter encounter          
+    period. Data are provided in 5 files and 18 flux channels from the       
+    High Energy Telescope (HET), Low Energy Telescope I (LET-I), and Low     
+    Energy Telescope II (LET-II) subsystems. Each channel is defined         
+    either by a single detector, or in most of the cases, a multiple         
+    detector coincidence logic, to supply three particle types:              
+    electrons, protons, protons and heavy ions.                              
+                                                                             
+                                                                             
+  Data                                                                       
+  ====                                                                       
+                                                                             
+    Channels                                                                 
+    --------                                                                 
+      In the following rate/flux channel definitions, detectors in HET       
+      are identified by A, B, C1, C2, C3, that of LET-I subsystem, by        
+      D1, D2, E, F, and ones of LET-II subsystem, by S1, S2, S3, S2(A).      
+      Detector S2(A) is an annular guard detector in LET-II. The             
+      subscript in parentheses of a detector identifier refers to the        
+      trigger threshold on that detector. Several detectors defining a       
+      rate/flux channel are in coincidence unless the symbol '^'             
+      preceding the detector identifier indicating that detector is in       
+      anti-coincidence.                                                      
+                                                                             
+      (1) A2 Rate (Saturn only) gives the counting rate in a 2.5 mm          
+          thick Si detector with an area of 3.0 cm**2. Since the             
+          threshold is set at 2.01 MeV, it responds primarily to             
+          energetic electrons; however, the effective solid angle            
+          and detection efficiency are not well known. This rate             
+          is given for Saturn because the more desirable coincidence         
+          rates suffered from excessive accidentals. The rate ID             
+          is A2.                                                             
+                                                                             
+      (2) A1.^A2.B.^C1 Rate (Jupiter only) gives the flux of electrons       
+          with a range between 2.5 and 5.0 mm of Si which deposit less       
+          than 2 MeV in the front detector. The electron energy falls        
+          into the range of about 1.8 to 3.2 MeV. The rate ID is             
+          A1.^A2.B.^C1.                                                      
+                                                                             
+      (3) A1.^A2.B.C1.^C2 Rate (Jupiter only) gives the electron flux        
+          with a range of 5 to 10 mm Si; the approximate energy range        
+          of 3.2 to 5.1 MeV. The rate ID is A1.^A2.B.C1.^C2                  
+                                                                             
+      (4) A1.^A2.B.C1.C2.^C3 Rate (Jupiter only) gives the electron          
+          flux with a range of 10 to 15 mm Si; the approximate electron      
+          energies are 5.1 to 8 MeV. The rate ID is A1.^A2.B.C1.C2.^C3.      
+                                                                             
+      (5) ^S1.S2(5).^S2(A).^S3 Rate gives the flux of electrons in           
+          LET-II which do not trigger the 0.145 MeV threshold in the         
+          50 gamma front detector and trigger the 50 keV threshold           
+          in the 2.5 mm thick second detector. The anti-coincidence          
+          requirement with the annular guard counter S2(A) and rear          
+          detector S3 insures that the electrons stop in S2. Our             
+          calibrations show that the 50% efficiency points occur at          
+          0.16 and 2.0 MeV. If the electron spectrum is hard, this           
+          rate will also respond to bresmsstrahlung and electrons            
+          penetrating the collimator. The latter effect made the             
+          dominant contribution in the inner Saturnian magnetosphere;        
+          otherwise, it is believed to be small but is difficult to          
+          evaluate. The rate ID is ^S1.S2(5).^S2(A).^S3.                     
+                                                                             
+      (6) ^S1.S2(6).^S2(A).^S3 Rate is equivalent to rate (5) but            
+          with a 0.35 MeV threshold in S2, corresponding to electron         
+          energies from 0.43 to 2.0 MeV. The rate ID is                      
+          ^S1.S2(6).^S2(A).^S3.                                              
+                                                                             
+      (7) ^S1.S2(7).^S2(A).^S3 Rate is equivalent to rate (5) but            
+          with a 0.7 MeV threshold in S2 corresponding to electron           
+          energies from 0.8 to 2.0 MeV. The rate ID is                       
+          ^S1.S2(7).^S2(A).^S3.                                              
+                                                                             
+      (8) ^S1.S2(8).^S2(A).^S3 Rate is equivalent to rate (5) but            
+          with a 1.0 MeV threshold in S2 corresponding to electron           
+          energies from 1.1 to 2.0 MeV. The rate ID is                       
+          ^S1.S2(8).^S2(A).^S3.                                              
+                                                                             
+      (9) D1(4) Rate gives the flux of protons and ions which penetrate      
+          a 0.53 mg/cm**2 aluminized mylar foil and deposit at least         
+          0.60 (P10) or 0.63 (P11) MeV in detector D1 of LET-I. (This        
+          rate is not given for the Saturn encounter because of              
+          substantial electron contamination.)  For protons, this            
+          corresponds to energies from 0.84 to 15.1 MeV.                     
+                                                                             
+      (10) D1(5) Rate is equivalent to rate (9), but with a threshold        
+          in D1 of 0.95 MeV corresponding to proton energies between         
+          1.11 and 8.1 MeV.                                                  
+                                                                             
+      (11) D1(6) Rate is equivalent to rate (9), but with a threshold        
+          in D1 of 1.45 MeV corresponding to proton energies from 1.6        
+          to 5.1 MeV.                                                        
+                                                                             
+      (12) D1(7) Rate is equivalent to rate (9), but with a threshold        
+          energy in D1 of 2.20 (P10) or 2.05 (P11) MeV corresponding         
+          to proton energies from 2.3 to 3.6 MeV (P10) or 2.1 to 3.8         
+          MeV (P11) respectively.                                            
+                                                                             
+      (13) D1.D2.E2.^F Rate from LET-I gives the proton flux between         
+          10.3 and 21 MeV (P10) and between 11 and 21 MeV (P11).             
+          A small correction has been made for the contribution from         
+          alphas and heavier nuclei in the same energy/nucleus range.        
+          The rate ID is D1.D2.E2.^F - D1.D2.SIGMA(D.E4.^F).                 
+                                                                             
+      (14) S1(1).^S2.^S2(A).^S3 Rate gives the flux of protons and           
+          heavier ions which stop in the 50 gamma thick S1 detector          
+          S1 and deposits energy between 0.16 and 2.6 MeV. This              
+          corresponds to proton energies between 0.20 and 2.15 MeV           
+          (P10) or 0.20 and 2.17 MeV (P11). Detector S1 is shielded          
+          by only 0.12 mg/cm**2 of Al and is, therefore, relatively          
+          sensitive to low-energy ions. At Saturn, the ion contribution      
+          is negligible; however, it may be significant at Jupiter.          
+          The rate ID is S1(1).^S2.^S2(A).^S3 - S1(4).^S2.^S2(A).^S3.        
+                                                                             
+      (15) S1(6).^S2.^S2(A).^S3 Rate is equivalent to rate (14) except       
+          that the threshold in S1 is 0.47 (P10) or 0.5 (P11) MeV, this      
+          corresponds to proton energies of 0.50 to 2.15 MeV (P10) or        
+          0.53 to 2.17 MeV (P11), respectively. The rate ID is               
+          S1(6).^S2.^S2(A).^S3 - S1(4).^S2.^S2(A).^S3.                       
+                                                                             
+      (16) S1(2).^S2.^S2(A).^S3 Rate is equivalent to rate (14) except       
+          that the threshold is 0.74 MeV (P10) or 0.72 MeV (P11), this       
+          corresponds to proton energies of 0.76-2.15 MeV (P10) or           
+          0.74-2.17 MeV (P11). The rate ID is                                
+          S1(2).^S2.^S2(A).^S3 - S1(4).^S2.^S2(A).^S3.                       
+                                                                             
+      (17) S1(3).^S2.^S2(A).^S3 Rate is equivalent to rate (14) except       
+          the threshold is 1.2 MeV, corresponding to proton energies         
+          of 1.24 to 2.15 MeV (P10) and 1.24-2.17 MeV (P11). The rate        
+          ID is S1(3).^S2.^S2(A).^S3 - S1(4).^S2.^S2(A).^S3.                 
+                                                                             
+      (18) S1.S2(1).^S2(A).^S3 Rate gives the flux of protons between        
+          3.13 and 14.8 MeV (P10) and 3.19 to 14.9 MeV (P11). The rate       
+          ID is S1.S2(1).^S2(A).^S3 - S1.S2(3).^S2(A).^S3.                   
+                                                                             
+      (19) S1.S2(2).^S2(A).^S3 Rate is equivalent to rate (18) except        
+          for a higher threshold and covers protons from 5.65 to 14.8        
+          MeV (P10) and 5.68 to 14.9 MeV (P11). The rate ID is               
+          S1.S2(2).^S2(A).^S3 - S1.S2(3).^S2(A).^S3.                         
+                                                                             
+                                                                             
+    Data Sampling                                                            
+    -------------                                                            
+      These data are provided in 15 minute averages. The resolution from     
+      which the 15 minute averages were generated is unknown. CRT data       
+      telemetry was designed to keep the rate data cycle time between 3      
+      and 7 minutes [STILWELLETAL1975].                                      
+                                                                             
+    Data Formats                                                             
+    ------------                                                             
+      The Pioneer 10 Cosmic Ray data during Jupiter encounter were           
+      originally written on 9-track binary magnetic tape, at 1600 BPI,       
+      on an IBM 360 computer. There are 5 data files covering different      
+      flux groups. Each binary file was re-formatted into a new ASCII        
+      file. Detailed description for each file is given as below.            
+                                                                             
+    P10_CRT_JUP_15MIN_HET.TAB contains HET electron flux measurements.       
+    --------------------------------------------------------------------     
+    Column                 Column                Column                      
+    Name                   Format             Description                    
+    --------------------------------------------------------------------     
+    START_TIME              A23    Start time of each averaging interval     
+                                   in yyyy-mm-ddThh:mm:ss.sss                
+    R6A_FLUX                E13.6  Flux of R6A channel from HET              
+    R6A_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R6A channel           
+    R6B_FLUX                E13.6  Flux of R6B channel from HET              
+    R6B_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R6B channel           
+    R7A_FLUX                E13.6  Flux of R7A channel from HET              
+    R7A_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R7A channel           
+    --------------------------------------------------------------------     
+    The coincidence logic for each flux column is described as below:        
+                                                                             
+          Column 2 = (R6A / 2.200E-01)                                       
+                     R6A = A1.^A2.B.^C1                                      
+                                                                             
+          Column 4 = (R6B / 2.200E-01)                                       
+                     R6B = A1.^A2.B.C1.^C2                                   
+                                                                             
+          Column 6 = (R7A / 2.200E-01)                                       
+                     R7A = A1.^A2.B.C1.C2.^C3                                
+                                                                             
+                                                                             
+    P10_CRT_JUP_ENC_15MIN_LET_IIA.TAB contains LET-II electron flux          
+    measurements.                                                            
+    --------------------------------------------------------------------     
+    Column                   Column              Column                      
+    Name                     Format           Description                    
+    --------------------------------------------------------------------     
+    START_TIME                A23    Start time of each averaging            
+                                     interval in yyyy-mm-ddThh:mm:ss.sss     
+    SR2E(9)_FLUX              E13.6  Flux of SR2E(9) channel from LET-II     
+    SR2E(9)_FLUX_UNCERTAINTY  E13.6  Flux uncertainty of SR2E(9) channel     
+    SR2F(9)_FLUX              E13.6  Flux of SR2F(9) channel from LET-II     
+    SR2F(9)_FLUX_UNCERTAINTY  E13.6  Flux uncertainty of SR2F(9) channel     
+    SR2G(9)_FLUX              E13.6  Flux of SR2G(9) channel from LET-II     
+    SR2G(9)_FLUX_UNCERTAINTY  E13.6  Flux uncertainty of SR2G(9) channel     
+    SR2H(9)_FLUX              E13.6  Flux of SR2H(9) channel from LET-II     
+    SR2H(9)_FLUX_UNCERTAINTY  E13.6  Flux uncertainty of SR2H(9) channel     
+    --------------------------------------------------------------------     
+    The coincidence logic for each flux column is described as below:        
+                                                                             
+          Column 2 = (SR2E(9) / 1.500E-02)                                   
+                     SR2E(9) = ^S1.S2(5).^S2(A).^S3(9)                       
+                                                                             
+          Column 4 = (SR2F(9) / 1.500E-02)                                   
+                     SR2F(9) = ^S1.S2(6).^S2(A).^S3(9)                       
+                                                                             
+          Column 6 = (SR2G(9) / 1.500E-02)                                   
+                     SR2G(9) = ^S1.S2(7).^S2(A).^S3(9)                       
+                                                                             
+          Column 8 = (SR2H(9) / 1.500E-02)                                   
+                     SR2H(9) = ^S1.S2(8).^S2(A).^S3(9)                       
+                                                                             
+                                                                             
+    P10_CRT_JUP_ENC_15MIN_LET_I.TAB contains LET-I proton and ion flux       
+    measurements.                                                            
+    --------------------------------------------------------------------     
+    Column                   Column              Column                      
+    Name                     Format           Description                    
+    --------------------------------------------------------------------     
+    START_TIME                A23    Start time of each averaging            
+                                     interval in yyyy-mm-ddThh:mm:ss.sss     
+    R10D_FLUX                E13.6  Flux of R10D channel from LET-I          
+    R10D_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R10D channel         
+    R10E_FLUX                E13.6  Flux of R10E channel from LET-I          
+    R10E_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R10E channel         
+    R10F_FLUX                E13.6  Flux of R10F channel from LET-I          
+    R10F_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R10F channel         
+    R10G_FLUX                E13.6  Flux of R10G channel from LET-I          
+    R10G_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R10G channel         
+    R13AB_FLUX               E13.6  Flux of R13AB channel from LET-I         
+    R13AB_FLUX_UNCERTAINTY   E13.6  Flux uncertainty of R13AB channel        
+    --------------------------------------------------------------------     
+    The coincidence logic for each flux column is described as below:        
+                                                                             
+          Column 2 = (R10D / 1.530E+00)                                      
+                     R10D = D1(4)                                            
+                                                                             
+          Column 4 = (R10E / 1.530E+00)                                      
+                     R10E = D1(5)                                            
+                                                                             
+          Column 6 = (R10F / 1.530E+00)                                      
+                     R10F = D1(6)                                            
+                                                                             
+          Column 8 = (R10G / 1.530E+00)                                      
+                     R10G = D1(7)                                            
+                                                                             
+          Column 10 = (R13A / 1.550E-01) - (R13B / 1.550E-01)                
+                      R13A = D1.D2.E2.^F                                     
+                      R13B = D1.D2.SIGMA-D.E4.^F                             
+                                                                             
+                                                                             
+    P10_CRT_JUP_ENC_15MIN_LET_IIB.TAB contains LET-II proton and heavy       
+    ion flux measurements.                                                   
+    --------------------------------------------------------------------     
+    Column                   Column              Column                      
+    Name                     Format           Description                    
+    --------------------------------------------------------------------     
+    START_TIME                A23    Start time of each averaging            
+                                     interval in yyyy-mm-ddThh:mm:ss.sss     
+    R15AD_FLUX                E13.6  Flux of R15AD channel from LET-II       
+    R15AD_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R15AD channel       
+    SR2BD_FLUX                E13.6  Flux of SR2BD channel from LET-II       
+    SR2BD_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of SR2BD channel       
+    R15BD_FLUX                E13.6  Flux of R15BD channel from LET-II       
+    R15BD_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R15BD channel       
+    --------------------------------------------------------------------     
+    The coincidence logic for each flux column is described as below:        
+                                                                             
+          Column 2 = (R15A / 1.500E-02) - (R15D / 1.500E-02)                 
+                     R15A = S1(1).^S2.^S2(A).^S3                             
+                     R15D = S1(4).^S2.^S2(A).^S3                             
+                                                                             
+          Column 4 = (SR2B(9) / 1.500E-02) - (R15D / 1.500E-02)              
+                     SR2B(9) = S1(6).^S2.^S2(A).^S3(9)                       
+                     R15D = S1(4).^S2.^S2(A).^S3                             
+                                                                             
+          Column 6 = (R15B / 1.500E-02) - (R15D / 1.500E-02)                 
+                     R15B = S1(2).^S2.^S2(A).^S3                             
+                     R15D = S1(4).^S2.^S2(A).^S3                             
+                                                                             
+                                                                             
+    P10_CRT_JUP_ENC_15MIN_LET_IIC.TAB contains LET-II proton and heavy       
+    ion flux measurements.                                                   
+    --------------------------------------------------------------------     
+    Column                   Column              Column                      
+    Name                     Format           Description                    
+    --------------------------------------------------------------------     
+    START_TIME                A23    Start time of each averaging            
+                                     interval in yyyy-mm-ddThh:mm:ss.sss     
+    R15CD_FLUX                E13.6  Flux of R15CD channel from LET-II       
+    R15CD_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R15CD channel       
+    R16AC_FLUX                E13.6  Flux of R16AC channel from LET-II       
+    R16AC_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R16AC channel       
+    R16BC_FLUX                E13.6  Flux of R16BC channel from LET-II       
+    R16BC_FLUX_UNCERTAINTY    E13.6  Flux uncertainty of R16BC channel       
+    --------------------------------------------------------------------     
+    The coincidence logic for each flux column is described as below:        
+                                                                             
+          Column 2 = (R15C / 1.500E-02) - (R15D / 1.500E-02)                 
+                     R15C = S1(3).^S2.^S2(A).^S3                             
+                     R15D = S1(4).^S2.^S2(A).^S3                             
+                                                                             
+          Column 4 = (R16A / 1.500E-02) - (R16C / 1.500E-02)                 
+                     R16A = S1.S2(1).^S2(A).^S3                              
+                     R16C = S1.S2(3).^S2(A).^S3                              
+                                                                             
+          Column 6 = (R16B / 1.500E-02) - (R16C / 1.500E-02)                 
+                     R16B = S1.S2(2).^S2(A).^S3                              
+                     R16C = S1.S2(3).^S2(A).^S3"                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================                                                  
+    Data flag value is -1.0 in this data set.                                
+                                                                             
+    This data set generally covers the Pioneer 10 Jupiter encounter          
+    period from 1973-11-26 to 1973-12-15. Data gaps are listed as below:     
+    ------------------------------------------------------------------       
+    File name                      Data Gap Intervals                        
+    ------------------------------------------------------------------       
+    P10_CRT_JUP_15MIN_HET.TAB      1973-12-01 00:00 - 1973-12-04 21:45       
+    P10_CRT_JUP_15MIN_LET_IIA.TAB  1973-12-02 23:45 - 1973-12-04 15:00       
+    P10_CRT_JUP_15MIN_LET_I.TAB    1973-12-02 23:45 - 1973-12-04 22:00       
+    P10_CRT_JUP_15MIN_LET_IIB.TAB  1973-12-02 23:45 - 1973-12-04 15:00       
+    P10_CRT_JUP_15MIN_LET_IIC.TAB  1973-12-02 23:45 - 1973-12-04 15:00       
+    ------------------------------------------------------------------"      
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P10                                     
+    INSTRUMENT_ID                  = CRT                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCDONALD&TRAINOR1976"                  
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCDONALDETAL1979"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCDONALDETAL1980"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "STILWELLETAL1975"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "TRAINORETAL1974"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

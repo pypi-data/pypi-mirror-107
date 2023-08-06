@@ -1,0 +1,90 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-10-28, SJOY, created template;                                         
+  1992-11-03, EFRIED;                                                         
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-22, D. Kazden, removed unnecessary keywords, added ABSTRACT_DESC,   
+              CITATION_DESC and DATA_SET_TERSE_DESC;                          
+  2011-08-08, D. Kazden, changed DATA_OBJECT_TYPE from TIME_SERIES;           
+  2020-03-09, D. Kazden, updated CITATION_DESC;"                              
+                                                                              
+OBJECT                         = DATA_SET                                     
+  DATA_SET_ID                    = "VG2-U-POS-5-SUMM-HGCOORDS-48SEC-V1.0"     
+                                                                              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "VG2 URA TRAJECTORY DERIV SUMM           
+                                      HELIOGRAPHIC COORDS 48SEC V1.0"         
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-22T00:00:00.319                  
+    STOP_TIME                      = 1989-08-29T23:59:11.365                  
+    DATA_OBJECT_TYPE               = TABLE                                    
+    DATA_SET_RELEASE_DATE          = 1993-02-01                               
+    PRODUCER_FULL_NAME             = "DR. RONALD J. LEPPING"                  
+    DETAILED_CATALOG_FLAG          = Y                                        
+    ABSTRACT_DESC                  = "This dataset contains Voyager 2         
+        position vectors relative to the Sun in both cartesian and            
+        spherical Heliographic coordinates for the time when Voyager 2        
+        was near Uranus but not within its magnetosphere. The position        
+        vectors are given every 48 seconds. The units of the vector           
+        components are Au and degrees.  Vectors are stored as 4-byte floating 
+        point values."                                                        
+    CITATION_DESC      = "Lepping, R.J., VG2-U-POS-5-SUMM-HGCOORDS-48SEC-V1.0,
+                            VG2 URA TRAJECTORY DERIV SUMM HELIOGRAPHIC COORDS 
+                             48SEC V1.0, NASA Planetary Data System, 1993. "  
+    DATA_SET_TERSE_DESC            = "This dataset contains Voyager 2         
+        position vectors relative to the Sun in both cartesian and            
+        spherical Heliographic coordinates for the time when Voyager 2        
+        was near Uranus but not within its magnetosphere."                    
+    DATA_SET_DESC                  = "                                        
+     This dataset contains Voyager 2 position vectors relative to the Sun     
+     in both cartesian and spherical Heliographic coordinates for the time    
+     when Voyager 2 was near Uranus but not within its magnetosphere. The     
+     position vectors are given every 48 seconds. The units of the vector     
+     components are Au and degrees.  Vectors are stored as 4-byte floating    
+     point values.                                                            
+                                                                              
+     The Heliographic coordinate system is defined in the reference epoch of  
+     1950. The unit vectors which define the coordinate system are as follows:
+     X points away from the Sun towards the ascending node, in the            
+     solar equatorial plane,                                                  
+     Z points along the Sun's spin axis, positive above the equatorial plane, 
+     and Y completes the right handed set."                                   
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+     This dataset was provided by the Voyager Magnetometer team. There        
+     is a significant problem with loss of precision in the spacecraft        
+     position. This is not an artifact of the Mag teams processing or         
+     handling of the data but in the precision of the Supplemental            
+     Experimenter Data Records (SEDR) for Voyager.                            
+                                                                              
+    SAMPLING_PARAMETER_NAME        = TIME                                     
+    SAMPLING_PARAMETER_RESOLUTION  = 96.0                                     
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                      
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                      
+    SAMPLING_PARAMETER_INTERVAL    = 48.0                                     
+    MINIMUM_AVAILABLE_SAMPLING_INT = 48.0                                     
+    SAMPLING_PARAMETER_UNIT        = SECONDS                                  
+    DATA_SET_PARAMETER_NAME        = POSITION VECTOR                          
+    NOISE_LEVEL                    = N/A                                      
+    DATA_SET_PARAMETER_UNIT        = AU OR DEGREES                            
+"                                                                             
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = URANUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = "VG2"                                    
+    INSTRUMENT_ID                  = "POS"                                    
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         =  DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                     =  DATA_SET_REFERENCE_INFORMATION            
+END_OBJECT                     = DATA_SET                                     
+END

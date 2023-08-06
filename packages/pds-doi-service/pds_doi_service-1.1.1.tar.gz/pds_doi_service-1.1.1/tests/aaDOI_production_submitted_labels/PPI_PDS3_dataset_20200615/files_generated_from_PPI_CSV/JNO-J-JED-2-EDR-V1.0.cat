@@ -1,0 +1,226 @@
+PDS_VERSION_ID                     = PDS3                                      
+                                                                              
+RECORD_TYPE                       = STREAM                                    
+LABEL_REVISION_NOTE               = "                                         
+          2017-06-23 JUNO:    LEBrown  Revision 1;                            
+          2017-09-13 PDS:     JNMafi   Release #2 (Perijoves 3-4);            
+          2018-01-09 PDS:     JNMafi   Release #3 (Perijoves 5-6);            
+          2018-03-26 PDS:     JNMafi   Release #4 (Perijoves 7-8);            
+          2018-06-26 PDS:     JNMafi   Release #5 (Perijoves 9-10);           
+          2018-10-26 PDS:     JNMafi   Release #6 (Perijoves 11-12);          
+          2019-02-07 PDS:     JNMafi   Release #7 (Perijoves 13-14);          
+          2019-05-20 PDS:     JNMafi   Release #8 (Perijoves 15-16);          
+          2019-09-11 PDS:     JNMafi   Release #9 (Perijoves 17-18);          
+          2019-12-02 PDS:     JNMafi   Updated CITATION_DESC;                 
+          2019-12-20 PDS;     JNMafi   Release #10 (Perijoves 19-20);         
+          2020-02-03 PDS;     DKazden  Updated DATA_SET_RELEASE_DATE;         
+          2020-04-03 PDS;     DKazden  Release #11 (Perijoves 21-22);         
+                                   "                                          
+                                                                              
+OBJECT                            = DATA_SET                                  
+                                                                              
+  DATA_SET_ID                      = "JNO-J-JED-2-EDR-V1.0"                   
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  =                                          
+     "JUNO J ENERGETIC PARTICLE DETECTOR UNCALIBRATED V1.0"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    DATA_OBJECT_TYPE               = TABLE                                    
+    START_TIME                     = 2016-01-05T00:01:03                      
+    STOP_TIME                      = 2019-09-14T00:01:55                      
+    DATA_SET_RELEASE_DATE          = 2020-04-08                               
+    PRODUCER_FULL_NAME             = "BARRY MAUK"                             
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    CITATION_DESC                  = "                                        
+      B. Mauk (APL), JUNO J ENERGETIC PARTICLE DETECTOR UNCALIBRATED V1.0,    
+      JNO-J-JED-2-EDR-V1.0, NASA Planetary Data System, 2020."                
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      The JUNO JEDI uncalibrated observations consist of energetic particle   
+      data collected by the JEDI instruments during Jupiter Science Orbit     
+      operations of the JUNO mission."                                        
+                                                                              
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+                                                                              
+    Abstract                                                                  
+    ========                                                                  
+      This data set consists of the JUNO JEDI (Jupiter Energetic-Particle     
+      Detector) uncalibrated observations, also known as EDRs. The system     
+      is made up of 3 instrument subsystems (pucks) aligned in three          
+      directions on the spinning JUNO spacecraft. The pucks each have 6 look  
+      directions (telescopes) with a time of flight (TOF) and a deposited     
+      energy detection (SSD) system.  In addition, the pulse height of the    
+      signal in the TOF system can be used for energy measurement. The        
+      instruments can be operated in a variety of modes, differing in the     
+      way they use and combine these measurements. More details are available 
+      in the INSTRUMENT.CAT file and the JEDI SIS.                            
+                                                                              
+      The EDRs are organized in files covering one day of spacecraft event    
+      time (SCET). There are potentially 10 different files per puck,         
+      corresponding to the available data gathering modes: HIERSESP,          
+      HIERSISP, HIERSTOFXER, HIERSTOFXPHR, LOERSESP, LOERSISP, LOERSTOFXER,   
+      LOERSTOFXPHR, NONPTOFXER, NONPTOFXPHR. Depending on how the pucks are   
+      operated, not all data types will be available for all pucks for any    
+      particular time range."                                                 
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+      The data set consists of uncalibrated observations, also known as       
+      EDRs.                                                                   
+                                                                              
+      For all the EDR products there is a detached PDS label file that        
+      describes the contents of one data file. Each label file will have      
+      the same base name as the data file it is describing, with the          
+      extension .LBL to denote a label file. The label file defines the       
+      start time and end of the observation, product creation time, and       
+      the structure of the ASSCI tables. Each data product                    
+      is identified within the PDS label by a STANDARD_DATA_PRODUCT_ID        
+      value, shown in parentheses in the table below.                         
+                                                                              
+                                                                              
+    Instrument Overview                                                       
+    ===================                                                       
+      The JEDI sensors consists of a 60-mm diameter, hockey puck-like         
+      cylinder, in which a start foil and stop foil, wrapped around           
+      opposite curved sides of the cylinder, constitute the TOF chamber.      
+      The detectors are arranged so that each detector senses the             
+      events within a given range of incidence angles. Each of the 6          
+      detector modules is composed of 4 pixels: large and small ion and       
+      large and small electron. See the INSTRUMENT.CAT file for more          
+      information.                                                            
+                                                                              
+    Calibration Overview                                                      
+    ====================                                                      
+      This data set is NOT calibrated; it only provides the uncalibrated      
+      sensor measurements.                                                    
+                                                                              
+                                                                              
+    Parameters                                                                
+    ==========                                                                
+      The setting and interaction of the actual instrument parameters         
+      used to configure the timing and modes of the collection of spectral    
+      data during normal science operations are complex and a detailed        
+      understanding of them is not required outside of science operations     
+      team.  We present science parameters that describe the data collection  
+      settings in a useable fashion:                                          
+                                                                              
+      UTC - a human readable timestamp provided for ease of use.  The ET      
+        timestamps are preferred for actual analysis.                         
+                                                                              
+      ETStart, ETLookDirection, ETEnd - Time stamps in Solar System           
+        Barycentric time (TDB, Epoch J2000) corresponding to the beginning,   
+        middle (roughly), and end of the data accumulation.  See JEDI SIS for 
+        a detailed description of the ETLookDirection parameter, which is the 
+        recommended SCET time to use for data analysis.                       
+                                                                              
+      Duration - Total live exposure time                                     
+                                                                              
+      SectorDeadTime - instrument dead time due to latency in switching       
+        between collection modes.                                             
+                                                                              
+      LargePixel - wether the large or small detector pixel is in use.        
+                                                                              
+      SCLKStart, SCLKLookDirection, SCLKEnd - spacecraft clock strings        
+        corresponding to the same three times as the ET parameters.           
+                                                                              
+      Quality - a multi-bit flag indicating data quality issues. 0 means no   
+        adverse conditions                                                    
+                                                                              
+      PacketTimeTag, Spin, Sector - retained for instrument science team      
+        usage in data validation                                              
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+      The JUNO JEDI EDR data set products are described as follows:           
+                                                                              
+      HIERSESP      High-Res (E) Electron Spectra                             
+      LOERSESP      Low-Res (E) Electron Spectra                              
+                                                                              
+      Electron spectra as measured by the solid state detector system (SSD)   
+      The High-Res product has more energy channels but is collected at       
+      a longer cadence than the Low-Res product.                              
+                                                                              
+                                                                              
+      HIERSISP      High-Res (E) Ion Spectra                                  
+      LOERSISP      Low-Res (E) Ion Spectra                                   
+                                                                              
+      Ion spectra as measured by the solid state detector system (SSD)        
+      The High-Res product has more energy channels but is collected at       
+      a longer cadence than the Low-Res product.                              
+                                                                              
+                                                                              
+                                                                              
+      HIERSTOFXER   High-Res (E) Time Of Flight (TOF) x Energy Ion Rates      
+      LOERSTOFXER   Low-Res (E) TOF x Energy Ion Rates                        
+      NONPTOFXER    Non-proton TOF x Energy Rates                             
+                                                                              
+      Ion spectra as measured by the SSD and the TOF systems working in       
+      concert.  The High and Low Res products are defined as above and        
+      contain data for energetic charged protons.  The NONP data contain      
+      data for other ion species.                                             
+                                                                              
+      HIERSTOFXPHR  High-Res (E) TOF x Pulse Height Ion Rates                 
+      LOERSTOFXPHR  Low-Res (E) TOF x Pulse Height Ion Rates                  
+      NONPTOFXPHR   Non-proton TOF x Pulse Height Rates                       
+                                                                              
+      Ion spectra as measured by the TOF system using the pulse height of     
+      the TOF signal to measure energy (this allows us to measure lower       
+      particle energies).  The High and Low Res products are defined as       
+      above and contain data for energetic charged protons.  The NONP data    
+      contain data for other ion species."                                    
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE           = "                                       
+                                                                              
+                                                                              
+   Confidence Level Overview                                                  
+   =========================                                                  
+     The JUNO JEDI EDR data are the least processed data set released for the 
+     instrument.  Data presented here are an accurate representation of the   
+     JUNO JEDI data as received from the spacecraft, with minimal timing and  
+     no spatial processing.                                                   
+                                                                              
+                                                                              
+   Review                                                                     
+   ======                                                                     
+     The JUNO JEDI EDR were reviewed internally by the JEDI team prior to     
+     release to the PDS. PDS also performed an external review of the         
+     JEDI EDR.                                                                
+                                                                              
+                                                                              
+   Data Coverage and Quality                                                  
+   =========================                                                  
+                                                                              
+   Limitations                                                                
+   ===========                                                                
+     This data set is minimally processed data.  The data are received        
+     from JUNO mission operations center and processed by the JEDI instrument 
+     team and delivered to the JUNO Science Operations Center (JSOC).         
+"                                                                             
+                                                                              
+ END_OBJECT                       = DATA_SET_INFORMATION                      
+                                                                              
+ OBJECT                           = DATA_SET_MISSION                          
+   MISSION_NAME                   = "JUNO"                                    
+ END_OBJECT                       = DATA_SET_MISSION                          
+                                                                              
+ OBJECT                           = DATA_SET_TARGET                           
+   TARGET_NAME                     = JUPITER                                  
+ END_OBJECT                       = DATA_SET_TARGET                           
+                                                                              
+ OBJECT                           = DATA_SET_HOST                             
+   INSTRUMENT_HOST_ID              = JNO                                      
+   INSTRUMENT_ID                   = JED                                      
+ END_OBJECT                       = DATA_SET_HOST                             
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = "MAUKETAL2013"                            
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+END_OBJECT                        = DATA_SET                                  
+                                                                              
+END

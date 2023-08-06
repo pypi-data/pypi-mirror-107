@@ -1,0 +1,66 @@
+  PDS_VERSION_ID           = PDS3
+  RECORD_TYPE              = STREAM
+  LABEL_REVISION_NOTE      = "2011-05-06 GEO:Slavney First draft;
+                              2013-02-26 GEO:Slavney Revised for Release 1;
+                              2013-07-18 APXS:Gellert Revised for Release 3"
+  
+  OBJECT                           = DATA_SET
+    DATA_SET_ID                    = "MSL-M-APXS-2-EDR-V1.0"
+
+    OBJECT                         = DATA_SET_MISSION
+      MISSION_NAME                 = "MARS SCIENCE LABORATORY"
+    END_OBJECT                     = DATA_SET_MISSION
+    
+    OBJECT                         = DATA_SET_INFORMATION
+      DATA_SET_NAME                = "MSL MARS ALPHA PARTICLE X-RAY 
+                                      SPECTROMETER 2 EDR V1.0"
+      DATA_SET_COLLECTION_MEMBER_FLG = "N"
+      DATA_OBJECT_TYPE               = TIME_SERIES
+      START_TIME                     = 2012-198T00:00:00
+      STOP_TIME                      = "UNK"
+      DATA_SET_RELEASE_DATE          = 2012-03-15
+      PRODUCER_FULL_NAME             = "RALF GELLERT"
+      DETAILED_CATALOG_FLAG          = "N"
+      DATA_SET_TERSE_DESC            = "Unprocessed experiment
+        data copied from the memory buffer of the APXS instrument
+        aboard the Mars Science Laboratory rover."
+      CITATION_DESC                  = "Gellert, R., Mars
+        Science Laboratory Alpha Particle X-Ray Spectrometer
+        EDR Data V1.0, MSL-M-APXS-2-EDR-V1.0, NASA Planetary Data 
+        System, 2012."
+      ABSTRACT_DESC                  = "Unprocessed experiment
+        data copied from the memory buffer of the APXS instrument
+        aboard the Mars Science Laboratory rover."
+      DATA_SET_DESC                  = "
+
+    Data Set Overview
+    =================
+  
+"
+
+      CONFIDENCE_LEVEL_NOTE          = "
+
+    Confidence Level Overview
+    =========================
+      No data compression is used. 
+
+"
+
+  END_OBJECT                      = DATA_SET_INFORMATION
+
+  OBJECT                          = DATA_SET_TARGET
+    TARGET_NAME                   = MARS
+  END_OBJECT                      = DATA_SET_TARGET
+
+  OBJECT                          = DATA_SET_HOST
+    INSTRUMENT_HOST_ID            = "MSL"
+    INSTRUMENT_ID                 = "APXS"
+  END_OBJECT                      = DATA_SET_HOST
+
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID              = "CAMPBELLETAL2012"
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                        = DATA_SET
+
+END

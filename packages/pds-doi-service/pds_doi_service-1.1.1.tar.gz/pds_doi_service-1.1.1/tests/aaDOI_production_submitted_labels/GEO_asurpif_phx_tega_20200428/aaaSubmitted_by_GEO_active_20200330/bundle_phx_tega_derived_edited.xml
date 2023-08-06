@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:phx_tega_derived</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Phoenix Thermal Evolved Gas Analyzer Derived Scanning Calorimetry Dataset</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>Sutter, Brad</author_list>
+            <editor_list>Thomas C., Stein</editor_list>
+            <publication_year>2018</publication_year>
+            <description>Phoenix Thermal Evolved Gas Analyzer Derived Differential Scanning Calorimetry Dataset produced by Brad Sutter, MDAP 2014</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-08-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>Peer reviewed version of TEGA Derived Differential Scanning Calorimetry PDS4</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2008-05-31T00:00:00Z</start_date_time>
+            <stop_date_time>2008-10-26T00:00:00Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>Phoenix</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.phoenix</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>Phoenix Thermal Evolved Gas Analyzer</name>
+            <Observing_System_Component>
+                <name>Thermal Evolved Gas Analyzer</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:tega.phx</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Phoenix Lander</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>bundle_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>10.1126/science.1172768</doi>
+            <reference_text>
+                Boynton, W. V., D. W. Ming, S. P. Kounaves, S. M. M. Young, R.
+                E. Arvidson, M. H. Hecht, J. Hoffman, P. B. Niles, D. K. Hamara,
+                R. C. Quinn, P. H. Smith, B. Sutter, D. C. Catling, and R. V.
+                Morris, Evidence for Calcium Carbonate at the Mars Phoenix
+                Landing Site, Science 325, 61, doi: 10.1126/science.1172768,
+                2009.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                Sutter, B., and D. Hamara, Phoenix Lander's Thermal Evolved Gas
+                Analyzer (TEGA) Scanning Calorimetry Data in the Data Systems
+                Reduced Data Record: Data processing procedures to obtain power
+                and differential power, 2018, in press.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+    </Bundle>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_tega_derived:data</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_tega_derived:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:system_bundle:xml_schema</lid_reference>
+        <member_status>Secondary</member_status>
+        <reference_type>bundle_has_schema_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

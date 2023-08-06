@@ -1,0 +1,15 @@
+﻿This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<records>
+<record successful="true">
+<osti_id>1414253</osti_id>
+<product_nos>
+urn:nasa:pds:maven.swea.calibrated:data.svy_pad::3.5
+</product_nos>
+<title>
+MAVEN Solar Wind Electron Analyzer (SWEA) Survey Rate Electron Pitch Angle Distributions Data Collection
+</title>
+<contract_nos/>
+<doi status="posted">10.17189/1414253</doi>
+<status>SUCCESSFUL</status>
+</record>
+</records>

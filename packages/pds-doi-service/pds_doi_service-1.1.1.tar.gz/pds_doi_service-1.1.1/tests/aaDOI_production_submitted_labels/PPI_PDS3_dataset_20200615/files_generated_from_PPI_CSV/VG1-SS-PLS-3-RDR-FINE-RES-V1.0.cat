@@ -1,0 +1,88 @@
+PDS_VERSION_ID                      = PDS3                                    
+                                                                             
+LABEL_REVISION_NOTE            = "temporary CAT, B. Harris, 2008-03-14;      
+some details filled in, B. Harris, 2013-08-14;                               
+removed unnecessary quotes, D. Kazden 2014-01-10;                            
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-13;"                
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "VG1-SS-PLS-3-RDR-FINE-RES-V1.0"        
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME           = "VOYAGER 1 SOLAR WIND PLS FINE RES V1.0"       
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1977-09-07T09:21:00.000                 
+    STOP_TIME                      = 1980-12-31T17:56:00.000                 
+    DATA_SET_RELEASE_DATE          = 1996-11-01                              
+    PRODUCER_FULL_NAME             = "JOHN D. RICHARDSON"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      Voyager 1 plasma data of the solar wind, fine resolution data."        
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      Voyager 1 plasma data of the solar wind, fine resolution data."        
+                                                                             
+    CITATION_DESC                  = "N/A"                                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+      Voyager 1 plasma data of the solar wind, fine resolution data.         
+The files in this directory contain the Voyager fine resolution plasma data. 
+The plasma parameters are obtained by finding the best fit of a convected    
+isotropic Maxwellian distribution to the data. One sigma errors              
+are typically less than 0.5 percent in the speed and VR, less than 5 percent 
+ for the density and thermal speed, and vary greatly for VT and VN.          
+Sampling times range from 12 to 192 sec., with sampling generally more       
+frequent early in the mission. The columns are:                              
+                                                                             
+1) Year                                                                      
+2) day of year (day 1 is Jan. 1)                                             
+3) decimal hour                                                              
+4) proton speed in km/s (magnitude of V)                                     
+5) proton density in cm-3                                                    
+6) proton thermal speed in km/s (proton temperature in eV = .0052 times the  
+                                 square of the thermal speed)                
+7) VR                                                                        
+8) VT (WARNING: this parameter is often NOT reliable after 1989)             
+9) VN (WARNING: this parameter is often NOT reliable after 1989)             
+                                                                             
+The velocity components are given in the RTN coordinate system,              
+where R is radially outward, T is in a plane parallel to the solar           
+equatorial plane and positive in the direction of solar rotation,            
+and N completes a right-handed system.                                       
+                                                                             
+Please consult with us, or at least send preprints, when you use this data to
+prevent grievous errors or misconceptions.                                   
+(John Richardson, jdr@space.mit.edu)"                                        
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "N/A"                                   
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SOLAR WIND"                            
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = "VG1"                                   
+    INSTRUMENT_ID                  = "PLS"                                   
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "VOYAGER"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+  REFERENCE_KEY_ID                = "N/A"                                    
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

@@ -1,0 +1,158 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+S. JOY (PPI), 1999-03-16;                                                    
+Additional Ketwords added by D. Kazden, 2009-09-15;                          
+Z's removed from time by D. Kazden 2010-05-05;                               
+Updated CITATION_DESC and ABSTRACT_DESC, D. Kazden, 2020-02-12;"             
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-EPAC-4-SUMM-PHA-24HR-V1.0"       
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME               = "ULYSSES JUPITER EPAC PULSE HEIGHT 24HR"   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-01-25T00:00:00.000                 
+    STOP_TIME                      = 1992-02-29T23:59:00.000                 
+    DATA_SET_RELEASE_DATE          = 1999-02-15                              
+    PRODUCER_FULL_NAME             = "ERHARD KEPPLER"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "Ulysses Energetic Particle Composition 
+                                      Experiment (EPAC) pulse height         
+                                      analysis data in 1 day (24 hr) files.  
+                                      Data are provided for the time period  
+                                      from 1992-Jan-25 to 1992-Feb-29."      
+    CITATION_DESC            = "Keppler, E., ULY-J-EPAC-4-SUMM-PHA-24HR-V1.0,
+                                  ULYSSES JUPITER EPAC PULSE HEIGHT 24HR,    
+                                  NASA Planetary Data System, 1999."         
+    ABSTRACT_DESC                  = "Ulysses Energetic Particle Composition 
+                                      Experiment (EPAC) pulse height         
+                                      analysis data in 1 day (24 hr) files.  
+                                      Data are provided for the time period  
+                                      from 1992-Jan-25 to 1992-Feb-29."      
+    DATA_SET_DESC                  = "                                       
+                                                                             
+    Data Set Overview                                                        
+    =================                                                        
+      This data set contains Ulysses Energetic Particle Composition          
+      Experiment (EPAC) pulse height analysis data in 1 day (24 hr)          
+      files. Data are provided for the time period from 1992-Jan-25 to       
+      1992-Feb-29.                                                           
+                                                                             
+    Data                                                                     
+    ====                                                                     
+      Most files are provied in both binary and ascii formats that           
+      contain the same information but in a slightly different format.       
+      The file naming convention is EV92xxx (.BIN binary) or (.TAB ascii     
+      table) where the xxx is the day of 1992. Each file is described by     
+      a detached PDS label file (.LBL).                                      
+                                                                             
+      The data entries in the ascii files are integer energy and delta       
+      energy of each event starting at midnight for each day.                
+      Time values are not assigned to individual event. The entries are      
+      separated by blanks. Then the total length of the ASCII                
+      records are: 41 Bytes with a variable number of records per file.      
+                                                                             
+      The data entries include:                                              
+                                                                             
+                                                                             
+        E            Energy channel                                          
+        dE           Delta energy channel                                    
+        ER           Energy range of the energy channel                      
+        SPiD         Species ID                                              
+        TiD          Telescope ID                                            
+        SEiD         Sector ID                                               
+                                                                             
+                                                                             
+      The record structure is as follows:                                    
+                                                                             
+                                                                             
+         E  dE      ER      SPiD    TiD    SEiD                              
+      --------------------------------------------                           
+         3   0       1       0       0       0                               
+         0   3       1       0       1       3                               
+         2   1       1       0       2       3                               
+       253   6       0       1       2       1                               
+         1   3       1       0       1       0                               
+        12   0       1       0       1       3                               
+         5   0       1       0       3       2                               
+        29   9       0       1       2       3                               
+       254   4       0       1       0       2                               
+        85   9       0       1       2       2                               
+       170   6       0       1       0       2                               
+                                                                             
+      Format: (2(1X,I3),4(7X,I1))                                            
+                                                                             
+      In addition to the data files, the EPAC instrument team has            
+      provided two pieces of IDL code. The program CHANTOEN.TXT will         
+      convert EPAC channel numbers to energy (MeV). The program              
+      EPAC_EV.TXT reads the all available PHA data and generates a           
+      postscript plot file 'epac-ev.ps'. The postscript output of            
+      EPAC_EV.PRO for this data submission also included with this           
+      archive (EPAC_EV.PS). A second postscript file, (EXAMPLE.PS) shows     
+      a more fully annotated version of the output of this program for       
+      170 days in the solar wind in 1998. In addition to the data, the       
+      annotated plot shows the theoretical traces of several atomic          
+      species (He - Fe) for comparison purposes.                             
+                                                                             
+      GIF files have been made of the postscript provided by the EPAC        
+      team by the PDS (EPAC_EV.GIF,  EXAMPLE.GIF) to facilitate viewing      
+      with web browsers."                                                    
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+    Confidence Level Overview                                                
+    =========================                                                
+      None provided. For more information regarding the confidence           
+      level of the data set please contact:                                  
+           ERHARD KEPPLER                                                    
+           Max-Planck-Institut fur Aeronomie                                 
+           Postfach 20                                                       
+           37189 Katlenburg-Lindau                                           
+           GERMANY                                                           
+           Phone: 49-555-697-9296   Fax: 49-555-697-9240                     
+           Internet: keppler@pgate2.mpae.gwdg.de"                            
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = EPAC                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DROLIASETAL1995"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KEPPLERETAL1992B"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KEPPLER&KRUPP1995"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPP1994"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPPETAL1994"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRUPPETAL1995"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "SCHULZETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

@@ -1,0 +1,67 @@
+PDS_VERSION_ID                  = PDS3                                         
+LABEL_REVISION_NOTE            = "                                            
+  2010-06-17, initial draft; D. Kazden (PPI);                                 
+  2020-01-31, Updated DATA_SET_RELEASE_DATE and various descriptive           
+              fields; J. Mafi (PPI);                                          
+  "                                                                           
+                                                                              
+OBJECT                       = DATA_SET                                       
+  DATA_SET_ID                    = "GO-J-PLS-5-RTS-MOMENTS-V1.0"              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "GALILEO JUPITER RTS MOMENT DATA V1.0"   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1996-06-25T17:00:33.400                  
+    STOP_TIME                      = 2002-01-19T14:44:14.000                  
+    DATA_SET_RELEASE_DATE          = 2010-06-01                               
+    DETAILED_CATALOG_FLAG          = N                                        
+    PRODUCER_FULL_NAME             = "NULL"                                   
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+                                                                              
+    CITATION_DESC                  = "TBD"                                    
+                                                                              
+    ABSTRACT_DESC                  = "TBD"                                    
+                                                                              
+    DATA_SET_TERSE_DESC            = "NULL"                                   
+                                                                              
+    DATA_SET_DESC                  = "NULL"                                   
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "NULL"                                   
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = IO                                       
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = EUROPA                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = GANYMEDE                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = CALLISTO                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = GO                                       
+    INSTRUMENT_ID                  = PLS                                      
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "GALILEO"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "NULL"                                   
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

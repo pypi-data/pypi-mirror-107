@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GALILEO NIMS EXPERIMENT DATA RECORDS: JUPITER OPERATIONS</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GO-J-NIMS-2-EDR-V2.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-05-01</publication_date>
+            <country>USA</country>
+            <description>NIMS Experiment Data Record (EDR) files contain raw data from the
+                Galileo Orbiter Near-Infrared Mapping Spectrometer
+                (CARLSONETAL1992). This raw data requires considerable processing
+                before it is readily amenable to science analysis. The EDRs
+                comprise the base dataset from which spectral image cubes will be
+                created by continually evolving software using successively more
+            accurate calibration and geometry data.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GO-J-NIMS-2-EDR-V2.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GALILEO ORBITER; JUPITER; J RINGS; CALLISTO; EUROPA; GANYMEDE; IO; IMAGING SPECTROMETER; GO; PLANET; RING; SATELLITE; NIMS; NEAR INFRARED MAPPING SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>Dr. Robert W. Carlson</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.go-j-nims-2-edr-v2.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

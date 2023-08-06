@@ -1,0 +1,421 @@
+PDS_VERSION_ID                         = PDS3                                  
+LABEL_REVISION_NOTE                   = "                                     
+Received from J. E. P. Connerney, 2000-08-16;                                 
+Mark Sharlow (updated), 2000-08;                                              
+Mark Sharlow (ODL values), 2000-10-05;                                        
+Mark Sharlow (minor changes), 2000-11-30;                                     
+Mark Sharlow (reformatted), 2000-12-08;                                       
+Mark Sharlow (added DATA_SET_TERSE_DESC), 2001-02-27;                         
+Mark Sharlow (reformatted), 2001-02-28;                                       
+Mark Sharlow (revised DATA_SET_TERSE_DESC), 2001-03-19;                       
+Resubmitted to PPI by David Mitchell, 2001-04-03;                             
+Mark Sharlow (reformatted), 2001-04-10;                                       
+D.Kazden ( added additional Keywords), 2009-04-21;                            
+D. Kazden, updated STOP_TIME, DATA_SET_RELEASE_DATE and CITATION_DESC,        
+2020-02-06;"                                                                  
+RECORD_TYPE                           = STREAM                                
+                                                                              
+OBJECT                                = DATA_SET                              
+DATA_SET_ID                           = "MGS-M-ER-3-MAP1/OMNIDIR-FLUX-V1.0"   
+OBJECT                                = DATA_SET_INFORMATION                  
+DATA_SET_NAME                         =                                       
+     "MGS Mars/Moons MAG/ER Mapping ER Omnidirectional Flux V1.0"             
+DATA_SET_COLLECTION_MEMBER_FLG        = "N"                                   
+DATA_OBJECT_TYPE                      = TABLE                                 
+START_TIME                            = 1999-03-08T00:00:00                   
+STOP_TIME                             = 2006-11-02T23:24:30.793               
+DATA_SET_RELEASE_DATE                 = 2009-05-14                            
+PRODUCER_FULL_NAME                    = "DAVID L. MITCHELL"                   
+DETAILED_CATALOG_FLAG                 = "N"                                   
+DATA_SET_TERSE_DESC = "Calibrated time-ordered data tables from the           
+        Electron Reflectometer instrument on the Mars Global Surveyor         
+        spacecraft, collected during the Mapping phase of the mission."       
+CITATION_DESC           = "Mitchell, D. L., MGS-M-ER-3-MAP1/OMNIDIR-FLUX-V1.0,
+                   MGS Mars/Moons MAG/ER Mapping ER Omnidirectional Flux V1.0,
+                           NASA Planetary Data System, 2009."                 
+ABSTRACT_DESC                         = "The Electron Reflectometer Data      
+Record (ERDR) is a time ordered series of electron measurements from the      
+Mars Global Surveyor (MGS) Mission. Each record consists of a time tag        
+with 19 scalar data points representing measurements of the electron flux     
+in 19 different energy channels, ranging from 10 eV to 20 keV, with an        
+energy resolution of 25%. Each data point is a measure of the electron        
+flux (cm-2 sec-1 ster-1 eV-1) averaged over a 360 x 14 degree disk-shaped     
+field of view (FOV). During the Mapping Phase, as the spacecraft orbits the   
+planet the ER field of view sweeps out the entire sky (4-pi ster)             
+every 58.5 minutes, which is much longer than the integration time per        
+record (2 to 48 sec, depending on energy and telemetry rate) and much l       
+onger than most timescales of interest in Mars&apos; plasma environment."     
+DATA_SET_DESC                         = "                                     
+                                                                              
+                                                                              
+  ====================================================================        
+  Data Set Overview                                                           
+  =================                                                           
+                                                                              
+    The Electron Reflectometer Data Record (ERDR) is a time ordered           
+    series of electron measurements from the Mars Global Surveyor (MGS)       
+    Mission. Each record consists of a time tag with 19 scalar data           
+    points representing measurements of the electron flux in 19               
+    different energy channels, ranging from 10 eV to 20 keV, with an          
+    energy resolution of 25%.  Each data point is a measure of the            
+    electron flux (cm-2 sec-1 ster-1 eV-1) averaged over a 360 x 14           
+    degree disk-shaped field of view (FOV).  During the Mapping Phase,        
+    as the spacecraft orbits the planet the ER field of view sweeps out       
+    the entire sky (4-pi ster) every 58.5 minutes, which is much longer       
+    than the integration time per record (2 to 48 sec, depending on           
+    energy and telemetry rate) and much longer than most timescales of        
+    interest in Mars' plasma environment.                                     
+                                                                              
+    The ERDR is intended to be used in conjunction with MGS Magnetometer      
+    (MAG) data records, which provide the magnetic field vector and           
+    spacecraft ephemeris data as a function of time.  Electrons travel        
+    along the magnetic field lines in tight helices (few km radius) at        
+    high speed (roughly one Mars diameter per second).  Thus the              
+    electron data contain information about the plasma environment as         
+    well as the large-scale configuration of the magnetic field, which        
+    is sampled locally by the MAG.                                            
+                                                                              
+                                                                              
+  ====================================================================        
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    The Mars Global Surveyor ER data set consists of a time ordered           
+    series of electron flux measurements in 19 energy channels, ranging       
+    from 10 eV to 20 keV.  The ER data are organized into ''packets,''        
+    each of which contains 12, 24, or 48 seconds of data, respectively,       
+    for high, medium, and low spacecraft telemetry rates.  Each packet        
+    is further subdivided into samples.  There are from 1 to 6 samples        
+    per packet, depending on the energy channel, as given in the table        
+    below.  The ER data set is generated at the rate of 6 samples per         
+    packet, regardless of energy.  When there are fewer than 6 samples        
+    per packet at a particular energy, data values are repeated in order      
+    to maintain a uniform table.  The time listed for each record is the      
+    center of the sampling interval.  When records are repeated, taking       
+    an average of the times for all repeated records provides the center      
+    time for that sample.                                                     
+                                                                              
+    The energy channels and sampling intervals are as follows:                
+                                                                              
+                                                                              
+        Channel Number        Energy Range     Samples per Packet             
+    ---------------------------------------------------------------           
+               0               13 - 20   keV           1                      
+               1              8.0 - 12   keV           1                      
+               2              4.9 - 7.5  keV           1                      
+               3              2.9 - 4.6  keV           3                      
+               4              1.8 - 2.8  keV           3                      
+               5              1.1 - 1.7  keV           3                      
+               6              680 - 1046  eV           6                      
+               7              415 - 639   eV           6                      
+               8              253 - 390   eV           6                      
+               9              153 - 237   eV           6                      
+              10               92 - 144   eV           6                      
+              11               72 - 87    eV           2                      
+              12               56 - 67    eV           2                      
+              13               43 - 52    eV           1                      
+              14               33 - 40    eV           2                      
+              15               25 - 30    eV           1                      
+              16               18 - 23    eV           2                      
+              17               14 - 17    eV           1                      
+              18               10 - 13    eV           2                      
+    ---------------------------------------------------------------           
+                                                                              
+                                                                              
+    The ER has a 360 x 14 degree disk-shaped field of view.  The 360          
+    degrees are divided into 16 angular sectors, each with a separate         
+    counter that is read out in telemetry.  The sizes and look                
+    directions of these sectors are programmable to within an accuracy        
+    of 1.4 degrees.  For these data, the FOV is divided into 16 equally       
+    sized 22.5 x 14 degree sectors that remained fixed in spacecraft          
+    coordinates.                                                              
+                                                                              
+    Throughout pre-mapping, some of these sectors were masked because of      
+    obstructions in the FOV, most notably the stowed high gain antenna        
+    (HGA), which blocked 3 sectors.  Three additional sectors are             
+    partially obstructed by the -Y solar array gimbal/yoke assembly and       
+    corners of the spacecraft bus.  Apart from the HGA, these                 
+    obstructions are minimal, so data from these sectors are still            
+    considered to be of good quality.  After HGA deployment just prior        
+    to mapping, the entire FOV became useable.  An in-flight calibration      
+    was then performed to determine the relative instrumental                 
+    sensitivity around the FOV to an accuracy of about 10%.  For this         
+    mapping data set, we average data from all 16 sectors to form a           
+    scalar ''omnidirectional'' value.                                         
+                                                                              
+                                                                              
+  ====================================================================        
+  Processing                                                                  
+  ==========                                                                  
+                                                                              
+    Processing is carried out at the Space Sciences Laboratory (SSL) of       
+    the University of California, Berkeley, (UCB) to convert the raw          
+    data to measurements of the omnidirectional electron flux (cm-2 s-1       
+    ster-1 eV-1).  Because of the instrument's high dynamic range (six        
+    decades), the onboard digital processing unit (DPU) compresses the        
+    raw counts in a logarithmic scale.  The first step is to decompress       
+    the raw counts and construct a three-dimensional data array, where        
+    the first dimension is time (6 elements per telemetry packet), the        
+    second dimension is direction around the FOV (16 elements), and the       
+    third dimension is energy (19 elements).                                  
+                                                                              
+    The next step is to sum over the 16 angular sectors to produce a          
+    two-dimensional time/energy array.  Raw count rate (R) is then            
+    obtained by dividing the raw counts by the integration time (0.0625       
+    sec per energy step).  The data are next corrected for deadtime.          
+    During the time it takes the instrument to process a single electron      
+    (known as the ''deadtime'', which is about 0.4 microsec for the ER),      
+    it ignores any other electrons.  The raw count rate is multiplied by      
+    the factor 1/(1 - RT), where T is the deadtime, to obtain corrected       
+    count rate.  Data values are masked (set to -9.999e-9) when the           
+    deadtime correction factor exceeds 1.25.  These data are NOT              
+    CORRECTED for a background count rate due to cosmic rays and noise        
+    in the electronics (about 10 counts/sec).  Most of the time, the          
+    signal in the highest energy channel (13-20 keV) is dominated by          
+    background.  Exceptions to this sometimes occur during bowshock           
+    crossings or during energetic solar events.  Assuming that the            
+    highest energy channel contains 100% background, the background           
+    level for the lower energy channels can be estimated as follows:          
+                                                                              
+      Channels  0-10 (92 eV - 20 keV): B(E) = B(20 keV) * (20 keV/E)          
+      Channels 11-18 (10 eV - 87 eV):  B(E) = B(20 keV) * (20 keV/E) *        
+        43.5                                                                  
+                                                                              
+    where B(E) is the background level (in units of cm-2 s-1 ster-1           
+    eV-1) at energy E.  The background is typically negligible at             
+    energies below about 1 keV.  Background correction is essential at        
+    higher energies.                                                          
+                                                                              
+    Data are collected through two separate apertures that differ in          
+    their transmission by a factor of 43.5.  At low energies (10 eV to        
+    87 eV), the smaller aperture is used to attenuate high fluxes, and        
+    at high energies (92 eV to 20 keV), the larger aperture is used to        
+    maximize the sensitivity to low fluxes.  The corrected count rates        
+    in energy channels 11-18 (10-87 eV) are multiplied by the factor          
+    43.5 to compensate for the smaller aperture size.  Finally, we            
+    divide by the geometric factor (0.02 cm2 ster) and the center energy      
+    (eV) to obtain the differential flux (cm-2 s-1 ster-1 eV-1).              
+                                                                              
+    The data are organized into a table with a uniform time step for all      
+    energy channels.  Since the sampling interval is different for            
+    different energy channels, data values are repeated within each           
+    packet, as necessary, to enforce a uniform time step.  The data are       
+    sent via FTP to the Principal Investigator (Mario Acuna) at Goddard       
+    Space Flight Center (GSFC), where they are incorporated with the          
+    magnetometer data.                                                        
+                                                                              
+                                                                              
+  ====================================================================        
+  Data                                                                        
+  ====                                                                        
+                                                                              
+    The ERDR data set consists of a single time-ordered table.  Each          
+    record contains a time stamp and 19 data values, representing the         
+    omnidirectional electron flux in 19 different energy channels             
+    ranging from 10 eV to 20 keV.                                             
+                                                                              
+                                                                              
+  ====================================================================        
+  Ancillary Data                                                              
+  ==============                                                              
+                                                                              
+    No additional ancillary data is required beyond that described for        
+    the MAG.                                                                  
+                                                                              
+                                                                              
+  ====================================================================        
+  Coordinate System                                                           
+  =================                                                           
+                                                                              
+    The data are presented in omnidirectional format.  The time tags          
+    contained in the ER data set should be used to obtain the                 
+    corresponding spacecraft ephemeris information from the MAG data          
+    set.                                                                      
+                                                                              
+                                                                              
+  ====================================================================        
+  Software                                                                    
+  ========                                                                    
+                                                                              
+    Data reduction software for the ER is written in IDL.                     
+                                                                              
+                                                                              
+  ====================================================================        
+  Media/Format                                                                
+  ============                                                                
+                                                                              
+    The ER data are provided in the form of 20-column ascii tables.           
+    Storage media are described in the MAG documentation."                    
+                                                                              
+                                                                              
+CONFIDENCE_LEVEL_NOTE           = "                                           
+                                                                              
+                                                                              
+  ====================================================================        
+  Confidence Level Overview                                                   
+  =========================                                                   
+                                                                              
+    The ER is mounted on the spacecraft body, where measurements are          
+    susceptible to spacecraft charging and FOV blockage.  This ER             
+    instrument design is typically used on a rapidly spinning spacecraft      
+    (few seconds period), on which the disk-shaped FOV would sweep out        
+    the entire sky in a time that is short compared with most                 
+    timescales of interest.  However, since MGS spins slowly (once per        
+    orbit), each data record covers only a small region of the sky.           
+    Despite this limitation, the scalar flux provided in the ERDR is          
+    suitable for identification of plasma boundaries (bow shock,              
+    magnetic pile-up boundary, ionopause) and following the evolution of      
+    the electron energy distribution, which is useful for evaluation of       
+    the plasma environment and interpretation of the magnetometer data.       
+    Any application of these data that requires an unbiased average over      
+    all look directions (4-pi ster) is NOT RECOMMENDED.                       
+                                                                              
+                                                                              
+  ====================================================================        
+  Review                                                                      
+  ======                                                                      
+                                                                              
+    The ERDR will be reviewed internally by the MGS MAG/ER team prior to      
+    release to the planetary community. The ERDR will also be reviewed        
+    by PDS.                                                                   
+                                                                              
+                                                                              
+  ====================================================================        
+  Data Coverage and Quality                                                   
+  =========================                                                   
+                                                                              
+    ER data are recorded continuously.  Data coverage depends almost          
+    entirely on the fraction of the spacecraft telemetry that can be          
+    received by the DSN.  The mapping orbit lies close to the ionopause       
+    altitude.  Because of spatial and temporal variations in the              
+    ionopause, the ER can sample several different plasma environments,       
+    including the ionosphere, the magnetosheath, the magnetotail, and         
+    closed magnetic field lines anchored to remanent crustal sources.         
+    Data quality is best when the spacecraft is within the planet's           
+    shadow.  In sunlight, data quality is a function of spacecraft            
+    rotation phase, since photoelectron contamination depends on the          
+    illumination pattern.                                                     
+                                                                              
+                                                                              
+  ====================================================================        
+  Limitations                                                                 
+  ===========                                                                 
+                                                                              
+    The ER is mounted on the spacecraft instrument deck and has a             
+    disk-shaped FOV that is orthogonal to the spacecraft XY plane and         
+    nearly orthogonal to the spacecraft Y axis.  (There is a 10-degree        
+    rotation about the Z axis to minimize spacecraft obstructions in the      
+    FOV.)  This 360-degree FOV is divided into 16 angular sectors, each       
+    22.5 degrees wide.  Throughout mapping, the ER is in                      
+    ''fixed-sector'' mode, meaning that these 16 angular sectors              
+    remained constant in the spacecraft reference frame, sweeping out         
+    the entire sky every 1/2 of an orbit.                                     
+                                                                              
+    Parts of the spacecraft are within the instrument's FOV.  The high        
+    gain antenna (HGA), which blocked ~70 degrees of the FOV during           
+    aerobraking is not in the FOV during mapping.  Smaller amounts of         
+    blockage are caused by attitude control thrusters and the -Y solar        
+    array gimbal and yoke assembly.  One effect this has on the               
+    measurements is to block ambient electrons from the directions of         
+    the obstacles. This is most clearly seen at high energies (&#10095; 100          
+    eV), which are only slightly deflected by the spacecraft floating         
+    potential.  In addition, when these obstacles are illuminated by the      
+    sun, they emit photoelectrons up to ~50 eV, which can enter the ER        
+    aperture and elevate the counting rate at low energies.  The              
+    detailed signature of this effect depends on the illumination             
+    pattern as the spacecraft rotates, which is a function of the angles      
+    between Earth, Mars, and the Sun.  These angles varied throughout         
+    the mapping phase. Photoelectron contamination has not been removed       
+    from the data; however, the presence of contamination is readily          
+    identified in the low energy channels (&#10094; 50 eV) by a sharp (nearly        
+    discontinuous) increase in counting rate which appears at regular         
+    100-minute intervals.  The contamination disappears as abruptly as        
+    it appears.                                                               
+                                                                              
+    For a duration of ~4 minutes every 1/2 spacecraft spin (when the          
+    spacecraft illuminated) sunlight can directly enter the ER aperture       
+    and scatter inside the instrument, creating secondary electrons.          
+    (Note: the spacecraft spins once per orbit to keep the nadir deck         
+    pointed at the planet.)  A tiny fraction of these photons and             
+    secondary electrons can scatter down to the anode and create a            
+    ''pulse'' of spurious counts.  This sunlight pulse appears at all         
+    energies, but is most noticeable from 10 to 80 eV and above 1 keV.        
+    Sunlight pulses have not been removed from the data.                      
+                                                                              
+    The instrument's energy scale is referenced to spacecraft ground.         
+    In sunlight, spacecraft ground floats a few volts positive relative       
+    to the plasma in which the spacecraft is immersed.  Electrons are         
+    accelerated by the spacecraft potential before they can enter the ER      
+    aperture, thus all energies are shifted upward by a few eV.  In           
+    addition to shifting the electron energy, the trajectories of low         
+    energy electrons can be significantly bent by electric fields around      
+    the spacecraft.  Thus, the energy scale and imaging characteristics       
+    are relatively poor at the lowest energies (10-30 eV), becoming much      
+    more accurate at higher energies."                                        
+                                                                              
+                                                                              
+END_OBJECT                           = DATA_SET_INFORMATION                   
+OBJECT                               = DATA_SET_TARGET                        
+TARGET_NAME                          = MARS                                   
+END_OBJECT                           = DATA_SET_TARGET                        
+OBJECT                               = DATA_SET_HOST                          
+INSTRUMENT_HOST_ID                   = MGS                                    
+INSTRUMENT_ID                        = ER                                     
+END_OBJECT                           = DATA_SET_HOST                          
+                                                                              
+OBJECT                               = DATA_SET_MISSION                       
+MISSION_NAME                         = "MARS GLOBAL SURVEYOR"                 
+END_OBJECT                           = DATA_SET_MISSION                       
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "BARRY1987"                            
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "BRILL&MEISL1990"                      
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "CUEVAS1989"                           
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "DAVIESETAL1989"                       
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "FORD1992"                             
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "FORD1993"                             
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "FORD&PETTENGILL1992"                  
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "HAGFORS1964"                          
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "HAGFORS&EVANS1968"                    
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "LYONS1988"                            
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "PDSSR1992"                            
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "PETTENGILLETAL1992"                   
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "SCIEDR"                               
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "SDPS101"                              
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "SE011"                                
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "SNYDER1987"                           
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+OBJECT                               = DATA_SET_REFERENCE_INFORMATION         
+REFERENCE_KEY_ID                     = "TYLER1992"                            
+END_OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+END_OBJECT                           = DATA_SET                               
+END

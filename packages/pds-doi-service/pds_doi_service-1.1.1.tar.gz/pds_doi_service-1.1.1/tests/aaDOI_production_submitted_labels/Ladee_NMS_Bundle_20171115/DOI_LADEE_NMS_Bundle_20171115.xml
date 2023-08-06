@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <record>
+        <title>LADEE Neutral Mass Spectrometer Data Bundle</title>
+        <creators>L.Huber</creators>
+        <creators_emails>lhuber@nmsu.edu</creators_emails>
+        <publisher>PDS Planetary Atmospheres Node (ATMOS)</publisher>
+        <publication_date>10/01/2014</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aladee_nms&amp;version=1.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+            <!-- Product Numbers
+                   - choose to insert LID here
+            -->     
+        <product_nos>urn:nasa:pds:ladee_nms</product_nos>
+            
+        <description> 
+            This bundle contains the data collected by the Neutral Mass Spectrometer (NMS)
+            instrument aboard the Lunar Atmosphere and Dust Environment Explorer (LADEE)
+            satellite, along with the documents and other information necessary for the
+            interpretation of that data.              
+        </description>
+        <keywords>
+            PDS; Moon; LADEE; Mass Spectrometer; Lunar Atmosphere; PDS4 
+        </keywords>
+        <related_resource></related_resource>
+        <contributor_organizations></contributor_organizations>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos></contract_nos>
+        <other_identifying_nos></other_identifying_nos>
+        <file_extension></file_extension>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>
+

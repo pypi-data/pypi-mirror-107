@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record status="Registered">
+        <id>1517570</id>
+        <site_code>NASA-PDS</site_code>
+        <title>InSight SEIS Data Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <doi>10.17189/1517570</doi>
+        <report_numbers>urn:nasa:pds:insight_seis::1.1</report_numbers>
+        <publisher>PDS Geosciences (GEO) Node</publisher>
+        <availability>NSSDCA</availability>
+        <publication_date>2019-01-01</publication_date>
+        <description> The InSight SEIS data bundle consists of SEIS instrument observations in two collections, the SEED (Standard for the Exchange of Earthquake Data) collection and the ASCII table collection. The SEED collection contains data in Mini-SEED files and their metadata in Dataless-SEED files. The ASCII Table collection contains the same data in PDS-compliant ASCII files, with the data in GeoCSV (comma-separated value) tables and the metadata in StationXML files. The bundle also includes the SEIS document collection. </description>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Ainsight_seis&amp;version=1.1</site_url>
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <date_first_registered>2020-01-06</date_first_registered>
+        <date_last_registered>2020-01-06</date_last_registered>
+        <date_record_added>2020-01-06</date_record_added>
+        <date_record_updated>2020-01-06</date_record_updated>
+        <keywords>PDS; PDS4; Insight; Insight Lander; cameras; Mars; geosciences; imaging; ; Raw; Calibrated; Seismometer</keywords>
+        <authors>
+            <author>
+                <full_name>Insight Mars SEIS Data Service</full_name>
+                <affiliations/>
+            </author>
+        </authors>
+        <contributors>
+            <contributor>
+                <full_name>Geosciences Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>
+        <related_identifiers/>
+    </record>
+</records>

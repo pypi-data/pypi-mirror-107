@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle 
+	xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:cassini_iss_saturn</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Cassini ISS Observations of the Saturn System</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>Carolyn C. Porco and the Cassini Imaging Science Team</author_list>
+            <editor_list>M. W. Evans, M. K. Gordon, M. R. Showalter, and M. S. Tiscareno</editor_list>
+            <publication_year>2019</publication_year>
+            <keyword>cassini iss</keyword>                                     
+            <keyword>cassini images</keyword>                                     
+            <keyword>saturn</keyword>                 
+            <keyword>saturn satellites</keyword>     
+            <keyword>saturn rings</keyword>
+            <keyword>saturn system</keyword>
+            <description>This bundle contains Cassini ISS images and associated documentation 
+               and metadata from the Saturn encounter - January 2004 through end of mission 
+               in September 2017.
+            </description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-07-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time nilReason="inapplicable">2004-01-01T00:00:00Z</start_date_time>
+            <stop_date_time nilReason="inapplicable">2017-09-14T20:00:00Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Raw</processing_level>
+            <description>This bundle contains raw Cassini ISS images and associated documentation 
+               and metadata from the Saturn encounter - January 2004 through end of mission 
+               in September 2017.
+            </description>
+            <Science_Facets>
+                <wavelength_range>Near Infrared</wavelength_range>
+                <wavelength_range>Visible</wavelength_range>
+                <discipline_name>Imaging</discipline_name>
+            </Science_Facets>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>Cassini-Huygens</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.cassini-huygens</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>Cassini Orbiter Imaging Science Subsystem</name>
+            <Observing_System_Component>
+                <name>Cassini Orbiter</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Cassini Orbiter Imaging Science Subsystem - Narrow Angle Camera</name>
+                <type>Instrument</type>
+                <description>ISSNA</description>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:issna.co</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Cassini Orbiter Imaging Science Subsystem - Wide Angle Camera</name>
+                <type>Instrument</type>
+                <description>ISSWA</description>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:isswa.co</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Saturn System</name>
+            <type>Planetary System</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planetary_system.saturn_system</lid_reference>
+                <reference_type>bundle_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>@@@</lidvid_reference>
+            <reference_type>bundle_to_resource</reference_type>
+            <comment>The Cassini mission bundle.</comment>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Porco, C. C. et al., Cassini Imaging Science: Instrument Characteristics 
+            	And Anticipated Scientific Investigations At Saturn, Space Science Reviews, 
+            	Volume 115, Issue 1-4, pp. 363-497, 2004.  
+            </reference_text>
+            <doi>10.1007/s11214-004-1456-7</doi>
+        </External_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+        <description>This bundle contains raw Cassini ISS images and associated documentation 
+              and metadata from the Saturn encounter, January 2004 through end of mission 
+              in September 2017. The data files have been reformatted from the PDS3 files 
+              submitted by the team to a PDS4 compliant format. The images within the data  
+              files have been verified on a byte-for-byte basis to be identical to the originals.  
+              The metadata values from the PDS3 labels have been preserved.</description>
+    </Bundle>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:cassini_iss_saturn:browse_raw</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_browse_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:cassini_iss_saturn:context</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_context_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:cassini_iss_saturn:data_raw</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:cassini_iss_saturn:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:cassini_iss_saturn:xml_schema</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_schema_collection</reference_type>
+    </Bundle_Member_Entry>  
+</Product_Bundle>

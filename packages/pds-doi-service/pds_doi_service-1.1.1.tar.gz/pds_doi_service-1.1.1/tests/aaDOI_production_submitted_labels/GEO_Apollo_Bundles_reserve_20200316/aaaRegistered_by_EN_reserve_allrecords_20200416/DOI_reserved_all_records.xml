@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- ========================================== -->
+    <!-- DOI-C_reserved_a15photosupportdata_1.0.xml -->
+    <!-- ========================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 Photographic Ephemeris Support Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> S.A.</first_name> 
+               <last_name>McLaughlin</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-01-25</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15photosupportdata::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================= -->
+    <!-- DOI-C_reserved_a16oms_1.0.xml -->
+    <!-- ============================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 16 Orbital Mass Spectrometer Data Output Scans Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> D.R.</first_name> 
+               <last_name>Williams</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-09-20</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a16oms::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ================================= -->
+    <!-- DOI-C_reserved_pioneerdoc_1.0.xml -->
+    <!-- ================================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Pioneer Documents Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> S.A.</first_name> 
+               <last_name>McLaughlin</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2018-07-03</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:pioneerdoc::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ================================ -->
+    <!-- DOI-C_reserved_apollodoc_1.0.xml -->
+    <!-- ================================ -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo Documents Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> S.A.</first_name> 
+               <last_name>McLaughlin</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-01-25</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:apollodoc::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================================== -->
+    <!-- DOI-C_reserved_a15_17_hfe_concatenated_1.0.xml -->
+    <!-- ============================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 and 17 Heat Flow Experiment Concatenated Data Sets Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name>M.</first_name> 
+               <last_name>St. Clair</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2020-02-27</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15_17_hfe_concatenated::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ========================================== -->
+    <!-- DOI-C_reserved_a16photosupportdata_1.0.xml -->
+    <!-- ========================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 16 Photographic Ephemeris Support Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> S.A.</first_name> 
+               <last_name>McLaughlin</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-01-25</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a16photosupportdata::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ========================================== -->
+    <!-- DOI-C_reserved_a17photosupportdata_1.0.xml -->
+    <!-- ========================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 17 Photographic Ephemeris Support Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> S.A.</first_name> 
+               <last_name>McLaughlin</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2017-06-13</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17photosupportdata::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================== -->
+    <!-- DOI-C_reserved_a17fuvs_1.0.xml -->
+    <!-- ============================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 17 Far-Ultraviolet Spectrometer (FUVS) Data Graphs Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> D.R.</first_name> 
+               <last_name>Williams</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2018-11-02</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17fuvs::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================================== -->
+    <!-- DOI-C_reserved_a12side_ccig_raw_arcsav_1.0.xml -->
+    <!-- ============================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 12 ALSEP ARCSAV SIDE/CCIG Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-10-15</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a12side_ccig_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================= -->
+    <!-- DOI-C_reserved_a15oms_1.0.xml -->
+    <!-- ============================= -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 Orbital Mass Spectrometer Data Output Scans Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> D.R.</first_name> 
+               <last_name>Williams</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-09-20</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15oms::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ======================================== -->
+    <!-- DOI-C_reserved_a15hfe_raw_arcsav_1.0.xml -->
+    <!-- ======================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 ALSEP ARCSAV Heat Flow Experiment Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15hfe_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- =============================================== -->
+    <!-- DOI-C_reserved_a17hfe_calibrated_arcsav_1.0.xml -->
+    <!-- =============================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 17 ALSEP ARCSAV Heat Flow Experiment Calibrated Gradient Bridge Temperatures Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17hfe_calibrated_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- =============================================== -->
+    <!-- DOI-C_reserved_a15hfe_calibrated_arcsav_1.0.xml -->
+    <!-- =============================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 ALSEP ARCSAV Heat Flow Experiment Calibrated Gradient Bridge Temperatures Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15hfe_calibrated_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ======================================== -->
+    <!-- DOI-C_reserved_a17lsg_raw_arcsav_1.0.xml -->
+    <!-- ======================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 17 ALSEP ARCSAV Lunar Surface Gravimeter Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-18</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17lsg_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ======================================== -->
+    <!-- DOI-C_reserved_a16lsm_raw_arcsav_1.0.xml -->
+    <!-- ======================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 16 ALSEP ARCSAV Lunar Surface Magnetometer Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a16lsm_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ======================================== -->
+    <!-- DOI-C_reserved_a17hfe_raw_arcsav_1.0.xml -->
+    <!-- ======================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 17 ALSEP ARCSAV Heat Flow Experiment Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17hfe_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ============================================== -->
+    <!-- DOI-C_reserved_a15side_ccig_raw_arcsav_1.0.xml -->
+    <!-- ============================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 15 ALSEP ARCSAV SIDE/CCIG Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-10-15</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a15side_ccig_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- =================================== -->
+    <!-- DOI-C_reserved_pioneer89cdd_1.0.xml -->
+    <!-- =================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Pioneer 8 and 9 Cosmic Dust Detector Calibration Notebook Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> O.E</first_name> 
+               <last_name>Berg</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2018-07-03</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:pioneer89cdd::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+
+    <!-- ======================================== -->
+    <!-- DOI-C_reserved_a12sws_raw_arcsav_1.0.xml -->
+    <!-- ======================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Apollo 12 ALSEP ARCSAV Solar Wind Spectrometer Raw Cleaned ASCII Data Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-10-15</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a12sws_raw_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>
+

@@ -1,0 +1,58 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE            = "temporary CAT, B. Harris, 2006-07-27;      
+D. Kazden, added PRODUCER_FULL_NAME, START_TIME, STOP_TIME,                  
+DATA_OBJECT_TYPE and REFERENCE_KEY_ID, updated ARCHIVE_STATUS, 2012-03-01;   
+D. Kazden, removed ARCHIVE_STATUS keyword, 2018-08-06;"                      
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P10-J-HVM-4-SUMM-S3COORDS-1MIN-V1.0"   
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = ""                                      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1973-11-03T23:33:59.725                 
+    STOP_TIME                      = 1973-12-29T23:10:38.907                 
+    DATA_SET_RELEASE_DATE          = "N/A"                                   
+    PRODUCER_FULL_NAME             = "JOYCE E. WOLF"                         
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      Pioneer 10 HVM data near Jupiter (covering                             
+    1973-11-03 to 1973-12-29) in System III [1965] coordinates."             
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      Pioneer 10 HVM data near Jupiter (covering                             
+    1973-11-03 to 1973-12-29) in System III [1965] coordinates."             
+                                                                             
+    CITATION_DESC                  = "N/A"                                   
+                                                                             
+    DATA_SET_DESC                  = "                                       
+      Pioneer 10 HVM data near Jupiter (covering                             
+    1973-11-03 to 1973-12-29) in System III [1965] coordinates."             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "N/A"                                   
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P10                                     
+    INSTRUMENT_ID                  = HVM                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 10"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "N/A"                                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

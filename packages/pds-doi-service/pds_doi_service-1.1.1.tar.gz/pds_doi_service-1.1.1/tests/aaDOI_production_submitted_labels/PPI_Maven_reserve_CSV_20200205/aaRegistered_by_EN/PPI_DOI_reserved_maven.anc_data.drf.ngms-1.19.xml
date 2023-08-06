@@ -1,0 +1,14 @@
+<records> 
+    <record status="Reserved"> 
+        <title>MAVEN Neutral Gas and Ion Mass Spectrometer (NGIMS) instrument Data Return Files (DRF) Data Collection</title> 
+        <authors> 
+            <author> 
+               <first_name> Bryan</first_name> 
+               <last_name>Harter</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2020-15-02</publication_date> 
+        <product_type>Dataset</product_type> 
+        <product_type_specific>PDS4 Collection</product_type_specific> 
+    </record> 
+</records>

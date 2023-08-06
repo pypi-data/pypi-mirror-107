@@ -1,0 +1,242 @@
+PDS_VERSION_ID                      = PDS3                             
+LABEL_REVISION_NOTE                = "2004-05-04, R. Orosei, draft    
+                                      2004-11-16, R. Orosei, rev.     
+                                      2007-09-06, R. Noschese, rev.   
+                                      2016-10-01, R. Orosei, rev."    
+                                                                      
+PRODUCT_ID                         = "DATASET.CAT"                    
+                                                                      
+RECORD_TYPE                        = STREAM                           
+RELEASE_ID                         = 0001                             
+REVISION_ID                        = 0000                             
+                                                                      
+OBJECT                             = DATA_SET                         
+  DATA_SET_ID                      = "MEX-M-MARSIS-3-RDR-SS-EXT1-V1.0"
+                                                                      
+  OBJECT                           = DATA_SET_INFORMATION             
+    DATA_SET_NAME                  = "MARS EXPRESS MARS MARSIS REDUCED
+                                      DATA RECORD SUBSURFACE EXTENSION
+                                      1 V1.0"                         
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                              
+    DATA_OBJECT_TYPE               = "TABLE"                          
+    START_TIME                     = 2005-12-01T01:02:10              
+    STOP_TIME                      = 2007-10-31T18:52:04              
+    DATA_SET_RELEASE_DATE          = 2016-10-01                       
+    PRODUCER_FULL_NAME             = "ROBERTO OROSEI"                 
+    ARCHIVE_STATUS                 = "PRE PEER REVIEW"                
+    DETAILED_CATALOG_FLAG          = "N"                              
+                                                                      
+    DATA_SET_TERSE_DESC            = "This data set contains the      
+                    CODMAC Level 3 MARSIS Subsurface Sounding data for
+                    the Mars Express mission"                         
+                                                                      
+    ABSTRACT_DESC                  = "This dataset contains subsurface
+                    sounding data from the MARS EXPRESS MARS MARSIS   
+                    EXPERIMENT DATA RECORD V2.0 Data Set that have    
+                    been uncompressed, corrected for Automated Gain   
+                    Control, aligned to a reference altitude and,     
+                    except for data acquired using the SS2 mode, range
+                    processed after correcting for the distortion of  
+                    the transmitted signal caused by the ionosphere." 
+                                                                      
+    CITATION_DESC                  = "Orosei, R., F. Cantini, M.      
+                    Cartacci, A. Cicchetti and R. Noschese, MARS      
+                    EXPRESS MARS MARSIS REDUCED DATA RECORD SUBSURFACE
+                    EXTENSION 1 V1.0, MEX-M-MARSIS-3-RDR-SS-EXT1-V1.0,
+                    ESA Planetary Science Archive, 2016."             
+                                                                      
+    CONFIDENCE_LEVEL_NOTE          = "Data quality in a data product  
+                    label is indicated through the DATA_QUALITY_ID    
+                    element, and measures the total power in radar    
+                    echoes."                                          
+                                                                      
+    DATA_SET_DESC                  = "                                
+                                                                      
+Data Set Overview                                                     
+=================                                                     
+                                                                      
+MARSIS Level 2 data products consist of Level 1b data that have been  
+uncompressed, corrected for Automated Gain Control, aligned to a      
+reference altitude and, except for data acquired using the SS2 mode,  
+range-processed after correcting for the distortion of the transmitted
+signal caused by the ionosphere. Echoes collected in the acquisition  
+(ACQ) phase, having a much smaller bandwidth, do not have a vertical  
+resolution sufficient for scientific analysis, and thus are not used  
+in generating Reduced Data Records. Geometric information needed to   
+locate observations in space and time is also provided in the Data    
+Set.                                                                  
+                                                                      
+                                                                      
+Parameters                                                            
+==========                                                            
+                                                                      
+MARSIS data are the result of the processing of groups of echoes      
+called frames. A frame is produced by the coherent summation of many  
+tens of echoes. Each frame is recorded as a time series of complex    
+signal samples. Scientific data in a frame are complemented by a set  
+of engineering data, produced by the instrument and recording         
+parameter values used in pulse transmission, echo reception and       
+on-board processing, and by geometric information needed to locate    
+observations in space and time.                                       
+                                                                      
+                                                                      
+Processing                                                            
+==========                                                            
+                                                                      
+Level 2 processing of subsurface sounding data consists of several    
+steps, needed to convert the instrument telemetry into a collection of
+radar echoes that can be used for geological analysis and             
+interpretation of the Martian subsurface. These are:                  
+                                                                      
+ Data de-compression: 8-bit spectrum samples are converted back to    
+4-byte real numbers.                                                  
+                                                                      
+ AGC compensation: the gain scaling factor, applied during Automated  
+Gain Compensation, is applied to the data.                            
+                                                                      
+ Receiving time compensation: echoes are shifted in time to refer them
+to a common altitude above the Martian ellipsoid.                     
+                                                                      
+ Range compression: the received signal is convolved with the         
+transmitted signal to increase range resolution and signal-to-noise   
+ratio.                                                                
+                                                                      
+ Ionosphere distortion correction: an algorithm to correct ionosphere 
+dispersion of the signal, called 'contrast method', is applied to the 
+data.                                                                 
+                                                                      
+Depending on the instrument mode, some of the above steps may not     
+apply (for example, range processing is performed on board in mode    
+SS2). The final result is a file containing all complex echoes        
+collected by MARSIS in the course of a single orbit.                  
+                                                                      
+                                                                      
+                                                                      
+Data                                                                  
+====                                                                  
+                                                                      
+Data Products need to accommodate the different data structures       
+produced by different subsurface sounding modes of the instrument.    
+There is a single type of Data Product specialized into five different
+subtypes, one for each subsurface sounding mode:                      
+                                                                      
+R_SSx           Subsurface Sounding data that have been uncompressed, 
+calibrated                                                            
+and range-processed, together with geometry information               
+                                                                      
+Where 'x' stands for a number between 1 and 5.                        
+                                                                      
+SSx_RDR Data Products consist of two files, one of which contains a   
+PDS binary TABLE object while the other is a PDS label describing its 
+structure. The first file contains the instrument data proper,        
+organised into frames. Each frame corresponds to a record in the file,
+which is also a row in the PDS binary TABLE object into which frames  
+are organised. A Data Product contains all frames acquired using the  
+same instrument mode in tracking (TRK) state during a single orbit.   
+                                                                      
+                                                                      
+Ancillary Data                                                        
+==============                                                        
+                                                                      
+No Ancillary data are provided.                                       
+                                                                      
+                                                                      
+Coordinate System                                                     
+=================                                                     
+                                                                      
+Locations on the surface of Mars are expressed in planetocentric      
+coordinates. Longitude increases to the East and is comprised in the  
+range 0 - 360 degrees.                                                
+                                                                      
+                                                                      
+Software                                                              
+========                                                              
+                                                                      
+MARSIS data products can be read by the PDS software NASAView, which  
+reads a PDS label and displays the associated image or table.         
+                                                                      
+                                                                      
+Media/Format                                                          
+============                                                          
+                                                                      
+The standard distribution format for the data is transfer through     
+Internet from the Planetary Science Archive of ESA, which can be      
+accessed at the following URL:                                        
+                                                                      
+http://www.cosmos.esa.int/web/psa/psa-introduction                    
+                                                                      
+                                                                      
+Confidence Level Overview                                             
+=========================                                             
+                                                                      
+This data set contains all data for the Mars Express MARSIS for the   
+interval described above. Every effort has been made to ensure that   
+all data returned by the spacecraft is included and that processing is
+accurate.                                                             
+                                                                      
+                                                                      
+Review                                                                
+======                                                                
+                                                                      
+The MARSIS EDR data have been reviewed internally by the Mars Express 
+MARSIS team prior to release to the PDS. The data set has been also   
+peer reviewed by the PSA.                                             
+                                                                      
+                                                                      
+Data Coverage and Quality                                             
+=========================                                             
+                                                                      
+Data in this dataset have been acquired only in the last six months of
+the nominal mission, because of the delay in the deployment of the    
+MARSIS antenna. Because of this, coverage is limited mainly to        
+southern latitudes.                                                   
+                                                                      
+Data quality in a data product label is indicated through the         
+DATA_QUALITY_ID element, and measures the median of the total echo    
+power across the orbit. The permitted values of DATA_QUALITY_ID are   
+the following:                                                        
+                                                                      
+ 0: data quality unknown                                              
+ 1: median data quality index in the bottom 25% of computed values    
+ 2: median data quality index in the bottom 50% of computed values    
+ 3: median data quality index in the top 50% of computed values       
+ 4: median data quality index in the top 25% of computed values       
+                                                                      
+For instrument mode transmitting at two different frequencies,        
+DATA_QUALITY_ID reports a value for every frequency.                  
+                                                                      
+                                                                      
+Limitations                                                           
+===========                                                           
+                                                                      
+There are no known limitations at this time."                         
+                                                                      
+  END_OBJECT                       = DATA_SET_INFORMATION             
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = MARS                             
+    TARGET_TYPE                    = PLANET                           
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = PHOBOS                           
+    TARGET_TYPE                    = SATELLITE                        
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = "NON SCIENCE"                    
+    TARGET_TYPE                    = SATELLITE                        
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_HOST                    
+    INSTRUMENT_HOST_ID             = MEX                              
+    INSTRUMENT_ID                  = MARSIS                           
+  END_OBJECT                       = DATA_SET_HOST                    
+                                                                      
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION   
+    REFERENCE_KEY_ID               = "PICARDIETAL2004"                
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION   
+                                                                      
+END_OBJECT                         = DATA_SET                         
+                                                                      
+END

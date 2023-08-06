@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MARS GLOBAL SURVEYOR RAW DATA SET - MOI V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MGS-M-RSS-1-MOI-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1999-09-08</publication_date>
+            <country>USA</country>
+            <description>;This data set contains archival raw, partially processed, and
+                ancillary/supporting radio science data acquired during the Mars
+                Orbit Insertion (MOI) phase of the Mars Global Surveyor (MGS)
+                mission. The radio observations were carried out using the MGS
+                spacecraft and Earth-based receiving stations of the NASA Deep
+                Space Network (DSN). The observations were designed to test the
+                spacecraft radio system, the DSN ground system, and MGS
+                operations procedures; to be used in generating high-resolution
+                gravity field models of Mars; and for estimating density and
+                structure of the Mars atmosphere. Of most interest are likely to
+                be the Orbit Data File and Original Data Record files, in the ODF
+                and ODR directories, respectively, which provided the raw input
+                to gravity and atmospheric investigations. The MOI phase extended
+                from September 1997 to March 1999. On orbits 203-266 and 343-571
+                (approximately April and June-September 1998, respectively) the
+                spacecraft periapsis was especially low giving the highest
+                per-orbit sensitivity to gravity anomalies during the entire
+                mission. Data were organized in approximately chronological order
+                and delivered on a set of 159 CD volumes at the rate of 2-3
+                CD's per week. Typical volume of a one-day ODF was 300-400
+                kB. Typical volume of an ODR was 5-10 MB, and there could be
+                multiple ODR's per day depending on DSN schedules and
+            observing geometry.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MGS-M-RSS-1-MOI-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MARS GLOBAL SURVEYOR; MARS; RADIO SCIENCE; MGS; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RICHARD A. SIMPSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mgs-m-rss-1-moi-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,213 @@
+PDS_VERSION_ID                      = PDS3                                   
+ LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;            
+ D. Kazden (PPI), 2010-05-21, removed unnecessary keywords;                  
+ D. Kazden (PPI), 2011-10-17, updated REFERENCE_KEY_IDs;                     
+ D. Kazden (PPI), 2020-02-26, updated CITATION_DESC and ABSTRACT_DESC;"      
+ RECORD_TYPE                        = STREAM                                 
+                                                                             
+ OBJECT                             = DATA_SET                               
+   DATA_SET_ID                      = "VG1-J-PLS-5-SUMM-ION-MOM-96.0SEC-V1.1"
+   OBJECT                           = DATA_SET_INFORMATION                   
+   DATA_SET_NAME                    = "VG1 JUP PLS PLASMA DERIVED ION MOMENTS
+                                         96.0 SEC V1.1"                      
+   DATA_SET_COLLECTION_MEMBER_FLG   = N                                      
+   START_TIME                       = 1979-03-01T12:04:12                    
+   STOP_TIME                        = 1979-03-05T16:45:54                    
+   DATA_SET_RELEASE_DATE            = 1998-05-01                             
+   PRODUCER_FULL_NAME               = "DR. JOHN D. RICHARDSON"               
+   DETAILED_CATALOG_FLAG            = N                                      
+   DATA_OBJECT_TYPE                 = "TABLE"                                
+   CITATION_DESC  = "Richardson, J.D., VG1-J-PLS-5-SUMM-ION-MOM-96.0SEC-V1.1,
+                       VG1 JUP PLS PLASMA DERIVED ION MOMENTS 96.0 SEC V1.1, 
+                           NASA Planetary Data System, 1998."                
+                                                                             
+   DATA_SET_TERSE_DESC              = "                                      
+                                                                             
+     Voyager 1 (VG1) PLS Plasma Derived ion moments data at 96 second        
+     intervals from 1979-03-01 to 1979-03-05."                               
+                                                                             
+   ABSTRACT_DESC                    = "                                      
+                                                                             
+     This data set contains the best estimates of the total ion              
+     density at Jupiter during the Voyager 1 encounter in the PLS            
+     voltage range (10-5950 eV/Q)."                                          
+                                                                             
+   DATA_SET_DESC                    = "                                      
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+                                                                             
+    Version 1.1                                                              
+    -----------                                                              
+      This version 1.1 data set replaces the version 1.0 data set            
+      (DATA_SET_ID = VG1-J-PLS-5-ION-MOM-96.0SEC) previously                 
+      archived with the PDS.                                                 
+                                                                             
+                                                                             
+    Data Set Description                                                     
+    --------------------                                                     
+      This data set contains the best estimates of the total ion             
+      density at Jupiter during the Voyager 1 encounter in the PLS           
+      voltage range (10-5950 eV/Q).  It is calculated using the              
+      method of [MCNUTTETAL1981] which to first order consists of            
+      taking the total measured current and dividing by the                  
+      collector area and plasma bulk velocity.  This method is only          
+      accurate for high mach number flows directly into the                  
+      detector, and may result in underestimates of the total                
+      density of a factor of 2 in the outer magnetosphere.  Thus             
+      absolute densities should be treated with caution, but                 
+      density variations in the data set can be trusted.  The low            
+      resolution mode density is used before 1979 63 1300, after             
+      this the larger of the high and low resolution mode densities          
+      in a 96 sec period is used since the L-mode spectra often are          
+      saturated.  Corotation is assumed inside L=17.5, and a                 
+      constant velocity component of 200 km/s into the D cup is              
+      used outside of this.  These are the densities given in                
+      [MCNUTTETAL1981] corrected by a factor of 1.209 (.9617) for            
+      densities obtained from the side (main) sensor.  This                  
+      correction is due to a better calculation of the effective             
+      area of the sensors.  Data format: column 1 is time                    
+      (yyyy-mm-ddThh:mm:ss.sssZ), column 2 is the moment density in          
+      cm^-3.  Each row has format (a24, 1x, 1pe9.2).  Values of              
+      -9.99e+10 indicate that the parameter could not be obtained            
+      from the data using the standard analysis technique.                   
+      Additional information about this data set and the instrument          
+      which produced it can be found elsewhere in this catalog.  An          
+      overview of the data in this data set can be found in                  
+      [MCNUTTETAL1981] and a complete instrument description can be          
+      found in [BRIDGEETAL1977].                                             
+                                                                             
+      Processing Level Id            : 5                                     
+      Software Flag                  : Y                                     
+                                                                             
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+                                                                             
+    Ion Density                                                              
+    -----------                                                              
+      Sampling Parameter Name        : TIME                                  
+      Data Set Parameter Name        : ION DENSITY                           
+      Sampling Parameter Resolution  : 96.000000                             
+      Sampling Parameter Interval    : 96.000000                             
+      Minimum Available Sampling Int : 96.000000                             
+      Data Set Parameter Unit        : EV                                    
+      Sampling Parameter Unit        : SECOND                                
+                                                                             
+      A derived parameter equaling the number of ions per unit               
+      volume over a specified range of ion energy, energy/charge,            
+      or energy/nucleon.  Discrimination with regard to mass and or          
+      charge state is necessary to obtain this quantity, however,            
+      mass and charge state are often assumed due to instrument              
+      limitations.                                                           
+                                                                             
+      Many different forms of ion density are derived.  Some are             
+      distinguished by their composition (N+, proton, ion, etc.) or          
+      their method of derivation (Maxwellian fit, method of                  
+      moments).  In some cases, more than one type of density will           
+      be provided in a single data set.  In general, if more than            
+      one ion species is analyzed, either by moment or fit, a total          
+      density will be provided which is the sum of the ion                   
+      densities.  If a plasma component does not have a Maxwellian           
+      distribution the actual distribution can be represented as             
+      the sum of several Maxwellians, in which case the density of           
+      each Maxwellian is given.                                              
+                                                                             
+                                                                             
+  Source Instrument Parameters                                               
+  ============================                                               
+    Instrument Host ID              : VG1                                    
+    Data Set Parameter Name         : ION DENSITY                            
+    Instrument Parameter Name       : ION RATE                               
+                                      ION CURRENT                            
+                                      PARTICLE MULTIPLE PARAMETERS           
+    Important Instrument Parameters : 1 (for all parameters)                 
+                                                                             
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+                                                                             
+    Processing History                                                       
+    ------------------                                                       
+      Source Data Set ID          : VG1-PLS                                  
+      Software                    : MOMANAL                                  
+      Product Data Set ID         : VG1-J-PLS-5-ION-MOM-96.0SEC              
+                                                                             
+                                                                             
+    Software 'MOMANAL'                                                       
+    ------------------                                                       
+      Software Name               : MOMANAL                                  
+      Software Type               : PIN                                      
+      Software Release Date       : N/A                                      
+      Node ID                     : N/A                                      
+      Cognizant Engineer          : N/A                                      
+      Software Access Description : N/A                                      
+                                                                             
+                                                                             
+  Data Coverage                                                              
+  =============                                                              
+                                                                             
+    Filename Records Start                     Stop                          
+    -------------------------------------------------------------------      
+    T790301  3792    1979-03-01T12:04:12.474Z  1979-03-05T16:45:54.608Z "    
+                                                                             
+                                                                             
+ CONFIDENCE_LEVEL_NOTE              = "                                      
+                                                                             
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    This data set provides an estimate of the positive ion charge            
+    density.  Several assumption are made to simplify the analysis;          
+    these may affect the accuracy of the results.  High mach number          
+    flow is assumed; mach numbers of 2-3, which are reasonable               
+    lower limits for heavy ions, result in 10-20% underestimates of          
+    the charge density.  The analysis assumes a unit response (ie.,          
+    all particles in a cold beam incident on the aperture of the             
+    experiment would be measured at the collector).  The actual              
+    response is documented in [MCNUTTETAL1981] and can be as low as          
+    70%.  a velocity into the detector must also be assumed; the             
+    velocity used is the corotation velocity inside of 17.5 R[J]             
+    and 200 km/s outside of this.  This velocity profile is in               
+    accord with that measured where velocity determinations are              
+    possible, but the use of incorrect values give errors in the             
+    density which vary linearly with errors in the velocity.                 
+    Finally, only ions in the PLS energy range (10-5950 eV/Q) are            
+    counted.  The cumulative error from all these effects is less            
+    than 10% in the solar wind, less than a factor of two in the             
+    outer magnetosphere (R&#10095;20 R[J]) and less than 20-30% inside of           
+    this.  Since the amplitude of each of these effects varies               
+    slowly in time (distance), the relative changes in density are           
+    good to a few percent in most cases.                                     
+                                                                             
+                                                                             
+  Missing Data Flag                                                          
+  =================                                                          
+    Any column whose value is -9.99e+10 is a bad or missing data             
+    value."                                                                  
+                                                                             
+ END_OBJECT                         = DATA_SET_INFORMATION                   
+                                                                             
+ OBJECT                             = DATA_SET_TARGET                        
+ TARGET_NAME                        = JUPITER                                
+ END_OBJECT                         = DATA_SET_TARGET                        
+                                                                             
+ OBJECT                             = DATA_SET_HOST                          
+ INSTRUMENT_HOST_ID                 = VG1                                    
+ INSTRUMENT_ID                      = PLS                                    
+ END_OBJECT                         = DATA_SET_HOST                          
+                                                                             
+ OBJECT                             = DATA_SET_MISSION                       
+ MISSION_NAME                       = "VOYAGER"                              
+ END_OBJECT                         = DATA_SET_MISSION                       
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = "BRIDGEETAL1977"                       
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ OBJECT                             = DATA_SET_REFERENCE_INFORMATION         
+ REFERENCE_KEY_ID                   = "MCNUTTETAL1981"                       
+ END_OBJECT                         = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+ END_OBJECT                         = DATA_SET                               
+ END

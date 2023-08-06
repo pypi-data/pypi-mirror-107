@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VOYAGER 1 SAT LOW ENERGY CHARGED PARTICLE CALIB. BR 15MIN</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG1-S-LECP-4-BR-15MIN</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1988-09-01</publication_date>
+            <country>USA</country>
+            <description>THIS BROWSE DATA CONSISTS OF RESAMPLED DATA FROM THE LOW ENERGY
+                CHARGED PARTICLE (LECP) EXPERIMENT ON VOYAGER 1 WHILE THE
+                SPACECRAFT WAS IN THE VICINITY OF SATURN. THIS INSTRUMENT
+                MEASURES THE INTENSITIES OF IN-SITU CHARGED PARTICLES (&gt;26 KEV
+                ELECTRONS AND &gt;30 KEV IONS) WITH VARIOUS LEVELS OF
+                DISCRIMINATION BASED ON ENERGY, MASS SPECIES, AND ANGULAR ARRIVAL
+                DIRECTION. A SUBSET OF ALMOST 100 LECP CHANNELS ARE INCLUDED WITH
+                THIS DATA SET. THE LECP DATA ARE GLOBALLY CALIBRATED TO THE
+                EXTENT POSSIBLE (SEE BELOW) AND THEY ARE TIME AVERAGED TO ABOUT
+                15 MINUTE TIME INTERVALS WITH THE EXACT BEGINNING AND ENDING
+                TIMES FOR THOSE INTERVALS MATCHING THE LECP INSTRUMENTAL CYCLE
+                PERIODS (THE ANGULAR SCANNING PERIODS). THE LECP INSTUMENT HAS A
+                ROTATING HEAD FOR OBTAINING ANGULAR ANISOTROPY MEASUREMENTS OF
+                THE MEDIUM ENERGY CHARGED PARTICLES THAT IT MEASURES. THE CYCLE
+                TIME FOR THE ROTATION IF VARIABLE, BUT DURING ENCOUNTERS IT IS
+                ALWAYS FASTER THAN 15 MINUTES. FOR THIS BROWSE DATA SET ONLY SCAN
+                AVERAGE DATA IS GIVEN (NO ANGULAR INFORMATION). THE DATA IS IN
+                THE FORM OF 'RATE' DATA WHICH HAS NOT BEEN CONVERTED TO
+                THE USUAL PHYSICAL UNITS. THE REASON IS THAT SUCH A CONVERSION
+                WOULD DEPEND ON UNCERTAIN DETERMINATIONS SUCH AS THE MASS SPECIES
+                OF THE PARTICLES AND THE LEVEL OF BACKGROUND. BOTH MASS SPECIES
+                AND BACKGROUND ARE GENERALLY DETERMINED FROM CONTEXT DURING THE
+                STUDY OF PARTICULAR REGIONS. TO CONVERT 'RATE' TO
+                'INTENSITY' FOR A PARTICULAR CHANNEL ONE PERFORMS THE
+                FOLLOWING TASKS: 1) DECIDE ON THE LEVEL OF BACKGROUND
+                CONTAMINATION AND SUBTRACT THAT OFF THE GIVEN RATE LEVEL.
+                BACKGROUND IS TO BE DETERMINED FROM CONTEXT AND FROM MAKING USE
+                OF SECTOR 8 RATES (SECTOR 8 HAS A 2 mm AL SHIELD COVERING IT). 2)
+                DIVIDE THE BACKGROUND CORRECTED RATE BY THE CHANNEL GEOMETRIC
+                FACTOR AND BY THE ENERGY BANDPASS OF THE CHANNEL. THE GEOMETRIC
+                FACTOR IS FOUND IN ENTRY 'channel_geometric_ factor' AS
+                ASSOCIATED WITH EACH CHANNEL 'channel_id'. TO DETERMINE
+                THE ENERGY BANDPASS, ONE MUST JUDGE THE MASS SPECIES OF THE OF
+                THE DETECTED PARTICLES (FOR IONS BUT NOT FOR ELECTRONS). THE
+                ENERGY BAND PASSES ARE GIVEN IN ENTRIES
+                'minimum_instrument_parameter' and
+                'maximum_instrument_ parameter' IN TABLE
+                'FPLECPENERGY', AND ARE GIVEN IN THE FORM
+                'ENERGY/NUCLEON'. FOR CHANNELS THAT BEGIN THEIR NAMES
+                WITH THE DESIGNATIONS 'CH' THESE BANDPASSES CAN BE USED
+                ON MASS SPECIES THAT ARE ACCEPTED INTO THAT CHANNEL (SEE ENTRIES
+                'minimum_instrument_parameter' and
+                'maximum_instrument_ parameter' IN TABLE
+                'FPLECPCHANZ', WHICH GIVE THE MINIMUM AND MAXIMUM
+                'Z' VALUE ACCEPTED -- THESE ENTRIES ARE BLANK FOR
+                ELECTRON CHANNELS). FOR OTHER CHANNELS THE GIVEN BANDPASS REFERS
+                ONLY TO THE LOWEST 'Z' VALUE ACCEPTED. THE BANDPASSES
+                FOR OTHER 'Z' VALUES ARE NOT ALL KNOWN, BUT SOME ARE
+                GIVEN IN THE LITERATURE (E.G. KRIMIGIS ET AL., 1979). THE FINAL
+                PRODUCT OF THESE INSTRUCTIONS WILL BE THE PARTICLE INTENSITY WITH
+                THE UNITS: COUNTS/(CM**2.STR.SEC.KEV). SOME CHANNELS ARE SUBJECT
+                TO SERIOUS CONTAMINATIONS, AND MANY OF THESE CONTAMINATIONS
+                CANNOT BE REMOVED EXCEPT WITH A REGION-BY-REGION ANALYSIS, WHICH
+                HAS NOT BEEN DONE FOR THIS DATA. THUS, TO USE THIS DATA IT IS
+                ABSOLUTELY VITAL THAT THE CONTAMINATION TYPES
+                ('contamination_id' , 'contamination_desc')
+                AND THE LEVELS OF CONTAMINATION ('data_quality_id'
+                CORRESPONDING TO THE DEFINITIONS 'data_quality_desc')
+                BE CAREFULLY EXAMINED FOR ALL REGIONS OF STUDY. A DEAD TIME
+                CORRECTION PROCEDURE HAS BEEN APPLIED IN AN ATTEMPT TO CORRECT
+                THE LINEAR EFFECTS OF DETECTOR OVERDRIVE (PULSE-PILEUP). THIS
+                PROCEDURE DOES NOT FIX SEVERELY OVERDRIVEN DETECTORS. A PROCEDURE
+                IS AVAILABLE FOR CORRECTING VOYAGER 2 LECP ELECTRON CONTAMINATION
+                OF LOW ENERGY ION CHANNELS, BUT ITS EFFECTIVENESS HAS BEEN
+                EVALUATED ONLY FOR THE URANUS DATA SET. THUS, CORRECTIONS HAVE
+            BEEN APPLIED ONLY TO THE URANUS DATA SET.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG1-S-LECP-4-BR-15MIN</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 1; SATURN; ENERGETIC PARTICLE DETECTOR; VG1; PLANET; LECP; LOW ENERGY CHARGED PARTICLE</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>BARRY H. MAUK</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg1-s-lecp-4-br-15min</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

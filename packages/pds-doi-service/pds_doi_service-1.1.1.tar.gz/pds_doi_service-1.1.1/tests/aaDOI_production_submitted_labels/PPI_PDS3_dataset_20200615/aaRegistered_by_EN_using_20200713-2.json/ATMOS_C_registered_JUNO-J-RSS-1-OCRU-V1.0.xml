@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>JUNO OUTER CRUISE RAW GRAVITY
+        SCIENCE 1 V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>JUNO-J-RSS-1-OCRU-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>3000-01-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains archival raw, partially processed, and
+                ancillary/supporting gravity science data acquired during the Juno
+                outer cruise between the October 2013 Earth Flyby and July 2016
+                Jupiter Orbit Insertion. The radio observations were carried out using
+                the Juno spacecraft and Earth-based receiving stations of the NASA
+                Deep Space Network (DSN). The data set was designed primarily to
+                support testing and calibration of Juno's Gravity Science instrument.
+                Of most interest are likely to be the Orbit Data Files in the ODF
+                directory, which provided the raw input to gravity investigations,
+                as well as the ionospheric an  tropospheric media calibration files
+            in the ION and TRO directories, respectively.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=JUNO-J-RSS-1-OCRU-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>JUNO; JUPITER; RADIO SCIENCE; JNO; PLANET; RSS; GRAVITY SCIENCE INSTRUMENT</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DUSTIN R. BUCCINO</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.juno-j-rss-1-ocru-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

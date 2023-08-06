@@ -1,0 +1,254 @@
+PDS_VERSION_ID                  = PDS3                                         
+LABEL_REVISION_NOTE            = "                                            
+    2000-03-28, S. Joy, initial draft;                                        
+    2003-06-25, S. Joy, added targets;                                        
+    2003-08-18, S. Joy, minor revisions requested at peer review;             
+    2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;"                   
+                                                                              
+OBJECT                         = DATA_SET                                     
+  DATA_SET_ID                  = "GO-J-POS-6-MOON-TRAJ-JUP-COORDS-V1.0"       
+OBJECT                         = DATA_SET_INFORMATION                         
+    DATA_SET_NAME                  = "                                        
+          GO JUP POS MOONS TRAJ JUPITER CENTERED COORDINATES V1.0"            
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1995-11-06T00:00                         
+    STOP_TIME                      = 2003-09-21T18:45                         
+    DATA_SET_RELEASE_DATE          = 2002-07-15                               
+    PRODUCER_FULL_NAME             = "MR STEVEN P. JOY"                       
+    DETAILED_CATALOG_FLAG          = Y                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+                                                                              
+    CITATION_DESC                  = "Joy, S.P., Mafi, J.N.,                  
+      GO JUP POS MOONS TRAJ JUPITER CENTERED COORDINATES V1.0,                
+      GO-J-POS-6-MOON-TRAJ-JUP-COORDS-V1.0, NASA Planetary Data System, 2002" 
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set contains the System III (1965.0) trajectory and Sun and   
+      Earth phase angles of Galileo and selected Jovian moons when Galileo    
+      was inside 30 Jupiter radii from Jupiter. Trajectories are sampled      
+      every 20 seconds."                                                      
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      This data set contains the System III (1965.0) trajectory and Sun and   
+      Earth phase angles of Galileo and selected Jovian moons when Galileo was
+      inside 30 Jupiter radii from Jupiter. Trajectories are sampled every 20 
+      seconds."                                                               
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+Overview                                                                      
+========                                                                      
+                                                                              
+This data set contains the System III (1965.0) trajectory and Sun and         
+Earth phase angles of Galileo and selected Jovian moons when Galileo was      
+inside 30 Jupiter radii from Jupiter. Trajectories are sampled every 20       
+seconds.                                                                      
+                                                                              
+                                                                              
+Coordinates                                                                   
+===========                                                                   
+                                                                              
+The Jupiter System III (1965) coordinate system follows the definition of     
+Dr. Alex Dessler in Appendix B of 'Physics of the Jovian Magnetosphere'       
+[DESSLER1983]. This coordinate system is the accepted standard for            
+analysis of data from the jovian system. System III is a spherical,           
+planetographic coordinate system where the planetary rotation rate of         
+(9h, 55m, 29.71s) is based on the rate of rotation of Jupiter's magnetic      
+field. The prime meridian is defined as the sub-Earth meridian at             
+00:00:00 UT on Jan 1, 1965. Range is measured from the Jupiter center of      
+mass. Longitude for standard System III is measured west. This direction      
+choice causes the coordinate system to be left-handed and to a stationary     
+or distant observer, longitude increases with time.                           
+                                                                              
+Also included are the Earth and Sun phase angles of each body at each         
+sample time. Phase angles are the projection of the 3-body angle              
+(Sun-Jupiter-body or Earth-Jupiter-body) into the Jovian equatorial           
+plane. The angle is measured from the anti-Sunward (or anti-Earthward)        
+line, positive in the counterclockwise direction.                             
+                                                                              
+Sun Phase Angle definition:                                                   
+                                Sun                                           
+                                 ^                                            
+                                 |                                            
+                                noon          Jupiter Planetocentric          
+                              180 deg         Equatorial Projection           
+                                 |                                            
+                                 |                                            
+                                 |                                            
+                                 | Jupiter                                    
+                               * * */                                         
+                              *  |  *                                         
+    (dusk) 270 deg -----------*--|--*------------- 90 deg (dawn)              
+                              *  |\ *                                         
+                               * * *                                          
+                                 |  \                                         
+                                 |   \                                        
+                                 |    \                                       
+                                 |-PA--\                                      
+                               0 deg   body                                   
+                              midnight                                        
+                                                                              
+Earth phase angle follows the same convention - simply replace the            
+Sun in the diagram above with the Earth.                                      
+                                                                              
+                                                                              
+Data Sampling                                                                 
+=============                                                                 
+                                                                              
+The data are sampled every 20 seconds inside of 30 Jupiter radii.             
+                                                                              
+                                                                              
+Data Processing                                                               
+===============                                                               
+                                                                              
+The trajectory data were created using code written by Steven Joy to          
+extract information from the SPICE (GO-J-SPICE-6-SPK-V1.0) products           
+produced by the Galileo project. The software used to create this             
+ephemeris is well tested and in agreement with similar software provided      
+by the Galileo project. All of the SPICE kernels used to produce this         
+data set are contained on the Io/J0 MWG archive volume CDROM in the           
+GEOMETRY directory.                                                           
+                                                                              
+                                                                              
+Data                                                                          
+====                                                                          
+                                                                              
+These data are derived from SPICE kernels produced by the Galileo NAV         
+team during the mission. All of the SPICE kernels used to produce this        
+data set are contained on the MWG archive volume DVD in the                   
+EXTRAS/SPICE/KERNELS directory.                                               
+                                                                              
+The kernels (PDS PRODUCT_ID) used to create this were:                        
+  S980326B.TSP  - Prime Mission Reconstruction (JA - E12)                     
+  S000131A.TSP  - GEM reconstruction (E12-E26)                                
+  S030129A.TSP  - GMM (I27-A34) reconstruction, J35 predict                   
+  PCK00007.TPC  - Planetary constants kernel (2000-04-24)                     
+  MK00062B.TSC  - Galileo spacecraft clock kernel                             
+                                                                              
+All data are archived in ASCII tables (1 orbit/file). The data files for      
+all orbits contain the following columns:                                     
+                                                                              
+------------------------------------------------------------------------      
+Column      Type    Description &#10094;units&#10095;                                       
+------------------------------------------------------------------------      
+time        char    Sample time in PDS time format number                     
+GLL_R       real    Galileo range from Jupiter &#10094;Rj&#10095; (1 Rj = 71492 km)         
+GLL_LAT     real    Galileo Jupiter planetocentric latitude &#10094;degrees&#10095;         
+GLL_WLON    real    Galileo System III west longitude &#10094;degrees&#10095;               
+GLL_SPHASE  real    Galileo Sun phase angle &#10094;degrees&#10095;                         
+GLL_EPHASE  real    Galileo Earth phase angle &#10094;degrees&#10095;                       
+IO_R        real    Io range from Jupiter &#10094;Rj&#10095;                                
+IO_LAT      real    Io Jupiter planetocentric latitude &#10094;degrees&#10095;              
+IO_WLON     real    Io System III west longitude &#10094;degrees&#10095;                    
+IO_SPHASE   real    Io Sun phase angle &#10094;degrees&#10095;                              
+IO_EPHASE   real    Io Earth phase angle &#10094;degrees&#10095;                            
+EUR_R       real    Europa range from Jupiter &#10094;Rj&#10095;                            
+EUR_LAT     real    Europa Jupiter planetocentric latitude &#10094;degrees&#10095;          
+EUR_WLON    real    Europa System III west longitude &#10094;degrees&#10095;                
+EUR_SPHASE  real    Europa Sun phase angle &#10094;degrees&#10095;                          
+EUR_EPHASE  real    Europa Earth phase angle &#10094;degrees&#10095;                        
+GAN_R       real    Ganymede range from Jupiter &#10094;Rj&#10095;                          
+GAN_LAT     real    Ganymede Jupiter planetocentric latitude &#10094;degrees&#10095;        
+GAN_WLON    real    Ganymede System III west longitude &#10094;degrees&#10095;              
+GAN_SPHASE  real    Ganymede Sun phase angle &#10094;degrees&#10095;                        
+GAN_EPHASE  real    Ganymede Earth phase angle &#10094;degrees&#10095;                      
+CAL_R       real    Callisto range from Jupiter &#10094;Rj&#10095;                          
+CAL_LAT     real    Callisto Jupiter planetocentric latitude &#10094;degrees&#10095;        
+CAL_WLON    real    Callisto System III west longitude &#10094;degrees&#10095;              
+CAL_SPHASE  real    Callisto Sun phase angle &#10094;degrees&#10095;                        
+CAL_EPHASE  real    Callisto Earth phase angle &#10094;degrees&#10095;                      
+                                                                              
+Due to their much lower periapsis, the data files for orbits A34 and J35      
+include ephemeris information for Amalthea (semimajor axis 2.5 Rj), and       
+Thebe (semimajor axis 3.1 Rj). These files include the following              
+additional columns:                                                           
+                                                                              
+------------------------------------------------------------------------      
+Column      Type    Description &#10094;units&#10095;                                       
+------------------------------------------------------------------------      
+AMA_R       real    Amalthea range from Jupiter &#10094;Rj&#10095;                          
+AMA_LAT     real    Amalthea Jupiter planetocentric latitude &#10094;degrees&#10095;        
+AMA_WLON    real    Amalthea System III west longitude &#10094;degrees&#10095;              
+AMA_SPHASE  real    Amalthea Sun phase angle &#10094;degrees&#10095;                        
+AMA_EPHASE  real    Amalthea Earth phase angle &#10094;degrees&#10095;                      
+THE_R       real    Thebe range from Jupiter &#10094;Rj&#10095;                             
+THE_LAT     real    Thebe Jupiter planetocentric latitude &#10094;degrees&#10095;           
+THE_WLON    real    Thebe System III west longitude &#10094;degrees&#10095;                 
+THE_SPHASE  real    Thebe Sun phase angle &#10094;degrees&#10095;                           
+THE_EPHASE  real    Thebe Earth phase angle &#10094;degrees&#10095;                         
+                                                                              
+                                                                              
+Ancillary Data                                                                
+==============                                                                
+                                                                              
+SPICE kernels MK98264A.TLS (leapseconds), MK98264A.TLS (spacecraft            
+clock), PK96030A.TPC (planetary constants), S980326B.TSP, S991130A.TSP,       
+and S030129A.TSP (spacecraft/planetary ephemeris), and the rotor attitude     
+file ROT_ATT.TAB located in the GEOMETRY directory of the GOMW_5001           
+volume can all be considered as ancillary data files for this data set.       
+These are the files that were used to generate this data set. Ideally,        
+these data should be generated on demand using the latest SPICE kernels       
+available from the NAIF Node of the PDS.                                      
+                                                                              
+                                                                              
+References                                                                    
+==========                                                                    
+                                                                              
+Russell, C.T., Geophysical coordinate transformations, Cosmic                 
+Electrodynamics, Reidel Publishing Co., Vol. 2, 174-196, 1971.                
+                                                                              
+Dessler, A. J., Appendix B Coordinate Systems, in Physics of the Jovian       
+Magnetosphere, (edited by A. J. Dessler), Cambridge Univ Press, 1983."        
+                                                                              
+                                                                              
+  CONFIDENCE_LEVEL_NOTE          = "                                          
+These data have been generated by software from the Galileo project           
+approved SPICE kernels. The software has been tested extensively and          
+verified using project provided trajectory data sets for some coordinate      
+systems. Data can be considered to be reliable to the precision implied       
+by the number of significant digits provided."                                
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = IO                                       
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = EUROPA                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = GANYMEDE                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = CALLISTO                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = AMALTHEA                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = THEBE                                    
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = GO                                       
+    INSTRUMENT_ID                  = POS                                      
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "GALILEO"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "RUSSELL1971"                            
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "DESSLER1983"                            
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+END_OBJECT                     = DATA_SET                                     
+END

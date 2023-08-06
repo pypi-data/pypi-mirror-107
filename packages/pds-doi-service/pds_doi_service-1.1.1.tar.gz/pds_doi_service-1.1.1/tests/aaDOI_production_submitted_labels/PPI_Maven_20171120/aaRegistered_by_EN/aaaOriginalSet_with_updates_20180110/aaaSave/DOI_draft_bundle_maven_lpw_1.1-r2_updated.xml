@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <record>
+        <!-- 20180102: updates via T.Kind email:
+               - NO CHANGES MADE
+               - change the "creator" to "McFadden, James, P." 
+               - to update the title by replacing "STATIC" with "SupraThermal And Thermal Ion Composition (STATIC)".
+         -->
+        <osti_id>1410658</osti_id>
+
+        <title>MAVEN Langmuir Probe and Waves (LPW) Bundle</title>
+        <creators>Laila Andersson</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>02/14/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amaven.lpw&amp;version=1.1</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+            <!-- Product Numbers
+                   - choose to insert LID here
+            -->     
+        <product_nos>urn:nasa:pds:maven.lpw::1.1</product_nos>
+            
+        <description> 
+            This bundle contains products associates with the PDS MAVEN Langmuir Probe and Waves (LPW) data archive.             
+        </description>
+        <keywords>
+            PDS; PDS4; Maven; Mars Atmosphere and Volatile Evolution; Langmuir Probe and Waves; LPW; Langmuir Probe and Waves Instrument 
+        </keywords>
+        
+        <related_resource></related_resource>
+        <contributor_organizations></contributor_organizations>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos></contract_nos>
+        <other_identifying_nos></other_identifying_nos>
+        <file_extension></file_extension>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>
+

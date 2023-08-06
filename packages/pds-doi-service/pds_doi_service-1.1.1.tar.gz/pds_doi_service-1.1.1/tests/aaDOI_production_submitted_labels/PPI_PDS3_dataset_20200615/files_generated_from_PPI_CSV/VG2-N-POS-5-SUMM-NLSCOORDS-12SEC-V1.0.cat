@@ -1,0 +1,228 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE              = "                                          
+92-08  -- EFRIED;                                                             
+920911 -- EFRIED, changed DATA_SET_ID;                                        
+920918 -- EFRIED, updated Data Set templates according to new std.            
+Data Set Template -&#10095; Spacecraft Data Set Template                             
+event_start_time, event_stop_time -&#10095; start_time, stop_time;                   
+920924 -- EFRIED, Revised DATA_SET_ID and DATA_SET_NAME;                      
+920925 -- RMONARREZ,Updated PROCESSING_LEVEL_ID to match DATA_SET_ID;         
+921028 -- SJOY, created template;                                             
+921103 -- EFRIED, last modifications;                                         
+110606 -- DKAZDEN, removed unnecessary keywords;                              
+112211 -- DKAZDEN, updated REFERENCE_KEY_IDs;                                 
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated CITATION_DESC;"                                     
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-POS-5-SUMM-NLSCOORDS-12SEC-V1.0"  
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP TRAJECTORY DERIVED SUMM NLS COORDS 12SEC V1.0"                  
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-24T18:00:00                      
+    STOP_TIME                      = 1989-08-26T08:19:48                      
+    DATA_OBJECT_TYPE               = TABLE                                    
+    DATA_SET_RELEASE_DATE          = 1992-11-01                               
+    PRODUCER_FULL_NAME             = "DR. JOHN E. P. CONNERNEY"               
+    DETAILED_CATALOG_FLAG          = Y                                        
+                                                                              
+    CITATION_DESC = "Connerney, J.E.P., VG2-N-POS-5-SUMM-NLSCOORDS-12SEC-V1.0,
+                        VG2 NEP TRAJECTORY DERIVED SUMM NLS COORDS 12SEC V1.0,
+                          NASA Planetary Data System, 1992."                  
+    DATA_SET_TERSE_DESC            = "                                        
+      Voyager 2 12 second ion density, temperature, and velocity data         
+      from the Voyager 2 Neptune West Longitude System during                 
+      the Neptune encounter from 1989-08-24 to 1989-08-26."                   
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This dataset contains Voyager 2 spacecraft position vectors relative    
+      to Neptune in minus NLS coordinates.  The NLS or Neptune West Longitude 
+      System coordinate system is a planetocentric system fixed to Neptune    
+      which is rotating with a 16.11 hour period."                            
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+      This dataset contains Voyager 2 spacecraft position vectors relative    
+      to Neptune in minus NLS coordinates.  The NLS or Neptune West Longitude 
+      System coordinate system is a planetocentric system fixed to Neptune    
+      which is rotating with a 16.11 hour period.                             
+                                                                              
+      The NLS coordinate system is defined as follows:                        
+      - X lies in the equatorial plane of Neptune, positive away from the     
+      planet, and through the prime meridian.                                 
+      - Z is parallel to the Neptune spin axis, and,                          
+      - Y is X x Z (lefthanded)                                               
+                                                                              
+      The prime meridian of the this system is defined such that at           
+      1989-08-25T03:56:00.000 the Voyager 2 spacecraft was at 167.7           
+      degrees west longitude.                                                 
+                                                                              
+      For the PDS archive dataset, the original data archive has been         
+      converted to an east longitude (righthanded) coordinate                 
+      system minus NLS (-NLS). This is achieved by reversing the direction    
+      of the Y-axis or in spherical coordinates, subtracting the              
+      NLS longitude from 360.0 degrees. The data are provided in units        
+      of Neptune radii which was taken to be 24,765km by the Voyager          
+      project. Angles are given in degrees. Both cartesian and spherical      
+      coordinates are provided.                                               
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Sampling parameter name             : time                                
+    Sampling parameter resolution       : 12.0 seconds                        
+    Minimum sampling parameter          : n/a                                 
+    Maximum sampling parameter          : n/a                                 
+    Sampling parameter interval         : 12.0 seconds                        
+    Minimum available sampling interval : 12.0 seconds                        
+    Data set parameter name             : position vector                     
+    Noise level                         : n/a                                 
+    Data set parameter unit             : Neptune radii (24,765km)            
+                                          or degrees                          
+                                                                              
+                                                                              
+  Coordinates                                                                 
+  ===========                                                                 
+                                                                              
+                                                                              
+    Neptune West Longitude System (NLS) Coordinates                           
+    -----------------------------------------------                           
+      Coordinate System Center Name  = NEPTUNE                                
+      Coordinate system Ref Epoch    = UNK  /* 1989-08-25:03:56:00.000 */     
+                                                                              
+      The orientation of Neptune's pole is specified by a                     
+       right ascension of 298.90 and declination of 42.84 at the time         
+       of the encounter, as given in the Jet Propulsion Laboratory's          
+       distribution of physical constants                                     
+       dated 11/06/89. Planetary longitudes are based on a                    
+       16.11 hour rotation period (Warwick et al., 1989) adopted              
+       by the Voyager Project shortly after the encounter.                    
+       The zero longitude is defined by the requirement that the West         
+       Longitude of the spacecraft at 0356 SCET                               
+       day 237 (near closest approach) be 167.7 NLS;                          
+       West Longitudes of the Neptune Longitude System (NLS)                  
+       are simply related to the angle PHI:                                   
+                                                                              
+                      WLONG = 360. - PHI   (degrees)                          
+                                                                              
+       This definition of the zero longitude was adopted by the               
+       Voyager Project Steering Group in order to minimize                    
+       differences in longitudes resulting from changes in the                
+       assumed rotation period.                                               
+                                                                              
+       Position is given in terms of the following:                           
+         RANGE (R)          - Range from the planet center to the             
+                              spacecraft in units of Rn where                 
+                              Rn = 24,765km.                                  
+         LATITUDE (LAT)     - Spacecraft latitude in degrees. Valid           
+                              range -90.0 -&#10095; +90.0.                           
+         LONGITUDE (W_LONG) - West longitude where the zero longitude is      
+                              defined by the requirement that the West        
+                              Longitude of Voyager 2 at                       
+                              1989-08-25T03:56:00.00 was 167.7 degrees."      
+                                                                              
+    CONFIDENCE_LEVEL_NOTE            = "                                      
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+      There is no dataset confidence information archived with this dataset.  
+      The data provider has included a flag value which is included in the    
+      mag dataset which may reduce confidence in individual vectors due to    
+      telemetry or software errors.                                           
+                                                                              
+                                                                              
+  Data Quality and Coverage                                                   
+  =========================                                                   
+    Table 1 contains hourly summaries of the percentage of the data           
+    available, data quality, and contamination codes. Tables 2 and 3          
+    contain descriptions of the data quality and data contamination           
+    ID's respectively.                                                        
+                                                                              
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. Hourly Data Coverage and Quality Summaries                       
+    -------------------------------------------------------------------       
+    Start Time           Mode            Percent  Qual  Contam  NumGood       
+    -------------------------------------------------------------------       
+    1989-08-24T19:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-24T20:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-24T21:00:00  ENCOUNTER        95.667   -1     -1      1435        
+    1989-08-24T22:00:00  ENCOUNTER        97.333   -1     -1      1460        
+    1989-08-24T23:00:00  ENCOUNTER        94.333   -1     -1      1415        
+    1989-08-25T00:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T01:00:00  ENCOUNTER        93.667   -1     -1      1405        
+    1989-08-25T02:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T03:00:00  ENCOUNTER        84.667   -1     -1      1270        
+    1989-08-25T04:00:00  ENCOUNTER        96.667   -1     -1      1450        
+    1989-08-25T05:00:00  ENCOUNTER        94.667   -1     -1      1420        
+    1989-08-25T06:00:00  ENCOUNTER        99.000   -1     -1      1485        
+    1989-08-25T07:00:00  ENCOUNTER        98.333   -1     -1      1475        
+    1989-08-25T08:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T09:00:00  ENCOUNTER        98.667   -1     -1      1480        
+    1989-08-25T10:00:12  ENCOUNTER        99.667   -1     -1      1495        
+    1989-08-25T11:00:00  ENCOUNTER        94.667   -1     -1      1420        
+    1989-08-25T12:00:00  ENCOUNTER        98.000   -1     -1      1470        
+    1989-08-25T13:00:00  ENCOUNTER        97.667   -1     -1      1465        
+    1989-08-25T14:00:00  ENCOUNTER        98.667   -1     -1      1480        
+    1989-08-25T15:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T16:00:00  ENCOUNTER        98.000   -1     -1      1470        
+    1989-08-25T17:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T18:00:00  ENCOUNTER        98.000   -1     -1      1470        
+    1989-08-25T19:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T20:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T21:00:00  ENCOUNTER        98.333   -1     -1      1475        
+    1989-08-25T22:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-25T23:00:00  ENCOUNTER        96.000   -1     -1      1440        
+    1989-08-26T00:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T01:00:00  ENCOUNTER        98.333   -1     -1      1475        
+    1989-08-26T02:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T03:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T04:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T05:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T06:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T07:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T08:00:00  ENCOUNTER       100.000   -1     -1      1500        
+    1989-08-26T08:19:48  ENCOUNTER        33.333   -1     -1       500        
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 2. Data Quality ID Descriptions                                     
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no attempt has been made to specify a data quality for this          
+         time range                                                           
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 3. Data Contamination ID Descriptions                               
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no evaluation of possible contamination has been made"               
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = POS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "UNK"                                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

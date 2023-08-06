@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VENUS CLIMATE ORBITER IR2 GEOMETRY
+        INFORMATION V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VCO-V-IR2-3-SEDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-01</publication_date>
+            <country>USA</country>
+            <description>The VCO IR2 SEDR data set contains products of geometry information
+                calculated by SPICE toolkit using SPICE kernels VCO-V-SPICE-6-V1.0,
+                associated with images acquired by the IR2 instrument onboard the Venus
+                Climate Orbiter (VCO, also known as PLANET-C and AKATSUKI) spacecraft.
+                The data files are provided in FITS format with several HDUs as IMAGE
+            extension, and it also contains metadata to the header of the HDUs.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VCO-V-IR2-3-SEDR-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VENUS CLIMATE ORBITER; VENUS; EARTH; CAMERA; VCO; PLANET; IR2; 2-MICRON CAMERA</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>SHIN-YA MURAKAMI</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vco-v-ir2-3-sedr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

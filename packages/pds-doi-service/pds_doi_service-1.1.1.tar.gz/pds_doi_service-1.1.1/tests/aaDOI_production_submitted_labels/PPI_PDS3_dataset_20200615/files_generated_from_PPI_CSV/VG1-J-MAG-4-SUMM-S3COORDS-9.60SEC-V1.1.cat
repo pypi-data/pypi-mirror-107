@@ -1,0 +1,300 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "J. MAFI (PPI), 1998-05-18;             
+D. Kazden (PPI), 2010-05-11, added CITATION_DESC and ABSTRACT_DESC keywords; 
+D. Kazden (PPI), 2011-10-14, updated REFERENCE_KEY_IDs;                      
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-13;                 
+D. Kazden (PPI), updated CITATION_DESC, 2020-02-13;"                         
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "VG1-J-MAG-4-SUMM-S3COORDS-9.60SEC-V1.1"
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "VG1 JUP MAG RESAMPLED SYSTEM III (1965)
+                                        COORDS 9.60SEC V1.1"                 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1979-03-03T00:00:35.978                 
+    STOP_TIME                      = 1979-03-17T00:00:34.585                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "NATIONAL SPACE SCIENCE DATA CENTER"    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    CITATION_DESC                  = "Connerney, J.E., Lepping, R.P.,        
+                                     VG1-J-MAG-4-SUMM-S3COORDS-9.60SEC-V1.1, 
+                                     VG1 JUP MAG RESAMPLED SYSTEM III (1965) 
+                                     COORDS 9.60SEC V1.1, NASA Planetary Data
+                                     System, 1998."                          
+    ABSTRACT_DESC                  = "                                       
+    Voyager 1 9.6 second averaged magnetometer data from the Jupiter         
+    encounter in System 3 (1965) coordinates."                               
+    DATA_SET_TERSE_DESC            = "                                       
+    Voyager 1 9.6 second averaged magnetometer data from the Jupiter         
+    encounter in System 3 (1965) coordinates."                               
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+    Version 1.1                                                              
+    -----------                                                              
+                                                                             
+    This version 1.1 data set replaces the version 1.0 data set              
+    (DATA_SET_ID = VG1-J-MAG-4-9.60SEC) previously archived with PDS.        
+    Changes to this version include the addition of data columns not         
+    included in version 1.0, the modification of time format and flag        
+    values, and upgrade of associated labels and catalog templates to        
+    PDS version 3.2.                                                         
+                                                                             
+                                                                             
+    Data Set Overview                                                        
+    =================                                                        
+                                                                             
+    This data set includes calibrated magnetic field data acquired by        
+    the Voyager 1 Low Field Magnetometer (LFM) during the Jupiter            
+    encounter. Coverage begins in the solar wind inbound to Jupiter and      
+    continues past the last outbound bowshock crossing. The data are in      
+    System III (1965) (SYS3) coordinates and have been averaged from the     
+    1.92 second summary data to a 9.6 second sample rate. All magnetic       
+    field measurements are given in nanoTesla (nT). The magnetic field       
+    data are calibrated (see the calibration description included in the     
+    Voyager 1 Magnetometer instrument catalog file for details).             
+                                                                             
+                                                                             
+    Parameters                                                               
+    ==========                                                               
+                                                                             
+    The full LFM instrument sample rate is 1 sample per 0.06 seconds.        
+    Full telemetry resolution 'detail' data must be obtained from the        
+    instrument team. For this data set, the data have been resampled to      
+    9.6 seconds from 1.92 second summary data. The 1.92 second data were     
+    in turn resampled from the detail data.                                  
+                                                                             
+    The LFM has eight dynamic ranges. The instrument is designed switch      
+    between dynamic ranges automatically depending upon the observed         
+    magnetic field magnitude and fluctuations. Instrument digitization       
+    uncertainty depends upon dynamic range as indicated in the following     
+    table (from [BEHANNONETAL1977]).                                         
+                                                                             
+    -----------------------------------------------                          
+    LFM Dynamic ranges and quantization uncertainty                          
+    -----------------------------------------------                          
+    Range (nT)               Quantization (nT)                               
+    -----------------------------------------------                          
+    1.  +/- 8.8                    +/- .0022                                 
+    2.  +/- 26                     +/- .0063                                 
+    3.  +/- 79                     +/- .019                                  
+    4.  +/- 240                    +/- .059                                  
+    5.  +/- 710                    +/- .173                                  
+    6.  +/- 2100                   +/- .513                                  
+    7.  +/- 6400                   +/- 1.56                                  
+    8.  +/- 50,000                 +/- 12.2                                  
+                                                                             
+                                                                             
+    Processing                                                               
+    ==========                                                               
+                                                                             
+    Voyager EDR's undergo the following processing in order to produce       
+    these 9.6 second averaged summary data:                                  
+                                                                             
+      * Read EDR                                                             
+      * Unpack header block (rec. id, s/c id, tel. mode, FDS counts,         
+        data flags)                                                          
+      * Convert selected time tags to integer time (yy/ddd/hh:mm:ss.fff)     
+      * Unpack sub-header block (MAG status words, plasma data)              
+      * Unpack science block (MAG counts)                                    
+      * Convert counts to gammas                                             
+      * Apply sensor and boom alignment matrices                             
+      * Rotate (optional) 1.92 second averages while averaging detail        
+        gammas to create 1.92 second averages                                
+      * Average 1.92 second data to 9.6 seconds                              
+      * Write Summary record                                                 
+                                                                             
+    Counts are measured onboard using 12 bit words that may represent        
+    values ranging from 0-4096. Integer counts are converted to magnetic     
+    field units (gammas) by subtracting a zero offset, from the measured     
+    MAG value and multiplying this difference by the sensitivity of the      
+    instrument.                                                              
+                                                                             
+                                                                             
+    Data                                                                     
+    ====                                                                     
+                                                                             
+    The data files are given in ASCII, fixed field width, comma              
+    delimited tables. The record structure is described in the following     
+    table:                                                                   
+                                                                             
+    --------------------------------------------------------------------     
+    9.6 Second System III (1965) Coordinates                                 
+    --------------------------------------------------------------------     
+    Column   Type    Description &#10094;units&#10095;                                     
+    --------------------------------------------------------------------     
+    time     a23     spacecraft event time (UT) of the sample in the         
+                     format: yyyy-mm-ddThh:mm:ss.sss                         
+    sclk     a12     spacecraft clock in the format:                         
+                     MOD65536:MOD60:FDS-LINE                                 
+    mag_id   i1      magnetometer ID (1 = LFM, 2 = HFM)                      
+    Br       f9.3    average of detail magnetic field R component in nT      
+    Btheta   f9.3    average of detail magnetic field Theta component in     
+                     nT                                                      
+    Bphi     f9.3    average of detail magnetic field Phi component in       
+                     nT                                                      
+    Bmag     f9.3    magnitude of the averaged magnetic field components     
+                     in nT                                                   
+    avg_Bmag f9.3    average of the magnetic field magnitude over the        
+                     averaging interval in nT                                
+    Delta    f7.3    spacecraft centered heliographic magnetic field         
+                     latitude in degrees: Delta = asin(Bz/Bmag)*             
+    Lambda   f7.3    spacecraft centered heliographic magnetic field         
+                     longitude in degrees: Lambda = atan(By/Bx)*             
+    rms_Br   f8.3    root-mean-square deviation of Br over the averaging     
+                     interval in nT                                          
+    rms_Bt   f8.3    root-mean-square deviation of Btheta over the           
+                     averaging interval in nT                                
+    rms_Bp   f8.3    root-mean-square deviation of Bphi over the             
+                     averaging interval in nT                                
+    npts     i2      number of detail points in the average                  
+                                                                             
+    * while Br, Btheta, and Bphi are spherical coordinates, the angles       
+      Delta and Lambda are derived from Cartesian coordinates                
+                                                                             
+                                                                             
+    Ancillary Data                                                           
+    ==============                                                           
+                                                                             
+    An ancillary data file containing the derived spacecraft magnetic        
+    field is provided with this data at a 48 second sample rate. These       
+    data provide zero level offsets used in the data processing.             
+    Spacecraft field data is provided in spacecraft coordinates as           
+    follows:                                                                 
+                                                                             
+    --------------------------------------------------------------------     
+    48 Second Spacecraft Field (Payload) Averages                            
+    --------------------------------------------------------------------     
+    Column   Type    Description &#10094;units&#10095;                                     
+    --------------------------------------------------------------------     
+    time     a23     spacecraft event time (UT) of the sample in the         
+                     format: yyyy-mm-ddThh:mm:ss.sss                         
+    sclk     a12     spacecraft clock in the format:                         
+                     MOD65536:MOD60:FDS-LINE                                 
+    mag_id   i1      magnetometer ID (1 = LFM, 2 = HFM)                      
+    Bx       1pe10.3 average Bx spacecraft field in nT (payload coords.)     
+    By       1pe10.3 average By spacecraft field in nT (payload coords.)     
+    Bz       1pe10.3 average Bz spacecraft field in nT (payload coords.)     
+    Bmag     1pe10.3 magnitude of spacecraft field in nT                     
+    rms_Bx   1pe10.3 root-mean-square deviation of Bx over the averaging     
+                     interval in nT                                          
+    rms_By   1pe10.3 root-mean-square deviation of By over the averaging     
+                     interval in nT                                          
+    rms_Bz   1pe10.3 root-mean-square deviation of Bz over the averaging     
+                     interval in nT                                          
+    npts     i4      number of points in the average                         
+                                                                             
+                                                                             
+    Coordinate Systems                                                       
+    ==================                                                       
+                                                                             
+    These data are provided in a conventional, right handed, spherical       
+    coordinate system with vectors R, Theta, and Phi. This system is         
+    sometimes referred to as System III (1965) right handed                  
+    coordinates. The magnetic field vectors are:                             
+                                                                             
+      Br     - radial B-field component (along the Jupiter to spacecraft     
+               line) positive away from Jupiter                              
+      Btheta - North/South (SYS3) B-field component, positive southward      
+      Bphi   - azimuthal (SYS3) B-field component, positive eastward         
+                                                                             
+    The Jupiter System III coordinate system is described in Appendix B      
+    (p. 498) of [DESSLER1983].                                               
+                                                                             
+                                                                             
+    References                                                               
+    ==========                                                               
+                                                                             
+    [NESSETAL1979]        Ness, N.F., M.H. Acuna, R.P. Lepping, L.F.         
+                          Burlaga, K.W. Behannon, and F.M. Neubauer,         
+                          Magnetic Field Studies at Jupiter by               
+                          Voyager 1: Preliminary Results, Science, Vol.      
+                          204, p. 982, 1979.                                 
+                                                                             
+    [LEPPINGETAL1981]     Lepping, R.P., L.F. Burlaga, L.W. Klein, J.        
+                          Jessen, and C.C. Goodrich, Observations of the     
+                          Magnetic Field and Plasma Flow in Jupiter's        
+                          Magnetosheath, J. Geophys. Res., Vol. 86,          
+                          p. 8141, 1981.                                     
+                                                                             
+    [CONNERNEYETAL1981]   Connerney, J.E.P., M.H. Acuna, and N.F. Ness,      
+                          Modeling the Jovian Current Sheet and Inner        
+                          Magnetosphere, J. Geophys. Res., Vol. 86,          
+                          p. 8370, 1981.                                     
+                                                                             
+    [BEHANNONETAL1981]    Behannon, K.W., L.F. Burlaga, and N.F. Ness,       
+                          The Jovian Magnetotail and Its Current Sheet,      
+                          J. Geophys. Res., Vol. 86, p. 8385, 1981.          
+                                                                             
+    [DESSLER1983]         Dessler, A.J., Physics of Jovian Magnetosphere     
+                          Coordinate Systems, Physics of the Jovian          
+                          Magnetosphere, 1983."                              
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+    Review                                                                   
+    ======                                                                   
+                                                                             
+    These data have been reviewed by the instrument team and are of the      
+    highest quality that can be generated at this time. Science results      
+    based on these data have been published in several journals              
+    (Science, Nature, JGR, etc.). After submission to the PDS, these         
+    data successfully completed the peer review process.                     
+                                                                             
+                                                                             
+    Data Coverage and Quality                                                
+    =========================                                                
+                                                                             
+    These data originally included an 8-byte flag indicating software or     
+    spacecraft hardware intervention which reduced confidence in the         
+    data. However, these flags were provided only at a 48 second rate        
+    and are not included in this data set. To identify data confidence       
+    concerns in this data set please refer to the data flag provided in      
+    the 48 second data set. Data confidence conditions apply beginning       
+    at the record matching the time tag of the 48 second data and            
+    persist for 48 seconds (or 5 records in the 9.6 second data)."           
+                                                                             
+   END_OBJECT                       = DATA_SET_INFORMATION                   
+                                                                             
+   OBJECT                           = DATA_SET_TARGET                        
+   TARGET_NAME                      = JUPITER                                
+   END_OBJECT                       = DATA_SET_TARGET                        
+                                                                             
+   OBJECT                           = DATA_SET_HOST                          
+   INSTRUMENT_HOST_ID               = VG1                                    
+   INSTRUMENT_ID                    = MAG                                    
+   END_OBJECT                       = DATA_SET_HOST                          
+                                                                             
+   OBJECT                           = DATA_SET_MISSION                       
+   MISSION_NAME                     = "VOYAGER"                              
+   END_OBJECT                       = DATA_SET_MISSION                       
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "BEHANNONETAL1977"                     
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "BEHANNONETAL1981"                     
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "CONNERNEYETAL1981"                    
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "DESSLER1983"                          
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "LEPPINGETAL1981"                      
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   OBJECT                           = DATA_SET_REFERENCE_INFORMATION         
+   REFERENCE_KEY_ID                 = "NESSETAL1979"                         
+   END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION         
+                                                                             
+   END_OBJECT                       = DATA_SET                               
+   END

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+      <logical_identifier>urn:nasa:pds:mer_cs_target_list</logical_identifier>
+      <version_id>1.1</version_id>
+      <title>MER Contact Science Target List Bundle</title>
+      <information_model_version>1.11.0.0</information_model_version>
+      <product_class>Product_Bundle</product_class>
+      <Citation_Information>
+	    <author_list>
+	      S. J., VanBommel;E., Guinness;T. ,Stein;  MER Science Team
+	    </author_list>
+        <publication_year>2020</publication_year>
+        <doi>10.17189/1519184</doi>
+        <description>
+          Summary of MER contact science (CS) activities and targets. Localization information in Site Frame
+		  and within identifying images are provided where information was available. Contact science refers
+          to analyses conducted by instruments deployed using the Instrument Deployment Device (IDD).
+        </description>
+      </Citation_Information>
+      <Modification_History>
+        <Modification_Detail>
+          <modification_date>2020-05-07</modification_date>
+          <version_id>1.0</version_id>
+		  <description>First release</description>
+        </Modification_Detail>
+      </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+      <Time_Coordinates>
+        <start_date_time>2004-01-25T00:00:00Z</start_date_time>
+        <stop_date_time>2018-06-11T00:00:00Z</stop_date_time>
+      </Time_Coordinates>
+      <Primary_Result_Summary>
+        <purpose>Observation Geometry</purpose>
+        <processing_level>Derived</processing_level>
+      </Primary_Result_Summary>
+      <Investigation_Area>
+        <name>Mars Exploration Rover</name>
+        <type>Mission</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:investigation:mission.mars_exploration_rover</lid_reference>
+          <reference_type>bundle_to_investigation</reference_type>
+        </Internal_Reference>
+      </Investigation_Area>
+      <Observing_System>
+        <name>Mars Exploration Rover</name>
+        <Observing_System_Component>
+          <name>Mars Exploration Rover 1</name>
+          <type>Spacecraft</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer1</lid_reference>
+            <reference_type>is_instrument_host</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Mars Exploration Rover 2</name>
+          <type>Spacecraft</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2</lid_reference>
+            <reference_type>is_instrument_host</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Alpha Particle X-ray Spectrometer</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:apxs.mer1</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Alpha Particle X-ray Spectrometer</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:apxs.mer2</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Moessbauer Spectrometer</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mb.mer1</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Moessbauer Spectrometer</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mb.mer2</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Microscopic Imager</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mi.mer1</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Microscopic Imager</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mi.mer2</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Rock Abrasion Tool</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:rat.mer1</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>
+        <Observing_System_Component>
+          <name>Rock Abrasion Tool</name>
+          <type>Instrument</type>
+          <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:rat.mer2</lid_reference>
+            <reference_type>is_instrument</reference_type>
+          </Internal_Reference>
+        </Observing_System_Component>			
+      </Observing_System>
+      <Target_Identification>
+        <name>Mars</name>
+        <type>Planet</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+          <reference_type>bundle_to_target</reference_type>
+        </Internal_Reference>
+      </Target_Identification>
+    </Context_Area>
+    <Bundle>
+      <bundle_type>Archive</bundle_type>
+    </Bundle>
+	<File_Area_Text>
+      <File>
+        <file_name>errata.txt</file_name>
+      </File>
+      <Stream_Text>
+        <offset unit="byte">0</offset>
+        <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+        <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      </Stream_Text>
+    </File_Area_Text>
+    <Bundle_Member_Entry>
+      <lid_reference>urn:nasa:pds:mer_cs_target_list:data</lid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+      <lid_reference>urn:nasa:pds:mer_cs_target_list:context</lid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_context_collection</reference_type>
+    </Bundle_Member_Entry>
+	<Bundle_Member_Entry>
+      <lid_reference>urn:nasa:pds:mer_cs_target_list:document</lid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

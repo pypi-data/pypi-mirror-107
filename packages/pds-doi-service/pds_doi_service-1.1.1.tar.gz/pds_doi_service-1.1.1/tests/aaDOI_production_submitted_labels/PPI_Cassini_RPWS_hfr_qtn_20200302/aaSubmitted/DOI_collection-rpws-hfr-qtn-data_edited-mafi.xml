@@ -1,0 +1,36 @@
+<records>
+    <record>
+        <title>Quasi Thermal Noise Spectroscopy on High Frequency Receiver Data Collection</title>
+        <creators/>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>2020-01-01</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Acassini-rpws-hfr-qtn%3Adata&amp;version=1.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:cassini-rpws-hfr-qtn:data::1.0</product_nos>
+            
+        <description>This collection contains RPWS-HFR Quasi Thermal Noise (QTN) spectroscopy supplied CDF files
+                containing a time series of thermal plasma moments (density and temperature). QTN data products
+                are generated only when the QTN analysis is applicable.</description>
+        <keywords>PDS;  PDS4;  PPI;   Cassini;   RPWS;  Derived;  RPWS-HFR Quasi Thermal Noise (QTN) spectroscopy;  Saturn; ; Calibrated; Heliosphere; Magnetosphere; Particles; Electrons; Cassini-Huygens; Cassini Orbiter</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS Operator</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

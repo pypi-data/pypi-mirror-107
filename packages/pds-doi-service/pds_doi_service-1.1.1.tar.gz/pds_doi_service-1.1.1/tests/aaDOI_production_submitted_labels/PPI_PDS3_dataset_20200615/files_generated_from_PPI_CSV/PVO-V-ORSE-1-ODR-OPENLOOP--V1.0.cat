@@ -1,0 +1,86 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE          = "                                             
+D. Kazden, Nov.12, 2012, updated to PDS 3.8 standards;                       
+D. Kazden, Feb.11, 2010, updated CITATION_DESC;"                             
+                                                                             
+OBJECT                       = DATA_SET                                      
+  DATA_SET_ID                   = "PVO-V-ORSE-1-ODR-OPENLOOP--V1.0"          
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+  DATA_SET_NAME                  = "                                         
+                           PVO VENUS RADIO SCIENCE OPENLOOP ODR VERSION 1.0" 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T15:11:12.862                 
+    STOP_TIME                      = 1992-10-07T19:46:27.756                 
+    DATA_OBJECT_TYPE               = "N/A"                                   
+    DATA_SET_RELEASE_DATE          = 1993-07-01                              
+    PRODUCER_FULL_NAME             = "DWAYNE CHONG"                          
+    DETAILED_CATALOG_FLAG          = N                                       
+    ABSTRACT_DESC                  = "The DSP-R is a computer-controlled     
+    subsystem that digitally samples a received spacecraft signal (both X    
+    and S-band) through the use of four analog-to-digital (A-D) converters.  
+    The digitized samples, along with the monitor data necessary to          
+    reconstruct the signal, are recorded on tape, and/or transmitted in      
+    realtime to SFOC. Analysis of variations in the amplitude, phase, and    
+    frequency of the signal provides information on the ring structure,      
+    atmospheric density, magnetic field, and charged-particle environment of 
+    planets which occult the spacecraft. Additionally, this signal is needed 
+    for gravity wave detection."                                             
+    DATA_SET_TERSE_DESC            = "                                       
+    Analysis of variations in the amplitude, phase, and frequency of the     
+    signal provides information on the ring structure, atmospheric density,  
+    magnetic field, and charged-particle environment of planets which        
+    occult the spacecraft."                                                  
+    CITATION_DESC              = "Chong, D., PVO-V-ORSE-1-ODR-OPENLOOP--V1.0,
+                            PVO VENUS RADIO SCIENCE OPENLOOP ODR VERSION 1.0,
+                                 NASA Planetary Data System, 1993."          
+    DATA_SET_DESC                  = "                                       
+       The DSP-R is a computer-controlled subsystem that digitally samples a 
+       received spacecraft signal (both X and S-band) through the            
+       use of four analog-to-digital (A-D) converters.                       
+       The digitized samples, along with the monitor data                    
+       necessary to reconstruct the signal, are recorded on tape, and/or     
+       transmitted in realtime to SFOC. Analysis of variations in the        
+       amplitude, phase, and frequency of the signal provides information    
+       on the ring structure, atmospheric density, magnetic field, and       
+       charged-particle environment of planets which occult the spacecraft.  
+       Additionally, this signal is needed for gravity wave detection.       
+                                                                             
+       The DSP-R digitally samples the received spacecraft signal with 8-bit 
+       or 12-bit resolution and creates records of varying lengths, depending
+       on the sample rate and resolution. Each record is composed of (1)     
+       a header containing information on system configuration, time-tagged  
+       receiver local oscillator values, etc., and (2) a block of digital    
+       data from the four A-D converters.                                    
+                                                                             
+       Time Tag Offset                                                       
+                                                                             
+       The sampled data are later than the reported time tag by two intervals
+       of the sample rate of a single A-D converter. This means that in each 
+       record the ADC data which corresponds with the time tag is the third  
+       set of ADC samples in the record, not the first set."                 
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+    The ODR dataset is a raw data product with all that implies."            
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ORSE                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_MISSION                          
+    MISSION_NAME                 = "PIONEER VENUS"                           
+  END_OBJECT                     = DATA_SET_MISSION                          
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = DALINSKY1992                              
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

@@ -1,0 +1,37 @@
+<records>
+    <record>
+        <title>MAVEN Ancillary Bundle</title>
+        <creators>Jakosky, Bruce, M.; Luhmann, Janet, G.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>08/10/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Amaven.anc&amp;version=1.10</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Collection</product_type>
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.anc::1.10</product_nos>
+            
+        <description>A bundle that contains MAVEN data return files from Electrical Power System; Guidance, Navigation and Control,
+		NGMIS Instrument Data; Particle and Fields Instrument; Periapsis Timing Estimator; Remote Sensing (IUVS) Instrument; Solar Array Switching Modules;
+		Universal Switching Modules and Inertial Measurement Unit. It also include mission events including events from the MAVEN Payload Operations Center events database, and MAVEN science events.
+      </description>
+         <keywords>PDS; PDS4; Maven; Mars Atmosphere and Volatile EvolutioN; MAVEN; Imaging Ultraviolet Spectrograph; Neutral Gas and Ion Mass Spectrometer; Extreme Ultraviolet Monitor; Langmuir Probe and Waves Instrument; Magnetometer; Solar Energetic Particle Experiment; Supra-Thermal and Thermal Ion Composition; Solar Wind Electron Analyzer; Solar Wind Ion Analyzer; Mars</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

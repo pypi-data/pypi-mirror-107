@@ -1,0 +1,225 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional Keywords added by D. Kazden, 2009-09-15;                          
+Z's removed from time by D. Kazden, 2010-05-05;                              
+Updated CITATION_DESC, D. Kazden, 2020-02-12;"                               
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-COSPIN-KET-3-RDR-RAW-HIRES-V1.0" 
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULY JUP COSPIN KIEL ELE TEL HIRES RAW  
+                                        PARTICLE COUNT RATES"                
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-01-24T23:59:49.000                 
+    STOP_TIME                      = 1992-02-17T23:58:16.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "HORST KUNOW"                           
+    DETAILED_CATALOG_FLAG          = "N"                                     
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULY JUP COSPIN KIEL ELE TEL HIRES      
+                                         RAW PARTICLE COUNT RATES"           
+    CITATION_DESC        = "Kunow, H., ULY-J-COSPIN-KET-3-RDR-RAW-HIRES-V1.0,
+                  ULY JUP COSPIN KIEL ELE TEL HIRES RAW PARTICLE COUNT RATES,
+                            NASA Planetary Data System, 1998."               
+    ABSTRACT_DESC                  = "Raw data including single counter      
+                                      rates for the Semiconductor Detector   
+                                      D1 and the Anticoincidence A."         
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      Raw data including single counter rates for the Semiconductor          
+      Detector D1 and the Anticoincidence A.                                 
+                                                                             
+      Data                                                                   
+      ====                                                                   
+      COSPIN-KET RECORD FORMAT                                               
+      (REFERENCE: [SIMPSONETAL1992A] page 384, table 10)                     
+                                                                             
+      RECORD FORMAT for TYYDOY.TAB                                           
+                                                                             
+                                                                             
+      implicit real(k)                                                       
+      character*40 time                                                      
+      read(1,'(a24,31(1x,1pe9.2))') time,cov,k1,                             
+                             k21,k22,k23,k24,k25,k26,k27,k28,                
+                             k3,k34,k12,k10,k2,k33,k29,k31,k30,              
+                             k13,k14,k15,k16,k17,k18,k19,k20,                
+                             k11,k32,a01,d10                                 
+                                                                             
+      PARAMETER LIST:                                                        
+                                                                             
+                                                                             
+        TIME:  spacecraft event time in the format                           
+               yyyy-mm-ddThh:mm:ss.sssZ                                      
+        COV:   accumulation time in seconds                                  
+        K1:    protons (2.7-5.4 MeV)                                         
+        K[21-28]:protons (5.4-23.1 MeV) sectors 1 to 8                       
+        K3:    protons (34.1-125.0 MeV)                                      
+        K34:   protons (125.0-320.0 MeV) nominal,                            
+               forward penetrating protons (125.0-250.0 MeV),                
+               backward penetrating protons (160.0-260.0 MeV)                
+        K12:   protons (260.0-2200.0 MeV) nominal,                           
+               forward penetrating protons (250.0-2200.0 MeV),               
+               backward penetrating protons (260.0-2200.0 MeV)               
+        K10:   protons (&#10095;2100.0 MeV) nominal                                 
+               protons (&#10095;2200.0 MeV)                                         
+        K2:    helium (6.0-20.4 MeV/n)                                       
+        K33:   helium (34-125 MeV/n)                                         
+        K29:   helium (125.0-320.0 MeV/n) nominal                            
+               forward penetrating helium (125.0-155.0 MeV/n),               
+               backward penetrating helium (155.0-225.0 MeV/n)               
+        K31:   helium (320.0-2100.0 MeV/n) nominal                           
+               forward penetrating helium (250.0-2100.0 MeV/n),              
+               backward penetrating helium (250.0-2100.0 MeV/n)              
+        K30:   helium (&#10095;2000.0  MeV)                                         
+        K[13-20]:electrons (2.5-7.0 MeV) sectors 1 to 8                      
+        K11:   electrons (7.0-170.0 MeV)                                     
+        K32:   electrons (&#10095;170.0 MeV)                                        
+        A01:   counting rate of Anticoincidence                              
+        D10:   counting rate of D1                                           
+                                                                             
+      FLUX UNITS:      (/cm^2/s/sr/MeV)                                      
+      RATE UNITS:      (/s)    valid for all electron channels               
+                                                                             
+                                                                             
+      TIME RESOLUTION: 10 minutes, for Jovian Encounter Period time          
+                       resolution is varying, see Parameter COV and          
+                       note 11. below.                                       
+                                                                             
+                                                                             
+      NOTES: Electron data are Rates not Intensities.                        
+             RTG corrections included, except for electrons                  
+             flag of -9.99e+10 if intensity can not be determined            
+                                                                             
+        IMPORTANT:                                                           
+                                                                             
+      1. Only rates are given for the electrons, since no simple             
+         estimate of the intensities can be done. Intensities must           
+         derived from Pulse-Height Analysis.                                 
+                                                                             
+      2. Background Fluxes of K1 are a combination of components,            
+         including a high RTG background rate. This channel should           
+         be used only during event times, during quiet times flux is         
+         mostly set to -9.99e+10.                                            
+                                                                             
+      3. On 10 min averages some of the channels have limitations            
+         because of RTG background subtraction on this short time            
+         scale. Time periods with lower fluxes are available from the        
+         PI. Very slowly increases are a sign that background levels         
+         are reached (few percent per year).                                 
+                                                                             
+         Channel              Intensity                                      
+                                                                             
+         K[21-28]:             1.2e-4                                        
+         P4:                   1.0e-3                                        
+                                                                             
+         DO NOT MAKE LONGER ACCUMULATION AVERAGES WITH THESE CHANNELS        
+         BY USING PERIODS WITH A LOT OF FILL DATA (-9.99e+10) !!!!!!!        
+                                                                             
+      4. A first order correction of the counting rates in K3, K34           
+         and K33 is made. If you are looking at low fluxes especially        
+         in K33, please ask for data on a longer accumulation period.        
+                                                                             
+         GET LOW FLUX VALUES FROM THE PI ON LONGER ACCUMULATION              
+         PERIODS                                                             
+                                                                             
+      5. Fluxes of K11, K13_K20 and E4 below 2.0e-4, 2.5e-3 are a            
+         combination of different components including RTG back-             
+         ground. The exact amount of background relative to real             
+         electrons are unknown.                                              
+                                                                             
+          Levels below 3.0e-3, 2.5e-3 should not be considered.              
+                                                                             
+      6. Fluxes of K32 are contaminated by high energy protons.              
+         Reliable fluxes needs an PHA correction on longer                   
+         accumulation periods.                                               
+                                                                             
+      7. Changes in geometrical Factor G = (counting rate)/(Intensity)       
+                                                                             
+            K3          70.0                                                 
+            K34        152.0                                                 
+            K12       3300.0                                                 
+            K33         70.0                                                 
+            K29         88.0                                                 
+            K31       3200.0                                                 
+                                                                             
+      8. Additional Correction introduced for K3, K34, K33, K31              
+                                                                             
+      9. Determination of the intensities of K29 needs a PHA                 
+         correction on longer accumulation periods (several hours).          
+      10. Time periods when KET is not working nominally have been           
+          omitted:                                                           
+          eg. March event 1991                                               
+              peak fluxes in the June to August period 1991                  
+              Jovian encounter.                                              
+                                                                             
+      11. Data for the Jovian encounter are available on a 4 min             
+          bases.  Only a 0. order dead time correction is given. Data        
+          when the photomultiplier are off are available from the PI.        
+          For this Time period the coverage gives the accumulation           
+          times.                                                             
+                                                                             
+                Caution: Very high fluxes for KET  !!!!                      
+          HERE: COV == Accumulation time in seconds  !!!!!"                  
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      Some confidence level information provided in the Data Set             
+      Overview. For more information regarding the confidence                
+      level of this data set please contact:                                 
+        HORST KUNOW                                                          
+        Institut fur Reine und Angewandte Kernphysik                         
+        Universitat Kiel                                                     
+        Otto-Hahn-Platz 1                                                    
+        24118 Kiel                                                           
+        GERMANY                                                              
+        Phone:    49-431-880-2487                                            
+        SPAN/NSI: IFKKI::KUNOW"                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = "COSPIN-KET"                            
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "FERRANDOETAL1991"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "FERRANDOETAL1993A"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "FERRANDOETAL1993B"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "HEBERETAL1995"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KUNOWETAL1991"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "RASTOINETAL1993"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "SIMPSONETAL1992A"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "ZHANGETAL1993"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

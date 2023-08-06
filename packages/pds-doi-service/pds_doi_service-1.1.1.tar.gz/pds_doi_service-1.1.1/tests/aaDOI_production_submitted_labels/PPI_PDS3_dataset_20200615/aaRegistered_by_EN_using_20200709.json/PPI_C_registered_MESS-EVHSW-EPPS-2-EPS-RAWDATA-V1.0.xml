@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>EPPS UNCALIBRATED (EDR) DATA E/V/H V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-E/V/H/SW-EPPS-2-EPS-RAWDATA-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2008-07-15</publication_date>
+            <country>USA</country>
+            <description>Abstract ======== This data set consists of the MESSENGER
+                Energetic Particle and Plasma Spectrometer (EPPS) uncalibrated
+                observations, also known as EDRs. The system encompasses 2
+                instrument subsystems - the Energetic Particle Spectrometer (EPS)
+                and the Fast Imaging Plasma Spectrometer (FIPS). EPS covers the
+                energy range of 25 to &gt; 500 keV for electrons, and 10
+                keV/nucleon to ~3 MeV total energy for ions. FIPS covers the
+                energy/ charge range of &lt; 50 eV/q to 20 keV/q. There are nine
+                EDR data products, four of science and ancillary data for the EPS
+                and the FIPS, and one of engineering and status for the total
+            EPPS instrument.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-E%2FV%2FH%2FSW-EPPS-2-EPS-RAWDATA-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; CALIBRATION; EARTH; MERCURY; VENUS; SPECTROMETER; MESS; PLANET; EPPS; ENERGETIC PARTICLE AND PLASMA SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>GEORGE HO</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-e-v-h-sw-epps-2-eps-rawdata-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

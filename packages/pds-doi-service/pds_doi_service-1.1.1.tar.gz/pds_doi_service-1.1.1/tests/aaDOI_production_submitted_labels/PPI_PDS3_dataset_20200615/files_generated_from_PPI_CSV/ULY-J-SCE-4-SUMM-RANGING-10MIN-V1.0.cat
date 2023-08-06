@@ -1,0 +1,219 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+J. MAFI (PPI), 1998-05-18;                                                   
+Additional Keywords added by D. Kazden, 2009-09-16;                          
+Z's removed from time by D. Kazden, 2010-05-05;                              
+Updated CITATION_DESC and ABSTRACT_DESC, D. Kazden, 2020-01-31;"             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "ULY-J-SCE-4-SUMM-RANGING-10MIN-V1.0"   
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "ULYSSES JUPITER SOLAR CORONA EXPER.    
+                                        RANGING DATA 10 MIN AVG"             
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1992-02-05T21:44:24.000                 
+    STOP_TIME                      = 1992-02-09T18:44:26.000                 
+    DATA_SET_RELEASE_DATE          = 1998-05-01                              
+    PRODUCER_FULL_NAME             = "MICHAEL K. BIRD"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_TERSE_DESC            = "ULYSSES JUPITER SOLAR CORONA EXPER.    
+                                            RANGING DATA 10 MIN AVG"         
+   CITATION_DESC                   = "Bird, M. K., ULYSSES JUPITER SOLAR     
+                                     CORONA EXPER. RANGING DATA 10 MIN AVG,  
+                                     ULY-J-SCE-4-SUMM-RANGING-10MIN-V1.0,    
+                                     NASA Planetary Data System, 1998"       
+   ABSTRACT_DESC                   = "The Ulysses spacecraft was occulted by 
+                                      the Io Plasma Torus (IPT) during its   
+                                      Jupiter encounter on 8 February 1992.  
+                                      The Ulysses dual-frequency radio       
+                                      subsystem used by the Ulysses Solar    
+                                      Corona Experiment (SCE) was utilized   
+                                      to measure the electron content        
+                                      (column density) of the IPT. In the    
+                                      nominal mode for radio-sounding        
+                                      observations, both downlinks           
+                                      (S-band: f_s = 2.3 GHz X-band:         
+                                      f_x = 8.4 GHz) are phase coherent with 
+                                      the uplink (S-band: f_u = 2.1 GHz).    
+                                      The dual-frequency radio-sounding      
+                                      technique exploits the dispersive      
+                                      nature of ionized media on the         
+                                      propagation of the two downlinks. The  
+                                      tiny Doppler shift due to plasma       
+                                      moving in and out of the ray path is   
+                                      greater at S-band than at the higher   
+                                      frequency X-band."                     
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      The Ulysses spacecraft was occulted by the Io Plasma Torus             
+      (IPT) during its Jupiter encounter on 8 February 1992. The             
+      Ulysses dual-frequency radio subsystem used by the Ulysses             
+      Solar Corona Experiment (SCE) was utilized to measure the              
+      electron content (column density) of the IPT [BIRDETAL1992B].          
+      In the nominal mode for radio-sounding observations                    
+      [BIRDETAL1992A], both downlinks (S-band: f_s = 2.3 GHz;                
+      X-band: f_x = 8.4 GHz) are phase coherent with the uplink              
+      (S-band: f_u = 2.1 GHz). The dual-frequency radio-sounding             
+      technique exploits the dispersive nature of ionized media on           
+      the propagation of the two downlinks. The tiny Doppler shift           
+      due to plasma moving in and out of the ray path is greater at          
+      S-band than at the higher frequency X-band.                            
+                                                                             
+      The SCE data are obtained from the Radio Science Support group         
+      at JPL. There are basically two types of data: Ranging and             
+      Doppler (Frequency), recorded as a function of UT Ground               
+      Received Time. The raw data are delivered in special binary            
+      files called ATDFs (Archival Tracking Data Files), containing          
+      Ranging and Doppler data from the standard DSN tracking                
+      receivers. There are high-time resolution Doppler data from            
+      special radio science receivers (so-called 'open loop' data)           
+      as well. These are in files called ODRs (Original Data                 
+      Records).                                                              
+                                                                             
+      ATDFs are files of radiometric data produced by the Network            
+      Operations Control Center (NOCC) Navigation Subsystem (NAV).           
+      They are derived from Intermediate Data Records by NAV and             
+      contain all radiometric measurements received from the DSN             
+      station including signal levels (`AGC' = automatic gain                
+      control in dBm), antenna pointing angles, frequency (often             
+      referred to simply as `Doppler'), range, and residuals.                
+      Doppler data are often used to infer spacecraft radial motion          
+      relative to the tracking antenna. Data values in ATDFs are             
+      reported at rates no higher than 10 per second. For the                
+      Ulysses Jupiter encounter the received frequencies at S-Band           
+      and X-band were recorded at a sample time of one per second.           
+      Each ATDF data record contains 117 parameters, stored in               
+      records of 288 bytes. The ATDF is described in section                 
+      TRK-2-25 of the JPL Document 820-13 [DSN820-13].                       
+                                                                             
+      The ATDFs have been analyzed for the Jupiter encounter and a           
+      detailed report has been published [BIRDETAL1993]. Data                
+      files have been generated which contain the Ranging and                
+      Doppler data at various stages of processing. Stage #1 is              
+      generally just stripping the Ranging/Doppler data from the             
+      ATDFs. Stage #2 is to 'clean' the data files by weeding out            
+      obviously bad data. Stage #3 is to produce a 'final data               
+      set', a table of the measured data plus physically relevant            
+      quantities as function of time.                                        
+                                                                             
+      Data                                                                   
+      ====                                                                   
+      The following table gives an idea about the size and coverage          
+      of the ranging data set:                                               
+                                                                             
+      Ulysses SCE Ranging data at Jupiter:                                   
+                                                                             
+      Stage#     start        stop      ASCII size   gzip size               
+               doy:hh:mm    doy:hh:mm      (kB)        (kB)                  
+        1       36:15:54     41:14:44      116          17                   
+        2       36:20:30     40:18:44       88          13                   
+        3       36:21:44     40:18:44       22           4                   
+                                                                             
+      All stage #3 ranging data from the Ulysses Jupiter encounter           
+      have been provided to this archive in the ALLRANGE directory.          
+       No ranging data were taken during the Jupiter encounter pass          
+      at DSS 43 on February 8, 1992. Here are the first few lines            
+      of the ASCII table:                                                    
+                                                                             
+      set  no dss  doy:hh:mm:ss  difrng   econt                              
+        1   1  61   36:21:44:24       6      22                              
+        1   2  61   36:21:54:24      53     210                              
+        1   3  61   36:22: 4:24      16      62                              
+        1   4  61   36:22:14:25      38     150                              
+        1   5  61   36:22:44:24      67     266                              
+        1   6  61   36:23: 4:24      47     186                              
+        1   7  61   36:23:14:24      27     106                              
+        1   8  61   36:23:24:24      60     238                              
+        1   9  61   36:23:34:24      56     222                              
+                                                                             
+      where:                                                                 
+      set      = running number for each DSN tracking pass during            
+                 Jupiter encounter                                           
+      no       = running number for range measurement within each            
+                 tracking pass                                               
+      dss      = DSN station number                                          
+      doy      = Day of year in 1992                                         
+      hh:mm:ss = hours, minutes seconds (UT, ground received)                
+      difrng   = differential range delay in `range units' [DSN810-5]        
+      econt    = electron content in `hexems' [BIRDETAL1992B]"               
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+      Confidence Level Overview                                              
+      =========================                                              
+      difrng (RU) and econt (hexems) are given to the nearest                
+      respective unit. The estimated accuracy of a differential              
+      range measurement is of the order of 50 range units.                   
+                                                                             
+      For more information regarding the confidence level of this            
+      data set please contact:                                               
+          MICHAEL K. BIRD                                                    
+          Radioastronomisches Institut                                       
+          Universitat Bonn                                                   
+          Auf dem Hugel 71                                                   
+          53121 Bonn                                                         
+          GERMANY                                                            
+          Phone: 49-228-733651 or 49-228-733675  Fax: 49-228-733672          
+          Internet: mbird@astro.uni-bonn.de"                                 
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = ULY                                     
+    INSTRUMENT_ID                  = SCE                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "ULYSSES"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1992A"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1992B"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1993"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1994"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BIRDETAL1996"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DSN810-5"                              
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "DSN820-13"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "PAETZOLDETAL1992"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "PAETZOLDETAL1995"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "PAETZOLDETAL1996"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "WOO1996"                               
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "WOOETAL1995A"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "WOOETAL1995B"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

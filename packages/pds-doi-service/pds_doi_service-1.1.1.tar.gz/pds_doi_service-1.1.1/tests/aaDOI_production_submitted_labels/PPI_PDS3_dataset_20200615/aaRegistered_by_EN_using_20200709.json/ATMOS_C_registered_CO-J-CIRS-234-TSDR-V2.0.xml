@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CASSINI JUPITER CIRS TIME-SEQUENTIAL DATA RECORDS V2.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CO-J-CIRS-2/3/4-TSDR-V2.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2010-01-01</publication_date>
+            <country>USA</country>
+            <description>This data set comprises uncalibrated and calibrated data from the
+                Cassini Composite Infrared Spectrometer (CIRS) instrument. The
+                basic data is comprised of uncalibrated raw spectra, along with
+                along with pointing and geometry information, and housekeeping
+                information. Also included are calibrated power spectra, and
+            documentation.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CO-J-CIRS-2%2F3%2F4-TSDR-V2.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CASSINI ORBITER; SATURN; S RINGS; ATLAS; CALYPSO; DIONE; ENCELADUS; EPIMETHEUS; HELENE; HYPERION; IAPETUS; JANUS; MIMAS; PAN; PANDORA; PHOEBE; PROMETHEUS; RHEA; TELESTO; TETHYS; TITAN; INFRARED SPECTROMETER; CO; PLANET; RING; SATELLITE; CIRS; COMPOSITE INFRARED SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. CONOR A. NIXON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.co-j-cirs-2-3-4-tsdr-v2.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

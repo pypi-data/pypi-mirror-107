@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:phx_ra</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Phoenix Robotic Arm Data Set</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>Shaw, A.;Arvidson, R.; Robinson, M.;Bonitz, R.; Carsten, J.; Trebi-Ollennu, A.; Volpe, R.</author_list>
+            <editor_list>Guinness, E.; Slavney, S. </editor_list>
+            
+            <publication_year>2008</publication_year>
+            <description>The Phoenix Robotic Arm derived and test data set migrated from PDS3</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-06-21</modification_date>
+                <version_id>1.1</version_id>
+                <description>Added Miscellaneous collection</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2014-04-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Migration to PDS4</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2008-05-31T00:00:00Z</start_date_time>
+            <stop_date_time>2008-10-26T00:00:00Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>Phoenix</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.phoenix</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>Phoenix Robotic Arm</name>
+            <Observing_System_Component>
+                <name>Robotic Arm</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:instrument.ra__phx</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Phoenix Lander</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:instrument_host.phx</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>bundle_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>10.1029/2009JE003408</doi>
+            <reference_text>Arvidson, R.E., R. G. Bonitz, M. L. Robinson, J. L. 
+                Carsten, R. A. Volpe, A. Trebi-Ollennu, M. T. Mellon, P. C. Chu, K. R. 
+                Davis, J. J. Wilson, A. S. Shaw, R. N. Greenberger, K. L. Siebach, T. C. 
+                Stein, S. C. Cull, W. Goetz, R. V. Morris, D. W. Ming, H. U. Keller, M. T. 
+                Lemmon, H. C. Sizemore, and M. Mehta, Results from the Mars Phoenix Lander 
+                Robotic Arm experiment, J. Geophys. Res., 114, E00E02, doi:10.1029/2009JE003408, 
+                2009.</reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1029/2009JE003455</doi>
+            <reference_text>Shaw, A., R. E. Arvidson, R. Bonitz, J. Carsten, 
+                H. U. Keller, M. T. Lemmon, M. T. Mellon, M. Robinson, and A. Trebi-Ollennu,
+                Phoenix soil physical properties investigation, J. Geophys. Res., 
+                114, E00E05, doi:10.1029/2009JE003455, 2009.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+    </Bundle>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_ra:data_derived</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_ra:data_test</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_ra:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:phx_ra:miscellaneous</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_member_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:system_bundle:xml_schema</lid_reference>
+        <member_status>Secondary</member_status>
+        <reference_type>bundle_has_schema_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

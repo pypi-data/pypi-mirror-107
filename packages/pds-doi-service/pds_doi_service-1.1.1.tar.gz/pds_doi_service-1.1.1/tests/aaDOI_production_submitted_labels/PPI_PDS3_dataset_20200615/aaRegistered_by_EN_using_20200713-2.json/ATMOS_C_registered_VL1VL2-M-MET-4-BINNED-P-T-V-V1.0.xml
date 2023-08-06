@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VL1/VL2 MARS METEOROLOGY RESAMPLED DATA BINNED-P-T-V V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VL1/VL2-M-MET-4-BINNED-P-T-V-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1989-11-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains binned and splined data obtained from the
+                Viking Meteorology Instrument System (VMIS) through most of the
+                Viking Lander 2 mission and the early days of the Lander 1
+                mission. The data set consists of mean values of pressure,
+                temperature, and wind speed (zonal, meridional, and combined) and
+                relevant statistics and warning flags calculated for 25 bins of
+                equal duration per day. The effect of Lander interference on the
+                temperature measurements is also estimated. The data are
+                presented on a bin by bin basis for Lander 1 sol (Mars solar day
+                after landing) 1-45 and for Lander 2 sol 1-1050 (with the only
+                major gap occurring between sol 561 and 625). Failure of the
+                quadrant sensor on Lander 1 sol 45 (see HESS_ETAL_1977) precludes
+                unambiguous determination of wind direction without modification
+                to the analysis techniques and software used to generate this
+                data set (see HESS_ETAL_1977) therefore, this data set does not
+                include Lander 1 measurements made after sol 45. A data set which
+                has recovered a period of measurements made between Lander 1 sol
+                1 and 350 is available refer to PDS data set id
+            VL1-M-MET-4-BINNED-P-T-V-CORR-V1.0.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1%2FVL2-M-MET-4-BINNED-P-T-V-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING LANDER 1; VIKING LANDER 2; MARS; METEOROLOGY; VL1; VL2; PLANET; MET; VIKING METEOROLOGY INSTRUMENT SYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JAMES E. TILLMAN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vl1-vl2-m-met-4-binned-p-t-v-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

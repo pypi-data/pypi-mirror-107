@@ -1,0 +1,223 @@
+PDS_VERSION_ID                     = PDS3                                      
+                                                                              
+RECORD_TYPE                       = STREAM                                    
+LABEL_REVISION_NOTE               = "                                         
+          2017-06-26 JUNO:    LEBrown Revision #1 (Perijove, Orbits 1-2);     
+          2017-09-13 PDS:     JNMafi  Release #2 (Perijove, Orbits 3-4);      
+          2018-01-11 PDS:     JNMafi  Release #3 (Perijove, Orbits 5-6);      
+          2018-03-26 PDS:     JNMafi  Release #4 (Perijove, Orbits 7-8);      
+          2018-06-26 PDS:     JNMafi  Release #5 (Perijove, Orbits 9-10);     
+          2018-10-29 PDS:     JNMafi  Release #6 (Perijove, Orbits 11-12);    
+          2019-02-07 PDS:     JNMafi  Release #7 (Perijove, Orbits 13-14);    
+          2019-05-20 PDS:     JNMafi  Release #8 (Perijove, Orbits 15-16);    
+          2019-09-11 PDS:     JNMafi  Release #9 (Perijove, Orbits 17-18);    
+          2019-12-02 PDS:     JNMafi  Updated CITATION_DESC;                  
+          2019-12-20 PDS:     JNMafi  Release #10 (Perijove, Orbits 19-20);   
+          2020-02-03 PDS:     DKazden Updated DATA_SET_RELEASE_DATE;          
+          2020-04-03 PDS:     DKazden Release #11 (Perijove, Orbits 21-22);   
+                                     "                                        
+                                                                              
+OBJECT                            = DATA_SET                                  
+                                                                              
+  DATA_SET_ID                      = "JNO-J-JED-3-CDR-V1.0"                   
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "JNO J JED 3 CDR V1.0"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    DATA_OBJECT_TYPE               = TABLE                                    
+    START_TIME                     = 2016-07-06T22:04:14                      
+    STOP_TIME                      = 2019-09-13T23:59:58                      
+    DATA_SET_RELEASE_DATE          = 2020-04-08                               
+    PRODUCER_FULL_NAME             = "BARRY MAUK"                             
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    CITATION_DESC                  = "B. Mauk (APL), JEDI CALIBRATED          
+    (CDR) DATA JNO J JED 3 CDR V1.0, NASA Planetary Data System, 2020."       
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      The JUNO JEDI calibrated observations consist of energetic particle     
+      data collected by the JEDI instruments during Jupiter Science Orbit     
+      operations of the JUNO mission."                                        
+                                                                              
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+                                                                              
+    Abstract                                                                  
+    ========                                                                  
+      This data set consists of the JUNO JEDI (Jupiter Energetic-Particle     
+      Detector) calibrated observations, also known as CDRs. The system       
+      is made up of 3 instrument subsystems (pucks) aligned in three          
+      directions on the spinning JUNO spacecraft. The pucks each have 6 look  
+      directions (telescopes) with a time of flight (TOF) and a deposited     
+      energy detection (SSD) system.  In addition, the pulse height of the    
+      signal in the TOF system can be used for energy measurement. The        
+      instruments can be operated in a variety of modes, differing in the     
+      way they use and combine these measurements. More details are available 
+      in the INSTRUMENT.CAT file and the JEDI SIS.                            
+                                                                              
+      The CDRs are organized in files covering one day of spacecraft event    
+      time (SCET). There are potentially 10 different files per puck,         
+      corresponding to the available data gathering modes: HIERSESP,          
+      HIERSISP, HIERSTOFXER, HIERSTOFXPHR, LOERSESP, LOERSISP, LOERSTOFXER,   
+      LOERSTOFXPHR, NONPTOFXER, NONPTOFXPHR. Depending on how the pucks are   
+      operated, not all data types will be available for all pucks for any    
+      particular time range.                                                  
+                                                                              
+      All the measured quantities present in the uncalibrated data files      
+      (EDRs) are present here in three forms: counts per accumulation (the    
+      same numbers as in the EDRs), counts per second (this number may be     
+      corrected for instrument saturation and background), intensity (counts  
+      per second per steradian per cm2 per keV). Additional support           
+      quantities are also included for the convenience or enlightenment of    
+      the end user.                                                           
+"                                                                             
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+      The data set consists of calibrated observations, also known as         
+      CDRs.                                                                   
+                                                                              
+      For all the CDR products there is a detached PDS label file that        
+      describes the contents of one data file. Each label file will have      
+      the same base name as the data file it is describing, with the          
+      extension .LBL to denote a label file. The label file defines the       
+      start time and end of the observation, product creation time, and       
+      the structure of the ASSCI tables. Each data product                    
+      is identified within the PDS label by a STANDARD_DATA_PRODUCT_ID        
+      value, shown in parentheses in the table below.                         
+                                                                              
+                                                                              
+    Instrument Overview                                                       
+    ===================                                                       
+      The JEDI sensors consists of a 60-mm diameter, hockey puck-like         
+      cylinder, in which a start foil and stop foil, wrapped around           
+      opposite curved sides of the cylinder, constitute the TOF chamber.      
+      The detectors are arranged so that each detector senses the             
+      events within a given range of incidence angles. Each of the 6          
+      detector modules is composed of 4 pixels: large and small ion and       
+      large and small electron. See the INSTRUMENT.CAT file for more          
+      information.                                                            
+                                                                              
+    Calibration Overview                                                      
+    ====================                                                      
+      This data set is calibrated; it provides the instrument team's          
+      best available interpretation of the measured data at the time          
+      of release.  This understanding is evolving and it is expected          
+      that the calibration process will change and improve with subsequent    
+      releases.                                                               
+                                                                              
+                                                                              
+    Parameters                                                                
+    ==========                                                                
+      The timing parameters in the CDRs are identical to those in the EDRs.   
+      See JEDI_J_EDR_DS.CAT file for a short description or the JEDI SIS for  
+      more detailed information.                                              
+                                                                              
+      In addition to the timing parameters and the uncalibrated counts, and   
+      calibrated counts per second and intensity spectra, for each data       
+      record in the CDR, we include ephemeris attitude and pitch angle        
+      information for the convenience of the end user.  We also include a     
+      subset of the basic rate information so the end user can obtain an      
+      understanding of the level of activity in the instrument system as this 
+      will affect the instrument performance.                                 
+                                                                              
+      The additional quantities are, in brief:                                
+                                                                              
+      &#10094;Ephemeris, Attitude, and Pitch Block&#10095;:                                 
+                                                                              
+      Spacecraft Position - X, Y, and Z in the POS frame (POS = JSE for       
+                            observations at Jupiter).                         
+                                                                              
+      Planetary Position  - Latitude and Longitude in the LOC frame (LOC=     
+                            IAU_JUPITER for observations at Jupiter).         
+                                                                              
+      Look Direction      - Unit Vector X, Y, and Z of the 'look direction'   
+                            of the negative of the incident particle velocity 
+                            vector for each telescope.                        
+                                                                              
+      Pitch Angle (1 column per telescope = 6 columns) - The angle between    
+                            the incident particle velocity vector and the     
+                            local magnetic field.                             
+                                                                              
+      &#10094;Basic Rate Block&#10095; which of these values are present depends on the     
+                            data type, see JEDI SIS for details:              
+                                                                              
+      SSD0-SSD5           - Number of pulses on the Solid State Energy        
+                            detector for telescope number 0-5                 
+                                                                              
+      VEP (Valid Events Processed) - Number of events actually processed by   
+                            the flight software                               
+                                                                              
+      VEE (Valid Energy Events) - Total number of events in all SSD (Energy)  
+                            detectors.                                        
+                                                                              
+      Start0, Stop0       - Number of pulses on the end of the Start or Stop  
+                            anode nearest to look direction 0.                
+                                                                              
+      VTOFXE              - Number of valid TOFxE events counted.             
+                                                                              
+      VTOFXPH             - Number of valid TOFxPH events counted.            
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+      The JUNO JEDI CDR data set products are the same as described in        
+      JEDI_J_EDR_DS.CAT. "                                                    
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE           = "                                       
+                                                                              
+                                                                              
+   Confidence Level Overview                                                  
+   =========================                                                  
+     The JUNO JEDI CDR data are, at the present time, calibrated simply by    
+     multiplying by a factor, determined for each individual telescope and    
+     pixel, which captures the efficiency and geometric factor for that       
+     detector. The underlying counts per second rate has not been adjusted    
+     for background or instrument saturation effects. These are strictly      
+     preliminary calibrations at this time.                                   
+                                                                              
+   Review                                                                     
+   ======                                                                     
+     The JUNO JEDI CDR were reviewed internally by the JEDI team prior to     
+     release to the PDS. PDS also performed an external review of the         
+     JEDI EDR.                                                                
+                                                                              
+                                                                              
+   Data Coverage and Quality                                                  
+   =========================                                                  
+     Data reported are the calibrated data for the time period:               
+      2013-279T00:00:00 through 2014-104T23:59:59                             
+                                                                              
+   Limitations                                                                
+   ===========                                                                
+     The calibrations applied to the data both in terms of efficiency factors 
+     and energy descrimination are still preliminary. Instrument team         
+     calibration efforts are ongoing. "                                       
+                                                                              
+                                                                              
+ END_OBJECT                       = DATA_SET_INFORMATION                      
+                                                                              
+ OBJECT                           = DATA_SET_MISSION                          
+   MISSION_NAME                   = "JUNO"                                    
+ END_OBJECT                       = DATA_SET_MISSION                          
+                                                                              
+ OBJECT                           = DATA_SET_TARGET                           
+   TARGET_NAME                     = JUPITER                                  
+ END_OBJECT                       = DATA_SET_TARGET                           
+                                                                              
+ OBJECT                           = DATA_SET_HOST                             
+   INSTRUMENT_HOST_ID              = JNO                                      
+   INSTRUMENT_ID                   = JED                                      
+ END_OBJECT                       = DATA_SET_HOST                             
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+   REFERENCE_KEY_ID               = "MAUKETAL2013"                            
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+END_OBJECT                        = DATA_SET                                  
+                                                                              
+END

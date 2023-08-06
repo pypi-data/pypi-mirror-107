@@ -1,0 +1,171 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+    2006-07-26, B. Harris, minor updates for version 3 standards;            
+    2012-09-05, D. Kazden, minor updates, removed unnecessary keywords,      
+    added START_TIME and STOP_TIME;                                          
+    2020-01-31, D. Kazden, updated CITATION_DESC;"                           
+                                                                             
+OBJECT                    = DATA_SET                                         
+  DATA_SET_ID                   = "PVO-V-OETP-5-SOLAREUV-24HRAVG-V1.0"       
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "PVO VENUS ELECT TMP PROBE RESAMP       
+                                      SOLAR EUV 24 HR AVG VER 1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1978-12-05T00:00:00.000                 
+    STOP_TIME                      = 1992-01-18T23:59:59.999                 
+    DATA_OBJECT_TYPE               = TABLE                                   
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. ROBERT F. THEIS"                   
+    DETAILED_CATALOG_FLAG          = N                                       
+                                                                             
+DATA_SET_TERSE_DESC            = "                                           
+  The Solar EUV Daily Values File.  This file gives the magnitude of the     
+photoemission current from the radial probe, Ipe, (in units of 10-9 amps)."  
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+      The Solar EUV Daily Values File.  This file gives the magnitude of the 
+photoemission current from the radial probe, Ipe, (in units of 10-9 amps).   
+Ipe dominates the ion current measurements outside the Venusian              
+ionosphere, making possible the serendipitous measurement of the total       
+solar EUV flux.  The latter is an important parameter because solar EUV is   
+the main source of ionization and heating for the Venusian thermosphere      
+and ionosphere."                                                             
+                                                                             
+    CITATION_DESC                  = "Theis, R. F., PVO VENUS ELECT TMP      
+      PROBE RESAMP SOLAR EUV 24 HR AVG VER 1.0,                              
+      PVO-V-OETP-4-SOLAREUV-24HRAVG-V1.0, NASA Planetary Data System, 1993"  
+                                                                             
+    DATA_SET_DESC                  = "                                       
+The Solar EUV Daily Values File.  This file gives the magnitude of the       
+photoemission current from the radial probe, Ipe, (in units of 10-9 amps).   
+Ipe dominates the ion current measurements outside the Venusian              
+ionosphere, making possible the serendipitous measurement of the total       
+solar EUV flux.  The latter is an important parameter because solar EUV is   
+the main source of ionization and heating for the Venusian thermosphere      
+and ionosphere.  The method is discussed by Brace et al., (1988).            
+                                                                             
+The pe current measurements are taken just before PVO leaves the solar       
+wind and enters the magnetosheath (usually an hour or two before             
+periapsis).  This approach provides the solar EUV flux that the Venus        
+thermosphere received just before the periapsis measurements.  The           
+maximum value of the spin modulated Ipe is taken because it corresponds      
+to a probe orientation perpendicular to the Sun when the maximum area        
+of the probe is exposed to the Sun.  Ipe is proportional to the intensity of 
+the ionizing component of solar radiation, so it is possible to derive the   
+total solar EUV (and far UV) flux.  Ly alpha contributes approximately half  
+of the Ipe while nearly all of the rest is produced by radiation between 200 
+A and 1200 A which ionizes, excites and dissociates thermospheric            
+neutrals.                                                                    
+                                                                             
+This file contains the daily average value of the photoelectron emission     
+current, Ipe, from the radial probe, usually measured about 1 hr before      
+periapsis.  The Ipe values are given in units of 10-9 amperes.  The data     
+cover the interval from 1979 through early 1992 when periapsis got low       
+enough to cause photoelectric yield changes that have not been fully         
+resolved and corrected for appropriately. The data provided cover orbits     
+1 to 4800. After orbit 4800, when PVO began to enter the atmosphere, the     
+Langmuir probe could no longer be kept clean, and as a result the yield      
+changed. For further details, contact Walt Hoegy at GSFC code 914,           
+(301) 286-3837 or email hoegy@mite.gsfc.nasa.gov.                            
+                                                                             
+The daily Ipe measurements can be converted into the total solar EUV flux    
+(VEUV) using the following the equation given by Brace et al., (1988),       
+                                                                             
+                       VEUV = 1.53 x 1011 Ipe   (photons/cm2/s)              
+                                                                             
+VEUV represents the total solar flux, weighted by the known wavelength-      
+dependent yield of the collector.  A standard Hinteregger solar EUV/UV       
+spectrum is assumed to derive the coefficient, but the measurement is        
+relatively insensitive to this assumption over the typical range of          
+variations in the solar spectrum.                                            
+                                                                             
+The VEUV data have been useful in the study of solar EUV effects on the ion  
+production and electron heating rates in the Venus ionosphere.  VEUV         
+variations have been correlated with changes in the density and              
+temperature of the ionosphere (Elphic et al., 1984), the height of the bow   
+shock (Alexander et al., 1985, Russell et al., 1988), and changes in the     
+density and temperature of the thermosphere (Mahajan et al., 1990).          
+                                                                             
+  OBJECT                         = DSPARMINFO                                
+    SAMPLING_PARAMETER_NAME        = N/A                                     
+    SAMPLING_PARAMETER_RESOLUTION  = N/A                                     
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                     
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                     
+    SAMPLING_PARAMETER_INTERVAL    = N/A                                     
+    MINIMUM_AVAILABLE_SAMPLING_INT = N/A                                     
+    SAMPLING_PARAMETER_UNIT        = N/A                                     
+    DATA_SET_PARAMETER_NAME        = PHOTOELECTRON CURRENT                   
+    NOISE_LEVEL                    = UNK                                     
+    DATA_SET_PARAMETER_UNIT        = AMPERES / 10**9                         
+  END_OBJECT                     = DSPARMINFO                                
+"                                                                            
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+The Ipe measurements themselves are made with an absolute accuracy of 1      
+to 2%, depending upon where the current falls within the decade range of     
+the ranging electrometer.  The absolute accuracy of the measurements is      
+also limited by our knowledge of the photoelectric yield of the radial       
+probe collector, and our assumption that a Hinteregger standard EUV/UV       
+spectrum is correct.  We estimate a 10% absolute accuracy in the total EUV   
+flux and a 1 to 2% relative accuracy or precision provided by the accuracy   
+of the current measurements themselves.  See Brace et al.(1988) for          
+details of the method."                                                      
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = OETP                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                     = "PIONEER VENUS"                       
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+   REFERENCE_KEY_ID               = ALEXANDERETAL1985                        
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = BRACEETAL1987                            
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = BRACEETAL1988                            
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = BRACEETAL1990                            
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = ELPHICETAL1984                           
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = KREHBIELETAL1980                         
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = RUSSELLETAL1988                          
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = MAHAJANETAL1990                          
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = THEISETAL1980                            
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+  OBJECT                          = DATA_SET_REFERENCE_INFORMATION           
+      REFERENCE_KEY_ID            = THEISETAL1984                            
+  END_OBJECT                      = DATA_SET_REFERENCE_INFORMATION           
+                                                                             
+END_OBJECT                        = DATA_SET                                 
+END

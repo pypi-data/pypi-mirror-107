@@ -1,0 +1,352 @@
+PDS_VERSION_ID                 = PDS3                                          
+RECORD_TYPE                   = STREAM                                        
+LABEL_REVISION_NOTE           = "                                             
+    2013-03-21, J. D. Furman, initial draft;                                  
+    2014-01-21, D. Kazden (PPI), minor edits for validation;                  
+    2014-02-19, D. Kazden (PPI), updated STOP_TIME;"                          
+                                                                              
+OBJECT                        = DATA_SET                                      
+  DATA_SET_ID                 = "CO-E/J/S/SW-CAPS-5-DDR-ELE-MOMENTS-V1.0"     
+                                                                              
+  OBJECT                      = DATA_SET_INFORMATION                          
+    DATA_SET_NAME             = "                                             
+         CASSINI ORBITER SAT/SW CAPS DERIVED ELECTRON MOMENTS V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                = 1999-004T00:00:00                             
+    STOP_TIME                 = 2012-154T06:12:17                             
+    DATA_SET_RELEASE_DATE     = 2013-077                                      
+    PRODUCER_FULL_NAME        = "JUDITH D. FURMAN"                            
+    DETAILED_CATALOG_FLAG     = N                                             
+    DATA_OBJECT_TYPE          = "TABLE"                                       
+                                                                              
+    CITATION_DESC             = "                                             
+     Waite, J.H., Furman, J.D.,                                               
+     CASSINI ORBITER SAT/SW CAPS DERIVED ELECTRON MOMENTS V1.0,               
+     CO-S/SW-CAPS-5-DDR-ELE-MOMENTS-V1.0,                                     
+     NASA Planetary Data System, 2013."                                       
+                                                                              
+    DATA_SET_TERSE_DESC       = "This data set consists of all of the         
+     electron moments generated from the Cassini Plasma Spectrometer (CAPS)   
+     electron spectrometer uncalibrated data."                                
+                                                                              
+    ABSTRACT_DESC             = "                                             
+     This data set consists of all of the electron moments data generated     
+     from the Cassini Plasma Spectrometer (CAPS) electron spectrometer        
+     uncalibrated data.                                                       
+                                                                              
+     The data set contains the derived electron moments data as follows:      
+     Electron Moments (ELS_3DMOMT)                                            
+        Density, Temperature, Signal to Noise, spacecraft potential,          
+        Spaacecraft Charge State, Penetrating Radiation info                  
+        Potentially contains data with Penetrating Radiation correction       
+                                                                              
+     The uncalibrated data were acquired in a mix of CAPS operating modes     
+     beginning with the first instrument checkout in January 1999 and         
+     containing throughout the Cassini Tour and through the end of prime      
+     mission.  The data set covers the time period from 1999-004T03:07:47     
+     UT until end of prime mission (July 2008).  In addition, it will cover   
+     data received during extended missions.  Sampling rates were variable    
+     and depended upon the downlink capabilities and other activities         
+     on-board.                                                                
+                                                                              
+     For times when CAPS is not producing data due to being turned off or     
+     due to communication issues, the data set will not contain data.         
+                                                                              
+     Additionally, there will be no data during times when the calculations   
+     are not possible."                                                       
+                                                                              
+    DATA_SET_DESC             = "                                             
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+     This data set consists of all of the electron moments data generated     
+     from the Cassini Plasma Spectrometer (CAPS) electron spectrometer        
+     uncalibrated data.                                                       
+                                                                              
+     The data set contains the derived electron moments data as follows:      
+     Electron Moments (ELS_3DMOMT)                                            
+        Density, Temperature, Signal to Noise, spacecraft potential,          
+        Spaacecraft Charge State, Penetrating Radiation info                  
+        Potentially contains data with Penetrating Radiation correction       
+                                                                              
+     The uncalibrated data were acquired in a mix of CAPS operating modes     
+     beginning with the first instrument checkout in January 1999 and         
+     containing throughout the Cassini Tour and through the end of prime      
+     mission.  The data set covers the time period from 1999-004T03:07:47     
+     UT until end of prime mission (July 2008).  In addition, it will cover   
+     data received during extended missions.  Sampling rates were variable    
+     and depended upon the downlink capabilities and other activities         
+     on-board.                                                                
+                                                                              
+     For times when CAPS is not producing data due to being turned off or     
+     due to communication issues, the data set will not contain data.         
+                                                                              
+     Additionally, there will be no data during times when the calculations   
+     are not possible.                                                        
+                                                                              
+  Electron Moment File Discussion                                             
+  ==========                                                                  
+                                                                              
+     First, some notes on the code itself - it assumes a zero bulk flow       
+     velocity, due to the limited view of the ELS.  Zero velocity in assumed  
+     in the spacecraft frame.                                                 
+                                                                              
+     In plasmas, the zeroth moment gives the density, the first moment gives  
+     the bulk flow velocity vector, and the second moment gives a pressure    
+     tensor or a temperature tensor.  Each moment in turn requires the        
+     previous moments, i.e. the velocity moment requires density and the      
+     pressure moment requires density and velocity.  But as we don't have a 3d
+     sensor (like Cluster), we have to assume the plasma is isotropic, i.e.   
+     what you see in one direction you also see in the opposite direction.    
+     So, any velocity vector that you measure in one direction will be exactly
+     cancelled by the velocity vector in the opposite direction.  So in our   
+     case the bulk flow velocity will be zero.  In this case the              
+     pressure/temperature tensor will become a scalar.                        
+                                                                              
+     Secondly, the calibrated numbers.  We have to convert the data into phase
+     space density so we can subtract off the photoelectrons properly.  This  
+     can be summarized as follows:                                            
+                                                                              
+     The ELS accumulation time is 0.0234375s.  So:                            
+                                                                              
+          data in counts/sec = data recorded / accumulation time              
+                                                                              
+     after taking into account telemetry periods where several accumulation   
+     periods were summed or averaged.                                         
+                                                                              
+     To get the higher calibrated units, which are anode and energy dependent:
+                                                                              
+          data in DEF = data in counts/sec / geometric factor                 
+                                                                              
+          data in DNF = data in DEF / (energy * electron charge)              
+                                                                              
+          data in PSD = (data in DEF * electron mass squared) /               
+                        (2 * (energy * electron charge) squared)              
+                                                                              
+                                                                              
+     The geometric factor (with efficiency rolled in) can be found in the     
+     CALIB directory.  The units on geometric factor are str m^2 eV/eV per    
+     anode. The updated file is always on the ELS managed web site:           
+     http://www.mssl.ucl.ac.uk/~lkg/ELS_calibrations/geometric_factor.html    
+     For more information, the ELS calibration paper talks in depth about the 
+     geometric factor. [LEWISETAL2010]                                        
+                                                                              
+     Background subtraction comes from analysis of data from 15th Sep 06,     
+     14th Jan 07 and 17th Jun 07, which assigns background levels per anode   
+     based on actuator position.  The analysis was published in 2009 in a     
+     paper by Arridge et al [ARRIDGEETAL2009].                                
+                                                                              
+     Here's a summary of what the code does.                                  
+                                                                              
+     Read in data, average by A-cycle (and A-cycle is a 32 second instrument  
+     cycle).                                                                  
+     Per A-cycle:                                                             
+       Subtract background, taking the actuator position from the mid-point   
+           of the A-cycle.                                                    
+       Convert data to PSD (phase space density), remove photoelectrons.      
+       Remove spacecraft potential (also taken from mid-point of the          
+           A-cycle) from instrument energy array                              
+       Get the radial cell limits for each energy bin in m/s from the         
+           spacecraft-potential-subtracted energy array                       
+       For each bin, density = 4pi/3 * data * (top limit velocity ^3 -        
+           bottom limit velocity ^3)                                          
+       Sum all bin densities to get total density.                            
+       Calculate temperature constant t_const =                               
+           (4 * mass_electron * pi) / (15 * density * Boltzmann's constant)   
+       For each bin, temperature = t_const * data * (top limit velocity ^5 -  
+           bottom limit velocity ^5)                                          
+       Sum all bin temperatures to get total temperature.                     
+       Convert temperature from Kelvin to eV with                             
+           temperature = temperature * 8.61752d-5                             
+                                                                              
+     Then get a quality factor by:                                            
+       Get peak energy of a Maxwellian from the actual density and            
+           temperature from the moments calculated. Calculate the             
+           theoretical peak energy that a Maxwellian would have with the      
+           temperature from the calculated moments (identically equal to      
+           TWICE the temperature in energy units):                            
+           kbt = temperature * charge_e                                       
+       And work out the mid-energy of the bin that comes in (energy), and     
+           the geometric factor at that energy (geom)                         
+       Get peak phase space density of same:                                  
+           peak_psd = density*SQRT((mass_e/(2*!PI*kbt))^3)*EXP(-1)            
+       Get the peak count rate from that lot:                                 
+           peak_cr=peak_psd*2(energy*charge_e)^2*geom/(mass_e^2)              
+       Get the Poissonian error on the peak count rate:                       
+           std_dev_cr=SQRT(peak_cr/accutime)                                  
+       Roll them into a quality factor:                                       
+           quality_factor=(peak_cr-42.7)/std_dev_cr                           
+     As a note, 42.7 Hz is the one count level.                               
+                                                                              
+                                                                              
+  Data                                                                        
+  ====                                                                        
+                                                                              
+    The data are stored in multiple data files and have been organized        
+    in folders, first by higher order data type and then by year.  Each file  
+    contains a maximum of 24 hours of data.  Note that data is included in    
+    the file based on the start time, and not the end time of the data.       
+    Format of the data files can be found in the CAPS instrument archive      
+    specification [FURMANETAL2013].  The format can also be found in the      
+    .LBL files in the FM/HIGHERORDER/ELEMOMT/YYYY specific directory,         
+    co-located with the data.                                                 
+                                                                              
+  Ancillary Data                                                              
+  ==============                                                              
+                                                                              
+    Ancillary data can be found in the ANC data file provided with the        
+    CAPS UNCALIBRATED data set.                                               
+                                                                              
+  References                                                                  
+  ========                                                                    
+    [FURMANETAL2005] CAPS standard data products and archive volume           
+      software interface specification, Version 1.9, JPL SIS ID:              
+      IO-AR-017, Southwest Research Institute, San Antonio, TX 78250,         
+      2005.                                                                   
+                                                                              
+    [ARRIDGEETAL2009] The effect of spacecraft radiation sources on           
+      electron moments from the Cassini CAPS electron spectrometer,           
+      Planetary and Space Science, 57, 854-869,                               
+      doi:10.1016/j.pss.2009.02.011, 2009.                                    
+                                                                              
+    [GURNETTETAL2004] The Cassini Radio and Plasma Wave Investigation,        
+      Space Sci. Rev. 114, 395-463, 2004.                                     
+                                                                              
+    [LEWISETAL2008] Derivation of density and temperature from the Cassini    
+      Huygens CAPS electron spectrometer, Planetary and Space Science, 56,    
+      901-912, doi: 10.1016/j.pss.2007.12.017, 2008.                          
+                                                                              
+    [LEWISETAL2010] The calibration of the Cassini-Huygens CAPS Electron      
+      Spectrometer, Plan. and Space Sci., 58, 427?436,                        
+      doi:10.1016/j.pss.2009.11.008, 2010.                                    
+                                                                              
+    [THOMSENETAL2005] Numerical moments computation for CAPS/IMS, Los         
+      Alamos National Laboratory Report LA-UR-05-1542, 2005.                  
+                                                                              
+    [THOMSENETAL2010] Survey of ion plasma parameters in Saturn's             
+      magnetosphere, J. Geophys. Res., 115, A10220,                           
+      doi:10.1029/2010JA015267, 2010.                                         
+                                                                              
+    [WILSONETAL2012] PDS User's Guide for Cassini Plasma Spectrometer         
+      (CAPS), 2012.                                                           
+                                                                              
+    [YOUNGETAL2004] Cassini Plasma Spectrometer Investigation,                
+      Space Sci. Rev. 114, 1-112, 2004."                                      
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE           = "                                       
+                                                                              
+  Review                                                                      
+  ======                                                                      
+    These data have been reviewed by the instrument team and are of the       
+    highest quality that can be generated at this time. Science results       
+    based on these data have been published in several journals (Science,     
+    Nature, JGR, etc.). After submission to the PDS, these data will be       
+    approved through the peer review process.                                 
+                                                                              
+  Data Coverage and Quality                                                   
+  =========================                                                   
+                                                                              
+    Gaps                                                                      
+    ----                                                                      
+      There are many gaps in the CAPS data stream and there are many          
+      different sources for these gaps.  Sources of gaps are as follows:      
+          a. telemetry outages                                                
+          b. data policing violations (CAPS data volume higher than           
+             allocated)                                                       
+          c. incorrect spacecraft data management commanding                  
+          d. telemetry commanding during Cruise                               
+          e. instrument anomalies                                             
+          f. instrument modes which don't return all data products            
+          g. planned instrument power-off and/or sleep periods                
+          h. instrument off due to bus imbalance/short issues                 
+      When there is no data for a time period, one of the above sources       
+      is the reason behind the gap.  There is no indicator to which of        
+      the sources is responsible for the gap in data coverage.                
+                                                                              
+    Poor Data                                                                 
+    ---------                                                                 
+      When the code generating electron moments and spacecraft potential      
+      generates data that is outside the expected minimum or maximum, the     
+      data is replaced with fill values.  Hence, some time periods may appear 
+      to have data, but many of records have been filled.  The assumption is  
+      that the code is working, but enviormental effects do not lend to       
+      correct data.                                                           
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+      The main limitation for the Electron moments and spacecraft potential   
+      files is when the code generates data outside the minimum and maximum   
+      values.  This limitation will be addressed by the team with further use 
+      of the data."                                                           
+                                                                              
+  END_OBJECT                  = DATA_SET_INFORMATION                          
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = "EARTH"                                       
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = "JUPITER"                                     
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = "SATURN"                                      
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = "SOLAR WIND"                                  
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_HOST                                 
+    INSTRUMENT_HOST_ID        = CO                                            
+    INSTRUMENT_ID             = CAPS                                          
+  END_OBJECT                  = DATA_SET_HOST                                 
+                                                                              
+  OBJECT                      = DATA_SET_MISSION                              
+    MISSION_NAME              = "                                             
+      CASSINI-HUYGENS MISSION TO SATURN AND TITAN"                            
+  END_OBJECT                  = DATA_SET_MISSION                              
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "YOUNGETAL2004"                               
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "FURMANETAL2005"                              
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "FURMANETAL2013"                              
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "ARRIDGEETAL2009"                             
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "THOMSENETAL2005"                             
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "THOMSENETAL2010"                             
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "LEWISETAL2008"                               
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "LEWISETAL2010"                               
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "GURNETTETAL2004"                             
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "WILSONETAL2012"                              
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+END_OBJECT                    = DATA_SET                                      
+END

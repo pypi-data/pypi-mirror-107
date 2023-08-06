@@ -1,0 +1,263 @@
+PDS_VERSION_ID                     = PDS3                                      
+LABEL_REVISION_NOTE               = "Received at PPI from Richard Simpson,    
+                                     1998-12-03;                              
+                                     revised by Mark Sharlow, 2000-01-14;     
+                                     Minor revisions to meet 3.8 standards,   
+                                     D. Kazden, 2012-07-16;                   
+                                     Removed ARCHIVE_STATUS keyword,          
+                                     D. Kazden, 2018-08-03;"                  
+                                                                              
+RECORD_TYPE                           = STREAM                                
+                                                                              
+                                                                              
+OBJECT                                = DATA_SET                              
+                                                                              
+  DATA_SET_ID                   = "MGN-SS-RSS-1-ODR-OPENLOOP-SW-SCINT-V1.0"   
+                                                                              
+  OBJECT                              = DATA_SET_INFORMATION                  
+    DATA_SET_NAME                     = "MAGELLAN SOLAR CORONA                
+                                         AND FARADAY ROTATION V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG    = "N"                                   
+    DATA_OBJECT_TYPE                  = TABLE                                 
+    START_TIME                        = 1992-01-17T09:02:08.000               
+  STOP_TIME                           = 1992-08-14T06:30:39.500               
+  DATA_SET_RELEASE_DATE               = 1998-12-31                            
+  PRODUCER_FULL_NAME                  = "PLANETARY DATA SYSTEM PLANETARY      
+                                         PLASMA INTERACTIONS NODE"            
+  DETAILED_CATALOG_FLAG               = "N"                                   
+    ABSTRACT_DESC                     = "                                     
+          This data set contains raw and partially processed data from        
+      observations of Magellan radio transmissions while the signal           
+      was passing through the solar corona.  Scintillations on the            
+      signal can be related to structure and motion of the coronal            
+      material [WOO1993]; polarization of the signal can be used to           
+      infer magnetic field within the plasma.                                 
+                                                                              
+      Data were acquired using stations of the NASA Deep Space Network        
+      (DSN).  The Magellan spacecraft transmitted signals that were           
+      100 percent linearly polarized at 13 cm and right-elliptically          
+      polarized at 3.6 cm.  During summer 1992, when Magellan was in          
+      solar superior conjunction, the spacecraft came within 0.6 solar        
+      radii of the Sun's center when viewed from Earth."                      
+                                                                              
+    CITATION_DESC                     = "                                     
+     ,                                                                        
+      MAGELLAN SOLAR CORONA AND FARADAY ROTATION V1.0,                        
+      MGN-SS-RSS-1-ODR-OPENLOOP-SW-SCINT-V1.0, NASA Planetary Data System,    
+      1998."                                                                  
+                                                                              
+    DATA_SET_TERSE_DESC               = "                                     
+          This data set contains raw and partially processed data from        
+      observations of Magellan radio transmissions while the signal           
+      was passing through the solar corona."                                  
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+  DATA_SET_DESC                       = "                                     
+    Data Set Overview                                                         
+    =================                                                         
+      This data set contains raw and partially processed data from            
+      observations of Magellan radio transmissions while the signal           
+      was passing through the solar corona.  Scintillations on the            
+      signal can be related to structure and motion of the coronal            
+      material [WOO1993]; polarization of the signal can be used to           
+      infer magnetic field within the plasma.                                 
+                                                                              
+    Data were acquired using stations of the NASA Deep Space Network          
+    (DSN).  The Magellan spacecraft transmitted signals that were             
+    100 percent linearly polarized at 13 cm and right-elliptically            
+    polarized at 3.6 cm.  During summer 1992, when Magellan was in            
+    solar superior conjunction, the spacecraft came within 0.6 solar          
+    radii of the Sun's center when viewed from Earth.                         
+                                                                              
+    Included in this data set are over 1000 files of raw samples              
+    acquired using DSN open-loop receivers and recorders, often               
+    in two orthogonal circular polarizations at both wavelengths.             
+    The data set spans several months, centered on the superior               
+    conjunction date of 1992-06-13.                                           
+                                                                              
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Each open-loop data file (data type ODR) contains a header                
+    followed by several thousand 8-bit sample values from 1-4                 
+    receiver output channels.  The header gives the time of the               
+    first sample, the antenna through which the data were collected,          
+    channel assignments, the local oscillator frequency of the                
+    receiver, rms values of each receiver output, status and                  
+    condition flags, and other data useful for interpreting the               
+    receiver samples.                                                         
+                                                                              
+    The samples were obtained coherently from one or more of the              
+    following receiving systems:                                              
+            X-RCP   3.6-cm right circularly polarized                         
+            S-RCP   13-cm right circularly polarized                          
+            X-LCP   3.6-cm left circularly polarized                          
+            S-LCP   13-cm left circularly polarized                           
+    Each 8-bit sample represents the band-limited voltage output of           
+    one of the receivers above; individual samples were written to            
+    the data file, usually in the order given above.                          
+                                                                              
+    Samples could be collected at rates varying from 100 to 50000             
+    per second from each receiver.  The number of samples in each             
+    record varied depending on the sampling rate and number of                
+    channels being collected.                                                 
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+                                                                              
+    Samples from parallel analog-to-digital converters were stored            
+    in buffers until the correct number had been accumulated.                 
+    Header information was accumulated separately.  When the sample           
+    buffer was filled, the samples were combined with the header              
+    data and the record was written to tape.                                  
+                                                                              
+    RMS values of receiver outputs were included in the header.               
+    There was no other processing of the data.                                
+                                                                              
+                                                                              
+    Data                                                                      
+    ====                                                                      
+      ODR files have names of the form  ydddhhmm.ODR  where  y  is the        
+      least significant digit of the year,  ddd  is the 3-digit day-          
+      of-year,  hh  is the hour, and  mm  is the minute on which data         
+      acquisition began.  Each ODR file is accompanied by a detached          
+      PDS label with name  ydddhhmm.LBL.  Each label fully describes          
+      the format and content of the corresponding data file.  There           
+      are 1035 ODR files in this data set.                                    
+                                                                              
+                                                                              
+  Ancillary Data                                                              
+  ==============                                                              
+                                                                              
+    None.                                                                     
+                                                                              
+                                                                              
+  Coordinate System                                                           
+  =================                                                           
+                                                                              
+    Not applicable.                                                           
+                                                                              
+                                                                              
+  Software                                                                    
+  ========                                                                    
+                                                                              
+    Software for parsing, reducing, and analyzing data such as these          
+    has been developed at the Jet Propulsion Laboratory, Stanford             
+    University, and elsewhere.  Because parsing must be done at the           
+    bit level, its implementation may be very sensitive to platform           
+    and operating system.  No parsing software has been written and           
+    tested on a variety of platforms, so none has been included with          
+    the archival data set.  Users are referred to PDS labels for              
+    detailed information on file formats.                                     
+                                                                              
+                                                                              
+  Media/Format                                                                
+  ============                                                                
+                                                                              
+    The archival data set is written on DVD-R media.  Each DVD-R              
+    volume conforms to ISO 9660 standards."                                   
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE             = "                                     
+                                                                              
+    Overview                                                                  
+    ========                                                                  
+      This collection of 1035 ODR data files spans the time period            
+      from 1992/017-09:02:00 through 1992/227-06:31:00.  Solar                
+      conjunction was on 1992/165.                                            
+                                                                              
+                                                                              
+    Review                                                                    
+    ======                                                                    
+      This archival data set was distributed for peer review prior to         
+      its acceptance by the Planetary Data System (PDS).  The review          
+      was conducted in accordance with PDS procedures.                        
+                                                                              
+      Prior to creation of the final version of the archival data set,        
+      the archive was distributed on CD-WO volumes for preliminary            
+      review.  These included data files, PDS labels, and most                
+      documentation.                                                          
+                                                                              
+                                                                              
+  Data Coverage and Quality                                                   
+  =========================                                                   
+                                                                              
+    The data extend from five months before the 1992 Magellan                 
+    solar superior conjunction (1992-06-13) to two months after.              
+    Data quality is highly variable with the best data collected              
+    using 70-m DSN antennas closest to solar conjunction.                     
+                                                                              
+    Data most useful for Faraday Rotation analysis were collected             
+    at S- and X-band using dual orthogonally polarized antennas.              
+    This configuration is only possible when using 70-m DSN                   
+    antennas.  The following table shows dates, times, and antennas           
+    when 70-m antennas were used close to solar conjunction.                  
+                                                                              
+       Year/Day-of-Year  Antenna   Start Time (UTC)  Stop Time (UTC)          
+       ----------------  -------   ----------------  ---------------          
+           1992/158         43           02:30             03:39              
+           1992/158         43           04:01             05:55              
+           1992/162         14           13:30             15:11              
+           1992/162         14           15:35             17:30              
+           1992/164         63           12:53             17:53              
+           1992/164         63           17:53             18:50              
+           1992/164         14           19:14             19:33              
+           1992/164         14           19:44             22:35              
+           1992/166         63           05:42             07:11              
+           1992/166         63           07:28             15:30              
+           1992/168         63           05:34             09:46              
+           1992/173         14           13:58             15:09              
+           1992/173         14           15:35             16:30              
+                                                                              
+    Approximately one file in every 15 has at least one header                
+    record with an unexpected (or empty) field.  Location of these            
+    anomalous records varied but included fields where date, time,            
+    or spacecraft number was expected.                                        
+                                                                              
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+                                                                              
+    Some or all of the observations recorded in this data set may             
+    have been collected while the spacecraft radio system was in              
+    two-way tracking mode.  That is, the signal frequency                     
+    transmitted by the spacecraft was referenced to the frequency             
+    of a signal it received simultaneously from the ground.  For              
+    interpretation, the effects of the solar plasma must be                   
+    considered on both the 'uplink' and 'downlink' portions of the            
+    path.                                                                     
+                                                                              
+    During some observations, the reference signal transmitted from           
+    the ground may have been 'ramped' -- that is, the frequency of            
+    the 'uplink' signal was a linear function of time.  Coefficients          
+    of the linear function are saved in the Archival Tracking Data            
+    File, but those files are not included in this archive."                  
+                                                                              
+                                                                              
+  END_OBJECT                        = DATA_SET_INFORMATION                    
+                                                                              
+  OBJECT                            = DATA_SET_TARGET                         
+    TARGET_NAME                       = SUN                                   
+  END_OBJECT                        = DATA_SET_TARGET                         
+                                                                              
+  OBJECT                            = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID                = MGN                                   
+    INSTRUMENT_ID                     = RSS                                   
+  END_OBJECT                        = DATA_SET_HOST                           
+                                                                              
+ OBJECT                           = DATA_SET_MISSION                          
+  MISSION_NAME                    = "MAGELLAN"                                
+ END_OBJECT                       = DATA_SET_MISSION                          
+                                                                              
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION            
+  REFERENCE_KEY_ID                = "WOO1993"                                 
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+END_OBJECT                        = DATA_SET                                  
+                                                                              
+END

@@ -1,0 +1,129 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-08-31, RMONARREZ, received by ftp;                                     
+  1992-09-14, EFRIED;                                                         
+  1992-09-18, EFRIED,                                                         
+                updated Data Set templates according to new std.              
+                Data Set Template -&#10095; Spacecraft Data Set Template             
+                event_start_time, event_stop_time -&#10095; start_time, stop_time;   
+  1992-09-22, EFRIED,                                                         
+          Revised DATA_SET_ID and DATA_SET_NAME;                              
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-25, D. Kazden, removed unnecessary keywords, added ABSTRACT_DESC,   
+          CITATION_DESC and DATA_SET_TERSE_DESC;                              
+  2011-08-09, D. Kazden, changed DATA_OBJECT_TYPE from TIME_SERIES;           
+  2012-02-06, D. Kazden, updated REFERENCE_KEY_IDs;                           
+  2020-03-09, D. Kazden, updated CITATION_DESC;"                              
+                                                                              
+OBJECT                         = DATA_SET                                     
+  DATA_SET_ID                    = "VG2-U-PWS-4-SUMM-SA-48SEC-V1.0"           
+                                                                              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "VG2 URA PWS RESAMPLED SUMMARY           
+                                      SPECTRUM ANALYZER 48SEC V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1986-01-23T00:00:00.000                  
+    STOP_TIME                      = 1986-01-31T00:00:00.000                  
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 1993-02-01                               
+    PRODUCER_FULL_NAME              = "DR. WILLIAM S. KURTH"                  
+    DETAILED_CATALOG_FLAG          = "Y"                                      
+    ABSTRACT_DESC                = "This data set consists of 48-second       
+           calibrated, averaged wave electric field intensities from the      
+           Voyager 2 Plasma Wave Receiver spectrum analyzer obtained in       
+           the vicinity of the Uranian magnetosphere. For each 48-second      
+           interval, a geometric average field strength is determined for     
+           each of the 16 spectrum analyzer channels whose center frequencie  
+           range from 10 Hertz to 56.2 kilo- Hertz and which are              
+           logarithmically spaced in frequency, four channels per decade. Th  
+           time associated with each set of averages is the beginning of the  
+           averaging interval. Averages are stored in units of volt/meter."   
+    CITATION_DESC              = "Kurth, W.S., VG2-U-PWS-4-SUMM-SA-48SEC-V1.0,
+                               VG2 URA PWS RESAMPLED SUMMARY SPECTRUM ANALYZER
+                               48SEC V1.0, NASA Planetary Data Syetsm, 1993." 
+    DATA_SET_TERSE_DESC           = "The data set contains 48-second          
+           calibrated, averaged wave electric field intensities from the      
+           Voyager 2 Plasma Wave Receiver spectrum analyzer obtained in       
+           the vicinity of the Uranian magnetosphere."                        
+    DATA_SET_DESC                  = "                                        
+          This data set consists of 48-second calibrated, averaged            
+          wave electric field intensities from the Voyager 2 Plasma           
+          Wave Receiver spectrum analyzer obtained in the vicinity of         
+          the Uranian magnetosphere. For each 48-second interval, a           
+          geometric average field strength is determined for each of          
+          the 16 spectrum analyzer channels whose center frequencies          
+          range from 10 Hertz to 56.2 kilo- Hertz and which are               
+          logarithmically spaced in frequency, four channels per              
+          decade. The time associated with each set of averages is            
+          the beginning of the averaging interval. Averages are               
+          stored in units of volt/meter. During data gaps where               
+          complete 48-second intervals are missing, no entries exist          
+          in the file, that is, the gaps are not zero-filled or               
+          tagged in any other way. Additional information about this          
+          dataset and the instrument which produced it can be found           
+          elsewhere in this catalog. An overview of the data in this          
+          data set can be found in Gurnett et al. [1986] and a                
+          complete instrument description can be found in Scarf and           
+          Gurnett [1977].                                                     
+                                                                              
+    SAMPLING_PARAMETER_NAME        = TIME                                     
+    SAMPLING_PARAMETER_RESOLUTION  = 48.000000                                
+    MINIMUM_SAMPLING_PARAMETER     = 197708201553.000000                      
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                      
+    SAMPLING_PARAMETER_INTERVAL    = 48.000000                                
+    MINIMUM_AVAILABLE_SAMPLING_INT = 4.000000                                 
+    SAMPLING_PARAMETER_UNIT        = SECOND                                   
+    DATA_SET_PARAMETER_NAME        = PLASMA WAVE SPECTRUM                     
+    NOISE_LEVEL                    = 0.000005                                 
+    DATA_SET_PARAMETER_UNIT        = VOLT/METER                               
+    "                                                                         
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+          This data set includes all available spectrum analyzer data         
+          within the interval of time covered. The data set has been          
+          cleaned as well as possible for periodic noise spikes due           
+          to a stepper motor operating on the LECP and a modulated            
+          grid within the PLS. The averages do not include these              
+          noise spikes. Other possible sources of noise which have            
+          not been eliminated include random intense spikes of noise          
+          below 1 kiloHertz due to the operation of attitude control          
+          thrusters. Other randomly occurring spikes or time periods          
+          of intense spikes over the entire frequency range are               
+          indicative of telemetry errors. No attempt has been made to         
+          remove spikes since some could be valid data, i.e. real             
+          bursts of wave activity. The 17.8-Hz channel is sometimes           
+          contaminated by interference from the PRA instrument,               
+          depending on that instrument's mode. This interference is           
+          at a relatively constant level. A failure in the Voyager 2          
+          flight data system a few months after launch has decreased          
+          the sensitivity and the calibration accuracy of the upper 8         
+          spectrum analyzer channels (i.e. 1 kiloHertz and higher)."          
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = URANUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = "VG2"                                    
+    INSTRUMENT_ID                  = "PWS"                                    
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "GURNETTETAL1986"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "SCARF&GURNETT1977"                      
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

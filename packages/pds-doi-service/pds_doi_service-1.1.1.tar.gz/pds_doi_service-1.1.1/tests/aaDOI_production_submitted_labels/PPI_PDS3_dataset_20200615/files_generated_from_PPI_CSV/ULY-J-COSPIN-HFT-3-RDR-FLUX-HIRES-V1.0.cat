@@ -1,0 +1,43 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+J. MAFI (PPI), 1998-05-18;                                                    
+Additional Keywords added by D. Kazden, 2009-09-15;                           
+Z's removed from time by D. Kazden, 2010-05-05;                               
+Updated CITATION_DESC, D. Kazden, 2020-02-12;"                                
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "ULY-J-COSPIN-HFT-3-RDR-FLUX-HIRES-V1.0" 
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "ULY JUP COSPIN HIGH FLUX TELESCOPE HIGH 
+                                        RES. ION FLUX"                        
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1992-01-25T00:00:13.216                  
+    STOP_TIME                      = 1992-02-18T00:02:41.450                  
+    DATA_SET_RELEASE_DATE          = 1998-05-01                               
+    PRODUCER_FULL_NAME             = "J. DAVID ANGLIN"                        
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    DATA_OBJECT_TYPE               = "TIME SERIES"                            
+    DATA_SET_TERSE_DESC            = "ULY JUP COSPIN HIGH FLUX TELESCOPE      
+                                            HIGH RES. ION FLUX"               
+    CITATION_DESC     = "Anglin, D.J., ULY-J-COSPIN-HFT-3-RDR-FLUX-HIRES-V1.0,
+                        ULY JUP COSPIN HIGH FLUX TELESCOPE HIGH RES. ION FLUX,
+                          NASA Planetary Data System, 1998."                  
+    ABSTRACT_DESC                  = "This data set contains ion flux data    
+                                       recorded by the COSPIN High Flux       
+                                       Telescope (HFT) during the Ulysses     
+                                       Jupiter encounter 1992-Jan-25 to       
+                                       1992-Feb-18"                           
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+      This data set contains ion flux data recorded by the COSPIN             
+      High Flux Telescope (HFT) during the Ulysses Jupiter encounter          
+      1992-Jan-25 to 1992-Feb-18.                                             
+                                                                              
+      Record format is essentially as follows:                                
+                                                                              
+       END

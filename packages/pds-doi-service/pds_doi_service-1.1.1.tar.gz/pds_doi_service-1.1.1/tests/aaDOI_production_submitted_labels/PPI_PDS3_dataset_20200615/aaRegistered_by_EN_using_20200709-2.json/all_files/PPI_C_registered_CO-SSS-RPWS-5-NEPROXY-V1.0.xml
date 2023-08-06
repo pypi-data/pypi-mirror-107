@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CASSINI SS/S RPWS LP DENSITY FROM FLOATING POTENTIAL V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CO-SS/S-RPWS-5-NEPROXY-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2014-06-20</publication_date>
+            <country>USA</country>
+            <description>The Cassini Radio and Plasma Wave Science (RPWS) Langmuir Probe proxy
+                electron density data set contains electron densities derived using an
+                empirical relation between the floating potential and electron
+                densities from the Cassini Plasma Spectrometer during the entire
+                Cassini mission.  This data set also includes the spacecraft potential
+                which can be derived from the floating potential.  The submitted data
+                set includes spacecraft potential, floating potential, and electron
+                density, and is intended to become the most comprehensive and complete
+                data set of electron densities and spacecraft potential in Saturn's
+                low-density, outer magnetosphere derived from the Langmuir Probe
+                floating potential measurement in the Cassini RPWS archive.  Data are
+                presented in tables with fixed-length records for ease in data
+            handling.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CO-SS%2FS-RPWS-5-NEPROXY-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CASSINI ORBITER; PHOEBE; TETHYS; HYPERION; TITAN; MIMAS; IAPETUS; RHEA; SATURN; ENCELADUS; SOLAR SYSTEM; DIONE; PLASMA WAVE SPECTROMETER; CO; SATELLITE; PLANET; PLANETARY SYSTEM; RPWS; RADIO AND PLASMA WAVE SCIENCE</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>DR. JAN-ERIK WAHLUND</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.co-ss-s-rpws-5-neproxy-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

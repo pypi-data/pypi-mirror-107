@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>JUNO JUPITER UVS 2
+        EXPERIMENT DATA RECORD V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>JNO-J-UVS-2-EDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>3000-01-01</publication_date>
+            <country>USA</country>
+            <description>The Juno Ultraviolet Spectrograph (UVS) CODMAC Level 2 Experiment Data Record
+                is a collection of the far ultraviolet photon detections obtained by the UVS
+                instrument, in raw form.  As such, it constitutes the permanent record of the
+                raw UVS data.  These data include both the instrument science and
+                housekeeping data, organized into extensions within files formatted
+                according to the Flexible Image Transport System (FITS) standard,
+                version 2.1b.  The UVS EDR archive enables reprocessing of the raw science
+                data as radiometric and geometric calibration processing routines improve.
+                Investigators interested in applying advanced calibration methods or needing
+                to understand the properties of the raw data will find the EDR products
+                useful.  Most investigators, however, will be interested in using either the
+                UVS data products contained in the CODMAC Level 3 Reduced Data Record,
+                as radiometric and geometric calibration processing has already been done
+            for these products, or the UVS CODMAC Level 5 far ultraviolet map products.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=JNO-J-UVS-2-EDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>JUNO; JUPITER; ULTRAVIOLET SPECTROMETER; JNO; PLANET; UVS; ULTRAVIOLET SPECTROGRAPH</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>BRAD TRANTHAM</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.jno-j-uvs-2-edr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

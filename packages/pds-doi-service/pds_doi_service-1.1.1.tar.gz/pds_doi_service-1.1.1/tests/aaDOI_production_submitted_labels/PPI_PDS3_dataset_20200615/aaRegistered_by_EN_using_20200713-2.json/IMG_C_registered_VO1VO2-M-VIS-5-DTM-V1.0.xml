@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VO1/VO2 MARS VISUAL IMAGING SUBSYSTEM DIGITAL TERRAIN MODEL</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VO1/VO2-M-VIS-5-DTM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1991-01-01</publication_date>
+            <country>USA</country>
+            <description>This digital image map of Mars is a cartographic extension of a
+                previously released set of CDROM volumes containing individual
+                Viking Orbiter Images (PDS volumes VO_1001, VO_1002, etc.). The
+                data in the latter are pristine, in the sense that they were
+                processed only to the extent required to view them as images.
+                They contain the artifacts and the radiometric, geometric, and
+                photometric characteristics of the raw data transmitted by the
+                spacecraft. This new volume set, on the other hand, contains
+                cartographic compilations made by processing the raw images to
+                reduce radiometric and geometric distortions and to form
+                geodetically controlled Mosaicked Digital Image Models (MDIMs).
+                (Because the photometric processing used in this MDIM was
+                oversimplified, quantitative radiometric analysis on this data is
+                not possible.) It also contains digitized versions of an
+                airbrushed map of Mars as well as a listing of all IAU-approved
+                feature names. In addition, special geodetic and photogrammetric
+                processing has been performed to derive rasters of topographic
+                data, or Digital Terrain Models (DTMs). The latter has a format
+                similar to that of the MDIM, except that elevation values are
+                used in the array instead of image brightness values. The Mars
+                DTM exists in its entirety on Volume 7. Finally, Volume 7 has a
+                listing of SPICE files derived for the Viking images used in the
+                MDIM and the DTM. These files contain updated camera orientation
+                matrices for each of the frames. The matrices are by-products of
+                the photogrammetric processing for the control network required
+            to compile the MDIM and the DTM.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VO1%2FVO2-M-VIS-5-DTM-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING ORBITER 1; VIKING ORBITER 2; MARS; CAMERA; VO1; VO2; PLANET; VISA; VISB; VISUAL IMAGING SUBSYSTEM - CAMERA A; VISUAL IMAGING SUBSYSTEM - CAMERA B</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>ERIC ELIASON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vo1-vo2-m-vis-5-dtm-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

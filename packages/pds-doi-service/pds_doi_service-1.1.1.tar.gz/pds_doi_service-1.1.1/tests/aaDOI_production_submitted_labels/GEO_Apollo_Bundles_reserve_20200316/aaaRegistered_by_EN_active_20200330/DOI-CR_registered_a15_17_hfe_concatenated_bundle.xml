@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id>1518441</id>
+        <title>Apollo 15 and 17 Heat Flow Experiment Concatenated Data Sets Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:a15_17_hfe_concatenated::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2020-02-13</publication_date>
+            <country>USA</country>
+            <description>
+                This bundle contains ASCII tables containing corrected, reduced, and
+                concatenated versions of all available calibrated data from the Apollo 15
+                and 17 Heat Flow Experiment, along with supporting documentation and source
+                data. These tables are based on other data in the PDS and the published
+                literature, specifically (1) transcriptions of data sent by the original
+                instrument team to the NSSDC and (2) data not archived by the instrument
+                team and recovered much later from ARCSAV tapes. The data here correct
+                several errors in (1), and furthermore place (1) and (2) into a standardized
+                format for ease of use.
+            </description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aa15_17_hfe_concatenated&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Derived; Apollo 15; Apollo 17; APOLLO 15 LUNAR SURFACE EXPERIMENTS PACKAGE; HEAT FLOW EXPERIMENT; APOLLO 17 LUNAR SURFACE EXPERIMENTS PACKAGE; Moon</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>M</first_name>
+                    <last_name>St. Clair</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>C.</first_name>
+                    <last_name>Million</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>M.</first_name>
+                    <last_name>Siegler</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <first_name>J.</first_name>
+                    <last_name>Ward</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:a15_17_hfe_concatenated::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

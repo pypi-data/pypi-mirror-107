@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>FIELD EXP EARTH PFES CALIBRATED RDR SPECTRUM V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>FEXP-E-PFES-3-RDR-SPECTRUM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1991-05-28</publication_date>
+            <country>USA</country>
+            <description>Portable Field Emission Spectrometer (PFES) data were acquired on
+                July 15 and 17, 1989. A total of 31 measurements were collected
+                for GRSFE. Of these measurements, 13 were calibrations and 18
+                were of representative surfaces. The data were collected
+                primarily to support the calibration of the TIMS data and to
+                assist in interpreting spectral mixing in the mid-infrared. Sites
+                were selected for calibration that covered a range of
+                emissivities. On July 15, PFES data were collected at Kelso Dunes
+                and the Cima Volcanic Field as part of the Calibration Team
+                effort. Daedalus and SIRIS data were collected over the same
+                sites. For the PFES data, the Kelso Dunes Bright Target site
+                represented the silica-rich endmember and the Cima basalt tephra
+                Dark Target site represented the more silica-poor endmember. On
+                July 17, PFES data were collected at two of the modelling sites
+                at Lunar Lake (the playa and the cobble sites). Several spectra
+                were also collected at the playa surface next to the Lunar Lake
+            thermistor site.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=FEXP-E-PFES-3-RDR-SPECTRUM-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>FIELD EXPERIMENT; EARTH; SPECTROMETER; FEXP; PLANET; PFES; PORTABLE FIELD EMISSION SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>SHELLEY B. PETROY</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.fexp-e-pfes-3-rdr-spectrum-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

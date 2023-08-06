@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESSENGER MDIS MAP PROJECTED MULTISPECTRAL RDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-H-MDIS-5-RDR-MDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2016-05-06</publication_date>
+            <country>USA</country>
+            <description>Abstract ======== The Mercury Dual Imaging System (MDIS) consists
+                of two cameras, a Wide Angle Camera (WAC) and a Narrow Angle
+                Camera (NAC), mounted on a common pivot platform. This dataset
+                includes the Multispectral Reduced Data Records for the WAC. The
+                Map Projected Multispectral RDR (MDR) data set consists of a
+                global color map of I/F in the 8 filters used for multispectral
+                mapping during the primary mission, photometrically normalized to
+                a solar incidence angle (i) = 30 degrees, emission angle (e) = 0
+                degrees, and phase angle (g) = 30 degrees at a spatial sampling
+                of 64 pixels per degree. The map is divided into 54 segments or
+                'tiles', each representing the NW, NE, SW, or SE
+                quadrant of one of the 13 non-polar or one of the 2 polar
+                quadrangles or 'Mercury charts' already defined by the
+                USGS. Each tile is composed of 8 bands corresponding to 8 of the
+                11 WAC filters. Each tile also contains backplanes describing
+                ancillary information. The subset of 8 of 11 available
+                multispectral filters was selected on account of limitations in
+                MESSENGER solid-state recorder space, and more or less evenly
+            samples the spectral range of MDIS.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-H-MDIS-5-RDR-MDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; MERCURY; FRAMING CAMERA; MESS; PLANET; MDIS-WAC; MERCURY DUAL IMAGING SYSTEM WIDE ANGLE CAMERA</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>CHRISTOPHER HASH</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-h-mdis-5-rdr-mdr-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

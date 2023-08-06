@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 NEP MAG RESAMP RDR HELIOGRAPHIC COORDINATES 9.6SEC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-N-MAG-4-RDR-HGCOORDS-9.6SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1992-06-01</publication_date>
+            <country>USA</country>
+            <description>This data set includes data from the Low Field Magnetometer (LFM)
+                during the inbound Neptune encounter beginning in the solar wind
+                and continuing until the first magnetopause crossing. The
+                magnetometer are given in Heliographic coordinates and the data
+                have been averaged from the 1.92 second averages to a 9.6 second
+                resampled rate. The dataset consists of the following columns: 1)
+                ctime (decimal seconds since 1966-01-01T00:00:00.000), 2) pdstime
+                (ISO standard time format), 3-5) spacecraft clock
+                (m65536,m60,fds-line), 6) magnetometer id (1 = LFM, 2 = HFM), 7),
+                Br (radial component), 8) Bt (tangential component), 9) Bn
+                (normal component), 10) Bmag (magnitude of the average
+                components), 11) avg_Bmag (average of the magnitude of the raw
+                components), 12) Lambda (longitude = tan^-1(Bt/Br)), 13) Delta
+                (latitude = sin^-1(Bn/avg_Bmag) ), 14-16) rms vector (pythagorean
+                root mean square deviation of the component averages), 17) npts
+                (number of points in average), 18) flag a character string which
+                indicates software or s/c hardware intervention which reduces
+                confidence in the data (NULL flags represent 'good'
+            data).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-N-MAG-4-RDR-HGCOORDS-9.6SEC-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; NEPTUNE; MAGNETOMETER; VG2; PLANET; MAG; TRIAXIAL FLUXGATE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DR. JOHN E. P. CONNERNEY</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-n-mag-4-rdr-hgcoords-9.6sec-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

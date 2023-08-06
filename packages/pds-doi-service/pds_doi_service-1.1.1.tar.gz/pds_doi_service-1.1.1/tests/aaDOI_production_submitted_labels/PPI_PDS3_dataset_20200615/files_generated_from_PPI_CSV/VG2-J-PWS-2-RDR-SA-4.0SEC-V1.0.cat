@@ -1,0 +1,358 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+X. LIU (added DATA_SET_TERSE_DESC), 2002-08-26;                               
+D. Kazden, removed Zs from START_TIME and STOP_TIME, removed unnecessary      
+keywords, added ABSTRACT_DESC and CITATION_DESC, 2011-05-19;                  
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-11-02;                             
+D. Kazden, updated CITATION_DESC and DATA_SET_NAME, 2020-02-28;"              
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-J-PWS-2-RDR-SA-4.0SEC-V1.0"         
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG2 JUP PWS EDITED SPECTRUM ANALYZER    
+                                      4.0SEC V1.0"                            
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1979-07-02T00:00:03.367                  
+    STOP_TIME                      = 1979-08-03T23:59:57.145                  
+    DATA_SET_RELEASE_DATE          = 1997-12-01                               
+    PRODUCER_FULL_NAME             = "WILLIAM S. KURTH"                       
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    ABSTRACT_DESC                  = "This data set consists of 4-second      
+      edited, wave electric field intensities from the Voyager 2 Plasma Wave  
+      Receiver spectrum analyzer obtained in the vicinity of the Jovian       
+      magnetosphere. For each 4-second interval, a field strength is          
+      determined for each of the 16 spectrum analyzer channels whose center   
+      frequencies range from 10 Hertz to 56.2 kiloHertz and which are         
+      logarithmically spaced in frequency, four channels per decade. The time 
+      associated with each set of intensities (16 channels) is the time of    
+      the beginning of the scan. During data gaps where complete 4-second     
+      spectra are missing, no entries exist in the file, that is, the gaps are
+      not zero-filled or tagged in any other way. When one or more channels   
+      are missing within a scan, the missing measurements are zero-filled.    
+      Data are edited but not calibrated. The data numbers in this data set   
+      can be plotted in raw form for event searches and simple trend analysis 
+      since they are roughly proportional to the log of the electric field    
+      strength."                                                              
+    CITATION_DESC              = "Kurth, W.S., VG2-J-PWS-2-RDR-SA-4.0SEC-V1.0,
+    "                        VG2 JUP PWS EDITED SPECTRUM ANALYZER 4.0SEC V1.0,
+                                  NASA Planetary Data System, 1997."          
+    DATA_SET_TERSE_DESC            = "                                        
+Voyager 2 Plasma Wave (PWS) spectrum analyzer data from the Jupiter           
+encounter.  The data set provides 4 second uncalibrated wave electric         
+field intensities."                                                           
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+                                                                              
+      Version 1.1                                                             
+      -----------                                                             
+      This version 1.1 data set replaces the version 1.0 data set             
+      (DATA_SET_ID = VG2-J-PWS-2-SA-4.0SEC) previously archived with          
+      the PDS. Changes to this version include the upgrade of the             
+      associated labels and templates to PDS version 3 compliance.            
+                                                                              
+      Data Set Description                                                    
+      --------------------                                                    
+      This data set consists of 4-second edited, wave electric                
+      field intensities from the Voyager 2 Plasma Wave Receiver               
+      spectrum analyzer obtained in the vicinity of the Jovian                
+      magnetosphere. For each 4-second interval, a field strength             
+      is determined for each of the 16 spectrum analyzer channels             
+      whose center frequencies range from 10 Hertz to 56.2                    
+      kiloHertz and which are logarithmically spaced in                       
+      frequency, four channels per decade. The time associated                
+      with each set of intensities (16 channels) is the time of               
+      the beginning of the scan. During data gaps where complete              
+      4-second spectra are missing, no entries exist in the file,             
+      that is, the gaps are not zero-filled or tagged in any                  
+      other way. When one or more channels are missing within a               
+      scan, the missing measurements are zero-filled. Data are                
+      edited but not calibrated. The data numbers in this data                
+      set can be plotted in raw form for event searches and                   
+      simple trend analysis since they are roughly proportional               
+      to the log of the electric field strength. Calibration                  
+      procedures and tables are provided for use with this data               
+      set; the use of these is described below.                               
+                                                                              
+      Use of Voyager PWS Calibration Tables                                   
+                                                                              
+      The Voyager PWS calibration table is given in an ASCII text             
+      file named SA_CL_4S.TAB (for Voyager-2). This provides                  
+      information to convert the uncalibrated 'data number' output            
+      of the PWS 16-channel spectrum analyzer to calibrated antenna           
+      voltages for each frequency channel. Following is a brief               
+      description of these files and a tutorial in their                      
+      application.                                                            
+                                                                              
+      Descriptive headers have been removed from the calibration              
+      table file. The columns included are IDN, ICHAN01, ICHAN02,             
+      ICHAN03, ICHAN04, ICHAN05, ICHAN06, ... ICHAN16.                        
+                                                                              
+      The first column lists an uncalibrated data number followed by          
+      the corresponding value in calibrated volts for each of the 16          
+      frequency channels of the PWS spectrum analyzer. Each line              
+      contains calibrations for successive data number values                 
+      ranging from 0 through 255. (Data number 0 actually represents          
+      the lack of data since the baseline noise values for each               
+      channel are all above that.)                                            
+                                                                              
+      A data analysis program may load the appropriate table into a           
+      data structure and thus provide a simple look-up scheme to              
+      obtain the appropriate voltage for a given data number and              
+      frequency channel. For example, the following VAX FORTRAN code          
+      may be used to load a calibration array for Voyager 2 PWS:              
+                                                                              
+        real*4 cal (16,0:255)                                                 
+        open ( unit=10, file='SA_CL_4S.TAB', status='old' )                   
+                                                                              
+        do i=0,255                                                            
+          read (10,*) idn, (cal(ichan,i),ichan=1,16)                          
+        end do                                                                
+        close (10)                                                            
+                                                                              
+      Then, given an uncalibrated data value idn for the frequency            
+      channel ichan, the corresponding calibrated antenna voltage             
+      would be given by the following array reference:                        
+                                                                              
+        volts = cal (ichan, idn)                                              
+                                                                              
+      This may be converted to a wave electric field amplitude by             
+      dividing by the effective antenna length in meters, 7.07 m.             
+      That is:                                                                
+                                                                              
+        efield = cal(ichan, idn) / 7.07                                       
+                                                                              
+      Spectral density units may be obtained by dividing the square           
+      of the electric field value by the nominal frequency bandwidth          
+      of the corresponding spectrum analyzer channel.                         
+                                                                              
+        specdens = (cal(ichan,idn)/7.07)**2 / bandwidth(ichan)                
+                                                                              
+      Finally, power flux may be obtained by dividing the spectral            
+      density by the impedance of free space in ohms:                         
+                                                                              
+        pwrflux = ((cal(ichan,idn)/7.07)**2/bandwidth(ichan))/376.73          
+                                                                              
+      Of course, for a particular application, it may be more                 
+      efficient to apply the above conversions to the calibration             
+      table directly.                                                         
+                                                                              
+      The center frequencies and bandwidths of each PWS spectrum              
+      analyzer channel for the Voyager 2 PWS are given below:                 
+                                                                              
+      VOYAGER 2 PWS SPECTRUM ANALYZER                                         
+                                                                              
+      Voyager-2                                                               
+      Channel    Center Frequency      Bandwidth                              
+                                                                              
+      1             10.0 Hz             2.16  Hz                              
+      2             17.8 Hz             3.58  Hz                              
+      3             31.1 Hz             4.50  Hz                              
+      4             56.2 Hz            10.7   Hz                              
+      5            100.  Hz            13.8   Hz                              
+      6            178.  Hz            28.8   Hz                              
+      7            311.  Hz            39.8   Hz                              
+      8            562.  Hz            75.9   Hz                              
+      9           1.00   kHz           75.9   Hz                              
+      10          1.78   kHz          151.    Hz                              
+      11          3.11   kHz          324.    Hz                              
+      12          5.62   kHz          513.    Hz                              
+      13         10.0    kHz          832.    Hz                              
+      14         17.8    kHz         1260.    Hz                              
+      15         31.1    kHz         2400.    Hz                              
+      16         56.2    kHz         3800.    Hz                              
+                                                                              
+      A failure in the Voyager 2 Flight Data System which occurred            
+      about 3 months after launch has adversely affected the                  
+      calibration of PWS channels 9 through 16. An algorithm has              
+      been devised to partially correct for this failure, and has             
+      proven useful for Voyager 2 Jupiter, Saturn, and Uranus                 
+      encounters, but is not valid for Earth-Jupiter cruise and may           
+      be modified in the future. The following implementation of              
+      this correction algorithm in VAX FORTRAN assumes that                   
+      uncalibrated data numbers are stored in a 16-element integer            
+      array, idn, with the array index equal to the PWS channel               
+      number:                                                                 
+                                                                              
+      real*4 tonl(9:16)         ! the old noise level for v2                  
+      data tonl/2.0,1.0,-1.0,-2.0,-3.0,1.0,2.0,1.0/                           
+                                                                              
+      do ichan=9,16                                                           
+        if (idn(ichan).gt.0) then                                             
+          if(idn(ichan).lt.64) idn(ichan)=64                                  
+          if (idn(ichan).le.72) then                                          
+            idn(ichan)=int(tonl(ichan)-530.4+8.6*real(idn(ichan)))            
+          else                                                                
+            idn(ichan)=int(tonl(ichan)+20.113+0.99*real(idn(ichan)))          
+          end if                                                              
+        end if                                                                
+      end do                                                                  
+                                                                              
+      This correction should not be applied permanently to the                
+      Voyager 2 calibration table since it is valid for a limited             
+      time span and may be modified in the future.                            
+                                                                              
+      Additional information about this data set and the instrument           
+      which produced it can be found elsewhere in this catalog. An            
+      overview of the data in this data set can be found in                   
+      [SCARFETAL1979] and a complete instrument description can be            
+      found in [SCARF&GURNETT1977].                                           
+                                                                              
+      Processing Level ID              : 2                                    
+      Software Flag                    : Y                                    
+      Processing Start Time            : 1988-02-01                           
+                                                                              
+      Parameters                                                              
+      ==========                                                              
+      Sampling Parameter Name          : TIME                                 
+      Data Set Parameter Name          : PLASMA WAVE SPECTRUM                 
+      Sampling Parameter Resolution    : 4.000000                             
+      Minimum Sampling Parameter       : 197708201553.000000                  
+      Sampling Parameter Interval      : 4.000000                             
+      Minimum Available Sampling Int   : 4.000000                             
+      Data Set Parameter Unit          : VOLT/METER                           
+      Noise Level                      : 0.000005                             
+      Sampling Parameter Unit          : SECOND                               
+                                                                              
+      A set of derived parameters consisting of wave electric field           
+      intensities or electric field spectral densities at various             
+      contiguous frequencies over a range of frequencies. The MKS             
+      units are: Volts/Meter or Volts**2/(Hertz.Meter**2),                    
+      respectively.                                                           
+                                                                              
+      Source Instrument Parameters                                            
+      ============================                                            
+      Instrument Host ID               : VG2                                  
+      Data Set Parameter Name          : PLASMA WAVE SPECTRUM                 
+      Instrument Parameter Name        : ELECTRIC FIELD WAVEFORM              
+      Instrument Parameter Name        : ELECTRIC FIELD COMPONENT             
+      Instrument Parameter Name        : MAGNETIC FIELD COMPONENT             
+      Instrument Parameter Name        : WAVE ELECTRIC FIELD INTENSITY        
+      Instrument Parameter Name        : WAVE MAGNETIC FIELD INTENSITY        
+      Important Instrument Parameters  : 1 (for all parameters)               
+                                                                              
+      Processing                                                              
+      ==========                                                              
+                                                                              
+      Processing History                                                      
+      ------------------                                                      
+      Source Data Set ID          : N/A                                       
+      Software                    : UNK                                       
+      Product Data Set ID         : VG2-J-PWS-2-SA-4.0SEC                     
+                                                                              
+      Source Data Set ID          : VG2-J-PWS-2-SMSF                          
+      Software                    : CDMAKE                                    
+      Product Data Set ID         : VG2-J-PWS-2-SA-4.0SEC                     
+                                                                              
+      CDMAKE is primarily a data format translation routine which is          
+      used to convert Voyager Plasma Wave Spectrometer (PWS) MSF              
+      tape files to CD files. The MSF, or Master Science Files, are           
+      produced at the University of Iowa as the primary, ordered,             
+      full-information PWS spectrum analyzer data set. The CD files           
+      contain uncalibrated, full-resolution PWS data with minimal             
+      ancillary data in a simplified format which may be used in              
+      CDROM production.                                                       
+                                                                              
+      Note: SOFTWARE IS NOT AVAILABLE FOR PUBLIC USE.                         
+                                                                              
+      Software Name               : CDMAKE                                    
+      Software Type               : N/A                                       
+      Software Release Date       : 1988-08-01                                
+      Node ID                     : PPI-IOWA                                  
+      Cognizant Engineer          : MR. LARRY J. GRANROTH                     
+      Software Access Description : N/A                                       
+                                                                              
+      Software                                                                
+      ========                                                                
+                                                                              
+      PWS16PC                                                                 
+      -------                                                                 
+      PWS16PC is a PC version of the 'workhorse' display software             
+      used to survey and analyze in detail the Voyager plasma wave            
+      receiver's 16-channel spectrum analyzer data. It's basic                
+      function is to plot intensity as a function of time for all 16          
+      of the channels whose center frequencies run from 10 Hz to              
+      56.2 kHz. The default plot is a strip-chart like display where          
+      the average signal strength is plotted as a solid area above            
+      the baseline of each channel and peak measurements determined           
+      over the same intervals as the averages are plotted as a line           
+      over the averages.                                                      
+                                                                              
+      The software is designed to run directly from the DVD-R for             
+      PC's with 800 x 600 16 color display capabilities.                      
+                                                                              
+      Data Coverage and Quality                                               
+      ===========================                                             
+      Filename      Records           Start                    Stop           
+      ----------------------------------------------------------------------  
+      Volume ID: VG_1502                                                      
+      SA_CL_4S.TAB     256                                                    
+         SA_4S.DAT  675136  1979-07-02T00:00:03.367  1979-08-03T23:59:57.145" 
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+      Confidence Level Overview                                               
+      =========================                                               
+      This data set includes all available spectrum analyzer data             
+      within the interval of time covered. The data set has been              
+      cleaned as well as possible for periodic noise spikes due to a          
+      stepper motor operating on the LECP and a modulated grid                
+      within the PLS. The 'bad' points remain in the data set as              
+      negative numbers with the same absolute value as the original           
+      data point so that the point can be skipped in normal data              
+      processing by testing for negative values or recovered for              
+      special inspection by converting the sign back to a positive            
+      one. Other possible sources of noise which have not been                
+      eliminated include a nearly continuous tone at about 311 Hz             
+      after closest approach due to interference from the gyros and           
+      random intense spikes of noise below 1 kiloHertz due to the             
+      operation of attitude control thrusters. The data between 0040          
+      and 0155 spacecraft event time on July 10 1979 is heavily               
+      contaminated by thruster activity associated with a trajectory          
+      correction maneuver. Other randomly occurring spikes or time            
+      periods of intense spikes over the entire frequency range are           
+      indicative of telemetry errors. No attempt has been made to             
+      remove spikes since some could be valid data, i.e. real bursts          
+      of wave activity. The 17.8-Hz channel is sometimes                      
+      contaminated by interference from the PRA instrument,                   
+      depending on that instrument's mode. This interference is at a          
+      relatively constant level. Also, a failure in the Voyager 2             
+      flight data system a few months after launch has decreased the          
+      sensitivity and the calibration accuracy of the upper 8                 
+      spectrum analyzer channels (i.e. 1 kiloHertz and higher)."              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PWS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "GURNETTETAL1979"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SCARF&GURNETT1977"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SCARFETAL1979"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

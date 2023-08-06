@@ -1,0 +1,96 @@
+PDS_VERSION_ID                 = PDS3                                          
+LABEL_REVISION_NOTE           = "                                             
+    2016-04-26   R.J. Wilson   Initial Version.                               
+    2017-01-26   R.J. Wilson   Second version,                                
+                               Replaced MCCOMAS2013 with MCCOMAS2017.         
+    2017-09-15   J. Mafi       Release 1/2 version                            
+    2018-03-27   J. Mafi       Release 4 (perijoves 7 and 8) version;         
+    2018-06-27   J. Mafi       Release 5 (perijoves 9 and 10) version;        
+    2018-10-29   J. Mafi       Release 6 (perijoves 11 and 12) version;       
+    2019-02-07   J. Mafi       Release 7 (perijoves 13 and 14) version;       
+    2019-05-20   J. Mafi       Release 8 (perijoves 15 and 16) version;       
+    2019-09-11   J. Mafi       Release 9 (perijoves 17 and 18) version;       
+    2019-10-02   J. Mafi       Added cruise data covering 2015-03-30 to       
+                               2016-06-29;                                    
+    2019-12-20   J. Mafi       Release 10 (perijoves 19 and 20) version;      
+    2020-02-05   D. Kazden     Updated DATA_SET_RELEASE_DATE, ABSTRACT_DESC   
+                               and CITATION_DESC;                             
+    2020-04-07   J. Mafi       Release 11 (perijoves 21 and 22) version;      
+    2020-04-10   J. Mafi       Release 11 (perijoves 21 and 22) ion data;     
+    "                                                                         
+RECORD_TYPE                   = STREAM                                        
+                                                                              
+OBJECT                        = DATA_SET                                      
+  DATA_SET_ID                 = "JNO-J/SW-JAD-3-CALIBRATED-V1.0"              
+                                                                              
+  OBJECT                      = DATA_SET_INFORMATION                          
+    DATA_SET_NAME = "JUNO J/SW JOVIAN AURORAL DISTRIBUTION CALIBRATED V1.0"   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                = 2015-03-31T00:35:45.004                       
+    STOP_TIME                 = 2019-09-14T00:00:34.113                       
+    DATA_SET_RELEASE_DATE     = 2020-04-10                                    
+    PRODUCER_FULL_NAME        = "ROBERT J WILSON"                             
+    DETAILED_CATALOG_FLAG     = N                                             
+    DATA_OBJECT_TYPE          = "TABLE"                                       
+                                                                              
+    DATA_SET_TERSE_DESC       = "This data set consists of all of the         
+     calibrated data collected by the JADE (Jovian Auroral Plasma             
+     Distributions Experiment) on-board the Juno spacecraft.                  
+     For more information about the instrument and data sets, see             
+     [MCCOMAS2017] and [WILSON2016]."                                         
+                                                                              
+    CITATION_DESC             = "                                             
+      Allegrini, F., Wilson, R.J., Ebert, R.W., Loeffler, C.,                 
+      JUNO J/SW JOVIAN AURORAL DISTRIBUTION CALIBRATED V1.0,                  
+      JNO-J/SW-JAD-3-CALIBRATED-V1.0, NASA Planetary Data System, 2019."      
+                                                                              
+    ABSTRACT_DESC             = "This data set consists of all of the         
+     calibrated data collected by the JADE (Jovian Auroral Plasma             
+     Distributions Experiment) on-board the Juno spacecraft."                 
+    DATA_SET_DESC             = "                                             
+                           This volume contains JADE flight software 4 data   
+                           for 2015 and onwards.                              
+                           Earlier data (2011-2014) may be found in volume    
+                           JNOJAD_2001 (for flight software 3), but is all    
+                           operations team use and not for science, and as    
+                           such there is no Level 3 data for that period."    
+                                                                              
+    CONFIDENCE_LEVEL_NOTE           = "                                       
+                                                                              
+  Review                                                                      
+  ======                                                                      
+    These data have been reviewed by the instrument team and are of the       
+    highest quality that can be generated at this time. After submission to   
+    the PDS, these data will be approved through the peer review process.     
+                                                                              
+  Limitations                                                                 
+  ===========                                                                 
+      None known as yet."                                                     
+                                                                              
+                                                                              
+  END_OBJECT                  = DATA_SET_INFORMATION                          
+                                                                              
+  OBJECT                      = DATA_SET_TARGET                               
+    TARGET_NAME               = {"SOLAR WIND",                                
+                                 "JUPITER"}                                   
+  END_OBJECT                  = DATA_SET_TARGET                               
+                                                                              
+  OBJECT                      = DATA_SET_HOST                                 
+    INSTRUMENT_HOST_ID        = "JNO"                                         
+    INSTRUMENT_ID             = "JAD"                                         
+  END_OBJECT                  = DATA_SET_HOST                                 
+                                                                              
+  OBJECT                      = DATA_SET_MISSION                              
+    MISSION_NAME              = "JUNO"                                        
+  END_OBJECT                  = DATA_SET_MISSION                              
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "MCCOMAS2017"                                 
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION                
+    REFERENCE_KEY_ID          = "WILSON2016"                                  
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION                
+                                                                              
+END_OBJECT                    = DATA_SET                                      
+END

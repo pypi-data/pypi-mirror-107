@@ -1,0 +1,220 @@
+PDS_VERSION_ID  = PDS3
+RECORD_TYPE = STREAM
+
+LABEL_REVISION_NOTE         =  "
+  2010-07-14, C. Piker (U. IOWA), initial
+  2012-06-04, C. Piker (U. IOWA), changes post PPI review
+  2017-03-28, J. Mafi (UCLA), updated for orbit 7 and 8 release;
+  2018-07-10, J. Mafi (UCLA), updated for orbit 9 and 10 release;
+  2018-10-25, J. Mafi (UCLA), updated for orbit 11 and 12 release;
+  2019-02-05, J. Mafi (UCLA), updated for orbit 13 and 14 release;
+  2019-05-21, J. Mafi (UCLA), updated for orbit 15 and 16 release;
+  2019-09-11, J. Mafi (UCLA), updated for orbit 17 and 18 release;
+  2019-12-20, J. Mafi (UCLA), updated for orbit 19 and 20 release;
+  2020-02-03, D. Kazden Updated DATA_SET_RELEASE_DATE and CITATION_DESC;
+  2020-04-06, J. Mafi (UCLA), updated for orbit 21 and 22 release;
+  "
+
+OBJECT                  = DATA_SET
+  DATA_SET_ID             = "JNO-E/J/SS-WAV-2-EDR-V1.0"
+
+  OBJECT                  = DATA_SET_INFORMATION
+    DATA_SET_NAME           = "
+      JUNO E/J/S/SS WAVES EXPERIMENT DATA RECORDS V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"
+    DATA_OBJECT_TYPE        = FILE
+    START_TIME              = 2011-08-09T00:00:00.000
+    STOP_TIME               = 2020-01-01T00:00:00.000
+    DATA_SET_RELEASE_DATE   = 2020-04-08
+    PRODUCER_FULL_NAME      = "DR. WILLIAM S. KURTH"
+    DETAILED_CATALOG_FLAG   = "N"
+    DATA_SET_TERSE_DESC     = "
+      The Juno Waves EDR complete data set includes all Waves science
+      and housekeeping instrument packets for the entire Juno mission."
+
+    ABSTRACT_DESC           = "
+      The Juno Waves EDR complete data set includes all Waves science and 
+      housekeeping data for the entire Juno mission.  This data set consists
+      of reformatted, uncalibrated, spectra and waveforms as well as unaltered
+      housekeeping packets.  The reformatting operation re-assembles 
+      measurements which were too long to fit with in a single transmission
+      unit to the Juno flight data system as well as decompressing data that
+      were transmitted in compressed form.  The data for this set were
+      acquired from the Waves Low Frequency Receiver (LFR), High Frequency
+      Receivers (HFR-44, HFR-45), as well as the Digital Signal Processor's
+      housekeeping output.  This data set is intended to preserve the
+      uncalibrated instrument packets and is to be used only as a last resort.
+      Other Waves archived data sets are designed to be complete and more
+      easily used.  Browse images associated with the other data sets provide
+      a graphical search of the data included in this data set."
+
+
+    CITATION_DESC           = "Kurth, W.S., and Piker C.W.,
+      JUNO E/J/S/SS WAVES EXPERIMENT DATA RECORDS V1.0,
+      JNO-E/J/SS-WAV-2-EDR-V1.0, NASA Planetary Data System, 2020."
+
+    DATA_SET_DESC           = "
+
+      Data Set Overview
+      =================
+      The Juno Waves EDR complete data set includes all Waves science and 
+      housekeeping data for the entire Juno mission.  This data set consists
+      of reformatted, uncalibrated, spectra and waveforms as well as unaltered
+      housekeeping packets.  The reformatting operation re-assembles 
+      measurements which were too long to fit with in a single transmission
+      unit to the Juno flight data system as well as decompressing data that
+      were transmitted in compressed form.  The data for this set were
+      acquired from the Waves Low Frequency Receiver (LFR), High Frequency
+      Receivers (HFR-44, HFR-45), as well as the Digital Signal Processor's
+      housekeeping output.  This data set is intended to preserve the
+      uncalibrated instrument packets and is to be used only as a last resort.
+      Other Waves archived data sets are designed to be complete and more
+      easily used.  Browse images associated with the other data sets provide
+      a graphical search of the data included in this data set.
+
+      The primary usefulness of these data lay in preserving the inputs to
+      higher level calibrated data sets so that such sets may be regenerated
+      in the event that better calibrations become available or in the event
+      that mistakes are uncovered in the data processing pipelines.  In either
+      event the Waves instrument team is intended as the user of these data,
+      *not* the wider scientific community.
+
+
+      Parameters
+      ==========
+      The fundamental unit of this data set is a Waves packet.  In the case
+      of science packets, each packet contains a single measurement along with
+      information required to calibrate the measurement and determine when it
+      was collected.  Actually producing calibrated data from these raw
+      packets requires detailed knowledge of the Waves instrument.
+      Housekeeping packets are also included as these contain fine timing
+      information.
+
+
+      Processing
+      ==========
+      The data included in this data set were processed by the EDR
+      processing pipeline as described in section 3.3 of the VOLSIS document
+      found under the DOCUMENTS sub-directory.  In short, this pipeline
+      consists of programs which reassemble fragmented packets, decompress
+      packets and check for CRC errors.
+
+
+      Data
+      ====
+      Products in this data set are simply described as PDS FILE objects with
+      minimal detached labels as no more specific PDS objects exist to define
+      a file consisting of variable length packets.  Appendix C of the VOLSIS
+      outlines the data format of these raw packets and the WAVES_PACKETS 
+      document, contained in the DOCUMENT directory, provides detailed
+      information.
+
+
+      Ancillary Data
+      ==============
+      This data set is complete, though the generation of higher level
+      calibrated data from this raw data set requires the following additional
+      information:
+
+         1. Navigation and Ancillary Information Facility's SPICE toolkit
+            and Juno mission SPICE kernels.
+
+         2. Calibration tables supplied on this volume by the Waves
+            instrument team
+
+
+      Coordinate Systems
+      ==================
+      As these are raw data they are recorded in the frame of the electric
+      and magnetic sensors and are not rotated into any other coordinate
+      system.  The WAVES_INST.CAT catalog file, located in this directory,
+      contains a description of the detectors' orientation with respect to
+      the Juno spacecraft coordinate frame.
+
+
+      Software
+      ========
+      No software is provided to view, interpret, or convert this data set.
+      
+      
+      Media/Format
+      ============
+      This data set is provided to the Planetary Data System electronically
+      as part of a volume level 'tarball' file, though the standards for file
+      names, directory names and path lengths follow the guidelines provided
+      in the 'Planetary Data System Standards Reference', version 3.8, under
+      section 10.1.3, 'Specification for Files Delivered Electronically'.
+
+      The 'tarball' file contains all files for a release of this volume in a
+      single GNU Tar file that has then been compressed via the GNU gzip
+      utility.  The tar file preserves the relative directory path for each
+      file so when unpacked the original volume directory structure is
+      recreated.  See Section 4 of the VOLSIS for more details on the data
+      transfer methods."
+      
+
+
+    CONFIDENCE_LEVEL_NOTE   = "
+        
+      Confidence Level Overview
+      =========================
+      This data set contains all instrument packets for the Juno Waves
+      experiment for the interval described in the labels for the 
+      individual product files.  Every effort has been made to ensure that
+      all data returned to the Juno Science Operations Center from the
+      spacecraft are included, even those packets which fail checksum tests.  
+
+      
+      Review
+      ======
+      The Waves raw complete data will be reviewed internally by the Juno
+      Waves instrument team prior to release to the PDS.  The data set will
+      also be reviewed by the PDS.
+      
+
+      Data Coverage and Quality
+      =========================
+      TBD
+
+      
+      Limitations
+      ===========
+      Limitations on the data set may be defined as the Waves team gains
+      experience operating the instrument in flight conditions.  The only
+      known a priori limitation is that some packets may become corrupted
+      during transmission over the space link.  Each packet contains a CRC
+      generated within the instrument prior to transmission to the Juno flight
+      data system.  Packets with CRC failures are retained in this raw data
+      set but should not be used to generate higher level products."
+      
+  END_OBJECT              = DATA_SET_INFORMATION
+  
+  
+  OBJECT                  = DATA_SET_TARGET
+    TARGET_NAME             = "EARTH"
+  END_OBJECT              = DATA_SET_TARGET
+  
+  OBJECT                  = DATA_SET_TARGET
+    TARGET_NAME             = "JUPITER"
+  END_OBJECT              = DATA_SET_TARGET
+
+  OBJECT                  = DATA_SET_TARGET
+    TARGET_NAME             = "SOLAR SYSTEM"
+  END_OBJECT              = DATA_SET_TARGET
+  
+  OBJECT                  = DATA_SET_HOST
+    INSTRUMENT_HOST_ID      = "JNO"
+    INSTRUMENT_ID           = "WAV"
+  END_OBJECT              = DATA_SET_HOST
+  
+  OBJECT                  = DATA_SET_MISSION
+    MISSION_NAME            = "JUNO"
+  END_OBJECT              = DATA_SET_MISSION
+  
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION
+     REFERENCE_KEY_ID        = "NULL"
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION
+  
+END_OBJECT              = DATA_SET
+
+END

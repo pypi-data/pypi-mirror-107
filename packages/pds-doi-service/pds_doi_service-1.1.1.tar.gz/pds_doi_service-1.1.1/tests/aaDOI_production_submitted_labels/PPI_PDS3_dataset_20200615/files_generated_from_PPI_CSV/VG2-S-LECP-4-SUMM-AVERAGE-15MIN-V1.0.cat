@@ -1,0 +1,252 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+X. LIU (added DATA_SET_TERSE_DESC), 2002-10-02;                               
+B. Harris, added abstract and citation, 2005-05-26;                           
+D. Kazden, removed unnecessary keywords, 2011-05-13;                          
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-11-23;                             
+D. Kazden (PPI), removed ARCHIVE_STATUS keyword, 2018-08-14;                  
+D. Kazden (PPI), updated  CITATION_DESC;"                                     
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-S-LECP-4-SUMM-AVERAGE-15MIN-V1.0"   
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VG2 SAT LECP CALIBRATED RESAMPLED SCAN  
+                                      AVERAGED 15MIN V1.0"                    
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1981-08-24T00:07:29.560                  
+    STOP_TIME                      = 1981-08-30T23:52:30.430                  
+    DATA_SET_RELEASE_DATE          = 2002-08-21                               
+    PRODUCER_FULL_NAME             = "BARRY H. MAUK"                          
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_TERSE_DESC            = "                                        
+Voyager 2 Energetic Particle (LECP) data from the Saturn encounter.           
+The data set provides 15 minute scan averaged counting rates."                
+                                                                              
+    ABSTRACT_DESC           = "                                               
+      This browse data consists of resampled data from the Low                
+      Energy Charged Particle (LECP) experiment on Voyager 2 while            
+      the spacecraft was in the vicinity of Saturn. This instrument           
+      measures the intensities of in-situ charged particles (&#10095;26 keV          
+      electrons and &#10095;30 keV ions) with various levels of                      
+      discrimination based on energy, mass species, and angular               
+      arrival direction. A subset of almost 100 LECP channels are             
+      included with this data set. The LECP data are globally                 
+      calibrated to the extent possible (see below) and they are              
+      time averaged to about 15 minute time intervals with the exact          
+      beginning and ending times for those intervals matching the             
+      LECP instrumental cycle periods (the angular scanning                   
+      periods). The LECP instrument has a rotating head for                   
+      obtaining angular anisotropy measurements of the medium energy          
+      charged particles that it measures. The cycle time for the              
+      rotation is variable, but during encounters it is always                
+      faster than 15 minutes. For this browse data set only scan              
+      average data is given (no angular information). The data is in          
+      the form of 'rate' data which has not been converted to the             
+      usual physical units."                                                  
+                                                                              
+    CITATION_DESC           = "Krimigis, S. M., Mauk, B. H., Armstrong, T. P.,
+                            VG2-S-LECP-4-SUMM-AVERAGE-15MIN-V1.0, VG2 SAT LECP
+                              CALIBRATED RESAMPLED SCAN AVERAGED 15MIN V1.0,  
+                                 NASA Planetary Data System, 2002."           
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+                                                                              
+      Data Set Description                                                    
+      --------------------                                                    
+      This browse data consists of resampled data from the Low                
+      Energy Charged Particle (LECP) experiment on Voyager 2 while            
+      the spacecraft was in the vicinity of Saturn. This instrument           
+      measures the intensities of in-situ charged particles (&#10095;26 keV          
+      electrons and &#10095;30 keV ions) with various levels of                      
+      discrimination based on energy, mass species, and angular               
+      arrival direction. A subset of almost 100 LECP channels are             
+      included with this data set. The LECP data are globally                 
+      calibrated to the extent possible (see below) and they are              
+      time averaged to about 15 minute time intervals with the exact          
+      beginning and ending times for those intervals matching the             
+      LECP instrumental cycle periods (the angular scanning                   
+      periods). The LECP instrument has a rotating head for                   
+      obtaining angular anisotropy measurements of the medium energy          
+      charged particles that it measures. The cycle time for the              
+      rotation is variable, but during encounters it is always                
+      faster than 15 minutes. For this browse data set only scan              
+      average data is given (no angular information). The data is in          
+      the form of 'rate' data which has not been converted to the             
+      usual physical units. The reason is that such a conversion              
+      would depend on uncertain determinations such as the mass               
+      species of the particles and the level of background. Both              
+      mass species and background are generally determined from               
+      context during the study of particular regions. To convert              
+      'rate' to 'intensity' for a particular channel one performs             
+      the following tasks: 1) decide on the level of background               
+      contamination and subtract that off the given rate level.               
+      Background is to be determined from context and from making             
+      use of sector 8 rates (sector 8 has a 2 mm Al shield covering           
+      it). 2) Divide the background corrected rate by the channel             
+      geometric factor and by the energy bandpass of the channel.             
+      The geometric factor is found in entry                                  
+      'channel_geometric_factor' as associated with each channel              
+      'channel_id'. To determine the energy bandpass, one must judge          
+      the mass species of the of the detected particles (for ions             
+      but not for electrons). The energy band passes are given in             
+      entries 'minimum_instrument_parameter' and                              
+      'maximum_instrument_parameter' in table 'FPLECPENERGY', and             
+      are given in the form 'energy/nucleon'. For channels that               
+      begin their names with the designations 'ch' these bandpasses           
+      can be used on mass species that are accepted into that                 
+      channel (see entries 'MINIMUM_INSTRUMENT_PARAMETER' and                 
+      'MAXIMUM_INSTRUMENT_PARAMETER' in table 'FPLECPCHANZ', which            
+      give the minimum and maximum 'Z' value accepted -- these                
+      entries are blank for electron channels). For other channels            
+      the given bandpass refers only to the lowest 'Z' value                  
+      accepted. The bandpasses for other 'Z' values are not all               
+      known, but some are given in the literature (e.g.                       
+      [KRIMIGISETAL1979A]). The final product of these instructions           
+      will be the particle intensity with the units:                          
+      counts/(cm^2 str sec keV).                                              
+                                                                              
+      Processing Level Id            : 4                                      
+      Software Flag                  : Y                                      
+      Processing Start Time          : 1988-08-01                             
+                                                                              
+      Parameters                                                              
+      ==========                                                              
+                                                                              
+      Electron Rate                                                           
+      -------------                                                           
+      Sampling Parameter Name        : TIME                                   
+      Data Set Parameter Name        : ELECTRON RATE                          
+      Sampling Parameter Resolution  : 15.000000                              
+      Sampling Parameter Interval    : 15.000000                              
+      Data Set Parameter Unit        : COUNTS/SECOND                          
+      Noise Level                    : 0.000000                               
+      Sampling Parameter Unit        : MINUTE                                 
+                                                                              
+      A measured parameter equaling the number of electrons hitting           
+      a particle detector per specified accumulation interval. The            
+      counted electrons may or may not be discriminated as to their           
+      energies (e.g. greater than E1, or between E1 and E2).                  
+                                                                              
+      Ion Rate                                                                
+      --------                                                                
+      Sampling Parameter Name        : TIME                                   
+      Data Set Parameter Name        : ION RATE                               
+      Sampling Parameter Resolution  : 15.000000                              
+      Sampling Parameter Interval    : 15.000000                              
+      Data Set Parameter Unit        : COUNTS/SECOND                          
+      Noise Level                    : 0.000000                               
+      Sampling Parameter Unit        : MINUTE                                 
+                                                                              
+      A measured parameter equaling the number of ions striking a             
+      particle detector per specified accumulation interval. The              
+      counted ions may or may not be discriminated as to their                
+      energies (e.g. energy/nucleon or energy/charge between E1 and           
+      E2 or greater than E1) and/or as to their ion composition               
+      (atomic number Z or mass number greater than Z1 or M1, or               
+      between Z1 and z2 or M1 and M2).                                        
+                                                                              
+      Source Instrument Parameters                                            
+      ============================                                            
+      Instrument Host ID              : VG2                                   
+      Data Set Parameter Name         : ION RATE                              
+      Instrument Parameter Name       : ION RATE                              
+      Important Instrument Parameters : 1                                     
+                                                                              
+      Instrument Host ID              : VG2                                   
+      Data Set Parameter Name         : ELECTRON RATE                         
+      Instrument Parameter Name       : ELECTRON RATE                         
+      Important Instrument Parameters : 1                                     
+                                                                              
+      Processing                                                              
+      ==========                                                              
+                                                                              
+      Processing History                                                      
+      ------------------                                                      
+      Source Data Set ID          : VG2-S-LECP-2-                             
+      Software                    : PFAT:VGER                                 
+      Product Data Set ID         : VG2-S-LECP-4-BR-15MIN                     
+                                                                              
+                                                                              
+      Software 'PFAT:VGER'                                                    
+      --------------------                                                    
+      Software Name               : PFAT:VGER                                 
+      Software Type               : PIN                                       
+      Software Release Date       : N/A                                       
+      Node ID                     : N/A                                       
+      Cognizant Engineer          : N/A                                       
+      Software Access Description : N/A                                       
+                                                                              
+      Data Coverage                                                           
+      =============                                                           
+      Filename Records Start                     Stop                         
+      ----------------------------------------------------------------------  
+      Volume ID: VG_1601                                                      
+      AVERAGE.TAB   668  1981-08-24T00:07:29.560   1981-08-30T23:52:30.430    
+                                                                              
+      Missing Data Flag                                                       
+      =================                                                       
+      Any data column whose value is -9.9e+10 is a missing data               
+      value."                                                                 
+                                                                              
+  CONFIDENCE_LEVEL_NOTE = "                                                   
+                                                                              
+      Confidence Level Overview                                               
+      =========================                                               
+      At all times during this planetary encounter there exist data           
+      in this data set that can be rated with the highest confidence          
+      level. However, some of the channels of data are contaminated           
+      by various kinds and various levels of contaminations. It is            
+      therefore imperative, in using this data set, that the                  
+      contamination tables within the catalog be examined. Also, not          
+      all kinds of contamination have been fully documented. When in          
+      doubt the data supplier must be contacted.                              
+                                                                              
+      Some channels are subject to serious contaminations, and many           
+      of these contaminations cannot be removed except with a region-         
+      by-region analysis, which has not been done for this data.              
+      Thus, to use this data it is absolutely vital that the                  
+      contamination types ('CONTAMINATION_ID' , 'CONTAMINATION_DESC')         
+      and the levels of contamination ('DATA_QUALITY_ID'                      
+      corresponding to the definitions 'DATA_QUALITY_DESC') be                
+      carefully examined for all regions of study. A dead time                
+      correction procedure has been applied in an attempt to correct          
+      the linear effects of detector overdrive (pulse-pileup). This           
+      procedure does not fix severely overdriven detectors. A                 
+      procedure is available for correcting Voyager 2 LECP electron           
+      contamination of low energy ion channels, but its                       
+      effectiveness has been evaluated only for the Uranus data set.          
+      Thus, corrections have been applied only to the Uranus data             
+      set."                                                                   
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = SATURN                                   
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = LECP                                     
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1979A"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1982"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

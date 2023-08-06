@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:mess_rs_derived</logical_identifier>
+        <version_id>3.0</version_id>
+        <title>MESSENGER gravity and topography spherical harmonics model bundle</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>Perry, M.; Reid, M.; Konopliv, A.</author_list>
+            <publication_year>2013</publication_year>
+            <description>
+               The bundle contains derived models of Mercury gravity and topography from radio science 
+               tracking and from the MLA instrument on MESSENGER. There are three product types:
+               the Occultation Summary (OCC), the Spherical Harmonics ASCII Data Records (SHADR),
+               and the Spherical Harmonics Binary Data Records (SHBDR).            
+               </description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-02-17</modification_date>
+                <version_id>3.0</version_id>
+                <description>New SHBDR products from JPL were added to the data collection of the bundle.</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-08-22</modification_date>
+                <version_id>2.0</version_id>
+                <description>New products were added to the data collection of the bundle.</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-07-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version migrated from PDS3.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <comment>
+            This bundle was migrated from PDS3 data set MESS-H-RSS/MLA-5-SDP-V1.0
+            on volume MESSRS_1001.
+        </comment>
+        <Time_Coordinates>
+            <start_date_time>2008-01-07T00:00:00Z</start_date_time>
+            <stop_date_time>2015-04-30T11:13:55Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+            <Science_Facets>
+                <domain>Surface</domain>
+                <discipline_name>Geosciences</discipline_name>
+            </Science_Facets>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>MESSENGER</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.messenger</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>MESSENGER</name>
+            <Observing_System_Component>
+                <name>MESSENGER</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Radio Science Subsystem</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:rss.mess</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Mercury Laser Altimeter</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mla.mess</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mercury</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mercury</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:messenger:document:geo_notes_and_errata</lid_reference>
+            <reference_type>bundle_to_document</reference_type>
+            <comment>This document describes how the Geosciences Node MESSENGER data sets were migrated from PDS3 to PDS4.</comment>
+        </Internal_Reference>    
+    </Reference_List>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+    </Bundle>
+    <File_Area_Text>
+        <File>
+            <file_name>readme.txt</file_name>
+        </File>
+        <Stream_Text>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+        </Stream_Text>
+    </File_Area_Text>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mess_rs_derived:data</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mess_rs_derived:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:nasa:pds:mess_rs_derived:miscellaneous</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_member_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

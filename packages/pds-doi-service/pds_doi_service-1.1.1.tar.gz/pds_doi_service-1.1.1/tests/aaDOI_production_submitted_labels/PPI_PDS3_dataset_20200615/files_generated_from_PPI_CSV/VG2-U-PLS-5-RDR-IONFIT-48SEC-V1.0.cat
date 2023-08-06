@@ -1,0 +1,155 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+  1992-08-31, RMONARREZ, received by ftp;                                     
+  1992-09-14, EFRIED;                                                         
+  1992-09-18, EFRIED,                                                         
+                updated Data Set templates according to new std.              
+                Data Set Template -&#10095; Spacecraft Data Set Template             
+                event_start_time, event_stop_time -&#10095; start_time, stop_time;   
+  1992-09-24, EFRIED,                                                         
+          Revised DATA_SET_ID and DATA_SET_NAME;                              
+  2006-04-25, Bill Harris, adapted to Version 3 standards;                    
+  2011-06-22, D. Kazden, removed unnecessary keywords, added ABSTRACT_DESC,   
+          CITATION_DESC and DATA_SET_TERSE_DESC;                              
+  2011-08-15, D. Kazden, changed DATA_OBJECT_TYPE from TIME_SERIES;           
+  2010-02-02, D. Kazden, updated REFERENCE_KEY_IDs;                           
+  2020-03-05, D. Kazden, updated CITATION_DESC;"                              
+                                                                              
+OBJECT                         = DATA_SET                                     
+  DATA_SET_ID                    = "VG2-U-PLS-5-RDR-IONFIT-48SEC-V1.0"        
+                                                                              
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "VG2 URA PLS DERIVED RDR ION FIT         
+                                      48SEC V1.0"                             
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    START_TIME                     = 1986-01-24T15:01:48.451                  
+    STOP_TIME                      = 1986-01-24T19:55:24.431                  
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 1993-02-01                               
+    PRODUCER_FULL_NAME             = "JOHN D. RICHARDSON"                     
+    DETAILED_CATALOG_FLAG          = "Y"                                      
+    ABSTRACT_DESC                  = " This data set contains the ion         
+       densities and temperatures along with formal 1 Sigma errors obtained   
+       from Voyager 2 PLS data (voltage range 10-5950 eV/Q) at Uranus by      
+       fitting the measured spectra with isotropic Maxwellian distributions.  
+       Up to three isotropic proton components (warm, hot and intermediate)   
+       were used to match the observations. The plasma was assumed to be      
+       rigidly corotating. Uncertainties in plasma parameters are a factor    
+       of 2 in the charging region from 19:39-21:58 on day 24, less than 20%  
+       elsewhere. A complete description of this data set is given in         
+       McNutt et al. (1987) and Selesnick and McNutt (1987)."                 
+    CITATION_DESC      = "Richardson, J.D., VG2-U-PLS-5-RDR-IONFIT-48SEC-V1.0,
+                                 VG2 URA PLS DERIVED RDR ION FIT 48SEC V1.0,  
+                                    NASA Planetary Data System, 1993."        
+    DATA_SET_TERSE_DESC            = "This data set contains the ion          
+       densities and temperatures along with formal 1 Sigma errors obtained   
+       from Voyager 2 PLS data (voltage range 10-5950 eV/Q) at Uranus by      
+       fitting the measured spectra with isotropic Maxwellian distributions." 
+    DATA_SET_DESC                  = "                                        
+      This data set contains the ion densities and temperatures               
+      along with formal 1 Sigma errors obtained from Voyager 2                
+      PLS data (voltage range 10-5950 eV/Q) at Uranus by fitting              
+      the measured spectra with isotropic Maxwellian                          
+      distributions. Up to three isotropic proton components                  
+      (warm, hot and intermediate) were used to match the                     
+      observations. The plasma was assumed to be rigidly                      
+      corotating. Uncertainties in plasma parameters are a factor             
+      of 2 in the charging region from 19:39-21:58 on day 24, less            
+      than 20% elsewhere. A complete description of this data set             
+      is given in McNutt et al. (1987) and Selesnick and McNutt               
+      (1987).                                                                 
+                                                                              
+    DATASET PARAMETERS:                                                       
+                                                                              
+    Each data record consists of six lines:                                   
+                                                                              
+     1.   Time of measurement                                                 
+          Mode (A3): L or M.                                                  
+     3-6. Cup identifier (A1): A, B, C, or D.                                 
+          Number of sets of channels used in fit (I3).                        
+          Beginning and ending channel of each set (2I4                       
+          repeated for each set).                                             
+     7-19.Density (CM-3) and 1 sigma uncertainty for first                    
+          fit component (2E10.3).                                             
+          Same for second fit component (2E10.3).                             
+          Same for third fit component (2E10.3).                              
+          Thermal speed (KM/S) and 1 sigma uncertainty for                    
+          First fit component (2E10.3).                                       
+          Same for second fit component (2E10.3).                             
+          Same for third fit component (2E10.3). Values of                    
+      1.E32 indicate that the parameter could not be obtained                 
+      from the data using the standard analysis technique.                    
+      Additional information about this dataset and the                       
+      instrument which produced it can be found elsewhere in this             
+      catalog. An overview of the data in this data set can be                
+      found in McNutt et al. (1987) and Selesnick and McNutt                  
+      (1987) and a complete instrument description can be found               
+      in Bridge (1977).                                                       
+                                                                              
+    SAMPLING_PARAMETER_NAME        = TIME                                     
+    SAMPLING_PARAMETER_RESOLUTION  = 48.000000                                
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                      
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                      
+    SAMPLING_PARAMETER_INTERVAL    = 48.000000                                
+    MINIMUM_AVAILABLE_SAMPLING_INT = 24.000000                                
+    SAMPLING_PARAMETER_UNIT        = SECOND                                   
+    DATA_SET_PARAMETER_NAME        = ION DENSITY                              
+    NOISE_LEVEL                    = N/A                                      
+    DATA_SET_PARAMETER_UNIT        = CM-3                                     
+                                                                              
+    SAMPLING_PARAMETER_NAME        = TIME                                     
+    SAMPLING_PARAMETER_RESOLUTION  = 48.000000                                
+    MINIMUM_SAMPLING_PARAMETER     = N/A                                      
+    MAXIMUM_SAMPLING_PARAMETER     = N/A                                      
+    SAMPLING_PARAMETER_INTERVAL    = 48.000000                                
+    MINIMUM_AVAILABLE_SAMPLING_INT = 24.000000                                
+    SAMPLING_PARAMETER_UNIT        = SECOND                                   
+    DATA_SET_PARAMETER_NAME        = ION THERMAL SPEED                        
+    NOISE_LEVEL                    = N/A                                      
+    DATA_SET_PARAMETER_UNIT        = KM/S                                     
+                                                                              
+"                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+      This data set provides a reliable estimate of the ion                   
+      density and energy in the PLS energy range (10-5950 eV)                 
+      throughout the region where data is provided. All ion                   
+      components are fit with Maxwellians although they may not               
+      be Maxwellian in nature. Formal 1 sigma uncertainties for               
+      the derived densities and thermal speeds are given in the               
+      data set and range from a few to 20%. Underestimates of ion             
+      density and temperature due to ions outside the PLS energy              
+      range are less than 10%."                                               
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = "URANUS"                                 
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = "VG2"                                    
+    INSTRUMENT_ID                  = "PLS"                                    
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+  OBJECT                         =  DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "BRIDGEETAL1977"                         
+  END_OBJECT                     =  DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+  OBJECT                         =  DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "BRIDGEETAL1986"                         
+  END_OBJECT                     =  DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+  OBJECT                         =  DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "MCNUTTETAL1987"                         
+  END_OBJECT                     =  DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+  OBJECT                         =  DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID               = "SELESNICK&MCNUTT1987"                   
+  END_OBJECT                     =  DATA_SET_REFERENCE_INFORMATION            
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

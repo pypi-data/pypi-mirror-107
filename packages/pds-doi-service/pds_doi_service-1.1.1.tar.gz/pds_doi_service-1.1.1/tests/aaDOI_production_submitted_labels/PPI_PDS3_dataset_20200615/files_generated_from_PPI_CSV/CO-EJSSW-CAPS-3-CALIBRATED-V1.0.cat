@@ -1,0 +1,351 @@
+PDS_VERSION_ID                 = PDS3                                         
+LABEL_REVISION_NOTE     = "                                                  
+    2013-09-29, R. J. Wilson, initial draft;"                                
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT      = DATA_SET                                                       
+  DATA_SET_ID                 = "CO-E/J/S/SW-CAPS-3-CALIBRATED-V1.0"         
+                                                                             
+  OBJECT      = DATA_SET_INFORMATION                                         
+    DATA_SET_NAME             = "CASSINI E/J/S/SW CAPS CALIBRATED V1.0"      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                = 1999-004T00:00:00                            
+    STOP_TIME                 = 2012-154T06:11:45                            
+    DATA_SET_RELEASE_DATE     = "NULL"                                       
+    PRODUCER_FULL_NAME        = "ROBERT J WILSON"                            
+                                 /* based of the uncalibrated one */         
+    DETAILED_CATALOG_FLAG     = N                                            
+    DATA_OBJECT_TYPE          = "TABLE"                                      
+                                                                             
+    DATA_SET_TERSE_DESC       = "This data set consists of all of the        
+     calibrated data from the Cassini Plasma Spectrometer on-board           
+     the CO spacecraft during the entire mission.  For more information      
+     about the instrument and data sets, see [YOUNGETAL2004] and             
+     [FURMANETAL2005]."                                                      
+    CITATION_DESC             = UNK                                          
+    ABSTRACT_DESC             = NULL                                         
+    DATA_SET_DESC             = "                                            
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+     This data set consists of all of the calibrated data from the           
+     Cassini Plasma Spectrometer (CAPS) on-board the Cassini spacecraft      
+     during the entire Cassini mission. The following calibrated data        
+     products (calculated from their corresponding uncalibrated data stets)  
+     are produced:                                                           
+     Electron Spectrometer data product (ELS),                               
+     Ion Beam Spectrometer data product (IBS),                               
+     Ion Mass Spectrometer ion data product (ION),                           
+     Ion Mass Spectrometer singles data product (SNG),                       
+     Ion Mass Spectrometer 'time of flight' linear electric field data       
+       product (TOFLEF),                                                     
+     Ion Mass Spectrometer 'time of flight' straight through data            
+       product (TOFST).                                                      
+                                                                             
+     These data were acquired in a mix of CAPS operating modes beginning with
+     the first instrument checkout in January 1999 and continuing throughout 
+     the Cassini Tour, through the end of prime mission a subsequent         
+     extended mission. The data set covers the time period from              
+     1999-004T03:07:47 UT until 2012-154T06:11:45. Sampling rates were       
+     variable and depended upon the downlink capabilities and other          
+     activities on-board.                                                    
+                                                                             
+     For times when CAPS is not producing data due to being turned off or    
+     due to communication issues, the data set will not contain data.        
+     This effect can be sensor/data type specific.                           
+                                                                             
+     For times when CAPS is producing data that is not suitable for science  
+     (for instance, mcp calibration tests, parts of the turn on sequence     
+     when sensor is on but the mcp voltages have yet to be initiated) the    
+     data is replaced with fill values.  If there is a record of all fill    
+     that you think is scientifically interesting you should use the         
+     uncalibrated data instead and confer with the CAPS PI.                  
+     Likewise, if the energy table is unknown, or actuator angle is unknown  
+     for the whole period of the record, then the dimensions of the data may 
+     all be fill values too.  Another possibility is any dead time correction
+     or cross talk correction that gave negative counts resulted in all data 
+     at that energy being set to fill.                                       
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+                                                                             
+     Data Sampling                                                           
+     -------------                                                           
+       Data acquistion strategies varied throught the mission.  During the   
+       cruise phase, the instrument was only capable of 2 distinct rates. In 
+       addition, the spacecraft telemetry modes were not fully developed     
+       which lead to peculiar recording strategies as well.  As the mission  
+       progressed, the flight software for both the CAPS instrument and the  
+       Cassini spacecraft matured.  During the Jupiter period, the spacecraft
+       implemented data policing, where an instrument was assigned a data    
+       allocation and the spacecraft would not record any more data from an  
+       instrument who had reached their negotiated limit.  This strategy was 
+       useful during the planning process, but careful control had to be     
+       exercised to not run over the allocation.  Data gaps in the CAPS data 
+       can come from a variety of sources:  instrument was off, specific     
+       sensors were off, ground communication problems, CAPS over-allocation 
+       issues, the instrument was in sleep mode for Probe activities, or     
+       there was a problem with commanding on-board the spacecraft.          
+                                                                             
+       During the cruise phase, the average data rate for CAPS was low.  If  
+       at all possible, the instrument was set to cycle between our lowest   
+       rate in order to get contiguous data) and a higher rate (for higher   
+       resolution data).  The combined high & low rate were designed to give 
+       us the average low rate data.  This scheme did not change as we       
+       entered Approach Science and Tour, but the average data rate was      
+       increased.  In addition to running in survey mode, we also acquired   
+       data in higher resolution modes around Magnetospheric boundaries,     
+       Titan flybys, icy satellite flybys, ring & satellite campaigns, and   
+       distant torus observations.  In addition, any data volume allocation  
+       that was not allocated to other instruments was distributed to those  
+       who could take advantage of the increase in data volume (and hence    
+       data resolution).                                                     
+                                                                             
+       At the maximum CAPS telemetry rate of 16 kbits/s all data products    
+       coming out of the science and calibration modes can be accommodated   
+       without the need for compression. The exception is the compressed     
+       extraction of ions by the SAM algorithm, and a semi-logarithmic       
+       collapse of all data words. The collapse replaces 16-bit data words   
+       stored in the DPU with 8-bit data words to be returned to Earth.  For 
+       small data numbers, the 8-bit values are equal to the 16-bit values,  
+       but for higher values the scale is logarithmic. A similar 32- to      
+       16-bit compression is used for TOF data. As a result of this          
+       compression, the uncertainty in the higher data numbers is            
+       roughly +/- 0.015N rather than the statistical +/- N^(1/2).  No       
+       attempt was made to carry out more exotic on-board compression        
+       routines such as moment calculations or image-like compressions, with 
+       the exception of a run-length compression of the sparse, IBS data.    
+                                                                             
+       The contents of the CAPS data products at 16 kbits/s are distributed  
+       among the three sensors, the ACT and housekeeping channels as         
+       indicated below.  Data products are organized along A-cycle (32.0 s)  
+       boundaries. Acquisition and formation of B-cycle data products is     
+       more complex than the A-cycle process: The CPU2 extracts TOF data in  
+       the form of 512 channels each of ST and LEF data.  In the default     
+       mode, adjacent energy steps are sampled to produce                    
+       2RES x 32E x 512TOF = 32,768 words. In the standard CAPS telemetry    
+       mode of 16 kbits/s, each word of B-cycle data is summed over 8        
+       A-cycles, whereas for some lower rate modes it is summed over 16      
+       A-cycles (i.e., the B-cycle is 8 A-cycles long for the 16 kbits/s mode
+        and 16 A-cycles long for these other modes).  In the                 
+       very early CAPS data, there was even a mode where it is summed over 32
+       A-cycles.  Most CAPS data products are generated at lower data rates  
+       by collapsing (summing) the 16 kbps data over adjacent energy,        
+       elevation and/or azimuth bins. In addition, snapshots (uncollapsed    
+       subsets of the 16 kbps data) may be included. The subset of data      
+       included in the snapshot can be determined on the spacecraft, so that 
+       the snapshot contains the peak of the velocity distribution. Leaving  
+       out certain products entirely produces the smallest possible datasets.
+       The modes used by the CAPS instrument were revised prior to the       
+       Cassini Jupiter encounter to include 0.25, 0.5, and 1 kbps rates, in  
+       addition to the original 2 and 16 kbps modes. These modes were further
+       revised before reaching Saturn, to add 4 and 8 kbps modes and         
+       incorporate experience from analysis of the Jupiter data. Other data  
+       products that can be included as options (at the expense of sensor    
+       data) are memory readout of control tables for diagnostic purposes.   
+       Sequential event data that are used to verify IMS operations can also 
+       be included.                                                          
+                                                                             
+                                                                             
+         Telemetry products in 16 kbits/s mode                               
+         --------------------------------------                              
+                            Data channels                                    
+                       -----------------------                               
+           Product     EQ  EL  AZ  MQ LOG  TOF                               
+         ---------------------------------------                             
+            ELS        63   8  16   .   .    .                               
+            IBS       255   3  16   .   .    .                               
+         IMS ION       63   8   8   7   .    .                               
+         IMS TDC LOG   63   .   8   .   4    .                               
+         IMS TDC SNG   63   8   8   .   .    .                               
+         IMS TOF LEF   32   .   .   .   .  512                               
+         IMS TOF ST    32   .   .   .   .  512                               
+          ACTUATOR         32 position samples                               
+         HOUSEKEEPING     164 bytes of data                                  
+         ---------------------------------------                             
+         EQ=energy/charge, EL=elevation,                                     
+         AZ=azimuth, MQ=mass/charge, LOG=logical,                            
+         and TOF=time-of-flight                                              
+                                                                             
+       Data are collected as raw counts.  For the ELS sensor, the 63 energy  
+       steps are swept through every 2 seconds.  For the IBS sensor, the 225 
+       energy steps are swept through every 2 seconds, or 127 energy steps   
+       are swept through every 1 second.  For the IMS sensor,                
+       the 63 energy steps are swept through every 4 seconds.  To learn more 
+       about the energy range covered by each of the sensors and any other   
+       details regarding data acquisition, please see [YOUNGETAL2004].       
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+                                                                             
+    The uncalibrated counts are collected, collapsed, and compressed on board
+    the spacecraft.  The data is then downlinked to the Jet Propulsion Query 
+    Servers where it is queried from the server (in standard data unit       
+    format, SFDU) and ingested into the CAPS oracle database and stored as   
+    CCSDS packets.  From this point, the data is collected into blocks of    
+    CCSDS packets which comprise an A-cycle (32 seconds) of data.  These     
+    data are then decompressed into their separate sensor pieces and stored  
+    as raw, decompressed counts in tables in the database.  From this point, 
+    archive files are generated with the raw, decompressed counts, into      
+    uncalibrated data set files.                                             
+                                                                             
+    These calibrated level 3 files are produced solely from those            
+    uncalibrated (level 2) files, plus the addition of the yearly PDS        
+    archived SPICE kernels for Cassini position/orientation.  These are often
+    slightly improved from the SPICE kernels used in the uncalibrated level 2
+    ANC files, as such position/orientation values are not identical, however
+    the difference is minute, usually equivalent to a few milliseconds.      
+                                                                             
+    While spacecraft position/orientation is found via SPICE, CAPS' field of 
+    view from the spacecraft body is provided by the uncalibrated ACT files. 
+    From the level 2 CO_CAPS_UNCALIBRATED_DS.CAT file:                       
+    &#10095; For the actuator data product (ACT), in December 2004 the position     
+    &#10095; monitor became unreliable.  Based on our understanding of the          
+    &#10095; position at the time the monitor failed, the actuator file was         
+    &#10095; updated with an estimated value.  This estimation continued until      
+    &#10095; TBD time, at which point the actuator was moved and began reporting    
+    &#10095; reliable readings again. While trying to move the actuator to +90      
+    &#10095; degrees on March 21, 2005, we again encountered a time period where    
+    &#10095; the position was adjusted to account for the monitor reading           
+    &#10095; unreliably. On May 26, 2005 at 10:00:00, the actuator position         
+    &#10095; monitor was modified in the flight software to be the estimated        
+    &#10095; position instead of the hardware position.  This data is also          
+    &#10095; corrected before being placed into the archive file to account for     
+    &#10095; any drift in the estimated position.                                   
+                                                                             
+    Utilizing the ACT and SPICE data, the spacecraft field of view in theta  
+    and phi is provided for every level 3 record, along with transformation  
+    information to get to J2000 co-ordinates or Saturn-centered              
+    radial-theta-phi.                                                        
+                                                                             
+  Data                                                                       
+  ====                                                                       
+    The data are stored in multiple data files and have been organized by    
+    product type.  Each file contains a maximum of 6 hours of data, with only
+    4 files being generated per day per product.  These are the exact same   
+    periods used for the level 2 uncalibrated files - where each uncalibrated
+    file becomes a calibrated files here.  Format of the data files can be   
+    found in the CAPS instrument archive specification [FURMANETAL2005].     
+    The format can also be found in the .FMT files co-located with the data  
+    files.                                                                   
+                                                                             
+  Coordinate Systems                                                         
+  ==================                                                         
+    The data are provided in the spacecraft frame.  Each record contains     
+    transformation matrices to J2000, and from J2000 to Saturn centered RTP. 
+    By using the first then the later one can go from the spacecraft frame to
+    Saturn Centered RTP.  Velocity data is also provided.                    
+                                                                             
+  Ancillary Data                                                             
+  ==============                                                             
+    The idea is that all ancillary data required is given with each data     
+    record.  This includes mcp or cem voltages so that one can uses these    
+    at such future times that calibrations are refined.  Energy tables and   
+    field of view of the sensors are provided as different dimensions of the 
+    data.                                                                    
+                                                                             
+  References                                                                 
+  ========                                                                   
+    [FURMANETAL2005] CAPS standard data products and archive volume software 
+       interface specification, Version 1.9, JPL SIS ID: IO-AR-017, Southwest
+       Research Institute, San Antonio, TX 78250, 2005.                      
+    [YOUNGETAL2004] Cassini Plasma Spectrometer Investigation, Space Sci.    
+    Rev. 114, 1-112, 2004."                                                  
+                                                                             
+    CONFIDENCE_LEVEL_NOTE           = "                                      
+                                                                             
+  Review                                                                     
+  ======                                                                     
+    These data have yet to be reviewed                                       
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================                                                  
+                                                                             
+    Gaps                                                                     
+    ----                                                                     
+      There are many gaps in the CAPS data stream and there are many         
+      different sources for these gaps.  Sources of gaps are as follows:     
+         a. telemety outages                                                 
+         b. data policing violations (CAPS data volume higher than allocated)
+         c. incorrect spacecraft data mangement commanding                   
+         d. telemetry commanding during Cruise                               
+         e. instrument anomalies                                             
+         f. instrument modes which don't return all data products            
+         g. planned instrument power-off and/or sleep periods                
+      When there is no data for a time period, one of the above sources is   
+      the reason behind the gap in level 2 uncalibrated data, and therefore a
+      gap in level 3 calibrated data.  There is no indicator to which of the 
+      sources is responsible for the gap in data coverage.                   
+                                                                             
+    Sensor Gains                                                             
+    ------------                                                             
+      Sensor gains were set for each sensor based upon calibration           
+      information determined on the ground.  While in-flight, sensor         
+      calibrations were performed and adjustments were made to the gain of a 
+      sensor, based upon interpretation of the data by the team and the      
+      leader of the sensor.  During the tour phase, calibrations were        
+      performed roughly once every 50 days.  The change in gain can't be     
+      tracked with the current archive data, but is done with                
+      housekeeping information.                                              
+                                                                             
+      However, when the final units are counts per second, gains do not come 
+      in to the equation.  Therefore counts per second are the preferred     
+      scientific unit.  Seek help from the CAPS team for the appropriate     
+      gain to use and remember to monitor the mcp/cem voltages for the       
+      sensor, which are provided in each record.                             
+                                                                             
+    Anomalies                                                                
+    ---------                                                                
+      See the level 2 uncalibrated files for anomalie information.           
+                                                                             
+  Limitations                                                                
+  ===========                                                                
+      The main limitation to using this data set is that the data are not    
+      calibrated using sensor gains and are only as good as the uncalibrated 
+      data files that are their basis.                                       
+      Do keep an eye on what energies are being scanning and if the mcp      
+      voltages are stable and at nominal values in your regions of interest. 
+      If a record contains nothing but fill values in the DATA object there  
+      a reason it was excluded (likely mcp calibration tests or such), but   
+      you have the option of returning to the level 2 uncalibrated data to   
+      try to understand why.                                                 
+   "                                                                         
+                                                                             
+  END_OBJECT      = DATA_SET_INFORMATION                                     
+                                                                             
+  OBJECT                      = DATA_SET_TARGET                              
+    TARGET_NAME               = "EARTH"                                      
+  END_OBJECT                  = DATA_SET_TARGET                              
+                                                                             
+  OBJECT                      = DATA_SET_TARGET                              
+    TARGET_NAME               = "JUPITER"                                    
+  END_OBJECT                  = DATA_SET_TARGET                              
+                                                                             
+  OBJECT                      = DATA_SET_TARGET                              
+    TARGET_NAME               = "SATURN"                                     
+  END_OBJECT                  = DATA_SET_TARGET                              
+                                                                             
+  OBJECT                      = DATA_SET_TARGET                              
+    TARGET_NAME               = "SOLAR WIND"                                 
+  END_OBJECT                  = DATA_SET_TARGET                              
+                                                                             
+  OBJECT                      = DATA_SET_HOST                                
+    INSTRUMENT_HOST_ID        = CO                                           
+    INSTRUMENT_ID             = CAPS                                         
+  END_OBJECT                  = DATA_SET_HOST                                
+                                                                             
+  OBJECT                      = DATA_SET_MISSION                             
+    MISSION_NAME              = "CASSINI-HUYGENS"                            
+  END_OBJECT                  = DATA_SET_MISSION                             
+                                                                             
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION               
+    REFERENCE_KEY_ID          = "YOUNGETAL2004"                              
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION               
+                                                                             
+  OBJECT                      = DATA_SET_REFERENCE_INFORMATION               
+    REFERENCE_KEY_ID          = "FURMANETAL2005"                             
+  END_OBJECT                  = DATA_SET_REFERENCE_INFORMATION               
+                                                                             
+END_OBJECT      = DATA_SET                                                   
+END

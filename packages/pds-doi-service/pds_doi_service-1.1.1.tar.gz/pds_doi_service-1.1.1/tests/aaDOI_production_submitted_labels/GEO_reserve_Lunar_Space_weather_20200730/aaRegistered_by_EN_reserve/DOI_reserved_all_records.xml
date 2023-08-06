@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- ====================================================== -->
+    <!-- DOI-C_reserved_trang2020_moon_space_weathering_1.0.xml -->
+    <!-- ====================================================== -->
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Lunar Space Weathering Maps Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name>David</first_name> 
+               <last_name>Trang</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Geosciences Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-07-29</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URN</identifier_type>
+                <identifier_value>urn:nasa:pds:trang2020_moon_space_weathering::1.0</identifier_value>
+                <relation_type>IsIdenticalTo</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>
+

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VL1/VL2 MARS LABELED RELEASE V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VL1/VL2-M-LR-2-EDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2000-10-15</publication_date>
+            <country>USA</country>
+            <description>The Labeled Release (LR) instrument on each Viking Lander
+                operated throughout the Primary Mission and continued into the
+                Extended Mission. The basic analysis cycle for the Labeled
+                Release experiment was to deliver a sample of martian soil to one
+                of four test cells, seal the cell and moisten the soil with an
+                aqueous solution of carbon-14 labeled organic media. A second
+                nutrient injection was typically done about 7-8 Mars days after
+                the first injection. The test cell was continuously monitored for
+                the release of radioactive labeled gas as an indicator of
+                heterotrophic metabolism. Viking Lander 1 (VL1) conducted four
+                analysis cycles with two nutrient injections for cycles 1, 2, and
+                4 and three injections for cycle 3. Viking Lander 2 (VL2)
+                conducted five analysis cycles. The first four cycles had two
+                nutrient injections each, and the fifth cycle had one injection
+            [LEVIN&amp;STRAAT1976B</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1%2FVL2-M-LR-2-EDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING LANDER 1; VIKING LANDER 2; MARS; BETA DETECTOR; VL1; VL2; PLANET; LR1; LR2; LABELED RELEASE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>GILBERT V. LEVIN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vl1-vl2-m-lr-2-edr-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

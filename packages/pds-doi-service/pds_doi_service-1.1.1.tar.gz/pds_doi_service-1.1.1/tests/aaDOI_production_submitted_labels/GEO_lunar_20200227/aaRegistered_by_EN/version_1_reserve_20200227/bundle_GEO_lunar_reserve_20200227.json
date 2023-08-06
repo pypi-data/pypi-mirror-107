@@ -1,0 +1,17 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:a17sep",
+        "title": "Apollo 17 Surface Electrical Properties Experiment Calibrated ASCII Data Bundle",
+        "authors": [
+            {
+                "first_name": "D.R.",
+                "last_name": "Williams"
+            }
+        ],
+        "publication_date": "2020-02-24",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "contract_nos": "urn:nasa:pds:a17sep",
+        "status": "Reserved"
+    }
+]

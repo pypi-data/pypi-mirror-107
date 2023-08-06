@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GRAIL MOON LGRS DERIVED GRAVITY SCIENCE DATA PRODUCTS V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GRAIL-L-LGRS-5-RDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2013-10-11</publication_date>
+            <country>USA</country>
+            <description>This data set contains archival derived science data, acquired
+                from the Lunar Gravity Ranging System (LGRS) on the two
+                spacecraft comprising the Gravity Recovery and Interior
+                Laboratory (GRAIL) mission. Measurements were made using the
+                GRAIL spacecraft and Earth-based stations of the NASA Deep Space
+                Network (DSN). The data set includes high-resolution spherical
+                harmonic models of the Moon's gravity field, covariance
+                matrices for some models, and maps for some models. It also
+                contains a complete set of SPICE SPK Files ('kernel
+                files'), which can be accessed using SPICE software. The SPK
+                products in this data set differ from those archived by GRAIL
+                navigation, as they were created by the GRAIL SDS and make use of
+                the LGRS to provide a more refined solution of the spacecraft
+            ephemerides than those provided by GRAIL navigation.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GRAIL-L-LGRS-5-RDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GRAVITY RECOVERY AND INTERIOR LABORATORY A; MOON; RADIO SCIENCE; GRAIL-A; SATELLITE; LGRS-A; LUNAR GRAVITY RANGING SYSTEM A</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DANIEL S. KAHAN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.grail-l-lgrs-5-rdr-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

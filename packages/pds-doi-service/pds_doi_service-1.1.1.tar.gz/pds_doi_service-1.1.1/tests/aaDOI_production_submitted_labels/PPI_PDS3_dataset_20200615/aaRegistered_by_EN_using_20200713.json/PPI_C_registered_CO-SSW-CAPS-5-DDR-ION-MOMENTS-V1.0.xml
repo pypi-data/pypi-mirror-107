@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CASSINI ORBITER SAT/SW CAPS DERIVED ION MOMENTS V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CO-S/SW-CAPS-5-DDR-ION-MOMENTS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2013-03-18</publication_date>
+            <country>USA</country>
+            <description>This data set consists of all of the ion moments data generated from
+                the Cassini Plasma Spectrometer (CAPS) ion mass spectrometer
+                singles or time-of-flight uncalibrated data.
+                
+                The data set contains the derived ion moments data as follows:
+                Ion Moments (ION_MOMT)
+                Density, Temperature, Average Flow Speed, Average Flow Velocity
+                Ions included are H+, H2+, and W+ (water group ions: O+, OH+, H2O+)
+                
+                The uncalibrated data were acquired in a mix of CAPS operating modes
+                beginning with the first instrument checkout in January 1999 and
+                containing throughout the Cassini Tour and through the end of prime
+                mission.  The data set covers the time period from 1999-004T03:07:47
+                UT until end of prime mission (July 2008).  In addition, it will cover
+                data received during extended missions.  Sampling rates were variable
+                and depended upon the downlink capabilities and other activities
+                on-board.
+                
+                For times when CAPS is not producing data due to being turned off or
+                due to communication issues, the data set will not contain data.
+                
+                Additionally, there will be no data during times when the calculations
+            are not possible.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CO-S%2FSW-CAPS-5-DDR-ION-MOMENTS-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CASSINI ORBITER; EARTH; SATURN; JUPITER; SPECTROMETER; CO; PLANET; CAPS; CASSINI PLASMA SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>JUDITH D. FURMAN</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.co-s-sw-caps-5-ddr-ion-moments-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

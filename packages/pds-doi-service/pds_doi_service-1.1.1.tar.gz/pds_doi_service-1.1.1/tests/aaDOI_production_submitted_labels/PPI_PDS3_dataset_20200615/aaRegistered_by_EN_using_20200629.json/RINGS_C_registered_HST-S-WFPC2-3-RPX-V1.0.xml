@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>HST SATURN WFPC2 3 RING PLANE CROSSING V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>HST-S-WFPC2-3-RPX-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1999-06-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains images of the Saturn system taken by the
+                Wide Field/Planetary Camera 2 (WFPC2) aboard the Hubble Space
+                Telescope (HST) through November 1995. This period includes all
+                images taken during the Saturn ring plane crossings of 1995. (No
+                WFPC2 images of Saturn were obtained during the last ring plane
+                crossing in February 1996 because Saturn was too close to the
+            Sun.)</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=HST-S-WFPC2-3-RPX-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>HUBBLE SPACE TELESCOPE; SATURN; S RINGS; ATLAS; CALYPSO; DIONE; ENCELADUS; EPIMETHEUS; HELENE; HYPERION; IAPETUS; JANUS; MIMAS; PAN; PANDORA; PROMETHEUS; RHEA; TELESTO; TETHYS; TITAN; CAMERA; HST; PLANET; RING; SATELLITE; WFPC2; WIDE FIELD PLANETARY CAMERA 2</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>MARK R. SHOWALTER</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Ring-Moon Systems Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.hst-s-wfpc2-3-rpx-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

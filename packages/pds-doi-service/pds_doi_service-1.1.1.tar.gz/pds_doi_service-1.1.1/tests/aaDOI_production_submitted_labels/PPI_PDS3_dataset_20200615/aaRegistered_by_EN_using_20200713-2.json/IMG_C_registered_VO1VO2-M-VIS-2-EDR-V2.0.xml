@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VO1/VO2 MARS VISUAL IMAGING SS EXPRMNT DATA RECORD V2.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VO1/VO2-M-VIS-2-EDR-V2.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1990-12-01</publication_date>
+            <country>USA</country>
+            <description>This data set is a digital archive of images acquired by the
+                Viking Orbiter 1 and 2 spacecraft. The archive will include the
+                best available Experiment Data Record (EDR) versions of images
+                acquired by the Viking Orbiter Visual Imaging Subsystems (VIS).
+                The archive is stored on compact read-only optical disk media
+                (CD-ROM) for distribution. The EDR image data are stored on
+                CD-ROM in a compressed format that allows exact reconstruction of
+                the original image. The images were compressed in order to reduce
+                the number of CD-ROMs required for the archive. The average
+                Viking Orbiter image is compressed by a factor of about 3.5. Each
+                CD-ROM in the archive also includes documentation about the
+                organization and contents of the disk. Software is included to
+                provide programmers with tools to decompress image files. The
+                CD-ROM has index files containing information about all the
+                images stored in the archive. These index files can be loaded
+                into a database management system to help the user locate images
+            of interest.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VO1%2FVO2-M-VIS-2-EDR-V2.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING ORBITER 1; VIKING ORBITER 2; MARS; DEIMOS; PHOBOS; STAR; CAMERA; VO1; VO2; PLANET; SATELLITE; VISA; VISB; VISUAL IMAGING SUBSYSTEM - CAMERA A; VISUAL IMAGING SUBSYSTEM - CAMERA B</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>EDWARD A. GUINNESS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vo1-vo2-m-vis-2-edr-v2.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>PVO VENUS MAG RESAMPLED P-SENSOR 24SEC AVGS V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>PVO-V-OMAG-4-P-SENSOR-24SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-09-01</publication_date>
+            <country>USA</country>
+            <description>This dataset contains resampled
+                magnetometer data from the Pioneer Venus Orbiter spacecraft beginning with
+                orbit 3602 (Oct 16, 1988) and continuing until the orbiter was lost in the
+                Venusian atmosphere (orbit 5055, Oct 7, 1992). The dataset differs from the
+                2 spin period averaged mag dataset from the previous orbits due to an anomaly
+                in the multiplexor that controlled the sampling of the magnetometer sensors.
+                During orbit 3602, and for the remainder of the mission, the spacecraft
+                downlink contained magnetometer data from only the P sensor. The P sensor is
+                the sensor which is aligned with the spacecraft spin axis, nominally in the
+            direction of the ecliptic normal.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=PVO-V-OMAG-4-P-SENSOR-24SEC-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>PIONEER VENUS ORBITER; VENUS; MAGNETOMETER; PVO; PLANET; OMAG; FLUXGATE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>MURIEL KNIFFIN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.pvo-v-omag-4-p-sensor-24sec-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

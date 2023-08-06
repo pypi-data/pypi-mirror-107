@@ -1,0 +1,211 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+X. LIU (added DATA_SET_TERSE_DESC), 2002-10-14;                               
+D. Kazden, removed Zs from START_TIME and STOP_TIME and                       
+unnecessary keywords, added ABSTRACT_DESC, CITATION_DESC and                  
+CONFIDENCE_LEVEL_NOTE, 2011-05-31;                                            
+D. Kazden, updated REFERENCE_KEY_IDs, 2011-11-28;                             
+D. Kazden, updated DATA_SET_RELEASE_DATE and CITATION_DESC, 2020-03-03;"      
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-S-PLS-5-SUMM-ELE-BR-96SEC-V1.0"     
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "VOYAGER 2 SATURN PLASMA DERIVED ELECTRON
+                                      BROWSE 96 SEC"                          
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1981-08-25T00:00:42.991                  
+    STOP_TIME                      = 1981-08-27T00:29:30.816                  
+    DATA_SET_RELEASE_DATE          = 2002-10-14                               
+    PRODUCER_FULL_NAME             = "JOHN D. RICHARDSON"                     
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    ABSTRACT_DESC                  = "THIS DATA SET CONTAINS THE THERMAL      
+          ELECTRON DENSITY AND TEMPERATURE IN THE PLS ENERGY RANGE            
+          (10-5950 EV) FROM VOYAGER 2 AT SATURN DERIVED BY FITTING THE LOW    
+          ENERGY ELECTRON COMPONENT WITH A  MAXWELLIAN DISTRIBUTION, AND THE  
+          MOMENT DENSITY AND TEMPERATURE OF THE HOT ELECTRONS CALCULATED AFTER
+          THE SIGNAL FROM THE THERMAL COMPONENT IS SUBTRACTED FROM THE        
+          ELECTRON SPECTRA.  IT IS A SUBSET OF THE DATA SET                   
+          VG2-S-PLS-5-ELE-FIT-96.0SEC WHICH SHOULD BE OBTAINED BEFORE THIS    
+          DATA IS USED.  SPACECRAFT CHARGING MAY RESULT IN FACTOR OF 2-3      
+          ERRORS IN THE THERMAL ELECTRON DENSITY."                            
+    CITATION_DESC     = "Richardson, J.D., VG2-S-PLS-5-SUMM-ELE-BR-96SEC-V1.0,
+                       VOYAGER 2 SATURN PLASMA DERIVED ELECTRON BROWSE 96 SEC,
+                         NASA Planetary Data System, 2002."                   
+    DATA_SET_TERSE_DESC            = "                                        
+Electron browse data from the Plasma experiment (PLS) on Voyager 2 from       
+the Saturn encounter.  The data set provides 96 second averages of the        
+electron (10-5950 eV) density and temperature measurements."                  
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+        Data Set Overview                                                     
+        =================                                                     
+          THIS DATA SET CONTAINS THE THERMAL ELECTRON DENSITY AND TEMPERATURE 
+          IN THE PLS ENERGY RANGE (10-5950 EV) FROM VOYAGER 2 AT SATURN       
+          DERIVED BY FITTING THE LOW ENERGY ELECTRON COMPONENT WITH A         
+          MAXWELLIAN DISTRIBUTION, AND THE MOMENT DENSITY AND TEMPERATURE OF  
+          THE HOT ELECTRONS CALCULATED AFTER THE SIGNAL FROM THE THERMAL      
+          COMPONENT IS SUBTRACTED FROM THE ELECTRON SPECTRA.  IT IS A SUBSET  
+          OF THE DATA SET VG2-S-PLS-5-ELE-FIT-96.0SEC WHICH SHOULD BE OBTAINED
+          BEFORE THIS DATA IS USED.  SPACECRAFT CHARGING MAY RESULT IN FACTOR 
+          OF 2-3 ERRORS IN THE THERMAL ELECTRON DENSITY.                      
+                                                                              
+          DATA FORMATS ARE DESCRIBED AS BELOW:                                
+                                                                              
+          =================================================================== 
+          name      type       description                                    
+          ------------------------------------------------------------------- 
+          time      A24        time in the format yyyy-mm-ddThh:mm:ss.sssZ    
+          fit_den   1PE10.3    fit density of thermal electron component      
+                                 (cnts/cm**3)                                 
+          fit_temp  1PE10.3    fit temperature of thermal electron component  
+                                 (eV)                                         
+          mom_den   1PE10.3    moment density of suprathermal electrons       
+                                 (cnts/cm**3)                                 
+          mom_temp  1PE10.3    moment temperature of suprathermal electrons   
+                                 (eV)                                         
+                                                                              
+          DATA FLAG VALUES (-9.999E+10) INDICATE THAT THE PARAMETER COULD     
+          NOT BE OBTAINED FROM THE DATA USING THE STANDARD ANALYSIS TECHNIQUE.
+          ADDITIONAL INFORMATION ABOUT THIS DATASET AND THE INSTRUMENT WHICH  
+          PRODUCED IT CAN BE FOUND ELSEWHERE IN THIS CATALOG.  AN OVERVIEW OF 
+          THE DATA IN THIS DATA SET CAN BE FOUND IN SITTLERETAL (1983) AND A  
+          COMPLETE INSTRUMENT DESCRIPTION CAN BE FOUND IN BRIDGE (1977).      
+                                                                              
+          Processing Level Id            : 5                                  
+          Software Flag                  : Y                                  
+                                                                              
+                                                                              
+        Parameters                                                            
+        ==========                                                            
+          Sampling Parameter Name        : TIME                               
+          Data Set Parameter Name        : ELECTRON DENSITY                   
+          Sampling Parameter Resolution  : 96.000000                          
+          Sampling Parameter Interval    : 96.000000                          
+          Minimum Available Sampling Int : 96.000000                          
+          Data Set Parameter Unit        : CM-3                               
+          Sampling Parameter Unit        : SECOND                             
+                                                                              
+          Description                                                         
+          -----------                                                         
+            A derived parameter giving an indication of the mean A            
+            derived parameter equaling the number of electrons per unit       
+            volume over a specified range of electron energy.                 
+            energy/electron, assuming the shape of the electron energy        
+            Different forms of electron density are derived spectrum to       
+            be Maxwellian (i.e. highest entropy shape).  Given                
+            distinguished by method of derivation (Maxwellian fit, that       
+            the electron energy spectrum is not exactly Maxwellian,           
+            method of moments) or by the some selection criteria (ie.,        
+            the electron temperature can be defined integrally (whereby       
+            the mean energy obtained by integrating under the actual hot      
+            electron and cold electron density).  In general, if more         
+            electron energy spectrum is set equal to the integral under       
+            than one electron component is analyzed, either by moment or      
+            fit, a total density will be provided which is the sum of a       
+            Maxwellian, where the temperature is a free parameter for the     
+            electron densities.  If the electron do not have a which to       
+            solve), or differentially (whereby the slopes of Maxwellian       
+            distribution the actual distribution can be the actually          
+            electron energy spectrum at various energies are matched to       
+            the slopes of a corresponding Maxwellian).  represented as        
+            the sum of several Maxwellians, in which case the density of      
+            each Maxwellian is given.  The temperature parameter is often     
+            qualified with a range of applicable energies.  temperatures      
+            can be angularly anisotropic.  If the electrons do not have a     
+            Maxwellian distribution the actual distribution can be            
+            represented as the sum of several Maxwellians, each with a        
+            separate temperature.                                             
+                                                                              
+                                                                              
+        Source Instrument Parameters                                          
+        ============================                                          
+          Instrument Host ID              : VG2                               
+          Data Set Parameter Name         : ELECTRON DENSITY                  
+          Instrument Parameter Name       : ELECTRON RATE                     
+          Important Instrument Parameters : 1                                 
+                                                                              
+          Instrument Host ID              : VG2                               
+          Data Set Parameter Name         : ELECTRON DENSITY                  
+          Instrument Parameter Name       : ELECTRON CURRENT                  
+          Important Instrument Parameters : 1                                 
+                                                                              
+          Instrument Host ID              : VG2                               
+          Data Set Parameter Name         : ELECTRON TEMPERATURE              
+          Instrument Parameter Name       : ELECTRON RATE                     
+          Important Instrument Parameters : 1                                 
+                                                                              
+          Instrument Host ID              : VG2                               
+          Data Set Parameter Name         : ELECTRON TEMPERATURE              
+          Instrument Parameter Name       : ELECTRON CURRENT                  
+          Important Instrument Parameters : 1                                 
+                                                                              
+                                                                              
+        Processing                                                            
+        ==========                                                            
+                                                                              
+          Processing History                                                  
+          ------------------                                                  
+            Source Data Set ID          : VG2-PLS                             
+            Software                    : UNK                                 
+            Product Data Set ID         : VG2-S-PLS-5-ELE-BR-96.0SEC  "       
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE   = "                                               
+    Confidence Level:                                                         
+    ==================                                                        
+                                                                              
+          THIS DATA SET PROVIDES AN ESTIMATE OF THE ELECTRON PARAMETERS       
+          IN THE PLS ENERGY RANGE (10-5950 EV).  THE THERMAL ELECTRON         
+          DENSITY MAY BE UNDERESTIMATED BY FACTORS OF 2 IN SOME REGIONS       
+          DUE TO NEGATIVE SPACECRAFT CHARGING.  THERMAL ELECTRON              
+          PARAMETERS ARE ALSO UNRELIABLE INSIDE SIX KRONIAN RADII WHERE       
+          ELECTRON TEMPERATURES ARE COLD AND IN THE OCCULTATION REGIONS.      
+          HOT ELECTRONS ARE RELATIVELY UNDISTURBED BY CHARGING AND THESE      
+          PARAMETERS HAVE UNCERTAINTIES OF LESS THAN 20%.                     
+                                                                              
+                                                                              
+    Data Coverage                                                             
+    ==================                                                        
+    Filename Records Start                     Stop                           
+    --------------------------------------------------------------------      
+    Volume ID: VG_1601                                                        
+    ELE_BR.TAB  1819  1981-08-25T00:00:42.991Z  1981-08-27T00:29:30.816Z      
+                                                                              
+    Missing Data Flag                                                         
+    ==================                                                        
+    Any data column whose value is -9.999e+10 is a missing data value."       
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = SATURN                                   
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PLS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BRIDGEETAL1977"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BRIDGEETAL1982"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SITTLERETAL1983"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

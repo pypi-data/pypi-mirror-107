@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Collection 
+	xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:uranus_occ_support:data</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Data Collection for the Uranus Occultation Support Bundle.</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <author_list>French, R. G.; McGhee-French, C. A.; Gordon, M. K.</author_list>
+            <publication_year>2020</publication_year>
+            <doi>$collection_data_doi$</doi>
+            <keyword>uranus atmosphere stellar occultation time series</keyword>     
+            <keyword>uranus rings</keyword>
+            <keyword>uranus rings model</keyword>
+            <description>This collection contains the global occultation ring orbit fits of the rings of Uranus and the associated input files.</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-01-29</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+            <description>This collection contains the global occultation ring orbit fits of the rings of Uranus and the associated input files.</description>
+        </Primary_Result_Summary>
+        <Target_Identification>
+            <name>Uranus Rings</name>
+            <type>Ring</type>
+        </Target_Identification>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:uranus_occ_support:document:earth-based-uranus-stellar-occultations-user-guide</lid_reference>            
+            <reference_type>collection_to_document</reference_type>
+            <comment>The User Guide for Earth-based Uranus Stellar Occultations.</comment>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1088/0004-6256/139/4/1649</doi>
+            <reference_text>French, R. G. et al. (2010)
+                "Occultation Observations of Saturn's B Ring and Cassini Division", Astron. J. 139, 1649-1667.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1006/icar.1993.1066</doi>
+            <reference_text>French, R. G. et al. (1993) "Geometry of the Saturn System from the 3 July 1989 Occultation of 28 Sgr and Voyager Observations" Icarus 103, 163-214./reference_text>
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Collection>
+        <collection_type>Data</collection_type>
+    </Collection>
+    <File_Area_Inventory>
+        <File>
+            <file_name>collection_data.csv</file_name>
+            <creation_date_time>2020-01-20T11:40:42</creation_date_time>
+            <records>1
+            	</records>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>1</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                </Field_Delimited>
+            </Record_Delimited>
+            <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

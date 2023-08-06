@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>SPECTROPHOTOMETRY OF THE JOVIAN PLANETS AND TITAN</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>ESO-J/S/N/U-SPECTROPHOTOMETER-4-V2.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1998-09-01</publication_date>
+            <country>USA</country>
+            <description>The best description of this data set can be found in
+                [KARKOSCHKA1998]. The previous version (1993) of this data set is
+                included as well. The reference for that portion of the data set
+            is [KARKOSCHKA1994].</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=ESO-J%2FS%2FN%2FU-SPECTROPHOTOMETER-4-V2.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>EUROPEAN SOUTHERN OBSERVATORY; JUPITER; NEPTUNE; SATURN; URANUS; TITAN; SPECTROMETER; ESO; PLANET; SATELLITE; B&amp;C; BOLLER &amp; CHIVENS SPECTROGRAPH</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>ERICH KARKOSCHKA</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.eso-j-s-n-u-spectrophotometer-4-v2.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

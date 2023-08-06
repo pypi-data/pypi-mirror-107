@@ -1,0 +1,77 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "1993-09-24, initial draft;               
+2012-07-06, D. Kazden, updated to meet PDS 3.8 standards"                    
+                                                                             
+OBJECT                           = DATA_SET                                  
+                                                                             
+DATA_SET_ID                      = "GO-V-EPD-2-SAMP-PAD-V1.0"                
+                                                                             
+OBJECT                           = DATA_SET_INFORMATION                      
+DATA_SET_NAME                    = "                                         
+                  GO VEN EPD EDITED SAMPLE PITCH ANGLE DISTRIBUTIONS V1.0"   
+DATA_OBJECT_TYPE               = TABLE                                       
+DATA_SET_COLLECTION_MEMBER_FLG = "N"                                         
+START_TIME                     = 1990-041T05:30:13                           
+STOP_TIME                      = 1990-041T06:38:30                           
+DATA_SET_RELEASE_DATE          = 1993-12-07                                  
+PRODUCER_FULL_NAME             = "Christopher R. Brull"                      
+DETAILED_CATALOG_FLAG          = "N"                                         
+ABSTRACT_DESC                  = "This data set contains sixteen sector      
+rate data for the energetic particle detector obtained from the LEMMS        
+telescope during the time of significant activity during the Venus           
+encounter."                                                                  
+DATA_SET_TERSE_DESC            = "This data set contains sixteen sector      
+rate data for the energetic particle detector obtained from the LEMMS        
+telescope during the time of significant activity during the Venus           
+encounter."                                                                  
+CITATION_DESC                  = TBD                                         
+DATA_SET_DESC                  = "                                           
+This data set contains sixteen sector rate data for the                      
+energetic particle detector obtained from the LEMMS telescope during         
+the time of significant activity during the Venus encounter.  (5:45 -        
+5:50 and 6:12 - 6:27) Each record contains a single sector's data for        
+each of 17 LEMMS channels.  (The CMS telescope was not powered up            
+during the Venus encounter.)  Also included are pitch and phase angles       
+of the particles counted by the detectors.  The angles are determined        
+in a coordinate system defined by the magnetic field (magnetic field         
+data provided by Steve Joy) and the position of Venus (calculated with       
+SPICE kernel data).  The z-axis of the coordinate system points along        
+the magnetic field.  The x-axis is chosen so Venus lies in the xz            
+plane.  The pitch angle is the angle between the sector look direction       
+and the z-axis.  The phase angle is the angle between x-axis and the         
+projection of the x-axis on the xy plane.  All of the data was taken         
+with the telescope perpendicular to the spacecraft spin axis (motor          
+step position = 4).  The rates reported are in units of counts/sec.          
+Pitch and phase angles are recorded in radians."                             
+                                                                             
+CONFIDENCE_LEVEL_NOTE          = "                                           
+Data in this browse set includes only that data which has                    
+valid data flag markers as a result of processing done by the Galileo        
+Energetic Particles Detector Archive Processor [EPDPROC91].   Invalid        
+data are marked by a -1.0 in the rate column of the invalid data."           
+                                                                             
+END_OBJECT                     = DATA_SET_INFORMATION                        
+                                                                             
+OBJECT                         = DATA_SET_MISSION                            
+  MISSION_NAME                   = "GALILEO"                                 
+END_OBJECT                     = DATA_SET_MISSION                            
+                                                                             
+OBJECT                         = DATA_SET_TARGET                             
+  TARGET_NAME                    = "VENUS"                                   
+END_OBJECT                     = DATA_SET_TARGET                             
+                                                                             
+OBJECT                         = DATA_SET_HOST                               
+  INSTRUMENT_HOST_ID             = GO                                        
+  INSTRUMENT_ID                  = EPD                                       
+END_OBJECT                     = DATA_SET_HOST                               
+                                                                             
+OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+  REFERENCE_KEY_ID               = "WILLIAMSETAL91"                          
+END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                             
+OBJECT                         = DATA_SET_REFERENCE_INFORMATION              
+  REFERENCE_KEY_ID               = "EPDPROC91"                               
+END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION              
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

@@ -1,0 +1,474 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+2005-05-04, J. W. Manweiler, Revision 2;                                     
+2015-10-01, D. Kazden (PPI) updated START_TIME, STOP_TIME and                
+            DATA_SET_RELEASE_DATE;                                           
+2016-10-01, D. Kazden (PPI), updated STOP_TIME and                           
+            DATA_SET_RELEASE_DATE, removed ARCHIVE_STATUS;                   
+2018-06-26, D. Kazden (PPI), updated STOP_TIME and DATA_SET_RELEASE_DATE;    
+2019-10-25, D. Kazden (PPI), updated DATA_SET_RELEASE_DATE;                  
+2020-06-13, J. Mafi (PPI),   updated DATA_SET_ID and DATA_SET_NAME version;  
+            "                                                                
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "CO-E/J/S/SW-MIMI-2-INCA-UNCALIB-V1.1"  
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "                                       
+      CASSINI E/J/S/SW MIMI INCA SENSOR UNCALIBRATED DATA V1.1"              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1999-01-03T00:00:00                     
+    STOP_TIME                      = 2017-09-15T23:59:59                     
+    DATA_SET_RELEASE_DATE          = 2019-10-25                              
+    PRODUCER_FULL_NAME             = "Jerry W. Manweiler"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "SPREADSHEET"                           
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      This data set contains all of the data collected by the INCA sensor    
+      of the MIMI instrument aboard the Cassini spacecraft for the entire    
+      Cassini mission. INCA stands for Imaging Neutral Camera. See           
+      MANWEILERETAL2005"                                                     
+                                                                             
+    ABSTRACT_DESC           = "                                              
+      The Cassini Magnetospheric Imaging Instrument(MIMI) Imaging Neutral    
+      Camera (INCA) uncalibrated data set includes all data collected from   
+      the MIMI Data Processing Unit during the mission.  The original data   
+      has been decommutated and decoded by software at the Applied Physics   
+      Laboratory (APL) and has been then further ordered and filtered by     
+      software at Fundamental Technologies, LLC. The data is provided in     
+      an uncalibrated form in conjunction with a PDS MIMI calibration        
+      volume COMIMI_0000 which provides specific algorithms for the          
+      derivation of calibrated data. This data set includes uncalibrated     
+      values of counts in the form of rates and of rate images for the       
+      INCA sensor for all times during the mission including the Earth       
+      flyby, the Jupiter flyby, interplanetary cruise, and the entire        
+      Saturn tour.  Data are presented in a set of tables which are of       
+      variable length and use a comma to separate various fields.  This      
+      data set is intended to be the most comprehensive and complete data    
+      set included in the Cassini MIMI INCA archive.  A browse data set is   
+      included with Key Parameter data that is calibrated using the          
+      algorithms provided in the Calibration volume. In addition, a series   
+      of images are provided with the KP browse data that displays the KP    
+      data which can lead the user to the particular times of interest.      
+      This data set should be among the first used by a user of any of the   
+      MIMI INCA archive as it will lead one to information required to       
+      search for more detailed or highly specialized features in the         
+      original data."                                                        
+                                                                             
+    CITATION_DESC           = "Manweiler, J.W., W. Rasmuss, and S. Joy,      
+      CO-E/J/S/SW-MIMI-2-INCA-UNCALIB-V1.0, NASA Planetary Data              
+      System, 2005."                                                         
+                                                                             
+    DATA_SET_DESC           = "                                              
+                                                                             
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+      The Cassini Magnetospheric Imaging Instrument(MIMI) Imaging Neutral    
+      Camera (INCA) uncalibrated data set includes all data collected from   
+      the MIMI Data Processing Unit during the entire Cassini mission        
+      [MANWEILERETAL2005].  The original data has been decommutated and      
+      decoded by software at the Applied Physics Laboratory (APL) and has    
+      been then further ordered and filtered by software at Fundamental      
+      Technologies, LLC. The data is provided in an uncalibrated form in     
+      conjunction with a PDS MIMI calibration volume COMIMI_0000 which       
+      provides specific algorithms for the derivation of calibrated data.    
+      This data set includes uncalibrated values of counts in the form of    
+      rates and of rate images for the INCA sensor for all times during      
+      the mission including the Earth flyby, the Jupiter flyby,              
+      interplanetary cruise, and the entire Saturn tour.  Data are           
+      presented in a set of tables which are of variable length and use a    
+      comma to separate various fields.  This data set is intended to be     
+      the most comprehensive and complete data set included in the Cassini   
+      MIMI INCA archive.  A browse data set is included with Key Parameter   
+      data that is calibrated using the algorithms provided in the           
+      Calibration volume. In addition, a series of images are provided       
+      with the KP browse data that displays the KP data which can lead the   
+      user to the particular times of interest.  This data set should be     
+      among the first used by a user of any of the MIMI INCA archive as it   
+      will lead one to information required to search for more detailed or   
+      highly specialized features in the original data.                      
+                                                                             
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+    This data set comprises counts per readout of charged and neutral        
+    particle imaging measurements for the single telescope of the INCA       
+    sensor accumulators and images.  In addition this data set includes      
+    INCA PULSE HEIGHT ANALYSIS measurement data for a statistically select   
+    sample of the particle measurements. The standard product ID's are:      
+                                                                             
+    INCA Accumulation Rate Data - individual microchannel plate detector     
+                                  count rate measurements                    
+    INCA Image Data - count rates binned into a maximum of a 64x64           
+                      geometrical grid as an image, for various particle     
+                      velocities.                                            
+    INCA Pulse Height Analysis Data - Statistically sampled set of           
+                                      discrete particle measurements.        
+                                                                             
+    The data is organized in time by the spin of the spacecraft.  When the   
+    spacecraft is in staring mode then the MIMI DPU automatically creates    
+    a virtual spin that divides the time collection periods into 16          
+    sectors, 16 subsectors, and 16 microsectors and maintains a simple       
+    organizational structure for characterizing the collection of the time   
+    into time segments.  When the spacecraft is spinning at a minimally      
+    defined spin rate (adopted by the MIMI DPU) then the MIMI data is        
+    automatically segregated into 16 sectors, 16 subsectors, and 16          
+    microsectors.  When the spacecraft is spinning and the LEMMS             
+    instrument is rotating the LEMMS rotation period is synchronized to      
+    the spacecraft spin period so that there are 16 sectors in a spin, 16    
+    subsectors in a sector and 16 microsectors in a subsector.  The CHEMS    
+    and INCA instrument collection times are then also keyed to these        
+    values.                                                                  
+                                                                             
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+    Data in this data set were processed by the use of a number of           
+    software programs which assemble segmented mini-packets in the raw       
+    telemetry packets into complete sets, de-compress the data that were     
+    compressed by one of a number of compression algorithms by the MIMI      
+    flight software onboard and organize the channel data into               
+    appropriate time segments. Images are preprocessing into appropriate     
+    arrays on board the spacecraft. This preprocessing software              
+    also includes algorithms to handle the various spacecraft rotation       
+    modes.                                                                   
+                                                                             
+                                                                             
+  Data                                                                       
+  ====                                                                       
+    The MIMI INCA uncalibrated data set includes three ASCII CSV tables      
+    (each associated with a Standard Product ID) of INCA Rate data as a      
+    function of time collected from the MIMI INCA sensor and collated        
+    into data sets. Each table contains variable length records for which    
+    the fields are comma delimited.                                          
+                                                                             
+    INCA Accumulation Rate Data                                              
+    ---------------------------                                              
+                                                                             
+      Fields include:                                                        
+        a purpose identifier where science data records are identified       
+        with purpose = sci                                                   
+        starting and ending ephemeris times                                  
+        Spin, sector, subsector (and for INCA Fine Rate (FRT) data           
+        microsector)                                                         
+        SCLOCK and spin period that are used to derive the starting          
+        ephemeris time                                                       
+           Notes regarding the SCLOCK value:                                 
+           1.  Only the SCLOCK major segment value is provided - MIMI        
+               currently does not have access to the fine SCLOCK value       
+               hence SCLOCK resolution is limited to +- 1/2 SCLOCK count     
+           2.  The SCLOCK is only available from telemetry at the            
+               beginning of each spin. All other published SCLOCKS are       
+               derived from the spin starting SCLOCK, the spin numbers       
+               (for the current and next available spins), and the spin      
+               period.                                                       
+           3.  SCLOCK values are assumed to drive the value of the           
+               ephemeris times and not vice-versa. All effort is made to     
+               validate the published ephemeris times but since updates to   
+               the Cassini SCLOCK kernel in SPICE can occur the values of    
+               ephemeris time are only as accurate as the currently          
+               published Cassini SCLOCK SPICE kernel.                        
+        Spacecraft staring mode where staring = 0 when spinning and 1        
+        otherwise                                                            
+                                                                             
+      INCA Accumulation rate data organized as:                              
+          Start fast, pulse, and Start-coincidence counts                    
+          Stop fast, pulse, and Stop-coincidence counts                      
+          Full, Coincidence, and time counts                                 
+          Events received and processed counts                               
+                                                                             
+    (MIMI INCA has 3 microchannel plates, the Start, the Stop, and the       
+    Coincidence plates.  Start fast is the Start timing signal count;        
+    Start pulse is the Start pulse-height count; Start-coincidence is the    
+    count of the coincidences within the alotted time window of signals      
+    from the Start fast and the Coincidence microchannel plates; Full is     
+    the count of events with a Start fast, Stop fast, and Coincidence        
+    signal; time is the count of events with both a Start fast and a Stop    
+    fast; Events received is the number of valid events sent to the DPU,     
+    and processed counts are the number the DPU sends inot image bins.       
+    These latter two may be different because of additional valid event      
+    criteria imposed by the DPU, and/or inability of the DPU to process      
+    all of the events it receives.)                                          
+                                                                             
+    INCA Images                                                              
+    -----------                                                              
+                                                                             
+      Fields include:                                                        
+        a purpose identifier where science data records are identified       
+        with purpose = sci                                                   
+        starting and ending ephemeris times                                  
+        Spin, sector, subsector                                              
+        SCLOCK and spin period that are used to derive the starting          
+        ephemeris time                                                       
+           Notes regarding the SCLOCK value:                                 
+           1.  Only the SCLOCK major segment value is provided - MIMI        
+               currently does not have access to the fine SCLOCK value       
+               hence SCLOCK resolution is limited to +- 1/2 SCLOCK count     
+           2.  The SCLOCK is only available from telemetry at the            
+               beginning of each spin. All other published SCLOCKS are       
+               derived from the spin starting SCLOCK, the spin numbers       
+               (for the current and next available spins), and the spin      
+               period.                                                       
+           3.  SCLOCK values are assumed to drive the value of the           
+               ephemeris times and not vice-versa. All effort is made to     
+               validate the published ephemeris times but since updates to   
+               the Cassini SCLOCK kernel in SPICE can occur the values of    
+               ephemeris time are only as accurate as the currently          
+               published Cassini SCLOCK SPICE kernel.                        
+        Spacecraft staring mode where staring = 0 when spinning and 1        
+        otherwise                                                            
+                                                                             
+        INCA Images are organized as:                                        
+          Type ID: a 4 byte word characterized as:                           
+                   Byte 0 - Type: 0 = High Spatial, 1 = High Time,           
+                            2 = High m-TOF                                   
+                   Byte 1 - Charge: 0 = Neutral, 1 = Ion                     
+                   Byte 2 - Species: 0 = H, 1 = He, 2 = CNO, 3 = Heavy,      
+                            4 = Other, 5 = All                               
+                   Byte 3 - TOF: 0 = Low, 1-6 = Medium, 7 = High             
+          Row ID: the row of the image which can vary from 8 to 64 based     
+          upon the image type                                                
+          Num Rows: the number of rows for this image                        
+          Num Cols: the number of columns for this image which can vary      
+          from 8 to 64 based upon the image type                             
+          Compression bits, Compression method, log compressed identifier    
+          Theta and Phi offsets from spacecraft coordinates                  
+          Breakout of the type id into Type, Charge, Species, and TOF        
+          Column (0-63) counts representing the number of counts each        
+          pixel of this row x column received                                
+                                                                             
+    INCA Pulse Height Analysis Data                                          
+    -------------------------------                                          
+                                                                             
+      Fields include:                                                        
+        a purpose identifier where science data records are identified       
+        with purpose = sci                                                   
+        starting and ending ephemeris times                                  
+        Spin, sector, subsector                                              
+        SCLOCK and spin period that are used to derive the starting          
+        ephemeris time                                                       
+           Notes regarding the SCLOCK value:                                 
+           1.  Only the SCLOCK major segment value is provided - MIMI        
+               currently does not have access to the fine SCLOCK value       
+               hence SCLOCK resolution is limited to +- 1/2 SCLOCK count     
+           2.  The SCLOCK is only available from telemetry at the            
+               beginning of each spin. All other published SCLOCKS are       
+               derived from the spin starting SCLOCK, the spin numbers       
+               (for the current and next available spins), and the spin      
+               period.                                                       
+           3.  SCLOCK values are assumed to drive the value of the           
+               ephemeris times and not vice-versa. All effort is made to     
+               validate the published ephemeris times but since updates to   
+               the Cassini SCLOCK kernel in SPICE can occur the values of    
+               ephemeris time are only as accurate as the currently          
+               published Cassini SCLOCK SPICE kernel.                        
+        Spacecraft staring mode where staring = 0 when spinning and 1        
+        otherwise                                                            
+        Index in sector number - auto generated number to guarantee          
+        uniqueness within a sector                                           
+                                                                             
+        INCA Pulse Height Analysis data organized as:                        
+          Coincidence indicator, start and stop indicator                    
+          Pulse height data from the front and rear plates                   
+          Time of flight of this particle and the azimuth and elevation      
+          for this event                                                     
+          mass range of this particle                                        
+                                                                             
+                                                                             
+  Ancillary Data                                                             
+  ==============                                                             
+    Included with the INCA data set volumes are ancillary data files         
+    representing the MIMI Key Parameter (KP) data.  The MIMI KP data is a    
+    calibrated subset of the important channels for each of the MIMI         
+    detectors.  The subset of channels have been identified to most          
+    reasonably show characteristic energetic particle events during the      
+    mission.  The KP data is calculated at an arbitrarily defined 60         
+    second cadence which is different than the approximate collection        
+    times for the instruments as identified below for standard operations:   
+    (It must be realized that the collection times vary based upon the       
+    telemetry rate but nothing more than a factor of 2, 4, or 8.)            
+                                                                             
+        Instrument      Product Type     Approx Collection Time (s)          
+        ------------------------------------------------------------         
+        INCA            Accumulation     7.5                                 
+        INCA            IMAGES           180 (2 sectors)                     
+        INCA            PHA              22                                  
+        CHEMS           Accumulation     4                                   
+        CHEMS           Science          5 (each subsector)                  
+        CHEMS           PHA              80 (each sector)                    
+        LEMMS           Accumulation     5 (each subsector)                  
+        LEMMS           Fine Rate        0.6 (each microsector)              
+        LEMMS           PHA              5 (each subsector)                  
+                                                                             
+     Data points for each record of the KP data are first Quartile           
+     Filtered then averaged (except in the case where the median is zero)    
+     for each sector.  The sectored data is then interpolated into the 60    
+     second data cadence of the KP data file.  The KP data is then           
+     converted into a flux in units of 1/(cm^2*sr*sec*keV) or for the case   
+     of CHEMS 1/(cm^2*sr*sec*keV/e)                                          
+                                                                             
+     Browse plots for each of the KP data files are produced.  There are 7   
+     different browse plots available.                                       
+                                                                             
+     Inst    Wild Card File Name                  Plotted KP data            
+     --------------------------------------------------------------------    
+     LEMMS   LEMMS_KP_ELEC_(yyyydoy)_(ver#).JPG   KP LEMMS Electron flux     
+     LEMMS   LEMMS_KP_ION_(yyyydoy)_(ver#).JPG    KP LEMMS Ion flux          
+     CHEMS   CHEMS_KP_HEP_(yyyydoy)_(ver#).JPG    KP CHEMS Helium Plus       
+                                                  flux per charge            
+     CHEMS   CHEMS_KP_HEPP_(yyyydoy)_(ver#).JPG   KP CHEMS Helium Plus       
+                                                  Plus flux per charge       
+     CHEMS   CHEMS_KP_HP_(yyyydoy)_(ver#).JPG     KP CHEMS Hydrogen Plus     
+                                                  flux per charge            
+     CHEMS   CHEMS_KP_OP_(yyyydoy)_(ver#).JPG     KP CHEMS Oxygen Plus       
+                                                  per charge                 
+     INCA    INCA_KP_(yyyydoy)_(ver#).JPG         Hydrogen TOF flux          
+                                                                             
+     Usage Note                                                              
+     ----------                                                              
+       The KP browse data and associated browse plots are to be used as an   
+       initial characterization of the particle environment and are NOT to   
+       be used for publications.  The data is not at publication quality     
+       and is provided as is.                                                
+                                                                             
+                                                                             
+  Coordinate System                                                          
+  =================                                                          
+    The data in this data set are measurements of count rates based upon     
+    the orientation of the INCA instrument (INCA Center look direction).     
+    Particle flux effects are then determined by transforming from a         
+    spacecraft centered coordinate system, properly rotated to account for   
+    the appropriate INCA telescope direction, into whatever external         
+    coordinate (reference system) is most appropriate.                       
+                                                                             
+                                                                             
+  Software                                                                   
+  ========                                                                   
+    There is no sample software provided as of the writing of this catalog   
+    file although the calibration volume does provide algorithms for         
+    conversion of count rates into flux.  In general the INCA Images are     
+    the main product and can be converted into a measurement of flux per     
+    species with these algorithms and the INCA PHA and Accumulation Rates    
+    data are used for determining the health and wellness of the INCA        
+    detectors.                                                               
+                                                                             
+                                                                             
+  Media/Format                                                               
+  ============                                                               
+    These data are supplied to the Planetary Data System via electronic      
+    means and are then broken into segments based upon the media currently   
+    prescribed by PDS."                                                      
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+    This data set contains all calibrated data for the INCA Detector as      
+    part of the Cassini MIMI instrument for the interval described above.    
+    Every effort has been made to ensure that all data returned to APL       
+    from the spacecraft is included and that the calibrated browse data      
+    products are accurate.                                                   
+                                                                             
+    As of this writing there are no known issues associated with the INCA    
+    detector that would limit the usability or reliability of the data.      
+                                                                             
+  Review                                                                     
+  ======                                                                     
+    The MIMI INCA data will be reviewed internally by the Cassini MIMI       
+    team prior to release to the PDS. The data set will also be peer         
+    reviewed by the PDS.                                                     
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================                                                  
+    All data in the stated interval are included, to the best of our         
+    knowledge and attempts to determine completeness.  In general, the       
+    instrument was operated only briefly during early tour for the           
+    following intervals:                                                     
+                                                                             
+    1.  Antenna deployment   1997-10-25T00:00 - 1997-10-26T05:30             
+    2.  Venus 1 flyby        1998-04-26T12:54 - 1998-05-08T19:21             
+    3.  Instrument Checkout  1998-12-30T09:10 - 1999-01-19T05:40             
+    4.  Venus 2 flyby        1999-06-24T09:08 - 1999-06-24T21:20             
+    5.  Earth flyby          1999-08-13T17:39 - 1999-09-14T22:20             
+                                                                             
+    Only data for interval 5 is provided to PDS due to technical issues in   
+    processing.                                                              
+                                                                             
+    Beginning in February of 2000 the instrument was operated more-or-less   
+    continuously with small daily runs of approximately 8 hours.             
+    Intermittent data collection occurred during 2002 and 2003 with          
+    multiple day gaps in the data                                            
+                                                                             
+    Large Data Gaps:                                                         
+    1.  Cruise               2000-066 - 2000-155                             
+    2.  Cruise               2000-210 - 2000-246                             
+    3.  Cruise               2000-311 - 2000-320                             
+    4.  Cruise               2000-322 - 2000-333                             
+    5.  Post Jupiter Cruise  2003-018 - 2003-104                             
+    6.  Post SOI             2004-187 - 2004-193 - Spacecraft Safing         
+                                                   shut off                  
+    7.  Saturn               2012-286 - 2012-288                              
+    8.  Saturn               2012-293 - 2012-303 - propellant gauging test    
+                                                                             
+    On those days for which the instrument did not collect data either due   
+    to the instrument being off or due to communication issues, the data     
+    set will not contain any files.                                          
+                                                                             
+                                                                             
+  Limitations                                                                
+  ===========                                                                
+    As noted above there are no know issues associated with the data from    
+    the INCA detector as of the writing of this catalog.                     
+                                                                             
+    The KP browse data and associated browse plots are to be used as an      
+    initial characterization of the particle environment and are NOT to be   
+    used for publications.  The data is not at publication quality and is    
+    provided as is."                                                         
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "CASSINI-HUYGENS"                       
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SATURN"                                
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "EARTH"                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SOLAR WIND"                            
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "JUPITER"                               
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = CO                                      
+    INSTRUMENT_ID                  = MIMI                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRIMIGISETAL2004"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MANWEILERETAL2005"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KUSTERER&BURKE2003"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

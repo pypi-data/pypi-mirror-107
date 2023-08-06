@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CASSINI S MIMI INCA SENSOR CALIBRATED DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CO-S-MIMI-4-INCA-CALIB-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-06-26</publication_date>
+            <country>USA</country>
+            <description>The Ion and Neutral Camera (INCA) obtains remote images of the global
+                distribution of energetic ions for energies from 7 keV/nucleon to 8
+                MeV/nucleon, discriminated according to energy and mass species
+                (oxygen and hydrogen). To obtain the images, INCA measures the arrival
+                directions, energy and mass species of Energetic Neutral Atoms (ENA's)
+                using the relatively new technique of ENA imaging. INCA also can be
+                commanded to obtain very high sensitivity ion measurements, providing
+                the angular, energy and species distributions of in-situ O and H ions.
+                
+                The Cassini Magnetospheric Imaging Instrument(MIMI) Imaging Neutral
+                Camera (INCA) calibrated data set includes all image data collected
+                from the MIMI Data Processing Unit during the Saturn tour. The
+                original data has been decommutated, decoded, calibrated and further
+                processed by software at the Applied Physics Laboratory (APL).
+                
+                The calibrated image data is provided in three forms: an averaged
+                form where the original image N x N pixel images pixels intensity are
+                averaged to a single value for one species and time-of-flight (TOF)
+                combination, browse images which display rows and columns of images
+                for one species and TOF combination, and movies which display
+                averaged ENA image skymaps.
+                
+                Calibration of INCA data has been described fully in the
+                Cassini/MIMI Data User Guide.
+                
+                This data set should be among the first used by a user of any of the
+                MIMI INCA archive as it will lead one to information required to
+                search for more detailed or highly specialized features in the
+            original data.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CO-S-MIMI-4-INCA-CALIB-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CASSINI ORBITER; SATURN; ENERGETIC PARTICLE DETECTOR; CO; PLANET; MIMI; MAGNETOSPHERIC IMAGING INSTRUMENT</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>Martha B. Kusterer</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.co-s-mimi-4-inca-calib-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

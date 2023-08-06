@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Laboratory Study of Hydrocarbon IR Spectra Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name>P.</first_name> 
+               <last_name>Bernath</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Atmospheres Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-08-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:lab.hydrocarbon_spectra::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>

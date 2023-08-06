@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MESS MDIS MAP PROJ LOW-INCIDENCE ANGLE
+        BASEMAP RDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MESS-H-MDIS-5-RDR-LOI-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2016-05-06</publication_date>
+            <country>USA</country>
+            <description>Abstract
+                ========
+                The Mercury Dual Imaging System (MDIS) consists of two cameras, a Wide
+                Angle Camera (WAC) and a Narrow Angle Camera (NAC), mounted on a
+                common pivot platform. This dataset includes Map Projected Low-
+                Incidence Angle Basemap RDRs (LOIs) which comprise a global map
+                of I/F measured by the NAC or WAC filter 7 (both centered near
+                750 nm) during the Extended Mission at low solar incidence
+                angles to accentuate albedo and albedo variations, photometrically
+                normalized to a solar incidence angle (i) = 30 degrees, emission
+                angle (e) = 0 degrees, and phase angle (g) = 30 degrees, at a spatial
+                sampling of 256 pixels per degree. The LOI data set is a companion to
+                the Basemap Data Record (BDR) data set, High Incidence Angle
+                Illuminated from the East (HIE) data set, and High Incidence
+                Angle Illuminated from the West (HIW) data set, all of which are
+                also composed of WAC filter 7 and NAC images, except acquired at
+                higher solar incidence angles centered at 68 to 78 degrees to
+                highlight topography.
+                
+                The map is divided into 54 'tiles', each representing the NW, NE,
+                SW, or SE quadrant of one of the 13 non-polar or one of the 2 polar
+                quadrangles or 'Mercury charts' already defined by the USGS. Each tile
+                also contains 5 backplanes: observation ID; BDR metric, a metric used
+                to determine the stacking order of component images, modified for the
+                higher incidence angle centered near 78 degrees; solar incidence
+            angle; emission angle; and phase angle.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MESS-H-MDIS-5-RDR-LOI-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MESSENGER; MERCURY; FRAMING CAMERA; MESS; PLANET; MDIS-NAC; MDIS-WAC; MERCURY DUAL IMAGING SYSTEM 
+                                         NARROW ANGLE CAMERA; MERCURY DUAL IMAGING SYSTEM 
+                                         WIDE ANGLE CAMERA</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>CHRISTOPHER HASH</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mess-h-mdis-5-rdr-loi-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

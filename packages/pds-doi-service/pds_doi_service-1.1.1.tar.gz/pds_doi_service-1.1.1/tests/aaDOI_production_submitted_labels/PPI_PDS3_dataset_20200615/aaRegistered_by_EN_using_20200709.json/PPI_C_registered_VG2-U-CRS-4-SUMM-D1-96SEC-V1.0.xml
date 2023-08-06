@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 URA CRS RESAMPLED SUMMARY D1 RATE ELEC 96SEC V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-U-CRS-4-SUMM-D1-96SEC-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-02-01</publication_date>
+            <country>USA</country>
+            <description>This data set describes data of the counting rate from the D1
+                detector in the Cosmic Ray System (CRS) electron telescope (TET)
+                on Voyager 2 during the Uranus encounter. The D1 detector
+                nominally responds to electrons with kinetic energies above
+                approximately 1 MeV (see detector description for details). Note
+                that the instrument is saturated near the maximum of counting
+                rate of approximately 50,000 counts / sec between approximately
+                1986-01-24T18:10:50Z and 1986-01-24T19:02:02Z. When they are near
+                saturation, the counting rates should be corrected for deadtime
+                according to the formula in the DATA_SET_OR_INST_PARM_DESC:
+                {corrected rate} = {uncorrected rate/(1+deadtime*{uncorrected
+            rate}).</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-CRS-4-SUMM-D1-96SEC-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; URANUS; COSMIC RAY DETECTOR; VG2; PLANET; CRS; COSMIC RAY SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RICHARD S. SELESNICK</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-u-crs-4-summ-d1-96sec-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

@@ -1,0 +1,277 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+920831 -- JPLPDS::RMONARREZ                                                  
+          received by ftp;                                                   
+920914 -- EFRIED;                                                            
+920918 -- EFRIED                                                             
+          updated Data Set templates according to new std.                   
+          Data Set Template -&#10095; Spacecraft Data Set Template                  
+          event_start_time, event_stop_time -&#10095; start_time, stop_time;        
+920924 -- EFRIED                                                             
+          Revised DATA_SET_ID and DATA_SET_NAME;                             
+120227 -- DKAZDEN                                                            
+          Updates to meet PDS3 Standards, removed unnecessary keywords, added
+          ABSTRACT_DESC, DATA_SET_TERSE_DESC and CITATION_DESC,              
+          updated REFERENCE_KEY_IDs;                                         
+200304 -- DKAZDEN                                                            
+          updated CITATION_DESC;"                                            
+                                                                             
+                                                                             
+OBJECT                         = DATA_SET                                    
+                                                                             
+  DATA_SET_ID                    = "VG2-U-LECP-4-RDR-STEP-12.8MIN-V1.0"      
+                                                                             
+  OBJECT                         = DATA_SET_INFORMATION                      
+    DATA_SET_NAME                  = "VG2 URA LECP RESAMPLED RDR STEPPING    
+                                      SECTOR 12.8MIN V1.0"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1986-01-24T00:00:00.000                 
+    STOP_TIME                      = 1986-01-27T00:00:00.000                 
+    DATA_OBJECT_TYPE               = "TIME SERIES"                           
+    DATA_SET_RELEASE_DATE          = 1993-02-01                              
+    PRODUCER_FULL_NAME             = "DR. BARRY MAUK"                        
+    DETAILED_CATALOG_FLAG          = Y                                       
+    ABSTRACT_DESC                  = "This data consists of resampled data   
+from the Low Energy Charged Particle (LECP) Experiment on the Voyager 2      
+Spacecraft for the period when Voyager 2 was in the vicinity of the planet   
+Uranus."                                                                     
+    CITATION_DESC           = "Mauk, B., VG2-U-LECP-4-RDR-STEP-12.8MIN-V1.0, 
+                    VG2 URA LECP RESAMPLED RDR STEPPING SECTOR 12.8MIN V1.0, 
+                               NASA Planetary Data System, 1993."            
+    DATA_SET_TERSE_DESC            = "This data consists of resampled data   
+from the Low Energy Charged Particle (LECP) Experiment on the Voyager 2      
+Spacecraft for the period when Voyager 2 was in the vicinity of the planet   
+Uranus."                                                                     
+                                                                             
+    DATA_SET_DESC                  = "                                       
+This data consists of resampled data from the Low Energy
+Charged Particle (LECP) Experiment on the Voyager 2 Spacecraft
+for the period when Voyager 2 was in the vicinity of the planet
+Uranus.  The period covered is 1989/day 24/0000 SCET to
+1989/day 27/0000 SCET.  This data gives scan plane angle
+distributions for those periods when the LECP instrument was
+mechanically scanning.  There are periods when the instrument
+was not scanning, and the corresponding data does not appear
+here with this Step data.  Another data set that is available,
+the so called Scan data, contains data for these not stepping
+periods as well as angle averaged data for the stepping periods.
+The instrument samples 8 directional sectors during a single
+scan, and thus this Step data contains 8 particle intensity
+numbers for each channel of data utilized (a ninth sector
+corresponds to accumulations for which the sector is unknown).
+ 
+   Two scanning situations occurred during the time of this
+data. They are: 1) continuous 48 sec stepping (48 seconds for
+each of 8 look directions for a total of 6.4 minutes per scan;
+note that sector 8 is shielded with 2 mm Al), and 2) a special 
+Uranus scan cyclic with the following sequence: 7, scan, scan,
+7, scan, scan, repeat; where the 7 represents a 10.4 minute
+period when the instrument is fixed in sector 7, and where the
+word scan represents a period of scanning (6 sec stepping
+for a total scan time of 48 sec).  For this Uranus Scan data
+the two adjacent scans within the Uranus scan cyclic (Mode 2 
+above) have been averaged together into a single, 96 sec record.
+The records of the 48 sec stepping mode (mode 1 above) are for 6.4
+minutes.  The schedule of mode changes is as follows:
+ 
+     prior to day 24/ 0420 SCET:    Mode (1)
+ 
+     24/0420 to 25/1357:            Mode (2)
+ 
+     after 25/1357:                 Mode (1)
+ 
+Please note that the change-over between modes is not 
+instantaneous, and that for a few minutes the state of
+the scanning is not regular.  Note also that there were
+brief interruptions to, and changes in time phase in, the
+mode (2) scan cyclic during the transitions into and out of
+the movable block period that bracketed the close approach
+position (not shown above).
+ 
+     Obviously these stepping mode changes, and the angle sample
+switching that occurs during stepping mode (2), gives the data
+a disjointed appearance.
+ 
+     The LECP channels utilized with this data set are:
+ 
+       EB01:          electrons,  22 to  35 keV
+       EB02:          electrons,  35  to  61 keV
+       EB03:          electrons,  61 to  112 keV
+       EB04:          electrons, 112 to 183 keV
+       EG06-EG07:     electrons, 252 to 480 keV
+       EG07-EG08:     electrons, 480 to 853 keV
+       EG08-EG09:     electrons, 853 to 1200 keV
+       PL01:          ions,       28 to  43  keV
+       PL02:          ions,       43 to  80  keV
+       PL03:          ions,       80 to 137  keV
+       PL04:          ions,      137 to 215  keV
+       PL05:          ions,      215 to 540  keV
+       PL06:          ions,      540 to 990  keV
+       PL07:          ions,      990 to 2140 keV
+       PL08:          ions,     2140 to 3500 keV
+ 
+Please note that 3 of the electron channels are derived from
+4 of the instrumental channels by taking differences between
+adjacent (in energy) channels.
+ 
+     The channel data is given in units of intensity:
+counts/(cm^2.sec.str.keV).  For the ions, it has been assumed
+that they consist only of protons.  Intensity is derived from
+the raw count rates via the relation:
+ 
+                    I  =  CR/(eG.(E2-E1),
+ 
+where eG is geometric factor times detector efficiency, and
+(E2-E1) is the band pass of the channel in energy.  The proton
+values of these parameters were used in deriving the intensities
+for this data set.  To obtain the Intensities under the assumption
+that some other mass species dominates, one must convert back
+to count rate (CR) utilizing the proton parameters, and then 
+convert to intensity using the parameters corresponding to the
+mass species in question.  The parameters can be found in
+Table 1 of Krimigis et al. (Journal of Geophysical Research,
+V. 86, page 8227, 1981).  The corresponding parameters for electrons
+can be found in Mauk et al. (Journal of Geophysical Research,
+V. 92, page 15283, 1987).  Prior to the conversion to intensity,
+the count rates have been corrected for: (1) Background, 
+(2) electron contamination of the lower energy ion channels, and
+(3) solar UV contamination of the lowest energy ion channel.
+ 
+     The uncertainty parameters given with the data associated with
+each channel (expressed as a percent) is the largest of the
+two quantities: (i) one standard deviation Poisson statistical
+error, and (ii) a percentage assigned by the data supplier
+based on the amount of contamination correction that has been 
+performed on each data channel.
+ 
+     Also supplied with each record of this data set is the
+fraction of the data accumulations that correspond to each
+of the 8 angle sectors.  A sector 9 has also been defined
+corresponding to those accumulations with no known sector 
+assignment.
+ 
+    Additionally supplied for each data channel is a one bit code
+that tells whether that channel had any accumulations at
+all associated with it (1 = yes; 0 = no).  This code must be
+used to distinguish between accumulations that yielded no counts
+and situations where the channel simply had no accumulations
+(results in Intensity = 0.0).
+
+Processing Level Id            : 4      
+Software Flag                  : N      
+Processing Start Time          : 1991-07-24      
+Processing Stop Time           : 1991-07-25      
+
+Parameters    
+==========       
+
+Data Set Parameter 'PARTICLE FLUX INTENSITY'      
+--------------------------------------------        
+The channel data is given in units of intensity:        
+counts/(cm^2.sec.str.keV).  For the ions, it has been assumed        
+that they consist only of protons.  Intensity is derived from        
+the raw count rates via the relation:                           
+
+                    I = CR/(eG.(E2-E1),         
+
+where eG is geometric factor times detector efficiency, and        
+(E2-E1) is the band pass of the channel in energy.  The        
+proton values of these parameters were used in deriving the        
+intensities for this data set.  To obtain the Intensities        
+under the assumption that some other mass species dominates,        
+one must convert back to count rate (CR) utilizing the proton        
+parameters, and then convert to intensity using the        
+parameters corresponding to the mass species in question.        
+The parameters can be found in Table 1 of Krimigis et al.        
+(Journal of Geophysical Research, V.  86, page 8227, 1981).        
+The corresponding parameters for electrons can be found in        
+Mauk et al.  (Journal of Geophysical Research, V.  92, page        
+15283, 1987).  Prior to the conversion to intensity, the        
+count rates have been corrected for: (1) Background, (2)        
+electron contamination of the lower energy ion channels, and        
+(3) solar UV contamination of the lowest energy ion channel.         
+
+Sampling Parameter Name        : TIME        
+Data Set Parameter Name        : PARTICLE FLUX INTENSITY        
+Sampling Parameter Resolution  : 768.000000        
+Sampling Parameter Interval    : 768.000000        
+Minimum Available Sampling Int : 6.000000        
+Data Set Parameter Unit        :                          
+                   COUNTS/(CM**2*SECOND*STERRADIAN*KEV)        
+Sampling Parameter Unit        : SECOND      S
+
+Source Instrument Parameters    
+============================      
+Instrument Host ID              : VG2      
+Data Set Parameter Name         : PARTICLE FLUX INTENSITY      
+Instrument Parameter Name       : PARTICLE MULTIPLE PARAMETERS      
+Important Instrument Parameters : 1      
+
+Processing    
+==========       
+   Processing History      
+   ------------------       
+   Source Data Set ID       : N/A        
+   Software                 : UNK        
+   Product Data Set ID      : VG2-U-LECP-4-RDR-STEP-12.8MIN-V1.0"
+
+    CONFIDENCE_LEVEL_NOTE          = " 
+Confidence note for the PDS Uranus LECP Step data.
+ 
+    High quality data is available from the LECP instrument
+throughout the time period addressed with this data set.
+The data is subject to errors associated with Poisson 
+statistics and associated with various kinds and levels of
+contamination. The known contaminations are: i) penetrating 
+background, ii) Solar UV contamination within the lowest energy
+ion channel when the detector faces sunward, and iii) electron
+contamination of the lower energy ion channels (the contaminating
+electrons are measured).  Corrections have been made to the data
+in attempts to remove the effects of these contaminations.
+ 
+     An error parameter is given for each particle intensity
+value given in the data set.  This error is expressed as a
+percentage.  This number is the larger of the following 
+items: 1) the one standard deviation Poisson error, and 2) a 
+value assigned by the data supplier associated with the degree
+of correction that was required with regard to the contaminations
+listed above.
+ 
+     Missing data is indicated with a binary flag associated
+with each energy channel. Each channel's flag will read 1
+if at least one instrumental accumulation occurred for that 
+channel and for that record.  The flag reads 0 for no 
+accumulations.  This parameter must be utilized to distinguish
+between accumulations that yielded no counts, and the situation
+where there simply were no accumulations (the error parameter
+reads 100 for both cases)."
+
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "VOYAGER"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = URANUS                                  
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = VG2                                     
+    INSTRUMENT_ID                  = LECP                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1981"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRIMIGISETAL1986"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MAUKETAL1987"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

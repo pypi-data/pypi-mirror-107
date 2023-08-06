@@ -1,0 +1,257 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+D. Kazden, updated ARCHIVE_STATUS, added ABSTRACT_DESC, CITATION_DESC, and   
+CONFIDENCE_LEVEL_NOTE, removed unnecessary keywords, removed Zs from         
+START_TIME and STOP_TIME, 2012-03-07;                                        
+D. Kazden, removed ARCHIVE_STATUS keyword, 2018-08-09;"                      
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "P11-J-HVM-4-SUMM-1MIN-V1.0"            
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "P11 HVM 1 MINUTE JUPITER               
+                                      ENCOUNTER DATA"                        
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 1974-11-24T00:00:00.000                 
+    STOP_TIME                      = 1974-12-14T23:59:00.000                 
+    DATA_SET_RELEASE_DATE          = "UNK"                                   
+    PRODUCER_FULL_NAME             = "Edward J. Smith"                       
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    ABSTRACT_DESC                  = "                                       
+Pioneer 11 Vector Helium Magnetometer (HVM) data from the Jupiter encounter  
+period between 1974-11-24T00:00:00.000Z and 1974-12-14T23:59:00.000Z. The    
+data set provides 1.0 minute averages of 3 magnetic field components, 6      
+field covariances, 3 directional cosines, field magnitude and the field      
+magnitude square, in SJ coordinates."                                        
+    CITATION_DESC                  = "N/A"                                   
+    DATA_SET_TERSE_DESC            = "                                       
+P11 HVM data from the Jupiter encounter, including 1.0 minute averages of 3  
+magnetic field components, 6 field covariances, 3 directional cosines,       
+field magnitude and the field magnitude square, in SJ coordinates."          
+                                                                             
+    DATA_SET_DESC                  = "                                       
+                                                                             
+      Data Set Overview                                                      
+      =================                                                      
+      This data set consists of magnetic field data recorded by the          
+      Vector Helium Magnetometer onboard the Pioneer 11 spacecraft,          
+      during the Jupiter encounter.  Data include 3 field components,        
+      6 covariances, 3 directional cosines, field magnitude, and the         
+      magnitude square, in spacecraft-centered SJ coordinates.               
+                                                                             
+                                                                             
+      Data Sampling                                                          
+      ==============                                                         
+      The magnetometer measures the three field components over a            
+      frequency range from 0 to 10 Hz.  At encounter the data rate was       
+      1024 bits/sec and the magnetometer sampling rate was one vector        
+      measurement every 3/16 second, corresponding to 5.33 samples/sec.      
+                                                                             
+      The NSSDC documentation does not contain information about what        
+      data resolution this data set (1 minute) is averaged from.             
+                                                                             
+                                                                             
+      Data Processing                                                        
+      ===============                                                        
+      No detailed information of data processing is found in the NSSDC       
+      documentation pertinent to this data set.                              
+                                                                             
+      Pioneer 11 spacecraft was operating under a spin-stablized             
+      condition and had a spin period of 7.7 second.                         
+                                                                             
+                                                                             
+      Data Format                                                            
+      ============                                                           
+      The Pioneer 11 magnetometer data for Jupiter encounter were            
+      originally written on a 9-track, 1600 bpi, odd parity, ASCII           
+      encoded magnetic tape.  The original file was re-formatted into        
+      a new ASCII file named P11_HVM_JUP_ENC_1MIN.TAB which contains         
+      the following data columns:                                            
+      --------------------------------------------------------------------   
+      Column  Column   Column                                                
+      Name    Format   Description                                           
+      --------------------------------------------------------------------   
+      TIME     A24     Time in yyyy-mm-ddThh:mm:ss.sssZ                      
+      DELTA_T  I7      Length of data averaging window in millisecond        
+      &#10094;BX&#10095;     E14.6   Average of the X component of the magnetic field      
+                          in SJ coordinates                                  
+      &#10094;BY&#10095;     E14.6   Average of the Y component of the magnetic field      
+                          in SJ coordinates                                  
+      &#10094;BZ&#10095;     E14.6   Average of the Z component of the magnetic field      
+                          in SJ coordinates                                  
+      &#10094;BX^2&#10095;   E14.6   Average of the square of the X component of the       
+                          magnetic field in SJ coordinates                   
+      &#10094;BXBY&#10095;   E14.6   Average of the cross product of BX and BY             
+                          in SJ coordinates                                  
+      &#10094;BXBZ&#10095;   E14.6   Average of the cross product of BX and BZ             
+                          in SJ coordinates                                  
+      &#10094;BY^2&#10095;   E14.6   Average of the square of the Y component of the       
+                          magnetic field in SJ coordinates                   
+      &#10094;BYBZ&#10095;   E14.6   Average of the cross product of BY and BZ             
+                          in SJ coordinates                                  
+      &#10094;BZ^2&#10095;   E14.6   Average of the square of the Z component of the       
+                          magnetic field in SJ coordinates                   
+      &#10094;BX/|B|&#10095; E14.6   Magnetic field vector directional cosine in X         
+      &#10094;BY/|B|&#10095; E14.6   Magnetic field vector directional cosine in Y         
+      &#10094;BZ/|B|&#10095; E14.6   Magnetic field vector directional cosine in Z         
+      &#10094;|B|&#10095;    E14.6   Average of the total magnetic field, evaluated as     
+                          &#10094; SQRT(BX^2 + BY^2 + BZ^2) &#10095;                       
+      &#10094;B^2|&#10095;   E14.6   Average of the square of the total field magnitude,   
+                          evaluated as &#10094; BX^2 + BY^2 + BZ^2 &#10095;                
+      --------------------------------------------------------------------   
+                                                                             
+                                                                             
+      Coordinate System for Data                                             
+      ===========================                                            
+      The spacecraft-centered SJ coordinate is defined based on two          
+      principle directions, PIONEER 11 to Sun (unit vector S) and to         
+      Jupiter (unit vector J). In this system, X is along the direction      
+      of S. Y is defined as J cross S, and Z, X cross Y to complete          
+      the right-handed orthogonal system.                                    
+                                                                             
+                                                                             
+      Ancillary Data                                                         
+      ==============                                                         
+      There is no ancillary data associated with this data set.              
+                                                                             
+                                                                             
+      Instrument Calibration                                                 
+      ======================                                                 
+      The in-flight calibration consists of impressing eight precisely       
+      known currents on the sensor coil system and measuring the resulting   
+      fields with the magnetometer.  The instrument is designed to carry     
+      out a nominal mission with only one instrument-on command.  The        
+      instrument comes on in the automatic ranging/spectrum analyzer         
+      mode and automatically ranges to the proper scale by comparing         
+      the +X and |Z| axis outputs with fixed reference voltages.  The        
+      only function commands sent to this instrument during the Pioneer      
+      F&G missions were those to initiate the in-flight calibration          
+      sequence periodically during the cruise phase.  At the conclusion      
+      of this sequence the instrument automatically returned to the          
+      automatic ranging mode.  A 6-bit digital house-keeping word            
+      indicates the operating mode of the instrument.                        
+                                                                             
+      The in-flight calibration onboard the Pioneer spacecraft was done      
+      by ground command once or twice a week.  The low range sensors were    
+      calibrated at field magnitude of 13 GAMMA and 26 GAMMA during the      
+      interplanetary cruise period.  While the high range sensors were       
+      calibrated near planetary encounter where the field magnitude was      
+      as high as +- 43,000 GAMMA and 86,800 GAMMA. There are two kind of     
+      instrument calibration parameters, sensor scale factor (gain) and      
+      offset.                                                                
+                                                                             
+      The conventional approach to checking the magnetometer scale           
+      factors in flight is to apply calibration field changes, dB to         
+      the sensors so that the corresponding voltage change dV can be         
+      determined.  Normally several step changes are applied sequentially    
+      so that the linearity can be tested directly. After two years of       
+      in-flight calibrations, no change has been detected in the Pioneer     
+      10 or 11 scale factors which were then known to an accuracy of         
+      1 percent or better.                                                   
+                                                                             
+      The sensor offsets were determined in-flight using two different       
+      techniques.   For the two sensors in the spin plane, the offset        
+      was calculated by averaging the spinning data in a time interval       
+      of an integral number of spin period.  The offset of the spin axis     
+      sensor was determined by an adaptation of a variance technique         
+      developed by L. Davis [BELCHER1973].  The essential assumption         
+      was made that over short intervals of time (5 minutes), the            
+      fluctuations in the interplanetary field are principally changes       
+      in direction and tend to conserve the magnitude of the field."         
+                                                                             
+      CONFIDENCE_LEVEL_NOTE   = "                                            
+      Confidence Level Overview                                              
+      =========================                                              
+      The vector helium magnetometer noise spectrum is independent of        
+      frequency (white) with a field equivalent power spectral density       
+      of 10**-4 GAMMA**2/HZ.  For signal bandwidths less than 1 Hz,          
+      corresponding for example to values averaged over a few seconds        
+      or more, fields smaller than 0.01 GAMMA can be detected.               
+                                                                             
+      The maximum relative error of the magnetometer sensors is given by     
+                 dB/B &#10094;= dB0/B + dk/k                                        
+      where B0 is the total offset error and dk is the scale factor error.   
+      The scale factor accuracy is as good as 1%.  And the total offset      
+      error is mainly caused by the spin axis sensor error because it        
+      is not readily determined as the two in spin-plane sensors.  The       
+      ratio of the standard deviation of the offset in spinning axis         
+      to the field magnitude is about 0.05.  Thus, the maximum relative      
+      error in the magnetic field measurement is 0.06.                       
+                                                                             
+      There is no flagged values in this data set. "                         
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = JUPITER                                 
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = P11                                     
+    INSTRUMENT_ID                  = HVM                                     
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER 11"                            
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1975"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNA&NESS1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "ACUNAETALL1980"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "BELCHER1973"                           
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MCCULLOCH&KOMES1973"                   
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "MEAD1974"                              
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITH1973"                             
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1974B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1975B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+  REFERENCE_KEY_ID                 = "SMITHETALL1980B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

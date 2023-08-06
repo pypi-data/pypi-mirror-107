@@ -1,0 +1,387 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+92-08  -- EFRIED;                                                             
+920914 -- EFRIED;                                                             
+920918 -- EFRIED, updated Data Set templates according to new std.            
+Data Set Template -&#10095; Spacecraft Data Set Template event_start_time,           
+event_stop_time -&#10095; start_time, stop_time;                                     
+920924 -- EFRIED, Revised DATA_SET_ID and DATA_SET_NAME;                      
+921002 -- EFRIED, Deleted DSPARMINFO for TIME Revised DATA_SET_PARAMETER_NAME 
+for ION VELOCITY last changes made;                                           
+110602 -- DKAZDEN, removed unnecessary keywords;                              
+111108 -- DKAZDEN, updated REFERENCE_KEY_IDs;                                 
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated CITATION_DESC;"                                     
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-PLS-5-RDR-IONLMODE-48SEC-V1.0"    
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP PLS DERIVED RDR ION OUTBND MAGSHTH L-MODE 48SEC V1.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-26T08:36:00                      
+    STOP_TIME                      = 1989-08-30T00:00:00                      
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 1991-07-22                               
+    PRODUCER_FULL_NAME             = "DR. JOHN D. RICHARDSON"                 
+    DETAILED_CATALOG_FLAG          = Y                                        
+                                                                              
+    CITATION_DESC    = "Richardson, J.D., VG2-N-PLS-5-RDR-IONLMODE-48SEC-V1.0,
+                 VG2 NEP PLS DERIVED RDR ION OUTBND MAGSHTH L-MODE 48SEC V1.0,
+                        NASA Planetary Data System, 1991."                    
+    DATA_SET_TERSE_DESC            = "                                        
+      Voyager 2 ion LMODE 48 second ion density, temperature, and             
+      velocity data from the Voyager 2 plasma experiment during the           
+      Neptune encounter from 1989-08-26 to 1989-08-30."                       
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set gives the best available values for ion densities,        
+      temperatures, and velocities near Neptune derived from data             
+      obtained by the Voyager 2 plasma experiment.  All parameters are        
+      obtained by fitting the observed spectra (current as a function         
+      of energy) with Maxwellian plasma distributions, using a non-linear     
+      least squares fitting routine to find the plasma parameters which,      
+      when coupled with the full instrument response, best simulate the       
+      data. The PLS instrument measures energy/charge, so composition is      
+      not uniquely determined but can be deduced in some cases by the         
+      separation of the observed current peaks in energy (assuming the        
+      plasma is co-moving). "                                                 
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+   This data set gives the best available values for ion densities,           
+   temperatures, and velocities near Neptune derived from data                
+   obtained by the Voyager 2 plasma experiment.  All parameters are           
+   obtained by fitting the observed spectra (current as a function            
+   of energy) with Maxwellian plasma distributions, using a non-linear        
+   least squares fitting routine to find the plasma parameters which,         
+   when coupled with the full instrument response, best simulate the          
+   data. The PLS instrument measures energy/charge, so composition is         
+   not uniquely determined but can be deduced in some cases by the            
+   separation of the observed current peaks in energy (assuming the           
+   plasma is co-moving). In the upstream solar wind protons are fit           
+   to the M-long data since high energy resolution is needed to obtain        
+   accurate plasma parameters.  In the magnetosheath the ion flux so low      
+   that several L-long spectra (3-5) had to be averaged to increase the       
+   signal-to-noise ratio to a level at which the data could be reliably       
+   fit.  These averaged spectra were fit using 2 proton Maxwellians with      
+   the same velocity.  The values given in the upstream magnetosheath         
+   are the total density and the density-weighted temperature.  In both       
+   the upstream solar wind and magnetosheath full vector velocities,          
+   densities and temperatures are derived for each fit component.  In         
+   the magnetosphere, spectra do not contain enough information to            
+   obtain full velocity vectors, so flow is assumed to be purely              
+   azimuthal. In some cases the azimuthal velocity is a fit parameter,        
+   in some cases rigid corotation is assumed.  In the 'outer'                 
+   magnetosphere (L&#10095;5) two distinct current peaks appear in the               
+   spectra; these are fit assuming a composition of H+ and N+.  In            
+   the inner magnetosphere the plasma is hot and the composition is           
+   ambiguous, although two superimposed Maxwellians are still required        
+   to fit the data. These spectra are fit using two compositions, one         
+   with H+ and N+ and the second with two H+ components.  The N+              
+   composition is preferred by the data provider.  All fit values in          
+   the magnetosphere come with one sigma errors. It should be noted           
+   that no attempt has been made to account for the spacecraft                
+   potential, which is probably about -10 V in this region and will           
+   effect the density and velocity values.  In the outbound                   
+   magnetosheath and solar wind both moment and fit values are given          
+   for velocity, density, and thermal speed. The signal-to-noise ratio        
+   in the M-longs is very low, especially near the magnetopause, which        
+   can result in the analysis giving incorrect values. The L-long             
+   spectra have too low an energy resolution to permit accurate               
+   determinations parameters in many regions; in particular the               
+   temperature and non-radial velocity components may be inaccurate.          
+                                                                              
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Derived Parameters                                                        
+    ------------------                                                        
+                                                                              
+      Sampling Parameter Name             : time                              
+      Sampling Parameter Resolution       : n/a                               
+      Minimum Sampling Parameter          : unk                               
+      Maximum Sampling Parameter          : unk                               
+      Sampling Parameter Interval         : unk                               
+      Minimum Available Sampling Interval : unk                               
+      Data Set Parameter Name             : ion density                       
+      Noise Level                         : unk                               
+      Data Set Parameter Unit             : cm**-3                            
+                                                                              
+      Ion density: A derived parameter equaling the number of ions per        
+      unit volume over a specified range of ion energy, energy/charge,        
+      or energy/nucleon. Discrimination with regard to mass and or            
+      charge state is necessary to obtain this quantity, however, mass        
+      and charge state are often assumed due to instrument limitations.       
+                                                                              
+      Many different forms of ion density are derived. Some are               
+      distinguished by their composition (N+, proton, ion, etc.)              
+      or their method of derivation (Maxwellian fit, method of                
+      moments). In some cases, more than one type of density will             
+      be provided in a single dataset. In general, if more than one           
+      ion species is analyzed, either by moment or fit, a total density       
+      will be provided which is the sum of the ion densities. If a            
+      plasma component does not have a Maxwellian distribution                
+      the actual distribution can be represented as the sum of                
+      several Maxwellians, in which case the density of each Maxwellian       
+      is given.                                                               
+                                                                              
+      Sampling Parameter Name             : time                              
+      Sampling Parameter Resolution       : n/a                               
+      Minimum Sampling Parameter          : unk                               
+      Maximum Sampling Parameter          : unk                               
+      Sampling Parameter Interval         : unk                               
+      Minimum Available Sampling Interval : unk                               
+      Data Set Parameter Name             : ion velocity                      
+      Noise Level                         : unk                               
+      Data Set Parameter Unit             : km/s                              
+                                                                              
+      Ion velocity: A derived parameter giving the average speed and          
+      direction of motion of a plasma or plasma component. The velocity       
+      can be obtained by taking the first moment of the distribution          
+      function or by simulating the observations with some known              
+      distribution function, usually a Maxwellian, to the distribution.       
+      Velocities may be given in any of the following coordinate              
+      systems:                                                                
+                                                                              
+      RTN coordinate system: R is radially away from sun,                     
+                             T is in plane of sun's equator and positive      
+                               in the direction of solar rotation             
+                             N completes right-handed system                  
+                                                                              
+      rho, phi, z (cylindrical)                                               
+                     rho is radial distance from the planet's spin axis       
+                     phi is parallel to spin equator and perpendicular        
+                         to rho and positive in direction of planetary        
+                         rotation.                                            
+                       z completes right-handed system                        
+                                                                              
+      parallel, perpendicular: parallel or perpendicular to the magnetic      
+                               field direction.                               
+                                                                              
+                                                                              
+    Measured Parameters                                                       
+    -------------------                                                       
+                                                                              
+      Sampling Parameter Name             : time                              
+      Sampling Parameter Resolution       : n/a                               
+      Minimum Sampling Parameter          : unk                               
+      Maximum Sampling Parameter          : unk                               
+      Sampling Parameter Interval         : unk                               
+      Minimum Available Sampling Interval : unk                               
+      Data Set Parameter Name             : ion thermal speed                 
+      Noise Level                         : unk                               
+      Data Set Parameter Unit             : km/s                              
+                                                                              
+      Ion thermal speed: A measure of the velocity associated                 
+      with the temperature of the ions.  It is formally defined as            
+      the Ion Thermal Speed squared equals two times K                        
+      (Boltzmann's constant) times T (temperature of ion) divided             
+      by M (ion mass). Each component of a plasma has a thermal speed         
+      associated with it.                                                     
+                                                                              
+      Ion Current: A measured parameter equaling the rate at which positive   
+      charge is collected by a particle detector. The ions                    
+      contributing to this current may be restricted                          
+      by energy and/or mass. Since ion charge states may be                   
+      greater than one, this quantity generally is                            
+      greater than the corresponding ion rate.                                
+                                                                              
+                                                                              
+  References                                                                  
+  ==========                                                                  
+    Richardson, J. D., M. Zhang, J. W. Belcher, and                           
+    R. L. McNutt, Jr., Low-energy ions near Neptune,                          
+    J. Geophys. Res., in press, 1991.                                         
+                                                                              
+                                                                              
+    J. W. Belcher, H. S. Bridge, et al.,                                      
+    Plasma Observations Near Neptune: Initial Results from                    
+    Voyager 2, Science, 246, 1478-1483, 1989.                                 
+                                                                              
+                                                                              
+    Zhang, M., V. M. Vasyliunas, G. L. Siscoe, R. P. Lepping,                 
+    and N. F. Ness, Evidence for a diurnally rocking plasma                   
+    mantle at Neptune, Geophys. Res. Lett., 17, 2285-2288, 1990.              
+                                                                              
+                                                                              
+    Richardson, J. D. and R. L. McNutt, Jr., Low-energy plasma                
+    in Neptune's magnetosphere, Geophys. Res. Lett., 17,                      
+    1689-1692, 1990."                                                         
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+    The PLS instrument measures energy/charge, so composition is not          
+    uniquely determined but can be deduced in some cases by the               
+    separation of the observed current peaks in energy (assuming the          
+    plasma is co-moving).  In the magnetosheath the ion flux so low           
+    that several L-long spectra (3-5) had to be averaged to increase          
+    the signal-to-noise ratio to a level at which the data could be           
+    reliably fit.  These averaged spectra were fit using 2 proton             
+    Maxwellians with the same velocity.  All fit values in the                
+    magnetosphere come with one sigma errors. It should be noted that         
+    no attempt has been made to account for the spacecraft potential,         
+    which is probably about -10 V in this region and will effect the          
+    density and velocity values. The L-long spectra have too low an           
+    energy resolution to permit accurate determinations of parameters         
+    in many regions; in particular the temperature and non-radial             
+    velocity components may be inaccurate.                                    
+                                                                              
+                                                                              
+  Data Quality and Coverage                                                   
+  =========================                                                   
+    Table 1 contains hourly summaries of the percentage of the data           
+    available, data quality, and contamination codes. Tables 2 and 3          
+    contain descriptions of the data quality and data contamination           
+    ID's respectively.                                                        
+                                                                              
+    -------------------------------------------------------------------       
+    Table 1. Hourly Data Coverage and Quality Summaries                       
+    -------------------------------------------------------------------       
+    Start Time           Mode            Percent  Qual  Contam  NumGood       
+    -------------------------------------------------------------------       
+    1989-08-26T09:00:08  L                17.333   -1     -1       208        
+    1989-08-26T10:07:22  L                 5.333   -1     -1        64        
+    1989-08-26T11:00:14  L                74.667   -1     -1       896        
+    1989-08-26T12:02:34  L                85.333   -1     -1      1024        
+    1989-08-26T13:00:10  L                66.667   -1     -1       800        
+    1989-08-26T14:00:14  L                80.000   -1     -1       960        
+    1989-08-26T15:00:08  L                80.000   -1     -1       960        
+    1989-08-26T16:00:10  L                82.667   -1     -1       992        
+    1989-08-26T17:00:58  L                61.333   -1     -1       736        
+    1989-08-26T18:00:59  L                56.000   -1     -1       672        
+    1989-08-26T19:00:10  L                52.000   -1     -1       624        
+    1989-08-26T20:00:58  L                76.000   -1     -1       912        
+    1989-08-26T21:00:08  L                60.000   -1     -1       720        
+    1989-08-26T22:00:10  L                70.667   -1     -1       848        
+    1989-08-26T23:00:14  L                85.333   -1     -1      1024        
+    1989-08-27T00:00:08  L                80.000   -1     -1       960        
+    1989-08-27T01:00:10  L                85.333   -1     -1      1024        
+    1989-08-27T02:00:14  L                86.667   -1     -1      1040        
+    1989-08-27T03:00:08  L                85.333   -1     -1      1024        
+    1989-08-27T04:00:10  L                85.333   -1     -1      1024        
+    1989-08-27T05:00:14  L                85.333   -1     -1      1024        
+    1989-08-27T06:00:08  L                86.667   -1     -1      1040        
+    1989-08-27T07:00:10  L                85.333   -1     -1      1024        
+    1989-08-27T08:00:14  L                86.667   -1     -1      1040        
+    1989-08-27T09:00:08  L                84.000   -1     -1      1008        
+    1989-08-27T10:01:03  L                84.000   -1     -1      1008        
+    1989-08-27T11:00:14  L                80.000   -1     -1       960        
+    1989-08-27T12:00:08  L                82.667   -1     -1       992        
+    1989-08-27T13:00:10  L                85.333   -1     -1      1024        
+    1989-08-27T14:00:14  L                69.333   -1     -1       832        
+    1989-08-27T15:00:08  L                81.333   -1     -1       976        
+    1989-08-27T16:00:10  L                82.667   -1     -1       992        
+    1989-08-27T17:00:14  L                86.667   -1     -1      1040        
+    1989-08-27T18:00:08  L                85.333   -1     -1      1024        
+    1989-08-27T19:00:10  L                82.667   -1     -1       992        
+    1989-08-27T20:00:14  L                85.333   -1     -1      1024        
+    1989-08-27T21:00:08  L                81.333   -1     -1       976        
+    1989-08-27T22:00:10  L                81.333   -1     -1       976        
+    1989-08-27T23:00:14  L                77.333   -1     -1       928        
+    1989-08-28T00:00:08  L                82.667   -1     -1       992        
+    1989-08-28T01:00:10  L                81.333   -1     -1       976        
+    1989-08-28T02:00:14  L                85.333   -1     -1      1024        
+    1989-08-28T03:00:08  L                72.000   -1     -1       864        
+    1989-08-28T04:00:10  L                84.000   -1     -1      1008        
+    1989-08-28T05:00:14  L                85.333   -1     -1      1024        
+    1989-08-28T06:00:08  L                81.333   -1     -1       976        
+    1989-08-28T07:00:10  L                85.333   -1     -1      1024        
+    1989-08-28T08:00:14  L                82.667   -1     -1       992        
+    1989-08-28T09:00:08  L                82.667   -1     -1       992        
+    1989-08-28T10:00:10  L                16.000   -1     -1       192        
+    1989-08-28T11:00:14  L                72.000   -1     -1       864        
+    1989-08-28T12:03:18  L                56.000   -1     -1       672        
+    1989-08-28T13:00:10  L                76.000   -1     -1       912        
+    1989-08-28T14:00:14  L                84.000   -1     -1      1008        
+    1989-08-28T15:00:08  L                82.667   -1     -1       992        
+    1989-08-28T16:00:10  L                86.667   -1     -1      1040        
+    1989-08-28T17:00:14  L                84.000   -1     -1      1008        
+    1989-08-28T18:00:08  L                82.667   -1     -1       992        
+    1989-08-28T19:00:10  L                86.667   -1     -1      1040        
+    1989-08-28T20:00:14  L                80.000   -1     -1       960        
+    1989-08-28T21:00:08  L                72.000   -1     -1       864        
+    1989-08-28T22:00:10  L                85.333   -1     -1      1024        
+    1989-08-28T23:00:14  L                82.667   -1     -1       992        
+    1989-08-29T00:00:08  L                86.667   -1     -1      1040        
+    1989-08-29T01:00:10  L                84.000   -1     -1      1008        
+    1989-08-29T02:00:14  L                85.333   -1     -1      1024        
+    1989-08-29T03:00:08  L                84.000   -1     -1      1008        
+    1989-08-29T04:00:10  L                84.000   -1     -1      1008        
+    1989-08-29T05:00:14  L                86.667   -1     -1      1040        
+    1989-08-29T06:00:08  L                86.667   -1     -1      1040        
+    1989-08-29T07:00:10  L                85.333   -1     -1      1024        
+    1989-08-29T08:00:14  L                85.333   -1     -1      1024        
+    1989-08-29T09:00:08  L                81.333   -1     -1       976        
+    1989-08-29T10:01:03  L                64.000   -1     -1       768        
+    1989-08-29T11:00:14  L                84.000   -1     -1      1008        
+    1989-08-29T12:00:08  L                85.333   -1     -1      1024        
+    1989-08-29T13:00:10  L                69.333   -1     -1       832        
+    1989-08-29T14:01:48  L                45.333   -1     -1       544        
+    1989-08-29T15:22:37  L                46.667   -1     -1       560        
+    1989-08-29T16:00:10  L                33.333   -1     -1       400        
+    1989-08-29T17:00:14  L                29.333   -1     -1       352        
+    1989-08-29T18:00:08  L                72.000   -1     -1       864        
+    1989-08-29T19:01:03  L                57.333   -1     -1       688        
+    1989-08-29T20:00:14  L                90.667   -1     -1      1088        
+    1989-08-29T21:00:08  L                74.667   -1     -1       896        
+    1989-08-29T22:00:10  L                82.667   -1     -1       992        
+    1989-08-29T23:00:14  L                85.333   -1     -1      1024        
+    1989-08-29T23:59:24  L                77.333   -1     -1       928        
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 2. Data Quality ID Descriptions                                     
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no attempt has been made to specify a data quality for this          
+         time range                                                           
+                                                                              
+    --------------------------------------------------------------------      
+    Table 3. Data Contamination ID Descriptions                               
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no evaluation of possible contamination has been made"               
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PLS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BELCHERETAL1989"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "RICHARDSONETAL1991A"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "RICHARDSONETAL1991B"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "ZHANGETAL1991B"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

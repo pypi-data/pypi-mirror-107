@@ -1,0 +1,17 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:uranus_occ_u17b_saao_188cm:data::1.0",
+        "title": " Data Collection for the Uranus System occultation of star u17b (Hipparcos 80841) Observed from the SAAO 188cm Telescope.",
+        "authors": [
+            {
+                "first_name": "R. G.",
+                "last_name": "French"
+            }
+        ],
+        "publication_date": "2020-01-23",
+
+        "product_type": "Dataset",
+        "product_type_specific": "PDS4 Collection Product",
+        "status": "Reserved"
+    }
+]

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>C130 EARTH ASAS CALIBRATED REDUCED DATA RECORD IMAGE V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>C130-E-ASAS-3-RDR-IMAGE-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1991-05-28</publication_date>
+            <country>USA</country>
+            <description>Most of the ASAS data acquired for GRSFE were taken during
+                flights over Lunar Lake, Nevada, at a nominal altitude of 5000 m
+                above ground level. Flights over Lunar Lake were repeated to
+                acquire data for a range of solar zenith angles and to obtain
+                data for several view azimuth angles (i.e., for several flight
+                headings relative to the solar principal plane). On most flights,
+                the sensor field of view was initially pointed forward 45 degrees
+                as the aircraft approached the site. The sensor then imaged the
+                site through a sequence of seven fore-to-aft view directions
+                ranging from 45 degrees forward to 45 degrees aft in 15 degree
+                increments as the aircraft flew over the site. The primary target
+                of interest was the Lunar Lake playa, but the digital images also
+                include data for the lava flow and cobble areas within and around
+                the playa. Data were acquired in a similar manner on one flight
+                over the Ubehebe Crater. One flight over Lunar Lake was also
+                flown approximately along the solar principal plane with the ASAS
+                view zenith angle fixed at the solar zenith angle. The purpose of
+            this flight was to observe the opposition effect.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=C130-E-ASAS-3-RDR-IMAGE-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>NASA C-130 AIRCRAFT; EARTH; IMAGING SPECTROMETER; C130; PLANET; ASAS; ADV. SOLID-STATE ARRAY SPECTRORADIOMETER</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>JAMES R. IRONS</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.c130-e-asas-3-rdr-image-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

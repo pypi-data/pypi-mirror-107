@@ -1,0 +1,349 @@
+PDS_VERSION_ID                 = PDS3                                          
+LABEL_REVISION_NOTE           = "                                             
+Received at PPI from David Mitchell, 1999-10-04;                              
+revised by Mark Sharlow, 1999-12-03;                                          
+revised by Mark Sharlow, 2000-03-31;                                          
+updated by Mark Sharlow, 2000-08-02;                                          
+updated by Mark Sharlow, 2003-08-28;                                          
+updated by Mark Sharlow, 2003-08-28;                                          
+updated by D. Kazden, 2009-04-06;                                             
+Updated CITATION_DESC, D. Kazden, 2020-02-05;"                                
+                                                                              
+RECORD_TYPE                   = STREAM                                        
+                                                                              
+OBJECT                       = DATA_SET                                       
+  DATA_SET_ID                    = "LP-L-ER-3-RDR-3DELEFLUX-80SEC-V1.0"       
+  OBJECT                         = DATA_SET_INFORMATION                       
+    DATA_SET_NAME                  = "LP ELECTRON REFLECTOMETER 3D ENERGY     
+       SPECTRA 80SEC V1.0"                                                    
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1998-01-16                               
+    STOP_TIME                      = 1999-07-29                               
+    DATA_SET_RELEASE_DATE          = 1999-01-01                               
+    PRODUCER_FULL_NAME             = "DR. DAVID MITCHELL"                     
+    DETAILED_CATALOG_FLAG          = N                                        
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+DATA_SET_TERSE_DESC   = "Time ordered 3-D spectrum data from the              
+Lunar Prospector Electron Reflectometer, in units of                          
+particles/cm**2/sec/steradian/eV, for dates 1998-01-16 to 1999-07-29."        
+CITATION_DESC             = "Mitchell, D., LP-L-ER-3-RDR-3DELEFLUX-80SEC-V1.0,
+                   LP ELECTRON REFLECTOMETER 3D ENERGY SPECTRA 80SEC V1.0,
+                              NASA PLanetary Data System, 1999."                                    
+ABSTRACT_DESC                      = "Time ordered 3-D spectrum data from the 
+Lunar Prospector Electron Reflectometer, in units of                          
+particles/cm**2/sec/steradian/eV, for dates 1998-01-16 to 1999-07-29."        
+    DATA_SET_DESC                  ="                                         
+                                                                              
+                                                                              
+  Overview:                                                                   
+  ========                                                                    
+                                                                              
+    The Electron Reflectometer 3-D (ER3D) data is a time ordered series       
+    of electron measurements from the Lunar Prospector (LP) Mission.          
+    Each record consists of a time tag with an 88 x 15 array of scalar        
+    data points representing measurements of the electron flux in 88          
+    solid angles covering 4-pi steradians and 15 energy channels              
+    logarithmically spaced from 10 eV to 20 keV, with an energy               
+    resolution (dE/E) of 25%.  Each data point is a measure of the            
+    electron flux (cm-2 sec-1 ster-1 eV-1) within one of the 88               
+    approximately equal-sized solid angles.  Angles are given in ''despun     
+    spacecraft'' (SCD) coordinates, in which the Z-axis coincides with        
+    the spacecraft spin vector, and the direction of the sun is in the        
+    half plane defined by X &#10095; 0, Y = 0.  These data records are               
+    accumulated during 1/2 spin of the spacecraft (~2.5 seconds) and          
+    sampled every 16 spins (~80 seconds).  For convenience, the average       
+    magnetic field vector during the ~2.5-second accumulation time is         
+    provided to facilitate calculation of electron pitch angle                
+    distributions from the 3-D data.                                          
+                                                                              
+                                                                              
+  Parameters:                                                                 
+  ==========                                                                  
+                                                                              
+    The ER 3-D data are provided as differential electron flux in units       
+    of particles per square cm per second per steradian per electron          
+    volt.  The center angles of the 88 solid angle bins are provided in       
+    degrees of longitude and latitude in the SCD coordinate system (see       
+    below for the definition of SCD coordinates).  Note that the center       
+    angles vary with energy, since the spacecraft rotates by 11.25            
+    degrees during the time that the ER sweeps through its energy range.      
+    Each of the 88 solid angle bins are approximately the same size.  The     
+    exact sizes are given in the following table:                             
+                                                                              
+                                                                              
+      Latitude Range      Number of         Solid Angle                       
+        (degrees)       Longitude Bins    Bin Size (ster)                     
+     -----------------------------------------------------                    
+       67.5 to  90.0          4              0.119570                         
+       45.0 to  67.5          8              0.170253                         
+       22.5 to  45.0         16              0.127401                         
+        0.0 to  22.5         16              0.150279                         
+        0.0 to -22.5         16              0.150279                         
+      -22.5 to -45.0         16              0.127401                         
+      -45.0 to -67.5          8              0.170253                         
+      -67.5 to -90.0          4              0.119570                         
+     -----------------------------------------------------                    
+                                                                              
+                                                                              
+    In the above table, latitudes are given in SCD coordinates, and the       
+    longitude bins are of equal size within each latitude range.              
+                                                                              
+                                                                              
+    ER 3-D distributions are recorded for 15 different energies ranging       
+    from 10 eV to 20 keV.  The energy sweep was changed several times         
+    during the mission for both instrumental and scientific reasons.          
+    There are two basic sweeps, the first from 40 eV to 20 keV, and the       
+    second from 7 eV to 20 keV.  The first is used to avoid instrumental      
+    saturation in the solar wind, where fluxes are relatively high.  The      
+    second is used to enhance the science return in the geomagnetic tail      
+    lobes, where fluxes are relatively low.                                   
+                                                                              
+                                                                              
+  Processing:                                                                 
+  ==========                                                                  
+                                                                              
+    Processing is carried out at the Space Sciences Laboratory (SSL) of       
+    the University of California, Berkeley (UCB), to convert the raw data     
+    to measurements of the electron flux (cm-2 s-1 ster-1 eV-1) in 88         
+    solid angles as a function of time.  Because of the instrument's high     
+    dynamic range (six decades), the onboard digital processing unit          
+    (DPU) compresses the raw counts in a logarithmic scale.  The first        
+    step is to decompress the raw counts and construct a                      
+    three-dimensional data array, where the first dimension is time (1        
+    element every 16 spins), the second dimension is direction (88            
+    elements spanning 4-pi steradians), and the third dimension is energy     
+    (15 elements).                                                            
+                                                                              
+    Raw count rate (R) is obtained by dividing the raw counts by the          
+    integration time, which is a function of energy and solid angle.  In      
+    general terms, the integration time is longer at higher energies (to      
+    improve counting statistics) and near the poles of the SCD coordinate     
+    system, because the ER's disk-shaped field of view (FOV) always           
+    includes the poles but requires the spacecraft spin to sweep the FOV      
+    along the equator.  The data are next corrected for deadtime.  During     
+    the time it takes the instrument to process a single electron (known      
+    as the ''deadtime'', which is about 0.3 microsec for the ER), it          
+    ignores any other electrons.  The raw count rate is multiplied by the     
+    factor 1/(1 - RT), where T is the deadtime, to obtain the corrected       
+    count rate.  Data values are masked when the deadtime correction          
+    factor exceeds 1.25.  Note that a background count rate due to cosmic     
+    rays and noise in the electronics (about 10 counts/sec) has not been      
+    subtracted.  In most cases, measurements in the highest energy            
+    channel (20 keV) are dominated by background, which allows this           
+    channel to be used as a baseline for estimating the background level      
+    in lower energy channels.  Finally, one divides by the geometric factor   
+    (0.02 cm2 ster) and the center energy (eV) to obtain the differential     
+    particle flux (cm-2 s-1 ster-1 eV-1).                                     
+                                                                              
+    The electron directions (i.e., the directions in the centers of each      
+    of the 88 solid angles) are rotated into despun spacecraft (SCD)          
+    coordinates using sunpulse data.  Special care must be taken when the     
+    spacecraft is in the Moon's shadow, where the spacecraft spins up         
+    slightly as the booms cool and contract.  This gradual spin-up is         
+    reconstructed on the ground and is not available in real time as the      
+    ER is collecting data and sorting it into the 3-D data array.  Thus,      
+    the 3-D look directions must be corrected during post processing          
+    based on the reconstructed sunpulse data.  Note that an electron's        
+    direction is parallel to its velocity.  In other words, we record         
+    where the electrons are going to, not where they are coming from.         
+    Finally, the average magnetic field direction (in SCD coordinates)        
+    during the accumulation time of the 3-D electron distribution is          
+    calculated and saved with each 3-D data record.                           
+                                                                              
+                                                                              
+  Media/Format:                                                               
+  ============                                                                
+                                                                              
+    Data are archived on DVDs in compliance with the ISO 9660 and UDF         
+    standards. Most DVDs contain 5 months of data. The data are provided      
+    as ASCII tables of 1 day duration. Each record contains data              
+    sampled over 16 spacecraft spins (but accumulated over each 1/2           
+    spacecraft spin) so that a full 3-D spectrum can be produced as the       
+    detector spins and steps.  To satisfy telemetry constraints, full         
+    3-D spectra are obtained once every 16 spacecraft spins.                  
+                                                                              
+    A row (record) in a data file consists of the following fields:           
+                                                                              
+       PDS_time:      Time in PDS standard time format.                       
+       time:          Time in seconds since Jan. 1, 1970.                     
+       energy:        Energy bin value.                                       
+       spec_no:       Spectrum number (see below under                        
+                      ''Table structure'').                                   
+       MagFieldDespunSCCoords:  Array[3] giving magnetic field values.        
+       ele_flux:      Array[88] giving electron flux in 88 angle bins.        
+       dist_phi:      Array[88] giving phi values.                            
+                                                                              
+    Record format:                                                            
+                                                                              
+       PDS_time (A19), time (1X, F15.0), energy (1X, F9.3),                   
+       spec_no (1X, I4, 1X), MagFieldDespunSCCoords 3(F13.6, 1X),             
+       ele_flux 88(1X, E9.3), phi 88(1X, F6.2).                               
+                                                                              
+       Each record is terminated by the carriage return and line feed         
+       (CR/LF) characters.                                                    
+                                                                              
+    Table structure:                                                          
+                                                                              
+       Each spectrum of 15 electron energies is represented by a set of       
+       15 consecutive records in the table.  Each such spectrum has a         
+       distinct spectrum number, which occurs in each record in the           
+       15-record set.                                                         
+                                                                              
+    In addition, there is a file THETA.TAB that gives the                     
+    inclination angle (theta) for each detector step as the                   
+    instrument cycles. These angles are fixed. There is one theta             
+    value associated with each of the 88 electron flux values.                
+    THETA.TAB is an ASCII table with one row and 88 columns.                  
+                                                                              
+    The data were placed in their present format after processing.            
+                                                                              
+                                                                              
+  Ancillary Data:                                                             
+  ==============                                                              
+                                                                              
+    There are several ancillary data sets provided with this                  
+    archive. These include:                                                   
+                                                                              
+                                                                              
+       Spacecraft Attitude data    LP-L-ENG-6-ATTITUDE-V1.0                   
+       Spacecraft Ephemeris data   LP-L-6-EPHEMERIS-V1.0                      
+       Spacecraft Position data    LP-L-6-TRAJECTORY-V1.0                     
+       Spacecraft Command logs     LP-L-ENG-6-COMMAND-V1.0                    
+                                                                              
+                                                                              
+    These data sets provide additional information about the state            
+    of the spacecraft and the instrument during data acquisition              
+    that may aid in the scientific analysis of this data set.                 
+                                                                              
+                                                                              
+  Coordinate System(s):                                                       
+  ====================                                                        
+                                                                              
+    The 3-D data are provided in ''despun spacecraft'' (SCD)                  
+    coordinates, in which the Z-axis coincides with the spacecraft spin       
+    vector, and the direction of the sun is in the half plane defined         
+    by X &#10095; 0, Y = 0.  Throughout most of the mission the spacecraft           
+    spin vector was within a few degrees of either the north or south         
+    ecliptic pole.  Thus, SCD coordinates are closely related to GSE          
+    coordinates.  Conversion to GSE coordinates is not performed because      
+    the electrons are constrained to move along the magnetic field lines      
+    in helices with radii of only a few kilometers.  Thus, only electron      
+    directions with respect to the magnetic field are meaningful.  The        
+    magnetic field direction is provided in SCD coordinates for each ER       
+    3-D distribution, so that electron pitch angle distributions can be       
+    readily calculated.                                                       
+                                                                              
+                                                                              
+  Software:                                                                   
+  ========                                                                    
+                                                                              
+    There are no software provided with this data archive."                   
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+                                                                              
+  Review:                                                                     
+  ======                                                                      
+                                                                              
+    ER data quality has been reviewed at U.C. Berkeley by D.                  
+    Mitchell, J. Halekas, M. Oieroset, T. Phan, S. Frey, and D.               
+    Curtis.                                                                   
+                                                                              
+                                                                              
+  Limitations:                                                                
+  ===========                                                                 
+                                                                              
+    The ER 3-D data are intended to be used in conjunction with               
+    magnetic field and spacecraft ephemeris data, from which                  
+    electron pitch angle distributions can be calculated and                  
+    magnetic field line tracing to the lunar surface can be                   
+    performed.  Magnetic field data are preprocessed (rotated to SCD          
+    coordinates and averaged over the 3-D integration time) and               
+    provided with each 3-D data record to facilitate calculation of           
+    pitch angle distributions.  The magnetic field data are archived          
+    in separate tables in two different coordinate systems, which,            
+    together with spacecraft ephemeris data, allows field line                
+    tracing to the lunar surface.                                             
+                                                                              
+  Data Quality:                                                               
+  ============                                                                
+                                                                              
+    The ER 3-D data are generally of very high quality.  Three                
+    instrumental effects should be noted. (1) Sunlight directly               
+    enters the ER aperture twice per spacecraft spin.  These photons          
+    scatter within the instrument and produce secondary electrons,            
+    which cause a false signal that can overwhelm the desired signal          
+    from ambient electrons.  In the SCD coordinate system, sunlight           
+    contamination appears as a flux spike in the direction of the             
+    sun (0 degrees longitude, ~0 degrees latitude).  The flux spike           
+    has a longitude width of about 14 degrees, and is more elongated          
+    in latitude.  (2) Electron fluxes are relatively high at low              
+    energies, and at times the instrument becomes saturated.                  
+    A deadtime correction of the form 1/(1 - RT) is applied, where R          
+    is the measured count rate and T is the time needed to analyze a          
+    single electron.  This correction is only reliable up to values           
+    of about 1.25, above which data are flagged.  (3) Low energy              
+    electrons can be perturbed by the spacecraft floating potential           
+    relative to the plasma in which the spacecraft is immersed.  In           
+    sunlight, the spacecraft floats a few volts positive, and in the          
+    Moon's shadow, it floats tens of volts negative.  Electrons must          
+    cross this potential before they enter the ER electrostatic               
+    optics, thus all electron energies are shifted by this potential          
+    relative to their energies far from the spacecraft.  In addition,         
+    the trajectories of low energy electrons can be bent by the               
+    potential, so the imaging characteristics of the ER are degraded          
+    for electron energies that are comparable to or lower than the            
+    spacecraft potential.  No corrections are made for spacecraft             
+    potential effects.                                                        
+                                                                              
+                                                                              
+  Data Coverage:                                                              
+  =============                                                               
+                                                                              
+    ER 3-D data are obtained during 1/2 spin (~2.5 seconds) and               
+    sampled every 16 spins (~80 seconds).  During this time, the              
+    spacecraft moves about 128 km in its orbit.                               
+                                                                              
+    A table of gaps in the raw merged telemetry data (OUTAGES.TAB) is         
+    included in the Level 0 Lunar Prospector archive (though not in the       
+    present Level 1 archive) as a rough indication of the data coverage.      
+    Other gaps may exist due to data contamination or processing              
+    limitations."                                                             
+                                                                              
+                                                                              
+  END_OBJECT                     = DATA_SET_INFORMATION                       
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_TARGET                            
+    TARGET_NAME                    = MOON                                     
+  END_OBJECT                     = DATA_SET_TARGET                            
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_HOST                              
+    INSTRUMENT_HOST_ID             = LP                                       
+    INSTRUMENT_ID                  = ER                                       
+  END_OBJECT                     = DATA_SET_HOST                              
+                                                                              
+  OBJECT                         = DATA_SET_MISSION                           
+    MISSION_NAME                   = "LUNAR PROSPECTOR"                       
+  END_OBJECT                     = DATA_SET_MISSION                           
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "BINDERETAL1998"                         
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "ACUNAETAL1992"                          
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "CARLSONETAL1983"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+                                                                              
+END_OBJECT                     = DATA_SET                                     
+END

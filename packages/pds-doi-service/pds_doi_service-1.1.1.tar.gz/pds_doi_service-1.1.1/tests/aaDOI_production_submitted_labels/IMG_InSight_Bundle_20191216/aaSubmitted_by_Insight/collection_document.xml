@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B10.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B10.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:insight_cameras:document</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Collection of document products: PDS4 InSight Cameras Experiment Data Record (EDR) and Reduced Data Record (RDR) Data Products</title>
+    <information_model_version>1.11.1.0</information_model_version>
+    <product_class>Product_Collection</product_class>
+    <Citation_Information>
+      <author_list>R. Deen, H. Abarca, P. Zamani, J.Maki</author_list>
+      <publication_year>2019</publication_year>
+      <keyword>Insight</keyword>
+      <keyword>Insight Lander</keyword>
+      <keyword>cameras</keyword>
+      <keyword>Mars</keyword>
+      <keyword>geosciences</keyword>
+      <keyword>imaging</keyword>
+      <description>Collection of DOCUMENT products.</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2017-11-02</modification_date>
+        <version_id>1.0</version_id>
+        <description>InSight Cameras Experiment Data Record (EDR) and Reduced Data Record (RDR)
+        Data Products.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Context_Area>
+    <comment>Observational Intent</comment>
+    <Time_Coordinates>
+      <start_date_time>2018-01-16T00:24:32.248Z</start_date_time>
+      <stop_date_time>2019-06-30T10:32:36.912Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Raw</processing_level>
+      <Science_Facets>
+        <wavelength_range>Visible</wavelength_range>
+        <domain>Surface</domain>
+        <discipline_name>Imaging</discipline_name>
+      </Science_Facets>
+    </Primary_Result_Summary>
+
+    <Investigation_Area>
+      <name>Insight</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.insight</lid_reference>
+        <reference_type>collection_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+
+    <Observing_System>
+      <Observing_System_Component>
+        <name>Insight Lander</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+          <comment>Reference to the Insight spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Insight Context Camera</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:icc.insight</lid_reference>
+          <reference_type>is_instrument</reference_type>
+          <comment>Reference to the InSight Context Camera instrument onboard the InSight spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Insight Deployment Camera</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:idc.insight</lid_reference>
+          <reference_type>is_instrument</reference_type>
+          <comment>Reference to the InSight Deployment Camera instrument onboard the InsSight spacecraft.</comment>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Mars</name>
+      <type>Planet</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+        <reference_type>document_to_target</reference_type>
+        <comment>Reference to the Planet - Mars target</comment>
+      </Internal_Reference>
+    </Target_Identification>
+  </Context_Area>
+
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:node:node.geo</lid_reference>
+      <reference_type>collection_curated_by_node</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:node:node.img</lid_reference>
+      <reference_type>collection_curated_by_node</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:instrument:icc.insight</lid_reference>
+      <reference_type>collection_to_context</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:instrument:idc.insight</lid_reference>
+      <reference_type>collection_to_context</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+
+  <Collection>
+    <collection_type>Document</collection_type>
+  </Collection>
+
+  <!-- 
+    The indicates how a LIDVID_Primary area is populated with metadata that 
+    describes a two column character table where each row is a max of 259 bytes; 
+    1st column is 1 byte, 2nd column is max 255 characters, columns are separated
+    by comma, and each row is terminated with <CR><LF> - for a total of 259 bytes
+         
+             1         2              250       260
+    12345678901234567890 . . . 12345678901234567890
+    P,urn:nasa:pds:DPH:root::1.0CL     
+-->
+  <File_Area_Inventory>
+    <File>
+      <file_name>collection_document_inventory.tab</file_name>
+      <local_identifier>inventory_collection.document</local_identifier>
+    </File>
+    <Inventory>
+      <local_identifier>collection_inventory.document</local_identifier>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>7</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <field_delimiter>Comma</field_delimiter>
+
+      <Record_Delimited>
+        <fields>2</fields>
+        <groups>0</groups>
+        <maximum_record_length unit="byte">259</maximum_record_length>
+
+        <Field_Delimited>
+          <name>Member Status</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <maximum_field_length unit="byte">1</maximum_field_length>
+          <description>
+                        This columns specifies the Member Status of the files that 
+                        comprise the collection.  
+                    </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>LIDVID_LID</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_LIDVID_LID</data_type>
+          <maximum_field_length unit="byte">255</maximum_field_length>
+          <description>
+                        This columns specifies the LIDVID of the files that 
+                        comprise the collection.  
+                    </description>
+        </Field_Delimited>
+      </Record_Delimited>
+
+      <reference_type>inventory_has_member_product</reference_type>
+
+    </Inventory>
+  </File_Area_Inventory>
+</Product_Collection>

@@ -1,0 +1,120 @@
+PDS_VERSION_ID                      = PDS3
+LABEL_REVISION_NOTE                = "2004-07-12, S. Rafkin;
+2013-08-08, PDS PPI;
+2018-08-06, PPI, removed ARCHIVE_STATUS keyword;"                  
+RECORD_TYPE                        = STREAM
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "MSL-M-RAD-2-EDR-V1.0"
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "MSL MARS RADIATION ASSESSMENT 
+                                      DETECTOR EDR"                  
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"         
+    DATA_OBJECT_TYPE               = "TABLE"                                       
+    START_TIME                     = 2011-11-20T18:16:19.455 
+    STOP_TIME                      = "NULL"         
+    DATA_SET_RELEASE_DATE          = "NULL"                 
+    PRODUCER_FULL_NAME             = "JPL OPGS"                    
+    DETAILED_CATALOG_FLAG          = "N"                        
+    DATA_SET_TERSE_DESC            = "
+Mars Science Laboratory Radiation Assessment Detector Experiment 
+Data Record"                                
+
+    CITATION_DESC                  = "S. Rafkin, J. Peterson, 
+C. Zeitlin, B. Ehresmann, E. Weigle, and D.M. Hassler, 
+MSL MARS RADIATION ASSESSMENT DETECTOR EDR V1.0, MSL-M-RAD-2-EDR-V1.0, 
+NASA Planetary Data System, 2013."
+
+
+    ABSTRACT_DESC                  = "This data set contains the EDR 
+data from the MSL Radiation Assessment Detector (RAD) instrument. 
+The EDR data are raw data reconstructed from telemetry data products."
+
+    DATA_SET_DESC                  = "                                       
+                                                                              
+                                                                              
+   Data Set Overview                                                          
+   =================                                              
+            
+This data set contains data that is useful for determining                 
+the energetic particle environment experienced by the Mars Science          
+Laboratory rover at the surface of Mars. The EDR data products are     
+raw data reconstructed from telemetry data products and formatted     
+according to the RAD EDR Software Interface Specification (EDR      
+SIS).                                                               
+                                                                              
+                                                                              
+   Processing                                                                 
+   ==========                                                                 
+
+The Committee On Data Management and Computation (CODMAC) data         
+level numbering system is used to describe the processing level of     
+the EDR data product.  RAD EDR data products are considered CODMAC Level      
+2 or Edited Data (equivalent to NASA level 0) products.  The EDR       
+data files are generated from Level 1 or Raw Data, which are the        
+telemetry packets.  After stripping away telemetry wrappers, the binary       
+RAD observational data packets are split into individual data          
+products and then concatenated in chronological order. The data        
+are further organized into sols.  Therefore, an EDR data file contains a      
+single data product from all the RAD observations taken over a         
+Mars sol, as determined by the start time of the observation. It is           
+possible that an observation may begin in one sol and extend into      
+the next, 	but it will be archived only as data within the             
+starting sol.  If data from one or more sols is incomplete, missing, or       
+corrupted, the file will exclude these data.  An updated EDR will       
+be generated if and when the data becomes available.                    
+                                                                              
+                                                                              
+   Data                                                                       
+   ====                                                                    
+   
+Each RAD EDR product consists of two files.  The first file is an      
+ASCII formatted detached PDS label. The second file is a binary       
+data file for a RAD product.  The data in a RAD EDR file is a copy of         
+what was in the RAD memory buffer. That is, the EDR consists of       
+unprocessed experiment data stored in binary format.  EDR data products       
+are of one of two types, as identified in the EDR SIS:               
+                                                                              
+   High Priority Science Data = 'EHP'                                         
+   Science Data = 'ESD'                                                    
+                                                                              
+                                                                              
+   Software                                                                   
+   ========                                                           
+        
+No software support is provided.                                         
+                                                                              
+                                                                              
+   Media/Format                                                               
+   ============                                                          
+     
+The data set will be delivered and kept online.                        
+ "                                                                            
+                                                                              
+     CONFIDENCE_LEVEL_NOTE          = "
+EDR Data have been reviewed by the RAD team to check for data set         
+completeness and screened for non-physical values such as negative            
+energy.  RAD finds no obvious errors in the data at this time."
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = MARS                                    
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = MSL                                     
+    INSTRUMENT_ID                  = RAD                                     
+  END_OBJECT                       = DATA_SET_HOST            
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "MARS SCIENCE LABORATORY"
+  END_OBJECT                       = DATA_SET_MISSION             
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "HASSLERETAL2012"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION  
+                                                                                                                                                           
+END_OBJECT                         = DATA_SET                                
+END

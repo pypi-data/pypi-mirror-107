@@ -1,0 +1,488 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+920806 -- JPLPDS::RMONARREZ, received by mail;                                
+92-08  -- EFRIED;                                                             
+920911 -- EFRIED;                                                             
+920918 -- EFRIED, updated Data Set templates according to new std.            
+Data Set Template -&#10095; Spacecraft Data Set Template                             
+event_start_time, event_stop_time -&#10095; start_time, stop_time;                   
+920922 -- EFRIED, Revised DATA_SET_ID and DATA_SET_NAME, last changes made;   
+110609 -- DKAZDEN, removed unnecessary keywords;                              
+112311 -- DKAZDEN, updated REFERENCE_KEY_IDs;                                 
+180814 -- DKAZDEN removed ARCHIVE_STATUS keyword;                             
+200303 -- DKAZDEN updated CITATION_DESC;"                                     
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-N-PWS-4-SUMM-SA-48SEC-V1.0"         
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      VG2 NEP PWS RESAMPLED SUMMARY SPECTRUM ANALYZER 48SEC V1.0"             
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1989-08-21T00:00                         
+    STOP_TIME                      = 1989-08-31T00:00                         
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_RELEASE_DATE          = 1991-04-10                               
+    PRODUCER_FULL_NAME             = "DR. WILLIAM S. KURTH"                   
+    DETAILED_CATALOG_FLAG          = Y                                        
+                                                                              
+    CITATION_DESC              = "Kurth, W.S., VG2-N-PWS-4-SUMM-SA-48SEC-V1.0,
+                   VG2 NEP PWS RESAMPLED SUMMARY SPECTRUM ANALYZER 48SEC V1.0,
+                                  NASA Planetary Data System, 1991."          
+    DATA_SET_TERSE_DESC            = "                                        
+      Voyager 2 48 second calibrated, averaged electric field                 
+      intensities data from the Voyager 2 Plasma Wave Receiver (PWS)          
+      during the Neptune encounter from 1989-08-21 to 1989-08-31."            
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set consists of 48-second calibrated, averaged wave           
+      electric field intensities from the Voyager 2 Plasma Wave               
+      Receiver spectrum analyzer obtained in the vicinity of the              
+      Neptunian magnetosphere.  For each 48-second interval, a geometric      
+      average field strength is determined for each of the 16 spectrum        
+      analyzer channels whose center frequencies range from 10 Hertz to       
+      56.2 kiloHertz and which are logarithmically spaced in frequency,       
+      four channels per decade.  "                                            
+                                                                              
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+     This data set consists of 48-second calibrated, averaged wave            
+     electric field intensities from the Voyager 2 Plasma Wave                
+     Receiver spectrum analyzer obtained in the vicinity of the               
+     Neptunian magnetosphere.  For each 48-second interval, a geometric       
+     average field strength is determined for each of the 16 spectrum         
+     analyzer channels whose center frequencies range from 10 Hertz to        
+     56.2 kiloHertz and which are logarithmically spaced in frequency,        
+     four channels per decade.  The time associated with each set of          
+     averages is the beginning of the averaging interval.  Averages           
+     are stored in units of volt/meter.  During data gaps where               
+     complete 48-second intervals are missing, no entries exist in the        
+     file, that is, the gaps are not zero-filled or tagged in any             
+     other way. Additional information about this dataset and the             
+     instrument which produced it can be found elsewhere in this              
+     catalog.  An overview of the data in this data set can be found          
+     in Gurnett et al. [1989] and a complete instrument description           
+     can be found in Scarf and Gurnett [1977].                                
+                                                                              
+                                                                              
+  Parameters                                                                  
+  ==========                                                                  
+                                                                              
+    Derived Parameters                                                        
+    ------------------                                                        
+                                                                              
+      Sampling Parameter Name             : TIME                              
+      Sampling Parameter Resolution       : 48.0 seconds                      
+      Minimum Sampling Parameter          : N/A (1977-08-20T15:53:00Z)        
+      Maximum Sampling Parameter          : N/A                               
+      Sampling Parameter Interval         : 48.0 seconds                      
+      Minimum Available Sampling Interval : 4.0 seconds                       
+      Data Set Parameter Name             : plasma wave spectrum              
+      Noise Level                         : 0.000005 V/m                      
+      Data Set Parameter Unit             : volts/meter                       
+                                                                              
+      Plasma wave spectrum: A set of derived parameters consisting of         
+      wave electric field intensities or electric field spectral              
+      densities at various contiguous frequencies over a range of             
+      frequencies. The MKS units are: volts/meter or                          
+      volts**2/(hertz.meter**2), respectively.                                
+                                                                              
+                                                                              
+    Measured Parameters                                                       
+    -------------------                                                       
+      Electric field component: A measured parameter equaling the             
+      electric field strength (e.g. in milli-Volts per meter) along a         
+      particular axis direction.                                              
+                                                                              
+      Wave magnetic field intensity: A measured parameter equaling            
+      the magnetic field strength in a specific frequency passband            
+      (in MKS unit: volts/meter) measured in a single sensor or antenna.      
+                                                                              
+      Wave electric field intensity: A measured parameter equaling the        
+      electric field strength in a specific frequency passband (in MKS        
+      unit: volts/meter) measured in a single sensor or antenna.              
+                                                                              
+                                                                              
+  Processing                                                                  
+  ==========                                                                  
+    The data files in this data set were created from the SA 4 second         
+    data set (VG2-N-PWS-2-EDR-SA-4SEC-V1.0), using the 'V2U48' software.      
+                                                                              
+    V2U48                                                                     
+    -----                                                                     
+      Node ID                             : PPI-IOWA                          
+      Software Release Date               : 1988-08-01                        
+      Cognizant Full Name                 : MR. LARRY J. GRANROTH             
+                                                                              
+      V2U48 is a specialized, hard-coded routine to process a specific        
+      interval of Voyager 2 Plasma Wave Spectrometer (PWS) spectrum           
+      analyzer data around Uranus encounter.  Input is from MSF or CD         
+      data sets produced and stored at the University of Iowa, and            
+      output is to ASCII text files which are compatible with PDS             
+      data loading procedures. These files contain information                
+      corresponding to the VG2-N-PWS-4-SUMM-SA-48SEC-V1.0 and                 
+      VG2-U-PWS-4-SUMM-SA-48SEC data set.                                     
+                                                                              
+      NOTE: SOFTWARE IS NOT AVAILABLE FOR PUBLIC USE."                        
+                                                                              
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+     This data set includes all available spectrum analyzer data              
+     within the interval of time covered.  The data set has been              
+     cleaned as well as possible for periodic noise spikes due to a           
+     stepper motor operating on the LECP and a modulated grid within          
+     the PLS. The averages do not include these noise spikes. Other           
+     possible sources of noise which have not been eliminated include         
+     random intense spikes of noise below 1 kiloHertz due to the              
+     operation of attitude control thrusters.  Other randomly                 
+     occurring spikes or time periods of intense spikes over the              
+     entire frequency range are indicative of telemetry errors.  No           
+     attempt has been made to remove spikes since some could be valid         
+     data, i.e. real bursts of wave activity.  The 17.8-Hz channel is         
+     sometimes contaminated by interference from the PRA instrument,          
+     depending on that instrument's mode.  This interference is at a          
+     relatively constant level.  A failure in the Voyager 2 flight            
+     data system a few months after launch has decreased the                  
+     sensitivity and the calibration accuracy of the upper 8 spectrum         
+     analyzer channels (i.e. 1 kiloHertz and higher).  During the             
+     closest approach to Neptune, an enhancement of the periodic PLS          
+     noise was observed and has remained unchanged through the end            
+     of the Neptune encounter.  This interference occurs in the 100           
+     Hz channel.                                                              
+                                                                              
+                                                                              
+  Data Quality and Coverage                                                   
+  =========================                                                   
+    Table 1 contains hourly summaries of the percentage of the data           
+    available, data quality, and contamination codes. Tables 2 and 3          
+    contain descriptions of the data quality and data contamination           
+    ID's respectively.                                                        
+                                                                              
+    --------------------------------------------------------------------      
+    Table 1. Hourly Data Coverage and Quality Summaries                       
+    --------------------------------------------------------------------      
+    Start Time           Mode                Percent Qual Contam NumGood      
+    --------------------------------------------------------------------      
+    1989-08-21T01:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T02:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-21T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T06:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-21T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T15:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-21T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T17:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-21T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T21:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-21T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-22T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T10:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-22T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T14:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-22T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T19:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-22T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T21:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-22T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-23T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T14:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-23T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T18:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-23T19:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-23T20:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-23T21:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-23T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-23T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-24T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T13:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-24T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T16:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-24T17:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-24T18:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-24T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-24T21:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-24T22:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-24T23:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-25T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-25T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T21:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-25T23:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-26T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-26T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T21:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-26T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-26T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-27T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T10:00:00  GS3GAINHI/WFMPWRON   97.333  -1    -1     1387       
+    1989-08-27T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T21:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-27T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-27T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-28T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T06:00:00  GS3GAINHI/WFMPWRON   93.333  -1    -1     1330       
+    1989-08-28T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T10:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-28T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T21:00:00  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-28T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-28T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-29T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T21:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-29T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-30T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T08:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-30T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T12:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-30T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T20:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-30T21:00:48  GS3GAINHI/WFMPWRON   96.000  -1    -1     1368       
+    1989-08-30T22:00:00  GS3GAINHI/WFMPWRON   98.667  -1    -1     1406       
+    1989-08-30T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T00:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T01:00:00  GS3GAINHI/WFMPWRON  101.333  -1    -1     1444       
+    1989-08-31T02:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T03:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T04:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T05:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T06:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T07:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T08:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T09:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T10:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T11:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T12:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T13:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T14:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T15:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T16:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T17:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T18:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T19:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T20:00:00  GS3GAINHI/WFMPWRON   93.333  -1    -1     1330       
+    1989-08-31T21:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T22:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T23:00:00  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+    1989-08-31T23:59:12  GS3GAINHI/WFMPWRON  100.000  -1    -1     1425       
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 2. Data Quality ID Descriptions                                     
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no attempt has been made to specify a data quality for this          
+         time range                                                           
+     1   Contamination removed by deleting measurements which are             
+         affected. Some contamination may still be present to avoid           
+         deleting too many data points. Remaining LECP contamination          
+         will appear as periodic bursts of noise in one or more               
+         channels in the range 100 Hertz to about 1 kiloHertz.                
+                                                                              
+                                                                              
+    --------------------------------------------------------------------      
+    Table 3. Data Contamination ID Descriptions                               
+    --------------------------------------------------------------------      
+    ID   Description                                                          
+    --------------------------------------------------------------------      
+    -1   no evaluation of possible contamination has been made                
+     1   Contamination code 01 refers to contamination by the LECP            
+         stepper motor and PLS grid modulation which causes periodic          
+         spikes in the spectrum analyzer data particularly in the             
+         frequency range 100 Hertz to about 1 kiloHertz."                     
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = NEPTUNE                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = VG2                                      
+    INSTRUMENT_ID                  = PWS                                      
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "GURNETTETAL1989"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SCARF&GURNETT1977"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

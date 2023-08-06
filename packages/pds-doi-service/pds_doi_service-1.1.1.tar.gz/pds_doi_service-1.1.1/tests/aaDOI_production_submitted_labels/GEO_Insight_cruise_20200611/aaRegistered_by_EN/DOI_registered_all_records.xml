@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+
+    <!-- =============================== -->
+    <!-- collection_data_ifg_raw_1.0.xml -->
+    <!-- =============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Magnetometer Cruise Raw Data Collection</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-cruise:data-ifg-raw::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-10-25</publication_date>
+            <country>USA</country>
+            <description>This collection contains raw InSight IFG magnetometer cruise data. </description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-cruise%3Adata-ifg-raw&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS4 Collection</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Raw; Fields; Magnetic; Background; InSight Mars Lander Mission; InSight Mars Lander Spacecraft; InSight Fluxgate Magnetometer; Solar Wind</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-cruise:data-ifg-raw::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =============================================== -->
+    <!-- collection_data-ifg-partially-processed_3.1.xml -->
+    <!-- =============================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Magnetometer Mars Partially Processed Data Collection</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-mars:data-ifg-partially-processed::3.1</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-24</publication_date>
+            <country>USA</country>
+            <description>This collection contains the InSight IFG Mars partially processed data products.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-mars%3Adata-ifg-partially-processed&amp;version=3.1</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS4 Collection</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Partially Processed; InSight; InSight Fluxgate Magnetometer; Mars</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-mars:data-ifg-partially-processed::3.1</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ====================================== -->
+    <!-- collection_data-ifg-calibrated_3.1.xml -->
+    <!-- ====================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Magnetometer Mars Calibrated Data Collection</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-mars:data-ifg-calibrated::3.1</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-06-24</publication_date>
+            <country>USA</country>
+            <description>This collection contains the InSight IFG Mars calibrated data products.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-mars%3Adata-ifg-calibrated&amp;version=3.1</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS4 Collection</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Calibrated; InSight; InSight Fluxgate Magnetometer; Mars</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-mars:data-ifg-calibrated::3.1</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =============================================== -->
+    <!-- collection_data_ifg_partially_processed_1.0.xml -->
+    <!-- =============================================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Magnetometer Cruise Quick Look Data Collection </title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-cruise:data-ifg-partially-processed::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-10-25</publication_date>
+            <country>USA</country>
+            <description>This collection contains the InSight IFG Cruise partially processed data.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-cruise%3Adata-ifg-partially-processed&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS4 Collection</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Calibrated; Fields; Magnetic; Background; InSight Mars Lander Mission; InSight Mars Lander Spacecraft; InSight Fluxgate Magnetometer; Solar Wind</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-cruise:data-ifg-partially-processed::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- =============================== -->
+    <!-- collection_data-ifg-raw_4.1.xml -->
+    <!-- =============================== -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Magnetometer Mars Raw Data Collection</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-mars:data-ifg-raw::4.1</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-24</publication_date>
+            <country>USA</country>
+            <description>This collection contains the InSight IFG Mars raw data products.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-mars%3Adata-ifg-raw&amp;version=4.1</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS4 Collection</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Raw; InSight; InSight Fluxgate Magnetometer; Mars</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-mars:data-ifg-raw::4.1</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+
+    <!-- ================================= -->
+    <!-- bundle_insight_ifg_cruise_1.0.xml -->
+    <!-- ================================= -->
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>InSight IFG Cruise Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:insight-ifg-cruise::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Planetary Plasma Interactions Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2019-05-24</publication_date>
+            <country>USA</country>
+            <description>This bundle contains InSight IFG Cruise data and associated products</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Ainsight-ifg-cruise&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-06-11</date_record_added>
+            <keywords>PDS;  PDS3;  GEO;  Insight; Raw; InSight Mars Lander Mission; InSight Mars Lander Spacecraft; InSight Fluxgate Magnetometer; Solar Wind</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>C. T.</first_name>
+                    <last_name>Russell</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>S. P.</first_name>
+                    <last_name>Joy</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:insight-ifg-cruise::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>
+

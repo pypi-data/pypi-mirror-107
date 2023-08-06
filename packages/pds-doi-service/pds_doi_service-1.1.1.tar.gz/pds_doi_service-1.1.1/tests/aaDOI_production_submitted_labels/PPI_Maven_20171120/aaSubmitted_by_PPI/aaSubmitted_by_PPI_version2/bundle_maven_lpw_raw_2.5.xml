@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1030.sch"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle 
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvn="http://pds.nasa.gov/pds4/mission/mvn/v1"
+   xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd
+
+      http://pds.nasa.gov/pds4/mission/mvn/v1
+      http://pds.nasa.gov/pds4/mission/mvn/v1/PDS4_MVN_1030.xsd
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:maven.lpw.raw</logical_identifier>
+      <version_id>2.5</version_id>
+      <title>MAVEN LPW Raw Data Bundle</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Bundle</product_class>
+      <Citation_Information>
+         <publication_year>2017</publication_year>
+         <description>
+            This bundle raw contains uncompressed, uncalibrated data from the individual
+            LPW telemetry packets.
+         </description>
+      </Citation_Information>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2017-11-14</modification_date>
+            <version_id>2.5</version_id>
+            <description>
+               MAVEN Release 11 (2017-11-15): This version is an incremental release 
+               including the initial release of 2017-05-15 to 2017-08-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-08-14</modification_date>
+            <version_id>2.4</version_id>
+            <description>
+               MAVEN Release 10 (2017-08-15): This version is an incremental release 
+               including the initial release of 2017-02-15 to 2017-05-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-08-12</modification_date>
+            <version_id>2.3</version_id>
+            <description>
+               This version included corrections to a 1 second timing error in the data 
+               following the leap second at 2016-12-31T23:59:60 UTC. Coverage is the 
+               same as for version 2.2.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-05-15</modification_date>
+            <version_id>2.2</version_id>
+            <description>
+               MAVEN Release 9 (2017-05-15): This version is an incremental release 
+               including the intial release of 2016-11-15 to 2017-02-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-02-14</modification_date>
+            <version_id>2.1</version_id>
+            <description>
+               MAVEN Release 8 (2017-02-15): This version is an incremental release 
+               including the intial release of 2016-08-15 to 2016-11-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-11-15</modification_date>
+            <version_id>2.0</version_id>
+            <description>
+               MAVEN Release 7 (2016-11-15): This release consists of a full redelivery 
+               of all LPW data to date, including the initial delivery of data from
+               2016-05-15 to 2016-08-14. These products have been updated to address peer 
+               review liens. Full coverage is 2014-10-11 to 2016-08-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-08-09</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+	       MAVEN Release 6 (2016-08-15): This is the initial release of this data 
+	       set. Coverage includes 2014-10-08 to 2016-05-14.
+	    </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Context_Area>
+      <Time_Coordinates>
+         <start_date_time>2014-10-11T00:00:00.000Z</start_date_time>
+         <stop_date_time>2017-08-14T23:59:59.999Z</stop_date_time>
+      </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Science</purpose>
+                   <processing_level>Calibrated</processing_level>
+                   <Science_Facets>
+                         <domain>Magnetosphere</domain>
+                         <discipline_name>Fields</discipline_name>
+                         <facet1>Electric</facet1>
+                         <facet2>Waves</facet2>
+                  </Science_Facets>
+            </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+                         <reference_type>bundle_to_investigation</reference_type>
+                  </Internal_Reference>
+            </Investigation_Area>
+      <Observing_System>
+                   <Observing_System_Component>
+                         <name>MAVEN</name>
+                         <type>Spacecraft</type>   
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                               <reference_type>is_instrument_host</reference_type>
+                        </Internal_Reference>
+                  </Observing_System_Component>
+         <Observing_System_Component>
+             <name>Langmuir Probe and Waves Instrument</name>
+             <type>Instrument</type>   
+             <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:lpw.maven</lid_reference>
+                <reference_type>is_instrument</reference_type>
+             </Internal_Reference>
+          </Observing_System_Component>
+      </Observing_System>
+             <Target_Identification>
+                   <name>Mars</name>
+                   <type>Planet</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                         <reference_type>collection_to_target</reference_type>
+                  </Internal_Reference>
+            </Target_Identification>
+             <Mission_Area>
+                   <MAVEN xmlns="http://pds.nasa.gov/pds4/mission/mvn/v1">
+                         <mission_phase_name>Transition</mission_phase_name>
+                         <mission_phase_name>Prime Mission</mission_phase_name>
+                         <mission_phase_name>EM-1</mission_phase_name>
+                         <mission_phase_name>EM-2</mission_phase_name>
+                  </MAVEN>
+            </Mission_Area>
+   </Context_Area>
+   <Reference_List>
+   </Reference_List>
+   <Bundle>
+      <bundle_type>Archive</bundle_type>
+      <description>
+         This bundle raw contains uncompressed, uncalibrated data from the individual
+         LPW telemetry packets.
+      </description>
+   </Bundle>
+   <File_Area_Text>
+      <File>
+         <file_name>Readme_2.5.txt</file_name>
+         <creation_date_time>2017-11-14T17:00:13</creation_date_time>
+         <md5_checksum>fd6a7996b9a619f9b99f623122760952</md5_checksum>
+         <comment>This file contains a brief overview of the MAVEN LPW raw data bundle.</comment>
+      </File>
+      <Stream_Text>
+         <name>Readme_2.5.txt</name>
+         <local_identifier>Readme</local_identifier>
+         <offset unit="byte">0</offset>
+         <object_length unit="byte">7877</object_length>
+         <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+         <description>This file contains a brief overview of the MAVEN LPW raw data bundle.</description>
+         <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      </Stream_Text>
+   </File_Area_Text>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.act::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.adr::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.atr::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.euv::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.hsbmlf::2.4</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.hsbmmf::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.hsbmhf::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.hsk::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.pas::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+  <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.speclfact::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+     <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.specmfact::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.spechfact::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.speclfpas::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.specmfpas::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.spechfpas::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.swp1::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:data.swp2::2.5</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.lpw.raw:document::1.1</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_document_collection</reference_type>
+   </Bundle_Member_Entry>
+</Product_Bundle>

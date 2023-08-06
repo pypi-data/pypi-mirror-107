@@ -1,0 +1,228 @@
+PDS_VERSION_ID                      = PDS3                             
+LABEL_REVISION_NOTE                = "2007-07-31 by S. Jeffers, SwRI; 
+2018-08-03, D. Kazden, removed ARCHIVE_STATUS keyword;"               
+                                                                      
+RECORD_TYPE                        = STREAM                           
+RELEASE_ID                         = 0001                             
+REVISION_ID                        = 0000                             
+                                                                      
+OBJECT                             = DATA_SET                         
+  DATA_SET_ID                   = "MEX-M-ASPERA3-2-EDR-ELS-EXT3-V1.0" 
+                                                                      
+  OBJECT                           = DATA_SET_INFORMATION             
+    DATA_SET_NAME                  = "                                
+         MARS EXPRESS ASPERA-3 RAW EDR ELECTRON SPECTROMTR EXT3 V1.0" 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                
+    START_TIME                     = 2010-01-01T00:00:00              
+    STOP_TIME                      = NULL                             
+    DATA_SET_RELEASE_DATE          = 2011-01-24                       
+    PRODUCER_FULL_NAME             = "SANDEE JEFFERS"                 
+    DETAILED_CATALOG_FLAG          = N                                
+    DATA_OBJECT_TYPE               = "SPREADSHEET"                    
+    DATA_SET_TERSE_DESC            = "                                
+         This data set contains Mars Express ASPERA-3 Electron        
+         Spectrometer (ELS) data for the second mission extension     
+         (January 1, 2010 - Dec. 31, 2012).  The data are provided    
+         in raw units of counts/accumulation."                        
+    CITATION_DESC                  = "                                
+         Lundin, R., S. Barabash, D. Winningham, R. Frahm,            
+         MARS EXPRESS ASPERA-3 RAW EDR ELECTRON SPECTROMTR EXT3 V1.0, 
+         MEX-M-ASPERA3-2-EDR-ELS-EXT3-V1.0,                           
+         ESA Planetary Science Archive (PSA),                         
+         NASA Planetary Data System (PDS), 2005"                      
+    ABSTRACT_DESC                  = "                                
+         This data set contains Mars Express ASPERA-3 Electron        
+         Spectrometer (ELS) data for the second mission extension     
+         (January 1, 2010 - Dec. 31, 2012). These data are provided   
+         in raw units of counts/accumulation."                        
+    DATA_SET_DESC                  = "                                
+                                                                      
+    Overview:                                                         
+    =========                                                         
+                                                                      
+    The Electron Spectrometer (ELS) provides in situ electron         
+    measurements in the energy range 0.05 eV to 20 keV to help        
+    satisfy the following scientific objectives:                      
+                                                                      
+       1. Determine the instantaneous global distributions of plasma  
+          and neutral gas near Mars by providing undisturbed solar    
+          wind parameters                                             
+                                                                      
+       2. Define the local characteristics of the main plasma regions 
+                                                                      
+       3. Complement the ENA images                                   
+                                                                      
+    Parameters:                                                       
+    ===========                                                       
+                                                                      
+    All ELS data products have the same format and parameters, and    
+    each row (data file record) in the ELS SPREADSHEET data products  
+    has eight (8) COLUMN objects (parameters):                        
+       1. Start Time - Begin Date/Time in UTC of data samples         
+       2. Stop Time - Ending Date/Time in UTC of data samples         
+       3. Data Type Name - SENSOR, SCAN, or MODE. The SENSOR rows are 
+          the ELS science data for each sector (16 sectors). The SCAN 
+          rows are the deflection voltages (volts) that correspond to 
+          the SENSOR rows.  There is one SCAN row per 16 SENSOR rows. 
+          The 16 SENSOR rows are followed by one corresponding SCAN   
+          row.  The SCAN row indicates the deflection voltage per     
+          step that corresponds to the previous 16 SENSOR rows for    
+          each step.  To convert the deflection voltages to center    
+          energies (eV), use the K_FACTOR per anode in the            
+          calibration tables:  eV = volt * K_FACTOR. There are 16     
+          SENSOR rows + 1 SCAN row (17 in all) followed by 23 rows of 
+          MODE data for the same time period. The MODE rows contain   
+          informational data such as Time/Step Summations and Sector  
+          Enable Flags.                                               
+       4. Data Type Id - Numeric ID indicating SENSOR, SCAN, or MODE. 
+       5. Data Name - Short description for data on that row.  For    
+          example 'ELS Sector 0 LR' for ELS sector 0 Low Range        
+          science data (SENSOR rows for ELSSCIL data products), 'ELS  
+          Sector 0 HR' for ELS sector 0 High Range science data       
+          (SENSOR rows for ELSSCIH data products), 'Deflection        
+          Potential' for SCAN rows, or 'Time Summation' for           
+          informational data (MODE row).                              
+       6. Data Unit - Indicates the data unit:                        
+            'c/acc' (counts per accumulation) for SENSOR data         
+            'volt' for SCAN data                                      
+            'Unitless' for MODE data                                  
+       7. Values - These are the actual data values.  For this column 
+          there are multiple values as indicated by the ITEMS keyword 
+          in the label files.  This value will vary from file to      
+          file, but remains consistent within a data (.CSV) file.     
+          For the SENSOR rows, these are the science data sampled at  
+          the corresponding deflection volts indicated in the         
+          corresponding SCAN row that follows the 16 ELS sector       
+          (SENSOR rows) data.  The MODE data rows contain only one    
+          value each and remaining ITEMS are indicated 'missing' with 
+          commas (value,,...,,).  Please note that the data values    
+          are formatted for a high level of accuracy, and that this   
+          does not indicate the accuracy of the ELS instrumentation.  
+       8. Data Quality Value - Quality indicator for the data on that 
+          row. The data quality value is only applicable for the      
+          SENSOR data. See CONFIDENCE_LEVEL_NOTE under 'Data          
+          Coverage/Quality' for valid values and descriptions.        
+                                                                      
+    Data Products:                                                    
+    ==============                                                    
+                                                                      
+    The Standard Data Products for ELS PSA Level 1b (EDR) products    
+    are:                                                              
+                                                                      
+       1. ELSSCIL_C_ACC - ELectron Spectrometer SCIence Low range     
+          data in Counts / ACCumulation units.                        
+                                                                      
+       2. ELSSCIH_C_ACC - ELectron Spectrometer SCIence High range    
+          data in Counts / ACCumulation units.                        
+                                                                      
+       NOTE:  There is not a one-to-one correspondence between the    
+              ELSSCIL and ELSSCIH data products. Most of the time,    
+              both products are produced for the same time period.    
+              However, there are times when only ELSSCIL products are 
+              produced or only ELSSCIH products are produced, not     
+              both.                                                   
+                                                                      
+    Ancillary Data:                                                   
+    ===============                                                   
+                                                                      
+    It is important for ASPERA-3 science studies to know where in     
+    space and time the Mars Express spacecraft and ASPERA-3           
+    instruments are located and what objects (Sun, Mars, Earth,       
+    Phobos, Deimos) are in the fields of views. The ASPERA-3 view     
+    directions for each sensor can be derived using the SPICE kernels 
+    and software. The ASPERA-3 Sensor Frames and Geometry Information 
+    document (in DOCUMENT directory) provides a code example (in C    
+    and FORTRAN) for determining the view directions for the ASPERA-3 
+    sensors.                                                          
+                                                                      
+    Coordinate System:                                                
+    ==================                                                
+                                                                      
+    The ASPERA-3 data are always in the instrument reference frame    
+    since data are sampled in situ. The GEOMETRY table contains       
+    spacecraft related parameters expressed in the J2000 reference    
+    frame, and the ASPERA-3 Sensor Frames and Geometry Information    
+    document (in DOCUMENT directory) provides information for         
+    determining the ASPERA-3 sensors view directions and transforming 
+    to the J2000 reference frame.                                     
+                                                                      
+    References:                                                       
+    ===========                                                       
+                                                                      
+    Refer to the ASPERA-3 Experiment to Archive Interface Control     
+    Document (EAICD) found in the DOCUMENT directory                  
+    (MEX_ASPERA3_PSA_ICD_V01_03) for more information and detail      
+    concerning data set formulation and contents.                     
+    "                                                                 
+                                                                      
+    CONFIDENCE_LEVEL_NOTE          = "                                
+                                                                      
+    Review:                                                           
+    =======                                                           
+                                                                      
+    These data have been reviewed by the instrument team and are of   
+    the highest quality that can be generated at this time. Science   
+    results based on these data have been published in several        
+    journals (Science, Nature, EGU, etc.). After submission to the    
+    PDS, these data successfully completed the peer review process.   
+                                                                      
+    Data Coverage/Quality:                                            
+    ======================                                            
+                                                                      
+    The data quality indicators in the data files for each sensor are 
+    associated with the data returned in telemetry.  Valid values     
+    are:                                                              
+                                                                      
+       0 - Good Data: Default because assumption is that data         
+                      are good unless determined otherwise.           
+                                                                      
+       1 - Questionable Data: +30V monitor value is not within        
+                              tolerance                               
+                                                                      
+       2 - Invalid Data: +12V, -12V, +5V, or -5V monitor value is not 
+                         within tolerance or high voltage is not      
+                         enabled                                      
+                                                                      
+       3 - Bad Data: +30V monitor value and (+12V, -12V, +5V, or -5V  
+                     monitor value) are not within tolerance          
+                                                                      
+       4 - Unknown State: Time related Main Unit housekeeping packet  
+                          is not available.                           
+                                                                      
+      -1 - Data Unavailable:  No data returned for the sensor, so a   
+                              fill value is used for data quality.    
+                                                                      
+    Limitations:                                                      
+    ============                                                      
+                                                                      
+       There are no known limitations at this time.                   
+    "                                                                 
+                                                                      
+  END_OBJECT                       = DATA_SET_INFORMATION             
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = "MARS"                           
+    TARGET_TYPE                    = "PLANET"                         
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_TARGET                  
+    TARGET_NAME                    = "SOLAR WIND"                     
+    TARGET_TYPE                    = "PLASMA CLOUD"                   
+  END_OBJECT                       = DATA_SET_TARGET                  
+                                                                      
+  OBJECT                           = DATA_SET_HOST                    
+    INSTRUMENT_HOST_ID             = "MEX"                            
+    INSTRUMENT_ID                  = "ASPERA-3"                       
+  END_OBJECT                       = DATA_SET_HOST                    
+                                                                      
+  OBJECT                           = DATA_SET_MISSION                 
+    MISSION_NAME                   = "MARS EXPRESS"                   
+  END_OBJECT                       = DATA_SET_MISSION                 
+                                                                      
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION   
+    REFERENCE_KEY_ID               = "BARABASHETAL2004"               
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION   
+                                                                      
+END_OBJECT                         = DATA_SET                         
+                                                                      
+END

@@ -1,0 +1,276 @@
+PDS_VERSION_ID                     = PDS3                              
+LABEL_REVISION_NOTE               = "                                 
+    2001-04-06, R. Simpson, initial draft;                            
+    2002-09, S. Joy, added Io target object;                          
+    2003-08-18, S. Joy, minor revisions requested at peer review;     
+    2010-04-28, PPI, Z's removed from Time;                           
+    2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;            
+    2020-02-03, D. Kazden, updated CITATION_DESC;"                    
+                                                                      
+RECORD_TYPE                       = FIXED_LENGTH                      
+RECORD_BYTES                      = 72                                
+                                                                      
+OBJECT                            = DATA_SET                          
+ DATA_SET_ID                      = "GO-J-RSS-5-ROCC-V1.0"            
+ OBJECT                           = DATA_SET_INFORMATION              
+  DATA_SET_NAME                   = "GLL RPT IONOSPHERE PROFILES"     
+  DATA_SET_COLLECTION_MEMBER_FLG  = "N"                               
+  START_TIME                      = 1995-12-08T10:00:00               
+  STOP_TIME                       = 1997-08-03T22:10:10               
+  DATA_SET_RELEASE_DATE           = 2000-09-30                        
+  PRODUCER_FULL_NAME              = "DAVID P. HINSON"                 
+  DETAILED_CATALOG_FLAG           = "N"                               
+  DATA_OBJECT_TYPE                = TABLE                             
+                                                                      
+  CITATION_DESC                   = "                                 
+    Hinson, D.P., GO-J-RSS-5-ROCC-V1.0, GLL RPT IONOSPHERE PROFILES,  
+    NASA Planetary Data System, 2000"                                 
+                                                                      
+  ABSTRACT_DESC                   = "                                 
+      The Galileo Radio Propagation Team Ionosphere Profile data set  
+      is small number of electron density profiles derived from radio 
+      occultation data collected while Galileo was in Jupiter orbit.  
+      Each profile is an ASCII table giving electron density as a     
+      function of radius (and altitude).  This data set contains      
+      Jupiter profiles from 1995-1996 and Io profiles from 1997."     
+                                                                      
+  DATA_SET_TERSE_DESC             = "                                 
+    Galileo Jupiter and Io ionosphere electron density profiles from  
+    radio occultation 1995-1997."                                     
+                                                                      
+  DATA_SET_DESC                   = "                                 
+                                                                      
+    Data Set Overview                                                 
+    =================                                                 
+      The Galileo Radio Propagation Team Ionosphere Profile data set  
+      is small number of electron density profiles derived from radio 
+      occultation data collected while Galileo was in Jupiter orbit.  
+      Each profile is an ASCII table giving electron density as a     
+      function of radius (and altitude).  This data set contains      
+      Jupiter profiles from 1995-1996 and Io profiles from 1997.      
+                                                                      
+      For more information see [HINSONETAL1997], [HINSONETAL1998A],   
+      and [HINSONETAL1998B].                                          
+                                                                      
+                                                                      
+    Parameters                                                        
+    ==========                                                        
+      For Jupiter electron density profiles are tables of electron    
+      density (and its uncertainty) versus radial distance from       
+      Jupiter's center of mass to the closest approach of the ray     
+      path, altitude of the closest point on the ray path above the   
+      one-bar pressure level; planetocentric north latitude; and      
+      planetocentric east longitude (System III).                     
+                                                                      
+      For Io electron density profiles are tables of electron density 
+      (and its uncertainty) versus radial distance from Io's center   
+      of mass to the closest approach of the ray path, altitude of    
+      the closest point on the ray path above the surface (reference  
+      radius); planetocentric north latitude; and planetocentric east 
+      longitude in body fixed coordinates.                            
+                                                                      
+      A header record prepended to each table provides information    
+      on observing times and geometry and on files used in the data   
+      processing.                                                     
+                                                                      
+                                                                      
+    Processing                                                        
+    ==========                                                        
+      Ionosphere electron density profiles were derived from raw      
+      receiver output in several steps.                               
+                                                                      
+      First, deterministic sources of frequency change were           
+      identified and removed coherently.  These included motion       
+      of the spacecraft, motion of the Earth receiving station,       
+      drift of the UltraStable Oscillator (USO), and relativistic     
+      effects associated with gravity fields of solar system          
+      bodies.  This left the carrier signal at a known frequency      
+      except for phase drift associated with passage of the radio     
+      ray through the ionosphere.                                     
+                                                                      
+      Second, using an accurate reconstruction of the spacecraft      
+      trajectory, the phase of the signal versus time was converted   
+      into a measure of refraction angle versus impact parameter --   
+      the perpendicular distance between the incoming raypath and     
+      the center of curvature of the atmosphere.                      
+                                                                      
+      Third, the index of refraction versus radius was obtained       
+      using an Abel inversion [FJELDBOETAL1971].  Refractive index    
+      versus radius was converted to density of free electrons        
+      versus radius using a method described by [YEH&LIU1972].        
+                                                                      
+      For more information [HINSONETAL1997], [HINSONETAL1998A], and   
+      [HINSONETAL1998B].                                              
+                                                                      
+                                                                      
+    Data                                                              
+    ====                                                              
+      Ionosphere electron density profiles are stored in the EDS      
+      directory.                                                      
+                                                                      
+      File names for the Jupiter data are of the form  Jnn_ddsC.EDS   
+      where  nn  denotes the Jupiter orbit on which the data were     
+      acquired (starting from 00),  dd  is the number of the NASA     
+      Deep Space Network station collecting the data (14, 43, or 63), 
+      s  is the sense of the occultation ('N' for entry, 'X' for      
+      exit), and  C  is a character indicating the version of the     
+      file (A, B, etc.).                                              
+                                                                      
+      File names for the Io data are of the form  InnoddsC.EDS  where 
+      nn  denotes the Jupiter orbit on which the data were acquired   
+      (starting from 00),  o  is the occultation number at Io (1-6),  
+      dd  is the number of the NASA Deep Space Network station        
+      collecting the data (14, 43, or 63),  s  is the sense of the    
+      occultation ('N' for entry, 'X' for exit), and  C is a character
+      indicating the version of the file (A, B, etc.).                
+                                                                      
+                                                                      
+    Ancillary Data                                                    
+    ==============                                                    
+      None.                                                           
+                                                                      
+                                                                      
+    Coordinate System                                                 
+    =================                                                 
+      Close approach points of the Jupiter ray path are given in      
+      System III latitude and east longitude.  Close approach points  
+      for the Io ray path are given in body fixed IAU 1994            
+      coordinates [DAVIESETAL1995].                                   
+                                                                      
+                                                                      
+    Software                                                          
+    ========                                                          
+      None.                                                           
+                                                                      
+                                                                      
+    Media/Format                                                      
+    ============                                                      
+      The archival data set were written on CD-WO media using the     
+      Sun Ultra-5/Yamaha/GEAR CD authoring subsystem provided by      
+      the Mars Global Surveyor Project.  The CD-WO volume conforms    
+      to ISO 9660 standards."                                         
+                                                                      
+                                                                      
+  CONFIDENCE_LEVEL_NOTE           = "                                 
+                                                                      
+    Overview                                                          
+    ========                                                          
+      Data in this archive have been reduced as part of mission data  
+      analysis activities of the GLL Radio Propagation Team.          
+                                                                      
+                                                                      
+    Review                                                            
+    ======                                                            
+      This archival data set was reviewed by the GLL Radio            
+      Propagation Team and was posted on its web site                 
+             http://nova.stanford.edu/projects/gll/                   
+      prior to submission to the Planetary Data System (PDS).         
+      PDS then conducted its own review.                              
+                                                                      
+                                                                      
+    Data Coverage and Quality                                         
+    =========================                                         
+                                                                      
+      Ionosphere electron density profiles were derived from data     
+      collected using the Galileo Orbiter low-gain antenna.  As a     
+      result, signal strengths are weak.                              
+                                                                      
+      Coverage is shown in the tables below:                          
+                                                                      
+              Galileo Radio Occultation Experiments at Jupiter        
+                                                                      
+           Date   Orbit DSS Sense   Location   SZA LTST EDS File Name 
+       ---------- ----- --- ----- ----------- ---- ---- ------------- 
+       1995-12-08   00   63   N    24S, 292E  88.6 18.0  J00_63NA.EDS 
+       1995-12-08   00   63   X    43S, 332E  91.0  5.7  J00_63XA.EDS 
+       1996-11-08   03   43   N    28S, 102E  82.2 17.4  J03_43NA.EDS 
+       1996-12-21   04   14   N    23S, 246E  86.3 17.8  J04_14NA.EDS 
+       1996-12-22   04   43   X    25S, 167E  93.8  5.7  J04_43XA.EDS 
+                                                                      
+       Orbit is Galileo Jupiter orbit number, starting from 00.       
+       DSS is DSN antenna number.                                     
+       Sense is 'N' for entry occultation, 'X' for exit.              
+       Location is planetocentric north latitude and east longitude   
+        (System III) in degrees for the closest point on the ray path 
+       SZA is solar zenith angle in degrees,                          
+       LTST is Local true solar time in hours.                        
+                                                                      
+                 Galileo Radio Occultation Experiments at Io          
+                                                                      
+           Date   Occ DSS Sense  Location Beta Io Lon EDS File Name   
+       ---------- --- --- ----- --------- ---- ------ -------------   
+       1997-02-26  1   14   N    1N,  73W  163 260.0W  I06114NA.EDS   
+       1997-02-26  1   14   X    1N, 253W   17 262.0W  I06114XA.EDS   
+       1997-07-30  2   63   N   50N, 157W  105  49.1W  I09263NA.EDS   
+       1997-07-30  2   63   X   49N, 338W   76  51.3W  I09263XA.EDS   
+       1997-07-30  3   14   N    2S,  34W  124 234.6W  I09314NA.EDS   
+       1997-07-30  3   14   X    3S, 215W   55 238.1W  I09314XA.EDS   
+       1997-07-30  3   43   N    5S,  34W  124 234.6W  I09343NA.EDS   
+       1997-07-30  3   43   X    6S, 215W   55 238.1W  I09343XA.EDS   
+       1997-07-31  4   43   N   34N, 115W  139  10.3W  I09443NA.EDS   
+       1997-07-31  4   43   X   34N, 296W   42  11.6W  I09443XA.EDS   
+       1997-08-03  6   63   N   37S,  52W  129   1.5W  I09663NA.EDS   
+       1997-08-03  6   63   X   37S, 232W   51   3.0W  I09663XA.EDS   
+                                                                      
+       Occ is occultation number (1-6); occultation 5 was a grazing   
+        near miss at Io's south pole.                                 
+       DSS is DSN antenna number.                                     
+       Sense is 'N' for entry occultation, 'X' for exit.              
+       Location is planetocentric north latitude and west longitude   
+        (IAU 1994) in degrees for the closest point on the ray path   
+       Beta is angle from center of upstream hemisphere (0N,270W)     
+        in degrees.                                                   
+       Io Lon is longitude at sub-Io point on Jupiter in degrees      
+        (System III).                                                 
+                                                                      
+                                                                      
+    Limitations                                                       
+    ===========                                                       
+      None."                                                          
+                                                                      
+                                                                      
+ END_OBJECT                       = DATA_SET_INFORMATION              
+                                                                      
+ OBJECT                           = DATA_SET_TARGET                   
+  TARGET_NAME                     = JUPITER                           
+ END_OBJECT                       = DATA_SET_TARGET                   
+                                                                      
+ OBJECT                           = DATA_SET_TARGET                   
+  TARGET_NAME                     = IO                                
+ END_OBJECT                       = DATA_SET_TARGET                   
+                                                                      
+ OBJECT                           = DATA_SET_HOST                     
+  INSTRUMENT_HOST_ID              = GO                                
+  INSTRUMENT_ID                   = RSS                               
+ END_OBJECT                       = DATA_SET_HOST                     
+                                                                              
+ OBJECT                           = DATA_SET_MISSION                  
+  MISSION_NAME                    = "GALILEO"                                 
+ END_OBJECT                       = DATA_SET_MISSION                  
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "DAVIESETAL1995"                  
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "FJELDBOETAL1971"                 
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "HINSONETAL1997"                  
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "HINSONETAL1998A"                 
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "HINSONETAL1998B"                 
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+ OBJECT                           = DATA_SET_REFERENCE_INFORMATION    
+  REFERENCE_KEY_ID                = "YEH&LIU1972"                     
+ END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION    
+                                                                      
+END_OBJECT                        = DATA_SET                          
+END

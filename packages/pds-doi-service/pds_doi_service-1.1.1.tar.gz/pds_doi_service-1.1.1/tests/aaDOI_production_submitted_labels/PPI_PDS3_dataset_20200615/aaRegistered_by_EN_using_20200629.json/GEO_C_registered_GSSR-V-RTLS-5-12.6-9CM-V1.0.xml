@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>GSSR V RTLS 5 12.6-12.9CM RADAR SCALED ECHO POWER/ALT V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>GSSR-V-RTLS-5-12.6-9CM-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1990-06-15</publication_date>
+            <country>USA</country>
+            <description>The Goldstone Solar System Radar observations of Venus from 1972
+                until 1988 are included in this data set. The system operated at
+                12.6 cm up until 1977 operated at 12.9 cm. The data consist of
+                radar scaled backscatter cross sections in image format and, in
+                most cases, associated altimetry observations. The data were
+                acquired over 52 separate observing runs. In total the
+                observations cover the region between approximately 260 degrees
+                (leftmost) east longitude to 30 degrees (rightmost) east
+                longitude, within approximately 20 degrees of the equator.
+                Backscatter data were acquired with opposite sense circular
+                polarization with incidence angles typically less than 10
+                degrees. Associated altimetric data were acquired using a two or
+                three station interferometric system. Data are presented in
+                Mercator projection with degrees/pixel in longitude dependent on
+            the individual data file.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=GSSR-V-RTLS-5-12.6-9CM-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>GOLDSTONE SOLAR SYSTEM RADAR; VENUS; RADAR; GSSR; PLANET; RTLS; RADIO TELESCOPE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>RAYMOND F. JURGENS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.gssr-v-rtls-5-12.6-9cm-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

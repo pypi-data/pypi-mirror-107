@@ -1,0 +1,136 @@
+PDS_VERSION_ID                      = PDS3
+LABEL_REVISION_NOTE                = "CREATED, PPI-UCLA, 4/14/04;
+D. Kazden, removed unnecessary keywords, 2012-05-26;
+D. Kazden, removed ARCHIVE_STATUS keyword, 2018-07-31;"
+
+OBJECT                             = DATA_SET
+  DATA_SET_ID                      = "GO-A-POS-6-GASPRA-FLYBY-TRAJ-V1.0"
+
+  OBJECT                           = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "
+                             GALILEO ORBITER A POS GASPRA FLYBY TRAJ V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = N
+    START_TIME                     = 1991-10-29T06:00:00.000
+    STOP_TIME                      = 1991-10-30T23:59:00.000
+    DATA_SET_RELEASE_DATE          = 1995-06-01
+    PRODUCER_FULL_NAME             = "MARGARET G. KIVELSON"
+    DETAILED_CATALOG_FLAG          = N
+    DATA_OBJECT_TYPE               = "TABLE"
+                    = "LOCALLY ARCHIVED"
+    DATA_SET_TERSE_DESC            = "
+      Galileo Orbiter 60 second sampled trajectory data from the
+      Gaspra flyby in Gaspra-centric Solar Ecliptic (GaSE) and
+      RTN coordinates. These data cover the interval
+      1991-10-29T06:00 to 1991-10-31 00:00."
+    ABSTRACT_DESC                  = "
+      Galileo Orbiter 60 second sampled trajectory data from the
+      Gaspra flyby in Gaspra-centric Solar Ecliptic (GaSE) and
+      RTN coordinates. These data cover the interval
+      1991-10-29T06:00 to 1991-10-31 00:00."
+
+    CITATION_DESC                  = "
+      Joy, S.P., Mafi, J.N., GALILEO ORBITER A POS GASPRA FLYBY TRAJ V1.0,
+      GO-A-POS-6-GASPRA-FLYBY-TRAJ-V1.0, NASA Planetary Data System, 1995"
+
+    DATA_SET_DESC                  = "
+
+  Data Set Overview
+  =================
+    This dataset contains the Galileo spacecraft trajectory data sampled
+    every minutes for Oct. 29 and 30, 1991. The spacecraft closest
+    approach to the asteroid was at 22:36:40 at a range of about 1600
+    km.  The trajectory data are provided in two coordinate systems,
+    Gaspra-centric Solar Ecliptic (GaSE) and Heliographic (HG)
+    coordinates. The position of the spacecraft has been extracted from
+    the SPICE kernels provided by the project. The time tags are the
+    exact times for which the S/C position was calculated. The time tag
+    is spacecraft event time (SCET) given in universal time (UT).
+
+    Primary Dataset Reference:
+
+      Kivelson, M.G., L.F. Bargatze,  K.K. Khurana, D.J. Southwood,
+      R.J. Walker, P.J. Coleman, 'Magnetic Field Signatures Near
+      Galileo's Closest Approach to Gaspra', Science, Vol. 261,
+      p331-334, 16 July, 1993. [KIVELSONETAL1993]
+
+
+  Data
+  ====
+
+    ------------------------------------------------------------------
+    Table 1. Data record structure
+    ------------------------------------------------------------------
+    Column   Description
+    ------------------------------------------------------------------
+     time    S/C event time (UT) given in PDS time format
+             YYYY-MM-DDThh:mm:ss.sssZ
+     X       S/C distance from Gaspra in the X-direction in GaSE
+             coordinates &#10094;km&#10095;
+     Y       S/C distance from Gaspra in the Y-direction in GaSE
+             coordinates &#10094;km&#10095;
+     Z       S/C distance from Gaspra in the Z-direction in GaSE
+             coordinates &#10094;km&#10095;
+     R       S/C radial distance from the Sun &#10094;AU&#10095;
+     LAT     S/C solar latitude &#10094;degrees&#10095;
+     LON     S/C solar (east) longitude &#10094;degrees&#10095;
+
+     Missing data values = 9999999.9 and 99999.999
+     Fortran Format of the data file: (1X, A24, 3F11.1,3F11.5)                
+                                                                              
+                                                                              
+  Coordinate Systems                                                          
+  ==================                                                          
+    The data are archived in two coordinate systems, GaSE and IHG             
+    (1950).  GaSE Gaspracentric Solar Ecliptic (GaSE) is a Gaspra             
+    centered coordinate system defined by the primary vector along the        
+    instantaneous Gaspra-&#10095;Sun (GSun) line and the Earth's ecliptic north      
+    pole (ENP) as the secondary vector. In this coordinate system:            
+                                                                              
+      X is the GSun unit vector taken to be positive towards the Sun.         
+      Y is the formed by the unitized cross product ENP x GSun                
+      Z completes the right handed set (Z = X x Y)                            
+                                                                              
+    such that the X-Z plane contains the ecliptic north pole.                 
+                                                                              
+    The data are also provided in inertial heliographic (epoch 1950)          
+    coordinates. The radial direction is taken along the instantaneous        
+    Sun-&#10095;S/C line, positive away from the Sun. Latitude is the angle the      
+    radial vector makes with the Sun's equatorial plane at the reference      
+    epoch, positive above the equator. Longitude is measured from the         
+    longitude of the ascending node.  At the reference epoch, the             
+    inclination of the Sun's north pole was 7 deg 15 min and the              
+    longitude of the ascending node can be computed using the formula:        
+                                                                              
+      Node =  74 deg 22 min + 0.84 min (year - 1900)"                         
+
+    CONFIDENCE_LEVEL_NOTE          = "
+
+  Confidence Level Overview
+  =========================
+    These data have been extracted from SPICE kernels that were created
+    using post encounter ephemeris data. The data should be of the
+    highest possible quality."
+
+
+  END_OBJECT                       = DATA_SET_INFORMATION
+
+  OBJECT                           = DATA_SET_TARGET
+    TARGET_NAME                    = "GASPRA"
+  END_OBJECT                       = DATA_SET_TARGET
+
+
+  OBJECT                           = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = GO
+    INSTRUMENT_ID                  = POS
+  END_OBJECT                       = DATA_SET_HOST
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                       = DATA_SET_MISSION
+
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID               = "KIVELSONETAL1993"
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                         = DATA_SET
+END

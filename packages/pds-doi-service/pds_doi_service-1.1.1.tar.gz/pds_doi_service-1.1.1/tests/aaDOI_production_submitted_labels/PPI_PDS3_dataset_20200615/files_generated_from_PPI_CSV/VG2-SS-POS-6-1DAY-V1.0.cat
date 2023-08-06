@@ -1,0 +1,113 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+   S. Joy  Feb 16, 2009   Initial Draft from NSSDC documentation;             
+   D. Kazden  Dec 01, 2014, updated STOP_TIME;                                
+   D. Kazden  Aug 14, 2018, removed ARCHIVE_STATUS keyword;"                  
+RECORD_TYPE                        = STREAM                                   
+INSTRUMENT_HOST_NAME               = "VOYAGER 2"                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-SS-POS-6-1DAY-V1.0"                 
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+                                                                              
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    DATA_SET_NAME                  = "                                        
+      VOYAGER 2 DAILY POSITION V1.0"                                          
+    DATA_SET_RELEASE_DATE          = 2009-02-16                               
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    PRODUCER_FULL_NAME             = "N/A"                                    
+    START_TIME                     = 1977-08-25                               
+    STOP_TIME                      = 2005-01-09T00:00:00.000                  
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This dataset contains Voyager 2 trajecotyr data from the                
+      interplanetary cruise sampled daily in Solar Ecliptic and Heliographic  
+      coordinates."                                                           
+    CITATION_DESC                  = "                                        
+      Parthasarathy, R.,  VOYAGER 2 DAILY POSITION V1.0,                      
+      VG2-SS-POS-6-1DAY-V1.0,                                                 
+      NASA Planetary Data System, 2009."                                      
+    DATA_SET_TERSE_DESC            = "                                        
+      This dataset contains Voyager 2 trajecotyr data from the                
+      interplanetary cruise sampled daily in Solar Ecliptic and Heliographic  
+      coordinates."                                                           
+    CONFIDENCE_LEVEL_NOTE            = "                                      
+      These data have been extracted from the NSSDC archive for distribution  
+      by the PDS along with other Voyager solar wind data sets.  These data   
+      were not submitted to the PDS for archive and have not been through     
+      the PDS peer review process.  These data are provided by the PDS for    
+      the convenience of PDS users.  Please exercise caution when using these 
+      data."                                                                  
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+                                                                              
+      These data were obtained from running the program HELICOOR in the       
+      public directory NSSDCA::ANON_DIR:[ACTIVE.HELIO]. These data are        
+      based on predicted trajectories calculated with the GTDS code by the    
+      NSSDC Satellite Situation Center and converted to solar ecliptic and    
+      heliographic coordinates by the HELIOCOOR program. The HELICOOR code was
+      written by R. Parthasarathy. The program GENTRJCON added the HILLON     
+      longitude.                                                              
+                                                                              
+      Note that the solar ecliptic coordinates are given with respect to true 
+      equinox and ecliptic of date. The solar ascending node was located at   
+      ecliptic longitude +74.367 degrees as of 1 Jan. 1900 at 1200 UT; this   
+      longitude increases by 1.4 degrees/century.                             
+                                                                              
+    Data Formats                                                              
+    ============                                                              
+      field      description                                                  
+      -----      ------------------------------                               
+      1. Date    YYYY DDD.DD where YY=year and DDD.DD=decimal day             
+      2. Range   Heliocentric range in AU                                     
+      3. SE_Lat  Solar Ecliptic latitude in degrees                           
+      4. SE_Lon  Solar Ecliptic longitude in degrees                          
+      5. HG_Lat  Heliographic latitude in degrees                             
+      6. HG_Lon  Heliographic longitude in degrees                            
+      7. IHG_Lon Inertial Heliographic longitude in degrees with respect to   
+       the ascending node of the solar equator in the ecliptic.               
+                                                                              
+    Contact Information                                                       
+    ===================                                                       
+                                                                              
+      R. P. (Sardi) Parthasarathy                                             
+      Hughes STX Corporation / Space Physics Data Facility                    
+      NASA Goddard Space Flight Center                                        
+      Greenbelt, Maryland                                                     
+      sardi@nssdca.gsfc.nasa.gov                                              
+      Phone: (301) 286-8105                                                   
+                                                                              
+    Acknowledgement                                                           
+    ===============                                                           
+                                                                              
+       Use of these data in publications should be accompanied at minimum by  
+       acknowledgements of the National Space Science Data Center and the     
+       responsible Principal Investigator defined in the experiment           
+       documentation provided here."                                          
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER 1"                              
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "SOLAR SYSTEM"                           
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = "VG1"                                    
+    INSTRUMENT_ID                  = "POS"                                    
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+                                                                              
+END

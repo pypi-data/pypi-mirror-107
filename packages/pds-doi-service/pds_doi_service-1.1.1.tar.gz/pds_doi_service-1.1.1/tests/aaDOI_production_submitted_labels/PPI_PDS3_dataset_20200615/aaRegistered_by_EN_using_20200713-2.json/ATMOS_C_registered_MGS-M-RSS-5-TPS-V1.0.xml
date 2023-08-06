@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MGS RS: ATMOSPHERIC TEMPERATURE-PRESSURE PROFILES V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MGS-M-RSS-5-TPS-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2008-05-31</publication_date>
+            <country>USA</country>
+            <description>This data set contains over 21000 temperature-pressure profiles
+                (TPS files) of the neutral atmosphere derived from Mars Global
+                Surveyor (MGS) radio occultation data. The profiles were
+                previously archived in the MGS-M-RSS-5-SDP-V1.0 data set along
+                with other reduced data products from the MGS Radio Science Team
+                (RST). Here they have been pulled from the original 38 volumes
+                and reorganized in chronological order on a single volume. The
+                profiles themselves have not been modified, and the labels have
+                been edited only to conform with the requirements of the new data
+                set. This set of profiles is accompanied by a single occultation
+            summary file which lists key characteristics of each experiment.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MGS-M-RSS-5-TPS-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MARS GLOBAL SURVEYOR; MARS; RADIO SCIENCE; MGS; PLANET; RSS; RADIO SCIENCE SUBSYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>DAVID P. HINSON</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mgs-m-rss-5-tps-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

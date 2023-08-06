@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:cassini_vims_saturn",
+        "title": "Cassini VIMS Observations of the Saturn System",
+        "authors": [
+            {
+                "first_name": "R. H.",
+                "last_name": "Brown"
+            }
+        ],
+        "publication_date": "2019-09-15",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]

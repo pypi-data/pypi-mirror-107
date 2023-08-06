@@ -1,0 +1,225 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+   S. Joy  Feb 16, 2009   Initial Draft from NSSDC documentation;             
+   D. Kazden Dec.15, 2011   Updated REFERENCE_KEY_IDs;                        
+   D. Kazden Aug. 14, 2018  removed ARCHIVE_STATUS keyword;"                  
+RECORD_TYPE                        = STREAM                                   
+INSTRUMENT_HOST_NAME               = "VOYAGER 2"                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "VG2-SW-MAG-4-SUMM-HGCOORDS-48SEC-V1.0"  
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+                                                                              
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                      
+    DATA_SET_NAME                  = "                                        
+      VOYAGER 2 SOLAR WIND MAGNETIC FIELD HGCOORDS 48SEC AVG V1.0"            
+    DATA_SET_RELEASE_DATE          = 2009-02-16                               
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    PRODUCER_FULL_NAME             = "UNK"                                    
+    START_TIME                     = 1977-08-20T15:19:47                      
+    STOP_TIME                      = 1989-12-31T22:08:33                      
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This dataset contains Voyager 2 magnetometer data from the              
+      interplanetary cruise averaged to 48 second samples in Heliographic     
+      coordinates."                                                           
+    CITATION_DESC                  = "                                        
+      Ness, N., VOYAGER 2 SOLAR WIND MAGNETIC FIELD HGCOORDS 48SEC AVG V1.0,  
+      VG2-SW-MAG-4-SUMM-HGCOORDS-48SEC-V1.0,                                  
+      NASA Planetary Data System, 2009."                                      
+    DATA_SET_TERSE_DESC            = "                                        
+      This dataset contains Voyager 2 magnetometer data from the              
+      interplanetary cruise averaged to 48 second samples in Heliographic     
+      coordinates."                                                           
+    CONFIDENCE_LEVEL_NOTE            = "                                      
+      These data have been extracted from the NSSDC archive for distribution  
+      by the PDS along with other Voyager solar wind data sets.  These data   
+      were not submitted to the PDS for archive and have not been through     
+      the PDS peer review process.  These data are provided by the PDS for    
+      the convenience of PDS users.  Please exercise caution when using these 
+      data.                                                                   
+                                                                              
+      Comments on the Voyager 2 48 sec termination shock data                 
+                                                                              
+      The average magnetic field strength produced by the spacecraft at the   
+      location of the outboard magnetometer of the dual magnetometers system  
+      on V2 varies between 0.1 - 0.2 nT, comparable to the most probable      
+      magnetic field strength in the inner heliosheath and significantly      
+      larger than the most probable magnetic field strength in the distant    
+      supersonic solar wind. The spacecraft magnetic field is a complex,      
+      time-dependent signal that must be removed from the measured magnetic   
+      field signal in order to derive the ambient magnetic fields of the      
+      solar wind and heliosheath.  Corrections must also be made for spurious 
+      magnetic signals and noise associated with the telemetry system, ground 
+      tracking systems, and other factors. A non-periodic modulation of the   
+      spacecraft's magnetic field, with amplitudes comparable to the average  
+      ambient magnetic field strength and periods in the range from 1 to      
+      12 hours, has been present approximately half the time in the V2 data   
+      since ~1990, beginning in ~1985.  Finally, a spacecraft systems command 
+      during late 2006 had the unintended consequence of exposing the sensors 
+      to temperatures well beyond their design limits for more than one week. 
+      This command also rotated one set of dual triaxial sensors through a    
+      large angle and produced additional noise, drifts and spurious signals  
+      as a result of damage to the sensor assembly. Extracting the signal     
+      describing the solar wind and heliosheath from the many sources of      
+      uncertainty is a complex and partly subjective process that requires    
+      understanding of the instrument and judgment based on experience in     
+      dealing with the ever-changing extraneous signals. We estimate that     
+      the 1-sigma uncertainty in the 48 sec averages in the components of     
+      the magnetic field is typically ~ +/-0.03 nT. The uncertainties in      
+      F1, BR, BT, and BN can differ from one another and they may vary with   
+      time, but there is no practical way to determine these uncertainties    
+      more precisely at present."                                             
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+    Data Set Overview                                                         
+    =================                                                         
+                                                                              
+      This dataset contains Voyager 2 magnetometer data from the              
+      interplanetary cruise averaged to 48 second samples in Heliographic     
+      coordinates.                                                            
+                                                                              
+    Data Processing                                                           
+    ===============                                                           
+      The high resolution data submitted to the NSSDC has its origins in the  
+      original MVS 'Summary' data sets formally produced on the NSSC IBM MVS  
+      mainframe system.  The original data sets contain a mix of engineering, 
+      electron, magnetic field and plasma data.  The Voyager magnetometer     
+      (MAG) experiment now resides on a dedicated workstation where only MAG  
+      data are processed.                                                     
+                                                                              
+      All Voyager MAG data submitted to the NSSDC consists wholly of high     
+      resolution LFM averages.  These files consist of a set of averages      
+      applied across all of the mission's differing telemetry modes.  In the  
+      case of the Magnetometer Experiment, the records contain both           
+      1.92 second, 9.6 second and 48 second averages.  1.92 second averages   
+      are created from the detail detail data, 9.6 second averages are created
+      from 1.92 second averages and 48 second averages are created from the   
+      9.6 second averages.                                                    
+                                                                              
+      All data in this NSSDC data set are interplanetary and in heliographic  
+      coordinates (see below). An ASCII formated data set containing key      
+      components of the 48 second magnetic field data and ephemeris data has  
+      been created allowing more convenient access to high resolution Voyager 
+      magnetometer data.                                                      
+                                                                              
+    Coordinate System                                                         
+    =================                                                         
+                                                                              
+      Interplanetary magnetic field studies make use of two important         
+      coordinate systems, the Inertial Heliographic (IHG) coordinate system   
+      and the Heliographic (HG) coordinate system.                            
+                                                                              
+      The IHG coordinate system is use to define the spacecraft's position.   
+      The IHG system is defined with its origin at the Sun.  There are three  
+      orthogonal axes, X(IHG), Y(IHG), and Z(IHG).  The Z(IHG) axis points    
+      northward along the Sun's spin axis.  The X(IHG) - Y(IHG) plane lays in 
+      the solar equatorial plane.  The intersection of the solar equatorial   
+      plane with the ecliptic plane defines a line, the longitude of the      
+      ascending node, which is taken to be the X(IHG) axis.  The X(IHG) axis  
+      drifts slowly with time, approximately one degree per 72 years.         
+                                                                              
+      Magnetic field orientation is defined in relation to the spacecraft.    
+      Drawing a line from the Sun's center (IHG origin) to the spacecraft     
+      defines the X axis of the HG coordinate system.  The HG coordinate      
+      system is defined with its origin centered at the spacecraft.  Three    
+      orthogonal axes are defined, X(HG), Y(HG), and Z(HG).  The X(HG) axis   
+      points radially away from the Sun and the Y(HG) axis is parallel to the 
+      solar equatorial plane and therefore parallel to the X(IHG)-Y(IHG) plane
+      too.  The Z(HG) axis is chosen to complete the orthonormal triad.       
+                                                                              
+      An excellent reference guide with diagrams explaining the IHG and HG    
+      systems may be found in Space and Science Reviews, Volume 39 (1984),    
+      pages 255-316, MHD Processes in the Outer Heliosphere, L. F. Burlaga    
+      [BURLAGA1984].                                                          
+                                                                              
+    Data Format                                                               
+    ===========                                                               
+      field  descriptor  (pre 1990 data)                                      
+      -----  ----------------------------------                               
+        1.   s/c identification (FLT1=Voyager 1)                              
+                                (FLT2=Voyager 2)                              
+                                                                              
+        2.   coordinate system                                                
+                                (HG=heliographic)used for this data set       
+                                                                              
+        3.   Time (UTC) format  YY DDD HH MM SS MSS                           
+                                YY  = year                                    
+                                DDD = day of year                             
+                                HH  = hour                                    
+                                MM  = minute                                  
+                                SS  = second                                  
+                                MSS = millisecond                             
+        4.   field magnitude (nT)                                             
+        5.   field component 1 (nT) - HG                                      
+        6.   field component 2 (nT) - HG                                      
+        7.   field component 3 (nT) - HG                                      
+        8.   spacecraft radial distance (AU)                                  
+        9.   spacecraft x position (AU) - IHG                                 
+       10.   spacecraft y position (AU) - IHG                                 
+       11.   spacecraft z position (AU) - IHG                                 
+                                                                              
+      field  descriptor  (temiantion shock data)                              
+      -----  ----------------------------------                               
+        1.   s/c identification (2=Voyager 2)                                 
+        2.   Time (UTC) format  YYYY DDD.DDDD                                 
+                                YY       = year                               
+                                DDD.DDDD = decimal day of year                
+        3.   F1 average field magnitude (nT)                                  
+        4.   Br field component (nT) - HG                                     
+        5.   Bt field component (nT) - HG                                     
+        6.   Bn field component (nT) - HG                                     
+        7.   1 sigma error in F1                                              
+        8.   1 sigma error in Br                                              
+        9.   1 sigma error in Bt                                              
+       10.   1 sigma error in Bn                                              
+                                                                              
+    Contact Information                                                       
+    ===================                                                       
+                                                                              
+      Principal Investigator:                                                 
+                                                                              
+      Prof. Norman F. Ness                                                    
+      Bartol Research Institute                                               
+      Univerity of Delaware                                                   
+      Newark, Delaware 19716-4793                                             
+      Phone: (302) 831-8116                                                   
+      Fax: (302) 831-1843                                                     
+      Email: norman.ness@mus.udel.edu                                         
+                                                                              
+    Acknowledgement                                                           
+    ===============                                                           
+                                                                              
+       Use of these data in publications should be accompanied at minimum by  
+       acknowledgements of the National Space Science Data Center and the     
+       responsible Principal Investigator defined in the experiment           
+       documentation provided here."                                          
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "VOYAGER 2"                              
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "BURLAGA1984"                            
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "NESSETAL1979A"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "SOLAR WIND"                             
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = "VG2"                                    
+    INSTRUMENT_ID                  = "MAG"                                    
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+                                                                              
+END

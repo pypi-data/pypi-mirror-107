@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>JUNO JUPITER UVS 3 REDUCED DATA RECORD V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>JNO-J-UVS-3-RDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>3000-01-01</publication_date>
+            <country>USA</country>
+            <description>The Juno Ultraviolet Spectrograph (UVS) CODMAC Level 3 Reduced Data Record is
+                a collection of the far ultraviolet photon detections obtained by the UVS
+                instrument, corrected for instrumental effects, radiometrically calibrated,
+                and correlated with the auxiliary information needed to locate the
+                observations in space and time.  These data are organized, in a manner very
+                similar to the RDR product files from which they are derived, into extensions
+                within files formatted according to the Flexible Image Transport System (FITS)
+                standard, version 2.1b.  The UVS RDR archive enables reprocessing of the
+                corrected and calibrated science data into far ultraviolet map products as map
+                processing routines improve. Investigators interested in applying advanced
+                mapping methods or needing to understand the properties of the corrected and
+                calibrated data will find the RDR products useful.  Many investigators,
+                however, will be interested in using the UVS CODMAC Level 5 far ultraviolet
+            map products directly.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=JNO-J-UVS-3-RDR-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>JUNO; JUPITER; ULTRAVIOLET SPECTROMETER; JNO; PLANET; UVS; ULTRAVIOLET SPECTROGRAPH</keywords>
+            <authors>
+                <author>
+                    <full_name/>
+                    <email/>
+                    <full_name>BRAD TRANTHAM</full_name>
+                    <affiliations/>
+                </author>
+                <author/>
+            </authors>
+            <contributors>
+                <contributor>
+                    <full_name/>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor/>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.jno-j-uvs-3-rdr-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

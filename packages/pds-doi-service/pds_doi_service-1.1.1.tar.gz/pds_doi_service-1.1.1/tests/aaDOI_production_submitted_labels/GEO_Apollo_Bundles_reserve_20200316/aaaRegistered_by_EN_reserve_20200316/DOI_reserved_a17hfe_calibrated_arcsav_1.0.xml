@@ -1,0 +1,21 @@
+<records> 
+    <record status="Reserved"> 
+        <title>Apollo 17 ALSEP ARCSAV Heat Flow Experiment Calibrated Gradient Bridge Temperatures Bundle</title> 
+        <authors> 
+            <author> 
+               <first_name> Y.</first_name> 
+               <last_name>Nakamura</last_name> 
+            </author> 
+        </authors> 
+        <publication_date>2019-07-12</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:a17hfe_calibrated_arcsav::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record> 
+</records>

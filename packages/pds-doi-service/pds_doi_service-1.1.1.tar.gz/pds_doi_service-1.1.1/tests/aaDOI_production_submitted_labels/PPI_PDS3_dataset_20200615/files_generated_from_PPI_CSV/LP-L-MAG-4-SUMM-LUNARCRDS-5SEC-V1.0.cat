@@ -1,0 +1,340 @@
+PDS_VERSION_ID         = PDS3                                                  
+LABEL_REVISION_NOTE   = "                                                     
+Received at PPI from David Mitchell, 1999-10-04;                              
+revised by Mark Sharlow, 1999-12-02;                                          
+update received at PPI, 2002-08-22;                                           
+reformatted and ODL keywords added by Mark Sharlow, 2003;                     
+Additional Keywords added by D. Kazden, 2009-04-10;                           
+Updated CITATION_DESC, D. Kazden, 2020-02-06;"                                
+                                                                              
+RECORD_TYPE           = STREAM                                                
+OBJECT                = DATA_SET                                              
+DATA_SET_ID           = "LP-L-MAG-4-SUMM-LUNARCRDS-5SEC-V1.0"                 
+OBJECT                = DATA_SET_INFORMATION                                  
+DATA_SET_NAME         =                                                       
+   "LP MAGER SPINAVG MAGNETIC FIELD LUNAR COORDS 5SEC V1.0"                   
+DATA_SET_COLLECTION_MEMBER_FLG = N                                            
+START_TIME            = 1998-01-16                                            
+STOP_TIME             = 1999-07-29                                            
+DATA_SET_RELEASE_DATE = 2002-07-11                                            
+PRODUCER_FULL_NAME    = "DR. MARIO ACUNA"                                     
+DETAILED_CATALOG_FLAG = N                                                     
+DATA_OBJECT_TYPE      = "TABLE"                                               
+DATA_SET_TERSE_DESC   = "Magnetic field data from the Lunar Prospector        
+Magnetometer, averaged in 5-second intervals, in SEL and SSE coordinates      
+in units of nanotesla for dates 1998-01-16 to 1999-07-29, plus                
+spacecraft position data."                                                    
+CITATION_DESC         = "Acuna, M., "LP-L-MAG-4-SUMM-LUNARCRDS-5SEC-V1.0,     
+                     LP MAGER SPINAVG MAGNETIC FIELD LUNAR COORDS 5SEC V1.0,  
+                         NASA Planetary Data System, 2002."                   
+ABSTRACT_DESC         = "Magnetic field data from the Lunar Prospector        
+Magnetometer, averaged in 5-second intervals, in SEL and SSE coordinates      
+in units of nanotesla for dates 1998-01-16 to 1999-07-29, plus                
+spacecraft position data."                                                    
+DATA_SET_DESC = "                                                             
+                                                                              
+                                                                              
+Overview:                                                                     
+========                                                                      
+                                                                              
+Magnetometer data records are time-ordered series of magnetic vector          
+measurements. Each record consists of a time tag followed by six              
+scalar values representing the magnetic field vector, measured in             
+nanoteslas, in two different coordinate systems: selenocentric solar          
+ecliptic (SSE) and body-fixed selenographic (SEL), followed by the rms        
+deviation of the field magnitude, which is independent of the                 
+coordinate system.  The spacecraft position is given in both of the           
+above coordinate systems.  These data are obtained continuously at 9          
+Hz and are averaged in 5-second intervals for this data archive.              
+                                                                              
+                                                                              
+Parameters:                                                                   
+==========                                                                    
+                                                                              
+Magnetic field data are provided in units of nanotesla (nT).                  
+                                                                              
+                                                                              
+Processing:                                                                   
+==========                                                                    
+                                                                              
+Magnetic field data are sampled onboard at 18 Hz and averaged to 9 Hz         
+before being placed into telemetry. In order to cover a very large            
+dynamic range with 12-bit values, the full range of the instrument is         
+divided into 8 sub-ranges. Range changing is performed dynamically            
+onboard based on the ambient field strength. The first step in the            
+processing is to extract the data from telemetry and form time-tagged         
+magnetic field vectors.  Then, occasional data spikes due to range            
+changes or bad telemetry are flagged; these data points are not used in       
+the offset determination.  The instrumental offsets for Bx and By are         
+calculated simultaneously for 1 minute data windows using a technique         
+developed by M. Acuna.  Time varying offsets are needed because the           
+offsets drift slightly as the magnetometer temperature changes. (The          
+MAG temperature is modulated as the spacecraft goes in and out of the         
+Moon's shadow.) A constant offset is used for the Z component, because        
+lack of spin modulation in that component precludes routine offset            
+determination. Offsets are calculated separately for each data range          
+and subtracted from the data. This correction reduces systematic errors       
+in the X and Y components to less than ~0.1 nT. Since the Z component         
+cannot be corrected in this way, systematic errors in that axis (due to       
+temperature-induced offset drifts) can be as large as 0.5 nT.                 
+Instrumental gains, different for each of the 8 ranges, are then              
+applied to convert to nanotesla. Next, the data are corrected for a           
+slight misalignment between the magnetometer sensor axes and the              
+spacecraft axes. The resulting sensor (SEN) coordinate system has its         
+Z-axis parallel to the spacecraft spin axis, and its X-axis aligned           
+with the magnetometer boom. The SEN coordinate system rotates as the          
+spacecraft spins. The next step is to flag spurious data values. The          
+first measurement following a range change is flagged, since the finite       
+time needed to make the change often corrupts the first measurement in        
+the new range. Other false spikes also appear in the data, most of            
+which are attributable to occasional noise in the telemetry. A                
+comparison technique is used to remove outliers.  In practice, this           
+effectively removes most  spurious data values without eliminating any        
+valid data. The next step is to ''despin'' the data from SEN to               
+''despun spacecraft'' (SCD) coordinates, which are defined such that          
+the Z-axis is parallel to the spacecraft spin vector, and the direction       
+of the sun is in the half-plane defined by X &#10095; 0, Y = 0. Despinning is        
+performed using the reconstructed sunpulse data, which are corrected          
+for spacecraft spin-up in the Moon's shadow.  Next, the data are              
+averaged in 5-second intervals; this reduces the data volume by a             
+factor of 45.  Finally, a rotation is performed from SCD coordinates to       
+selenocentric solar ecliptic (SSE) and body-fixed selenocentric (SEL)         
+coordinates using the spacecraft ephemeris data (the latitude and             
+longitude of the spin axis obtained from files included in the PDS            
+distribution of the LP Level-1 magnetic field data) and lunar ephemeris       
+data obtained from the Jet Propulsion Laboratory's Horizons system            
+(&#10094;http://ssd.jpl.nasa.gov/horizons.html&#10095;). SSE coordinates are defined        
+such that the X-axis points from the center of the Moon to the center         
+of the Sun, the Z-axis is parallel to Earth's ecliptic north, and the         
+Y-axis completes the right-handed coordinate system. SEL coordinates          
+are defined such that the Z-axis is parallel to the Moon's spin vector        
+(north pole) and the X and Y axes intersect the lunar equator. The            
+X-axis intersects the lunar equator at 0 degrees longitude, and is thus       
+nearly aligned with the Moon-Earth line. (It is not exactly aligned           
+because of the Moon's libration.) The Y-axis intersects the lunar             
+equator at 90 degrees EAST longitude: SEL coordinates are right handed.       
+                                                                              
+                                                                              
+Media/Format:                                                                 
+============                                                                  
+                                                                              
+Data are archived on CDROMs in level 1 compliance with the ISO 9660           
+standard. Three CDROMs cover the entire mission. The data are provided        
+as ASCII ''tables'' of 1-day duration in Selenocentric Solar Ecliptic         
+(SSE) and Selenographic (SEL) coordinates.  Date/time are given in 2          
+formats as described below.                                                   
+                                                                              
+MAG Data:                                                                     
+Naming convention: MAyymmdd.TAB                                               
+                                                                              
+Parameters:                                                                   
+                                                                              
+1) time parameter 1:  PDS date-time format of the mid-time of the 5-sec       
+averaging window in spacecraft event time, i.e., Universal Time at the        
+spacecraft.  Example: 1998-11-08T05:50:42.5                                   
+                                                                              
+2) time parameter 2:  decimal day of the mid-time of the 5-sec averaging      
+window in spacecraft event time, i.e., Universal Time at the spacecraft.      
+                                                                              
+3) mag_field_SEL:  Array[3] giving B-field components (nT) in the SEL         
+coordinate system                                                             
+                                                                              
+4) mag_field_SSE: Array[3] giving B-field components (nT) in the SSE          
+coordinate system                                                             
+                                                                              
+5) mag_field_RMS: RMS deviation (nT) of the field magnitude.  Provides        
+an indication of field variability for the 5-sec window.                      
+                                                                              
+6) Spacecraft SEL coordinates: coordinate array[3]  (km)                      
+                                                                              
+7) Spacecraft SSE coordinates: coordinate array[3] (km)                       
+                                                                              
+8) ISUN - a parameter from the sunpulse file indicating whether the           
+spacecraft is in the sun (0), in eclipse (1), or, if the sunpulse file        
+was not available, the data were processed using the less accurate            
+determination of the sunpulse time in the Level-0 data file and ISUN is       
+set to 2.  Note that this parameter contains erroneous values (0 &#10094;-&#10095; 1)       
+from time to time.  To reduce the occurrence of bad ISUM values the           
+parameter was median-filtered with a 9-point window, which removes most       
+of the errors.                                                                
+                                                                              
+These parameters could be named PDS_time, decimal_day, Bx_sel, By_sel,        
+Bz_sel, Bx_sse, By_sse, Bz_sse, B_rms, x_sel, y_sel, z_sel, x_sse,            
+y_sse, z_sse, isun                                                            
+                                                                              
+An appropriate format for reading the data is:                                
+                                                                              
+format='( A21, f12.6, f9.3, 2(f8.3), f9.3, 2(f8.3), f9.3, f10.2,              
+2(f9.2), f10.2, 2(f9.2), I3 )'                                                
+                                                                              
+however, the records contain blanks between each parameters so that a         
+format statement will not be required by most languages.                      
+                                                                              
+                                                                              
+Ancillary Data:                                                               
+==============                                                                
+                                                                              
+There are several ancillary data files provided with this archive.            
+These include:                                                                
+                                                                              
+Spacecraft Attitude data LP-L-ENG-6-ATTITUDE-V1.0                             
+Spacecraft Ephemeris data LP-L-6-EPHEMERIS-V1.0                               
+Spacecraft Position data LP-L-6-POSITION-V1.0                                 
+Spacecraft Command logs LP-L-ENG-6-COMMAND-V1.0                               
+                                                                              
+These data sets provide additional information about the state of the         
+spacecraft and the instrument during data acquisition that may aid in         
+the scientific analysis of this data set.                                     
+                                                                              
+                                                                              
+Coordinate Systems:                                                           
+==================                                                            
+                                                                              
+The SSE coordinate system has its X-axis along the Moon-Sun line,             
+positive towards the Sun. The Z-axis is parallel to the northward             
+normal to the Earth's ecliptic plane, and Y completes the right-handed        
+set. The SEL coordinate system used here is a Cartesian representation        
+that places the Z-axis along the rotation axis of the moon, positive in       
+the direction of angular momentum. The X-axis lies in the lunar               
+equatorial plane at 0 degrees longitude, and Y completes the                  
+right-handed set.                                                             
+                                                                              
+                                                                              
+Software:                                                                     
+========                                                                      
+                                                                              
+There are no software provided with this data archive."                       
+                                                                              
+                                                                              
+CONFIDENCE_LEVEL_NOTE = "                                                     
+                                                                              
+Review:                                                                       
+======                                                                        
+                                                                              
+Magnetometer data quality was reviewed by D.L. Mitchell (UC-Berkeley),        
+M.H. Acuna (NASA-GSFC), and L.L. Hood (LPL-Univ. Arizona). Further            
+review was conducted by R.J. MacDowall (NASA-GSFC), E. Guandique              
+(NASA-GSFC-Emergent), M. Kaelberer (NASA-GSFC-Emergent), and M.H. Acuna       
+(NASA-GSFC).                                                                  
+                                                                              
+                                                                              
+Limitations:                                                                  
+===========                                                                   
+                                                                              
+The magnetometer data should be used in conjunction with spacecraft           
+ephemeris data so that perturbations to the ambient magnetic field            
+vector due to crustal sources can be localized in selenographic               
+coordinates. It is also important to evaluate the plasma environment          
+using electron reflectometer data, since the Moon can be in the solar         
+wind, in the Earth's magnetosheath, in a geomagnetic tail lobe, or in         
+the geotail current sheet. The plasma environment can strongly                
+influence the usefulness of the data for probing lunar crustal magnetic       
+fields. By far, the best (steadiest) data are obtained in the                 
+geomagnetic tail lobes.                                                       
+                                                                              
+                                                                              
+Data Quality:                                                                 
+============                                                                  
+                                                                              
+Magnetometer data are of excellent quality. Systematic errors in the          
+magnetic field component orthogonal to the spacecraft spin vector have        
+been reduced to ~0.1 nT by time-variable offset corrections (see              
+above). Systematic errors in the magnetic field component parallel to         
+the spin axis can be as large as ~0.5 nT.  The B_RMS value provides an        
+indication of the field variability during the 5-sec window.  A single,       
+large value for the B_RMS would likely indicate that bad-telemetry or         
+some similar problem had caused large variability during a single             
+averaging window.                                                             
+                                                                              
+                                                                              
+Data Coverage:                                                                
+=============                                                                 
+                                                                              
+Magnetic field data are obtained continuously; however, telemetry gaps        
+do occur. A table of gaps in the raw merged telemetry data OUTAGES.TAB)       
+is available in the Level 0 Lunar Prospector archive, but is not part         
+of the present Level 1 archive. Other gaps may exist due to data              
+contamination or processing limitations.  In particular, we list in           
+Appendix A, times when we have explicitly removed data from the dataset       
+for reasons such as corrupted sun pulse data preventing the despinning        
+of the magnetic field data.   There are also a number of data gaps that       
+result because the MAG/ER instruments were telemetering burst mode            
+data; these intervals are listed in Appendix B.                               
+                                                                              
+                                                                              
+APPENDIX A - Time intervals for which Magnetic field data were deleted        
+from this archive                                                             
+                                                                              
+Year    Month   Day     Start decday    Stop decday                           
+1998      4      8       98.407899       98.412240                            
+1998      5      1      121.704774      121.733883                            
+1998      5     15      135.739902      135.743721                            
+1998      5     16      136.570399      136.586314                            
+1998      8     15      227.220689      227.232726                            
+1998      8     17      229.684809      229.712471                            
+1998     12      3      337.314265      337.314612                            
+1999      1     29       29.313513       29.338455                            
+1999      2     25       56.501591       56.521962                            
+1999      3      3       62.877170       62.954948                            
+1999      3     24       83.758767       83.782089                            
+1999      4     16      106.511603      106.515480                            
+1999      4     17      107.210503      107.211429                            
+1999      5      1      121.045168      121.080874                            
+1999      5     12      132.137703      132.149334                            
+                                                                              
+                                                                              
+APPENDIX B - Approximate times of data gaps due to MAG/ER burst mode          
+telemetry                                                                     
+                                                                              
+Year  Month  Day  Day of year: time of day                                    
+1998   12    03   day 337: 3 intervals from 5:20-10:15                        
+1999   03    03   day  62: 21:00-24:00                                        
+1999   03    04   day  63:  0:00- 0:35                                        
+1999   03    18   day  77: 3 intervals from 11:30-24:00                       
+1999   03    19   day  78: 4 intervals from  0:00-24:00                       
+1999   03    20   day  79: 4 intervals from  0:00-24:00                       
+1999   03    21   day  80: 4 intervals from  0:00-13:30                       
+1999   04    14   day 104: 22:30-24:00                                        
+1999   04    15   day 105: 4 intervals from  0:00-24:00                       
+1999   04    16   day 106: 5 intervals from  0:00-24:00                       
+1999   04    17   day 107: 5 intervals from  0:00-24:00                       
+1999   06    08   day 159: 2 intervals from 15:20-24:00                       
+1999   06    09   day 160: 4 intervals from  0:00-24:00                       
+1999   06    10   day 161: 5 intervals from  0:00-24:00                       
+1999   06    11   day 162: 2 intervals from  0:00-17:30                       
+1999   07    05   day 186: 2 intervals from 16:00-24:00                       
+1999   07    06   day 187: 4 intervals from  0:00-24:00                       
+1999   07    07   day 188: 5 intervals from  0:00-24:00                       
+1999   07    08   day 189: 4 intervals from  0:00-18:00                       
+"                                                                             
+                                                                              
+END_OBJECT            = DATA_SET_INFORMATION                                  
+                                                                              
+                                                                              
+OBJECT                = DATA_SET_TARGET                                       
+TARGET_NAME           = MOON                                                  
+END_OBJECT            = DATA_SET_TARGET                                       
+                                                                              
+OBJECT                = DATA_SET_HOST                                         
+INSTRUMENT_HOST_ID    = LP                                                    
+INSTRUMENT_ID         = MAG                                                   
+END_OBJECT            = DATA_SET_HOST                                         
+                                                                              
+OBJECT                = DATA_SET_MISSION                                      
+MISSION_NAME          = "LUNAR PROSPECTOR"                                    
+END_OBJECT            = DATA_SET_MISSION                                      
+                                                                              
+OBJECT                = DATA_SET_REFERENCE_INFORMATION                        
+REFERENCE_KEY_ID      = "BINDERETAL1998"                                      
+END_OBJECT            = DATA_SET_REFERENCE_INFORMATION                        
+                                                                              
+OBJECT                = DATA_SET_REFERENCE_INFORMATION                        
+REFERENCE_KEY_ID      = "ACUNAETAL1992"                                       
+END_OBJECT            = DATA_SET_REFERENCE_INFORMATION                        
+                                                                              
+OBJECT                = DATA_SET_REFERENCE_INFORMATION                        
+REFERENCE_KEY_ID      = "CARLSONETAL1983"                                     
+END_OBJECT            = DATA_SET_REFERENCE_INFORMATION                        
+                                                                              
+END_OBJECT            = DATA_SET                                              
+END

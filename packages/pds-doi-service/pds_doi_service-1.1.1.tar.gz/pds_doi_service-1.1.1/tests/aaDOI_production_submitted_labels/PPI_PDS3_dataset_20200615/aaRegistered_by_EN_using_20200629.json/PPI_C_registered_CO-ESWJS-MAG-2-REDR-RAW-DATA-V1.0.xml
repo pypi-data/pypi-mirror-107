@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>CASSINI MAGNETOMETER RAW DATA V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>CO-E/SW/J/S-MAG-2-REDR-RAW-DATA-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2016-04-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains magnetic-field data acquired during the
+                cruise and tour phases of the Cassini mission to Saturn. The data
+                set begins with data collected on 16 August (day 228), 1999 and
+                ends on 17 November (day 321), 2005 when the instrument failed.
+                On 16 August, 1999 two days before the spacecraft commenced Earth
+                swingby, the magnetometer boom was unfurled into its extended
+                position; a configuration it maintained for the remainder of the
+                mission. Magnetic-field data acquired prior to boom deployment
+                are limited and are significantly affected by spacecraft noise.
+                These data are of no scientific value and, consequently, do not
+            form part of this data set.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=CO-E%2FSW%2FJ%2FS-MAG-2-REDR-RAW-DATA-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>CASSINI ORBITER; EARTH; JUPITER; SATURN; VENUS; SOLAR WIND; TITAN; MAGNETOMETER; CO; PLANET; PLASMA STREAM; SATELLITE; MAG; DUAL TECHNIQUE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>PETER SLOOTWEG</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.co-e-sw-j-s-mag-2-redr-raw-data-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

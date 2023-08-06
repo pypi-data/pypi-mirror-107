@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>PVO VENUS MAG CALIBRATED S/C COORDINATES
+        HIGH RES V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>PVO-V-OMAG-3--SCCOORDS-HIRES-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-06-30</publication_date>
+            <country>USA</country>
+            <description>This dataset contains vectors collected
+                by the Pioneer Venus Orbiter (previously Pioneer 12) Magnetometer.  The data
+                are provided in spacecraft coordinates.  In one format, apoapsis B, the
+                magnetometer can be commanded to return 3 vectors per minor frame. In most
+                others it transmits one vector per minor frame.  In one format, periapsis E,
+                it has no words in a minor frame.  At very low sampling rates at which time
+                the sine wave due to spacecraft spin could not be resolved.  The magnetometer
+                values are despun, and averaged on board using a Walsh transform
+            (square wave) in phase and in quadiatune with the sun.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=PVO-V-OMAG-3--SCCOORDS-HIRES-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>PIONEER VENUS ORBITER; VENUS; MAGNETOMETER; PVO; PLANET; OMAG; FLUXGATE MAGNETOMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>MURIEL KNIFFIN</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URN</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.pvo-v-omag-3--sccoords-hires-v1.0</identifier_value>
+                    <relation_type>IsIdenticalTo</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

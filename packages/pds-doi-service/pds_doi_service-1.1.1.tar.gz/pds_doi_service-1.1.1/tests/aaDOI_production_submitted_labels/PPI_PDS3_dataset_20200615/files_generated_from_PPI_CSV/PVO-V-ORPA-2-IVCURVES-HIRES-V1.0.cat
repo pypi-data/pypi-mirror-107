@@ -1,0 +1,202 @@
+PDS_VERSION_ID               = PDS3                                           
+LABEL_REVISION_NOTE         = "S. Joy, 1992 version 1.0 template;            
+S. Joy 5/26/99 streamlined Version 3 template;                               
+D. Kazden, 12/17/2012, minor updates, removed Zs from START_TIME and         
+STOP_TIME, addes ABSTRACT_DESC, DATA_SET_TERSE_DESC, and CITATION_DESC;      
+D. Kazden, 02/11/2020, updated CITATION_DESC;"                               
+                                                                             
+OBJECT                      = DATA_SET                                       
+  DATA_SET_ID               = "PVO-V-ORPA-2--IVCURVES-HIRES-V1.0"            
+                                                                             
+  OBJECT                    = DATA_SET_INFORMATION                           
+    DATA_SET_NAME           = "                                              
+               PVO VENUS RETARD. POTENT. ANLYR. EDITED I/V CURVE (RDR) V1.0" 
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME              = 1978-12-05T07:20:07.282                        
+    STOP_TIME               = 1992-10-07T20:11:23.083                        
+    DATA_SET_RELEASE_DATE   = 1993-06-30                                     
+    PRODUCER_FULL_NAME      = "JOE GOOSBY"                                   
+    DETAILED_CATALOG_FLAG   = N                                              
+    DATA_OBJECT_TYPE        = "TIME SERIES"                                  
+    ABSTRACT_DESC           = "The Pioneer Venus Orbiter Retarding Potential 
+    Analyzer RDR data set is an essentially raw instrument data form which   
+    has been reformatted to facilitate analysis using a Least Squares Fit    
+    (LSF) technique for determining plasma parameters.  The data set contains
+    individual instrument 'sweeps' or Current/Voltage segments (I/V curves), 
+    packaged with instrument status information (mode, data quality, etc.)   
+    and spacecraft ephemeris data that has been extracted from the SEDR. The 
+    data set covers the entire range of orbital operations (orbits 1-5055)   
+    and spans the time period 1978-12-05 through 1992-10-07."                
+    DATA_SET_TERSE_DESC     = "The Pioneer Venus Orbiter Retarding Potential 
+    Analyzer RDR data set is data reformatted to facilitate analysis using a 
+    Least Squares Fit (LSF) technique for determining plasma parameters."    
+    CITATION_DESC           = "Goosby, J., PVO-V-ORPA-2--IVCURVES-HIRES-V1.0,
+                PVO VENUS RETARD. POTENT. ANLYR. EDITED I/V CURVE (RDR) V1.0,
+                      NASA Planetary Data System, 1993."                     
+                                                                             
+    DATA_SET_DESC           = "                                              
+                                                                             
+  Dataset Overview                                                           
+  ================                                                           
+                                                                             
+  The Pioneer Venus Orbiter Retarding Potential Analyzer RDR data            
+  set is an essentially raw instrument data form which has been              
+  reformatted to facilitate analysis using a Least Squares Fit (LSF)         
+  technique for determining plasma parameters.  The data set contains        
+  individual instrument 'sweeps' or Current/Voltage segments (I/V            
+  curves), packaged with instrument status information (mode, data           
+  quality, etc.) and spacecraft ephemeris data that has been extracted       
+  from the SEDR. The data set covers the entire range of orbital             
+  operations (orbits 1-5055) and spans the time period 1978-12-05            
+  through 1992-10-07.                                                        
+                                                                             
+  Data Structure                                                             
+  ==============                                                             
+                                                                             
+  Each orbit file consists of a file header table (one record)               
+  followed by groups of data (tables), each group representing a             
+  sweep. Each sweep section is furtherdivided into its header (one           
+  record table), a header for the data (one record table which tells         
+  how many records of data there will be), the data (table), the             
+  first and last data (two record table), a header for the SEDR              
+  data (one record table which tells how many records of SEDR data           
+  there will be), and the SEDR data (table).                                 
+                                                                             
+  The PDS standards do not accomodate the labeling of variable record        
+  data structures. All ORPA-RDR data files are described by a detched        
+  'minimum' PDS label                                                        
+                                                                             
+  ROW   /____________________\                                               
+   1    | 40-byte File Header|                                               
+        ----------------------                                               
+                                                                             
+                                                                             
+       /_____________________________________\                               
+       |                                     |                               
+       | ************************            |                               
+   2   | * 10-byte Sweep Header *            |  \                            
+       | ************************            |   \                           
+       |                                     |    \                          
+       | **********************************  |     \                         
+       | * 5-byte Data Header (NDP incl.) *  |      \                        
+       | **********************************  |       \                       
+       |                                     |        \                      
+       | ********************                |         \                     
+   .   | * 47-byte Data     * \              |          \                    
+       | *------------------*   NDP records  |           \                   
+       | *Currents/Voltages * /              |       this section            
+       | ********************                |           is                  
+       |                                     |       repeated for            
+       | ********************                |       each sweep              
+       | * 47-byte 1st Data *                |       in the orbit            
+       | *------------------*                |            /                  
+       | * 47-byte Last Data*                |           /                   
+       | *------------------*                |          /                    
+       | ********************                |         /                     
+       |                                     |        /                      
+       | *********************************** |       /                       
+       | 3-byte SEDR Header (# roll periods) |      /                        
+       | *********************************** |     /                         
+       |                                     |    /                          
+       | **********************              |   /                           
+       | * 184-byte SEDR Data *  \           |  /                            
+       | *--------------------*    NRP       |                               
+       | *     ....           *  /records    |                               
+       | **********************              |                               
+  EOF  |_____________________________________|                               
+                                                                             
+                                                                             
+  Ancillary Data                                                             
+  ==============                                                             
+  In each data directory, there are two additional files provided            
+  (RDR_DATA.IDX and SWEEP.IDX) which summarize the directory                 
+  contents.  The RDR_DATA.IDX file provides the number of sweeps,            
+  periapsis time, file records, start time, and stop times for each          
+  orbit. The SWEEP.IDX file provides detailed information including          
+  the number of records of data, number of peaks, number of SEDR             
+  records, plus start time and stop time for each sweep in each file."       
+                                                                             
+                                                                             
+  CONFIDENCE_LEVEL_NOTE   = "                                                
+   These data have not been processed in any way. The data are               
+   simply reformatted raw data, which have had some obviously bad            
+   sweeps removed (editted). These data are intended for use by ORPA         
+   investigators in their routine processing and analysis activities.        
+   Questions about the 'confidence' of these data must be addressed          
+   on a sweep-by-sweep basis."                                               
+  END_OBJECT                = DATA_SET_INFORMATION                           
+                                                                             
+  OBJECT                    = DATA_SET_TARGET                                
+    TARGET_NAME             = "VENUS"                                        
+  END_OBJECT                = DATA_SET_TARGET                                
+                                                                             
+  OBJECT                    = DATA_SET_HOST                                  
+    INSTRUMENT_HOST_ID      = "PVO"                                          
+    INSTRUMENT_ID           = "ORPA"                                         
+  END_OBJECT                = DATA_SET_HOST                                  
+                                                                             
+  OBJECT                    = DATA_SET_MISSION                               
+    MISSION_NAME            = "PIONEER VENUS"                                
+  END_OBJECT                = DATA_SET_MISSION                               
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "HINTEREGGER1960"                              
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "HANSONETAL1961"                               
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "KNUDSENETAL1966"                              
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "HARRISETAL1967"                               
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "HANSON1970"                                   
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "HANSONETAL1973"                               
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "SPENNER&DUMBS1974"                            
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "COLIN&HALL1977"                               
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "COLIN1979"                                    
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "KNUDSEN&HARRIS1973"                           
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "KNUDSENETAL1979A"                             
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "DRUYVESTEYN1930"                              
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "KNUDSEN1979"                                  
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "KNUDSENETAL1979B"                             
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+                                                                             
+  OBJECT                    = DATA_SET_REFERENCE_INFORMATION                 
+    REFERENCE_KEY_ID        = "SPENNERETAL1979"                              
+  END_OBJECT                = DATA_SET_REFERENCE_INFORMATION                 
+END_OBJECT                  = DATA_SET                                       
+END

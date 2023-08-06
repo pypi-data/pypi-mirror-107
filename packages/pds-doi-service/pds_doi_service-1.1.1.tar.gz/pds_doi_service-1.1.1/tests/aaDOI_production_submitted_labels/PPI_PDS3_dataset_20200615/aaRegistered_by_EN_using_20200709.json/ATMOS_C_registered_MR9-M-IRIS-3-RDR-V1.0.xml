@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MARINER9 IRIS RDR V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MR9-M-IRIS-3-RDR-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>3000-01-01</publication_date>
+            <country>USA</country>
+            <description>The dataset contains measurements from the infrared
+                interferometer spectrometer and ancillary data. Each record of
+                the dataset consists of a header and a spectral observation of
+                Mars geometry of the observation. The dataset is ordered by time
+                as measured by the Data Acquisition System (DAS) time (1 DAS
+                count is approximately 1.2 sec.). Two IRIS frames are completed
+                every 35 DAS counts calibration observation (alternately of
+                interstellar space and an internal calibration blackbody), and is
+            therefore absent from the calibrated dataset.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MR9-M-IRIS-3-RDR-V1.0</site_url>
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MARINER 9; MARS; INFRARED SPECTROMETER; MR9; PLANET; IRIS; INFRARED INTERFEROMETER SPECTROMETER</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>JOHN C. PEARL</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Atmospheres Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mr9-m-iris-3-rdr-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

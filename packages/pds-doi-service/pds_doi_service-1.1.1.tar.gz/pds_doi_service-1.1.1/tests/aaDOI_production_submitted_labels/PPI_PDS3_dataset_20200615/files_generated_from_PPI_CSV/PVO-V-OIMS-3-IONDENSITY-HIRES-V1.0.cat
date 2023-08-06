@@ -1,0 +1,141 @@
+PDS_VERSION_ID                  = PDS3                                        
+LABEL_REVISION_NOTE            = "                                           
+      Original author and date unknown;                                      
+      Tyler Brown, Nov 1998, streamlined template;                           
+      Mark Sharlow, Jan 18 2000, updated ODL header and edited;              
+      Mark Sharlow, Feb 18 2000, deleted SFDU label;                         
+      Mark Sharlow, Apr 12 2000, updated missing data values;                
+      Mark Sharlow, May 18 2000, revised ODL;                                
+      D. Kazden, Aug 28, 2012, removed Z's from START_TIME and STOP_TIME,    
+      updated DATA_OBJECT_TYPE, added ABSTRACT_DESC, DATA_SET_TERSE_DESC     
+      and CITATION_DESC;                                                     
+      D. Kazden, Feb 11. 2020, updated CITATION_DESC;"                       
+                                                                             
+RECORD_TYPE                    = STREAM                                      
+                                                                             
+OBJECT                             = DATA_SET                                
+                                                                             
+  DATA_SET_ID                      = "PVO-V-OIMS-3-IONDENSITY-HIRES-V1.0"    
+                                                                             
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "PVO VENUS ION MASS SPECTROMETER        
+                                      CALIB HIGH RES ION DENS V1.0"          
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"                                     
+    START_TIME                     = 1978-12-05T14:41:18.480                 
+    STOP_TIME                      = 1992-10-07T00:00:00.000                 
+    DATA_OBJECT_TYPE               = TABLE                                   
+    DATA_SET_RELEASE_DATE          = 1993-10-01                              
+    PRODUCER_FULL_NAME             = "DR. PAUL CLOUTIER"                     
+    DETAILED_CATALOG_FLAG          = N                                       
+    ABSTRACT_DESC                  = "The PV-OIMS high resolution dataset    
+    contains data from the Orbiter Ion Mass Spectrometer (OIMS) experiment   
+    and orbit attitude data for orbits 1-5055, including data for the period 
+    periapsis +/- 30 minutes for each orbit. The dataset is divided into     
+    multiple files which contain 1 orbit."                                   
+    DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) Ion Mass           
+    Spectrometer (OIMS) high resolution ion density data set for the period  
+    periapsis +/- 30 minutes for all 5055 orbits (1978-12-05 - 1992-10-07)." 
+    CITATION_DESC        = "Cloutier, P., PVO-V-OIMS-3-IONDENSITY-HIRES-V1.0,
+                PVO VENUS ION MASS SPECTROMETER CALIB HIGH RES ION DENS V1.0,
+                             NASA Planetary Data System, 1993."              
+    DATA_SET_DESC                  = "                                       
+                                                                             
+Data Set Overview                                                            
+=================                                                            
+The PV-OIMS high resolution dataset contains data from the Orbiter           
+Ion Mass Spectrometer (OIMS) experiment and orbit attitude data for          
+orbits 1-5055, including data for the period periapsis +/- 30 minutes        
+for each orbit. The dataset is divided into multiple files which             
+contain 1 orbit. The user should be able to easily get to any desired        
+orbit by selecting the appropriate file.                                     
+                                                                             
+Data                                                                         
+====                                                                         
+The data are provided in fixed length records (ASCII) with each              
+record consisting of 119 data elements totaling 843 bytes. The               
+record structure is described below. Each record represents one              
+complete OIMS experiment data cycle (normally 6.3 seconds but this           
+time can vary with the bit rate). Within each record there are 55            
+samples of mass and the density associated with that mass. The               
+sequence of masses within a record will normally follow the OIMS             
+'explore' mode, but this sequence may vary when the experiment is            
+occasionally in the 'explore-adapt' mode.                                    
+                                                                             
+To compute the time associated with a particular mass and density,           
+the dwell time element (element 5) should be used along with the time        
+of day (element 3).  The dwell time is time interval (milliseconds)          
+between samples. Thus, for the 'Nth' sample, the time would be               
+computed as follows:                                                         
+                                                                             
+TIME = UT = (N - 1) * DWELL/1000 (where UT is the time of day)               
+                                                                             
+The user should be aware that some of the densities have been coded.         
+For example, the values 999 and 9.9999e+04 are the missing data values       
+for mass and density, respectively, for that point. (This can be due         
+to several reasons such as telemetry interference or a gap in the            
+data occurred.) Also, a negative value of density represents a               
+'flagged' data point and should be used with caution.                        
+                                                                             
+column  type  bytes  description                                             
+==================== =====================================                   
+jdate   int     5    date in format yyddd where dd is day of year            
+ut      float   9    seconds of day                                          
+dwell   int     6    time interval &#10094;milliseconds&#10095; between samples            
+bits    int     6    telemetry rate in &#10094;bits/second&#10095;                         
+lat     float   7    Venus latitude &#10094;deg&#10095;                                    
+lon     float   8    Venus longitude &#10094;deg&#10095;                                   
+alt     float  10    Altitude &#10094;km&#10095;                                           
+sza     float   9    Solar Zenith Angle (Sun-Venus-PVO) &#10094;deg&#10095;.               
+sha     float   9    Solar Hour Angle &#10094;hour&#10095;.                                
+mass1   int     4    Mass of species number 1 &#10094;AMU&#10095;.                         
+den1    float  10    Density of species 1 &#10094;ions/cm**3&#10095;.                      
+mass2   int     4    Mass of species 2 &#10094;AMU&#10095;.                                
+den2    float  10    Density of species 2 &#10094;ions/cm**3&#10095;.                      
+ .       .      .     .                                                      
+ .       .      .     .                                                      
+ .       .      .     .                                                      
+mass55  int     4    Mass of species 55 &#10094;AMU&#10095;.                               
+den55   float  10    Density of species 55 &#10094;ions/cm**3&#10095;.                     
+                                                                             
+ "                                                                           
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "Bad data have been excluded or         
+flagged by using negative values for density. Users should still             
+use caution when interpreting these data. No error estimates for             
+the densities are provided."                                                 
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = OIMS                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "BRINTONETAL1973"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "TAYLORETAL1979C"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "TAYLORETAL1979D"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "GREBOWSKY1993"                         
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+                                                                             
+END

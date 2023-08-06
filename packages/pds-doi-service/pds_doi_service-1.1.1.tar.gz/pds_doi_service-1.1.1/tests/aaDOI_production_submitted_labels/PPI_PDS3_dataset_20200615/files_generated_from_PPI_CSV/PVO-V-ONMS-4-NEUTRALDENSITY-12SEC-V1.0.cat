@@ -1,0 +1,228 @@
+PDS_VERSION_ID                    = PDS3                                      
+LABEL_REVISION_NOTE              = "                                         
+             2012-08-27, D. Kazden, updated to meet PDS 3.8 standards"       
+                                                                             
+    OBJECT                        = DATA_SET                                 
+    DATA_SET_ID                    = "PVO-V-ONMS-4-NEUTRALDENSITY-12SEC-V1.0"
+                                                                             
+    OBJECT                         = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "PVO VENUS ONMS BROWSE NEUTRAL          
+                                      DENSITY 12 SECOND V1.0"                
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+                                                                             
+    START_TIME                     = 1978-12-07T14:30:47                     
+    STOP_TIME                      = 1992-10-07T19:49:39                     
+    DATA_OBJECT_TYPE               = "TABLE"                                 
+    DATA_SET_RELEASE_DATE          = 1993-03-31                              
+    PRODUCER_FULL_NAME             = "DR. WAYNE KASPRZAK"                    
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_SET_TERSE_DESC            = "Pioneer Venus (PVO) neutral mass       
+                                      spectrometer (ONMS) browse neutral     
+                                      density 12 second data for all Venus   
+                                      orbits (3-5055, 1978-12-07 to          
+                                      1992-10-07)."                          
+    ABSTRACT_DESC                  = "                                       
+     The instrument was designed to determine the composition                
+     of the neutral thermosphere/exosphere of Venus. The term                
+     composition includes both the type of neutral gases present             
+     and their quantitative amount. The measurements begin at the            
+     orbit's periapsis altitude and extend to a limiting altitude            
+     at which the ambient signal becomes comparable to the gas               
+     background and/or detector measurement threshold.  The neutral          
+     composition includes helium, atomic nitrogen, atomic oxygen,            
+     molecular nitrogen, carbon monoxide and carbon dioxide. The             
+     data reduction has been described in Niemann et al. (1980a) and         
+     Kasprzak et al. (1980)."                                                
+    CITATION_DESC                  = "TBD"                                   
+                                                                             
+    DATA_SET_DESC                  ="                                        
+         orbits          time                                                
+             3        1978-12-07T14:30:47.000Z                               
+           640        1980-09-05T17:14:34.016Z                               
+                                                                             
+          4961        1992-07-06T00:26:53.847Z                               
+          5055        1992-10-07T19:49:39.752Z                               
+                                                                             
+   The source of the data and their corrections are                          
+summarized below:                                                            
+                                                                             
+    SPECIES         M/E USED      COMMENTS                                   
+    He                  4                                                    
+                                                                             
+    N                  30         Surface recombined N and O                 
+                                                                             
+    O                  32         Surface recombined O to O2;                
+                                  corrected for CO2 fragmentation            
+                                  corrected for estimated surface            
+                                  recombination of O to CO2(*)               
+                                                                             
+    N2,CO           14,28         m/e 14 corrected for NO, CO and            
+                                  CO2 fragmentation; m/e 28                  
+                                  corrected for CO2 fragmentation            
+                                                                             
+    CO2                44         Corrected for surface                      
+                                  recombination of O to CO2*                 
+                                                                             
+    (*) the correction is based on matching scale height                     
+        temperatures of O and CO2.                                           
+                                                                             
+   The data are from the nonretarding potential mode of the                  
+instrument.  Data from the retarding mode are consistent with                
+those obtained from the nonretarding mode and have not been                  
+included.  The data set does not include the factor of 1.6                   
+increase in density needed to maintain compatibility with                    
+other data sets as discussed by Hedin et al. (1983).  Two                    
+data sets are provided: high resolution (HIRES), every point,                
+composition; and low resolution (LORES), 12 second sampled,                  
+composition.  The LORES data set represents the best                         
+estimated composition data and is derived from the HIRES data                
+set.                                                                         
+                                                                             
+        The field names described in RECORD 1:                               
+                                                                             
+     NAME      DESCRIPTION                            UNITS                  
+     YYYY      YYYY=4 digit year                                             
+     DDD       DDD=3 digit day of year                                       
+     UT        Universal Time represented as the                             
+               number of milliseconds since                                  
+               1966-01-01T00:00:00Z stored as a double                       
+               precision floating point number.                              
+     ORBIT     Orbit number                                                  
+     TIMTAG    Nominal time tag assigned by project                          
+     DHE       Number density of He                   part/cm**3             
+     DN        Number density of N                    part/cm**3             
+     DO        Number density of O                    part/cm**3             
+     DN2       Number density of N2                   part/cm**3             
+     DCO       Number density of CO                   part/cm**3             
+     DCO2      Number density of CO2                  part/cm**3             
+     DRHO      Total mass density                     g/cm**3                
+     DTOT      Total number density                   part/cm**3             
+                                                                             
+   This data is a representative sample, approximately once per              
+12 seconds, of the high resolution data. It is constructed at                
+designated times which have been supplied by the Project.  Data              
+with errors greater that 30% are not included nor are data with              
+angles of attack greater than 40 degrees. An absolute altitude               
+cutoff of 250 km was used for all species except for He for                  
+which 350 km was used.                                                       
+                                                                             
+   Each representative data point is constructed using an                    
+exponentially weighted average of the data over a 24 second                  
+interval centered at the sample point time.  Corrections to                  
+the number densities of CO2 and O for surface reactions                      
+were made at this time based on empirical model results. A                   
+minimum of 3 data points per species and all data available                  
+for corrections are required to be present in order for a                    
+sample point to be output.  The total number density and                     
+total mass density are computed if all major species (CO2,                   
+CO, N2, and O) are present.  The data spacing is nominally 12                
+seconds except for the -12, 0, 12 time tags. Although time                   
+tags from -1800 to 1800 seconds are generated, only those data               
+records for which at least one species has a valid value for                 
+that time tag are output.                                                    
+                                                                             
+   No spacecraft positional parameters have been included                    
+in the data sets.  These can be obtained from the SEDR data                  
+submitted separately by the Project."                                        
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+   Several criteria were invoked when inserting data for a given             
+orbit: orbit and attitude parameters must exist (project supplied);          
+the spacecraft format and bit rate must be appropriate for                   
+acquisition of data by the ONMS; and the command sequence for the            
+instrument must be appropriate for useful determination of                   
+atmospheric composition. Cases where useful composition cannot be            
+determined include special test modes (e.g., retarding potential             
+sweeps, filament off) and 1/8 unit amu sweep modes.  In addition,            
+composition for the LORES data set cannot be easily determined for           
+unit amu sweep mode.  The ONMS was not operational for every orbit           
+nor is every orbit complete due to data gaps introduced by use of            
+telemetry formats for which the ONMS has no instrument output.               
+                                                                             
+  Useful composition data are gathered from the lowest periapsis             
+altitude to a maximum altitude generally around 250 km (about 300            
+km for He).  The actual maximum altitude depends on the accumulated          
+surface gas buildup acquired from previous orbits which creates a            
+gas background.  The gas background was estimated from high altitude         
+averages of the data and for all species, except helium, an inbound          
+signal/background ratio of 2 and an outbound signal/background ratio         
+of 4 were used as cutoff values.  In some cases superthermal ions            
+(e.g., Kasprzak et al.,1982) were observed at low altitudes (e.g.,           
+below 300 km for orbit 219) and these were removed when visually             
+detected.  Some problems have been observed in the high altitude             
+data very near cutoff, particularly for outbound N2. Several data            
+points were never removed and appear higher than the expected                
+extrapolation of the data to that time.                                      
+                                                                             
+   Residual spin modulation which had not been completely removed            
+is evident in the processed data. The source of the spin residuals           
+are the gas/surface adsorption/desorption effects which were not             
+removed from the data and a noncosine behavior for the response of           
+the ion source density with angle of attack.  Another feature                
+observed occasionally at large angles of attack (&#10095;40 degrees) is a           
+reduction of the data when compared to data at lower angles of               
+attack. This has been determined to be due to antenna shadowing;             
+that is, the ONMS geometric view cone 'sees' the spacecraft antenna          
+at extreme angles of attack. Occasionally near minimum angle of              
+attack (&#10094;10 degrees), enhanced data points are observed for m/e=4            
+(He channel) which are apparently high energy ions/neutrals                  
+traveling along the tube axis and being detected.  The more extreme          
+points in either of these two cases have been mass flagged.                  
+                                                                             
+   The data time spacing depends on the spacecraft bit rate and              
+format, and the particular instrument commands executed.  Usually            
+programmed mass format was used but occasionally unit amu and 1/8            
+amu sweeps were implemented.  Several orbits switched from low               
+electron energy to high electron energy and as a result there may            
+be a discontinuity at the transition point.  The 1/8 amu sweep data          
+have not been included.                                                      
+                                                                             
+   Atomic nitrogen was measured in programmed mass mode only                 
+after orbit 190.                                                             
+                                                                             
+   Orbits 1-19 generally do not have reliable relative composition           
+due to the fact that gas-surface processes in the ion source had not         
+stabilized. This affects all surface reactive species except He.             
+                                                                             
+   Isolated (one or two points per several spin cycles) high                 
+resolution data points are occasionally observed and they should be          
+regarded as erroneous points which are more likely wrong than right.         
+                                                                             
+   The error associated with the points is more an indication of data        
+quality than of absolute uncertainty.  It contains the statistical           
+error of the data determined for the principle m/e used for the species      
+from the detector signal plus the errors coming from any other species       
+used to correct the data. It also contains a contribution which is           
+proportional to the background/signal ratio.  The total relative error       
+is at least an additional 5-10% above this value."                           
+                                                                             
+  END_OBJECT                     = DATA_SET_INFORMATION                      
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "PIONEER VENUS"                         
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                         = DATA_SET_TARGET                           
+    TARGET_NAME                    = VENUS                                   
+  END_OBJECT                     = DATA_SET_TARGET                           
+                                                                             
+  OBJECT                         = DATA_SET_HOST                             
+    INSTRUMENT_HOST_ID             = PVO                                     
+    INSTRUMENT_ID                  = ONMS                                    
+  END_OBJECT                     = DATA_SET_HOST                             
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KASPRZAKETAL1980"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "KASPRZAKETAL1982"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION            
+    REFERENCE_KEY_ID             = "NIEMANNETAL1980A"                        
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION            
+                                                                             
+END_OBJECT                     = DATA_SET                                    
+END

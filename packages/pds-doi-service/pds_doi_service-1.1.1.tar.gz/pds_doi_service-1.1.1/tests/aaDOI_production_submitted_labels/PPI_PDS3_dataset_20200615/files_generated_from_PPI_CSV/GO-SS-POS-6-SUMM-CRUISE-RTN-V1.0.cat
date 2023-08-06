@@ -1,0 +1,108 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+    2004-03-12, B. Harris, initial assembly;                                  
+    2005-03-28, B.Harris, updated to PDS3 standards;                          
+    2012-06-13, D. Kazden, removed unnecessary keywords;                      
+    2018-08-02, D. Kazden, removed ARCHIVE_STATUS keyword;                    
+    2019-12-02, J. Mafi, updated CITATION_DESC;                               
+    "                                                                         
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "GO-SS-POS-6-SUMM-CRUISE-RTN-V1.0"       
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+                           GALILEO CRUISE POSITION DATA (RTN COORDINATES)"    
+    DATA_SET_COLLECTION_MEMBER_FLG = "N/A"                                    
+    START_TIME                     = 1990-01-01T00:00:00.000                  
+    STOP_TIME                      = 1994-12-31T23:00:00.000                  
+    DATA_SET_RELEASE_DATE          = 1996-06-01                               
+    PRODUCER_FULL_NAME             = "N/A"                                    
+    DETAILED_CATALOG_FLAG          = "N/A"                                    
+    DATA_OBJECT_TYPE               = "TABLE"                                  
+    CITATION_DESC                  = "                                        
+    Kivelson, M.G., Khurana, K.K.,                                            
+                  Russell, C.T., Walker, R.J., Joy, S.P., Green, J.,          
+                  GALILEO CRUISE POSITION DATA (RTN COORDINATES),             
+                  GO-SS-POS-6-SUMM-CRUISE-RTN-V1.0, NASA Planetary Data       
+                  System, 1996"                                               
+    ABSTRACT_DESC                  = "                                        
+                  This dataset contains the Galileo spacecraft                
+                  trajectory during the interplanetary cruise.                
+                  The data have been derived from SPICE kernels at            
+                  a 1 minute sample rate. The data are provided in            
+                  RTN coordinates."                                           
+    DATA_SET_TERSE_DESC            = "                                        
+                  This dataset contains the Galileo spacecraft                
+                  trajectory during the interplanetary cruise.                
+                  The data have been derived from SPICE kernels at            
+                  a 1 minute sample rate. The data are provided in            
+                  RTN coordinates."                                           
+                                                                              
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+    This dataset contains the Galileo spacecraft trajectory during the        
+    interplanetary cruise. The data have been derived from SPICE              
+    kernels at a 1 minute sample rate. The data are provided in RTN           
+    coordinates.                                                              
+                                                                              
+      Data Columns:                                                           
+                                                                              
+      time   S/C event time (UT)given in the form yyy-mo-dayThh:mm:ss.sssZ    
+      R      S/C radial distance from the sun &#10094;Au&#10095;                            
+      LAT    S/C solar east longitude(1950)                                   
+      LON    S/C solar latitude                                               
+                                                                              
+                                                                              
+  Coordinate Systems                                                          
+  ==================                                                          
+    The Galileo trajectory are being archived in fixed heliocentric           
+    coordinates. The R component is the Sun-&#10095;spacecraft range given in        
+    units of Au (149674000 km).  LAT is the solar latitude given in units     
+    of degrees and measured from the ecliptic plane. LON is the solar east    
+    longitude measured from the First Point of Aries(1950).                   
+                                                                              
+    Data Processing:                                                          
+                                                                              
+    The SPICE SPK files used to derive this product are:                      
+                                                                              
+    GLL_LONG_2.BSP                                                            
+    GLL910314.BSP                                                             
+    GLL911107.BSP                                                             
+    GLL921228.BSP                                                             
+                                                                              
+  Data Quality                                                                
+  ============                                                                
+    The data have been derived from the Galileo SPICE kernels using well      
+    tested software from the SPICELIB and GLLSPICE subroutine libraries.      
+    Each data point is computed using S/C and planetary ephemerides           
+    computed at the time of the dataset sample (not interpolated)."           
+                                                                              
+  CONFIDENCE_LEVEL_NOTE   = "N/A"                                             
+                                                                              
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                      = "N/A"                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID               = GO                                     
+    INSTRUMENT_ID                    = POS                                    
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "GALILEO"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION             
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION             
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

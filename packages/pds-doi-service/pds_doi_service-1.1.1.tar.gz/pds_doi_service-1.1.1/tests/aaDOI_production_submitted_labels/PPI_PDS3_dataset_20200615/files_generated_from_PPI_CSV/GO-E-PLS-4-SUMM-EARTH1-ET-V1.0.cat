@@ -1,0 +1,139 @@
+PDS_VERSION_ID                      = PDS3
+LABEL_REVISION_NOTE                = "
+             2006-07-26, B. Harris, minor updates for version 3 standards;
+             2012-06-01, D. Kazden, removed unnecessary keywords, removed 
+             Zs from START_TIME and STOP_TIME, updated CONFIDENCE_LEVEL_NOTE,
+             updated DATA_SET_REFERENCE_INFORMATION;
+             2018-08-01, D. Kazden, removed ARCHIVE_STATUS keyword;"
+
+OBJECT                             =  DATA_SET
+  DATA_SET_ID                      = "GO-E-PLS-4-SUMM-EARTH1-ET-V1.0"
+
+  OBJECT                           = DATA_SET_INFORMATION
+    DATA_SET_NAME                  = "GO EAR PLS SUMM EARTH-1 ET V1.0"
+    DATA_SET_COLLECTION_MEMBER_FLG = "N"
+    DATA_OBJECT_TYPE               = SPREADSHEET                      
+    START_TIME                     = 1990-312T23:22:19.807
+    STOP_TIME                      = 1990-342T20:10:55.398
+    DATA_SET_RELEASE_DATE          = 1995-04-19
+    PRODUCER_FULL_NAME             = "DR L.A. FRANK"
+    DETAILED_CATALOG_FLAG          = "N"
+  DATA_SET_TERSE_DESC              = "
+      This file is a listing of particle energy spectra from the
+      Galileo Plasma Instrument (PLS) during the first Earth
+      Encounter."
+
+  ABSTRACT_DESC                  = "
+      This file is a listing of particle energy spectra from the
+      Galileo Plasma Instrument (PLS) during the first Earth
+      Encounter. Detector reponses from ion detetors 2P, 4P, and
+      6P, and from electron detector 4E are available through the
+      PDS as separate files."
+
+  CITATION_DESC                  = "
+      GO EAR PLS SUMM EARTH-1 ET V1.0,
+      GO-E-PLS-4-SUMM-EARTH1-ET-V1.0, NASA Planetary Data System,
+      1995"
+
+  DATA_SET_DESC                  = "
+      This file is a listing of particle energy spectra from the
+      Galileo Plasma Instrument (PLS) during the first Earth
+      Encounter.  Detector reponses from ion detetors 2P, 4P, and
+      6P, and from electron detector 4E are available through the
+      PDS as separate files.  The energy resolution, angular fields
+      of view, and nominal geometric factors for the detectors are
+      specified in the Instrument Description file.
+
+  Data Set Overview
+  =================
+    For each detector the responses (Counts/Sample-Period) are given
+    for a series of energy-per-unit charge steps (E/Q, Volts).  These
+    responses are summed over spin sectors.  The instrument is
+    programmable, and operating modes are tailored for different mission
+    phases to acquire effective measurements.  The E/Q steps and Sample
+    Periods for different mission phases (through Ida) are tabled below.
+
+ 			       TABLE A
+    --------------------------------------------------------------
+     Mission Phase	Sample Period, 		   E/Q Steps,
+ 			  Seconds		     Table
+    --------------------------------------------------------------
+
+       Venus	       	    0.400  		    Table B
+       Earth-1		    1.333 		    Table B
+       Gaspra	 	    1.200 		    Table B
+       Earth-2		    1.200 		    Table B
+       Ida 		    1.200 		    Table B
+    ---------------------------------------------------------------
+
+
+      	     TABLE B
+      --------------------------------
+      Step	           E/Q, Volts
+
+    	      P2,P4,P6	      E4
+      --------------------------------
+
+       17            21            19
+       19            29            27
+       21            41            38
+       23            57            53
+       25            80            74
+       27           112           104
+       29           157           146
+       31           220           204
+       33           303           281
+       35           454           422
+       37           686           638
+       39           961           893
+       41          1363          1266
+       43          1958          1819
+       45          2732          2538
+       47          3788          3519
+       49          5490          5100
+       51          7777          7225
+       53         10614          9860
+       55         15189         14110
+       57         21356         19839
+       59         29829         27710
+       61         40443         37570
+       63         52521         48790
+    "
+
+    CONFIDENCE_LEVEL_NOTE   = "The data sets contained in the Earth-1
+     collection include 90/312-326, 339-342.  The PLS instrument was 
+     powered down due to thermal concerns."
+
+  END_OBJECT                     = DATA_SET_INFORMATION
+
+  OBJECT                         = DATA_SET_TARGET
+    TARGET_NAME                    = EARTH
+  END_OBJECT                     = DATA_SET_TARGET
+
+  OBJECT                         = DATA_SET_HOST
+    INSTRUMENT_HOST_ID             = GO
+    INSTRUMENT_ID                  = PLS
+  END_OBJECT                     = DATA_SET_HOST
+
+  OBJECT                           = DATA_SET_MISSION
+    MISSION_NAME                   = "GALILEO"
+  END_OBJECT                       = DATA_SET_MISSION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID             = "FRANKETAL1993"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID	    	 = "FRANKETAL1994"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID             = "FRANKETAL1993"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+  OBJECT                         = DATA_SET_REFERENCE_INFORMATION
+    REFERENCE_KEY_ID             = "FRANKETAL1994"
+  END_OBJECT                     = DATA_SET_REFERENCE_INFORMATION
+
+END_OBJECT                     = DATA_SET
+END

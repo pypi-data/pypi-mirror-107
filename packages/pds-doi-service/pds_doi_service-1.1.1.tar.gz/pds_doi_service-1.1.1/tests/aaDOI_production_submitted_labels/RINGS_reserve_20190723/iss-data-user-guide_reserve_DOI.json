@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:cassini_iss_saturn:document:iss-data-user-guide",
+        "title": "Cassini Imaging Science Subsystem (ISS) Data User's Guide",
+        "authors": [
+            {
+                "first_name": "Benjamin",
+                "last_name": "Knowles"
+            }
+        ],
+        "publication_date": "2019-09-15",
+        "product_type": "Dataset",
+        "product_type_specific": "PDS4 Document Product",
+        "status": "Reserved"
+    }
+]

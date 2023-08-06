@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+     schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model
+href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1B00_1840.sch"
+         schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Document 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:insight="http://pds.nasa.gov/pds4/mission/insight/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd
+    http://pds.nasa.gov/pds4/mission/insight/v1
+    https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1B00_1840.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:insight-ifg-mars:document:insight-ifg-data-calibration-description</logical_identifier>
+        <version_id>2.0</version_id>
+        <title>InSight IFG Data Calibration Description</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Document</product_class>
+        <Citation_Information>
+            <author_list>Joy, S. P.; Rowe, K.</author_list>
+            <publication_year>2019</publication_year>
+            <doi></doi>
+            <description>
+            	  This document describes the ground and in-flight calibration of the
+            	  InSight IFG magnetic field data set. In addition, this document
+            	  describes many of the types of artifacts found in the data and
+            	  how they have been documented and/or corrected.
+            </description>
+        </Citation_Information>
+        <Modification_History>
+        	  <Modification_Detail>
+                <modification_date>2020-06-16</modification_date>
+                <version_id>1.1</version_id>
+                <description>Updated to include descriptions of calibrated data versions 2 and 3</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-06-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Investigation_Area>
+            <name>InSight</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.insight</lid_reference>
+                <reference_type>document_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>InSight</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>InSight Fluxgate Magnetometer</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:apss-ifg.insight</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>document_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>  
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:insight-ifg-mars:document:insight-ifg-sis</lid_reference>
+            <reference_type>document_to_associate</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Document>
+        <revision_id>2.0</revision_id>
+        <document_name>InSight IFG Data Calibration Description</document_name>
+        <doi></doi>
+        <author_list>Joy, S. P.; Rowe, K.</author_list>
+        <publication_date>2020-06-16</publication_date>
+        <document_editions>1</document_editions>
+        <Document_Edition>
+            <edition_name>InSight IFG Data Calibration Description, PDF Edition</edition_name>
+            <language>English</language>
+            <files>1</files>
+            <Document_File>
+                <file_name>InSight_IFG_Data_Calibration.pdf</file_name>
+                <creation_date_time>2020-06-16T09:43:55</creation_date_time>
+                <file_size unit="byte">3893554</file_size>
+                <md5_checksum>5e9bc1b10978b5f1ee991623a8906d41</md5_checksum>
+                <document_standard_id>PDF/A</document_standard_id>
+            </Document_File>
+        </Document_Edition>
+    </Document>
+</Product_Document>

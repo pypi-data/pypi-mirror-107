@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VG2 URA LECP RESAMPLED SUMMARY SCAN AVERAGED 15MIN V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VG2-U-LECP-4-SUMM-AVERAGE-15MIN-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1993-02-01</publication_date>
+            <country>USA</country>
+            <description>This browse data consists of resampled data from the Low Energy
+                Charged Particle (LECP) experiment on Voyager 2 while the
+                spacecraft was in the vicinity of Uranus. This instrument
+                measures the intensities of in-situ charged particles (&gt;26 keV
+                electrons and &gt;30 keV ions) with various levels of
+                discrimination based on energy, mass species, and angular arrival
+                direction. A subset of almost 100 LECP channels are included with
+                this data set. The LECP data are globally calibrated to the
+                extent possible (see below) and they are time averaged to about
+                15 minute time intervals with the exact beginning and ending
+                times for those intervals matching the LECP instrumental cycle
+                periods (the angular scanning periods). The LECP instrument has a
+                rotating head for obtaining angular anisotropy measurements of
+                the medium energy charged particles that it measures. The cycle
+                time for the rotation if variable, but during encounters it is
+                always faster than 15 minutes. For this browse data set only scan
+                average data is given (no angular information). The data is in
+                the form of 'rate' data which has not been converted to
+                the usual physical units. The reason is that such a conversion
+                would depend on uncertain determinations such as the mass species
+                of the particles and the level of background. Both mass species
+                and background are generally determined from context during the
+                study of particular regions. To convert 'rate' to
+                'intensity' for a particular channel one performs the
+                following tasks: 1) decide on the level of background
+                contamination and subtract that off the given rate level.
+                Background is to be determined from context and from making use
+                of sector 8 rates (sector 8 has a 2 MM al shield covering it). 2)
+                divide the background corrected rate by the channel geometric
+                factor and by the energy bandpass of the channel. The geometric
+                factor is found in entry 'CHANNEL_GEOMETRIC_FACTOR' as
+                associated with each channel 'CHANNEL_ID'. To determine
+                the energy bandpass, one must judge the mass species of the of
+                the detected particles (for ions but not for electrons). The
+                energy band passes are given in entries
+                'MINIMUM_INSTRUMENT_PARAMETER' and
+                'MAXIMUM_INSTRUMENT_PARAMETER' in table
+                'FPLECPENERGY', and are given in the form
+                'ENERGY/NUCLEON'. For channels that begin their names
+                with the designations 'CH' these bandpasses can be used
+                on mass species that are accepted into that channel (see entries
+                'MINIMUM_INSTRUMENT_PARAMETER' and
+                'MAXIMUM_INSTRUMENT_ PARAMETER' in table
+                'FPLECPCHANZ', which give the minimum and maximum
+                'Z' value accepted -- these entries are blank for
+                electron channels). For other channels the given bandpass refers
+                only to the lowest 'Z' value accepted. The bandpasses
+                for other 'Z' values are not all known, but some are
+                given in the literature (e.g. Krimigis et al., 1979). The final
+                product of these instructions will be the particle intensity with
+                the units: counts/(cm**2.str.sec.keV). Some channels are subject
+                to serious contaminations, and many of these contaminations
+                cannot be removed except with a region-by-region analysis, which
+                has not been done for this data. Thus, to use this data it is
+                absolutely vital that the contamination types
+                ('CONTAMINATION_ID' , 'CONTAMINATION_DESC')
+                and the levels of contamination ('DATA_QUALITY_ID'
+                corresponding to the definitions 'DATA_QUALITY_DESC')
+                be carefully examined for all regions of study. A dead time
+                correction procedure has been applied in an attempt to correct
+                the linear effects of detector overdrive (Pulse-Pileup). This
+                procedure does not fix severely overdriven detectors. A procedure
+                is available for correcting Voyager 2 LECP electron contamination
+                of low energy ion channels, but its effectiveness has been
+                evaluated only for the Uranus data set. Thus, corrections have
+            been applied only to the Uranus data set.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-LECP-4-SUMM-AVERAGE-15MIN-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VOYAGER 2; URANUS; ENERGETIC PARTICLE DETECTOR; VG2; PLANET; LECP; LOW ENERGY CHARGED PARTICLE</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>BARRY H. MAUK</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Planetary Plasma Interactions Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vg2-u-lecp-4-summ-average-15min-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

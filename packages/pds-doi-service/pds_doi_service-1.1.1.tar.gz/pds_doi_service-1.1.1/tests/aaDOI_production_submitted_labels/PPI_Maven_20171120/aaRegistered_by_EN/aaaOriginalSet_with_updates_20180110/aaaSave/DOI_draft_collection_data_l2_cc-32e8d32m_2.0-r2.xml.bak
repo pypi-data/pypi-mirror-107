@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <record>
+        <title>MAVEN SupraThermal And Thermal Ion Composition (STATIC) Calibrated Energy Flux: 32 Energy X 8 Solid Angle X 32 Mass Bins Data Collection</title>
+        <creators>Jim McFadden</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>05/16/2016</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Amaven.static.c%3Adata.cc_32e8d32m&amp;version=2.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+            <!-- Product Numbers
+                   - choose to insert LID here
+            -->     
+        <product_nos>urn:nasa:pds:maven.static.c:data.cc_32e8d32m::2.0</product_nos>
+            
+        <description> 
+            This collection contains files with time-ordered fully calibrated differential energy 
+            flux in 32 energy bin x 8 solid angle bin (8 deflection angles and summed over anodes, 
+            but assumed that counts are from anode 7 in the ram direction) x 32 mass bin arrays. 
+            Data are derived from APID cc.
+        </description>
+        <keywords>
+            PDS; PDS4; Mars; Maven; Mars Atmosphere and Volatile Evolution; 
+            Supra-Thermal and Thermal Ion Composition Instrument; STATIC; 
+            Calibrated 
+        </keywords>
+        
+        <related_resource></related_resource>
+        <contributor_organizations></contributor_organizations>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos></contract_nos>
+        <other_identifying_nos></other_identifying_nos>
+        <file_extension></file_extension>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>
+

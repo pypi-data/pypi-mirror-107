@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/cassini/v1/PDS4_CASSINI_1B00_1200.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection
+	xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:cassini="http://pds.nasa.gov/pds4/mission/cassini/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://pds.nasa.gov/pds4/pds/v1
+		https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+		http://pds.nasa.gov/pds4/mission/cassini/v1
+		https://pds.nasa.gov/pds4/mission/cassini/v1/PDS4_CASSINI_1B00_1200.xsd">
+	<Identification_Area>
+		<logical_identifier>urn:nasa:pds:cassini-rpws-electron_density:data</logical_identifier>
+		<version_id>1.0</version_id>
+		<title>Cassini RPWS Electron Densities from Upper Hybrid and Plasma Wave Frequencies</title>
+		<information_model_version>1.13.0.0</information_model_version>
+		<product_class>Product_Collection</product_class>
+		<Citation_Information>
+			<author_list>Persoon, A.M.; Groene, J.B.; West, E.E.; Kurth, W.S.; Wahlund, J.-E.; Gurnett, D.A.</author_list>
+			<publication_year>2019</publication_year>
+			<keyword>Cassini</keyword>
+			<keyword>electron density</keyword>
+			<keyword>plasma wave</keyword>
+			<keyword>Saturn</keyword>
+			<keyword>Jupiter</keyword>
+			<keyword>Earth</keyword>
+			<description>
+				This collection provides electron number density values derived from features observed in plasma wave data obtained by the Cassini Radio and Plasma Wave Science (RPWS) instruments, along with observed or derived characteristic frequencies, and useful positional parameters for the spacecraft and related bodies.  When present, frequency values of narrowband emissions at the upper hybrid resonance were digitized and combined with measured or model magnetic field to derive electron number density.  At other times, features such as the upper cutoff in auroral hiss or electron plasma oscillations were used to determine the plasma frequency and electron density.
+			</description>
+		</Citation_Information>
+		<Modification_History>
+			<Modification_Detail>
+				<modification_date>2020-01-26</modification_date>
+				<version_id>1.0</version_id>
+				<description>Initial version</description>
+			</Modification_Detail>
+		</Modification_History>
+	</Identification_Area>
+
+	<Context_Area>
+		<Time_Coordinates>
+			<start_date_time>1999-08-18T02:36:40Z</start_date_time>
+			<stop_date_time>2017-09-15T10:31:34Z</stop_date_time>
+		</Time_Coordinates>
+		<Primary_Result_Summary>
+			<purpose>Science</purpose>
+			<processing_level>Derived</processing_level>
+			<description>
+				The primary result of this archive is the local plasma electron number density derived by tracing features in frequency-time spectrograms.  Other characteristic plasma frequencies, magnetic field values, and trajectory coordinates are also included.
+			</description>
+			<Science_Facets>
+				<domain>Magnetosphere</domain>
+				<domain>Ionosphere</domain>
+				<discipline_name>Particles</discipline_name>
+				<facet1>Electrons</facet1>
+				<facet2>Plasma</facet2>
+			</Science_Facets>
+		</Primary_Result_Summary>
+		<Investigation_Area>
+			<name>CASSINI-HUYGENS</name>
+			<type>Mission</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:investigation:mission.cassini-huygens</lid_reference>
+				<reference_type>collection_to_investigation</reference_type>
+			</Internal_Reference>
+		</Investigation_Area>
+		<Observing_System>
+			<name>Cassini RPWS</name>
+			<Observing_System_Component>
+				<name>CASSINI ORBITER</name>
+				<type>Spacecraft</type>
+				<Internal_Reference>
+					<lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co</lid_reference>
+					<reference_type>is_instrument_host</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+			<Observing_System_Component>
+				<name>RADIO AND PLASMA WAVE SCIENCE for CO</name>
+				<type>Instrument</type>
+				<Internal_Reference>
+					<lid_reference>urn:nasa:pds:context:instrument:rpws.co</lid_reference>
+					<reference_type>is_instrument</reference_type>
+				</Internal_Reference>
+			</Observing_System_Component>
+		</Observing_System>
+		<Target_Identification>
+			<name>Saturn</name>
+			<type>Planet</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:planet.saturn</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		<Target_Identification>
+			<name>Enceladus</name>
+			<type>Satellite</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:satellite.saturn.enceladus</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		<Target_Identification>
+			<name>Jupiter</name>
+			<type>Planet</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		<Target_Identification>
+			<name>Earth</name>
+			<type>Planet</type>
+			<Internal_Reference>
+				<lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+				<reference_type>data_to_target</reference_type>
+			</Internal_Reference>
+		</Target_Identification>
+		<Mission_Area>
+			<cassini:Cassini>
+				<cassini:PPI_Specific_Attributes>
+					<cassini:mission_phase_name>Interplanetary Cruise</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Outer Cruise</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Quiet Cruise</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Science Cruise</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Tour Pre-Huygens</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Tour</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Equinox Mission</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Solstice Mission</cassini:mission_phase_name>
+					<cassini:mission_phase_name>Proximal Orbits</cassini:mission_phase_name>
+				</cassini:PPI_Specific_Attributes>
+			</cassini:Cassini>
+		</Mission_Area>
+	</Context_Area>
+
+	<Reference_List>
+		<External_Reference>
+			<doi>10.1029/2005GL024294</doi>
+			<reference_text>A. M. Persoon, D. A. Gurnett, W. S. Kurth, G. B. Hospodarsky, J. B. Groene, P. Canu, and M. K. Dougherty, Equatorial Electron Density Measurements in Saturn's Inner Magnetosphere, Geophys. Res. Lett., 32, L23105, doi:10.1029/2005GL024294, Dec. 2005.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<reference_text>A. M. Persoon, D. A. Gurnett, W. S. Kurth, G. B. Hospodarsky, J. B. Groene, P. Canu, and M. K. Dougherty, An Electron Density Model for Saturn's Inner Magnetosphere, in Planetary Radio Emissions VI, edited by H. O. Rucker, W. S. Kurth, and G. Mann, Austrian Academy of Sciences Press, Vienna, 81-91, July 2006.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<doi>10.1029/2006GL027090</doi>
+			<reference_text>A. M. Persoon, D. A. Gurnett, W. S. Kurth, and J. B. Groene, A Simple Scale Height Model of the Electron Density in Saturn's Plasma Disk, Geophys. Res. Lett., 33, L18106, doi:10.1029/2006GL027090, Sep. 2006.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<doi>10.1029/2008JA013192</doi>
+			<reference_text>A. Persoon, D. A. Gurnett, O. Santolik, W. S. Kurth, J. B. Faden, J. B. Groene, G. R. Lewis, A. J. Coates, R. J. Wilson, R. L. Tokar, J.-E. Wahlund, and M. Moncuquet, A Diffusive Equilibrium Model for the Plasma Density in Saturn's Magnetosphere, J. Geophys. Res., 114, A04211, doi:10.1029/2008JA013192, Apr. 28, 2009.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<reference_text>A. M. Persoon, D. A. Gurnett, J. S. Leisner, M. Morooka, J.-E. Wahlund, J. B. Groene, W. S. Kurth, and G. B. Hospodarsky, The Location of the High-Density Boundary in Saturn's Inner Magnetosphere (extended abstract), Planetary Radio Emissions VII, eds. H.O. Rucker, W.S. Kurth, P. Louarn, G. Fischer, Austrian Academy of Sciences, Vienna, Austria, pp. 129-132, Oct. 2011.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<doi>10.1002/jgra.50182</doi>
+			<reference_text>A. M. Persoon, D. A. Gurnett, J. S. Leisner, W. S. Kurth. J. B. Groene, and J. B. Faden, The Plasma Density Distribution in the Inner Region of Saturn's Magnetosphere, J. Geophys. Res., 118, 1-5, doi:10.1002/jgra.50182, June 6, 2013.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<doi>10.1002/2015JA021180</doi>
+			<reference_text>A. M. Persoon, D. A. Gurnett, W. S. Kurth, J. B. Groene, Evidence for a Seasonally Dependent Ring Plasma in the Region Between Saturn's A Ring and Enceladus, J. Geophys. Res., 120, 6276-6285, doi:10.1002/2015JA021180, Aug. 17, 2015.</reference_text>
+		</External_Reference>
+		<External_Reference>
+			<doi>10.1029/2018GL078020</doi>
+			<reference_text>A. M. Persoon, W. S. Kurth, D. A. Gurnett, J. B. Groene, A. Sulaiman, J.-E. Wahlund, M. W. Morooka, L. Z. Hadid, A. F. Nagy, J. H. Waite, and T. E. Cravens, Electron Density Distributions in Saturn's Ionosphere, Geophys. Res. Lett., 46, 3061-3068, https://doi.org/10.1029/2018GL078020, Mar. 25, 2019</reference_text>
+		</External_Reference>
+		<Source_Product_Internal>
+			<lidvid_reference>
+				urn:nasa:pds:co-rpws-calibrated-lowrate:data::1.0
+			</lidvid_reference>
+			<reference_type>data_to_derived_source_product</reference_type>
+		</Source_Product_Internal>
+	</Reference_List>
+
+	<Collection>
+		<collection_type>Data</collection_type>
+	</Collection>
+
+	<File_Area_Inventory>
+		<File>
+			<file_name>collection_data.csv</file_name>
+			<creation_date_time>2020-01-26T22:04:29</creation_date_time>
+			<file_size unit="byte">26950</file_size>
+			<md5_checksum>205412837a0e42b24bdedea6cbb2347d</md5_checksum>
+		</File>
+		<Inventory>
+			<offset unit="byte">0</offset>
+			<parsing_standard_id>PDS DSV 1</parsing_standard_id>
+			<records>350</records>
+			<record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+			<field_delimiter>Comma</field_delimiter>
+			<Record_Delimited>
+				<fields>2</fields>
+				<groups>0</groups>
+				<Field_Delimited>
+					<name>Member Status</name>
+					<field_number>1</field_number>
+					<data_type>ASCII_String</data_type>
+					<maximum_field_length unit="byte">1</maximum_field_length>
+					<description>
+						P indicates primary member of the collection
+						S indicates secondary member of the collection
+					</description>
+				</Field_Delimited>
+				<Field_Delimited>
+					<name>LIDVID_LID</name>
+					<field_number>2</field_number>
+					<data_type>ASCII_LIDVID_LID</data_type>
+					<maximum_field_length unit="byte">255</maximum_field_length>
+					<description>
+						The LID or LIDVID of a product that is a member
+						of the collection.
+					</description>
+				</Field_Delimited>
+			</Record_Delimited>
+			<reference_type>inventory_has_member_product</reference_type>
+		</Inventory>
+	</File_Area_Inventory>
+
+</Product_Collection>

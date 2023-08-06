@@ -1,0 +1,161 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+J. MAFI (PPI), 1998-05-18;                                                    
+Additional Keywords added by D. Kazden, 2009-09-15;                           
+Z's removed from time by D. Kazden 2010-05-05;                                
+Updated CITATION_DESC and ABSTRACT_DESC, D. Kazden, 2020-02-12;"              
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "ULY-J-COSPIN-HET-3-RDR-FLUX-HIRES-V1.0" 
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "ULY JUP COSPIN HIGH ENERGY TELESCOPE    
+                                        HIGH RES. PARTICLE FLUX"              
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1992-01-25T00:00:00.864                  
+    STOP_TIME                      = 1992-02-14T23:59:57.411                  
+    DATA_SET_RELEASE_DATE          = 1998-05-01                               
+    PRODUCER_FULL_NAME             = "JOHN A. SIMPSON"                        
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    DATA_OBJECT_TYPE               = "TIME SERIES"                            
+    DATA_SET_TERSE_DESC            = "ULY JUP COSPIN HIGH ENERGY TELESCOPE    
+                                       HIGH RES. PARTICLE FLUX "              
+    CITATION_DESC    = "Simpson, J.A., ULY-J-COSPIN-HET-3-RDR-FLUX-HIRES-V1.0,
+                 ULY JUP COSPIN HIGH ENERGY TELESCOPE HIGH RES. PARTICLE FLUX,
+                        NASA Planetary Data System, 1998."                    
+    ABSTRACT_DESC                  = "ULY JUP COSPIN HIGH ENERGY TELESCOPE    
+                                       HIGH RES. PARTICLE FLUX "              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data                                                                    
+      ====                                                                    
+                                                                              
+      HET data record format                                                  
+      ----------------------                                                  
+                                                                              
+      Column   1:   Date/time in format yyyy-mm-ddThh:mm:ss.sssZ              
+      Column   2:   Accumulation time (second) for H1-H9                      
+      Column   3:   H1 counting rate (c/s)                                    
+      Column   4:   H2 counting rate (c/s)                                    
+      Column   5:   H3 counting rate (c/s)                                    
+      Column   6:   H4 counting rate (c/s)                                    
+      Column   7:   H5 counting rate (c/s)                                    
+      Column   8:   H6 counting rate (c/s)                                    
+      Column   9:   H7 counting rate (c/s)                                    
+      Column  10:   H8 counting rate (c/s)                                    
+      Column  11:   H9 counting rate (c/s)                                    
+                                                                              
+      [please note that time-stamp and record format have been                
+       changed by the PDS/PPI Node for the sake of consistency with           
+       other data sets found on this volume]                                  
+                                                                              
+      A caveat is that during most of the Jupiter flyby, the counting         
+      rate logic was swamped by the extremely high intensity of               
+      electrons contained in the magnetosphere.  As a result, we              
+      believe that the most reliable interpretation of the counting           
+      rates is that they become effectively measures of the integral          
+      intensity above the minimum energy required for an electron to          
+      penetrate to the most deeply buried detector required by the            
+      counting rate logic.  For example, the H4 counting rate, which          
+      is nominally defined by the coincidence D1 D2 D4 K1 N[K4 A S            
+      (H)] becomes the integral intensity of all electrons with               
+      sufficient energy to reach K1, which, by the table below, based         
+      on the Berger and Seltzer tables and the thicknesses of the             
+      D1-D6 detectors, is ~2.7 MeV.                                           
+                                                                              
+      The minimum electron energies required to trigger the counting          
+      rates, based simply on energy required to penetrate to the              
+      deepest detector and trigger its discriminator are as follows.          
+      For detectors beyond the midpoint of the telescope, we have             
+      assumed that there is sufficient material (instrument and               
+      spacecraft) behind the telescope that the easiest access to             
+      the detector is still through the front of the telescope. This          
+      may not be a good assumption.                                           
+                                                                              
+        H1   ~0.5 MeV                                                         
+        H2   ~2.6 MeV  (higher level discriminators on D1 and D2              
+        H3   ~1.5 MeV                         required)                       
+        H4   ~2.7 MeV                                                         
+        H5   ~8.9 MeV                                                         
+        H6   ~1.2 MeV                                                         
+        H7   ~2.7 MeV                                                         
+        H8   ~1.5 MeV                                                         
+        H9   ~16 MeV                                                          
+                                                                              
+      The detailed coincidence logic defining these counting rates            
+      is given in [SIMPSONETAL1992A]. As indicated by the ~, these            
+      energies are very approximate.  Our assumption is that                  
+      essentially all the counting rates, even those such as H2               
+      designed to discriminate against electrons, were dominated by           
+      electrons inside the magnetosphere.                                     
+                                                                              
+      One additional word of explanation is required.  In an                  
+      ill-advised attempt to configure the HET to a mode to minimize          
+      the effects of the expected high counting rates on our slow             
+      logic, from approximately 1206 UT day 32 until approximately            
+      0018 UT day 34, the HET S detector High Voltage was turned off,         
+      effectively turning off S, and the D1 detector was replaced by          
+      D3 in the counting rate logic.  (Commands C1 and C9 as                  
+      described in Table 8 of [SIMPSONETAL1992A].) The intent was to          
+      remove from the logic those detectors expected to be in near-           
+      saturation throughout the flyby, and thus to make the counting          
+      rates more interpretable.  The change was effected before               
+      crossing the bowshock and magnetopause in order to establish a          
+      base-line in the new configuration prior to encountering the            
+      expected high fluxes in the magnetosphere.  The actual effect           
+      turned out to be to increase the background in most of the              
+      counting rates to such a high level that features such as up-           
+      stream particles escaping from the magnetosphere were                   
+      completely obscured.  After about a day and a half in this              
+      mode, it was decided to return to normal mode, and we remained          
+      in normal mode for the remainder of the flyby."                         
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+      Confidence Level Overview                                               
+      =========================                                               
+      Some confidence level information provided in Data Set                  
+      Overview. For more information regarding the confidence                 
+      level of this data set please contact:                                  
+        JOHN A. SIMPSON                                                       
+        Laboratory for Astrophysics and Space Research                        
+        University of Chicago                                                 
+        933 East 56th Street                                                  
+        Chicago, IL 60637                                                     
+        USA                                                                   
+        Phone:    1-312-702-7670   Fax: 1-312-702-6645                        
+        Internet: simpson@odysseus.uchicago.edu"                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = ULY                                      
+    INSTRUMENT_ID                  = "COSPIN-HET"                             
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "ULYSSES"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "MCKIBBENETAL1993"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SIMPSONETAL1992A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SIMPSONETAL1992B"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SIMPSONETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "ZHANGETAL1993"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

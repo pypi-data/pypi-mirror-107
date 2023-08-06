@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record status="Reserved"> 
+      	<!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+      	<id/>
+    	
+        <title>Uranus System Occultation of Star u36 (UCAC4 133-156970) Observed from the Maunakea UKIRT 380cm Telescope</title> 
+        <authors> 
+            <author> 
+               <first_name>Richard G.</first_name> 
+               <last_name>French</last_name> 
+            </author> 
+        </authors> 
+        <contributors>        
+            <contributor>
+                <full_name>Ring-Moon Systems Node</full_name>
+                <contributor_type>DataCurator</contributor_type>
+                <affiliations/>
+            </contributor>
+        </contributors>        
+        <publication_date>2020-08-01</publication_date> 
+        <product_type>Collection</product_type> 
+        <product_type_specific>PDS4 Bundle</product_type_specific>
+        <related_identifiers>
+            <related_identifier>
+                <identifier_type>URL</identifier_type>
+                <identifier_value>urn:nasa:pds:uranus_occ_u36_maunakea_380cm::1.0</identifier_value>
+                <relation_type>Cites</relation_type>
+            </related_identifier>
+        </related_identifiers>        
+    </record>
+</records>

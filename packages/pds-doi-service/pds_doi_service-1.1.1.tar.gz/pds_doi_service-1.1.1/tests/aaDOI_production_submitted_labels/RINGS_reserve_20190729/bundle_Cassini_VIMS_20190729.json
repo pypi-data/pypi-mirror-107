@@ -1,0 +1,16 @@
+[
+    {
+        "accession_number": "urn:nasa:pds:cassini_vims_cruise",
+        "title": "Cassini VIMS Observations from Launch to Entry in the Saturn System, including the Jupiter Encounter",
+        "authors": [
+            {
+                "first_name": "R. H.",
+                "last_name": "Brown"
+            }
+        ],
+        "publication_date": "2019-09-15",
+        "product_type": "Collection",
+        "product_type_specific": "PDS4 Bundle Product",
+        "status": "Reserved"
+    }
+]

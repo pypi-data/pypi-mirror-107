@@ -1,0 +1,152 @@
+PDS_VERSION_ID                    = PDS3                                       
+LABEL_REVISION_NOTE              = "S. JOY, 2000-07-25;                       
+                                    M. SHARLOW, added ODL keywords,           
+                                    2003-08-29;                               
+                                    PPI, Removed Z's from Time,               
+                                    2010-04-28;                               
+                                    D. KAZDEN, Updated DATA_SET_RELEASE_DATE  
+                                    and CITATION_DESC;"                       
+RECORD_TYPE                      = STREAM                                     
+OBJECT                           = DATA_SET                                   
+  DATA_SET_ID                      = "LP-L-6-TRAJECTORY-V1.0"                 
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                    = "LP MOON SPACECRAFT TRAJECTORY V1.0"   
+    START_TIME                       = 1998-01-16T00:00:00                    
+    STOP_TIME                        = 1999-07-31T10:10:00                    
+    DATA_OBJECT_TYPE                 = "TABLE"                                
+    DATA_SET_RELEASE_DATE            = 2000-07-25                             
+    PRODUCER_FULL_NAME               = "STEVEN P. JOY"                        
+    DETAILED_CATALOG_FLAG            = "N"                                    
+    DATA_SET_COLLECTION_MEMBER_FLG   = "N"                                    
+    DATA_SET_TERSE_DESC              = "Trajectory data for the Lunar         
+Prospector spacecraft in Selenographic, SSE, GSE, and GSM coordinates.        
+Dataset covers dates 1998-01-16 to 1999-07-29."                               
+CITATION_DESC                        = "Joy, S.P., LP-L-6-TRAJECTORY-V1.0,    
+                                        LP MOON SPACECRAFT TRAJECTORY V1.0,   
+                                        NASA Planetary Data System, 2000."    
+ABSTRACT_DESC                        = "Trajectory data for the Lunar         
+Prospector spacecraft in Selenographic, SSE, GSE, and GSM coordinates.        
+Dataset covers dates 1998-01-16 to 1999-07-29."                               
+                                                                              
+    DATA_SET_DESC                    = "                                      
+                                                                              
+  Data Set Overview                                                           
+  =================                                                           
+                                                                              
+    The Lunar Prospector spacecraft trajectory data set consists of           
+    spacecraft position determinations in numerous coordinate systems         
+    at one minute intervals. The data set also contains the spacecraft        
+    velocity as a function of time.  This data set is derived by using        
+    the spacecraft position data set from the Lunar Prospector level          
+    zero data archive (LP-L-6-POSITION-V1.0). The SPICE SPK kernel            
+    LP_EPHEM.TSP that is included on the archive volume provides              
+    ephemeris data for the Sun, Earth, and Moon. These data are combined      
+    with the Lunar Prospector location relative to the Moon in order          
+    to generate trajectory data that will facilitate the analysis of          
+    both the magnetometer and the electron reflectometer data sets.           
+                                                                              
+    Each file in the spacecraft trajectory data set covers one month of       
+    time.                                                                     
+                                                                              
+  Science Objectives                                                          
+  ==================                                                          
+                                                                              
+    The Lunar Prospector science objectives relevant to this data set are     
+    to map the Moon's surface composition and its magnetic field, and to      
+    determine the frequency and location of gas release events.  A            
+    special emphasis of the science objectives is to search for polar         
+    water ice deposits [BINDERETAL1998].  The spacecraft position data        
+    are used to locate where on the Moon science data were acquired.          
+                                                                              
+  Coordinate Systems                                                          
+  ==================                                                          
+                                                                              
+    Selenographic: These data are a repeat of the values generated by         
+    the Goddard Flight Dynamics Analysis Branch for the level zero data.      
+    The selenographic coordinate system provided is an east longitude         
+    system where the prime meridian is defined in [DAVIESETAL1994]. A         
+    negligible amount of flattening (1x10**-30) is used for the Moon.         
+    Thus, selenographic latitude is nearly equal to selenocentric             
+    latitude with almost no error.  The mean radius and GM of the Moon        
+    used to generate this data set are 1738 km and 4902.8014 km**3/s**2,      
+    respectively. Both spherical (SG) and Cartesian (SEL) representations     
+    of the selenographic coordinate system are provided. In the Cartesian     
+    representation, the Z-axis is aligned with the lunar spin axis,           
+    positive in the direction of angular momentum. The X-axis lies in         
+    the equatorial plane and points in the direction of the prime             
+    meridian. Y completes the right-handed set.                               
+                                                                              
+    Selenocentric Solar Ecliptic (SSE): The SSE coordinate system has         
+    its X-axis along the instantaneous Moon-Sun line, positive towards        
+    the Sun. The Z-axis is parallel to the upward normal to the Earth's       
+    ecliptic plane, and Y completes the right-handed set. Distances are       
+    measured from the lunar center of mass and are reported in units          
+    of kilometers.                                                            
+                                                                              
+    Geocentric Solar Ecliptic (GSE): The GSE coordinate system has            
+    its X-axis along the instantaneous Earth-Sun line, positive towards       
+    the Sun. The Z-axis is parallel to the upward normal to the Earth's       
+    ecliptic plane, and Y completes the right-handed set. Distances are       
+    measured from the Earth center of mass and are reported in units          
+    of Earth radii where 1 Re = 6372 km.                                      
+                                                                              
+    Geocentric Solar Magnetospheric (GSM): The GSM coordinate system has      
+    its X-axis along the instantaneous Earth-Sun line, positive towards       
+    the Sun (same as GSE X-axis!). The X-Z plane is defined to contain        
+    the the Earth's dipole (passes through 78.565 deg North, 69.761 deg       
+    West). Y completes the right-handed set. Distances are measured from      
+    the Earth center of mass and are reported in units of Earth radii         
+    where 1 Re = 6372 km.                                                     
+                                                                              
+    Definitions of the GSE and GSM coordinate systems come from               
+    [RUSSELL1971]. The Earth's dipole location used in the GSM coordinate     
+    system definition is based on the 1970 IGRF model as stated in that       
+    reference."                                                               
+                                                                              
+                                                                              
+ CONFIDENCE_LEVEL_NOTE           = "                                          
+                                                                              
+  Confidence Level Overview                                                   
+  =========================                                                   
+                                                                              
+    Error bars are not provided with the original spacecraft position         
+    data set. All values in this data set are reported to the nearest         
+    kilometer. The actual error bars are probably larger than 1 km and        
+    different in the 'along track', cross-track', and 'altitude'              
+    directions.                                                               
+                                                                              
+  Data Coverage and Quality                                                   
+  =========================                                                   
+                                                                              
+    Spacecraft position data exist for the entire Lunar Prospector            
+    Primary and Extended Missions."                                           
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                      = MOON                                   
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID               = LP                                     
+    INSTRUMENT_ID                    = ENG                                    
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                     = "LUNAR PROSPECTOR"                     
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID                 = "BINDERETAL1998"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID                 = "DAVIESETAL1994"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID                 = "RUSSELL1971"                          
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                        = DATA_SET                                  
+END

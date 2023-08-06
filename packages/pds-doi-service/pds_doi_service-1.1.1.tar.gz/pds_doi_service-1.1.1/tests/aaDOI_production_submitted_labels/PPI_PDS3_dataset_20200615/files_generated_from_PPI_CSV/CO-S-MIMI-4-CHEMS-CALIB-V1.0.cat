@@ -1,0 +1,367 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                       
+   2013-01-27, M. Kusterer - initial version;                                
+   2013-02-05, M. Kusterer - peer review updates;                            
+   2015-12-11, D. Kazden - removed ARCHIVE_STATUS keyword;                   
+   2018-07-01, D. Kazden - updated STOP_TIME and DATA_SET_RELEASE_DATE;      
+   2020-03-11, D. Kazden - updated CITATION_DESC;"                           
+                                                                             
+RECORD_TYPE                        = STREAM                                  
+                                                                             
+OBJECT                             = DATA_SET                                
+  DATA_SET_ID                      = "CO-S-MIMI-4-CHEMS-CALIB-V1.0"          
+  OBJECT                           = DATA_SET_INFORMATION                    
+    DATA_SET_NAME                  = "                                       
+      CASSINI S MIMI CHEMS SENSOR CALIBRATED DATA V1.0"                      
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    START_TIME                     = 2004-01-01T00:00                        
+    STOP_TIME                      = 2017-09-17T00:00:00.000                 
+    DATA_SET_RELEASE_DATE          = 2018-07-01                              
+    PRODUCER_FULL_NAME             = "Jon Vandegriff"                        
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_OBJECT_TYPE               = "SPREADSHEET"                           
+                                                                             
+    DATA_SET_TERSE_DESC            = "                                       
+      This data set contains the calibrated Saturn tour data collected by    
+      the CHEMS sensor of the MIMI instrument aboard the Cassini spacecraft  
+      for the Cassini mission. CHEMS stands for CHarge Energy Mass           
+      Spectrometer."                                                         
+                                                                             
+   ABSTRACT_DESC           = "                                               
+      The Cassini Magnetospheric Imaging Instrument(MIMI) Charge Energy Mass 
+      Spectrometer (CHEMS) contains a deflection system and an overall field 
+      of view of 159 x 4 deg. that is comprised of three distinct energetic  
+      particle telescopes each having a field of view of 53 x 4. All         
+      telescopes share the same deflection mechanism, but each has its own   
+      start and stop microchannel plate (MCP) and its own solid-state        
+      detector (SSD). Much of the data returned by CHEMS is separated by     
+      telescope. The deflection plate power supply (DPPS) has 32 different   
+      voltages that can be applied across the deflection plates. For any     
+      single DPPS step, the electrostatic analyzer only transmits incoming   
+      ions within a narrow range of energy per charge (a 3% pass band).      
+                                                                             
+      The CHEMS calibrated data set includes the Pulse Height Analysis (PHA) 
+      data collected during the Saturn tour. CHEMS PHA provides a list of    
+      individually detected particles, with specific detection parameters    
+      for each event, including TOF, energy deposited in the SSD, and        
+      telescope number.                                                      
+                                                                             
+      The energy per charge data for six ion species (H+, He+, H2+, He++,    
+      O++, W+)  are presented in two forms. (The W+ water ion group includes 
+      O+, OH+, H20+ and H30+). One form is a set of tables which are of      
+      variable length and use a comma to separate various fields, and the    
+      other is a PDF file containing the energy per charge spectrograms and  
+      are based on CHEMS PHA data.                                           
+                                                                             
+      The original data has been decommutated and decoded by software at the 
+      Applied Physics Laboratory (APL) and calibrated and further processed  
+      by software at the University of Maryland.                             
+                                                                             
+      This data set should be among the first used by a user of any of the   
+      MIMI CHEMS archive as it will lead one to information required to      
+      search for more detailed or highly specialized features in the         
+      original data."                                                        
+                                                                             
+    CITATION_DESC           = "Vandegriff J., Kusterer M.B., Mafi J.,        
+      CO-S-MIMI-4-CHEMS-CALIB-V1.0, CASSINI S MIMI CHEMS SENSOR CALIBRATED   
+      DATA V1.0, NASA Planetary Data System, 2018."                          
+                                                                             
+    DATA_SET_DESC           = "                                              
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+      The Cassini Magnetospheric Imaging Instrument(MIMI) Charge Energy Mass 
+      Spectrometer (CHEMS) contains a deflection system and an overall field 
+      of view of 159 x 4 deg. that is comprised of three distinct energetic  
+      particle telescopes each having a field of view of 53 deg. x 4 deg.    
+      All telescopes share the same deflection mechanism, but each has its   
+      own start and stop microchannel plate (MCP) and its own solid-state    
+      detector (SSD). Much of the data returned by CHEMS is separated by     
+      telescope. The deflection plate power supply (DPPS) has 32 different   
+      voltages that can be applied across the deflection plates. For any     
+      single DPPS step, the electrostatic analyzer only transmits incoming   
+      ions within a narrow range of energy per charge (a 3% pass band).      
+                                                                             
+      The CHEMS calibrated data set includes the Pulse Height Analysis (PHA) 
+      data collected during the Saturn tour. CHEMS PHA provides a list of    
+      individually detected particles, with specific detection parameters    
+      for each event, including TOF, energy deposited in the SSD, and        
+      telescope number. Telemetry data volume constraints do not allow all   
+      particle events detected by CHEMS to be sent in the MIMI data stream,  
+      so the PHA data need to be carefully normalized, and the procedures    
+      for doing this are described in the section on CHEMS in the MIMI User  
+      Guide [VANDEGRIFFETAL2012].                                            
+                                                                             
+      The energy per charge data for six ion species (H+, He+, H2+, He++,    
+      O++, W+)  are presented in two forms. One form is a set of tables      
+      which are of variable length and use a comma to separate various       
+      fields, and the other is a PDF file containing the energy per charge   
+      spectrograms and are based on CHEMS PHA data.  (The W+ water ion group 
+      includes O+, OH+, H20+ and H30+)                                       
+                                                                             
+      The original data has been decommutated and decoded by software at     
+      the Applied Physics Laboratory (APL) and further processed by software 
+      at the University of Maryland.  The data is provided in an calibrated  
+      form in conjunction with a PDS MIMI calibration volume COMIMI_0000     
+      which provides specific algorithms for the derivation of calibrated    
+      data.                                                                  
+                                                                             
+      This data set should be among the first used by a user of any of the   
+      MIMI CHEMS archive as it will lead one to information required to      
+      search for more detailed or highly specialized features in the         
+      original data.                                                         
+                                                                             
+  Parameters                                                                 
+  ==========                                                                 
+      This data set comprises energy per charge intensities for six ion      
+      species (H+, He+, H2+, He++, O++, W+) for each telescope and the       
+      sum of all the telescopes of the CHEMS detector. (The W+ water ion     
+      group includes O+, OH+, H20+ and H30+). The data consists of 60 minute 
+      averages and cover 20 days per file. Each file includes the            
+      intensities for each of the 32 energy per charge steps.                
+                                                                             
+      The product ID's consist of a prefix followed by a date range.         
+      The prfixes are:                                                       
+    CPHAFLX0_T1_HP    The energy per charge data for H+ for telescope 1      
+    CPHAFLX0_T2_HP    The energy per charge data for H+ for telescope 2      
+    CPHAFLX0_T3_HP    The energy per charge data for H+ for telescope 3      
+    CPHAFLX0_TA_HP    The energy per charge data for H+ for all telescopes   
+    CPHAFLX0_T1_H2P   The energy per charge data for H2+ for telescope 1     
+    CPHAFLX0_T2_H2P   The energy per charge data for H2+ for telescope 2     
+    CPHAFLX0_T3_H2P   The energy per charge data for H2+ for telescope 3     
+    CPHAFLX0_TA_H2P   The energy per charge data for H2+ for all telescopes  
+    CPHAFLX0_T1_HEPP  The energy per charge data for He++ for telescope 1    
+    CPHAFLX0_T2_HEPP  The energy per charge data for He++ for telescope 2    
+    CPHAFLX0_T3_HEPP  The energy per charge data for He++ for telescope 3    
+    CPHAFLX0_TA_HEPP  The energy per charge data for He++ for all telescopes 
+    CPHAFLX0_T1_HEP   The energy per charge data for He+ for telescope 1     
+    CPHAFLX0_T2_HEP   The energy per charge data for He+ for telescope 2     
+    CPHAFLX0_T3_HEP   The energy per charge data for He+ for telescope 3     
+    CPHAFLX0_TA_HEP   The energy per charge data for He+ for all telescopes  
+    CPHAFLX0_T1_OPP   The energy per charge data for O++ for telescope 1     
+    CPHAFLX0_T2_OPP   The energy per charge data for O++ for telescope 2     
+    CPHAFLX0_T3_OPP   The energy per charge data for O++ for telescope 3     
+    CPHAFLX0_TA_OPP   The energy per charge data for O++ for all telescopes  
+    CPHAFLX0_T1_WP    The energy per charge data for W+ for telescope 1      
+    CPHAFLX0_T2_WP    The energy per charge data for W+ for telescope 2      
+    CPHAFLX0_T3_WP    The energy per charge data for W+ for telescope 3      
+    CPHAFLX0_TA_WP    The energy per charge data for W+ for all telescopes   
+                                                                             
+      The standard data product ID's are gropuped by species and are:        
+    CHEMS_PHAFLUXAV_HP                                                       
+    CHEMS_PHAFLUXAV_H2P                                                      
+    CHEMS_PHAFLUXAV_HEPP                                                     
+    CHEMS_PHAFLUXAV_HEP                                                      
+    CHEMS_PHAFLUXAV_OPP                                                      
+    CHEMS_PHAFLUXAV_WP                                                       
+      Each of these logically incorporates four types of products -- one for 
+      each of the three telescopes and one for all telescopes.               
+                                                                             
+      In addition, this data set includes energy per charge spectrograms for 
+      the same six species. Each PDF includes the spectrograms for each of   
+      the three telescopes and their sum.                                    
+                                                                             
+      The standard data product ID's are:                                    
+    MIMI_CHEMS_SPGM_HP    The energy per charge spectrograms for H+          
+    MIMI_CHEMS_SPGM_H2P   The energy per charge spectrograms for H2+         
+    MIMI_CHEMS_SPGM_HEPP  The energy per charge spectrograms for He++        
+    MIMI_CHEMS_SPGM_HEP   The energy per charge spectrograms for He+         
+    MIMI_CHEMS_SPGM_OPP   The energy per charge spectrograms for O++         
+    MIMI_CHEMS_SPGM_WP    The energy per charge spectrograms for W+.         
+                                                                             
+                                                                             
+                                                                             
+  Processing                                                                 
+  ==========                                                                 
+      Data in this data set were processed by the use of a number of         
+      software programs which calibrate, perform the 1 hour averages on the  
+      data, and create the spectrograms.                                     
+                                                                             
+      In the original CHEMS data,  accumulation interval for basic and       
+      species rate counters is one DPPS step, which lasts for one subsector, 
+      where 16 subsectors make a sector, and 16 sectors make one spin.       
+                                                                             
+      When the spacecraft is in staring mode then the MIMI DPU automatically 
+      creates a virtual spin that divides the time collection periods into 16
+      sectors, 16 subsectors, and 16 microsectors and maintains a simple     
+      organizational structure for characterizing the collection of the time 
+      into time segments. When the spacecraft is spinning at a minimally     
+      defined spin rate (adopted by the MIMI DPU) then the MIMI data is      
+      automatically segregated into 16 sectors, 16 subsectors, and 16        
+      microsectors. Note that for CHEMS, there is a 150 millisecond dead time
+      per DPPS step, and this must be subtracted from the subsector duration.
+                                                                             
+      Converting a species count rate in units of counts/sec into a          
+      differential intensity in units of counts/(sec*ster*cm2*keV) requires  
+      knowledge of the geometry factor of the instrument, the energy width   
+      of the channel, the detection efficiency for ions of that species, and 
+      the energy width of the channel expressed as an energy per charge. The 
+      procedures for calibrating CHEMS data are described in the section on  
+      CHEMS in the MIMI User Guide [VANDEGRIFFETAL2012].                     
+                                                                             
+  Data                                                                       
+  ====                                                                       
+      The MIMI CHEMS calibrated data set includes the 24 ASCII CSV tables    
+      (each associated with a Standard Product ID of CHEMS energy per charge 
+      data as a function of time collected from the MIMI CHEMS Detectors and 
+      collated into data sets. Each table contains variable length records   
+      for which the fields are comma delimited.                              
+                                                                             
+   CHEMS Energy Per Charge ASCII data                                        
+   ----------------------------------                                        
+      Fields include:                                                        
+      Start and Stop minutes of hour long average                            
+      Year, and midpoint of the hour-long average interval expressed as a    
+      fractional day of year.                                                
+      Radial_distance which is the position of Cassini at midpoint of the    
+      interval in Saturn radii                                               
+      Latitude of Cassini at midpoint of measurement in Saturn equatorial    
+      frame                                                                  
+      Local_time of Cassini at the midpoint of the measurement given in      
+      hours and in the Saturn equitorial frame.                              
+      Particle intensity and the uncertainty in particle intensity for       
+      each of the 32 energy bands. Units are counts/sec/ster/cm^2/keV.       
+                                                                             
+      This data set comprises energy per charge intensities in separate      
+      files for six ion species (H+, He+, H2+, He++, O++, W+) and for each   
+      telescope and the sum of all the telescopes of the CHEMS detector. The 
+      data consists of 60 minute averages and cover 20 days per file. Each   
+      file includes the intensities for each of the 32 energy per charge     
+      steps.                                                                 
+                                                                             
+   CHEMS Energy Per Charge Spectrograms                                      
+   ------------------------------------                                      
+      This data set comprises six ion species plots in PDF files. There are  
+      4 horizontal panels in the plot. The top panel contains                
+      the average intensity from all three CHEMS telescopes combined (full   
+      4 degrees x 159 degrees FOV).  Each panel below is for an              
+      individual telescope (4 degrees x 53 degrees FOV) (1, 2, and 3         
+      respectively).                                                         
+                                                                             
+      Pixels are 15 percent in                                               
+      energy per charge by 60 minutes and are based on                       
+      CHEMS PHA data.  The bottom axis is time covering a 20 day             
+      interval.  The y-axis is energy per charge (keV/e).  The               
+      color represents the differential intensity for this species, and      
+      the units are particles per (cm^2 sec sr keV/e).  No background has    
+      been subtracted.                                                       
+                                                                             
+                                                                             
+                                                                             
+  Ancillary Data                                                             
+  ==============                                                             
+                                                                             
+                                                                             
+  Coordinate System                                                          
+  =================                                                          
+      The data in this data set are measurements of counts/sec/ster/cm^2/keV 
+      based upon the orientation of the CHEMS instrument (CHEMS Center look  
+      direction). Particle flux effects are then determined by transforming  
+      from a spacecraft centered coordinate system, properly rotated to      
+      account for the appropriate CHEMS telescope direction, into whatever   
+      external coordinate (reference system) is most appropriate.            
+                                                                             
+                                                                             
+  Software                                                                   
+  ========                                                                   
+      There is access on the MIMI web site, to an analysis package currently 
+      being used by the MIMI team to browse, plot and analyze MIMI data that 
+      reads data directly from the PDS and makes available to anyone the     
+      same analysis and visualization capabilities currently used by the     
+      MIMI team. The main benifit of the tools is that they provide an       
+      intuitive way to browse and analyze the data without having to worry   
+      about calibration details or file access and file reading details.     
+                                                                             
+  Media/Format                                                               
+  ============                                                               
+      These data are supplied to the Planetary Data System via electronic    
+      means and are then broken into segments based upon the media currently 
+      prescribed by PDS."                                                    
+                                                                             
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+  Confidence Level Overview                                                  
+  =========================                                                  
+      This data set contains all calibrated data for the CHEMS Detector as   
+      part of the Cassini MIMI instrument for the interval described above.  
+      Every effort has been made to ensure that all data returned to APL     
+      from the spacecraft is included and that the calibrated browse data    
+      products are accurate.                                                 
+                                                                             
+      As of this writing there are no known issues associated with the CHEMS 
+      detector that would limit the usability or reliability of the data.    
+                                                                             
+  Review                                                                     
+  ======                                                                     
+      The MIMI CHEMS data will be reviewed internally by the Cassini MIMI    
+      team prior to release to the PDS. The data set will also be peer       
+      reviewed by the PDS.                                                   
+                                                                             
+                                                                             
+  Data Coverage and Quality                                                  
+  =========================                                                  
+      All data in the stated interval are included, to the best of our       
+      knowledge and attempts to determine completeness.                      
+                                                                             
+   Large Data Gaps:                                                          
+   1.  Post SOI                  2004-187 - 2004-193 - Spacecraft Safing     
+                                              shut off                       
+   2. Tour                       2005-006 - 2005-015 -                       
+   3. Tour                       2007-254 - 2007-258 - Spacecraft Safing     
+                                              shut off                       
+   3. Tour                       2007-279 - 2007-291 - Spacecraft Flight     
+                                              S/W testing shut off           
+   3. Extended Mission           2009-071 - 2009-076 - Spacecraft Thruster   
+                                              branch swap, deactivated S48   
+                                              background sequence.           
+   3. Extended-Extended Mission  2010-306 - 2010-319 - Spacecraft Safing     
+                                              shut off                       
+   3. Extended-Extended Mission  2012-293 - 2012-303 - Spacecraft Propellant 
+                                              Gauging Test shut off.         
+                                                                             
+      On those days for which the instrument did not collect data either due 
+      to the instrument being off or due to communication issues, the data   
+      set will not contain any files.                                        
+                                                                             
+                                                                             
+  Limitations                                                                
+  ===========                                                                
+      As noted above there are no know issues associated with the data from  
+      the INCA detector as of the writing of this catalog."                  
+                                                                             
+                                                                             
+                                                                             
+  END_OBJECT                       = DATA_SET_INFORMATION                    
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "CASSINI-HUYGENS"                       
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                           = DATA_SET_TARGET                         
+    TARGET_NAME                    = "SATURN"                                
+  END_OBJECT                       = DATA_SET_TARGET                         
+                                                                             
+  OBJECT                           = DATA_SET_HOST                           
+    INSTRUMENT_HOST_ID             = CO                                      
+    INSTRUMENT_ID                  = MIMI                                    
+  END_OBJECT                       = DATA_SET_HOST                           
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "VANDEGRIFFETAL2012"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KRIMIGISETAL2004"                      
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "MANWEILERETAL2005"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION          
+    REFERENCE_KEY_ID               = "KUSTERER&BURKE2003"                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION          
+                                                                             
+END_OBJECT                         = DATA_SET                                
+END

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>VO1/VO2 MARS VISUAL IMAGING SS EXPRMNT DATA REC BROWSE V2.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>VO1/VO2-M-VIS-2-EDR-BR-V2.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1990-12-01</publication_date>
+            <country>USA</country>
+            <description>This data set includes sub-sampled versions of Viking Orbiter
+                images that are intended to facilitate rapid viewing of the image
+                collection. The image data in these browse images have been
+                reduced in size by sub-sampling the original image by a factor of
+                4 in both lines and samples. Thus, the data volume has been
+                reduced by a factor of 16. A Viking Orbiter browse image contains
+                264 lines and 300 samples. A filtering procedure was used in
+                generating the browse images because Viking Orbiter images
+                commonly contain noisy data or are missing data. The brightness
+                value of a pixel in a browse image is the median brightness value
+                of an array of 4 by 4 pixels from the original image. If the 4 by
+                4 array of original pixels contained zero values, those zero
+                value pixels were not used in determining the median value. Of
+                course, if the entire 4 by 4 array contained zero value pixels,
+                the corresponding pixel in the browse image was assigned a zero
+            value.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VO1%2FVO2-M-VIS-2-EDR-BR-V2.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>VIKING ORBITER 1; VIKING ORBITER 2; MARS; DEIMOS; PHOBOS; STAR; CAMERA; VO1; VO2; PLANET; SATELLITE; VISA; VISB; VISUAL IMAGING SUBSYSTEM - CAMERA A; VISUAL IMAGING SUBSYSTEM - CAMERA B</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>EDWARD A. GUINNESS</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Imaging Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.vo1-vo2-m-vis-2-edr-br-v2.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

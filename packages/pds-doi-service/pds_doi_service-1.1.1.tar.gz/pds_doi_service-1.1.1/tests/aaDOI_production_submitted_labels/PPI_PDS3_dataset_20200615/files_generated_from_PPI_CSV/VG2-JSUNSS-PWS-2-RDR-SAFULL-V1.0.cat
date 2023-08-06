@@ -1,0 +1,592 @@
+PDS_VERSION_ID           = PDS3                                               
+LABEL_REVISION_NOTE     = "1998-05-18, J. MAFI (PPI),;                       
+                           2001-05-10, L. GRANROTH (PPI);                    
+                           2005-04-04, W. KURTH (PPI);                       
+                           2011-04-25, D. Kazden (PPI) removed Z from        
+                           START_TIME;                                       
+                           2011-11-04, D. Kazden (PPI) updated               
+                           REFERENCE_KEY_IDs;                                
+                           2014-10-14, D. Kazden (PPI) updated STOP_TIME;    
+                           2016-11-13, W. KURTH, C. PIKER (PPI)              
+                           2019-01-23, D. Kazden (PPI) updated STOP_TIME and 
+                           DATA_SET_RELEASE_DATE;                            
+                           2020-04-23, D. Kazden (PPI) updated STOP_TIME,    
+                           DATA_SET_RELEASE_DATE and CITAION_DESC;           
+                           "                                                 
+RECORD_TYPE             = STREAM                                             
+                                                                             
+/* VOYAGER 2 PWS SPECTRUM ANALYZER UNCALIBRATED FULL RESOLUTION */           
+                                                                             
+OBJECT                  = DATA_SET                                           
+  DATA_SET_ID             = "VG2-J/S/U/N/SS-PWS-2-RDR-SAFULL-V1.0"           
+                                                                             
+  OBJECT                  = DATA_SET_INFORMATION                             
+    DATA_SET_NAME                  = "                                       
+      VG2 J/S/U/N/SS PWS EDITED SPECTRUM ANALYZER FULL RES V1.0"             
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                       
+    DATA_OBJECT_TYPE               = TABLE                                   
+    START_TIME                     = 1977-08-20T15:53:34.884                 
+    STOP_TIME                      = 2019-12-23T00:00:00.000                 
+    DATA_SET_RELEASE_DATE          = 2019-12-31                              
+    PRODUCER_FULL_NAME             = "WILLIAM S. KURTH"                      
+    DETAILED_CATALOG_FLAG          = N                                       
+    DATA_SET_TERSE_DESC            = "                                       
+     This comprehensive data set consists of measurments collected from the  
+     spectrum analyzer component of the Plasma Wave Spectrometer (PWS)       
+     onboard Voyager 2 for the entire Voyager mission."                      
+                                                                             
+    ABSTRACT_DESC                  = "                                       
+     This data set includes nearly all measurements collected from the       
+     spectrum analyzer component of the Plasma Wave Spectrometer (PWS)       
+     onboard Voyager 2 for the entire mission.  Some noise lines during the  
+     planetary encounters have been edited from the data set.  Each sweep of 
+     the PWS spectrum analyzer records spectral densities in 16 frequency    
+     channels from 50 Hz to 10 kHz.  The values in this data set are given   
+     as instrument data numbers.  Instructions for producing calibrated      
+     values are provided.  An example C-language program which reads this    
+     data set and produces calibrated values is also provided."              
+                                                                             
+   CITATION_DESC                   = "W.S. Kurth, L.J. Granroth, and         
+      C.W. Piker, VOYAGER 2 J/S/U/N/SS PWS EDITED SPECTRUM ANALYZER FULL     
+      RES V1.0, VG2-J/S/U/N/SS-PWS-2-RDR-SAFULL-V1.0, NASA Planetary Data    
+      System, 2019."                                                         
+    DATA_SET_DESC                  = "                                       
+                                                                             
+  Data Set Overview                                                          
+  =================                                                          
+    This data set consists of electric field spectrum analyzer data          
+    from the Voyager 2 Plasma Wave Subsystem obtained during the             
+    entire mission.  Data after 2019-01-02 will be added to the archive
+    on subsequent volumes.  The data set encompasses all spectrum            
+    analyzer observations obtained in the cruise mission phases              
+    before, between, and after the Jupiter and Saturn encounter phases       
+    as well as those obtained during the two encounter phases.               
+                                                                             
+    The Voyager 2 spacecraft travels from Earth to beyond 80 AU over         
+    the course of this data set.  To provide some guidance on when           
+    some key events occurred during the mission, the following table         
+    is provided.                                                             
+                                                                             
+    Date         Event                                                       
+    1977-08-20   Launch                                                      
+    1979-07-02   First inbound bow shock crossing at Jupiter                 
+    1979-08-03   Last outbound bow shock crossing at Jupiter                 
+    1981-08-24   First inbound bow shock crossing at Saturn                  
+    1981-08-31   Last outbound bow shock crossing at Saturn                  
+    1982-04-26   10 AU                                                       
+    1983-08-30   Onset of first major LF heliospheric radio event            
+    1986-01-24   First inbound bow shock crossing at Uranus                  
+    1986-01-29   Last outbound bow shock crossing at Uranus                  
+    1986-05-26   20 AU                                                       
+    1989-08-07   30 AU                                                       
+    1989-08-24   First inbound bow shock crossing at Neptune                 
+    1989-08-28   Last outbound bow shock crossing at Neptune                 
+    1992-07-06   Onset of second major LF heliospheric radio event           
+    1993-05-08   40 AU                                                       
+    1996-10-10   50 AU                                                       
+    2000-01-27   60 AU                                                       
+    2002-11-01   Onset of third major LF heliospheric radio event            
+    2003-04-21   70 AU                                                       
+    2006-07-01   80 AU                                                       
+    2007-08-31   Termination shock crossing                                  
+    2009-09-03   90 AU                                                       
+    2012-11-04   100 AU                                                      
+    2016-01-01   110 AU                                                      
+                                                                             
+                                                                             
+  Data Sampling                                                              
+  =============                                                              
+    This data set consists of full resolution edited, wave electric          
+    field intensities from the Voyager 2 Plasma Wave Receiver spectrum       
+    analyzer obtained during the entire mission.  For each time              
+    interval, a field strength is determined for each of the 16              
+    spectrum analyzer channels whose center frequencies range from 10        
+    Hertz to 56.2 kiloHertz and which are logarithmically spaced in          
+    frequency, four channels per decade.  The time associated with           
+    each set of intensities (16 channels) is the time of the beginning       
+    of the scan.  The time between spectra in this data set vary by          
+    telemetry mode and range from 4 seconds to 96 seconds.  During           
+    data gaps where complete spectra are missing, no entries exist in        
+    the file, that is, the gaps are not zero-filled or tagged in any         
+    other way.  When one or more channels are missing within a scan,         
+    the missing measurements are zero-filled.  Data are edited but not       
+    calibrated.  The data numbers in this data set can be plotted in         
+    raw form for event searches and simple trend analysis since they         
+    are roughly proportional to the log of the electric field                
+    strength.  Calibration procedures and tables are provided for use        
+    with this data set; the use of these is described below.                 
+                                                                             
+    For the cruise data sets, the timing of samples is dependent upon        
+    the spacecraft telemetry mode.  In principle, one can determine          
+    the temporal resolution between spectra simply by noting the             
+    difference in time between two records in the files.  In some            
+    studies, more precise timing information is necessary.  Here, we         
+    describe the timing of the samples for the PWS low rate data as a        
+    function of telemetry mode.                                              
+                                                                             
+    The PWS instrument uses two logarithmic compressors as detectors         
+    for the 16-channel spectrum analyzer, one for the bottom (lower          
+    frequency) 8 channels, and one for the upper (higher frequency) 8        
+    channels.  For each bank of 8 channels, the compressor                   
+    sequentially steps from the lowest frequency of the 8 to the             
+    highest in a regular time step to obtain a complete spectrum.  At        
+    each time step, the higher frequency channel is sampled 1/8 s            
+    prior to the lower frequency channel so that the channels are            
+    sampled in the following order with channel 1 being the lowest           
+    frequency channel (10 Hz) and 16 being the highest (56.2 kHz): 9,        
+    1, 10, 2, 11, 3, ...  15, 7, 16, 8.  The primary difference              
+    between the various data modes is the stepping rate from one             
+    channel to the next (ranging from 0.5 to 12 s, corresponding to          
+    temporal resolutions between complete spectra of 4 s to 96 s).           
+                                                                             
+    In the following table, we present the hexadecimal id for the            
+    various telemetry modes, the mode mnemonic ID, the time between          
+    frequency steps, and the time between complete spectra.  We also         
+    provide the offset from the beginning of the instrument cycle (one       
+    complete spectrum) identified as the time of each record's time          
+    tag to the time of the sampling for the first high-frequency             
+    channel (channel 9) and for the first low-frequency channel              
+    (channel 1).                                                             
+                                                                             
+                                    Time                                     
+                        Frequency   Between      High Freq.  Low Freq.       
+  MODE (Hex)  MODE ID   Step (s)    Spectra (s)  offset (s)  offset (s)      
+     01         CR-2    0.5              4.0         0.425     0.4325        
+     02         CR-3    1.2              9.6         1.125     1.1325        
+     03         CR-4    4.8             38.4         0.425     0.4325        
+     04         CR-5    9.6             76.8         0.425     0.4325        
+     05         CR-6    12.             96.0         0.9275    0.935         
+     06         CR-7    NOT IMPLEMENTED                                      
+     07         CR-1    0.5              4.0         0.225     0.2325        
+     08         GS-10A  SAME AS GS-3                                         
+     0A         GS-3    0.5              4.0         0.425     0.4325        
+     0C         GS-7    SAME AS GS-3                                         
+     0E         GS-6    SAME AS GS-3                                         
+     16         OC-2    SAME AS GS-3                                         
+     17         OC-1    SAME AS GS-3                                         
+     18       **CR-5A   0.5              4.0         0.425     0.4325        
+     19         GS-10   SAME AS GS-3                                         
+     1A         GS-8    SAME AS GS-3                                         
+     1D       **UV-5A   SAME AS CR-5A                                        
+                                                                             
+    **In CR-5A and UV-5A, the PWS is cycled at its 0.5 sec/frequency         
+    step or 4 sec/spectrum rate, but 4 measurements are summed on            
+    board in 10-bit accumulators and these 10-bit sums are downlinked.       
+    On the ground, the sums are divided by 4, hence providing, in a          
+    sense, 16-second averages.  One of every 12 sets of sums is              
+    dropped on board in order to avoid LECP stepper motor                    
+    interference.                                                            
+                                                                             
+                                                                             
+  Data Processing                                                            
+  ===============                                                            
+    The spectrum analyzer data are a continuous (where data are              
+    available) low resolution data set which provides wave intensity as      
+    a function of frequency (16 log-spaced channels) and time (one           
+    spectrum per time intervals ranging from 4 seconds to 96 seconds,        
+    depending on telemetry mode).  The data are typically plotted as         
+    amplitude vs. time for one or more of the channels in a strip-chart      
+    like display, or can be displayed as a frequency-time spectrogram        
+    using a gray- or color-bar to indicate amplitude.  With only sixteen     
+    channels, it is usually best to stretch the frequency axis by            
+    interpolating from one frequency channel to the next either linearly     
+    or with a spline fit.  One must be aware if the frequency axis is        
+    stretched that more resolution may be implied than is really             
+    present.  The Voyager PWS calibration table is given in an ASCII         
+    text file named VG2PWSCL.TAB (for Voyager-2).  This provides             
+    information to convert the uncalibrated 'instrument data number'         
+    output of the PWS 16-channel spectrum analyzer to calibrated antenna     
+    voltages for each frequency channel.  Following is a brief               
+    description of this file and a tutorial in its application.              
+                                                                             
+    Descriptive headers have been removed from this file.  The columns       
+    included are IDN, CHAN_01, CHAN_02, CHAN_03, CHAN_04, CHAN_05,           
+    CHAN_06, ... CHAN_16.                                                    
+                                                                             
+    The first column lists an uncalibrated data number followed by the       
+    corresponding value in calibrated volts for each of the 16               
+    frequency channels of the PWS spectrum analyzer.  Each line              
+    contains calibrations for successive data number values ranging          
+    from 0 through 255.  (Data number 0 actually represents the lack         
+    of data since the baseline noise values for each channel are all         
+    above that.)                                                             
+                                                                             
+    A data analysis program may load the appropriate table into a data       
+    structure and thus provide a mapping from insturment data numbers        
+    to voltages for each frequency channel.  For example, the following      
+    C code may be used to load a calibration array for Voyager 2 PWS:        
+                                                                             
+      int idn;                                                               
+      double cal[256][16];                                                   
+      FILE* file = fopen(''VG2PWSCL.TAB'', ''rb'');                          
+                                                                             
+      for(int iamp = 0; iamp &#10094; 256; ++iamp){                                 
+         fscanf(file, '' %3d'', idn);                                        
+         for(int ichan = 0; ichan &#10094; 16; ichan)                               
+            fscanf(file, '',%8lE'', cal[iamp][ichan]);                       
+      }                                                                      
+                                                                             
+    ( Here two single quotes, '', are use in place of double-quote           
+      characters due to PDS documentation limitations. )                     
+                                                                             
+    Then, given an instrument data value idn for the frequency channel       
+    with index, ichan, the corresponding calibrated antenna voltage          
+    would be given by the following array reference:                         
+                                                                             
+      volts[ichan] = cal[idn][ichan];                                        
+                                                                             
+    This may be converted to a wave electric field amplitude by              
+    dividing by the effective antenna length in meters, 7.07 m.  That        
+    is:                                                                      
+                                                                             
+      efield[ichan] = volts[ichan] / 7.07;                                   
+                                                                             
+    Spectral density units may be obtained by dividing the square of         
+    the electric field value by the nominal frequency bandwidth of the       
+    corresponding spectrum analyzer channel.                                 
+                                                                             
+      specdens[ichan] = (efield * efield) / bandwidth[ichan];                
+                                                                             
+    The center frequencies and bandwidths of each PWS spectrum               
+    analyzer channel for the Voyager 2 spacecraft are given below:           
+                                                                             
+      VOYAGER 2 PWS SPECTRUM ANALYZER                                        
+      Voyager-2                                                              
+      Channel    Center Frequency      Bandwidth                             
+          1          10.0  Hz           2.16 Hz                              
+          2          17.8  Hz           3.58 Hz                              
+          3          31.1  Hz           4.50 Hz                              
+          4          56.2  Hz          10.7  Hz                              
+          5         100.   Hz          13.8  Hz                              
+          6         178.   Hz          28.8  Hz                              
+          7         311.   Hz          39.8  Hz                              
+          8         562.   Hz          75.9  Hz                              
+          9           1.00 kHz         75.9  Hz                              
+         10           1.78 kHz        151.   Hz                              
+         11           3.11 kHz        324.   Hz                              
+         12           5.62 kHz        513.   Hz                              
+         13          10.0  kHz        832.   Hz                              
+         14          17.8  kHz       1260    Hz                              
+         15          31.1  kHz       2400    Hz                              
+         16          56.2  kHz       3800    Hz                              
+                                                                             
+    Finally, power flux may be obtained by dividing the spectral             
+    density by the impedance of free space in ohms:                          
+                                                                             
+      pwrflux[ichan] = specdens[ichan] / 376.73;                             
+                                                                             
+    Of course, for a particular application, it may be more efficient        
+    to apply the above conversions to the calibration table directly.        
+                                                                             
+                                                                             
+    Voyager 2 PWS SA Data Number Correction                                  
+    ---------------------------------------                                  
+    A failure in the Voyager 2 Flight Data System which occurred about 3     
+    months after launch has adversely affected the calibration of PWS        
+    channels 9 through 16.  An algorithm has been devised to partially       
+    correct for this failure, and has proven useful for Voyager 2            
+    Jupiter, Saturn, Uranus, and Neptune encounters, but is not valid        
+    for Earth-Jupiter cruise and may be modified in the future.  The         
+    following implementation of this correction algorithm in C               
+    assumes that uncalibrated data numbers are stored in a 16-element        
+    integer array, named 'idn', with the array index equal to the PWS        
+    channel number minus one:                                                
+                                                                             
+                                                                             
+    float tonl[8] = {2.0, 1.0, -1.0, -2.0, -3.0, 1.0, 2.0, 1.0};             
+                                                                             
+    /* Instrument data number correction for upper 8 channels from:          
+     *                                                                       
+     *   1977-267T00:47 to 1977-283T16:00                                    
+     *   1978-010T20:04 to 2006-324T20:50                                    
+     */                                                                      
+                                                                             
+    for(int ichan = 8; ichan &#10094; 16; ++ichan){                                 
+      if( idn[ichan] &#10094;= 0 ) continue;                                        
+                                                                             
+      if( idn[ichan] &#10094; 64) idn[ichan] = 64;                                  
+                                                                             
+      if( idn[ichan] &#10094;= 72 )                                                 
+        idn[ichan] = (int)(tonl[ichan-8] - 530.4 + 8.6*idn[ichan] );         
+      else                                                                   
+        idn[ichan] = (int)(tonl[ichan-8] + 20.133 + 0.99*idn[ichan]);        
+                                                                             
+      /* Telemetry bit errors can result in corrections above 255 */         
+      if(idn[ichan] &#10095; 255) idn[ichan] = 255;                                 
+    }                                                                        
+                                                                             
+                                                                             
+    /* Instrument data number correction for upper 8 channels from:          
+     *                                                                       
+     *   1977-283T16:00 to 1977-312T20:12                                    
+     *   1977-335T21:54 to 1978-010T20:04                                    
+     *   2006-324T20:50 to present (at least 2016-245)                       
+     */                                                                      
+                                                                             
+    for(int ichan = 8; ichan &#10094; 16; ++ichan){                                 
+      if( idn[ichan] &#10094;= 0 ) continue;                                        
+                                                                             
+      if( idn[ichan] &#10094; 64) idn[ichan] = 64;                                  
+                                                                             
+      if( idn[ichan] &#10094;= 86 )                                                 
+        idn[ichan] = (int)(tonl[ichan-8] - 650.8 + 8.6*idn[ichan] );         
+      else                                                                   
+        idn[ichan] = (int)(tonl[ichan-8] + 6.253 + 0.99*idn[ichan] );        
+                                                                             
+      /* Telemetry bit errors can result in corrections above 255 */         
+      if(idn[ichan] &#10095; 255) idn[ichan] = 255;                                 
+    }                                                                        
+                                                                             
+    These correction should not be applied permanently to the Voyager 2      
+    calibration table since they are valid for a limited time span and       
+    may be modified in the future.  These corrections are applicable to      
+    data in the UTC time ranges noted in the source comments above and       
+    should be applied as if all data values are 8-bit measurements.          
+    For 10-bit sums (modes CR-5A and UV-5A, i.e. TELETMETRY_MODE column      
+    values 0x18 and 0x1D) data numbers must first be divided by 4, and       
+    then corrected with the algorithms above.                                
+                                                                             
+    Additional information about this data set and the instrument            
+    which produced it can be found elsewhere in this catalog.  A             
+    complete instrument description can be found in                          
+    [SCARF&GURNETT1977].                                                     
+                                                                             
+                                                                             
+  Data                                                                       
+  ====                                                                       
+    The spectrum analyzer data are a continuous (where data are              
+    available) low resolution data set which provides wave intensity as      
+    a function of frequency (16 log-spaced channels) and time (one           
+    spectrum per time intervals ranging from 4 seconds to 96 seconds,        
+    depending on telemetry mode).  Each sample is nominally an 8-bit         
+    value which is roughly proportional to the log of the signal             
+    strength.  In telemetry modes CR-5A and UV-5A the values are 10-bit      
+    sums of 4 original 8-bit instrument samples.  Zero values indicate       
+    missing samples and negative values indicate samples flagged as          
+    contaminated by interference (see below).                                
+                                                                             
+                                                                             
+  Ancillary Data                                                             
+  ==============                                                             
+    None                                                                     
+                                                                             
+                                                                             
+  Coordinates                                                                
+  ===========                                                                
+    The electric dipole antenna detects electric fields in a dipole          
+    pattern with peak sensitivity parallel to the spacecraft x-axis.         
+    However, no attempt has been made to correlate the measured field        
+    to any particular direction such as the local magnetic field or          
+    direction to a planet.  This is because the spacecraft usually           
+    remains in a 3-axis stabilized orientation almost continuously.          
+    The only exception to this are a small number of occasions during        
+    calibration turns when the modulation of the low-frequency               
+    heliospheric radio emission could be used to do direction-finding        
+    on the source of these emissions [GURNETTETAL1998]."                     
+                                                                             
+    CONFIDENCE_LEVEL_NOTE          = "                                       
+                                                                             
+  Overview                                                                   
+  ========                                                                   
+    This data set includes all available spectrum analyzer data acquired     
+    during the Voyager 2 mission to date.  The data set has been cleaned     
+    as well as possible for periodic noise spikes due to a stepper motor     
+    operating on the LECP and a modulated grid within the PLS.  The          
+    'bad' points remain in the data set as negative numbers with the         
+    same absolute value as the original data point so that the point can     
+    be skipped in normal data processing by testing for negative values      
+    or recovered for special inspection by converting the sign back to a     
+    positive one.  Other possible sources of noise which have not been       
+    eliminated include random intense spikes of noise below 1 kiloHertz      
+    due to the operation of attitude control thrusters.  Other randomly      
+    occurring spikes or time periods of intense spikes over the entire       
+    frequency range are indicative of telemetry errors.  No attempt has      
+    been made to remove spikes since some could be valid data, i.e. real     
+    bursts of wave activity.  The 17.8-Hz channel is sometimes               
+    contaminated by interference from the PRA instrument, depending on       
+    that instrument's mode.  This interference is at a relatively            
+    constant level.                                                          
+                                                                             
+    A failure in the Voyager 2 flight data system on September 24, 1977      
+    has decreased the sensitivity and the calibration accuracy of the        
+    upper 8 spectrum analyzer channels (i.e. 1 kiloHertz and higher).        
+    One aspect of this failure is that voltages on other inputs to a         
+    multiplexer shared by the PWS upper 8 channels can affect the PWS        
+    data.  Hence, if all 8 upper channels move up and down together, it      
+    is likely this is a side effect of the failure and not a real effect     
+    in the PWS data.                                                         
+                                                                             
+    An intermittent failure appeared in the Voyager 2 17.8 Hz channel        
+    beginning on November 6, 1995.  The channel now exhibits three           
+    states.  In the original failed state, the channel becomes very          
+    noisy, outputting an abnormally large signal.  In a second failed        
+    state, the output goes to zero.  However, for the majority of the        
+    time since the failure, the channel outputs credible measurements in     
+    the correct amplitude range.                                             
+                                                                             
+    Beginning in May 2001 the Voyager 2 wideband receiver began to           
+    display degraded operation and by September of 2002, the receiver        
+    showed virtually no response.  Attempts to playback wideband data        
+    from Voyager 2 have ceased.                                              
+                                                                             
+                                                                             
+  Review                                                                     
+  ======                                                                     
+    This archival data set was examined by a peer review panel prior to      
+    its acceptance by the Planetary Data System (PDS).  The peer review      
+    was conducted in accordance with PDS procedures.                         
+                                                                             
+    Prior to creation of the final version of the archival data set, key     
+    elements of the archive were distributed for preliminary review.         
+    These included electronic versions of example PDS labels, CATALOG        
+    files, and Software Interface Specifications.  These materials were      
+    distributed to PDS personnel, the experiment investigator, and           
+    others, as appropriate."                                                 
+                                                                             
+  END_OBJECT              = DATA_SET_INFORMATION                             
+                                                                             
+                                                                             
+  OBJECT                           = DATA_SET_MISSION                        
+    MISSION_NAME                   = "VOYAGER"                               
+  END_OBJECT                       = DATA_SET_MISSION                        
+                                                                             
+  OBJECT                  = DATA_SET_HOST                                    
+    INSTRUMENT_HOST_ID      = VG2                                            
+    INSTRUMENT_ID           = PWS                                            
+  END_OBJECT              = DATA_SET_HOST                                    
+                                                                             
+                                                                             
+  OBJECT                  = DATA_SET_TARGET                                  
+    TARGET_NAME             = JUPITER                                        
+  END_OBJECT              = DATA_SET_TARGET                                  
+                                                                             
+  OBJECT                  = DATA_SET_TARGET                                  
+    TARGET_NAME             = SATURN                                         
+  END_OBJECT              = DATA_SET_TARGET                                  
+                                                                             
+  OBJECT                  = DATA_SET_TARGET                                  
+    TARGET_NAME             = URANUS                                         
+  END_OBJECT              = DATA_SET_TARGET                                  
+                                                                             
+  OBJECT                  = DATA_SET_TARGET                                  
+    TARGET_NAME             = NEPTUNE                                        
+  END_OBJECT              = DATA_SET_TARGET                                  
+                                                                             
+  OBJECT                  = DATA_SET_TARGET                                  
+    TARGET_NAME             = SOLAR_SYSTEM                                   
+  END_OBJECT              = DATA_SET_TARGET                                  
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "BARBOSAETAL1979"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "BARBOSA&KURTH1980"                            
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "BARBOSAETAL1981"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "BARBOSAETAL1984"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "BARBOSAETAL1985"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "CORONITIETAL1980"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "CORONITIETAL1984"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1979B"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1979C"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1980"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1981B"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1983"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETT&GOERTZ1981"                           
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETT&SCARF1983"                            
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "GURNETTETAL1998"                              
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "KURTHETAL1979"                                
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "KURTHETAL1980A"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "KURTHETAL1980B"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "KURTHETAL1981A"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "MORGANETAL1994"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARF1979"                                    
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARF&GURNETT1977"                            
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARFETAL1979"                                
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARFETAL1979C"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARFETAL1979D"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARFETAL1981A"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "SCARFETAL1981B"                               
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+  OBJECT                  = DATA_SET_REFERENCE_INFORMATION                   
+    REFERENCE_KEY_ID        = "THORNE&SCARF1984"                             
+  END_OBJECT              = DATA_SET_REFERENCE_INFORMATION                   
+                                                                             
+END_OBJECT              = DATA_SET                                           
+END

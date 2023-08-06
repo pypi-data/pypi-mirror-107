@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Bundle 
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:maven.sep.calibrated</logical_identifier>
+      <version_id>1.9</version_id>
+      <title>MAVEN SEP Calibrated Data Bundle</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Bundle</product_class>
+      <Citation_Information>
+         <publication_year>2017</publication_year>
+         <description>
+            The maven.sep.calibrated Level 2 Science Data Bundle contains fully calibrated 
+            SEP data, as well as the raw count data from which they are derived, and 
+            ancillary ephemeris data. The calibrated data are in physical units, and 
+            include electron and ion spectra in the 4 look directions (2 look directions 
+            for each sensor/file).
+         </description>
+      </Citation_Information>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2017-11-14</modification_date>
+            <version_id>1.9</version_id>
+            <description>
+               MAVEN Release 11 (2017-11-15). Includes an incremental release of 
+               ancillary, raw, and calibrated data, covering 2017-05-15 to 2017-08-14, 
+               and updated versions of the data covering 2014-10-01 to 2016-12-31. 
+               Coverage for all three collections is 2014-09-22 to 2017-08-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-08-09</modification_date>
+            <version_id>1.8</version_id>
+            <description>
+               MAVEN Release 10 (2017-08-15). Includes an incremental release of 
+               ancillary, raw, and calibrated data. Coverage for all three 
+               collections is 2014-09-22 to 2017-05-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-08-09</modification_date>
+            <version_id>1.7</version_id>
+            <description>
+               This version included corrections to a 1 second timing error 
+               in the data following the leap second at 2016-12-31T23:59:60 
+               UTC. Coverage is the same as for version 1.6.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-05-15</modification_date>
+            <version_id>1.6</version_id>
+            <description>
+               MAVEN Release 9 (2017-05-15). Includes an incremental release
+               of ancillary, raw, and calibrated data. Coverage for all three
+               collections is 2014-09-22 to 2017-02-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2017-02-09</modification_date>
+            <version_id>1.5</version_id>
+            <description>
+               MAVEN Release 8 (2017-02-15). Includes an incremental release
+               of ancillary, raw, and calibrated data. Coverage for all three 
+               collections is 2014-09-22 to 2016-11-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-11-17</modification_date>
+            <version_id>1.4</version_id>
+            <description>
+               MAVEN Release 7 (2016-11-17). Includes an incremental release
+               of ancillary, raw, and calibrated data. Coverage for all three 
+               collections is 2014-09-22 to 2016-08-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-08-14</modification_date>
+            <version_id>1.3</version_id>
+            <description>
+               MAVEN Release 6 (2016-08-16). Includes an incremental release
+               of ancillary, raw, and calibrated data. Coverage for all three 
+               collections is 2014-09-22 to 2016-05-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-05-14</modification_date>
+            <version_id>1.2</version_id>
+            <description>
+               MAVEN Release 5 (2016-05-16). Includes an incremental release
+               of ancillary, raw, and calibrated data. Coverage for all three 
+               collections is 2014-09-22 to 2016-02-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2016-02-16</modification_date>
+            <version_id>1.1</version_id>
+            <description>
+               MAVEN Release 4 (2015-12-28). Includes an incremental release
+               of raw and calibrated data, and the intial release of SEP ancillary data.
+               Coverage for all three collections is 2014-09-22 to 2015-11-14.
+            </description>
+         </Modification_Detail>
+         <Modification_Detail>
+            <modification_date>2015-12-28</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               MAVEN Release 3. This release includes SEP raw and calibrated
+               data covering MAVEN Releases 1-3: 2014-09-22 to 2015-08-14.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Context_Area>
+      <Time_Coordinates>
+         <start_date_time>2014-09-20T00:00:00.000Z</start_date_time>
+         <stop_date_time>2017-08-14T23:59:59.999Z</stop_date_time>
+      </Time_Coordinates>
+      <Primary_Result_Summary>
+         <purpose>Science</purpose>
+         <processing_level>Calibrated</processing_level>
+         <Science_Facets>
+            <domain>Magnetosphere</domain>
+            <discipline_name>Particles</discipline_name>
+            <facet1>Ions</facet1>
+            <facet2>Solar Energetic</facet2>
+         </Science_Facets>
+         <Science_Facets>
+            <domain>Magnetosphere</domain>
+            <discipline_name>Particles</discipline_name>
+            <facet1>Electrons</facet1>
+            <facet2>Solar Energetic</facet2>
+         </Science_Facets>
+      </Primary_Result_Summary>
+      <Investigation_Area>
+         <name>Mars Atmosphere and Volatile EvolutioN Mission</name>
+            <type>Mission</type>
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+               <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+      </Investigation_Area>
+          <Observing_System>
+            <Observing_System_Component>
+               <name>MAVEN</name>
+               <type>Spacecraft</type>   
+               <Internal_Reference>
+                  <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+                  <reference_type>is_instrument_host</reference_type>
+               </Internal_Reference>
+            </Observing_System_Component>
+         <Observing_System_Component>
+            <name>Solar Energetic Particle Experiment</name>
+            <type>Instrument</type>   
+            <Internal_Reference>
+               <lid_reference>urn:nasa:pds:context:instrument:sep.maven</lid_reference>
+               <reference_type>is_instrument</reference_type>
+            </Internal_Reference>
+         </Observing_System_Component>
+      </Observing_System>
+   </Context_Area>
+   <Reference_List>
+   </Reference_List>
+   <Bundle>
+      <bundle_type>Archive</bundle_type>
+      <description>
+         The maven.sep.calibrated Level 2 Science Data Bundle contains fully calibrated 
+         SEP data, as well as the raw count data from which they are derived, and 
+         ancillary ephemeris data. The calibrated data are in physical units, and 
+         include electron and ion spectra in the 4 look directions (2 look directions 
+         for each sensor/file).
+      </description>
+   </Bundle>
+   <File_Area_Text>
+      <File>
+         <file_name>Readme_1.9.txt</file_name>
+         <creation_date_time>2017-11-14T08:30:46</creation_date_time>
+         <md5_checksum>cd905786c93fdf0e851d2a81a2aff543</md5_checksum>
+         <comment>
+            This file contains a brief overview of the MAVEN SEP Calibrated data bundle.
+         </comment>
+      </File>
+      <Stream_Text>
+         <name>Readme_1.9.txt</name>
+         <local_identifier>Readme</local_identifier>
+         <offset unit="byte">0</offset>
+         <object_length unit="byte">6440</object_length>
+         <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+         <description>
+            This file contains a brief overview of the MAVEN SEP Calibrated data bundle.
+         </description>
+         <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      </Stream_Text>
+   </File_Area_Text>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.sep.calibrated:data.anc::1.8</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.sep.calibrated:data.counts::1.9</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.sep.calibrated:data.spec::1.9</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_data_collection</reference_type>
+   </Bundle_Member_Entry>
+   <Bundle_Member_Entry>
+      <lidvid_reference>urn:nasa:pds:maven.sep.calibrated:document::1.0</lidvid_reference>
+      <member_status>Primary</member_status>
+      <reference_type>bundle_has_document_collection</reference_type>
+   </Bundle_Member_Entry>
+</Product_Bundle>

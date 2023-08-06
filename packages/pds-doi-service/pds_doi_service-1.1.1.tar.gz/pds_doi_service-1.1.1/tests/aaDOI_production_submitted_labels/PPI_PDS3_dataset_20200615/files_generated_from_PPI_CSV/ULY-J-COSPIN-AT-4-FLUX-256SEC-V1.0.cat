@@ -1,0 +1,234 @@
+PDS_VERSION_ID                      = PDS3                                     
+LABEL_REVISION_NOTE                = "                                        
+J. MAFI (PPI), 1998-05-18;                                                    
+Additional Keywords added By D. Kazden, 2009-09-15;                           
+Z's removed from time by D. Kazden 2010-05-05;                                
+Updated CITATION_DESC, D. Kazden, 2020-02-12;"                                
+                                                                              
+RECORD_TYPE                        = STREAM                                   
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "ULY-J-COSPIN-AT-4-FLUX-256SEC-V1.0"     
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "ULY JUP COSPIN ANISOTROPY TELESCOPE 256 
+                                        SEC. PARTICLE FLUX"                   
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 1992-01-25T00:02:08.000                  
+    STOP_TIME                      = 1992-02-17T23:55:44.000                  
+    DATA_SET_RELEASE_DATE          = 1998-05-01                               
+    PRODUCER_FULL_NAME             = "ROBERT J. HYNDS"                        
+    DETAILED_CATALOG_FLAG          = "N"                                      
+    DATA_OBJECT_TYPE               = "TIME SERIES"                            
+    DATA_SET_TERSE_DESC            = "ULY JUP COSPIN ANISOTROPY TELESCOPE 256 
+                                       SEC. PARTICLE FLUX"                    
+    CITATION_DESC          = "Hynds, R.J., ULY-J-COSPIN-AT-4-FLUX-256SEC-V1.0,
+                   ULY JUP COSPIN ANISOTROPY TELESCOPE 256 SEC. PARTICLE FLUX,
+                              NASA Planetary Data System, 1998."              
+     ABSTRACT_DESC                 = "The Imperial College Anisotropy         
+     Telescope ----------------------------------------- (Last updated:       
+     17 March 1995)"                                                          
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+                                                                              
+      The Imperial College Anisotropy Telescope                               
+      -----------------------------------------                               
+      (Last updated: 17 March 1995)                                           
+                                                                              
+      This document describes the Anisotropy Telescopes, the                  
+      data they provide, and the format of the data files                     
+      provided by Imperial College to the Ulysses Data System.                
+                                                                              
+      NB. Please take careful note of the following points:                   
+                                                                              
+      (1) THE INFORMATION PROVIDED IN THIS FILE CORRECTS AND UPDATES          
+          INFORMATION PRESENTED IN [SIMPSONETAL1992A] In particular,          
+          the Anisotropy Telescope pointing directions were given             
+          incorrectly in the Astronomy and Astrophysics paper, and the        
+          energy channel widths quoted there have since been updated.         
+                                                                              
+      (2) See the Ulysses Data System guidelines for restrictions on          
+          the use of this data.                                               
+                                                                              
+                                                                              
+      1. The Anisotropy Telescopes                                            
+      ----------------------------                                            
+      The Anisotropy Telescope (AT) experiment is a two-telescope             
+      device. The telescopes are nominally identical with Telescope           
+      T1 pointing at 60 degrees to the spacecraft spin axis (i.e. in          
+      the Earthward looking hemisphere) and telescope T2 pointing at          
+      145 degrees (i.e. in the anti-Earthward looking hemisphere).            
+      They have a full-cone opening aperture of 70 degrees and a              
+      geometric factor of 0.7 cm^2 sr. Together they provide 80%              
+      coverage of the full sky. The most significant gap in the               
+      coverage is a cone with a half angle of 25 degrees centered on          
+      the Earthward pointing line along the spacecraft spin-axis.             
+      There is also a 5 degree gap in coverage between the two                
+      telescopes.                                                             
+                                                                              
+                                                                              
+      2. The full AT Data set                                                 
+      -----------------------                                                 
+      Spin-averaged and sectored data in a variety of energy channels         
+      is produced by the ATs, as follows:                                     
+                                                                              
+                                                                              
+      Channel  Energy range      Energy Range      Sectored /                 
+      number   /MeV (protons)    /MeV (alphas)     Spin-averaged              
+                                                                              
+        1       0.7 - 0.9         2.3 -  2.5       Spin-averaged              
+        2       0.9 - 1.3         2.5 -  2.7       Spin-averaged              
+        3       1.3 - 2.2         2.7 -  3.0       Spin-averaged              
+        4       2.2 - 3.6             -            Spin-averaged              
+        5       3.6 - 6.5        24.0 - 28.0       Spin-averaged              
+        6       0.7 - 1.3         2.3 -  2.7       Sectored (8)               
+        7       1.3 - 2.2         2.7 -  3.0       Sectored (8)               
+        8       2.2 - 3.6             -            Sectored (8)               
+        9       3.6 - 6.5        24.0 - 28.0       Sectored (8)               
+       10           -             3.0 -  7.5       Spin-averaged              
+       11           -             7.5 - 12.0       Spin-averaged              
+       12           -            12.0 - 26.0       Spin-averaged              
+       13           -             3.0 -  7.5       Sectored (4)               
+                                                                              
+                                                                              
+      3. AT data provided to the Ulysses Data System                          
+      ----------------------------------------------                          
+      The AT data provided in these files is a subset of the total            
+      data set which is held at Imperial College.                             
+                                                                              
+      The format of these files is as follows:                                
+      There is one data file per day. Each data file contains data            
+      records for every ten minute interval in the day, except                
+      during the Jupiter encounter (1992, days 25 to 48 inclusive)            
+      where data at 256s resolution is provided.                              
+                                                                              
+      Each record contains 17 fields of information, the first                
+      being a time-stamp referring to the centre time of the data             
+      contained in the remaining 16 fields. The definition of these           
+      fields, including their FORTRAN format, is given below.                 
+                                                                              
+      N.B. Fluxes quoted are from telescope T1, which points at 60            
+      degrees to the spacecraft spin axis.                                    
+                                                                              
+      Field  FORTRAN         Definition                                       
+             Format                                                           
+                                                                              
+      1          a24         Time in format yyyy-mm-ddThh:mm:ss.sssZ          
+      2      1pe10.4         Flux from channel 1                              
+      3      1pe10.4         Flux from channel 2                              
+      4      1pe10.4         Flux from channel 3                              
+      5      1pe10.4         Flux from channel 4                              
+      6      1pe10.4         Flux from channel 5                              
+      7      1pe10.4         Flux from channel 10                             
+      8      1pe10.4         Flux from channel 11                             
+      9      1pe10.4         Flux from channel 12                             
+      10     1pe10.4         Flux from channel 7, sector 1                    
+      11     1pe10.4         Flux from channel 7, sector 2                    
+      12     1pe10.4         Flux from channel 7, sector 3                    
+      13     1pe10.4         Flux from channel 7, sector 4                    
+      14     1pe10.4         Flux from channel 7, sector 5                    
+      15     1pe10.4         Flux from channel 7, sector 6                    
+      16     1pe10.4         Flux from channel 7, sector 7                    
+      17     1pe10.4         Flux from channel 7, sector 8                    
+                                                                              
+      Each record can be read using the FORTRAN format                        
+      '(i4,4(1x,i2),1x,f6.3,16(1x,1pe10.4))'                                  
+      or                                                                      
+      1x,a24,16(1x,1pe10.4)                                                   
+                                                                              
+      [please note that time-stamp and record format have been                
+       changed by the PDS/PPI Node for the sake of consistency with           
+       other data sets found on this volume]                                  
+                                                                              
+                                                                              
+      3.1 Definition of flux                                                  
+      ----------------------                                                  
+      in this table, flux means differential flux in units of                 
+      (cm^2 sr s MeV)^-1 (NB. per MeV, not per MeV per nucleon).              
+      The fluxes have been computed by dividing the observed count            
+      rates by the geometric factor and the energy channel width.             
+      The energy channel width depends on species. Where a channel            
+      is sensitive to alpha particles and protons (i.e., channels             
+      1, 2, 3, 5, 6, 7 and 9), the proton width has been used since           
+      normally the alpha contribution is insignificant. However,              
+      sufficient information has been given above to reconstruct the          
+      channel count-rates if necessary.                                       
+                                                                              
+      All AT channels exhibit a 'background' which may originate from         
+      electronic noise or from activation of the material of the              
+      telescopes or of the spacecraft. These background fluxes have           
+      been subtracted from the data provided in these files. Channel          
+      3 and channel 7 are the channels least affected by background           
+      and it is for this reason that channel 7 has been selected to           
+      provide the sectored data included in these files.                      
+                                                                              
+      The data have also been 'despiked', although it is not                  
+      guaranteed that all spikes have been removed.                           
+                                                                              
+                                                                              
+      3.2 Definition of sectors                                               
+      -------------------------                                               
+      All sectored channels except channel 13 have eight 45 degree            
+      sectors. Channel 13 has only 4 sectors. Sector 1 of channel             
+      13 is a 90 degree sector equivalent to sectors 1 & 2 of any of          
+      the other sectored channels. Similarly, sector 2 of channel             
+      13 is equivalent to sectors 3 & 4 of any other sectored                 
+      channel, etc.                                                           
+                                                                              
+      The sectoring scheme is defined relative to the 'sun crossing           
+      line'. The sun-crossing line is the line in the plane defined           
+      by the Sun, the Earth and Ulysses, which is perpendicular to            
+      the Ulysses-Earth line and which makes an angle of less than            
+      90 degrees to the Ulysses-Sun line. For channels with 8                 
+      sectors, sector 1 is the 45 degree sector which starts from             
+      the sun-crossing line and extends in the sense of spacecraft            
+      rotation. Sector 2 begins at the angle that sector 1 ends and           
+      continues in the sense of spacecraft rotation, etc, continuing          
+      through to sector 8 which ends at the the sun-crossing line."           
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+      Confidence Level Overview                                               
+      =========================                                               
+      None provided. For more information regarding the confidence            
+      level of this data set please contact:                                  
+                                                                              
+        ROBERT J. HYNDS                                                       
+        Computer Centre                                                       
+        Imperial College of Science and Technology                            
+        Exhibition Road                                                       
+        London SW7 2BX                                                        
+        UK                                                                    
+        Phone:    44-171-594-6900   Fax: 44-171-594-7772                      
+        Internet: r.hynds@ic.ac.uk"                                           
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = JUPITER                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = ULY                                      
+    INSTRUMENT_ID                  = "COSPIN-AT"                              
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "ULYSSES"                                
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "COWLEY&STAINES1993"                     
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "SIMPSONETAL1992A"                       
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "STAINESETAL1993"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "STAINESETAL1996"                        
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

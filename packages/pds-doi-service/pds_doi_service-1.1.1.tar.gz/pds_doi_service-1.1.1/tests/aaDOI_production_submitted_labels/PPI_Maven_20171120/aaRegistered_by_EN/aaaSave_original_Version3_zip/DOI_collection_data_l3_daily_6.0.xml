@@ -1,0 +1,36 @@
+<records>
+    <record>
+        <title>MAVEN Extreme ultraviolet (EUV) daily averaged modelled irradiance spectra Data Collection</title>
+        <creators>Eparvier, Frank, G.</creators>
+        <publisher>PDS Planetary Plasma Interactions (PPI) Node</publisher>
+        <publication_date>08/16/2017</publication_date>
+        <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewCollection.jsp?identifier=urn%3Anasa%3Apds%3Amaven.euv.modelled%3Adata.daily.spectra&amp;version=6.0</site_url>
+        <!-- Collection definition:
+                a Collection product may refer to an aggregation of resources and research objects. 
+                A Collection probably has items in it which have or will receive their own DOIs and thus be
+                retrievable independently. Therefore the Collection record is a high-level description of
+                the overall group of items.
+        -->
+        <product_type>Dataset</product_type>
+        <product_type_specific>PDS4 Collection</product_type_specific>
+        <!-- Product Numbers: insert LIDVID here -->     
+        <product_nos>urn:nasa:pds:maven.euv.modelled:data.daily.spectra::6.0</product_nos>
+            
+        <description>
+         A collection of MAVEN Extreme ultraviolet (EUV) Modeled minute-averaged irradiance in units of Watts/m**2/nm
+      </description>
+        <keywords>PDS; PDS4; Maven; Derived; Magnetosphere; Flux Measurements; Mars Atmosphere and Volatile EvolutioN Mission; MAVEN; Extreme Ultraviolet Monitor; Mars</keywords>
+        
+        <related_resource/>
+        <contributor_organizations/>
+        <sponsor_org>National Aeronautics and Space Administration (NASA)</sponsor_org>
+        <contract_nos/>
+        <other_identifying_nos/>
+        <file_extension/>
+        <availability>NSSDCA</availability>
+        <contact_name>PDS OPERATOR</contact_name>
+        <contact_org>PDS</contact_org>
+        <contact_email>pds-operator@jpl.nasa.gov</contact_email>
+        <contact_phone>818.393.7165</contact_phone>
+    </record>
+</records>

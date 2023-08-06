@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"
+    <?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Collection 
+	xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.xsd
+                      http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:uranus_occ_u17b_saao_188cm:data</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Data Collection for the Uranus System occultation of star u17b (Hipparcos 80841) Observed from the SAAO 188cm Telescope.</title>
+        <information_model_version>1.9.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <author_list>French, R. G.; McGhee-French, C. A.; Gordon, M. K.</author_list>
+            <publication_year>2016</publication_year>
+            <keyword>uranus atmosphere</keyword>                                     
+            <keyword>uranus atmosphere stellar occultation</keyword>                 
+            <keyword>uranus atmosphere stellar occultation time series</keyword>     
+            <keyword>uranus rings</keyword>
+            <keyword>uranus rings stellar occultation</keyword>
+            <keyword>uranus rings stellar occultation radial profiles</keyword>
+            <description>This collection contains calibrated and derived data resulting from the occultation of star u17b (Hipparcos 80841) by the rings and atmosphere of Uranus.</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-01-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>1983-03-24T22:55:59.0000Z</start_date_time>
+            <stop_date_time>1983-03-25T04:55:42.4000Z</stop_date_time>
+        </Time_Coordinates>
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Derived</processing_level>
+            <description>This collection contains calibrated and derived data resulting from the occultation of star u17b (Hipparcos 80841) by the rings and atmosphere of Uranus.</description>
+            <Science_Facets>
+                <wavelength_range>Infrared</wavelength_range>
+                <discipline_name>Atmospheres</discipline_name>
+                <facet1>Structure</facet1>
+            </Science_Facets>
+            <Science_Facets>
+                <wavelength_range>Infrared</wavelength_range>
+                <discipline_name>Ring-Moon Systems</discipline_name>
+                <facet1>Ring Occultation Profile</facet1>
+            </Science_Facets>
+        </Primary_Result_Summary>
+        <Investigation_Area>
+            <name>Uranus System Occultation of star u17b observed by the SAAO 188cm Telescope.</name>
+            <type>Individual Investigation</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:individual.u17b</lid_reference>
+                <reference_type>collection_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>South African Astronomical Observatory 188cm Telescope.</name>
+            <Observing_System_Component>
+                <name>South African Astronomical Observatory</name>
+                <type>Observatory</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:facility:observatory.saao</lid_reference>
+                    <reference_type>is_facility</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>188cm telescope</name>
+                <type>Telescope</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:telescope:saao.radcliffe188cm</lid_reference>
+                    <reference_type>is_telescope</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Generic InSb photometer</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:facility.insbhsp.anon</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Uranus Rings</name>
+            <type>Ring</type>
+        </Target_Identification>
+        <Target_Identification>
+            <name>Uranus Atmosphere</name>
+            <type>Planet</type>
+        </Target_Identification>
+        <Discipline_Area>
+            <geom:Geometry>
+                <geom:SPICE_Kernel_Files>
+                    <geom:SPICE_Kernel_Identification>
+                        <geom:kernel_type>SPK</geom:kernel_type>
+                        <geom:spice_kernel_file_name>ura111.bsp</geom:spice_kernel_file_name>
+                    </geom:SPICE_Kernel_Identification>
+                    <geom:SPICE_Kernel_Identification>
+                        <geom:kernel_type>SPK</geom:kernel_type>
+                        <geom:spice_kernel_file_name>vgr2.ura111.bsp</geom:spice_kernel_file_name>
+                    </geom:SPICE_Kernel_Identification>
+                    <geom:SPICE_Kernel_Identification>
+                        <geom:kernel_type>SPK</geom:kernel_type>
+                        <geom:spice_kernel_file_name>earthstns_itrf93_040916.bsp</geom:spice_kernel_file_name>
+                    </geom:SPICE_Kernel_Identification>
+                    <geom:SPICE_Kernel_Identification>
+                        <geom:kernel_type>PCK</geom:kernel_type>
+                        <geom:spice_kernel_file_name>earth_720101_031229.bpc</geom:spice_kernel_file_name>
+                    </geom:SPICE_Kernel_Identification>
+                    <geom:SPICE_Kernel_Identification>
+                        <geom:kernel_type>LSK</geom:kernel_type>
+                        <geom:spice_kernel_file_name>naif0012.tls</geom:spice_kernel_file_name>
+                    </geom:SPICE_Kernel_Identification>
+                    <geom:comment>The preceding kernel files were used in the generation of the products in the parent bundle. Some or all of them may not have been used directly in the generation of this product.</geom:comment>
+                </geom:SPICE_Kernel_Files>
+            </geom:Geometry>
+        </Discipline_Area>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:uranus_occ_u17b_saao_188cm:browse:2220nm_obs_geom</lid_reference>            
+            <reference_type>collection_to_browse</reference_type>
+            <comment>Diagram of the Uranus system showing the occultation track</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:uranus_occ_support</lid_reference>
+            <reference_type>collection_to_resource</reference_type>
+            <comment>The support bundle for all of the Earth-based Uranus system occultations.</comment>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Elliot et al. (1984). "Structure of the Uranian rings. I. Square-well model and particle-size constraints" Astron J. 89, 1587-1603. http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1984AJ.....89.1587E&amp;data_type=PDF_HIGH&amp;whole_paper=YES&amp;type=PRINTER&amp;filetype=.pdf</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Collection>
+        <collection_type>Data</collection_type>
+    </Collection>
+    <File_Area_Inventory>
+        <File>
+            <file_name>collection_data.csv</file_name>
+            <creation_date_time>2020-01-06T15:55:08Z</creation_date_time>
+            <records>151</records>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>151</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                </Field_Delimited>
+            </Record_Delimited>
+            <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

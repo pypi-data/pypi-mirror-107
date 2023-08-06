@@ -1,0 +1,255 @@
+PDS_VERSION_ID                      = PDS3                                    
+LABEL_REVISION_NOTE                = "                                        
+    2007-03-09, B. Harris, temporary initial version;                         
+    2009-03-14, J. Mafi, adapted data set overview description from Cassini   
+                         MAG Raw data set description,                        
+                         added Product Version discussion;                    
+    2015-01-27, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2015-07-08, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2015-10-13, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2017-01-16, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2017-07-17, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2017-10-10, D. Kazden, updated STOP_TIME and DATA_SET_RELEASE_DATE;       
+    2018-07-30, D. Kazden, removed ARCHIVE_STATUS keyword;                    
+    2019-06-17, D. Kazden, updated for PRODUCT_VERSION_ID = 6 KRTP, KSO, and  
+                           KSM and PRODUCT_VERSION_ID = 7 for RTN data        
+                           products"                                          
+                                                                              
+OBJECT                             = DATA_SET                                 
+  DATA_SET_ID                      = "CO-E/SW/J/S-MAG-4-SUMM-1MINAVG-V2.0"    
+                                                                              
+  OBJECT                           = DATA_SET_INFORMATION                     
+    DATA_SET_NAME                  = "                                        
+      CASSINI ORBITER MAG CALIBRATED SUMMARY 1 MINUTE AVERAGE V2.0"           
+    DATA_SET_COLLECTION_MEMBER_FLG = N                                        
+    START_TIME                     = 2000-01-20T02:28:30                      
+    STOP_TIME                      = 2017-09-12T22:14:31                      
+    DATA_SET_RELEASE_DATE          = 2019-06-17                               
+    PRODUCER_FULL_NAME             = "JOSEPH N. MAFI"                         
+    DETAILED_CATALOG_FLAG          = Y                                        
+   DATA_OBJECT_TYPE               = "TABLE"                                   
+                                                                              
+    CITATION_DESC                  = "                                        
+      Dougherty, M.K., S. Kellock, A.P. Slootweg, N. Achilleos, S.P. Joy,     
+      and J.N. Mafi, CASSINI ORBITER MAG CALIBRATED SUMMARY AVERAGED V1.0,    
+      CO-E/SW/J/S-MAG-4-SUMM-AVG1MIN-V1.0, NASA Planetary Data System,        
+      2006"                                                                   
+                                                                              
+    ABSTRACT_DESC                  = "                                        
+      This data set contains calibrated 1 minute averaged Cassini             
+      magnetometer data, for the entire Cassini mission. These data are       
+      provided in Kronographic (KRTP, KSO, KSM) coordinates at Saturn,        
+      Geographic coordinates (GSE, GSM) for the Earth flyby, Jovigraphic      
+      coordinates for the Jupiter flyby, and RTN coordinates for the entire   
+      mission. These data were calibrated, converted to physical coordinates  
+      and averaged to 1 minute by the Cassini MAG team at Imperial College."  
+                                                                              
+    DATA_SET_TERSE_DESC            = "                                        
+      This data set contains calibrated 1 minute averaged Cassini             
+      magnetometer data, for the entire Cassini mission."                     
+                                                                              
+                                                                              
+    DATA_SET_DESC                  = "                                        
+                                                                              
+      Data Set Overview                                                       
+      =================                                                       
+      This data set contains magnetic-field data acquired during the          
+      cruise and tour phases of the Cassini mission to Saturn.                
+      On 16 August, 1999 two days before the spacecraft commenced Earth       
+      swingby, the magnetometer boom was unfurled into its extended           
+      position; a  configuration it maintained for the remainder of the       
+      mission.  Magnetic-field data acquired prior to boom deployment are     
+      limited and are significantly affected by spacecraft noise. These       
+      data are of no scientific value and, consequently, do not form part     
+      of this data set.                                                       
+                                                                              
+      Cassini carried two magnetometers: a fluxgate magnetometer (FGM)        
+      and a vector-helium magnetometer capable of operating in both           
+      vector and scalar mode (V/SHM). This data set contains calibrated,      
+      and averaged magnetic-field data recorded by the FGM instrument.        
+      The data are provided in 1 minute averages.  The 1 minute data are      
+      provided in year files. The data are provided in RTN coordinates        
+      throughout the mission. After arrival at Saturn, the Saturn-centered    
+      KRTP, KSO, and KSM coordinates are also provided. Earth-centered,       
+      and Jupiter-centered coordinates are provided for the flybys of         
+      those two planets. All data files are ASCII.                            
+                                                                              
+      These data were calibrated, and rotated into geophysical coordinates    
+      by the Cassini MAG team at Imperial College (IC), and provided to       
+      the PDS/PPI node via the Cassini MAG team Co-I at UCLA. In other        
+      words these data use the same calibration as the data routinely         
+      delivered to the Cassini MAG team. The data were also averaged at       
+      IC. The data were reformatted into their current ASCII format,          
+      add trajectory information was added at PDS/PPI.                        
+                                                                              
+      Processing                                                              
+      ==========                                                              
+                                                                              
+                                                                              
+      Coordinate Systems                                                      
+      ==================                                                      
+      The coordinate systems in which the data are provided in vary by        
+      mission phase, and are designed to support both solar wind and          
+      planetary magnetospheric studies.                                       
+                                                                              
+                                                                              
+      Solar Wind Coordinates                                                  
+      ----------------------                                                  
+                                                                              
+         Radial-Tangential-Normal Coordinates (RTN)                           
+         ------------------------------------------                           
+         RTN coordinates consist of R (radial component, Sun to the           
+         spacecraft), T (tangential component, parallel to the Solar          
+         Equatorial plane and perpendicular to R), and N (normal component,   
+         completes right handed set).                                         
+                                                                              
+      Saturn-Centered Coordinates                                             
+      ---------------------------                                             
+                                                                              
+         Kronocentric body-fixed, J2000 spherical Coordinates (KRTP)          
+         -----------------------------------------------------------          
+         KRTP magnetic field vector components form the standard right-handed 
+         spherical triad (R, Theta, Phi) for a planet-centered system.        
+         Namely, R is radial (along the line from the center of Saturn to the 
+         center of the spacecraft), and positive away from Saturn. Phi, the   
+         azimuthal component, is parallel to the Kronographic equator (Omega  
+         x R) and positive in the direction of corotation. Theta, the         
+         'southward' component, completes the right-handed set.               
+                                                                              
+         Kronocentric Solar Magnetospheric Coordinates (KSM)                  
+         ---------------------------------------------------                  
+         KSM is a cartesian Saturn-center coordinate system where X points    
+         from Saturn to the Sun, the X-Z plane contains Saturn's centered     
+         magnetic dipole axis, M, and Y completes right handed set.           
+                                                                              
+         Kronocentric Solar Orbital Coordinates (KSO)                         
+         --------------------------------------------                         
+         KSO is a cartesian Saturn-centered coordinate system where X points  
+         from Saturn to the Sun, Z is parallel to Saturn's orbital plane      
+         upward normal, and Y completes the right handed set.                 
+                                                                              
+      Earth-Centered Coordinates                                              
+      --------------------------                                              
+                                                                              
+      Jupiter-Centered Coordinates                                            
+      ----------------------------                                            
+                                                                              
+         Jovicentric Body-Fixed (IAU_JUPITER) Coordinates (J3)                
+         -----------------------------------------------------                
+         J3 is a body-fixed Jovicentric cartesian coordinate system           
+         consistent with the IAU 1997 definition of the System 3 prime        
+         meridian where X is in the Jovian equatorial plane, along S3         
+         1997 Prime Meridian, Z is parallel to the Jovian spin axis,          
+         and Y completes right-handed set.                                    
+                                                                              
+         Jovicentric Body-Fixed Magnetospheric Coordinates (JMXYZ)            
+         ---------------------------------------------------------            
+         JMAG XYZ is a body-fixed Jovicentric cartesian coordinate system     
+         where X is in the plane containing Z and the S3 1997 Prime Meridian, 
+         Z is the Jupiter magnetic dipole, and Y completes right handed set.  
+                                                                              
+                                                                              
+      SPICE                                                                   
+      =====                                                                   
+      The data product labels associated with the data set include the name of
+      a SPICE metakerenls which contains a list of the SPICE kernels that were
+      used in calibrating the magnetic-field data, coverting them to physical 
+      coordinates, and generating the associated trajectory information.      
+      Copies of these metakernels are included in the GEOMETRY directory of   
+      the archive volume on which the data are located. While the SPICE       
+      kernels themselves are not part of this data set, they are archived at  
+      the PDS-NAIF node on the volume cosp_1000. Note that the SPICE kernels  
+      listed in the metakernels may be uniquely identified by their file name.
+      "                                                                       
+                                                                              
+                                                                              
+    CONFIDENCE_LEVEL_NOTE          = "                                        
+                                                                              
+      Product Versions                                                        
+      ================                                                        
+      PRODUCT_VERSION_ID 1 data were calibrated at the PDS/PPI node at        
+      UCLA using software (CAL02), and calibration data provided by the       
+      Cassini MAG team. The process used the same calibration data that       
+      was provided with the Raw Magnetometer data archive (Data Set ID:       
+      CO-E/SW/J/S-MAG-2-REDR-RAW-DATA-V1.0). The data were then rotated       
+      into geophysical coordinates using MAG team additonal MAG team          
+      provided code (TRANSCAL) and spice kernels obtained from NAIF.          
+      Additional processing, including averaging, reformatting to ASCII,      
+      and the addition of trajectory to the 1 minute data was performed       
+      using code developed at PDS/PPI.                                        
+                                                                              
+      PRODUCT_VERSION_ID 2 data were calibrated, and rotated into             
+      geophysical coordinates by the Cassini MAG team at Imperial             
+      College, and provided to the PDS/PPI node via the MAG team Co-I at      
+      UCLA. The 1 minute data were also averaged at IC. Averaging for the     
+      1 second data was performed at PDS/PPI. The data were reformatted       
+      at PDS/PPI to match the format used for the version 1 data.             
+                                                                              
+      PRODUCT_VERSION_ID 3 data were processed following the same             
+      procedure that was followed for the version 2 data. However,            
+      subsequent to the release of the version 2 data it was discovered       
+      that the coordinate system trasformation for some of those data had     
+      been performed using predict SPICE kernels, rather than                 
+      reconstructions. The version 3 were reprocessed using reconstructed     
+      ephemeris kernels for all of the data.                                  
+                                                                              
+      PRODUCT_VERSION_ID 4 data were processed following the same             
+      procedure that was followed for the version 2 and 3 data. These         
+      data, however, were processed using only reconstructed SPK's to         
+      generate the trajectory data, thus correcting the errors which          
+      were present in the version 3 data. The MAG data do not differ          
+      between versions 3 and 4.                                               
+                                                                              
+      PRODUCT_VERSION_ID 5 data were processed following the same             
+      procedure that was followed for the version 3 and 4 data.  These data   
+      include corrections to the NPTS column data values, and some updates to 
+      the label files.                                                        
+                                                                              
+      PRODUCT_VERSION_ID 6 for RTN data files - The DATA/ *_FGM_RTN_1M.TAB    
+      files, Version 5, and older versions, had assigned a width to the Sun   
+      to Spacecraft distance column (RANGE) that was insufficient to          
+      accommodate values over 10 AU. This resulted in inconsistent  record    
+      structures and lengths. The version 6 RTN files correct this error by   
+      allocating an additional byte to the RANGE column width and adjusting   
+      the start position of the subsequent columns accordingly.               
+                                                                              
+      PRODUCT_VERSION_ID 6 for KRTP, KSO, and KSM and PRODUCT_VERSION_ID for  
+      RTN data files were processed using an updated calibration that was     
+      produced using data from the Cassini Proximal Orbits.                   
+"                                                                             
+                                                                              
+                                                                              
+                                                                              
+  END_OBJECT                       = DATA_SET_INFORMATION                     
+                                                                              
+  OBJECT                           = DATA_SET_MISSION                         
+    MISSION_NAME                   = "CASSINI-HUYGENS"                        
+  END_OBJECT                       = DATA_SET_MISSION                         
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "SOLAR WIND"                             
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "EARTH"                                  
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "JUPITER"                                
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_TARGET                          
+    TARGET_NAME                    = "SATURN"                                 
+  END_OBJECT                       = DATA_SET_TARGET                          
+                                                                              
+  OBJECT                           = DATA_SET_HOST                            
+    INSTRUMENT_HOST_ID             = "CO"                                     
+    INSTRUMENT_ID                  = "MAG"                                    
+  END_OBJECT                       = DATA_SET_HOST                            
+                                                                              
+  OBJECT                           = DATA_SET_REFERENCE_INFORMATION           
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                       = DATA_SET_REFERENCE_INFORMATION           
+                                                                              
+END_OBJECT                         = DATA_SET                                 
+END

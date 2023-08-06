@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id>1518451</id>
+        <title>Apollo 17 ALSEP ARCSAV Heat Flow Experiment Calibrated Gradient Bridge Temperatures
+        Bundle</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>urn:nasa:pds:a17hfe_calibrated_arcsav::1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>Geosciences Node</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>2018-10-29</publication_date>
+            <country>USA</country>
+            <description>This bundle contains fixed-width ASCII files contains fully processed, calibrated
+                temperature data for the upper gradient bridge thermal sensors on both probes of the
+                Heat Flow Experiment (HFE) at the Apollo 17 landing site. The time span is 02 April through
+                30 June 1975. These data were derived from raw measurements extracted from NASA's original
+                Apollo Lunar Surface Experiments Package (ALSEP) archive tapes, also known as ARCSAV
+            tapes.</description>
+            <site_url>https://pds.jpl.nasa.gov/ds-view/pds/viewBundle.jsp?identifier=urn%3Anasa%3Apds%3Aa17hfe_calibrated_arcsav&amp;version=1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Collection</product_type>
+            <product_type_specific>PDS4 Bundle</product_type_specific>
+            <date_record_added>2020-04-22</date_record_added>
+            <keywords>PDS;  PDS4;  GEO; Calibrated; Apollo 17; Apollo 17 ALSEP; Apollo 17 Heat Flow Experiment; MOON</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <first_name>S.</first_name>
+                    <last_name>Nagihara</last_name>
+                    <affiliations/>
+                </author>
+                <author>
+                    <email/>
+                    <first_name>Y.</first_name>
+                    <last_name>Nakamura</last_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <first_name>D.R.</first_name>
+                    <last_name>Williams</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <email/>
+                    <first_name>S.A.</first_name>
+                    <last_name>McLaughlin</last_name>
+                    <contributor_type>Editor</contributor_type>
+                    <affiliations/>
+                </contributor>
+                <contributor>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:a17hfe_calibrated_arcsav::1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>

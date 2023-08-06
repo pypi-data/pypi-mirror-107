@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<records>
+    <record>
+        <!-- The unique identifier for the record (used for updates on submission); Null if initial creation -->
+        <id/>
+        <title>MGN V RADAR SYSTEM DERIVED MIDR COMPRESSED THRICE V1.0</title>
+        <sponsoring_organization>National Aeronautics and Space Administration (NASA)</sponsoring_organization>
+        <accession_number>MGN-V-RDRS-5-MIDR-C3-V1.0</accession_number>   <!-- LIDVID -->
+            <!--
+            <doi_infix>my-example-infix</doi_infix>
+            <report_numbers>EX-001-2017</report_numbers>
+            <contract_numbers>Example-001-2017</contract_numbers>
+            <other_numbers>OtherIdentifyingNumbers</other_numbers>
+            -->
+            <publisher>NASA Planetary Data System</publisher>
+            <availability>NSSDCA</availability>
+            <publication_date>1992-09-01</publication_date>
+            <country>USA</country>
+            <description>This data set contains the Magellan Compressed Thrice Mosaicked
+                Image Data Records (C3-MIDRs) which consists of mosaics generated
+                by computing 3x3 pixel arithmetic moving averages from the
+                C2-MIDRs. Each C3-MIDR is in a sinusoidal equal area projection
+                and has an origin at 0 degrees latitude, with the central
+                meridian defined as the longitude bisecting the mosaic. Each
+                C1-MIDR has 7168 lines (aligned with latitudes) and 8192 samples,
+                arranged as 56 1024 x 1024 files on CD-ROM. C3-MIDRs, with their
+                2.025 km pixel widths, are designed to cover the planet at
+                reasonably high resolution and high signal to noise ratio. The
+                1024 x 1024 files have a VICAR2 format, with embedded VICAR2
+                labels. The data have been placed on CD-ROMs with documentation,
+                detached Planetary Data System labels, and summary tabular
+            information.</description>
+            <site_url>https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=MGN-V-RDRS-5-MIDR-C3-V1.0</site_url>
+            <!-- Collection definition:
+            a Collection product may refer to an aggregation of resources and research objects.
+            A Collection probably has items in it which have or will receive their own DOIs and thus be
+            retrievable independently. Therefore the Collection record is a high-level description of
+            the overall group of items.
+            -->
+            <product_type>Dataset</product_type>
+            <product_type_specific>PDS3 Refereed Data Set</product_type_specific>
+            <keywords>MAGELLAN; VENUS; RADAR; MGN; PLANET; RDRS; RADAR SYSTEM</keywords>
+            <authors>
+                <author>
+                    <email/>
+                    <full_name>Unknown</full_name>
+                    <affiliations/>
+                </author>
+            </authors>
+            <contributors>
+                <contributor>
+                    <email/>
+                    <full_name>Geosciences Node</full_name>
+                    <contributor_type>DataCurator</contributor_type>
+                    <affiliations/>
+                </contributor>
+            </contributors>
+            <related_identifiers>
+                <related_identifier>
+                    <identifier_type>URL</identifier_type>
+                    <identifier_value>urn:nasa:pds:context_pds3:data_set:data_set.mgn-v-rdrs-5-midr-c3-v1.0</identifier_value>
+                    <relation_type>Cites</relation_type>
+                </related_identifier>
+            </related_identifiers>
+        </record>
+</records>
