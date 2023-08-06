@@ -1,0 +1,78 @@
+@import "~assets/styles/patch/_colorconf.scss";
+@import "~compass-mixins";
+body {
+  overflow: hidden;
+}
+
+.v-application--wrap {
+  min-height: auto;
+  height: 100vh;
+
+  .v-main__wrap {
+    overflow: scroll;
+    max-height: calc(100vh - 56px);
+  }
+}
+
+.welcome_bacground_xxx {
+  @extend .purple_plan_background_x;
+}
+
+
+
+.v-application {
+  a {
+    text-decoration: none;
+  }
+
+  font-family: $body-font-family, sans-serif !important;
+
+  .title { // To pin point specific classes of some components
+    font-family: $title-font, sans-serif !important;
+  }
+
+  .code_share {
+    font-family: $sharing-code;
+    font-size: 2em;
+  }
+
+  .brandname {
+    font-family: "SakuraX", "Roboto", Sans-serif;
+    font-size: 5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 509px) {
+  .v-application .code_share {
+    letter-spacing: 4.0rem;
+  }
+}
+
+@media screen and(max-width: 509px) and (min-width: 320px) {
+  .v-application .code_share {
+    letter-spacing: 2.0rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .v-application .code_share {
+    letter-spacing: 1.0rem;
+  }
+}
+
+@mixin warning_size($hover_color) {
+  $strip_a: #cccccc;
+  $strip_b: #dbdbdb;
+  background-image: repeating-linear-gradient(110deg, $strip_a, $strip_a 30px, $strip_b 30px, $strip_b 60px);
+  background-blend-mode: overlay;
+  background-color: $hover_color;
+}
+
+.warning_sticky {
+  @include warning_size(#e0d61c)
+}
+
+.warning_loading {
+  @include warning_size(#1ce03d)
+}

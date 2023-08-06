@@ -1,0 +1,234 @@
+/////////////////////////////
+//button-5
+///////////////////////////
+
+.bbg_login_back {
+  position: relative;
+  top: 30px;
+  color: white;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+@mixin cell-bbg-long-window {
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rblist.table_proend {
+  width: 95vw;
+}
+
+.advertistment {
+  font-family: "MBS";
+  font-size: 2.5em;
+  font-weight: normal !important;
+  &.smaller {
+    font-size: 1.5em;
+  }
+}
+
+.bbg_long_info_window {
+
+  .modal-header {
+    text-align: center;
+    position: relative;
+  }
+  .modal-footer {
+    top: 25px;
+    position: relative;
+  }
+  .modal-body {
+    bottom: 15px;
+    position: relative;
+  }
+  &.modal-table-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100%;
+    //  margin:10vh 10vw;
+    // height:80vh;
+    .window_top {
+      background: url("~assets/img/windows/nb1.png");
+      @include cell-bbg-long-window;
+    }
+    .window_body {
+      background: url("~assets/img/windows/nb3.png");
+      @include cell-bbg-long-window;
+      background-repeat: repeat-y;
+    }
+    .window_bottom {
+      background: url("~assets/img/windows/nb2.png");
+      @include cell-bbg-long-window;
+    }
+    .flex-column-content {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+  }
+}
+
+.bbg_warning_window {
+  &.modal-table-wrapper {
+    display: none !important;
+  }
+  //warningwindow
+  background: url("~assets/img/windows/warn.png");
+  background-size: contain;
+  width: 250px !important;
+  height: 237px !important;
+  &:after {
+    content: "";
+  }
+  .modal-header {
+    font-family: "Playstation3";
+    top: 15px;
+    color: #ffb734;
+    font-size: 14px;
+    position: relative;
+  }
+  .modal-body {
+    // font-family: "Playstation3";
+    top: 45px;
+    color: #ffb734;
+    font-size: 14px;
+    position: relative;
+  }
+  .modal-footer {
+    font-family: "Playstation3";
+    top: 45px;
+    position: relative;
+  }
+  a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.windowed_table_x {
+  .ch {
+    max-width: 100px;
+    overflow: hidden;
+    //text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  table {
+    width: 100%;
+  }
+  .columnA {
+    width: 30%;
+    text-align: center;
+  }
+  .columnB {
+    width: 10%;
+  }
+}
+
+//$bbg_button_height: 20px;
+
+/**
+banner buttons
+ */
+@mixin buttonfcx {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //width: $bbg_button_height;
+  height: 35px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c3b51), to(#325c64));
+  background: linear-gradient(to bottom, #2c3b51 0%, #325c64 100%);
+  color: #a3ebf8 !important;
+  line-height: 34px;
+  vertical-align: middle;
+  border: 1px #71a3ac solid;
+  border-radius: 5px;
+  font-size: 10px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+$frame_width: 100vw;
+$frame_content_height: 300px;
+.bbg_long_info_window {
+  .window_top {
+    width: $frame_width;
+    height: 20px;
+  }
+  .window_body {
+    width: 300px;
+    height: $frame_content_height;
+  }
+  .window_bottom {
+    width: $frame_width;
+    height: 27px;
+  }
+}
+
+@media(min-width: 510px) {
+  .bbg_waiting_window {
+    width: 500px !important;
+    height: 287.9px !important;
+    .modal-body {
+      top: 48px;
+    }
+    .modal-footer > div {
+      top: 70px;
+      position: absolute;
+    }
+  }
+}
+
+@media(max-width: 510px) {
+  .bbg_waiting_window {
+    width: 300px !important;
+    height: 172.74px !important;
+    .modal-body {
+      top: -10px;
+    }
+    .modal-footer > div {
+      top: 0px;
+    }
+  }
+
+}
+
+.qbtnswitch {
+  flex-wrap: nowrap;
+  font-family: "Playstation3";
+  @include buttonfcx;
+}
+
+@media(min-width: 510px) {
+  .flexhitem.onlywidthscreen {
+  }
+  .flexcontainx.onlywidthscreen {
+  }
+  .qbtnswitch.onlynarrowscreen {
+    display: none;
+  }
+  .onlynarrowscreen {
+    display: none;
+  }
+}
+
+@media(max-width: 510px) {
+  .flexhitem.onlywidthscreen,
+  .flexcontainx.onlywidthscreen {
+    display: none;
+  }
+  .qbtnswitch.onlynarrowscreen {
+
+  }
+
+}
