@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/calver/__init__.py
+src/calver/commands.py
+src/calver/integration.py
+src/calver_pinning.egg-info/PKG-INFO
+src/calver_pinning.egg-info/SOURCES.txt
+src/calver_pinning.egg-info/dependency_links.txt
+src/calver_pinning.egg-info/entry_points.txt
+src/calver_pinning.egg-info/requires.txt
+src/calver_pinning.egg-info/top_level.txt
