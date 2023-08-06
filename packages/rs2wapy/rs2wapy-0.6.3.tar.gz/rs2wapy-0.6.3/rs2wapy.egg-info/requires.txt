@@ -1,0 +1,12 @@
+beautifulsoup4
+bs4
+Logbook
+pycurl
+soupsieve
+requests
+steam
+regex
+
+[dev]
+mypy
+versioneer
