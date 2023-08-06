@@ -1,0 +1,14 @@
+rubric/__init__.py,sha256=4nSxa_uwRMrUo5-QDLIj0DBxKd9Bgt3JiEYDArYACYM,3128
+rubric/rsrc/.flake8,sha256=qS2m-SytJsusBG1O1PmfIheZ0xutPU_l6_vAN-rV8BU,353
+rubric/rsrc/.gitignore,sha256=FUYSVbaOs4cwKqnZagtBBwPi26lvc4_Tw3juaxkmU5I,2035
+rubric/rsrc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric/rsrc/makefile,sha256=k5KQUorKoa9nM6dy3jYqZ0zqPW01fJT9gSx1BaMocKU,1290
+rubric/rsrc/mypy.ini,sha256=T6NM_6C0UitgaV-gOWti1QH-FtFmXlsDLnLh6NIF6Xc,143
+rubric/rsrc/pyproject.toml,sha256=VAECz7K8KFYM6Un3iZYxxU0D3N8jlk_PbxvKStPTcH0,144
+rubric/rsrc/requirements-dev.txt,sha256=qj0oFuRxSoUBlv5JzQglJPdY97slZwzZoreP1qeEYOU,34
+rubric/rsrc/requirements.in,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric/rsrc/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubric-0.1.1.dist-info/entry_points.txt,sha256=n7uh3tUOyowjuwd-D8bEEkcm8RBHPcagVLHb1857gkw,48
+rubric-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+rubric-0.1.1.dist-info/METADATA,sha256=2dtIQtKtgWN2ihbqV-rlGoqp1gsiJ7qsZE3bwCOzCE0,977
+rubric-0.1.1.dist-info/RECORD,,
