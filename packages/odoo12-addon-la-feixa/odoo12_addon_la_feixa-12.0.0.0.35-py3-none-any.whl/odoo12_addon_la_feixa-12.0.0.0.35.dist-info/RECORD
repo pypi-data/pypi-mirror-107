@@ -1,0 +1,16 @@
+odoo/addons/la_feixa/__init__.py,sha256=zNT2NvGcEjwQgOVsavkpLiHe242IbOncVY4EC0mqhwk,47
+odoo/addons/la_feixa/__manifest__.py,sha256=QHAH9qdqFowCtMnZIbZyaujauMlg2y6ycDI_n7q-lLo,608
+odoo/addons/la_feixa/controllers/__init__.py,sha256=DaNIU3YYF3LNoXD4EfZeplyy4UvADnr2LGVGW_Goow0,35
+odoo/addons/la_feixa/controllers/website_subscription.py,sha256=9chd_1f1jSqRXx6JNjOfkQeqFGvd5jv7BvKRBNFH3I4,5341
+odoo/addons/la_feixa/models/__init__.py,sha256=Lej97_1coxj6juzMuBAcBBwezD6LuyTa02bk_0lsRGk,57
+odoo/addons/la_feixa/models/company.py,sha256=gazUJjQIBJ4pwY2yo0nWmkzRMTO4dOQhdtNPaMmC5IM,497
+odoo/addons/la_feixa/models/subscription_request.py,sha256=_HL_f6j7sWuoKplMvuNHHITNlLJ2UFHnUHWofTiZQXk,2370
+odoo/addons/la_feixa/views/become_company_cooperator_view.xml,sha256=Xb-Yuf-gIVLplEncTBySg8_uwFWVUsqshg0LW_KC3FY,4737
+odoo/addons/la_feixa/views/become_cooperator_view.xml,sha256=gAluM5DNEax_i-v9G3a8_3LbN3E-LspWh36kssHO1Js,4482
+odoo/addons/la_feixa/views/cooperator_thanks_view.xml,sha256=wD-bzIWq2Il9zpHj70ULMGXNvS2sANDSX5YZLtPmF84,1562
+odoo/addons/la_feixa/views/res_company_view.xml,sha256=TMu-bKYG0S1HaEX7CdWh4Qf8T57Rr1H5W8PRkapMqXY,610
+odoo/addons/la_feixa/views/subscription_request_view.xml,sha256=kl6Tqd23dosHie3QuY2pxXvopbL5Gy1HanviM0KzHMo,1016
+odoo12_addon_la_feixa-12.0.0.0.35.dist-info/METADATA,sha256=DwpnA514vyHPAMkHNd7QUi8I7n2CZTVWfiGqm8AwOxg,558
+odoo12_addon_la_feixa-12.0.0.0.35.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo12_addon_la_feixa-12.0.0.0.35.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_la_feixa-12.0.0.0.35.dist-info/RECORD,,
