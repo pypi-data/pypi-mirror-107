@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pulp-python
+Version: 3.3.0
+Summary: pulp-python plugin for the Pulp Project
+Home-page: https://www.pulpproject.org
+Author: Pulp Project Developers
+Author-email: pulp-list@redhat.com
+License: GPLv2+
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pulpcore (<3.15,>=3.13)
+Requires-Dist: pkginfo
+Requires-Dist: packaging
+Requires-Dist: bandersnatch (==4.4.0)
+
+# pulp_python
+
+![Pulp CI](https://github.com/pulp/pulp_python/actions/workflows/ci.yml/badge.svg?branch=master)
+
+![Pulp Nightly CI/CD](https://github.com/pulp/pulp_python/actions/workflows/nightly.yml/badge.svg)
+
+A Pulp plugin to support hosting your own pip compatible Python packages.
+
+For more information, please see the [documentation](https://pulp-python.readthedocs.io/en/latest/) or the 
+[Pulp project page](https://pulpproject.org).
+
+
