@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: rsa4py
+Version: 0.0.2.0.dev2
+Summary: python implementation of the rsa algorythem
+Home-page: UNKNOWN
+Author: Julian Wandhoven
+Author-email: julian.wandhoven@gmail.com
+License: apache-2.0
+Description: # Rsa4Py
+        
+        rsa4py is a python library used to encript and decript string to lists of positive intagers
+        
+        
+        **Table of Contents**
+        
+        [TOCM]
+        
+        [TOC]
+        
+        
+        Key Generation
+        =============
+        keys are divided into Public and Private keys. Public keys can be used to encript messages whereas Private can encript and decript.
+        
+        Private Key
+        -----------
+        to generate a private Key can must use 2 larg prime numbers. the library dose not test if its a prime number so make sure they are. you can alsow specify a modular value `n`. ``n`` will be generated if not passed or incorrect.  to generate just use, where `p` and `q` are the prime numbers:
+        ````
+        key = rsa4py.PrivateKey(p, q)
+        ````
+        if you want to generate with `n`
+        ````
+        key = rsa4.py.PrivateKey(p, q, n)
+        ````
+        
+        Public Key
+        -----------
+        to generate a public key you can eather pass the modular value `n` and the encription key `e`.  or you can generate it from a private key.
+        
+        to generate from public key `k`. use
+        ````
+        publicKey = k.getPublic()
+        ````
+        to get from `n` and `e` use:
+        
+        ````
+        publicKey = rsa4py.PublicKey(n, e)
+        ````
+        
+        usage
+        =====
+        encription
+        -----------
+        
+        encription can be done with both the Public and Private Keys. both methods work the same way. For a given key `k` and a text `t` the encripton works as followes.
+        
+        ````
+        msg = k.encript(t)
+        ````
+        
+        out will be a list of values of the valus of the encripted text.
+        
+        decription
+        -----------
+        
+        for decription you need to use the Private key. this works as follows. for a given private key `k`, an encripted text `out`, `t` will be the decripted text
+        ````
+        t = k.decript(msg)
+        ````
+        
+        message
+        ---------
+        during endcription and decription we used the variable ``msg`` witch is a ``CritptoMessage`` class witch is a subclass of a `list`. it contains the entripted message as itself, an intager `signature` witch is the authentication value of the message.
+        ###saving messages###
+        to save a message use the following function where `filename` is the name of the file to save to (no file extension)  and ``msg`` is the message to save
+        ````
+        msg.save(filename)
+        ````
+        you can also use somthing like pickle directly by for example:
+        ````
+        pickle.dump(msg, open(f"{filename}.msg.p, "wb))
+        ````
+        ###loading messages###
+        loding is done using the loadMsg function. again ``filename`` is the name of the file to load from. 
+        ````
+        msg = rsa4py.loadMsg(filename)
+        ````
+        or using somthing like pickle directly:
+        ````
+        msg = pickle.load(open(f"{filename}.msg.p", "rb"))
+        ````
+        
+        
+        authentication
+        ----------------
+        the library suports authentication of messages. this is done usind the senders private and public keys. 
+        
+        ###signing###
+        to sign a messsage you have to use your own ``PrivateKey`` `p` and a message `msg`
+        ````
+        msg.sign(p)
+        ````
+        
+        ###authenticating###
+        when trying to figure out if a messages signature is correct you have to use the `signatureCorrect` method. this is done using the `PublicKey` `k` of the sender (aka ``p.getPublic()``)
+        ````
+        out  = msg.signatureCorrect(k)
+        ````
+        out will be a boolean value witch is true if the authentication was correct.
+        
+        
+        filed keys
+        =======
+        saving
+        -------
+        
+        you can alsow save a key `k` to a file and load them later using:
+        ````
+        k.save(file)
+        ````
+        where file is the string containing the filename and path (no extension). the extension will be ".rsa.p". 
+        
+        loading
+        -------
+        to load a key again you have to run the function:
+        ````
+        key = rsa4py.loadKey(file)
+        ````
+        where file is the name of the file containining the key without extension.
+        
+        instalation
+        ======
+        to install rsa4py via pi just use
+        ````
+        pip install rsa4py
+        ````
+        
+Keywords: rsa,Cryptography
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security :: Cryptography 
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
