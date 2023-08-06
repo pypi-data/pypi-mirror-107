@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: fastsearch
+Version: 0.0.3
+Summary: a Python package for fast search entirely in-memory based
+Home-page: https://github.com/eyalsus/fastsearch
+Author: Eyal Paz
+Author-email: eyalsus@gmail.com
+License: BSD-3-Clause and Public-Domain
+Description: UNKNOWN
+Keywords: search,fastsearch,fuzzy search,ngrams,aho-corasick
+Platform: Linux
+Platform: MacOSX
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
