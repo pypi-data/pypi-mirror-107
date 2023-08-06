@@ -1,0 +1,233 @@
+Metadata-Version: 2.1
+Name: pywikibot
+Version: 6.3.0
+Summary: Python MediaWiki Bot Framework
+Home-page: https://www.mediawiki.org/wiki/Manual:Pywikibot
+Maintainer: The Pywikibot team
+Maintainer-email: pywikibot@lists.wikimedia.org
+License: MIT License
+Download-URL: https://pywikibot.toolforge.org/
+Description: .. image:: https://travis-ci.org/wikimedia/pywikibot.svg?branch=master
+           :alt: Travis Build Status
+           :target: https://travis-ci.org/wikimedia/pywikibot
+        .. image:: https://ci.appveyor.com/api/projects/status/xo2g4ctoom8k6yvw/branch/master?svg=true
+           :alt: AppVeyor Build Status
+           :target: https://ci.appveyor.com/project/ladsgroup/pywikibot-g4xqx
+        .. image:: https://codecov.io/gh/wikimedia/pywikibot/branch/master/graph/badge.svg
+           :alt: Code coverage
+           :target: https://codecov.io/gh/wikimedia/pywikibot
+        .. image:: https://api.codeclimate.com/v1/badges/de6ca4c66e7c7bee4156/maintainability
+           :alt: Maintainability
+           :target: https://codeclimate.com/github/wikimedia/pywikibot/maintainability
+        .. image:: https://img.shields.io/pypi/pyversions/pywikibot.svg
+           :alt: Python
+           :target: https://www.python.org/downloads/
+        .. image:: https://img.shields.io/pypi/v/pywikibot.svg
+           :alt: Pywikibot release
+           :target: https://pypi.org/project/pywikibot/
+        .. image:: https://pepy.tech/badge/pywikibot
+           :alt: Total downloads
+           :target: https://pepy.tech/project/pywikibot
+        .. image:: https://static.pepy.tech/personalized-badge/pywikibot?period=month&units=international_system&left_color=black&right_color=blue&left_text=monthly
+           :alt: Monthly downloads
+           :target: https://pepy.tech/project/pywikibot
+        .. image:: https://static.pepy.tech/personalized-badge/pywikibot?period=week&units=international_system&left_color=black&right_color=blue&left_text=weekly
+           :alt: Weekly downloads
+           :target: https://pepy.tech/project/pywikibot
+        
+        Pywikibot
+        =========
+        
+        The Pywikibot framework is a Python library that interfaces with the
+        `MediaWiki API <https://www.mediawiki.org/wiki/API:Main_page>`_
+        version 1.23 or higher.
+        
+        Also included are various general function scripts that can be adapted for
+        different tasks.
+        
+        For further information about the library excluding scripts see
+        the full `code documentation <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        Quick start
+        -----------
+        
+        ::
+        
+            pip install requests
+            git clone https://gerrit.wikimedia.org/r/pywikibot/core.git
+            cd core
+            git submodule update --init
+            python pwb.py script_name
+        
+        Or to install using PyPI (excluding scripts)
+        
+        ::
+        
+            pip install -U setuptools
+            pip install pywikibot
+        
+        In addition a MediaWiki markup parser is required. Please install one of them:
+        
+        ::
+        
+            pip install mwparserfromhell
+        
+        or
+        
+        ::
+        
+            pip install wikitextparser
+        
+        Our `installation
+        guide <https://www.mediawiki.org/wiki/Manual:Pywikibot/Installation>`_
+        has more details for advanced usage.
+        
+        Basic Usage
+        -----------
+        
+        If you wish to write your own script it's very easy to get started:
+        
+        ::
+        
+            import pywikibot
+            site = pywikibot.Site('en', 'wikipedia')  # The site we want to run our bot on
+            page = pywikibot.Page(site, 'Wikipedia:Sandbox')
+            page.text = page.text.replace('foo', 'bar')
+            page.save('Replacing "foo" with "bar"')  # Saves the page
+        
+        Wikibase Usage
+        --------------
+        
+        Wikibase is a flexible knowledge base software that drives Wikidata.
+        A sample pywikibot script for getting data from Wikibase:
+        
+        ::
+        
+            import pywikibot
+            site = pywikibot.Site('wikipedia:en')
+            repo = site.data_repository()  # the Wikibase repository for given site
+            page = repo.page_from_repository('Q91')  # create a local page for the given item
+            item = pywikibot.ItemPage(repo, 'Q91')  # a repository item
+            data = item.get()  # get all item data from repository for this item
+        
+        -------------------------------------------------------------------------------------------
+        
+        For more documentation on Pywikibot see our `docs <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        The contents of the package
+        ---------------------------
+        
+            +----------------------------------------------------------------------------------+
+            |  Directories                                                                     |
+            +===========================+======================================================+
+            |  pywikibot                | Library routines, control files and global settings  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/comms          | Communication layer                                  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/data           | Module with several layers for data access to wiki   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/families       | wiki-specific information and settings               |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/page           | Module with classes for MediaWiki page content       |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/site           | Module with classes for MediaWiki sites              |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/specialbots    | Module containing special bots reusable by scripts   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/tools          | Miscellaneous helper functions (not wiki-dependent)  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/userinterfaces | GUI and terminal interface                           |
+            +---------------------------+------------------------------------------------------+
+        
+        Required external programs
+        ---------------------------
+        
+        It may require the following programs to function properly:
+        
+        * `7za`: To extract 7z files
+        
+        Roadmap
+        -------
+        
+        Current release changes
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        
+        * Check bot/nobots templates for cosmetic_changes hook (T283989)
+        * Remove outdated opt._option which is already dropped (T284005)
+        * Use IntEnum with cosmetic_changes CANCEL
+        * Remove lru_cahce from botMayEdit method and fix it's logic (T283957)
+        * DataSite.createNewItemFromPage() method was removed in favour of ImagePage.fromPage() (T98663)
+        * mwparserfromhell or wikitextparser MediaWiki markup parser is mandatory (T106763)
+        
+        Deprecations
+        ^^^^^^^^^^^^
+        
+        * 6.2.0: Bot's availableOptions will be removed in favour of available_options
+        * 6.2.0: deprecated tools.is_IP will be removed
+        * 6.2.0: Usage of pywikibot.config2 is deprecated and will be dropped
+        * 6.2.0: Exceptions must be imported from exceptions namespace (T280227)
+        * 6.2.0: Deprecated exception identifiers will be removed (T280227)
+        * 6.2.0: empty_iterator will be removed in favour of iter()
+        * 6.1.0: tools.frozenmap will be removed in favour of types.MappingProxyType
+        * 6.1.0: tools.DotReadableDict will be removed
+        * 6.1.0: textlib.unescape() function will be removed in favour of html.unescape()
+        * 6.0.1: Site.undeletepage() and Site.undelete_file_versions() will be removed in favour of Site.undelete() method
+        * 6.0.1: Site.deletepage() and Site.deleteoldimage() will be removed in favour of Site.delete() method
+        * 5.0.0: Methods deprecated for 5 years or longer will be removed
+        
+        Release history
+        ---------------
+        
+        See https://github.com/wikimedia/pywikibot/blob/stable/HISTORY.rst
+        
+        Contributing
+        ------------
+        
+        Our code is maintained on Wikimedia's `Gerrit installation <https://gerrit.wikimedia.org/>`_,
+        `learn <https://www.mediawiki.org/wiki/Developer_account>`_ how to get
+        started.
+        
+        Code of Conduct
+        ---------------
+        
+        The development of this software is covered by a 
+        `Code of Conduct <https://www.mediawiki.org/wiki/Special:MyLanguage/Code_of_Conduct>`_.
+        
+        
+Keywords: API,bot,client,framework,mediawiki,pwb,pybot,python,pywiki,pywikibase,pywikibot,pywikipedia,pywikipediabot,wiki,wikibase,wikidata,wikimedia,wikipedia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.0
+Provides-Extra: eventstreams
+Provides-Extra: isbn
+Provides-Extra: Graphviz
+Provides-Extra: Google
+Provides-Extra: mwparserfromhell
+Provides-Extra: wikitextparser
+Provides-Extra: Tkinter
+Provides-Extra: mwoauth
+Provides-Extra: html
+Provides-Extra: http
+Provides-Extra: flake8
+Provides-Extra: commons_information.py
+Provides-Extra: patrol.py
+Provides-Extra: weblinkchecker.py
+Provides-Extra: scripts
