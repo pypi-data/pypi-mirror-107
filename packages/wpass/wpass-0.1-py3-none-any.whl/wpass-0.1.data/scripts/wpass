@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+location=/etc/NetworkManager/system-connections
+
+RED='\033[0;31m'
+
+function red {
+    printf "${RED}$@${NC}\n"
+}
+
+
+function getpass()
+{
+
+wifi_current=$(iwgetid -r)
+wifi=${@:-"$wifi_current"}
+
+file_name="$location/$wifi.nmconnection"
+
+if [ -z "$wifi" ]; then
+  echo $(red "not connected to any wifi")
+  exit 0
+else
+  without_location=$(echo "$wifi" | sd "/etc/NetworkManager/system-connections/" "")
+  file_name="$location/$without_location"
+  pure_name=$(echo "$without_location" | sd ".nmconnection" "")
+fi
+
+
+eval $(sudo grep "psk=" "$file_name")
+
+if [[ -z $psk ]]; then
+	echo "password not found / wifi may be be an open network perhaps"
+	exit 0
+fi
+
+cb $psk
+echo "the password for $pure_name is $psk"
+#notify-send "the password for $current_wifi is $psk" "copied to clipboard"
+}
+
+print_opts()
+{
+for f in ${$@}; do
+  echo $f
+ done
+}
+
+function show_menu()
+{
+  cd $location
+  let i=0 # define counting variable
+W=() # define working array
+while read -r line; do # process file by file
+    let i=$i+1
+    W+=($i "$line")
+done < <( ls -1 . )
+  choice=$(dialog --clear --backtitle "Madhavth Wifi password fetcher" --title "Select your wifi" --menu "Choose one of the following options:" 15 40 4 \
+  "${W[@]}" 3>&2 2>&1 1>&3)
+  if [ $? -eq 0 ]; then # Exit with OK
+file=$(readlink -f $(ls -1 . | sed -n "`echo "$choice p" | sed 's/ //'`"))
+clear
+getpass $file
+  fi
+}
+
+
+if [[ "$1" == "-l" ]]; then
+	show_menu
+else
+	getpass
+fi
