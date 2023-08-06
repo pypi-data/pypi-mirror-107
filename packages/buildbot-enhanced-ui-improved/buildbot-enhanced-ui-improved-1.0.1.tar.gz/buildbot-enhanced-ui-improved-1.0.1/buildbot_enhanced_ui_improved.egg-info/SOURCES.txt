@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+buildbot_enhanced_ui/VERSION
+buildbot_enhanced_ui/__init__.py
+buildbot_enhanced_ui/static/scripts.js
+buildbot_enhanced_ui/static/styles.css
+buildbot_enhanced_ui/static/tests.js
+buildbot_enhanced_ui_improved.egg-info/PKG-INFO
+buildbot_enhanced_ui_improved.egg-info/SOURCES.txt
+buildbot_enhanced_ui_improved.egg-info/dependency_links.txt
+buildbot_enhanced_ui_improved.egg-info/entry_points.txt
+buildbot_enhanced_ui_improved.egg-info/top_level.txt
