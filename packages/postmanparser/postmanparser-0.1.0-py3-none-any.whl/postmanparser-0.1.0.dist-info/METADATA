@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: postmanparser
+Version: 0.1.0
+Summary: 
+Author: Appknox
+Author-email: engineering@appknox.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.5b1,<22.0)
+Requires-Dist: coverage (>=5.5,<6.0)
+Requires-Dist: flake8 (>=3.9.2,<4.0.0)
+Requires-Dist: flake8-import-order (>=0.18.1,<0.19.0)
+Requires-Dist: httpx (>=0.18.1,<0.19.0)
+Requires-Dist: respx (>=0.17.0,<0.18.0)
+Requires-Dist: zimports (>=0.4.0,<0.5.0)
