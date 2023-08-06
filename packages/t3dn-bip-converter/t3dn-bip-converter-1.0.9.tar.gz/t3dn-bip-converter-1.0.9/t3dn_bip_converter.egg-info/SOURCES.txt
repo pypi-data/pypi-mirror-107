@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+t3dn_bip_converter/__init__.py
+t3dn_bip_converter/__main__.py
+t3dn_bip_converter/convert.py
+t3dn_bip_converter.egg-info/PKG-INFO
+t3dn_bip_converter.egg-info/SOURCES.txt
+t3dn_bip_converter.egg-info/dependency_links.txt
+t3dn_bip_converter.egg-info/requires.txt
+t3dn_bip_converter.egg-info/top_level.txt
