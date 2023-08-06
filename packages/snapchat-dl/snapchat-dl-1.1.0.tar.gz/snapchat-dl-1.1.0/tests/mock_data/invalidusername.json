@@ -1,0 +1,68 @@
+{
+  "storyID": "c:LCXi7xRVtqkZ0fKVsCq1_HbiAYVsXZa7CeuJhs9sNworIwwaGVngpB7T6Q",
+  "storyTitle": "invalidusername 🦄",
+  "storyType": "TYPE_PUBLIC_USER_STORY",
+  "emoji": "⭐",
+  "isOfficial": true,
+  "isPopular": true,
+  "thumbnailUrl": [
+    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg"
+  ],
+  "userName": "invalidusername",
+  "timestampInSec": 0,
+  "snapList": [
+    {
+      "snapIndex": 0,
+      "snapTitle": "",
+      "snapSubtitles": "⭐",
+      "snapId": "NIVYnu8lT6O9hJ6qBt6IsAAAg98Hn_JigoMeWAXmp2xeYAXmp2ww8_____w",
+      "timestampInSec": 1622052375,
+      "snapUrls": {
+        "mediaUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "mediaPreviewUrl": "",
+        "snapMediaType": "",
+        "overlayUrl": ""
+      }
+    },
+    {
+      "snapIndex": 1,
+      "snapTitle": "",
+      "snapSubtitles": "⭐",
+      "snapId": "NIVYnu8lT6O9hJ6qBt6IsAAAgF9qKlXx88lVuAXmp2xQIAXmp2wxG_____w",
+      "timestampInSec": 1622052375,
+      "snapUrls": {
+        "mediaUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "mediaPreviewUrl": "",
+        "snapMediaType": "",
+        "overlayUrl": ""
+      }
+    },
+    {
+      "snapIndex": 2,
+      "snapTitle": "",
+      "snapSubtitles": "⭐",
+      "snapId": "NIVYnu8lT6O9hJ6qBt6IsAAAgheuuxV5Nz4wyAXmp29nTAXmp29TV_____w",
+      "timestampInSec": 1622052426,
+      "snapUrls": {
+        "mediaUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "mediaPreviewUrl": "",
+        "snapMediaType": "",
+        "overlayUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg"
+      }
+    },
+    {
+      "snapIndex": 3,
+      "snapTitle": "",
+      "snapSubtitles": "⭐",
+      "snapId": "NIVYnu8lT6O9hJ6qBt6IsAAAg0-VngD78RNz9AXmr9AX3AXmr9AL6_____w",
+      "timestampInSec": 1622087566,
+      "snapUrls": {
+        "mediaUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
+        "mediaPreviewUrl": "",
+        "snapMediaType": "",
+        "overlayUrl": ""
+      }
+    }
+  ],
+  "lensInfo": null
+}
