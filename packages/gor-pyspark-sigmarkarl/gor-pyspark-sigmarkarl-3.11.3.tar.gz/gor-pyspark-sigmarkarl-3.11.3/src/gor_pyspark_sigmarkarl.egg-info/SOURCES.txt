@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gor_pyspark/__init__.py
+src/gor_pyspark/gorspark.py
+src/gor_pyspark_sigmarkarl.egg-info/PKG-INFO
+src/gor_pyspark_sigmarkarl.egg-info/SOURCES.txt
+src/gor_pyspark_sigmarkarl.egg-info/dependency_links.txt
+src/gor_pyspark_sigmarkarl.egg-info/top_level.txt
