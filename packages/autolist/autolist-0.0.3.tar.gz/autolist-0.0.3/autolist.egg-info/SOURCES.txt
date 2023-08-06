@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+autolist/__init__.py
+autolist/correctlist.py
+autolist.egg-info/PKG-INFO
+autolist.egg-info/SOURCES.txt
+autolist.egg-info/dependency_links.txt
+autolist.egg-info/top_level.txt
