@@ -1,0 +1,3 @@
+[console_scripts]
+dfd = dumb_file_drop.__main__:_main
+
