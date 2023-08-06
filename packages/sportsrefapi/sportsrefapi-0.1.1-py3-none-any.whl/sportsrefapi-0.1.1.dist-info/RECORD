@@ -1,0 +1,10 @@
+sportsrefapi/__init__.py,sha256=-t83QhrUFdfQnMEYdu_td8rn2wq4jhqajucIJCPlBo0,111
+sportsrefapi/_version.py,sha256=JynekzIkzU42AJd9YCx4EaHovy5Jxwu24jOY_a32DDQ,18666
+sportsrefapi/nba/__init__.py,sha256=2f4LucqDErXnPkE9EjHYOGPnGEqQDDoKpqQaB3jSOj4,88
+sportsrefapi/nba/columns.py,sha256=sLbG-CHFQCPD3G8-eMSv5kJ2lAd-9FIjKx0n5RIxatY,843
+sportsrefapi/nba/gamelogs.py,sha256=fEgNRdlMakIQHGCyJQ4bBtyiE5ldXOu8rmPeQiRqtTY,1110
+sportsrefapi/nba/players.py,sha256=l7BDdAbZlns-z-xD_nzrrQb-kxRXZ7haulN6jypC6dI,1539
+sportsrefapi-0.1.1.dist-info/METADATA,sha256=Y3BqwA6er9Jm6aACBw9cevu072pMVmwz9PW6RP25O30,790
+sportsrefapi-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sportsrefapi-0.1.1.dist-info/top_level.txt,sha256=5k4oFzl1QEmDLvjZMSev8fn9ccwlWQ8GDdVXrfq_vhQ,13
+sportsrefapi-0.1.1.dist-info/RECORD,,
