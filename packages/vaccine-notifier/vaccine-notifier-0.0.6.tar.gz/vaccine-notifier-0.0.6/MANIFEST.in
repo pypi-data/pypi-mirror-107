@@ -1,0 +1,4 @@
+include *.txt
+include *.db
+include LICENSE
+include vaccine-notifier/*.py
