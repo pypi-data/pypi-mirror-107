@@ -1,0 +1,3 @@
+[console_scripts]
+nabla-hooks = hooks.get_msg:main
+

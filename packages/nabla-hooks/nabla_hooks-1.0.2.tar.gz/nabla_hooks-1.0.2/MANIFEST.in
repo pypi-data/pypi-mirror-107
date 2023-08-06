@@ -1,0 +1,3 @@
+include *.md
+recursive-include hooks *.jpg
+requirements.testing.txt requirements.txt

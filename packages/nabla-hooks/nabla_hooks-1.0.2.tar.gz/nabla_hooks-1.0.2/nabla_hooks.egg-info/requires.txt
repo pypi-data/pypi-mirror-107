@@ -1,0 +1,15 @@
+ansible>=2.10.3
+ansible-lint>=4.2.0
+ansicolors>=1.1.8
+cfgv>=3.1.0
+chardet>=3.0.4
+Click>=7.1.1
+click-completion>=0.5.2
+colorama>=0.4.3
+git-url-parse>=1.2.2
+GitPython>=3.1.1
+jira>=3.0.1
+podmena>=0.4.2
+PyYAML>=5.1
+six>=1.14.0
+termcolor>=1.1.0
