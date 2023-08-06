@@ -1,0 +1,3 @@
+[console_scripts]
+krikzz-pub-archive-tool = krikzz_pub_archive_tool:main
+
