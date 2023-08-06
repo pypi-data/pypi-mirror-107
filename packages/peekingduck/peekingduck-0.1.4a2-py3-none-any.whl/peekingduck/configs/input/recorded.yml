@@ -1,0 +1,9 @@
+input: ["source"]
+output: ["img", "end", "filename", "fps"]
+
+resolution: {
+            width: 1280,
+            height: 720
+        }
+input_dir: 'PeekingDuck/data/input'
+mirror_image: False
