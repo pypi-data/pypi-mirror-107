@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: xinet
+Version: 0.0.8
+Summary: Use Python to create and explor world.
+Home-page: https://github.com/xinetzone/xinet
+Author: Xinwei Liu
+Author-email: 735613050@qq.com
+License: UNKNOWN
+Description: # xinet
+        
+        [![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinet)](https://github.com/xinetzone/xinet/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinet)](https://github.com/xinetzone/xinet/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinet)](https://github.com/xinetzone/xinet/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinet)](https://github.com/xinetzone/xinet/blob/main/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/xinet.svg)](http://hits.dwyl.io/xinetzone/xinet) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinet.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinet.svg)](https://github.com/xinetzone/xinet/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinet.svg)](https://github.com/xinetzone/xinet/watchers)
+        
+        Discover and create anything interesting!
+        
+        ## PyPI
+        
+        Provide PyPI support.
+        
+        ```sh
+        pip install xinet
+        ```
+        
+        ## help
+        
+        View [Qt for Python](https://www.jianshu.com/nb/46707335)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
