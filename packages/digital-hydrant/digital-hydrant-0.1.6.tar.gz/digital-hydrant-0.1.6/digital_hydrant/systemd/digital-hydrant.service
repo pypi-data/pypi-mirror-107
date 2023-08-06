@@ -1,0 +1,9 @@
+[Unit]
+Description=Digital Hydrant
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hydrant
+
+[Install]
+WantedBy=multi-user.target
