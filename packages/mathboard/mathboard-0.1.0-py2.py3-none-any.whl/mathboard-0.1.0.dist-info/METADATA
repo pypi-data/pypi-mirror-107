@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mathboard
+Version: 0.1.0
+Summary: A fun library to make math operations
+Home-page: http://pypi.python.org/pypi/mathboard/
+Author: Mauricio Ribeiro
+Author-email: mauricioribeiro1992@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# mathboard
+A fun library to make math operations
+
+
