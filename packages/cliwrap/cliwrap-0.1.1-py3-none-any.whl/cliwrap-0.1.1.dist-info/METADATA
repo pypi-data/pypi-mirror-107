@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cliwrap
+Version: 0.1.1
+Summary: A lightweight wrapper around CLIs for error handling and logging.
+Home-page: https://github.com/restechnica/cliwrap-python
+License: Mozilla Public License Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# cliwrap-python
+A lightweight wrapper around CLIs for error handling and logging.
+
+
